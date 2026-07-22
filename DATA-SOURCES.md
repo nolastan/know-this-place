@@ -79,10 +79,16 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 - **What:** Zoning, historic-resource status (Article 10 landmarks, survey
   ratings), historic district boundaries. The Property Information Map (PIM)
   aggregates much of this per parcel.
-- **Endpoints:** DataSF Socrata datasets ("Landmarks", "Zoning Map…"), and
-  the PIM at `sfplanninggis.org` (check for a queryable API before scraping).
+- **Endpoints:** DataSF Socrata datasets, incl. **Historic Resource Status by
+  Parcel** (`3tsw-4idn`) — one row per parcel, keyed by `apn` (block+lot, no
+  dash); fields `ceqacode` (A / B / C) and `ceqacodea10a11` (A / A* / B / C)
+  with `ceqacodereason`. Category **A** = is a historical resource; **A*** =
+  listed in / within an Article 10 or 11 district; **B** = unknown / unevaluated;
+  **C** = not a historical resource. Also "Historic Districts" (`63x5-g3m4`).
+  The PIM at `sfplanninggis.org` aggregates the same per parcel (check for a
+  queryable API before scraping).
 - **Citation label:** "SF Planning Department"
-- **Verified:** —
+- **Verified:** 2026-07-22 (dataset `3tsw-4idn`, apn 2752016 = 744 Castro St → ceqacode B)
 
 ## sf-historic-districts — Historic district boundaries
 
