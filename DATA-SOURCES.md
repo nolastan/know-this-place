@@ -84,6 +84,39 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 - **Citation label:** "SF Planning Department"
 - **Verified:** —
 
+## sf-historic-districts — Historic district boundaries
+
+- **What:** Polygon boundaries and status for each historic district, used to
+  answer "is this parcel in a district, and which one?"
+- **Endpoint:** `https://data.sfgov.org/resource/63x5-g3m4.json`
+- **Key fields:** `name_1` (district name), `cr` (California Register status),
+  `nr` (National Register), `a10` / `a11` (local Article 10 / 11 district),
+  `pos_1` (period of significance), `description`.
+- **Name the district with a spatial query — never guess.** The per-parcel
+  historic dataset's reason field may say "California Register Historic
+  District" without naming it, and several districts mention Castro in their
+  name or description. Resolve it against the parcel's own coordinates:
+
+  ```
+  https://data.sfgov.org/resource/63x5-g3m4.json
+    ?$select=name_1,cr,nr,a10,a11,pos_1
+    &$where=intersects(the_geom, 'POINT(<lng> <lat>)')
+  ```
+  Note the argument order: `POINT(longitude latitude)`. An empty result means
+  the parcel is in no district.
+- **State the status precisely.** "Eligible" for the California Register is
+  **not** "listed", and neither implies local landmark protection — that
+  requires an Article 10 district (`a10`). A parcel in a CR-eligible,
+  non-Article-10 district carries no local landmark protection; don't imply
+  otherwise. Note also that district-derived Category A applies to the whole
+  parcel regardless of the building's age, so a modern building inside a
+  district still reads as A (see 707 Castro Street, built 1980).
+- **Citation label:** "SF Planning Department"
+- **Verified:** 2026-07-21 (711 and 737 Castro St resolve to the Castro &
+  Liberty Streets Historic District, CR-eligible, period 1897–1906, not
+  Article 10; 720 Castro St, on the even side of the same block, is inside no
+  district)
+
 ## historical-imagery — OpenSFHistory & Wikimedia Commons
 
 - **What:** Historical photographs. Wikimedia Commons has a proper API and
