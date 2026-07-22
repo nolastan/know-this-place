@@ -1,0 +1,38 @@
+name: Page feedback
+description: Suggest a correction or addition to a place page
+title: "Page feedback"
+labels: ["page-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve this page. Just describe the change in
+        plain words — no formatting or editing knowledge needed. An automated
+        editor will draft the change, and a person reviews it before anything
+        goes live.
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The page this is about (pre-filled — please leave as-is).
+      placeholder: /san-francisco/castro/castro-street/123/
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What should change?
+      description: What's wrong, missing, or worth adding?
+      placeholder: >-
+        e.g. The page says this house was built in 1904, but the cornerstone
+        says 1902. Also, it doesn't mention the corner grocery that operated
+        downstairs until the 1970s.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: How do you know? (optional)
+      description: >-
+        Links, documents, or personal knowledge ("I've lived next door since
+        1985") — anything that helps verify the change.

@@ -1,0 +1,113 @@
+{
+  "address": "744 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/744/",
+  "apn": "2752016",
+  "block": "2752",
+  "lot": "016",
+  "eas_baseid": "345543",
+  "coordinates": { "lat": 37.756491, "lng": -122.434944 },
+  "parcel": {
+    "year_built": 1896,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 2266,
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1870163,
+    "assessed_improvement_value": 801498,
+    "last_sale_date": "2018-07-27"
+  },
+  "permits": [
+    {
+      "number": "8505479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-05-28",
+      "completed": "1985-08-29",
+      "estimated_cost": 100,
+      "description": "repair water leaking from cracks in sidewalk and garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-07",
+      "completed": "1994-04-26",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107183940",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-18",
+      "completed": "2001-09-10",
+      "estimated_cost": 23250,
+      "description": "termite report #01254 (items 4 & 5 only)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508261366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-26",
+      "completed": "2007-02-16",
+      "estimated_cost": 26822,
+      "description": "replace kitch cabinet + counter, install flourecent light in kitchen. replace 5 windows in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808189348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-18",
+      "completed": "2008-09-23",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609127380",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-12",
+      "completed": "2016-09-19",
+      "estimated_cost": 1700,
+      "description": "install/repair dry wall, 5/8 type \"x\" sheetrock in basement kitchen and bathroom per complaint #201628571, item #4 and #12",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=744",
+      "retrieved": "2026-07-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2752016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=744&street_name=Castro",
+      "retrieved": "2026-07-21"
+    }
+  ]
+}

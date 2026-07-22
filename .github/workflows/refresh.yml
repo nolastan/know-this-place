@@ -1,0 +1,57 @@
+# Scheduled refresh of time-sensitive data (permits, assessments).
+# Opens a single PR per run; human review still gates the merge.
+name: refresh
+
+on:
+  schedule:
+    - cron: "0 14 * * 1" # Mondays ~7am Pacific
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Path prefix to refresh (e.g. san-francisco/castro/castro-street). Empty = whole site."
+        required: false
+        default: ""
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are the scheduled maintenance agent for knowthis.place.
+            Follow AGENTS.md (root), the neighborhood AGENTS.md files, and
+            shared/AGENTS.md.
+
+            Scope: "${{ inputs.scope }}" (empty means the whole content tree
+            under san-francisco/).
+
+            1. Find address pages in scope whose data.json sources have
+               `retrieved` dates older than 30 days.
+            2. For each, re-run the recorded queries against the sources in
+               DATA-SOURCES.md. If nothing material changed, only leave the
+               page alone (do NOT bump retrieved dates in a no-change page —
+               avoid noise commits).
+            3. Where data changed (new permits, changed status, new
+               assessment), update data.json and index.md, regenerate
+               index.html, and note the change for the PR body.
+            4. Run `python3 scripts/validate.py` and
+               `python3 scripts/build_sitemap.py`.
+            5. If any page changed: create branch refresh/<today's date>,
+               commit, push, and open a single PR listing every page updated
+               and what changed. If nothing changed, stop without a PR.
+          claude_args: |
+            --max-turns 100
+            --allowedTools "Read,Glob,Grep,Edit,Write,WebFetch(domain:data.sfgov.org),Bash(python3:*),Bash(git:*),Bash(gh pr create:*)"
