@@ -4,9 +4,13 @@
 # never publish.
 name: feedback-agent
 
+# Note: the `page-feedback` label must EXIST in the repo — GitHub silently
+# drops labels an issue form references but that aren't defined, which leaves
+# the issue unlabeled and this job skipped. The `labeled` trigger also lets a
+# human kick off the agent on an existing issue by applying the label.
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled]
 
 concurrency:
   group: feedback-${{ github.event.issue.number }}
@@ -14,7 +18,13 @@ concurrency:
 
 jobs:
   handle-feedback:
-    if: contains(github.event.issue.labels.*.name, 'page-feedback')
+    # On `labeled`, match only the label just added — otherwise the agent
+    # adding `needs-human` to a page-feedback issue would re-trigger this job.
+    if: >-
+      (github.event.action == 'opened' &&
+        contains(github.event.issue.labels.*.name, 'page-feedback')) ||
+      (github.event.action == 'labeled' &&
+        github.event.label.name == 'page-feedback')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:

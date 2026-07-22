@@ -67,7 +67,12 @@ scripts/
 - [ ] Push to GitHub; confirm `repo_url` in [shared/site-config.json](shared/site-config.json)
 - [ ] Settings → Pages → deploy from branch `main`, root; custom domain `knowthis.place`
 - [ ] DNS: apex A/ALIAS records → GitHub Pages, per GitHub docs (CNAME file is committed)
-- [ ] Add `ANTHROPIC_API_KEY` repo secret; install the Claude GitHub App for this repo
+- [ ] Add `ANTHROPIC_API_KEY` **Actions** secret; install the Claude GitHub App for this repo
+- [ ] Settings → Actions → General → check **"Allow GitHub Actions to create and
+      approve pull requests"** (off by default; without it the agent can't open PRs)
+- [ ] **Create the `page-feedback` label** (Issues → Labels → New label). GitHub
+      silently ignores labels an issue form references but that don't exist, which
+      leaves feedback issues unlabeled and the agent workflow skipped.
 - [ ] Branch protection on `main`: require PR review (you)
 - [ ] Create a Google Maps **Embed API** key, referrer-locked to `knowthis.place`,
       and put it in `shared/site-config.json`
