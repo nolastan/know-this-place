@@ -8,4 +8,4 @@ data the neighborhood appears as "Castro/Upper Market."
 
 Coverage is just beginning. Streets documented so far:
 
-- [Castro Street](castro-street/) — 1 building
+- [Castro Street](castro-street/) — 6 buildings on the 700 block
