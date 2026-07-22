@@ -101,6 +101,11 @@ principles:
 - **Prose is the exception.** Keep the lead to one short orienting paragraph,
   and add prose sections only where a building has a real story (history, a
   notable architect, an unusual permit saga). Don't restate what the tiles show.
+- **Adding one new fact never creates a new section.** A single fact becomes a
+  `.tag` (if it's identity — status, type, designation) or a `.speclist` row
+  (if it's a detail). A `.section-head` + prose is earned only by several
+  related facts or an actual narrative. When feedback adds a fact, the default
+  is one tag or one row — not a paragraph explaining it.
 - **Never state a fact twice.** Each fact lives in exactly one place — a tag,
   a tile, a spec row, a chart, or the timeline. If the tags already say "Built
   1896" and "2 stories," there is no year-built or stories tile; if the sidebar
