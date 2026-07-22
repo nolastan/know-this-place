@@ -40,6 +40,15 @@ The assessor's roll records the most recent sale on **July 27, 2018**. The
 2025 assessed value is $1,870,163 (land) plus $801,498 (improvements) —
 $2,671,661 total.
 
+## Historic status
+
+In the SF Planning Department's parcel-level historic-resource screening, 744
+Castro Street carries CEQA status **Category B — "unknown."** The building has
+never been formally evaluated; at more than 45 years old it is old enough to
+warrant review, but no survey has determined whether it qualifies as a
+historic resource. It is not a designated city landmark and is not within an
+Article 10 or Article 11 historic district.
+
 ## Not yet documented
 
 The building's architect and builder, its early residents, and whether the two
@@ -57,3 +66,6 @@ feedback link on the page.
 - SF Dept. of Building Inspection via DataSF —
   <https://data.sfgov.org/resource/i98e-djp9.json?street_number=744&street_name=Castro>
   (retrieved 2026-07-21)
+- SF Planning Department, Historic Resource Status by Parcel via DataSF —
+  <https://data.sfgov.org/resource/3tsw-4idn.json?apn=2752016>
+  (retrieved 2026-07-22)
