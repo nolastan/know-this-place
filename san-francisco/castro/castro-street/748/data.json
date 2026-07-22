@@ -1,0 +1,61 @@
+{
+  "address": "748 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/748/",
+  "apn": "2752018",
+  "block": "2752",
+  "lot": "018",
+  "coordinates": { "lat": 37.756354, "lng": -122.434931 },
+  "parcel": {
+    "year_built": 1900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2510,
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292846,
+    "assessed_improvement_value": 253304,
+    "last_sale_date": "1987-04-23"
+  },
+  "permits": [
+    { "number": "201407090789", "status": "complete", "filed": "2014-07-09", "estimated_cost": 3000,
+      "description": "foundation repair", "source": "sf-building-permits" },
+    { "number": "200405073340", "status": "complete", "filed": "2004-05-07", "estimated_cost": 1000,
+      "description": "renewal of application 200303058816 to comply with a notice of violation", "source": "sf-building-permits" },
+    { "number": "200303058816", "status": "issued", "filed": "2003-03-05", "estimated_cost": 1000,
+      "description": "work to comply with notice of violation 200235554", "source": "sf-building-permits" }
+  ],
+  "permits_note": "Only 3 permits on file — the shortest permit record among the 700-block buildings documented so far.",
+  "sources": [
+    { "id": "sf-eas-addresses", "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=748",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-assessor-roll", "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2752018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-building-permits", "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=748&street_name=Castro",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-planning", "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2752018",
+      "retrieved": "2026-07-21" }
+  ]
+}

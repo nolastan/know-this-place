@@ -1,0 +1,64 @@
+{
+  "address": "707 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/707/",
+  "apn": "3603074",
+  "block": "3603",
+  "lot": "074",
+  "coordinates": { "lat": 37.757505, "lng": -122.434507 },
+  "parcel": {
+    "year_built": 1980,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 3441,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_label": "Historical Resource present",
+    "reason": "California Register Historic District",
+    "district": {
+      "name": "Castro & Liberty Streets Historic District",
+      "california_register": "Eligible",
+      "national_register": "No",
+      "article_10_local_landmark_district": false,
+      "period_of_significance": "1897-1906",
+      "source": "sf-planning"
+    },
+    "designated_landmark": false,
+    "note": "The parcel is inside the district boundary. The building's 1980 construction date falls well outside the district's 1897-1906 period of significance; whether it is classed as a contributing building has not been established here.",
+    "source": "sf-planning"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 24480,
+    "assessed_improvement_value": 385333,
+    "note": "No sale date recorded on the 2025 roll."
+  },
+  "permits": [
+    { "number": "200007245900", "status": "expired", "filed": "2000-07-24", "estimated_cost": 13875,
+      "description": "reroofing", "source": "sf-building-permits" }
+  ],
+  "permits_note": "Only one permit on file — the shortest permit record on the block.",
+  "sources": [
+    { "id": "sf-eas-addresses", "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=707",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-assessor-roll", "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-building-permits", "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=707&street_name=Castro",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-planning", "name": "SF Planning Department — Historic Resource Status by Parcel, and Historic Districts, via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603074",
+      "retrieved": "2026-07-21" }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "737 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/737/",
+  "apn": "3603068",
+  "block": "3603",
+  "lot": "068",
+  "coordinates": { "lat": 37.757093, "lng": -122.434465 },
+  "parcel": {
+    "year_built": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 2732,
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_label": "Historical Resource present",
+    "reason": "California Register Historic District",
+    "district": {
+      "name": "Castro & Liberty Streets Historic District",
+      "california_register": "Eligible",
+      "national_register": "No",
+      "article_10_local_landmark_district": false,
+      "period_of_significance": "1897-1906",
+      "source": "sf-planning"
+    },
+    "designated_landmark": false,
+    "source": "sf-planning"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2807955,
+    "assessed_improvement_value": 1203409,
+    "last_sale_date": "2022-04-01"
+  },
+  "permits": [
+    { "number": "202011219480", "status": "cancelled", "filed": "2020-11-21", "estimated_cost": 0,
+      "cost_note": "No cost recorded in the dataset.",
+      "description": "new L-shaped rear deck in the backyard, 167 sq ft, height 8 ft 6 in", "source": "sf-building-permits" },
+    { "number": "200710034463", "status": "complete", "filed": "2007-10-03", "estimated_cost": 20000,
+      "description": "revision showing replacement of the retaining wall", "source": "sf-building-permits" },
+    { "number": "200702023180", "status": "complete", "filed": "2007-02-02", "estimated_cost": 2000,
+      "description": "temporary bracing of the rear wall between 737 and 741 Castro Street", "source": "sf-building-permits" },
+    { "number": "200604189218", "status": "complete", "filed": "2006-04-18", "estimated_cost": 20000,
+      "description": "revision showing new framing at the rear room and lower back room", "source": "sf-building-permits" },
+    { "number": "200509082285", "status": "complete", "filed": "2005-09-08", "estimated_cost": 175000,
+      "description": "kitchen and baths remodelled; three new dormers in the attic space; attic converted to a primary bedroom", "source": "sf-building-permits" },
+    { "number": "200508220845", "status": "complete", "filed": "2005-08-22", "estimated_cost": 15000,
+      "description": "about half the existing foundation replaced; concrete cap on the north side", "source": "sf-building-permits" },
+    { "number": "200507056843", "status": "complete", "filed": "2005-07-05", "estimated_cost": 40000,
+      "description": "two bathrooms remodelled; kitchen lighting, finishes and insulation", "source": "sf-building-permits" },
+    { "number": "9708099", "status": "cancelled", "filed": "2002-08-30", "estimated_cost": 35000,
+      "description": "excavation, foundation, framing, electrical, plumbing and finishes to kitchen and bath", "source": "sf-building-permits" },
+    { "number": "9312773", "status": "expired", "filed": "1993-07-29", "estimated_cost": 5400,
+      "description": "reroofing", "source": "sf-building-permits" }
+  ],
+  "permits_note": "12 permits on file; a $1 renewal for final inspection and two $0 sidewalk/street-space permits are omitted from the page.",
+  "sources": [
+    { "id": "sf-eas-addresses", "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=737",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-assessor-roll", "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-building-permits", "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=737&street_name=Castro",
+      "retrieved": "2026-07-21" },
+    { "id": "sf-planning", "name": "SF Planning Department — Historic Resource Status by Parcel, and Historic Districts, via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603068",
+      "retrieved": "2026-07-21" }
+  ]
+}

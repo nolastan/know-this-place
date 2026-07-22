@@ -61,8 +61,23 @@ san-francisco/                        city
         assets/                       openly licensed media only (optional)
 ```
 
-- **One page per building** (per parcel/street number). Units are documented
-  within their building's page, never as separate pages.
+- **One page per building — which means one page per parcel, not per street
+  number.** Units are documented within their building's page, never as
+  separate pages.
+  - **A parcel spanning several street numbers gets ONE page**, in the
+    directory of its *lowest* number, titled with the range (e.g.
+    `711/` → "711–715 Castro Street"). The assessor's `property_location`
+    reveals these: `0715 0711 CASTRO` means the parcel runs 711–715. Confirm
+    by checking permits — DBI files the same permit numbers under every
+    number on the parcel. Record the range in `data.json` under
+    `address_range`, and say so on the page; never create a separate page per
+    number, and never treat the shared permits as separate events.
+  - **Condominium parcels are the reverse trap**: each unit has its own APN,
+    and the assessor reports `0` lot area and `0` stories for it. Those are
+    *units*, not buildings — do not give each one a page. Documenting a
+    condo building means establishing which parcels belong to it, which the
+    datasets here don't state directly; until that's resolved, skip them and
+    flag it for a human.
 - Directory names: lowercase, hyphens, no punctuation. Street numbers are the
   bare number (`4127`, `4127a` for lettered addresses). The canonical address
   list is the EAS dataset in DATA-SOURCES.md — don't create pages for
