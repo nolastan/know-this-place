@@ -12,6 +12,9 @@ across two wood-frame stories, on a 3,125-square-foot lot zoned RH-2
 - Building area 2,266 sq ft; lot 3,125 sq ft
 - Wood-frame construction (assessor construction type D)
 - Zoning RH-2; Supervisorial District 8
+- Historic status: CEQA Category B — never formally evaluated. Not a
+  designated city landmark; not within an Article 10 or 11 historic district
+  (SF Planning, Historic Resource Status by Parcel)
 
 ## Permit history
 
@@ -57,3 +60,6 @@ feedback link on the page.
 - SF Dept. of Building Inspection via DataSF —
   <https://data.sfgov.org/resource/i98e-djp9.json?street_number=744&street_name=Castro>
   (retrieved 2026-07-21)
+- SF Planning Department, Historic Resource Status by Parcel via DataSF —
+  <https://data.sfgov.org/resource/3tsw-4idn.json?apn=2752016>
+  (retrieved 2026-07-22)
