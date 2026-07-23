@@ -54,6 +54,36 @@ Verify before asserting any of this about a specific building.
 - Much of the housing is early-20th-century, with post-war infill on the
   upper slopes.
 
+## The assessor's year built disagrees with the photographs — say so
+
+The neighborhood's history writing dates buildings from photographs, and the
+assessor's `year_property_built` frequently contradicts them. Both are on the
+record; **neither gets quietly dropped.** Put the assessor's date in the
+`Built …` tag (it is the structured field the rest of the page is built from),
+put the photograph in the timeline, and name the disagreement plainly in the
+`.unknowns` block. Do not average them, pick a favourite, or write "about".
+Worked examples in this tree:
+
+| Page | Assessor | Photograph |
+|---|---|---|
+| 46–48 Mars | 1903 | standing c. 1895 |
+| 52 Mars, 56 Mars | 1900 | standing c. 1895 |
+| 328 Corbett | 1908 | standing April 1906 |
+| 349 Corbett | 1900 | under construction 1909 |
+
+Round years (1900, 1890) in the assessor roll are placeholders as often as
+they are facts — treat them as the weaker evidence, and say in `.unknowns`
+that the date has not been checked against a permit.
+
+## Buildings here were moved
+
+A construction date does not always belong to the site. **11–23 Mars Street was
+moved to Mars from Falcon Street** — the assessor's 1909 is the date it was
+built somewhere else, and photographs of about 1921 show its Mars lot still
+empty. When a source says a building "moved here from" somewhere, that is a
+`Relocated building` tag plus separate timeline entries for the construction
+date and the move; never fold them into one "built" claim.
+
 ## Historical addresses that no longer exist
 
 The neighborhood's history writing frequently discusses buildings that have
@@ -65,3 +95,19 @@ examples found while seeding:
 - **110 Ord Street** — the Cassin cottage. Ord runs 7–91 today; no 110 exists.
 - **1200 Clayton Street** — the 1909 Stoddart building was replaced; the
   address is now thirteen condominium parcels built in 1986.
+- **Anything on Falcon Street** — Falcon was expunged by the Market Street
+  extension. Fred G. Horner's grocery and saloon at **2 Falcon Street** recurs
+  in the record; its story belongs on the surviving buildings nearby
+  (`danvers-street/56/`, `danvers-street/60/`) and the Danvers Street hub.
+- **2 Mars Street** — appears in a 1925 photograph, but no such address exists
+  in EAS today; Mars begins at 4.
+
+## Contributed memoirs: take the building, leave the people
+
+Several issues are first-person accounts by living residents (the Shiloh's Way
+piece in January, the Corbett Avenue childhood memoir in July). They are good
+sources for building facts — a contractor's name, a stair, a rebuild — and are
+**not** licence to name the writer, their family, or who lives where. Attribute
+them in the footer as an account published in the issue, not by name. Deceased
+figures already published with dates (first owners, builders, nineteenth-century
+grocers) may be named, as elsewhere.

@@ -1,0 +1,114 @@
+{
+  "address": "100–102 Corbett Avenue, San Francisco, CA 94114",
+  "address_range": {
+    "low": 100,
+    "high": 102,
+    "canonical": 100,
+    "note": "One parcel spanning 100 and 102 Corbett Avenue."
+  },
+  "path": "/san-francisco/corbett-heights/corbett-avenue/100/",
+  "apn": "2652002",
+  "block": "2652",
+  "lot": "002",
+  "coordinates": {
+    "lat": 37.761918,
+    "lng": -122.440373
+  },
+  "parcel": {
+    "year_built": 1953,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2294,
+    "building_area_sqft": 1915,
+    "construction_type": "Wood frame",
+    "zoning": "RH-2",
+    "subdivision": "McKee Subdivision",
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 376365
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "historic_district": null,
+    "source": "sf-planning"
+  },
+  "building_history": {
+    "contractor": "Elis J. Ekstrom",
+    "architect": null,
+    "source": "corbett-heights-neighbors",
+    "events": [
+      {
+        "date": "1953",
+        "event": "Lot created by subdividing the Cassin parcel at Ord and Corbett."
+      },
+      {
+        "date": "1953",
+        "event": "Building completed by the contractor Elis J. Ekstrom, who also built 385 Corbett Avenue."
+      }
+    ]
+  },
+  "permits": [
+    {
+      "number": "201107281204",
+      "filed": "2011-07-28",
+      "status": "complete",
+      "estimated_cost": 21000,
+      "description": "Replace 18 windows and 2 doors into existing openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103560",
+      "filed": "1991-03-05",
+      "status": "complete",
+      "estimated_cost": 4142,
+      "description": "Reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "corbett-heights-neighbors",
+      "name": "Corbett Heights Neighbors, \"May Neighborhood News\", Vol. VIII, No. 5 (1 May 2026)",
+      "cites": "the 1953 subdivision of the Cassin parcel at Ord and Corbett, from San Francisco block books and directories",
+      "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjk3MTg4MTQ=/may-neighborhood-news.htm",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "corbett-heights-neighbors-jul",
+      "name": "Corbett Heights Neighbors, \"July Neighborhood News\", Vol. VIII, No. 7 (1 July 2026)",
+      "cites": "a family account naming the contractor Elis J. Ekstrom",
+      "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/MzAxMzAwMzY=/july-neighborhood-news.htm",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CORBETT&street_type=AVE&address_number=100",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2652002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2652002",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2652&lot=002",
+      "retrieved": "2026-07-22"
+    }
+  ]
+}
