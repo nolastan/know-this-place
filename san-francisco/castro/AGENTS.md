@@ -3,6 +3,22 @@
 Applies to everything under `san-francisco/castro/`, in addition to the root
 `AGENTS.md`.
 
+## Naming — the Castro *is* Eureka Valley
+
+They are one neighborhood with two names, and the city's own datasets
+disagree: the addressing and planning data say **Castro/Upper Market**, the
+assessor's roll says **Eureka Valley/Dolores Heights**, and everyone says
+**the Castro**. A page that shows one name in the breadcrumb and another in
+the subtitle reads as though they are two different places.
+
+- The breadcrumb and directory always use **Castro**.
+- The `.sub` locality line is always exactly
+  `Castro (Eureka Valley) · San Francisco, CA <zip>` — the parenthetical is
+  what tells a reader the two names are the same place. Don't drop it, and
+  don't substitute a dataset's name for it.
+- The explanation lives once, on the neighborhood hub page. Don't repeat it
+  on address pages.
+
 ## Scope
 
 Eureka Valley, commonly called the Castro: roughly bounded by Market Street
