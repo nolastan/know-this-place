@@ -14,7 +14,9 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
 
 ## Streets documented so far
 
-- [Corbett Avenue](corbett-avenue/) — 3 buildings
+- [Corbett Avenue](corbett-avenue/) — 7 buildings
+- [Mars Street](mars-street/) — 10 buildings
+- [Danvers Street](danvers-street/) — 2 buildings
 
 ## Sources
 

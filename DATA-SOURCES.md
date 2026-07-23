@@ -163,15 +163,26 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   reader with no context for it; the citation lives in the Sources footer.
   See `corbett-heights/AGENTS.md`.
 - **Cautions:**
-  - **Historical addresses.** Street numbers changed in 1909 and buildings
-    have been demolished, so an address in the newsletter may not exist
-    today. Check EAS before creating a page (see
-    `corbett-heights/AGENTS.md` for worked examples).
+  - **Historical addresses.** Street numbers changed in 1909, streets were
+    expunged by the Market Street extension, and buildings have been
+    demolished, so an address in the newsletter may not exist today. Check
+    EAS before creating a page (see `corbett-heights/AGENTS.md` for worked
+    examples).
+  - **Photograph dates contradict the assessor.** The newsletter dates
+    buildings from photographs; the assessor's `year_property_built` often
+    disagrees, in both directions. Record both and name the conflict in the
+    page's `.unknowns` — never reconcile them silently.
+  - **Buildings were moved.** At least one (11 Mars, from Falcon Street) was
+    relocated, so a construction date may belong to a different site.
   - **Living people.** Some issues are personal memoirs naming family
     members and the houses they lived in. Take the building facts; leave the
     people out, per the privacy rules in the root AGENTS.md. Deceased
     figures already published with dates (first owners, builders) may be
     named with citations.
+- **Coverage so far:** the archive holds 48 issues across 5 pages. All ten
+  issues on **page 1** (Dec 2025 – Jul 2026) have been combed; pages 2–5
+  (38 issues) are untouched. Page 1 still holds unwritten material on Hattie
+  Street, Ord Street and upper Clayton — see issue #3.
 - **Verified:** 2026-07-22 (page 1 of the archive, Dec 2025 – Jul 2026)
 
 ## local-news — Neighborhood news (secondary)
