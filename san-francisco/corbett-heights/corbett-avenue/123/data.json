@@ -1,0 +1,60 @@
+{
+  "address": "123–125 Corbett Avenue, San Francisco, CA 94114",
+  "address_range": { "low": 123, "high": 125, "canonical": 123,
+    "note": "One parcel spanning 123 and 125 Corbett Avenue." },
+  "path": "/san-francisco/corbett-heights/corbett-avenue/123/",
+  "apn": "2657026",
+  "block": "2657",
+  "lot": "026",
+  "coordinates": { "lat": 37.761560, "lng": -122.440809 },
+  "parcel": {
+    "year_built": 1937,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "style": "Spanish Mediterranean",
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "lot_area_sqft": 1947,
+    "building_area_sqft": 2732,
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "subdivision": "Park Lane Tract"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "source": "sf-planning"
+  },
+  "building_history": {
+    "contractor": "Arthur Quinn (A & B Quinn)",
+    "architect": null,
+    "build_cost_usd": 4000,
+    "first_owner": "D. O'Halloran",
+    "source": "corbett-heights-neighbors",
+    "events": [
+      { "date": "1937-02", "event": "Building permit filed; stated cost $4,000." },
+      { "date": "1937", "event": "House completed by contractor Arthur Quinn." },
+      { "date": "1940", "event": "Owner valued the house at $6,000 (federal census)." },
+      { "date": "1954", "event": "Sold by owner at $15,950." }
+    ]
+  },
+  "sources": [
+    { "id": "corbett-heights-neighbors",
+      "name": "Corbett Heights Neighbors, \"June Neighborhood News\", Vol. VIII, No. 6 (1 June 2026)",
+      "cites": "the 1937 building permit, the 1940 federal census and period sale listings",
+      "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjk5MzEyNTA=/june-neighborhood-news.htm",
+      "retrieved": "2026-07-22" },
+    { "id": "sf-eas-addresses", "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CORBETT&street_type=AVE&address_number=123",
+      "retrieved": "2026-07-22" },
+    { "id": "sf-assessor-roll", "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2657026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-22" },
+    { "id": "sf-planning", "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2657026",
+      "retrieved": "2026-07-22" }
+  ]
+}

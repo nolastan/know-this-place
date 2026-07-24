@@ -1,0 +1,126 @@
+{
+  "address": "56–58 Danvers Street, San Francisco, CA 94114",
+  "address_range": {
+    "low": 56,
+    "high": 58,
+    "canonical": 56,
+    "note": "One parcel spanning 56 and 58 Danvers Street."
+  },
+  "path": "/san-francisco/corbett-heights/danvers-street/56/",
+  "apn": "2659007",
+  "block": "2659",
+  "lot": "007",
+  "coordinates": {
+    "lat": 37.760632,
+    "lng": -122.443808
+  },
+  "parcel": {
+    "year_built": 1900,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2589,
+    "construction_type": "Wood frame",
+    "zoning": "RH-2",
+    "assessed_land_value": 2510559,
+    "assessed_improvement_value": 1075952,
+    "current_sales_date": "2017-06-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "historic_district": null,
+    "source": "sf-planning"
+  },
+  "building_history": {
+    "source": "corbett-heights-neighbors",
+    "events": [
+      {
+        "date": "1906-04",
+        "certainty": "probable",
+        "event": "Probably the building at the right edge of the earthquake refugee camp photograph (OpenSFHistory wnp37.00189)."
+      },
+      {
+        "date": "1909",
+        "event": "Standing in a photograph of the 18th/Danvers/Falcon intersection, near Fred G. Horner's grocery and saloon at 2 Falcon Street; described as remaining as built."
+      },
+      {
+        "date": "1930s-1940s",
+        "event": "The Market Street extension is cut through the intersection, removing Falcon Street."
+      }
+    ]
+  },
+  "permits": [
+    {
+      "number": "201801309836",
+      "filed": "2018-01-30",
+      "status": "complete",
+      "estimated_cost": 1,
+      "description": "Final inspection for work approved under 201306199990.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301158047",
+      "filed": "2013-01-15",
+      "status": "complete",
+      "estimated_cost": 160000,
+      "description": "Interior work; kitchen and bathroom remodelling with structural upgrades.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209307800",
+      "filed": "2002-09-30",
+      "status": "complete",
+      "estimated_cost": 4800,
+      "description": "Repair front entry stairs; replace treads, risers and handrails.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9124091",
+      "filed": "1991-12-23",
+      "status": "expired",
+      "estimated_cost": 12500,
+      "description": "Reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "corbett-heights-neighbors",
+      "name": "Corbett Heights Neighbors, \"April Neighborhood News\", Vol. VIII, No. 4 (1 April 2026)",
+      "cites": "a photograph dated 1909 of the 18th Street, Danvers and Falcon intersection, and OpenSFHistory photograph wnp37.00189 (April 1906)",
+      "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjk1MDc0NTQ=/april-neighborhood-news.htm",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DANVERS&street_type=ST&address_number=56",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2659007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2659007",
+      "retrieved": "2026-07-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2659&lot=007",
+      "retrieved": "2026-07-22"
+    }
+  ]
+}

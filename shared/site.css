@@ -188,7 +188,9 @@ img, iframe { max-width: 100%; }
 .stat-label { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
 
 /* ============================================================= visual timeline */
-.vtl { position: relative; margin: 1.25rem 0 0; padding-left: 1.75rem; list-style: none; }
+/* bottom margin matters: the last item drops its padding, so without it the
+   timeline collides with whatever block follows (panels, a section, prose) */
+.vtl { position: relative; margin: 1.25rem 0 2rem; padding-left: 1.75rem; list-style: none; }
 .vtl::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--rule); }
 .vtl-item { position: relative; padding-bottom: 1.5rem; }
 .vtl-item:last-child { padding-bottom: 0; }
@@ -229,7 +231,7 @@ img, iframe { max-width: 100%; }
 .stack-seg { height: 100%; min-width: 2px; }
 .seg-cool { background: var(--cool); }
 .seg-warm { background: var(--warm); }
-.legend { display: flex; flex-wrap: wrap; gap: 1rem 1.25rem; margin-top: 0.7rem; font-family: var(--sans); font-size: 0.84rem; }
+.legend { display: flex; flex-wrap: wrap; gap:  .2rem 1rem; margin-top: 0.7rem; font-family: var(--sans); font-size: 0.84rem; }
 .legend-item { display: inline-flex; align-items: baseline; gap: 0.45rem; }
 .swatch { width: 10px; height: 10px; border-radius: 2px; flex: 0 0 auto; transform: translateY(1px); }
 .legend-item b { font-weight: 600; font-variant-numeric: tabular-nums; }

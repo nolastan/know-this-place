@@ -315,6 +315,14 @@ record is silent on…," "hints at a longer story," "a decade before the
 earthquake." The `.unknowns` block just names what isn't documented, plainly
 (e.g. "Not yet documented: the architect, the early residents…").
 
+**One new fact = one tag or one spec row, never a new section.** The reflex to
+introduce a fact with a `.section-head` and explain it in a paragraph is the
+single most common way these pages drift back into being articles. Historic
+status is a tag (`Historic status: unevaluated`) plus a `.speclist` row
+(`CEQA B — unevaluated`) — not six lines of prose. Reserve `.section-head` for
+several related facts or a real narrative, and don't reuse an icon that
+already labels another section on the page.
+
 ## Extending the system
 
 A new block, icon, chart type, or color = **a `site.css` PR**; a new behavior

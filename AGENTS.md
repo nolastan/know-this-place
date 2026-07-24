@@ -61,8 +61,23 @@ san-francisco/                        city
         assets/                       openly licensed media only (optional)
 ```
 
-- **One page per building** (per parcel/street number). Units are documented
-  within their building's page, never as separate pages.
+- **One page per building — which means one page per parcel, not per street
+  number.** Units are documented within their building's page, never as
+  separate pages.
+  - **A parcel spanning several street numbers gets ONE page**, in the
+    directory of its *lowest* number, titled with the range (e.g.
+    `711/` → "711–715 Castro Street"). The assessor's `property_location`
+    reveals these: `0715 0711 CASTRO` means the parcel runs 711–715. Confirm
+    by checking permits — DBI files the same permit numbers under every
+    number on the parcel. Record the range in `data.json` under
+    `address_range`, and say so on the page; never create a separate page per
+    number, and never treat the shared permits as separate events.
+  - **Condominium parcels are the reverse trap**: each unit has its own APN,
+    and the assessor reports `0` lot area and `0` stories for it. Those are
+    *units*, not buildings — do not give each one a page. Documenting a
+    condo building means establishing which parcels belong to it, which the
+    datasets here don't state directly; until that's resolved, skip them and
+    flag it for a human.
 - Directory names: lowercase, hyphens, no punctuation. Street numbers are the
   bare number (`4127`, `4127a` for lettered addresses). The canonical address
   list is the EAS dataset in DATA-SOURCES.md — don't create pages for
@@ -101,6 +116,11 @@ principles:
 - **Prose is the exception.** Keep the lead to one short orienting paragraph,
   and add prose sections only where a building has a real story (history, a
   notable architect, an unusual permit saga). Don't restate what the tiles show.
+- **Adding one new fact never creates a new section.** A single fact becomes a
+  `.tag` (if it's identity — status, type, designation) or a `.speclist` row
+  (if it's a detail). A `.section-head` + prose is earned only by several
+  related facts or an actual narrative. When feedback adds a fact, the default
+  is one tag or one row — not a paragraph explaining it.
 - **Never state a fact twice.** Each fact lives in exactly one place — a tag,
   a tile, a spec row, a chart, or the timeline. If the tags already say "Built
   1896" and "2 stories," there is no year-built or stories tile; if the sidebar
