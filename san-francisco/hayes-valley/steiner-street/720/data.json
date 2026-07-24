@@ -1,0 +1,129 @@
+{
+  "address": "720 Steiner Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/steiner-street/720/",
+  "apn": "0803022",
+  "block": "0803",
+  "lot": "022",
+  "eas_baseid": "288530",
+  "coordinates": { "lat": 37.776365, "lng": -122.432848 },
+  "planning_name": "Postcard Row (part)",
+  "parcel": {
+    "year_built": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "construction_type_code": "D",
+    "lot_area_sqft": 1743.75,
+    "building_area_sqft": 2875,
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Alamo Square",
+    "analysis_neighborhood": "Hayes Valley"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1072513,
+    "assessed_improvement_value": 715007,
+    "last_sale_date": "2001-08-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historical resource; within an Article 10 historic district",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "planning_name": "POSTCARD ROW (PART)",
+    "planning_year_built": 1900,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alamo Square Historic District",
+    "california_register": "Eligible",
+    "national_register": "No",
+    "article_10": "Listed",
+    "article_11": "No",
+    "period_of_significance": "1890–1915",
+    "note": "An Article 10 local historic district — this parcel does carry local landmark protection, unlike the California-Register-only districts elsewhere on this site.",
+    "source": "sf-historic-districts"
+  },
+  "notable_residents": [
+    {
+      "name": "Alice Walker",
+      "period": "until 1996",
+      "detail": "The source records Walker as living here until 1996, and describes the house as one of the Painted Ladies of Alamo Square, known as Postcard Row or the Seven Sisters.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [
+    {
+      "number": "200209035476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-03",
+      "completed": "2002-09-04",
+      "estimated_cost": 1,
+      "description": "renewal of the 2001 permit for final sign-off",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110029763",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-02",
+      "estimated_cost": 15000,
+      "description": "remodel a bathroom and install a skylight at the stairs, no closer than 3.5 feet to the property line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8106844",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1981-08-04",
+      "estimated_cost": 10000,
+      "description": "record created during job-card conversion; no scope recorded",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=720&street_name=STEINER&street_type=ST",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0803022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=720&street_name=Steiner",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0803022",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.432848%2037.776365)')",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}

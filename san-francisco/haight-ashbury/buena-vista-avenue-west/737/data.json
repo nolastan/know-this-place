@@ -1,0 +1,102 @@
+{
+  "address": "737 Buena Vista Avenue West, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/buena-vista-avenue-west/737/",
+  "apn": "1256012",
+  "block": "1256",
+  "lot": "012",
+  "eas_baseid": "298700",
+  "coordinates": { "lat": 37.768145, "lng": -122.443874 },
+  "planning_name": "Floyd Spreckels Mansion",
+  "parcel": {
+    "year_built": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 5,
+    "construction_type_code": "D",
+    "lot_area_sqft": 7496,
+    "building_area_sqft": 8407,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Haight Ashbury"
+  },
+  "assessment": {
+    "roll_year": 2018,
+    "assessed_land_value": 4541943,
+    "assessed_improvement_value": 3696930,
+    "last_sale_date": "2014-10-20",
+    "note": "The most recent roll carrying this parcel is 2018, not 2025 — unusual, and unexplained by the dataset. Values are seven years stale."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historical resource",
+    "reason": "Historic Survey Result",
+    "planning_name": "FLOYD SPRECKELS MANSION",
+    "planning_year_built": null,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "in_historic_district": false,
+    "source": "sf-planning"
+  },
+  "notable_residents": [
+    {
+      "name": "Jack London",
+      "period": null,
+      "detail": "Recorded by the source as a resident. London was born at 601 Third Street and died in 1916.",
+      "source": "celebrity-residence-guides"
+    },
+    {
+      "name": "Danny Glover",
+      "period": null,
+      "detail": "Recorded by the source as a resident of the same house at a different time. No dates given.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 0,
+    "note": "No building permits are recorded for 737 Buena Vista Avenue West in the DBI dataset, which reaches back to the mid-1970s. One of only two addresses documented here with an empty permit record."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=737&street_name=BUENA%20VISTA",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2018 secured roll — the latest carrying this parcel)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1256012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF (no permits on file)",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=737&street_name=Buena%20Vista",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1256012",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF (no district contains this parcel)",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.443874%2037.768145)')",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}

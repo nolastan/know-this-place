@@ -1,0 +1,108 @@
+{
+  "address": "2150 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/2150/",
+  "apn": "0914002C",
+  "block": "0914",
+  "lot": "002C",
+  "eas_baseid": "290245",
+  "coordinates": { "lat": 37.803876, "lng": -122.444514 },
+  "parcel": {
+    "year_built": 1937,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3571,
+    "building_area_sqft": 2593,
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1014382,
+    "assessed_improvement_value": 770284,
+    "last_sale_date": "1999-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "planning_year_built": 1937,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "in_historic_district": false,
+    "source": "sf-planning"
+  },
+  "notable_residents": [
+    {
+      "name": "Joe DiMaggio",
+      "period": null,
+      "detail": "The source records this as where DiMaggio lived during his marriage to Marilyn Monroe. No dates given; the marriage was in 1954. The same source gives 2043–2047 Taylor Street as his childhood address.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2005–2016",
+    "note": "One of the three is a street-space permit at a nominal valuation."
+  },
+  "permits": [
+    {
+      "number": "201110076346",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-07",
+      "estimated_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510064927",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-06",
+      "completed": "2006-12-28",
+      "estimated_cost": 40000,
+      "description": "expand an existing room to infill and align with the second-floor exterior wall; new bathroom and finishes; relocate the stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=2150&street_name=BEACH&street_type=ST",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0914002C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=2150&street_name=Beach",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0914002C",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}

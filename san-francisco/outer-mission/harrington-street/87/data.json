@@ -1,0 +1,104 @@
+{
+  "address": "87 Harrington Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/harrington-street/87/",
+  "apn": "3148020",
+  "block": "3148",
+  "lot": "020",
+  "eas_baseid": "355317",
+  "coordinates": { "lat": 37.725781, "lng": -122.436197 },
+  "parcel": {
+    "year_built": 1908,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2321,
+    "building_area_sqft": 1232,
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "note": "The assessor files this parcel under Mission Terrace; the city's analysis-neighborhood layer places it in Outer Mission. This site follows the analysis neighborhood."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36011,
+    "assessed_improvement_value": 29999,
+    "last_sale_date": null,
+    "note": "No sale on the current roll and a base of $66,010 — among the lowest documented on this site, and the signature of a parcel held since before Proposition 13."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "planning_year_built": 1908,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "in_historic_district": false,
+    "source": "sf-planning"
+  },
+  "notable_residents": [
+    {
+      "name": "Jerry Garcia",
+      "period": "about 1947–1952",
+      "detail": "The source records Garcia as living here with his grandparents for the five years following his father's death in 1947.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201312184523",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-18",
+      "estimated_cost": 5000,
+      "description": "replace the water heater, install five recessed light fittings, repair hardwood flooring, and close out an open electrical permit from 2005",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003224999",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-22",
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=87&street_name=HARRINGTON&street_type=ST",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3148020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=87&street_name=Harrington",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3148020",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}
