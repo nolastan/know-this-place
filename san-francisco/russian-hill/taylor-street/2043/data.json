@@ -1,0 +1,127 @@
+{
+  "address": "2043–2047 Taylor Street, San Francisco, CA 94133",
+  "address_range": "2043–2047 Taylor Street",
+  "path": "/san-francisco/russian-hill/taylor-street/2043/",
+  "apn": "0092003",
+  "block": "0092",
+  "lot": "003",
+  "eas_baseid": "429436",
+  "coordinates": { "lat": 37.801369, "lng": -122.414661 },
+  "parcel": {
+    "year_built": 1907,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 3,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 3,
+    "construction_type_code": "D",
+    "lot_area_sqft": 1907,
+    "building_area_sqft": 4608,
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "note": "The source article places this address in North Beach; both the assessor and the city's analysis-neighborhood layer put it in Russian Hill. This site follows the city data."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1394398,
+    "assessed_improvement_value": 1282508,
+    "last_sale_date": "2018-09-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "planning_year_built": 1907,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "in_historic_district": false,
+    "source": "sf-planning"
+  },
+  "notable_residents": [
+    {
+      "name": "Joe DiMaggio",
+      "period": null,
+      "detail": "The source records this as where DiMaggio grew up. No dates given. The same source gives 2150 Beach Street as his address during his marriage to Marilyn Monroe.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201903054411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-05",
+      "completed": "2020-06-11",
+      "estimated_cost": 1,
+      "description": "revision to the 2019 garage permit — driveway grading for a minor sidewalk encroachment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901140291",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-14",
+      "completed": "2020-07-16",
+      "estimated_cost": 89000,
+      "revised_cost": 50000,
+      "description": "widen the garage door, open the garage space, enclose the garage light wells, and provide a new rated corridor access way",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006255301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-25",
+      "completed": "2010-07-07",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504210600",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-21",
+      "completed": "2005-04-28",
+      "estimated_cost": 1000,
+      "description": "repair the back stair in kind, under 50 percent",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=2047&street_name=TAYLOR&street_type=ST",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0092003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=2047&street_name=Taylor",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0092003",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}

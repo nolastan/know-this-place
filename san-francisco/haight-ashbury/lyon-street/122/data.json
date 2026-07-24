@@ -1,0 +1,138 @@
+{
+  "address": "122 Lyon Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/lyon-street/122/",
+  "apn": "1220023",
+  "block": "1220",
+  "lot": "023",
+  "eas_baseid": "297587",
+  "coordinates": { "lat": 37.772341, "lng": -122.442064 },
+  "parcel": {
+    "year_built": 1900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "units": 5,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 5,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2278,
+    "building_area_sqft": 3814,
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1250375,
+    "assessed_improvement_value": 833583,
+    "last_sale_date": "2014-02-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historical resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "planning_year_built": 1900,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_districts": [
+    {
+      "name": "Buena Vista North Historic District",
+      "california_register": "Eligible",
+      "national_register": "No",
+      "article_10": "No",
+      "article_11": "No",
+      "period_of_significance": "1870–1915",
+      "source": "sf-historic-districts"
+    },
+    {
+      "name": "Panhandle Historic District",
+      "california_register": "Eligible",
+      "national_register": "No",
+      "article_10": "No",
+      "article_11": "No",
+      "period_of_significance": "1870–1915",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "notable_residents": [
+    {
+      "name": "Janis Joplin",
+      "period": "June 1967 – April 1968",
+      "detail": "The source says the dates are documented on Joplin's driver's licence, and separately records competing claims for 112 Lyon Street and 635 Ashbury Street. The apartment number the source gives is omitted here under the site's privacy rules.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202306270960",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-06-27",
+      "estimated_cost": 12540,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301275950",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-27",
+      "completed": "2003-01-31",
+      "estimated_cost": 2500,
+      "description": "raise the outer top rail on the back stairs to 36 inches above the treads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010274315",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-27",
+      "completed": "2001-02-01",
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=122&street_name=LYON&street_type=ST",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1220023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=122&street_name=Lyon",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1220023",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.442064%2037.772341)')",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}

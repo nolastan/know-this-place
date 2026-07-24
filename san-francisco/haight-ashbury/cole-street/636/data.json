@@ -1,0 +1,160 @@
+{
+  "address": "636–638 Cole Street, San Francisco, CA 94117",
+  "address_range": "636–638 Cole Street",
+  "path": "/san-francisco/haight-ashbury/cole-street/636/",
+  "apn": "1247016",
+  "block": "1247",
+  "lot": "016",
+  "eas_baseid": "298336",
+  "coordinates": { "lat": 37.769033, "lng": -122.450276 },
+  "parcel": {
+    "year_built": 1903,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 3000,
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 699677,
+    "assessed_improvement_value": 565707,
+    "last_sale_date": "1999-11-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "planning_year_built": 1903,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "in_historic_district": false,
+    "source": "sf-planning"
+  },
+  "notable_residents": [
+    {
+      "name": "Charles Manson",
+      "period": "1967",
+      "detail": "The source records Manson and members of his group as living at the address during 1967, arriving in the Summer of Love.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201807195025",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-19",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009090503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-09",
+      "completed": "2011-11-07",
+      "estimated_cost": 20000,
+      "revised_cost": 23000,
+      "description": "comply with physical inspection report CC-5817 — remodel both flat kitchens, repair rear stairs under 50 percent, upgrade kitchen lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906150404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-15",
+      "completed": "2009-07-13",
+      "estimated_cost": 800,
+      "description": "repair holes in the garage ceiling with fire-rated materials, per notice of violation 200908781",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-09-08",
+      "completed": "1999-09-16",
+      "estimated_cost": 2025,
+      "description": "repair wall covering and backing per a termite report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608362",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-14",
+      "estimated_cost": 2500,
+      "description": "repair the parapet wall and reinforce the wall structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-17",
+      "completed": "1996-07-05",
+      "estimated_cost": 5000,
+      "description": "emergency removal of the building's front parapet, a falling hazard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-12-01",
+      "completed": "1994-12-21",
+      "estimated_cost": 8850,
+      "description": "repair lower siding, framing bases and perimeter foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=636&street_name=COLE&street_type=ST",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1247016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=636&street_name=Cole",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1247016",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF (no district contains this parcel)",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.450276%2037.769033)')",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}

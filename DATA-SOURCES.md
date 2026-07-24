@@ -87,8 +87,18 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   **C** = not a historical resource. Also "Historic Districts" (`63x5-g3m4`).
   The PIM at `sfplanninggis.org` aggregates the same per parcel (check for a
   queryable API before scraping).
+- **`3tsw-4idn` also carries three fields worth querying every time:** `name`
+  (the survey's own name for the building, populated only for named
+  resources — e.g. apn 0803022 → `POSTCARD ROW (PART)`, apn 0601005 →
+  `SPRECKELS RESIDENCE`), `yearbuilt` (an **independent** build date — compare
+  it against the assessor's `year_property_built` and record the conflict
+  rather than reconciling it), and `lowstnum`/`highstnum`, which give the
+  parcel's street-number range as Planning holds it — a useful second opinion
+  on the assessor's `property_location` when deciding whether a parcel spans
+  several numbers.
 - **Citation label:** "SF Planning Department"
-- **Verified:** 2026-07-22 (dataset `3tsw-4idn`, apn 2752016 = 744 Castro St → ceqacode B)
+- **Verified:** 2026-07-23 (dataset `3tsw-4idn`, 24 parcels across 12
+  neighborhoods; apn 2752016 = 744 Castro St → ceqacode B)
 
 ## sf-historic-districts — Historic district boundaries
 
@@ -192,6 +202,40 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   browsing territory. Quote sparingly; summarize and link.
 - **Use for:** notable events tied to a specific address. Skip for routine
   seeding.
+
+## celebrity-residence-guides — Notable-resident claims (tertiary)
+
+- **What:** Tourism and pop-history guides that list addresses where public
+  figures lived. Used so far: SF Tourism Tips, "Where Famous People Lived in
+  San Francisco" — <https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html>.
+- **Treat as the weakest tier of source.** These pages rarely cite where
+  their own claims come from, and they contradict each other on dates and
+  even on which building. That doesn't make them unusable — it makes them
+  *attributed* rather than asserted.
+- **How to use:**
+  - **Attribute in the page body, not just the footer** ("a published guide
+    to notable residences records…"), so a reader can see the claim is
+    second-hand. This is the opposite of the corbett-heights rule, where the
+    underlying research is primary and the newsletter name means nothing to
+    a reader.
+  - **Carry the source's own hedges and conflicts through.** Where the guide
+    flags a claim as disputed, or two addresses compete for the same story,
+    say so on both pages and cross-link them — never silently pick a winner.
+  - One claim is **one `.tag` or one `.speclist` row**, per the writing
+    rules. A notable resident does not earn a prose section.
+  - Never state a residency as fact in `data.json`; nest it under a
+    `notable_residents` array whose entries each carry `"source"` and, where
+    the guide hedges, `"disputed": true`.
+- **Privacy — the binding constraint.** The root AGENTS.md bars naming or
+  alluding to **current** residents, publicly available or not. These guides
+  routinely name people who still live at the address, often in the present
+  tense ("when he's in town"). **Omit any claim phrased as present or
+  ongoing occupancy**, and record the omission in the page's `.unknowns`
+  without naming anyone. Only past residency — dated, or stated in the past
+  tense about someone who has plainly moved on or died — may be named.
+- **Citation label:** name the guide and its title, and link the page.
+- **Verified:** 2026-07-23 (26 San Francisco addresses listed; all but one
+  resolve in EAS)
 
 ## Known gaps
 

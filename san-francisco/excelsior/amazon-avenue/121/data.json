@@ -1,0 +1,87 @@
+{
+  "address": "121 Amazon Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/amazon-avenue/121/",
+  "apn": "6348008",
+  "block": "6348",
+  "lot": "008",
+  "eas_baseid": "396828",
+  "coordinates": { "lat": 37.716982, "lng": -122.439085 },
+  "parcel": {
+    "year_built": 1930,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2265,
+    "building_area_sqft": 1482,
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 828337,
+    "assessed_improvement_value": 354999,
+    "last_sale_date": "2018-01-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "planning_year_built": 1930,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "in_historic_district": false,
+    "source": "sf-planning"
+  },
+  "notable_residents": [
+    {
+      "name": "Jerry Garcia",
+      "period": "until 1947",
+      "detail": "The source records Garcia as living here in early childhood, until he was five and his father died.",
+      "source": "celebrity-residence-guides"
+    }
+  ],
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 0,
+    "note": "No building permits are recorded for 121 Amazon Avenue in the DBI dataset, which reaches back to the mid-1970s."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?address_number=121&street_name=AMAZON&street_type=AVE",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6348008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF (no permits on file)",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=121&street_name=Amazon",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6348008",
+      "retrieved": "2026-07-23"
+    },
+    {
+      "id": "celebrity-residence-guides",
+      "name": "SF Tourism Tips, \"Where Famous People Lived in San Francisco\"",
+      "query": "https://www.sftourismtips.com/where-famous-people-lived-in-san-francisco.html",
+      "retrieved": "2026-07-23"
+    }
+  ]
+}
