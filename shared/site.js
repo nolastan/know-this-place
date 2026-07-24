@@ -11,7 +11,8 @@
 // Adding a component is a change to THIS file, reviewed by a human — never an
 // inline <script> on a page. See shared/AGENTS.md.
 
-// One memoized read of site-config for anything that needs it (the map key).
+// One memoized read of site-config for anything that needs it (the map key,
+// the analytics site id).
 let _config;
 function siteConfig() {
   // no-store: this file gates behavior (the map key), so it must never read
@@ -20,6 +21,43 @@ function siteConfig() {
     .then((r) => (r.ok ? r.json() : {}))
     .catch(() => ({})));
 }
+
+/* Analytics — aggregate page counts, loaded here rather than per page.
+
+   This is the one third-party script on the site, and it lives here for the
+   same reason everything else does: every page already loads this module, so
+   adding it once covers every existing and future page with no regeneration,
+   and turning it off is a one-line config change rather than a site-wide edit.
+   It renders nothing and reads nothing from the page — pages are identical
+   with it blocked.
+
+   Fathom is cookieless and stores no per-visitor identifiers, which is what
+   makes it acceptable under the project's privacy limits: we learn that a page
+   was read, never who read it. Any analytics that profiles individuals would
+   not belong here.
+
+   Gated twice: on `fathom_site_id` being set, and on the page actually being
+   served from the production host — so local previews and forks don't pollute
+   the numbers. */
+async function loadAnalytics() {
+  const { fathom_site_id: siteId, site_url: siteUrl } = await siteConfig();
+  if (!siteId || !siteUrl) return;
+
+  let host;
+  try {
+    host = new URL(siteUrl).hostname;
+  } catch {
+    return;
+  }
+  if (location.hostname !== host) return; // localhost, forks, previews
+
+  const script = document.createElement("script");
+  script.src = "https://cdn.usefathom.com/script.js";
+  script.dataset.site = siteId;
+  script.defer = true;
+  document.head.appendChild(script);
+}
+loadAnalytics();
 
 /* <ktp-streetview location="LAT,LNG" label="123 Example St">
      <figure class="media"> …placeholder or fallback… </figure>
