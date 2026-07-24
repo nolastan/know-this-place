@@ -28,8 +28,10 @@ or changing a component is a human decision (see "Extending the system").
   markup. This is not stylistic: static, crawlable pages are the whole SEO
   strategy. If JS would be the only way something renders, it doesn't belong.
   (`validate.py` rejects stray scripts.)
-- **No external resources** except the Street View iframe (loaded on click by
-  the enhancement layer, never on page load).
+- **No external resources in a page's markup.** The only two the site loads at
+  all are the Street View iframe (on click) and the analytics script — both
+  requested by `site.js`, never written into a page. Don't add a third without
+  a human's say-so, and never as a tag in `index.html`.
 - Use the pre-validated data hues as documented — never introduce new colors.
 - **Text never wears a data color.** Bars/segments carry the hue; labels and
   values use normal ink. (Identity comes from the swatch beside the text.)
@@ -288,6 +290,13 @@ Available elements:
   Use it for marks whose value isn't already printed beside them (stacked-bar
   segments). The values must still exist in the DOM (legend, `aria-label`);
   the tooltip only surfaces them at the mark.
+
+`site.js` also loads **analytics** (Fathom) on every page, gated on
+`fathom_site_id` in `site-config.json` and on the page being served from the
+production host. It is site-wide plumbing, not a per-page concern: never add a
+tracking tag to a page, and never build a `<ktp-footer>`-style component to
+carry one. The footer holds the Sources citations and the feedback link —
+content a crawler must see — so it stays in each page's HTML.
 
 **Adding or changing an element is a `site.js` PR for a human** — never an
 inline `<script>` on a page (`validate.py` rejects stray scripts). Keep the
