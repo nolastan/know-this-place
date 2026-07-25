@@ -18,8 +18,8 @@ and 746, are identified as historic resources by survey.
 
 ### Odd side
 
-- [707](707/) — a 1980 three-unit building, the newest on the block by some
-  eighty years, standing inside the historic district
+- [707](707/) — a 1980 three-unit building standing inside the historic
+  district
 - [711–715](711/) — an 1900 three-unit building on one parcel spanning three
   street numbers, with a permit record dominated by dry rot
 - [737](737/) — a 1900 house remodelled 2005–2007 for $270,000, including
@@ -29,14 +29,12 @@ and 746, are identified as historic resources by survey.
 
 - [700](700/) — a 12-unit apartment building of 1927, seismically retrofitted
   in 2016 under the city's mandatory soft-story program
-- [720](720/) — a 1901 house sold in December 2024, the most recent transfer
-  documented here
-- [732](732/) — a 1901 house of eleven rooms with a 1990 horizontal addition,
-  and the lowest assessed value on the block
+- [720](720/) — a 1901 house sold in December 2024
+- [732](732/) — a 1901 house of eleven rooms with a 1990 horizontal addition
 - [740](740/) — a 1900 house identified as a historic resource, with $620,000
   of permitted work between 2019 and 2021
-- [742](742/) — an 1895 four-unit building with the block's deepest permit
-  record, running from 1978 to 2025
+- [742](742/) — an 1895 four-unit building with a permit record running from
+  1978 to 2025
 - [744](744/) — an 1896 two-flat Victorian with a four-decade permit record
 - [746](746/) — an 1896 historic resource with a $750,000 remodel application
   under review
