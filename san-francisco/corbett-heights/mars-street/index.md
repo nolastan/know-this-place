@@ -27,8 +27,8 @@ the street rebuilding of the 1920s.
 - [11–23 Mars Street](11/) — moved here from Falcon Street
 - [32 Mars Street](32/) — 1925, on a lot open in 1921
 - [33–37 Mars Street](33/) — three units, greatly altered since 1921
-- [41–43 Mars Street](41/) — the earliest assessor date on the street, 1890
-- [46–48 Mars Street](46/) — among the earliest here, with a rear cottage
+- [41–43 Mars Street](41/) — an assessor date of 1890, in a photograph of about 1921
+- [46–48 Mars Street](46/) — with a rear cottage, in photographs of 1895 and 1906
 - [52 Mars Street](52/) — in photographs of 1895, 1906 and 1912
 - [56 Mars Street](56/) — assessed by Planning as not a historical resource
 - [64 Mars Street](64/) — built between 1906 and 1912

@@ -81,9 +81,12 @@ history-rich place might open with prose and photos; a plain one leans on the
 stat band and timeline. A workable default spine:
 
 1. `.hero` — `<h1>`, `.sub` locality line, `.tags`, and a `.media` slot.
-2. `.lead` — one short orienting paragraph. **One.** Not three.
+2. `.lead` — one or two sentences, and only for what no block below can
+   carry. **Drop it entirely** when the blocks already say everything.
 3. `.stats` — the numbers every building has, as tiles (not sentences).
 4. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
+   The `.vtl` follows its `.section-head` directly: **no `.prose` between
+   them.**
 5. Prose sections (`.section-head` + `.prose`) only where there's a real story.
 6. `.unknowns` — what's missing, feeding the feedback link.
 
@@ -167,6 +170,14 @@ an item for expired/withdrawn records.
   </li>
 </ol>
 ```
+The `.vtl` follows its `.section-head` immediately — **never introduce it with
+a paragraph.** Counts, totals, date spans and statuses are all in the items;
+a lead-in restates them and adds commentary. If some filings are deliberately
+excluded (street-space permits at a nominal $1, or the duplicates DBI files
+under each street number of a shared parcel), disclose that *after* the rail,
+in one line — `<p class="prose"><small>Two $1 street-space permits are
+omitted.</small></p>` — never above it.
+
 Link every permit to its DBI record (see DATA-SOURCES.md → sf-building-permits
 for the URL pattern). Status pills: `.pill-ok` (complete), `.pill-warn`
 (open/issued/in progress), `.pill-muted` (expired/withdrawn). **A pill always
@@ -316,11 +327,40 @@ it, you don't compose new prose in the HTML. In this design, prose is the
 exception, not the frame: a short `.lead`, and `.prose` sections only where a
 building genuinely has a story. Don't narrate numbers the tiles already show.
 
-**No editorial flourishes.** State facts; don't characterize them or the
-record. Cut writerly framing like "its public record is the quiet kind," "the
-record is silent on…," "hints at a longer story," "a decade before the
-earthquake." The `.unknowns` block just names what isn't documented, plainly
-(e.g. "Not yet documented: the architect, the early residents…").
+**Prose only for what no block can hold.** A sentence earns its place only if
+no `.tag`, `.stat`, `.spec`, `.vtl-item`, chart, `.unknowns` line, or Sources
+entry could carry the same information. Check the finished prose against the
+blocks phrase by phrase: a "Built 1908" tag deletes "a house of 1908" from the
+lead; a "7 · Rooms" tile deletes "seven-room"; the Sources footer deletes "a
+published guide to notable residences records…". Pages that end up with no
+`.lead` at all are correct, not unfinished.
+
+**No `.prose` above a `.vtl`.** The timeline is the permit history; a paragraph
+counting or summarizing the permits ("Twelve permits on file, five of them
+substantive") restates the items below it and is the most common form of this
+drift. `.section-head` → `.vtl`, with nothing in between.
+
+**State sourced facts as fact.** The Sources footer carries attribution, so the
+prose doesn't: write "Janis Joplin lived here, June 1967 – April 1968," not
+"a published guide records Janis Joplin as living here." Write the hedge only
+where the sources genuinely contradict each other, the city data, or
+themselves — then set out the disagreement and leave it unresolved.
+
+**No cross-page superlatives.** "The smallest building documented on this
+site," "the newest on the 700 block," "the most valuable parcel documented
+here" — these rank the page against the site's *coverage*, go stale the moment
+another page is seeded, and nothing re-checks them. Cut them from `.lead`,
+`.prose`, `.hook`, the `<meta name="description">` and the JSON-LD
+`description` alike. Give the reader the figure instead and let the `.stat`
+tiles carry the comparison.
+
+**No editorial flourishes, and no interpretation.** State facts; don't
+characterize them or the record, and don't explain what a number means. Cut
+writerly framing like "its public record is the quiet kind," "the record is
+silent on…," "hints at a longer story," "a decade before the earthquake," and
+cut inference like "a base this low is the signature of a parcel held since
+before Proposition 13." The `.unknowns` block just names what isn't documented,
+plainly (e.g. "Not yet documented: the architect, the early residents…").
 
 **One new fact = one tag or one spec row, never a new section.** The reflex to
 introduce a fact with a `.section-head` and explain it in a paragraph is the
