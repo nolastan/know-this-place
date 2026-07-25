@@ -61,8 +61,8 @@ jobs:
                DATA-SOURCES.md wherever possible. Unverifiable-but-plausible
                local knowledge may be added as a clearly labeled community
                note per AGENTS.md.
-            4. Apply the change: update index.md / data.json / assets, then
-               regenerate index.html per shared/AGENTS.md.
+            4. Apply the change: update data.json (facts, narrative prose) and
+               assets, then regenerate index.html per shared/AGENTS.md.
             5. Run `python3 scripts/validate.py` and fix anything it flags.
             6. Create branch feedback/issue-${{ github.event.issue.number }},
                commit, push, and open a PR. The PR body must summarize what

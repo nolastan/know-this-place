@@ -1,7 +1,11 @@
 # The page contract & design system
 
-How to turn `index.md` + `data.json` into `index.html`. There is no template
-engine and no build step: **you author the HTML directly.**
+How to turn `data.json` into `index.html`. `data.json` is the single source of
+truth for an address page — structured facts *and* prose (in its `narrative`
+field); there is no `index.md`. There is no template engine and no build step:
+**you author the HTML directly from `data.json`, and every fact and sentence in
+it must trace back to `data.json` so the page can be regenerated from that file
+alone.**
 
 The goal is a **designed data page, not an article.** A good page looks like a
 purpose-built dashboard for one building — stat tiles, a visual timeline,
@@ -305,7 +309,10 @@ it so the content is in the HTML and the element merely enhances it.
 
 ## Writing voice (prose only)
 
-See "Writing pages" in the root `AGENTS.md`. In this design, prose is the
+See "Writing pages" in the root `AGENTS.md`. All prose comes from
+`data.json`'s `narrative` field (`lead` → `.lead`; each `sections` entry →
+`.section-head` + `.prose`; `community_note` → `.community-note`) — you render
+it, you don't compose new prose in the HTML. In this design, prose is the
 exception, not the frame: a short `.lead`, and `.prose` sections only where a
 building genuinely has a story. Don't narrate numbers the tiles already show.
 

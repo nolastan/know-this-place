@@ -45,8 +45,9 @@ jobs:
                page alone (do NOT bump retrieved dates in a no-change page —
                avoid noise commits).
             3. Where data changed (new permits, changed status, new
-               assessment), update data.json and index.md, regenerate
-               index.html, and note the change for the PR body.
+               assessment), update data.json (facts and, if needed, its
+               narrative prose), regenerate index.html, and note the change for
+               the PR body.
             4. Run `python3 scripts/validate.py` and
                `python3 scripts/build_sitemap.py`.
             5. If any page changed: create branch refresh/<today's date>,

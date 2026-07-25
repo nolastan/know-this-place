@@ -64,9 +64,17 @@ def check_html(html_path: Path, is_address: bool) -> None:
 
 
 def check_address_dir(page_dir: Path) -> None:
-    for required in ("index.md", "index.html", "data.json"):
+    for required in ("index.html", "data.json"):
         if not (page_dir / required).exists():
             err(page_dir / required, "required file missing")
+
+    # data.json is the single source of truth for an address page; prose lives
+    # in its "narrative" field. A stray index.md is the old duplicate surface
+    # and must not come back.
+    if (page_dir / "index.md").exists():
+        err(page_dir / "index.md",
+            "address pages have no index.md — put prose in data.json's "
+            '"narrative" field (see AGENTS.md)')
 
     data_path = page_dir / "data.json"
     if not data_path.exists():
@@ -87,6 +95,28 @@ def check_address_dir(page_dir: Path) -> None:
             for key in ("id", "retrieved"):
                 if not isinstance(s, dict) or not s.get(key):
                     err(data_path, f'sources[{i}] missing "{key}"')
+
+    check_narrative(data_path, data)
+
+
+def check_narrative(data_path: Path, data: dict) -> None:
+    """Light shape check for the narrative field (all prose lives here)."""
+    narrative = data.get("narrative")
+    if narrative is None:
+        return  # optional — a page may be all data and no prose
+    if not isinstance(narrative, dict):
+        err(data_path, '"narrative" must be an object')
+        return
+    if "lead" in narrative and not isinstance(narrative["lead"], str):
+        err(data_path, '"narrative.lead" must be a string')
+    sections = narrative.get("sections")
+    if sections is not None:
+        if not isinstance(sections, list):
+            err(data_path, '"narrative.sections" must be a list')
+        else:
+            for i, s in enumerate(sections):
+                if not isinstance(s, dict) or not s.get("heading") or not s.get("body"):
+                    err(data_path, f'narrative.sections[{i}] needs "heading" and "body"')
 
 
 def main() -> int:
