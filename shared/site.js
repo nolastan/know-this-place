@@ -63,12 +63,11 @@ loadAnalytics();
      <figure class="media"> …placeholder or fallback… </figure>
    </ktp-streetview>
 
-   Click-to-load Google Street View. The light-DOM fallback (the .media-empty
-   placeholder) is what shows with no JS or no configured key. When a Maps
-   embed key IS configured, this swaps the placeholder for a "Load" facade and
-   only contacts Google after the reader clicks — no third-party request on
-   page load, and imagery turns on site-wide the day the key is set, with no
-   page regeneration. */
+   Google Street View, shown on page load. The light-DOM fallback (the
+   .media-empty placeholder) is what shows with no JS or no configured key.
+   When a Maps key IS configured, this swaps the placeholder for a static
+   Street View image (Street View Static API). Imagery turns on site-wide the
+   day the key is set, with no page regeneration. */
 customElements.define(
   "ktp-streetview",
   class extends HTMLElement {
@@ -81,33 +80,15 @@ customElements.define(
       if (!key) return; // no key yet → keep the placeholder as-is
 
       const label = this.getAttribute("label") || "this address";
-      const facade = document.createElement("button");
-      facade.type = "button";
-      facade.className = "sv-facade";
-      facade.innerHTML =
-        '<span class="ic ic-pin" aria-hidden="true"></span>' +
-        "<span>Load Street View</span>" +
-        "<small>Loads present-day imagery from Google when you click.</small>";
-      facade.setAttribute("aria-label", "Load Google Street View of " + label);
-      empty.replaceWith(facade);
-
-      facade.addEventListener(
-        "click",
-        () => {
-          const iframe = document.createElement("iframe");
-          iframe.src =
-            "https://www.google.com/maps/embed/v1/streetview?key=" +
-            encodeURIComponent(key) +
-            "&location=" +
-            encodeURIComponent(location);
-          iframe.loading = "lazy";
-          iframe.allowFullscreen = true;
-          iframe.referrerPolicy = "no-referrer-when-downgrade";
-          iframe.title = "Street view of " + label;
-          facade.replaceWith(iframe);
-        },
-        { once: true },
-      );
+      const img = document.createElement("img");
+      img.src =
+        "https://maps.googleapis.com/maps/api/streetview?size=640x480&scale=2&location=" +
+        encodeURIComponent(location) +
+        "&key=" +
+        encodeURIComponent(key);
+      img.alt = "Street View of " + label;
+      img.decoding = "async";
+      empty.replaceWith(img);
     }
   },
 );

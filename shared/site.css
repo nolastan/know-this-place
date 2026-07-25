@@ -250,17 +250,6 @@ img, iframe { max-width: 100%; }
 ktp-streetview, ktp-figure { display: block; }
 ktp-figure { position: relative; }
 
-/* click-to-load Street View facade (shown only when a Maps key is set) */
-.sv-facade {
-  display: grid; place-content: center; justify-items: center; gap: 0.4rem;
-  width: 100%; aspect-ratio: 4 / 3; padding: 1rem;
-  border: 0; background: var(--panel); color: var(--muted);
-  font-family: var(--sans); text-align: center; cursor: pointer;
-}
-.sv-facade:hover, .sv-facade:focus-visible { background: var(--note-bg); color: var(--ink); }
-.sv-facade .ic { font-size: 1.6rem; color: var(--accent); }
-.sv-facade small { font-size: 0.78rem; max-width: 16rem; }
-
 /* chart tooltip */
 .ktp-tip {
   position: absolute; z-index: 5;
