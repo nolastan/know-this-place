@@ -8,9 +8,11 @@ Valley neighborhood of San Francisco. Live at **https://knowthis.place**.
 
 There is deliberately **no CMS, no database, no build framework**:
 
-- Content is a geographic tree of directories. Each address holds `index.md`
-  (human-readable source), `data.json` (structured facts with citations),
-  `assets/` (openly licensed media), and `index.html` (the generated page).
+- Content is a geographic tree of directories. Each address holds `data.json`
+  (the single source of truth — structured facts with citations, plus any prose
+  in a `narrative` field), `assets/` (openly licensed media), and `index.html`
+  (the generated page). Keeping facts and prose in one file means the two can't
+  drift into conflict.
 - `index.html` is a **build artifact authored by an AI agent**, not rendered
   from a template. Every page can have a bespoke structure suited to what is
   actually interesting about that place, composed from a shared **design
@@ -31,9 +33,8 @@ There is deliberately **no CMS, no database, no build framework**:
    Readers describe a change in plain words; the form carries the page path.
 2. The issue triggers **Claude Code in GitHub Actions**
    ([.github/workflows/feedback-agent.yml](.github/workflows/feedback-agent.yml)),
-   which verifies the claim against sources, updates `index.md` / `data.json` /
-   `assets/`, regenerates `index.html`, and opens a **pull request** that
-   closes the issue.
+   which verifies the claim against sources, updates `data.json` / `assets/`,
+   regenerates `index.html`, and opens a **pull request** that closes the issue.
 3. A human reviews and merges through normal GitHub PR review. Merging to
    `main` **is** the deploy — GitHub Pages serves the branch as-is.
 4. A scheduled workflow ([.github/workflows/refresh.yml](.github/workflows/refresh.yml))
