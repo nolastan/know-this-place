@@ -1,0 +1,143 @@
+{
+  "address": "32 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/32/",
+  "apn": "3582041",
+  "block": "3582",
+  "lot": "041",
+  "eas_baseid": "360715",
+  "coordinates": { "lat": 37.761961, "lng": -122.434276 },
+  "parcel": {
+    "year_built": 1901,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 0,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 1546,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1500000,
+    "assessed_improvement_value": 1000000,
+    "last_sale_date": "2021-05-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1901",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hartford Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "period_of_significance": "1900-1902",
+    "significance_note": "Significant under Criterion 3 for its association with master builder Fernando Nelson, as an early 20th-century Victorian-era residential tract development.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202604209697",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-20",
+      "estimated_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200801172709 & 202206015381 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202502059689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-05",
+      "completed": "2025-10-17",
+      "estimated_cost": 1,
+      "description": "to obtain a final inspection for work approved under pa# 2021-0621-2824. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409181031",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-18",
+      "completed": "2025-03-14",
+      "estimated_cost": 70000,
+      "description": "replacement of (e) 1 story volume at rear of the dwelling. (n) 1 hr. walls/roof over (e) foundations. replacing (e) rear/side facing windows. (e) stairs to rear yard to remain. interior finishes, plumbing, electrical. no increase in floor area or height. (n) laundry rm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206015381",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2022-06-01",
+      "estimated_cost": 150000,
+      "revised_cost": 215000,
+      "description": "replace (e) brick foundation with new reinforced concrete foundation and entire ground fl fill in underneath rear porch at the back new full bathroom on the ground fl. remove (e) chimney",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106212824",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2021-06-21",
+      "estimated_cost": 17000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801172709",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-01-17",
+      "estimated_cost": 12200,
+      "revised_cost": 12200,
+      "description": "replace 14 windows. size for size. 8 windows visable form street with marvin windows per finish outside wood inside & 6 windows not visible from street with simonton vinyl windows with \"u\" value less than 0.67.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=32",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=041",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582041",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43427571481635%2037.761960780311036)%27)",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}

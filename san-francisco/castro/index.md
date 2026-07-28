@@ -22,6 +22,10 @@ reading the sources cited on each building's page:
 ## Streets documented so far
 
 - [Castro Street](castro-street/) — 11 buildings on the 700 block
+- [Collingwood Street](collingwood-street/) — 9 buildings of 1900–1940, spread
+  along the length of the street
+- [Hartford Street](hartford-street/) — 8 houses of 1900–1901 inside the
+  Hartford Street Historic District
 
 Coverage is just beginning — one building at a time, starting with the
 residential blocks.

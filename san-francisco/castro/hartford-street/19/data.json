@@ -1,0 +1,122 @@
+{
+  "address": "19 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/19/",
+  "apn": "3582037",
+  "block": "3582",
+  "lot": "037",
+  "eas_baseid": "360711",
+  "coordinates": { "lat": 37.762215, "lng": -122.433865 },
+  "parcel": {
+    "year_built": 1901,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 0,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1413,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29518,
+    "assessed_improvement_value": 44994
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1901",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hartford Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "period_of_significance": "1900-1902",
+    "significance_note": "Significant under Criterion 3 for its association with master builder Fernando Nelson, as an early 20th-century Victorian-era residential tract development.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201909252717",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-25",
+      "estimated_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909050749",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-05",
+      "estimated_cost": 17000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406025360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-02",
+      "completed": "2004-07-15",
+      "estimated_cost": 10482,
+      "description": "replace siding at front side of house 635 sf totalto match extg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305208",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-06-09",
+      "completed": "1984-01-31",
+      "estimated_cost": 3615,
+      "description": null,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=19",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=037",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582037",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43386485287093%2037.76221470105826)%27)",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}

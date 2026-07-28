@@ -1,0 +1,131 @@
+{
+  "address": "28 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/28/",
+  "apn": "3582040",
+  "block": "3582",
+  "lot": "040",
+  "eas_baseid": "360714",
+  "coordinates": { "lat": 37.762032, "lng": -122.434244 },
+  "parcel": {
+    "year_built": 1901,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "construction_type_code": "D",
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1787,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1284540,
+    "assessed_improvement_value": 550509,
+    "assessed_fixtures_value": 183,
+    "last_sale_date": "2009-05-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1901",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hartford Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "period_of_significance": "1900-1902",
+    "significance_note": "Significant under Criterion 3 for its association with master builder Fernando Nelson, as an early 20th-century Victorian-era residential tract development.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200103194626",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-03-19",
+      "completed": "2002-05-30",
+      "estimated_cost": 180000,
+      "revised_cost": 240000,
+      "description": "p0remove garden storage &laundry at rear,add breakfast rm,garden storage,deck& roofdeck spa.........",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9222019",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-12-24",
+      "completed": "1993-03-10",
+      "estimated_cost": 5000,
+      "revised_cost": 1500,
+      "description": "new bathroom at 2/f divide (e) room into 2 rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123838",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-12-18",
+      "estimated_cost": 22000,
+      "description": "new family room,and bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711325",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-08-10",
+      "estimated_cost": 2200,
+      "description": "termite report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_omitted": {
+    "count": 1,
+    "reason": "nominal $1 street-space permit",
+    "numbers": ["M119517"]
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=28",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=040",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582040",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43424434008705%2037.76203153722869)%27)",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}

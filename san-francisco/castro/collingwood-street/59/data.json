@@ -1,0 +1,118 @@
+{
+  "address": "59 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/59/",
+  "apn": "2647021",
+  "block": "2647",
+  "lot": "021",
+  "eas_baseid": "343207",
+  "coordinates": { "lat": 37.761506, "lng": -122.435861 },
+  "parcel": {
+    "year_built": 1938,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "units": 5,
+    "stories": 3,
+    "rooms": 23,
+    "bathrooms": 5,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 5460,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2421721,
+    "assessed_improvement_value": 1393137,
+    "last_sale_date": "2014-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8208874",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-10-27",
+      "completed": "1983-08-02",
+      "estimated_cost": 1900,
+      "description": "additions, alterations or repairs (no further description on file)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813294",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-14",
+      "estimated_cost": 9850,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412083284",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-08",
+      "completed": "2015-09-24",
+      "estimated_cost": 60000,
+      "description": "unit 2, 3 & 4- remodel kitchens and bathrooms ; replace cabinets and countertops in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507070824",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-07",
+      "estimated_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_omitted": {
+    "count": 6,
+    "reason": "nominal-cost street-space permits ($0–$1)",
+    "numbers": ["M551787", "M569507", "M586867", "M605467", "M617167", "M1087947"]
+  },
+  "narrative": {},
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLLINGWOOD&street_type=ST&address_number=59",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2647021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2647&lot=021",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2647021",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43586130219386%2037.76150556129432)%27)",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}
