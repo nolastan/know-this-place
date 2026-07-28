@@ -1,0 +1,130 @@
+{
+  "address": "3751–3753 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3751/",
+  "apn": "3580063",
+  "block": "3580",
+  "lot": "063",
+  "eas_baseid": "360567",
+  "coordinates": {
+    "lat": 37.762594,
+    "lng": -122.429617
+  },
+  "address_range": "3751–3753",
+  "street_numbers_on_parcel": [
+    "3751",
+    "3753"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3100,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3753 3751 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2186414,
+    "assessed_improvement_value": 968740,
+    "last_sale_date": "2018-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406204828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-20",
+      "status_date": "2024-07-12",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "revision to bpa# 202304105361: remove load-bearing breezeway wall, add steel girder. minor plywood shearwall changes. update doors. add window at rear. wall facing yard. add decking at side (east) yard. add 1-hour fire-rated wall at south east exterior stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304105361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-10",
+      "status_date": "2024-07-12",
+      "estimated_cost": 116000,
+      "revised_cost": 116000,
+      "description": "replace e brick foundation and replace with reinforced concrete lower slab 12\"-18\" in garage rear storage space. remove posts and beams at ground level, replace with steel beam. new lateral upgrade with plywood shearwalls to comply with asoe 7/16",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811286894",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-28",
+      "status_date": "2019-08-12",
+      "estimated_cost": 2500,
+      "revised_cost": 9950,
+      "description": "add half bath in upper unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712126209",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2017-12-12",
+      "status_date": "2017-12-12",
+      "estimated_cost": 345834,
+      "description": "remove (e) rear deck & stairs. add rear deck @ 2nd flr. add roof deck & stair penthouse. infill areas toward rear of bldg between (e) rear extension & property lines. (n) kitchens & baths.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820984",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-14",
+      "status_date": "2000-04-28",
+      "estimated_cost": 1500,
+      "description": "replace termite rotted sills at wall reinforce joists,replac",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3751",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=063",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580063",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

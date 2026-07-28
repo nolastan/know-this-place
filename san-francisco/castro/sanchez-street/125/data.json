@@ -1,0 +1,95 @@
+{
+  "address": "125 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/125/",
+  "apn": "3542042",
+  "block": "3542",
+  "lot": "042",
+  "eas_baseid": "358854",
+  "coordinates": {
+    "lat": 37.767216,
+    "lng": -122.430799
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 12,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 12,
+    "lot_area_sqft": 3120,
+    "building_area_sqft": 6675,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0125 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1232029,
+    "assessed_improvement_value": 1010089
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "survey_name": "125 Sanchez Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307202593",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-07-20",
+      "status_date": "2023-07-20",
+      "estimated_cost": 33000,
+      "revised_cost": 33000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101179934",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-17",
+      "status_date": "2001-02-27",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=125",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3542042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3542&lot=042",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3542042",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

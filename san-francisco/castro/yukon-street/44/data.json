@@ -1,0 +1,144 @@
+{
+  "address": "44–46 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/44/",
+  "apn": "2702005",
+  "block": "2702",
+  "lot": "005",
+  "eas_baseid": "344698",
+  "coordinates": {
+    "lat": 37.758999,
+    "lng": -122.44241
+  },
+  "address_range": "44–46",
+  "street_numbers_on_parcel": [
+    "44",
+    "46"
+  ],
+  "parcel": {
+    "year_built": 1949,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2003,
+    "building_area_sqft": 2233,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0046 0044 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2088799,
+    "assessed_improvement_value": 895193,
+    "last_sale_date": "2019-04-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302101767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-10",
+      "status_date": "2023-07-31",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "replacement of 6 windows in kind visible from the street. marvin wood ultimate clad. maintain eero.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902122713",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-02-12",
+      "status_date": "2019-02-12",
+      "estimated_cost": 22700,
+      "revised_cost": 40000,
+      "description": "remove and replace floor and wall tile in one unit bathroom. remove and replace kitchen countertops in both units (44 & 46). remove and replace new stone fireplaces surroundings in both units (44 & 46)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706053058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-05",
+      "status_date": "2007-08-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "1 bathroom remodeling, all fixture will star at the same location. provide high efficancy lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301316402",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-01-31",
+      "status_date": "2003-04-23",
+      "estimated_cost": 1,
+      "revised_cost": 1100,
+      "description": "bring building into compliance with 3r report, # 3658",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301215543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-21",
+      "status_date": "2003-04-04",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "existing rear stair repair, add 2-(n)add deck joist to landings, replace six isolated footings, adjs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101169874",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-16",
+      "status_date": "2001-06-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "install 2 headers in kitechen & living rm -top floor of bldg. remodel bath. replace fire placehearth",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=44",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2702005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2702&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2702005",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

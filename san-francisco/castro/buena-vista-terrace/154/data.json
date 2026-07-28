@@ -1,0 +1,131 @@
+{
+  "address": "154–156 Buena Vista Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/buena-vista-terrace/154/",
+  "apn": "2608028",
+  "block": "2608",
+  "lot": "028",
+  "eas_baseid": "341882",
+  "coordinates": {
+    "lat": 37.766517,
+    "lng": -122.43874
+  },
+  "address_range": "154–156",
+  "street_numbers_on_parcel": [
+    "154",
+    "156"
+  ],
+  "parcel": {
+    "year_built": 1955,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2700,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0156 0154 BUENA VISTA         TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 382807,
+    "assessed_improvement_value": 466515,
+    "last_sale_date": "1987-09-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201005102067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-10",
+      "status_date": "2010-05-10",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "convert storage room into bathroom in both units. add storage room in garage. replace dry-rot in back deck less than 50% in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004089841",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-08",
+      "status_date": "2010-11-19",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "replace kitchen cab. counter top, appliances and faucets. 2 one unit) replace bathroom med vinity and bath tube 2 units for two units buena vista tr.. kitchen attleast 50% high efficacy or occupancy sensor control.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003309211",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-30",
+      "status_date": "2010-03-30",
+      "estimated_cost": 2850,
+      "revised_cost": 2850,
+      "description": "install (6) vinyl windows in kind into (e) frames. no change in size or location. windows do not face the st.(rear). if applicable, bedroom windows will comply with section cbc 1026 for rescue. all windows will be double pane and have a u-factor of .30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401073505",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-07",
+      "status_date": "2005-02-18",
+      "estimated_cost": 2280,
+      "revised_cost": 2280,
+      "description": "install 2 vinyl windows in kind into existing frames. no change in size or locations. windows do no",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100600",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-01-14",
+      "status_date": "1991-06-14",
+      "estimated_cost": 1800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=TER&address_number=154",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2608028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2608&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2608028",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

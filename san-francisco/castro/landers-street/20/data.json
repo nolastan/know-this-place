@@ -1,0 +1,100 @@
+{
+  "address": "20–24 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/20/",
+  "apn": "3544032",
+  "block": "3544",
+  "lot": "032",
+  "eas_baseid": "358899",
+  "coordinates": {
+    "lat": 37.767356,
+    "lng": -122.428101
+  },
+  "address_range": "20–24",
+  "street_numbers_on_parcel": [
+    "20",
+    "22",
+    "24"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0024 0020 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 479020,
+    "assessed_improvement_value": 710555,
+    "last_sale_date": "1998-06-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310229874",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-22",
+      "status_date": "2013-10-22",
+      "estimated_cost": 15650,
+      "revised_cost": 15650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407169053",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-07-16",
+      "status_date": "2004-08-19",
+      "estimated_cost": 34500,
+      "revised_cost": 34500,
+      "description": "shoring & underpinning of foundation as a result of adjacent approved new construction at 8 landers",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=20",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=032",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544032",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

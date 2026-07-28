@@ -1,0 +1,120 @@
+{
+  "address": "88–90 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/88/",
+  "apn": "2711007",
+  "block": "2711",
+  "lot": "007",
+  "eas_baseid": "344846",
+  "coordinates": {
+    "lat": 37.758317,
+    "lng": -122.442374
+  },
+  "address_range": "88–90",
+  "street_numbers_on_parcel": [
+    "88",
+    "90"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2787,
+    "building_area_sqft": 1983,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0090 0088 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1671402,
+    "assessed_improvement_value": 716315,
+    "last_sale_date": "2022-02-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403268653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-26",
+      "status_date": "2026-02-06",
+      "estimated_cost": 400000,
+      "revised_cost": 509970,
+      "description": "convert a portion of the ground floor storage area to habitable space. replace & reconfigure one entry stair, & relocate a full bathroom on the ground floor. remodel one kitchen & 3 bathrooms. add new windows & doors at the front facade. correction to planning complaint #2023-006519 enf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205194586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-19",
+      "status_date": "2022-06-03",
+      "estimated_cost": 500,
+      "revised_cost": 2000,
+      "description": "88-90 yukon: demolition of exisitng fence, install fence less than 6ft to abate nov 202289378 approx 30 linear ~encrypt&",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-06",
+      "status_date": "1992-11-09",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "double glaze window on eastwall,remove damage parapet,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216966",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-30",
+      "status_date": "1992-11-09",
+      "estimated_cost": 1750,
+      "description": "stucco repairs,new stucco over brick,open & install new wind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=88",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711007",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

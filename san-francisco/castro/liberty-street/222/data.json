@@ -1,0 +1,138 @@
+{
+  "address": "222–224 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/222/",
+  "apn": "3606046",
+  "block": "3606",
+  "lot": "046",
+  "eas_baseid": "362189",
+  "coordinates": {
+    "lat": 37.757631,
+    "lng": -122.426412
+  },
+  "address_range": "222–224",
+  "street_numbers_on_parcel": [
+    "222",
+    "224"
+  ],
+  "parcel": {
+    "year_built": 1935,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3624,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0224 0222 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32984,
+    "assessed_improvement_value": 91748
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1935",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201202013375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-01",
+      "status_date": "2012-02-21",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M188653",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-21",
+      "status_date": "2010-01-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506023965",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-06-02",
+      "status_date": "2012-02-21",
+      "estimated_cost": 8265,
+      "revised_cost": 8265,
+      "description": "install 25 vinyl windows in kind into existing frames. no change in size or location. windows do",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-28",
+      "status_date": "1996-06-04",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121224",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-11-12",
+      "status_date": "1992-03-14",
+      "estimated_cost": 360,
+      "description": "install 1 aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609206",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-07-30",
+      "status_date": "1986-09-23",
+      "estimated_cost": 600,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=222",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3606046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3606&lot=046",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3606046",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

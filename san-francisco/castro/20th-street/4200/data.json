@@ -1,0 +1,102 @@
+{
+  "address": "4200 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4200/",
+  "apn": "2696014A",
+  "block": "2696",
+  "lot": "014A",
+  "eas_baseid": "344431",
+  "coordinates": {
+    "lat": 37.757772,
+    "lng": -122.435074
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 1800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4200 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 432856,
+    "assessed_improvement_value": 874773,
+    "last_sale_date": "2002-05-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M421907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-29",
+      "status_date": "2013-08-29",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718543",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-22",
+      "status_date": "1999-02-24",
+      "estimated_cost": 4600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-06-05",
+      "status_date": "1997-06-09",
+      "estimated_cost": 300,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4200",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2696014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2696&lot=014A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2696014A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

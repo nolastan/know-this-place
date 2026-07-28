@@ -1,0 +1,161 @@
+{
+  "address": "52 Pond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/pond-street/52/",
+  "apn": "3564070B",
+  "block": "3564",
+  "lot": "070B",
+  "eas_baseid": "359855",
+  "coordinates": {
+    "lat": 37.763363,
+    "lng": -122.432401
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 1300,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0052 POND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1649846,
+    "assessed_improvement_value": 671610,
+    "last_sale_date": "2018-03-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104229171",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-22",
+      "status_date": "2021-04-22",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102255336",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-25",
+      "status_date": "2021-02-25",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "replace the (e) siding & garage, sidewalk concrete. siding north wall of the property.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012211494",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2020-12-21",
+      "status_date": "2022-01-21",
+      "estimated_cost": 23500,
+      "revised_cost": 0,
+      "description": "install new fire sprinklers throughout building per nfpa 13r including 2\" dedicated fire service.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012090601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-09",
+      "status_date": "2021-01-27",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace the existing siding on the south wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812067574",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-12-06",
+      "status_date": "2022-01-24",
+      "estimated_cost": 450000,
+      "revised_cost": 690000,
+      "description": "horizontal & vertical addition @ rear of the property. (3) new bedrooms @ 3rd flr addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908315910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-31",
+      "status_date": "2009-09-10",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303119339",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-11",
+      "status_date": "2007-01-03",
+      "estimated_cost": 5750,
+      "revised_cost": 5750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-03-28",
+      "status_date": "1986-06-13",
+      "estimated_cost": 3500,
+      "description": "repair termite & dry rot damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POND&street_type=ST&address_number=52",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564070B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=070B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564070B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

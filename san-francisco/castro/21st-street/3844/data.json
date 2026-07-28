@@ -1,0 +1,129 @@
+{
+  "address": "3844 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3844/",
+  "apn": "3603016",
+  "block": "3603",
+  "lot": "016",
+  "eas_baseid": "361927",
+  "coordinates": {
+    "lat": 37.756405,
+    "lng": -122.43343
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 1740,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3844 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 192952,
+    "assessed_improvement_value": 203110
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Castro & Liberty Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1897–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201906032237",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-03",
+      "status_date": "2019-07-25",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "repair, in-kind, less than 50% of deck in back of property. district inspector to make site visit prior to start of repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205317917",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-05-31",
+      "status_date": "2002-05-31",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410819",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-10-09",
+      "status_date": "1985-04-10",
+      "estimated_cost": 65000,
+      "description": "remodel & add a new ketchen/areddkfabt room/bathrm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407978",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-24",
+      "status_date": "1985-05-06",
+      "estimated_cost": 3000,
+      "description": "return house to single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3844",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43343000762768%2037.75640538623409)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

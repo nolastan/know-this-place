@@ -1,0 +1,88 @@
+{
+  "address": "39–43 Sharon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sharon-street/39/",
+  "apn": "3558062",
+  "block": "3558",
+  "lot": "062",
+  "eas_baseid": "359560",
+  "coordinates": {
+    "lat": 37.765413,
+    "lng": -122.429543
+  },
+  "address_range": "39–43",
+  "street_numbers_on_parcel": [
+    "39",
+    "41",
+    "43"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2850,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0043 0039 SHARON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117106,
+    "assessed_improvement_value": 136432
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200106040644",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-04",
+      "status_date": "2001-08-16",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHARON&street_type=ST&address_number=39",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=062",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558062",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "address": "111 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/111/",
+  "apn": "3540071",
+  "block": "3540",
+  "lot": "071",
+  "eas_baseid": "358718",
+  "coordinates": {
+    "lat": 37.767086,
+    "lng": -122.435285
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1148,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0111 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111008,
+    "assessed_improvement_value": 133210
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202305057199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-05",
+      "status_date": "2023-10-12",
+      "estimated_cost": 13684,
+      "revised_cost": 13684,
+      "description": "remove and replace (3) street facing windows. (e) vinyl (n) alum wood clad. same size and location, replace in kind. u < .30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M350067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-26",
+      "status_date": "2012-09-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209109324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-10",
+      "status_date": "2012-10-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "rebuild 160 sq ft elevation deck which contain delapidation and dryrot. replace wood members, structural connections, and add waterproofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110136651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-13",
+      "status_date": "2011-11-15",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove & replace in kind tradesmens entrance doorway and wall, no change on walls and opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210078450",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-07",
+      "status_date": "2003-03-07",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "rev. appl#9920845 modify structural beam at center of structure, remove 2 posts, replace w/new beam",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206179151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-17",
+      "status_date": "2003-01-31",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920845",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1999-10-01",
+      "status_date": "2002-09-11",
+      "estimated_cost": 6000,
+      "revised_cost": 28000,
+      "description": "comply w/ n.o.v.& c.e.d.abatement-repairdeck(e),news taircase,siding repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=111",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3540071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3540&lot=071",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3540071",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4352849259645%2037.76708642351674)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

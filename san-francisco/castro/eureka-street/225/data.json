@@ -1,0 +1,137 @@
+{
+  "address": "225–227 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/225/",
+  "apn": "2698029A",
+  "block": "2698",
+  "lot": "029A",
+  "eas_baseid": "344516",
+  "coordinates": {
+    "lat": 37.758616,
+    "lng": -122.437747
+  },
+  "address_range": "225–227",
+  "street_numbers_on_parcel": [
+    "225",
+    "227"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 2272,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0227 0225 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39704,
+    "assessed_improvement_value": 35082
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1190907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-05",
+      "status_date": "2020-02-05",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001101682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-10",
+      "status_date": "2020-01-15",
+      "estimated_cost": 30880,
+      "revised_cost": 30880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M406369",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-09",
+      "status_date": "2013-07-09",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-31",
+      "status_date": "1999-11-22",
+      "estimated_cost": 6800,
+      "description": "replace part of foundation & sheer wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605252",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-28",
+      "status_date": "1996-04-30",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-02-20",
+      "status_date": "1985-03-18",
+      "estimated_cost": 2000,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=225",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2698029A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2698&lot=029A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2698029A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

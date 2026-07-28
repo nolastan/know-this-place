@@ -1,0 +1,135 @@
+{
+  "address": "858–860 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/858/",
+  "apn": "3538029",
+  "block": "3538",
+  "lot": "029",
+  "eas_baseid": "358595",
+  "coordinates": {
+    "lat": 37.767715,
+    "lng": -122.432679
+  },
+  "address_range": "858–860",
+  "street_numbers_on_parcel": [
+    "858",
+    "860"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 6,
+    "stories": 3,
+    "rooms": 25,
+    "bathrooms": 6,
+    "lot_area_sqft": 2417,
+    "building_area_sqft": 5745,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0860 0858 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42648,
+    "assessed_improvement_value": 148236
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "survey_name": "858-860 14th St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202304135664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-13",
+      "status_date": "2023-10-23",
+      "estimated_cost": 22750,
+      "revised_cost": 22750,
+      "description": "new voluntary system install & new lf horns to meet sffc 2022. fire alarm system. in the basement, vif 15dcb in the storage areas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512296080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-29",
+      "status_date": "2016-07-25",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "soft story compliance, method 2012 iebc appendix 4a mandatory seismic retrofit per sfbc chapter 34b building reinforcement retrofit in basement add new foundation, anchor sill bolting to foundation, add plywood to walls and add hold downs per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107053009",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-05",
+      "status_date": "2001-08-21",
+      "estimated_cost": 3795,
+      "revised_cost": 3795,
+      "description": "termite repairs as per termite report #2899, dated 6/8/2001-item 4 only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809925",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-07-19",
+      "status_date": "1988-11-23",
+      "estimated_cost": 2200,
+      "description": "fper hid report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=858",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3538029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3538&lot=029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3538029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4326788325211%2037.767714882872106)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

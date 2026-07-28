@@ -1,0 +1,122 @@
+{
+  "address": "239–247 Dorland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/dorland-street/239/",
+  "apn": "3580037",
+  "block": "3580",
+  "lot": "037",
+  "eas_baseid": "360555",
+  "coordinates": {
+    "lat": 37.76188,
+    "lng": -122.429345
+  },
+  "address_range": "239–247",
+  "street_numbers_on_parcel": [
+    "239",
+    "241",
+    "243",
+    "245",
+    "247"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 5,
+    "stories": 2,
+    "rooms": 26,
+    "bathrooms": 5,
+    "lot_area_sqft": 5048,
+    "building_area_sqft": 6400,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0247 0239 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 233939,
+    "assessed_improvement_value": 139007
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603278398",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-27",
+      "status_date": "2026-03-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove tar & gravel roof, install modified bitumen roof, hot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709117601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-11",
+      "status_date": "2018-06-08",
+      "estimated_cost": 37250,
+      "revised_cost": 40000,
+      "description": "soft story upgarde of first floor per ab-106, 107 and chapter 4d of sfbc and chapter 34 of cbc 2016",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201257766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-25",
+      "status_date": "2002-05-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair exist stairway for all dryrot damage to comply with violation.#200224489.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-19",
+      "status_date": "1991-12-12",
+      "estimated_cost": 8400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=239",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580037",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

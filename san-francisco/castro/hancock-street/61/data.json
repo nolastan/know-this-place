@@ -1,0 +1,135 @@
+{
+  "address": "61 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/61/",
+  "apn": "3585041",
+  "block": "3585",
+  "lot": "041",
+  "eas_baseid": "360959",
+  "coordinates": {
+    "lat": 37.760168,
+    "lng": -122.429564
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0061 HANCOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 455068,
+    "assessed_improvement_value": 199584,
+    "last_sale_date": "1997-11-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809161704",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-16",
+      "status_date": "2008-09-17",
+      "estimated_cost": 8950,
+      "revised_cost": 8950,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404302747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-30",
+      "status_date": "2004-09-02",
+      "estimated_cost": 59000,
+      "revised_cost": 59000,
+      "description": "kitchen remodel, electrical reconfiguration, installation of range hood, removal of 2 non bearing wa",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203060749",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-06",
+      "status_date": "2002-05-02",
+      "estimated_cost": 4765,
+      "revised_cost": 4765,
+      "description": "remove & install windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802696",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-18",
+      "status_date": "1998-04-15",
+      "estimated_cost": 9240,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722416",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-05",
+      "status_date": "1998-04-15",
+      "estimated_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604902",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-04-28",
+      "status_date": "1986-09-18",
+      "estimated_cost": 2610,
+      "description": "repair termite or dry rot damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HANCOCK&street_type=ST&address_number=61",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=041",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585041",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

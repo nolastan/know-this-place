@@ -1,0 +1,119 @@
+{
+  "address": "3430–3434 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3430/",
+  "apn": "3558012",
+  "block": "3558",
+  "lot": "012",
+  "eas_baseid": "359511",
+  "coordinates": {
+    "lat": 37.764705,
+    "lng": -122.429388
+  },
+  "address_range": "3430–3434",
+  "street_numbers_on_parcel": [
+    "3430",
+    "3432",
+    "3434"
+  ],
+  "parcel": {
+    "year_built": 1902,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 4275,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3434 3430 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 155260,
+    "assessed_improvement_value": 217429,
+    "last_sale_date": "2009-09-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M161424",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-21",
+      "status_date": "2009-04-21",
+      "revised_cost": 1,
+      "description": "street space only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713504",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-21",
+      "status_date": "2002-01-17",
+      "estimated_cost": 300,
+      "description": "repair 3 steps and repair 2 posts per notice of violation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712886",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-12",
+      "status_date": "1997-09-03",
+      "estimated_cost": 13500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701660",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-09",
+      "status_date": "1987-03-12",
+      "estimated_cost": 900,
+      "description": "comply with bbi complaint #15112/rebuild rear stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3430",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558012",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "address": "2 Short Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/short-street/2/",
+  "apn": "2713002",
+  "block": "2713",
+  "lot": "002",
+  "eas_baseid": "344902",
+  "coordinates": {
+    "lat": 37.7577,
+    "lng": -122.44242
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "lot_area_sqft": 701,
+    "building_area_sqft": 1095,
+    "basement_area_sqft": 400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0002 SHORT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1015000,
+    "assessed_improvement_value": 435000,
+    "last_sale_date": "2021-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201305025976",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-02",
+      "status_date": "2013-07-16",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace existing post at lower level with new beam. revision to permit app. 201304265512. not adding habitable space on lower level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304265592",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-26",
+      "status_date": "2013-07-16",
+      "estimated_cost": 78500,
+      "revised_cost": 78500,
+      "description": "replace existing fixtures and finishes at kitchen & 2 bathrms, no exterior changes,new appliances paint and floor refinish, upgrade lighting at kitchen & baths/high eff & occupancy sensors @ baths, no structural changes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHORT&street_type=ST&address_number=2",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2713002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2713&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2713002",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

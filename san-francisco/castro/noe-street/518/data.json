@@ -1,0 +1,145 @@
+{
+  "address": "518 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/518/",
+  "apn": "3583004",
+  "block": "3583",
+  "lot": "004",
+  "eas_baseid": "360755",
+  "coordinates": {
+    "lat": 37.760537,
+    "lng": -122.433105
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2800,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0518 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36011,
+    "assessed_improvement_value": 49643
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201908300389",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-08-30",
+      "status_date": "2026-01-09",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "seismic retrofit of soft story comply w/ sfebc 4d mandatory seismic retrofit per 2016 cebc appendix",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M84048",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-29",
+      "status_date": "2007-08-29",
+      "revised_cost": 0,
+      "description": "street space and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209065817",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-09-06",
+      "status_date": "2002-09-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to 200205065802 ;repair & repl dry rotten stair,landing,handrail w/wood in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205065802",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-06",
+      "status_date": "2002-09-06",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair & replace dry rotten stair, landing and handrail.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917233",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-19",
+      "status_date": "1999-09-10",
+      "estimated_cost": 1450,
+      "description": "demolition of 12 feet of brick foundation/rplcg with concrte",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621686",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-13",
+      "status_date": "1997-05-13",
+      "estimated_cost": 7300,
+      "description": "kitchen and bath remodeling comply w/ notice 1996000781",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920669",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-10-30",
+      "status_date": "1993-01-25",
+      "estimated_cost": 10000,
+      "description": "ewo",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=518",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583004",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

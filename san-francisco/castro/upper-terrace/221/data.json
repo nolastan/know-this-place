@@ -1,0 +1,135 @@
+{
+  "address": "221 Upper Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/upper-terrace/221/",
+  "apn": "2628055",
+  "block": "2628",
+  "lot": "055",
+  "eas_baseid": "342705",
+  "coordinates": {
+    "lat": 37.763206,
+    "lng": -122.444523
+  },
+  "parcel": {
+    "year_built": 1978,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 4,
+    "lot_area_sqft": 1816,
+    "building_area_sqft": 2541,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0221 UPPER               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 750631,
+    "assessed_improvement_value": 634275,
+    "last_sale_date": "1989-04-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200810245077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-24",
+      "status_date": "2008-10-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2006/10/20/5556 to obtain final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610205556",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-20",
+      "status_date": "2006-10-20",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602134471",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-13",
+      "status_date": "2006-02-13",
+      "estimated_cost": 16940,
+      "revised_cost": 16940,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917061",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-09-14",
+      "status_date": "1991-12-05",
+      "estimated_cost": 8000,
+      "description": "remodel kitchen & bath -- counters, lighting,mirror,door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910518",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-06-16",
+      "status_date": "1989-09-13",
+      "estimated_cost": 4500,
+      "description": "repair/reset patio, upper railing, fireplace, door & bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708203",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-12",
+      "status_date": "1987-07-27",
+      "estimated_cost": 1200,
+      "description": "5' x 13' rear deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UPPER&street_type=TER&address_number=221",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=055",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628055",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

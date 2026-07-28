@@ -1,0 +1,109 @@
+{
+  "address": "181–183 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/181/",
+  "apn": "3557019",
+  "block": "3557",
+  "lot": "019",
+  "eas_baseid": "359454",
+  "coordinates": {
+    "lat": 37.764957,
+    "lng": -122.427319
+  },
+  "address_range": "181–183",
+  "street_numbers_on_parcel": [
+    "181",
+    "183"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 1,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 4203,
+    "building_area_sqft": 2500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0183 0181 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353664,
+    "assessed_improvement_value": 265237,
+    "last_sale_date": "1991-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200509223626",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-22",
+      "status_date": "2006-03-20",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remodel extg kchn,brhrm,/repair & reroof back section of roof/termite and dryrot repair as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509203368",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-20",
+      "status_date": "2006-03-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace wndws and door on rear exterior of bldg work at 183 landers st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-19",
+      "status_date": "1991-12-31",
+      "estimated_cost": 5800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=181",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=019",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557019",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

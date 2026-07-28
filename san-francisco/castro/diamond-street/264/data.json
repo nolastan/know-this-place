@@ -1,0 +1,156 @@
+{
+  "address": "264 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/264/",
+  "apn": "2698009B",
+  "block": "2698",
+  "lot": "009B",
+  "eas_baseid": "344497",
+  "coordinates": {
+    "lat": 37.758106,
+    "lng": -122.437266
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1990,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0264 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 724252,
+    "assessed_improvement_value": 757830,
+    "last_sale_date": "2003-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308144302",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-14",
+      "status_date": "2024-12-02",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "provie temporary building shoring to accommodate foundation excavation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111162462",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-11-16",
+      "status_date": "2025-02-14",
+      "estimated_cost": 250000,
+      "revised_cost": 280000,
+      "description": "reconstruct garage lvl storage area at rear of bldg, infill 49sf at gr lvl. infill 142sf at (e) 1st lvl mud room. renovate & expand (e) kitchen & relocate 1/2 bath on 1st lvl. reconstruct (e) 2nd lvl office with 32sf added. construct new rear deck & stairs at 1st & decks over infill space at 2nd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308131962",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-08-13",
+      "status_date": "2003-08-13",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "repair dryrot as. 41201",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307240277",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-24",
+      "status_date": "2003-11-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "want to remove plaster & lathe & replace w/ sheetrock,or just hang sheetrock if easier to address",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9514372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-05",
+      "status_date": "1995-11-09",
+      "estimated_cost": 2150,
+      "description": "wndw repl,new like kind (wood)sashes in 10 wndws",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116979",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-13",
+      "status_date": "1991-12-18",
+      "estimated_cost": 1,
+      "description": "remove soldier course of brick over overhead garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920110",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-10-23",
+      "status_date": "1990-09-18",
+      "estimated_cost": 500,
+      "description": "e.w.o.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918443",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-09-29",
+      "status_date": "1990-04-02",
+      "estimated_cost": 9300,
+      "description": "ubstakk ibe u.l.labeled (stairway lift) as mfr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=264",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2698009B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2698&lot=009B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2698009B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

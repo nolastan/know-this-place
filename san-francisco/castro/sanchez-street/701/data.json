@@ -1,0 +1,128 @@
+{
+  "address": "701 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/701/",
+  "apn": "3605055",
+  "block": "3605",
+  "lot": "055",
+  "eas_baseid": "362126",
+  "coordinates": {
+    "lat": 37.75776,
+    "lng": -122.43008
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2565,
+    "building_area_sqft": 1680,
+    "lot_depth_ft": 30,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0701 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 237967,
+    "assessed_improvement_value": 441944,
+    "last_sale_date": "1993-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508082626",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-08",
+      "status_date": "2025-12-17",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "replacing one fiberglass double door with wood/aluminum clad double door no size or location change door not visible from the street ground floor u factor .27 shgc .16",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809190811",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-19",
+      "status_date": "2018-11-08",
+      "estimated_cost": 2053,
+      "revised_cost": 2053,
+      "description": "2 windows retrofit in back of home. same size, same location, not visible to street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011306847",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-30",
+      "status_date": "2001-02-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004197660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-19",
+      "status_date": "2001-02-22",
+      "estimated_cost": 9850,
+      "revised_cost": 9850,
+      "description": "replace post & beams in garage, anchor bolts, add new joists as per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-07-24",
+      "status_date": "1986-08-20",
+      "estimated_cost": 695,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=701",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=055",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605055",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

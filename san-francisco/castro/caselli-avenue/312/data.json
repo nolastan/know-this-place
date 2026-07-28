@@ -1,0 +1,144 @@
+{
+  "address": "312 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/312/",
+  "apn": "2703003",
+  "block": "2703",
+  "lot": "003",
+  "eas_baseid": "344721",
+  "coordinates": {
+    "lat": 37.759041,
+    "lng": -122.444209
+  },
+  "parcel": {
+    "year_built": 1893,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2225,
+    "building_area_sqft": 1125,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0312 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1639808,
+    "assessed_improvement_value": 702770,
+    "last_sale_date": "2018-07-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1893",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910154419",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-15",
+      "status_date": "2019-10-30",
+      "estimated_cost": 11000,
+      "revised_cost": 12000,
+      "description": "perform repairs as per termite report #80695. item #3a. 5d - repair front stairway in-kind per item 3a. all work repair in-kind, no work to decorative rails.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809151564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-15",
+      "status_date": "2008-10-15",
+      "estimated_cost": 1250,
+      "revised_cost": 1250,
+      "description": "voluntary upgrade- bolt sill plate to foundation, 5/8\" @ 48\" o.c. 10\" embed. bolt &strap posts to piers (6) simpson mrs16. bolt & strap posts to beams (6) simpson 7-straps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M34049",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-26",
+      "status_date": "2005-08-26",
+      "revised_cost": 0,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614939",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-13",
+      "status_date": "1997-01-16",
+      "estimated_cost": 1700,
+      "description": "install plywood sheath on roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614942",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-13",
+      "status_date": "1997-06-11",
+      "estimated_cost": 9800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816756",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-27",
+      "status_date": "1988-12-13",
+      "estimated_cost": 4500,
+      "description": "remodel bathroom, replace shower, move sink, sheetrock.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-02-13",
+      "status_date": "1985-03-01",
+      "estimated_cost": 2065,
+      "description": "install aluminum window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=312",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2703003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2703&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2703003",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

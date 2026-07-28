@@ -1,0 +1,102 @@
+{
+  "address": "227 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/227/",
+  "apn": "2614056",
+  "block": "2614",
+  "lot": "056",
+  "eas_baseid": "342137",
+  "coordinates": {
+    "lat": 37.766054,
+    "lng": -122.439758
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 1630,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0227 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46410,
+    "assessed_improvement_value": 55649
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501125420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-12",
+      "status_date": "2015-01-15",
+      "estimated_cost": 8200,
+      "revised_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617933",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-20",
+      "status_date": "1996-12-03",
+      "estimated_cost": 6500,
+      "description": "replace bathrm fixtures vanity ceramic tiles and painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410556",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-10-01",
+      "status_date": "1985-01-14",
+      "estimated_cost": 500,
+      "description": "replace old alley door with new door (no structural changes)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=227",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=056",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614056",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

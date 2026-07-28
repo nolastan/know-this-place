@@ -1,0 +1,127 @@
+{
+  "address": "3719–3721 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3719/",
+  "apn": "3580070",
+  "block": "3580",
+  "lot": "070",
+  "eas_baseid": "360572",
+  "coordinates": {
+    "lat": 37.76263,
+    "lng": -122.429015
+  },
+  "address_range": "3719–3721",
+  "street_numbers_on_parcel": [
+    "3719",
+    "3721"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4065,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3721 3719 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39684,
+    "assessed_improvement_value": 68328
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M337911",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-26",
+      "status_date": "2012-07-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910219448",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-21",
+      "status_date": "2009-10-21",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "remove utility ladder.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920216",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-27",
+      "status_date": "2000-08-30",
+      "estimated_cost": 6800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-01",
+      "status_date": "1989-12-12",
+      "estimated_cost": 1050,
+      "description": "e.w.o. (s)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400101",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-01-05",
+      "status_date": "1992-06-18",
+      "estimated_cost": 1390,
+      "description": "created during job card conversion on: 03/07/86",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3719",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=070",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580070",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

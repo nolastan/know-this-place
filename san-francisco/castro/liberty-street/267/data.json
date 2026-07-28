@@ -1,0 +1,154 @@
+{
+  "address": "267–275 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/267/",
+  "apn": "3606034",
+  "block": "3606",
+  "lot": "034",
+  "eas_baseid": "362184",
+  "coordinates": {
+    "lat": 37.757085,
+    "lng": -122.427358
+  },
+  "address_range": "267–275",
+  "street_numbers_on_parcel": [
+    "267",
+    "269",
+    "271",
+    "273",
+    "275"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 7,
+    "stories": 4,
+    "rooms": 22,
+    "bathrooms": 7,
+    "lot_area_sqft": 5697,
+    "building_area_sqft": 6344,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0275 0267 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2733166,
+    "assessed_improvement_value": 1434907,
+    "last_sale_date": "2005-08-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M405447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-02",
+      "status_date": "2013-07-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306280732",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-28",
+      "status_date": "2013-06-28",
+      "estimated_cost": 20100,
+      "revised_cost": 20100,
+      "description": "reroofing- strip off existing roof finishes and install new finishes; consist of one layer 28lb fibreglass base sheet; one layer type iv fiberglass ply sheet and one layer granulated cap sheet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005230771",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-23",
+      "status_date": "2000-09-23",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revision to 200004278382-change beam",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004278382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-27",
+      "status_date": "2000-08-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace beams in pedestrian bridge. revision to 2000/03/3581.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003063581",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-06",
+      "status_date": "2000-09-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace (e) failed retaining wall w/(new) c onc. retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618968",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-04",
+      "status_date": "1997-06-11",
+      "estimated_cost": 11550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-07-25",
+      "status_date": "1985-11-18",
+      "estimated_cost": 125,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=267",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3606034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3606&lot=034",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3606034",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

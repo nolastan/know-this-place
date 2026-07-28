@@ -1,0 +1,160 @@
+{
+  "address": "310–312 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/310/",
+  "apn": "3564003",
+  "block": "3564",
+  "lot": "003",
+  "eas_baseid": "359798",
+  "coordinates": {
+    "lat": 37.764064,
+    "lng": -122.431169
+  },
+  "address_range": "310–312",
+  "street_numbers_on_parcel": [
+    "310",
+    "312"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0312 0310 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587887,
+    "assessed_improvement_value": 300707,
+    "last_sale_date": "1999-06-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501289254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-28",
+      "status_date": "2026-02-12",
+      "estimated_cost": 25000,
+      "revised_cost": 35000,
+      "description": "interior remodel of primary bathroom, conversion of bath tub to shower. replacement of (2) exterior rear doors, repair of dryrot at rear siding and entry stair landing (within property line)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612049079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-04",
+      "status_date": "2007-02-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M38544",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-17",
+      "status_date": "2006-07-17",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501062687",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2005-01-06",
+      "status_date": "2005-10-11",
+      "estimated_cost": 250000,
+      "revised_cost": 25000,
+      "description": "vertical addition- removal of existing one story rear addn construction of 2 & a half story addn all",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608068",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-09",
+      "status_date": "1996-10-22",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107624",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-05-02",
+      "status_date": "1991-12-04",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "for final inspection refer to app #8206474",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400995",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-01-26",
+      "status_date": "1984-05-26",
+      "estimated_cost": 2500,
+      "description": "replace foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206474",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-08-06",
+      "status_date": "1983-03-04",
+      "estimated_cost": 25000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=310",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564003",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "address": "276–278 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/276/",
+  "apn": "2700004",
+  "block": "2700",
+  "lot": "004",
+  "eas_baseid": "344579",
+  "coordinates": {
+    "lat": 37.759339,
+    "lng": -122.439474
+  },
+  "address_range": "276–278",
+  "street_numbers_on_parcel": [
+    "276",
+    "278"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2282,
+    "building_area_sqft": 3250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0278 0276 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1346069,
+    "assessed_improvement_value": 576884,
+    "last_sale_date": "2015-06-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602115779",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-11",
+      "status_date": "2026-02-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#201901079768. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901079768",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2019-01-07",
+      "status_date": "2026-02-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "minor dryrot repair on side stairs (not visible from street) less than 50% being replaced.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912042617",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-12-04",
+      "status_date": "2009-12-04",
+      "estimated_cost": 3465,
+      "revised_cost": 3465,
+      "description": "install 8 vinyl windows in kind into extg frames. no change in size or location. wndows do not face the street. if applicagle, bedroom windows will comply with section 310.4 for rescue. all windows will be double pane and have a u-factor of .30. replace in kind. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613287",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-23",
+      "status_date": "1997-06-11",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-23",
+      "status_date": "2016-01-27",
+      "estimated_cost": 12800,
+      "description": "tear out & repl decking",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611624",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-23",
+      "status_date": "1987-09-04",
+      "estimated_cost": 1300,
+      "description": "bring building into code per dahi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403810",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-04-10",
+      "status_date": "1985-08-05",
+      "estimated_cost": 200,
+      "description": "repair dry-rottew framing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=276",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700004",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "address": "231–233 Dorland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/dorland-street/231/",
+  "apn": "3580039",
+  "block": "3580",
+  "lot": "039",
+  "eas_baseid": "360556",
+  "coordinates": {
+    "lat": 37.761864,
+    "lng": -122.429136
+  },
+  "address_range": "231–233",
+  "street_numbers_on_parcel": [
+    "231",
+    "233"
+  ],
+  "parcel": {
+    "year_built": 1885,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2805,
+    "building_area_sqft": 2780,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0233 0231 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 590902,
+    "assessed_improvement_value": 1255686,
+    "last_sale_date": "2001-10-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209092201",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-09",
+      "status_date": "2023-03-16",
+      "estimated_cost": 19300,
+      "revised_cost": 19300,
+      "description": "voluntart system replacement & mandatory lf horns upgrade to meet sffc 2019 ces 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813880",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1998-07-21",
+      "status_date": "1998-10-28",
+      "estimated_cost": 68000,
+      "description": "convert from 2 unit to 3 units -install new garage/driveway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-20",
+      "status_date": "1998-11-30",
+      "estimated_cost": 5000,
+      "description": "replace a portion of extg footing with new footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-06-05",
+      "status_date": "1998-11-17",
+      "estimated_cost": 25000,
+      "description": "replace exising cabinet,fixtures,appliances,new water heater",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609421",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-30",
+      "status_date": "1997-01-16",
+      "estimated_cost": 100,
+      "description": "notice of hid report 2/14/96,repair handrail,floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600943",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-01-27",
+      "status_date": "1986-06-10",
+      "estimated_cost": 2000,
+      "description": "repair of upper section of stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=231",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580039",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

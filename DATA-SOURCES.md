@@ -9,6 +9,28 @@ Most DataSF datasets are Socrata: `https://data.sfgov.org/resource/<id>.json`
 with SoQL query params (`$where`, `$select`, `$limit`). No auth required;
 an app token (header `X-App-Token`) lifts throttling if we ever need it.
 
+> **Query shape matters more than you'd expect.** These datasets are large and
+> their text columns are unindexed, so a bulk export — "every 2025 roll row
+> where `analysis_neighborhood = 'Castro/Upper Market'"` — reliably fails: the
+> server accepts the request, then dribbles the body out over many minutes or
+> resets it. A `count(1)` on the same filter returns instantly, so a fast count
+> is no evidence the full query will work.
+>
+> What does work is **many small queries keyed on an indexed column** —
+> `parcel_number`, `apn`, `block` — each returning well under a megabyte:
+> `$where=parcel_number in ('2752016', …)` with a couple of hundred keys, plus
+> a `$select` naming only the fields you need. `scripts/seed_pages.py` does
+> exactly this, caches every chunk under `.cache/`, and resumes where it left
+> off. Two practical notes if you write your own fetch. **Permits go one block
+> per request, paged within the block** (`$order=:id` + `$limit`/`$offset`):
+> volume per block spans an order of magnitude — a quiet residential block has
+> a few hundred, a Market Street block has thousands — so batching blocks makes
+> the worst request unpredictably large and it times out. And **`urllib`'s
+> `timeout` is per-read**, so it never fires on a slow trickle and the process
+> hangs indefinitely; read in chunks against a wall-clock deadline instead, and
+> back off properly (tens of seconds, not five) when failures repeat, because
+> repeated failures mean you are being throttled.
+
 > **Verified dates:** each entry carries a `Verified:` line — the last date an
 > agent confirmed the endpoint and field names with a live query. If it's
 > stale or empty, verify before relying on field names, and update it.
@@ -28,7 +50,8 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   e.g. `2752016`), `latitude`/`longitude`, `zip_code`, `supervisor`,
   `nhood` (analysis neighborhood; the Castro is `Castro/Upper Market`).
 - **Citation label:** "SF Enterprise Addressing System via DataSF"
-- **Verified:** 2026-07-21 (queried 700 block of Castro St, 56 rows)
+- **Verified:** 2026-07-27 (`nhood='Castro/Upper Market'` → 8,290 addresses on
+  4,948 parcels)
 
 ## sf-assessor-roll — Assessor Historical Secured Property Tax Rolls
 
@@ -51,7 +74,8 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   Condo-unit parcels can report `0` lot area and stories — prefer the
   building's parcel.
 - **Citation label:** "SF Office of the Assessor-Recorder via DataSF"
-- **Verified:** 2026-07-21 (parcel 2752016 = 744 Castro St)
+- **Verified:** 2026-07-27 (2025 roll, 4,428 of those Castro parcels; latest
+  `closed_roll_year` is 2025)
 
 ## sf-building-permits — Building Permits
 
@@ -97,8 +121,8 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   on the assessor's `property_location` when deciding whether a parcel spans
   several numbers.
 - **Citation label:** "SF Planning Department"
-- **Verified:** 2026-07-23 (dataset `3tsw-4idn`, 24 parcels across 12
-  neighborhoods; apn 2752016 = 744 Castro St → ceqacode B)
+- **Verified:** 2026-07-27 (4,475 Castro parcels fetched by `apn` in chunks of
+  400; apn 2752016 = 744 Castro St → ceqacode B)
 
 ## sf-historic-districts — Historic district boundaries
 
@@ -120,6 +144,21 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   ```
   Note the argument order: `POINT(longitude latitude)`. An empty result means
   the parcel is in no district.
+- **For a whole neighborhood, do the test locally instead.** One `intersects`
+  request per parcel is thousands of requests. There are only ~200 districts,
+  so page the polygons in (`$select=…,the_geom&$order=:id&$limit=25` — with
+  geometry the payload is big enough that larger pages time out) and run
+  point-in-polygon in the client. `scripts/seed_pages.py` does this and its
+  results were checked against the live `intersects()` query.
+- **A district can have several rows, and they disagree.** Duboce Park Historic
+  District has one row carrying its Article 10 designation (`cr: No`,
+  `a10: Listed`) and another carrying its California Register eligibility
+  (`cr: Eligible`, `a10: No`), over the same ground. Reading whichever comes
+  back first reports "no local landmark protection" for a parcel that is in an
+  Article 10 district. Merge rows by `name_1` and take the strongest status of
+  each kind. A parcel can also sit in two genuinely different districts (129 in
+  the Castro are in both Chula-Abbey and Chula-Dolores-17th) — lead with the
+  one that confers protection and name the other.
 - **State the status precisely.** "Eligible" for the California Register is
   **not** "listed", and neither implies local landmark protection — that
   requires an Article 10 district (`a10`). A parcel in a CR-eligible,
@@ -128,10 +167,11 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   parcel regardless of the building's age, so a modern building inside a
   district still reads as A (see 707 Castro Street, built 1980).
 - **Citation label:** "SF Planning Department"
-- **Verified:** 2026-07-21 (711 and 737 Castro St resolve to the Castro &
-  Liberty Streets Historic District, CR-eligible, period 1897–1906, not
-  Article 10; 720 Castro St, on the even side of the same block, is inside no
-  district)
+- **Verified:** 2026-07-27 (202 districts paged in with geometry; local
+  point-in-polygon reproduces the live query — 711 and 737 Castro St resolve to
+  the Castro & Liberty Streets Historic District, CR-eligible, period
+  1897–1906, not Article 10; 720 Castro St, on the even side of the same block,
+  is inside no district; 19 Hartford St → Hartford Street Historic District)
 
 ## historical-imagery — OpenSFHistory & Wikimedia Commons
 
@@ -149,6 +189,14 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 - **How:** iframe snippet in [shared/AGENTS.md](shared/AGENTS.md), using
   `maps_embed_key` from `shared/site-config.json` and coordinates from
   `data.json`. Free at any volume in embed form.
+- **Do not test, validate, or preview the embed. Ever.** `maps_embed_key` is
+  restricted to the production domain, so it returns an error for *every*
+  request from a local server, a preview host, `curl`, or a headless browser.
+  A failed embed in local preview is the key working as configured — it is not
+  a bug, there is nothing to diagnose, and confirming it costs tokens to
+  re-learn a fact this file already states. Author the `<ktp-streetview>`
+  placeholder from `shared/AGENTS.md`, and move on. The only thing to check is
+  that `location="LAT,LNG"` matches `coordinates` in `data.json`.
 - **Hard rule:** **Never download, screenshot, or commit Street View imagery
   into `assets/`** — that violates Google's terms. Live embed only.
 

@@ -1,0 +1,113 @@
+{
+  "address": "76 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/76/",
+  "apn": "2650011",
+  "block": "2650",
+  "lot": "011",
+  "eas_baseid": "343301",
+  "coordinates": {
+    "lat": 37.761135,
+    "lng": -122.438629
+  },
+  "parcel": {
+    "year_built": 1882,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3083.75,
+    "building_area_sqft": 1911,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0076 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 172852,
+    "assessed_improvement_value": 189858
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1882",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502251052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-25",
+      "status_date": "2025-06-10",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706270431",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-27",
+      "status_date": "2017-07-07",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "remove and replace trim at front posts and upper deck with in-kind materials. work includes removing trim cladding and decking to treat structural (fungus, pest, etc.) and re-install with same materials. no other work proposed. attached is jan 2017 image of facade for reference. reviewed with m. cor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407300269",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2004-07-30",
+      "status_date": "2006-08-09",
+      "estimated_cost": 15000,
+      "description": "(n) gargae attached to (e) house /w roof top deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208975",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-10-29",
+      "status_date": "1983-12-02",
+      "estimated_cost": 15000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=76",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2650011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2650&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2650011",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "address": "531 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/531/",
+  "apn": "3585063",
+  "block": "3585",
+  "lot": "063",
+  "eas_baseid": "360978",
+  "coordinates": {
+    "lat": 37.760642,
+    "lng": -122.430225
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 1120,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0531 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1177808,
+    "assessed_improvement_value": 1075305,
+    "last_sale_date": "2014-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M567667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-10",
+      "status_date": "2015-03-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502057604",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-05",
+      "status_date": "2016-04-26",
+      "estimated_cost": 133000,
+      "revised_cost": 150000,
+      "description": "excavate +/- 1'6\" at g/f for new bedroom, closet, bathroom & family room. add new interior stair. at 2/f, relocate/remodel kitchen & bathroom. replace windows throughout. street facing windows to be wood to match existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704027802",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-02",
+      "status_date": "2007-04-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M38363",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-05",
+      "status_date": "2006-07-05",
+      "revised_cost": 0,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314887",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-30",
+      "status_date": "1994-01-05",
+      "estimated_cost": 450,
+      "description": "replace 1 window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=531",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=063",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585063",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

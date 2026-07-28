@@ -1,0 +1,136 @@
+{
+  "address": "277 Henry Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/henry-street/277/",
+  "apn": "2612054",
+  "block": "2612",
+  "lot": "054",
+  "eas_baseid": "342068",
+  "coordinates": {
+    "lat": 37.766302,
+    "lng": -122.437073
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1485,
+    "building_area_sqft": 1452,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0277A0277 HENRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 332802,
+    "last_sale_date": "1993-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201702240027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-24",
+      "status_date": "2017-04-11",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "kitchen and bath remodel add new 1/2 bath @ 2nd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M582007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-28",
+      "status_date": "2015-04-28",
+      "revised_cost": 248,
+      "description": "per pa #201408153980, add address for 2nd unit at ground floor at block 2612, lot 054.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M519747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-22",
+      "status_date": "2014-09-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408153980",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-15",
+      "status_date": "2015-04-06",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "remove/and replace front entry steps, enclose lower mechanical room. add a dwelling unit at ground floor. infill under 2nd fl at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808149220",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-14",
+      "status_date": "2008-08-14",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace weveral treads on front stairway less than 50% of stairway. in kind repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611049",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-20",
+      "status_date": "1997-03-11",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HENRY&street_type=ST&address_number=277",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=054",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612054",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

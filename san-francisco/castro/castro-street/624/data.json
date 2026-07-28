@@ -1,0 +1,144 @@
+{
+  "address": "624–626 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/624/",
+  "apn": "2696005",
+  "block": "2696",
+  "lot": "005",
+  "eas_baseid": "344420",
+  "coordinates": {
+    "lat": 37.758772,
+    "lng": -122.435202
+  },
+  "address_range": "624–626",
+  "street_numbers_on_parcel": [
+    "624",
+    "626"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3624,
+    "building_area_sqft": 3460,
+    "basement_area_sqft": 1500,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0626 0624 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1948033,
+    "assessed_improvement_value": 1009510,
+    "last_sale_date": "2003-12-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405071562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-07",
+      "status_date": "2024-09-17",
+      "estimated_cost": 12735,
+      "revised_cost": 12735,
+      "description": "replace (5) windows with retrofit wood windows not street visible u factor =0.30 no change to size or location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207269330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-26",
+      "status_date": "2023-01-20",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel two bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104158619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-15",
+      "status_date": "2021-08-06",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "remodel one bathroom & one powder room. replace two windows in bthrom & powder room. not visible frm street in existing opening. no structural alterations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M387747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-23",
+      "status_date": "2013-04-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401295132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-29",
+      "status_date": "2004-05-24",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "remodeling of two kitchens new cabinets, counters, stoves, dishwashers, new lightring, flooring sin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312222808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-22",
+      "status_date": "2004-05-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "exterior stair replaement (in kind)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=624",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2696005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2696&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2696005",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

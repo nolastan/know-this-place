@@ -1,0 +1,131 @@
+{
+  "address": "521–525 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/521/",
+  "apn": "3584074",
+  "block": "3584",
+  "lot": "074",
+  "eas_baseid": "360893",
+  "coordinates": {
+    "lat": 37.760643,
+    "lng": -122.432429
+  },
+  "address_range": "521–525",
+  "street_numbers_on_parcel": [
+    "521",
+    "523",
+    "525"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2635,
+    "building_area_sqft": 2945,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0525 0521 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39444,
+    "assessed_improvement_value": 48230
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206176551",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-17",
+      "status_date": "2022-07-01",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205053600",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-05",
+      "status_date": "2023-05-01",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "to comply with housing complaint #202176822. painting and repair roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204202621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-20",
+      "status_date": "2022-08-02",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove garden window, install wood sash window. like kind in bldg. to comply with nov#202175842.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811024854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-02",
+      "status_date": "2019-11-13",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace existing deck with like kind construction less than 50% railing and 3 joists",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512118",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1985-10-24",
+      "status_date": "1986-06-17",
+      "estimated_cost": 6000,
+      "description": "insulate bldg, sheetrock, replace outside siding, studs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=521",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=074",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584074",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

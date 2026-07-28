@@ -1,0 +1,141 @@
+{
+  "address": "3268–3270 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3268/",
+  "apn": "2704011A",
+  "block": "2704",
+  "lot": "011A",
+  "eas_baseid": "490808",
+  "coordinates": {
+    "lat": 37.758557,
+    "lng": -122.444904
+  },
+  "address_range": "3268–3270",
+  "street_numbers_on_parcel": [
+    "3268",
+    "3270"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 2,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 860,
+    "building_area_sqft": 1000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3270 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 841046,
+    "assessed_improvement_value": 360446,
+    "last_sale_date": "2021-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M738269",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-10",
+      "status_date": "2016-11-10",
+      "revised_cost": 244,
+      "description": "per pa #201611031858, add address to new legalization unit at block 2704, lot 011a as: 3268 market street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611031858",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-03",
+      "status_date": "2016-11-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for documentation purposes of the legal use & occupancy. a 2-story structure w/basement. (2) residential dwelling units based on inspection site visit & review of city records including assessors' records & dbi records. no work on this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305177207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-05-17",
+      "status_date": "2013-05-17",
+      "estimated_cost": 2000,
+      "revised_cost": 3500,
+      "description": "remove & replace 7 windows in-kind. will replace with wood clad windows visible from street. ul.4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303202592",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-20",
+      "status_date": "2013-03-20",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace siding 8'x8'=64 sf, with redwood shiplap siding at rear of house. replace (e)window 2'x3' in-kind at rear of house, not visible from street. no rough opening changes. u-factor for window not to exceed 0.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309235546",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-09-23",
+      "status_date": "2004-07-30",
+      "estimated_cost": 10000,
+      "revised_cost": 16000,
+      "description": "underpinning north east side foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724030",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-12-01",
+      "status_date": "1998-05-22",
+      "estimated_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3268",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2704011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2704&lot=011A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2704011A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

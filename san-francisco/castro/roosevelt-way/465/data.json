@@ -1,0 +1,143 @@
+{
+  "address": "465 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/465/",
+  "apn": "2618026",
+  "block": "2618",
+  "lot": "026",
+  "eas_baseid": "342309",
+  "coordinates": {
+    "lat": 37.76365,
+    "lng": -122.44265
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2883,
+    "building_area_sqft": 2277,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0465 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143425,
+    "assessed_improvement_value": 167149
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202105140388",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-05-14",
+      "status_date": "2021-05-14",
+      "estimated_cost": 10317,
+      "revised_cost": 10317,
+      "description": "replacing 2 retrofit like for like street facing windows. (e) wood. (n) wood clad anderson e. u factor <0.30. no size & no rough opening change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316277",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-20",
+      "status_date": "1994-01-11",
+      "estimated_cost": 20000,
+      "description": "shore and repair damage to facade new footing post stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925558S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-02",
+      "status_date": "1992-08-07",
+      "estimated_cost": 75000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501155",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-02-01",
+      "status_date": "1985-09-18",
+      "estimated_cost": 5000,
+      "description": "construct a gagrage enclosure over existing 3rd plan roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8412774",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-12-03",
+      "status_date": "1985-08-14",
+      "estimated_cost": 2500,
+      "description": "change heating system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410606",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-10-02",
+      "status_date": "1989-09-24",
+      "estimated_cost": 2500,
+      "description": "demolition of (e) bath, construction under permit #8407975",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407975",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-07-24",
+      "status_date": "1985-09-18",
+      "estimated_cost": 30000,
+      "description": "change locale of bath,install greenhouse & new roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=465",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618&lot=026",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618026",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

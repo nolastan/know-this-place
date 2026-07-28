@@ -1,0 +1,126 @@
+{
+  "address": "71 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/71/",
+  "apn": "3544020",
+  "block": "3544",
+  "lot": "020",
+  "eas_baseid": "358886",
+  "coordinates": {
+    "lat": 37.76671,
+    "lng": -122.42744
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2460,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0071 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2485971,
+    "assessed_improvement_value": 1119956,
+    "last_sale_date": "2015-08-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604043818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-04",
+      "status_date": "2016-04-14",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "replace 17 windows with marvin all wood, double hung, double pane.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M678507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-04-04",
+      "status_date": "2016-04-04",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601267996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-26",
+      "status_date": "2016-08-26",
+      "estimated_cost": 2000,
+      "revised_cost": 5000,
+      "description": "revision to pa 201601056394: remove partition wall in bath on 2nd. move partation wall between kitchen and 2nd bath on 1st. remove door and replace with wall in w/c 2nd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M654327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-01-12",
+      "status_date": "2016-01-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601056394",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-05",
+      "status_date": "2016-08-26",
+      "estimated_cost": 30000,
+      "revised_cost": 50000,
+      "description": "remodel kitchen, downstairs bathroom, upstairs bathroom. no structural work. no wall modification or alteration.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=71",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544020",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "address": "145 Villa Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/villa-terrace/145/",
+  "apn": "2719026",
+  "block": "2719",
+  "lot": "026",
+  "eas_baseid": "345090",
+  "coordinates": {
+    "lat": 37.758078,
+    "lng": -122.446176
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 3532,
+    "building_area_sqft": 4580,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0145 VILLA               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2552599,
+    "assessed_improvement_value": 1093969,
+    "last_sale_date": "2010-05-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911147367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-14",
+      "status_date": "2019-11-15",
+      "estimated_cost": 56967,
+      "revised_cost": 56967,
+      "description": "replacing (6) doors and (1) window like for like w/ wood clad doors and window. non street visible. u-factor 0.32 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910306010",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-30",
+      "status_date": "2019-10-30",
+      "estimated_cost": 56967,
+      "revised_cost": 56967,
+      "description": "replacing 6 doors and 1 windos, like for like. non street visible",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007086219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-08",
+      "status_date": "2010-09-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove existing stucco and tile on four exterior deck. re-waterproof & re-stucco approx. 1000 s.f. of wall at rear of building. no replacement of wood sheathing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003309308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-30",
+      "status_date": "2010-04-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection under app #200405264869. work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812269211",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-12-26",
+      "status_date": "2010-12-28",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "to complete work and obtain final inspection under appn. #200405264869",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405264869",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2004-05-26",
+      "status_date": "2010-12-28",
+      "estimated_cost": 150000,
+      "revised_cost": 350000,
+      "description": "horizontal addition to rear (2 stories over basement) & address complaint #200448546 drainage onto neighbor's property.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002506",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-02-08",
+      "status_date": "1990-08-03",
+      "estimated_cost": 10000,
+      "description": "build wall to hide sloping floor & large foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VILLA&street_type=TER&address_number=145",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719&lot=026",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719026",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "address": "168 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/168/",
+  "apn": "3584067",
+  "block": "3584",
+  "lot": "067",
+  "eas_baseid": "360886",
+  "coordinates": {
+    "lat": 37.760511,
+    "lng": -122.432017
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3220,
+    "basement_area_sqft": 640,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0168 HANCOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 488599,
+    "assessed_improvement_value": 323308,
+    "last_sale_date": "1997-06-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210265263",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-10-26",
+      "status_date": "2025-01-10",
+      "estimated_cost": 49000,
+      "revised_cost": 49000,
+      "description": "ground flr: replace foundation @ front & non property line side of garage. replace (e) garage door. center opening from entry walkway to front yard. 2nd flr: replace windows & flooring, (n) balcony @ front yard. reroofing. (n) skylight. raise parapet. (n) trim & stocco. dry rot repairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002144507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-14",
+      "status_date": "2020-08-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "revise permit 201907236585 to increase valuation by additional $30,000.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1184630",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-15",
+      "status_date": "2020-01-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907236585",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-23",
+      "status_date": "2020-08-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove int stair, new bathroom, new door and window at rear elevation. new laundry sink, new lighting, voluntary seismic stregthening. ground flr - update rear facing door and window, bay window support voluntary stregthening. remodel bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311051131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-05",
+      "status_date": "2013-12-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to structural components of basement; rear wall foundation and interior foundation wall to reflect as-built condition per dbi inspector (original #201303222824)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303222824",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-22",
+      "status_date": "2013-12-16",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "voluntary structural upgrade, partial rear foundation. replace slab, replace at extg basement level to strengthen extg elements.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902162",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-02-03",
+      "status_date": "1999-03-29",
+      "estimated_cost": 5500,
+      "description": "replace finishes & fixtures in bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HANCOCK&street_type=ST&address_number=168",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=067",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584067",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

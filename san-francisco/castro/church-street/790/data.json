@@ -1,0 +1,135 @@
+{
+  "address": "790 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/790/",
+  "apn": "3600010",
+  "block": "3600",
+  "lot": "010",
+  "eas_baseid": "361691",
+  "coordinates": {
+    "lat": 37.758245,
+    "lng": -122.428382
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 30,
+    "stories": 3,
+    "rooms": 66,
+    "bathrooms": 30,
+    "lot_area_sqft": 6400,
+    "building_area_sqft": 17007,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0790 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1277411,
+    "assessed_improvement_value": 3307243,
+    "last_sale_date": "1997-12-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412187121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-18",
+      "status_date": "2025-10-29",
+      "estimated_cost": 1400,
+      "revised_cost": 1400,
+      "description": "tenant improvment: due to elevator modernization. install an 2 additional smoke detector. ref 2023.1115.0841",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311150841",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-15",
+      "status_date": "2024-03-15",
+      "estimated_cost": 43800,
+      "revised_cost": 43800,
+      "description": "upgrade (e) fire alarm system to comply with sffc sec 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-21",
+      "status_date": "1998-12-04",
+      "estimated_cost": 25000,
+      "description": "finish installation of vinyl siding wall ref. pa#9817933",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817933",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-08",
+      "status_date": "1998-12-04",
+      "estimated_cost": 15000,
+      "description": "replace windows & viny siding on wood section only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-06-25",
+      "status_date": "1998-08-20",
+      "estimated_cost": 40000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611742",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1986-09-24",
+      "status_date": "1986-11-04",
+      "estimated_cost": 5,
+      "revised_cost": 2200,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=790",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600010",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

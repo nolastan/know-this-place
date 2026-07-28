@@ -1,0 +1,115 @@
+{
+  "address": "552 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/552/",
+  "apn": "3583011",
+  "block": "3583",
+  "lot": "011",
+  "eas_baseid": "360761",
+  "coordinates": {
+    "lat": 37.76004,
+    "lng": -122.433057
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 4687.5,
+    "building_area_sqft": 3600,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0552 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 172636,
+    "assessed_improvement_value": 284361
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201608225606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-22",
+      "status_date": "2016-09-08",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "on flat roof: remove existing roof covering, install new modified bitumen roof. pitch to be less than 2:12. on pitched roof: install shingle overlay. pitch to be greater than 2:12. applied weight to be less than 5 lbs psf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007205717",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-07-20",
+      "status_date": "2001-04-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to apprvd app-9826127-to provde one hr ext walls & adding fire damper w/a fusable link over fres",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9926818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-12-22",
+      "status_date": "2001-04-11",
+      "estimated_cost": 24000,
+      "description": "renew expired appl #9826127",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9826127",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-12-22",
+      "status_date": "2001-04-11",
+      "estimated_cost": 36000,
+      "description": "replace gas fired kiln,relocate electric powered kilns add f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=552",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583011",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

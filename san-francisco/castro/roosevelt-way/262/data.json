@@ -1,0 +1,148 @@
+{
+  "address": "262 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/262/",
+  "apn": "2607031",
+  "block": "2607",
+  "lot": "031",
+  "eas_baseid": "341817",
+  "coordinates": {
+    "lat": 37.765924,
+    "lng": -122.440773
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1183,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0262 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1515402,
+    "assessed_improvement_value": 649458,
+    "last_sale_date": "2021-03-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309257346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-25",
+      "status_date": "2024-01-30",
+      "estimated_cost": 31000,
+      "revised_cost": 31000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002285731",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2020-02-28",
+      "status_date": "2024-07-03",
+      "estimated_cost": 21000,
+      "description": "revision to pa# 2014-1107-0949 s2. changes to front facade. revise window openings & locations, revise exterior finishes, revise interior layout. revise structural work to pa# 2014-1107-0949 s1 and s2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903064567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-06",
+      "status_date": "2019-03-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "commencement of work not started under previously approved permit application pa#201609147637 (shoring plan for approved plans for foundation.)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903064568",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-06",
+      "status_date": "2019-03-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "commencement of work not started under previously approved permit application pa#201411070949 (horizontal & vertical addition. remodel split level home.)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609147637",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2016-09-14",
+      "status_date": "2016-12-09",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "shoring plan for approved plans for foundation. ref pa 2014-1107-0949 s1/r2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411070949",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-11-07",
+      "status_date": "2015-09-30",
+      "estimated_cost": 260000,
+      "revised_cost": 425000,
+      "description": "horizontal & vertical addition. remodel split level home. 1st flr (n) entertainment & laundry rooms, 2nd flr. relocate kitchen & remove (e) mezzainine, one of two (e) baths relocate. stairs. 3rd flr expand from rear to front. 2 (n) baths 2 (n) bedrooms (n) stairs, 4th flr 1-(n) den, 1 (n) bedrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313506",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-08-16",
+      "status_date": "1994-03-28",
+      "estimated_cost": 2000,
+      "description": "repl rear yrd brick ret wall-new concrete ret wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=262",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&lot=031",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2607031",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

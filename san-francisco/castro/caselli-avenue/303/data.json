@@ -1,0 +1,154 @@
+{
+  "address": "303 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/303/",
+  "apn": "2711027",
+  "block": "2711",
+  "lot": "027",
+  "eas_baseid": "344865",
+  "coordinates": {
+    "lat": 37.758937,
+    "lng": -122.443746
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2025,
+    "building_area_sqft": 1866,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0303 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 165728,
+    "assessed_improvement_value": 786063
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1136829",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-11",
+      "status_date": "2019-09-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612094543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-09",
+      "status_date": "2018-05-02",
+      "estimated_cost": 75000,
+      "revised_cost": 120000,
+      "description": "interior remodel to 2nd floor flat. bathroom location moved & kitchen moved. new windows at south & east elevation and 1 fire rated 3/4 hr window at west elevation. no foundation work except interior footings at first floor (garage) for new posts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512023910",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-12-02",
+      "status_date": "2015-12-02",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805293197",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-05-29",
+      "status_date": "2010-01-26",
+      "estimated_cost": 10000,
+      "revised_cost": 18000,
+      "description": "replace in kind front entry stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924596",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-12-15",
+      "status_date": "1990-05-10",
+      "estimated_cost": 2000,
+      "description": "rebuild rear exterior stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707677",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-03",
+      "status_date": "1987-09-25",
+      "estimated_cost": 3000,
+      "description": "install partial sprinkler system ground floor garage & stora",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601478",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-07",
+      "status_date": "1987-10-23",
+      "estimated_cost": 1000,
+      "description": "to start work under approved permit #8502981",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502981",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-03-26",
+      "status_date": "1986-01-24",
+      "estimated_cost": 65000,
+      "description": "garage/basement; seismic work to code, sprinkler system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=303",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711027",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

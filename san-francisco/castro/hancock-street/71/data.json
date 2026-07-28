@@ -1,0 +1,149 @@
+{
+  "address": "71 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/71/",
+  "apn": "3585039",
+  "block": "3585",
+  "lot": "039",
+  "eas_baseid": "360957",
+  "coordinates": {
+    "lat": 37.760158,
+    "lng": -122.429736
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0071 HANCOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 321827,
+    "assessed_improvement_value": 651776,
+    "last_sale_date": "1991-08-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208221023",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-22",
+      "status_date": "2023-08-22",
+      "estimated_cost": 18900,
+      "revised_cost": 18900,
+      "description": "replace (11) windows and (2) doors. front of house: (9) (e) wood (n) wood with matching grids. bakc of the house: (2) doors and (2) windows. same size and location- retrofit installation. u factor not to exceed 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601253042",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-25",
+      "status_date": "2006-01-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "per inspectors instructions, revised cost additional $10,000 per pa# 2005/12/14/0294.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601253043",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-25",
+      "status_date": "2006-01-25",
+      "estimated_cost": 205000,
+      "revised_cost": 205000,
+      "description": "per inspectors instructions, revised cost additional $205,000 per pa# 2005/09/28/4113.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36149",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-25",
+      "status_date": "2006-01-25",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512140294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-14",
+      "status_date": "2006-06-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "new deck @ rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512019306",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-01",
+      "status_date": "2006-05-22",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "removeing wall between dining room and kitchen adding (n) beam & (n) posts on 2nd floor an (n)steel beam and post in garage (n) footing also ott foundation arond crawl space. in bathroom adding non-bearing walls (n) shower and (n) sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509284113",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-28",
+      "status_date": "2005-09-28",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "surface remodel of kitchenand bath on 2nd floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HANCOCK&street_type=ST&address_number=71",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585039",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

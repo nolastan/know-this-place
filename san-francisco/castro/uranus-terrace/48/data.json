@@ -1,0 +1,114 @@
+{
+  "address": "48 Uranus Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/uranus-terrace/48/",
+  "apn": "2655006",
+  "block": "2655",
+  "lot": "006",
+  "eas_baseid": "343453",
+  "coordinates": {
+    "lat": 37.761169,
+    "lng": -122.44582
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2064,
+    "building_area_sqft": 2155,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0048 URANUS              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602449,
+    "assessed_improvement_value": 346722,
+    "last_sale_date": "1992-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200901150263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-15",
+      "status_date": "2009-02-13",
+      "estimated_cost": 19714,
+      "revised_cost": 19714,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-07",
+      "status_date": "1992-09-09",
+      "estimated_cost": 6195,
+      "description": "repairs per termite report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123540",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-12-12",
+      "status_date": "1992-06-24",
+      "estimated_cost": 10000,
+      "description": "tile bathroom & toilet room/replace fixtures/fittings/equipm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114788",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-16",
+      "status_date": "1991-11-05",
+      "estimated_cost": 12000,
+      "description": "repair,retile bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URANUS&street_type=TER&address_number=48",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2655006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2655&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2655006",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

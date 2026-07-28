@@ -1,0 +1,93 @@
+{
+  "address": "2401 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2401/",
+  "apn": "2614081B",
+  "block": "2614",
+  "lot": "081B",
+  "eas_baseid": "342158",
+  "coordinates": {
+    "lat": 37.765763,
+    "lng": -122.437176
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1176,
+    "building_area_sqft": 1926,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "2403 2401 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1177993,
+    "assessed_improvement_value": 504852,
+    "last_sale_date": "2016-08-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505156457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-15",
+      "status_date": "2016-08-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel (1) bathroom in one unit and demo all existing to the frame, new drains, waste and supply lines. put in fan with light, toilet, tub, vanity and all hardware. tile floors and shower in one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317435",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-12",
+      "status_date": "1994-03-04",
+      "estimated_cost": 4100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2401",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614081B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=081B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614081B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

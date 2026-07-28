@@ -1,0 +1,137 @@
+{
+  "address": "121 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/121/",
+  "apn": "2623061",
+  "block": "2623",
+  "lot": "061",
+  "eas_baseid": "342547",
+  "coordinates": {
+    "lat": 37.763035,
+    "lng": -122.437789
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 2,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3698,
+    "building_area_sqft": 2451,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0121 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1106873,
+    "assessed_improvement_value": 560448,
+    "last_sale_date": "2009-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202212289230",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-12-28",
+      "status_date": "2024-10-15",
+      "estimated_cost": 25000,
+      "revised_cost": 87000,
+      "description": "construction of a deck at rear of property. reconfiguration of interior nonstructural walls. relocation of hvac and hw heaters. legalization of non-permitted bathroom. no work in public right of way. no work to front of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M549307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-09",
+      "status_date": "2015-01-09",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412163886",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-12-16",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision of appl 2014.0612.8268. modification of concrete footing and steel beam per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406128268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-12",
+      "status_date": "2015-06-15",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "renovation of 452 sq.ft. office and storage into home office space. relocation of (e) wash & dry. expand (e) deck @ 18th above grade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208318745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-31",
+      "status_date": "2013-05-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "comply with nov# 201195668 (ces)-addition & renovation to an (e) deck & stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810663",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-11",
+      "status_date": "2000-05-09",
+      "estimated_cost": 8175,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=121",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=061",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623061",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

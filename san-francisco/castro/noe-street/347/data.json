@@ -1,0 +1,156 @@
+{
+  "address": "347 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/347/",
+  "apn": "3564084",
+  "block": "3564",
+  "lot": "084",
+  "eas_baseid": "359869",
+  "coordinates": {
+    "lat": 37.763421,
+    "lng": -122.432703
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2480,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0347 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 596614,
+    "assessed_improvement_value": 648282,
+    "assessed_fixtures_value": 4008,
+    "last_sale_date": "2012-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201408123645",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-08-12",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "enlarge opening between kitchen and dining area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406209006",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-20",
+      "status_date": "2014-06-20",
+      "estimated_cost": 35000,
+      "revised_cost": 49000,
+      "description": "kitchen remodle at lower floor unit - remodel existing bathroom & add (1) partition wall to add a second bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201202295131",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-02-29",
+      "status_date": "2012-02-29",
+      "estimated_cost": 39380,
+      "revised_cost": 39380,
+      "description": "strengthen (e) brick foundation & mudsill bolting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M305067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-02-29",
+      "status_date": "2012-02-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M30970",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-01-26",
+      "status_date": "2005-01-26",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-30",
+      "status_date": "1997-01-22",
+      "estimated_cost": 1,
+      "description": "revision to appl #9615907,replace bay window sashes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615907",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-08-26",
+      "status_date": "1997-08-25",
+      "estimated_cost": 2000,
+      "description": "repalce wood trim of bay windows in front prior to painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900893",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-19",
+      "status_date": "1990-02-22",
+      "estimated_cost": 9850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=347",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564084&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=084",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564084",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

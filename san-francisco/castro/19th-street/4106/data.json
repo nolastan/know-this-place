@@ -1,0 +1,123 @@
+{
+  "address": "4106 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4106/",
+  "apn": "2695017",
+  "block": "2695",
+  "lot": "017",
+  "eas_baseid": "344395",
+  "coordinates": {
+    "lat": 37.75945,
+    "lng": -122.435333
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1668,
+    "building_area_sqft": 2435,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4106 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 936358,
+    "assessed_improvement_value": 624239
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201304235164",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-23",
+      "status_date": "2013-05-13",
+      "estimated_cost": 16950,
+      "revised_cost": 16950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-25",
+      "status_date": "1999-05-17",
+      "estimated_cost": 8000,
+      "description": "kitchen and bath remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217389",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-06",
+      "status_date": "1992-11-02",
+      "estimated_cost": 3000,
+      "description": "replace window sash in rear room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-04",
+      "status_date": "1992-05-15",
+      "estimated_cost": 10000,
+      "description": "remove brick flue in the kitchen, replace kitchen, bath cab.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119441",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-15",
+      "status_date": "1991-11-13",
+      "estimated_cost": 4000,
+      "description": "replace deteriorated siding sill & base of some studs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4106",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2695017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2695&lot=017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2695017",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "address": "150 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/150/",
+  "apn": "3557022A",
+  "block": "3557",
+  "lot": "022A",
+  "eas_baseid": "359456",
+  "coordinates": {
+    "lat": 37.7653,
+    "lng": -122.427949
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 6,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 4376,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0150 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527386,
+    "assessed_improvement_value": 1446569,
+    "last_sale_date": "2000-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1084527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-22",
+      "status_date": "2019-05-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608104708",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-10",
+      "status_date": "2016-12-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to appl# 2015-1001-8553. change wood beam to steel angle & connection to hardy frame on 1st floor lobby area along grid area 3.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M677547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-03-30",
+      "status_date": "2016-03-30",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510018553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-01",
+      "status_date": "2016-12-29",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "soft story seismic upgrade in referrence to iebc 2012, sfbc ch 34b apprendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707140",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-04-21",
+      "status_date": "1997-07-16",
+      "estimated_cost": 900,
+      "description": "make repairs per report no. 14066",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923475",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-01",
+      "status_date": "1990-03-13",
+      "estimated_cost": 2700,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=150",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557022A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=022A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557022A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

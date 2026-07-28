@@ -1,0 +1,137 @@
+{
+  "address": "496 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/496/",
+  "apn": "2628080",
+  "block": "2628",
+  "lot": "080",
+  "eas_baseid": "342722",
+  "coordinates": {
+    "lat": 37.763513,
+    "lng": -122.443895
+  },
+  "parcel": {
+    "year_built": 1969,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 3614,
+    "building_area_sqft": 4704,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0496 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 301803,
+    "assessed_improvement_value": 305835
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1969",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510318709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-31",
+      "status_date": "2025-12-01",
+      "estimated_cost": 22500,
+      "revised_cost": 22500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308305591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-30",
+      "status_date": "2023-09-28",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace t-1-4 siding on east side of building with horizontal hardie plank. approx 1000 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301270920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-27",
+      "status_date": "2023-06-20",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "repair front deck on the 2/f and 3/f. work to sister existing deck beam with new beam, no other work to be done. replace in kind existing finish underneath decks.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211106280",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-10",
+      "status_date": "2023-06-20",
+      "estimated_cost": 30000,
+      "revised_cost": 20000,
+      "description": "replace decking membrane on 3 front balconies. replace water damaged framing on front in kind and repair stucco and water proofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207077959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-07",
+      "status_date": "2023-06-20",
+      "estimated_cost": 9800,
+      "revised_cost": 10000,
+      "description": "replacing 4 sliding class doors in the front of the house. 2 on the 2nd floor & 2nd and 1st floor 1 st floor with new aluminum sliding doors. (duplicate pa#202207077959)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409093658",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-09",
+      "status_date": "2006-02-14",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=496",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=080",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628080",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

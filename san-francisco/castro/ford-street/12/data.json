@@ -1,0 +1,147 @@
+{
+  "address": "12 Ford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/ford-street/12/",
+  "apn": "3581052",
+  "block": "3581",
+  "lot": "052",
+  "eas_baseid": "360638",
+  "coordinates": {
+    "lat": 37.76215,
+    "lng": -122.431464
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2420,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0012 FORD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1430192,
+    "assessed_improvement_value": 612932,
+    "last_sale_date": "2014-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504073845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-07",
+      "status_date": "2025-04-17",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace kitchen back splash tiling, counter replacement like for like bathroom tiling replace no changes to electrical or plumbing fixtures - like for like",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211015687",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-01",
+      "status_date": "2023-07-19",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "parital replacement of rear property line fence, north and east side of property. max height not to exceed 10 ft from adjacent grade. in response to nov 2022090786",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602230326",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-23",
+      "status_date": "2016-02-23",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair fungus damaged studs and mudsill; no structural repair; no structuralchanges replacment of fungus damaged members only. to comply termite report #20773",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410136645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-13",
+      "status_date": "2004-11-02",
+      "estimated_cost": 15400,
+      "revised_cost": 15400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-16",
+      "status_date": "1990-05-07",
+      "estimated_cost": 7000,
+      "description": "replace 2 eq-damaged masonry chimneys with metal chimneys",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-28",
+      "status_date": "1988-12-01",
+      "estimated_cost": 5000,
+      "description": "replace mud sills, siding, fance connection & exterior stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700749",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-01-20",
+      "status_date": "1987-11-19",
+      "estimated_cost": 5000,
+      "description": "horizontal extension, wood deck & new bay window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FORD&street_type=ST&address_number=12",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=052",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581052",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "address": "111–115 Buena Vista Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-terrace/111/",
+  "apn": "2612036B",
+  "block": "2612",
+  "lot": "036B",
+  "eas_baseid": "342055",
+  "coordinates": {
+    "lat": 37.76695,
+    "lng": -122.437936
+  },
+  "address_range": "111–115",
+  "street_numbers_on_parcel": [
+    "111",
+    "115"
+  ],
+  "parcel": {
+    "year_built": 1955,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 1842,
+    "building_area_sqft": 2660,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0115 0111 BUENA VISTA         TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1695750,
+    "assessed_improvement_value": 726750,
+    "last_sale_date": "2023-11-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1149727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-08",
+      "status_date": "2019-10-08",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708154801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-15",
+      "status_date": "2018-03-19",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "bathroom remodel, relocate vanity & shower stall, install new tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503039857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-03",
+      "status_date": "2015-05-21",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "remove and replace deck surface at 3rd floor (approx 5'x20') included water proofing and tiles (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304072",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-12",
+      "status_date": "1993-07-09",
+      "estimated_cost": 1500,
+      "description": "replace 3 alum thermal gard windows in bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=TER&address_number=111",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612036B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=036B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612036B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

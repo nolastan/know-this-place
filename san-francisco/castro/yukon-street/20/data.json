@@ -1,0 +1,140 @@
+{
+  "address": "20 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/20/",
+  "apn": "2702001",
+  "block": "2702",
+  "lot": "001",
+  "eas_baseid": "344696",
+  "coordinates": {
+    "lat": 37.759382,
+    "lng": -122.442359
+  },
+  "also_addressed": [
+    "171 CASELLI AVE"
+  ],
+  "parcel": {
+    "year_built": 1932,
+    "units": 2,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2857,
+    "building_area_sqft": 2041,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0020 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1146614,
+    "assessed_improvement_value": 646036,
+    "last_sale_date": "2009-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602246394",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-24",
+      "status_date": "2026-06-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "add a full bathroom in the laundry room on the ground fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407025674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-02",
+      "status_date": "2024-07-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for administrative purpose to verify building use as a (1) dwelling unit per city records. ( asseccor water dept. building dept) no work being performed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205291328",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-05-29",
+      "status_date": "2012-05-29",
+      "estimated_cost": 5200,
+      "revised_cost": 5200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909217300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-21",
+      "status_date": "2010-05-20",
+      "estimated_cost": 30000,
+      "revised_cost": 68000,
+      "description": "remodel of lower floor & conversion to habitable space including; new master bedroom suite, bedroom, bathroom & closet, new family room, new laundry room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908064285",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-06",
+      "status_date": "2010-05-27",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen remodel. replace appliances, cabinets, countertops, flooring.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807401",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-04-28",
+      "status_date": "1998-08-19",
+      "estimated_cost": 50000,
+      "description": "clean out and remodel fire damage/electrical, furnace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=20",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2702001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2702&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2702001",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "address": "139 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/139/",
+  "apn": "2623057",
+  "block": "2623",
+  "lot": "057",
+  "eas_baseid": "342543",
+  "coordinates": {
+    "lat": 37.763182,
+    "lng": -122.438238
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2256,
+    "building_area_sqft": 1944,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0139 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 255466,
+    "assessed_improvement_value": 653461,
+    "last_sale_date": "1997-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200509082341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-08",
+      "status_date": "2006-01-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove and replace french doors at 3 location at rear of house/patch drywall near door as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900214",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-05",
+      "status_date": "2000-02-08",
+      "estimated_cost": 4000,
+      "description": "new flue venting for 1 furnace (e) 3 water heaters",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725608S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-12-23",
+      "status_date": "2000-02-08",
+      "estimated_cost": 100000,
+      "description": "horizontal/vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509434",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-20",
+      "status_date": "1995-11-14",
+      "estimated_cost": 3480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506582",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-05-05",
+      "status_date": "1995-06-02",
+      "estimated_cost": 200,
+      "description": "install 2 louv vents @ utility rm door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308778",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-05-26",
+      "status_date": "1995-02-03",
+      "estimated_cost": 25000,
+      "description": "remodel bath remodel kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913920",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-08-02",
+      "status_date": "1995-05-30",
+      "estimated_cost": 5,
+      "revised_cost": 500,
+      "description": "legalize use areas 3 units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711002",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-08-05",
+      "status_date": "1988-11-30",
+      "estimated_cost": 1000,
+      "description": "misc. plumb, elec & termite, bring structure up to code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-23",
+      "status_date": "1987-01-30",
+      "estimated_cost": 2000,
+      "description": "repair hard wood floors/masonry walkway subfloor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=139",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=057",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623057",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

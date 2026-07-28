@@ -1,0 +1,140 @@
+{
+  "address": "4441–4443 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4441/",
+  "apn": "2750037",
+  "block": "2750",
+  "lot": "037",
+  "eas_baseid": "345477",
+  "coordinates": {
+    "lat": 37.757286,
+    "lng": -122.437704
+  },
+  "address_range": "4441–4443",
+  "street_numbers_on_parcel": [
+    "4441",
+    "4443"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4443 4441 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 562990,
+    "assessed_improvement_value": 375317,
+    "last_sale_date": "1988-08-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604275828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-27",
+      "status_date": "2016-10-13",
+      "estimated_cost": 1620,
+      "revised_cost": 1620,
+      "description": "kitchen range fan vent system. run liner only thru brick chimney. 6\" diameter ul listed material",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704199170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-19",
+      "status_date": "2007-12-07",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "replace/rmodel kitchen, replace existing rear door, replace existing bath window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501213757",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-21",
+      "status_date": "2005-01-27",
+      "estimated_cost": 750,
+      "revised_cost": 750,
+      "description": "replacing an area 8 by 10 approximately 21-8' painted redwood planks only the planks will be replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-10",
+      "status_date": "2006-09-20",
+      "estimated_cost": 10350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604632",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-20",
+      "status_date": "1996-04-16",
+      "estimated_cost": 1000,
+      "description": "repair dryrot damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-12",
+      "status_date": "1996-01-03",
+      "estimated_cost": 5750,
+      "description": "repair dry rot at base of rear wall - report #4291a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4441",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750037",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

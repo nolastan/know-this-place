@@ -1,0 +1,113 @@
+{
+  "address": "47 Buena Vista Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-terrace/47/",
+  "apn": "2609036",
+  "block": "2609",
+  "lot": "036",
+  "eas_baseid": "341935",
+  "coordinates": {
+    "lat": 37.768127,
+    "lng": -122.437983
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 2220,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0047 BUENA VISTA         TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 203110,
+    "assessed_improvement_value": 371706
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M710947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-04",
+      "status_date": "2016-08-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108243149",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-24",
+      "status_date": "2011-10-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "bathroom remodel: removal of all (e) fixtures & finishes & replacement w/ (n). no additions or changes to any structural elements, no change to windows or doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401881",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-02-22",
+      "status_date": "1986-01-06",
+      "estimated_cost": 60000,
+      "description": "remove loft over living room & add new windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313104",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-12-27",
+      "status_date": "1984-02-21",
+      "estimated_cost": 2100,
+      "description": "installation of a pre-fabricated metal fireplace unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=TER&address_number=47",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2609036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2609&lot=036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2609036",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

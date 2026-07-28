@@ -1,0 +1,159 @@
+{
+  "address": "4036–4038 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4036/",
+  "apn": "3583021",
+  "block": "3583",
+  "lot": "021",
+  "eas_baseid": "360769",
+  "coordinates": {
+    "lat": 37.759589,
+    "lng": -122.43351
+  },
+  "address_range": "4036–4038",
+  "street_numbers_on_parcel": [
+    "4036",
+    "4038"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2657,
+    "building_area_sqft": 3120,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4038 4036 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234984,
+    "assessed_improvement_value": 132805
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507080395",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-08",
+      "status_date": "2025-07-25",
+      "estimated_cost": 38800,
+      "revised_cost": 38800,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M710730",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-04",
+      "status_date": "2016-08-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211040740",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-04",
+      "status_date": "2002-11-04",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "kitchen:new custom cabinets,lite fxt,appliances,frch doors,refinish wood floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208264913",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-08-26",
+      "status_date": "2002-08-26",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "voluntary strengthening of (e0 rear deck with steel frame and new beams",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405246",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-09",
+      "status_date": "1994-10-04",
+      "estimated_cost": 2000,
+      "description": "restore exterior facade, add gripable rails at entry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9404096",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-14",
+      "status_date": "1994-09-14",
+      "estimated_cost": 8575,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-06-19",
+      "status_date": "1987-06-29",
+      "estimated_cost": 7500,
+      "description": "instal aluminum windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-02-05",
+      "status_date": "1987-06-05",
+      "estimated_cost": 796,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583021",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

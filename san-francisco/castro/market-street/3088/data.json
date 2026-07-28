@@ -1,0 +1,126 @@
+{
+  "address": "3088 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3088/",
+  "apn": "2656027",
+  "block": "2656",
+  "lot": "027",
+  "eas_baseid": "343499",
+  "coordinates": {
+    "lat": 37.761123,
+    "lng": -122.443283
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1855,
+    "building_area_sqft": 1798,
+    "basement_area_sqft": 748,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3088 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1242500,
+    "assessed_improvement_value": 532500,
+    "last_sale_date": "2024-07-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201311121713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-12",
+      "status_date": "2014-05-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace kitchen cabinets and counter top, granite top and tile in flooring, replace existing fixtures and appliances.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109205053",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-20",
+      "status_date": "2011-09-20",
+      "estimated_cost": 12691,
+      "revised_cost": 12691,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900191",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-01-05",
+      "status_date": "1999-01-15",
+      "estimated_cost": 5000,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-07",
+      "status_date": "1991-07-03",
+      "estimated_cost": 3000,
+      "description": "repair steps leading to front door - treads, risers, handrai",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-08-05",
+      "status_date": "1986-10-28",
+      "estimated_cost": 1950,
+      "description": "repair damage in rear porch framing & base wall framing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3088",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656027",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

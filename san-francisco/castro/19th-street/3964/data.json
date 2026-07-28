@@ -1,0 +1,170 @@
+{
+  "address": "3964 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3964/",
+  "apn": "3584030",
+  "block": "3584",
+  "lot": "030",
+  "eas_baseid": "360855",
+  "coordinates": {
+    "lat": 37.759716,
+    "lng": -122.431854
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 1714,
+    "basement_area_sqft": 384,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3964 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 638699,
+    "assessed_improvement_value": 445486,
+    "last_sale_date": "1998-04-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012171227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-17",
+      "status_date": "2023-03-22",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "2nd fl kitchen remodel, (n) great room, (n) door to 2nd fl backyard deck. 1st & 2nd fl backyard deck new refinish & (n) deck railing replaced in place.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006104251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-10",
+      "status_date": "2010-12-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "excavation & drainage system for a 8' high retain wall to be constructed @ adjacent lot at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410287890",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-28",
+      "status_date": "2004-10-28",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109077812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-07",
+      "status_date": "2001-09-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 9807774 for final inspection only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807774",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-01",
+      "status_date": "2001-09-13",
+      "estimated_cost": 8500,
+      "description": "remodel basement according to plans -non-structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807317",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "1998-04-27",
+      "status_date": "1998-05-01",
+      "estimated_cost": 5100,
+      "description": "renewal of pa#9511903",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609926S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-06-05",
+      "status_date": "1997-01-22",
+      "estimated_cost": 5000,
+      "revised_cost": 16000,
+      "description": "add new bathrm & bedrm to (e) grnd flvl. no ext alteration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-05-03",
+      "status_date": "1995-06-02",
+      "estimated_cost": 2000,
+      "description": "beam at family rm, non-bearing partition, closet door framin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-03",
+      "status_date": "1995-05-31",
+      "estimated_cost": 10000,
+      "description": "remodel kitchen, wardrobe and panty",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3964",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584030",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

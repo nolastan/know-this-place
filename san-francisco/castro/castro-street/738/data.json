@@ -1,0 +1,124 @@
+{
+  "address": "738 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/738/",
+  "apn": "2752013",
+  "block": "2752",
+  "lot": "013",
+  "eas_baseid": "345540",
+  "coordinates": {
+    "lat": 37.756696,
+    "lng": -122.434964
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 2093,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0738 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 415308,
+    "assessed_improvement_value": 265787,
+    "last_sale_date": "1996-04-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9814217",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-07-24",
+      "status_date": "1999-10-25",
+      "estimated_cost": 120000,
+      "description": "horizozntal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707378",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-24",
+      "status_date": "1999-03-01",
+      "estimated_cost": 1,
+      "description": "struction revision to permit #9620131",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620131",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-10-18",
+      "status_date": "1997-04-25",
+      "estimated_cost": 41000,
+      "description": "replace/repair foundat/locate new bath bsmt/kitch remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-08-06",
+      "status_date": "1984-12-24",
+      "estimated_cost": 2500,
+      "revised_cost": 0,
+      "description": "replace windows in frnot with double glazed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-09-23",
+      "status_date": "1983-10-05",
+      "estimated_cost": 1200,
+      "revised_cost": 0,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=738",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2752013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2752&lot=013",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2752013",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

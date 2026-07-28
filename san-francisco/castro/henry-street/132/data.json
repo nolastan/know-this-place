@@ -1,0 +1,153 @@
+{
+  "address": "132–134 Henry Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/henry-street/132/",
+  "apn": "3540055",
+  "block": "3540",
+  "lot": "055",
+  "eas_baseid": "358704",
+  "coordinates": {
+    "lat": 37.766854,
+    "lng": -122.434142
+  },
+  "address_range": "132–134",
+  "street_numbers_on_parcel": [
+    "132",
+    "134"
+  ],
+  "parcel": {
+    "year_built": 1902,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2988,
+    "building_area_sqft": 2084,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0134 0132 HENRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 728184,
+    "assessed_improvement_value": 487548,
+    "last_sale_date": "1995-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202308094053",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-09",
+      "status_date": "2023-08-09",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replacing less than 50% stairs in kind. demoing existing steps and stucco, reframing. front exterior.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306200430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-20",
+      "status_date": "2023-09-11",
+      "estimated_cost": 24500,
+      "revised_cost": 24500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M753547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-01-10",
+      "status_date": "2017-01-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M344528",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-24",
+      "status_date": "2012-08-24",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607798",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-06",
+      "status_date": "1996-10-22",
+      "estimated_cost": 3000,
+      "description": "remove & replace bathrm wall ceiling,window,insulate,sheetro",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-30",
+      "status_date": "1990-02-05",
+      "estimated_cost": 4500,
+      "description": "repair dry rot,replace decking joists/tile on front entry",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HENRY&street_type=ST&address_number=132",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3540055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3540&lot=055",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3540055",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43414215792666%2037.7668539954954)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

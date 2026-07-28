@@ -1,0 +1,104 @@
+{
+  "address": "3336 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3336/",
+  "apn": "2717004B",
+  "block": "2717",
+  "lot": "004B",
+  "eas_baseid": "485166",
+  "coordinates": {
+    "lat": 37.757988,
+    "lng": -122.443951
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2352,
+    "building_area_sqft": 998,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Twin Peaks",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3336 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 615704,
+    "assessed_improvement_value": 320158,
+    "last_sale_date": "2012-11-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202008151874",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-15",
+      "status_date": "2021-02-03",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 9 windows and 1 patio door . front windows will be aluminum by fleetwood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007217151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-21",
+      "status_date": "2010-07-30",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "retile shower stall wall above existing tub. re-tile bathroom floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121929",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-11-18",
+      "status_date": "1992-05-01",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3336",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717004B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&lot=004B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2717004B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

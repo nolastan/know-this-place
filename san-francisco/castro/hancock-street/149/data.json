@@ -1,0 +1,136 @@
+{
+  "address": "149 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/149/",
+  "apn": "3584048",
+  "block": "3584",
+  "lot": "048",
+  "eas_baseid": "360870",
+  "coordinates": {
+    "lat": 37.760043,
+    "lng": -122.431651
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3420,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0149 HANCOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35315,
+    "assessed_improvement_value": 109638
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310098914",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-09",
+      "status_date": "2014-04-25",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace (7) existing windows same size and location basement level front and side with aluminum-clad sash.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308083861",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-08",
+      "status_date": "2013-08-08",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "repair/replace drain lines below concrete walkway by floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306129329",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-12",
+      "status_date": "2013-07-02",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "isntall 5/8\" sheetrock to interior walls of basement/storage/workshop area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506024021",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-06-02",
+      "status_date": "2006-03-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "construct 2 cidh piers at bottom of exist neighbors garden retaining wall at rear yard common proper",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107254498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-25",
+      "status_date": "2001-09-26",
+      "estimated_cost": 14775,
+      "revised_cost": 14775,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305030",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1983-06-02",
+      "status_date": "1984-02-10",
+      "estimated_cost": 25000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HANCOCK&street_type=ST&address_number=149",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=048",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584048",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

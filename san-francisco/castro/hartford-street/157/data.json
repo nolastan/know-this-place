@@ -1,0 +1,129 @@
+{
+  "address": "157–159 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/157/",
+  "apn": "3583027",
+  "block": "3583",
+  "lot": "027",
+  "eas_baseid": "360774",
+  "coordinates": {
+    "lat": 37.760031,
+    "lng": -122.433489
+  },
+  "address_range": "157–159",
+  "street_numbers_on_parcel": [
+    "157",
+    "159"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3087,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0159 0157 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 525502,
+    "assessed_improvement_value": 788262,
+    "last_sale_date": "2000-02-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200206219624",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-06-21",
+      "status_date": "2002-06-21",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201146832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-14",
+      "status_date": "2002-05-10",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "bathroom remodel repair damage new shower,toilet,sink,flooring.replacement window not visible from s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304448",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-18",
+      "status_date": "1993-06-23",
+      "estimated_cost": 6000,
+      "description": "bath rm.; remove exist. wall & ceiling covering.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9222305",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-12-30",
+      "status_date": "1993-12-09",
+      "estimated_cost": 8500,
+      "description": "re sheetrock living rm, closet, kitchen, dinette, rem. kitch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221152",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-12-07",
+      "status_date": "1993-05-04",
+      "estimated_cost": 2900,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=157",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583027",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

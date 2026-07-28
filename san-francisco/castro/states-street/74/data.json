@@ -1,0 +1,142 @@
+{
+  "address": "74–76 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/74/",
+  "apn": "2622058",
+  "block": "2622",
+  "lot": "058",
+  "eas_baseid": "342497",
+  "coordinates": {
+    "lat": 37.763501,
+    "lng": -122.43687
+  },
+  "address_range": "74–76",
+  "street_numbers_on_parcel": [
+    "74",
+    "76"
+  ],
+  "parcel": {
+    "year_built": 1976,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 1871,
+    "building_area_sqft": 3817,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0076 0074 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 530584,
+    "last_sale_date": "1993-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1976",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501307111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-30",
+      "status_date": "2015-12-08",
+      "estimated_cost": 45000,
+      "revised_cost": 59000,
+      "description": "remove interior stairs at split level one unit. remodel extg kitchen in one unit and expand into split level of one unit (same level). remodel bath in one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307021022",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-02",
+      "status_date": "2013-11-13",
+      "estimated_cost": 3500,
+      "revised_cost": 40000,
+      "description": "replace 17 windows & front gate windows are visible from the street. u-factor 0.40 max, replace stucco on front & left side.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106248865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-24",
+      "status_date": "2011-09-29",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508100",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-31",
+      "status_date": "1996-01-09",
+      "estimated_cost": 6600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9404426",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-18",
+      "status_date": "1994-03-30",
+      "estimated_cost": 1000,
+      "revised_cost": 990,
+      "description": "install 3 new windows front top story",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-11-15",
+      "status_date": "1994-03-30",
+      "estimated_cost": 10000,
+      "description": "remove kitchen, laundry closet & bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=74",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=058",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622058",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

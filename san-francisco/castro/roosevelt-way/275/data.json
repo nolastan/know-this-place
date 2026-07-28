@@ -1,0 +1,147 @@
+{
+  "address": "275 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/275/",
+  "apn": "2614044",
+  "block": "2614",
+  "lot": "044",
+  "eas_baseid": "342126",
+  "coordinates": {
+    "lat": 37.765483,
+    "lng": -122.440515
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 1205,
+    "basement_area_sqft": 80,
+    "lot_depth_ft": 15,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0275 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162476,
+    "assessed_improvement_value": 266074
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410294006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-29",
+      "status_date": "2024-11-13",
+      "estimated_cost": 19720,
+      "revised_cost": 19720,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810083704",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-08",
+      "status_date": "2008-10-16",
+      "estimated_cost": 2454,
+      "revised_cost": 2454,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806275543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-27",
+      "status_date": "2008-12-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "revision to permit#200806053686 repair dryrot as needed & restucco in kind entire front elevation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806053686",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-05",
+      "status_date": "2008-06-05",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "minor stucco repair ( less than 14 sq.ft.) on right side of garage door, as needed, replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-14",
+      "status_date": "1992-08-25",
+      "estimated_cost": 4020,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-22",
+      "status_date": "1989-03-14",
+      "estimated_cost": 1600,
+      "description": "remove dryrot, replace stucco finish on exterior & balconey",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500792",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-01-25",
+      "status_date": "1985-08-14",
+      "estimated_cost": 10000,
+      "description": "remove glass enclosure,level floor,add shower & re-enclose",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=275",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=044",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614044",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

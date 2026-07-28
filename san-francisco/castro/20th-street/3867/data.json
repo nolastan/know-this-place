@@ -1,0 +1,125 @@
+{
+  "address": "3867 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3867/",
+  "apn": "3606070",
+  "block": "3606",
+  "lot": "070",
+  "eas_baseid": "362202",
+  "coordinates": {
+    "lat": 37.757895,
+    "lng": -122.427218
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2320,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3869 3867 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1515402,
+    "assessed_improvement_value": 1117638,
+    "last_sale_date": "2020-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302011190",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-01",
+      "status_date": "2023-03-07",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "install new fire alarm to mointor fire sprinler system. ref f/s 202201196260 & legalization 202101212982.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201196260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-19",
+      "status_date": "2023-03-01",
+      "estimated_cost": 18800,
+      "revised_cost": 25128,
+      "description": "a new nfpa 13 sprinkler system on garage level only of a 2 story bldg over garage + 30 feet of 4\" dedicated underground. 17 total heads. exterior bell and sprinkler monitoring under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101212982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-21",
+      "status_date": "2023-12-27",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "legalize 3rd unit at garden, change bedroom windows to egress. remodel upper floor, upgrade all windows on 2/f unit. add stair lights. remove chimney and remodel kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122154",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-11-20",
+      "status_date": "1992-07-14",
+      "estimated_cost": 6975,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511469",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-09",
+      "status_date": "1985-11-29",
+      "estimated_cost": 1500,
+      "description": "step boars to be replaced",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3867",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3606070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3606&lot=070",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3606070",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

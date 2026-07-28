@@ -1,0 +1,109 @@
+{
+  "address": "40–44 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/40/",
+  "apn": "3544036",
+  "block": "3544",
+  "lot": "036",
+  "eas_baseid": "358902",
+  "coordinates": {
+    "lat": 37.76708,
+    "lng": -122.428118
+  },
+  "address_range": "40–44",
+  "street_numbers_on_parcel": [
+    "40",
+    "42",
+    "44"
+  ],
+  "parcel": {
+    "year_built": 1903,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0044 0040 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58858,
+    "assessed_improvement_value": 117780
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107144373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-14",
+      "status_date": "2021-11-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "volulntary structural repairs and upgrade to an (e) portion of the house in the rear yard. the construction will focus o n the lower level structural components open to the rear yard that supports 2 levels above. no square footage added.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908300404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-30",
+      "status_date": "2019-09-13",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "to comply with nov#210978231. work less than 50%. (e) repair under this permit include: upper level-replace (e) dryrot stringers, post & beam in kind with pt members. lower level-replace (e) dryrot joists. post & beams in kind with pt members. (n) work includes: install 1'2\" dia wood handrail 36\" ma",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M590487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-26",
+      "status_date": "2015-05-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=40",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544036",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

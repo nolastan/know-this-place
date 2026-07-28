@@ -1,0 +1,81 @@
+{
+  "address": "4398 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4398/",
+  "apn": "2646030",
+  "block": "2646",
+  "lot": "030",
+  "eas_baseid": "343162",
+  "coordinates": {
+    "lat": 37.76217,
+    "lng": -122.443201
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 1189,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4398 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31613,
+    "assessed_improvement_value": 30460
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201502188617",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-18",
+      "status_date": "2015-02-18",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4398",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646030",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

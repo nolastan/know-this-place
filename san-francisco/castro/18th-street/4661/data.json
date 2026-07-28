@@ -1,0 +1,154 @@
+{
+  "address": "4661–4665 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4661/",
+  "apn": "2690023",
+  "block": "2690",
+  "lot": "023",
+  "eas_baseid": "344229",
+  "coordinates": {
+    "lat": 37.760171,
+    "lng": -122.44259
+  },
+  "address_range": "4661–4665",
+  "street_numbers_on_parcel": [
+    "4661",
+    "4663",
+    "4665"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 5460,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4665 4661 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1540000,
+    "assessed_improvement_value": 660000,
+    "last_sale_date": "2022-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301110008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-11",
+      "status_date": "2024-12-03",
+      "estimated_cost": 47236,
+      "revised_cost": 381500,
+      "description": "remodel of one unit, 3rd fl - includes kitchen & bathroom remodel as well as (n) bathroom. window change in lightwel, same location. living room converted to new bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205093772",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-09",
+      "status_date": "2023-11-10",
+      "estimated_cost": 40000,
+      "revised_cost": 190000,
+      "description": "remodel one unit on 3rd fl. includes kitchen & bathroom remodel as well as (n) bathroom. window change in lightwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203089431",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-08",
+      "status_date": "2022-03-08",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "remodel 1 (e) kitchen and one (e) bathroom. repaint entire unit. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M665327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-22",
+      "status_date": "2016-02-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406168472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-16",
+      "status_date": "2014-06-18",
+      "estimated_cost": 7200,
+      "revised_cost": 7200,
+      "description": "new air duct at attic and replace furnace in attic flex us listed. for upper unit only (e) non-rated roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311109773",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-10",
+      "status_date": "2003-11-10",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310036523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-03",
+      "status_date": "2003-12-03",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "dry rot repair less than 50% in back of stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4661",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690023",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

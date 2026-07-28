@@ -1,0 +1,137 @@
+{
+  "address": "157 Villa Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/villa-terrace/157/",
+  "apn": "2719024",
+  "block": "2719",
+  "lot": "024",
+  "eas_baseid": "345089",
+  "coordinates": {
+    "lat": 37.757897,
+    "lng": -122.446049
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2012,
+    "building_area_sqft": 1949,
+    "basement_area_sqft": 514,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0157 VILLA               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1543576,
+    "assessed_improvement_value": 750769
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M848767",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-27",
+      "status_date": "2017-10-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706230258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-23",
+      "status_date": "2018-07-17",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "interior remodel of (e) occupied basement to include 2 bedroom, closets & remodeled bathroom. (n) exterior doors & double glass windows. plumbing and electrical as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001285512",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-28",
+      "status_date": "2010-09-23",
+      "estimated_cost": 8000,
+      "revised_cost": 15133,
+      "description": "bathroom remodel-new electrical, plumbing, tiles & fixtures on 2nd fl approv. 8'x7'. no adding or moving walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906019436",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-01",
+      "status_date": "2009-06-01",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair deck. replace deck boards. replace railing. less thn 50%. deck approx 25' x 12' area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901301177",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2009-01-30",
+      "status_date": "2026-01-27",
+      "estimated_cost": 12000,
+      "revised_cost": 0,
+      "description": "replace existing deck in like kind, maintain 5' setback from property lines.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216899",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-09-30",
+      "status_date": "1993-05-27",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VILLA&street_type=TER&address_number=157",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719024",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

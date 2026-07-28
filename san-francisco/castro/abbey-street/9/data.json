@@ -1,0 +1,107 @@
+{
+  "address": "9 Abbey Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/abbey-street/9/",
+  "apn": "3566018",
+  "block": "3566",
+  "lot": "018",
+  "eas_baseid": "359915",
+  "coordinates": {
+    "lat": 37.763695,
+    "lng": -122.427021
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2166.35,
+    "building_area_sqft": 1565,
+    "basement_area_sqft": 623,
+    "lot_depth_ft": 92.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0009 ABBEY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1584196,
+    "assessed_improvement_value": 678939,
+    "last_sale_date": "2016-07-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200209136445",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-09-13",
+      "status_date": "2002-09-13",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "rev. appl#200203201906 new windows at rear g/level, relocate b ath at g/level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203201906",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-03-20",
+      "status_date": "2002-12-17",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "legalize existing grd flr flat. provide fire rated separation at garage wall, provide egress window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-11",
+      "status_date": "1992-12-10",
+      "estimated_cost": 400,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ABBEY&street_type=ST&address_number=9",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3566018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3566&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3566018",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "address": "2275 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2275/",
+  "apn": "3561065E",
+  "block": "3561",
+  "lot": "065E",
+  "eas_baseid": "359718",
+  "coordinates": {
+    "lat": 37.765499,
+    "lng": -122.434829
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3249,
+    "building_area_sqft": 2908,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "2277 2275 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43164,
+    "assessed_improvement_value": 60267
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202508193350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-19",
+      "status_date": "2026-02-10",
+      "estimated_cost": 30000,
+      "revised_cost": 56262,
+      "description": "convert closet into full bathroom, add sink to powder, and convert (e) dining room into bedroom on 2nd and 3rd flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202202228404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-22",
+      "status_date": "2022-06-23",
+      "estimated_cost": 24855,
+      "revised_cost": 24855,
+      "description": "reroofing, main flat roof only. tear-off and dispose of exising flat roof membrane to expose sheeting install new torch-down modified betman base and cap sheets and new metal flashing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2275",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3561065E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3561&lot=065E",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3561065E",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43482935277243%2037.76549920233)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

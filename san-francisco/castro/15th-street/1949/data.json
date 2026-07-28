@@ -1,0 +1,120 @@
+{
+  "address": "1949 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/1949/",
+  "apn": "3557056A",
+  "block": "3557",
+  "lot": "056A",
+  "eas_baseid": "359488",
+  "coordinates": {
+    "lat": 37.765994,
+    "lng": -122.427663
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 1781,
+    "building_area_sqft": 2315,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 1949 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1015117,
+    "assessed_improvement_value": 435046,
+    "last_sale_date": "2018-11-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alert Alley Early Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1910",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202108277273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-27",
+      "status_date": "2021-12-15",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "unit a: kitchen and bath remodel. replace in kind. light per cenc 150.0(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903125040",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-12",
+      "status_date": "2019-10-22",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "remove a section of center bearing wall on 1st fl unit c. install new beam and new posts and new footings per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902223666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-22",
+      "status_date": "2019-10-22",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel kitchen & bathroom new electriacal & plumbing all staying in same location moving no walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1949",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557056A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=056A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557056A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42766285494604%2037.76599380932615)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "address": "368–370 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/368/",
+  "apn": "3563009",
+  "block": "3563",
+  "lot": "009",
+  "eas_baseid": "359778",
+  "coordinates": {
+    "lat": 37.763007,
+    "lng": -122.433333
+  },
+  "address_range": "368–370",
+  "street_numbers_on_parcel": [
+    "368",
+    "370"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2320,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0370 0368 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1462364,
+    "assessed_improvement_value": 626726,
+    "last_sale_date": "2021-01-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200412070892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-07",
+      "status_date": "2005-01-04",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair dryrot on front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=368",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3563009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3563&lot=009",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3563009",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

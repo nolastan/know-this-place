@@ -1,0 +1,171 @@
+{
+  "address": "527–529 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/527/",
+  "apn": "3584073",
+  "block": "3584",
+  "lot": "073",
+  "eas_baseid": "360892",
+  "coordinates": {
+    "lat": 37.760575,
+    "lng": -122.432422
+  },
+  "address_range": "527–529",
+  "street_numbers_on_parcel": [
+    "527",
+    "529"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 2212,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0529 0527 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 283829,
+    "assessed_improvement_value": 358419
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602176065",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-02-17",
+      "status_date": "2026-03-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "addressing permit only. the existing address 527 noe st refers to the second-floor unit. link to parcel 3584-073.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512161890",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-02-12",
+      "status_date": "2026-02-12",
+      "estimated_cost": 300000,
+      "description": "expansion of conditioned living space from lower one unit to the existing basement to include a new bedroom, bath, and guest room. addition of new interior stairs. renovation of kitchen and bath and add 2nd bath at 1/f. renovate kitchen and bath at upper one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508143104",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-08-14",
+      "status_date": "2025-08-27",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "foundation replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504144330",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-14",
+      "status_date": "2025-04-14",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel of kitchen and 2 bathrooms, flooring, paint, siding, windows, replace light fixtures. windows at the front to be wood and hung with og lugs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301099851",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-09",
+      "status_date": "2023-01-24",
+      "estimated_cost": 8800,
+      "revised_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613732",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-29",
+      "status_date": "1996-11-29",
+      "estimated_cost": 4000,
+      "description": "remove brick chimney below roof line to shoulders",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404576",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-04-30",
+      "status_date": "1985-02-05",
+      "estimated_cost": 600,
+      "description": "add drain to passageway adjacent to garage tie",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305674",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-06-20",
+      "status_date": "1983-07-11",
+      "estimated_cost": 1,
+      "description": "obtain certification of completion",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200541",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-01-25",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=527",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=073",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584073",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

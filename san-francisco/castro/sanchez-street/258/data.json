@@ -1,0 +1,128 @@
+{
+  "address": "258–262 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/258/",
+  "apn": "3559005",
+  "block": "3559",
+  "lot": "005",
+  "eas_baseid": "359609",
+  "coordinates": {
+    "lat": 37.764799,
+    "lng": -122.43124
+  },
+  "address_range": "258–262",
+  "street_numbers_on_parcel": [
+    "258",
+    "260",
+    "262"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 5325,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0262 0258 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45714,
+    "assessed_improvement_value": 84067
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M424909",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-10",
+      "status_date": "2013-09-10",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003248882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-24",
+      "status_date": "2010-04-07",
+      "estimated_cost": 4700,
+      "revised_cost": 4700,
+      "description": "repair subfloor windows & electriccal outlets (bedroom). install 4-lights (exterior stairway) high-efficacy or motion sensor w/ photo cell. change central heater (ground floor) same location using (e) flue. bedroom window must meet rescue and ufactor 0.40 max requirement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018031",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-09-07",
+      "status_date": "1991-07-02",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001821",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-26",
+      "status_date": "1990-04-10",
+      "estimated_cost": 600,
+      "description": "2 stairway landing replace - back",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307991",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-08-16",
+      "status_date": "1984-01-13",
+      "estimated_cost": 7300,
+      "description": "install 54 aluminu indows in existing frames in units.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=258",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3559005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3559&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3559005",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

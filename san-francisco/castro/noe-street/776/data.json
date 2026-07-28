@@ -1,0 +1,126 @@
+{
+  "address": "776 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/776/",
+  "apn": "3603006",
+  "block": "3603",
+  "lot": "006",
+  "eas_baseid": "361916",
+  "coordinates": {
+    "lat": 37.756543,
+    "lng": -122.432605
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1500,
+    "building_area_sqft": 1041,
+    "lot_depth_ft": 60,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0776 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1271689,
+    "assessed_improvement_value": 847792,
+    "last_sale_date": "2019-03-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201307222466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-22",
+      "status_date": "2013-10-04",
+      "estimated_cost": 1500,
+      "revised_cost": 3000,
+      "description": "repair (e) rear deck of a single family residence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708270907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-27",
+      "status_date": "2007-08-27",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-23",
+      "status_date": "1993-05-05",
+      "estimated_cost": 6000,
+      "description": "construct 1/2 bath,sink & toilet,cap foundation,anchors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611548",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-19",
+      "status_date": "1987-01-08",
+      "estimated_cost": 4500,
+      "description": "horizontal extension, redesigned deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601269",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-02-04",
+      "status_date": "1986-12-09",
+      "estimated_cost": 12000,
+      "description": "new decks addition at rear of bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=776",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603006",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

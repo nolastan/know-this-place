@@ -1,0 +1,103 @@
+{
+  "address": "4632 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4632/",
+  "apn": "2658011",
+  "block": "2658",
+  "lot": "011",
+  "eas_baseid": "343564",
+  "coordinates": {
+    "lat": 37.760676,
+    "lng": -122.441855
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2147,
+    "building_area_sqft": 3100,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4632 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 436318,
+    "assessed_improvement_value": 421883
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602189955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-18",
+      "status_date": "2016-05-06",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "repairs to rear stairs (exterior). misc rot etc. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703146199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-14",
+      "status_date": "2007-04-11",
+      "estimated_cost": 15500,
+      "revised_cost": 15500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8610711",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-02",
+      "status_date": "1986-12-16",
+      "estimated_cost": 2500,
+      "description": "replace deteriorated studs to top plates/west side of bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4632",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2658011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2658&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2658011",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

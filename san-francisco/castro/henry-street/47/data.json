@@ -1,0 +1,169 @@
+{
+  "address": "47–49 Henry Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/henry-street/47/",
+  "apn": "3541040",
+  "block": "3541",
+  "lot": "040",
+  "eas_baseid": "358780",
+  "coordinates": {
+    "lat": 37.766492,
+    "lng": -122.432158
+  },
+  "address_range": "47–49",
+  "street_numbers_on_parcel": [
+    "47",
+    "49"
+  ],
+  "parcel": {
+    "year_built": 1903,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 2716,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0049 0047 HENRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1851912,
+    "assessed_improvement_value": 462978,
+    "last_sale_date": "2022-10-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1903",
+    "survey_name": "47 Henry St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202502140343",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-14",
+      "status_date": "2025-03-17",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "3rd level one unit: kitchen and sunroom renovation with new exterior stair and firewall at rear. associated structural and door/window modifications at lower floors. replace front windows in kind, replace/reconfigure windows at rear and sides as noted on plans and window schedule.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408098375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-09",
+      "status_date": "2025-02-21",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "kitchen and bathroom in kind fixture in same location remodel. electrical & plumbing upgrades. no moving walls. fixtures in same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M44683",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-12",
+      "status_date": "2006-10-12",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608280747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-28",
+      "status_date": "2006-09-26",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "adjust extg post back into position approx. 2-3\" post only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309154792",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-15",
+      "status_date": "2006-09-26",
+      "estimated_cost": 19990,
+      "revised_cost": 19990,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314915",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-30",
+      "status_date": "1993-11-08",
+      "estimated_cost": 7500,
+      "description": "strengthening of existing garage structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114501",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-13",
+      "status_date": "1992-03-10",
+      "estimated_cost": 6000,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HENRY&street_type=ST&address_number=47",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3541040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3541&lot=040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3541040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43215794637443%2037.76649168057726)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

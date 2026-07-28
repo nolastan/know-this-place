@@ -1,0 +1,147 @@
+{
+  "address": "79 Sharon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sharon-street/79/",
+  "apn": "3558054",
+  "block": "3558",
+  "lot": "054",
+  "eas_baseid": "359552",
+  "coordinates": {
+    "lat": 37.764865,
+    "lng": -122.42949
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2230,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0079 SHARON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2309792,
+    "assessed_improvement_value": 989910,
+    "last_sale_date": "2017-07-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311201099",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-20",
+      "status_date": "2024-01-09",
+      "estimated_cost": 6783,
+      "revised_cost": 6783,
+      "description": "swap 7 r-8 ducts like for like",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M761227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-14",
+      "status_date": "2017-02-14",
+      "revised_cost": 1,
+      "description": "street space permit - renewal of permit app # m730567",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M730567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-17",
+      "status_date": "2016-10-17",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607112018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-11",
+      "status_date": "2017-06-16",
+      "estimated_cost": 120000,
+      "revised_cost": 260000,
+      "description": "comply with complaint 201525221 and 201618881 1st fl add 2 bedrooms and 2 bath, new interior stairs to connect 2nd fl. 2nd fl: remodel bath and kitchen. rear building: remodel bathroom, repair front stairs, new wood windows at front, more than 25% e walls remain",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001044109",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-04",
+      "status_date": "2010-01-04",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024079",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-11-20",
+      "status_date": "1991-06-10",
+      "estimated_cost": 6000,
+      "description": "construct bay window at rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-23",
+      "status_date": "1990-09-06",
+      "estimated_cost": 3380,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHARON&street_type=ST&address_number=79",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=054",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558054",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

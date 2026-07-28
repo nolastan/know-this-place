@@ -1,0 +1,126 @@
+{
+  "address": "461 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/461/",
+  "apn": "2618027",
+  "block": "2618",
+  "lot": "027",
+  "eas_baseid": "485120",
+  "coordinates": {
+    "lat": 37.763732,
+    "lng": -122.442789
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2883,
+    "building_area_sqft": 1785,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0461 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1449589,
+    "assessed_improvement_value": 548593,
+    "last_sale_date": "2009-11-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407307524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-30",
+      "status_date": "2025-11-12",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "legalize and remodel street level office at rear of house. modify rear stairs to garage level. new laundry room at garage level. new kitchen cabinets at 2/f. remodel 2 baths at 3/f. replace deck rail at roof terrace. replace front windows in kind - glazing only. replace water heater and furnace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712065603",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-06",
+      "status_date": "2019-08-09",
+      "estimated_cost": 46000,
+      "revised_cost": 49000,
+      "description": "rear yard stabilization trench footings and new interior foundation at north property line (non-visible)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708296175",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-29",
+      "status_date": "2019-08-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "foundation replacement footing (length +/- 10\" at rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702047",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-02-04",
+      "status_date": "1998-05-29",
+      "estimated_cost": 5750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307277",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-03",
+      "status_date": "1994-06-14",
+      "estimated_cost": 5270,
+      "description": "repl 9 wood & alum single glazed windows in existing opening",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=461",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618027",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "address": "750 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/castro/dolores-street/750/",
+  "apn": "3606007",
+  "block": "3606",
+  "lot": "007",
+  "eas_baseid": "362162",
+  "coordinates": {
+    "lat": 37.757255,
+    "lng": -122.425965
+  },
+  "parcel": {
+    "year_built": 1954,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2575,
+    "building_area_sqft": 2392,
+    "lot_depth_ft": 51.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0750 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1161737,
+    "assessed_improvement_value": 516324,
+    "last_sale_date": "1994-06-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405296954",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-05-29",
+      "status_date": "2014-06-03",
+      "estimated_cost": 8610,
+      "revised_cost": 8610,
+      "description": "replace four exsiting wood windows visible from street with wood clad, in-kind in configuration and operation, bedrooms to comply with egress, u-factor is less than .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304235231",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-23",
+      "status_date": "2013-04-23",
+      "estimated_cost": 6397,
+      "revised_cost": 6397,
+      "description": "replace 3 windows, like for like with paintable wood windows, simulated full divide light grilles to match existing, u factor 0.40. bedroom to comply with egress, visable from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405242",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-09",
+      "status_date": "1994-08-04",
+      "estimated_cost": 99,
+      "description": "tear out bookcase next the fireplace, replace with closet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=750",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3606007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3606&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3606007",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

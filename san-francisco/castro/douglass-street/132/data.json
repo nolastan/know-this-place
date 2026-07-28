@@ -1,0 +1,128 @@
+{
+  "address": "132 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/132/",
+  "apn": "2651006",
+  "block": "2651",
+  "lot": "006",
+  "eas_baseid": "343333",
+  "coordinates": {
+    "lat": 37.761582,
+    "lng": -122.439651
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1700,
+    "building_area_sqft": 1983,
+    "lot_depth_ft": 68,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0132 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1587447,
+    "assessed_improvement_value": 728205,
+    "last_sale_date": "2017-02-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709087396",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-08",
+      "status_date": "2017-09-08",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "otc approval for replacement of (7) alum-framed windows on front facade with alum-clad wood windows and (5) at rear facade of an (e) sfr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705106230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-10",
+      "status_date": "2017-10-26",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "bathroom addition at 2nd flr, closet reconstruction, close wall, and open doorway btwn kitchen and dining rm. remove staircase to attic and add drop down ladder.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704264974",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-04-26",
+      "status_date": "2017-04-26",
+      "estimated_cost": 20000,
+      "revised_cost": 50000,
+      "description": "bathroom remodel and replace in kind. kitchen remodel and replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304471",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-18",
+      "status_date": "1993-05-25",
+      "estimated_cost": 6373,
+      "revised_cost": 0,
+      "description": "install vinyl siding to back & right side walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506079",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-11",
+      "status_date": "1986-07-24",
+      "estimated_cost": 70000,
+      "description": "horizontal addition to rear of house,replace kitchen cabinet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=132",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2651006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2651&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2651006",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

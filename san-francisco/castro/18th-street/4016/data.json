@@ -1,0 +1,138 @@
+{
+  "address": "4016 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4016/",
+  "apn": "3582018",
+  "block": "3582",
+  "lot": "018",
+  "eas_baseid": "360695",
+  "coordinates": {
+    "lat": 37.761219,
+    "lng": -122.433256
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2184,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4016 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1283074,
+    "assessed_improvement_value": 549885,
+    "last_sale_date": "2009-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201211264836",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-26",
+      "status_date": "2013-02-06",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "retrofit one window replacement at back of house. max u factor= 0.40.duct work (fan on mech plmg)replace furnace in same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210051459",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2012-10-05",
+      "status_date": "2012-12-21",
+      "estimated_cost": 4000,
+      "revised_cost": 6000,
+      "description": "duct replacement, attic insulation (r-38), wal insulation. (r-13). heating duct. blown in. 1015 sq ft insulation. blown in.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M351870",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-05",
+      "status_date": "2012-10-05",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904095927",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-09",
+      "status_date": "2009-05-15",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "in kind replacement of extg concrete and terrazzo steps at entry. concrete block wall support understeps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309023548",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-02",
+      "status_date": "2003-09-02",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "less than 50% repair of deck extng.replace rotting rim joist. replace undersized joists(2).replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206249737",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-06-24",
+      "status_date": "2002-06-24",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582018",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

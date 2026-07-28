@@ -1,0 +1,146 @@
+{
+  "address": "188 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/188/",
+  "apn": "2692015",
+  "block": "2692",
+  "lot": "015",
+  "eas_baseid": "344299",
+  "coordinates": {
+    "lat": 37.759332,
+    "lng": -122.438381
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1990,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0188 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 851363,
+    "assessed_improvement_value": 567568,
+    "last_sale_date": "2004-05-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410253747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-25",
+      "status_date": "2025-02-07",
+      "estimated_cost": 40617,
+      "revised_cost": 40616,
+      "description": "demolition and reconstruction of foundation stem wall approx 25'-6\"ft long including 14'-6\" length of fence footing. work will be done largely from within the property enclosure but access through the adjacent neighbor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306089540",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-08",
+      "status_date": "2023-08-18",
+      "estimated_cost": 60134,
+      "revised_cost": 60134,
+      "description": "replace 15 lf of foundation (15 lf x 2) and 45 sqft of slab, replace 15 lf of siding (15x5) replace siding and water proofing membrane in kind replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902252825",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-25",
+      "status_date": "2009-05-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to 200902091625. pour new concrete walls alongside existing brick foundation walls in garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902091625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-09",
+      "status_date": "2009-05-01",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace crumbling concrete retaining wall in garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M25813",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-12-11",
+      "status_date": "2003-12-11",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-05",
+      "status_date": "2000-08-21",
+      "estimated_cost": 15000,
+      "description": "interior remodel/move bdrm/bthrm/kchn/add bthrm/add 6 skylt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416974",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-17",
+      "status_date": "1995-08-22",
+      "estimated_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=188",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2692015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2692&lot=015",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2692015",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

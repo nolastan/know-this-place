@@ -61,8 +61,15 @@ jobs:
                DATA-SOURCES.md wherever possible. Unverifiable-but-plausible
                local knowledge may be added as a clearly labeled community
                note per AGENTS.md.
-            4. Apply the change: update data.json (facts, narrative prose) and
-               assets, then regenerate index.html per shared/AGENTS.md.
+            4. Apply the change to data.json (facts, narrative prose) and
+               assets, then edit index.html by hand to match, per
+               shared/AGENTS.md. Every page on this site is hand-edited once it
+               exists — scripts/seed_pages.py only writes pages that don't
+               exist yet and never returns to one, so there is nothing to
+               re-run and nothing that will overwrite you. Change what the fact
+               changed and leave the rest of the page alone.
+               Don't touch the Street View block or try to verify it — the
+               embed key only works on the production domain (DATA-SOURCES.md).
             5. Run `python3 scripts/validate.py` and fix anything it flags.
             6. Create branch feedback/issue-${{ github.event.issue.number }},
                commit, push, and open a PR. The PR body must summarize what

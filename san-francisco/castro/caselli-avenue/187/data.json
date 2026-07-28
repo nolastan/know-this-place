@@ -1,0 +1,102 @@
+{
+  "address": "187 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/187/",
+  "apn": "2702022",
+  "block": "2702",
+  "lot": "022",
+  "eas_baseid": "344713",
+  "coordinates": {
+    "lat": 37.759364,
+    "lng": -122.44275
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2436,
+    "building_area_sqft": 1862,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0187 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 346706,
+    "assessed_improvement_value": 307696,
+    "last_sale_date": "1992-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9219367",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-05",
+      "status_date": "1993-05-10",
+      "estimated_cost": 3000,
+      "description": "residing front over kitchen area, rep. existing alum sliding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213770",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-14",
+      "status_date": "1992-12-14",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115648",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-29",
+      "status_date": "1992-01-07",
+      "estimated_cost": 1000,
+      "description": "replace damaged plaster walls in living room & kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=187",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2702022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2702&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2702022",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

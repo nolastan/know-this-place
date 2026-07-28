@@ -1,0 +1,105 @@
+{
+  "address": "348 Cumberland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/cumberland-street/348/",
+  "apn": "3601050",
+  "block": "3601",
+  "lot": "050",
+  "eas_baseid": "361797",
+  "coordinates": {
+    "lat": 37.758937,
+    "lng": -122.431433
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0348 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2349060,
+    "assessed_improvement_value": 1006740,
+    "last_sale_date": "2024-04-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606092792",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-09",
+      "status_date": "2026-06-09",
+      "estimated_cost": 15790,
+      "revised_cost": 15790,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509266168",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-10-27",
+      "status_date": "2026-01-12",
+      "estimated_cost": 250000,
+      "revised_cost": 286567,
+      "description": "conversion of 356 sf of (e) garage to living area. reconfiguration of (e) interior stair between first and second fls. remodel of (e) 2nd fl kitchen & bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706199743",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-19",
+      "status_date": "2017-06-21",
+      "estimated_cost": 11700,
+      "revised_cost": 11700,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=348",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=050",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601050",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

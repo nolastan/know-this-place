@@ -1,0 +1,104 @@
+{
+  "address": "4122 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4122/",
+  "apn": "3602020",
+  "block": "3602",
+  "lot": "020",
+  "eas_baseid": "361848",
+  "coordinates": {
+    "lat": 37.758005,
+    "lng": -122.433121
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2450,
+    "building_area_sqft": 1872,
+    "lot_depth_ft": 98,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4122 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 548691,
+    "assessed_improvement_value": 521429,
+    "last_sale_date": "1998-08-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200111304271",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-30",
+      "status_date": "2002-04-29",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "new ground level deck. w/(n) hot tub. replace/enlarge exiting footings for added hot tub load",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308760",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-25",
+      "status_date": "1993-11-25",
+      "estimated_cost": 6743,
+      "description": "dry rot and termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-09-10",
+      "status_date": "1986-05-16",
+      "estimated_cost": 8000,
+      "description": "replace bathroom fixtures,install sheet rock,remove fireplac",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4122",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602020",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

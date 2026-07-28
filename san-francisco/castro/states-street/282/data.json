@@ -1,0 +1,145 @@
+{
+  "address": "282 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/282/",
+  "apn": "2620092",
+  "block": "2620",
+  "lot": "092",
+  "eas_baseid": "342445",
+  "coordinates": {
+    "lat": 37.764998,
+    "lng": -122.441814
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1562.5,
+    "building_area_sqft": 1701,
+    "lot_depth_ft": 62.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0282 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 547835,
+    "assessed_improvement_value": 225364,
+    "last_sale_date": "1993-04-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302041402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-04",
+      "status_date": "2023-06-27",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "in-kind remodeling of 2 bathroom(s) in 1st fl, 2nd fl with 1 shower pan(s).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206253293",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-25",
+      "status_date": "2012-09-28",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace 3 windows & 1 door, size for size, visable from street wood sash, no structural changes, max u factor 0.40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511484",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-07-24",
+      "status_date": "1996-10-21",
+      "estimated_cost": 11250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308101",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-14",
+      "status_date": "1993-11-17",
+      "estimated_cost": 3281,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903440",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-03",
+      "status_date": "1989-04-17",
+      "estimated_cost": 1,
+      "description": "final work performed under #8802744",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802744",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-03-04",
+      "status_date": "1988-07-22",
+      "estimated_cost": 1200,
+      "description": "install zero clearance fireplace @ 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301390",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-02-17",
+      "status_date": "1983-03-08",
+      "estimated_cost": 100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=282",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2620092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2620&lot=092",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2620092",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

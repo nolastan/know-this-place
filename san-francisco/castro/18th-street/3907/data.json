@@ -1,0 +1,136 @@
+{
+  "address": "3907 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3907/",
+  "apn": "3584001A",
+  "block": "3584",
+  "lot": "001A",
+  "eas_baseid": "360828",
+  "coordinates": {
+    "lat": 37.761011,
+    "lng": -122.430907
+  },
+  "parcel": {
+    "year_built": 1885,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 643.16,
+    "building_area_sqft": 1000,
+    "lot_depth_ft": 26.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3907 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 560344,
+    "assessed_improvement_value": 373562,
+    "last_sale_date": "2004-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407126415",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-12",
+      "status_date": "2024-07-26",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "remove and replace five stair treads in-kind, remove and replace rotted plywood from the landing approx 3'x3' in-kind. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408202097",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-20",
+      "status_date": "2004-10-26",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "cap existing deteriorated brick retaining wall and footing with new conc. retaining wall and footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117642",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-11",
+      "status_date": "2000-12-11",
+      "estimated_cost": 2270,
+      "revised_cost": 2270,
+      "description": "install 5 vinyl windows in kind not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-03-21",
+      "status_date": "1988-07-25",
+      "estimated_cost": 2500,
+      "description": "minor kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801126",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-01-29",
+      "status_date": "1988-02-22",
+      "estimated_cost": 3600,
+      "description": "sheet rock basement area and garage side of common wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-13",
+      "status_date": "1984-12-11",
+      "estimated_cost": 2000,
+      "description": "replace existing wood damaged by termites and dry rot.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3907",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=001A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584001A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

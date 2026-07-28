@@ -1,0 +1,171 @@
+{
+  "address": "133 Henry Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/henry-street/133/",
+  "apn": "3540049",
+  "block": "3540",
+  "lot": "049",
+  "eas_baseid": "358698",
+  "coordinates": {
+    "lat": 37.766373,
+    "lng": -122.434121
+  },
+  "parcel": {
+    "year_built": 1903,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3220,
+    "building_area_sqft": 2140,
+    "lot_depth_ft": 15,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0133 HENRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 486286,
+    "assessed_improvement_value": 431465,
+    "last_sale_date": "1992-03-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202401174119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-17",
+      "status_date": "2024-09-05",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "voluntary seismic retrofit on 1st floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M116065",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-11",
+      "status_date": "2008-04-11",
+      "revised_cost": 1,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611036783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-03",
+      "status_date": "2007-01-09",
+      "estimated_cost": 17550,
+      "revised_cost": 17550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504220642",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-22",
+      "status_date": "2005-06-24",
+      "estimated_cost": 530,
+      "revised_cost": 530,
+      "description": "revise 200503076903.replace 2 wood dble hung window due to dryrot in(e)opening per insp in rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503076903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-07",
+      "status_date": "2005-06-24",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "cosmetic remodel of (e)kitchen & minor plaster,repair of dining room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15059",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-27",
+      "status_date": "2001-03-27",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217999",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-10-15",
+      "status_date": "1993-04-15",
+      "estimated_cost": 8400,
+      "description": "termite & dryrot damage repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510186",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-17",
+      "status_date": "1986-06-25",
+      "estimated_cost": 20000,
+      "description": "return two-flat building to original single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HENRY&street_type=ST&address_number=133",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3540049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3540&lot=049",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3540049",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43412073696803%2037.76637290272291)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

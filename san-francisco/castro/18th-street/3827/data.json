@@ -1,0 +1,95 @@
+{
+  "address": "3827 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3827/",
+  "apn": "3585081",
+  "block": "3585",
+  "lot": "081",
+  "eas_baseid": "360993",
+  "coordinates": {
+    "lat": 37.761004,
+    "lng": -122.429034
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 1215,
+    "basement_area_sqft": 300,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3827 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 267399,
+    "assessed_improvement_value": 260830,
+    "last_sale_date": "1988-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9012676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-26",
+      "status_date": "1990-07-30",
+      "estimated_cost": 5000,
+      "description": "take chimney down remove roofline rebuild chimney",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-10",
+      "status_date": "1987-02-24",
+      "estimated_cost": 1950,
+      "description": "repair dry rot entry steps",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3827",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=081",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585081",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

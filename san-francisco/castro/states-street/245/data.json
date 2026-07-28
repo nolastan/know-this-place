@@ -1,0 +1,152 @@
+{
+  "address": "245 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/245/",
+  "apn": "2619093",
+  "block": "2619",
+  "lot": "093",
+  "eas_baseid": "342408",
+  "coordinates": {
+    "lat": 37.764054,
+    "lng": -122.440836
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2945.75,
+    "building_area_sqft": 1400,
+    "lot_depth_ft": 17.83,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0245 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 233974
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200810103910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-10",
+      "status_date": "2009-02-04",
+      "estimated_cost": 12000,
+      "revised_cost": 20000,
+      "description": "replacement of 2 story rear deck in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-08-30",
+      "status_date": "1985-11-15",
+      "estimated_cost": 3885,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509188",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-08-22",
+      "status_date": "1986-03-04",
+      "estimated_cost": 3000,
+      "description": "deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411087",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-10-15",
+      "status_date": "1986-03-04",
+      "estimated_cost": 5000,
+      "description": "install quard rails on stairs (side) 2 removestairs to attic",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8406527",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-06-18",
+      "status_date": "1984-10-10",
+      "estimated_cost": 4000,
+      "description": "new gutters around house, new door & sill in basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402914",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-03-19",
+      "status_date": "1984-10-10",
+      "estimated_cost": 500,
+      "description": "shingle the back of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402554",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-03-09",
+      "status_date": "1984-10-10",
+      "estimated_cost": 200,
+      "description": "repairing front door ramp-railing install step",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310665",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-10-21",
+      "status_date": "1984-10-10",
+      "estimated_cost": 18000,
+      "description": "1-repair water damage to exterior siding, decking and stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=245",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2619093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2619&lot=093",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2619093",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -13,16 +13,22 @@ There is deliberately **no CMS, no database, no build framework**:
   in a `narrative` field), `assets/` (openly licensed media), and `index.html`
   (the generated page). Keeping facts and prose in one file means the two can't
   drift into conflict.
-- `index.html` is a **build artifact authored by an AI agent**, not rendered
-  from a template. Every page can have a bespoke structure suited to what is
-  actually interesting about that place, composed from a shared **design
-  system** — a CSS component library ([shared/site.css](shared/site.css)) of
-  stat tiles, a visual timeline, charts, and icons, plus a tiny
-  progressive-enhancement layer ([shared/site.js](shared/site.js): web
-  components for click-to-load Street View and chart tooltips). The JS only
-  *enhances* — every page renders completely from its HTML alone, so pages stay
-  static and crawlable. Consistency is enforced by a small contract checked in
-  CI — see [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
+- `index.html` is a **build artifact**, not a template render at request time.
+  Pages are composed from a shared **design system** — a CSS component library
+  ([shared/site.css](shared/site.css)) of stat tiles, a visual timeline, charts,
+  and icons, plus a tiny progressive-enhancement layer
+  ([shared/site.js](shared/site.js): web components for click-to-load Street
+  View and chart tooltips). The JS only *enhances* — every page renders
+  completely from its HTML alone, so pages stay static and crawlable.
+  Consistency is enforced by a small contract checked in CI — see
+  [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
+- **A page is seeded once, then edited by hand forever after.**
+  [scripts/seed_pages.py](scripts/seed_pages.py) joins the DataSF datasets and
+  writes the first `data.json` + `index.html` for every residential parcel that
+  has no page yet. It never returns to a page it has written — a second run
+  creates nothing. Everything after that first draft (corrections, research, a
+  building's story, reader feedback) is a person or an agent editing the page
+  directly.
 - **Agents do the work a CMS would.** Rules live in `AGENTS.md` files through
   the tree; available data APIs are cataloged in [DATA-SOURCES.md](DATA-SOURCES.md).
 
@@ -34,7 +40,8 @@ There is deliberately **no CMS, no database, no build framework**:
 2. The issue triggers **Claude Code in GitHub Actions**
    ([.github/workflows/feedback-agent.yml](.github/workflows/feedback-agent.yml)),
    which verifies the claim against sources, updates `data.json` / `assets/`,
-   regenerates `index.html`, and opens a **pull request** that closes the issue.
+   edits `index.html` to match, and opens a **pull request** that closes the
+   issue.
 3. A human reviews and merges through normal GitHub PR review. Merging to
    `main` **is** the deploy — GitHub Pages serves the branch as-is.
 4. A scheduled workflow ([.github/workflows/refresh.yml](.github/workflows/refresh.yml))
@@ -56,6 +63,9 @@ shared/
   site.js                     Enhancement layer (progressive web components)
   site-config.json            Site URL, repo URL, Maps embed key
 scripts/
+  seed_pages.py               Writes the first draft of pages that don't
+                              exist yet, from the DataSF APIs
+  permit_redactions.json      Names stripped from permit text before it's saved
   validate.py                 CI contract checks (stdlib only)
   build_sitemap.py            Regenerates sitemap.xml
 .github/
@@ -80,9 +90,27 @@ scripts/
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
 
+## Seeding a neighborhood
+
+```bash
+python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
+python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
+                                   --city san-francisco --area castro
+python3 scripts/build_sitemap.py
+python3 scripts/validate.py
+```
+
+`plan` reports what would be written and why parcels are skipped; `seed` writes
+the new pages and rebuilds the street hubs. `seed` only ever creates — it skips
+any address that already has a page, so re-running it is safe and is a no-op
+unless new parcels have appeared. Raw dataset rows are cached in
+`.cache/` (gitignored) and each fetch resumes where it left off, so an
+interrupted run is cheap to restart. `--neighborhood` takes the SF Planning
+analysis-neighborhood name as it appears in the datasets.
+
 ## Running the agent locally
 
-Any Claude Code session in this repo picks up `AGENTS.md` automatically. For a
-seeding pass: "Create the page for <address> following AGENTS.md", then
-`python3 scripts/validate.py` and `python3 scripts/build_sitemap.py` before
-opening a PR.
+Any Claude Code session in this repo picks up `AGENTS.md` automatically. Use an
+agent for the work a script can't do — verifying a reader's feedback,
+researching a building's history, writing the prose for a page that has a story
+— not for seeding pages from city data.

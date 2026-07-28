@@ -1,0 +1,136 @@
+{
+  "address": "4388 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4388/",
+  "apn": "2646026",
+  "block": "2646",
+  "lot": "026",
+  "eas_baseid": "343158",
+  "coordinates": {
+    "lat": 37.76223,
+    "lng": -122.442873
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 2285,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4388 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2108329,
+    "assessed_improvement_value": 903569,
+    "last_sale_date": "2019-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407025696",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-02",
+      "status_date": "2024-12-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201106077608. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M370847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-02-11",
+      "status_date": "2013-02-11",
+      "revised_cost": 1,
+      "description": "street space permit ((201106077608",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106077608",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2011-06-07",
+      "status_date": "2012-05-31",
+      "estimated_cost": 90000,
+      "revised_cost": 150000,
+      "description": "to comply with complaint #201073587. add a 2nd floor to add 2 bedrooms, 2 full bath and a half bath. remodel existing kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011165107",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-16",
+      "status_date": "2012-10-03",
+      "estimated_cost": 2000,
+      "revised_cost": 3000,
+      "description": "to comply w/ nov201073587. remove kitchen cabinets, bath fixts & plaster & lathe in kitchen bath & closets. remove & repair siding on backside of house. remove & replace (e) windows & doors on backside of house. remodelling of bldg under separate permit. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017607",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-31",
+      "status_date": "1990-12-31",
+      "estimated_cost": 2300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309257",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1983-09-16",
+      "status_date": "1984-01-16",
+      "estimated_cost": 1000,
+      "description": "owns back of from kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4388",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=026",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646026",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

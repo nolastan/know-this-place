@@ -1,0 +1,125 @@
+{
+  "address": "63 Park Hill Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/park-hill-avenue/63/",
+  "apn": "2608038",
+  "block": "2608",
+  "lot": "038",
+  "eas_baseid": "341888",
+  "coordinates": {
+    "lat": 37.767151,
+    "lng": -122.438885
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 5519,
+    "building_area_sqft": 2411,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0063 PARK HILL           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3189824,
+    "assessed_improvement_value": 1843570,
+    "last_sale_date": "2019-02-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303224141",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-22",
+      "status_date": "2023-08-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace exterior stair (within property line) to code complaint, revision to 201905170915",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1203907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-03-11",
+      "status_date": "2020-03-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905170915",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-05-17",
+      "status_date": "2023-08-01",
+      "estimated_cost": 920000,
+      "revised_cost": 920000,
+      "description": "remodel within (e) foot print: interior renovations, replacement of exterior finishes in kind, (n) windows & doors. (n) basement excavation within (e) foot print.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8514310",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-12-19",
+      "status_date": "1986-07-14",
+      "estimated_cost": 5600,
+      "description": "enclose deck at lower level only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8514247",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-12-17",
+      "status_date": "1986-05-23",
+      "estimated_cost": 5000,
+      "description": "repair lower deck ,all dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PARK%20HILL&street_type=AVE&address_number=63",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2608038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2608&lot=038",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2608038",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

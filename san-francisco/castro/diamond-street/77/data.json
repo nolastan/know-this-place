@@ -1,0 +1,105 @@
+{
+  "address": "77 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/77/",
+  "apn": "2648024",
+  "block": "2648",
+  "lot": "024",
+  "eas_baseid": "343236",
+  "coordinates": {
+    "lat": 37.761172,
+    "lng": -122.436903
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 1715,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0077 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 496734,
+    "assessed_improvement_value": 280436,
+    "last_sale_date": "1989-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200901099904",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2009-01-09",
+      "status_date": "2026-01-27",
+      "estimated_cost": 300,
+      "revised_cost": 0,
+      "description": "install handrail on rear stairs, install guardrail across 5' gap on rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811106219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-10",
+      "status_date": "2009-01-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "comply w/ nov 200871320. remove extg switches and cover plate. replace w/ blank plate. remove extg plmg fixtures and capping at wall/floor. remove extg lgt fixture. replace with blank cover plate. revert 3rd floor of occ. to last legal use as attic. legalize non loading bearing wall in attic space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M137624",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-16",
+      "status_date": "2008-10-16",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=77",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2648024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2648&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2648024",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

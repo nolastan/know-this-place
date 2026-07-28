@@ -1,0 +1,155 @@
+{
+  "address": "142 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/142/",
+  "apn": "3583041",
+  "block": "3583",
+  "lot": "041",
+  "eas_baseid": "360788",
+  "coordinates": {
+    "lat": 37.760238,
+    "lng": -122.434148
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1935,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0142 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 791086,
+    "assessed_improvement_value": 527386,
+    "last_sale_date": "2001-01-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200105038316",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-03",
+      "status_date": "2001-09-03",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "remove staircase, fill in floor(from 1st flr into garage).staircase is not a required access.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M12022",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-27",
+      "status_date": "2000-07-27",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-04",
+      "status_date": "1997-06-13",
+      "estimated_cost": 6438,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612755",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-16",
+      "status_date": "1997-01-16",
+      "estimated_cost": 800,
+      "description": "repair front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607826",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-06",
+      "status_date": "1997-01-16",
+      "estimated_cost": 7000,
+      "description": "repl cabinets,electric(title 24),plumbing (2 new sinks)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605935",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-04-08",
+      "status_date": "1997-01-16",
+      "estimated_cost": 16000,
+      "description": "add steel moment frame at rear of structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-12-12",
+      "status_date": "1987-05-06",
+      "estimated_cost": 4400,
+      "description": "termite repair as per report #1983.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408421",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-08-03",
+      "status_date": "1984-12-12",
+      "estimated_cost": 500,
+      "description": "repair entry stairs, (replace treads & risers)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=142",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=041",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583041",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

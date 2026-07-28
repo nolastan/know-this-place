@@ -1,0 +1,150 @@
+{
+  "address": "21–25 Uranus Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/uranus-terrace/21/",
+  "apn": "2654032",
+  "block": "2654",
+  "lot": "032",
+  "eas_baseid": "343438",
+  "coordinates": {
+    "lat": 37.761484,
+    "lng": -122.445225
+  },
+  "address_range": "21–25",
+  "street_numbers_on_parcel": [
+    "21",
+    "25"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2358,
+    "building_area_sqft": 1950,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0025 0021 URANUS              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 673640,
+    "assessed_improvement_value": 520075,
+    "last_sale_date": "2002-02-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603248137",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-24",
+      "status_date": "2026-04-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under previously approved permit 200711087709. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807053818",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2018-07-05",
+      "status_date": "2018-07-05",
+      "estimated_cost": 25000,
+      "revised_cost": 0,
+      "description": "relocate back wall at main floor to alighn with deck projection above, replace exisiting french doors with new sliding door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M449007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-06",
+      "status_date": "2013-12-06",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M122368",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-12",
+      "status_date": "2008-06-12",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711087709",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2007-11-08",
+      "status_date": "2008-02-06",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "site permit: remodel/expand recreation room at basement. add bathroom and closet. reconstruct stair to recreation room. add patio at back of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209106110",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-09-10",
+      "status_date": "2005-05-05",
+      "estimated_cost": 9500,
+      "description": "improve (e) basement bedroom, add bath & deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407144",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-07-03",
+      "status_date": "1984-12-03",
+      "estimated_cost": 60000,
+      "description": "demo-non structual interior partitons one non bearing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URANUS&street_type=TER&address_number=21",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2654032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2654&lot=032",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2654032",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

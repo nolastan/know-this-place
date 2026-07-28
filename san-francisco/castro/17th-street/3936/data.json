@@ -1,0 +1,123 @@
+{
+  "address": "3936 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3936/",
+  "apn": "3563015A",
+  "block": "3563",
+  "lot": "015A",
+  "eas_baseid": "359785",
+  "coordinates": {
+    "lat": 37.762832,
+    "lng": -122.433775
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1920,
+    "building_area_sqft": 1680,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3936 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 337220,
+    "assessed_improvement_value": 242778,
+    "last_sale_date": "1994-06-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103035715",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-03",
+      "status_date": "2021-08-18",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kitchen and bathroom remodel, change cabinets, counter tops, tile and bath tub, add 4\" recessed lighting in bath and kitchen. no walls move",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608365",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-14",
+      "status_date": "1997-05-27",
+      "estimated_cost": 2000,
+      "description": "install,new cabinets,move stove,range,hood,build closet,sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-22",
+      "status_date": "1991-12-17",
+      "estimated_cost": 3800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005068",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-15",
+      "status_date": "1990-05-17",
+      "estimated_cost": 7000,
+      "description": "rebuild closet/toilet rm into full bath at main fl unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209838",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-11-30",
+      "status_date": "1983-12-30",
+      "estimated_cost": 4000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3936",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3563015A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3563&lot=015A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3563015A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

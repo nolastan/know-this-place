@@ -1,0 +1,152 @@
+{
+  "address": "37 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/37/",
+  "apn": "3544027",
+  "block": "3544",
+  "lot": "027",
+  "eas_baseid": "358893",
+  "coordinates": {
+    "lat": 37.767189,
+    "lng": -122.427486
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 4500,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0037 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 51952,
+    "assessed_improvement_value": 638032
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203230645",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-23",
+      "status_date": "2022-03-23",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M914587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-04-18",
+      "status_date": "2018-04-18",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820955",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-10-14",
+      "status_date": "2001-09-06",
+      "estimated_cost": 3000,
+      "description": "renew pa#9709458-remove kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709458",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-05-23",
+      "status_date": "1999-05-18",
+      "estimated_cost": 3000,
+      "description": "remove kitch sink/gas range from source/kitch cabinet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9401790",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-02-09",
+      "status_date": "1997-05-29",
+      "estimated_cost": 32500,
+      "description": "legalize 4th unit of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810766",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-08-01",
+      "status_date": "1989-09-24",
+      "estimated_cost": 6850,
+      "description": "fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805057",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1988-04-21",
+      "status_date": "1988-09-28",
+      "description": "demolish residential",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605712",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1986-05-15",
+      "status_date": "1990-07-09",
+      "estimated_cost": 354000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=37",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544027",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

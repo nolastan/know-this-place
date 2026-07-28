@@ -1,0 +1,159 @@
+{
+  "address": "552 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/552/",
+  "apn": "2628024",
+  "block": "2628",
+  "lot": "024",
+  "eas_baseid": "342690",
+  "coordinates": {
+    "lat": 37.76266,
+    "lng": -122.444783
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 2058,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0552 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1630624,
+    "assessed_improvement_value": 698838,
+    "last_sale_date": "2019-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405152202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-15",
+      "status_date": "2024-07-12",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revise bld 202404170186 to include minor electrical & plumbing repairs encountered on the inside of the buidling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404170186",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-17",
+      "status_date": "2024-07-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace damaged exterior parapet wall like-to-like (12'length x 7' tall parapet)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106152444",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-15",
+      "status_date": "2021-12-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one bathroom remodeling like for like, convert tub to steam shower. no structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909030450",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-03",
+      "status_date": "2019-09-18",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904297272",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-04-29",
+      "status_date": "2013-09-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "water damage/dryrot repair at garage soffit + deck (front) replacing wood siding, trim, & framing as needed per dryrot paint siding + trim same existing color. approx 100 sqft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510286854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-28",
+      "status_date": "2006-01-10",
+      "estimated_cost": 15340,
+      "revised_cost": 15340,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019431",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-09-21",
+      "status_date": "1991-06-20",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614533",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-11-14",
+      "status_date": "1987-04-29",
+      "estimated_cost": 2000,
+      "description": "parapet stair will be upgraded to construction",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=552",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628024",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

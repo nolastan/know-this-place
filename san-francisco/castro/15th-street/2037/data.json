@@ -1,0 +1,101 @@
+{
+  "address": "2037 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2037/",
+  "apn": "3558069",
+  "block": "3558",
+  "lot": "069",
+  "eas_baseid": "359567",
+  "coordinates": {
+    "lat": 37.765858,
+    "lng": -122.429586
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2037 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152318,
+    "assessed_improvement_value": 146230
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012231603",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-12-23",
+      "status_date": "2020-12-23",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "reroofing - tear off old roof and reroof work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M221886",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-22",
+      "status_date": "2010-09-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M219209",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "2010-09-02",
+      "status_date": "2010-09-15",
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=069",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558069",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

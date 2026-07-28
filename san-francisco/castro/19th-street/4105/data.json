@@ -1,0 +1,135 @@
+{
+  "address": "4105–4121 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4105/",
+  "apn": "2696001",
+  "block": "2696",
+  "lot": "001",
+  "eas_baseid": "344415",
+  "coordinates": {
+    "lat": 37.759158,
+    "lng": -122.435032
+  },
+  "address_range": "4105–4121",
+  "street_numbers_on_parcel": [
+    "4105",
+    "4107",
+    "4115",
+    "4119",
+    "4121"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 9,
+    "stories": 2,
+    "rooms": 25,
+    "bathrooms": 9,
+    "lot_area_sqft": 4277,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4123 4105 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274030,
+    "assessed_improvement_value": 638724
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Eureka Valley Commercial & Castro Village LGBTQ+ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1879–1932; 1963–1980",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309146621",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-09-14",
+      "status_date": "2023-09-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "barrier remediation as identified on plans per abe checklist compliance form. equvilent facilitation (if any). provide isa signage at exteirio with buzzer for customer assistance. abe#: 202002041681.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309146623",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-09-14",
+      "status_date": "2023-09-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "barrier remediation as identified on plans per abe checklist compliance form. equivalent faciliation (if any) work as show on plans. provide isa signage at exterior with buzzer for customer assistance. abe# 202002041682",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813074",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-10",
+      "status_date": "1999-01-10",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304920",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-06-03",
+      "status_date": "1985-04-10",
+      "estimated_cost": 500,
+      "description": "change residence to office space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4105",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2696001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2696&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2696001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43503234290205%2037.75915816829816)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

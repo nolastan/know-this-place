@@ -1,0 +1,163 @@
+{
+  "address": "234 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/234/",
+  "apn": "2689006",
+  "block": "2689",
+  "lot": "006",
+  "eas_baseid": "344184",
+  "coordinates": {
+    "lat": 37.759555,
+    "lng": -122.443629
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2583,
+    "building_area_sqft": 1085,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0234 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 270540,
+    "assessed_improvement_value": 405825,
+    "last_sale_date": "1991-02-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M166846",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-04",
+      "status_date": "2009-06-04",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309164837",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-16",
+      "status_date": "2004-02-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "bathroom repair plumbing electrical drywal no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9822807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-05",
+      "status_date": "1999-02-25",
+      "estimated_cost": 2950,
+      "description": "tile front (e)stair case",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-14",
+      "status_date": "1998-10-29",
+      "estimated_cost": 1,
+      "description": "renew app #9801873",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801873",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-02-04",
+      "status_date": "1998-08-14",
+      "estimated_cost": 13950,
+      "description": "replace foundation piers,slider w/french door,(e) deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614604",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-08",
+      "status_date": "1996-12-08",
+      "estimated_cost": 950,
+      "description": "termite work per report #4238-96",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-26",
+      "status_date": "1995-02-14",
+      "estimated_cost": 2000,
+      "description": "repair existing deck,replace decking benches,install steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318190",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-18",
+      "status_date": "1994-03-09",
+      "estimated_cost": 2800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123080",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-05",
+      "status_date": "1992-07-24",
+      "estimated_cost": 2100,
+      "description": "replace 80 sq ft stucco , install 4 fndtn bolts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=234",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689006",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "address": "334–336 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/334/",
+  "apn": "2749007",
+  "block": "2749",
+  "lot": "007",
+  "eas_baseid": "345390",
+  "coordinates": {
+    "lat": 37.756735,
+    "lng": -122.438215
+  },
+  "address_range": "334–336",
+  "street_numbers_on_parcel": [
+    "334",
+    "336"
+  ],
+  "parcel": {
+    "year_built": 1964,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 2888,
+    "lot_depth_ft": 30,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0336 0334 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 700676,
+    "assessed_improvement_value": 915932,
+    "last_sale_date": "2001-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201202063656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-06",
+      "status_date": "2012-02-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with physical inspection report cc-7060 date 1/31/12.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606093619",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2006-06-09",
+      "status_date": "2011-12-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "fire rated wall & ceiling for (2) hours. inside garage area-revision to appl# 200503288495.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603287692",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2006-03-28",
+      "status_date": "2007-04-17",
+      "estimated_cost": 2000,
+      "description": "install sprinkler in garage, revision to pa 200503288495s-s1-r1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503288495",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-03-28",
+      "status_date": "2006-09-11",
+      "estimated_cost": 123000,
+      "revised_cost": 123000,
+      "description": "2 story horizontal addition @ rear with roof deck. addition provides new bedrooms & master bath suite for each of 2 existing units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616878",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-09",
+      "status_date": "1997-06-11",
+      "estimated_cost": 9700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610234",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-10",
+      "status_date": "1996-12-10",
+      "estimated_cost": 15000,
+      "description": "repl 1,250 sf wood siding, 3 alum windows, 1 patio alum door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219038",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-02",
+      "status_date": "1992-12-10",
+      "estimated_cost": 2200,
+      "description": "dry rot repair at rear exterior at exterior stair case",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010985",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-05",
+      "status_date": "1990-06-22",
+      "estimated_cost": 2650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=334",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749007",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

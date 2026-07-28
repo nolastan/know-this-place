@@ -1,0 +1,106 @@
+{
+  "address": "4435 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4435/",
+  "apn": "2653028",
+  "block": "2653",
+  "lot": "028",
+  "eas_baseid": "343402",
+  "coordinates": {
+    "lat": 37.761767,
+    "lng": -122.443776
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 985,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4435 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 991294,
+    "assessed_improvement_value": 471001,
+    "last_sale_date": "2012-10-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201512114814",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-12-11",
+      "status_date": "2015-12-11",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "remodel exisitng bathroom, new tile, new vanity, install new tub. no alteration of wall, window & door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201106633",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-01-10",
+      "status_date": "2002-03-07",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace all rotted materials on upper & lower decks",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106282608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-28",
+      "status_date": "2002-01-07",
+      "estimated_cost": 71192,
+      "revised_cost": 71192,
+      "description": "lower: remove old kitchen, add 2 bedroom, 2 bathroom, 1 closet, enlarge hallway upper:install kitch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4435",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2653028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2653&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2653028",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

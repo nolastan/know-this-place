@@ -1,0 +1,131 @@
+{
+  "address": "47–51 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/47/",
+  "apn": "2647023",
+  "block": "2647",
+  "lot": "023",
+  "eas_baseid": "343209",
+  "coordinates": {
+    "lat": 37.761644,
+    "lng": -122.435875
+  },
+  "address_range": "47–51",
+  "street_numbers_on_parcel": [
+    "47",
+    "49",
+    "51"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4029,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0051 0047 COLLINGWOOD         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 735166,
+    "assessed_improvement_value": 490103,
+    "last_sale_date": "2003-03-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404039208",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-04-03",
+      "status_date": "2024-04-03",
+      "estimated_cost": 1,
+      "revised_cost": 6840,
+      "description": "submit as built plans per inspectors request for existing permit app 202205124158. remove pantry in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205124158",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-12",
+      "status_date": "2024-05-03",
+      "estimated_cost": 25000,
+      "revised_cost": 40000,
+      "description": "install new subpanel rewire entire unit; replace tub with shower, install new shower pan and tile walls replace existing kitchen cabinets, install new tankless water heater",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604205275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-20",
+      "status_date": "2016-05-03",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "replace 9 windows on rear of bldg w/ new vinyl double hung windows. no work is visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M536867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-11-13",
+      "status_date": "2014-11-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319734",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-08",
+      "status_date": "1994-03-08",
+      "estimated_cost": 2900,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLLINGWOOD&street_type=ST&address_number=47",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2647023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2647&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2647023",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

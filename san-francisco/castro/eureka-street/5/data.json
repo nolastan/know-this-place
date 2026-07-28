@@ -1,0 +1,141 @@
+{
+  "address": "5–11 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/5/",
+  "apn": "2649033",
+  "block": "2649",
+  "lot": "033",
+  "eas_baseid": "343288",
+  "coordinates": {
+    "lat": 37.762108,
+    "lng": -122.438253
+  },
+  "address_range": "5–11",
+  "street_numbers_on_parcel": [
+    "5",
+    "7",
+    "9",
+    "11"
+  ],
+  "parcel": {
+    "year_built": 1939,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 3468,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0011 0005 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 845335,
+    "assessed_improvement_value": 445716,
+    "last_sale_date": "2000-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807164611",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-16",
+      "status_date": "2018-07-16",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117665",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-11",
+      "status_date": "2000-08-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired appl #9924844",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9924844",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-11-23",
+      "status_date": "2000-08-30",
+      "estimated_cost": 15000,
+      "description": "repair dryrot,replace damaged wood members,re-stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316052",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-09-16",
+      "status_date": "1994-04-21",
+      "estimated_cost": 10630,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220069",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-17",
+      "status_date": "1993-03-25",
+      "estimated_cost": 250,
+      "description": "fire proof existing roof deck overlay",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-17",
+      "status_date": "1990-03-20",
+      "estimated_cost": 1500,
+      "description": "dryrot repairs,rmve stucco/rottn studs,sheathing,rim joists",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=5",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649033",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

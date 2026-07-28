@@ -1,0 +1,122 @@
+{
+  "address": "162 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/162/",
+  "apn": "2690009",
+  "block": "2690",
+  "lot": "009",
+  "eas_baseid": "344214",
+  "coordinates": {
+    "lat": 37.759856,
+    "lng": -122.442302
+  },
+  "parcel": {
+    "year_built": 1958,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 2374,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0164 0162 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1046710,
+    "assessed_improvement_value": 430993
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202202017064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-01",
+      "status_date": "2022-09-02",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M712748",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-11",
+      "status_date": "2016-08-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-29",
+      "status_date": "1999-04-05",
+      "estimated_cost": 1,
+      "description": "renew expirerd appn. 9624562s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624562S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-12-23",
+      "status_date": "1999-03-30",
+      "estimated_cost": 250000,
+      "description": "horizontal & vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-02-28",
+      "status_date": "1984-04-19",
+      "estimated_cost": 300,
+      "description": "repair front window of 162 caselli",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=162",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=009",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690009",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "address": "134–138 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/134/",
+  "apn": "3583040",
+  "block": "3583",
+  "lot": "040",
+  "eas_baseid": "360787",
+  "coordinates": {
+    "lat": 37.760304,
+    "lng": -122.434154
+  },
+  "address_range": "134–138",
+  "street_numbers_on_parcel": [
+    "134",
+    "136",
+    "138"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3497,
+    "building_area_sqft": 2000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0138 0134 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1202664,
+    "assessed_improvement_value": 515428,
+    "last_sale_date": "2021-10-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606092860",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-07-07",
+      "status_date": "2026-07-07",
+      "estimated_cost": 300000,
+      "description": "alter site to pa#202212208753: add bulk to 25% line @ rear (1st fl). add bulk to 30 percent line at rear (2nd & 3rd fl). add bulk on 3rd & 4th fl @ front one additional residential unit - garage at basement level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212208753",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-12-20",
+      "status_date": "2024-06-12",
+      "estimated_cost": 1400000,
+      "revised_cost": 2250000,
+      "description": "proposed horizontal & vertical addition to an existing two-unit building & addition of a residential unit. windows and doors of front facade to be repaired in kind. removal of curb cut and sidewalk (under sep permit)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=134",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583040",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "address": "4048 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/4048/",
+  "apn": "2751007D",
+  "block": "2751",
+  "lot": "007D",
+  "eas_baseid": "345501",
+  "coordinates": {
+    "lat": 37.756185,
+    "lng": -122.436509
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2125,
+    "basement_area_sqft": 540,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4048 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2065000,
+    "assessed_improvement_value": 885000,
+    "last_sale_date": "2021-11-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206307536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-30",
+      "status_date": "2022-08-31",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902143015",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-14",
+      "status_date": "2019-06-11",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel bathroom change fixtures, re-tile shower. bath 6x8 provide vacany sensor in bathroom. add lighting to living room ceiling. all to be h.e.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808058484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-05",
+      "status_date": "2008-09-25",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "dry rot repair at the front of house remove stone veneer facing replace stucco and 2 windows after dry rot repair (the existing windows repalcement will be same kind and configuration with vinyl or aluminum clading over wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607257566",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-25",
+      "status_date": "2006-07-25",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "rev. to permit #2006/06/02/3119 change location of interior foundation grade beam see det. 4/s3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606023119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-02",
+      "status_date": "2007-01-22",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "remodel existing ground floor to contain bedroom, bathroom, laundry and storage areas. remodel existing internal exterior entry into interior space. replace exist. skylight with new code conforming skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824573",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-01",
+      "status_date": "1999-06-01",
+      "estimated_cost": 8000,
+      "description": "remodel existing kitchen remove(e)cabinets instal new cabint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810805",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-08-01",
+      "status_date": "1988-11-23",
+      "estimated_cost": 4260,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=4048",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751007D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=007D",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751007D",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

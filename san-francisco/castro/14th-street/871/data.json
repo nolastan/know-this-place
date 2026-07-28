@@ -1,0 +1,140 @@
+{
+  "address": "871 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/871/",
+  "apn": "3541070",
+  "block": "3541",
+  "lot": "070",
+  "eas_baseid": "358807",
+  "coordinates": {
+    "lat": 37.76726,
+    "lng": -122.432665
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 1920,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0871 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47564,
+    "assessed_improvement_value": 32077
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1905",
+    "survey_name": "871 14th St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202110049758",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-10-04",
+      "status_date": "2021-10-04",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "remove rear door & siding at lower unit. install new door & siding in kind. maintain door rating.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M627067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-05",
+      "status_date": "2015-10-05",
+      "revised_cost": 1,
+      "description": "street space permit - 201508033104",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508033104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-03",
+      "status_date": "2015-10-19",
+      "estimated_cost": 10000,
+      "revised_cost": 11000,
+      "description": "remove & replace rear stairs in kind, move one door and one window; to comply with nov 199709486; new windows to be wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312113867",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-11",
+      "status_date": "2014-03-27",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "4to comply with complaint #201042958 - remove non-permitted one kitchen return to one garage + storage space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809370",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-07-11",
+      "status_date": "1988-11-22",
+      "estimated_cost": 100,
+      "description": "repair stairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=871",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3541070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3541&lot=070",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3541070",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43266534201305%2037.76725999033222)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

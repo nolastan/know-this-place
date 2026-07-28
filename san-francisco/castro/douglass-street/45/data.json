@@ -1,0 +1,125 @@
+{
+  "address": "45 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/45/",
+  "apn": "2623040",
+  "block": "2623",
+  "lot": "040",
+  "eas_baseid": "342530",
+  "coordinates": {
+    "lat": 37.762943,
+    "lng": -122.439198
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3698,
+    "building_area_sqft": 1760,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0045 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 830876,
+    "assessed_improvement_value": 356088,
+    "last_sale_date": "2012-05-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201311262840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-26",
+      "status_date": "2014-07-23",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace 1 window at front visible from street aluminum frame; no structural changes max u-factor .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311141871",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-14",
+      "status_date": "2014-11-06",
+      "estimated_cost": 10650,
+      "revised_cost": 10650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308265182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-26",
+      "status_date": "2014-05-28",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "remove a bearing wall and some non bearing partiton walls. raise by 10\" to e dropped ceiling in kitchen and master bath areas. relocate kitchen fixtures and cabinets. remodel e master bath including a new shower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921979",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-11-14",
+      "status_date": "1990-09-07",
+      "estimated_cost": 4600,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804363",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-04-06",
+      "status_date": "1988-08-02",
+      "estimated_cost": 1700,
+      "description": "termite report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=45",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623040",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

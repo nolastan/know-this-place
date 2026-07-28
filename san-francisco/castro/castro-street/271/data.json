@@ -1,0 +1,134 @@
+{
+  "address": "271–273 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/271/",
+  "apn": "3561035",
+  "block": "3561",
+  "lot": "035",
+  "eas_baseid": "359687",
+  "coordinates": {
+    "lat": 37.764553,
+    "lng": -122.435044
+  },
+  "address_range": "271–273",
+  "street_numbers_on_parcel": [
+    "271",
+    "273"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3985,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0273 0271 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1837323,
+    "assessed_improvement_value": 787423,
+    "last_sale_date": "2020-05-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601133742",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-13",
+      "status_date": "2026-05-11",
+      "estimated_cost": 5000,
+      "revised_cost": 12000,
+      "description": "strengthen existing brick retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609299135",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-29",
+      "status_date": "2017-03-02",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27586",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-20",
+      "status_date": "2004-05-20",
+      "revised_cost": 0,
+      "description": "side walk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500588",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-01-17",
+      "status_date": "1995-08-07",
+      "estimated_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=271",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3561035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3561&lot=035",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3561035",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43504360559487%2037.764552643306516)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

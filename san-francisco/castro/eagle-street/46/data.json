@@ -1,0 +1,126 @@
+{
+  "address": "46 Eagle Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eagle-street/46/",
+  "apn": "2711012",
+  "block": "2711",
+  "lot": "012",
+  "eas_baseid": "344850",
+  "coordinates": {
+    "lat": 37.758503,
+    "lng": -122.442925
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0046 EAGLE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 909242,
+    "assessed_improvement_value": 389674,
+    "last_sale_date": "2020-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409090320",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-09",
+      "status_date": "2024-12-13",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "dry rot and structural repair of rear lower level. replace (2) post foundations exterior studs, sill plates, sheathing & siding. replace wood girder beam. cap stem wall w/ raised sill plate.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211156523",
+      "type": "additions alterations or repairs",
+      "status": "plancheck",
+      "filed": "2022-11-15",
+      "status_date": "2024-09-09",
+      "estimated_cost": 78000,
+      "description": "comply w/ nov 202172279. replace (e) substandard retaining walls at rearyard adjacent to downhill properties(north 4757 19th street, weast - 30 eagle st. new reinforced concrete retaining wall with drilled piers . structural foundation system to be shared with neighbors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405307061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-30",
+      "status_date": "2014-06-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "install hardi siding to right side wall, visable from street, no structural changes. 700 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304295645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-29",
+      "status_date": "2013-09-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#2008-0626-5411. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806265411",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-06-26",
+      "status_date": "2009-04-16",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove cabinets, sink in kitchen and put in dishwasher and new sink, new garbase disposal min 50% of kitchen light watt be fluorescent. remove toilet, sink, tub and repalce ,add new shower door. fluorescent light or occupancy sensor in bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EAGLE&street_type=ST&address_number=46",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711012",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

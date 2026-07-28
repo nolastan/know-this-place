@@ -1,0 +1,158 @@
+{
+  "address": "115 Graystone Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/graystone-terrace/115/",
+  "apn": "2719A003",
+  "block": "2719A",
+  "lot": "003",
+  "eas_baseid": "345103",
+  "coordinates": {
+    "lat": 37.758065,
+    "lng": -122.446716
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 5,
+    "stories": 5,
+    "rooms": 21,
+    "bathrooms": 5,
+    "lot_area_sqft": 4103,
+    "building_area_sqft": 4362,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0115 GRAYSTONE           TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1368670,
+    "assessed_improvement_value": 586565,
+    "last_sale_date": "2002-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708306416",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-08-30",
+      "status_date": "2019-06-28",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "compliance with mandatory seismic retrofit program per 2016 iebc app a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304194977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-19",
+      "status_date": "2013-06-13",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808290418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-29",
+      "status_date": "2008-12-10",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace front windows 3 with new vinyl. replace wood panels with sheet rock in living rooms in two units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411169325",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-16",
+      "status_date": "2005-01-28",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "install iron fence/gate at rear yard- 42 in high",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402186605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-18",
+      "status_date": "2004-06-03",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "rev. appl#200402035433 to increase value by $1,500",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402035433",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-03",
+      "status_date": "2004-06-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "dryrot repair at rear exterior wall, small portion of middle side wall, and windbreaker supports on",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704846",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-17",
+      "status_date": "1997-10-08",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516293",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-02",
+      "status_date": "1996-02-22",
+      "estimated_cost": 4000,
+      "description": "replace old furnaces with new",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRAYSTONE&street_type=TER&address_number=115",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719A003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719A&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719A003",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

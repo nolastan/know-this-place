@@ -1,0 +1,137 @@
+{
+  "address": "224 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/224/",
+  "apn": "2689004",
+  "block": "2689",
+  "lot": "004",
+  "eas_baseid": "344181",
+  "coordinates": {
+    "lat": 37.759677,
+    "lng": -122.443417
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2844,
+    "building_area_sqft": 1325,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0224 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 64657,
+    "assessed_improvement_value": 151822
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211035822",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-11-03",
+      "status_date": "2026-01-23",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "replace front window @ ground fl level with a dual glazed slidimg wood aluminanum clad marvin or equivalent window in (e) opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207229113",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-22",
+      "status_date": "2022-10-07",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "add simpson urfp retrofit foundation plates, 3 on south side and 3 on west side at sw corner of front. add 3/8\" plywood for shear strength, 6 inch e.m. remove sheetrock as needed. replace with 5/8 inch type x",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904107560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-10",
+      "status_date": "2019-07-02",
+      "estimated_cost": 12000,
+      "revised_cost": 23000,
+      "description": "removes and replace 16 linear feet of kitchen counter and 14 linear feet of wall cabinets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902153099",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-15",
+      "status_date": "2019-02-22",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove/replace interior garage concrete slab in-kind, 1/2 rebar every 14 on center w/4\"3/4 drain rock with 10 mill visqueen over 2\" sand w/new 4\" thick concrete, min 2500 psi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808137141",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-13",
+      "status_date": "2018-08-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace <50% of front stair wood construction replace in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207111147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-11",
+      "status_date": "2002-12-03",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "replace e retaining wall at rear property line per plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=224",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689004",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

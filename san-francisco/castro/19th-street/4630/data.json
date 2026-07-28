@@ -1,0 +1,161 @@
+{
+  "address": "4630 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4630/",
+  "apn": "2700026",
+  "block": "2700",
+  "lot": "026",
+  "eas_baseid": "344599",
+  "coordinates": {
+    "lat": 37.759186,
+    "lng": -122.441357
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 1800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4630 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2009396,
+    "assessed_improvement_value": 904345,
+    "last_sale_date": "2022-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412106489",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-10",
+      "status_date": "2025-03-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #2024-0329-8899 structural detail and calculation to be changed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403298899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-29",
+      "status_date": "2025-03-04",
+      "estimated_cost": 30000,
+      "revised_cost": 69000,
+      "description": "kitchen remodel, remove bearing wall, install new construction window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306200455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-20",
+      "status_date": "2023-09-21",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replace 4 windows to wood , (2) front facing, (2) on on back of house in kind. same size, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210275338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-27",
+      "status_date": "2023-02-24",
+      "estimated_cost": 21500,
+      "revised_cost": 21500,
+      "description": "to create powder room to an extg foot print of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102174761",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-17",
+      "status_date": "2021-04-19",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "interior remodel of 1/f including new half bathroom and closet. replace 3 (e) windows with new clad wood units by marvin (building front facade). same size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503171139",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2015-03-17",
+      "status_date": "2016-03-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "demolish 1 story, type 5, garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503171142",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "2015-03-17",
+      "status_date": "2016-03-18",
+      "estimated_cost": 125000,
+      "revised_cost": 125000,
+      "description": "erect 1 story, no basement, type 5, garage building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412053190",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-12-05",
+      "status_date": "2015-11-25",
+      "estimated_cost": 475000,
+      "revised_cost": 475000,
+      "description": "horizontal addition @ rear of (e) 3-story single family residence, interior alterations, window replacement & associated electrical & plumbing work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4630",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=026",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700026",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

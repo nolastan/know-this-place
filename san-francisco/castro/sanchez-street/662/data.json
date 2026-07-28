@@ -1,0 +1,155 @@
+{
+  "address": "662 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/662/",
+  "apn": "3601008A",
+  "block": "3601",
+  "lot": "008A",
+  "eas_baseid": "361756",
+  "coordinates": {
+    "lat": 37.75845,
+    "lng": -122.43064
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2940,
+    "building_area_sqft": 1320,
+    "lot_depth_ft": 5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0662 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 911929,
+    "assessed_improvement_value": 607950,
+    "last_sale_date": "2003-09-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108257099",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-25",
+      "status_date": "2021-09-10",
+      "estimated_cost": 31509,
+      "revised_cost": 31509,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31233",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-02-16",
+      "status_date": "2005-02-16",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410126466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-12",
+      "status_date": "2005-10-31",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "removal of selected non load bearing interior partitions renovation of (e) bathrm @ 1/f addition of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M18798",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-05",
+      "status_date": "2002-06-05",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-05",
+      "status_date": "2002-03-07",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715772",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-18",
+      "status_date": "1997-10-22",
+      "estimated_cost": 4000,
+      "description": "convert exist 1st floor closet to full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-18",
+      "status_date": "1996-10-25",
+      "estimated_cost": 5600,
+      "description": "repairs to concrete front stairwayand 18\" brick wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412381",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-03",
+      "status_date": "1995-07-28",
+      "estimated_cost": 3000,
+      "description": "convert exist 1st floor closet to proposed full bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=662",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601008A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=008A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601008A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

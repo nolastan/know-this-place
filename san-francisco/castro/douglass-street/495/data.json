@@ -1,0 +1,156 @@
+{
+  "address": "495 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/495/",
+  "apn": "2749024B",
+  "block": "2749",
+  "lot": "024B",
+  "eas_baseid": "345409",
+  "coordinates": {
+    "lat": 37.755673,
+    "lng": -122.438654
+  },
+  "parcel": {
+    "year_built": 1958,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2169,
+    "building_area_sqft": 3322,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0495 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 383209,
+    "assessed_improvement_value": 542888,
+    "last_sale_date": "1997-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604154939",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-15",
+      "status_date": "2016-05-09",
+      "estimated_cost": 2300,
+      "revised_cost": 2300,
+      "description": "pest control repairs per diverse inspection services report #161808t, item 1. repairs to stairs are in same like & not to exceed 39%. repair in-kind, no structural change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503288564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-28",
+      "status_date": "2005-04-14",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "painting the front & windows repairs dryrot repairs around windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402116190",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-11",
+      "status_date": "2004-02-27",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "change one aluminum window to wood wndws to bring look of bldg back to historical at rear house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311039168",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-03",
+      "status_date": "2003-11-03",
+      "estimated_cost": 13650,
+      "revised_cost": 13650,
+      "description": "install vinyl siding over the western exposed sidewall.non struct changes,not visible fm the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817595",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-02",
+      "status_date": "1999-01-12",
+      "estimated_cost": 1,
+      "description": "renew pa#9803902 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810490",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-09",
+      "status_date": "1999-01-12",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-04",
+      "status_date": "1998-09-02",
+      "estimated_cost": 5000,
+      "description": "termit repair/cut(e)stuco on 3 sect front side/ext wd stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9803902",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-09",
+      "status_date": "1999-01-12",
+      "estimated_cost": 4200,
+      "description": "termite damage repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=495",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749024B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=024B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749024B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

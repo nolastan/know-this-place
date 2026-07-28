@@ -1,0 +1,117 @@
+{
+  "address": "75–77 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/75/",
+  "apn": "2649022A",
+  "block": "2649",
+  "lot": "022A",
+  "eas_baseid": "343278",
+  "coordinates": {
+    "lat": 37.761171,
+    "lng": -122.437991
+  },
+  "address_range": "75–77",
+  "street_numbers_on_parcel": [
+    "75",
+    "77"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2824,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0077 0075 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 375267,
+    "assessed_improvement_value": 437210,
+    "last_sale_date": "1988-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1008167",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-21",
+      "status_date": "2018-11-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28830",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-20",
+      "status_date": "2004-08-20",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810184",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-07-21",
+      "status_date": "1988-12-02",
+      "estimated_cost": 520,
+      "description": "termite damagge repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401224",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-01",
+      "status_date": "1984-07-27",
+      "estimated_cost": 15000,
+      "description": "remove existing stairway replace with enclosed stairway-deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=75",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649022A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=022A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649022A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

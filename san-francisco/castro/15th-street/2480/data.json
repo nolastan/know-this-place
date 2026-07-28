@@ -1,0 +1,116 @@
+{
+  "address": "2480 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2480/",
+  "apn": "2612076",
+  "block": "2612",
+  "lot": "076",
+  "eas_baseid": "342081",
+  "coordinates": {
+    "lat": 37.766283,
+    "lng": -122.438017
+  },
+  "parcel": {
+    "year_built": 1968,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 2831,
+    "building_area_sqft": 3957,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2480 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1153764,
+    "assessed_improvement_value": 769171,
+    "last_sale_date": "2014-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1968",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410152958",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-15",
+      "status_date": "2024-10-29",
+      "estimated_cost": 13650,
+      "revised_cost": 13650,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210255069",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-25",
+      "status_date": "2023-09-08",
+      "estimated_cost": 29000,
+      "revised_cost": 29000,
+      "description": "one unit - 2/f: remove non-load bearing wall between kitchen and living room. remodel kitchen: new appliances, cabinets, fixtures, elec & plumbing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210033596",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-03",
+      "status_date": "2023-09-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "1 kitchen remodel like for like, no wall or layout change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604185046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-18",
+      "status_date": "2016-06-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel - new cabinets and remove 2 non-load bearing walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2480",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=076",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612076",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

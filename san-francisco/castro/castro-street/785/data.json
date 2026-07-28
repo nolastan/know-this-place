@@ -1,0 +1,102 @@
+{
+  "address": "785 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/785/",
+  "apn": "3603027",
+  "block": "3603",
+  "lot": "027",
+  "eas_baseid": "361938",
+  "coordinates": {
+    "lat": 37.756444,
+    "lng": -122.434257
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2998,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0785 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72055,
+    "assessed_improvement_value": 92620
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201204188608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-18",
+      "status_date": "2012-05-10",
+      "estimated_cost": 5843,
+      "revised_cost": 5843,
+      "description": "replace 6 windows size for size visable from the street with marvin fiberglass windows u value < 0.40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909541",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-14",
+      "status_date": "2000-01-21",
+      "estimated_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-04",
+      "status_date": "1997-02-03",
+      "estimated_cost": 485,
+      "description": "install 2 layers of 5/8\" fire code sheet rock",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=785",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603027",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

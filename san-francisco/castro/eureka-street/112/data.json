@@ -1,0 +1,140 @@
+{
+  "address": "112–116 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/112/",
+  "apn": "2692002",
+  "block": "2692",
+  "lot": "002",
+  "eas_baseid": "344287",
+  "coordinates": {
+    "lat": 37.760345,
+    "lng": -122.438549
+  },
+  "address_range": "112–116",
+  "street_numbers_on_parcel": [
+    "112",
+    "114",
+    "116"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3150,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0116 0112 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47312,
+    "assessed_improvement_value": 61632
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204132139",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-13",
+      "status_date": "2023-07-18",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "3/f: to comply w/ nov202173981:replace damanged kitchen cabinets & countertop.replace fire damange ceilign joist,exterior walls/wood siding,flooring,decking & guardrails, plywood roof sheathing & reroofing as per plan.replace damaged drywall with 5/8in type x gypsum board on all floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201055374",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-05",
+      "status_date": "2025-02-13",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "partial removal of fire damage for exploratory purposes to assess fire damage repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109047455",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-09-04",
+      "status_date": "2004-01-14",
+      "estimated_cost": 15000,
+      "revised_cost": 38000,
+      "description": "rebuild and enlarge rear yard addition extend additional 4'6 into rear yard rebuild dryrotted",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916330",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-10",
+      "status_date": "1999-12-10",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501509",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-13",
+      "status_date": "1985-04-30",
+      "estimated_cost": 2000,
+      "description": "replace rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8405836",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-06-01",
+      "status_date": "1985-08-05",
+      "estimated_cost": 300,
+      "description": "repair rear staircase handrails",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=112",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2692002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2692&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2692002",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

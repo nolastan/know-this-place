@@ -1,0 +1,147 @@
+{
+  "address": "3944 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3944/",
+  "apn": "2752022B",
+  "block": "2752",
+  "lot": "022B",
+  "eas_baseid": "345551",
+  "coordinates": {
+    "lat": 37.756245,
+    "lng": -122.435403
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 2885,
+    "basement_area_sqft": 607,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3944 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3422916,
+    "assessed_improvement_value": 1466964,
+    "last_sale_date": "2022-07-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505146327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-14",
+      "status_date": "2015-11-18",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "interior renovation of kitchen, ppwder room, gas fireplace & guest room. remove (e) and replace with new fixtures and finishes and patio door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409126246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-12",
+      "status_date": "2015-10-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "deck repair and handrail replacement. exterior deck leaks into living space below. existing glass handrail shattered due to wind and poor connection. deck replacement in kind with new waterproofing. new stainless steel guardrail to replace exist in size and configuration. only materials have changed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805131976",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-05-13",
+      "status_date": "2010-08-25",
+      "estimated_cost": 500000,
+      "revised_cost": 500000,
+      "description": "proposed vertical addition and interior remodel. add third story to (e) sfd. addition will create 2 bedrooms & 2 bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719958",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-07",
+      "status_date": "1997-10-14",
+      "estimated_cost": 1,
+      "description": "renewal permit application #97002831",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700783",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-14",
+      "status_date": "1997-06-11",
+      "estimated_cost": 3200,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902700",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-02-16",
+      "status_date": "1989-09-06",
+      "estimated_cost": 10000,
+      "description": "bathroom and kitchen remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901459",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-30",
+      "status_date": "1989-12-28",
+      "estimated_cost": 7000,
+      "description": "install greenhouse window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3944",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2752022B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2752&lot=022B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2752022B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

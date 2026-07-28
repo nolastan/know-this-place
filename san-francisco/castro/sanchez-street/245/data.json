@@ -1,0 +1,95 @@
+{
+  "address": "245 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/245/",
+  "apn": "3558030",
+  "block": "3558",
+  "lot": "030",
+  "eas_baseid": "359527",
+  "coordinates": {
+    "lat": 37.765181,
+    "lng": -122.430598
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 6,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 4180,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0245 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 278750,
+    "assessed_improvement_value": 553596
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1920",
+    "survey_name": "245 Sanchez Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207088016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-08",
+      "status_date": "2023-01-25",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "replace in-kind second means of egress wood stairs @ lighwell side of bldg. invisible from st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807164668",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-16",
+      "status_date": "2018-07-16",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=245",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558030",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

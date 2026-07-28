@@ -1,0 +1,157 @@
+{
+  "address": "84 Eagle Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eagle-street/84/",
+  "apn": "2711017",
+  "block": "2711",
+  "lot": "017",
+  "eas_baseid": "344855",
+  "coordinates": {
+    "lat": 37.758588,
+    "lng": -122.443418
+  },
+  "parcel": {
+    "year_built": 1969,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1589,
+    "building_area_sqft": 2326,
+    "basement_area_sqft": 610,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0084 EAGLE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1925404,
+    "assessed_improvement_value": 825170,
+    "last_sale_date": "2016-12-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1969",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406265280",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-06-26",
+      "status_date": "2024-06-26",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "1 bathroom remodel in kind with no changes of layout. non structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406116252",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-11",
+      "status_date": "2004-10-28",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "replace existing kitchen cabs & appliances installed new lighting. repair drywall at kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311079724",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-07",
+      "status_date": "2016-08-26",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "revision to pa 200205096214",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205096214",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-05-09",
+      "status_date": "2003-11-12",
+      "estimated_cost": 40000,
+      "revised_cost": 128392,
+      "description": "alter (e) house (addition)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-22",
+      "status_date": "1998-12-08",
+      "estimated_cost": 6000,
+      "description": "remove and replace retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123220",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-12-11",
+      "status_date": "1992-06-19",
+      "estimated_cost": 3000,
+      "description": "repair of (e) retaining wall at basement area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510509",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-24",
+      "status_date": "1986-03-11",
+      "estimated_cost": 15000,
+      "description": "repair all fire damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8106231",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-07-15",
+      "status_date": "1985-04-11",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EAGLE&street_type=ST&address_number=84",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711017",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "address": "263 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/263/",
+  "apn": "2698024",
+  "block": "2698",
+  "lot": "024",
+  "eas_baseid": "344510",
+  "coordinates": {
+    "lat": 37.758102,
+    "lng": -122.437698
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 2893,
+    "basement_area_sqft": 1078,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0263 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2392349,
+    "assessed_improvement_value": 1025291,
+    "last_sale_date": "2020-05-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111092119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-09",
+      "status_date": "2022-01-28",
+      "estimated_cost": 19900,
+      "revised_cost": 19900,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821679S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-10-22",
+      "status_date": "2000-10-18",
+      "estimated_cost": 85000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=263",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2698024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2698&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2698024",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

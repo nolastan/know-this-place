@@ -1,0 +1,138 @@
+{
+  "address": "345 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/345/",
+  "apn": "2751014",
+  "block": "2751",
+  "lot": "014",
+  "eas_baseid": "345510",
+  "coordinates": {
+    "lat": 37.756846,
+    "lng": -122.436488
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1050,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0345 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 519854,
+    "assessed_improvement_value": 346566,
+    "last_sale_date": "2001-06-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202011038030",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-03",
+      "status_date": "2020-12-17",
+      "estimated_cost": 2296,
+      "revised_cost": 2296,
+      "description": "replace 1 non-visible window with retrofit fibrex. no size change. u. factor 32 shgc.25",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909242469",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-24",
+      "status_date": "2019-11-15",
+      "estimated_cost": 4337,
+      "revised_cost": 4337,
+      "description": "replacing (2) windows with retrofit fibrex windows. non street visible",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510068969",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-06",
+      "status_date": "2016-01-08",
+      "estimated_cost": 12887,
+      "revised_cost": 12887,
+      "description": "replacement of six existing windows on front facade with aluminum wood clad windows. no change in form, size or function. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408214460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-21",
+      "status_date": "2014-10-24",
+      "estimated_cost": 11338,
+      "revised_cost": 11338,
+      "description": "replace 6 windows like for like with andersen wood clad. non stret visible. ufactor <.25 bedrooms comply with egress",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401317561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-31",
+      "status_date": "2014-02-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312011260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-01",
+      "status_date": "2004-01-28",
+      "estimated_cost": 5100,
+      "revised_cost": 5100,
+      "description": "remodel kitchen,remove (e) sinkbase,cut chase in plaster,upgrade electrical to code,upgrade plumbing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=345",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751014",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

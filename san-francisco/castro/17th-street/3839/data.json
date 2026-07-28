@@ -1,0 +1,121 @@
+{
+  "address": "3839–3841 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3839/",
+  "apn": "3581079",
+  "block": "3581",
+  "lot": "079",
+  "eas_baseid": "360662",
+  "coordinates": {
+    "lat": 37.762451,
+    "lng": -122.431666
+  },
+  "address_range": "3839–3841",
+  "street_numbers_on_parcel": [
+    "3839",
+    "3841"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2880,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3841 3839 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459943,
+    "assessed_improvement_value": 413943,
+    "last_sale_date": "1989-09-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201010294035",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-29",
+      "status_date": "2011-05-13",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "repl 6 existing windows plus 2 existing exterior doors @ south side of building (rear) also repl existing t111 wd siding with mardiplank siding, all work @ rear of bldg same size and location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008209292",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-08-20",
+      "status_date": "2011-06-17",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "replace (e) 3 story rear deck w/(n) 3 story rear deck in kind. same height, length, depth.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108297123",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-29",
+      "status_date": "2002-02-28",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618206",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-24",
+      "status_date": "1997-01-24",
+      "estimated_cost": 2000,
+      "description": "add 60# 5/8 anchor bolts to bolt mudsill to foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3839",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=079",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581079",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

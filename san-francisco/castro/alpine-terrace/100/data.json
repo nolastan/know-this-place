@@ -1,0 +1,141 @@
+{
+  "address": "100 Alpine Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/alpine-terrace/100/",
+  "apn": "2609066",
+  "block": "2609",
+  "lot": "066",
+  "eas_baseid": "480054",
+  "coordinates": {
+    "lat": 37.7689,
+    "lng": -122.437764
+  },
+  "parcel": {
+    "lot_area_sqft": 2744.56,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0100 ALPINE              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 206408,
+    "assessed_improvement_value": 708413
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310118437",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-11",
+      "status_date": "2024-01-17",
+      "estimated_cost": 4000,
+      "revised_cost": 8679,
+      "description": "install new sprinkler monitoring system. ref sprinkler pa# 202301119993.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305127719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-12",
+      "status_date": "2024-02-22",
+      "estimated_cost": 118000,
+      "revised_cost": 118000,
+      "description": "installation of radiant heating system and cooling system by way of (8) hydronic fan coils. installation of air to water heat pump (5) ton 200 cfm erv unit. ref pa 201508144364",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301119993",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-11",
+      "status_date": "2024-02-02",
+      "estimated_cost": 15000,
+      "revised_cost": 16387,
+      "description": "install 30 new sprinklers throughrout per nfpa 13-r underground per nfpa 24. ref pa 2015-0814-4364",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212239085",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-12-23",
+      "status_date": "2024-02-23",
+      "estimated_cost": 15000,
+      "revised_cost": 1,
+      "description": "greywater system for irrigation. greywater from bathroom sinks, showers, and clothes washer will be collected in an above ground tank located on 1st fl, where it will be filtered and supplied to outdoor irrigation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206106061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-10",
+      "status_date": "2024-02-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "amend pa# 202109218872. replace foundation with mat slab. no other changes proposed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109218872",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-09-21",
+      "status_date": "2024-02-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "amend scope of bpa# 201508144364. maintain (e) garage, eliminate full basement story below grade, install new slab on grade w/ retaining walls, minor exterior alteration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508144364",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-08-14",
+      "status_date": "2024-02-27",
+      "estimated_cost": 887000,
+      "revised_cost": 887000,
+      "description": "vertical addition. add 2-story to existing garage create new single family dwelling.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALPINE&street_type=TER&address_number=100",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2609066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2609&lot=066",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2609066",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

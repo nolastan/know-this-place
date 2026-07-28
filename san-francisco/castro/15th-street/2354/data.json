@@ -1,0 +1,149 @@
+{
+  "address": "2354 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2354/",
+  "apn": "2612012",
+  "block": "2612",
+  "lot": "012",
+  "eas_baseid": "342041",
+  "coordinates": {
+    "lat": 37.765922,
+    "lng": -122.436373
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 3,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 3101,
+    "building_area_sqft": 715,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2354 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 477942,
+    "assessed_improvement_value": 469799,
+    "last_sale_date": "2002-07-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202101152816",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2021-01-15",
+      "status_date": "2021-07-21",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "rev to delta 4 to pa201112301484: rebuilt dry rotted fireplace flue chase; structural framing mods; rebuilt dryrot ext wall and foundation on w/s; replace leaking windows inkind, relace dryrotted frame; replace water heater; reconfig interior stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801118431",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-11",
+      "status_date": "2018-01-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "recommencement and completion of work approved under pa #201112301484",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112301484",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2011-12-30",
+      "status_date": "2013-10-23",
+      "estimated_cost": 50000,
+      "revised_cost": 141423,
+      "description": "comply to nov 201144497. to legalize 1st floor $ attic spaces. interior remodeling of the existing space at the 1st floor, and 2nd floor. interior remodeling of the attic space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504140083",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-04-14",
+      "status_date": "2007-04-27",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "stucco on brick to make house look less rundown, replace front window in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305295724",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-29",
+      "status_date": "2003-06-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of permit app 200207292476-for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207292476",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-29",
+      "status_date": "2003-06-09",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replace existing sheetrock w/ new sheet rock surface area to be replaced.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917088",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-19",
+      "status_date": "2000-02-19",
+      "estimated_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2354",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612012",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "address": "4058 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4058/",
+  "apn": "3601021",
+  "block": "3601",
+  "lot": "021",
+  "eas_baseid": "361769",
+  "coordinates": {
+    "lat": 37.758118,
+    "lng": -122.431615
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1801,
+    "basement_area_sqft": 680,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4058 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2396606,
+    "assessed_improvement_value": 1027115,
+    "last_sale_date": "2016-09-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201206082241",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-08",
+      "status_date": "2012-06-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "commencement of work not started under previously approved permit application # 200601202713.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601202713",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-01-20",
+      "status_date": "2009-03-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel 1st floor. add master bedroom, master bath. relocate laundry. add 2 new decks. new window on 2nd floor & spiral stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-05",
+      "status_date": "1990-05-10",
+      "estimated_cost": 4985,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716629",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-19",
+      "status_date": "1988-12-01",
+      "estimated_cost": 500,
+      "description": "construct portion of retaining wall, re #8712979",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4058",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601021",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

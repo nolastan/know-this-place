@@ -1,0 +1,130 @@
+{
+  "address": "311–315 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/311/",
+  "apn": "2751020",
+  "block": "2751",
+  "lot": "020",
+  "eas_baseid": "345516",
+  "coordinates": {
+    "lat": 37.757346,
+    "lng": -122.436711
+  },
+  "address_range": "311–315",
+  "street_numbers_on_parcel": [
+    "311",
+    "313",
+    "315"
+  ],
+  "parcel": {
+    "year_built": 1959,
+    "units": 6,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2437.5,
+    "building_area_sqft": 4433,
+    "lot_depth_ft": 97.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0315 0311 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162444,
+    "assessed_improvement_value": 700756
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1167607",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-15",
+      "status_date": "2019-11-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709117606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-11",
+      "status_date": "2020-04-15",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "soft story upgarde of first floor per ab-106, 107 and chapter 4d of sfbc and chapter 34 of cbc 2016",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16005",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-19",
+      "status_date": "2001-08-19",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002282906",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-28",
+      "status_date": "2000-08-28",
+      "revised_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413444",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-12-26",
+      "status_date": "1985-04-04",
+      "estimated_cost": 900,
+      "revised_cost": 0,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=311",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751020",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "address": "182 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/182/",
+  "apn": "2692014",
+  "block": "2692",
+  "lot": "014",
+  "eas_baseid": "344298",
+  "coordinates": {
+    "lat": 37.759398,
+    "lng": -122.438388
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 1990,
+    "building_area_sqft": 1660,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0182 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 999600,
+    "assessed_improvement_value": 428400,
+    "last_sale_date": "2023-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512030856",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-03",
+      "status_date": "2025-12-03",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "shoring underneath main house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510278246",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-27",
+      "status_date": "2025-10-28",
+      "estimated_cost": 40000,
+      "revised_cost": 50000,
+      "description": "shoring to contain soil @ back of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202412046156",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-01-09",
+      "status_date": "2025-06-05",
+      "estimated_cost": 720000,
+      "revised_cost": 720000,
+      "description": "basement: new reinforced foundation and slab to replace (e) brick foundation (84lf) and slab.(e) wood supporting beam replaced w/steel beam.(n) conditioned,non-habitable full bath within garage and (n) storage addition @ rear.build out corner so garage door can be widened.1/f:unconditioned...",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M349307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-21",
+      "status_date": "2012-09-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M122134",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-09",
+      "status_date": "2008-06-09",
+      "revised_cost": 1,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408050680",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-05",
+      "status_date": "2004-08-05",
+      "estimated_cost": 12330,
+      "revised_cost": 12330,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=182",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2692014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2692&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2692014",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

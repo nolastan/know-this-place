@@ -1,0 +1,119 @@
+{
+  "address": "37 Abbey Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/abbey-street/37/",
+  "apn": "3566014",
+  "block": "3566",
+  "lot": "014",
+  "eas_baseid": "359911",
+  "coordinates": {
+    "lat": 37.763372,
+    "lng": -122.42699
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2339.28,
+    "building_area_sqft": 1083,
+    "lot_depth_ft": 95.17,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0037 ABBEY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58296,
+    "assessed_improvement_value": 90602
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chula-Abbey Early Residential District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1865–1912",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Chula-Dolores-17th Fire Survivors and Reconstruction Historic District",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Not listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1865–1880; 1907–1912",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "200804210249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-21",
+      "status_date": "2008-07-14",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "demolition of bathroom down to studs & sub floor. bathtub to be replaced with shower pan. bathroom to be rocked. tiled and painted. no structural work. work in one bathroom only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920641",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-30",
+      "status_date": "1990-03-01",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ABBEY&street_type=ST&address_number=37",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3566014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3566&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3566014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4269897778482%2037.763372368002535)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "address": "520 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/520/",
+  "apn": "2628016",
+  "block": "2628",
+  "lot": "016",
+  "eas_baseid": "342685",
+  "coordinates": {
+    "lat": 37.763078,
+    "lng": -122.444335
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 2,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 2301,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "1 Flat & Dwelling-1 Parcel",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0520 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2373391,
+    "assessed_improvement_value": 1017167,
+    "last_sale_date": "2021-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905291895",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-29",
+      "status_date": "2021-12-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to final permit #201508103866. to obtain final inspection for work approved under pa# 201508103866. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508103866",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2015-08-10",
+      "status_date": "2021-12-14",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "remove non bearing kitchen & dining room, replace 3 windows and sliding glass doors in kind, not visible from the street. add counter & cabinets along the s/w wall of the kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007287617",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-28",
+      "status_date": "2010-07-29",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007207030",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-20",
+      "status_date": "2010-09-28",
+      "estimated_cost": 25500,
+      "revised_cost": 25500,
+      "description": "erect scaffold, remove old stucco, lath, remove old shear and water damaged studs, all work at front of the building, remove old winodws, repl old studs, install 8 new windows in kind, weather proof around windows install new stucco mold, double wrap exterior of bldg, 2 coats of stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214773",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-27",
+      "status_date": "1993-01-14",
+      "estimated_cost": 1,
+      "description": "renwal of pa#8801482",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025684",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-12-18",
+      "status_date": "1992-01-22",
+      "estimated_cost": 600,
+      "description": "alteration to original app #8801482",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801482",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-02-08",
+      "status_date": "1992-01-22",
+      "estimated_cost": 100000,
+      "description": "excavate for off street parking space, remove 1 wall, doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=520",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628016",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

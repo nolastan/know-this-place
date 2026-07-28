@@ -1,0 +1,132 @@
+{
+  "address": "4220 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/4220/",
+  "apn": "2749060",
+  "block": "2749",
+  "lot": "060",
+  "eas_baseid": "462745",
+  "coordinates": {
+    "lat": 37.755624,
+    "lng": -122.438176
+  },
+  "parcel": {
+    "year_built": 1922,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 1321,
+    "building_area_sqft": 741,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4220 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1060782,
+    "assessed_improvement_value": 454621,
+    "last_sale_date": "2021-03-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307202620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-20",
+      "status_date": "2023-12-06",
+      "estimated_cost": 23458,
+      "revised_cost": 23458,
+      "description": "replace (6) street facing windows. (e) wood, new alum wood clad. no size change, same location, same window type. u factor 0.30 max. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507016637",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-07-01",
+      "status_date": "2005-07-01",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remove (e) bath, re plumb fixtures, install new tile floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003235197",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2000-03-23",
+      "status_date": "2000-07-31",
+      "description": "one-stop demolish a one story storage shed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9212425",
+      "type": "demolitions",
+      "status": "withdrawn",
+      "filed": "1992-07-27",
+      "status_date": "1994-02-01",
+      "description": "demolish storage shed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118335",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-30",
+      "status_date": "1992-01-31",
+      "estimated_cost": 3000,
+      "description": "rebuild front stair,step lights,install trim of facade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110310",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-12",
+      "status_date": "1991-12-12",
+      "estimated_cost": 16000,
+      "description": "remove plaster walls, ceiling in bath, & kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=4220",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=060",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749060",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

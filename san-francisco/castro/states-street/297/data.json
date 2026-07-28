@@ -1,0 +1,92 @@
+{
+  "address": "297 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/297/",
+  "apn": "2619046",
+  "block": "2619",
+  "lot": "046",
+  "eas_baseid": "342385",
+  "coordinates": {
+    "lat": 37.764815,
+    "lng": -122.44218
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2591,
+    "building_area_sqft": 1125,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0297 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1190431,
+    "assessed_improvement_value": 510183
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8309646",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-27",
+      "status_date": "1983-12-02",
+      "estimated_cost": 4000,
+      "description": "add 6 slider to living room. deck off living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307026",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-07-22",
+      "status_date": "1983-11-18",
+      "estimated_cost": 850,
+      "description": "install sliding glass door in livingroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=297",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2619046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2619&lot=046",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2619046",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

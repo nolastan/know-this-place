@@ -1,0 +1,136 @@
+{
+  "address": "377 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/377/",
+  "apn": "3605028",
+  "block": "3605",
+  "lot": "028",
+  "eas_baseid": "362097",
+  "coordinates": {
+    "lat": 37.756946,
+    "lng": -122.42962
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2510,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0377 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2660000,
+    "assessed_improvement_value": 1140000,
+    "last_sale_date": "2019-11-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200601031388",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-03",
+      "status_date": "2006-10-17",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "revision to appl#200404201749 to includes: less wide roof eave-south side, wider roof deck, larger skylight, change out windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508220850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-22",
+      "status_date": "2006-10-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. to pa#2004/04/20/1749- to remove a bay window at rear of building (widen 2nd bay)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404201749",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-04-20",
+      "status_date": "2006-10-17",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "expansion of garage-n.stairs,remodel 2nd level-baywindow,bath,bedroom&util rm.3rd lev-kitchen,fam rm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106212125",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2001-06-21",
+      "status_date": "2002-05-28",
+      "estimated_cost": 3500000,
+      "description": "erect a four story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106212122",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2001-06-21",
+      "status_date": "2002-05-28",
+      "description": "demolish 3 story single family unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204818",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-03-26",
+      "status_date": "1993-01-15",
+      "estimated_cost": 15000,
+      "description": "underpinning on west p l approx 20' from front - #9024565",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=377",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605028",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

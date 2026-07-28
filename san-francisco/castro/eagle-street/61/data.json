@@ -1,0 +1,102 @@
+{
+  "address": "61 Eagle Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eagle-street/61/",
+  "apn": "2713014",
+  "block": "2713",
+  "lot": "014",
+  "eas_baseid": "344916",
+  "coordinates": {
+    "lat": 37.758206,
+    "lng": -122.443163
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0063 0061 EAGLE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 290879,
+    "assessed_improvement_value": 299720,
+    "last_sale_date": "1992-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9203251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-03",
+      "status_date": "1992-04-08",
+      "estimated_cost": 4481,
+      "description": "repair fungus damage to linoleum underlayment in hall bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708611",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-19",
+      "status_date": "1988-02-04",
+      "estimated_cost": 2900,
+      "description": "remove wall in living rm, re-support same",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611877",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-09-25",
+      "status_date": "1989-09-24",
+      "estimated_cost": 4285,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EAGLE&street_type=ST&address_number=61",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2713014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2713&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2713014",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

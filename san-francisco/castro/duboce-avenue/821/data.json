@@ -1,0 +1,82 @@
+{
+  "address": "821 Duboce Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/duboce-avenue/821/",
+  "apn": "2610045",
+  "block": "2610",
+  "lot": "045",
+  "eas_baseid": "341986",
+  "coordinates": {
+    "lat": 37.768844,
+    "lng": -122.436995
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2320,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0821 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 50789,
+    "assessed_improvement_value": 79904
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403188009",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-18",
+      "status_date": "2024-05-08",
+      "estimated_cost": 30500,
+      "revised_cost": 30500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=821",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2610045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2610&lot=045",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2610045",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

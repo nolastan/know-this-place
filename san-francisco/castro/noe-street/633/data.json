@@ -1,0 +1,112 @@
+{
+  "address": "633 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/633/",
+  "apn": "3601058",
+  "block": "3601",
+  "lot": "058",
+  "eas_baseid": "361806",
+  "coordinates": {
+    "lat": 37.759004,
+    "lng": -122.432272
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2988,
+    "building_area_sqft": 2038,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0633 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244031,
+    "assessed_improvement_value": 290956
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200203050590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-05",
+      "status_date": "2002-04-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired permit 9809894 and 9911609 for construction of garage (to comply with nov for final on",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920220",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-27",
+      "status_date": "2001-10-10",
+      "estimated_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911609",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-11",
+      "status_date": "2002-02-01",
+      "estimated_cost": 1,
+      "description": "change to 9809894/recalculated steel bars in rear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809894",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1998-06-01",
+      "status_date": "2002-02-01",
+      "estimated_cost": 45000,
+      "description": "erect garage/private vehicla storage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=633",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=058",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601058",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

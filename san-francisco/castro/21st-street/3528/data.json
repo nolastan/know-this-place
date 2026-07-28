@@ -1,0 +1,97 @@
+{
+  "address": "3528–3530 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3528/",
+  "apn": "3606017",
+  "block": "3606",
+  "lot": "017",
+  "eas_baseid": "362172",
+  "coordinates": {
+    "lat": 37.756828,
+    "lng": -122.426415
+  },
+  "address_range": "3528–3530",
+  "street_numbers_on_parcel": [
+    "3528",
+    "3530"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3992,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3530 3528 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 463481,
+    "assessed_improvement_value": 308985
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407080688",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-08",
+      "status_date": "2014-07-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015993",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-10",
+      "status_date": "1990-12-10",
+      "estimated_cost": 4616,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3528",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3606017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3606&lot=017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3606017",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

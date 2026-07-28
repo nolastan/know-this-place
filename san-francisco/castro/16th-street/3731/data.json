@@ -1,0 +1,145 @@
+{
+  "address": "3731 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3731/",
+  "apn": "2622038",
+  "block": "2622",
+  "lot": "038",
+  "eas_baseid": "342488",
+  "coordinates": {
+    "lat": 37.7639,
+    "lng": -122.436005
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3731 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 126249,
+    "assessed_improvement_value": 326554
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107204770",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-20",
+      "status_date": "2021-10-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "rebuilding first floor deck in kind, new beam, new joist, stringer, stairs treads. comply with nov#202178681",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805159103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-15",
+      "status_date": "2018-06-14",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002176669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-17",
+      "status_date": "2010-03-05",
+      "estimated_cost": 1350,
+      "revised_cost": 1350,
+      "description": "correct violation dated 1/19/2010. complaint # 200929105. remove wood ladder. install new metal ladder.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009190973",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-19",
+      "status_date": "2001-03-19",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "install vinyl siding to side/ back wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-12-03",
+      "status_date": "1992-12-15",
+      "estimated_cost": 1,
+      "description": "extension of permit application #9204821",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204821",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-03-26",
+      "status_date": "1992-10-02",
+      "estimated_cost": 1000,
+      "description": "install interior security door and wall in lobby",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714045",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-30",
+      "status_date": "1987-11-20",
+      "estimated_cost": 6500,
+      "description": "lower ceiling,install shower, sink, toilet, washer/dryer",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3731",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=038",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622038",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

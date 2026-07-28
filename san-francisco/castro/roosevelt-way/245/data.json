@@ -1,0 +1,156 @@
+{
+  "address": "245 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/245/",
+  "apn": "2614052",
+  "block": "2614",
+  "lot": "052",
+  "eas_baseid": "342133",
+  "coordinates": {
+    "lat": 37.765861,
+    "lng": -122.440014
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 1128,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0245 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 784756,
+    "assessed_improvement_value": 523166,
+    "last_sale_date": "2001-02-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304125527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-12",
+      "status_date": "2023-10-27",
+      "estimated_cost": 60000,
+      "revised_cost": 80000,
+      "description": "remodel e kitchen, replace existing glass block with 1-hr glass assembly at lightwell. bath remodel in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809200870",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-20",
+      "status_date": "2018-09-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201252842",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-01-25",
+      "status_date": "2013-06-10",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "voluntary strengthening of 1st floor/garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710316988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-31",
+      "status_date": "2008-02-22",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "replacement of existing siding rear door in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905870",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-26",
+      "status_date": "1999-07-15",
+      "estimated_cost": 4500,
+      "description": "remove wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-23",
+      "status_date": "1999-07-15",
+      "estimated_cost": 45000,
+      "description": "install new cabinet in kitchn,repl window in kitchen/dining",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606574",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-17",
+      "status_date": "1996-05-23",
+      "estimated_cost": 4000,
+      "description": "dryrot repairs-front of bldg & front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606195",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-11",
+      "status_date": "1997-01-07",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=245",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=052",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614052",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

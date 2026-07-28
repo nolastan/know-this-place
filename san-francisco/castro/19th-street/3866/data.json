@@ -1,0 +1,104 @@
+{
+  "address": "3866 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3866/",
+  "apn": "3585025",
+  "block": "3585",
+  "lot": "025",
+  "eas_baseid": "360943",
+  "coordinates": {
+    "lat": 37.759849,
+    "lng": -122.429655
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2677,
+    "basement_area_sqft": 732,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3866 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2082581,
+    "assessed_improvement_value": 892531,
+    "last_sale_date": "2008-03-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201510018565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-01",
+      "status_date": "2016-09-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "8 windows -casment and fixed windows with marvin integrety ulimate casement or fixed window unit. size and configuration with existing. replace like for like trim, siding, architectual features to address dryrot and lead abatement. provide 1/2 structure plywood and moisture barrier.u factor .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415924",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-29",
+      "status_date": "1995-05-10",
+      "estimated_cost": 1200,
+      "description": "replace 4 exist. wooden windows in rear of bldg. w/ new wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018794S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-09-18",
+      "status_date": "1992-06-10",
+      "estimated_cost": 250000,
+      "description": "horiz addition to rear of bldg @ bsmt 1-2/f horiz add attic",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3866",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585025",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

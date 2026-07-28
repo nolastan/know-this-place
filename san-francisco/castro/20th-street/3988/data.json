@@ -1,0 +1,148 @@
+{
+  "address": "3988 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3988/",
+  "apn": "3600024",
+  "block": "3600",
+  "lot": "024",
+  "eas_baseid": "361705",
+  "coordinates": {
+    "lat": 37.758221,
+    "lng": -122.429915
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 3354,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3988 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1753287,
+    "assessed_improvement_value": 802643,
+    "last_sale_date": "2008-09-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204263039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-26",
+      "status_date": "2022-10-07",
+      "estimated_cost": 42000,
+      "revised_cost": 42000,
+      "description": "remodel existing primary bathroom (1) with new fixtures, tile, lighting, cabinetry - no structural work. dry rot repair wood siding at rear and sides to match existing. replace in kind (3) windows at rear - not visible from street. dual glazed fiberglass/wood. u 0.3 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905218912",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-21",
+      "status_date": "2011-01-27",
+      "estimated_cost": 46000,
+      "revised_cost": 46000,
+      "description": "relocate interior doorway openings at living room/dining room. relocate closet at entryway. new stair railing. new fireplace mantels and surrounds at living rm and mster bedroom. replace window at existing openings at front elevation. new windows and french doors at rear elevation. remove fire escap",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102905",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-02-25",
+      "status_date": "1993-09-20",
+      "estimated_cost": 5000,
+      "revised_cost": 7000,
+      "description": "chg garage door from 8 to 10 ft wide",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025748",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-12-19",
+      "status_date": "1993-05-26",
+      "estimated_cost": 17000,
+      "revised_cost": 2000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-07",
+      "status_date": "1990-07-02",
+      "estimated_cost": 2950,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918167",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-09-29",
+      "status_date": "1990-07-02",
+      "estimated_cost": 1,
+      "description": "replace 5 1/8 x 12 glulam w/6x12 and 6x16 @ garage struct.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8710828",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-07-30",
+      "status_date": "1990-07-02",
+      "estimated_cost": 102000,
+      "description": "vertical & horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3988",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600024",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

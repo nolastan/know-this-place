@@ -1,0 +1,98 @@
+{
+  "address": "3733–3735 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3733/",
+  "apn": "2622037",
+  "block": "2622",
+  "lot": "037",
+  "eas_baseid": "342487",
+  "coordinates": {
+    "lat": 37.763895,
+    "lng": -122.436091
+  },
+  "address_range": "3733–3735",
+  "street_numbers_on_parcel": [
+    "3733",
+    "3735"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3735 3733 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 314427,
+    "last_sale_date": "1993-12-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200310076842",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-07",
+      "status_date": "2004-05-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace section of (e) retaining wall (about 47 lf.) per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819754",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-12-13",
+      "status_date": "1989-05-04",
+      "estimated_cost": 2200,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3733",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622037",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

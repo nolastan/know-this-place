@@ -1,0 +1,171 @@
+{
+  "address": "3848 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3848/",
+  "apn": "3603017",
+  "block": "3603",
+  "lot": "017",
+  "eas_baseid": "361928",
+  "coordinates": {
+    "lat": 37.7564,
+    "lng": -122.433516
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2953,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3848 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442078,
+    "assessed_improvement_value": 730256,
+    "last_sale_date": "1991-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Castro & Liberty Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1897–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309257358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-25",
+      "status_date": "2023-10-27",
+      "estimated_cost": 17200,
+      "revised_cost": 17200,
+      "description": "reroofing. no work to (e) roof structural sheathing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M124009",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-26",
+      "status_date": "2008-06-26",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804119450",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-11",
+      "status_date": "2008-12-23",
+      "estimated_cost": 9500,
+      "revised_cost": 10000,
+      "description": "revision to application 200619011232, structural revisions to concrete wall for rear yard landscaping.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609011232",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-09-01",
+      "status_date": "2008-12-23",
+      "estimated_cost": 400000,
+      "revised_cost": 400000,
+      "description": "horizontal addition to ground and second floors. new canilevered deck on 2nd floor. vertical addition to rear of building for new attic space. all exterior alterations to rear of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-01-05",
+      "status_date": "1993-03-09",
+      "estimated_cost": 2500,
+      "description": "remove & replace rotted decking and handrail at rear house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216955",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-10-02",
+      "status_date": "1993-03-16",
+      "estimated_cost": 1000,
+      "description": "found-2 conc ret wls-repl 1 flr bem- #9207685 rev",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207685",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-05-12",
+      "status_date": "1993-03-16",
+      "estimated_cost": 20000,
+      "description": "rebuild bathroom at first floor,rmodel 2nd flr powder room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207281",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-05-05",
+      "status_date": "1993-02-26",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3848",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43351623649109%2037.756400186628305)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

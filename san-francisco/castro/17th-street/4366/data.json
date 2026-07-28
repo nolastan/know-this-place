@@ -1,0 +1,118 @@
+{
+  "address": "4366 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4366/",
+  "apn": "2646019",
+  "block": "2646",
+  "lot": "019",
+  "eas_baseid": "343151",
+  "coordinates": {
+    "lat": 37.762266,
+    "lng": -122.442269
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 1190,
+    "lot_depth_ft": 87.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4366 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 434490,
+    "assessed_improvement_value": 370035,
+    "last_sale_date": "2003-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808066500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-06",
+      "status_date": "2018-10-26",
+      "estimated_cost": 10836,
+      "revised_cost": 10836,
+      "description": "replacing existing windows with period authentic wood composite \"rba fibrex.\" replacing 2 double hung windows with two casements in bedroom. replacing 2 picture with 1 and 1 picture to swing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609218417",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-21",
+      "status_date": "2016-09-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "in kind, rebuild/repair of front concrete and wood staircase to front door - less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309056032",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2013-09-05",
+      "status_date": "2015-04-02",
+      "estimated_cost": 150000,
+      "revised_cost": 175000,
+      "description": "modify 1 fam house/convert attic area to living space,(n) bedrm add (n) bathrm, windows & doors, upgrade exterior materials, modify roofline. the project will seek a variance for work w/in the required rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506296367",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-06-29",
+      "status_date": "2007-03-23",
+      "estimated_cost": 23000,
+      "revised_cost": 40000,
+      "description": "convert 399'11\" sq ft exist attic space into new conditioned sq footage.add new dormer above.......",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4366",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=019",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646019",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

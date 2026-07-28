@@ -1,0 +1,139 @@
+{
+  "address": "4576 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4576/",
+  "apn": "2700017",
+  "block": "2700",
+  "lot": "017",
+  "eas_baseid": "344591",
+  "coordinates": {
+    "lat": 37.759235,
+    "lng": -122.440533
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2326,
+    "building_area_sqft": 1840,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4576 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 561776,
+    "assessed_improvement_value": 545899,
+    "last_sale_date": "2020-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311211261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-21",
+      "status_date": "2024-01-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2023-1011-8457, 2021-1029-1478, 2021-0824-6998, 2021-0824-6998: removal of existing fire place and flue",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310118457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-11",
+      "status_date": "2024-01-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to bpa#202108246998, rear siding replacement shown and approved in bpa#202108246998, in-kind framing replacement @ primary bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110291478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-29",
+      "status_date": "2024-01-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to 202108246998 new shoring and minot modification to proposed structural & foundation. add new concrete wall inside of (e) foundation wall @ basement level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108246998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-24",
+      "status_date": "2024-01-18",
+      "estimated_cost": 149744,
+      "revised_cost": 150000,
+      "description": "rev to pa 202105100059 (kitchen& bathroom remodel) & add 2 bathrs, remodel lower level, interior remodel. replace windows and utilty area in front yard, rear deck repair and add spirale stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105100059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-10",
+      "status_date": "2024-01-18",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel 1 kitchen and 1 bath in kind. no structural work - no framing modification",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207164868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-16",
+      "status_date": "2012-09-19",
+      "estimated_cost": 6480,
+      "revised_cost": 6480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4576",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700017",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

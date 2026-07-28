@@ -1,0 +1,147 @@
+{
+  "address": "415 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/415/",
+  "apn": "3604098",
+  "block": "3604",
+  "lot": "098",
+  "eas_baseid": "362072",
+  "coordinates": {
+    "lat": 37.756881,
+    "lng": -122.430702
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2751,
+    "basement_area_sqft": 485,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0415 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 186421,
+    "assessed_improvement_value": 368557
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201903155306",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-15",
+      "status_date": "2019-04-29",
+      "estimated_cost": 18038,
+      "revised_cost": 18038,
+      "description": "not visible from street, replace (3) windows & (1) patio door-fibrex, same size/location, u-factor: 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602189958",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-18",
+      "status_date": "2016-02-18",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "bathroom remodeling - demo wall and floor tiles, toilet and vanity. install vanity, toilet, wall and floor tiles and painting, replace light fixtures, relocate washer and dryer to the other side of the wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503049982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-04",
+      "status_date": "2015-06-12",
+      "estimated_cost": 12897,
+      "revised_cost": 12897,
+      "description": "replace 2 windows & 1 door, like for like, u factor 0.32 max, bedrooms to comply with egress, not visable.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505192870",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-19",
+      "status_date": "2005-05-25",
+      "estimated_cost": 10385,
+      "revised_cost": 10385,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806071",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-10",
+      "status_date": "1989-01-19",
+      "estimated_cost": 1,
+      "description": "to obtain final inspection for permit #576685",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804729",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-13",
+      "status_date": "1989-01-19",
+      "estimated_cost": 1,
+      "description": "to obtain final inspection for application #8504076",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504076",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1985-04-22",
+      "status_date": "1988-02-09",
+      "estimated_cost": 175000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=415",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=098",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604098",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

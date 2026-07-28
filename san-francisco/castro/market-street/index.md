@@ -1,0 +1,130 @@
+# Market Street
+
+Every residential parcel on Market Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [2041](2041/) — A 1922 three-flat, with a rear addition permitted in 1997.
+- [2073–2083](2073/) — A 1914 apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2016.
+- [2124–2126](2124/) — A 1908 5-unit apartment building in the Upper Market Street Commercial Historic District, with facade work permitted in 2009.
+- [2128–2130](2128/) — A 1938 13-unit apartment building in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2023.
+- [2134–2140](2134/) — A 1900 three-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1992.
+- [2148–2150](2148/) — A 1907 three-flat in the Upper Market Street Commercial Historic District, with electrical work permitted in 2008.
+- [2156–2158](2156/) — A 1907 7-unit apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2017.
+- [2213–2241](2213/) — A 1909 32-unit apartment building in the Upper Market Street Commercial Historic District, with plumbing work permitted in 2016.
+- [2243–2247](2243/) — A 1905 two-flat in the Upper Market Street Commercial Historic District, with a rear addition permitted in 1991.
+- [2251](2251/) — An 1894 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with stair work permitted in 1997.
+- [2253–2257](2253/) — A 1925 14-unit apartment building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2005.
+- [2256–2258](2256/) — A 1904 11-unit apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2025.
+- [2260–2262](2260/) — A 1906 6-unit apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 1984.
+- [2261–2265](2261/) — A 1900 6-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with foundation work permitted in 2007.
+- [2264–2268](2264/) — A 1905 9-unit apartment building in the Upper Market Street Commercial Historic District, with fire repair permitted in 1991.
+- [2270–2272](2270/) — A 1900 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [2279](2279/) — A 1900 two-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1995.
+- [2300–2312](2300/) — A 1904 37-unit apartment building in the Upper Market Street Commercial Historic District Extension, with facade work permitted in 2001.
+- [2317–2335](2317/) — A 1910 10-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2012.
+- [2324](2324/) — A 1972 8-unit apartment building in the Upper Market Street Commercial Historic District Extension, with electrical work permitted in 2024.
+- [2330](2330/) — A 1907 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2009.
+- [2337–2339](2337/) — A 1912 13-unit apartment building in the Upper Market Street Commercial Historic District Extension, with a seismic retrofit permitted in 2014.
+- [2341–2345](2341/) — A 1922 10-unit apartment building in the Upper Market Street Commercial Historic District Extension, with a kitchen and bathroom remodel permitted in 1993.
+- [2342–2348](2342/) — A 1907 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with a seismic retrofit permitted in 2008.
+- [2347–2349](2347/) — A 1904 5-unit apartment building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2012.
+- [2350](2350/) — An 1880 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with a kitchen and bathroom remodel permitted in 2016.
+- [2378–2380](2378/) — A 1900 10-unit apartment building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2010.
+- [2416–2420](2416/) — A 1924 6-unit apartment building, with reroofing permitted in 2019.
+- [2430](2430/) — A 1925 two-flat, with reroofing permitted in 2019.
+- [2440](2440/) — A 1925 12-unit apartment building, with reroofing permitted in 2012.
+- [2450](2450/) — A 1960 18-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2502](2502/) — A 1910 two-flat, with foundation work permitted in 2008.
+- [2555](2555/) — A 1928 15-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2605–2609](2605/) — A 1960 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2610–2612](2610/) — A 1922 two-flat, with reroofing permitted in 2005.
+- [2630–2632](2630/) — A 1921 two-flat, with facade work permitted in 2009.
+- [2640](2640/) — A 1924 single-family house, with window replacement permitted in 2024.
+- [2645](2645/) — A 1964 8-unit apartment building, with reroofing permitted in 1999.
+- [2710](2710/) — A 1922 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [2727](2727/) — A 1965 18-unit apartment building, with a seismic retrofit permitted in 2015.
+- [2775](2775/) — A 1962 32-unit apartment building, with garage work permitted in 2019.
+- [2808–2810](2808/) — A 1922 1-unit apartment building, with garage work permitted in 2012.
+- [3000](3000/) — An 1890 2-unit building with a ground-floor store, with foundation work permitted in 2001.
+- [3001–3003](3001/) — An 1886 4-unit building with a ground-floor store, with garage work permitted in 2004.
+- [3005–3007](3005/) — A 1900 two-flat, with facade work permitted in 2024.
+- [3006](3006/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2005.
+- [3008](3008/) — A 1908 single-family house, with reroofing permitted in 2008.
+- [3009](3009/) — A 1900 two-flat, with facade work permitted in 2024.
+- [3012](3012/) — An 1875 single-family house, with a bathroom remodel permitted in 2023.
+- [3013](3013/) — A 1902 two-flat, with permit records from 1985 to 2016.
+- [3014](3014/) — A 1904 single-family house, with a kitchen remodel permitted in 1990.
+- [3017](3017/) — A 1902 single-family house, with reroofing permitted in 2023.
+- [3020](3020/) — A 1900 single-family house.
+- [3021](3021/) — A 1900 single-family house, with a dormer permitted in 2022.
+- [3025](3025/) — A 1900 single-family house, with facade work permitted in 2024.
+- [3026](3026/) — A 1906 single-family house, with a kitchen remodel permitted in 2003.
+- [3028](3028/) — An 1890 single-family house, with deck work permitted in 1985.
+- [3029](3029/) — A 1900 single-family house, with a seismic retrofit permitted in 2013.
+- [3032–3034](3032/) — A 1906 two-flat, with a seismic retrofit permitted in 1990.
+- [3033](3033/) — A 1900 two-flat, with a rear addition permitted in 1999.
+- [3036](3036/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 2012.
+- [3037](3037/) — A 1900 single-family house, with a seismic retrofit permitted in 2015.
+- [3040](3040/) — A 1900 single-family house, with a rear addition permitted in 1992.
+- [3042](3042/) — An apartment building, with reroofing permitted in 2022.
+- [3045](3045/) — A 1900 single-family house, with reroofing permitted in 2015.
+- [3046](3046/) — A 1904 single-family house, with a rear addition permitted in 1988.
+- [3050–3052](3050/) — A 1904 two-flat, with foundation work permitted in 2025.
+- [3054–3056](3054/) — A 1904 two-flat, with stair work permitted in 2018.
+- [3057–3059](3057/) — A 1958 2-unit tic building, with plumbing work permitted in 2021.
+- [3058](3058/) — A 1936 single-family house, with reroofing permitted in 1991.
+- [3062](3062/) — An 1890 2-unit tic building, with reroofing permitted in 2002.
+- [3065–3067](3065/) — A 1900 two-flat, with foundation work permitted in 2022.
+- [3066](3066/) — A 1900 single-family house, with a rear addition permitted in 2011.
+- [3070](3070/) — A 1900 single-family house, with a dormer permitted in 2004.
+- [3071](3071/) — A 1951 single-family house, with reroofing permitted in 2019.
+- [3074](3074/) — A 1936 single-family house, with a kitchen remodel permitted in 2022.
+- [3075](3075/) — A 1978 two-flat.
+- [3076](3076/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 1997.
+- [3080](3080/) — A 1900 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [3081](3081/) — A 1979 single-family house, with reroofing permitted in 1997.
+- [3084](3084/) — An 1896 two-flat, with a kitchen and bathroom remodel permitted in 2019.
+- [3086](3086/) — A 1901 single-family house, with a kitchen remodel permitted in 2024.
+- [3088](3088/) — A 1900 single-family house, with reroofing permitted in 2011.
+- [3090](3090/) — A 1900 two-flat, with foundation work permitted in 2025.
+- [3092](3092/) — A 2003 single-family house, with a kitchen and bathroom remodel permitted in 2016.
+- [3094](3094/) — A 1900 single-family house, with a rear addition permitted in 1993.
+- [3201–3203](3201/) — A 1908 5-unit apartment building, with facade work permitted in 2009.
+- [3207](3207/) — A 1900 single-family house, with a vertical addition permitted in 2018.
+- [3215–3217](3215/) — A 1926 two-flat, with a kitchen remodel permitted in 2009.
+- [3221–3223](3221/) — A 1908 two-flat, with an accessory dwelling unit permitted in 2026.
+- [3224](3224/) — A 1900 two dwellings on one parcel, with an addition permitted in 2010.
+- [3225](3225/) — A 1908 two-flat, with a kitchen remodel permitted in 2007.
+- [3231](3231/) — A 1905 single-family house, with stair work permitted in 2010.
+- [3250](3250/) — A 1959 5-unit apartment building, with a vertical addition permitted in 1998.
+- [3260–3262](3260/) — A 1964 two-flat, with foundation work permitted in 2003.
+- [3268–3270](3268/) — A 1916 two-flat, with foundation work permitted in 2003.
+- [3276](3276/) — A 1906 single-family house, with a kitchen remodel permitted in 2010.
+- [3300–3304](3300/) — A 1906 single-family house, with a rear addition permitted in 1996.
+- [3310](3310/) — A 1906 two-flat, with a kitchen remodel permitted in 2014.
+- [3332](3332/) — A 1937 single-family house.
+- [3336](3336/) — A 1938 single-family house, with window replacement permitted in 2020.
+- [3340](3340/) — A 1938 single-family house, with an addition permitted in 2007.
+- [3344](3344/) — A 2008 single-family house, with an addition permitted in 2004.
+- [3348](3348/) — A 1938 single-family house, with garage work permitted in 2011.
+- [3349–3351](3349/) — A 1908 two-flat, with window replacement permitted in 1999.
+- [3352](3352/) — A 1938 single-family house, with a rear addition permitted in 2025.
+- [3356–3362](3356/) — A 1906 three-flat, with a rear addition permitted in 2018.
+- [3361](3361/) — A 1913 single-family house, with reroofing permitted in 2004.
+- [3367–3369](3367/) — A 1908 single-family house, with a vertical addition permitted in 1998.
+- [3375–3387](3375/) — A 1912 6-unit apartment building, with reroofing permitted in 2024.
+- [3386](3386/) — A 1916 single-family house, with facade work permitted in 2023.
+- [3394](3394/) — A 1900 single-family house, with reroofing permitted in 1991.
+- [3400–3404](3400/) — A 1900 three-flat, with a bathroom remodel permitted in 2023.
+- [3406](3406/) — A 1968 two-flat, with stair work permitted in 2022.
+- [3412](3412/) — A 1904 single-family house, with reroofing permitted in 1995.
+- [3420](3420/) — A 1957 13-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [3450](3450/) — A 1974 7-unit apartment building, with a seismic retrofit permitted in 2017.
+
+## Not yet covered
+
+Also on this street: 13 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 49 non-residential parcels; 19 parcels with no record in the assessor's roll.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

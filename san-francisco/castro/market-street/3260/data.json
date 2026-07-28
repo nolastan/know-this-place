@@ -1,0 +1,97 @@
+{
+  "address": "3260–3262 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3260/",
+  "apn": "2704047",
+  "block": "2704",
+  "lot": "047",
+  "eas_baseid": "344746",
+  "coordinates": {
+    "lat": 37.758668,
+    "lng": -122.445
+  },
+  "address_range": "3260–3262",
+  "street_numbers_on_parcel": [
+    "3260",
+    "3262"
+  ],
+  "parcel": {
+    "year_built": 1964,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "lot_area_sqft": 1558,
+    "building_area_sqft": 2176,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3262 3260 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1299978,
+    "assessed_improvement_value": 557134
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200309235556",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-09-23",
+      "status_date": "2004-07-30",
+      "estimated_cost": 10000,
+      "revised_cost": 16000,
+      "description": "underpinning south -east side foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-02-02",
+      "status_date": "1996-04-05",
+      "estimated_cost": 350,
+      "description": "repair (e) rear deck/repair top rail decking two posts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3260",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2704047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2704&lot=047",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2704047",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

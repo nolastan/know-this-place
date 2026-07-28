@@ -1,0 +1,114 @@
+{
+  "address": "3921 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3921/",
+  "apn": "3584092",
+  "block": "3584",
+  "lot": "092",
+  "eas_baseid": "360912",
+  "coordinates": {
+    "lat": 37.760879,
+    "lng": -122.431098
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1565,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3921 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34855,
+    "assessed_improvement_value": 34161
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602276721",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-02-27",
+      "status_date": "2026-02-27",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "improve front facade appearance by adding decorative trims and ornaments.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505065904",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2025-10-09",
+      "status_date": "2025-10-09",
+      "estimated_cost": 500000,
+      "revised_cost": 566863,
+      "description": "1st fl convert storage into habitable space to include 2 bedroom, 2 bath and laundry. install a tankless water and furnace in garage. enlarge garage door. 2nd fl: reconfigure interior layout. remove attic at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802265582",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-26",
+      "status_date": "2008-02-26",
+      "estimated_cost": 7950,
+      "revised_cost": 7950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317693",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-10-09",
+      "status_date": "1993-11-23",
+      "estimated_cost": 18000,
+      "description": "replace (e) foundation approx 36' long raise n/fndn",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3921",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=092",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584092",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

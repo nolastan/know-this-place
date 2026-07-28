@@ -1,0 +1,160 @@
+{
+  "address": "3356–3360 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3356/",
+  "apn": "3557029",
+  "block": "3557",
+  "lot": "029",
+  "eas_baseid": "359462",
+  "coordinates": {
+    "lat": 37.764763,
+    "lng": -122.427853
+  },
+  "address_range": "3356–3360",
+  "street_numbers_on_parcel": [
+    "3356",
+    "3358",
+    "3360"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 2317,
+    "building_area_sqft": 5961,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3360 3356 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1383732,
+    "assessed_improvement_value": 593028,
+    "last_sale_date": "2022-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M964727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-15",
+      "status_date": "2018-08-15",
+      "revised_cost": 0,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709148141",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-09-14",
+      "status_date": "2018-11-20",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "compliance with mandatory seismic retrofit program per sfebc chapter 4d and 2016 cebc appendix a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M192986",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-12",
+      "status_date": "2010-03-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M137948",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-20",
+      "status_date": "2008-10-20",
+      "revised_cost": 1,
+      "description": "street space for scaffold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420451",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-13",
+      "status_date": "1995-05-16",
+      "estimated_cost": 500,
+      "description": "close prop.line windows at rear to comply w/chap.5 sfbc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-16",
+      "status_date": "1992-11-30",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-26",
+      "status_date": "1990-12-06",
+      "estimated_cost": 1455,
+      "description": "remove dry rot sash & replace with new wood sash",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706355",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-05-13",
+      "status_date": "1987-10-26",
+      "estimated_cost": 1200,
+      "description": "repair walls and floors damaged by water & dry rot on west",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3356",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557029",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

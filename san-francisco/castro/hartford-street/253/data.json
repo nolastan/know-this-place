@@ -1,0 +1,159 @@
+{
+  "address": "253 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/253/",
+  "apn": "3602030",
+  "block": "3602",
+  "lot": "030",
+  "eas_baseid": "361857",
+  "coordinates": {
+    "lat": 37.758505,
+    "lng": -122.433342
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 2147,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0255 0253 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239158,
+    "assessed_improvement_value": 252115
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605070894",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-07",
+      "status_date": "2026-05-07",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace approximately 2' w x 4' l damaged exterior siding on ground level, not street facing, replace interior drywall (patch & mud) approximately 8' x 8' to comply with nov 202315365",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508203557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-20",
+      "status_date": "2025-11-26",
+      "estimated_cost": 3000,
+      "revised_cost": 5000,
+      "description": "revision 202411205425 to replace (e) foundation at front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411205428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-20",
+      "status_date": "2025-11-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to partially abate nov 202315365- replace (e) front stairs in kind and same configuration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606139779",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-13",
+      "status_date": "2016-06-13",
+      "estimated_cost": 250,
+      "revised_cost": 500,
+      "description": "work to patio stairs at front from yard onto garage using original specifications. repair damage to stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M288148",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-11-09",
+      "status_date": "2011-11-09",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308142094",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-08-14",
+      "status_date": "2003-08-14",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "construct new retaining wall per drawings by thomas podesta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403358",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-02",
+      "status_date": "1994-12-01",
+      "estimated_cost": 6270,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400837",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-01-20",
+      "status_date": "1994-08-10",
+      "estimated_cost": 8000,
+      "revised_cost": 13000,
+      "description": "construct/replace concrete retaining wall separating",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=253",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602030",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

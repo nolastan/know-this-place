@@ -1,0 +1,136 @@
+{
+  "address": "160 Beaver Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/beaver-street/160/",
+  "apn": "2613010",
+  "block": "2613",
+  "lot": "010",
+  "eas_baseid": "342094",
+  "coordinates": {
+    "lat": 37.765228,
+    "lng": -122.436475
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3149,
+    "building_area_sqft": 2676,
+    "basement_area_sqft": 630,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0160 BEAVER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195221,
+    "assessed_improvement_value": 582344
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M794167",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-07",
+      "status_date": "2017-06-07",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612205469",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-12-20",
+      "status_date": "2016-12-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201612054119: removal of tankless w/h from scope",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612054119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-05",
+      "status_date": "2018-02-09",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "conversion of basement to living space, rebuild of (e)stairs to basement, interior addition of bathroom, (n)deck @rear. deck less than 30\" in height. replace of (e)furnace,replacement of (4) windows and (2) doors, not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602189943",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-18",
+      "status_date": "2016-04-08",
+      "estimated_cost": 22381,
+      "revised_cost": 22381,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119432",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-10-15",
+      "status_date": "1992-04-08",
+      "estimated_cost": 8000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117462",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-09-20",
+      "status_date": "1992-03-24",
+      "estimated_cost": 25000,
+      "description": "remodel kitchen & sunroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEAVER&street_type=ST&address_number=160",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2613010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2613&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2613010",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

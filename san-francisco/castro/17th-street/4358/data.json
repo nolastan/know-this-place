@@ -1,0 +1,142 @@
+{
+  "address": "4358–4360 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4358/",
+  "apn": "2646016",
+  "block": "2646",
+  "lot": "016",
+  "eas_baseid": "343148",
+  "coordinates": {
+    "lat": 37.762282,
+    "lng": -122.442011
+  },
+  "address_range": "4358–4360",
+  "street_numbers_on_parcel": [
+    "4358",
+    "4360"
+  ],
+  "parcel": {
+    "year_built": 1964,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 2171,
+    "lot_depth_ft": 87.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4360 4358 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254937,
+    "assessed_improvement_value": 382417,
+    "last_sale_date": "1993-11-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M990307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-10-09",
+      "status_date": "2018-10-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809211018",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-21",
+      "status_date": "2018-09-24",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "scaffold, remove stucco from bay windows, inspect plywood, install new lath, waterproof - re-stucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501226356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-22",
+      "status_date": "2015-02-11",
+      "estimated_cost": 6136,
+      "revised_cost": 6136,
+      "description": "replace 1 window & 1 door like for like with andersen wood clad, bedrooms to comply with egress, u-factor .32 max, not visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M414667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-06",
+      "status_date": "2013-08-06",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007136445",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-13",
+      "status_date": "2010-07-20",
+      "estimated_cost": 4250,
+      "revised_cost": 4250,
+      "description": "reroofing: tear off existing roof, apply modified bitumen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704048070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-04",
+      "status_date": "2007-05-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "24'x 30' replace stucco in front. replace 8 18\" x 74\" metal to vinyl. replace 4 79 1/2\" x 74\" metal to vinyl.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4358",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646016",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

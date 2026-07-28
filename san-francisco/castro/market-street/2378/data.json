@@ -1,0 +1,163 @@
+{
+  "address": "2378–2380 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2378/",
+  "apn": "3562014",
+  "block": "3562",
+  "lot": "014",
+  "eas_baseid": "359754",
+  "coordinates": {
+    "lat": 37.763236,
+    "lng": -122.43485
+  },
+  "address_range": "2378–2380",
+  "street_numbers_on_parcel": [
+    "2378",
+    "2380"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 10,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 3,
+    "lot_area_sqft": 2247,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "UPMKT",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "2380 2378 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 65120,
+    "assessed_improvement_value": 118952
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Market Street Commercial Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1886–1958; 1970–1979",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202511260500",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-11-26",
+      "status_date": "2025-12-01",
+      "estimated_cost": 15000,
+      "revised_cost": 46850,
+      "description": "one unit kitchen and bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002176699",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-17",
+      "status_date": "2010-02-17",
+      "estimated_cost": 17888,
+      "revised_cost": 17888,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506165284",
+      "type": "wall or painted sign",
+      "status": "issued",
+      "filed": "2005-06-16",
+      "status_date": "2005-06-16",
+      "revised_cost": 3000,
+      "description": "electrical (e) awning permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309084110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-08",
+      "status_date": "2003-09-26",
+      "estimated_cost": 20,
+      "revised_cost": 20,
+      "description": "comply with n.o.v.#200227866. relocate kitchen cabinet over stove.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613283",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-23",
+      "status_date": "1997-01-11",
+      "estimated_cost": 1400,
+      "description": "custom build canvas awning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306973",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-07-22",
+      "status_date": "1983-11-29",
+      "estimated_cost": 500,
+      "description": "provide ventilation aaat ttop of rear enclosed stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303122",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1983-04-15",
+      "status_date": "1984-10-10",
+      "estimated_cost": 1800,
+      "description": "erect sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=2378",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3562014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3562&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3562014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43484968593576%2037.76323623687339)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

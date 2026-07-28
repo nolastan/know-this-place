@@ -1,0 +1,139 @@
+{
+  "address": "666–668 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/666/",
+  "apn": "3585010",
+  "block": "3585",
+  "lot": "010",
+  "eas_baseid": "360929",
+  "coordinates": {
+    "lat": 37.760136,
+    "lng": -122.428562
+  },
+  "address_range": "666–668",
+  "street_numbers_on_parcel": [
+    "666",
+    "668"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0668 0666 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 51259,
+    "assessed_improvement_value": 83146
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102245260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-24",
+      "status_date": "2021-10-07",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "kitchen remodel: new cabinets, counters, lighting, update electrical like for like subpanel replacement (70amp 70amp)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805300526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-30",
+      "status_date": "2018-08-02",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509011913",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-01",
+      "status_date": "2005-09-08",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "rpair dryrot as. #46067",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007258",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-16",
+      "status_date": "1990-08-28",
+      "estimated_cost": 5000,
+      "description": "repair foundation change four windows to two",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903537",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-03",
+      "status_date": "1989-06-27",
+      "estimated_cost": 17346,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813127",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-09-02",
+      "status_date": "1989-06-30",
+      "estimated_cost": 10000,
+      "description": "remove exist garage door/install new recessed overhead door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=666",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585010",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

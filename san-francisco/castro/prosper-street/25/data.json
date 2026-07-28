@@ -1,0 +1,126 @@
+{
+  "address": "25 Prosper Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/prosper-street/25/",
+  "apn": "3564036",
+  "block": "3564",
+  "lot": "036",
+  "eas_baseid": "359826",
+  "coordinates": {
+    "lat": 37.76384,
+    "lng": -122.43146
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1217,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0025 PROSPER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20525,
+    "assessed_improvement_value": 133552
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200405133882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-13",
+      "status_date": "2004-12-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing-correct description to app 200311180443",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M26616",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-03-08",
+      "status_date": "2004-03-08",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403037689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-03",
+      "status_date": "2004-12-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "cap (e) footings with new stem wall to replace old concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311180443",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-18",
+      "status_date": "2004-12-23",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroof. add plywood sheathing 1/2\" cccd, 6\"occ edge,12\"o.c. @ field 8d's as needed. open up walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303311030",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-03-31",
+      "status_date": "2004-12-23",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "add 2nd unit @ g/fl (1 bedrm/1 living rokm/1 bath/1 kitchen-utility rm) remodel upstair unit,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PROSPER&street_type=ST&address_number=25",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564036",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

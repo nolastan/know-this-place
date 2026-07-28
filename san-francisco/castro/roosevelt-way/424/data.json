@@ -1,0 +1,167 @@
+{
+  "address": "424 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/424/",
+  "apn": "2618A008",
+  "block": "2618A",
+  "lot": "008",
+  "eas_baseid": "342341",
+  "coordinates": {
+    "lat": 37.764415,
+    "lng": -122.443429
+  },
+  "parcel": {
+    "year_built": 1931,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2587,
+    "building_area_sqft": 3240,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0424 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2641153,
+    "assessed_improvement_value": 1131921,
+    "last_sale_date": "2020-06-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M159685",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-08",
+      "status_date": "2009-04-08",
+      "revised_cost": 1,
+      "description": "street space only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809151597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-15",
+      "status_date": "2010-02-01",
+      "estimated_cost": 145000,
+      "revised_cost": 145000,
+      "description": "to complete work and obtain final inspection for work approved under 200512230975.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M134027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-12",
+      "status_date": "2008-09-12",
+      "revised_cost": 1,
+      "description": "street space permit. renewal 1118740.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512230975",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-12-23",
+      "status_date": "2010-02-04",
+      "estimated_cost": 165000,
+      "revised_cost": 165000,
+      "description": "2 story horizontal rear yard addition.remodel kitchen,enclose balcony in front at 2nd story.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918966S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2001-09-24",
+      "status_date": "2010-01-05",
+      "estimated_cost": 40000,
+      "revised_cost": 119000,
+      "description": "rear addition as per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104277844",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2001-04-27",
+      "status_date": "2010-01-05",
+      "estimated_cost": 1998,
+      "revised_cost": 1998,
+      "description": "install 4 vinyl windows in kind into extg frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101250557",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2001-01-25",
+      "status_date": "2010-01-05",
+      "estimated_cost": 4490,
+      "revised_cost": 4490,
+      "description": "install 6 vinyl windows in kind into (e) frame, no change in size or location. no structural change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818389",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-18",
+      "status_date": "1989-02-15",
+      "estimated_cost": 8395,
+      "description": "termite & dryrot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609713",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-08-08",
+      "status_date": "1987-04-24",
+      "estimated_cost": 14600,
+      "description": "remove exist. kitchen to framing/remodel present kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=424",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618A008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618A&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618A008",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

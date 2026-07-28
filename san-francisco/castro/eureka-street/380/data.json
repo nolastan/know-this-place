@@ -1,0 +1,161 @@
+{
+  "address": "380–382 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/380/",
+  "apn": "2749018",
+  "block": "2749",
+  "lot": "018",
+  "eas_baseid": "345402",
+  "coordinates": {
+    "lat": 37.755914,
+    "lng": -122.438136
+  },
+  "address_range": "380–382",
+  "street_numbers_on_parcel": [
+    "380",
+    "382"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 4,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 3249,
+    "building_area_sqft": 2426,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0382 0380 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1593618,
+    "assessed_improvement_value": 980685,
+    "last_sale_date": "2014-04-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M273606",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-26",
+      "status_date": "2011-07-26",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105236622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-23",
+      "status_date": "2011-06-17",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812108172",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-10",
+      "status_date": "2009-03-03",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "to complete work and obtain final inspection for work approved under permit application #2007/06/04/2920",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706042920",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-06-04",
+      "status_date": "2009-01-12",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace kitchen cabinets, (e) location, replace range, existing location, new dishwasher, non-structural (1) kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612059134",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-05",
+      "status_date": "2006-12-05",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "remove existing stair and deck at rear yard. not a required means of egress. patch shingles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-11",
+      "status_date": "1996-11-20",
+      "estimated_cost": 5500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104217",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-03-15",
+      "status_date": "1991-05-19",
+      "estimated_cost": 10000,
+      "description": "repair front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923589",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-12-05",
+      "status_date": "1990-05-10",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=380",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749018",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

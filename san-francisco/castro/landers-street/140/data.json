@@ -1,0 +1,126 @@
+{
+  "address": "140 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/140/",
+  "apn": "3557022",
+  "block": "3557",
+  "lot": "022",
+  "eas_baseid": "359455",
+  "coordinates": {
+    "lat": 37.765369,
+    "lng": -122.427955
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 6,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 4376,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0140 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459943,
+    "assessed_improvement_value": 579527,
+    "last_sale_date": "1989-11-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507251601",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-25",
+      "status_date": "2025-07-31",
+      "estimated_cost": 15000,
+      "revised_cost": 17153,
+      "description": "upgrade existing local fire alarm system to comply with sffc section 1103.7.6.1. csfm interpretation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M740667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-21",
+      "status_date": "2016-11-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608195593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-19",
+      "status_date": "2018-04-05",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "soft story retrofit to comply with sfbc chap 34b based on iebc appendix a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007195537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-19",
+      "status_date": "2000-09-19",
+      "estimated_cost": 8570,
+      "revised_cost": 8570,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-01",
+      "status_date": "1990-03-16",
+      "estimated_cost": 2800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=140",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557022",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

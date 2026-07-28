@@ -1,0 +1,150 @@
+{
+  "address": "4354–4356 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4354/",
+  "apn": "2697020",
+  "block": "2697",
+  "lot": "020",
+  "eas_baseid": "344472",
+  "coordinates": {
+    "lat": 37.757767,
+    "lng": -122.436752
+  },
+  "address_range": "4354–4356",
+  "street_numbers_on_parcel": [
+    "4354",
+    "4356"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 3064,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4356 4354 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1573084,
+    "assessed_improvement_value": 674179,
+    "last_sale_date": "2023-03-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508203470",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-20",
+      "status_date": "2025-12-03",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "to comply with nov 202541607: replace cabinets in kitchen, replace tile walls, floors, faucets in two bathrooms. bathroom and kitchen remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M944467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-27",
+      "status_date": "2018-06-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M178125",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-25",
+      "status_date": "2009-08-25",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M100530",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-26",
+      "status_date": "2007-12-26",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M34298",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-12",
+      "status_date": "2005-09-12",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406095912",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-09",
+      "status_date": "2004-06-23",
+      "estimated_cost": 13800,
+      "revised_cost": 13800,
+      "description": "remove and replace about 200 sf. section of brick facade above garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518075",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-26",
+      "status_date": "1996-03-12",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4354",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2697020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2697&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2697020",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

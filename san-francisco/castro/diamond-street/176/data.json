@@ -1,0 +1,147 @@
+{
+  "address": "176 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/176/",
+  "apn": "2693010",
+  "block": "2693",
+  "lot": "010",
+  "eas_baseid": "344337",
+  "coordinates": {
+    "lat": 37.759531,
+    "lng": -122.437402
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2756,
+    "basement_area_sqft": 685,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0176 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1561724,
+    "assessed_improvement_value": 1202459,
+    "last_sale_date": "2018-09-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1106487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-09",
+      "status_date": "2019-07-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1074087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-01",
+      "status_date": "2019-05-01",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1044307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-02-27",
+      "status_date": "2019-02-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902263791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-26",
+      "status_date": "2019-03-08",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "replace 6 windows, 4 street-visible. all windows to be wood. no structural changes; max u-factor .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901301665",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-30",
+      "status_date": "2019-09-27",
+      "estimated_cost": 125000,
+      "revised_cost": 150000,
+      "description": "revision to 201810163300, change interior stair location. reconfgure bath and kitchen, expand down into storage space for new master suite to inlcude 1 bedrm, full bath, laundry area. replace e deck finishes less than50%. facade windows and materials in kind. 620 sq ft at lower level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810163300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-16",
+      "status_date": "2020-02-14",
+      "estimated_cost": 125000,
+      "revised_cost": 180000,
+      "description": "expand (e) 3rd fl. via doormers, reconfigure bedroom, closets, relocate bathroom from 2nd floor to this floor. reconfigure kitchen on 2nd fl. add home office spaces, reconfigure stair between all 3 levels",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308540",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-21",
+      "status_date": "1993-10-22",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=176",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2693010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2693&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2693010",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "address": "4534 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4534/",
+  "apn": "2700010",
+  "block": "2700",
+  "lot": "010",
+  "eas_baseid": "344584",
+  "coordinates": {
+    "lat": 37.759231,
+    "lng": -122.439875
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2922,
+    "building_area_sqft": 2527,
+    "basement_area_sqft": 810,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4534 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470304,
+    "assessed_improvement_value": 659111,
+    "last_sale_date": "1998-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310128515",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-10-12",
+      "status_date": "2023-10-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201606139834. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712075841",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-07",
+      "status_date": "2020-07-17",
+      "estimated_cost": 1,
+      "revised_cost": 15000,
+      "description": "rev to pa201707262986: replacing additional windows & siding at back (only) in floors 2 & 3. not street visible. mo major structural cahnges",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707262986",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-26",
+      "status_date": "2017-07-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa#201606139834, changing beam sizes to gain vertical headroom clearance at stairwell opening. changing beams size to match height of (e) joists for installation and leave room for ducts, pipes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606139834",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-13",
+      "status_date": "2017-01-23",
+      "estimated_cost": 98500,
+      "revised_cost": 98500,
+      "description": "infill e 1st fl area under 2nd fl overhang at rear of e house. convert unconditioned storage area at 1st fl to conditioned living area. create new dwelling unit with addition of liv rm,bedrm,kitchen. add interior stair to lower level space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310119171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-11",
+      "status_date": "2013-10-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved unde rpa # 201109295819. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109295819",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-09-29",
+      "status_date": "2013-02-07",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "remodeling existig kitchen including replacing cabinets, plumbing, and electrical. relocating bathroom on main floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4534",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700010",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

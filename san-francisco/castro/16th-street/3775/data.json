@@ -1,0 +1,140 @@
+{
+  "address": "3775 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3775/",
+  "apn": "2622043",
+  "block": "2622",
+  "lot": "043",
+  "eas_baseid": "342491",
+  "coordinates": {
+    "lat": 37.763712,
+    "lng": -122.436726
+  },
+  "parcel": {
+    "year_built": 1956,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2504,
+    "building_area_sqft": 1295,
+    "basement_area_sqft": 345,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3775 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1657314,
+    "assessed_improvement_value": 710274,
+    "last_sale_date": "2015-10-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201502138325",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-13",
+      "status_date": "2015-04-18",
+      "estimated_cost": 9400,
+      "revised_cost": 9400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501236546",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-23",
+      "status_date": "2015-04-18",
+      "estimated_cost": 300,
+      "revised_cost": 500,
+      "description": "remove illegal small kitchen (sink & cabinet) attached to garage to restore back to original use, no new wall and no existing wall relocation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-13",
+      "status_date": "2015-04-18",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel kitchen and bathroom- new insulation, drywall; - all fixtures, tub & sink in same location. to comply with cec150.0(k)3 & 5. repair of deck less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110076361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-07",
+      "status_date": "2012-01-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to pa# 2011.07.21.0728. reconfigure 1st fl plan to include 1 aditional window, relocation of (e) post, relocation of new bath, and split of new rec room into 2 new bedrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107210728",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-21",
+      "status_date": "2012-01-17",
+      "estimated_cost": 20000,
+      "revised_cost": 22000,
+      "description": "renovation of existing garage level. addition of 1 new full bath and rec room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107210733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-21",
+      "status_date": "2012-01-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "new rear deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3775",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=043",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622043",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "address": "2321 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2321/",
+  "apn": "2613018",
+  "block": "2613",
+  "lot": "018",
+  "eas_baseid": "342097",
+  "coordinates": {
+    "lat": 37.765471,
+    "lng": -122.436377
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 3088,
+    "building_area_sqft": 2245,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2321 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1952152,
+    "assessed_improvement_value": 855766,
+    "last_sale_date": "2019-08-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1191067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-05",
+      "status_date": "2020-02-05",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911268200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-26",
+      "status_date": "2020-03-04",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "front building - install (n) interior spiral stair connecting first floor and second floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M402427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-19",
+      "status_date": "2013-06-19",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301157999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-15",
+      "status_date": "2019-03-20",
+      "estimated_cost": 1,
+      "revised_cost": 6500,
+      "description": "rear cottage- revision to pa #2012.11.20.4605: revise local siding repair to the (e) shingle siding on east & west elev, with 1/2\" cdx plywood w/vinyl insulated siding. repair the south exterior plywood grom & wood singles to be replaced with insulated vinyl siding. all work not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301037178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-03",
+      "status_date": "2019-03-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201211204599. move exterior door to adjacent wall. no change in cost.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211204599",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-20",
+      "status_date": "2013-08-28",
+      "estimated_cost": 130000,
+      "revised_cost": 130000,
+      "description": "(front cottage) remodel of kitchen & bath. new half bath, replacement of most windows, finishing of basement space, re-build rear deck, same size & same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211204605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-20",
+      "status_date": "2013-08-28",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "back cottage:remodel of kitchen and bath, new half bath, replacement of all windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819653",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-29",
+      "status_date": "1999-03-29",
+      "estimated_cost": 21070,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2321",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2613018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2613&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2613018",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

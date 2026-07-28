@@ -1,0 +1,106 @@
+{
+  "address": "613–615 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/613/",
+  "apn": "3602075",
+  "block": "3602",
+  "lot": "075",
+  "eas_baseid": "361898",
+  "coordinates": {
+    "lat": 37.759017,
+    "lng": -122.434542
+  },
+  "address_range": "613–615",
+  "street_numbers_on_parcel": [
+    "613",
+    "615"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2073,
+    "building_area_sqft": 4394,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0615 0613 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40862,
+    "assessed_improvement_value": 78983
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M626569",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-01",
+      "status_date": "2015-10-01",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27468",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-13",
+      "status_date": "2004-05-13",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003104079",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-10",
+      "status_date": "2000-09-10",
+      "revised_cost": 5300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=613",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=075",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602075",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

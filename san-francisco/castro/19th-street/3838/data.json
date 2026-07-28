@@ -1,0 +1,115 @@
+{
+  "address": "3838 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3838/",
+  "apn": "3585020",
+  "block": "3585",
+  "lot": "020",
+  "eas_baseid": "360938",
+  "coordinates": {
+    "lat": 37.75988,
+    "lng": -122.429137
+  },
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2224,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3838 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 770826,
+    "assessed_improvement_value": 418166,
+    "last_sale_date": "2004-11-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509125236",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-12",
+      "status_date": "2025-09-29",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace sink and countertop in kitchen, same footprint exactly",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508132973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-13",
+      "status_date": "2025-08-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to document the legal use and occupancy of structure as a 2 story single family house. this address is based on a review of completed pa#7713220 that converted a two family dwelling into a family home. no work under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705307924",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-30",
+      "status_date": "2017-08-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace front sliding glass door and windows. wood-frame windoe for above and panoramic sliding glass door below. replace all in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017365",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-29",
+      "status_date": "1991-02-28",
+      "estimated_cost": 6840,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3838",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585020",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "address": "223–225 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/223/",
+  "apn": "2614057",
+  "block": "2614",
+  "lot": "057",
+  "eas_baseid": "342138",
+  "coordinates": {
+    "lat": 37.766099,
+    "lng": -122.439698
+  },
+  "address_range": "223–225",
+  "street_numbers_on_parcel": [
+    "223",
+    "225"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2652,
+    "building_area_sqft": 2650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0225 0223 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 738643,
+    "assessed_improvement_value": 492421,
+    "last_sale_date": "2002-09-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200407199104",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-07-19",
+      "status_date": "2006-02-14",
+      "estimated_cost": 11700,
+      "revised_cost": 11700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012607",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-06-27",
+      "status_date": "1991-02-06",
+      "estimated_cost": 54,
+      "description": "renewal application number 9003562",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003562",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-02-22",
+      "status_date": "1990-06-26",
+      "estimated_cost": 600,
+      "description": "repl bath wall-sink, repl, kitch sink & cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001055",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-01-17",
+      "status_date": "1991-01-17",
+      "estimated_cost": 50800,
+      "description": "remodel 2 bathrooms & one top flat and one on middle flat",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=223",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=057",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614057",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

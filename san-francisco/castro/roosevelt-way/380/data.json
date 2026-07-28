@@ -1,0 +1,124 @@
+{
+  "address": "380 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/380/",
+  "apn": "2618043",
+  "block": "2618",
+  "lot": "043",
+  "eas_baseid": "342319",
+  "coordinates": {
+    "lat": 37.765183,
+    "lng": -122.442896
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3698,
+    "building_area_sqft": 2930,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0380 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 792651
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M732387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-21",
+      "status_date": "2016-10-21",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601263157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-26",
+      "status_date": "2006-05-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew pa#200206128835 & 200406015219 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406015219",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-06-01",
+      "status_date": "2004-07-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to ceiling framing in kitchen to allow clear upper windows.rev to 985149 & 200206128835.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206128835",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2002-06-12",
+      "status_date": "2003-01-16",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "dining/kitchen rmdl, new doors to garden,beams/headers, plumb/elec @ new kitchen demolish chimney",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-07-03",
+      "status_date": "1986-10-27",
+      "estimated_cost": 400,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=380",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618&lot=043",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618043",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

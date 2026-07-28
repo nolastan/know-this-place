@@ -1,0 +1,119 @@
+{
+  "address": "249–253 Henry Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/henry-street/249/",
+  "apn": "2612060",
+  "block": "2612",
+  "lot": "060",
+  "eas_baseid": "342073",
+  "coordinates": {
+    "lat": 37.766234,
+    "lng": -122.436469
+  },
+  "address_range": "249–253",
+  "street_numbers_on_parcel": [
+    "249",
+    "251",
+    "253"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 2475,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0253 0249 HENRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169794,
+    "assessed_improvement_value": 217692
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201301299002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-29",
+      "status_date": "2013-02-27",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace 6' counter top, 2 base cabinets, new sink , faucet, tile, dishwasher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M211149",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-14",
+      "status_date": "2010-07-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019896",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-09-28",
+      "status_date": "1991-06-17",
+      "estimated_cost": 4989,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-23",
+      "status_date": "1990-01-09",
+      "estimated_cost": 590,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HENRY&street_type=ST&address_number=249",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=060",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612060",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

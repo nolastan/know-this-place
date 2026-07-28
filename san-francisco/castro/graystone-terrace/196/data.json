@@ -1,0 +1,147 @@
+{
+  "address": "196 Graystone Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/graystone-terrace/196/",
+  "apn": "2719B061",
+  "block": "2719B",
+  "lot": "061",
+  "eas_baseid": "456772",
+  "coordinates": {
+    "lat": 37.757093,
+    "lng": -122.445106
+  },
+  "parcel": {
+    "year_built": 2001,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2695,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "WOO",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0196 GRAYSTONE           TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2054582,
+    "assessed_improvement_value": 880533,
+    "last_sale_date": "2017-04-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2001",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310300609",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-30",
+      "status_date": "2014-01-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove and repalce all plumbing and elec fixtures and re-tile all fixture to remain in existing location, no change in layout wall stay in same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108216539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-21",
+      "status_date": "2001-10-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew permit#9712090 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008288996",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-08-28",
+      "status_date": "2001-11-05",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "minor revs to concrete wall config at basement level-9712090",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008218373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-21",
+      "status_date": "2001-11-05",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "fire sprinkler system per nfpa #13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000202839",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-02-02",
+      "status_date": "2000-07-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "alteration to work under construction, permanent wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922567",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-10-22",
+      "status_date": "2001-10-22",
+      "estimated_cost": 1,
+      "description": "alternation to pa 9712090s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712090",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1997-06-30",
+      "status_date": "2001-10-19",
+      "estimated_cost": 243000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRAYSTONE&street_type=TER&address_number=196",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719B061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719B&lot=061",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719B061",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

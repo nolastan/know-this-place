@@ -1,0 +1,155 @@
+{
+  "address": "195 Upper Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/upper-terrace/195/",
+  "apn": "2618A024",
+  "block": "2618A",
+  "lot": "024",
+  "eas_baseid": "342354",
+  "coordinates": {
+    "lat": 37.764052,
+    "lng": -122.444152
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2382,
+    "building_area_sqft": 3398,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0195 UPPER               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 242574,
+    "assessed_improvement_value": 376392
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M479808",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-15",
+      "status_date": "2014-04-15",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910138839",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-13",
+      "status_date": "2010-05-14",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "kitchen & bathroom remodel & misc structural improvements to support kitchen remodel work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M68464",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-14",
+      "status_date": "2007-05-14",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107244444",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-07-24",
+      "status_date": "2002-05-16",
+      "estimated_cost": 12500,
+      "revised_cost": 25000,
+      "description": "construct roof deck with wood and glass screen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104197210",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-19",
+      "status_date": "2002-05-13",
+      "estimated_cost": 92000,
+      "revised_cost": 92000,
+      "description": "remodel (e) kitchen, bathrm, powderrm. remove closets @ mstrbedrm, install (n) fireplace @ livingrm,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816540",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-20",
+      "status_date": "1999-06-22",
+      "estimated_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809976",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-19",
+      "status_date": "1988-08-29",
+      "estimated_cost": 2000,
+      "description": "repair dry rot on back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608610",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-07-18",
+      "status_date": "1986-11-25",
+      "estimated_cost": 5,
+      "revised_cost": 1100,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UPPER&street_type=TER&address_number=195",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618A024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618A&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618A024",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

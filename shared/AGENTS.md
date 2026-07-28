@@ -2,10 +2,22 @@
 
 How to turn `data.json` into `index.html`. `data.json` is the single source of
 truth for an address page — structured facts *and* prose (in its `narrative`
-field); there is no `index.md`. There is no template engine and no build step:
-**you author the HTML directly from `data.json`, and every fact and sentence in
-it must trace back to `data.json` so the page can be regenerated from that file
-alone.**
+field); there is no `index.md`. Every fact and sentence in the HTML must trace
+back to `data.json`, so the page can be regenerated from that file alone.
+
+There is no template engine and no build step: **you author the HTML directly
+from `data.json`**, and the committed `index.html` is the whole page.
+
+**A page's first draft may have been machine-written; every edit after that is
+yours.** `scripts/seed_pages.py` writes the initial `data.json` + `index.html`
+for a parcel that has no page yet, composing the blocks below from the city's
+data. It never returns to a page it has written. So when you change a fact,
+change the HTML to match by hand — there is nothing to re-run, and nothing that
+will overwrite you.
+
+Seeded drafts follow this contract exactly, which is what makes them safe to
+edit: the blocks, classes and structure below are the ones you will find on the
+page in front of you.
 
 The goal is a **designed data page, not an article.** A good page looks like a
 purpose-built dashboard for one building — stat tiles, a visual timeline,
@@ -243,6 +255,12 @@ the key is set — with no page regeneration.
 ```
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number.)
+
+**Never test or preview the embed.** The key is restricted to the production
+domain, so it fails from localhost, from any preview host, and from `curl` —
+by design, not by fault. There is no local check that can pass, so attempting
+one only burns effort. Write the placeholder, confirm `location="LAT,LNG"`
+equals `coordinates` in `data.json`, and stop there.
 Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.

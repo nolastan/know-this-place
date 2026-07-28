@@ -1,0 +1,133 @@
+{
+  "address": "34 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/34/",
+  "apn": "2611004",
+  "block": "2611",
+  "lot": "004",
+  "eas_baseid": "341990",
+  "coordinates": {
+    "lat": 37.768457,
+    "lng": -122.436029
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2426,
+    "building_area_sqft": 2448,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0034 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1030208,
+    "assessed_improvement_value": 257543
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200702053396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-05",
+      "status_date": "2007-08-03",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "remodeling kitchen replace cabinet, sink, faucet, lighting, and painting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701232397",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-01-23",
+      "status_date": "2007-01-23",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022171",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-29",
+      "status_date": "1990-12-11",
+      "estimated_cost": 1,
+      "description": "renew expired permit app #9000160",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022172",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-29",
+      "status_date": "1991-04-24",
+      "estimated_cost": 1,
+      "description": "renew expired app #9000161",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000160",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-01-04",
+      "status_date": "1990-11-02",
+      "estimated_cost": 24000,
+      "description": "remodel kitchen & bath & add header at opg to dining fr kit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000161",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-01-04",
+      "status_date": "1990-11-02",
+      "estimated_cost": 20000,
+      "description": "const. rear yard masonry fences at prop. line",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=34",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2611004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2611&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2611004",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

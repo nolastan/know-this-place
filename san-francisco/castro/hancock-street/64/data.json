@@ -1,0 +1,153 @@
+{
+  "address": "64–66 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/64/",
+  "apn": "3585057",
+  "block": "3585",
+  "lot": "057",
+  "eas_baseid": "360972",
+  "coordinates": {
+    "lat": 37.760651,
+    "lng": -122.429694
+  },
+  "address_range": "64–66",
+  "street_numbers_on_parcel": [
+    "64",
+    "66"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2766,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0066 0064 HANCOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39684,
+    "assessed_improvement_value": 52852
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201710020045",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-02",
+      "status_date": "2017-12-28",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504244618",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-24",
+      "status_date": "2015-04-24",
+      "estimated_cost": 1611,
+      "revised_cost": 1611,
+      "description": "toilet & palor: replace dry rot window with upgraded, dh assembly, total 2 windows, not visable from street, u factor 0.32 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502208914",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-20",
+      "status_date": "2015-08-03",
+      "estimated_cost": 3300,
+      "revised_cost": 3300,
+      "description": "no demolition and no new construction. adding toilet, sink and fan to extg room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411171655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-17",
+      "status_date": "2015-02-04",
+      "estimated_cost": 726,
+      "revised_cost": 726,
+      "description": "rear wall: replace (e) double hung window with up graded double hung window; dual clear glazed cannot viewed from street; (1 window) u-factor. .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309187152",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-18",
+      "status_date": "2015-02-04",
+      "estimated_cost": 726,
+      "revised_cost": 726,
+      "description": "window replacement - 1 no at bath; (e) double hung with upgraded double hung sash & vinyl frame assembly; not visible from street. u factor not > .4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107190494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-19",
+      "status_date": "2011-08-30",
+      "estimated_cost": 4588,
+      "revised_cost": 4588,
+      "description": "replace 4 windows, 2 visible from the street to be wood windows, no structural changes, max u factor .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410066110",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-06",
+      "status_date": "2004-10-06",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove lath & plaster, rewire, move gas line, install copper pipe for sink & dishwasher, install new",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HANCOCK&street_type=ST&address_number=64",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=057",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585057",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

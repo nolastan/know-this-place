@@ -1,0 +1,152 @@
+{
+  "address": "208–210 Dorland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/dorland-street/208/",
+  "apn": "3580003A",
+  "block": "3580",
+  "lot": "003A",
+  "eas_baseid": "360530",
+  "coordinates": {
+    "lat": 37.762349,
+    "lng": -122.429064
+  },
+  "address_range": "208–210",
+  "street_numbers_on_parcel": [
+    "208",
+    "210"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 6333,
+    "building_area_sqft": 2800,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0210 0208 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 246231,
+    "assessed_improvement_value": 261110,
+    "last_sale_date": "2016-09-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911016215",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-01",
+      "status_date": "2020-11-25",
+      "estimated_cost": 5000,
+      "revised_cost": 35000,
+      "description": "1 bathroom and kitchen remodel, in kind. replace appliances and lighting. replace plumbing fixtures. no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901180731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-18",
+      "status_date": "2019-10-15",
+      "estimated_cost": 4500,
+      "revised_cost": 14000,
+      "description": "tear out and replace tile, tub, vanity and mirror for bathroom remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1005427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-14",
+      "status_date": "2018-11-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805027978",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-02",
+      "status_date": "2018-11-28",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "tear out and rerplace kitchen cabinets & applicances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804126206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-12",
+      "status_date": "2019-03-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace existing double hung windows in front. 4 windows in front. replacing in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405064958",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-06",
+      "status_date": "2014-05-23",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511872",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-21",
+      "status_date": "1986-02-20",
+      "estimated_cost": 1900,
+      "description": "repair rear stair assembly",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=208",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=003A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580003A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

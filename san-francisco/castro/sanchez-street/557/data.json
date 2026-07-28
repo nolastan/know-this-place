@@ -1,0 +1,137 @@
+{
+  "address": "557 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/557/",
+  "apn": "3585035",
+  "block": "3585",
+  "lot": "035",
+  "eas_baseid": "360953",
+  "coordinates": {
+    "lat": 37.760187,
+    "lng": -122.430147
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 7,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 1655,
+    "lot_depth_ft": 10,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0557 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 186447,
+    "assessed_improvement_value": 136723
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605292125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-05-29",
+      "status_date": "2026-06-30",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "voluntary strengtherning of ground level garage, add anchor bolts and plywood to elements. 5/8\" diameter threaded rod: hilti epoxy, 8\" embed, 3' o/c. @ cripple area: simpson urfp @ 4' o/c. provide 0.5\" plywood w/ 8d min 6\"edge/12\"field (rear, front, and cripple area).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203150019",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-15",
+      "status_date": "2024-01-03",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "add new deck at rear of builing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803163845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-16",
+      "status_date": "2018-04-25",
+      "estimated_cost": 14800,
+      "revised_cost": 14800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402289571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-28",
+      "status_date": "2014-12-17",
+      "estimated_cost": 8318,
+      "revised_cost": 8318,
+      "description": "installation of 13 windows retrofit like for like. all front windows will be fiberglass material. the rest will be vinyl windows. u-factor shall not be more than 0.4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903164178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-16",
+      "status_date": "2009-06-18",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "repair steps to rear yard. repair porch & floor on front. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407225",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-03",
+      "status_date": "1984-08-28",
+      "estimated_cost": 900,
+      "description": "fence",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=557",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=035",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585035",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

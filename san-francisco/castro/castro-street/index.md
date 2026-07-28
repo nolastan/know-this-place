@@ -1,45 +1,164 @@
 # Castro Street
 
-Castro Street gives the neighborhood its name. Its commercial heart sits
-around the 400–500 blocks; south of 20th Street it turns residential, lined
-with Victorian and Edwardian flats and houses.
+Castro Street gives the neighborhood its name. Its commercial heart sits around the 400–500 blocks; south of 20th Street it turns residential, lined with Victorian and Edwardian flats and houses.
 
-## 700 block
+## Documented so far
 
-Eleven buildings documented, all residential, built between 1895 and 1980.
+- [2](2/) — A 1962 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [18](18/) — A 1900 two-flat, with a bathroom remodel permitted in 2022.
+- [22](22/) — A 1906 single-family house, with a kitchen remodel permitted in 1997.
+- [34](34/) — A 1906 two-flat, with a kitchen and bathroom remodel permitted in 1990.
+- [42](42/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [48](48/) — A 1906 3-unit apartment building, with deck work permitted in 2005.
+- [52](52/) — A 1905 single-family house, with reroofing permitted in 1993.
+- [56](56/) — A 1906 single-family house, with a bathroom remodel permitted in 1990.
+- [60](60/) — A 1906 single-family house, with deck work permitted in 2013.
+- [64](64/) — A 1904 single-family house, with window replacement permitted in 2022.
+- [68](68/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 2026.
+- [72](72/) — A 1909 single-family house, with stair work permitted in 2026.
+- [80](80/) — A 1906 single-family house, with reroofing permitted in 1995.
+- [88–98](88/) — A 1911 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [101–109](101/) — A 1908 6-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2024.
+- [111](111/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with window replacement permitted in 2023.
+- [117](117/) — A 1916 single-family house in the Duboce Triangle Historic District Extension, with a kitchen remodel permitted in 2004.
+- [125](125/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with reroofing permitted in 1997.
+- [149](149/) — A 1900 6-unit apartment building in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2017.
+- [150](150/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with a bathroom remodel permitted in 2014.
+- [158](158/) — A 1905 single-family house in the Duboce Triangle Historic District Extension, with dry-rot repair permitted in 1991.
+- [160–162](160/) — A 1904 two-flat in the Duboce Triangle Historic District Extension, with a kitchen remodel permitted in 2003.
+- [161–167](161/) — A 1900 8-unit tic building in the Duboce Triangle Historic District Extension, with deck work permitted in 2008.
+- [169–171](169/) — A 1903 two-flat in the Duboce Triangle Historic District Extension, with deck work permitted in 2011.
+- [172–174](172/) — A 1906 4-unit apartment building in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2018.
+- [175](175/) — A 1954 4-unit apartment building in the Duboce Triangle Historic District Extension, with reroofing permitted in 2016.
+- [176](176/) — A 1905 two-flat in the Duboce Triangle Historic District Extension, with a rear addition permitted in 1988.
+- [179–189](179/) — A 1906 6-unit apartment building in the Duboce Triangle Historic District Extension, with an addition permitted in 2016.
+- [182–186](182/) — A 1900 three-flat in the Duboce Triangle Historic District Extension, with stair work permitted in 1990.
+- [190](190/) — A 1928 3-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2018.
+- [198](198/) — A 1900 apartment building in the Duboce Triangle Historic District Extension, with garage work permitted in 2004.
+- [201–205](201/) — A 1900 5-unit apartment building in the Duboce Triangle Historic District Extension, with reroofing permitted in 2002.
+- [207](207/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with deck work permitted in 2000.
+- [218–220](218/) — A 1927 two-flat in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2017.
+- [225–227](225/) — A 1921 4-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2018.
+- [230](230/) — A 1937 6-unit apartment building in the Duboce Triangle Historic District Extension, with an accessory dwelling unit permitted in 2026.
+- [235](235/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with reroofing permitted in 2017.
+- [238–240](238/) — A 1910 three-flat in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2022.
+- [239](239/) — A 1908 single-family house in the Duboce Triangle Historic District Extension, with deck work permitted in 2018.
+- [245](245/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with foundation work permitted in 2009.
+- [250](250/) — A 1953 8-unit apartment building in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2016.
+- [251–255](251/) — A 1911 4-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2019.
+- [252–256](252/) — A 1904 three-flat in the Duboce Triangle Historic District Extension, with window replacement permitted in 2015.
+- [257](257/) — A 1910 single-family house in the Duboce Triangle Historic District Extension, with a bathroom remodel permitted in 2013.
+- [260](260/) — A 1927 single-family house in the Duboce Triangle Historic District Extension, with an addition permitted in 2015.
+- [262–264](262/) — A 1906 single-family house in the Duboce Triangle Historic District Extension, with an addition permitted in 2020.
+- [263](263/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with reroofing permitted in 2007.
+- [265](265/) — A 1906 single-family house in the Duboce Triangle Historic District Extension, with foundation work permitted in 2021.
+- [270–272](270/) — A 1928 two-flat in the Duboce Triangle Historic District Extension, with a rear addition permitted in 2019.
+- [271–273](271/) — A 1900 4-unit apartment building in the Duboce Triangle Historic District Extension, with reroofing permitted in 2016.
+- [275–279](275/) — A 1955 4-unit apartment building in the Duboce Triangle Historic District Extension, with garage work permitted in 2020.
+- [276](276/) — An 1898 3-unit apartment building in the Duboce Triangle Historic District Extension, with reroofing permitted in 1996.
+- [281–283](281/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2022.
+- [282](282/) — A 1973 5-unit apartment building in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2016.
+- [289–299](289/) — A 1902 10-unit apartment building in the Duboce Triangle Historic District Extension, with an accessory dwelling unit permitted in 2020.
+- [300](300/) — A 1900 2-unit tic building in the Duboce Triangle Historic District Extension, with stair work permitted in 2016.
+- [311](311/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with reroofing permitted in 1995.
+- [313](313/) — A 1900 2-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2017.
+- [314](314/) — A 1922 single-family house in the Duboce Triangle Historic District Extension, with reroofing permitted in 2007.
+- [315](315/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with facade work permitted in 2008.
+- [316–318](316/) — A 1977 two-flat in the Duboce Triangle Historic District Extension, with permit records from 2018 to 2025.
+- [317](317/) — A 1905 two-flat in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 1994.
+- [321–323](321/) — A 1905 two-flat in the Duboce Triangle Historic District Extension, with a bathroom remodel permitted in 2019.
+- [324](324/) — A 1900 two-flat in the Duboce Triangle Historic District Extension.
+- [325–375](325/) — A 1900 5-unit apartment building in the Duboce Triangle Historic District Extension, with a bathroom remodel permitted in 2006.
+- [328–332](328/) — A 1927 5-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2024.
+- [360](360/) — A 1954 6-unit apartment building in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2017.
+- [430–432](430/) — A 1909 11-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [434–436](434/) — A 1909 11-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1999.
+- [438–440](438/) — A 1906 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2010.
+- [450–452](450/) — A 1908 7-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a seismic retrofit permitted in 2016.
+- [454–456](454/) — A 1907 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with fire repair permitted in 2020.
+- [458–460](458/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with stair work permitted in 2020.
+- [461–463](461/) — A 1906 5-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1988.
+- [462–464](462/) — A 1906 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with window replacement permitted in 2008.
+- [465–469](465/) — A 1906 three-flat in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a rear addition permitted in 1992.
+- [466–468](466/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with deck work permitted in 2003.
+- [480–498](480/) — A 1900 9-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with an addition permitted in 1999.
+- [489–491](489/) — A 1911 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2005.
+- [514–520](514/) — A 1906 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a rear addition permitted in 1995.
+- [517](517/) — A 1900 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1999.
+- [521–525](521/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with electrical work permitted in 2019.
+- [524–526](524/) — A 1907 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with electrical work permitted in 2012.
+- [530–532](530/) — A 1985 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with deck work permitted in 2021.
+- [534–536](534/) — A 1907 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2012.
+- [538–542](538/) — A 1905 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [543–545](543/) — A 1910 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1996.
+- [544–546](544/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with stair work permitted in 1993.
+- [549–551](549/) — A 1905 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with window replacement permitted in 2015.
+- [553–555](553/) — A 1910 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with facade work permitted in 2016.
+- [558–564](558/) — A 1904 10-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a seismic retrofit permitted in 2018.
+- [563–565](563/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2008.
+- [572–574](572/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a bathroom remodel permitted in 2021.
+- [573–575](573/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2005.
+- [577–579](577/) — A 1929 15-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a seismic retrofit permitted in 2023.
+- [578–582](578/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [584](584/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen remodel permitted in 2011.
+- [586](586/) — A 1902 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with deck work permitted in 2008.
+- [588](588/) — A 1902 two-flat in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with window replacement permitted in 2016.
+- [590–598](590/) — An 1885 7-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with window replacement permitted in 2006.
+- [597–599](597/) — A 1900 5-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with permit records from 1985 to 2026.
+- [602–604](602/) — An 1892 two-flat, with reroofing permitted in 2023.
+- [613–615](613/) — A 1908 three-flat, with reroofing permitted in 2000.
+- [614](614/) — A 1940 3-unit apartment building, with stair work permitted in 2000.
+- [620–622](620/) — A 1905 two-flat, with a vertical addition permitted in 2003.
+- [622](622/) — A 1915 single-family house, with a vertical addition permitted in 2003.
+- [623–625](623/) — A 1910 three-flat, with a kitchen and bathroom remodel permitted in 2010.
+- [624–626](624/) — A 1925 2-unit tic building, with a bathroom remodel permitted in 2021.
+- [633–635](633/) — A 1910 3-unit tic building, with a kitchen and bathroom remodel permitted in 2017.
+- [637–641](637/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [642–646](642/) — A 1900 three-flat, with a seismic retrofit permitted in 2020.
+- [643–647](643/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [648–652](648/) — A 1900 three-flat, with a seismic retrofit permitted in 2020.
+- [649–653](649/) — An 1890 three-flat, with a kitchen and bathroom remodel permitted in 2010.
+- [654](654/) — A 1926 8-unit apartment building, with an addition permitted in 2018.
+- [661–665](661/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [667–671](667/) — A 1906 7-unit apartment building, with a seismic retrofit permitted in 2018.
+- [668](668/) — A 1900 single-family house, with garage work permitted in 2011.
+- [672–676](672/) — A 1900 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [673–675](673/) — An 1885 two-flat, with a kitchen remodel permitted in 2000.
+- [682](682/) — A 1900 single-family house, with deck work permitted in 2019.
+- [695](695/) — A 1911 two-flat, with reroofing permitted in 2017.
+- [700](700/) — A 12-unit apartment building of 1927, seismically retrofitted in 2016 under the city's mandatory soft-story program.
+- [701](701/) — A 1900 single-family house in the Castro & Liberty Streets Historic District, with a kitchen remodel permitted in 2005.
+- [704](704/) — A 1900 two-flat, with garage work permitted in 2019.
+- [707](707/) — A 1980 three-unit building standing inside the historic district.
+- [708](708/) — A 1900 three-flat, with garage work permitted in 2020.
+- [710](710/) — A 1900 single-family house, with foundation work permitted in 2001.
+- [{'low': 711, 'high': 715, 'canonical': 711, 'note': 'One parcel and one building spanning three street numbers (711, 713, 715). Permits are filed under all three numbers; the DBI records are the same.'}](711/) — A 1900 three-unit building on one parcel spanning three street numbers, with a permit record dominated by dry rot.
+- [712](712/) — An 1888 single-family house, with deck work permitted in 2011.
+- [714](714/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2016.
+- [720](720/) — A 1901 house sold in December 2024.
+- [724](724/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 1994.
+- [725](725/) — A 1900 single-family house in the Castro & Liberty Streets Historic District, with a kitchen remodel permitted in 2008.
+- [727–731](727/) — A 1900 two-flat in the Castro & Liberty Streets Historic District, with a bathroom remodel permitted in 2025.
+- [732](732/) — A 1901 house of eleven rooms with a 1990 horizontal addition.
+- [733](733/) — A 1900 single-family house in the Castro & Liberty Streets Historic District, with deck work permitted in 2019.
+- [734–736](734/) — A 1900 three-flat, with a kitchen remodel permitted in 2024.
+- [737](737/) — A 1900 house remodelled 2005–2007 for $270,000, including three new dormers and an attic conversion.
+- [738](738/) — An 1895 two-flat, with an addition permitted in 1998.
+- [740](740/) — A 1900 house identified as a historic resource, with $620,000 of permitted work between 2019 and 2021.
+- [741–743](741/) — A 1906 4-unit apartment building in the Castro & Liberty Streets Historic District, with foundation work permitted in 2008.
+- [742](742/) — An 1895 four-unit building with a permit record running from 1978 to 2025.
+- [744](744/) — An 1896 two-flat Victorian with a four-decade permit record.
+- [746](746/) — An 1896 historic resource with a $750,000 remodel application under review.
+- [748](748/) — A 1900 three-unit building, in the same ownership since 1987.
+- [767](767/) — An 1895 single-family house, with a rear addition permitted in 2002.
+- [781–783](781/) — A 1906 two-flat, with foundation work permitted in 2002.
+- [785](785/) — A 1904 single-family house, with reroofing permitted in 1999.
+- [787](787/) — A 1900 single-family house, with a kitchen remodel permitted in 2001.
+- [789–791](789/) — A 1905 single-family house, with deck work permitted in 2000.
 
-The two sides of the block sit differently in the historic record. The
-**odd-numbered side** falls inside the Castro & Liberty Streets Historic
-District — eligible for the California Register, period of significance
-1897–1906, though not a local Article 10 landmark district — so every parcel
-there carries CEQA Category A. The **even-numbered side** lies outside any
-district; most of its buildings have never been evaluated, though two, 740
-and 746, are identified as historic resources by survey.
+## Not yet covered
 
-### Odd side
+Also on this street: 32 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 24 non-residential parcels; 21 parcels with no record in the assessor's roll.
 
-- [707](707/) — a 1980 three-unit building standing inside the historic
-  district
-- [711–715](711/) — an 1900 three-unit building on one parcel spanning three
-  street numbers, with a permit record dominated by dry rot
-- [737](737/) — a 1900 house remodelled 2005–2007 for $270,000, including
-  three new dormers and an attic conversion
-
-### Even side
-
-- [700](700/) — a 12-unit apartment building of 1927, seismically retrofitted
-  in 2016 under the city's mandatory soft-story program
-- [720](720/) — a 1901 house sold in December 2024
-- [732](732/) — a 1901 house of eleven rooms with a 1990 horizontal addition
-- [740](740/) — a 1900 house identified as a historic resource, with $620,000
-  of permitted work between 2019 and 2021
-- [742](742/) — an 1895 four-unit building with a permit record running from
-  1978 to 2025
-- [744](744/) — an 1896 two-flat Victorian with a four-decade permit record
-- [746](746/) — an 1896 historic resource with a $750,000 remodel application
-  under review
-- [748](748/) — a 1900 three-unit building, in the same ownership since 1987
-
-Not yet covered: the condominium parcels at 717, 719 and 721, which are
-individual units rather than buildings, and the remaining parcels on both
-sides of the block.
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

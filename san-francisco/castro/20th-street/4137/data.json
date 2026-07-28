@@ -1,0 +1,141 @@
+{
+  "address": "4137–4139 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4137/",
+  "apn": "3603085",
+  "block": "3603",
+  "lot": "085",
+  "eas_baseid": "361992",
+  "coordinates": {
+    "lat": 37.757524,
+    "lng": -122.433331
+  },
+  "address_range": "4137–4139",
+  "street_numbers_on_parcel": [
+    "4137",
+    "4139"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2294,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4139 4137 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1331389,
+    "assessed_improvement_value": 887593,
+    "last_sale_date": "1991-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206297406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-29",
+      "status_date": "2022-11-08",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "to comply with physical inspection report #cc-8560",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106041649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-04",
+      "status_date": "2022-06-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel like for like with shower, no layout or wall changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211063583",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-06",
+      "status_date": "2012-12-21",
+      "estimated_cost": 16975,
+      "revised_cost": 16975,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007195547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-19",
+      "status_date": "2000-09-19",
+      "estimated_cost": 5293,
+      "revised_cost": 5293,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708103",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-05-05",
+      "status_date": "1997-09-30",
+      "estimated_cost": 10000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115697",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-08-29",
+      "status_date": "1991-12-19",
+      "estimated_cost": 35000,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4137",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=085",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603085",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "address": "4075 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4075/",
+  "apn": "3604058A",
+  "block": "3604",
+  "lot": "058A",
+  "eas_baseid": "362049",
+  "coordinates": {
+    "lat": 37.757617,
+    "lng": -122.431794
+  },
+  "parcel": {
+    "year_built": 1979,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2724,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4075 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 670633,
+    "assessed_improvement_value": 287403,
+    "last_sale_date": "1997-08-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605211679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-05-21",
+      "status_date": "2026-07-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 202602095527: omit infill of (e) floor opening at 3rd floor bedroom from scope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202602095527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-09",
+      "status_date": "2026-07-06",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "1)remove e bearing wall between kicthen and dining room. 2)relocate e laundry room to 3rd floor. 3)infill e floor opening at 3rd floor. 4)renovate e bathroom at 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612013925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-01",
+      "status_date": "2017-01-04",
+      "estimated_cost": 12600,
+      "revised_cost": 12600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406300043",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-06-30",
+      "status_date": "2017-10-12",
+      "estimated_cost": 225000,
+      "revised_cost": 225000,
+      "description": "add new garage , install new windows and siding, square off bay window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301087431",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-01-08",
+      "status_date": "2016-02-02",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "repair of 2 & 1/2 bathrooms & hallway due to water damage on 2nd & 3rd fl. repair of (e) exterior front stairs. legalize bathroom on 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110056131",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-05",
+      "status_date": "2011-10-05",
+      "estimated_cost": 15100,
+      "revised_cost": 15100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104275",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-03-15",
+      "status_date": "1992-01-28",
+      "estimated_cost": 6645,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009074",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-09",
+      "status_date": "1990-09-19",
+      "estimated_cost": 2841,
+      "revised_cost": 0,
+      "description": "remove and install windows over double studs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4075",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604058A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=058A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604058A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

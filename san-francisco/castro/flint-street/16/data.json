@@ -1,0 +1,104 @@
+{
+  "address": "16 Flint Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/flint-street/16/",
+  "apn": "2614098",
+  "block": "2614",
+  "lot": "098",
+  "eas_baseid": "342169",
+  "coordinates": {
+    "lat": 37.764374,
+    "lng": -122.436505
+  },
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2073,
+    "building_area_sqft": 1401,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0016 FLINT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1021568,
+    "assessed_improvement_value": 388158
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507161643",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-16",
+      "status_date": "2015-10-08",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "kitchen remodeling as is. repair dry rot by kitchen area. replace panel w/ 100 amp circuits. rewire the kitchen area 11'x12\". provide 6'x4' opening at kitchen wall non-bearing wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310179598",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-17",
+      "status_date": "2014-01-23",
+      "estimated_cost": 3495,
+      "revised_cost": 3495,
+      "description": "repalce 2 windows size for size visable from the street with fiberglass milgard windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9814510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-29",
+      "status_date": "1998-08-07",
+      "estimated_cost": 1883,
+      "description": "replace 1 window and patio door size for size",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLINT&street_type=ST&address_number=16",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=098",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614098",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

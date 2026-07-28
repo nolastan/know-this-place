@@ -1,0 +1,125 @@
+{
+  "address": "112 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/112/",
+  "apn": "2713001D",
+  "block": "2713",
+  "lot": "001D",
+  "eas_baseid": "344901",
+  "coordinates": {
+    "lat": 37.757849,
+    "lng": -122.442464
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1934,
+    "building_area_sqft": 1280,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0112 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1365525,
+    "assessed_improvement_value": 585225,
+    "last_sale_date": "2022-11-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310279656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-27",
+      "status_date": "2023-11-17",
+      "estimated_cost": 14920,
+      "revised_cost": 14920,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208080098",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-08",
+      "status_date": "2022-09-23",
+      "estimated_cost": 3500,
+      "revised_cost": 7500,
+      "description": "to comply with nov# 202182418. demolish all balcony & decking structures in rear yard. install 82\" wide x 42\" high galvanied steel guardrail. replace rear property line fence sections with 6' high cedar.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608094515",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2016-08-09",
+      "status_date": "2018-06-20",
+      "estimated_cost": 240000,
+      "description": "vertical addition. new 3/fl with 2 new bedrooms & a study, 2 new bathrooms & a laundry room. new interior stairs connecting all floors. new windows & doors and a structural seismic upgrade as required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003225057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-22",
+      "status_date": "2000-06-27",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "concrete conditioning o oundation along approx 20 lf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000336S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-08",
+      "status_date": "1990-10-12",
+      "estimated_cost": 40000,
+      "description": "horizontal addition (enclose (e) rear deck)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=112",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2713001D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2713&lot=001D",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2713001D",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

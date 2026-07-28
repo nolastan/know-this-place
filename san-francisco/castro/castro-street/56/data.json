@@ -1,0 +1,113 @@
+{
+  "address": "56 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/56/",
+  "apn": "2611008",
+  "block": "2611",
+  "lot": "008",
+  "eas_baseid": "341994",
+  "coordinates": {
+    "lat": 37.768167,
+    "lng": -122.436002
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2426,
+    "building_area_sqft": 1830,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0056 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1028691,
+    "assessed_improvement_value": 685786,
+    "last_sale_date": "2004-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M33824",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-11",
+      "status_date": "2005-08-11",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504281124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-28",
+      "status_date": "2005-05-31",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-02-22",
+      "status_date": "1993-06-11",
+      "estimated_cost": 2175,
+      "description": "repair porch roof (sun room)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-25",
+      "status_date": "1991-01-14",
+      "estimated_cost": 15000,
+      "description": "repair bathroom, leak bath tub, reset fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=56",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2611008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2611&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2611008",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

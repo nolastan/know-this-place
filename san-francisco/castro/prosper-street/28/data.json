@@ -1,0 +1,138 @@
+{
+  "address": "28 Prosper Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/prosper-street/28/",
+  "apn": "3564038",
+  "block": "3564",
+  "lot": "038",
+  "eas_baseid": "359828",
+  "coordinates": {
+    "lat": 37.763793,
+    "lng": -122.431821
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1735.94,
+    "building_area_sqft": 1845,
+    "lot_depth_ft": 68.75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0028 PROSPER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1630394,
+    "assessed_improvement_value": 698738,
+    "last_sale_date": "2013-12-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604134719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-13",
+      "status_date": "2016-05-26",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507282610",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-07-28",
+      "status_date": "2016-01-22",
+      "estimated_cost": 13960,
+      "revised_cost": 13960,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405307090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-30",
+      "status_date": "2014-12-08",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "replace existing brick foudation. remove wood posts + install steel beam. lower garage slab.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708291174",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-29",
+      "status_date": "2008-03-25",
+      "estimated_cost": 33500,
+      "revised_cost": 33500,
+      "description": "remodel (e)kitchen. remove(e) gable roof and provide a roof deck above kitchen.general mech, electr., & plumbing upgrades.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-23",
+      "status_date": "1999-08-26",
+      "estimated_cost": 4462,
+      "description": "repair support girder,related framing,wall & sidnig boards",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511406",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-07-24",
+      "status_date": "1996-02-29",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PROSPER&street_type=ST&address_number=28",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=038",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564038",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

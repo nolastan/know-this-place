@@ -1,0 +1,135 @@
+{
+  "address": "1936 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/1936/",
+  "apn": "3544076",
+  "block": "3544",
+  "lot": "076",
+  "eas_baseid": "358938",
+  "coordinates": {
+    "lat": 37.76641,
+    "lng": -122.427368
+  },
+  "parcel": {
+    "year_built": 1961,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 5602,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 1936 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56570,
+    "assessed_improvement_value": 288082
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1961",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506309778",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-30",
+      "status_date": "2025-07-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as builtss to 202406184725. change radio model",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406184725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-18",
+      "status_date": "2026-03-25",
+      "estimated_cost": 17300,
+      "revised_cost": 32287,
+      "description": "upgrade (e) fire alarm system in non sprinkled building to comply with 2022 cbc/cfc, nfpa 72 and sffc sec 1103.7.6.1. replace (e) facu and add radio to monitor system. smokes in common areas pulls each level and exit. horn/strobes in common areas and install low frequency sounders inside sleeping rm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710034452",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-10-03",
+      "status_date": "2010-02-08",
+      "estimated_cost": 550,
+      "revised_cost": 550,
+      "description": "replacing damaged wood sheathing and wood trim. replacment with similar wood material due to dry rot. repairs in accord w/western extermination co. pest report#703488957.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28807",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-19",
+      "status_date": "2004-08-19",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9421054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-12-22",
+      "status_date": "1995-02-27",
+      "estimated_cost": 3000,
+      "description": "install vinyl siding- rear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603982",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-09",
+      "status_date": "1987-01-16",
+      "estimated_cost": 7700,
+      "description": "install alcoa vinyl siding to front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1936",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=076",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544076",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

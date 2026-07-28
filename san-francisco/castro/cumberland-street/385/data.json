@@ -1,0 +1,155 @@
+{
+  "address": "385 Cumberland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/cumberland-street/385/",
+  "apn": "3601031A",
+  "block": "3601",
+  "lot": "031A",
+  "eas_baseid": "361779",
+  "coordinates": {
+    "lat": 37.758484,
+    "lng": -122.432092
+  },
+  "parcel": {
+    "year_built": 1968,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 1707,
+    "building_area_sqft": 1671,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0385 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1001997,
+    "assessed_improvement_value": 667984,
+    "last_sale_date": "2001-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1968",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808016152",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-01",
+      "status_date": "2018-12-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel 2 existing bathroom, no change in wall and opening layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011024760",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-02",
+      "status_date": "2001-05-02",
+      "estimated_cost": 7200,
+      "revised_cost": 7200,
+      "description": "install a new concrete retaining wall in rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009201086",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-20",
+      "status_date": "2001-03-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "wood fence, wood retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008248806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-24",
+      "status_date": "2000-10-10",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "complying with notice of violation cover exist landing handrail w/shingle to match house repl wood h",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-23",
+      "status_date": "1997-02-27",
+      "estimated_cost": 5000,
+      "description": "repl (e)window & in fill remaining space,new cedar shingle",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616434",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-03",
+      "status_date": "1997-02-27",
+      "estimated_cost": 20000,
+      "description": "replace cabinets in kitchen, counter appliances floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025994",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-12-21",
+      "status_date": "1992-12-04",
+      "estimated_cost": 4300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-07-29",
+      "status_date": "1983-09-06",
+      "estimated_cost": 940,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=385",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601031A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=031A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601031A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

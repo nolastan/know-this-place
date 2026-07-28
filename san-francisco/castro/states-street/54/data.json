@@ -1,0 +1,147 @@
+{
+  "address": "54 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/54/",
+  "apn": "2622016",
+  "block": "2622",
+  "lot": "016",
+  "eas_baseid": "342482",
+  "coordinates": {
+    "lat": 37.763595,
+    "lng": -122.436496
+  },
+  "parcel": {
+    "year_built": 1963,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2677,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0054 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1645935,
+    "assessed_improvement_value": 784990
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405202422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-20",
+      "status_date": "2025-05-15",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "repair and replace (2) front facing wood decks and guardrails in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404029083",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-02",
+      "status_date": "2025-05-21",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "rev 202304034907- remove one existing post, add additional post and beam.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304034907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-03",
+      "status_date": "2025-06-30",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "remodel e 2nd flr kitchen, reconfigure bathroom at 1st flr, infill under entry stair landing to add new bathroom and laundry at 1st flr, 2 new windows (not visible from street).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109168559",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-16",
+      "status_date": "2025-05-21",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "remodel e 3rd fl kitchen, reconfigure e 2 baths at 3rd fl, new window not visible from street. new skylight and parapet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712227205",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-12-22",
+      "status_date": "2026-01-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "dry-rot repair of existing rear balcony in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011054406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-05",
+      "status_date": "2010-12-03",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "repair as. report #881761, item# 9a see attached termite report. exterior decks @ state st. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816858",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-08-25",
+      "status_date": "2000-03-06",
+      "estimated_cost": 24000,
+      "description": "bld new concrete retaining wall along property line at sdwk",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=54",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622016",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

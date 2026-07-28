@@ -1,0 +1,138 @@
+{
+  "address": "371 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/371/",
+  "apn": "2699030",
+  "block": "2699",
+  "lot": "030",
+  "eas_baseid": "344558",
+  "coordinates": {
+    "lat": 37.757901,
+    "lng": -122.438753
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1925,
+    "basement_area_sqft": 500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0371 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1990402,
+    "assessed_improvement_value": 853028,
+    "last_sale_date": "2017-02-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200810154184",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-15",
+      "status_date": "2008-10-15",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "remove two existing windows on n. side of structure, frame in openings and patch siding as necessary. ref pa #200412171655.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601313410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-31",
+      "status_date": "2006-02-08",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "per district inspector's request add valuation an additional $100,000.00 for a combined total of $212,000.00",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508120147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-12",
+      "status_date": "2006-02-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change proposed wood floor to a slab floor.rev.to appl#200412171655 layout changes.make structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412171655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-17",
+      "status_date": "2006-02-08",
+      "estimated_cost": 112000,
+      "revised_cost": 112000,
+      "description": "interior remodel of single-family residence to include new kitchen, powder room, master bedroom &",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-31",
+      "status_date": "1998-12-23",
+      "estimated_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724751",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-10",
+      "status_date": "1998-03-27",
+      "estimated_cost": 10000,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=371",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2699030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2699&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2699030",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

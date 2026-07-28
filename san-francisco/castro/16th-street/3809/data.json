@@ -1,0 +1,109 @@
+{
+  "address": "3809–3811 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3809/",
+  "apn": "2622022",
+  "block": "2622",
+  "lot": "022",
+  "eas_baseid": "342483",
+  "coordinates": {
+    "lat": 37.763566,
+    "lng": -122.437092
+  },
+  "address_range": "3809–3811",
+  "street_numbers_on_parcel": [
+    "3809",
+    "3811"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 3637,
+    "building_area_sqft": 1570,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3809 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 62545,
+    "assessed_improvement_value": 291569
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201906173599",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-17",
+      "status_date": "2019-06-17",
+      "estimated_cost": 150000,
+      "revised_cost": 25000,
+      "description": "revision to 201905100329 new interior walls and 1 new bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905100329",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-10",
+      "status_date": "2019-05-20",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "relocate kitchen/turn old kitchen into bedroom. upgrade all electrical add sub panel. new sheetrock & insulation, remodel (e) bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M283251",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-11",
+      "status_date": "2011-10-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3809",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622022",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

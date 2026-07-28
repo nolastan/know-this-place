@@ -1,0 +1,130 @@
+{
+  "address": "544–546 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/544/",
+  "apn": "2628022",
+  "block": "2628",
+  "lot": "022",
+  "eas_baseid": "475834",
+  "coordinates": {
+    "lat": 37.762765,
+    "lng": -122.444671
+  },
+  "address_range": "544–546",
+  "street_numbers_on_parcel": [
+    "544",
+    "546"
+  ],
+  "parcel": {
+    "year_built": 1977,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 5,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 2312,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0546 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 138574,
+    "assessed_improvement_value": 207894
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1977",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201504163815",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-16",
+      "status_date": "2015-07-30",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "remove reflash and re-install original windows, repair shingles around windows in kind. max u factor is 0.32. same size, same locations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102250923",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-25",
+      "status_date": "2011-04-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace 20 windows in kind, visable from street, no structural changes,max u factor .40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808270178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-27",
+      "status_date": "2008-09-02",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M93185",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-30",
+      "status_date": "2007-10-30",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710105032",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-10",
+      "status_date": "2007-12-06",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace shingles @ front of bldg in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=544",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628022",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

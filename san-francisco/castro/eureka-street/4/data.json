@@ -1,0 +1,167 @@
+{
+  "address": "4–14 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/4/",
+  "apn": "2650001",
+  "block": "2650",
+  "lot": "001",
+  "eas_baseid": "343295",
+  "coordinates": {
+    "lat": 37.762092,
+    "lng": -122.438521
+  },
+  "address_range": "4–14",
+  "street_numbers_on_parcel": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+  ],
+  "also_addressed": [
+    "4151 17TH ST"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 7,
+    "stories": 3,
+    "rooms": 25,
+    "bathrooms": 7,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 7350,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0014 0004 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63038,
+    "assessed_improvement_value": 141132
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407055904",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-05",
+      "status_date": "2024-08-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 2024-0321-8374 to request for technical infeasibility no exterior changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403218374",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-21",
+      "status_date": "2024-08-09",
+      "estimated_cost": 20000,
+      "revised_cost": 27100,
+      "description": "reconfigure floor plan for new deli and coffee station work at 4151 17th st retail store. no exterior changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M962707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-09",
+      "status_date": "2018-08-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608185383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-18",
+      "status_date": "2017-06-16",
+      "estimated_cost": 25000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfbc ch 34b; 2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608185412",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-18",
+      "status_date": "2017-06-16",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "soft story retrofit per sfbc ch 34b; 2012 iebc appendix a-4. stregthen (e) mezz and ground flr. ref pa 201608185383 for details",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700209",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-07",
+      "status_date": "1997-06-26",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414606",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-09",
+      "status_date": "1995-01-09",
+      "estimated_cost": 5000,
+      "description": "dry rot & damage repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303753",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-08",
+      "status_date": "1993-12-13",
+      "estimated_cost": 300,
+      "description": "dryrot repair under bay window on eureka street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=4",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2650001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2650&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2650001",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

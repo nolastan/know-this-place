@@ -1,0 +1,153 @@
+{
+  "address": "614 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/614/",
+  "apn": "3602004",
+  "block": "3602",
+  "lot": "004",
+  "eas_baseid": "361833",
+  "coordinates": {
+    "lat": 37.758879,
+    "lng": -122.432945
+  },
+  "parcel": {
+    "year_built": 2014,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3624,
+    "building_area_sqft": 3343,
+    "basement_area_sqft": 847,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0614 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4711251,
+    "assessed_improvement_value": 2019104,
+    "last_sale_date": "2015-03-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "2014",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "19th and Noe Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1905–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M560807",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-19",
+      "status_date": "2015-02-19",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M543968",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-17",
+      "status_date": "2014-12-17",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408184036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-18",
+      "status_date": "2015-03-10",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "revision to pa#201209058924 new roof deck with retractable sky light for stair access.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407181632",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-18",
+      "status_date": "2015-03-20",
+      "estimated_cost": 15000,
+      "revised_cost": 22000,
+      "description": "install new sprinkler system throughout per nfpa 13-d. includes 43 sprinklers and 22' of 1 inch underground combo sevice. ref app#201209058924.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209058924",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2012-09-05",
+      "status_date": "2015-03-10",
+      "estimated_cost": 600000,
+      "revised_cost": 670000,
+      "description": "erect 3 story, 1 dwelling unit, type 5 building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209058932",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2012-09-05",
+      "status_date": "2015-03-10",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "demolish 2 story, 1 dwelling unit, type 5 building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=614",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43294507908995%2037.75887919499565)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

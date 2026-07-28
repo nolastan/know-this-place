@@ -1,0 +1,99 @@
+{
+  "address": "50–52 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/50/",
+  "apn": "2691014A",
+  "block": "2691",
+  "lot": "014A",
+  "eas_baseid": "506368",
+  "coordinates": {
+    "lat": 37.759961,
+    "lng": -122.440542
+  },
+  "address_range": "50–52",
+  "street_numbers_on_parcel": [
+    "50",
+    "52"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 1250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0052 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1286122,
+    "assessed_improvement_value": 551192,
+    "last_sale_date": "2019-07-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306018975",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2023-06-01",
+      "status_date": "2026-05-21",
+      "estimated_cost": 550000,
+      "revised_cost": 1215921,
+      "description": "horizontal & vertical addition. create 3-story residence, upper 2 floors(one unit)-3 bedrm & 3 bathrm. lower floor(one unit)-2 bedrm & 2 bathrm. height will not exceed (e) parapet height at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9822614",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-03",
+      "status_date": "1998-11-17",
+      "estimated_cost": 4800,
+      "description": "remove deck,replace sliding glass door w/4'x6' widnow",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=50",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2691014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2691&lot=014A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2691014A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

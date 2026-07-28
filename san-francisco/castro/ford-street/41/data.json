@@ -1,0 +1,158 @@
+{
+  "address": "41 Ford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/ford-street/41/",
+  "apn": "3581043",
+  "block": "3581",
+  "lot": "043",
+  "eas_baseid": "360630",
+  "coordinates": {
+    "lat": 37.761653,
+    "lng": -122.431588
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 4260,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0041 FORD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3640671,
+    "assessed_improvement_value": 1560287,
+    "last_sale_date": "2023-01-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301069758",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-06",
+      "status_date": "2023-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa:2018-0723-5194. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807235194",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-23",
+      "status_date": "2018-07-23",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "work not visible from street, rear wall remove/replace dry rotted siding w/redwood siding, 11'x20' foot section, east wall upper section 10'x30' foot section, replace in-kind w/redwood siding, lower section 6'x10' foot section",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M177125",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-17",
+      "status_date": "2009-08-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M169187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-19",
+      "status_date": "2009-06-19",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904277101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-27",
+      "status_date": "2009-09-09",
+      "estimated_cost": 13000,
+      "revised_cost": 14000,
+      "description": "full installation of fire sprinklers, total 70 sprinkler heads.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901150311",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-15",
+      "status_date": "2009-09-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "shoring for work approved under pa# 2008/03/12/6934.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803126934",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-03-12",
+      "status_date": "2009-09-30",
+      "estimated_cost": 350000,
+      "revised_cost": 478000,
+      "description": "remodel of (e) single family residence with rear horizontal and vertical addition of 1 story. kitchen remodel, add new bathrooms and install elevator.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118435",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-10-01",
+      "status_date": "1992-02-01",
+      "estimated_cost": 3750,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FORD&street_type=ST&address_number=41",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=043",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581043",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

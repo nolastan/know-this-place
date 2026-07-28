@@ -1,0 +1,158 @@
+{
+  "address": "4521 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4521/",
+  "apn": "2749048",
+  "block": "2749",
+  "lot": "048",
+  "eas_baseid": "345433",
+  "coordinates": {
+    "lat": 37.757239,
+    "lng": -122.438437
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4521 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39009,
+    "assessed_improvement_value": 76207
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509034506",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-09-03",
+      "status_date": "2025-09-03",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "to strengthen and straighten the out of floor walls at the top level of the home",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306149626",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-14",
+      "status_date": "2013-07-19",
+      "estimated_cost": 10000,
+      "revised_cost": 27000,
+      "description": "repair existing retaining wall, visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201202013382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-01",
+      "status_date": "2012-03-14",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "comply with nov #201172021 dated 11/23/11. remove brick flue, repair siding to match.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201122117",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-12",
+      "status_date": "2012-05-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "backfill and soil nails related to retaining wall repair on address 4515 20th st. see permit application number 2011-1215-0719.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103212483",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-21",
+      "status_date": "2012-05-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with nov emergency temp repair; provide protection covering",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213175",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-08-11",
+      "status_date": "1993-04-29",
+      "estimated_cost": 200,
+      "revised_cost": 4500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009224",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-05-14",
+      "status_date": "1994-08-23",
+      "estimated_cost": 1500,
+      "description": "remove rotting deck over 1/f kitchen and pantry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-03",
+      "status_date": "1990-04-25",
+      "estimated_cost": 4000,
+      "revised_cost": 0,
+      "description": "remove asbestos shingles and replace wooden shingles",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4521",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=048",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749048",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

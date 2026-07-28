@@ -38,21 +38,44 @@ jobs:
             Scope: "${{ inputs.scope }}" (empty means the whole content tree
             under san-francisco/).
 
+            Existing pages are refreshed BY HAND, one at a time. The seeder
+            only ever writes pages that do not exist yet and never returns to
+            one, so it is not a refresh tool — do not reach for it here except
+            in step 3.
+
             1. Find address pages in scope whose data.json sources have
-               `retrieved` dates older than 30 days.
+               `retrieved` dates older than 30 days. Work through them in
+               batches, newest data first.
             2. For each, re-run the recorded queries against the sources in
-               DATA-SOURCES.md. If nothing material changed, only leave the
-               page alone (do NOT bump retrieved dates in a no-change page —
-               avoid noise commits).
-            3. Where data changed (new permits, changed status, new
-               assessment), update data.json (facts and, if needed, its
-               narrative prose), regenerate index.html, and note the change for
-               the PR body.
+               DATA-SOURCES.md. Where something material changed (a new permit,
+               a changed status, a new assessment), update data.json and edit
+               index.html to match, per shared/AGENTS.md. If nothing changed,
+               leave the page entirely alone — do NOT bump retrieved dates on a
+               no-change page, it makes noise commits.
+            3. Optionally, pick up parcels that have newly become seedable
+               (a new building, or one that has just appeared on the assessor's
+               roll):
+
+                 python3 scripts/seed_pages.py seed \
+                   --neighborhood "<analysis neighborhood>" \
+                   --city <city-slug> --area <area-slug>
+
+               This adds pages that don't exist and touches nothing that does.
+               The Castro is "Castro/Upper Market" / san-francisco / castro.
             4. Run `python3 scripts/validate.py` and
                `python3 scripts/build_sitemap.py`.
-            5. If any page changed: create branch refresh/<today's date>,
+            5. Read `git diff` and confirm each change is real data movement.
+            6. If any page changed: create branch refresh/<today's date>,
                commit, push, and open a single PR listing every page updated
                and what changed. If nothing changed, stop without a PR.
+
+            Budget: this job has limited turns. Prefer refreshing fewer pages
+            properly over starting many and finishing none — the next run picks
+            up whatever is still stale.
+
+            Never "verify" the Street View embed — its API key is restricted to
+            the production domain and always fails elsewhere. See
+            DATA-SOURCES.md.
           claude_args: |
             --max-turns 100
             --allowedTools "Read,Glob,Grep,Edit,Write,WebFetch(domain:data.sfgov.org),Bash(python3:*),Bash(git:*),Bash(gh pr create:*)"

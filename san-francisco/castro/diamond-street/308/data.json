@@ -1,0 +1,149 @@
+{
+  "address": "308 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/308/",
+  "apn": "2750004",
+  "block": "2750",
+  "lot": "004",
+  "eas_baseid": "345443",
+  "coordinates": {
+    "lat": 37.757012,
+    "lng": -122.437159
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1828,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0308 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1893528,
+    "assessed_improvement_value": 811512,
+    "last_sale_date": "2022-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201011034271",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-03",
+      "status_date": "2010-12-14",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "provide front entry cover awning: add rear reinforced concrete stairs and retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M83824",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-28",
+      "status_date": "2007-08-28",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit onlyl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705020213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-02",
+      "status_date": "2007-09-20",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "foudnation work at above address according to engineering plans. repair (e) foundation on detached garage as well",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701051026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-05",
+      "status_date": "2007-09-19",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "leak repair of roof, deck & wall at north side of master bedroom including (e) doors. side two french doors. repair in kind, no structural changes. minimal dry rot repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610104463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-10",
+      "status_date": "2007-09-19",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "revision to pa#200608109099.dryrot repair at rear kitchen wall including replacement of (e) sliding door & 2 windows. repair in kind. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608109099",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-10",
+      "status_date": "2007-09-20",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "1 kithcne & 3 bath room remodel of (e) no structural changes repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308142027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-14",
+      "status_date": "2003-10-02",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=308",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750004",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

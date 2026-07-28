@@ -1,0 +1,154 @@
+{
+  "address": "230 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/castro/dolores-street/230/",
+  "apn": "3557004",
+  "block": "3557",
+  "lot": "004",
+  "eas_baseid": "359441",
+  "coordinates": {
+    "lat": 37.765628,
+    "lng": -122.427179
+  },
+  "parcel": {
+    "year_built": 1960,
+    "units": 39,
+    "stories": 3,
+    "rooms": 80,
+    "bathrooms": 39,
+    "lot_area_sqft": 10920,
+    "building_area_sqft": 25560,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0230 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 5798196,
+    "assessed_improvement_value": 4417467
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409130761",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-13",
+      "status_date": "2024-11-15",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "installation of low frequency sounders in all sleeping areas of the buldin to comply with ab 308 and 1103.7.6.1. piggyback power supplies to existing fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209092167",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-09",
+      "status_date": "2022-12-01",
+      "estimated_cost": 210850,
+      "revised_cost": 210850,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909050744",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2019-09-05",
+      "status_date": "2023-04-20",
+      "estimated_cost": 1500000,
+      "revised_cost": 1500000,
+      "description": "exterior renovaton of the entire building, including complete upgrade to exterior finishes, re-paving of all common areas and walkways, new doors, windows and new roofing & water protecting througout",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M586147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-11",
+      "status_date": "2015-05-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9927310",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-12-30",
+      "status_date": "2000-02-11",
+      "estimated_cost": 2000,
+      "description": "renewal of application 9824218",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824218",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-23",
+      "status_date": "1999-12-20",
+      "estimated_cost": 25000,
+      "description": "replace existing exit stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815775",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-12",
+      "status_date": "1999-12-28",
+      "estimated_cost": 35000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9622182",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-11-14",
+      "status_date": "1997-07-28",
+      "estimated_cost": 10000,
+      "description": "install new fire alarm system, retrofit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=230",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557004",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

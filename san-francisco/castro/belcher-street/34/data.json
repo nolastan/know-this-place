@@ -1,0 +1,94 @@
+{
+  "address": "34 Belcher Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/belcher-street/34/",
+  "apn": "3537062",
+  "block": "3537",
+  "lot": "062",
+  "eas_baseid": "358547",
+  "coordinates": {
+    "lat": 37.768722,
+    "lng": -122.430505
+  },
+  "parcel": {
+    "year_built": 1973,
+    "units": 6,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 3145,
+    "building_area_sqft": 4636,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0034 BELCHER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 424910,
+    "assessed_improvement_value": 509895
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1973",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202101293593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-29",
+      "status_date": "2021-08-02",
+      "estimated_cost": 90000,
+      "revised_cost": 100000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2019 cebc appendix 4a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612189998",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-18",
+      "status_date": "2006-12-18",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BELCHER&street_type=ST&address_number=34",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&lot=062",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3537062",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

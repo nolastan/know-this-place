@@ -1,0 +1,146 @@
+{
+  "address": "167 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/167/",
+  "apn": "3583025",
+  "block": "3583",
+  "lot": "025",
+  "eas_baseid": "360773",
+  "coordinates": {
+    "lat": 37.759894,
+    "lng": -122.433476
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0167 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 607696,
+    "assessed_improvement_value": 405118,
+    "last_sale_date": "2000-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707192291",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-07-19",
+      "status_date": "2018-05-14",
+      "estimated_cost": 15835,
+      "revised_cost": 15835,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M214646",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-05",
+      "status_date": "2010-08-05",
+      "revised_cost": 1,
+      "description": "street space permit & sidewalk permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102081621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-08",
+      "status_date": "2001-06-20",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "replace kitchen cabinets & sheetrock as needed. replace 6 feet of foundation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012137798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-12-13",
+      "status_date": "2001-07-11",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "sheetrock, living, dining & 1 bedroom, redo bathrm, less than 40% lath & plaster to be remove & repl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117712",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-08-11",
+      "status_date": "2001-03-23",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove unsafe, old in-law unit. remove & properly cap/terminate. unit is on ground fl,behind garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916031",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-05",
+      "status_date": "2001-07-11",
+      "estimated_cost": 5750,
+      "description": "reroof and new plywood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901142",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-01-23",
+      "status_date": "1989-05-23",
+      "estimated_cost": 1000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=167",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583025",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

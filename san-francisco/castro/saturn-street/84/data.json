@@ -1,0 +1,115 @@
+{
+  "address": "84 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/84/",
+  "apn": "2627012",
+  "block": "2627",
+  "lot": "012",
+  "eas_baseid": "342644",
+  "coordinates": {
+    "lat": 37.762824,
+    "lng": -122.442696
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2469,
+    "building_area_sqft": 875,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0084 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 966781,
+    "assessed_improvement_value": 241694,
+    "last_sale_date": "2020-05-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103055954",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2021-03-05",
+      "status_date": "2025-07-11",
+      "estimated_cost": 200000,
+      "revised_cost": 305000,
+      "description": "full remodel all levels, new bedroom in 3rd story attic with pop-up roof dormers, and new bedroom and bath at the ground floor with 9-inch excavation to increase ceiling height. full seismic/wind retrofit with new foundation and retaining wall, and shoring design. tier 1 sspa.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202005137498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-13",
+      "status_date": "2020-05-19",
+      "estimated_cost": 200,
+      "revised_cost": 500,
+      "description": "to comply w/nov 202026136 - repair front stairs under 50% in-kind. re-install section of handrail and guard rail, replace damaged steps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103083835",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-08",
+      "status_date": "2001-07-08",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "alcoa vinyl siding rear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9507074",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-05-12",
+      "status_date": "1995-06-07",
+      "estimated_cost": 4080,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=84",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2627012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2627&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2627012",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

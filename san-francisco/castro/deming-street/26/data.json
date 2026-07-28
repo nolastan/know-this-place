@@ -1,0 +1,108 @@
+{
+  "address": "26 Deming Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/deming-street/26/",
+  "apn": "2654016",
+  "block": "2654",
+  "lot": "016",
+  "eas_baseid": "462066",
+  "coordinates": {
+    "lat": 37.760619,
+    "lng": -122.444711
+  },
+  "also_addressed": [
+    "90 MARS ST"
+  ],
+  "parcel": {
+    "year_built": 2007,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3267,
+    "building_area_sqft": 3694,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0026 DEMING              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2752541,
+    "assessed_improvement_value": 1179659,
+    "last_sale_date": "2019-01-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2007",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200705020292",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-02",
+      "status_date": "2007-05-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200205317958s-1 only approved as single family.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506225713",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-06-22",
+      "status_date": "2007-11-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "field change to shoring plan on appl#200205317958",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205317958",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "2002-05-31",
+      "status_date": "2008-03-12",
+      "estimated_cost": 528000,
+      "revised_cost": 528000,
+      "description": "erect 3 story with 2 unit dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DEMING&street_type=ST&address_number=26",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2654016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2654&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2654016",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

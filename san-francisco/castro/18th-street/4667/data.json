@@ -1,0 +1,140 @@
+{
+  "address": "4667–4669 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4667/",
+  "apn": "2690022",
+  "block": "2690",
+  "lot": "022",
+  "eas_baseid": "344228",
+  "coordinates": {
+    "lat": 37.760165,
+    "lng": -122.442676
+  },
+  "address_range": "4667–4669",
+  "street_numbers_on_parcel": [
+    "4667",
+    "4669"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3025,
+    "building_area_sqft": 2490,
+    "lot_depth_ft": 21,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4669 4667 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 153189,
+    "assessed_improvement_value": 375494
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200208073372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-07",
+      "status_date": "2002-09-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "alternation to permitted rear deck-staircase to move from property line on west side of property to",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203070865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-07",
+      "status_date": "2002-09-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to plan layout as shown from ori. #200103265186. add new partition wall between bedroom & k",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108236724",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2001-08-23",
+      "status_date": "2001-12-27",
+      "estimated_cost": 250000,
+      "description": "2 story addition to rear of building with new deck & new foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107254573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-25",
+      "status_date": "2002-09-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "exploratory demolition for eng. inspt.,removal of some interior partition for dry rot check",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103265186",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-03-26",
+      "status_date": "2002-09-06",
+      "estimated_cost": 85000,
+      "description": "new deck at 2nd floor- (e) 2-unit bldng to relive horizontal addition of 140 sq. ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016978",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-24",
+      "status_date": "1990-12-10",
+      "estimated_cost": 11225,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4667",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690022",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

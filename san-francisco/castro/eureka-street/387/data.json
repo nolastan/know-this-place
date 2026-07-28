@@ -1,0 +1,160 @@
+{
+  "address": "387 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/387/",
+  "apn": "2750022A",
+  "block": "2750",
+  "lot": "022A",
+  "eas_baseid": "345462",
+  "coordinates": {
+    "lat": 37.756128,
+    "lng": -122.437635
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1598,
+    "building_area_sqft": 1602,
+    "basement_area_sqft": 517,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0387 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 538769,
+    "assessed_improvement_value": 463630,
+    "last_sale_date": "2002-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306059276",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-05",
+      "status_date": "2023-08-01",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to comply with nov20236104: replace backyard fence. 10'-0\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911137218",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-13",
+      "status_date": "2020-01-03",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "removal of existing terra cotta flue tiles and replace with listed class a metal chimney system. this is a repair not a reconstruction. no roof work seen from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909192165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-19",
+      "status_date": "2020-10-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "add 1st floor bathroom remodel in kind to permit 201801047843 s1. no alteration of wall, window and door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1095347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-13",
+      "status_date": "2019-06-13",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801047843",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-01-04",
+      "status_date": "2020-11-09",
+      "estimated_cost": 37000,
+      "revised_cost": 40000,
+      "description": "new roof deck and stairs between existing 2nd floor deck and roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306068892",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-06-06",
+      "status_date": "2015-12-01",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "tear out (e) kitchen cabinets & replace. put in new he lights, new appliances & fix skylight. tear out bathroom tile & replace fixtures & tile. replace door with 6' sliding door off kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309235565",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-23",
+      "status_date": "2006-12-15",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repl windows (10),repl (e) sklights, 3 front beyond 5 feet of prop line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9723024",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-14",
+      "status_date": "1999-02-24",
+      "estimated_cost": 5685,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=387",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750022A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=022A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750022A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

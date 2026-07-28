@@ -24,13 +24,46 @@ the subtitle reads as though they are two different places.
 Eureka Valley, commonly called the Castro: roughly bounded by Market Street
 (northeast), Douglass Street and the hillside (west), 22nd Street (south),
 and Church Street (east). The authoritative test for whether an address
-belongs here is the SF Planning "Analysis Neighborhoods" / neighborhood
-boundary data — when in doubt, check, and refine this paragraph once the
-boundary dataset is verified.
+belongs here is the SF Planning "Analysis Neighborhoods" boundary — in the
+datasets, `nhood` / `analysis_neighborhood` **`Castro/Upper Market`**. That is
+the value the seeder is run with, and it is what decides membership; the
+paragraph above is orientation, not the test.
 
 **Residential addresses first** (root rule). Castro Street's commercial core
 (roughly 400–600 Castro) and Market Street storefronts are mostly business
-addresses — defer them.
+addresses — the seeder skips them automatically, because the assessor's
+`use_definition` is what classifies a parcel, not its street.
+
+## Seeding this neighborhood
+
+The neighborhood has already been seeded: every residential parcel the city's
+records describe has a page. Those pages are now edited by hand like any other
+— see "Page lifecycle" in the root `AGENTS.md`.
+
+Re-run the seeder only to pick up parcels that have newly appeared:
+
+```
+python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
+                                   --city san-francisco --area castro
+```
+
+It creates pages that don't exist and touches nothing that does, so running it
+again is safe. The run skips condominium parcels (individual units with their
+own APNs, not buildings), non-residential parcels, and parcels with no assessor
+record.
+
+**Corbett Heights is inside this city boundary but filed separately**, as
+`san-francisco/corbett-heights/AGENTS.md` explains. Its streets — Corbett,
+Ord, Ord Court, Hattie, Danvers, Mars, Romain, Levant, Museum Way and the upper
+reaches of Clayton and Ashbury — are listed in `AREA_EXCLUDE_STREETS` in the
+script so a Castro run never files them here. Seeding them is a separate run
+with `--area corbett-heights`. Independently of that list, the seeder skips any
+parcel that already has a page anywhere on the site, so no building can end up
+with two.
+
+`AREA_SUB` in the script supplies this neighborhood's `.sub` line, so every
+generated page gets `Castro (Eureka Valley) · San Francisco, CA 94114`
+automatically. Don't hand-edit it onto a page.
 
 ## Orientation (context, not citable facts)
 

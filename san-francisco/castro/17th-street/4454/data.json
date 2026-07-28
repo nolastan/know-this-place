@@ -1,0 +1,158 @@
+{
+  "address": "4454 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4454/",
+  "apn": "2645016",
+  "block": "2645",
+  "lot": "016",
+  "eas_baseid": "343122",
+  "coordinates": {
+    "lat": 37.762136,
+    "lng": -122.444422
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 1557,
+    "basement_area_sqft": 432,
+    "lot_depth_ft": 87.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4454 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1093284,
+    "assessed_improvement_value": 468547,
+    "last_sale_date": "2011-08-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602135942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-13",
+      "status_date": "2026-02-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa 202405202473. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405202473",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2024-05-20",
+      "status_date": "2026-02-24",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel of kitchen. work to include relocating of structural wall, new plumbing fixtures, lighting, finishes & millwork/cabinetry to be added",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M12915",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-02",
+      "status_date": "2000-10-02",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003013254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-01",
+      "status_date": "2000-08-02",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "alteration to bath @ 1st floor, repair/upgrade to garage floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-19",
+      "status_date": "1994-10-24",
+      "estimated_cost": 3500,
+      "description": "remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-12",
+      "status_date": "1994-10-18",
+      "estimated_cost": 15000,
+      "description": "replace 3 windows front. remove drywall in living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705555",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-28",
+      "status_date": "1987-12-31",
+      "estimated_cost": 10000,
+      "description": "vertical & horizontal extension, kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604329",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-15",
+      "status_date": "1986-11-24",
+      "estimated_cost": 15000,
+      "description": "8'x18' new deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4454",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2645016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2645&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2645016",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

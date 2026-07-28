@@ -1,0 +1,162 @@
+{
+  "address": "4600–4602 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4600/",
+  "apn": "2658002",
+  "block": "2658",
+  "lot": "002",
+  "eas_baseid": "343556",
+  "coordinates": {
+    "lat": 37.760713,
+    "lng": -122.441078
+  },
+  "address_range": "4600–4602",
+  "street_numbers_on_parcel": [
+    "4600",
+    "4602"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 1897,
+    "building_area_sqft": 3500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4602 4600 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1265747,
+    "assessed_improvement_value": 843829,
+    "last_sale_date": "2000-11-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907105565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-10",
+      "status_date": "2019-09-04",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "replace roof w/50-year shingles. no change to roofline, façade or appearance. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1094507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-12",
+      "status_date": "2019-06-12",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M488427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-05-14",
+      "status_date": "2014-05-14",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406156461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-15",
+      "status_date": "2004-08-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200112114850 for final only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404201719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-20",
+      "status_date": "2004-08-03",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "to install 2 inch underground service from meter to riser. supplement to 200401144023 for fire",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401144023",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-01-14",
+      "status_date": "2004-08-03",
+      "estimated_cost": 2000,
+      "revised_cost": 4500,
+      "description": "add fire sprinklers to garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112114980",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2001-12-11",
+      "status_date": "2002-02-25",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "convert (e) basement to garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319213",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-01",
+      "status_date": "1995-08-23",
+      "estimated_cost": 8950,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4600",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2658002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2658&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2658002",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

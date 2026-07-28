@@ -1,0 +1,166 @@
+{
+  "address": "243 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/243/",
+  "apn": "2697028A",
+  "block": "2697",
+  "lot": "028A",
+  "eas_baseid": "344480",
+  "coordinates": {
+    "lat": 37.758515,
+    "lng": -122.436607
+  },
+  "parcel": {
+    "year_built": 1994,
+    "units": 2,
+    "stories": 3,
+    "bathrooms": 5,
+    "bedrooms": 4,
+    "lot_area_sqft": 4443,
+    "building_area_sqft": 5381,
+    "basement_area_sqft": 940,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0243 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 180237,
+    "assessed_improvement_value": 763636
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1994",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200808058481",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-05",
+      "status_date": "2008-09-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace siding in back & rear & side ( not front). 2000 sf of siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103295504",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-29",
+      "status_date": "2001-07-29",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "seal out side window on south side & painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101059320",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-05",
+      "status_date": "2001-05-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "drawing for permit 200011286718 (e)repair a dry rot on a porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011286718",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-28",
+      "status_date": "2001-03-28",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair a dry rot on a porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9822597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-03",
+      "status_date": "1998-12-29",
+      "estimated_cost": 13000,
+      "description": "remove existing front siding /reface (e) bldng w/ new siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9410916",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-07-11",
+      "status_date": "1994-07-25",
+      "estimated_cost": 1,
+      "description": "renew expired perit appn. #9313002",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313002",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-08-03",
+      "status_date": "1994-01-21",
+      "estimated_cost": 3000,
+      "description": "install fire sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116714",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1991-09-12",
+      "status_date": "1994-07-25",
+      "estimated_cost": 400000,
+      "revised_cost": 415000,
+      "description": "erect a two family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116713",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1991-09-11",
+      "status_date": "1995-03-01",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=243",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2697028A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2697&lot=028A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2697028A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

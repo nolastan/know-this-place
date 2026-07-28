@@ -1,0 +1,146 @@
+{
+  "address": "3352 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3352/",
+  "apn": "2717005B",
+  "block": "2717",
+  "lot": "005B",
+  "eas_baseid": "345018",
+  "coordinates": {
+    "lat": 37.757774,
+    "lng": -122.443729
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2674,
+    "building_area_sqft": 1943,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Twin Peaks",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3352 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1416270,
+    "assessed_improvement_value": 606971,
+    "last_sale_date": "2019-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606233727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-23",
+      "status_date": "2026-06-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "revision to 202512161885 adding a grade beam below a shear wall on the existing structural plan. engineer assumed e foundation adequate for support but not deep enough. plumbingb fixtures in e downstiars bath are directly on ltop of new grade beam location so had to remove for access and reinstall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512161885",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-16",
+      "status_date": "2026-02-26",
+      "estimated_cost": 650000,
+      "revised_cost": 650000,
+      "description": "interior renovation and small rear addition totaling 32 sq ft. this work includes new finishes, fixtures, casework, lighting, plumbing, and electircal at the kitchen, bath #1 and bath #2. will required electrical panel upgrade and full remodel of knob and tube. new siding at the facade attached to..",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910215074",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-21",
+      "status_date": "2019-12-17",
+      "estimated_cost": 22318,
+      "revised_cost": 22318,
+      "description": "replace 7 street facing metal frame windows (picture and casement) with new andersen fibres windows in same openings, same operations, same recess.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921013",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-07",
+      "status_date": "1990-04-06",
+      "estimated_cost": 7500,
+      "description": "new storage closet within (e) bedroom 3 new skylights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513282",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-20",
+      "status_date": "1986-01-30",
+      "estimated_cost": 2500,
+      "description": "repairs per items 1b, 9a, 9b.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207552",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-14",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207433",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-09-08",
+      "status_date": "1983-03-04",
+      "estimated_cost": 740,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3352",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717005B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&lot=005B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2717005B",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

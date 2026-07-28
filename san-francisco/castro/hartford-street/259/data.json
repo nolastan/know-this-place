@@ -1,0 +1,158 @@
+{
+  "address": "259 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/259/",
+  "apn": "3602028",
+  "block": "3602",
+  "lot": "028",
+  "eas_baseid": "361855",
+  "coordinates": {
+    "lat": 37.758368,
+    "lng": -122.433329
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3120,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0259 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1393912,
+    "assessed_improvement_value": 1042336,
+    "last_sale_date": "2006-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509167068",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-16",
+      "status_date": "2015-09-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "landscape retaining wall. the walls do no support superimposed loads imparted by a bld structure and they so not support earth pressures assoc with surcharge loads from adjacent improvements.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301097525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-09",
+      "status_date": "2014-01-23",
+      "estimated_cost": 9000,
+      "revised_cost": 9240,
+      "description": "remodel kitchen: relocate stove & head, new cabinets & counter tops. general mep upgrades at kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905158464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-15",
+      "status_date": "2009-10-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200610266076. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M118966",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-09",
+      "status_date": "2008-05-09",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610266076",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2006-10-26",
+      "status_date": "2009-10-21",
+      "estimated_cost": 58560,
+      "revised_cost": 58560,
+      "description": "horizontal addition into rear yard: approx 198 sf 1st/fl. approx 240 sf 2nd/fl. total 438 sf. added one bedroom, 1 full bath, 1 half bath & laundry room. reconfigure stairs to top floor and to basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9927146",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-01-25",
+      "status_date": "2000-05-31",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "install 12 replacement (like kind) windows throughout",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710181",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-06-04",
+      "status_date": "1997-06-26",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917549",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-09-21",
+      "status_date": "1990-05-11",
+      "estimated_cost": 11000,
+      "description": "remodel (e) kitchen replacement of (e) sink, stove cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=259",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602028",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

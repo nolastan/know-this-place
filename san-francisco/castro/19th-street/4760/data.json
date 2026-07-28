@@ -1,0 +1,136 @@
+{
+  "address": "4760 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4760/",
+  "apn": "2702012",
+  "block": "2702",
+  "lot": "012",
+  "eas_baseid": "344704",
+  "coordinates": {
+    "lat": 37.759054,
+    "lng": -122.44322
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2391,
+    "building_area_sqft": 750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4760 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 375304,
+    "assessed_improvement_value": 116327,
+    "last_sale_date": "1988-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409241541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-24",
+      "status_date": "2024-12-06",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "in-kind remodeling of 1 bathroom(s) in 1st fl with 1 shower pan(s).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204142238",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2022-04-14",
+      "status_date": "2022-07-06",
+      "estimated_cost": 2847,
+      "revised_cost": 0,
+      "description": "revision to 202203109688 and 202202258679: replacing (1) window same size and location, street visible. u factor <0.30 (e) vinyl (n) wood composite",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203109688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-10",
+      "status_date": "2022-08-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 202202258679. replace 3 windows in-kind, non-visible from street. (e) vinyl. (n) wood fiber. u factor <0.30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202202258679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-25",
+      "status_date": "2022-08-23",
+      "estimated_cost": 12024,
+      "revised_cost": 12024,
+      "description": "replacing (4) street visible & non visible windows. (e) vinyl (n) wood fiber. u factor <0.30. same size and location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1004447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-13",
+      "status_date": "2018-11-13",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718886S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-09-24",
+      "status_date": "1998-09-04",
+      "estimated_cost": 7000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4760",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2702012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2702&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2702012",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "address": "683–685 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/683/",
+  "apn": "3544071",
+  "block": "3544",
+  "lot": "071",
+  "eas_baseid": "358929",
+  "coordinates": {
+    "lat": 37.76754,
+    "lng": -122.428162
+  },
+  "address_range": "683–685",
+  "street_numbers_on_parcel": [
+    "683",
+    "685"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 2815,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "UPMKT",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0685 0683 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 552969,
+    "assessed_improvement_value": 326694,
+    "last_sale_date": "1991-09-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1080047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-14",
+      "status_date": "2019-05-14",
+      "revised_cost": 1,
+      "description": "street space w/mta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407169051",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-07-16",
+      "status_date": "2004-08-19",
+      "estimated_cost": 76500,
+      "revised_cost": 76500,
+      "description": "shoring & underpinning of foundation as a result of adjacent approved new construction at 8 landers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216542",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-09-24",
+      "status_date": "1992-11-20",
+      "estimated_cost": 1,
+      "description": "revision on approved permit #9119061-close a door,rep.post",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119061",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-10-10",
+      "status_date": "1992-12-01",
+      "estimated_cost": 11000,
+      "revised_cost": 65000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603470",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-03-26",
+      "status_date": "1988-02-08",
+      "estimated_cost": 28000,
+      "description": "10' x 20' horizontal extension to relocate garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=683",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=071",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544071",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

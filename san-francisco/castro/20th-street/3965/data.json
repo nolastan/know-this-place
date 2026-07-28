@@ -1,0 +1,161 @@
+{
+  "address": "3965 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3965/",
+  "apn": "3605059",
+  "block": "3605",
+  "lot": "059",
+  "eas_baseid": "362133",
+  "coordinates": {
+    "lat": 37.757762,
+    "lng": -122.429405
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2526,
+    "basement_area_sqft": 632,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3965 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2386762,
+    "assessed_improvement_value": 1022897,
+    "last_sale_date": "2020-09-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509084833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-08",
+      "status_date": "2025-09-23",
+      "estimated_cost": 19554,
+      "revised_cost": 19554,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101082318",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-08",
+      "status_date": "2021-09-16",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "remove & replace hardwood flooring. remove & replace kitchen cabinets and finishes in kind. repalce bathroom cabinets & finishes in kind. fixture to remain in locations. remove and replace rear sliding door in kind. no chane to opening. not visible from st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807235193",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-23",
+      "status_date": "2018-10-19",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "repair (e) deck, repair dry rott less than 50% in the rear. replace in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106282546",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-28",
+      "status_date": "2001-07-06",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "revision to app #200003083801 to delete a stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16040",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-25",
+      "status_date": "2001-08-25",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012288809",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-12-28",
+      "status_date": "2001-07-09",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "minor modifictions to permit #200003083801 inc reviised master bath, bath 2, kitchen, bedrm/study@ 1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006283935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-28",
+      "status_date": "2001-07-09",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "dry rot repair at ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003083801",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-03-08",
+      "status_date": "2001-07-09",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3965",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=059",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605059",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

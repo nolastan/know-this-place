@@ -1,0 +1,157 @@
+{
+  "address": "283 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/283/",
+  "apn": "2614042A",
+  "block": "2614",
+  "lot": "042A",
+  "eas_baseid": "342124",
+  "coordinates": {
+    "lat": 37.765419,
+    "lng": -122.440675
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2117,
+    "building_area_sqft": 1125,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0283 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 423453,
+    "assessed_improvement_value": 187286,
+    "last_sale_date": "1997-01-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406204842",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-20",
+      "status_date": "2024-07-24",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402266580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-26",
+      "status_date": "2024-11-08",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace 9 windows front and rear of house, replace in kind with alum-clad. install water heater like for like.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010122657",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-12",
+      "status_date": "2011-02-16",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "upgrade (e) kitchen- new cabinets, (n) appliances, (n) sink, (n) lights, two windows (replace) & two pocket doors(change from swing door). min. 50% of kitchen lighting wattage shall be of high efficency light.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210290174",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-29",
+      "status_date": "2003-02-05",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repsonse to correction notice by dis bldg inspector. date 10-21-2002 item 3, 4, and 6",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208012917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-01",
+      "status_date": "2003-02-05",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel bathrm @ ground fl., install 7 new windows, - 2 visible fr street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805370",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-30",
+      "status_date": "1998-04-06",
+      "estimated_cost": 1,
+      "description": "renew appln #9701162 for final",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701161",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-21",
+      "status_date": "1997-01-27",
+      "estimated_cost": 1650,
+      "description": "raise foundation,new cap ,new pressure treated mudsill",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701162",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-21",
+      "status_date": "1997-05-21",
+      "estimated_cost": 3800,
+      "description": "remodel (e)bathrm,replace plmbg fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=283",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=042A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614042A",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

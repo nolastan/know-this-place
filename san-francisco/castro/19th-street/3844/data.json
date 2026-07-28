@@ -1,0 +1,142 @@
+{
+  "address": "3844–3846 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3844/",
+  "apn": "3585021",
+  "block": "3585",
+  "lot": "021",
+  "eas_baseid": "360939",
+  "coordinates": {
+    "lat": 37.759875,
+    "lng": -122.429224
+  },
+  "address_range": "3844–3846",
+  "street_numbers_on_parcel": [
+    "3844",
+    "3846"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2844,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3846 3844 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 692234,
+    "assessed_improvement_value": 473503
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308013442",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-01",
+      "status_date": "2024-12-16",
+      "estimated_cost": 240000,
+      "revised_cost": 240000,
+      "description": "residential remodel of one kitchen and one bathroom along with full electrical rewire of unit. no structural work. all work at one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008121601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-12",
+      "status_date": "2020-11-23",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remove existing hvac unit in garag. replace w/new carrier performance series heat pump. move all necessary electrical, water/drain line and vents as needed. no structural work, no new walls. existing wall to remain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310219814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-21",
+      "status_date": "2014-08-13",
+      "estimated_cost": 100000,
+      "revised_cost": 120000,
+      "description": "remodel kitchen and bath. new cabinets, flooring, plumb, elec, new vanities, shower enclosure tile, doors, sheetrock, finish carpentry. complete rewire for elec, reroute drains and water lines in kitchen for corner sink, move gas hvac where nec. no structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904156303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-15",
+      "status_date": "2009-08-05",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove and replace 3 windows, no change in locatin and rough openings. wood existing, vinyl proposed u valve = .34. no windows face the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101240485",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-24",
+      "status_date": "2001-02-27",
+      "estimated_cost": 16778,
+      "revised_cost": 16778,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9716028",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-20",
+      "status_date": "1999-03-01",
+      "estimated_cost": 1800,
+      "description": "remove and replace window sash as per nov.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3844",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585021",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

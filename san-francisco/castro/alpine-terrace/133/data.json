@@ -1,0 +1,139 @@
+{
+  "address": "133 Alpine Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/alpine-terrace/133/",
+  "apn": "2610036",
+  "block": "2610",
+  "lot": "036",
+  "eas_baseid": "341977",
+  "coordinates": {
+    "lat": 37.768403,
+    "lng": -122.437183
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3297,
+    "building_area_sqft": 3375,
+    "basement_area_sqft": 446,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0133A0133 ALPINE              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2355622,
+    "assessed_improvement_value": 1330013,
+    "last_sale_date": "2014-12-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110221052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-22",
+      "status_date": "2022-04-19",
+      "estimated_cost": 22800,
+      "revised_cost": 22800,
+      "description": "renovation of an extg carrage house. relace foundation and floor decking. install new door and window. construct new decking in rear yard. all decks will be 30\" max. above extg grade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003046213",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-03-04",
+      "status_date": "2021-04-06",
+      "estimated_cost": 5000,
+      "revised_cost": 40000,
+      "description": "remodel (e) lower unit. modify floor plan. infill floor area, infill below habitable space. relocate bathroom. replace windows at lower level. all exposed windows to the street shall be wood w/ogee lugs to match existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412224306",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-22",
+      "status_date": "2015-04-18",
+      "estimated_cost": 75000,
+      "revised_cost": 117000,
+      "description": "remodel existing kitc hen, reduce 1st fl full bath to 1/2 bath, move full bath to 2nd fl, remodel master bath, reconfigure closets, update electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404233949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-23",
+      "status_date": "2014-04-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "comply nov 201337661- item 2 ; one unit - repair dryrot damaged exterior window sill of kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M182207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-15",
+      "status_date": "2009-10-15",
+      "revised_cost": 1,
+      "description": "street space and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602134436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-13",
+      "status_date": "2006-02-24",
+      "estimated_cost": 10900,
+      "revised_cost": 10900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALPINE&street_type=TER&address_number=133",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2610036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2610&lot=036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2610036",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "address": "3054–3056 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3054/",
+  "apn": "2656017",
+  "block": "2656",
+  "lot": "017",
+  "eas_baseid": "343489",
+  "coordinates": {
+    "lat": 37.761293,
+    "lng": -122.442436
+  },
+  "address_range": "3054–3056",
+  "street_numbers_on_parcel": [
+    "3054",
+    "3056"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2199,
+    "building_area_sqft": 2900,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3056 3054 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 50566,
+    "assessed_improvement_value": 297732
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210315554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-31",
+      "status_date": "2023-04-28",
+      "estimated_cost": 8000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel at 3rd fl by replacing cabinets. replace 4 rearyard facing windows. bathroom remodel by replacing shower and sink. no increase in floor area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M944267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-26",
+      "status_date": "2018-06-26",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802120991",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-12",
+      "status_date": "2019-04-12",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "interior remodel, add family rm, office, bath gr level. add internal stair from 2nd fl to gr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M347808",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-13",
+      "status_date": "2012-09-13",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M202427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-14",
+      "status_date": "2010-05-14",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807025828",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-02",
+      "status_date": "2008-07-02",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3054",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656017",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

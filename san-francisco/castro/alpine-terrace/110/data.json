@@ -1,0 +1,167 @@
+{
+  "address": "110 Alpine Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/alpine-terrace/110/",
+  "apn": "2609003",
+  "block": "2609",
+  "lot": "003",
+  "eas_baseid": "341909",
+  "coordinates": {
+    "lat": 37.768741,
+    "lng": -122.437739
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2522,
+    "building_area_sqft": 1470,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0110 ALPINE              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2087395,
+    "assessed_improvement_value": 894598,
+    "last_sale_date": "2022-06-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409090325",
+      "type": "new construction wood frame",
+      "status": "reinstated",
+      "filed": "2024-10-31",
+      "status_date": "2025-11-12",
+      "estimated_cost": 126262,
+      "revised_cost": 142023,
+      "description": "to erect 1 story, type v-b, detach garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409090322",
+      "type": "additions alterations or repairs",
+      "status": "reinstated",
+      "filed": "2024-10-31",
+      "status_date": "2025-11-12",
+      "estimated_cost": 505050,
+      "revised_cost": 839758,
+      "description": "project provides a renovation, vertical & horizontal addition to an (e) single family. new detached garage will be provided.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907025025",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-02",
+      "status_date": "2019-08-28",
+      "estimated_cost": 20000,
+      "revised_cost": 34133,
+      "description": "replace cabinets and counter tops in kitchen. relocate existing outlets per code. 12x20",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709209125",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-20",
+      "status_date": "2017-09-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9903827",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1999-02-26",
+      "status_date": "1999-11-19",
+      "estimated_cost": 40000,
+      "description": "erect a one story private parking garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806605",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-04-16",
+      "status_date": "1999-03-11",
+      "estimated_cost": 60000,
+      "description": "kitchen remodel-cabinet & counter",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9800523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-01-13",
+      "status_date": "1998-04-09",
+      "estimated_cost": 4000,
+      "description": "move partition wall in master bedroom/build 2 closets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-22",
+      "status_date": "1998-01-07",
+      "estimated_cost": 5000,
+      "description": "replace 2 windows, remove cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9026014",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-12-26",
+      "status_date": "1991-05-07",
+      "estimated_cost": 26750,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALPINE&street_type=TER&address_number=110",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2609003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2609&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2609003",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

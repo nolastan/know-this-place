@@ -1,0 +1,117 @@
+{
+  "address": "24 Clifford Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/clifford-terrace/24/",
+  "apn": "2618A016",
+  "block": "2618A",
+  "lot": "016",
+  "eas_baseid": "342346",
+  "coordinates": {
+    "lat": 37.763996,
+    "lng": -122.44333
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2456,
+    "building_area_sqft": 2406,
+    "basement_area_sqft": 636,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0024 CLIFFORD            TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2112263,
+    "assessed_improvement_value": 905255,
+    "last_sale_date": "2017-06-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010166662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-16",
+      "status_date": "2021-07-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "minor dryrot repair on siding at side around the 2 windows. replacing insullation. all work not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610266142",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-26",
+      "status_date": "2006-10-26",
+      "estimated_cost": 13400,
+      "revised_cost": 13400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32684",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-27",
+      "status_date": "2005-05-27",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403158622",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-03-15",
+      "status_date": "2006-02-09",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel kitchen, new 1 story rear addition with roof deck, fill in below 2nd floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLIFFORD&street_type=TER&address_number=24",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618A016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618A&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618A016",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

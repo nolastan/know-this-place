@@ -1,0 +1,94 @@
+{
+  "address": "4046 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4046/",
+  "apn": "3601018",
+  "block": "3601",
+  "lot": "018",
+  "eas_baseid": "361766",
+  "coordinates": {
+    "lat": 37.758134,
+    "lng": -122.431356
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2044,
+    "basement_area_sqft": 480,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4046 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31154,
+    "assessed_improvement_value": 148201
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200310288748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-28",
+      "status_date": "2003-11-13",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "2.2 kilomett photovoltic solar system-roof mounted",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221114S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-12-08",
+      "status_date": "1994-04-28",
+      "estimated_cost": 99999,
+      "description": "vertical addition.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4046",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601018",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

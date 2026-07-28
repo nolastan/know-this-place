@@ -1,0 +1,115 @@
+{
+  "address": "4769 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4769/",
+  "apn": "2711033",
+  "block": "2711",
+  "lot": "033",
+  "eas_baseid": "344871",
+  "coordinates": {
+    "lat": 37.758742,
+    "lng": -122.443128
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1703,
+    "building_area_sqft": 1674,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4769 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1290817,
+    "assessed_improvement_value": 471146,
+    "last_sale_date": "2009-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200411300322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-30",
+      "status_date": "2004-12-14",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair (replace) dry rot on deck boards - no change to existing structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104207389",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-20",
+      "status_date": "2001-08-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#9919854 & 9916111 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919854",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-09-21",
+      "status_date": "2001-04-23",
+      "estimated_cost": 40000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-05",
+      "status_date": "2001-04-23",
+      "estimated_cost": 15000,
+      "description": "reinforce footings, provide new floor over slab on grade",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4769",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711033",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

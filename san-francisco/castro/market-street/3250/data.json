@@ -1,0 +1,136 @@
+{
+  "address": "3250 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3250/",
+  "apn": "2704036",
+  "block": "2704",
+  "lot": "036",
+  "eas_baseid": "344741",
+  "coordinates": {
+    "lat": 37.758861,
+    "lng": -122.445191
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 5,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 5,
+    "lot_area_sqft": 4321,
+    "building_area_sqft": 3644,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3250 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 547232,
+    "assessed_improvement_value": 523245,
+    "last_sale_date": "1996-08-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200408171813",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-17",
+      "status_date": "2004-08-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew ap # 981187",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106040635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-04",
+      "status_date": "2001-09-27",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "renew bldng permit appl-200008117659-to complete renovation of one unit per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117659",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-11",
+      "status_date": "2000-12-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise 9811876. dbi& fire dept the fire escape .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816052",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-08-14",
+      "status_date": "1999-01-28",
+      "estimated_cost": 5000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811876",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-06-25",
+      "status_date": "2001-03-28",
+      "estimated_cost": 25000,
+      "revised_cost": 35000,
+      "description": "alteration & conversion of (e) storage to living space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-14",
+      "status_date": "1990-09-11",
+      "estimated_cost": 6500,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3250",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2704036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2704&lot=036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2704036",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

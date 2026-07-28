@@ -1,0 +1,104 @@
+{
+  "address": "3782 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3782/",
+  "apn": "2614014",
+  "block": "2614",
+  "lot": "014",
+  "eas_baseid": "342122",
+  "coordinates": {
+    "lat": 37.764206,
+    "lng": -122.436519
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1825,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3782 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 80836,
+    "assessed_improvement_value": 63507
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407181592",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-18",
+      "status_date": "2014-07-18",
+      "estimated_cost": 11520,
+      "revised_cost": 11520,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608159565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-15",
+      "status_date": "2006-12-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replacement in kind 2nd exit wood stair at rear. correction for nov 200669804, replace existing wood stair in kind at rear w/o permit. add new guardrail at lower roof where area exit to wood stair, replace existing window with egress window at rear stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603076106",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-03-07",
+      "status_date": "2006-12-14",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "repair post & steps & railing @ rear stair less than 50% of stairs. if more than 50%, bldg inspector may require plans & city planning approval.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3782",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614014",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

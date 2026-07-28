@@ -1,0 +1,136 @@
+{
+  "address": "4145–4147 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4145/",
+  "apn": "2696031",
+  "block": "2696",
+  "lot": "031",
+  "eas_baseid": "344445",
+  "coordinates": {
+    "lat": 37.759132,
+    "lng": -122.435769
+  },
+  "address_range": "4145–4147",
+  "street_numbers_on_parcel": [
+    "4145",
+    "4147"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2238,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4147 4145 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 51696,
+    "assessed_improvement_value": 94208
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309146629",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-09-14",
+      "status_date": "2023-09-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply with the abe program. barrier remediation as identified on plans per abe checklist compliance form, provide isa signage at exterior with buzzer for customer assistance. abe# 202002041685.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M151424",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-13",
+      "status_date": "2009-02-13",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804220368",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "2008-04-22",
+      "status_date": "2026-01-27",
+      "estimated_cost": 1200,
+      "description": "to erect non electric single faced sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821626",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-22",
+      "status_date": "1999-01-11",
+      "estimated_cost": 400,
+      "description": "replace existing property line window with fixed steel frame",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820554",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "1998-10-08",
+      "status_date": "1999-01-11",
+      "estimated_cost": 400,
+      "description": "repair widnow in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413397",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-12-21",
+      "status_date": "1985-10-01",
+      "estimated_cost": 41000,
+      "description": "electrical alterations stairway alteration exit door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4145",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2696031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2696&lot=031",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2696031",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}

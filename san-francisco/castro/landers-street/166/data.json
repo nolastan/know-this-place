@@ -1,0 +1,114 @@
+{
+  "address": "166–168 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/166/",
+  "apn": "3557025",
+  "block": "3557",
+  "lot": "025",
+  "eas_baseid": "359459",
+  "coordinates": {
+    "lat": 37.765095,
+    "lng": -122.427929
+  },
+  "address_range": "166–168",
+  "street_numbers_on_parcel": [
+    "166",
+    "168"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 1580,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0168 0166 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1067943,
+    "assessed_improvement_value": 457688,
+    "last_sale_date": "2019-10-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Review, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alert Alley Early Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1910",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202506118437",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-07-24",
+      "status_date": "2026-02-05",
+      "estimated_cost": 850000,
+      "revised_cost": 1357599,
+      "description": "build horizontal extension to the rear of the (e) ground floor and second floors. build a vertical extension (3rd floor addition) avove the seond floor. preserve the (e) front facade and front exterior stairs. remodel and renovate interior spaces to both (e) floors. build an on grade patio at the",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307172341",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2023-07-17",
+      "status_date": "2025-05-22",
+      "estimated_cost": 350000,
+      "description": "horizontal ext to the rear of (e) ground fl and 2nd fl. build a vertical ext (3rd fl) above the 2nd fl. preserve the (e) front facade and front exterior stairs. remodel and renovate int spaces to both (e) fl. build an on-grade patio at rear yard. build roof deck above the new 3rd fl excavate 25yds.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=166",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42792925535457%2037.765094710239985)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ]
+}
