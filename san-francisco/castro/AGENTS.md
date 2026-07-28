@@ -36,18 +36,21 @@ addresses — the seeder skips them automatically, because the assessor's
 
 ## Seeding this neighborhood
 
-Pages here are generated — see "Page lifecycle" in the root `AGENTS.md`:
+The neighborhood has already been seeded: every residential parcel the city's
+records describe has a page. Those pages are now edited by hand like any other
+— see "Page lifecycle" in the root `AGENTS.md`.
+
+Re-run the seeder only to pick up parcels that have newly appeared:
 
 ```
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
 ```
 
-The run skips condominium parcels (individual units with their own APNs, not
-buildings), non-residential parcels, and parcels with no assessor record. It
-also leaves every hand-authored page alone — the 700 block of Castro Street and
-the first pages on Hartford and Collingwood were written by hand and have no
-`generator` key in their `data.json`.
+It creates pages that don't exist and touches nothing that does, so running it
+again is safe. The run skips condominium parcels (individual units with their
+own APNs, not buildings), non-residential parcels, and parcels with no assessor
+record.
 
 **Corbett Heights is inside this city boundary but filed separately**, as
 `san-francisco/corbett-heights/AGENTS.md` explains. Its streets — Corbett,

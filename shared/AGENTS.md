@@ -5,21 +5,19 @@ truth for an address page — structured facts *and* prose (in its `narrative`
 field); there is no `index.md`. Every fact and sentence in the HTML must trace
 back to `data.json`, so the page can be regenerated from that file alone.
 
-**Two ways a page gets its HTML.** Most pages are *generated*: `data.json`
-carries a `generator` key and `python3 scripts/seed_pages.py render <page-dir>`
-writes the HTML by composing the blocks below. Read this file to understand
-what the renderer emits and to change it. A minority are *hand-authored* — a
-page with a real story, a bespoke layout, committed photographs — and there you
-write the HTML yourself, to this same contract, and the page carries no
-`generator` key so the script leaves it alone.
+There is no template engine and no build step: **you author the HTML directly
+from `data.json`**, and the committed `index.html` is the whole page.
 
-Either way there is no template engine and no build step for the reader: the
-committed `index.html` is the whole page.
+**A page's first draft may have been machine-written; every edit after that is
+yours.** `scripts/seed_pages.py` writes the initial `data.json` + `index.html`
+for a parcel that has no page yet, composing the blocks below from the city's
+data. It never returns to a page it has written. So when you change a fact,
+change the HTML to match by hand — there is nothing to re-run, and nothing that
+will overwrite you.
 
-**Fix the renderer, not the output.** On a generated page, hand-editing
-`index.html` is undone by the next `render` and puts the page out of step with
-the script. If the HTML is wrong on one page it is wrong on hundreds — change
-`scripts/seed_pages.py` and re-render.
+Seeded drafts follow this contract exactly, which is what makes them safe to
+edit: the blocks, classes and structure below are the ones you will find on the
+page in front of you.
 
 The goal is a **designed data page, not an article.** A good page looks like a
 purpose-built dashboard for one building — stat tiles, a visual timeline,

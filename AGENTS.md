@@ -114,14 +114,21 @@ san-francisco/                        city
 
 ## Page lifecycle
 
-There are two paths, and **picking the right one is the single biggest call you
-make.** Seeding is a data job and belongs to the script; storytelling is a
-writing job and belongs to you.
+The split is **new page vs. existing page**, and nothing else:
 
-### A. Seeding new pages — always programmatic
+- A page that **doesn't exist yet** is created by the seeder, in bulk.
+- A page that **already exists** is only ever edited by hand, by you.
 
-Every fact on a fresh page comes from a DataSF API. Do **not** hand-author
-those pages one at a time; run the seeder:
+`scripts/seed_pages.py` enforces that split on its own. It writes into a
+directory only when the directory is empty of a page, so a second run creates
+nothing and changes nothing. Pages carry no marker saying who wrote them,
+because there is nothing to decide: if the page is there, it is yours to edit,
+not the script's to replace.
+
+### A. Creating pages that don't exist yet — use the seeder
+
+Every fact on a fresh page comes from a DataSF API. Don't hand-author those one
+at a time:
 
 ```
 python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
@@ -133,32 +140,28 @@ python3 scripts/validate.py
 
 `seed` joins the five datasets in DATA-SOURCES.md, decides which parcels may
 become pages (skipping condominium units, non-residential parcels and parcels
-with no assessor record), writes `data.json` + `index.html` for each, and
-rebuilds the street hub pages beneath the neighborhood. It varies each page's
-composition from the data it actually has — a parcel with four or more permits
-gets the two-column split, a thinner one runs full width — so the pages are not
-eight identical documents with the numbers swapped.
+with no assessor record), writes `data.json` + `index.html` for each **new** one,
+and rebuilds the street hub pages beneath the neighborhood. It varies each
+page's composition from the data it actually has — a parcel with four or more
+permits gets the two-column split, a thinner one runs full width — so the pages
+are not identical documents with the numbers swapped.
 
-Rules for the seeded path:
-
-- **`seed` never overwrites a hand-authored page.** Generated pages carry a
-  `generator` key in `data.json`; a `data.json` without one is a human's work
-  and is left untouched. Don't remove that key to force a rewrite.
-- **Generated pages carry no `narrative`.** The script will not invent prose,
-  and per "Writing pages" a page whose components carry everything is finished
-  with no prose at all. Adding a `lead` is a later, human-directed pass.
-- **Fix the generator, not the page.** If many pages render something wrong,
-  the bug is in `scripts/seed_pages.py`. Patch it and re-run `seed` or
-  `render`; hand-patching the HTML puts the page and the script out of sync and
-  the next run silently reverts you.
+- **The output is a first draft, not a finished page.** It carries no
+  `narrative`, because the script won't invent prose, and per "Writing pages" a
+  page whose components carry everything is finished with no prose at all.
+  Everything after the draft is hand work.
+- **A bug found after seeding is fixed by hand, on the affected pages.** Patch
+  the script too if it would recur on the next neighborhood, but re-running
+  `seed` will not repair anything already on disk — by design.
 - **Review a sample before committing.** Read a handful across the range —
   a parcel with no permits, one with dozens, one spanning several street
   numbers, one in a historic district — and check the numbers against the
   cited queries.
 
-### B. Editing one page — by hand
+### B. Editing a page that exists — by hand, always
 
-Feedback issues, local-history research, notable residents, a correction:
+Feedback issues, local-history research, notable residents, a correction, a
+refresh of stale data. The seeder has no part in this:
 
 1. Read this file, the neighborhood `AGENTS.md`, and
    [shared/AGENTS.md](shared/AGENTS.md) (the HTML contract).
@@ -166,12 +169,9 @@ Feedback issues, local-history research, notable residents, a correction:
    the `sources` array with query URLs and retrieval dates.
 3. Write any genuine narrative into `data.json`'s `narrative` field — see
    "Writing pages" below. There is no separate prose file.
-4. Regenerate `index.html` from `data.json`. On a generated page that is
-   `python3 scripts/seed_pages.py render <page-dir>`; on a hand-authored page
-   you edit the HTML to match `data.json` yourself, per `shared/AGENTS.md`.
-   Prose the renderer can't express (a `narrative`, a bespoke layout) means the
-   page becomes hand-authored: drop the `generator` key so `seed` and `render`
-   leave it alone from then on.
+4. Bring `index.html` back in step with `data.json` yourself, per
+   `shared/AGENTS.md`. Change only what the fact changed; leave the rest of the
+   page as it stands.
 5. If the page's one-line hub description should change, edit its `hook` field
    in `data.json` — that is where a hub gets it — then rebuild the hubs with
    `python3 scripts/seed_pages.py hubs --city <city> --area <area>`. Rebuilding
@@ -280,14 +280,13 @@ principles:
   building so the layout fits its story — a history-rich place opens with prose
   and photos; a plain one leans on the stat band and timeline. Bespoke layout,
   shared components.
-  - On a **generated** page this varies with the data, not with a story: the
-    renderer drops panels a parcel has no data for and runs a thin permit
-    record full width instead of splitting the page. That is the right amount
-    of variation for a page whose facts are all from one API, and a run of
-    similar buildings honestly producing similar pages is not a defect.
-    When a building turns out to deserve a layout the renderer can't produce,
-    that is the signal to promote it to hand-authored (drop the `generator`
-    key) — not to add a special case to the script.
+  - A **seeded first draft** varies with the data, not with a story: it drops
+    panels a parcel has no data for and runs a thin permit record full width
+    instead of splitting the page. That is the right amount of variation for a
+    draft whose facts are all from one API, and a run of similar buildings
+    honestly producing similar drafts is not a defect. When a building deserves
+    a layout the seeder wouldn't have produced, just write it — the page is
+    yours to edit and nothing will overwrite it.
 - **Be honest about thin pages.** If all we know is the assessor basics, a
   clean stat band + short timeline is a complete page — never pad with generic
   neighborhood filler copied across pages. (Neighborhood context lives on the
@@ -328,8 +327,7 @@ pattern, and always include `address` and non-empty `sources`:
       "name": "SF Building Permits (DataSF)",
       "query": "https://data.sfgov.org/resource/....json?...",
       "retrieved": "2026-07-21" }
-  ],
-  "generator": { "name": "scripts/seed_pages.py", "version": 1 }
+  ]
 }
 ```
 
@@ -338,10 +336,6 @@ here, not in the hub's HTML, so a hub can be rebuilt without losing it. It is
 optional: when a page has no `hook`, the hub derives a plain one from the
 building's data. Write one whenever you can say something better than
 "a 1901 two-flat" — it then survives every rebuild.
-
-**`generator`** marks the page as machine-written. `seed` and `render` will only
-touch a page that has it, so removing the key is how you take a page over by
-hand — do that whenever a building earns a `narrative` or a bespoke layout.
 
 **The `narrative` field** is where all of a page's prose lives — it replaces
 the old `index.md`. `lead` is one or two sentences, and is omitted when the

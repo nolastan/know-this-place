@@ -1,26 +1,24 @@
 #!/usr/bin/env python3
-"""Seed and render address pages from the DataSF APIs. Stdlib only.
+"""Seed new address pages from the DataSF APIs. Stdlib only.
 
-Two jobs, one file:
+This writes the **first draft of a page that doesn't exist yet** — nothing more.
+Every fact on a fresh address page comes from an API, so producing that draft is
+a data job, not a writing one.
 
-  fetch/plan/seed  — pull the datasets in DATA-SOURCES.md for a neighborhood,
-                     decide which parcels may become pages, and write
-                     `data.json` + `index.html` for each.
-  render           — regenerate `index.html` from `data.json` alone. This is the
-                     mechanical form of the AGENTS.md rule that `data.json` is
-                     the single source of truth and `index.html` is a generated
-                     artifact.
-
-`render` only touches pages carrying a `generator` key in their `data.json`.
-Hand-authored pages are left alone; the generator never overwrites human work.
+**It never touches a page that already exists.** Once a page is on disk it
+belongs to whoever edits it next, by hand, per shared/AGENTS.md. There is no
+re-render and no refresh path: a directory that already holds a `data.json` is
+skipped, whether the page was seeded a minute ago or written by a person last
+year. That is the whole rule, and it is why pages need no marker distinguishing
+"generated" from "hand-authored" — the only question is whether the page exists.
 
 Usage:
-  python3 scripts/seed_pages.py fetch  --neighborhood "Castro/Upper Market"
-  python3 scripts/seed_pages.py plan   --neighborhood "Castro/Upper Market"
-  python3 scripts/seed_pages.py seed   --neighborhood "Castro/Upper Market" \
-                                       --city san-francisco --area castro
-  python3 scripts/seed_pages.py render san-francisco/castro/hartford-street/19
-  python3 scripts/seed_pages.py hubs   --city san-francisco --area castro
+  python3 scripts/seed_pages.py fetch --neighborhood "Castro/Upper Market"
+  python3 scripts/seed_pages.py plan  --neighborhood "Castro/Upper Market"
+  python3 scripts/seed_pages.py seed  --neighborhood "Castro/Upper Market" \
+                                      --city san-francisco --area castro
+  python3 scripts/seed_pages.py names --neighborhood "Castro/Upper Market"
+  python3 scripts/seed_pages.py hubs  --city san-francisco --area castro
 """
 from __future__ import annotations
 
@@ -42,8 +40,6 @@ SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
 CACHE = ROOT / ".cache"
 UA = {"User-Agent": "know-this-place-seeder/1.0"}
-
-GENERATOR = {"name": "scripts/seed_pages.py", "version": 1}
 
 # The `.sub` locality line, per neighborhood. The Castro's parenthetical is
 # required by san-francisco/castro/AGENTS.md — it is what tells a reader that
@@ -810,7 +806,6 @@ def build_record(parcel: dict, ctx: dict) -> dict:
                        f"intersects(the_geom,%20%27POINT({lng}%20{lat})%27)"),
              "retrieved": ctx["retrieved"]})
 
-    rec["generator"] = dict(GENERATOR)
     return rec
 
 
@@ -1736,16 +1731,11 @@ def cmd_seed(args) -> int:
             continue
         page_dir = ROOT / rec["path"].strip("/")
         existing = page_dir / "data.json"
-        if existing.exists():
-            try:
-                prior = json.loads(existing.read_text())
-            except json.JSONDecodeError:
-                prior = {}
-            if not prior.get("generator"):
-                # Hand-authored page — never overwrite a human's work.
-                skipped += 1
-                touched_streets.add(page_dir.parent)
-                continue
+        if existing.exists() or (page_dir / "index.html").exists():
+            # The page exists. It belongs to whoever edits it next, by hand.
+            skipped += 1
+            touched_streets.add(page_dir.parent)
+            continue
         page_dir.mkdir(parents=True, exist_ok=True)
         existing.write_text(json.dumps(rec, indent=2, ensure_ascii=False) + "\n",
                             encoding="utf-8")
@@ -1757,9 +1747,9 @@ def cmd_seed(args) -> int:
         write_street_hub(street_dir, ctx, not_covered.get(street_dir.name))
     n_streets = write_neighborhood_hub(ROOT / args.city / args.area, ctx)
     print(f"neighborhood hub lists {n_streets} street(s)")
-    print(f"wrote {written} page(s); left {skipped} hand-authored page(s) alone; "
-          f"skipped {elsewhere} parcel(s) already documented elsewhere; "
-          f"rebuilt {len(touched_streets)} street hub(s)")
+    print(f"created {written} new page(s); left {skipped} existing page(s) "
+          f"untouched; skipped {elsewhere} parcel(s) already documented under "
+          f"another neighborhood; rebuilt {len(touched_streets)} street hub(s)")
     if excluded:
         print(f"excluded streets (filed under another neighborhood): "
               f"{', '.join(sorted(excluded))}")
@@ -1801,29 +1791,6 @@ def cmd_names(args) -> int:
     print(f"# {len(seen)} distinct descriptions, {len(cands)} flagged for review")
     for d in cands:
         print(d)
-    return 0
-
-
-def cmd_render(args) -> int:
-    targets: list = []
-    for raw in args.paths:
-        p = Path(raw)
-        p = p if p.is_absolute() else ROOT / p
-        if p.is_file():
-            targets.append(p)
-        elif (p / "data.json").exists():
-            targets.append(p / "data.json")
-        else:
-            targets.extend(sorted(p.rglob("data.json")))
-    n = 0
-    for f in targets:
-        rec = json.loads(f.read_text())
-        if not rec.get("generator") and not args.force:
-            print(f"  skip (hand-authored): {f.parent.relative_to(ROOT)}")
-            continue
-        (f.parent / "index.html").write_text(render_html(rec), encoding="utf-8")
-        n += 1
-    print(f"rendered {n} page(s)")
     return 0
 
 
@@ -1876,12 +1843,6 @@ def main() -> int:
     common(p)
     p.add_argument("--refresh", action="store_true")
     p.set_defaults(fn=cmd_names)
-
-    p = sub.add_parser("render", help="regenerate index.html from data.json")
-    p.add_argument("paths", nargs="+")
-    p.add_argument("--force", action="store_true",
-                   help="also re-render hand-authored pages (destroys bespoke layout)")
-    p.set_defaults(fn=cmd_render)
 
     p = sub.add_parser("hubs", help="rebuild street hub pages from the pages beneath them")
     common(p, neighborhood_required=False)
