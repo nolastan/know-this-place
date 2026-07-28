@@ -1,0 +1,165 @@
+{
+  "address": "20 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/20/",
+  "apn": "3582038",
+  "block": "3582",
+  "lot": "038",
+  "eas_baseid": "360712",
+  "coordinates": { "lat": 37.762166, "lng": -122.434295 },
+  "parcel": {
+    "year_built": 1901,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 1442,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1656837,
+    "assessed_improvement_value": 710073,
+    "last_sale_date": "1997-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1901",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hartford Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "period_of_significance": "1900-1902",
+    "significance_note": "Significant under Criterion 3 for its association with master builder Fernando Nelson, as an early 20th-century Victorian-era residential tract development.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9825128",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-09",
+      "estimated_cost": 3200,
+      "description": "retrofit work shear wall with 1/2 ply sill plate bolting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606614",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-17",
+      "completed": "1996-05-10",
+      "estimated_cost": 515,
+      "description": "repair dry rot at rear deck & left rear corner",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505935",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-04-24",
+      "estimated_cost": 1,
+      "description": "renew expired permit appn. 9403253",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403253",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-03-07",
+      "estimated_cost": 45000,
+      "revised_cost": 35000,
+      "description": "cabinets & appliances in kitchen will be removed & replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315610",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-09-10",
+      "estimated_cost": 9095,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108840",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-05-20",
+      "estimated_cost": 1950,
+      "description": "work to comply with sfbc, repair mudsill, repair deck, etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916449",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-09-07",
+      "estimated_cost": 40000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-16",
+      "completed": "1985-11-19",
+      "estimated_cost": 740,
+      "description": "installation of aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_omitted": {
+    "count": 2,
+    "reason": "nominal $1 street-space/sidewalk permits",
+    "numbers": ["M119516", "M403369"]
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=20",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=038",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582038",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43429541905336%2037.76216616142257)%27)",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}

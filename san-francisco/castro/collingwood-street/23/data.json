@@ -1,0 +1,125 @@
+{
+  "address": "23–27 Collingwood Street, San Francisco, CA 94114",
+  "address_range": "23–27",
+  "path": "/san-francisco/castro/collingwood-street/23/",
+  "apn": "2647028",
+  "block": "2647",
+  "lot": "028",
+  "eas_baseid": "343213",
+  "coordinates": { "lat": 37.761980, "lng": -122.435950 },
+  "parcel": {
+    "year_built": 1908,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 4,
+    "bedrooms": 9,
+    "construction_type_code": "D",
+    "lot_area_sqft": 2491,
+    "building_area_sqft": 4145,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0027 0023 COLLINGWOOD ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1206287,
+    "assessed_improvement_value": 804192,
+    "last_sale_date": "2021-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unknown Historic Resource status",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200309104363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-10",
+      "completed": "2004-03-01",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "replace all kitchen appliances/cabinets, replace all bathroom fix. alter bathroom wall to accomodate",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9521451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-22",
+      "completed": "1996-04-23",
+      "estimated_cost": 11000,
+      "description": "unit 25-paint,repl 4 lght fxtrs-renov bthrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408327",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-05-31",
+      "completed": "1996-04-23",
+      "estimated_cost": 60000,
+      "revised_cost": 22000,
+      "description": "rebuild rear stair and porch, add storage & laundry in basmt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505779",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-05",
+      "completed": "1985-07-16",
+      "estimated_cost": 1500,
+      "description": "repair back stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_omitted": {
+    "count": 1,
+    "reason": "nominal-cost street-space permit ($0)",
+    "numbers": ["M27910"]
+  },
+  "narrative": {},
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLLINGWOOD&street_type=ST&address_number=23",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2647028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2647&lot=028",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2647028",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43595020943991%2037.76198048774103)%27)",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}

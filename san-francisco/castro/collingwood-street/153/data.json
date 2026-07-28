@@ -1,0 +1,115 @@
+{
+  "address": "153–155 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/153/",
+  "address_range": "153–155",
+  "apn": "2695025",
+  "block": "2695",
+  "lot": "025",
+  "eas_baseid": "344402",
+  "coordinates": { "lat": 37.759972, "lng": -122.435713 },
+  "parcel": {
+    "year_built": 1932,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "construction_type_code": "D",
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3568,
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48719,
+    "assessed_improvement_value": 96078
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201106299195",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-29",
+      "completed": "2011-08-22",
+      "estimated_cost": 6000,
+      "revised_cost": 9000,
+      "description": "removing existing bath tub and installing a walk-in tub, new tub fits in the old tub's footprint, adding 2 circuits for air & water pump, exhaust fan terminating to outside",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305156986",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-05-15",
+      "estimated_cost": 11400,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010096218",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-09",
+      "completed": "2020-11-24",
+      "estimated_cost": 5725,
+      "description": "replace 2 full-frame windows, non-visible, with fibrex, u-factor 0.32 shgc 0.25",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302091722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-09",
+      "completed": "2023-06-07",
+      "estimated_cost": 21140,
+      "description": "remove and replace 2 out-swing patio doors in rear, vinyl to wood, same size and location, retrofit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411205408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-20",
+      "completed": "2025-04-21",
+      "estimated_cost": 12000,
+      "description": "repair dry rot 1st floor, remove balcony, remove and repair stucco, paint, approx. 60 sq ft",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLLINGWOOD&street_type=ST&address_number=153",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2695025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2695&lot=025",
+      "retrieved": "2026-07-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2695025",
+      "retrieved": "2026-07-27"
+    }
+  ]
+}
