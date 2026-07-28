@@ -1,0 +1,149 @@
+{
+  "address": "26 Uranus Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/uranus-terrace/26/",
+  "apn": "2655002",
+  "block": "2655",
+  "lot": "002",
+  "eas_baseid": "343449",
+  "coordinates": {
+    "lat": 37.761448,
+    "lng": -122.445789
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2931,
+    "building_area_sqft": 2124,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0026 URANUS              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 757222,
+    "assessed_improvement_value": 324520,
+    "last_sale_date": "2010-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408098384",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-08-09",
+      "status_date": "2024-08-23",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "install repace front, back and side windows. total 2 front wood in-kind. back 2 french door, 1 alley door, 2 windows in light well. 3 windows in rear. 2 windows on south side. total 9 windows. all windows and doors to be replaced in kind in same openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310026433",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-02",
+      "status_date": "2005-02-16",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305053841",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-05",
+      "status_date": "2003-06-24",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "owner voluntary foundation upgrade & replacement -no change to unit count nor occupancy inside grnd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302917",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-23",
+      "status_date": "1994-06-20",
+      "estimated_cost": 1,
+      "description": "permit inspection renewal #9205006",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9205006",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-03-30",
+      "status_date": "1992-12-17",
+      "estimated_cost": 6000,
+      "description": "replace existing entry stair in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111216",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-06-27",
+      "status_date": "1992-02-14",
+      "estimated_cost": 400,
+      "description": "repair existing concrete entry stairs with adhesive.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304930",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-06-03",
+      "status_date": "1984-01-19",
+      "estimated_cost": 3000,
+      "description": "remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URANUS&street_type=TER&address_number=26",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2655002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2655&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2655002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

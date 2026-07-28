@@ -1,0 +1,141 @@
+{
+  "address": "306 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/306/",
+  "apn": "2750003",
+  "block": "2750",
+  "lot": "003",
+  "eas_baseid": "345442",
+  "coordinates": {
+    "lat": 37.757081,
+    "lng": -122.437166
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 1146,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0306 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 479020,
+    "assessed_improvement_value": 135713,
+    "last_sale_date": "1997-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307132092",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-13",
+      "status_date": "2023-10-03",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "master bath remodel. like for like. remove and replace all cabinetry, counters, fixtures, valves, etc. no structural alterations proposed. no wall layout change. no floor layout changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809210991",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-21",
+      "status_date": "2018-10-23",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008138751",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-13",
+      "status_date": "2010-08-31",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reinforcement of existing footing under front entrance stair. no change to exist building elevation. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406247261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-24",
+      "status_date": "2004-09-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200309175041 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309175041",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-17",
+      "status_date": "2006-12-21",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "repair (e) sunporch, replace stairs to back yard, remodel kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018175",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-10",
+      "status_date": "1990-10-29",
+      "estimated_cost": 5840,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=306",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750003",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

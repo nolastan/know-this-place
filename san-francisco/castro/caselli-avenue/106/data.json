@@ -1,0 +1,143 @@
+{
+  "address": "106–108 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/106/",
+  "apn": "2690003",
+  "block": "2690",
+  "lot": "003",
+  "eas_baseid": "344207",
+  "coordinates": {
+    "lat": 37.759836,
+    "lng": -122.441693
+  },
+  "address_range": "106–108",
+  "street_numbers_on_parcel": [
+    "106",
+    "108"
+  ],
+  "parcel": {
+    "year_built": 1939,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0108 0106 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38528,
+    "assessed_improvement_value": 68568
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603177735",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-17",
+      "status_date": "2026-07-07",
+      "estimated_cost": 21500,
+      "revised_cost": 21500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810183587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-18",
+      "status_date": "2023-08-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to comply with nov 20188714 item #1 and 200798928 item #2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705252353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-25",
+      "status_date": "2007-05-25",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace damaged post, stair treads at rear of building. to comply w/ov 200798938.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M58303",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-02-21",
+      "status_date": "2007-02-21",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M54464",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-01-18",
+      "status_date": "2007-01-18",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303929",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-10",
+      "status_date": "1993-05-10",
+      "estimated_cost": 3200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=106",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690003",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "address": "2727 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2727/",
+  "apn": "2650007",
+  "block": "2650",
+  "lot": "007",
+  "eas_baseid": "343298",
+  "coordinates": {
+    "lat": 37.761448,
+    "lng": -122.438642
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 18,
+    "stories": 3,
+    "rooms": 57,
+    "bathrooms": 18,
+    "lot_area_sqft": 6642,
+    "building_area_sqft": 16641,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2727 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 780924,
+    "assessed_improvement_value": 1610722
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002073805",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-07",
+      "status_date": "2020-03-10",
+      "estimated_cost": 55250,
+      "revised_cost": 55250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509187372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-18",
+      "status_date": "2016-06-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "soft story retrofit to comply with sfbc ch 34 b based on iebc appendix a4 structural calcs. revision to 201506189263",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506189263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-18",
+      "status_date": "2016-06-24",
+      "estimated_cost": 80000,
+      "revised_cost": 145000,
+      "description": "soft story retrofit to comply with sfbc chap. 34b based on 2012 iebc appendix a-4 structural calculations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710155430",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-15",
+      "status_date": "2007-10-15",
+      "estimated_cost": 2160,
+      "revised_cost": 2160,
+      "description": "install 9 vinyl windows in kind into existing frames.no change in size or location. windows do not face the street. if applicable, bedroom windows will comply with section 310.4 for rescue. all windows will be double pane and have a u-factor of .30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316888",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-28",
+      "status_date": "1994-05-02",
+      "estimated_cost": 15000,
+      "description": "repair center patio, remove & replace membrane & concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303539",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-04",
+      "status_date": "1994-01-05",
+      "estimated_cost": 16000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901604",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-01-30",
+      "status_date": "1989-07-10",
+      "estimated_cost": 5000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312088",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-28",
+      "status_date": "1985-02-13",
+      "estimated_cost": 1500,
+      "description": "bring into code as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=2727",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2650007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2650&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2650007",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

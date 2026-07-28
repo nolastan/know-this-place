@@ -1,0 +1,115 @@
+{
+  "address": "54–58 Sharon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sharon-street/54/",
+  "apn": "3558049",
+  "block": "3558",
+  "lot": "049",
+  "eas_baseid": "359547",
+  "coordinates": {
+    "lat": 37.765139,
+    "lng": -122.430158
+  },
+  "address_range": "54–58",
+  "street_numbers_on_parcel": [
+    "54",
+    "56",
+    "58"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4275,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0056 0054 SHARON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1551594,
+    "assessed_improvement_value": 718445,
+    "last_sale_date": "2013-02-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201511092163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-09",
+      "status_date": "2016-04-08",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "repair rear deck and stairs in kind not exceeding 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505196634",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-19",
+      "status_date": "2015-07-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under pa#201304265600. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304265600",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-26",
+      "status_date": "2013-05-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel kitchens, new cabinets, tile, electrical and gas",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHARON&street_type=ST&address_number=54",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=049",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558049",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

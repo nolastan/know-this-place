@@ -1,0 +1,155 @@
+{
+  "address": "120–124 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/castro/dolores-street/120/",
+  "apn": "3544005",
+  "block": "3544",
+  "lot": "005",
+  "eas_baseid": "358873",
+  "coordinates": {
+    "lat": 37.767437,
+    "lng": -122.427032
+  },
+  "address_range": "120–124",
+  "street_numbers_on_parcel": [
+    "120",
+    "122",
+    "124"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 5375,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0124 0120 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 829112,
+    "assessed_improvement_value": 552723,
+    "last_sale_date": "2003-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201806081452",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-08",
+      "status_date": "2018-06-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#201204188590 and 200811076124. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204188590",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-04-18",
+      "status_date": "2012-05-24",
+      "estimated_cost": 10000,
+      "revised_cost": 11700,
+      "description": "in-kind replacement of 3-story exterior stairs in rear yard 100% per nov 201140582: replacement of extgd required means of egress. same for same",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811076124",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-11-07",
+      "status_date": "2008-11-07",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "under 50% repair to rear staircase (at exterior) 3 story structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16581",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-06",
+      "status_date": "2001-11-06",
+      "revised_cost": 0,
+      "description": "siedwalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403139",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-28",
+      "status_date": "1994-10-19",
+      "estimated_cost": 15950,
+      "description": "termite damage repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910335",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-06-14",
+      "status_date": "1989-09-24",
+      "estimated_cost": 1346,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817914",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-15",
+      "status_date": "1989-01-31",
+      "estimated_cost": 8825,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=120",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

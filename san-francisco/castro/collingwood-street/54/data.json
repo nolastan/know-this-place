@@ -1,0 +1,139 @@
+{
+  "address": "54 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/54/",
+  "apn": "2648008",
+  "block": "2648",
+  "lot": "008",
+  "eas_baseid": "343225",
+  "coordinates": {
+    "lat": 37.761535,
+    "lng": -122.436505
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3083,
+    "building_area_sqft": 1030,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0054 COLLINGWOOD         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1323561,
+    "assessed_improvement_value": 567239,
+    "last_sale_date": "2018-10-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201802121079",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2018-02-12",
+      "status_date": "2018-02-12",
+      "estimated_cost": 950000,
+      "description": "vertical & horizontal addition, lift (e) building 2'-9\" add (n) basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M510467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-12",
+      "status_date": "2014-08-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109225310",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2011-09-22",
+      "status_date": "2012-10-15",
+      "estimated_cost": 70000,
+      "revised_cost": 160000,
+      "description": "lift building up 2'-6\" at ground floor. provide a new garage. horizontal extension at rear of building. remodel (e) ground & main floor. provide new sidewalk, curb cut & minor encroachment for garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905047637",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-05-04",
+      "status_date": "2009-05-04",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "removing sink & cabinet unit and stove from room. n o change to existing kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818421",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-15",
+      "status_date": "2000-07-03",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8703799",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-03-24",
+      "status_date": "1987-07-30",
+      "estimated_cost": 7000,
+      "description": "remove existing cabinets, old bath tub. repair rear stairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLLINGWOOD&street_type=ST&address_number=54",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2648008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2648&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2648008",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

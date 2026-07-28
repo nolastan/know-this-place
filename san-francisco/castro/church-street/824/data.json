@@ -1,0 +1,104 @@
+{
+  "address": "824–828 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/824/",
+  "apn": "3605004",
+  "block": "3605",
+  "lot": "004",
+  "eas_baseid": "362081",
+  "coordinates": {
+    "lat": 37.757631,
+    "lng": -122.428314
+  },
+  "address_range": "824–828",
+  "street_numbers_on_parcel": [
+    "824",
+    "826",
+    "828"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 3044,
+    "building_area_sqft": 2400,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0828 0824 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1005202,
+    "assessed_improvement_value": 1005202,
+    "last_sale_date": "2013-08-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201309247629",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-24",
+      "status_date": "2013-09-24",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "unit a- replace cabinets, tile, sink, appliances in kitchen; re-finish flooring throughout; replace sink & toilet in bathroom. to comply with ce c 150 (k) 8 & 10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004056420",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-05",
+      "status_date": "2000-08-05",
+      "estimated_cost": 4680,
+      "revised_cost": 4680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=824",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605004",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

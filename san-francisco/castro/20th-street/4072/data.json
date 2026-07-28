@@ -1,0 +1,149 @@
+{
+  "address": "4072 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4072/",
+  "apn": "3601022",
+  "block": "3601",
+  "lot": "022",
+  "eas_baseid": "361770",
+  "coordinates": {
+    "lat": 37.758113,
+    "lng": -122.431701
+  },
+  "parcel": {
+    "year_built": 1993,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2919,
+    "basement_area_sqft": 799,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4072 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 530494,
+    "assessed_improvement_value": 475904,
+    "last_sale_date": "1991-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1993",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303033005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-03",
+      "status_date": "2023-04-07",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9521318",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-20",
+      "status_date": "1995-12-20",
+      "estimated_cost": 1,
+      "description": "renew expired appl #8904110 & #9410369",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9410369",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-06-29",
+      "status_date": "1995-02-06",
+      "estimated_cost": 1,
+      "description": "final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207210",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "1992-05-04",
+      "status_date": "1992-05-18",
+      "estimated_cost": 300000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904110",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "1989-03-16",
+      "status_date": "1992-07-30",
+      "estimated_cost": 200000,
+      "revised_cost": 239000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712979",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-09",
+      "status_date": "1988-12-01",
+      "estimated_cost": 46000,
+      "description": "replace retaining wall, replace wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8616016",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1986-12-22",
+      "status_date": "1987-07-23",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4072",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601022",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

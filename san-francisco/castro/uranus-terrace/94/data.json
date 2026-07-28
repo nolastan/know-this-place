@@ -1,0 +1,142 @@
+{
+  "address": "94 Uranus Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/uranus-terrace/94/",
+  "apn": "2655014",
+  "block": "2655",
+  "lot": "014",
+  "eas_baseid": "343459",
+  "coordinates": {
+    "lat": 37.760635,
+    "lng": -122.445574
+  },
+  "parcel": {
+    "year_built": 1969,
+    "units": 2,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 3571,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0094 URANUS              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 365650,
+    "assessed_improvement_value": 798377,
+    "last_sale_date": "1997-08-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1969",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412237294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-23",
+      "status_date": "2025-01-21",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing: remove tar gravel install tpo roof system 16 sf roof replacement. no torch down for 96 and 94 uranus terr. no hot works. no work to (e) roof structural sheathing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212299326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-29",
+      "status_date": "2023-01-31",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "(1) bathroom remodel: replace (e) tub with a walk in tub. install (1) new 20-amp circuit for the tub outlet. drywall patch.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212057660",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-12-05",
+      "status_date": "2022-12-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to permit 202211307364 removing one bathroom remodel from the scope. now only (1) bathroom & (1) kitchen inkind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211307364",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-11-30",
+      "status_date": "2022-11-30",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one kitchen and two bathroom like for like no walls or layout change, 1 shower pan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805149008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-14",
+      "status_date": "2018-07-19",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "replace 3 patio doors and 3 windows, front 2 patio doors replaced with milgard ultra fiberglass, entry door replacement, rear 3 windows and 1 door replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414165",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-09-07",
+      "status_date": "1995-09-05",
+      "estimated_cost": 450,
+      "revised_cost": 10000,
+      "description": "removal of dwelling unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URANUS&street_type=TER&address_number=94",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2655014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2655&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2655014",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

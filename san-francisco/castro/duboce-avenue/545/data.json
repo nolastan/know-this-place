@@ -1,0 +1,124 @@
+{
+  "address": "545 Duboce Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/duboce-avenue/545/",
+  "apn": "3538092",
+  "block": "3538",
+  "lot": "092",
+  "eas_baseid": "358649",
+  "coordinates": {
+    "lat": 37.769129,
+    "lng": -122.432218
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 6,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 6,
+    "bedrooms": 8,
+    "lot_area_sqft": 1772,
+    "building_area_sqft": 4926,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0545 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1892909,
+    "assessed_improvement_value": 811242,
+    "last_sale_date": "2014-10-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1914",
+    "survey_name": "545 Duboce Ave",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201008249477",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-24",
+      "status_date": "2010-09-22",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 10' x 25' feet of siding on top south wall with same style cove siding at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611372",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-25",
+      "status_date": "1997-01-11",
+      "estimated_cost": 800,
+      "description": "install 3 windows in bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419808",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-01",
+      "status_date": "1995-04-01",
+      "estimated_cost": 1,
+      "description": "remove non-bearing walls in garage, floating partitions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=545",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3538092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3538&lot=092",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3538092",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4322179029016%2037.76912871923769)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

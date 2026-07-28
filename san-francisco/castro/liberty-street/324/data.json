@@ -1,0 +1,150 @@
+{
+  "address": "324 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/324/",
+  "apn": "3605042A",
+  "block": "3605",
+  "lot": "042A",
+  "eas_baseid": "362111",
+  "coordinates": {
+    "lat": 37.757497,
+    "lng": -122.428599
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1260,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0324 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1042055,
+    "assessed_improvement_value": 838686,
+    "last_sale_date": "2004-10-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200603297851",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-29",
+      "status_date": "2006-05-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 3 windows, size for size, alum. to wood composite, visible from street, u-valve .39.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36933",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-29",
+      "status_date": "2006-03-29",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505021301",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-05-02",
+      "status_date": "2006-12-12",
+      "estimated_cost": 35000,
+      "revised_cost": 56500,
+      "description": "horizontal addition at 1st story/nw master bdrm suite with nw deck above",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404020338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-02",
+      "status_date": "2004-04-20",
+      "estimated_cost": 7784,
+      "revised_cost": 7784,
+      "description": "partial foundation stabilization/support foundation with 4 perma jack piles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615751",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-23",
+      "status_date": "1997-01-16",
+      "estimated_cost": 300,
+      "description": "repl fungused deck joists",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615620",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-21",
+      "status_date": "1997-01-16",
+      "estimated_cost": 800,
+      "description": "deck repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508207",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-07-31",
+      "status_date": "1985-09-20",
+      "estimated_cost": 1231,
+      "description": "install windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=324",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=042A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605042A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

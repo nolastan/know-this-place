@@ -1,0 +1,159 @@
+{
+  "address": "301–307 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/301/",
+  "apn": "2699043",
+  "block": "2699",
+  "lot": "043",
+  "eas_baseid": "344569",
+  "coordinates": {
+    "lat": 37.758847,
+    "lng": -122.439017
+  },
+  "address_range": "301–307",
+  "street_numbers_on_parcel": [
+    "301",
+    "303",
+    "305",
+    "307"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 4,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2601,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0307 0301 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1124909,
+    "assessed_improvement_value": 749930,
+    "last_sale_date": "2014-11-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111232972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-23",
+      "status_date": "2022-04-14",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one kitchen remodel: remove and replace kitchen cabinets, countertops, range, sink. remove and replace flooring & repainting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801269705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-26",
+      "status_date": "2018-02-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final inspection under permit app # 201503302228",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712055524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-05",
+      "status_date": "2018-02-05",
+      "estimated_cost": 22300,
+      "revised_cost": 22300,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503302228",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2015-03-30",
+      "status_date": "2018-02-05",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "remove tile from 2 walls & replace in bathroom. no structural work. no wall modification.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M230666",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-11-29",
+      "status_date": "2010-11-29",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609111953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-11",
+      "status_date": "2006-12-13",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair as is dryrot areas of backstair and landing, less than 50% of stirway. repair in kind. comply with nov 200672490 dated 8/18/2006.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9202589",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-02-21",
+      "status_date": "1993-05-26",
+      "estimated_cost": 7200,
+      "revised_cost": 0,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=301",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2699043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2699&lot=043",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2699043",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "address": "34 Prosper Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/prosper-street/34/",
+  "apn": "3564039",
+  "block": "3564",
+  "lot": "039",
+  "eas_baseid": "359829",
+  "coordinates": {
+    "lat": 37.763724,
+    "lng": -122.431815
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1711,
+    "building_area_sqft": 1053,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0034 PROSPER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 648997,
+    "assessed_improvement_value": 432662,
+    "last_sale_date": "2004-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200110291937",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-29",
+      "status_date": "2002-02-28",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remodel exist bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318681",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-22",
+      "status_date": "1994-05-06",
+      "estimated_cost": 6000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PROSPER&street_type=ST&address_number=34",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564039",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

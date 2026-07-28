@@ -1,0 +1,160 @@
+{
+  "address": "310 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/310/",
+  "apn": "2750005",
+  "block": "2750",
+  "lot": "005",
+  "eas_baseid": "345444",
+  "coordinates": {
+    "lat": 37.756944,
+    "lng": -122.437152
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1050,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0310 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 521173,
+    "assessed_improvement_value": 228005,
+    "last_sale_date": "1997-12-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204051618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-05",
+      "status_date": "2022-08-09",
+      "estimated_cost": 12871,
+      "revised_cost": 12871,
+      "description": "replacing 2 windows. same size and location. street visible. u factor <.30 (e) wood (n) wood fiber",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407090798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-09",
+      "status_date": "2014-09-17",
+      "estimated_cost": 9037,
+      "revised_cost": 9037,
+      "description": "remodel ground floor bathroom - change tub to shower, new tile, new fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405155912",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-15",
+      "status_date": "2014-11-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace front stairs in same location/configuration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401025454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-02",
+      "status_date": "2014-07-24",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "window replacement , 6 windows, 1 sliding glass door and three entry doors. wood existing - wood proposed. no change in rough opening size. 6 windows face the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612492",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-07-11",
+      "status_date": "1996-12-12",
+      "estimated_cost": 2000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611997",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-07-03",
+      "status_date": "1996-12-12",
+      "estimated_cost": 8000,
+      "description": "new partition walls in (e)basement level to do new bathrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-28",
+      "status_date": "1996-12-12",
+      "estimated_cost": 5000,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606824",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-04-19",
+      "status_date": "1996-12-12",
+      "estimated_cost": 5000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=310",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

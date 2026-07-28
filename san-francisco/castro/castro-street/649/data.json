@@ -1,0 +1,149 @@
+{
+  "address": "649–653 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/649/",
+  "apn": "3602068",
+  "block": "3602",
+  "lot": "068",
+  "eas_baseid": "361892",
+  "coordinates": {
+    "lat": 37.758515,
+    "lng": -122.434421
+  },
+  "address_range": "649–653",
+  "street_numbers_on_parcel": [
+    "649",
+    "651",
+    "653"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 4704,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0653 0649 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 278785,
+    "assessed_improvement_value": 459469,
+    "last_sale_date": "1994-03-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201011225405",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-22",
+      "status_date": "2011-06-29",
+      "estimated_cost": 18000,
+      "revised_cost": 29514,
+      "description": "649 castro: new cabinets, new dishwasher, new countertop (kitchen) :add (n) 1/2 bathroom, door and wall; at(e) full bath, new tub and exhaust fan 651 castro: add new 1/2 bathroom, replace (non-street side) window, new door and wall; at(e) full bath, new tub and exhaust fan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711017103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-01",
+      "status_date": "2007-12-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2003/04/25/3165 for final inspection. to comply with nov# 200728171.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709172785",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-09-17",
+      "status_date": "2007-09-17",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "3rd floor-one unit - add new half bath from (e) storage on 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304253165",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-04-25",
+      "status_date": "2010-12-15",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "dry rot repairs to rear 3 levels of decks, repair work 1st level, replace old decking upgrade w/new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210239771",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-23",
+      "status_date": "2003-05-16",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "dryrot repairs to rear 3 levels of decks.not exceeding 50% of (e) structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202078744",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-07",
+      "status_date": "2002-04-01",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "replace existing legal front and back stairs with same configuration and wood materials",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=649",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=068",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602068",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

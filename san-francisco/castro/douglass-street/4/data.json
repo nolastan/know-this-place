@@ -1,0 +1,171 @@
+{
+  "address": "4 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/4/",
+  "apn": "2625002",
+  "block": "2625",
+  "lot": "002",
+  "eas_baseid": "342580",
+  "coordinates": {
+    "lat": 37.763375,
+    "lng": -122.439823
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1764,
+    "building_area_sqft": 1386,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0004 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32748,
+    "assessed_improvement_value": 77488
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910164610",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-16",
+      "status_date": "2020-10-20",
+      "estimated_cost": 5000,
+      "revised_cost": 9000,
+      "description": "project proposes replacement of e back stair and landing. no expansion of building envelope",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905231531",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-23",
+      "status_date": "2019-06-05",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "interior remodel of (e) single family resident. kitchen & bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605238095",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-23",
+      "status_date": "2016-05-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace existing metal slider windows on second story facade and rear with metal clad wood double hung windows four lights over one as seen in historic photos. no structural alteration needed. four windows total.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512034092",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-03",
+      "status_date": "2016-09-26",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "2nd story floor update. remodel inlcuding bathroom, plumbing, electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501072733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-07",
+      "status_date": "2005-02-10",
+      "estimated_cost": 17900,
+      "revised_cost": 17900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103194590",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-19",
+      "status_date": "2001-08-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608906",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-22",
+      "status_date": "1997-01-16",
+      "estimated_cost": 1,
+      "description": "renewal permit application #9511465 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511465",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-07-24",
+      "status_date": "1996-02-07",
+      "estimated_cost": 6000,
+      "description": "instll concrete slabs & retaining walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420037",
+      "type": "grade or quarry or fill or excavate",
+      "status": "expired",
+      "filed": "1994-12-06",
+      "status_date": "1995-08-22",
+      "estimated_cost": 3000,
+      "description": "grading/excavation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=4",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2625002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2625&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2625002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

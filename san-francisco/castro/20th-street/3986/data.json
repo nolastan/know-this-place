@@ -1,0 +1,171 @@
+{
+  "address": "3986 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3986/",
+  "apn": "3600023",
+  "block": "3600",
+  "lot": "023",
+  "eas_baseid": "361704",
+  "coordinates": {
+    "lat": 37.758226,
+    "lng": -122.429829
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3986 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 594467,
+    "assessed_improvement_value": 260576,
+    "last_sale_date": "1996-12-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312043332",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-04",
+      "status_date": "2014-01-22",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "replace ten windows on front of house with fiberglass wood-clad windows, in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210182294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-18",
+      "status_date": "2013-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to permit #201208177635. change proposed 2x10 roof joists to 2x6. install rigid 4-1/2\" insulation to achieve r-30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208177635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-17",
+      "status_date": "2013-04-10",
+      "estimated_cost": 2500,
+      "revised_cost": 10000,
+      "description": "comply with nov 201256661. raise roof line at rear pop out",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208036569",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-03",
+      "status_date": "2013-04-10",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroof 300 square ft, less than 25% of total roof at rear of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705171562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-17",
+      "status_date": "2008-01-23",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "to comply with amended nov# 200795497 legalize construction of rear deck with add'l 80 sq. ft. excavation below deck. build new retaining wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920698",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-01",
+      "status_date": "2000-02-01",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917196",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-19",
+      "status_date": "2000-02-19",
+      "estimated_cost": 15000,
+      "description": "renew expired appl #9710450",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710450",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-06-09",
+      "status_date": "1999-03-05",
+      "estimated_cost": 15000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704942",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-18",
+      "status_date": "1999-03-05",
+      "estimated_cost": 10000,
+      "description": "remvoe cracked plaster on walls and replace with sheetrock",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3986",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

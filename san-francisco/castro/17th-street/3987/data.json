@@ -1,0 +1,138 @@
+{
+  "address": "3987–3989 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3987/",
+  "apn": "3582073",
+  "block": "3582",
+  "lot": "073",
+  "eas_baseid": "360738",
+  "coordinates": {
+    "lat": 37.762283,
+    "lng": -122.43478
+  },
+  "address_range": "3987–3989",
+  "street_numbers_on_parcel": [
+    "3987",
+    "3989"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3989 3987 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2231034,
+    "assessed_improvement_value": 948186,
+    "last_sale_date": "2018-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Eureka Valley Commercial & Castro Village LGBTQ+ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1879–1932; 1963–1980",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201907236628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-23",
+      "status_date": "2019-11-08",
+      "estimated_cost": 25000,
+      "revised_cost": 60000,
+      "description": "new cannabis retail store at (e), ground flr retail unit, int scope includes: new int finishes, furniture and fixture. ext scope - 1 new painting repair/repaint in kind, 2 repaint ext (e) awnings canvas, new security camera, no mep work, no struct work, no fls modifications",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907236631",
+      "type": "wall or painted sign",
+      "status": "complete",
+      "filed": "2019-07-23",
+      "status_date": "2019-11-18",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "paint (e) awning (eureka sky) ref 201907236628 for business use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-05",
+      "status_date": "1995-08-22",
+      "estimated_cost": 13580,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803665",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-03-23",
+      "status_date": "1989-01-23",
+      "estimated_cost": 1800,
+      "description": "modify exist awning",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3987",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=073",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582073",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4347802171705%2037.76228319037086)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

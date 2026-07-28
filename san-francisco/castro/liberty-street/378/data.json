@@ -1,0 +1,101 @@
+{
+  "address": "378–380 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/378/",
+  "apn": "3605050A",
+  "block": "3605",
+  "lot": "050A",
+  "eas_baseid": "362121",
+  "coordinates": {
+    "lat": 37.757434,
+    "lng": -122.429634
+  },
+  "address_range": "378–380",
+  "street_numbers_on_parcel": [
+    "378",
+    "380"
+  ],
+  "parcel": {
+    "year_built": 1952,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1842,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0380 0378 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42935,
+    "assessed_improvement_value": 95848
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1952",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200908104411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-10",
+      "status_date": "2009-08-14",
+      "estimated_cost": 10300,
+      "revised_cost": 10300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214930",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-31",
+      "status_date": "1993-11-10",
+      "estimated_cost": 4250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=378",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605050A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=050A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605050A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "address": "385–389 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/385/",
+  "apn": "3564080A",
+  "block": "3564",
+  "lot": "080A",
+  "eas_baseid": "359866",
+  "coordinates": {
+    "lat": 37.762923,
+    "lng": -122.432778
+  },
+  "address_range": "385–389",
+  "street_numbers_on_parcel": [
+    "385",
+    "387",
+    "389"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 997,
+    "building_area_sqft": 2919,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0389 0385 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 24902,
+    "assessed_improvement_value": 41062
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200502014484",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-02-01",
+      "status_date": "2005-02-01",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9021275",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-17",
+      "status_date": "1990-11-13",
+      "estimated_cost": 500,
+      "description": "repair dry rot @ rear stair stringers & lower rail",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=385",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564080A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=080A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564080A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

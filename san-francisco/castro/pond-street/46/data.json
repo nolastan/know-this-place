@@ -1,0 +1,121 @@
+{
+  "address": "46 Pond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/pond-street/46/",
+  "apn": "3564068",
+  "block": "3564",
+  "lot": "068",
+  "eas_baseid": "359852",
+  "coordinates": {
+    "lat": 37.763507,
+    "lng": -122.432415
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2330,
+    "basement_area_sqft": 872,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0046 POND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1538299,
+    "assessed_improvement_value": 924463,
+    "last_sale_date": "2018-11-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1184469",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-14",
+      "status_date": "2020-01-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911056465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-05",
+      "status_date": "2020-12-02",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "garage conversion 2 bedroom 2 bathroom & laundry room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608245880",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-24",
+      "status_date": "2017-03-17",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "kitchen and bathroom remodel on upper level. kitchen-rep fixtures and finishes, 50% min wattage lighting high efficacy. bathroom - rep fixtures and finishes, high efficacy lighting or controlled by manual on sensor with high efficacy main light. no change in wall and opening layout. no structural wk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405095310",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-09",
+      "status_date": "2014-05-28",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POND&street_type=ST&address_number=46",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=068",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564068",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "address": "400 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/400/",
+  "apn": "3604009",
+  "block": "3604",
+  "lot": "009",
+  "eas_baseid": "362009",
+  "coordinates": {
+    "lat": 37.75726,
+    "lng": -122.430466
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2939,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0400 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1444863,
+    "assessed_improvement_value": 985133,
+    "last_sale_date": "2008-06-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410072419",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-07",
+      "status_date": "2024-10-07",
+      "estimated_cost": 22660,
+      "revised_cost": 22660,
+      "description": "reroofing: tear off (e) roofing. apply 3 ply modified bitumen one ply torch down roof system flat roof. no work to (e) roof structural sheathing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410038039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-03",
+      "status_date": "2014-11-17",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "failing redwood deck boards & railings to be replaced. repair any damage framing. deck to remain same size. replace & repair in kind less than 50% construction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M494347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-09",
+      "status_date": "2014-06-09",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206192882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-19",
+      "status_date": "2012-10-23",
+      "estimated_cost": 15820,
+      "revised_cost": 15820,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709788",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-07-14",
+      "status_date": "1988-07-25",
+      "estimated_cost": 15000,
+      "description": "new recessed balcony",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312067",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-28",
+      "status_date": "1984-01-30",
+      "estimated_cost": 1040,
+      "description": "bring into code as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=400",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=009",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604009",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

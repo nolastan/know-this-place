@@ -1,0 +1,165 @@
+{
+  "address": "725 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/725/",
+  "apn": "3603071",
+  "block": "3603",
+  "lot": "071",
+  "eas_baseid": "361980",
+  "coordinates": {
+    "lat": 37.757307,
+    "lng": -122.434331
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 1890,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0725 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1496378,
+    "assessed_improvement_value": 641299,
+    "last_sale_date": "2008-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Castro & Liberty Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1897–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202508294260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-29",
+      "status_date": "2025-09-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing with hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809111349",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-11",
+      "status_date": "2008-09-11",
+      "estimated_cost": 23137,
+      "revised_cost": 23137,
+      "description": "kitchen remodel-kitchen sink will be move to new location.new plumbing drain,vent,supply pipes. above countertops gfi outlets new sub panel. under countertop and ceiling can lights. new kitchen cabinets install w/ countertop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214579",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-08-26",
+      "status_date": "1993-04-30",
+      "estimated_cost": 10000,
+      "description": "add bathroom to room downstairs on slab floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-25",
+      "status_date": "1992-11-16",
+      "estimated_cost": 2400,
+      "description": "repairs per termite report item 3-a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214581",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-25",
+      "status_date": "1992-11-16",
+      "estimated_cost": 2200,
+      "revised_cost": 0,
+      "description": "install oven & cabinet. open & close walls as necessary.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9212677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-07-29",
+      "status_date": "1992-08-21",
+      "estimated_cost": 4000,
+      "description": "cap existing footing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115285",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-23",
+      "status_date": "1991-12-23",
+      "estimated_cost": 3275,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=725",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=071",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603071",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43433058617273%2037.757306573403646)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

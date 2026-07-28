@@ -1,0 +1,96 @@
+{
+  "address": "3423 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3423/",
+  "apn": "3565082",
+  "block": "3565",
+  "lot": "082",
+  "eas_baseid": "359892",
+  "coordinates": {
+    "lat": 37.764217,
+    "lng": -122.429708
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 1528,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3423 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 59737,
+    "assessed_improvement_value": 119502
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304125549",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-04-12",
+      "status_date": "2023-04-14",
+      "estimated_cost": 9701,
+      "revised_cost": 9701,
+      "description": "remove and replace (2) non street visible windows in lightwells. (e) wood (n) wood comp. same size and location, replace in kind. u < .30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701730",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-30",
+      "status_date": "1997-10-29",
+      "estimated_cost": 3875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3423",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3565082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3565&lot=082",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3565082",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

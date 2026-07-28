@@ -1,0 +1,142 @@
+{
+  "address": "3926 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3926/",
+  "apn": "3581020",
+  "block": "3581",
+  "lot": "020",
+  "eas_baseid": "360603",
+  "coordinates": {
+    "lat": 37.761357,
+    "lng": -122.4313
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2225,
+    "basement_area_sqft": 485,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3926 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 948740,
+    "assessed_improvement_value": 491696,
+    "last_sale_date": "2009-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201105266919",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-26",
+      "status_date": "2011-09-26",
+      "estimated_cost": 50000,
+      "revised_cost": 58000,
+      "description": "interior remodel to add a family room, bathroom & office on garage level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006033772",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-03",
+      "status_date": "2010-08-02",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "demo (e) wood stair to rear yard; install (n) single-stoy 252 s.f. rear wood deck, stairs & concrete footings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910078515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-07",
+      "status_date": "2010-01-22",
+      "estimated_cost": 8000,
+      "revised_cost": 9000,
+      "description": "install new bathroom in (e) closet space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909257668",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-25",
+      "status_date": "2010-01-22",
+      "estimated_cost": 16000,
+      "revised_cost": 23000,
+      "description": "kitchen remodel,remove & replace (e) cabinets & appliances, remove plaster as as needed to install electrical & plumbing by code.remove plaster from walls & ceiling at back, porch & 1/2 bath.new wash/basing at (e) 1/2 bath.2nd fl. remodel full bath, replace plaster of wall & ceiling of master bedrm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-04",
+      "status_date": "1999-12-20",
+      "estimated_cost": 375,
+      "description": "revision to application 9923200",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-02",
+      "status_date": "1999-12-20",
+      "estimated_cost": 1800,
+      "description": "dry rot repair on righ side of stairs main entrance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3926",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581020",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "address": "3685 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3685/",
+  "apn": "3579022A",
+  "block": "3579",
+  "lot": "022A",
+  "eas_baseid": "360511",
+  "coordinates": {
+    "lat": 37.762687,
+    "lng": -122.428071
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 18,
+    "stories": 3,
+    "rooms": 48,
+    "bathrooms": 18,
+    "lot_area_sqft": 5079,
+    "building_area_sqft": 11652,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3685 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1440953,
+    "assessed_improvement_value": 2809130,
+    "last_sale_date": "2001-05-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104229180",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-22",
+      "status_date": "2021-07-20",
+      "estimated_cost": 5000,
+      "revised_cost": 31563,
+      "description": "new addressable fire alarm panel. new wireless \"rf\" radio communicator will be installed for central station monitoring. all other existing devices shall reamin, i.e. smoke detectors, pull stations, water flow tamper switches \"if currently present.\" no other adds or deletes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703267188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-26",
+      "status_date": "2007-05-01",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-16",
+      "status_date": "1990-06-07",
+      "estimated_cost": 8000,
+      "description": "remove & replace stucco & sheating wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3685",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3579022A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3579&lot=022A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3579022A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

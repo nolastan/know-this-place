@@ -1,0 +1,113 @@
+{
+  "address": "3765–3767 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3765/",
+  "apn": "2622049",
+  "block": "2622",
+  "lot": "049",
+  "eas_baseid": "342494",
+  "coordinates": {
+    "lat": 37.763794,
+    "lng": -122.436584
+  },
+  "address_range": "3765–3767",
+  "street_numbers_on_parcel": [
+    "3765",
+    "3767"
+  ],
+  "parcel": {
+    "year_built": 1956,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3802,
+    "building_area_sqft": 1732,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3767 3765 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55879,
+    "assessed_improvement_value": 97003,
+    "last_sale_date": "2024-03-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410022143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-02",
+      "status_date": "2024-12-18",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "replace deck boards and rails at rear < 50% of deck replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705100938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-10",
+      "status_date": "2007-05-31",
+      "estimated_cost": 19323,
+      "revised_cost": 19323,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-07",
+      "status_date": "1993-04-12",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3765",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=049",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622049",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

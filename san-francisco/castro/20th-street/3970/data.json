@@ -1,0 +1,125 @@
+{
+  "address": "3970 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3970/",
+  "apn": "3600020",
+  "block": "3600",
+  "lot": "020",
+  "eas_baseid": "361701",
+  "coordinates": {
+    "lat": 37.758242,
+    "lng": -122.42957
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2280,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3970 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 130989,
+    "assessed_improvement_value": 277568
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201110287880",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-28",
+      "status_date": "2012-09-26",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "window replacement, 11 windows and 1 set of french doors, no change in rough openings, wood and aluminum existing, marvin fiberglass proposed. u-value = 0.30. existing trim to stay. picture to double hung on m ain floor facing street. 6 windows face the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-20",
+      "status_date": "1989-06-13",
+      "estimated_cost": 10400,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8514027",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-12-11",
+      "status_date": "1987-01-23",
+      "estimated_cost": 6800,
+      "description": "remodel - enclose existing front porch as entry to dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513631",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-12-03",
+      "status_date": "1987-01-30",
+      "estimated_cost": 13000,
+      "description": "remodel bedrm/new roof deck at rear 2/f bedrm/new window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200941",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-02-08",
+      "status_date": "1983-03-04",
+      "estimated_cost": 22500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3970",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600020",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

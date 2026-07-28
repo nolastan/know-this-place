@@ -1,0 +1,121 @@
+{
+  "address": "3949–3951 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3949/",
+  "apn": "3601081",
+  "block": "3601",
+  "lot": "081",
+  "eas_baseid": "361823",
+  "coordinates": {
+    "lat": 37.759249,
+    "lng": -122.431463
+  },
+  "address_range": "3949–3951",
+  "street_numbers_on_parcel": [
+    "3949",
+    "3951"
+  ],
+  "parcel": {
+    "year_built": 1967,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2848,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3949 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72055,
+    "assessed_improvement_value": 114099
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201009100653",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-10",
+      "status_date": "2010-09-10",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "replace approx 10 vinyl windows at front of bldg & retrim & paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614291",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-05",
+      "status_date": "1999-03-24",
+      "estimated_cost": 5000,
+      "revised_cost": 30000,
+      "description": "install shoring/underpinning along w.prop line, #9418656",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503280",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-03",
+      "status_date": "1985-08-27",
+      "estimated_cost": 1500,
+      "description": "construction of new interior non-bearing walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403816",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-04-12",
+      "status_date": "1985-02-08",
+      "estimated_cost": 2000,
+      "description": "new bay at the first floor street level",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3949",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=081",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601081",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "address": "46 Divisadero Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/divisadero-street/46/",
+  "apn": "2611027",
+  "block": "2611",
+  "lot": "027",
+  "eas_baseid": "342009",
+  "coordinates": {
+    "lat": 37.768021,
+    "lng": -122.436291
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 3710,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0046 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1177490,
+    "assessed_improvement_value": 811778,
+    "last_sale_date": "2002-11-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200502014446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-01",
+      "status_date": "2006-04-18",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "interior non structural work, kitchen: replace e cabinets and finishes, 3 baths: replace e finishes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412091067",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-12-09",
+      "status_date": "2006-04-18",
+      "estimated_cost": 17160,
+      "revised_cost": 30000,
+      "description": "constructi (n) deck at rear of building at second floor level (street level) approx. 165 s.f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405264926",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-05-26",
+      "status_date": "2006-04-18",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel kitchen,add bay window,remodel 3 bathrooms,relocate powder room,remodel closets,replace (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211191725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-19",
+      "status_date": "2003-03-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "voluntary seismic add anchor bolt 5/8\" 0 min @# 4'0\" o.c. add 1/2 cdx plywood 10d @ 6\" o.c. at",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9205279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-04-03",
+      "status_date": "1992-04-28",
+      "estimated_cost": 7100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114522",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-13",
+      "status_date": "1992-02-27",
+      "estimated_cost": 1050,
+      "description": "company to install one (1) windows in existing frame in the",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=46",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2611027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2611&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2611027",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

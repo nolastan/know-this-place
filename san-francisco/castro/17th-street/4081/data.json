@@ -1,0 +1,122 @@
+{
+  "address": "4081–4083 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4081/",
+  "apn": "2648051",
+  "block": "2648",
+  "lot": "051",
+  "eas_baseid": "343252",
+  "coordinates": {
+    "lat": 37.762188,
+    "lng": -122.436912
+  },
+  "address_range": "4081–4083",
+  "street_numbers_on_parcel": [
+    "4081",
+    "4083"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1925,
+    "building_area_sqft": 2550,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4081 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43683,
+    "assessed_improvement_value": 120312
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M34599",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-30",
+      "status_date": "2005-09-30",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M33529",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-07-25",
+      "status_date": "2005-07-25",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507187825",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-18",
+      "status_date": "2006-01-12",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "kitchen renovation. replace wall furnace in upper unit with central forced air gas. reroof. install",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418846",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-11-15",
+      "status_date": "1995-12-12",
+      "estimated_cost": 45000,
+      "revised_cost": 60000,
+      "description": "horizontal deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4081",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2648051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2648&lot=051",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2648051",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

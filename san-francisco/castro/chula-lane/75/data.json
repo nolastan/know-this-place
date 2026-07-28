@@ -1,0 +1,126 @@
+{
+  "address": "75–77 Chula Lane, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/chula-lane/75/",
+  "apn": "3566045",
+  "block": "3566",
+  "lot": "045",
+  "eas_baseid": "359940",
+  "coordinates": {
+    "lat": 37.76349,
+    "lng": -122.428033
+  },
+  "address_range": "75–77",
+  "street_numbers_on_parcel": [
+    "75",
+    "77"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2400,
+    "building_area_sqft": 1540,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0077 0075 CHULA               LN0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81202,
+    "assessed_improvement_value": 59162
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chula-Abbey Early Residential District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1865–1912",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Chula-Dolores-17th Fire Survivors and Reconstruction Historic District",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Not listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1865–1880; 1907–1912",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "200509142904",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-09-14",
+      "status_date": "2007-03-28",
+      "estimated_cost": 150000,
+      "description": "vertical & horizontal addition to rear of bldg.add 2 car garage @g/f,2 bedrooms & 2 baths on 3/f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9814697",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-31",
+      "status_date": "1999-12-29",
+      "estimated_cost": 5850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHULA&street_type=LN&address_number=75",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3566045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3566&lot=045",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3566045",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42803267205532%2037.763490028586304)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

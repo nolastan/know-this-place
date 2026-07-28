@@ -1,0 +1,166 @@
+{
+  "address": "106–108 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/castro/dolores-street/106/",
+  "apn": "3544002",
+  "block": "3544",
+  "lot": "002",
+  "eas_baseid": "358870",
+  "coordinates": {
+    "lat": 37.767642,
+    "lng": -122.427051
+  },
+  "address_range": "106–108",
+  "street_numbers_on_parcel": [
+    "106",
+    "108"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3440,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0108 0106 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95974,
+    "assessed_improvement_value": 273301
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406043721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-04",
+      "status_date": "2024-10-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply w/ 202417637: demo (e) deck. replace sliding door with window in existing opening to match adjacent windows on rear facade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109077862",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-07",
+      "status_date": "2021-09-08",
+      "estimated_cost": 12500,
+      "revised_cost": 3000,
+      "description": "to correct nov 202172809. tree stump taken out form, pour, place and finish new. retaining wall destroyed by tree wall is approx 20' long and 3' 6\" high (retaining wall less than 4ft does not require permit per sfbc section 106a.2 #5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509187427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-18",
+      "status_date": "2016-06-01",
+      "estimated_cost": 5000,
+      "revised_cost": 20000,
+      "description": "replace cabinets in kitchen. no structural work. replace - bath vanity and tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712059664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-05",
+      "status_date": "2008-01-16",
+      "estimated_cost": 20400,
+      "revised_cost": 20400,
+      "description": "stair replacement in kind in lightwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601182420",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-18",
+      "status_date": "2006-01-18",
+      "estimated_cost": 17982,
+      "revised_cost": 17982,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29932",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-27",
+      "status_date": "2004-10-27",
+      "revised_cost": 0,
+      "description": "side walk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-23",
+      "status_date": "1993-04-14",
+      "estimated_cost": 2270,
+      "revised_cost": 0,
+      "description": "install 7 windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-03",
+      "status_date": "1990-10-15",
+      "estimated_cost": 470,
+      "description": "install two aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=106",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

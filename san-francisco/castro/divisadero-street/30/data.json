@@ -1,0 +1,118 @@
+{
+  "address": "30 Divisadero Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/divisadero-street/30/",
+  "apn": "2611023",
+  "block": "2611",
+  "lot": "023",
+  "eas_baseid": "342006",
+  "coordinates": {
+    "lat": 37.767711,
+    "lng": -122.436273
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2404,
+    "building_area_sqft": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0030 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55879,
+    "assessed_improvement_value": 54733
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201106309261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-30",
+      "status_date": "2011-07-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "comply with nov 200666267, order of abatement.revision to app#200602134536 to legalize extg. bath on ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006305712",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-30",
+      "status_date": "2011-07-05",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to complete work and obtain final inspection for work approved under appl#200602134536",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M99506",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-17",
+      "status_date": "2007-12-17",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602134536",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-02-13",
+      "status_date": "2009-12-29",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remodel of existing bathrooom on ground level, replace sheetrock and bathroom furniture and fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=30",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2611023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2611&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2611023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

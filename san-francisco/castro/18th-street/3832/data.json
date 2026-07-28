@@ -1,0 +1,131 @@
+{
+  "address": "3832 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3832/",
+  "apn": "3580018",
+  "block": "3580",
+  "lot": "018",
+  "eas_baseid": "360540",
+  "coordinates": {
+    "lat": 37.761515,
+    "lng": -122.429216
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3868,
+    "building_area_sqft": 1210,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3832 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 945000,
+    "assessed_improvement_value": 405000,
+    "last_sale_date": "2019-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202008312952",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2020-08-31",
+      "status_date": "2020-08-31",
+      "estimated_cost": 25000,
+      "revised_cost": 50000,
+      "description": "to demolish a type-5, 2-story single family dwelling. to erect a type 5-a over 1-a, 6-story residential building with 19 dwelling units with basement. see permit # 202008312955-s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008312955",
+      "type": "new construction wood frame",
+      "status": "filed",
+      "filed": "2020-08-31",
+      "status_date": "2020-08-31",
+      "estimated_cost": 4000000,
+      "revised_cost": 4000000,
+      "description": "to erect a type 5-a over 1-a, 6-story residential building with 19 dwelling units with basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911137188",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-13",
+      "status_date": "2019-11-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kitchen cabinets. plumbing and electrical under separate permits.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108297095",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-29",
+      "status_date": "2002-02-28",
+      "estimated_cost": 11880,
+      "revised_cost": 11880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606946",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-23",
+      "status_date": "1996-08-23",
+      "estimated_cost": 4500,
+      "description": "demo(e)steps/replace 5/3 plywood at(e)porch/remove/reframe s",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3832",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580018",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

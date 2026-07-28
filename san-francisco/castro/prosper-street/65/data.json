@@ -1,0 +1,143 @@
+{
+  "address": "65 Prosper Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/prosper-street/65/",
+  "apn": "3564028",
+  "block": "3564",
+  "lot": "028",
+  "eas_baseid": "359818",
+  "coordinates": {
+    "lat": 37.763293,
+    "lng": -122.431408
+  },
+  "parcel": {
+    "year_built": 1902,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2279,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0065 PROSPER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 754238,
+    "assessed_improvement_value": 707816,
+    "last_sale_date": "2013-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603238057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-23",
+      "status_date": "2026-05-05",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "repair rear leaking deck. less than 50% non street visible. repair and patch leaking stucco, demo and replace in kind. repair loose and cracked stucco at front entry stairs. street facing repair. less than 50% deck repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410148869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-14",
+      "status_date": "2014-11-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to appl #2013.0618.9877 to install railing @ north side of 2nd & 3rd floor roof decks. all work to be with (e) boundry of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403059930",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-05",
+      "status_date": "2014-09-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise fire sprinkler system to permit issued 201402198785",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402198785",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-19",
+      "status_date": "2014-09-17",
+      "estimated_cost": 10000,
+      "revised_cost": 24000,
+      "description": "install new fire sprinkler system and new underground fire service t.i. app#201306189877",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311202443",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-11-20",
+      "status_date": "2013-11-22",
+      "estimated_cost": 25000,
+      "revised_cost": 45000,
+      "description": "proposed foundation replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306189877",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-06-18",
+      "status_date": "2014-11-21",
+      "estimated_cost": 300000,
+      "revised_cost": 377000,
+      "description": "horizontal & vertical addition to (e) 2-story single family house.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PROSPER&street_type=ST&address_number=65",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564028",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

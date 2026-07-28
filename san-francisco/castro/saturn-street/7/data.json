@@ -1,0 +1,139 @@
+{
+  "address": "7 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/7/",
+  "apn": "2646053",
+  "block": "2646",
+  "lot": "053",
+  "eas_baseid": "485137",
+  "coordinates": {
+    "lat": 37.762678,
+    "lng": -122.440938
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 1104,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0007 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 505034,
+    "assessed_improvement_value": 261524,
+    "last_sale_date": "1991-03-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200903043326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-04",
+      "status_date": "2009-07-09",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replace two kitchen windows.replace wood siding at rear.new paper and paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809242511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-24",
+      "status_date": "2009-12-28",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace 4 existing windows with new energy efficient windows in dining room & sun room. not visible from the street. same size & same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105229722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-22",
+      "status_date": "2001-06-27",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "dry rot repair exterior of bldg. around (3)windows and (1)door at rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110870",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-20",
+      "status_date": "1991-09-13",
+      "estimated_cost": 9500,
+      "description": "remove flue and shaft, add cabinets, dishwasher & fan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102677",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-02-19",
+      "status_date": "1991-06-19",
+      "estimated_cost": 4575,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807508",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-07",
+      "status_date": "1988-10-06",
+      "estimated_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=7",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=053",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646053",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

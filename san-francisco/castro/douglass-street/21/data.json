@@ -1,0 +1,130 @@
+{
+  "address": "21 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/21/",
+  "apn": "2623045",
+  "block": "2623",
+  "lot": "045",
+  "eas_baseid": "342533",
+  "coordinates": {
+    "lat": 37.763212,
+    "lng": -122.439301
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 973,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0021 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 253643,
+    "assessed_improvement_value": 217931,
+    "last_sale_date": "2021-09-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206106086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-10",
+      "status_date": "2023-01-10",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "new deck & stairs from house to rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205134272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-13",
+      "status_date": "2022-06-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "reduce kitchen scope of work for no-plan pa# 202204212745. one bathroom remodel in-kind only. no kitchen remodel. remove scope of work of kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204212745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-21",
+      "status_date": "2022-06-17",
+      "estimated_cost": 10000,
+      "revised_cost": 19000,
+      "description": "in-kind permit to: update (1) bathroom - change bathtub, vanity, toilette, tile, keeping same existing layout. add bathroom fan. kitchen - update counter for formica and hange kitchen sink, keep everything else the same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109098058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-09",
+      "status_date": "2021-09-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for documentation purpose. the legal use of this building is a single family residence. this determination is based on a review of city records and a site visit. no work under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1020707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-12-21",
+      "status_date": "2018-12-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=21",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=045",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623045",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

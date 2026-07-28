@@ -1,0 +1,154 @@
+{
+  "address": "4570 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4570/",
+  "apn": "2700016",
+  "block": "2700",
+  "lot": "016",
+  "eas_baseid": "344590",
+  "coordinates": {
+    "lat": 37.759234,
+    "lng": -122.440446
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 2812,
+    "basement_area_sqft": 943,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4570 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2068793,
+    "assessed_improvement_value": 1212931,
+    "last_sale_date": "2012-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202109249135",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2021-09-24",
+      "status_date": "2023-11-28",
+      "estimated_cost": 409937,
+      "revised_cost": 876072,
+      "description": "remodel (e) 3-story sfd w/(n) bay windows & rear infill. 2(n) bedrms, 1(n) bathrm, uprade 1 powder rm to full bath. modify & relocate living rm, kitchen, dining, family rm, media rm, rec rm. excavate baasement into (e) crawlspace. relocate circulation to basement, add elevator serve all floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211274863",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-11-27",
+      "status_date": "2014-03-13",
+      "estimated_cost": 19500,
+      "revised_cost": 19500,
+      "description": "expansion of rear yard. detached garage. reference variance appln #v20121373v",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204178482",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-17",
+      "status_date": "2012-05-11",
+      "estimated_cost": 4500,
+      "revised_cost": 5000,
+      "description": "change out 4 windows & replace with wood marvins in front of house, casement with center fixed, max u-factor 0.4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808129008",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-08-12",
+      "status_date": "2009-12-24",
+      "estimated_cost": 50000,
+      "revised_cost": 91628,
+      "description": "enclose space under existing kitchen. within ex. basement, install 1 full bath, laundry room, trash room, relocate water heater and furnance to under space. rebuild 1 interior stair, 1 exterior rear stair and new front stair from sidewalk to the front door. new fire wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610054345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-05",
+      "status_date": "2006-11-27",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "remodel kitchen, new electrical & plumbing for sink. replace cabinets, counter top, sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409245175",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-24",
+      "status_date": "2004-11-30",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "repair dryrot per report 46612, items 2b, 3a, 5a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-10",
+      "status_date": "1998-09-03",
+      "estimated_cost": 6200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4570",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700016",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

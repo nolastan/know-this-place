@@ -1,0 +1,165 @@
+{
+  "address": "234–236 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/234/",
+  "apn": "3561006",
+  "block": "3561",
+  "lot": "006",
+  "eas_baseid": "359661",
+  "coordinates": {
+    "lat": 37.765294,
+    "lng": -122.433535
+  },
+  "address_range": "234–236",
+  "street_numbers_on_parcel": [
+    "234",
+    "236"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 2772,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0236 0234 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79227,
+    "assessed_improvement_value": 244584
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200704098279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-09",
+      "status_date": "2007-04-30",
+      "estimated_cost": 20280,
+      "revised_cost": 20280,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506024063",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-02",
+      "status_date": "2005-07-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair 3 stair treds at rear of bldg cut (e0 fence to 6' above grade (west & wouth sides of property",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-19",
+      "status_date": "1996-09-17",
+      "estimated_cost": 2000,
+      "description": "replace 37'sewer line/construct hotwater heater rm bsmt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611752",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-01",
+      "status_date": "1997-01-11",
+      "estimated_cost": 2000,
+      "description": "repair dry rot on floor joists at rear service porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607603",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-02",
+      "status_date": "1996-07-02",
+      "estimated_cost": 6000,
+      "description": "repair dryrot to front steps, landing, rear redwood deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-02-09",
+      "status_date": "1987-04-01",
+      "estimated_cost": 3500,
+      "description": "remove & replace rotted steppins rail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200510",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-01-22",
+      "status_date": "1983-03-09",
+      "estimated_cost": 12000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=234",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3561006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3561&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3561006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43353477619931%2037.765293871614176)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

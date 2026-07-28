@@ -1,0 +1,120 @@
+{
+  "address": "761 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/761/",
+  "apn": "3604029A",
+  "block": "3604",
+  "lot": "029A",
+  "eas_baseid": "362029",
+  "coordinates": {
+    "lat": 37.75676,
+    "lng": -122.432214
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1258,
+    "building_area_sqft": 984,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0761 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1207124,
+    "assessed_improvement_value": 517338,
+    "last_sale_date": "2021-10-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606052692",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-05",
+      "status_date": "2026-06-10",
+      "estimated_cost": 5000,
+      "revised_cost": 15000,
+      "description": "voluntary roof structural strengthening. lightwell infill at north property line. dryrot replace, bathroom skylight relocation, kitchen skylight replacement, infill bathroom window, new bathroom pocket door, roof torch down touchups (for sklyights only) ref: 202604219832 and 202604219787",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202604219787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-21",
+      "status_date": "2026-04-21",
+      "estimated_cost": 80000,
+      "revised_cost": 70000,
+      "description": "kitchen, bathroom renovation, upgrade electrical service to 200 amps, new subpanel. kitchen + bathroom renovation are in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202604219832",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-21",
+      "status_date": "2026-04-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 3 front windows. bay front window to be larger. replace rear window in kind at kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M694547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-26",
+      "status_date": "2016-05-26",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=761",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604029A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=029A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604029A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

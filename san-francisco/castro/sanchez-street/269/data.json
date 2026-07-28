@@ -1,0 +1,150 @@
+{
+  "address": "269–285 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/269/",
+  "apn": "3558025",
+  "block": "3558",
+  "lot": "025",
+  "eas_baseid": "359522",
+  "coordinates": {
+    "lat": 37.764824,
+    "lng": -122.430578
+  },
+  "address_range": "269–285",
+  "street_numbers_on_parcel": [
+    "269",
+    "271",
+    "273",
+    "275",
+    "277",
+    "281",
+    "283",
+    "285"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 6,
+    "lot_area_sqft": 4312,
+    "building_area_sqft": 4060,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0275 0269 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 186407,
+    "assessed_improvement_value": 279646
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201308214887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-21",
+      "status_date": "2013-08-21",
+      "estimated_cost": 12267,
+      "revised_cost": 12267,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M202746",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-18",
+      "status_date": "2010-05-18",
+      "revised_cost": 1,
+      "description": "street space and sidewalk permits",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701302958",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-01-30",
+      "status_date": "2007-01-30",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace of existing brick foundation to concrete. foundation with replace existing wood beam to (n) steel beam as per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701302961",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2007-01-30",
+      "status_date": "2010-06-30",
+      "estimated_cost": 40000,
+      "description": "replace existing brick foudnation to concrete foundation. convert existing storage room to (n) garage, 5-car garage. change of occupancy, sprinkler garage per nfpa 13 seperate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103285487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-28",
+      "status_date": "2001-04-09",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair replace existing rear rotten stairs per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102081681",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-08",
+      "status_date": "2001-04-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair existing rear stairs. to repair less than 50% of stairs in kind only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=269",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558025",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

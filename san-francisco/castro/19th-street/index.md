@@ -1,0 +1,152 @@
+# 19th Street
+
+Every residential parcel on 19th Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [3806–3808](3806/) — A 1975 two-flat, with an addition permitted in 2013.
+- [3810–3814](3810/) — A 1975 two-flat, with stair work permitted in 1996.
+- [3816](3816/) — A 1900 two-flat, with reroofing permitted in 2022.
+- [3818](3818/) — A 1906 single-family house, with reroofing permitted in 1996.
+- [3822](3822/) — A 1965 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [3825](3825/) — A 1956 single-family house, with a kitchen and bathroom remodel permitted in 2012.
+- [3830](3830/) — A 1913 5-unit apartment building, with stair work permitted in 2014.
+- [3835](3835/) — A 1960 17-unit apartment building, with an addition permitted in 1999.
+- [3838](3838/) — A 1957 single-family house, with window replacement permitted in 2017.
+- [3841](3841/) — A 1925 4-unit apartment building, with reroofing permitted in 2003.
+- [3844–3846](3844/) — A 1910 two-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [3848](3848/) — A 1909 two-flat, with one permit record from 2000.
+- [3856](3856/) — A 1962 5-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3866](3866/) — A 1913 single-family house, with a rear addition permitted in 1990.
+- [3872](3872/) — A 1913 single-family house, with a kitchen and bathroom remodel permitted in 2016.
+- [3875](3875/) — A 1907 single-family house, with deck work permitted in 2004.
+- [3878](3878/) — A 1960 3-unit apartment building, with a vertical addition permitted in 2004.
+- [3880–3882](3880/) — A 1925 two-flat, with an addition permitted in 2015.
+- [3901–3903](3901/) — A 1930 two-flat, with reroofing permitted in 2007.
+- [3902–3908](3902/) — A 1922 4-unit apartment building, with reroofing permitted in 2024.
+- [3911](3911/) — A 1991 single-family house, with a kitchen remodel permitted in 2004.
+- [3917](3917/) — A 1991 single-family house, with a kitchen and bathroom remodel permitted in 2021.
+- [3918](3918/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [3919](3919/) — A 1909 single-family house, with foundation work permitted in 2005.
+- [3921–3925](3921/) — A 1911 three-flat, with foundation work permitted in 2015.
+- [3924](3924/) — A 1900 single-family house, with foundation work permitted in 2024.
+- [3928–3930](3928/) — An 1887 two-flat, with deck work permitted in 2020.
+- [3929](3929/) — A 1909 single-family house, with a kitchen remodel permitted in 2005.
+- [3931–3933](3931/) — A 1908 single-family house, with garage work permitted in 2008.
+- [3932–3934](3932/) — A 1900 two-flat, with a rear addition permitted in 1990.
+- [3946](3946/) — An 1890 two-flat, with a kitchen and bathroom remodel permitted in 2014.
+- [3949–3951](3949/) — A 1967 two-flat, with window replacement permitted in 2010.
+- [3952](3952/) — A 1906 single-family house, with a kitchen and bathroom remodel permitted in 1984.
+- [3955](3955/) — A 1910 single-family house, with deck work permitted in 2015.
+- [3956–3958](3956/) — A 1902 two-flat, with a rear addition permitted in 1987.
+- [3957](3957/) — A 1910 single-family house, with a bathroom remodel permitted in 2007.
+- [3964](3964/) — A 1900 single-family house, with deck work permitted in 2020.
+- [3969](3969/) — A 1961 4-unit apartment building, with reroofing permitted in 2025.
+- [3973](3973/) — A 2008 town house, with garage work permitted in 2010.
+- [3975](3975/) — A 2008 town house, with deck work permitted in 2019.
+- [3976](3976/) — A 1900 single-family house, with reroofing permitted in 2004.
+- [3978–3980](3978/) — A 1900 4-unit apartment building, with reroofing permitted in 1992.
+- [3983](3983/) — A 1912 single-family house, with a kitchen and bathroom remodel permitted in 2025.
+- [3984–3986](3984/) — A 1900 two-flat, with a bathroom remodel permitted in 2006.
+- [3987](3987/) — A 1912 single-family house, with a kitchen remodel permitted in 2026.
+- [3995](3995/) — A 1915 9-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [4000–4014](4000/) — A 1900 11-unit apartment building, with an accessory dwelling unit permitted in 2018.
+- [4011](4011/) — A 1955 4-unit apartment building, with deck work permitted in 2004.
+- [4017](4017/) — A 1904 single-family house, with a vertical addition permitted in 2001.
+- [4018–4022](4018/) — A 1906 7-unit apartment building, with a kitchen and bathroom remodel permitted in 2013.
+- [4025–4027](4025/) — A 1904 two-flat, with an addition permitted in 2003.
+- [4030](4030/) — A 1964 15-unit apartment building, with a seismic retrofit permitted in 2019.
+- [4031](4031/) — An 1880 two-flat, with garage work permitted in 2002.
+- [4032](4032/) — A 1951 two-flat, with reroofing permitted in 2006.
+- [4033](4033/) — A 1900 single-family house, with garage work permitted in 2007.
+- [4036–4038](4036/) — A 1900 two-flat, with deck work permitted in 2002.
+- [4043](4043/) — A 1905 single-family house, with garage work permitted in 2021.
+- [4050–4056](4050/) — An 1885 6-unit apartment building, with dry-rot repair permitted in 2008.
+- [4051–4055](4051/) — A 1900 4-unit apartment building, with a seismic retrofit permitted in 2012.
+- [4065–4067](4065/) — A 1900 two-flat, with facade work permitted in 2009.
+- [4066](4066/) — A 1900 single-family house, with permit records from 2002 to 2023.
+- [4069](4069/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2014.
+- [4075](4075/) — A 1900 two-flat, with reroofing permitted in 1997.
+- [4076](4076/) — A 1900 single-family house, with a kitchen remodel permitted in 2025.
+- [4079–4085](4079/) — A 1923 4-unit apartment building, with reroofing permitted in 1990.
+- [4089–4099](4089/) — A 1910 two dwellings on one parcel, with a kitchen and bathroom remodel permitted in 2021.
+- [4105–4121](4105/) — A 1904 9-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1998.
+- [4106](4106/) — A 1907 2-unit tic building, with reroofing permitted in 2013.
+- [4108](4108/) — A 1904 two-flat, with window replacement permitted in 2012.
+- [4131](4131/) — A 1990 5-unit apartment building, with garage work permitted in 1990.
+- [4135–4137](4135/) — A 1900 two-flat, with a rear addition permitted in 2025.
+- [4139–4143](4139/) — A 1900 three-flat, with a kitchen remodel permitted in 2006.
+- [4145–4147](4145/) — A 1900 2-unit building with a ground-floor store, with stair work permitted in 1984.
+- [4302](4302/) — A 1990 single-family house, with a bathroom remodel permitted in 2016.
+- [4304](4304/) — A 1990 single-family house.
+- [4306–4308](4306/) — An 1887 two-flat, with a rear addition permitted in 1997.
+- [4309](4309/) — A 1912 single-family house, with a kitchen and bathroom remodel permitted in 2022.
+- [4312](4312/) — A 1900 two-flat, with stair work permitted in 2009.
+- [4314–4316](4314/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [4318](4318/) — An 1887 two-flat.
+- [4323–4325](4323/) — A 1927 two-flat, with an addition permitted in 2019.
+- [4326–4328](4326/) — A 1905 two-flat, with fire repair permitted in 1997.
+- [4330](4330/) — A 1906 single-family house, with reroofing permitted in 2004.
+- [4332](4332/) — A 1905 single-family house, with garage work permitted in 2014.
+- [4334](4334/) — A 1905 single-family house, with a bathroom remodel permitted in 2024.
+- [4337–4339](4337/) — A 1908 two-flat, with a bathroom remodel permitted in 2022.
+- [4341–4343](4341/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2012.
+- [4347](4347/) — A 1916 single-family house, with reroofing permitted in 2020.
+- [4419](4419/) — A 1900 single-family house, with a vertical addition permitted in 2005.
+- [4421](4421/) — A 1900 single-family house, with reroofing permitted in 1988.
+- [4426](4426/) — A 1934 single-family house, with a kitchen and bathroom remodel permitted in 2020.
+- [4427–4429](4427/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 1998.
+- [4431](4431/) — A 1900 single-family house, with garage work permitted in 2007.
+- [4443](4443/) — A 2014 single-family house, with plumbing work permitted in 2012.
+- [4500–4512](4500/) — A 1904 4-unit building with a ground-floor store, with reroofing permitted in 1994.
+- [4522](4522/) — A 1949 single-family house, with a bathroom remodel permitted in 2012.
+- [4528–4530](4528/) — A 1923 three-flat, with foundation work permitted in 1990.
+- [4534](4534/) — A 1922 single-family house, with an addition permitted in 2016.
+- [4540](4540/) — A 1922 single-family house, with a rear addition permitted in 2014.
+- [4546](4546/) — A 1923 single-family house, with deck work permitted in 2012.
+- [4552](4552/) — A 1918 single-family house, with an addition permitted in 2006.
+- [4558](4558/) — A 1918 single-family house, with a rear addition permitted in 2008.
+- [4564](4564/) — A 1918 single-family house, with an addition permitted in 2012.
+- [4570](4570/) — A 1918 single-family house, with a kitchen and bathroom remodel permitted in 2021.
+- [4576](4576/) — A 1918 single-family house, with deck work permitted in 2021.
+- [4582](4582/) — A 1918 single-family house, with a kitchen remodel permitted in 2018.
+- [4586–4588](4586/) — A 1918 single-family house, with a rear addition permitted in 1998.
+- [4600](4600/) — A 1918 single-family house, with window replacement permitted in 2001.
+- [4606](4606/) — A 1918 single-family house, with window replacement permitted in 2002.
+- [4612](4612/) — A 1923 single-family house, with garage work permitted in 2015.
+- [4618](4618/) — A 1923 single-family house, with an addition permitted in 2015.
+- [4624](4624/) — A 1923 two-flat, with window replacement permitted in 2017.
+- [4630](4630/) — A 1923 single-family house, with a rear addition permitted in 2014.
+- [4636](4636/) — A 1922 single-family house, with an addition permitted in 2010.
+- [4642](4642/) — A 1923 single-family house, with a rear addition permitted in 2022.
+- [4648](4648/) — A 1923 single-family house, with deck work permitted in 2015.
+- [4654](4654/) — A 1923 two-flat, with reroofing permitted in 2011.
+- [4660](4660/) — A 1923 single-family house, with a rear addition permitted in 2000.
+- [4664–4666](4664/) — A 1955 three-flat, with a kitchen and bathroom remodel permitted in 2011.
+- [4674](4674/) — A 1947 single-family house, with reroofing permitted in 2013.
+- [4682](4682/) — A 1955 single-family house, with window replacement permitted in 2005.
+- [4722–4724](4722/) — A 1949 two-flat, with a kitchen and bathroom remodel permitted in 2012.
+- [4723](4723/) — A 1947 single-family house, with window replacement permitted in 1986.
+- [4729](4729/) — A 1947 single-family house, with a kitchen remodel permitted in 2009.
+- [4735](4735/) — A 1947 single-family house, with a vertical addition permitted in 2019.
+- [4741](4741/) — A 1947 single-family house, with garage work permitted in 2017.
+- [4748](4748/) — A 1948 single-family house, with deck work permitted in 2007.
+- [4750](4750/) — A 1941 single-family house, with a kitchen remodel permitted in 1988.
+- [4757](4757/) — A 1910 single-family house, with a rear addition permitted in 1989.
+- [4760](4760/) — A 1907 single-family house, with a bathroom remodel permitted in 2024.
+- [4763](4763/) — A 1910 single-family house, with a rear addition permitted in 2021.
+- [4769](4769/) — A 1910 single-family house, with a rear addition permitted in 1999.
+- [4774](4774/) — A 1912 single-family house, with window replacement permitted in 2013.
+- [4775](4775/) — A 1918 single-family house, with a bathroom remodel permitted in 2019.
+- [4783](4783/) — A 1912 single-family house, with window replacement permitted in 1987.
+- [4789](4789/) — A 1907 single-family house, with an addition permitted in 2007.
+- [4799](4799/) — A 1911 single-family house, with reroofing permitted in 2025.
+- [4828](4828/) — A 1907 single-family house, with a kitchen remodel permitted in 2014.
+- [4834](4834/) — A 1913 single-family house, with deck work permitted in 2008.
+
+## Not yet covered
+
+Also on this street: 22 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 13 parcels with no record in the assessor's roll.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

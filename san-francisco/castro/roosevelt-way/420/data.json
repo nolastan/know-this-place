@@ -1,0 +1,139 @@
+{
+  "address": "420 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/420/",
+  "apn": "2618A007",
+  "block": "2618A",
+  "lot": "007",
+  "eas_baseid": "342340",
+  "coordinates": {
+    "lat": 37.764496,
+    "lng": -122.443453
+  },
+  "parcel": {
+    "year_built": 1967,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2313,
+    "building_area_sqft": 1800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0420 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1456560,
+    "assessed_improvement_value": 624240
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201206051826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-05",
+      "status_date": "2012-06-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa 200602104326 for final inspection only work completed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206051828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-05",
+      "status_date": "2012-06-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "comply with nov 200562639 renew pa 200509213499 for final insepction only work completed)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602104326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-10",
+      "status_date": "2012-06-06",
+      "estimated_cost": 1349,
+      "revised_cost": 1349,
+      "description": "install 3 vinyl windows in kind into (e) frames. no change in size or location. windows do face the street. if applicable, bedroom windows will comply with section 310.4 for rescue. all windows will have double pane glass and a u-factor of .30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509213499",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-09-21",
+      "status_date": "2008-01-07",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "construct rear yard landscape lattice per req of insp duffy.approx within buildable area leave 25%..",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207484",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-10",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3500,
+      "description": "bldg use: resid",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200964",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-02-09",
+      "status_date": "1982-06-10",
+      "estimated_cost": 990,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=420",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618A007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618A&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618A007",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

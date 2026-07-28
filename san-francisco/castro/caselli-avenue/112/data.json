@@ -1,0 +1,106 @@
+{
+  "address": "112 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/112/",
+  "apn": "2690004",
+  "block": "2690",
+  "lot": "004",
+  "eas_baseid": "344208",
+  "coordinates": {
+    "lat": 37.759887,
+    "lng": -122.441785
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0114 0112 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58864,
+    "assessed_improvement_value": 133607
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201211164374",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-16",
+      "status_date": "2013-01-02",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "partial foundation repair at rear of bldg. repair existing rear pop out. replace existing rear stair in in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306734",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-04-23",
+      "status_date": "1993-10-14",
+      "estimated_cost": 1910,
+      "description": "repl wd wndws wyh 6 alum--repr wd rot back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612816",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-10-14",
+      "status_date": "1987-06-23",
+      "estimated_cost": 6000,
+      "description": "remove stucco on front on building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=112",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690004",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

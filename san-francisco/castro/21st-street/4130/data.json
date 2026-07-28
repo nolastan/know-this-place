@@ -1,0 +1,154 @@
+{
+  "address": "4130 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/4130/",
+  "apn": "2750019",
+  "block": "2750",
+  "lot": "019",
+  "eas_baseid": "345458",
+  "coordinates": {
+    "lat": 37.756145,
+    "lng": -122.437333
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2437.5,
+    "building_area_sqft": 1805,
+    "basement_area_sqft": 735,
+    "lot_depth_ft": 97.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4130 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1417002,
+    "assessed_improvement_value": 836947,
+    "last_sale_date": "2015-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002104025",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-10",
+      "status_date": "2021-07-08",
+      "estimated_cost": 1,
+      "revised_cost": 1000,
+      "description": "structural upgrade 201710050455 as builts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902284023",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-28",
+      "status_date": "2020-01-15",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen remodel - open wall & vault kitchen ceiling. replace rear facing window @ kitchen. no change to plumbing fixture count or mech systems",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710050455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-05",
+      "status_date": "2020-01-15",
+      "estimated_cost": 180000,
+      "revised_cost": 180000,
+      "description": "1/f:covert (e) storage space to bedroom. create (n) hallway from home office tobedroom spaces. epxand bathroom. renovate half-bath. add 250sf conditional space. 2/f:remodel (e) bathroom. exterior work: window replacmeent throughout home.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408184083",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-18",
+      "status_date": "2014-11-17",
+      "estimated_cost": 35600,
+      "revised_cost": 35600,
+      "description": "perform repairs as per terminte report 64274 - s1 item 2g & 5h & report #64274-s2 item",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901120041",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-12",
+      "status_date": "2009-01-12",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512029401",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-12-02",
+      "status_date": "2011-08-05",
+      "estimated_cost": 500000,
+      "description": "house renovation, change 3 bedrooms, 1-1/2 baths to 5 bathrooms, 3 full bath & 2 \"1/2\" baths, change 1 car garage to 2 car, add 1 floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816912",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-11-03",
+      "status_date": "1991-11-04",
+      "estimated_cost": 3800,
+      "description": "add one office and one toilet in the basement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=4130",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=019",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750019",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

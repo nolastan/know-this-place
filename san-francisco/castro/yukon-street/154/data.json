@@ -1,0 +1,114 @@
+{
+  "address": "154–160 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/154/",
+  "apn": "2716057",
+  "block": "2716",
+  "lot": "057",
+  "eas_baseid": "345006",
+  "coordinates": {
+    "lat": 37.75732,
+    "lng": -122.442458
+  },
+  "address_range": "154–160",
+  "street_numbers_on_parcel": [
+    "154",
+    "156",
+    "158",
+    "160"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 5,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "lot_area_sqft": 5248,
+    "building_area_sqft": 2041,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0160 0154 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124555,
+    "assessed_improvement_value": 294445
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111122219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-12",
+      "status_date": "2022-01-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel bathroom: some new framing for shower head (no demo of existing framing), insulate, sheeetrock, tile, replace tub and vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808238097",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-23",
+      "status_date": "2019-07-03",
+      "estimated_cost": 15000,
+      "revised_cost": 21740,
+      "description": "water damage on 154 only. repair in kitchen, entry, living & dining rooms, upstairs bathroom, insulation, drywalls & some plumbing and electrical work. kitchen cabinets, replace as in kind. only replace damaged drywall as needed with 5/8\" type x. kitchen remodel, 9'x7'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616555",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-09-04",
+      "status_date": "1997-01-24",
+      "estimated_cost": 3000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=154",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2716057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2716&lot=057",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2716057",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

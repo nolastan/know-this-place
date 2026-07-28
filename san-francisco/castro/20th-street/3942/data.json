@@ -1,0 +1,168 @@
+{
+  "address": "3942 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3942/",
+  "apn": "3600015",
+  "block": "3600",
+  "lot": "015",
+  "eas_baseid": "361695",
+  "coordinates": {
+    "lat": 37.758273,
+    "lng": -122.429053
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 1895,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3942 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229693,
+    "assessed_improvement_value": 134364
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905160853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-16",
+      "status_date": "2019-08-15",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1050867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-13",
+      "status_date": "2019-03-13",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1029827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-01-22",
+      "status_date": "2019-01-22",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615711",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-23",
+      "status_date": "1997-05-27",
+      "estimated_cost": 3480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906404",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-19",
+      "status_date": "1990-08-21",
+      "estimated_cost": 5001,
+      "description": "complete work under application number 8704887",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-13",
+      "status_date": "1989-03-24",
+      "estimated_cost": 3000,
+      "description": "replace existing front stairs w/ exact duplicate",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805055",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-04-20",
+      "status_date": "1988-11-14",
+      "estimated_cost": 900,
+      "description": "delection sprklr plan on garage level, re #8704887",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704887",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-04-14",
+      "status_date": "1988-11-14",
+      "estimated_cost": 60000,
+      "description": "vertical extension, 2nd floor addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-01-09",
+      "status_date": "1987-01-26",
+      "estimated_cost": 2250,
+      "description": "repair the left side and rear foundation mudsills",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3942",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=015",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600015",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "address": "626 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/626/",
+  "apn": "3585002",
+  "block": "3585",
+  "lot": "002",
+  "eas_baseid": "360922",
+  "coordinates": {
+    "lat": 37.760842,
+    "lng": -122.428628
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 7916,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0626 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1408340,
+    "assessed_improvement_value": 1113778
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508284091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-28",
+      "status_date": "2025-09-26",
+      "estimated_cost": 28500,
+      "revised_cost": 36592,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309196859",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-09-19",
+      "status_date": "2025-08-19",
+      "estimated_cost": 19700,
+      "revised_cost": 24266,
+      "description": "fire alarm system replacement & mandatory lf horns upgrade to meet sffc 2022 sec 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408143831",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-08-14",
+      "status_date": "2016-03-30",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "soft story retrofit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807156776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-15",
+      "status_date": "2008-08-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M48954",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-11-20",
+      "status_date": "2006-11-20",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29580",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-04",
+      "status_date": "2004-10-04",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-04-16",
+      "status_date": "1986-06-18",
+      "estimated_cost": 1768,
+      "revised_cost": 0,
+      "description": "install aluminum widows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208125",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-10-04",
+      "status_date": "1983-05-26",
+      "estimated_cost": 5085,
+      "description": "bldg use: multi family dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=626",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

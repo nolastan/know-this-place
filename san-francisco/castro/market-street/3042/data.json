@@ -1,0 +1,124 @@
+{
+  "address": "3042 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3042/",
+  "apn": "2656014",
+  "block": "2656",
+  "lot": "014",
+  "eas_baseid": "343486",
+  "coordinates": {
+    "lat": 37.761288,
+    "lng": -122.442175
+  },
+  "parcel": {
+    "lot_area_sqft": 2099,
+    "use": "Multi-Family Residential",
+    "property_class": "TI Apartment",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3044 3042 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 760561,
+    "assessed_improvement_value": 519840,
+    "last_sale_date": "1987-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407015639",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-07-01",
+      "status_date": "2024-07-01",
+      "estimated_cost": 1,
+      "revised_cost": 500,
+      "description": "glass blocks (surrounded by studes) to be removed from non-load bearing partition wall on first floor no other work, 2' x 4' opening in wall with sill approx 18\" to 24\" aff.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202202188274",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-18",
+      "status_date": "2022-04-27",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210169087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-16",
+      "status_date": "2002-10-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "to renew app#2002/04/09/3489 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204093489",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-09",
+      "status_date": "2002-08-09",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair of front steps from street ( not two exceed 50%)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-12-04",
+      "status_date": "1986-03-18",
+      "estimated_cost": 3260,
+      "revised_cost": 0,
+      "description": "cut off bases of garage door jambs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3042",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656014",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

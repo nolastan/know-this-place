@@ -1,0 +1,109 @@
+{
+  "address": "4551 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4551/",
+  "apn": "2691048",
+  "block": "2691",
+  "lot": "048",
+  "eas_baseid": "344280",
+  "coordinates": {
+    "lat": 37.7603,
+    "lng": -122.440492
+  },
+  "parcel": {
+    "year_built": 1879,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 1,
+    "bedrooms": 5,
+    "lot_area_sqft": 3025,
+    "building_area_sqft": 2136,
+    "lot_depth_ft": 21,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4551 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1311604,
+    "assessed_improvement_value": 562114,
+    "last_sale_date": "2021-11-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1879",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M267106",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-06-07",
+      "status_date": "2011-06-07",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012146637",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-12-14",
+      "status_date": "2011-09-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove (e) two story deck. remove (e) hottub. rebuild two story deck. upgrade deck foundation. upgrade rear foundation of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304121",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1993-03-15",
+      "status_date": "1993-08-05",
+      "estimated_cost": 50,
+      "description": "erect non-electric sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4551",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2691048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2691&lot=048",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2691048",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "address": "4042 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4042/",
+  "apn": "3601017A",
+  "block": "3601",
+  "lot": "017A",
+  "eas_baseid": "361765",
+  "coordinates": {
+    "lat": 37.758139,
+    "lng": -122.43127
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 3336,
+    "basement_area_sqft": 1227,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4042A4042 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31154,
+    "assessed_improvement_value": 590007
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204192525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-19",
+      "status_date": "2022-05-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 202006128494. omit fence @ front property line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204192527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-19",
+      "status_date": "2022-05-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 202011179006. omit kitchen remodel, remove deck @ 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106142309",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-14",
+      "status_date": "2022-05-16",
+      "estimated_cost": 10000,
+      "revised_cost": 38710,
+      "description": "revision to 202006128494 enlarge approved adu relocate kitchen to expanded area. rough in for future bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202011179006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-17",
+      "status_date": "2022-05-16",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "replace front stairs in kind. remodel kitchen. remodel bathrooms on 2nd & 3rd fl. add bathroom on 3rd fl. remove fireplace. replace windows (not visible from street). increase openiing between living & dining room. relocate laundry. adu at gnd fl under pa 202006128494.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202006128494",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2020-06-12",
+      "status_date": "2022-05-16",
+      "estimated_cost": 80000,
+      "revised_cost": 85000,
+      "description": "add adu per ordinance 95-17 at ground level with one bedroom and one bathroom. replace windows at front and back, add entry door. eliminate interior stair. add 6' metal fence and gate at property line 80% open. rebuild existing front stairs. relocate gas and electric meters.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310824",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-10-26",
+      "status_date": "1984-08-21",
+      "estimated_cost": 8000,
+      "description": "replace 2 sets of existing stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4042",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601017A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=017A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601017A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

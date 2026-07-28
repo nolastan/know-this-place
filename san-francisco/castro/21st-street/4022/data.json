@@ -1,0 +1,143 @@
+{
+  "address": "4022 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/4022/",
+  "apn": "2751007",
+  "block": "2751",
+  "lot": "007",
+  "eas_baseid": "345497",
+  "coordinates": {
+    "lat": 37.756243,
+    "lng": -122.436136
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 3101,
+    "building_area_sqft": 1860,
+    "basement_area_sqft": 635,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4022 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1077059,
+    "assessed_improvement_value": 562109,
+    "last_sale_date": "2012-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201403039737",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-03",
+      "status_date": "2014-04-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201211154359. reduce deck 4'-6\" in length",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310310745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-31",
+      "status_date": "2014-04-01",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "structural revisions to app#201211154359. new footing details and new beam details",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211154359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-15",
+      "status_date": "2014-04-01",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "replace gate at front with weather tight door. remove one of 2 extg interior stairs that connect second floor to 1st floor, then alter the remaining stair to access the 1st floor.remodel 1st floor extg bathroom and new windows and doors at rear. new garage door. remodel 2nd floor extg kitchen and",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304222805",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-22",
+      "status_date": "2003-04-22",
+      "estimated_cost": 1785,
+      "revised_cost": 1785,
+      "description": "install 2 vinyl windows in kind.no chg in size or location.not visible from street.no structural chg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509576",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-06-22",
+      "status_date": "1996-02-10",
+      "estimated_cost": 18000,
+      "description": "legalize family room & bathroom @ grnd flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903899",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-03-13",
+      "status_date": "1992-01-13",
+      "estimated_cost": 1,
+      "revised_cost": 19449,
+      "description": "legalize bsmnt indoor room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=4022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751007",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

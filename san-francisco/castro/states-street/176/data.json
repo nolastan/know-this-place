@@ -1,0 +1,144 @@
+{
+  "address": "176–178 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/176/",
+  "apn": "2620119",
+  "block": "2620",
+  "lot": "119",
+  "eas_baseid": "483300",
+  "coordinates": {
+    "lat": 37.76362,
+    "lng": -122.439175
+  },
+  "address_range": "176–178",
+  "street_numbers_on_parcel": [
+    "176",
+    "178"
+  ],
+  "parcel": {
+    "year_built": 2015,
+    "units": 2,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 8,
+    "lot_area_sqft": 3179,
+    "building_area_sqft": 4815,
+    "lot_frontage_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0178 0176 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487639,
+    "assessed_improvement_value": 2399712,
+    "last_sale_date": "2012-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201506189307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-18",
+      "status_date": "2015-07-09",
+      "estimated_cost": 7500,
+      "revised_cost": 6000,
+      "description": "new sprinkler water flow a dn supervisory system. install new control unit ifp-25 at 176 & 178 states in the garage. heat det. above aand pull station newar panel.tie in water flows and tampers switches to new panel to be monitor. ref app#201206293848 and 201409307677.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M570987",
+      "type": "otc alterations permit",
+      "status": "approved",
+      "filed": "2015-03-20",
+      "status_date": "2015-03-20",
+      "revised_cost": 1,
+      "description": "street space permit (201206293848-s1) renewal of permit #201409307677/ 1338515",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409307677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-30",
+      "status_date": "2015-07-01",
+      "estimated_cost": 22000,
+      "revised_cost": 22060,
+      "description": "full installation of full nfpa-13 fire sprinkler throughout the 2-unit r-3 building including 2-inch copper 'k' underground and a 1-1/2 inch combo meter in accordance with nfpa 13 and nfpa 24 2010 ref arch app# 2012 0629 3848",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M509089",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-06",
+      "status_date": "2014-08-06",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206293848",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2012-06-29",
+      "status_date": "2015-08-24",
+      "estimated_cost": 400000,
+      "revised_cost": 785000,
+      "description": "erect 3 stories, type 5, 2 dwelling units building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M330308",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-26",
+      "status_date": "2012-06-26",
+      "revised_cost": 481,
+      "description": "lot changed to 119, new address to block 2620, lot 119 are as 176, 178 states st.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=176",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2620119&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2620&lot=119",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2620119",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

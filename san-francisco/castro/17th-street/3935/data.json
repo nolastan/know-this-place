@@ -1,0 +1,123 @@
+{
+  "address": "3935–3937 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3935/",
+  "apn": "3582080",
+  "block": "3582",
+  "lot": "080",
+  "eas_baseid": "360746",
+  "coordinates": {
+    "lat": 37.762365,
+    "lng": -122.433713
+  },
+  "address_range": "3935–3937",
+  "street_numbers_on_parcel": [
+    "3935",
+    "3937"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2182,
+    "building_area_sqft": 2568,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3937 3935 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 77696,
+    "assessed_improvement_value": 210943
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207067845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-06",
+      "status_date": "2023-07-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "address correction to includin 3935 17th street due to interior remodel under pa202203230703 for both the 2nd and 3rd floor under previous permit to also include stairs and a laundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203230703",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-23",
+      "status_date": "2023-07-19",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "revision to pa# 2021-1021-0910. 100% replacement of 2nd & 3rd flr if (e) utility porch. 100% replacement if exterior stair. add 3 (n) windows to groun flr rear. (n) porch & stair to be same height width & depth as (e). no increase in volume. elect & plumbing added to porch area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110210910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-21",
+      "status_date": "2023-07-19",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "interior remodel of 2nd floor kitchen and bathroom. new opening in load bearing wall. 2 windows and one door replaced at 2nd floor rear wall and one window replaced at 2nd floor rear wall & one window replaced at 2nd floor bath. tructural strenghthening at ground floor rear porch and less then 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M33491",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-07-21",
+      "status_date": "2005-07-21",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3935",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=080",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582080",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

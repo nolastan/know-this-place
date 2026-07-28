@@ -1,0 +1,121 @@
+{
+  "address": "4495 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4495/",
+  "apn": "2654035",
+  "block": "2654",
+  "lot": "035",
+  "eas_baseid": "343441",
+  "coordinates": {
+    "lat": 37.761665,
+    "lng": -122.445118
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1633,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4495 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1261938,
+    "assessed_improvement_value": 915760,
+    "last_sale_date": "2015-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201612124724",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-12-12",
+      "status_date": "2016-12-12",
+      "estimated_cost": 2400,
+      "revised_cost": 2400,
+      "description": "ref 201508073684. install new construction windows (vinyl) at new addition as shown in plans, replace 2 windows 2/f bathroom). u-factor 0.32 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509288225",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-28",
+      "status_date": "2015-09-28",
+      "estimated_cost": 1400,
+      "revised_cost": 2400,
+      "description": "retrofit (7) windows at front of house. materials: wood hung, recreate ogeelug, u-factor shall not exceed 0.32 as shown on photos.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508315716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-31",
+      "status_date": "2015-09-09",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508073684",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2015-08-07",
+      "status_date": "2016-08-04",
+      "estimated_cost": 40000,
+      "revised_cost": 100000,
+      "description": "demo (e) sun room & laundry room in rear of building. add nook and extend kitchen with deck above.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4495",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2654035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2654&lot=035",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2654035",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

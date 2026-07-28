@@ -1,0 +1,98 @@
+{
+  "address": "4100 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4100/",
+  "apn": "2623024",
+  "block": "2623",
+  "lot": "024",
+  "eas_baseid": "342515",
+  "coordinates": {
+    "lat": 37.762644,
+    "lng": -122.437423
+  },
+  "parcel": {
+    "year_built": 1974,
+    "units": 6,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 6,
+    "lot_area_sqft": 3700.5,
+    "building_area_sqft": 4020,
+    "lot_depth_ft": 50,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4100 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 738643,
+    "assessed_improvement_value": 620458,
+    "last_sale_date": "2001-08-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1974",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708074087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-07",
+      "status_date": "2019-05-03",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "soft story seismic upgrade per sf ord 66-13, sfebc ch 34, cebc app 4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911163",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-07",
+      "status_date": "1999-10-07",
+      "estimated_cost": 2200,
+      "description": "re-water proof existing deck & minor dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4100",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=024",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623024",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

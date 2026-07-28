@@ -1,0 +1,130 @@
+{
+  "address": "93 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/93/",
+  "apn": "2623066",
+  "block": "2623",
+  "lot": "066",
+  "eas_baseid": "342551",
+  "coordinates": {
+    "lat": 37.763181,
+    "lng": -122.437253
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1742,
+    "building_area_sqft": 1750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0093 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1642200,
+    "assessed_improvement_value": 703800,
+    "last_sale_date": "2024-05-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200608018269",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-01",
+      "status_date": "2006-12-20",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel kitchen & two bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303311071",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-31",
+      "status_date": "2003-03-31",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove post in family rm & add bigger beam and strengthen foundations revis to app #200303058910",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303058910",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-05",
+      "status_date": "2003-03-05",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "construct interior set ofstairs form family room to sun room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011024688",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-02",
+      "status_date": "2001-05-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110319",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-07",
+      "status_date": "1983-03-04",
+      "estimated_cost": 100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=93",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=066",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623066",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

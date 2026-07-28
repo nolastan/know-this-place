@@ -1,0 +1,113 @@
+{
+  "address": "542–546 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/542/",
+  "apn": "3580005",
+  "block": "3580",
+  "lot": "005",
+  "eas_baseid": "360532",
+  "coordinates": {
+    "lat": 37.762221,
+    "lng": -122.428764
+  },
+  "address_range": "542–546",
+  "street_numbers_on_parcel": [
+    "542",
+    "544",
+    "546"
+  ],
+  "parcel": {
+    "year_built": 1975,
+    "units": 21,
+    "stories": 3,
+    "rooms": 60,
+    "bathrooms": 21,
+    "lot_area_sqft": 6300,
+    "building_area_sqft": 15000,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0546 0542 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 120153,
+    "assessed_improvement_value": 1201793
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1975",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201703101208",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-10",
+      "status_date": "2018-03-22",
+      "estimated_cost": 50000,
+      "revised_cost": 136000,
+      "description": "comply w/nov 201642247 - mandatory soft story upgrade as per sfbc chapter 34b utilizing 2012 iebc, appendix a-4. add plywood shearwalls w/holdowns, add three hardy panels w/grade beam.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922134",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-19",
+      "status_date": "2000-04-19",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923079",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-11-28",
+      "status_date": "1990-03-28",
+      "estimated_cost": 3500,
+      "description": "e.w.o. (s)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=542",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

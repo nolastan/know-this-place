@@ -1,0 +1,139 @@
+{
+  "address": "4076 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4076/",
+  "apn": "3601023",
+  "block": "3601",
+  "lot": "023",
+  "eas_baseid": "361771",
+  "coordinates": {
+    "lat": 37.758108,
+    "lng": -122.431788
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 792,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4076 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 998934,
+    "assessed_improvement_value": 709902,
+    "last_sale_date": "2004-04-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201106208522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-20",
+      "status_date": "2011-11-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to appl #201007166818: replace existing 8\" poured-in-place concrete wall at property line with 8\" shotcrete wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M265206",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-31",
+      "status_date": "2011-05-31",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007166818",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-07-16",
+      "status_date": "2011-11-04",
+      "estimated_cost": 10000,
+      "revised_cost": 20500,
+      "description": "expand exiting basement room to match walls of exist sunroom above + small addition below existing deck, replace existing damaged exterior deck + stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9202667",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-02-24",
+      "status_date": "1993-03-31",
+      "estimated_cost": 2500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-04-08",
+      "status_date": "1985-05-10",
+      "estimated_cost": 1132,
+      "description": "repair dry rot at front wal, porch & rear stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8000357",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1980-01-11",
+      "status_date": "1992-02-19",
+      "estimated_cost": 2500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4076",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

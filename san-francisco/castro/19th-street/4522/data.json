@@ -1,0 +1,153 @@
+{
+  "address": "4522 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4522/",
+  "apn": "2700008",
+  "block": "2700",
+  "lot": "008",
+  "eas_baseid": "344582",
+  "coordinates": {
+    "lat": 37.759246,
+    "lng": -122.439676
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3476,
+    "building_area_sqft": 2013,
+    "basement_area_sqft": 688,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4522 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 493820,
+    "assessed_improvement_value": 467401,
+    "last_sale_date": "1999-01-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409110554",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-09-11",
+      "status_date": "2024-09-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace terrazzo front stair in kind dry rot repair required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408299745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-29",
+      "status_date": "2024-10-28",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace (7) windows in kind at facade with marvin ultimate. wood aluminum clad being the same operation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408138590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-13",
+      "status_date": "2025-07-24",
+      "estimated_cost": 11400,
+      "revised_cost": 11400,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701237664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-23",
+      "status_date": "2017-04-05",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "interior remodeling of the kitchen and bath of an existing family dwelling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M714690",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-18",
+      "status_date": "2016-08-18",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201091877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-09",
+      "status_date": "2012-03-26",
+      "estimated_cost": 72500,
+      "revised_cost": 72500,
+      "description": "remodel down stairs. new bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9903225",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-02-19",
+      "status_date": "1999-06-22",
+      "estimated_cost": 6000,
+      "description": "termite repair & remove stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4522",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700008",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "address": "710 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/710/",
+  "apn": "3604003",
+  "block": "3604",
+  "lot": "003",
+  "eas_baseid": "362003",
+  "coordinates": {
+    "lat": 37.757679,
+    "lng": -122.430506
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1853,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0710 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 530494,
+    "assessed_improvement_value": 433238,
+    "last_sale_date": "1992-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508120123",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-12",
+      "status_date": "2005-08-12",
+      "estimated_cost": 4280,
+      "revised_cost": 4280,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503248240",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-24",
+      "status_date": "2005-03-24",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "construct rear yard fence,fence to be built of redwood & is approx.25'longx7'high to match neighbor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211922",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-07-20",
+      "status_date": "1993-07-14",
+      "estimated_cost": 22000,
+      "revised_cost": 29600,
+      "description": "repair foundation & install windows in kitchen & dining,beam",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714053",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1987-09-30",
+      "status_date": "1988-04-26",
+      "estimated_cost": 5000,
+      "revised_cost": 7890,
+      "description": "horizontal extension",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714055",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-30",
+      "status_date": "1988-02-10",
+      "estimated_cost": 5000,
+      "description": "remodel bathroom closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601395",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-05",
+      "status_date": "1986-08-18",
+      "estimated_cost": 2500,
+      "description": "enlargement of yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600439",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-01-13",
+      "status_date": "1987-02-17",
+      "estimated_cost": 11500,
+      "description": "remodel of existing kitchen downstairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=710",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604003",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

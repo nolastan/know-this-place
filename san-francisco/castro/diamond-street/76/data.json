@@ -1,0 +1,134 @@
+{
+  "address": "76–78 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/76/",
+  "apn": "2649013",
+  "block": "2649",
+  "lot": "013",
+  "eas_baseid": "343267",
+  "coordinates": {
+    "lat": 37.76113,
+    "lng": -122.437554
+  },
+  "address_range": "76–78",
+  "street_numbers_on_parcel": [
+    "76",
+    "78"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 1920,
+    "basement_area_sqft": 686,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0076 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 901420,
+    "assessed_improvement_value": 416232
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M328130",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-15",
+      "status_date": "2012-06-15",
+      "revised_cost": 159,
+      "description": "add address to blk 2649, lot 013 as 78 diamond st per pa 201005202906.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M315167",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-04-18",
+      "status_date": "2012-04-19",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005202906",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-05-20",
+      "status_date": "2013-05-13",
+      "estimated_cost": 380000,
+      "revised_cost": 450000,
+      "description": "rebuild front stair to accomodate new garage door. remove 82 sq. ft. from southwest corner of house, patch to match (e) exterior. excavate ground floor for garage & new unit. remodel upper floor. reroof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-21",
+      "status_date": "1995-02-27",
+      "estimated_cost": 1,
+      "description": "renew 9401332",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9401332",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-01-31",
+      "status_date": "1994-08-11",
+      "estimated_cost": 8000,
+      "revised_cost": 12000,
+      "description": "partial underpinning of north property wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=76",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=013",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649013",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

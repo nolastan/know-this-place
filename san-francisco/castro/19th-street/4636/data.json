@@ -1,0 +1,133 @@
+{
+  "address": "4636 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4636/",
+  "apn": "2700027",
+  "block": "2700",
+  "lot": "027",
+  "eas_baseid": "344600",
+  "coordinates": {
+    "lat": 37.759181,
+    "lng": -122.441443
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 1909,
+    "basement_area_sqft": 625,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4636 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1178286,
+    "assessed_improvement_value": 656814,
+    "last_sale_date": "2008-08-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201004029536",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-04-02",
+      "status_date": "2011-11-28",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "rear ground level addition of new master suite with terrace above. new french doors off dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004029539",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2010-04-02",
+      "status_date": "2012-01-25",
+      "estimated_cost": 60000,
+      "revised_cost": 43428,
+      "description": "to erect detached garage at rear alley with roof terrace above.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809192085",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-09-19",
+      "status_date": "2013-02-07",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remodel extg kitchen. remove two wall at extg kitchen. installing 2 beams. electrical and mechanical on separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809171857",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-09-17",
+      "status_date": "2010-08-24",
+      "estimated_cost": 3000,
+      "revised_cost": 6400,
+      "description": "remodel of existing bathroom including removal of existing shower, adding bath tub, relocate toilet, retile floor. no relocation or removal of existing walls. all work will be on second floor level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407300253",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-30",
+      "status_date": "2004-11-22",
+      "estimated_cost": 62400,
+      "revised_cost": 62400,
+      "description": "remodel kitchen/bath,approx 4'ht.fence,repair stair/ handrail,(n)furnace,drywall,all window/doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4636",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700027",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

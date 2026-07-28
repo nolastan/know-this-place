@@ -1,0 +1,138 @@
+{
+  "address": "4134 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4134/",
+  "apn": "3602023",
+  "block": "3602",
+  "lot": "023",
+  "eas_baseid": "361851",
+  "coordinates": {
+    "lat": 37.757989,
+    "lng": -122.43338
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2448,
+    "building_area_sqft": 3445,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4134 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 28377,
+    "assessed_improvement_value": 102553
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200608240417",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-24",
+      "status_date": "2006-10-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew pa#200412242150 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M35346",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-15",
+      "status_date": "2005-11-15",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412242150",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-12-24",
+      "status_date": "2006-11-08",
+      "estimated_cost": 4000,
+      "revised_cost": 30000,
+      "description": "rock anchors and misc shoring to support work on adj parcel at 4138 - 4140 20th st regarding appln",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408020398",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-02",
+      "status_date": "2004-08-02",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "voluntary red brick foundation. replacment at garage west wall 36f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617589",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-17",
+      "status_date": "1997-06-11",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815626",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-10-18",
+      "status_date": "1989-08-29",
+      "estimated_cost": 4000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4134",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "address": "74 Eagle Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eagle-street/74/",
+  "apn": "2711016",
+  "block": "2711",
+  "lot": "016",
+  "eas_baseid": "344854",
+  "coordinates": {
+    "lat": 37.758591,
+    "lng": -122.443284
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 1611,
+    "building_area_sqft": 2380,
+    "basement_area_sqft": 661,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0074 EAGLE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1947344,
+    "assessed_improvement_value": 834574,
+    "last_sale_date": "2016-06-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M181966",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-13",
+      "status_date": "2009-10-13",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908265578",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-26",
+      "status_date": "2010-06-03",
+      "estimated_cost": 145000,
+      "revised_cost": 145000,
+      "description": "kitchen remodel. new cabinets, lights & fixtures. powder bath remodel. kitchen. replace cabinets & counter. 4 bathrooms total. replace plumbing fixtures and re-tile walls & floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101250566",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-01-25",
+      "status_date": "2001-11-26",
+      "estimated_cost": 1000,
+      "revised_cost": 6000,
+      "description": "rev. to pa#2000/11/14/5600 requested by carla johnson-replace additional foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011145600",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-11-14",
+      "status_date": "2001-11-26",
+      "estimated_cost": 5000,
+      "revised_cost": 20000,
+      "description": "revision to building permit #2000011377 s1/r1, clarify demolition plan & better coop. w arch/stru dr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "2000011377",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-01-13",
+      "status_date": "2001-11-26",
+      "estimated_cost": 199720,
+      "description": "one stop: c. h. add 1 story, alteration to 1st fl. per/plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-28",
+      "status_date": "1997-06-17",
+      "estimated_cost": 2200,
+      "description": "repair stucco in front & in door way",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EAGLE&street_type=ST&address_number=74",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711016",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

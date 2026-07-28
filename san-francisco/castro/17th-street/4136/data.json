@@ -1,0 +1,163 @@
+{
+  "address": "4136–4138 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4136/",
+  "apn": "2623030A",
+  "block": "2623",
+  "lot": "030A",
+  "eas_baseid": "342523",
+  "coordinates": {
+    "lat": 37.76252,
+    "lng": -122.438215
+  },
+  "address_range": "4136–4138",
+  "street_numbers_on_parcel": [
+    "4136",
+    "4138"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 4159,
+    "building_area_sqft": 3150,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4138 4136 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 507310,
+    "assessed_improvement_value": 563368
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M829427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-08",
+      "status_date": "2017-09-08",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M814867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-31",
+      "status_date": "2017-07-31",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703201841",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-20",
+      "status_date": "2017-03-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 4 wood windows with marvin sash al-clad wood windows, replace 3 bay windows with custom wood windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608154981",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-15",
+      "status_date": "2017-12-06",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "replacing retaining wall to comply with nov 201447642",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M225247",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-18",
+      "status_date": "2010-10-18",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711137955",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-11-13",
+      "status_date": "2010-10-07",
+      "estimated_cost": 64000,
+      "revised_cost": 64000,
+      "description": "two story rear yard addition of utility porches on a 4 unit residential building with an spiral stair to the ground. including plumbing, electrical and new lighting. the space will be used for laundry, storage and mechanical and not conditioned.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605051",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-30",
+      "status_date": "1986-07-03",
+      "estimated_cost": 1200,
+      "description": "replaced cement steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512659",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-11-07",
+      "status_date": "1986-04-23",
+      "estimated_cost": 1000,
+      "description": "replace crack cement steps",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4136",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623030A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=030A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623030A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

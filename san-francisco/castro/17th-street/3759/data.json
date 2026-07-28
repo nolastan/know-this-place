@@ -1,0 +1,163 @@
+{
+  "address": "3759–3761 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3759/",
+  "apn": "3580061",
+  "block": "3580",
+  "lot": "061",
+  "eas_baseid": "360566",
+  "coordinates": {
+    "lat": 37.762583,
+    "lng": -122.42979
+  },
+  "address_range": "3759–3761",
+  "street_numbers_on_parcel": [
+    "3759",
+    "3761"
+  ],
+  "parcel": {
+    "year_built": 1887,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2768,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3761 3759 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 377918,
+    "assessed_improvement_value": 434845,
+    "last_sale_date": "1994-08-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1887",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201809049092",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-04",
+      "status_date": "2019-01-25",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair dryrot. existing siding is finger jointed redwood rustic, will be replaced with hardie plank. flight of stairs along exterior wall need to be disassembled and reassembled- with same material.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M478707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-10",
+      "status_date": "2014-04-10",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M356091",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-31",
+      "status_date": "2012-10-31",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304112073",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-04-11",
+      "status_date": "2004-08-16",
+      "estimated_cost": 115000,
+      "revised_cost": 180000,
+      "description": "interior remodels, reapportion units on (e) floors, new interior stair, repair (e)deck/stair in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-14",
+      "status_date": "1998-12-14",
+      "estimated_cost": 4500,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415656",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-27",
+      "status_date": "1995-05-10",
+      "estimated_cost": 5000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412343",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-02",
+      "status_date": "1994-12-02",
+      "estimated_cost": 4556,
+      "description": "repair wall base framing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705625",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-29",
+      "status_date": "1989-03-04",
+      "estimated_cost": 40000,
+      "description": "install gas fired forced air heating system/replace 6 window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3759",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=061",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580061",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

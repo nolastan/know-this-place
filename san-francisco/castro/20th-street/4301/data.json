@@ -1,0 +1,111 @@
+{
+  "address": "4301–4303 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4301/",
+  "apn": "2751001",
+  "block": "2751",
+  "lot": "001",
+  "eas_baseid": "345487",
+  "coordinates": {
+    "lat": 37.757392,
+    "lng": -122.435934
+  },
+  "address_range": "4301–4303",
+  "street_numbers_on_parcel": [
+    "4301",
+    "4303"
+  ],
+  "parcel": {
+    "year_built": 1931,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 2500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4303 4301 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 397865,
+    "assessed_improvement_value": 397865
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107124129",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-12",
+      "status_date": "2021-08-13",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M64304",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-16",
+      "status_date": "2007-04-16",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513836",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-28",
+      "status_date": "1997-05-27",
+      "estimated_cost": 450,
+      "description": "repair and replace of 2\" x6\" decking routine maint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4301",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751001",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

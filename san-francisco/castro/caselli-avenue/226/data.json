@@ -1,0 +1,141 @@
+{
+  "address": "226 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/226/",
+  "apn": "2689005",
+  "block": "2689",
+  "lot": "005",
+  "eas_baseid": "344182",
+  "coordinates": {
+    "lat": 37.759641,
+    "lng": -122.443497
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 1712,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0226 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1746500,
+    "assessed_improvement_value": 748500,
+    "last_sale_date": "2015-03-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201210303119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-30",
+      "status_date": "2012-11-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "alteration of front facade and roof line to comply with nov 20129155",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201202174404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-17",
+      "status_date": "2012-02-27",
+      "revised_cost": 1500,
+      "description": "remove and replace apprx. 15 sq. ft. of stucco and replace with same material. roofing work was less than 25% of total (no permit reqd. per sec. 106a.2.sfbc) no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711137924",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-11-13",
+      "status_date": "2012-02-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 200104207370 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301286041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-28",
+      "status_date": "2003-02-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "replace garage door previously approved under pa#2001/04/20/7370s1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104207370",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-04-20",
+      "status_date": "2012-02-27",
+      "estimated_cost": 145000,
+      "revised_cost": 145000,
+      "description": "kitchen & bath remodel master bedrm remodel w/new bath & closet new doors & windows new siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-23",
+      "status_date": "1996-04-08",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=226",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

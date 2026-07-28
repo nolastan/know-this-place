@@ -1,0 +1,107 @@
+{
+  "address": "3040 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3040/",
+  "apn": "2656013",
+  "block": "2656",
+  "lot": "013",
+  "eas_baseid": "343485",
+  "coordinates": {
+    "lat": 37.761286,
+    "lng": -122.442087
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2069,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3040 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367944,
+    "assessed_improvement_value": 145323,
+    "last_sale_date": "1991-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9222182",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-12-28",
+      "status_date": "1995-08-09",
+      "estimated_cost": 1600,
+      "description": "revision-struct upgrd, add posts & beam, move skylite, shear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221660",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-12-16",
+      "status_date": "1993-06-07",
+      "estimated_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211137",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-07-07",
+      "status_date": "1995-08-09",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=013",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656013",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -2,10 +2,24 @@
 
 How to turn `data.json` into `index.html`. `data.json` is the single source of
 truth for an address page — structured facts *and* prose (in its `narrative`
-field); there is no `index.md`. There is no template engine and no build step:
-**you author the HTML directly from `data.json`, and every fact and sentence in
-it must trace back to `data.json` so the page can be regenerated from that file
-alone.**
+field); there is no `index.md`. Every fact and sentence in the HTML must trace
+back to `data.json`, so the page can be regenerated from that file alone.
+
+**Two ways a page gets its HTML.** Most pages are *generated*: `data.json`
+carries a `generator` key and `python3 scripts/seed_pages.py render <page-dir>`
+writes the HTML by composing the blocks below. Read this file to understand
+what the renderer emits and to change it. A minority are *hand-authored* — a
+page with a real story, a bespoke layout, committed photographs — and there you
+write the HTML yourself, to this same contract, and the page carries no
+`generator` key so the script leaves it alone.
+
+Either way there is no template engine and no build step for the reader: the
+committed `index.html` is the whole page.
+
+**Fix the renderer, not the output.** On a generated page, hand-editing
+`index.html` is undone by the next `render` and puts the page out of step with
+the script. If the HTML is wrong on one page it is wrong on hundreds — change
+`scripts/seed_pages.py` and re-render.
 
 The goal is a **designed data page, not an article.** A good page looks like a
 purpose-built dashboard for one building — stat tiles, a visual timeline,
@@ -243,6 +257,12 @@ the key is set — with no page regeneration.
 ```
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number.)
+
+**Never test or preview the embed.** The key is restricted to the production
+domain, so it fails from localhost, from any preview host, and from `curl` —
+by design, not by fault. There is no local check that can pass, so attempting
+one only burns effort. Write the placeholder, confirm `location="LAT,LNG"`
+equals `coordinates` in `data.json`, and stop there.
 Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.

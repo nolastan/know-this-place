@@ -1,0 +1,153 @@
+{
+  "address": "341 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/341/",
+  "apn": "3564085",
+  "block": "3564",
+  "lot": "085",
+  "eas_baseid": "359870",
+  "coordinates": {
+    "lat": 37.763488,
+    "lng": -122.432727
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 1399,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0341 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1158508,
+    "assessed_improvement_value": 496496,
+    "last_sale_date": "2008-04-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606173474",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2026-06-17",
+      "status_date": "2026-06-17",
+      "estimated_cost": 10000,
+      "description": "demo (e) rear deck,extr stair, platform, associated footings, railings and supports. construct new 104sf 2nd story rear deck, 65sf extr stairs and landing. replace ground leevl platform, new concrete footings and new 2-hr fire wall at p|l. no change to occupancy,m use, floor area or building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411040622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-04",
+      "status_date": "2014-11-13",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803036115",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-03",
+      "status_date": "2008-03-13",
+      "estimated_cost": 3900,
+      "revised_cost": 3900,
+      "description": "termite report #071141, item #1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710094846",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-09",
+      "status_date": "2007-11-02",
+      "estimated_cost": 3250,
+      "revised_cost": 3250,
+      "description": "building exterior damaged by atuo accident. we propose to rebuild affected area to original condition. birck face and cracked framing to be replaced on small area near garage door and entry area 3'x 6' tall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403108301",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-03-10",
+      "status_date": "2007-02-15",
+      "estimated_cost": 5287,
+      "revised_cost": 5287,
+      "description": "remove and replace exterior siding at back and right side of house/not seen from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207101086",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-07-10",
+      "status_date": "2002-07-10",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace tile in bathroom, new sink,bath faucet,shtrk,kitchen cabnts/cntrs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007115",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-12",
+      "status_date": "1990-07-13",
+      "estimated_cost": 475,
+      "revised_cost": 0,
+      "description": "install vents at front bays",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=341",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=085",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564085",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

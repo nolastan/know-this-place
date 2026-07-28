@@ -1,0 +1,152 @@
+{
+  "address": "4309 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4309/",
+  "apn": "2698039",
+  "block": "2698",
+  "lot": "039",
+  "eas_baseid": "344526",
+  "coordinates": {
+    "lat": 37.759032,
+    "lng": -122.437311
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 1880,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4309 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2083681,
+    "assessed_improvement_value": 893005,
+    "last_sale_date": "2021-02-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412126657",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-12",
+      "status_date": "2025-04-28",
+      "estimated_cost": 27940,
+      "revised_cost": 27940,
+      "description": "replace 13 windows. 11 are front facing, 2 in the rear, no size change, material is wood alum clad",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201196248",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-01-19",
+      "status_date": "2023-12-15",
+      "estimated_cost": 125000,
+      "revised_cost": 125000,
+      "description": "remove wall and replace sliding glass door in ground floor kitchen, replace plumbing fixtures in bathroom on ground floor, extend 2nd floor bedroom over one story kitchen below and add full bathroom in bedroom. new lighting and electrical in areas of work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310179491",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-17",
+      "status_date": "2014-04-04",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "install one 48x48 skylight over stairs and one suntunnel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310048489",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-04",
+      "status_date": "2014-04-04",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "replace fixtures in bathroom, new toilet, sink, shower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904075760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-07",
+      "status_date": "2009-06-09",
+      "estimated_cost": 16592,
+      "revised_cost": 16592,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707237506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-23",
+      "status_date": "2007-10-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel (e) kitchen. replacing (e) kitchen cabinets and appliances. no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816354",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-10-21",
+      "status_date": "1989-03-24",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4309",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2698039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2698&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2698039",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

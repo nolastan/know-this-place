@@ -1,0 +1,161 @@
+{
+  "address": "3600 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3600/",
+  "apn": "3605073",
+  "block": "3605",
+  "lot": "073",
+  "eas_baseid": "362144",
+  "coordinates": {
+    "lat": 37.756717,
+    "lng": -122.428244
+  },
+  "parcel": {
+    "year_built": 1963,
+    "units": 30,
+    "stories": 3,
+    "rooms": 131,
+    "bathrooms": 33,
+    "lot_area_sqft": 11970,
+    "building_area_sqft": 22624,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3600 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215300,
+    "assessed_improvement_value": 1220589
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407116228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-11",
+      "status_date": "2025-11-19",
+      "estimated_cost": 40000,
+      "revised_cost": 100600,
+      "description": "upgrade fire alarm system to comply with sffc 1103-7-6-1 replace (e) facp with new facu, install new rps, aes radio, led matrix annuciator, smoke detectors, manual pules, monitor modues, and horn strobes install lf sounders in all units potentioal sleeping areas to comply with sffd 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206247054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-24",
+      "status_date": "2022-08-26",
+      "estimated_cost": 92190,
+      "revised_cost": 92190,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603152073",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-03-15",
+      "status_date": "2018-05-17",
+      "estimated_cost": 1500,
+      "revised_cost": 20000,
+      "description": "soft story retrofit sfbc chapter 34b-fema p-807. add 3 shear walls to target story with hold downs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M291067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-12-02",
+      "status_date": "2011-12-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M206729",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-15",
+      "status_date": "2010-06-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610175267",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-17",
+      "status_date": "2007-02-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revise original permit to include replacement of stucco , front of bldg only and partial wrap on corners approx 3'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609223071",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-09-22",
+      "status_date": "2017-09-05",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "replacing existing 18 aluminum windows with vinyl windows replacing existing 8 aluminum sliders with vinyl sliders (visible from street (all windows replaced in kind and size)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9804610",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-18",
+      "status_date": "1999-03-01",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3600",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=073",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605073",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

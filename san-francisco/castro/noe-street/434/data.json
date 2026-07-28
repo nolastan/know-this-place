@@ -1,0 +1,157 @@
+{
+  "address": "434–436 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/434/",
+  "apn": "3582006",
+  "block": "3582",
+  "lot": "006",
+  "eas_baseid": "360682",
+  "coordinates": {
+    "lat": 37.762012,
+    "lng": -122.433246
+  },
+  "address_range": "434–436",
+  "street_numbers_on_parcel": [
+    "434",
+    "436"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 5,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3846,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0436 0434 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1592958,
+    "assessed_improvement_value": 1092811,
+    "last_sale_date": "2017-08-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002265484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-26",
+      "status_date": "2020-04-29",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "ref# 201912311099: installation of a new sprinkler monitoring system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912311099",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-31",
+      "status_date": "2020-04-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built plan for permit #201808207801. provide voluntary fire sprinkler system on ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904309256",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-04-30",
+      "status_date": "2020-03-10",
+      "estimated_cost": 20000,
+      "revised_cost": 65000,
+      "description": "(n) 1st flr residential unit (adu) under ordinance 162-16. (n) fire sprinkler under permit #2018-0820-7801. revision to retainign wall on permit no. 201904188308 to 4' tall retaining wall with 3'-6\" wood guardrail.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904188308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-18",
+      "status_date": "2019-12-05",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "increase ceiling height from 6'-8\" to 8'-0\" at storage areas @ 1st floor. (n) patio & concrete stair on grade @ rear of building. lateral upgrade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808207801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-20",
+      "status_date": "2020-03-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "provide & install (n) voluntary fire sprinkler system into ground floor only and (n) u/g fire service per nfpa24.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M841807",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-10",
+      "status_date": "2017-10-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708175171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-17",
+      "status_date": "2018-05-10",
+      "estimated_cost": 18000,
+      "revised_cost": 70880,
+      "description": "remodel (e) 2 units building, kitchen, laundry and (2) bathrooms on each unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=434",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582006",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

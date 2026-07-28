@@ -1,0 +1,168 @@
+{
+  "address": "348 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/348/",
+  "apn": "2749010",
+  "block": "2749",
+  "lot": "010",
+  "eas_baseid": "345393",
+  "coordinates": {
+    "lat": 37.75653,
+    "lng": -122.438195
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3249,
+    "building_area_sqft": 2520,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0348 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2607387,
+    "assessed_improvement_value": 1117451,
+    "last_sale_date": "2021-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411044288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-04",
+      "status_date": "2024-11-20",
+      "estimated_cost": 18640,
+      "revised_cost": 18640,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009251406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-25",
+      "status_date": "2001-04-09",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace doors to 1/2 bath & laundry rm & new headers above door frame.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007114833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-11",
+      "status_date": "2001-04-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reface & resurface kitchem, repl ext. door at the rear of the house,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-22",
+      "status_date": "2001-04-12",
+      "estimated_cost": 1,
+      "description": "revision 9715436",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715436S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-08-13",
+      "status_date": "2001-04-09",
+      "estimated_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703280",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-24",
+      "status_date": "1997-06-13",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019121",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-09-25",
+      "status_date": "1991-08-30",
+      "estimated_cost": 65000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8108536",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-09-30",
+      "status_date": "1982-05-24",
+      "estimated_cost": 25000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8108496",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-09-29",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=348",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749010",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

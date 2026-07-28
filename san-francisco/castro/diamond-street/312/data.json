@@ -1,0 +1,128 @@
+{
+  "address": "312 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/312/",
+  "apn": "2750006",
+  "block": "2750",
+  "lot": "006",
+  "eas_baseid": "345445",
+  "coordinates": {
+    "lat": 37.756875,
+    "lng": -122.437145
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 1320,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0312 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229955,
+    "assessed_improvement_value": 232888
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311140784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-14",
+      "status_date": "2024-08-14",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106041718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-04",
+      "status_date": "2021-11-02",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "window replacement (5) on the 2/f. 4 bedroom & 1 kitchen area not visible to street. u-factor 0.30 or better. in kind replacement. no change in size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318259",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-18",
+      "status_date": "1994-05-16",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-16",
+      "status_date": "1989-01-12",
+      "estimated_cost": 7000,
+      "description": "repair porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508980",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-19",
+      "status_date": "1986-01-31",
+      "estimated_cost": 15800,
+      "description": "repair perimeter foundation sills",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=312",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750006",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

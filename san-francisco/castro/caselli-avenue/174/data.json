@@ -1,0 +1,165 @@
+{
+  "address": "174 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/174/",
+  "apn": "2690014A",
+  "block": "2690",
+  "lot": "014A",
+  "eas_baseid": "344220",
+  "coordinates": {
+    "lat": 37.759945,
+    "lng": -122.4427
+  },
+  "parcel": {
+    "year_built": 1875,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1925,
+    "building_area_sqft": 1800,
+    "lot_depth_ft": 50,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0174 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 346722,
+    "assessed_improvement_value": 216692,
+    "last_sale_date": "1992-12-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1875",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201101138353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-01-13",
+      "status_date": "2011-01-13",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508180638",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-18",
+      "status_date": "2005-08-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appn#200502044800,#200405123728 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503187893",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-18",
+      "status_date": "2005-08-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. to pa#2004/05/12/3728",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502044806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-04",
+      "status_date": "2005-08-18",
+      "estimated_cost": 37500,
+      "revised_cost": 37500,
+      "description": "repair/replace sheetrock, less than 50%, instulate where possible, replace damaged exist siding in",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502044807",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-02-04",
+      "status_date": "2005-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal pa 200405123728 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405123728",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-12",
+      "status_date": "2004-05-12",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove interior wall and partition. install steel beam on 1st floor reinforce existing beam in basem",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008147753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-14",
+      "status_date": "2001-05-21",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bathrm upper remodel strip wall finish to stds elec upgrde,bthrm rmdl minor partition relocation,fur",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012595",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-26",
+      "status_date": "1990-07-24",
+      "estimated_cost": 2600,
+      "description": "remove & replace exist decking",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=174",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=014A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690014A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

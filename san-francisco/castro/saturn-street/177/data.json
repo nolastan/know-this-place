@@ -1,0 +1,90 @@
+{
+  "address": "177–179 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/177/",
+  "apn": "2645027",
+  "block": "2645",
+  "lot": "027",
+  "eas_baseid": "343130",
+  "coordinates": {
+    "lat": 37.762344,
+    "lng": -122.444524
+  },
+  "address_range": "177–179",
+  "street_numbers_on_parcel": [
+    "177",
+    "179"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1681,
+    "building_area_sqft": 1650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0179 0177 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47099,
+    "assessed_improvement_value": 43635
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9313006",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-02",
+      "status_date": "1993-12-10",
+      "estimated_cost": 1500,
+      "description": "rotted wood in front staircase repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=177",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2645027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2645&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2645027",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

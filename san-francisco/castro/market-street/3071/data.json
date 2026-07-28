@@ -1,0 +1,106 @@
+{
+  "address": "3071 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3071/",
+  "apn": "2658040",
+  "block": "2658",
+  "lot": "040",
+  "eas_baseid": "343581",
+  "coordinates": {
+    "lat": 37.760842,
+    "lng": -122.442564
+  },
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1346,
+    "building_area_sqft": 1088,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3071 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367944,
+    "assessed_improvement_value": 183963
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907246842",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-24",
+      "status_date": "2019-07-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-12-04",
+      "status_date": "2001-08-30",
+      "estimated_cost": 3500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122126",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-19",
+      "status_date": "1991-12-20",
+      "estimated_cost": 1900,
+      "description": "install 4 aluminum windows in frames in bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3071",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2658040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2658&lot=040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2658040",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

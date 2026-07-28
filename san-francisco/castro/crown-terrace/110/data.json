@@ -1,0 +1,145 @@
+{
+  "address": "110 Crown Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/crown-terrace/110/",
+  "apn": "2719B045",
+  "block": "2719B",
+  "lot": "045",
+  "eas_baseid": "345122",
+  "coordinates": {
+    "lat": 37.757687,
+    "lng": -122.447257
+  },
+  "parcel": {
+    "year_built": 1935,
+    "units": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2642,
+    "building_area_sqft": 1220,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0110 CROWN               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 128041,
+    "assessed_improvement_value": 384184
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1935",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9315411",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-09",
+      "status_date": "1994-09-26",
+      "estimated_cost": 850,
+      "revised_cost": 3500,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9311890",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-07-14",
+      "status_date": "1993-12-13",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301136",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-01-26",
+      "status_date": "1993-06-07",
+      "estimated_cost": 2850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609763",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-08-11",
+      "status_date": "1992-08-11",
+      "estimated_cost": 960,
+      "description": "replace cap & 4x4 post w/ concrete steel reingforced",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510561",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-25",
+      "status_date": "1985-12-24",
+      "estimated_cost": 1500,
+      "description": "extend out new closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409396",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-08-29",
+      "status_date": "1985-09-27",
+      "estimated_cost": 18000,
+      "description": "rebuild retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306752",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-07-15",
+      "status_date": "1983-12-14",
+      "estimated_cost": 1200,
+      "description": "supported by concrete footing pier post.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CROWN&street_type=TER&address_number=110",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719B045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719B&lot=045",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719B045",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "address": "4344 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4344/",
+  "apn": "2646054",
+  "block": "2646",
+  "lot": "054",
+  "eas_baseid": "343187",
+  "coordinates": {
+    "lat": 37.76231,
+    "lng": -122.441536
+  },
+  "parcel": {
+    "year_built": 1961,
+    "units": 6,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 10,
+    "bedrooms": 16,
+    "lot_area_sqft": 8746,
+    "building_area_sqft": 5691,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4344 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1607742,
+    "assessed_improvement_value": 1048371,
+    "last_sale_date": "2006-07-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1961",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810092700",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-09",
+      "status_date": "2018-12-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201604195117 modification to moment frame based on the as build",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604195117",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-19",
+      "status_date": "2018-12-28",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "proposed seismic retrofit to comply with sfbc soft story program ch 34b; other rational design; soft story retrofit per sfbc chaper 34b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501054950",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-05",
+      "status_date": "2015-01-05",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit: kitchen remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012277453",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-27",
+      "status_date": "2010-12-27",
+      "estimated_cost": 10000,
+      "revised_cost": 18277,
+      "description": "one unit: kitchen and bathroom remodel, kitchen: min 50% (per wattage) lighting shall be high efficiency, bathroom: high efficacy lights on manual on occupancy sensor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804240589",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-24",
+      "status_date": "2008-04-24",
+      "estimated_cost": 20000,
+      "revised_cost": 44700,
+      "description": "interior remodeling: changing the location of kitchen. add one bathroom & bedroom on three units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803187410",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-03-18",
+      "status_date": "2008-03-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "two units: kitchen & bath remodeling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109269284",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-26",
+      "status_date": "2001-11-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "provide electrical for dishwasher, install gfi's in kitchen, tile work in bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101119635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-11",
+      "status_date": "2001-04-11",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "change (e) kitchen recepticals, add smoke detectors, install dishwasher and cabinets, paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4344",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=054",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646054",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

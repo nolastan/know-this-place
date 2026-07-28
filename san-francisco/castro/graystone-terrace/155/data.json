@@ -1,0 +1,109 @@
+{
+  "address": "155 Graystone Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/graystone-terrace/155/",
+  "apn": "2719A009",
+  "block": "2719A",
+  "lot": "009",
+  "eas_baseid": "345109",
+  "coordinates": {
+    "lat": 37.75758,
+    "lng": -122.446207
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 4181,
+    "building_area_sqft": 2146,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0155 GRAYSTONE           TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1639895,
+    "assessed_improvement_value": 1093260,
+    "last_sale_date": "2006-04-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200606063246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-06",
+      "status_date": "2006-09-28",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel 2 door openings, 2 headers, drywall, flooring, paint. 1 strong back (work in living room & stair area).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307078906",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-07",
+      "status_date": "2003-07-07",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "plaster/sheetrock repair throughout house, repair/replace in kind shower, install new tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122721",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-02",
+      "status_date": "1992-10-06",
+      "estimated_cost": 5200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRAYSTONE&street_type=TER&address_number=155",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719A009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719A&lot=009",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719A009",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

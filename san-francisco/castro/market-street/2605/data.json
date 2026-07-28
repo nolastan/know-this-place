@@ -1,0 +1,136 @@
+{
+  "address": "2605–2609 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2605/",
+  "apn": "2649005",
+  "block": "2649",
+  "lot": "005",
+  "eas_baseid": "343260",
+  "coordinates": {
+    "lat": 37.761676,
+    "lng": -122.437582
+  },
+  "address_range": "2605–2609",
+  "street_numbers_on_parcel": [
+    "2605",
+    "2607",
+    "2609"
+  ],
+  "parcel": {
+    "year_built": 1960,
+    "units": 8,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 8,
+    "lot_area_sqft": 3175,
+    "building_area_sqft": 5792,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "2609 2605 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1217113,
+    "assessed_improvement_value": 582931,
+    "last_sale_date": "2011-05-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202101142767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-14",
+      "status_date": "2021-07-20",
+      "estimated_cost": 12000,
+      "revised_cost": 15834,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1 ref pa # 2017.1002.0062",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1171487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-02",
+      "status_date": "2019-12-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710020062",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-10-02",
+      "status_date": "2020-03-12",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "soft story retrofit per sfebc chapter 4d, engineering criteria 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710020065",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-10-02",
+      "status_date": "2022-10-21",
+      "estimated_cost": 35000,
+      "revised_cost": 70000,
+      "description": "add unit per ordinance# 162-16 in basement. studio unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103295552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-29",
+      "status_date": "2001-04-19",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "rear wall-install vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=2605",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

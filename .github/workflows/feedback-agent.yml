@@ -61,8 +61,20 @@ jobs:
                DATA-SOURCES.md wherever possible. Unverifiable-but-plausible
                local knowledge may be added as a clearly labeled community
                note per AGENTS.md.
-            4. Apply the change: update data.json (facts, narrative prose) and
-               assets, then regenerate index.html per shared/AGENTS.md.
+            4. Apply the change to data.json (facts, narrative prose) and
+               assets, then bring index.html back in step with it:
+               - If data.json has a `generator` key the page is generated —
+                 run `python3 scripts/seed_pages.py render <page-dir>`.
+                 Never hand-edit a generated index.html; the next seeder run
+                 would silently revert you.
+               - If the change is prose or a layout the renderer can't express
+                 (a `narrative`, a committed photo), the page becomes
+                 hand-authored: remove the `generator` key so future runs leave
+                 it alone, and write the HTML yourself per shared/AGENTS.md.
+               - If the page has no `generator` key it is already
+                 hand-authored; edit its HTML directly.
+               Don't touch the Street View block or try to verify it — the
+               embed key only works on the production domain (DATA-SOURCES.md).
             5. Run `python3 scripts/validate.py` and fix anything it flags.
             6. Create branch feedback/issue-${{ github.event.issue.number }},
                commit, push, and open a PR. The PR body must summarize what

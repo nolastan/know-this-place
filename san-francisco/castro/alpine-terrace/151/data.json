@@ -1,0 +1,155 @@
+{
+  "address": "151–155 Alpine Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/alpine-terrace/151/",
+  "apn": "2610033",
+  "block": "2610",
+  "lot": "033",
+  "eas_baseid": "341975",
+  "coordinates": {
+    "lat": 37.768101,
+    "lng": -122.437135
+  },
+  "address_range": "151–155",
+  "street_numbers_on_parcel": [
+    "151",
+    "153",
+    "155"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2164,
+    "building_area_sqft": 3408,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0153 0151 ALPINE              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56292,
+    "assessed_improvement_value": 131429
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1210927",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-06-16",
+      "status_date": "2020-06-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812219042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-21",
+      "status_date": "2019-02-27",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodel 1 bathroom, repair dryrot, fixtures to remain in existing location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212062920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-06",
+      "status_date": "2003-02-13",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair deck at rear of bldg., dry rot damage, comply w/nov 200231831 to include legalization skylt.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009120327",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-12",
+      "status_date": "2001-05-17",
+      "revised_cost": 1,
+      "description": "revision to pa#9901038",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008026735",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-02",
+      "status_date": "2001-02-02",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "renewal of pa 9901038",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901038",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-01-19",
+      "status_date": "2001-05-17",
+      "estimated_cost": 6000,
+      "description": "under pin foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510634",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-09-24",
+      "status_date": "1986-02-17",
+      "estimated_cost": 5,
+      "revised_cost": 1300,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALPINE&street_type=TER&address_number=151",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2610033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2610&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2610033",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

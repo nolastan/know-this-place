@@ -1,0 +1,143 @@
+{
+  "address": "44 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/44/",
+  "apn": "2649007A",
+  "block": "2649",
+  "lot": "007A",
+  "eas_baseid": "343262",
+  "coordinates": {
+    "lat": 37.761537,
+    "lng": -122.437592
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 1788,
+    "basement_area_sqft": 400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0044 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1744421,
+    "assessed_improvement_value": 747605,
+    "last_sale_date": "2014-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406053823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-05",
+      "status_date": "2024-06-25",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307031139",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-03",
+      "status_date": "2013-08-23",
+      "estimated_cost": 1,
+      "revised_cost": 600,
+      "description": "revision to app#201211295156. revise deck dimensions.no change to height, no (n) firewall required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211295156",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-29",
+      "status_date": "2013-08-23",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "seismic upgrade, (n) siliding doors at rear elevation, 2 skylights, fixtures, interior walls & int stair. (n) deck, eliminate (1) bedroom & (1) bathroom on upper floor, add (1) bedroom & (1) bathroom on lower floor, (n) plbg & elec fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210152022",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-15",
+      "status_date": "2013-06-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel: replace cabinets & fixtures. upgrade lighting to comply with t-24.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210189335",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-18",
+      "status_date": "2002-10-30",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608673",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-05-17",
+      "status_date": "1996-09-23",
+      "estimated_cost": 20000,
+      "description": "remdoel of (e) rear garage to create additional space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=44",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=007A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649007A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

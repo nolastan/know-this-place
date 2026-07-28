@@ -1,0 +1,145 @@
+{
+  "address": "426–428 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/426/",
+  "apn": "3581006",
+  "block": "3581",
+  "lot": "006",
+  "eas_baseid": "360591",
+  "coordinates": {
+    "lat": 37.762263,
+    "lng": -122.430997
+  },
+  "address_range": "426–428",
+  "street_numbers_on_parcel": [
+    "426",
+    "428"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2950,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0428 0426 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1343131,
+    "assessed_improvement_value": 602834,
+    "last_sale_date": "2008-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201906072828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-07",
+      "status_date": "2019-10-28",
+      "estimated_cost": 10000,
+      "revised_cost": 13000,
+      "description": "convert (e) bathroom space into 1 bathroom and half bath. add non-load bearing partition wall, toilet, tie to (e) drain, (n) plumbing fixtures, minor electrical upgrades, add fan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209129589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-12",
+      "status_date": "2013-01-31",
+      "estimated_cost": 5000,
+      "revised_cost": 9200,
+      "description": "convert existing closet into half bathroom and storage. addition would include: toilet, sink+faucet, cabinet, lighting fixtures + outlet, window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511228742",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-22",
+      "status_date": "2005-11-22",
+      "estimated_cost": 6780,
+      "revised_cost": 6780,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-05-26",
+      "status_date": "1994-11-02",
+      "estimated_cost": 20000,
+      "description": "remodel 2 (e) bathrooms no structural work no change infoot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121153",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-06",
+      "status_date": "1992-02-21",
+      "estimated_cost": 1,
+      "description": "delete two bathrooms on 1st and 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106623",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-04-19",
+      "status_date": "1992-04-21",
+      "estimated_cost": 63000,
+      "description": "interior alterations including remodel of 2 bathrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=426",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581006",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

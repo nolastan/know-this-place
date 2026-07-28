@@ -1,0 +1,145 @@
+{
+  "address": "9 Walter Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/walter-street/9/",
+  "apn": "3538090",
+  "block": "3538",
+  "lot": "090",
+  "eas_baseid": "358647",
+  "coordinates": {
+    "lat": 37.768998,
+    "lng": -122.432206
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1772,
+    "building_area_sqft": 1056,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0009 WALTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1949969,
+    "assessed_improvement_value": 835701,
+    "last_sale_date": "2022-05-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "9 Walter St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202501158343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-15",
+      "status_date": "2025-04-17",
+      "estimated_cost": 14000,
+      "revised_cost": 25000,
+      "description": "kitchen remodel. drywall replacement. new water line from existing sink plumbing to new faucet over the stove only. new cabinets. new electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610190703",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-19",
+      "status_date": "2016-10-19",
+      "estimated_cost": 5694,
+      "revised_cost": 5694,
+      "description": "replace (1) fibrex door, not visible, no size change, u-factor < 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407030515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-03",
+      "status_date": "2014-07-24",
+      "estimated_cost": 6561,
+      "revised_cost": 7000,
+      "description": "replace 3 windows like for like with andersen wood clad ,none street visible, u factor less than .40, bedrooms to comply with egress.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-29",
+      "status_date": "1995-12-08",
+      "estimated_cost": 2100,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713150",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-11",
+      "status_date": "1989-05-16",
+      "estimated_cost": 30000,
+      "description": "remodel & update exist residence, 2nd floor addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALTER&street_type=ST&address_number=9",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3538090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3538&lot=090",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3538090",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43220602507733%2037.76899826756168)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

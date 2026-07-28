@@ -1,0 +1,159 @@
+{
+  "address": "543–545 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/543/",
+  "apn": "3583066",
+  "block": "3583",
+  "lot": "066",
+  "eas_baseid": "360809",
+  "coordinates": {
+    "lat": 37.760181,
+    "lng": -122.434573
+  },
+  "address_range": "543–545",
+  "street_numbers_on_parcel": [
+    "543",
+    "545"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4530,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0547 0543 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 80836,
+    "assessed_improvement_value": 99313
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Eureka Valley Commercial & Castro Village LGBTQ+ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1879–1932; 1963–1980",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202506239204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-23",
+      "status_date": "2025-06-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "install ada push plates at cafe entry. replace existing 24\" wide register counter with 36\" min register counter.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203149955",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2022-03-14",
+      "status_date": "2022-03-14",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "install 1 electric, projecting wall sign. (argean delights)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M553510",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-26",
+      "status_date": "2015-01-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807146647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-14",
+      "status_date": "2008-08-01",
+      "estimated_cost": 950,
+      "revised_cost": 950,
+      "description": "install awning at storefront. frame made of 3/4\" and 1\" tubing. attached to wall by lag screw, awning fabric is vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309265912",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-26",
+      "status_date": "2003-09-26",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repaint interior, install freestanding shelving/display units, change light fixtures,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610279",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-11",
+      "status_date": "1997-01-16",
+      "estimated_cost": 6460,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=543",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=066",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583066",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43457292042676%2037.760180661144425)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

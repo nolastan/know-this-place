@@ -1,0 +1,168 @@
+{
+  "address": "597–599 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/597/",
+  "apn": "3583056",
+  "block": "3583",
+  "lot": "056",
+  "eas_baseid": "360800",
+  "coordinates": {
+    "lat": 37.75943,
+    "lng": -122.434555
+  },
+  "address_range": "597–599",
+  "street_numbers_on_parcel": [
+    "597",
+    "599"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 5,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 4375,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0599 0597 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 141366,
+    "assessed_improvement_value": 235630
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Eureka Valley Commercial & Castro Village LGBTQ+ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1879–1932; 1963–1980",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202607134902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-07-13",
+      "status_date": "2026-07-20",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "install a wall mounted electric heater, comply with nov #202653250. to replace the existing electric heater that was removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505206853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-20",
+      "status_date": "2025-06-23",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "re-roofing. no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M327808",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-13",
+      "status_date": "2012-06-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409154213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-15",
+      "status_date": "2004-12-29",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "install new canopy structure with",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409154219",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2004-09-15",
+      "status_date": "2004-09-15",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove existing awning to install a new sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016445",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-17",
+      "status_date": "1990-09-24",
+      "estimated_cost": 3800,
+      "description": "remove (e) awning to install new canvas awning over store",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507522",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1985-07-17",
+      "status_date": "1985-10-24",
+      "estimated_cost": 1200,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=597",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=056",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583056",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4345550935372%2037.759429811784294)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

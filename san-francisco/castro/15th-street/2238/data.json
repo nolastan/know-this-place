@@ -1,0 +1,150 @@
+{
+  "address": "2238–2240 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2238/",
+  "apn": "3540021",
+  "block": "3540",
+  "lot": "021",
+  "eas_baseid": "358675",
+  "coordinates": {
+    "lat": 37.766049,
+    "lng": -122.434227
+  },
+  "address_range": "2238–2240",
+  "street_numbers_on_parcel": [
+    "2238",
+    "2240"
+  ],
+  "parcel": {
+    "year_built": 1902,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 3762,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "2240 2238 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 824305,
+    "assessed_improvement_value": 372877
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202604179656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-17",
+      "status_date": "2026-07-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202209303497. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308285452",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-28",
+      "status_date": "2023-08-28",
+      "estimated_cost": 25000,
+      "revised_cost": 50000,
+      "description": "(2) full bathroom and (2) half bathroom remodels. replace dwv (drain, waste, and vent) and fixtures. framing dry rot repair drywall installation like for like. 2 studs and about 4x4 piece of plywood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209303497",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2022-09-30",
+      "status_date": "2026-07-08",
+      "estimated_cost": 85000,
+      "revised_cost": 100000,
+      "description": "remove wall between kitchen and dining rm. add 1/2 bath across from main bath. remove non load bearing wall between toilet rm and bath. relocate bath fixtures in main bath. remove replace kitchen cabinets, island cabinet. new wall heater in hallway. comply with nov 200667339",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603166837",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-16",
+      "status_date": "2006-03-16",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace stringer - treads - deck flooring. less than 50% repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112125118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-12",
+      "status_date": "2002-04-16",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "repair stair less than 50% of stair/deck/landing system.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2238",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3540021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3540&lot=021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3540021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43422686056272%2037.76604934904053)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

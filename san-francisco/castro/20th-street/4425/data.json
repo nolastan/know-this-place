@@ -1,0 +1,119 @@
+{
+  "address": "4425 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4425/",
+  "apn": "2750040",
+  "block": "2750",
+  "lot": "040",
+  "eas_baseid": "345480",
+  "coordinates": {
+    "lat": 37.757301,
+    "lng": -122.437446
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 1550,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4425 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1421714,
+    "assessed_improvement_value": 798181,
+    "last_sale_date": "2016-07-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201703161627",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-16",
+      "status_date": "2017-12-14",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "alteration of (e) kitchen and dining rooms to open up space & remodel kitchen. conversion of pantry & closet into new bath. conversion of closet to laundry closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611011627",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-01",
+      "status_date": "2017-12-14",
+      "estimated_cost": 6500,
+      "revised_cost": 11000,
+      "description": "alteration/remodel of (e) bathroom in (e) space, replace 2 (e) windows w/(n) of same dimension. windows to be wood .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-20",
+      "status_date": "1998-01-07",
+      "estimated_cost": 5000,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815644",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-10-18",
+      "status_date": "1989-06-02",
+      "estimated_cost": 19800,
+      "description": "build garage, lay driveway and slab for same.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4425",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750040",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "address": "340 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/340/",
+  "apn": "2749008",
+  "block": "2749",
+  "lot": "008",
+  "eas_baseid": "345391",
+  "coordinates": {
+    "lat": 37.756667,
+    "lng": -122.438208
+  },
+  "parcel": {
+    "year_built": 1893,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 1793,
+    "lot_depth_ft": 30,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0340 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1669499,
+    "assessed_improvement_value": 715499,
+    "last_sale_date": "2024-12-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1893",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409261644",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-26",
+      "status_date": "2024-10-23",
+      "estimated_cost": 26500,
+      "revised_cost": 26500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409085650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-08",
+      "status_date": "2014-10-22",
+      "estimated_cost": 10002,
+      "revised_cost": 10002,
+      "description": "replace 4 windows in-kind wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405135568",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-13",
+      "status_date": "2014-06-10",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "repair termit damaged, repairs visible from street all repair work to be replaced in kind as report #62416 sections 1a,1b,1c,1d,2a,3a,3b,3c,3d,5a,5c.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811066040",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-06",
+      "status_date": "2008-12-10",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "repair entry stairs less than 50% + landing. no change to doors or windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-02-12",
+      "status_date": "1996-06-10",
+      "estimated_cost": 6800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-12",
+      "status_date": "1991-12-16",
+      "estimated_cost": 1800,
+      "description": "termite repair per pest control report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8406901",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-06-25",
+      "status_date": "1989-09-24",
+      "estimated_cost": 2000,
+      "description": "install prefabricted & replace unit and flue",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=340",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749008",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

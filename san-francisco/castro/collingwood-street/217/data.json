@@ -1,0 +1,124 @@
+{
+  "address": "217–219 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/217/",
+  "apn": "2696030",
+  "block": "2696",
+  "lot": "030",
+  "eas_baseid": "344444",
+  "coordinates": {
+    "lat": 37.758889,
+    "lng": -122.435732
+  },
+  "address_range": "217–219",
+  "street_numbers_on_parcel": [
+    "217",
+    "219"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1454,
+    "building_area_sqft": 2454,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0221 0217 COLLINGWOOD         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 396805,
+    "assessed_improvement_value": 369747,
+    "last_sale_date": "1991-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200505031467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-03",
+      "status_date": "2005-08-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kitchen cabinets & counters to the same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505021351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-02",
+      "status_date": "2005-08-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kitchen cabinets & counters to the same location, on both units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700772",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-01-14",
+      "status_date": "1998-01-02",
+      "estimated_cost": 3000,
+      "revised_cost": 10000,
+      "description": "add a 1/2 bathroom & utility room no struct. changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520255",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-30",
+      "status_date": "1996-03-31",
+      "estimated_cost": 5000,
+      "description": "foundation repair and drainage improvement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLLINGWOOD&street_type=ST&address_number=217",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2696030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2696&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2696030",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

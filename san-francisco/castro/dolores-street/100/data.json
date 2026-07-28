@@ -1,0 +1,129 @@
+{
+  "address": "100 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/castro/dolores-street/100/",
+  "apn": "3544001",
+  "block": "3544",
+  "lot": "001",
+  "eas_baseid": "464907",
+  "coordinates": {
+    "lat": 37.767717,
+    "lng": -122.427059
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 3049,
+    "building_area_sqft": 8418,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0100 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63490,
+    "assessed_improvement_value": 161214
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910306017",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-30",
+      "status_date": "2019-10-30",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1117427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-31",
+      "status_date": "2019-07-31",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506189272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-18",
+      "status_date": "2017-07-19",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace in-kind 17 windows at lightwell, not visible from street. new windows to be vinyl, single hung, double-glazed at (e) window openings. u-max less/equal to 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502118036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-11",
+      "status_date": "2019-11-15",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "window replacement: replace windows at 2nd, 3rd,4th flrs., facing dolores st., 14th st, rear yard. 96 windows total. (n) windows to be aluminum-clad wood, kolbe ultra pocket double hungs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311071408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-07",
+      "status_date": "2014-11-12",
+      "estimated_cost": 10000,
+      "revised_cost": 50000,
+      "description": "seismic upgrade at garage level. per sfbc ch 34b",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=100",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544001",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

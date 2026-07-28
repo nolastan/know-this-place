@@ -1,0 +1,138 @@
+{
+  "address": "4437 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4437/",
+  "apn": "2750038",
+  "block": "2750",
+  "lot": "038",
+  "eas_baseid": "345478",
+  "coordinates": {
+    "lat": 37.757291,
+    "lng": -122.437618
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 1160,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4437 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 983878,
+    "assessed_improvement_value": 655914,
+    "last_sale_date": "2002-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M38343",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-06-30",
+      "status_date": "2006-06-30",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107194104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-19",
+      "status_date": "2001-08-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 9813039 and 9810623s for finla inspection only no work under this permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-09",
+      "status_date": "2001-08-13",
+      "estimated_cost": 18700,
+      "description": "legalize existing bathroom at upper floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810623S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-06-10",
+      "status_date": "2001-08-13",
+      "estimated_cost": 87000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604360",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-15",
+      "status_date": "1997-03-15",
+      "estimated_cost": 58000,
+      "description": "rev pa #9602018. move posts, enlrg conc footings, plumbing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-02-06",
+      "status_date": "1996-12-26",
+      "estimated_cost": 40000,
+      "description": "install concrete foundation footing, 2nd story-remove bearin",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4437",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=038",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750038",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

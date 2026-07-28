@@ -1,0 +1,164 @@
+{
+  "address": "285 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/285/",
+  "apn": "2692022",
+  "block": "2692",
+  "lot": "022",
+  "eas_baseid": "344306",
+  "coordinates": {
+    "lat": 37.759363,
+    "lng": -122.438966
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1990,
+    "building_area_sqft": 2416,
+    "basement_area_sqft": 240,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0285 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2684640,
+    "assessed_improvement_value": 1150560,
+    "last_sale_date": "2024-03-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405031364",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-03",
+      "status_date": "2024-06-28",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "bathroom remodel in kind. new subpanel. max weight less than 150 lbs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402289554",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-02-28",
+      "status_date": "2015-09-24",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove & replace 1st floor bath fixtures & surfaces",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205049858",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-05-04",
+      "status_date": "2015-09-24",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remove and replace tile @ rear deck / 2nd floor balcony and lightwell. replace deck membrane and repair substrate as necessary. less than 50%. repair dryrot at rear yard stairs and deck landing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107123507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-12",
+      "status_date": "2001-07-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#9917428 & 200011306851 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011306851",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-30",
+      "status_date": "2001-03-31",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "clarification of details at the deck and railing the parapet and the addition of 1 skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917428S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-05-16",
+      "status_date": "2001-07-30",
+      "estimated_cost": 77000,
+      "revised_cost": 100000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-17",
+      "status_date": "1998-02-11",
+      "estimated_cost": 4145,
+      "description": "termite damage repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110551",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-17",
+      "status_date": "1992-12-28",
+      "estimated_cost": 3578,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=285",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2692022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2692&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2692022",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

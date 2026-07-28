@@ -1,0 +1,170 @@
+{
+  "address": "4016 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4016/",
+  "apn": "3601014",
+  "block": "3601",
+  "lot": "014",
+  "eas_baseid": "361761",
+  "coordinates": {
+    "lat": 37.75817,
+    "lng": -122.430753
+  },
+  "parcel": {
+    "year_built": 1996,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2986,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4016 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 454213,
+    "assessed_improvement_value": 729486,
+    "last_sale_date": "1993-03-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1996",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201304235302",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-23",
+      "status_date": "2013-04-23",
+      "estimated_cost": 7100,
+      "revised_cost": 7100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107103342",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-10",
+      "status_date": "2002-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew permit#2000/10/24/3876 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010243876",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-24",
+      "status_date": "2001-08-13",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace retaining wall retained height remain the same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-12",
+      "status_date": "1996-12-16",
+      "estimated_cost": 1,
+      "description": "renew expired permit appn.9415294,9415295,9415296,9508784",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606055",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-09",
+      "status_date": "1996-12-16",
+      "estimated_cost": 1,
+      "description": "revision to 9415294",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508784",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-06-09",
+      "status_date": "1996-12-16",
+      "estimated_cost": 3000,
+      "description": "structural rev pa #9415294-2nd/3rd flrs to support conc topp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415294S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1994-09-21",
+      "status_date": "1996-12-16",
+      "estimated_cost": 265000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415295S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1994-09-21",
+      "status_date": "1996-12-16",
+      "estimated_cost": 15000,
+      "description": "erect a one story private parking garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415296",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1994-09-21",
+      "status_date": "1996-05-17",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601014",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "address": "3084 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3084/",
+  "apn": "2656025",
+  "block": "2656",
+  "lot": "025",
+  "eas_baseid": "343497",
+  "coordinates": {
+    "lat": 37.761177,
+    "lng": -122.443116
+  },
+  "parcel": {
+    "year_built": 1896,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 2200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3084 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1314008,
+    "assessed_improvement_value": 551644,
+    "last_sale_date": "2016-05-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1896",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409191209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-19",
+      "status_date": "2024-10-04",
+      "estimated_cost": 21527,
+      "revised_cost": 21527,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405232777",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-05-23",
+      "status_date": "2024-05-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspcetion for work approved under pa# 2019-1213-9562 & 2019-0614-3095",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202006098272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-09",
+      "status_date": "2021-02-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replacement of 19 existing aluminum windows with weathershield aluminum-clad wood windows. all windows at the front of the building shall be 50-50 proportion doublehung. upper unit replacing 9 windows. lower unit replacing 10 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912139562",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-13",
+      "status_date": "2019-12-19",
+      "estimated_cost": 34872,
+      "revised_cost": 34872,
+      "description": "revision to 201906113095 upgrade kitchen and bath in-kind. no added walls. remove and replace kitchen 140 sf with bath and kitchen combined",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906113095",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-11",
+      "status_date": "2019-08-28",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "framing upgrade: structural upgrades of the floor framing, replacement of existing tension system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611223314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-22",
+      "status_date": "2017-03-24",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel (e) kitchen. like for like. no wall removal. upgrade (e) panel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402176547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-17",
+      "status_date": "2004-04-08",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "inkind repair deck&staris.remove damage wood jiosts,decking.less than 50% replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506966",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-05-11",
+      "status_date": "1995-12-01",
+      "estimated_cost": 3000,
+      "description": "replacement of retaining wall between 223 corbett -3084 mkt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3084",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656025",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "address": "3739 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3739/",
+  "apn": "2622035",
+  "block": "2622",
+  "lot": "035",
+  "eas_baseid": "342485",
+  "coordinates": {
+    "lat": 37.763885,
+    "lng": -122.436272
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1954,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3739 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 768470,
+    "assessed_improvement_value": 307376,
+    "last_sale_date": "2000-02-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201803163836",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-16",
+      "status_date": "2018-04-11",
+      "estimated_cost": 17600,
+      "revised_cost": 17600,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503050017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-05",
+      "status_date": "2015-07-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove (e) siding and exterior trim on south side only. install new exterior siding & trim. repair dry rot and mold as necessary. back of home not visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903113842",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-03-11",
+      "status_date": "2012-03-07",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "work @ one unit only. remodel bathroom. vanity, toilet tub, tile, med cabinet lights, no change to wall location or opening. provide mech venting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512190587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-19",
+      "status_date": "2006-06-13",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "replace 17 windows, size for size, wood to wood, visible from street. min u factor 6.7",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311190592",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-19",
+      "status_date": "2003-11-19",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "in preparation for 200210027994- final both permits together-create bedrm & closet by filling in (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308283283",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-08-28",
+      "status_date": "2003-08-28",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit-remodel bathroom-remove interior plaster finish&trim.insulate&drywall.no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210027994",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-10-02",
+      "status_date": "2004-08-04",
+      "estimated_cost": 30000,
+      "revised_cost": 9000,
+      "description": "install interior stairs connecting 2 out of 3 units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9124151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-12-24",
+      "status_date": "1991-12-31",
+      "estimated_cost": 8900,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3739",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2622035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2622&lot=035",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2622035",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

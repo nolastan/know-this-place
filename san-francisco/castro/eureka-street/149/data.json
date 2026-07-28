@@ -1,0 +1,108 @@
+{
+  "address": "149 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/149/",
+  "apn": "2693025",
+  "block": "2693",
+  "lot": "025",
+  "eas_baseid": "344351",
+  "coordinates": {
+    "lat": 37.759877,
+    "lng": -122.437865
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 5,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 3066,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0149 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 141494,
+    "assessed_improvement_value": 391867
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511129368",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-12",
+      "status_date": "2025-12-22",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replaced f/a system to meet ca/sf and add lf sounders in the units and wireless monitoring in all units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209192713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-19",
+      "status_date": "2022-09-29",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318740",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-25",
+      "status_date": "1995-09-06",
+      "estimated_cost": 4200,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=149",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2693025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2693&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2693025",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

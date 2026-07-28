@@ -1,0 +1,163 @@
+{
+  "address": "230–232 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/230/",
+  "apn": "3602041",
+  "block": "3602",
+  "lot": "041",
+  "eas_baseid": "361868",
+  "coordinates": {
+    "lat": 37.758787,
+    "lng": -122.434011
+  },
+  "address_range": "230–232",
+  "street_numbers_on_parcel": [
+    "230",
+    "232"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 3338,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0232 0230 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 433309,
+    "assessed_improvement_value": 519986,
+    "last_sale_date": "1992-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807033671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-03",
+      "status_date": "2018-09-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace in-kind siding & framing members that have been damaged by dry rot in the rear of the house. replacement at corner framing in-like kind & approx 50 sq ft of associated siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806398",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-04-14",
+      "status_date": "1999-03-02",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9605205",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801750",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-02-02",
+      "status_date": "1998-06-02",
+      "estimated_cost": 1,
+      "description": "renewal pa#9519559 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718200",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-17",
+      "status_date": "1998-01-17",
+      "estimated_cost": 1000,
+      "description": "renew permit #9511430",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605205",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-28",
+      "status_date": "1997-01-16",
+      "estimated_cost": 5000,
+      "description": "misc repairs-siding, trim, doors, cracks, foundation, window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519559",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-17",
+      "status_date": "1997-01-16",
+      "estimated_cost": 7500,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-18",
+      "status_date": "1996-04-18",
+      "estimated_cost": 6920,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511430",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-07-24",
+      "status_date": "1996-04-03",
+      "estimated_cost": 7500,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=230",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=041",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602041",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

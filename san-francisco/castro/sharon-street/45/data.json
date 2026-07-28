@@ -1,0 +1,150 @@
+{
+  "address": "45 Sharon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sharon-street/45/",
+  "apn": "3558061",
+  "block": "3558",
+  "lot": "061",
+  "eas_baseid": "359559",
+  "coordinates": {
+    "lat": 37.765344,
+    "lng": -122.429536
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 1035,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0045 SHARON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1450718,
+    "assessed_improvement_value": 621734,
+    "last_sale_date": "2020-05-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512151836",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-15",
+      "status_date": "2026-01-23",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212218905",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-12-21",
+      "status_date": "2024-02-21",
+      "estimated_cost": 358145,
+      "revised_cost": 468762,
+      "description": "new one story vertical expansion to existing residence to add (3) bedrooms.1 bathroom & rear yard facing deck.interior remodel to existing 2nd floor & 1st floors. relocate stairs to (e) deck. legalize cottage under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M135646",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-29",
+      "status_date": "2008-09-29",
+      "revised_cost": 1,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M40311",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-08-30",
+      "status_date": "2006-08-30",
+      "revised_cost": 0,
+      "description": "repair damaged sidewalk.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M11863",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-13",
+      "status_date": "2000-07-13",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-19",
+      "status_date": "1992-02-13",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106478",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-17",
+      "status_date": "1991-10-17",
+      "estimated_cost": 5569,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHARON&street_type=ST&address_number=45",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=061",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558061",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

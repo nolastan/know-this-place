@@ -1,0 +1,161 @@
+{
+  "address": "199 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/199/",
+  "apn": "2702020",
+  "block": "2702",
+  "lot": "020",
+  "eas_baseid": "489978",
+  "coordinates": {
+    "lat": 37.759418,
+    "lng": -122.442953
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2513,
+    "building_area_sqft": 1485,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0199 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1103354,
+    "assessed_improvement_value": 807517,
+    "last_sale_date": "2012-10-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507110619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-11",
+      "status_date": "2025-08-05",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "re roofing: remove existing coveting and install certaineed landmark pro asphalt composite shingles with synthetic underlayment. no torch down.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1104487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-03",
+      "status_date": "2019-07-03",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508204785",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-08-20",
+      "status_date": "2018-04-12",
+      "estimated_cost": 145000,
+      "revised_cost": 177000,
+      "description": "add roof dormers at west & east elevations. extend 3/fl toward rear yard to align with 2/fl rear wall. add deck at rear yard & side yard. interior improvements include new bathroom & laundry closet at 3/fl, and remodeled kitchen & bathroom at 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508110067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-11",
+      "status_date": "2005-10-03",
+      "estimated_cost": 1050,
+      "revised_cost": 1050,
+      "description": "renew expired pa 200411098821 for termite report work not started",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411098821",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-11-09",
+      "status_date": "2004-11-09",
+      "estimated_cost": 1050,
+      "revised_cost": 1050,
+      "description": "termite report#7748-04 item 3a only, repair siding boards at the front entry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107304805",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-30",
+      "status_date": "2002-01-30",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace 7 windows kind for kind visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502089",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-03-01",
+      "status_date": "1985-06-25",
+      "estimated_cost": 800,
+      "description": "1 landing and 6 steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409833",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-09-12",
+      "status_date": "1985-06-25",
+      "estimated_cost": 12500,
+      "description": "relocate kitchen fixtures and bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=199",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2702020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2702&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2702020",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

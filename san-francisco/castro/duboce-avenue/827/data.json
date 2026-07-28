@@ -1,0 +1,143 @@
+{
+  "address": "827 Duboce Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/duboce-avenue/827/",
+  "apn": "2610044",
+  "block": "2610",
+  "lot": "044",
+  "eas_baseid": "341985",
+  "coordinates": {
+    "lat": 37.768758,
+    "lng": -122.437073
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1934,
+    "building_area_sqft": 2607,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0827 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1652831,
+    "assessed_improvement_value": 708356,
+    "last_sale_date": "2022-06-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401123955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-12",
+      "status_date": "2024-01-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "permit for as built deck to clarify extg landing and stairs as built in back yard (reduce size of deck at first flr). ref #202210214879 and 202301301000",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308235034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-23",
+      "status_date": "2024-01-19",
+      "estimated_cost": 5000,
+      "revised_cost": 6211,
+      "description": "new fire sprinklers per nfpa 13d on ground floor only; ref 202210214879",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301301000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-30",
+      "status_date": "2024-01-19",
+      "estimated_cost": 30000,
+      "revised_cost": 38000,
+      "description": "revision to pa# 202207269315: ref nov 202298464 new foundation and framing work repair and new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210214879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-21",
+      "status_date": "2024-02-02",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "complete interior remodel. garage remodel, new media room and 1/2 bath, remodel 1 & 1/2 bath, add 1 1 1/2 bath , remodel kitchen at 2nd fl, provide sprinker on ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207269313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-26",
+      "status_date": "2023-12-26",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing. tear off old roofing, install new 1/2\" c-dx ply w/8d @ 6\"o.c., new 30yr shingles, gaf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207269315",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-26",
+      "status_date": "2024-01-19",
+      "estimated_cost": 45000,
+      "revised_cost": 75000,
+      "description": "replace all windows; 46 total; max u-factor 0.30. (facing front and back). 1 bathroom 4th floor remodeling like for like. 1 guest bathroom 3rd floor like for like. rewiring all house, upgrade main panel add sub panel. siding repair side and rear in kind, 600sqft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=827",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2610044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2610&lot=044",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2610044",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

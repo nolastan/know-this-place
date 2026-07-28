@@ -1,0 +1,141 @@
+{
+  "address": "339 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/339/",
+  "apn": "2711022",
+  "block": "2711",
+  "lot": "022",
+  "eas_baseid": "344860",
+  "coordinates": {
+    "lat": 37.75863,
+    "lng": -122.444001
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1950,
+    "building_area_sqft": 1338,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0339 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1039107,
+    "assessed_improvement_value": 322697,
+    "last_sale_date": "2010-06-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200303280927",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-28",
+      "status_date": "2003-08-12",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove (e) 2nd floor bathroom, remove (e) windows and install new window (same size), install new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205015478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-01",
+      "status_date": "2003-01-31",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "revision to 200203010485 new bath redo kitchen, new walls, fr door fmly rm, window,skylite,pantry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203010485",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-03-01",
+      "status_date": "2002-03-01",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "install new bthrm/including lighting/vent/electrical/plmg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17505",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-26",
+      "status_date": "2002-02-26",
+      "revised_cost": 3000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-12-02",
+      "status_date": "1994-12-16",
+      "estimated_cost": 2000,
+      "description": "repair dry rot at base of portion wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9407357",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-05-22",
+      "status_date": "1994-06-01",
+      "estimated_cost": 4500,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=339",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711022",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

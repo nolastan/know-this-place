@@ -1,0 +1,96 @@
+{
+  "address": "2118 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2118/",
+  "apn": "3541011",
+  "block": "3541",
+  "lot": "011",
+  "eas_baseid": "358755",
+  "coordinates": {
+    "lat": 37.766208,
+    "lng": -122.43161
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 1100,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2118 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47564,
+    "assessed_improvement_value": 29084
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "810 15th Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8811711",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-15",
+      "status_date": "1988-09-13",
+      "estimated_cost": 1800,
+      "description": "renew expired #8714056",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714056",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-30",
+      "status_date": "1988-02-11",
+      "estimated_cost": 2900,
+      "description": "remove board fence,install concrete retaining wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2118",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3541011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3541&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3541011",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

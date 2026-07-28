@@ -1,0 +1,131 @@
+{
+  "address": "4834 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4834/",
+  "apn": "2689012A",
+  "block": "2689",
+  "lot": "012A",
+  "eas_baseid": "344188",
+  "coordinates": {
+    "lat": 37.759424,
+    "lng": -122.444253
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1663,
+    "building_area_sqft": 1678,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4834 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 682438,
+    "assessed_improvement_value": 485846,
+    "last_sale_date": "2003-08-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804170018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-17",
+      "status_date": "2008-11-04",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel (e) master suite, new roof deck over (e) kitchen w/new door, improvement to (e) facade. replace (e) front cantilever, (e) front windows, entry door in (e) opening. replace windows in (e) openings in master bedrom, insert new fireplace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411239983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-23",
+      "status_date": "2005-02-17",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "bathroom remodel project in 3rd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405053067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-05",
+      "status_date": "2004-05-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M26619",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-03-08",
+      "status_date": "2004-03-08",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109148363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-14",
+      "status_date": "2002-02-06",
+      "estimated_cost": 51350,
+      "revised_cost": 51350,
+      "description": "remodel kitchen 2nd floor, add new half bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4834",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689012A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=012A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689012A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

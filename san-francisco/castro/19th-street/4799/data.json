@@ -1,0 +1,117 @@
+{
+  "address": "4799 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4799/",
+  "apn": "2711029",
+  "block": "2711",
+  "lot": "029",
+  "eas_baseid": "344867",
+  "coordinates": {
+    "lat": 37.758698,
+    "lng": -122.443513
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1633,
+    "building_area_sqft": 1461,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4799 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 698638,
+    "assessed_improvement_value": 299410,
+    "last_sale_date": "2012-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511210246",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-11-21",
+      "status_date": "2025-12-17",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "alter roof at rear to accomodate code legal stairs to 2nd fl. relocate stairs to 2nd fl. add new bath at 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32122",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-04-20",
+      "status_date": "2005-04-20",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517205",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-13",
+      "status_date": "1996-05-01",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419826",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-02",
+      "status_date": "1995-08-22",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4799",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711029",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

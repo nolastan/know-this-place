@@ -1,0 +1,157 @@
+{
+  "address": "104–108 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/104/",
+  "apn": "2692001",
+  "block": "2692",
+  "lot": "001",
+  "eas_baseid": "344286",
+  "coordinates": {
+    "lat": 37.760492,
+    "lng": -122.438407
+  },
+  "address_range": "104–108",
+  "street_numbers_on_parcel": [
+    "104",
+    "106",
+    "108"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 5,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 5460,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0108 0104 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79212,
+    "assessed_improvement_value": 148987
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407015623",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-01",
+      "status_date": "2025-01-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa# 2019-0409-7445; rev to previously pulled seismic related permit. standard, non blase resistant glass at store front, (3) sistered strong walls in lieu of steel monent frame",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904097445",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-09",
+      "status_date": "2025-01-08",
+      "estimated_cost": 20000,
+      "revised_cost": 36333,
+      "description": "(commercial) soft story retrofit per chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904097446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-09",
+      "status_date": "2025-01-08",
+      "estimated_cost": 70000,
+      "revised_cost": 80000,
+      "description": "(residential)soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809119717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-11",
+      "status_date": "2018-11-13",
+      "estimated_cost": 27300,
+      "revised_cost": 27300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802272289",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-27",
+      "status_date": "2018-03-21",
+      "estimated_cost": 300,
+      "revised_cost": 5000,
+      "description": "comply with complaint #201713932 iem #4 less than 50% , wood stairway/deck at rear of building to patio",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603081426",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-03-08",
+      "status_date": "2016-03-16",
+      "estimated_cost": 3000,
+      "revised_cost": 6000,
+      "description": "infill wall at property line, to comply with planning complaint, provide (n) 36\"x84\" accessible door and 24\"x84 in kind wood door at entry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-21",
+      "status_date": "1995-07-07",
+      "estimated_cost": 1800,
+      "description": "remov 1 rm-less than 5 linear ft of non-br wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=104",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2692001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2692&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2692001",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

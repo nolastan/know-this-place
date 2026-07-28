@@ -1,0 +1,143 @@
+{
+  "address": "568–572 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/568/",
+  "apn": "3580008",
+  "block": "3580",
+  "lot": "008",
+  "eas_baseid": "360533",
+  "coordinates": {
+    "lat": 37.761776,
+    "lng": -122.428638
+  },
+  "address_range": "568–572",
+  "street_numbers_on_parcel": [
+    "568",
+    "570",
+    "572"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 23,
+    "bathrooms": 3,
+    "lot_area_sqft": 1983,
+    "building_area_sqft": 5034,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0572 0568 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 253849,
+    "assessed_improvement_value": 284326
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201012176959",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-17",
+      "status_date": "2010-12-17",
+      "estimated_cost": 11800,
+      "revised_cost": 11800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106111259",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2001-06-11",
+      "status_date": "2003-01-15",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "comply w/nov #200117477 dated 04/jun/01",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305491",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-05",
+      "status_date": "1993-07-23",
+      "estimated_cost": 10000,
+      "description": "repl kitchen cabinets & install dishwasher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711394",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-08-11",
+      "status_date": "1987-11-18",
+      "estimated_cost": 200,
+      "description": "completion of work under appln. #8604014",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604014",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-04-09",
+      "status_date": "1987-06-25",
+      "estimated_cost": 25500,
+      "description": "interior renovation of kitchen and bathroom areas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503563",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-11",
+      "status_date": "1985-07-15",
+      "estimated_cost": 3750,
+      "description": "replace existing rotten mud-sill",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=568",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580008",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

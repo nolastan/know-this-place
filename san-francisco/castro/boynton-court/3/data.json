@@ -1,0 +1,146 @@
+{
+  "address": "3 Boynton Court, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/boynton-court/3/",
+  "apn": "3542034A",
+  "block": "3542",
+  "lot": "034A",
+  "eas_baseid": "358845",
+  "coordinates": {
+    "lat": 37.767288,
+    "lng": -122.430213
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 805,
+    "building_area_sqft": 1044,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0003 BOYNTON             CT0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 865071,
+    "assessed_improvement_value": 370744,
+    "last_sale_date": "2019-12-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "3 Boynton Ct",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202409110505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-11",
+      "status_date": "2025-02-24",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bathroom remodel. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010307837",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-10-30",
+      "status_date": "2020-10-30",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002114096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-11",
+      "status_date": "2020-09-22",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel kitchen & bathroom (1 bathroom). no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418766",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-15",
+      "status_date": "1995-04-11",
+      "estimated_cost": 3870,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107004",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-24",
+      "status_date": "1991-05-07",
+      "estimated_cost": 2000,
+      "description": "pest damage repair as per attached report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BOYNTON&street_type=CT&address_number=3",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3542034A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3542&lot=034A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3542034A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43021305446727%2037.76728783461611)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

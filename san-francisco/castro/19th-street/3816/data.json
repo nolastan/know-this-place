@@ -1,0 +1,146 @@
+{
+  "address": "3816 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3816/",
+  "apn": "3585015A",
+  "block": "3585",
+  "lot": "015A",
+  "eas_baseid": "360935",
+  "coordinates": {
+    "lat": 37.759957,
+    "lng": -122.428708
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1250,
+    "building_area_sqft": 2100,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3816 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 815830,
+    "assessed_improvement_value": 543879,
+    "last_sale_date": "2006-06-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207087990",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-07-08",
+      "status_date": "2022-07-08",
+      "estimated_cost": 8800,
+      "revised_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M268787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-06-15",
+      "status_date": "2011-06-15",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403477",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-03",
+      "status_date": "1994-08-25",
+      "estimated_cost": 3626,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715946",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-11-05",
+      "status_date": "1987-12-18",
+      "estimated_cost": 3600,
+      "description": "repair dry rot at front siding & steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603817",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-04-03",
+      "status_date": "1986-08-29",
+      "estimated_cost": 3900,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "7902655",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1979-04-12",
+      "status_date": "1987-06-08",
+      "estimated_cost": 1854,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "7903655",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1979-04-12",
+      "status_date": "1985-02-05",
+      "estimated_cost": 1854,
+      "description": "fence",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3816",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585015A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=015A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585015A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

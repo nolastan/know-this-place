@@ -1,0 +1,163 @@
+{
+  "address": "219 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/219/",
+  "apn": "3602037",
+  "block": "3602",
+  "lot": "037",
+  "eas_baseid": "361864",
+  "coordinates": {
+    "lat": 37.759011,
+    "lng": -122.433391
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 1792,
+    "basement_area_sqft": 402,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0219 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2105266,
+    "assessed_improvement_value": 902256,
+    "last_sale_date": "2019-11-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202003035982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-03-03",
+      "status_date": "2020-04-01",
+      "estimated_cost": 73200,
+      "revised_cost": 73200,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104224630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-22",
+      "status_date": "2011-04-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace extg single door at first story with (n) french doors. u-factor: 0.4 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010062424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-06",
+      "status_date": "2011-03-24",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "add powder room and storage at lower level. new footings and partition walls at crawlspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709273953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-27",
+      "status_date": "2008-06-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #2007-0622-4909 to revise footing & framing as noted.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706224909",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-22",
+      "status_date": "2008-06-02",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "widen 1 of 3 existing door openings at a concrete garage structure. use non-destructive testing to verify layout and size of existing reinforcing bars. remodel interior of the second story. costruct new timber posts and beams and concrete footings to accommodate removal of certain bearing walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M30331",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-11-29",
+      "status_date": "2004-11-29",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617446",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-16",
+      "status_date": "1997-06-11",
+      "estimated_cost": 8450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8710670",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-07-29",
+      "status_date": "1988-02-10",
+      "estimated_cost": 19800,
+      "description": "install new concrete foundation under approx. 80% of bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=219",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602037",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "address": "4586–4588 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4586/",
+  "apn": "2700019",
+  "block": "2700",
+  "lot": "019",
+  "eas_baseid": "446548",
+  "coordinates": {
+    "lat": 37.759226,
+    "lng": -122.440706
+  },
+  "address_range": "4586–4588",
+  "street_numbers_on_parcel": [
+    "4586",
+    "4588"
+  ],
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 1840,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4588 4586 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 566839,
+    "assessed_improvement_value": 368518,
+    "last_sale_date": "1997-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200403098145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-09",
+      "status_date": "2004-06-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "final inspection on appl#200208123708",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208123708",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "2002-08-12",
+      "status_date": "2004-06-01",
+      "estimated_cost": 25000,
+      "revised_cost": 15000,
+      "description": "to erect a new private garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106181802",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-18",
+      "status_date": "2001-11-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel kitchen replace cabinets, new ceramic floor new electric plugs. new sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-05-01",
+      "status_date": "1999-06-30",
+      "estimated_cost": 2000,
+      "description": "minor revision per plans under app #9907622 & 9803014",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-20",
+      "status_date": "1999-06-30",
+      "estimated_cost": 500,
+      "description": "minor revision per plans under 9803014 for city's record",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9803014",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-02-23",
+      "status_date": "1999-06-30",
+      "estimated_cost": 30000,
+      "revised_cost": 52000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-10",
+      "status_date": "1998-01-12",
+      "estimated_cost": 6000,
+      "description": "remodel new bathroom. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411082",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-07-13",
+      "status_date": "1994-11-13",
+      "estimated_cost": 4800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4586",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2700019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2700&lot=019",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2700019",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

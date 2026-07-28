@@ -1,0 +1,111 @@
+{
+  "address": "82–84 Divisadero Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/divisadero-street/82/",
+  "apn": "2611034",
+  "block": "2611",
+  "lot": "034",
+  "eas_baseid": "342016",
+  "coordinates": {
+    "lat": 37.768591,
+    "lng": -122.436353
+  },
+  "address_range": "82–84",
+  "street_numbers_on_parcel": [
+    "82",
+    "84"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2613,
+    "building_area_sqft": 2820,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0084 0082 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 783827,
+    "assessed_improvement_value": 470278
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200305285602",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-28",
+      "status_date": "2003-07-01",
+      "estimated_cost": 7881,
+      "revised_cost": 7881,
+      "description": "install 18 vinyl windows in kind into (e)frames; no change in size or location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919149",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-09-13",
+      "status_date": "1999-11-19",
+      "estimated_cost": 4000,
+      "description": "reconstruction of existing roof deck only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005051",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-15",
+      "status_date": "1990-09-06",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=82",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2611034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2611&lot=034",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2611034",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

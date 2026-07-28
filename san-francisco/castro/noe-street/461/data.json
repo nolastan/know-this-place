@@ -1,0 +1,138 @@
+{
+  "address": "461 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/461/",
+  "apn": "3581034",
+  "block": "3581",
+  "lot": "034",
+  "eas_baseid": "360622",
+  "coordinates": {
+    "lat": 37.761642,
+    "lng": -122.432516
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 4830,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0461 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42935,
+    "assessed_improvement_value": 133512
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M632487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-26",
+      "status_date": "2015-10-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M438947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-28",
+      "status_date": "2013-10-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309035829",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-09-03",
+      "status_date": "2014-02-27",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "sfbc chapter 34b lateral strenthening seismic upgrade in accordance with 2012 1 ebc appendix chp a1 to comply with sf ord 66-13. mandatory seismic retrofit program for wood framed building. shearwall,framing,connectors,footing, collectors, ties. confined to areas below 1st framed floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509152941",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-15",
+      "status_date": "2005-09-15",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108297166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-29",
+      "status_date": "2002-02-06",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair outside stairs,shore up rear porch.repair work will be less than 50%.to comply w/ n.o.v. 2001",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-10",
+      "status_date": "1989-12-19",
+      "estimated_cost": 2500,
+      "description": "repair cosmetic earthquake damage to lath & plaster",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=461",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=034",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581034",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

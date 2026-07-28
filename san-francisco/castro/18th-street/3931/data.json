@@ -1,0 +1,137 @@
+{
+  "address": "3931 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3931/",
+  "apn": "3584089",
+  "block": "3584",
+  "lot": "089",
+  "eas_baseid": "360909",
+  "coordinates": {
+    "lat": 37.760864,
+    "lng": -122.431357
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2908,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3933 3931 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1337122,
+    "assessed_improvement_value": 573052
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511250371",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-11-25",
+      "status_date": "2025-11-25",
+      "estimated_cost": 305000,
+      "revised_cost": 0,
+      "description": "interior remodel of 2nd fl, reconfigure partitions, add full bath, remodel (e) kitchen & bath. add (n) tankless water heater, add (n) elec heat pump heating/cooling. replace (e) windows, add (n) skylights and front door. replace knob & tube w/ new electrical, (n) lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M201826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-12",
+      "status_date": "2010-05-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808684",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-10-09",
+      "status_date": "2002-10-09",
+      "estimated_cost": 5000,
+      "description": "add storage at rear of bldng on ground lvel/add porch roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923698",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-08",
+      "status_date": "2000-03-08",
+      "estimated_cost": 4825,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-04",
+      "status_date": "1999-06-07",
+      "estimated_cost": 1000,
+      "description": "cap foundation & dry rot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-09",
+      "status_date": "1999-03-12",
+      "estimated_cost": 5000,
+      "description": "correct work completed without a building permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3931",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=089",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584089",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

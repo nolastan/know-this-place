@@ -1,0 +1,156 @@
+{
+  "address": "3984–3986 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3984/",
+  "apn": "3581029",
+  "block": "3581",
+  "lot": "029",
+  "eas_baseid": "360615",
+  "coordinates": {
+    "lat": 37.761235,
+    "lng": -122.432417
+  },
+  "address_range": "3984–3986",
+  "street_numbers_on_parcel": [
+    "3984",
+    "3986"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2000,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3986 3984 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1058422,
+    "assessed_improvement_value": 401922,
+    "last_sale_date": "2007-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311201127",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-20",
+      "status_date": "2023-12-12",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208016210",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-01",
+      "status_date": "2012-08-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with nov #200723852 to obtain final inspection for work approved under pa#200708109408 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208016211",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-01",
+      "status_date": "2012-08-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with nov #200723852 to obtain final inspection for work approved under pa#200905299348 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905299348",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-05-29",
+      "status_date": "2012-07-13",
+      "estimated_cost": 3412,
+      "revised_cost": 3412,
+      "description": "work on one unit only. replace 3 windows on back of the house only. not visable from the street. no structural changes. u factor .67 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708109408",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-10",
+      "status_date": "2010-02-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "update all kitchen cabinets & appliances.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805374",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-30",
+      "status_date": "1999-03-01",
+      "estimated_cost": 5960,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-24",
+      "status_date": "1993-01-25",
+      "estimated_cost": 7870,
+      "description": "increase foundation height left & rear wall install beam,pos",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3984",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581029",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

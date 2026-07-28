@@ -1,0 +1,108 @@
+{
+  "address": "2429 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2429/",
+  "apn": "2614080",
+  "block": "2614",
+  "lot": "080",
+  "eas_baseid": "342154",
+  "coordinates": {
+    "lat": 37.765789,
+    "lng": -122.437522
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1280,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 2429 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292857,
+    "assessed_improvement_value": 390477,
+    "last_sale_date": "1987-06-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201203085608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-08",
+      "status_date": "2012-04-16",
+      "estimated_cost": 7810,
+      "revised_cost": 7810,
+      "description": "install 8 andersen fibrex windows and 5 vinyl windows into existing openings. no change in size or location. andersen fibrex in front & vinyl windows in back.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805051334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-05",
+      "status_date": "2008-05-21",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608704",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-07-21",
+      "status_date": "1987-02-02",
+      "estimated_cost": 8000,
+      "description": "remodel kitchen, new sheetrock walls/cabinets/electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2429",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2614080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2614&lot=080",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2614080",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

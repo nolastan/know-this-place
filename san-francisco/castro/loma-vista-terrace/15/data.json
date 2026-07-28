@@ -1,0 +1,127 @@
+{
+  "address": "15 Loma Vista Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/loma-vista-terrace/15/",
+  "apn": "2618040A",
+  "block": "2618",
+  "lot": "040A",
+  "eas_baseid": "342318",
+  "coordinates": {
+    "lat": 37.764989,
+    "lng": -122.44317
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2199,
+    "building_area_sqft": 2840,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0015 LOMA VISTA          TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 59111,
+    "assessed_improvement_value": 63507
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512030816",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2026-01-16",
+      "status_date": "2026-07-14",
+      "estimated_cost": 1250000,
+      "revised_cost": 1250000,
+      "description": "full interior renovation; ext upgrades; construction on a new attached garage. new construction of an adu part of (e) home.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805091697",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-09",
+      "status_date": "2008-05-09",
+      "estimated_cost": 16840,
+      "revised_cost": 16840,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-21",
+      "status_date": "1991-10-02",
+      "estimated_cost": 3000,
+      "description": "break stucco to front stairs walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-05",
+      "status_date": "1991-08-13",
+      "estimated_cost": 7000,
+      "description": "repair stucco, remove all damage wood & re-stucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-17",
+      "status_date": "1985-02-06",
+      "estimated_cost": 3500,
+      "description": "repair exsisting sheathing & stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOMA%20VISTA&street_type=TER&address_number=15",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618040A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618&lot=040A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618040A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

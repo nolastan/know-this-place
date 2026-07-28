@@ -1,0 +1,107 @@
+{
+  "address": "3348 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3348/",
+  "apn": "2717005",
+  "block": "2717",
+  "lot": "005",
+  "eas_baseid": "345017",
+  "coordinates": {
+    "lat": 37.75782,
+    "lng": -122.443794
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2678,
+    "building_area_sqft": 1590,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Twin Peaks",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3348 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97685,
+    "assessed_improvement_value": 244253
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201404032382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-03",
+      "status_date": "2014-06-12",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "cosmetic remodel of (e) kitchen (n) cabinets counters.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110317976",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-10-31",
+      "status_date": "2012-10-22",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "eviden (e) carport/garage from 7'-4\" to 13'-8\". new retaining wall along property line.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104250",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-03-18",
+      "status_date": "1991-12-17",
+      "estimated_cost": 52000,
+      "description": "remodel 2/f master bedroom bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3348",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2717005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

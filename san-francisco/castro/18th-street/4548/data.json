@@ -1,0 +1,147 @@
+{
+  "address": "4548–4554 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4548/",
+  "apn": "2657011",
+  "block": "2657",
+  "lot": "011",
+  "eas_baseid": "488429",
+  "coordinates": {
+    "lat": 37.760681,
+    "lng": -122.440154
+  },
+  "address_range": "4548–4554",
+  "street_numbers_on_parcel": [
+    "4548",
+    "4550",
+    "4554"
+  ],
+  "also_addressed": [
+    "176 ORD ST"
+  ],
+  "parcel": {
+    "year_built": 1880,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2539,
+    "building_area_sqft": 2721,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0176 ORD                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 360759,
+    "assessed_improvement_value": 487032,
+    "last_sale_date": "1991-07-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905302055",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-30",
+      "status_date": "2020-05-22",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with abe program at business entry door replace door threshold. replace door hardware install new auto door opener",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206122452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-12",
+      "status_date": "2012-07-11",
+      "estimated_cost": 18165,
+      "revised_cost": 18165,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M222567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-28",
+      "status_date": "2010-09-28",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-03",
+      "status_date": "1991-11-05",
+      "estimated_cost": 10050,
+      "description": "repl ply walls, damaged threshhold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-22",
+      "status_date": "1989-06-07",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8311166",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-04",
+      "status_date": "1984-10-18",
+      "estimated_cost": 26000,
+      "description": "vertical extension",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4548",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2657011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2657&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2657011",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

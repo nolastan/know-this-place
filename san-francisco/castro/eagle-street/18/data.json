@@ -1,0 +1,150 @@
+{
+  "address": "18 Eagle Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eagle-street/18/",
+  "apn": "2711008",
+  "block": "2711",
+  "lot": "008",
+  "eas_baseid": "344847",
+  "coordinates": {
+    "lat": 37.758328,
+    "lng": -122.442503
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2478,
+    "building_area_sqft": 1690,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0018 EAGLE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1853399,
+    "assessed_improvement_value": 794313,
+    "last_sale_date": "2021-10-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103096125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-09",
+      "status_date": "2021-09-08",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "renovate front bathoom in kind approx. 7x12 sq ft. renovate master bathroom in kind aprox. 9x12 sq ft. both gets new tiles,vanity,toilet & fan. 2 bath remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001151892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-15",
+      "status_date": "2020-01-16",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "install 25 foundation anchor 3/4\" all thread rods epoxy voluntary strenghtening for foundation bolts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905241604",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-24",
+      "status_date": "2020-01-14",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodel kitchen. sheetrock, cabinets, tiles. no load bearing walls will be altered. all work to be done at rear of bulding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902213436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-21",
+      "status_date": "2019-07-02",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "remove/replace back porch 4'x6', remove/replace dryrot @ framing & siding as needed, replace (3) windows w/double paneglass. all work to be done at rear of building, work less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616914",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-09",
+      "status_date": "1997-04-17",
+      "estimated_cost": 4575,
+      "description": "remove (e) double hung window & replace w/vinyl hung glazed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808073",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-17",
+      "status_date": "1988-09-23",
+      "estimated_cost": 2000,
+      "description": "remodel kitchen & bathrm, no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716154",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-12",
+      "status_date": "1988-04-08",
+      "estimated_cost": 200,
+      "description": "removal of sheet rock wall in basement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EAGLE&street_type=ST&address_number=18",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711008",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "address": "676 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/676/",
+  "apn": "3602013",
+  "block": "3602",
+  "lot": "013",
+  "eas_baseid": "361841",
+  "coordinates": {
+    "lat": 37.758258,
+    "lng": -122.432885
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 1609,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0676 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1857114,
+    "assessed_improvement_value": 795906,
+    "last_sale_date": "2021-08-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "19th and Noe Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1905–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202110130411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-13",
+      "status_date": "2022-02-22",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "interior alterations to intnerior wall openings, voluntary stregthening at garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106081889",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-08",
+      "status_date": "2021-07-08",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "1 bathroom remodel. relace in-kind vanity, toliet and bath tub.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406269646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-26",
+      "status_date": "2015-06-24",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=676",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=013",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602013",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43288545553308%2037.758257574231386)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "address": "59–61 Buena Vista Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-terrace/59/",
+  "apn": "2609033",
+  "block": "2609",
+  "lot": "033",
+  "eas_baseid": "341932",
+  "coordinates": {
+    "lat": 37.767922,
+    "lng": -122.437964
+  },
+  "address_range": "59–61",
+  "street_numbers_on_parcel": [
+    "59",
+    "61"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 4,
+    "rooms": 17,
+    "bathrooms": 5,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 5741,
+    "basement_area_sqft": 566,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0061 0059 BUENA VISTA         TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2520000,
+    "assessed_improvement_value": 1080000,
+    "last_sale_date": "2022-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402075428",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-02-07",
+      "status_date": "2024-02-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "interior alteration on 1st floor: convert extg office and entertanment rooms into 1 new bedroom, new doors into extg den and extg lightwell. add new wetbar in extg media room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310319865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-31",
+      "status_date": "2024-03-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit, interior alteration, remove (e) spiral staircase, (n) staircase @ (n)location, remove (e) interior wall @ 2/f, enlarge one unit from square footage taken from one unit, replace (e) sliding door with (n) in same opening at back of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305258574",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2023-05-25",
+      "status_date": "2024-05-01",
+      "estimated_cost": 200000,
+      "description": "new interior stairway connecting 3/f & attic (e)flr area; 3/f: remodel (e)family rm, dining, kitchen, full bath, new half bath, laundry, pantry; attic: new roof dormers, convert (e)flr area to roof deck, remodel sewing rm to entertainment rm, (e)social rm to bedroom/home office, (2)new full baths,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802131142",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-13",
+      "status_date": "2019-03-20",
+      "estimated_cost": 35000,
+      "revised_cost": 122500,
+      "description": "add entertainment, media room, office, den & 3 fixtures full bathroom on 1st floor per plan. add interior staircase to create interior connection between 1st and 2nd floor per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510079037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-07",
+      "status_date": "2015-11-10",
+      "estimated_cost": 18800,
+      "revised_cost": 18800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-02",
+      "status_date": "1990-09-04",
+      "estimated_cost": 9000,
+      "revised_cost": 0,
+      "description": "repair fireboxs,replace flues ,misc plaster repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=TER&address_number=59",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2609033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2609&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2609033",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

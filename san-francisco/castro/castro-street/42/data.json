@@ -1,0 +1,131 @@
+{
+  "address": "42 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/42/",
+  "apn": "2611005",
+  "block": "2611",
+  "lot": "005",
+  "eas_baseid": "341991",
+  "coordinates": {
+    "lat": 37.768389,
+    "lng": -122.436024
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 6,
+    "lot_area_sqft": 2430,
+    "building_area_sqft": 2793,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0042 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 964630,
+    "assessed_improvement_value": 643080,
+    "last_sale_date": "2006-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404129833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-12",
+      "status_date": "2024-05-24",
+      "estimated_cost": 3000,
+      "revised_cost": 6498,
+      "description": "upgrade existing fire alarm system to comply with sffd 1103.6.7.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311160953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-16",
+      "status_date": "2024-01-03",
+      "estimated_cost": 22650,
+      "revised_cost": 22650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709158528",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-15",
+      "status_date": "2020-12-29",
+      "estimated_cost": 30000,
+      "revised_cost": 10000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303240502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-24",
+      "status_date": "2003-04-11",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "repair ground flr post & post at guardrail for deck. repair stringer/post at 2nd flight of stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-16",
+      "status_date": "1990-06-14",
+      "estimated_cost": 1000,
+      "description": "replace shower pan in one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=42",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2611005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2611&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2611005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

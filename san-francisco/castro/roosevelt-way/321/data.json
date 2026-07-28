@@ -1,0 +1,128 @@
+{
+  "address": "321 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/321/",
+  "apn": "2620062",
+  "block": "2620",
+  "lot": "062",
+  "eas_baseid": "342429",
+  "coordinates": {
+    "lat": 37.765043,
+    "lng": -122.441675
+  },
+  "parcel": {
+    "year_built": 1958,
+    "units": 5,
+    "stories": 4,
+    "rooms": 15,
+    "bathrooms": 5,
+    "lot_area_sqft": 3258,
+    "building_area_sqft": 3459,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0321 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159840,
+    "assessed_improvement_value": 421898
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201104214568",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-04-21",
+      "status_date": "2011-04-21",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "dryrot repair of exterior stair. replace 2 stair stringer, replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208305300",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-08-30",
+      "status_date": "2002-08-30",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "in compliance of dbi housing insp. serv 200231096 repair stairs,replace tread of deck boards or rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206048214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-04",
+      "status_date": "2002-11-22",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505991",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-04-25",
+      "status_date": "1995-12-06",
+      "estimated_cost": 600,
+      "description": "replace broken glass window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408063",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-05-20",
+      "status_date": "1995-02-07",
+      "estimated_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=321",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2620062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2620&lot=062",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2620062",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

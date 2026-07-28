@@ -1,0 +1,141 @@
+{
+  "address": "4566 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4566/",
+  "apn": "2657012",
+  "block": "2657",
+  "lot": "012",
+  "eas_baseid": "343543",
+  "coordinates": {
+    "lat": 37.760684,
+    "lng": -122.440392
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 932,
+    "building_area_sqft": 807,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4566 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1035423,
+    "assessed_improvement_value": 546552,
+    "last_sale_date": "2017-09-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002285718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-28",
+      "status_date": "2020-06-26",
+      "estimated_cost": 10000,
+      "revised_cost": 20000,
+      "description": "remodel kitchen: cabinets, new sink, new lights. all in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1183147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-09",
+      "status_date": "2020-01-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911016179",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-01",
+      "status_date": "2020-06-12",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel bath at 2nd fl. re-siding one wall at rear. install tankless hot water heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805189509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-18",
+      "status_date": "2018-08-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with nov #201865571, revision to 201801128564. additional work due to dry rot. replace (3) windows w/new fibrex windows & (1) door, replace dry rot railing at deck/deck railing. repair water damged stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M903967",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-23",
+      "status_date": "2018-03-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801128564",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-12",
+      "status_date": "2018-01-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair water damaged wood & stucco replace (2) windows & (1) door with similar windows & door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4566",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2657012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2657&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2657012",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

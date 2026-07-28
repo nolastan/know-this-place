@@ -1,0 +1,162 @@
+{
+  "address": "474 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/474/",
+  "apn": "3604101",
+  "block": "3604",
+  "lot": "101",
+  "eas_baseid": "362073",
+  "coordinates": {
+    "lat": 37.757304,
+    "lng": -122.431764
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2445,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0474 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 378760,
+    "assessed_improvement_value": 934791,
+    "last_sale_date": "1996-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402156006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-15",
+      "status_date": "2024-02-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise 202102044019, remove fireplace only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307252956",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-25",
+      "status_date": "2023-10-16",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "replace (6) windows full frame (n) wood clad. not street visible. u factor < or = 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102044019",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-02-04",
+      "status_date": "2024-02-22",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "build single story 102 ft horizontal addition on g/f to extend (e) family room 7.5 ft to rear yard. build roof deck above addition with french doors into (e) adjacent room. install exterior stair from roof deck to rear yard. build interior wall to divide (e) family room & create guest bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908199174",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2019-08-19",
+      "status_date": "2022-11-14",
+      "estimated_cost": 1,
+      "description": "install 27 kwh energy storage system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809222326",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-22",
+      "status_date": "2008-09-22",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016963",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-27",
+      "status_date": "1991-01-11",
+      "estimated_cost": 9000,
+      "description": "modify (e) permit #8924342",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015398",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-03",
+      "status_date": "1990-12-19",
+      "estimated_cost": 2000,
+      "description": "modify retaining wall detail per field condition to #8924342",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924342S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1989-12-12",
+      "status_date": "1991-01-16",
+      "estimated_cost": 212250,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=474",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604101&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=101",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604101",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

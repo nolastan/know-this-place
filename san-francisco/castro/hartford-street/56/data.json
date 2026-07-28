@@ -1,0 +1,167 @@
+{
+  "address": "56 Hartford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hartford-street/56/",
+  "apn": "3582047",
+  "block": "3582",
+  "lot": "047",
+  "eas_baseid": "360721",
+  "coordinates": {
+    "lat": 37.761548,
+    "lng": -122.434271
+  },
+  "parcel": {
+    "year_built": 1901,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1655,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0056 HARTFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 936703,
+    "assessed_improvement_value": 1101395,
+    "last_sale_date": "2004-12-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1901",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hartford Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1902",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202603067110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-06",
+      "status_date": "2026-03-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under 200503298604 and 200608179715. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303173886",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-03-17",
+      "status_date": "2026-03-17",
+      "estimated_cost": 125000,
+      "revised_cost": 225496,
+      "description": "(n) horizontal building addition @ rear yard. basement level only, under (e) deck & under (e) building envelope. (n) bedroom & bathroom. (n) roof deck to match (e)g (first floor level).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608179715",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2006-08-17",
+      "status_date": "2026-03-17",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revision to 200503298604, new glass block property line window at e office, in lieu of existing window to remain",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503298604",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-03-29",
+      "status_date": "2026-03-17",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "remodel (e) garage to include new habitable space. remodel interiors, 2nd & 3rd floors. renovate (e) front facade to return to orig victorian detailing new rear yard deck.new rear yard addition, 2 stories.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410015781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-01",
+      "status_date": "2004-11-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "sheet rock/paint/ tile in bthrm and hallway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209131",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-04",
+      "status_date": "1993-06-08",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800541",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-15",
+      "status_date": "1988-09-28",
+      "estimated_cost": 15000,
+      "description": "remodel existing kitchen & aqdd bathroom on main floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARTFORD&street_type=ST&address_number=56",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=047",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582047",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43427126783783%2037.76154789964479)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

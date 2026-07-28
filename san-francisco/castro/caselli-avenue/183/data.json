@@ -1,0 +1,114 @@
+{
+  "address": "183–185 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/183/",
+  "apn": "2702023",
+  "block": "2702",
+  "lot": "023",
+  "eas_baseid": "344714",
+  "coordinates": {
+    "lat": 37.759367,
+    "lng": -122.442664
+  },
+  "address_range": "183–185",
+  "street_numbers_on_parcel": [
+    "183",
+    "185"
+  ],
+  "parcel": {
+    "year_built": 1964,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2491,
+    "building_area_sqft": 3300,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0185 0183 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1212323,
+    "assessed_improvement_value": 519566,
+    "last_sale_date": "2020-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102114471",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-11",
+      "status_date": "2021-03-22",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "remodel kithcen in-kind. replce shower valve and sink on master bathroom. no walls moved, modified or altered.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909111375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-11",
+      "status_date": "2019-12-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodeling existing 2 bathrooms and painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404213738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-21",
+      "status_date": "2014-05-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to document the conversion of unit from being used as hotel back to its original use as a residential unit. to comply with n.o.v. #201448557. dated 3/3/14",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=183",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2702023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2702&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2702023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

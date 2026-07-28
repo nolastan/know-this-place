@@ -1,0 +1,155 @@
+{
+  "address": "57 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/57/",
+  "apn": "2646040",
+  "block": "2646",
+  "lot": "040",
+  "eas_baseid": "343173",
+  "coordinates": {
+    "lat": 37.762521,
+    "lng": -122.442034
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 1954,
+    "basement_area_sqft": 503,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0057 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1466153,
+    "assessed_improvement_value": 648351,
+    "last_sale_date": "2020-12-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202112023517",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-12-02",
+      "status_date": "2021-12-02",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110080130",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2021-10-08",
+      "status_date": "2023-01-09",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "addition of new rear deck araes at 1st, 2nd, & 3rd floors, new exterior doors to deck areas, new spiral stair between 2nd & 3rd floor decks, & replacement in-kind of existing stair from 1st floor to yard level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905069896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-06",
+      "status_date": "2019-06-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodeling of existing bathroom, upper floor, install new vanity, shower, toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505263549",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-26",
+      "status_date": "2005-11-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "establishing the legality of all rooms on all levels",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410227505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-22",
+      "status_date": "2005-02-10",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "kitchen remodel:remove wall,install new beam,relocate elec.,switches,outlets,remove 2 sinks,install",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303139614",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2003-03-13",
+      "status_date": "2005-05-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "add rear deck - convert rear window into a patio door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211211971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-21",
+      "status_date": "2003-01-14",
+      "estimated_cost": 8785,
+      "revised_cost": 8785,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=57",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=040",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646040",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

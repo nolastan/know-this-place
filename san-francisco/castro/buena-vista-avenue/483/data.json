@@ -1,0 +1,121 @@
+{
+  "address": "483 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/483/",
+  "apn": "2607103",
+  "block": "2607",
+  "lot": "103",
+  "eas_baseid": "341847",
+  "coordinates": {
+    "lat": 37.765686,
+    "lng": -122.442233
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1820,
+    "building_area_sqft": 1825,
+    "basement_area_sqft": 625,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0483 BUENA VISTA         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 768162,
+    "assessed_improvement_value": 311946,
+    "last_sale_date": "1999-01-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200902273085",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-02-27",
+      "status_date": "2011-08-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final 200603207080.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603207080",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2006-03-20",
+      "status_date": "2009-02-04",
+      "estimated_cost": 36000,
+      "revised_cost": 40000,
+      "description": "new rear deck to be built. e rear decks to be removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407279921",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-07-27",
+      "status_date": "2011-08-12",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020965",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-10-11",
+      "status_date": "1991-03-26",
+      "estimated_cost": 5000,
+      "description": "install vinyl siding on rear of home",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=AVE&address_number=483",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607103&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&lot=103",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2607103",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

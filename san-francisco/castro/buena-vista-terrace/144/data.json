@@ -1,0 +1,146 @@
+{
+  "address": "144–146 Buena Vista Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/buena-vista-terrace/144/",
+  "apn": "2608055",
+  "block": "2608",
+  "lot": "055",
+  "eas_baseid": "341899",
+  "coordinates": {
+    "lat": 37.766633,
+    "lng": -122.438601
+  },
+  "address_range": "144–146",
+  "street_numbers_on_parcel": [
+    "144",
+    "146"
+  ],
+  "parcel": {
+    "year_built": 1964,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1624,
+    "building_area_sqft": 2554,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0146 0144 BUENA VISTA         TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 734788,
+    "assessed_improvement_value": 489858,
+    "last_sale_date": "2011-11-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810304484",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-10-30",
+      "status_date": "2018-10-30",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209119439",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-11",
+      "status_date": "2012-09-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "removal of dry wall from ceiling, new insulation and 2 layor of 5/8\" type \"x\" on r-c chanel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201041629",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-04",
+      "status_date": "2012-04-06",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "comply with nov# 201173433, dated 11/29/11-repair damage framing/stucco on around the door at upper unit @back. repair back deck under 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112140664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-14",
+      "status_date": "2012-04-06",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel kitchen and bath at each unit. countertops, cabinets, sink. replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612190155",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-19",
+      "status_date": "2007-01-25",
+      "estimated_cost": 8200,
+      "revised_cost": 8200,
+      "description": "install a vinyl siding to south wall of home only. not visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703428",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-02-25",
+      "status_date": "1997-07-02",
+      "estimated_cost": 4940,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=TER&address_number=144",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2608055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2608&lot=055",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2608055",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

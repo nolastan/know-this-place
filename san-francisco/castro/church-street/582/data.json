@@ -1,0 +1,147 @@
+{
+  "address": "582–586 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/582/",
+  "apn": "3580011",
+  "block": "3580",
+  "lot": "011",
+  "eas_baseid": "360534",
+  "coordinates": {
+    "lat": 37.761485,
+    "lng": -122.428533
+  },
+  "address_range": "582–586",
+  "street_numbers_on_parcel": [
+    "582",
+    "586"
+  ],
+  "also_addressed": [
+    "3800 18TH ST"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 6,
+    "stories": 3,
+    "rooms": 27,
+    "bathrooms": 6,
+    "lot_area_sqft": 2160,
+    "building_area_sqft": 6673,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0586 0582 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 51718,
+    "assessed_improvement_value": 104399
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201701197495",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-19",
+      "status_date": "2017-06-09",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria: 2016 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M130245",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-08",
+      "status_date": "2008-08-08",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210239766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-23",
+      "status_date": "2002-11-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew #200201257727 for final insp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201257727",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-25",
+      "status_date": "2002-07-25",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "remodeling kitchen install new cabinet counter top sink hood.sheetrock 1 bedroom 3rd flr(1hr constru",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109057530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-05",
+      "status_date": "2002-02-22",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace in kind or better fire damaged stair at rear-3rd floor to roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108276944",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2001-08-27",
+      "status_date": "2001-08-27",
+      "estimated_cost": 80000,
+      "description": "fire repair/framing/plaster/kchn replacement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=582",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580011",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

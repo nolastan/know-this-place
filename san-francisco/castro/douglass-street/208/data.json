@@ -1,0 +1,142 @@
+{
+  "address": "208 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/208/",
+  "apn": "2691055",
+  "block": "2691",
+  "lot": "055",
+  "eas_baseid": "344285",
+  "coordinates": {
+    "lat": 37.760319,
+    "lng": -122.439493
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1584,
+    "building_area_sqft": 2320,
+    "lot_depth_ft": 48,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0208 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1857114,
+    "assessed_improvement_value": 795906,
+    "last_sale_date": "2007-06-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M83924",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-29",
+      "status_date": "2007-08-29",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707318235",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2007-07-31",
+      "status_date": "2026-01-27",
+      "estimated_cost": 4300,
+      "revised_cost": 4300,
+      "description": "remove existing foundation on psot and piers and replace with new concrete foundation behind rear stair approx. 17'-0\"lf of new foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707318242",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-31",
+      "status_date": "2007-08-22",
+      "estimated_cost": 4300,
+      "revised_cost": 4300,
+      "description": "remove (e) foundation on post and piers and replace with new concrete foundation behind rear stair approx 17'-0\" lf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707257676",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-25",
+      "status_date": "2007-07-25",
+      "estimated_cost": 6200,
+      "revised_cost": 6200,
+      "description": "per termite report#07426 (markoff) replacement in kind-per termite report.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405133877",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-05-13",
+      "status_date": "2005-06-28",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "replace (e) windows, remodel (e) kitchen & (e) bathroom, new bathroom, new front facade, new front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-12",
+      "status_date": "1988-12-01",
+      "estimated_cost": 7691,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=208",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2691055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2691&lot=055",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2691055",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

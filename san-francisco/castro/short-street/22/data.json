@@ -1,0 +1,129 @@
+{
+  "address": "22 Short Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/short-street/22/",
+  "apn": "2713002C",
+  "block": "2713",
+  "lot": "002C",
+  "eas_baseid": "344905",
+  "coordinates": {
+    "lat": 37.757788,
+    "lng": -122.44264
+  },
+  "parcel": {
+    "year_built": 1941,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1812,
+    "building_area_sqft": 1250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0022 SHORT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 695028,
+    "assessed_improvement_value": 297858,
+    "last_sale_date": "2011-01-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508073720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-07",
+      "status_date": "2016-03-30",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "commencment of work not started under previosly approved under app#201301158064",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303011301",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2013-03-01",
+      "status_date": "2014-01-09",
+      "estimated_cost": 1,
+      "description": "revision to 201301158064 to include signoff by city planning and include the words \"remove illegal unit at garage level\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301158064",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-01-15",
+      "status_date": "2013-01-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove illiegal kitchen & bathroom at garage level. capp all utilities at source & convert to storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201122138",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-12",
+      "status_date": "2012-03-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with nov. # 201178853 dated 12/29/2011. per complaints to repair repair deck less than 50% & other misc. items as per complaints.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M273067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-14",
+      "status_date": "2011-07-14",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHORT&street_type=ST&address_number=22",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2713002C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2713&lot=002C",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2713002C",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

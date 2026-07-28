@@ -1,0 +1,151 @@
+{
+  "address": "125 Mono Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/mono-street/125/",
+  "apn": "2711028",
+  "block": "2711",
+  "lot": "028",
+  "eas_baseid": "344866",
+  "coordinates": {
+    "lat": 37.758708,
+    "lng": -122.443702
+  },
+  "parcel": {
+    "year_built": 1908,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 1616,
+    "building_area_sqft": 2100,
+    "basement_area_sqft": 200,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0125 MONO                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2231047,
+    "assessed_improvement_value": 956158,
+    "last_sale_date": "2008-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201403261740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-26",
+      "status_date": "2014-03-31",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200710054745. all work is complete. to comply w/ nov #200724910",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802154992",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-15",
+      "status_date": "2008-02-27",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "revision to 2005 0714 7542. 2nd fl. provide frameless corner window, re-configure bathroom, remove window, add skylights. 3rd fl. remove windows & door, change window to glass block. remove fireplace, re-configure dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710054735",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-05",
+      "status_date": "2007-10-15",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision to pa# 2005/07/14/7542 to use shotcrete in liu of formed concrete on foundation walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710054745",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-05",
+      "status_date": "2007-10-05",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "correct shoring per nov #200724910. this is a revision to pa #2005-07-14-7542.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507147542",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-07-14",
+      "status_date": "2008-07-22",
+      "estimated_cost": 150000,
+      "revised_cost": 285000,
+      "description": "alteration of (e) basement & 1st floor, construction of (n) 2nd floor, (n) garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101119677",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2001-01-11",
+      "status_date": "2004-10-14",
+      "description": "demolish one story single family dwelling unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101119675",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2001-01-11",
+      "status_date": "2004-10-14",
+      "estimated_cost": 140000,
+      "description": "erect a two story two unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONO&street_type=ST&address_number=125",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711028",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

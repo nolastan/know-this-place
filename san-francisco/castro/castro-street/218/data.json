@@ -1,0 +1,159 @@
+{
+  "address": "218–220 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/218/",
+  "apn": "2613002",
+  "block": "2613",
+  "lot": "002",
+  "eas_baseid": "342091",
+  "coordinates": {
+    "lat": 37.765372,
+    "lng": -122.435746
+  },
+  "address_range": "218–220",
+  "street_numbers_on_parcel": [
+    "218",
+    "220"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 3030,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0220 0218 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1295211,
+    "assessed_improvement_value": 935833,
+    "last_sale_date": "2017-02-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201705197068",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-05-19",
+      "status_date": "2017-05-19",
+      "estimated_cost": 11600,
+      "revised_cost": 11600,
+      "description": "remove existing roof. apply base and modified bitumen. install gravel stops for roof edge.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M765147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-01",
+      "status_date": "2017-03-01",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702229858",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-22",
+      "status_date": "2017-08-29",
+      "estimated_cost": 18000,
+      "revised_cost": 100000,
+      "description": "add additional seismic measures at garage/basement. kitchen & bath remodel at #220 castro street. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204043100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-04",
+      "status_date": "2002-04-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200107123509 for final",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107123509",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-12",
+      "status_date": "2001-11-12",
+      "estimated_cost": 3612,
+      "revised_cost": 3612,
+      "description": "white dual pane vinyl same as now(total of 7).window not on front of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-20",
+      "status_date": "1992-01-15",
+      "estimated_cost": 6300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=218",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2613002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2613&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2613002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43574616767484%2037.76537189778074)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

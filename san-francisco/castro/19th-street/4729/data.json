@@ -1,0 +1,150 @@
+{
+  "address": "4729 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4729/",
+  "apn": "2711038",
+  "block": "2711",
+  "lot": "038",
+  "eas_baseid": "344876",
+  "coordinates": {
+    "lat": 37.758713,
+    "lng": -122.442685
+  },
+  "parcel": {
+    "year_built": 1947,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2382,
+    "building_area_sqft": 978,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4729 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 488599,
+    "assessed_improvement_value": 192172,
+    "last_sale_date": "1997-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409039961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-03",
+      "status_date": "2025-01-22",
+      "estimated_cost": 20500,
+      "revised_cost": 20500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904025417",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-02",
+      "status_date": "2009-06-30",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "kitchen remodel. replacement of cabinets in kind. new counters, new sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M122406",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-12",
+      "status_date": "2008-06-12",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512059500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-05",
+      "status_date": "2006-01-11",
+      "estimated_cost": 2275,
+      "revised_cost": 2275,
+      "description": "repair dryrot as. report #46482 item 5a only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506034132",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-06-03",
+      "status_date": "2005-06-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "dryrot on rear deck,replacingless than 50% to repair dryrot,deck on 3 levels",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8412569",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-11-27",
+      "status_date": "1985-08-06",
+      "estimated_cost": 1500,
+      "description": "install fire jrum 2 and flue connector pipe s.f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-11-01",
+      "status_date": "1985-01-15",
+      "estimated_cost": 1585,
+      "description": "installation of 2 windows in living room - dining room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4729",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=038",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711038",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

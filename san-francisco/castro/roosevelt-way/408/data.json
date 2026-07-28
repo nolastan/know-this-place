@@ -1,0 +1,161 @@
+{
+  "address": "408 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/408/",
+  "apn": "2618A005",
+  "block": "2618A",
+  "lot": "005",
+  "eas_baseid": "342338",
+  "coordinates": {
+    "lat": 37.764667,
+    "lng": -122.443491
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2421,
+    "building_area_sqft": 1506,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0408 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1756940,
+    "assessed_improvement_value": 752972,
+    "last_sale_date": "2018-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202202077475",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-02-07",
+      "status_date": "2024-05-31",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace the planter concrete retaining wall in kind due to cracking",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906113113",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-11",
+      "status_date": "2019-07-17",
+      "estimated_cost": 14250,
+      "revised_cost": 14250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906291574",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-29",
+      "status_date": "2009-07-09",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "woluntair anchorbolt retrofit: install anchorbolts at 4' intervals in existing perimeter foundation. anchors to be 5/8\" x12\" threaded or with 2\" square washers, epoxy set with 7\" embedment minumum. construct plywood stiffening panels on existing basment walls, panels to be 1/2 cdx plywood, nailed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103275354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-27",
+      "status_date": "2001-08-21",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel existing 2nd floor bath and closet areas into 2 baths of reconfigured closets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607858",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-07",
+      "status_date": "1997-01-07",
+      "estimated_cost": 2980,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814130",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-19",
+      "status_date": "1989-01-06",
+      "estimated_cost": 3000,
+      "description": "repair termite, extending foundation wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805418",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-27",
+      "status_date": "1989-04-06",
+      "estimated_cost": 25000,
+      "description": "remodel kitchen & laundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-15",
+      "status_date": "1985-12-16",
+      "estimated_cost": 5600,
+      "description": "remove & replace exist post & pier, install rat proofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=408",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2618A005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2618A&lot=005",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2618A005",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

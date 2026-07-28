@@ -1,0 +1,150 @@
+{
+  "address": "85 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/85/",
+  "apn": "2646033A",
+  "block": "2646",
+  "lot": "033A",
+  "eas_baseid": "343166",
+  "coordinates": {
+    "lat": 37.762459,
+    "lng": -122.442635
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1729,
+    "building_area_sqft": 1449,
+    "basement_area_sqft": 456,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0085 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1045430,
+    "assessed_improvement_value": 696950,
+    "last_sale_date": "2005-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504043727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-04",
+      "status_date": "2025-04-08",
+      "estimated_cost": 14498,
+      "revised_cost": 14498,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M147544",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-15",
+      "status_date": "2009-01-15",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807287796",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-28",
+      "status_date": "2009-04-09",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel kitchen & bath (20 lin ft cabinetry). upgrade electrical & plumbing to comply w/ title 24 new cabinets and plumbing fixtures & countertops. no structural only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-05",
+      "status_date": "1992-03-19",
+      "estimated_cost": 1,
+      "description": "renewal of permit inspeciton pa 9022904",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-15",
+      "status_date": "1991-03-01",
+      "estimated_cost": 2350,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022904",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-11-07",
+      "status_date": "1992-02-26",
+      "estimated_cost": 45000,
+      "description": "remodel kitchen & bath on top floor, replace galvanized plmb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-09",
+      "status_date": "1991-03-01",
+      "estimated_cost": 1400,
+      "description": "remove refuse, remove bathroom, kitchen appliances, bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=85",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646033A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=033A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646033A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

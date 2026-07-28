@@ -1,0 +1,110 @@
+{
+  "address": "10 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/10/",
+  "apn": "2649002",
+  "block": "2649",
+  "lot": "002",
+  "eas_baseid": "343258",
+  "coordinates": {
+    "lat": 37.762006,
+    "lng": -122.437639
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3057,
+    "building_area_sqft": 1805,
+    "basement_area_sqft": 600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0010 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1135810,
+    "assessed_improvement_value": 433418,
+    "last_sale_date": "2009-06-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M724447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-22",
+      "status_date": "2016-09-22",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605238071",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-23",
+      "status_date": "2016-05-23",
+      "estimated_cost": 6500,
+      "revised_cost": 10000,
+      "description": "replace kitchen cabinet and floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204033069",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-03",
+      "status_date": "2002-10-03",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=10",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

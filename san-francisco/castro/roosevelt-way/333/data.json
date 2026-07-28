@@ -1,0 +1,135 @@
+{
+  "address": "333–335 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/333/",
+  "apn": "2620069",
+  "block": "2620",
+  "lot": "069",
+  "eas_baseid": "342435",
+  "coordinates": {
+    "lat": 37.76514,
+    "lng": -122.441828
+  },
+  "address_range": "333–335",
+  "street_numbers_on_parcel": [
+    "333",
+    "335"
+  ],
+  "parcel": {
+    "year_built": 1969,
+    "units": 3,
+    "stories": 4,
+    "rooms": 15,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 4090,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0335 0333 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2039184,
+    "assessed_improvement_value": 873936,
+    "last_sale_date": "2022-07-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1969",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504235072",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-05-09",
+      "status_date": "2025-11-03",
+      "estimated_cost": 25000,
+      "revised_cost": 36000,
+      "description": "legalize (e) dwelling unit as adu (under state program retaining r3 occupancy) @ 1/f and 2/f. general space improvements were completed under pa# 379136 including creating 1st story living room w/o kitchen, 2nd story bedroom and bath. work this permit will legalize a kitchen installed w/o permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504235076",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-05-09",
+      "status_date": "2025-11-03",
+      "estimated_cost": 57200,
+      "revised_cost": 70000,
+      "description": "extend stairway to roof, create stair penthouse, add roof terrace, modify fire escape to include an inclined ladder from roof to (e) rear fire escape. provide inclined ladder from fire escapre to ground.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412232048",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-12-23",
+      "status_date": "2005-07-19",
+      "estimated_cost": 8200,
+      "revised_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101475",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-01-30",
+      "status_date": "1991-10-10",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014506",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-07-23",
+      "status_date": "1991-01-02",
+      "estimated_cost": 3600,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=333",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2620069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2620&lot=069",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2620069",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

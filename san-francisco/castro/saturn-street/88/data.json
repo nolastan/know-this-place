@@ -1,0 +1,163 @@
+{
+  "address": "88 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/88/",
+  "apn": "2627013",
+  "block": "2627",
+  "lot": "013",
+  "eas_baseid": "342645",
+  "coordinates": {
+    "lat": 37.762817,
+    "lng": -122.442782
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2648,
+    "building_area_sqft": 974,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0088 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1250208,
+    "assessed_improvement_value": 535802,
+    "last_sale_date": "2020-09-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306059251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-05",
+      "status_date": "2023-08-23",
+      "estimated_cost": 35000,
+      "revised_cost": 72122,
+      "description": "adding bathroom at ground level, converting storage area into media room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009224704",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-09-22",
+      "status_date": "2020-09-22",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "garage door and opener replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908229523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-22",
+      "status_date": "2019-08-29",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809069290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-06",
+      "status_date": "2018-09-20",
+      "estimated_cost": 18710,
+      "revised_cost": 18710,
+      "description": "replace both front windows w/ eagle aluminum-clad wood with triple and double casements. at lower level rear window, replace with fibrex casements. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511168309",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-16",
+      "status_date": "2006-02-21",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replacing kchn wndw and replacing the patio door double glazed material",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510246372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-24",
+      "status_date": "2006-02-21",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "kitchen counters replaced and cabinets, appliances and sink replaced, no location change. wiring to be updated. window to be widened.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513916",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-28",
+      "status_date": "1996-02-28",
+      "estimated_cost": 7000,
+      "description": "instll subsurface drainage field & connect to sewer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9410358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-06-28",
+      "status_date": "1994-07-21",
+      "estimated_cost": 7400,
+      "description": "termite repair work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=88",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2627013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2627&lot=013",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2627013",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

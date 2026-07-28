@@ -1,0 +1,142 @@
+{
+  "address": "172–174 Graystone Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/graystone-terrace/172/",
+  "apn": "2719B033",
+  "block": "2719B",
+  "lot": "033",
+  "eas_baseid": "345119",
+  "coordinates": {
+    "lat": 37.757013,
+    "lng": -122.445684
+  },
+  "address_range": "172–174",
+  "street_numbers_on_parcel": [
+    "172",
+    "174"
+  ],
+  "parcel": {
+    "year_built": 1958,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 5042,
+    "building_area_sqft": 2699,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0172 GRAYSTONE           TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 298674,
+    "assessed_improvement_value": 587448
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200502225917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-22",
+      "status_date": "2005-03-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200307099075 to comply with his nov for stair repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307099075",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-09",
+      "status_date": "2003-07-09",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair steps/deck dryrot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-28",
+      "status_date": "1995-10-23",
+      "estimated_cost": 2000,
+      "description": "stucco & dry rot front of house/framming & sheathing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508317",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-02",
+      "status_date": "1995-09-29",
+      "estimated_cost": 1500,
+      "description": "remove existing bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800616",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-20",
+      "status_date": "1991-10-18",
+      "estimated_cost": 4000,
+      "description": "bldg. to comply with attached dahi report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709763",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-07-13",
+      "status_date": "1988-12-09",
+      "estimated_cost": 3000,
+      "description": "repair plywood & wall framing at right side of kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRAYSTONE&street_type=TER&address_number=172",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719B033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719B&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719B033",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

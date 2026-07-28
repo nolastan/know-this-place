@@ -1,0 +1,141 @@
+{
+  "address": "485 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/485/",
+  "apn": "2749025A",
+  "block": "2749",
+  "lot": "025A",
+  "eas_baseid": "345411",
+  "coordinates": {
+    "lat": 37.755818,
+    "lng": -122.438579
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3249,
+    "building_area_sqft": 1925,
+    "basement_area_sqft": 563,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0485 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 322909,
+    "assessed_improvement_value": 567005,
+    "last_sale_date": "1994-12-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M629267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-14",
+      "status_date": "2015-10-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M601907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-09",
+      "status_date": "2015-07-09",
+      "revised_cost": 0,
+      "description": "streetspace streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412314786",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-12-31",
+      "status_date": "2017-08-29",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "new deck from second floor at rear yard. new spiral stair from deck to rear yard below. replace windows at bdrm 1, 201 and bdrm 2, 202 with glazed patio doors, no change in opening size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M546547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-31",
+      "status_date": "2014-12-31",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411202113",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-20",
+      "status_date": "2016-05-04",
+      "estimated_cost": 265000,
+      "revised_cost": 265000,
+      "description": "2/f: remodel kitchen & bathroom, replace rear bedroom windows. remodel 1/f to add a new master bedroom, a new bathroom, a laundry room & reconfigure existing interior stair. infill (e) lightwell, new conc. patio & planters, (n) furnace & water heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903053455",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-03-05",
+      "status_date": "2009-03-05",
+      "estimated_cost": 8840,
+      "revised_cost": 8840,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=485",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749025A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=025A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749025A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

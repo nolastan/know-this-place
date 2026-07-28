@@ -1,0 +1,149 @@
+{
+  "address": "3875 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3875/",
+  "apn": "3600059",
+  "block": "3600",
+  "lot": "059",
+  "eas_baseid": "361738",
+  "coordinates": {
+    "lat": 37.759378,
+    "lng": -122.42998
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 4352.5,
+    "building_area_sqft": 2625,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3875 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 388708,
+    "assessed_improvement_value": 583082,
+    "last_sale_date": "1996-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207299555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-29",
+      "status_date": "2022-08-18",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411018175",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-01",
+      "status_date": "2005-08-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace top floor deck in kind,replace (e)exterior wall @kitchen w/new due to severe rot.replace (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922311",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-20",
+      "status_date": "1990-04-12",
+      "estimated_cost": 1,
+      "description": "renewal of permit issued udner app #8813260",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813264",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-09-07",
+      "status_date": "1990-02-06",
+      "estimated_cost": 12000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707468",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-05-29",
+      "status_date": "1988-02-08",
+      "estimated_cost": 5000,
+      "description": "horizontal extension, deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614813",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-11-20",
+      "status_date": "1988-02-08",
+      "estimated_cost": 18500,
+      "description": "remodel kitchen, baths, patch or repair walls, windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613786",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-03",
+      "status_date": "1988-09-29",
+      "estimated_cost": 20000,
+      "description": "removal of existing retianing wall partially",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3875",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=059",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600059",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

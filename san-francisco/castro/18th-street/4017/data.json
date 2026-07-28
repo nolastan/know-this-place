@@ -1,0 +1,142 @@
+{
+  "address": "4017 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4017/",
+  "apn": "3583086",
+  "block": "3583",
+  "lot": "086",
+  "eas_baseid": "360823",
+  "coordinates": {
+    "lat": 37.76077,
+    "lng": -122.433209
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2200,
+    "building_area_sqft": 2420,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4019 4017 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 410697,
+    "assessed_improvement_value": 274147,
+    "last_sale_date": "1987-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Eureka Valley Commercial & Castro Village LGBTQ+ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1879–1932; 1963–1980",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201705247562",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-05-24",
+      "status_date": "2017-05-24",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "sweep roof surface clean. 1 layer of #30 felt. install com shingles (30 years).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904584",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-23",
+      "status_date": "1989-07-20",
+      "estimated_cost": 1,
+      "description": "permit for final inspection only refer to 8803423",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900267",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-09",
+      "status_date": "1989-07-20",
+      "estimated_cost": 1,
+      "description": "install exhaust fans re 8803423",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811341",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-09",
+      "status_date": "1988-12-29",
+      "estimated_cost": 3000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803423",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-03-17",
+      "status_date": "1988-12-06",
+      "estimated_cost": 12000,
+      "description": "replace kitchen cabinets, counter tops, new fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3583086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3583&lot=086",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3583086",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43320856446266%2037.76077033240753)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

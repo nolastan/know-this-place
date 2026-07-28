@@ -1,0 +1,164 @@
+{
+  "address": "579 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/579/",
+  "apn": "3603033",
+  "block": "3603",
+  "lot": "033",
+  "eas_baseid": "361943",
+  "coordinates": {
+    "lat": 37.756678,
+    "lng": -122.434063
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0579 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1533434,
+    "assessed_improvement_value": 1022285,
+    "last_sale_date": "2002-06-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Castro & Liberty Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1897–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201801037748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-03",
+      "status_date": "2018-01-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove and replace rear deck/patio doors & side lites & in kind with new. no change of (e) openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105078505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-07",
+      "status_date": "2001-05-22",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "voluntary reinforcement of exist conditions. revision to 2001/03/08/3775.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103083775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-08",
+      "status_date": "2001-05-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit app#9822039, 9819211,9901514,9902866, final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902866",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-02-12",
+      "status_date": "2001-05-22",
+      "estimated_cost": 2000,
+      "description": "replace front windows on top floor, restore trim details",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901514",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-25",
+      "status_date": "2001-05-22",
+      "estimated_cost": 100,
+      "description": "revise pa#9819211 & 9822039-rear footing & dormer framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9822039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-27",
+      "status_date": "2001-05-22",
+      "estimated_cost": 95000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819211",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-23",
+      "status_date": "2001-05-22",
+      "estimated_cost": 18000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=579",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43406292171812%2037.756678335600576)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

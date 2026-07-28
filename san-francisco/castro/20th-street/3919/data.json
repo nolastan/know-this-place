@@ -1,0 +1,158 @@
+{
+  "address": "3919 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3919/",
+  "apn": "3605068",
+  "block": "3605",
+  "lot": "068",
+  "eas_baseid": "362139",
+  "coordinates": {
+    "lat": 37.757814,
+    "lng": -122.428543
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3921 3919 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 415308,
+    "assessed_improvement_value": 215950,
+    "last_sale_date": "1996-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407211710",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-21",
+      "status_date": "2014-11-21",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "re-roofing n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-06-02",
+      "status_date": "1997-07-10",
+      "estimated_cost": 1,
+      "description": "renew pa9612444 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615688",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-22",
+      "status_date": "1997-07-03",
+      "estimated_cost": 30000,
+      "description": "convert 2 unit bldg to single family unit,remodel ktchn/bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612444",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-11",
+      "status_date": "1997-01-10",
+      "estimated_cost": 8000,
+      "description": "voluntary structural improvemet to grnd flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513967",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-29",
+      "status_date": "1995-12-29",
+      "estimated_cost": 975,
+      "description": "repair dry rot back porch 2ndf/chg 2 wood windows at rear/",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512824",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-14",
+      "status_date": "1995-08-21",
+      "estimated_cost": 700,
+      "description": "repair back stairs,some dry rot on landing & steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-22",
+      "status_date": "1988-12-09",
+      "estimated_cost": 1500,
+      "description": "repair concrete slab",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800314",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-12",
+      "status_date": "1988-06-14",
+      "estimated_cost": 35000,
+      "description": "repair fire damage, apply cdx ply sheathing, compose shingle",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3919",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3605068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3605&lot=068",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3605068",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

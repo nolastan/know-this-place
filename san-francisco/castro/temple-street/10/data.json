@@ -1,0 +1,171 @@
+{
+  "address": "10 Temple Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/temple-street/10/",
+  "apn": "2645002",
+  "block": "2645",
+  "lot": "002",
+  "eas_baseid": "343108",
+  "coordinates": {
+    "lat": 37.762457,
+    "lng": -122.443453
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2800,
+    "building_area_sqft": 1130,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0010 TEMPLE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335910,
+    "assessed_improvement_value": 365852,
+    "last_sale_date": "1994-09-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200408242324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-24",
+      "status_date": "2004-09-14",
+      "estimated_cost": 6600,
+      "revised_cost": 6600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408101107",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-08-10",
+      "status_date": "2007-04-18",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "addition of skylight in stairwell",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28282",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-07-12",
+      "status_date": "2004-07-12",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-14",
+      "status_date": "2004-04-14",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404010155",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-04-01",
+      "status_date": "2006-01-30",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "soft demo in proparation for permit#200401063402",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401063402",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-01-06",
+      "status_date": "2005-04-25",
+      "estimated_cost": 95000,
+      "revised_cost": 140000,
+      "description": "addition of master suite on garage level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009130407",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-09-13",
+      "status_date": "2002-04-04",
+      "estimated_cost": 100000,
+      "revised_cost": 115000,
+      "description": "addition of master suite - vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504149",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-24",
+      "status_date": "1995-10-24",
+      "estimated_cost": 7000,
+      "description": "remodel existing kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709107",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-07-01",
+      "status_date": "1987-12-09",
+      "estimated_cost": 7000,
+      "description": "enclose light well, remodel kitchen/reroof/install skylight",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TEMPLE&street_type=ST&address_number=10",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2645002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2645&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2645002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

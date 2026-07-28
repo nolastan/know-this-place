@@ -1,0 +1,145 @@
+{
+  "address": "504–506 Roosevelt Way, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/roosevelt-way/504/",
+  "apn": "2628012",
+  "block": "2628",
+  "lot": "012",
+  "eas_baseid": "342681",
+  "coordinates": {
+    "lat": 37.763309,
+    "lng": -122.444132
+  },
+  "address_range": "504–506",
+  "street_numbers_on_parcel": [
+    "504",
+    "506"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2635,
+    "building_area_sqft": 2915,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0506 0504 ROOSEVELT           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292846,
+    "assessed_improvement_value": 342073,
+    "last_sale_date": "1987-06-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010136347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-13",
+      "status_date": "2021-05-18",
+      "estimated_cost": 16246,
+      "revised_cost": 16246,
+      "description": "replace 16 windows and 1 patio door with retrofit aulminum windows and patio door. architectual grade aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207134814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-13",
+      "status_date": "2012-09-05",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair of siding in south lightwell. approximately 360 sq. ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808260026",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-26",
+      "status_date": "2008-08-26",
+      "estimated_cost": 6100,
+      "revised_cost": 6100,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007286423",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-07-28",
+      "status_date": "2001-05-10",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "enclosing part of existing front deck in order to enlarge living room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-12",
+      "status_date": "1991-01-02",
+      "estimated_cost": 5500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916589",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-09-07",
+      "status_date": "1990-09-25",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROOSEVELT&street_type=WAY&address_number=504",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628012",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

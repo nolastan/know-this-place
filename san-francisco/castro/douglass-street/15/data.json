@@ -1,0 +1,107 @@
+{
+  "address": "15 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/15/",
+  "apn": "2623046",
+  "block": "2623",
+  "lot": "046",
+  "eas_baseid": "342534",
+  "coordinates": {
+    "lat": 37.763281,
+    "lng": -122.439308
+  },
+  "parcel": {
+    "year_built": 1985,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 1070,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0015 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38320,
+    "assessed_improvement_value": 19141
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1985",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602045254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-04",
+      "status_date": "2026-03-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: demo the old shingles, install new shingles, no hot work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205301497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-30",
+      "status_date": "2012-06-11",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "for work already extg for partial fence above 6' and to comply with nov 200902625",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906888",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-04-25",
+      "status_date": "1991-02-01",
+      "estimated_cost": 650,
+      "description": "repair stairs in front of house, 4 steps & small landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=15",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=046",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623046",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

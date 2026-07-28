@@ -1,0 +1,127 @@
+{
+  "address": "73–75 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/73/",
+  "apn": "3538037",
+  "block": "3538",
+  "lot": "037",
+  "eas_baseid": "358601",
+  "coordinates": {
+    "lat": 37.767971,
+    "lng": -122.433031
+  },
+  "address_range": "73–75",
+  "street_numbers_on_parcel": [
+    "73",
+    "75"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4856,
+    "building_area_sqft": 2376,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0075 0073 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 59553,
+    "assessed_improvement_value": 85650
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "survey_name": "73-75 Noe St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201003248857",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-24",
+      "status_date": "2010-03-24",
+      "estimated_cost": 5300,
+      "revised_cost": 5300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418649",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-14",
+      "status_date": "1995-04-06",
+      "estimated_cost": 3000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511170",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-10-03",
+      "status_date": "1992-03-13",
+      "estimated_cost": 1500,
+      "description": "provide handrails front & rear stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=73",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3538037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3538&lot=037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3538037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4330311681476%2037.76797103376567)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "address": "491 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/491/",
+  "apn": "2607050A",
+  "block": "2607",
+  "lot": "050A",
+  "eas_baseid": "341829",
+  "coordinates": {
+    "lat": 37.765718,
+    "lng": -122.442492
+  },
+  "parcel": {
+    "year_built": 2000,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1572,
+    "building_area_sqft": 2615,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0491 BUENA VISTA         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2716484,
+    "assessed_improvement_value": 1164207,
+    "last_sale_date": "2022-08-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2000",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307182439",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-18",
+      "status_date": "2023-07-26",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replacement of (e) sliding door located in the rear of bldg, 4th level in kind. not visible from street, u <=.30. ref pa# 202208110350",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304246348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-24",
+      "status_date": "2023-07-18",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace interior windows in kind at 2nd and 3rd level bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208110350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-11",
+      "status_date": "2023-07-18",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel (1) kitchen and (2) full bathrooms. non structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M274749",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-09",
+      "status_date": "2011-08-09",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M232146",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-08",
+      "status_date": "2010-12-08",
+      "revised_cost": 1,
+      "description": "street space permit (investigation job)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M11319",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-28",
+      "status_date": "2000-05-28",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808010",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1998-05-05",
+      "status_date": "1999-04-01",
+      "description": "demolish a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808011S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1998-05-05",
+      "status_date": "2000-04-28",
+      "estimated_cost": 275000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=AVE&address_number=491",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607050A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&lot=050A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2607050A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

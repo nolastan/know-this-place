@@ -1,0 +1,167 @@
+{
+  "address": "367 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/367/",
+  "apn": "2751009",
+  "block": "2751",
+  "lot": "009",
+  "eas_baseid": "345505",
+  "coordinates": {
+    "lat": 37.756501,
+    "lng": -122.436497
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0367 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162476,
+    "assessed_improvement_value": 160449
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M983127",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-21",
+      "status_date": "2018-09-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904287192",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2009-04-28",
+      "status_date": "2026-01-27",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "repair existing framing support of house in basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612159946",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-12-15",
+      "status_date": "2009-09-16",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "remove & replace 3 windows & 1 french door at rear in kind. 0.67 u factor min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215400",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-08",
+      "status_date": "1993-01-04",
+      "estimated_cost": 1,
+      "description": "renewal permit inspection-#9203956-handrail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203956",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-03-13",
+      "status_date": "1992-12-29",
+      "estimated_cost": 100,
+      "description": "renew expired appn. #9101383",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101383",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-01-29",
+      "status_date": "1992-08-17",
+      "estimated_cost": 300,
+      "description": "install handrail at stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907686",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-05-08",
+      "status_date": "1990-08-24",
+      "estimated_cost": 2000,
+      "description": "replace front staiors & landings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905736",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-04-07",
+      "status_date": "1989-10-04",
+      "estimated_cost": 5000,
+      "description": "repair front stairs & landings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508645",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1985-08-12",
+      "status_date": "1986-05-07",
+      "estimated_cost": 7000,
+      "description": "remove lath & plaster, install insulation and replace wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=367",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=009",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751009",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

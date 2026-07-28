@@ -1,0 +1,108 @@
+{
+  "address": "72 Saturn Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/saturn-street/72/",
+  "apn": "2627009",
+  "block": "2627",
+  "lot": "009",
+  "eas_baseid": "342641",
+  "coordinates": {
+    "lat": 37.762846,
+    "lng": -122.442436
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1942,
+    "building_area_sqft": 1370,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0072 SATURN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106699,
+    "assessed_improvement_value": 213422
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508184552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-18",
+      "status_date": "2015-11-16",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208167501",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-16",
+      "status_date": "2012-08-16",
+      "estimated_cost": 2350,
+      "revised_cost": 2350,
+      "description": "install 5 vinyl windows in kind into existing frames. no change in size or location. windows do not face the street. if applicable, bedroom windows will comply with section cbc1026 for rescue. all windows will be double pane and have a u-factor of 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401305235",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-01-30",
+      "status_date": "2004-01-30",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair stair case as needed new support post and stair stringers repair railing as needed less than",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SATURN&street_type=ST&address_number=72",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2627009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2627&lot=009",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2627009",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

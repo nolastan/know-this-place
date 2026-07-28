@@ -1,0 +1,106 @@
+{
+  "address": "3340–3342 16th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/16th-street/3340/",
+  "apn": "3557016",
+  "block": "3557",
+  "lot": "016",
+  "eas_baseid": "359451",
+  "coordinates": {
+    "lat": 37.764765,
+    "lng": -122.427336
+  },
+  "address_range": "3340–3342",
+  "street_numbers_on_parcel": [
+    "3340",
+    "3342"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 3956.8,
+    "building_area_sqft": 2781,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3342 3340 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1065842,
+    "assessed_improvement_value": 573890
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alert Alley Early Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1910",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9813925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-22",
+      "status_date": "1999-05-13",
+      "estimated_cost": 4400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3340",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42733568530869%2037.764765017369875)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

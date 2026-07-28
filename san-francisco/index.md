@@ -3,7 +3,7 @@
 Know This Place's coverage begins in San Francisco. Neighborhoods
 documented so far:
 
-- [Castro / Eureka Valley](castro/) — where coverage began; 11 buildings on the 700 block of Castro Street
+- [Castro / Eureka Valley](castro/) — where coverage began; every residential parcel in the city's Castro/Upper Market boundary, 3,142 buildings across 73 streets
 - [Corbett Heights](corbett-heights/) — the hillside neighborhood around Corbett Avenue; 19 buildings on Corbett Avenue, Mars Street and Danvers Street
 - [Haight Ashbury](haight-ashbury/) — the counterculture district east of Golden Gate Park; six buildings tied to the Grateful Dead, Janis Joplin, Jimi Hendrix, Charles Manson and others
 - [Pacific Heights](pacific-heights/) — the ridge of mansions north of Japantown; the Spreckels Mansion and two other houses

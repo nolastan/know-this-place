@@ -1,0 +1,155 @@
+{
+  "address": "4254–4258 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4254/",
+  "apn": "2648022A",
+  "block": "2648",
+  "lot": "022A",
+  "eas_baseid": "343234",
+  "coordinates": {
+    "lat": 37.760956,
+    "lng": -122.437055
+  },
+  "address_range": "4254–4258",
+  "street_numbers_on_parcel": [
+    "4254",
+    "4256",
+    "4258"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 4550,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4258 4254 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124958,
+    "assessed_improvement_value": 141831
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1110907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-17",
+      "status_date": "2019-07-17",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M180227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-18",
+      "status_date": "2009-09-18",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710044563",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-04",
+      "status_date": "2007-11-30",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M89364",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-04",
+      "status_date": "2007-10-04",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708160088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-16",
+      "status_date": "2007-11-28",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace new window in front & side.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109289504",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-28",
+      "status_date": "2002-01-25",
+      "estimated_cost": 888,
+      "revised_cost": 888,
+      "description": "per dahi notice 200120095-repair as necss secondary eggress, (n0 struct) repair of stair shall not e",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-05",
+      "status_date": "1990-04-09",
+      "estimated_cost": 350,
+      "revised_cost": 0,
+      "description": "close rear chimmney and cap, relocate flues for water heater",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4254",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2648022A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2648&lot=022A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2648022A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

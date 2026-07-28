@@ -1,0 +1,152 @@
+{
+  "address": "4337–4339 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4337/",
+  "apn": "2693030",
+  "block": "2693",
+  "lot": "030",
+  "eas_baseid": "344357",
+  "coordinates": {
+    "lat": 37.76052,
+    "lng": -122.437929
+  },
+  "address_range": "4337–4339",
+  "street_numbers_on_parcel": [
+    "4337",
+    "4339"
+  ],
+  "parcel": {
+    "year_built": 1888,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2700,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4339 4337 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 494146,
+    "assessed_improvement_value": 389069,
+    "last_sale_date": "1997-05-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1888",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M576887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-09",
+      "status_date": "2015-04-09",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-20",
+      "status_date": "2000-04-18",
+      "estimated_cost": 1,
+      "description": "revision to app #9913624",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913624",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-06",
+      "status_date": "2000-04-18",
+      "estimated_cost": 500,
+      "description": "remove illegal use in attic per complaint-9801365",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908721",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-05-05",
+      "status_date": "2000-01-20",
+      "estimated_cost": 40000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-19",
+      "status_date": "1997-09-25",
+      "estimated_cost": 5000,
+      "description": "legalize skylights ready built at rear per compl.9701547",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717174",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-04",
+      "status_date": "1998-09-04",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907971",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-09",
+      "status_date": "1989-09-21",
+      "estimated_cost": 1000,
+      "description": "install garage door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4337",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2693030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2693&lot=030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2693030",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "address": "169 Lower Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/lower-terrace/169/",
+  "apn": "2627038",
+  "block": "2627",
+  "lot": "038",
+  "eas_baseid": "342662",
+  "coordinates": {
+    "lat": 37.763095,
+    "lng": -122.443116
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 1500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0169 LOWER               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35082,
+    "assessed_improvement_value": 120491
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9802915",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-02-20",
+      "status_date": "1998-10-05",
+      "estimated_cost": 10000,
+      "description": "add bthrm at ground floor/add new lights/cabinets/laundry rm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-18",
+      "status_date": "1995-08-16",
+      "estimated_cost": 10000,
+      "description": "repair (e) decks (2) and stair (1) resurface upper deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-09-28",
+      "status_date": "1995-04-06",
+      "estimated_cost": 4600,
+      "description": "repair front deck area fungus damage of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111458",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-28",
+      "status_date": "1991-07-13",
+      "estimated_cost": 4550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018834",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-09-20",
+      "status_date": "1992-06-17",
+      "estimated_cost": 40000,
+      "description": "replace rear stairs, rear deck, retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702592",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-27",
+      "status_date": "1987-03-12",
+      "estimated_cost": 300,
+      "description": "remove siding at west side building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511217",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-10-04",
+      "status_date": "1986-05-07",
+      "estimated_cost": 800,
+      "description": "replace siding to upper story",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOWER&street_type=TER&address_number=169",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2627038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2627&lot=038",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2627038",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

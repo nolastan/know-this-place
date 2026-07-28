@@ -1,0 +1,110 @@
+{
+  "address": "534 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/534/",
+  "apn": "3580004",
+  "block": "3580",
+  "lot": "004",
+  "eas_baseid": "360531",
+  "coordinates": {
+    "lat": 37.762334,
+    "lng": -122.428778
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 7,
+    "bedrooms": 6,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 2250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0534 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 773005,
+    "assessed_improvement_value": 732570,
+    "last_sale_date": "2001-01-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200205025591",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-02",
+      "status_date": "2002-09-02",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "minor structural relation revision to plans under 200102152274 for citys as built record",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201116781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-11",
+      "status_date": "2002-09-12",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace portion of existing foundation see 200102152274",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102152274",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-02-15",
+      "status_date": "2002-09-10",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel single fam residence for 5 rm guest house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=534",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=004",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580004",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

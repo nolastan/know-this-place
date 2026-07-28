@@ -1,0 +1,150 @@
+{
+  "address": "4533 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4533/",
+  "apn": "2691039",
+  "block": "2691",
+  "lot": "039",
+  "eas_baseid": "344273",
+  "coordinates": {
+    "lat": 37.76032,
+    "lng": -122.440162
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2692,
+    "building_area_sqft": 3560,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4533 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1960000,
+    "assessed_improvement_value": 840000,
+    "last_sale_date": "2017-02-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201704204487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-20",
+      "status_date": "2017-10-05",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "add a full bath in existing den at 2nd fl one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606270994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-27",
+      "status_date": "2016-09-30",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "one unit - remodel kitchen & bathroom inkind. g/f -recreate (e) utility room for hot water & furnace in kind. comply with c#201623794",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M212886",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-26",
+      "status_date": "2010-07-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M179270",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-08",
+      "status_date": "2009-09-08",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604259820",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-25",
+      "status_date": "2006-08-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair side stair, exterior, splice 3 posts. 12-16\" splice. the repair & result of pre-inspection suggestion. to comply with nov# 200668489.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922846",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-27",
+      "status_date": "2000-02-27",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504439",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-30",
+      "status_date": "1986-03-04",
+      "estimated_cost": 3000,
+      "description": "bring bldg into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4533",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2691039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2691&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2691039",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

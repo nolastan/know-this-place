@@ -1,0 +1,153 @@
+{
+  "address": "240 Caselli Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/caselli-avenue/240/",
+  "apn": "2689007",
+  "block": "2689",
+  "lot": "007",
+  "eas_baseid": "344185",
+  "coordinates": {
+    "lat": 37.759508,
+    "lng": -122.443698
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2604,
+    "building_area_sqft": 1966,
+    "basement_area_sqft": 686,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0240 CASELLI             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2026853,
+    "assessed_improvement_value": 868651,
+    "last_sale_date": "2021-01-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M404747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-28",
+      "status_date": "2013-06-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304013522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-01",
+      "status_date": "2015-06-04",
+      "estimated_cost": 9200,
+      "revised_cost": 9200,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301157998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-15",
+      "status_date": "2014-08-04",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "voluntary reinforcement and replacement of extg foundation due to presence of bricking original footings as well as additional footings from original permit app#201210172305. new plans are also to show as built",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212216742",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-12-21",
+      "status_date": "2014-08-04",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "revision to appl ##2012.10.17.2205. - enclose staiwell, add bathroom to lower level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210172205",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-17",
+      "status_date": "2014-08-04",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "kitchen and bath remodel, add one bathroom to lower level & one bedroom, add fireplace to living room, enclose lightwell ground floor only. re-inforcement of (e) foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102250958",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2011-02-25",
+      "status_date": "2012-04-18",
+      "estimated_cost": 150000,
+      "description": "add partial 3rd floor, extend ground floor, extend partial second floor. add one bath room, one bedroom, one family room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000106379",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-06",
+      "status_date": "2000-05-06",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASELLI&street_type=AVE&address_number=240",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689007",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

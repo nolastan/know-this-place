@@ -1,0 +1,171 @@
+{
+  "address": "20 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/20/",
+  "apn": "3585047",
+  "block": "3585",
+  "lot": "047",
+  "eas_baseid": "360964",
+  "coordinates": {
+    "lat": 37.760703,
+    "lng": -122.428832
+  },
+  "parcel": {
+    "year_built": 1902,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2630,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0020 HANCOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2042824,
+    "assessed_improvement_value": 875495,
+    "last_sale_date": "2019-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107073871",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-07",
+      "status_date": "2021-08-20",
+      "estimated_cost": 11800,
+      "revised_cost": 11800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106162566",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-16",
+      "status_date": "2021-06-23",
+      "estimated_cost": 4400,
+      "revised_cost": 4400,
+      "description": "perform repairs as. termit report #88048. item # 3a, 5a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810294405",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-29",
+      "status_date": "2019-02-15",
+      "estimated_cost": 90000,
+      "revised_cost": 120000,
+      "description": "2 new bedrooms addition on basement. 3 new bathrooms addition on basement. 2 new laundry rooms on basement. nw office room addition on basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M969867",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2018-08-23",
+      "status_date": "2018-08-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M969887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-23",
+      "status_date": "2018-08-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808177691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-17",
+      "status_date": "2019-02-15",
+      "estimated_cost": 45000,
+      "revised_cost": 60000,
+      "description": "one unit and one unit kitchen remodel. one unit bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M886227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-07",
+      "status_date": "2018-02-07",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M117510",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-25",
+      "status_date": "2008-04-25",
+      "revised_cost": 1,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302550",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-16",
+      "status_date": "1993-11-23",
+      "estimated_cost": 6480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HANCOCK&street_type=ST&address_number=20",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&lot=047",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3585047",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

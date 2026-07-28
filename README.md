@@ -13,16 +13,22 @@ There is deliberately **no CMS, no database, no build framework**:
   in a `narrative` field), `assets/` (openly licensed media), and `index.html`
   (the generated page). Keeping facts and prose in one file means the two can't
   drift into conflict.
-- `index.html` is a **build artifact authored by an AI agent**, not rendered
-  from a template. Every page can have a bespoke structure suited to what is
-  actually interesting about that place, composed from a shared **design
-  system** — a CSS component library ([shared/site.css](shared/site.css)) of
-  stat tiles, a visual timeline, charts, and icons, plus a tiny
-  progressive-enhancement layer ([shared/site.js](shared/site.js): web
-  components for click-to-load Street View and chart tooltips). The JS only
-  *enhances* — every page renders completely from its HTML alone, so pages stay
-  static and crawlable. Consistency is enforced by a small contract checked in
-  CI — see [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
+- `index.html` is a **build artifact**, not a template render at request time.
+  Pages are composed from a shared **design system** — a CSS component library
+  ([shared/site.css](shared/site.css)) of stat tiles, a visual timeline, charts,
+  and icons, plus a tiny progressive-enhancement layer
+  ([shared/site.js](shared/site.js): web components for click-to-load Street
+  View and chart tooltips). The JS only *enhances* — every page renders
+  completely from its HTML alone, so pages stay static and crawlable.
+  Consistency is enforced by a small contract checked in CI — see
+  [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
+- **Two ways a page gets written.** Most are **seeded programmatically** by
+  [scripts/seed_pages.py](scripts/seed_pages.py), which joins the DataSF
+  datasets and writes `data.json` + `index.html` for every residential parcel
+  in a neighborhood; those pages carry a `generator` key and are regenerated,
+  never hand-edited. A minority are **hand-authored** by an agent — the
+  buildings with a real story, a bespoke layout, or committed photographs.
+  The seeder never overwrites a hand-authored page.
 - **Agents do the work a CMS would.** Rules live in `AGENTS.md` files through
   the tree; available data APIs are cataloged in [DATA-SOURCES.md](DATA-SOURCES.md).
 
@@ -56,6 +62,9 @@ shared/
   site.js                     Enhancement layer (progressive web components)
   site-config.json            Site URL, repo URL, Maps embed key
 scripts/
+  seed_pages.py               Generates pages from the DataSF APIs; also
+                              re-renders index.html from data.json
+  permit_redactions.json      Names stripped from permit text before it's saved
   validate.py                 CI contract checks (stdlib only)
   build_sitemap.py            Regenerates sitemap.xml
 .github/
@@ -80,9 +89,25 @@ scripts/
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
 
+## Seeding a neighborhood
+
+```bash
+python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
+python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
+                                   --city san-francisco --area castro
+python3 scripts/build_sitemap.py
+python3 scripts/validate.py
+```
+
+`plan` reports what would be written and why parcels are skipped; `seed` writes
+the pages and rebuilds the street hubs. Raw dataset rows are cached in
+`.cache/` (gitignored) and each fetch resumes where it left off, so an
+interrupted run is cheap to restart. `--neighborhood` takes the SF Planning
+analysis-neighborhood name as it appears in the datasets.
+
 ## Running the agent locally
 
-Any Claude Code session in this repo picks up `AGENTS.md` automatically. For a
-seeding pass: "Create the page for <address> following AGENTS.md", then
-`python3 scripts/validate.py` and `python3 scripts/build_sitemap.py` before
-opening a PR.
+Any Claude Code session in this repo picks up `AGENTS.md` automatically. Use an
+agent for the work a script can't do — verifying a reader's feedback,
+researching a building's history, writing the prose for a page that has a story
+— not for seeding pages from city data.

@@ -1,0 +1,141 @@
+{
+  "address": "462 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/462/",
+  "apn": "3581011",
+  "block": "3581",
+  "lot": "011",
+  "eas_baseid": "360596",
+  "coordinates": {
+    "lat": 37.761746,
+    "lng": -122.430947
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2790,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0462 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3070200,
+    "assessed_improvement_value": 1315800,
+    "last_sale_date": "2024-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201106309237",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-30",
+      "status_date": "2011-07-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain finalinspection for work approved under pa # 200109178414. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M259366",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-05",
+      "status_date": "2011-05-05",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804169850",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-04-16",
+      "status_date": "2011-05-18",
+      "estimated_cost": 300000,
+      "revised_cost": 500000,
+      "description": "construct new horizontal/vertical rear addition at 2nd fl-provide 2 new bedrooms, laundry at 1st fl, new kitchen, family room, breakfast area at 2nd fl. provide 2 new bedrooms and bathrooms on 3rd floor, walk out deck at front, install new garage door, convert storage area to one car garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704279860",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-27",
+      "status_date": "2011-06-30",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove illegal kitchen and bath @1st floor ground level and convert to storage no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109178414",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-17",
+      "status_date": "2002-03-17",
+      "estimated_cost": 9250,
+      "revised_cost": 9250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-14",
+      "status_date": "1986-10-17",
+      "estimated_cost": 950,
+      "description": "repair front wooden stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=462",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581011",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

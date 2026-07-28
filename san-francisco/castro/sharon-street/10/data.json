@@ -1,0 +1,169 @@
+{
+  "address": "10–12 Sharon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sharon-street/10/",
+  "apn": "3558043A",
+  "block": "3558",
+  "lot": "043A",
+  "eas_baseid": "359542",
+  "coordinates": {
+    "lat": 37.765577,
+    "lng": -122.4302
+  },
+  "address_range": "10–12",
+  "street_numbers_on_parcel": [
+    "10",
+    "12"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2804,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0012 0010 SHARON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97003,
+    "assessed_improvement_value": 180180
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1905",
+    "survey_name": "10-12 Sharon Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200904226855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-22",
+      "status_date": "2009-06-25",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "repl 16 windows same size, same location, 6 windows facing the street, to comply with nov 200993740.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705080654",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-08",
+      "status_date": "2007-05-08",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405285087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-28",
+      "status_date": "2004-06-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200302066846,200312263045,200310107279 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312263045",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-12-26",
+      "status_date": "2003-12-26",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair the back stair & laundry room.according to the plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310107279",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-10",
+      "status_date": "2003-10-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2003/02/06/6846 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302066846",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-02-06",
+      "status_date": "2003-02-06",
+      "estimated_cost": 450,
+      "revised_cost": 450,
+      "description": "repair dry rot in the back existing porch <50% repair in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102061473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-06",
+      "status_date": "2001-03-01",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "rev. to appl#200101290859 changing the bathtub",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101290859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-29",
+      "status_date": "2001-03-01",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "installing new cabinets in the kitchen & counter top (2nd flr).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHARON&street_type=ST&address_number=10",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3558043A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3558&lot=043A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3558043A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

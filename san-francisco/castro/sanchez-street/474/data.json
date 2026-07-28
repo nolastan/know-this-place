@@ -1,0 +1,125 @@
+{
+  "address": "474–478 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/474/",
+  "apn": "3581014",
+  "block": "3581",
+  "lot": "014",
+  "eas_baseid": "360599",
+  "coordinates": {
+    "lat": 37.76154,
+    "lng": -122.430927
+  },
+  "address_range": "474–478",
+  "street_numbers_on_parcel": [
+    "474",
+    "476",
+    "478"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3615,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0478 0474 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2220099,
+    "assessed_improvement_value": 951470,
+    "last_sale_date": "2019-08-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406265316",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-06-26",
+      "status_date": "2024-07-17",
+      "estimated_cost": 36000,
+      "revised_cost": 48000,
+      "description": "unit a: remodel kitchen and bathroom. upgrade subpanel. install new lvl flooring. no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M327170",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-11",
+      "status_date": "2012-06-11",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810013089",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-01",
+      "status_date": "2008-10-01",
+      "estimated_cost": 4300,
+      "revised_cost": 4300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104571",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-03-20",
+      "status_date": "1992-01-28",
+      "estimated_cost": 3650,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=474",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=014",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581014",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

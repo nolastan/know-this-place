@@ -1,0 +1,146 @@
+{
+  "address": "760–762 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/760/",
+  "apn": "3603093",
+  "block": "3603",
+  "lot": "093",
+  "eas_baseid": "362000",
+  "coordinates": {
+    "lat": 37.756855,
+    "lng": -122.432592
+  },
+  "address_range": "760–762",
+  "street_numbers_on_parcel": [
+    "760",
+    "762"
+  ],
+  "parcel": {
+    "year_built": 1963,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 2450,
+    "lot_depth_ft": 50,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0762 0760 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 134650,
+    "assessed_improvement_value": 279689
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M495687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-12",
+      "status_date": "2014-06-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303152321",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-03-15",
+      "status_date": "2014-04-02",
+      "estimated_cost": 8000,
+      "revised_cost": 9000,
+      "description": "replace (e) fire escape w/new spiral stairs and new deck landing at rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208096994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-09",
+      "status_date": "2012-11-28",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel kitchen & bathroom , new cabinets & sink, toilet & sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311130103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-13",
+      "status_date": "2003-12-04",
+      "estimated_cost": 7600,
+      "revised_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206048199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-04",
+      "status_date": "2002-07-12",
+      "estimated_cost": 2300,
+      "revised_cost": 2300,
+      "description": "install 4 windows in kind. visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010183343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-18",
+      "status_date": "2001-01-03",
+      "estimated_cost": 1550,
+      "revised_cost": 1550,
+      "description": "install 3 replacement windows in kitchen #762, rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=760",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=093",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603093",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

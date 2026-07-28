@@ -1,0 +1,131 @@
+{
+  "address": "3276 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3276/",
+  "apn": "2704012",
+  "block": "2704",
+  "lot": "012",
+  "eas_baseid": "344734",
+  "coordinates": {
+    "lat": 37.758501,
+    "lng": -122.444908
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 850,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3276 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 517809,
+    "assessed_improvement_value": 345201,
+    "last_sale_date": "2004-04-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106031551",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-03",
+      "status_date": "2021-10-14",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "minor repairs to front deck and stairs. no change to style, design or size. approx 100 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211264790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-26",
+      "status_date": "2013-01-14",
+      "estimated_cost": 10000,
+      "revised_cost": 14497,
+      "description": "bathroom remodel - remove & reinstall plumbing fixtures + tub in same location of retile. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004200649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-20",
+      "status_date": "2010-07-16",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "upgrade finishes in kitchen, new flooring, cabinetry, appliances, electrical outlets & plumbing supply. no structural work under this permit. atleast 50% high efficancy lighting (by wattage).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811106273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-10",
+      "status_date": "2008-11-19",
+      "estimated_cost": 7600,
+      "revised_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001513",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-24",
+      "status_date": "1990-09-28",
+      "estimated_cost": 3500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3276",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2704012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2704&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2704012",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

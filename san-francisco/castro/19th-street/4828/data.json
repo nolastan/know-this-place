@@ -1,0 +1,161 @@
+{
+  "address": "4828 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4828/",
+  "apn": "2689012",
+  "block": "2689",
+  "lot": "012",
+  "eas_baseid": "344187",
+  "coordinates": {
+    "lat": 37.759424,
+    "lng": -122.444133
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2086,
+    "building_area_sqft": 1540,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4828 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 240537,
+    "assessed_improvement_value": 360815,
+    "last_sale_date": "1996-03-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201410108676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-10",
+      "status_date": "2015-04-22",
+      "estimated_cost": 14800,
+      "revised_cost": 20159,
+      "description": "kitchen remodel - install new cabinets and appliances, tile floor, new counters; lighting min 50% of toatal wattage shall be high efficiency",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910199237",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-19",
+      "status_date": "2009-12-17",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "patrial bathroom remodel new tub toilet. sink and tile floor and walls. existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704048027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-04",
+      "status_date": "2007-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to application 200612049048 instead of 7 windows and one sliding glass door only 4 windows installed 2 of wihich are visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612049048",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-12-04",
+      "status_date": "2007-04-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "window replacement - replace 7 windows and 1 sliding glass door, same size, same location. 2 windows are visible form the street. anderson clad wood windows - all replacement windows to be double-hung on any window visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002293015",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-29",
+      "status_date": "2000-06-30",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace basement staircase (interior)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725239",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-17",
+      "status_date": "1998-04-29",
+      "estimated_cost": 12000,
+      "description": "add bathrm to (e)garage/relocate laundry huck-up/add dr.to g",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612880",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-07-17",
+      "status_date": "1997-02-09",
+      "estimated_cost": 7500,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218773",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-28",
+      "status_date": "1992-12-03",
+      "estimated_cost": 6000,
+      "description": "bathroom remodel & replace ceiling & wall finish as needed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4828",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689012",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

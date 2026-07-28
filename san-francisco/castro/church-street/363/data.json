@@ -1,0 +1,144 @@
+{
+  "address": "363–365 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/363/",
+  "apn": "3557039",
+  "block": "3557",
+  "lot": "039",
+  "eas_baseid": "359471",
+  "coordinates": {
+    "lat": 37.765137,
+    "lng": -122.428365
+  },
+  "address_range": "363–365",
+  "street_numbers_on_parcel": [
+    "363",
+    "365"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3400,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0365 0363 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39466,
+    "assessed_improvement_value": 49415
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405165981",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-16",
+      "status_date": "2014-08-04",
+      "estimated_cost": 4239,
+      "revised_cost": 4239,
+      "description": "replace 3 windows with marvin wood clad double hung - visible from the street. replacement in kind, 4 value less than .4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M388767",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-25",
+      "status_date": "2013-04-25",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107119878",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-11",
+      "status_date": "2011-07-11",
+      "estimated_cost": 2292,
+      "revised_cost": 2292,
+      "description": "replace 3 windows, size for size, not visable from street with simonton double pane vinyl windows, u value 0.40 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905138346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-13",
+      "status_date": "2009-05-27",
+      "estimated_cost": 5342,
+      "revised_cost": 5342,
+      "description": "replace 6 windows, size for size, not visable from street with vinyl windows, u=0.67",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811106181",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-10",
+      "status_date": "2008-12-24",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "work @ one unit only. replace 6 windows front of the look street. same size & same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-11",
+      "status_date": "1995-10-17",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=363",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3557039",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

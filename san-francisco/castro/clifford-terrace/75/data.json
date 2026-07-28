@@ -1,0 +1,142 @@
+{
+  "address": "75 Clifford Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/clifford-terrace/75/",
+  "apn": "2628064",
+  "block": "2628",
+  "lot": "064",
+  "eas_baseid": "342712",
+  "coordinates": {
+    "lat": 37.763773,
+    "lng": -122.444076
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2356,
+    "building_area_sqft": 1826,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0075 CLIFFORD            TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1289679,
+    "assessed_improvement_value": 953978,
+    "last_sale_date": "2002-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207128273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-12",
+      "status_date": "2024-02-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "change rear windows at basement, 1st and 2nd floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802201647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-20",
+      "status_date": "2018-03-27",
+      "estimated_cost": 14845,
+      "revised_cost": 14845,
+      "description": "non street visible, replacing 1 isuing french door not visible from street with wood inswing door, u-factor: 0.32 same size same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502269426",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-26",
+      "status_date": "2015-03-16",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair rear deck- dry rotted boards, rails & side trellis, using redwood. no change to deck size or design, no structural changes less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112150712",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-15",
+      "status_date": "2012-04-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to appl #201005072002 - framing revisions as built.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005072002",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-05-07",
+      "status_date": "2012-04-27",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "new garage at exist lower 1st fl. new driveway and conc retaining walls. new conc landing & steps @ sideyard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509274022",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-27",
+      "status_date": "2005-10-17",
+      "estimated_cost": 6700,
+      "revised_cost": 6700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLIFFORD&street_type=TER&address_number=75",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=064",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628064",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

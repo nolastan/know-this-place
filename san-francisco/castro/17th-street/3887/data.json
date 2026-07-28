@@ -1,0 +1,153 @@
+{
+  "address": "3887 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3887/",
+  "apn": "3581070",
+  "block": "3581",
+  "lot": "070",
+  "eas_baseid": "360653",
+  "coordinates": {
+    "lat": 37.762418,
+    "lng": -122.432543
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1850,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3887 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2309792,
+    "assessed_improvement_value": 989910,
+    "last_sale_date": "2018-06-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407196902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-19",
+      "status_date": "2024-08-22",
+      "estimated_cost": 8977,
+      "revised_cost": 8977,
+      "description": "replace (1) rear entry door non-st visible. (e) wood, (n) steel no size change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905211265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-21",
+      "status_date": "2019-08-06",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "replace 115 linear ft of (e) brick perimeter foundation. voluntary add plywiid and bolting at garage level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810102844",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-10",
+      "status_date": "2018-10-24",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610120088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-12",
+      "status_date": "2017-01-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "paint front. repair damaged wood as neccessary in-kind in front of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109013776",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-09-01",
+      "status_date": "2012-11-05",
+      "estimated_cost": 35000,
+      "revised_cost": 45000,
+      "description": "to comply w/ nov# 201152003 dated 8/2/11. upper rear deck has rot damaged struc framing. demo upper rear deck, lower rear deck & 2-story enclosed porch. not to rebuild lower rear deck, build (n)2-sty enclosed porch w/ 3rd story deck & ext.stairs 2ndfl to grade.enclosed porch is unconditioned space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803137027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-13",
+      "status_date": "2008-08-13",
+      "estimated_cost": 68000,
+      "revised_cost": 68000,
+      "description": "renovate existing residence - bathroom, add one bathroom on 3rd floor and one bathroom on 2nd floor within existing building footprint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202199407",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-19",
+      "status_date": "2002-06-25",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel kitchen, remove kitchen cabinets/appliance, install new cabinets, countertop, plumbing lts.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3887",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=070",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581070",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

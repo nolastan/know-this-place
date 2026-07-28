@@ -1,0 +1,118 @@
+{
+  "address": "100 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/100/",
+  "apn": "2713001B",
+  "block": "2713",
+  "lot": "001B",
+  "eas_baseid": "344899",
+  "coordinates": {
+    "lat": 37.75799,
+    "lng": -122.442394
+  },
+  "parcel": {
+    "year_built": 1947,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1459,
+    "building_area_sqft": 1997,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0100 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37163,
+    "assessed_improvement_value": 87530
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200805131899",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-13",
+      "status_date": "2008-05-13",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M22088",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-29",
+      "status_date": "2002-10-29",
+      "revised_cost": 20000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210219418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-21",
+      "status_date": "2002-12-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "dryrot repair at varying areas around house, new stucco & subsiding. replace windows in kind. rev a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210098594",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-09",
+      "status_date": "2002-10-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair dry rot at south west corner & misc. window sills",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=100",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2713001B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2713&lot=001B",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2713001B",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

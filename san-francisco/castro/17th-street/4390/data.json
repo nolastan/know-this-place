@@ -1,0 +1,143 @@
+{
+  "address": "4390 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4390/",
+  "apn": "2646027",
+  "block": "2646",
+  "lot": "027",
+  "eas_baseid": "343159",
+  "coordinates": {
+    "lat": 37.762225,
+    "lng": -122.442959
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 1200,
+    "lot_depth_ft": 87.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4390 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1244020,
+    "assessed_improvement_value": 533150,
+    "last_sale_date": "2019-12-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602176028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-17",
+      "status_date": "2026-03-31",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "ref pa # 2025-1219-2280: shoring plan for replacement of (e) brick foundation w/a reinforced concrete foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512192280",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-19",
+      "status_date": "2026-03-31",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "replace the existing brick foundation with a reinforced concrete foundation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208177604",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-17",
+      "status_date": "2013-08-20",
+      "estimated_cost": 7850,
+      "revised_cost": 7850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208177633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-17",
+      "status_date": "2013-04-18",
+      "estimated_cost": 1800,
+      "revised_cost": 3500,
+      "description": "kitchen cabinet & countertop replacement, bathroom cabinet & countertop replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008239375",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-08-23",
+      "status_date": "2013-05-14",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace (e) deck posts & possible beam (1).repair less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M213507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-29",
+      "status_date": "2010-07-29",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4390",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2646027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2646&lot=027",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2646027",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

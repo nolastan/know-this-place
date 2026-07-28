@@ -1,0 +1,152 @@
+{
+  "address": "304 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/304/",
+  "apn": "2750002",
+  "block": "2750",
+  "lot": "002",
+  "eas_baseid": "345441",
+  "coordinates": {
+    "lat": 37.757149,
+    "lng": -122.437172
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 3460,
+    "basement_area_sqft": 815,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0304 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3066448,
+    "assessed_improvement_value": 1314191,
+    "last_sale_date": "2018-06-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M429827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-26",
+      "status_date": "2013-09-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207124737",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-12",
+      "status_date": "2012-11-26",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "additional to (e) pa#201109305875: new roof deck off master bedroom, add deck & stair off rear facade, remodel front facade: remove decorative parapet, tile roofs on bays & replace with flat roofs, reface plaster & brick surfaces, new windows & doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M295807",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-10",
+      "status_date": "2012-01-10",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109305875",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-09-30",
+      "status_date": "2012-11-26",
+      "estimated_cost": 210000,
+      "revised_cost": 210000,
+      "description": "revision to 201108162513. convert 1st floor office to new family room, full bath, refrig, bar sink. replace interior stairs, remodel 2nd fl inluding living room,kitchen changes, replace rear enclosed laundry room with new secondary egress deck/stair,remodel 3rd fl,add dormers for 2 bdrms,2 baths,2..",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108162513",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-16",
+      "status_date": "2012-11-26",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "repair/replace deteriorated roof; remodel 1 kitchen & 2 bathrooms, including replacement of lighting fixts w/ fluorescent & plumbing fixtures w/ low-flow versions to comply w/ title 24; replace 24 windows, including 6 in front w/ wood variety.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713520",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-21",
+      "status_date": "1999-03-01",
+      "estimated_cost": 9600,
+      "description": "repair roof/install cdx playwood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407629",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-16",
+      "status_date": "1984-10-17",
+      "estimated_cost": 8640,
+      "description": "remove old cabinet and replace with new cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=304",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

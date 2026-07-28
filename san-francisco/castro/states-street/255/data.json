@@ -1,0 +1,140 @@
+{
+  "address": "255 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/255/",
+  "apn": "2619058",
+  "block": "2619",
+  "lot": "058",
+  "eas_baseid": "342389",
+  "coordinates": {
+    "lat": 37.764236,
+    "lng": -122.441203
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2866.5,
+    "building_area_sqft": 1832,
+    "lot_depth_ft": 17,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0255 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98402,
+    "assessed_improvement_value": 147578
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203039203",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-03-03",
+      "status_date": "2024-04-12",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reconstruction and reconfiguration of existing rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202149294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-14",
+      "status_date": "2002-03-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2001/07/24/4443 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108297177",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-29",
+      "status_date": "2002-03-01",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "repair approx 20-23 ft of siding & frmaing due to rot on north side of house adjacent to neighbor's",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107244443",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-24",
+      "status_date": "2002-03-01",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "repair existing deck inspect and repair rotted siding install pan under threshold to prevent rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016117",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-13",
+      "status_date": "1991-10-04",
+      "estimated_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312330",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-12-02",
+      "status_date": "1984-05-09",
+      "estimated_cost": 6000,
+      "description": "repair bridge stairway from sidewalk to second floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=255",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2619058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2619&lot=058",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2619058",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

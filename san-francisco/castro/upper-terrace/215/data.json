@@ -1,0 +1,117 @@
+{
+  "address": "215 Upper Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/upper-terrace/215/",
+  "apn": "2628058",
+  "block": "2628",
+  "lot": "058",
+  "eas_baseid": "485138",
+  "coordinates": {
+    "lat": 37.763501,
+    "lng": -122.444465
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 3101,
+    "building_area_sqft": 3736,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0215 UPPER               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 371736,
+    "assessed_improvement_value": 546696
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201701267977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-26",
+      "status_date": "2017-03-17",
+      "estimated_cost": 21250,
+      "revised_cost": 21250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203055371",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-05",
+      "status_date": "2012-03-28",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "replace shingles on the back face of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700515",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-01-15",
+      "status_date": "1987-05-21",
+      "estimated_cost": 333,
+      "description": "delete drystand pipe system as per plans appl #8509730",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509730",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1985-09-04",
+      "status_date": "1987-05-21",
+      "estimated_cost": 296000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UPPER&street_type=TER&address_number=215",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&lot=058",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2628058",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

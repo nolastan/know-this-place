@@ -1,0 +1,108 @@
+{
+  "address": "4517 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4517/",
+  "apn": "2691043",
+  "block": "2691",
+  "lot": "043",
+  "eas_baseid": "344277",
+  "coordinates": {
+    "lat": 37.760383,
+    "lng": -122.43979
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2204,
+    "building_area_sqft": 2450,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4517 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1078821,
+    "assessed_improvement_value": 628581,
+    "last_sale_date": "2012-02-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611072159",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2016-11-07",
+      "status_date": "2018-01-18",
+      "estimated_cost": 150000,
+      "description": "per ordinance# 162-16. build an adu in the bottome level. 2 bedrooms & 1 bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203055333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-05",
+      "status_date": "2012-08-03",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "interior remodel kitchen & bathroom in both units, add half bathroom @ second floor. non-structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009030258",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-03",
+      "status_date": "2010-09-03",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "erect scaffold on sidewalk in front of bldg and repair siding on facade (front)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4517",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2691043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2691&lot=043",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2691043",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

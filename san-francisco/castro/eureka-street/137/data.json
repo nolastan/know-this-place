@@ -1,0 +1,168 @@
+{
+  "address": "137–143 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/137/",
+  "apn": "2693037",
+  "block": "2693",
+  "lot": "037",
+  "eas_baseid": "344365",
+  "coordinates": {
+    "lat": 37.759989,
+    "lng": -122.437876
+  },
+  "address_range": "137–143",
+  "street_numbers_on_parcel": [
+    "137",
+    "139",
+    "141",
+    "143"
+  ],
+  "parcel": {
+    "year_built": 1903,
+    "units": 4,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 4,
+    "lot_area_sqft": 6781,
+    "building_area_sqft": 5650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0143 0137 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1423787,
+    "assessed_improvement_value": 610194,
+    "last_sale_date": "2023-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201002056008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-05",
+      "status_date": "2010-02-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2008/08/07/8625 to obtain final inspection. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906220908",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-22",
+      "status_date": "2009-06-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under 200802215229. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808078625",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-08-07",
+      "status_date": "2009-06-22",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace in kind- existing parking spaces, asphalt concrete surfaces, 2 lights standars, 2 drains and replace and upgrade entry driveway gate to automatic gate. landscaped areas are existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M124745",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-02",
+      "status_date": "2008-07-02",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M121005",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-29",
+      "status_date": "2008-05-29",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M109706",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-28",
+      "status_date": "2008-02-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802215229",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-02-21",
+      "status_date": "2009-06-22",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "install temporary shoring to support shed. the work is to facilitate work covered under pa# 200708139569, 200802074276. no plumbing and no electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107244447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-24",
+      "status_date": "2001-09-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=137",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2693037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2693&lot=037",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2693037",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

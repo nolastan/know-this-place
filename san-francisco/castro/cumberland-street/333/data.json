@@ -1,0 +1,126 @@
+{
+  "address": "333 Cumberland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/cumberland-street/333/",
+  "apn": "3601041",
+  "block": "3601",
+  "lot": "041",
+  "eas_baseid": "361789",
+  "coordinates": {
+    "lat": 37.758463,
+    "lng": -122.431128
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2380,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0333 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 25333,
+    "assessed_improvement_value": 324817
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200403259608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-25",
+      "status_date": "2004-06-10",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "2.2 kilowatt roof ounted solar system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901010",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-20",
+      "status_date": "1989-02-01",
+      "estimated_cost": 1,
+      "description": "inspection of work under appln. #8707447 & 8803991",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803991",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-03-30",
+      "status_date": "1989-01-17",
+      "estimated_cost": 1,
+      "description": "re #8707447, delete stair penthouse w/skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707458",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1987-06-02",
+      "status_date": "1987-10-08",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707447",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1987-05-29",
+      "status_date": "1989-01-17",
+      "estimated_cost": 165000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=333",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=041",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601041",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

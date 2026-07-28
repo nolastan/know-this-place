@@ -1,0 +1,159 @@
+{
+  "address": "169–173 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/169/",
+  "apn": "2623084",
+  "block": "2623",
+  "lot": "084",
+  "eas_baseid": "485129",
+  "coordinates": {
+    "lat": 37.763311,
+    "lng": -122.438926
+  },
+  "address_range": "169–173",
+  "street_numbers_on_parcel": [
+    "169",
+    "171",
+    "173"
+  ],
+  "parcel": {
+    "year_built": 1959,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2757,
+    "building_area_sqft": 1740,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0169 0167 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 724230,
+    "assessed_improvement_value": 356962,
+    "last_sale_date": "1997-10-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408209058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-20",
+      "status_date": "2024-10-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "damage found to upper & lower deck and stairs. repair decks and stairs in-kind less than 50%. all work at rear. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910023367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-02",
+      "status_date": "2019-10-02",
+      "estimated_cost": 13600,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-13",
+      "status_date": "2016-01-12",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel kitchen counter tops, cabinets and appliance. rework interior partitions. insulate ceiling and replace electric fixtures on second floor only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309043895",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-09-04",
+      "status_date": "2005-05-09",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "horizontal expansion conversion of (e) garage space to master bedroom. master bath, full seismic",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309043891",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-09-04",
+      "status_date": "2005-05-09",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "horizontal & vertical expansion of upper unit to include enlarged living room & mezzanine as per sec",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117690",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-08-11",
+      "status_date": "2000-10-04",
+      "estimated_cost": 26000,
+      "revised_cost": 2600,
+      "description": "complete items itemized in 3r-3122 report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720557",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-15",
+      "status_date": "1999-01-11",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=169",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623084&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=084",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623084",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

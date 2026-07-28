@@ -1,0 +1,157 @@
+{
+  "address": "3867–3869 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3867/",
+  "apn": "3581073",
+  "block": "3581",
+  "lot": "073",
+  "eas_baseid": "360657",
+  "coordinates": {
+    "lat": 37.76242,
+    "lng": -122.432184
+  },
+  "address_range": "3867–3869",
+  "street_numbers_on_parcel": [
+    "3867",
+    "3869"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2225,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3869 3867 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1147496,
+    "assessed_improvement_value": 764616,
+    "last_sale_date": "2017-08-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201612013937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-01",
+      "status_date": "2016-12-08",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "additional dry rot repair and remove \"sun room\", per inspector's request",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611042063",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-04",
+      "status_date": "2016-12-08",
+      "estimated_cost": 8500,
+      "revised_cost": 14950,
+      "description": "repair less 50% of back deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403110424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-11",
+      "status_date": "2014-04-14",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace in kind kitchen cabinets, counter & appliances, bring kitchen electrical to code, replace toilet & bath vanity, & bathroom floor, replace carpet, paint, all high efficiancy lighting in bath & kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301245896",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-24",
+      "status_date": "2004-12-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "tearing & disposing of room & replacing the area with roofing as originally intended",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910773",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-01",
+      "status_date": "1999-10-01",
+      "estimated_cost": 1750,
+      "description": "apply vapor bearer paper only back wall only, apply vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719989",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-07",
+      "status_date": "1999-01-08",
+      "estimated_cost": 8250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805154",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-04-21",
+      "status_date": "1988-07-28",
+      "estimated_cost": 580,
+      "revised_cost": 0,
+      "description": "replace some ornamental (wooden) work, bay window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3867",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=073",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581073",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

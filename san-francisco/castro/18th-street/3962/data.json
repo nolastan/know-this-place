@@ -1,0 +1,114 @@
+{
+  "address": "3962–3964 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3962/",
+  "apn": "3581025",
+  "block": "3581",
+  "lot": "025",
+  "eas_baseid": "360610",
+  "coordinates": {
+    "lat": 37.761315,
+    "lng": -122.43199
+  },
+  "address_range": "3962–3964",
+  "street_numbers_on_parcel": [
+    "3962",
+    "3964"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 4500,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3964 3962 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1476434,
+    "assessed_improvement_value": 369106,
+    "last_sale_date": "2021-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200910018034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-01",
+      "status_date": "2009-10-05",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repairs made due to n.o.v.#200920800 & 200920792 - replace missing balustrades to lower balcony at rear of bldg. remove entire exterior wood utility ladder attached to bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9716788",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-29",
+      "status_date": "1998-09-04",
+      "estimated_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008180",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-27",
+      "status_date": "1990-05-31",
+      "estimated_cost": 7000,
+      "description": "replace fire damaged siding, replace fence, paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3962",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581025",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

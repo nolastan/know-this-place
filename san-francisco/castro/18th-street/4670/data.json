@@ -1,0 +1,173 @@
+{
+  "address": "4670–4672 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4670/",
+  "apn": "2658058",
+  "block": "2658",
+  "lot": "058",
+  "eas_baseid": "343598",
+  "coordinates": {
+    "lat": 37.760643,
+    "lng": -122.442805
+  },
+  "address_range": "4670–4672",
+  "street_numbers_on_parcel": [
+    "4670",
+    "4672"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2617,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4672 4670 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1337122,
+    "assessed_improvement_value": 573052,
+    "last_sale_date": "2021-08-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201903114946",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-11",
+      "status_date": "2019-04-12",
+      "estimated_cost": 15800,
+      "revised_cost": 15800,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32312",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-03",
+      "status_date": "2005-05-03",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809096",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-19",
+      "status_date": "1999-03-03",
+      "estimated_cost": 7500,
+      "description": "termite work as per termite report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924758",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1989-12-18",
+      "status_date": "1990-01-18",
+      "estimated_cost": 1,
+      "description": "submit additional clarification information per request",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923761",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-12-05",
+      "status_date": "1990-06-28",
+      "estimated_cost": 1000,
+      "description": "complete const. at past issued permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917238",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-09-21",
+      "status_date": "1990-08-29",
+      "estimated_cost": 3500,
+      "description": "finish completion of original permit #8903076",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903076",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-02-24",
+      "status_date": "1990-06-28",
+      "estimated_cost": 7500,
+      "description": "remodel and repair on the inside of house, foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802838",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-03-07",
+      "status_date": "1988-10-13",
+      "estimated_cost": 15000,
+      "description": "compaint #022136 or 022130",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310913",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-10-27",
+      "status_date": "1986-03-04",
+      "estimated_cost": 2000,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4670",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2658058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2658&lot=058",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2658058",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

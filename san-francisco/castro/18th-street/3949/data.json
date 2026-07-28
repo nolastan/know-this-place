@@ -1,0 +1,147 @@
+{
+  "address": "3949–3953 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/3949/",
+  "apn": "3584085",
+  "block": "3584",
+  "lot": "085",
+  "eas_baseid": "360905",
+  "coordinates": {
+    "lat": 37.760843,
+    "lng": -122.431701
+  },
+  "address_range": "3949–3953",
+  "street_numbers_on_parcel": [
+    "3949",
+    "3951",
+    "3953"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 4059,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3953 3949 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39009,
+    "assessed_improvement_value": 135132
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M805647",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-07",
+      "status_date": "2017-07-07",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705166692",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-16",
+      "status_date": "2017-05-30",
+      "estimated_cost": 1850,
+      "revised_cost": 1850,
+      "description": "rear stair replace (3) stringers @ top level, repalce structural member & 2x6 boards (4) @ top deck, replace dry rot 2x6 boards @ top level & replace several 2x6 at steps & 2x4 @railing repair i n kind less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703101226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-10",
+      "status_date": "2017-11-02",
+      "estimated_cost": 30000,
+      "revised_cost": 37000,
+      "description": "soft story upgrade retrofit per sfbc chapter 34b, 2012 iebc appnedix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206078482",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-07",
+      "status_date": "2002-08-05",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair extg rear stair in kind/replace rotted wood structure as requested",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101119608",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-11",
+      "status_date": "2001-05-11",
+      "estimated_cost": 2300,
+      "revised_cost": 2300,
+      "description": "repair dry rot under bathtub & walls, replace sheetrock & tile as necessary at kitchen remove one ca",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010032139",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-03",
+      "status_date": "2000-12-15",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3949",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=085",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584085",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

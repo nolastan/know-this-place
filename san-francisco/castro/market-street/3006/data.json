@@ -1,0 +1,131 @@
+{
+  "address": "3006 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3006/",
+  "apn": "2656003",
+  "block": "2656",
+  "lot": "003",
+  "eas_baseid": "468558",
+  "coordinates": {
+    "lat": 37.76128,
+    "lng": -122.441216
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 1738,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3006 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 554492,
+    "assessed_improvement_value": 369658,
+    "last_sale_date": "2004-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502210849",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-21",
+      "status_date": "2025-10-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove an old hot tub, plumbing, & electrical. install new hot tub, plumbing, & electrical. tearing of surface boards of old deck & replacing w/ treated materials.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605222176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-22",
+      "status_date": "2006-07-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of pa#2005/03/03/6649, 2005/03/21/8016s, 2005/10/31/6936",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510316936",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-31",
+      "status_date": "2005-10-31",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "rev.to appl#200503218016 revamp skylights,remove metal gate at entry and replace with door.remove wall at 1/f,provide new windows at 2/f to be wood double glazed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503218016",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2005-03-21",
+      "status_date": "2005-09-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "horizontal addition- rebuild 1 stsory breakfast room at 2/f at rear of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503036649",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-03-03",
+      "status_date": "2006-08-22",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel kitchen & bathroom at 2nd floor level.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=003",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656003",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

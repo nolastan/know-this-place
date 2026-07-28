@@ -1,0 +1,130 @@
+{
+  "address": "4001 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4001/",
+  "apn": "3604001",
+  "block": "3604",
+  "lot": "001",
+  "eas_baseid": "477925",
+  "coordinates": {
+    "lat": 37.757837,
+    "lng": -122.430522
+  },
+  "parcel": {
+    "year_built": 2012,
+    "stories": 3,
+    "rooms": 4,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1893,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4001 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1059177,
+    "assessed_improvement_value": 836182,
+    "last_sale_date": "2009-04-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2012",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201204108013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-10",
+      "status_date": "2012-05-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to premit #2009-1014-8947 revise structural framing remove glass floor @ lr and mstr br add hot tub at front yard. (n) access door to crawl to space @ stairway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109134457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-13",
+      "status_date": "2012-05-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "deferred app 200910148947 s1. calculations and details for glazing and glazing support brackets at north east elevations, 1st/2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012156752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-15",
+      "status_date": "2012-05-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to work in refernece to pa #200910148947-s1: revise shoring design for garage/1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M226626",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-26",
+      "status_date": "2010-10-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910148947",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2009-10-14",
+      "status_date": "2012-05-17",
+      "estimated_cost": 600000,
+      "revised_cost": 600000,
+      "description": "to erect 3 stories single family dwelling unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=001",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604001",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

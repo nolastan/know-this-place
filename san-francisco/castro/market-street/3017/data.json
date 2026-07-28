@@ -1,0 +1,118 @@
+{
+  "address": "3017 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3017/",
+  "apn": "2658053",
+  "block": "2658",
+  "lot": "053",
+  "eas_baseid": "343593",
+  "coordinates": {
+    "lat": 37.760888,
+    "lng": -122.441442
+  },
+  "parcel": {
+    "year_built": 1902,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1538,
+    "building_area_sqft": 1915,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3017 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159290,
+    "assessed_improvement_value": 261853
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308033711",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-08-03",
+      "status_date": "2023-08-03",
+      "estimated_cost": 17500,
+      "revised_cost": 0,
+      "description": "re-roofing- tear off existing roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803106740",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2008-03-10",
+      "status_date": "2026-01-27",
+      "estimated_cost": 9000,
+      "revised_cost": 0,
+      "description": "see attached report #08158, item #1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803106747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-10",
+      "status_date": "2008-09-08",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "see attached termite report #08158, item #1. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-05-17",
+      "status_date": "1983-06-21",
+      "estimated_cost": 4450,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3017",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2658053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2658&lot=053",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2658053",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "address": "4729 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4729/",
+  "apn": "2689023",
+  "block": "2689",
+  "lot": "023",
+  "eas_baseid": "344198",
+  "coordinates": {
+    "lat": 37.759886,
+    "lng": -122.443683
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2587,
+    "building_area_sqft": 1325,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4729 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1365000,
+    "assessed_improvement_value": 585000,
+    "last_sale_date": "2021-02-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502130310",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-13",
+      "status_date": "2025-02-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision 202212299333- remove overhead pergola at exterior deck. change layout at ground level and kitchen . eliminate exterior at bbq area at deck . add (n) window at the rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212299333",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-12-29",
+      "status_date": "2025-02-12",
+      "estimated_cost": 42000,
+      "revised_cost": 305700,
+      "description": "horizontal addition in rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403178895",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-03-17",
+      "status_date": "2004-03-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew all permits 200211181630-200204043101-200203191778",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303048702",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-04",
+      "status_date": "2003-03-04",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211181630",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-18",
+      "status_date": "2002-11-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel kitchen & 2 bathrooms, update plumbing & electrical, instlal new cabinets/appliances, no str",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204043101",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-04",
+      "status_date": "2002-10-04",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "replace exist rotten deck in kind at rear yard.&wooden beam in garage and widen garage door opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203191778",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-19",
+      "status_date": "2002-09-19",
+      "estimated_cost": 6450,
+      "revised_cost": 6450,
+      "description": "see attach termite report #011074 . item 2",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4729",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

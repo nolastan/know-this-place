@@ -1,0 +1,142 @@
+{
+  "address": "538 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/538/",
+  "apn": "3584008",
+  "block": "3584",
+  "lot": "008",
+  "eas_baseid": "360836",
+  "coordinates": {
+    "lat": 37.760531,
+    "lng": -122.430839
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2578,
+    "building_area_sqft": 1556,
+    "basement_area_sqft": 186,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0538 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 746432,
+    "assessed_improvement_value": 537014,
+    "last_sale_date": "2004-02-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201304184848",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-04-18",
+      "status_date": "2025-10-23",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "underpinning/shoring as require due to adjacent (n) construction pa #2005.05.03.1415 at 530 sanchez st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109084116",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-08",
+      "status_date": "2012-01-05",
+      "estimated_cost": 25000,
+      "revised_cost": 85000,
+      "description": "remodel/legalize bathroom, rework stairs, replace windows with new windows & doors. all work on ground gloor. install hot tub with small deck & steps at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709051829",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-05",
+      "status_date": "2007-11-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal pa #200604128775 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604128775",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-04-12",
+      "status_date": "2007-11-02",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "expand kchn into extg skylite covered wash porch. upgrade structures & insulated/new insulated skylights/remove and replace extg glazing at chn wall, remove non req. service stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720730",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-16",
+      "status_date": "1999-02-24",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-09",
+      "status_date": "1990-09-07",
+      "estimated_cost": 3000,
+      "description": "repair dry rot; approx. 15 feet.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=538",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=008",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584008",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

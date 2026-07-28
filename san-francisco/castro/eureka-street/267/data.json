@@ -1,0 +1,109 @@
+{
+  "address": "267 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/267/",
+  "apn": "2698023",
+  "block": "2698",
+  "lot": "023",
+  "eas_baseid": "344509",
+  "coordinates": {
+    "lat": 37.758034,
+    "lng": -122.437691
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 2149,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0267 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 367014
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200909187190",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-09-18",
+      "status_date": "2011-07-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "small addition on front porch. the space will be used as a toilet room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602104322",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-10",
+      "status_date": "2006-02-10",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312232884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-23",
+      "status_date": "2004-04-02",
+      "estimated_cost": 18900,
+      "revised_cost": 18900,
+      "description": "bathroom remodel on 2nd floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=267",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2698023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2698&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2698023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

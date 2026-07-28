@@ -1,0 +1,142 @@
+{
+  "address": "360 Cumberland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/cumberland-street/360/",
+  "apn": "3601052",
+  "block": "3601",
+  "lot": "052",
+  "eas_baseid": "361800",
+  "coordinates": {
+    "lat": 37.758921,
+    "lng": -122.431692
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 3129,
+    "basement_area_sqft": 613,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0360 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1902810,
+    "assessed_improvement_value": 815490,
+    "last_sale_date": "2023-12-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508223758",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-22",
+      "status_date": "2025-10-07",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revision to pa 202506027751: improve front siding, replace rotted siding pieces front of home.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506068176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-06",
+      "status_date": "2025-07-03",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506027751",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-02",
+      "status_date": "2025-10-07",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "improve east siding apply water proofing and additional layer of fiber cement siding over wood siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608149",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-10",
+      "status_date": "1996-09-10",
+      "estimated_cost": 200,
+      "description": "addendum to app #9520437 revise int. partition layout",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520437",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-12-04",
+      "status_date": "1996-10-29",
+      "estimated_cost": 16800,
+      "description": "inter remodel-bth&bdrm grnd flr-partitions-repl rer dr,wndw",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9409718",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-06-17",
+      "status_date": "1994-12-06",
+      "estimated_cost": 4700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=360",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&lot=052",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3601052",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "address": "83 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/83/",
+  "apn": "2623069",
+  "block": "2623",
+  "lot": "069",
+  "eas_baseid": "342552",
+  "coordinates": {
+    "lat": 37.763162,
+    "lng": -122.436896
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3049,
+    "building_area_sqft": 2750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0083 STATES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1602216,
+    "assessed_improvement_value": 686664,
+    "last_sale_date": "2022-09-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209082097",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-08",
+      "status_date": "2023-03-15",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "to comply with nov# 202294432. repairing shaking handrail. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609238606",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-23",
+      "status_date": "2016-09-23",
+      "estimated_cost": 5800,
+      "revised_cost": 6500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209257385",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-25",
+      "status_date": "2002-11-27",
+      "estimated_cost": 950,
+      "revised_cost": 950,
+      "description": "convert rooms at street level floor from kitchen, living room & bedrm, comply w/ n.o.v.200232950",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110320",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-07",
+      "status_date": "1983-03-04",
+      "estimated_cost": 100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STATES&street_type=ST&address_number=83",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&lot=069",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2623069",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

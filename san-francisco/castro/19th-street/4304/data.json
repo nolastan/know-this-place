@@ -1,0 +1,58 @@
+{
+  "address": "4304 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4304/",
+  "apn": "2693045",
+  "block": "2693",
+  "lot": "045",
+  "eas_baseid": "423388",
+  "coordinates": {
+    "lat": 37.759337,
+    "lng": -122.43721
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "building_area_sqft": 1831,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4304 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 542453,
+    "assessed_improvement_value": 361630,
+    "last_sale_date": "2000-08-01"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=4304",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2693045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2693&lot=045",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

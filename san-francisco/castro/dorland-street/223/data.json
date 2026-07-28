@@ -1,0 +1,123 @@
+{
+  "address": "223 Dorland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/dorland-street/223/",
+  "apn": "3580042A",
+  "block": "3580",
+  "lot": "042A",
+  "eas_baseid": "360560",
+  "coordinates": {
+    "lat": 37.761848,
+    "lng": -122.428967
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3014,
+    "building_area_sqft": 1690,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0223 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1569372,
+    "assessed_improvement_value": 672588,
+    "last_sale_date": "2023-08-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Assessment",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dorland Street Bungalows Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200612200299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-20",
+      "status_date": "2007-02-13",
+      "estimated_cost": 6825,
+      "revised_cost": 6825,
+      "description": "replace 5 windows size for size. wood for wood. u balue <.67",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801068",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-01-21",
+      "status_date": "1998-10-21",
+      "estimated_cost": 3300,
+      "description": "bolt mudsil to fndtn every 4 ft-add plywood to cripple walk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-24",
+      "status_date": "1997-10-08",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=223",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&lot=042A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3580042A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42896650789768%2037.761847911948855)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "address": "3932–3934 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3932/",
+  "apn": "3584023",
+  "block": "3584",
+  "lot": "023",
+  "eas_baseid": "360849",
+  "coordinates": {
+    "lat": 37.759753,
+    "lng": -122.43125
+  },
+  "address_range": "3932–3934",
+  "street_numbers_on_parcel": [
+    "3932",
+    "3934"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "3934 3932 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 761858,
+    "assessed_improvement_value": 494738
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907085275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-08",
+      "status_date": "2019-10-01",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603041227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-04",
+      "status_date": "2016-03-30",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "repair deck and stairs. replace dry rot boards, stringers and joist where necessary. less than 50% stairs and deck to be replaced. all wood to be pressure treated. deck boards to be redwood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9021157",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-15",
+      "status_date": "1992-05-08",
+      "estimated_cost": 30000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814040",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-09-19",
+      "status_date": "1988-12-20",
+      "estimated_cost": 3940,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3932",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

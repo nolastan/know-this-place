@@ -1,0 +1,164 @@
+{
+  "address": "1906–1910 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/1906/",
+  "apn": "3544015",
+  "block": "3544",
+  "lot": "015",
+  "eas_baseid": "461622",
+  "coordinates": {
+    "lat": 37.766458,
+    "lng": -122.426896
+  },
+  "address_range": "1906–1910",
+  "street_numbers_on_parcel": [
+    "1906",
+    "1908",
+    "1910"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 2221,
+    "building_area_sqft": 4050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "1912 1908 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33466,
+    "assessed_improvement_value": 59111
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504245199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-24",
+      "status_date": "2025-07-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "repairing (e) siding panels on the right side wall of the property",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M986067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-27",
+      "status_date": "2018-09-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M575507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-03",
+      "status_date": "2015-04-03",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M37530",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-05-10",
+      "status_date": "2006-05-10",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511107834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-10",
+      "status_date": "2006-06-19",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "fire damaged apartment-structural restoration.clean&smoke treat all surfaces of floors, ceilings&walls, install gypboards. repair&replace fire damaged wood members. install insulation on walls & ceilings. paint walls & ceilings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M18734",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-31",
+      "status_date": "2002-05-31",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105118923",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-11",
+      "status_date": "2001-06-11",
+      "estimated_cost": 650,
+      "revised_cost": 650,
+      "description": "clear violations on report#200116651 handrails & risers & stucco repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804067",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-03-30",
+      "status_date": "1988-07-12",
+      "estimated_cost": 5000,
+      "description": "raise concrete foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1906",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=015",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544015",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

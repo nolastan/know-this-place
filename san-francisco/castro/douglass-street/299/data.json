@@ -1,0 +1,152 @@
+{
+  "address": "299 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/299/",
+  "apn": "2692021",
+  "block": "2692",
+  "lot": "021",
+  "eas_baseid": "344303",
+  "coordinates": {
+    "lat": 37.759165,
+    "lng": -122.438947
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2075,
+    "building_area_sqft": 2361,
+    "lot_depth_ft": 83,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0299 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1066339,
+    "assessed_improvement_value": 800252,
+    "last_sale_date": "2005-06-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201601288242",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-28",
+      "status_date": "2016-10-26",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "adding new conditioned space to (e) garage. new rec room, full bathroom, office, new furnace to heat proposed conditioned space. no work to exterior of structure. new wood floors, lighting, new 200 amp panel to replace (e) panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M377187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-12",
+      "status_date": "2013-03-12",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210262937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-26",
+      "status_date": "2013-03-29",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen & half bathroom remodel, new plumbing & electrical upgrades. widen door way between kitchen & dining room (structural).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601132085",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-13",
+      "status_date": "2006-01-30",
+      "estimated_cost": 4340,
+      "revised_cost": 4340,
+      "description": "repair dry rot as. report #45595 item #1c,1e,2a approx. 10 ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509152934",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-15",
+      "status_date": "2005-09-15",
+      "estimated_cost": 7880,
+      "revised_cost": 7880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000107479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-07",
+      "status_date": "2000-02-14",
+      "revised_cost": 970,
+      "description": "repair dryrot on deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214157",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-19",
+      "status_date": "1993-11-23",
+      "estimated_cost": 10385,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=299",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2692021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2692&lot=021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2692021",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

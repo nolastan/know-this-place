@@ -1,0 +1,147 @@
+{
+  "address": "60 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/landers-street/60/",
+  "apn": "3544039",
+  "block": "3544",
+  "lot": "039",
+  "eas_baseid": "358905",
+  "coordinates": {
+    "lat": 37.766875,
+    "lng": -122.428098
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 6,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 6,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 5586,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0060 LANDERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 30460,
+    "assessed_improvement_value": 99550
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202312132446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-13",
+      "status_date": "2023-12-21",
+      "estimated_cost": 13950,
+      "revised_cost": 13950,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301300995",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-30",
+      "status_date": "2023-02-10",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "comply with nov: 202299930. minor repair in exisitng stairs exterior (not visible from street) less than % 50. replace 3 steps and 2 riser. repair in kind. elevate (e) railing to comply with code.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M920687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-01",
+      "status_date": "2018-05-01",
+      "revised_cost": 1,
+      "description": "street space permit and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M311327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-03-30",
+      "status_date": "2012-03-30",
+      "revised_cost": 1,
+      "description": "street space and sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217631",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-09",
+      "status_date": "1992-11-20",
+      "estimated_cost": 7685,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717769",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-12-16",
+      "status_date": "1988-06-17",
+      "estimated_cost": 160,
+      "description": "repair handrails on back stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613664",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-30",
+      "status_date": "1988-07-08",
+      "estimated_cost": 2700,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANDERS&street_type=ST&address_number=60",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544039",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

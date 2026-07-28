@@ -1,0 +1,155 @@
+{
+  "address": "149–153 Buena Vista Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/buena-vista-terrace/149/",
+  "apn": "2612032",
+  "block": "2612",
+  "lot": "032",
+  "eas_baseid": "342052",
+  "coordinates": {
+    "lat": 37.76656,
+    "lng": -122.438148
+  },
+  "address_range": "149–153",
+  "street_numbers_on_parcel": [
+    "149",
+    "151",
+    "153"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2112,
+    "building_area_sqft": 3096,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0153 0149 BUENA VISTA         TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169955,
+    "assessed_improvement_value": 441907,
+    "last_sale_date": "1993-08-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404250745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-25",
+      "status_date": "2024-08-06",
+      "estimated_cost": 43000,
+      "revised_cost": 43000,
+      "description": "replace 1 patio door, full frame & 6 windows pocket fit. no location changes. (e) material window 10/11/35 street facing are aluminum wood clad, 15, 29, 25, door - 30 wood clad. new material: all windows at side and rear facades will be wood clad. window at front facade will be wood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207088029",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-07-08",
+      "status_date": "2026-01-23",
+      "estimated_cost": 20495,
+      "revised_cost": 0,
+      "description": "replace total (5) windows and (2) patio doors: in three units. all our street facing except for one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708089090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-08",
+      "status_date": "2007-08-23",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-09-30",
+      "status_date": "1994-11-15",
+      "estimated_cost": 1100,
+      "description": "replace redwood decking at rear deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315839",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-14",
+      "status_date": "1993-10-19",
+      "estimated_cost": 2500,
+      "description": "replace existing deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801861",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-02-17",
+      "status_date": "1989-03-01",
+      "estimated_cost": 1800,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600655",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-01-16",
+      "status_date": "1989-10-04",
+      "estimated_cost": 1500,
+      "description": "to bring into full+ compliance w/the provisions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUENA%20VISTA&street_type=TER&address_number=149",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=032",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612032",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

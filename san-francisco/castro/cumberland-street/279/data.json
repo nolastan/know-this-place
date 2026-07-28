@@ -1,0 +1,161 @@
+{
+  "address": "279 Cumberland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/cumberland-street/279/",
+  "apn": "3600033",
+  "block": "3600",
+  "lot": "033",
+  "eas_baseid": "361714",
+  "coordinates": {
+    "lat": 37.758543,
+    "lng": -122.429772
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2730,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0281 0279 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72055,
+    "assessed_improvement_value": 174492
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201209069054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-06",
+      "status_date": "2012-09-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inpection for work approved under pa #2009.0701.1776. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907011776",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-07-01",
+      "status_date": "2012-09-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "removal of dirt from crawl space. existing foundation repair. replacement of siding at rear. comply with nov 2091142",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708170184",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-17",
+      "status_date": "2008-03-06",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "increase width of curb cut from 16 to 21 feet. this is a revision to permit # 2007/04/13/8793",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704138793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-13",
+      "status_date": "2008-03-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "increase width of curb cut from 7 ft to 16 ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M49722",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-11-30",
+      "status_date": "2006-11-30",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610134963",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-13",
+      "status_date": "2008-03-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change 3' high 1 hour guardwall to 3'high metal non combustible guardrail at roof deck over new garage. revision to an existing permit appln #2005/05/03/1465",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505031465",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-05-03",
+      "status_date": "2008-08-01",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "addition of 2 car garage in front of existing house. new entry steps up to house. no change to existing house. add curb cut for driveway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811121",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-08-05",
+      "status_date": "1989-06-28",
+      "estimated_cost": 53000,
+      "description": "construction of double garage in front of existing house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=279",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&lot=033",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3600033",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

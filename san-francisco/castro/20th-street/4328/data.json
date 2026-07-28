@@ -1,0 +1,148 @@
+{
+  "address": "4328 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4328/",
+  "apn": "2697016",
+  "block": "2697",
+  "lot": "016",
+  "eas_baseid": "344468",
+  "coordinates": {
+    "lat": 37.757825,
+    "lng": -122.43641
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2739,
+    "building_area_sqft": 2538,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4328 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 873079,
+    "assessed_improvement_value": 582045,
+    "last_sale_date": "2001-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911157407",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-15",
+      "status_date": "2019-11-15",
+      "estimated_cost": 22450,
+      "revised_cost": 22450,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506235867",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-23",
+      "status_date": "2005-07-27",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace rear failing wood retaining wall with new concrete retaining wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008016694",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2000-08-01",
+      "status_date": "2003-02-05",
+      "estimated_cost": 100000,
+      "description": "house to be raised 2 ft,new garage gr floor,horz additon at rear 1st/2nd fl new bath in ex attic sto",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915481",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-08-23",
+      "status_date": "1990-05-14",
+      "estimated_cost": 11700,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905475",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-04-06",
+      "status_date": "1989-09-18",
+      "estimated_cost": 12500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904739",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-27",
+      "status_date": "1989-11-20",
+      "estimated_cost": 22000,
+      "description": "remodel existing bathroom and bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-02-16",
+      "status_date": "1989-06-23",
+      "estimated_cost": 15100,
+      "description": "repair floor, base of wall and proch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4328",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2697016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2697&lot=016",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2697016",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

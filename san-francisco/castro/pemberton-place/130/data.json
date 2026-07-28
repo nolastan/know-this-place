@@ -1,0 +1,109 @@
+{
+  "address": "130 Pemberton Place, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/pemberton-place/130/",
+  "apn": "2705029",
+  "block": "2705",
+  "lot": "029",
+  "eas_baseid": "485997",
+  "coordinates": {
+    "lat": 37.757792,
+    "lng": -122.447456
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 5,
+    "bedrooms": 4,
+    "lot_area_sqft": 4817,
+    "building_area_sqft": 3247,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0098 CROWN               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1573136,
+    "assessed_improvement_value": 1368616,
+    "last_sale_date": "2013-04-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201706199738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-19",
+      "status_date": "2018-10-03",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "install new fire sprinkler system per nfpa 13r through the bldg including underground fire service . total 33 heads. ref app #2014-0919-6774",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409196774",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-09-19",
+      "status_date": "2019-05-01",
+      "estimated_cost": 350000,
+      "revised_cost": 410000,
+      "description": "horizontal/vertical addition. interior & facade improvement and a 2-story addition to existing 2-story home. relocate kitchen & bedroom into addition & convert water closet to full bath in addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413951",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-30",
+      "status_date": "1995-08-17",
+      "estimated_cost": 5695,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PEMBERTON&street_type=PL&address_number=130",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2705029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2705&lot=029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2705029",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

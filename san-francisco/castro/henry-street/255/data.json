@@ -1,0 +1,118 @@
+{
+  "address": "255 Henry Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/henry-street/255/",
+  "apn": "2612059",
+  "block": "2612",
+  "lot": "059",
+  "eas_baseid": "342072",
+  "coordinates": {
+    "lat": 37.766228,
+    "lng": -122.436555
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 1986,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0255 HENRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 777782,
+    "assessed_improvement_value": 518516,
+    "last_sale_date": "2004-08-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503111975",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-04-10",
+      "status_date": "2026-02-27",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "the project is an kind replacement of a 2 story wood framed exit stair and covered porches. includes: new exterior finishes, windows, and exterior doors at the south facade. new shear walls and foundation at the south facade and a voluntary siesmic strengthening within the garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608220178",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2006-08-22",
+      "status_date": "2006-09-28",
+      "estimated_cost": 20000,
+      "description": "remodel of rear garden stucture. raise part of roof. no habitable space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605161670",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-05-16",
+      "status_date": "2007-08-16",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reframe roof, re-roof, add skylight, build interior stair, build powder room/plumbing. paint, repair siding, replace window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409214720",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2004-09-21",
+      "status_date": "2024-11-04",
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HENRY&street_type=ST&address_number=255",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2612059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2612&lot=059",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2612059",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

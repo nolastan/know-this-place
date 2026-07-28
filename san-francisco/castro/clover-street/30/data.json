@@ -1,0 +1,109 @@
+{
+  "address": "30 Clover Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/clover-street/30/",
+  "apn": "2690002",
+  "block": "2690",
+  "lot": "002",
+  "eas_baseid": "344205",
+  "coordinates": {
+    "lat": 37.760003,
+    "lng": -122.441665
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2047,
+    "building_area_sqft": 1189,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0030 CLOVER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 582810,
+    "assessed_improvement_value": 255466,
+    "last_sale_date": "1999-06-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405014669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-01",
+      "status_date": "2015-03-18",
+      "estimated_cost": 6000,
+      "revised_cost": 10000,
+      "description": "rebuild extg rotted rear portion of bldg. remove extg walls and roof and roof deck. build new walls, roof and roof deck. build new fire wall on west side with in 5' of property lines.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308275377",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-27",
+      "status_date": "2015-03-18",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "voluntary strengthening due to deterioration, replace areas of extg foundation, interior post footing and slab on grade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305298043",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-29",
+      "status_date": "2015-03-18",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "voluntary structure strengthening & new slab & elect work, add shower to (e) half bath @ 1st floor, add new dormer & skylights, replace (e) windows & roof & skylights in kind, new insulation & wall sheathing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLOVER&street_type=ST&address_number=30",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2690002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2690&lot=002",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2690002",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

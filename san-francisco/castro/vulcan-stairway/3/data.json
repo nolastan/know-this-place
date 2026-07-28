@@ -1,0 +1,88 @@
+{
+  "address": "3 Vulcan Stairway, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/vulcan-stairway/3/",
+  "apn": "2626029",
+  "block": "2626",
+  "lot": "029",
+  "eas_baseid": "480073",
+  "coordinates": {
+    "lat": 37.763247,
+    "lng": -122.440976
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2365,
+    "building_area_sqft": 774,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0003 VULCAN              SW0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1014355,
+    "assessed_improvement_value": 434722,
+    "last_sale_date": "2020-03-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202006309367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-30",
+      "status_date": "2020-09-01",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "kitchen & bath remodel inkind, (1) (n) retrofit patio door inkind to (e). (4) (n) retrofit windows @ back of home only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VULCAN&street_type=STWY&address_number=3",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2626029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2626&lot=029",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2626029",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

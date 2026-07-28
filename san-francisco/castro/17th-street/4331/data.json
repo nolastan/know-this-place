@@ -1,0 +1,162 @@
+{
+  "address": "4331 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4331/",
+  "apn": "2652007A",
+  "block": "2652",
+  "lot": "007A",
+  "eas_baseid": "343358",
+  "coordinates": {
+    "lat": 37.761962,
+    "lng": -122.441024
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1500,
+    "building_area_sqft": 1630,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4331 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1330000,
+    "assessed_improvement_value": 570000,
+    "last_sale_date": "2020-08-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304045001",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-04-04",
+      "status_date": "2026-01-23",
+      "estimated_cost": 75000,
+      "revised_cost": 0,
+      "description": "bathroom remodel at 1st fl. infill under the bay window above at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M513687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-27",
+      "status_date": "2014-08-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407151282",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-15",
+      "status_date": "2014-08-26",
+      "estimated_cost": 12200,
+      "revised_cost": 12200,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312265045",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-12-26",
+      "status_date": "2015-01-14",
+      "estimated_cost": 130000,
+      "revised_cost": 130000,
+      "description": "addition of 38 sq.ft. to rear in s/w corner. space is over (e) ground floor. raise ceiling/roof (approx 18\") of (e) rear bay window to match height of (e) roof. addition of 6' wide x 3' deep balcony on 2nd floor @ rear. kitchen remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603318028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-31",
+      "status_date": "2006-09-27",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "bath remodel. replace toilet, sink, tub. all new light to be flourecent.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602094223",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2006-02-09",
+      "status_date": "2020-08-13",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remodel bathroom, remove all (e) fixtures incl sink, tub, toilet. move shower plumbing to allow 2 heads wsep, controls, tile area to be demo'd and replaced w/new tile/grout by subcontr. install \"warm tile floor\" (electric) by subcontr. flourescent light.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504209",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-24",
+      "status_date": "1995-09-26",
+      "estimated_cost": 2500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812563",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-25",
+      "status_date": "1989-08-09",
+      "estimated_cost": 30000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=4331",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2652007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2652&lot=007A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2652007A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

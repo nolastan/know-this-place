@@ -1,0 +1,153 @@
+{
+  "address": "3450 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3450/",
+  "apn": "2717056",
+  "block": "2717",
+  "lot": "056",
+  "eas_baseid": "345046",
+  "coordinates": {
+    "lat": 37.756707,
+    "lng": -122.442738
+  },
+  "parcel": {
+    "year_built": 1974,
+    "units": 7,
+    "stories": 5,
+    "rooms": 50,
+    "bathrooms": 14,
+    "bedrooms": 15,
+    "lot_area_sqft": 7344,
+    "building_area_sqft": 12071,
+    "lot_depth_ft": 8,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Twin Peaks",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3450 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2378480,
+    "assessed_improvement_value": 1019348,
+    "last_sale_date": "2023-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1974",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506239180",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-23",
+      "status_date": "2025-07-10",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "2nd/fl: to resolve /satisfy violation 202537072 to legalize partition wall in back 2nd floor garage. partitions added in the garage area. (partitions added in garage area)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801128548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-12",
+      "status_date": "2018-06-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "soft story:revised concrete grade beam. revision to app#201709158597",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709158597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-15",
+      "status_date": "2018-06-19",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria per 2016 cebc appendix a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104123910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-12",
+      "status_date": "2011-12-08",
+      "estimated_cost": 4688,
+      "revised_cost": 4688,
+      "description": "replace 2 patio doors size for size, visible from teh street with vinyl bronze color outside white color inside \"u\" factor less than 0.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103031353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-03",
+      "status_date": "2011-12-08",
+      "estimated_cost": 14844,
+      "revised_cost": 14844,
+      "description": "#201, 202, 401- replace size for size 6 windows and 2 patio doors, some visable from the street with vinyl bronez exterior windows and patio doors. no change to wall & door. min. max factor .40. rescue/egress for bedroom required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-06-02",
+      "status_date": "1998-07-10",
+      "estimated_cost": 10000,
+      "description": "repalce dry rot 2x10 joist on 2 decks & stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414355",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-09",
+      "status_date": "1995-08-09",
+      "estimated_cost": 12900,
+      "description": "rero,ofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3450",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&lot=056",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2717056",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

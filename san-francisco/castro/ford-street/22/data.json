@@ -1,0 +1,121 @@
+{
+  "address": "22 Ford Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/ford-street/22/",
+  "apn": "3581057",
+  "block": "3581",
+  "lot": "057",
+  "eas_baseid": "360643",
+  "coordinates": {
+    "lat": 37.762124,
+    "lng": -122.431895
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1095,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0022 FORD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1287153,
+    "assessed_improvement_value": 551634,
+    "last_sale_date": "2013-08-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304065199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-06",
+      "status_date": "2025-05-15",
+      "estimated_cost": 11200,
+      "revised_cost": 11200,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010183219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-18",
+      "status_date": "2010-11-19",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to permit application no. 201009100671: replace rear deck to address complaint no. 201052038.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009100671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-10",
+      "status_date": "2010-11-19",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "rear deck - repair dry rot to framing and a portion of decking. no structural changes, like for like, les than 50%, replace damaged framing, decking, nailing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802265624",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-26",
+      "status_date": "2008-02-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replacing old shower, vanity and toilet, 1 bath room total",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FORD&street_type=ST&address_number=22",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=057",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581057",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

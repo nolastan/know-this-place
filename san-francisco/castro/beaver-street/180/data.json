@@ -1,0 +1,140 @@
+{
+  "address": "180 Beaver Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/beaver-street/180/",
+  "apn": "2613022",
+  "block": "2613",
+  "lot": "022",
+  "eas_baseid": "342099",
+  "coordinates": {
+    "lat": 37.765575,
+    "lng": -122.436719
+  },
+  "parcel": {
+    "year_built": 1960,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 3902,
+    "building_area_sqft": 6278,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0180 BEAVER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 305463,
+    "assessed_improvement_value": 192110,
+    "last_sale_date": "1999-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510278219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-27",
+      "status_date": "2025-12-19",
+      "estimated_cost": 12000,
+      "revised_cost": 38100,
+      "description": "upgrade e fire alarm system, installation of new facp, wireless communicator, monitor modules, smoke detectors, heat detectors, pull stations, horn strobes, low frequency horns to comply with sec 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609026745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-02",
+      "status_date": "2017-02-22",
+      "estimated_cost": 50000,
+      "revised_cost": 130000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria per 2012 iebc appendix a-4 (structural upgrade install shear walls and moment frames per san francisco soft story ordinance)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M318287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-05-01",
+      "status_date": "2012-05-01",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701292805",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-01-29",
+      "status_date": "2007-01-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to replace (e) non-functional edwards 1526 fire alarm panel with a new edwards est-1 fire alarm panel. this is a part for part panel replacement only. new panel is compatible with (e) devices (2 smsoke det., 1 manual pull station & 1 bell).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29446",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-27",
+      "status_date": "2004-09-27",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403087960",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-03-08",
+      "status_date": "2005-02-18",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEAVER&street_type=ST&address_number=180",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2613022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2613&lot=022",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2613022",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

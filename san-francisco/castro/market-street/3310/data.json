@@ -1,0 +1,120 @@
+{
+  "address": "3310 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3310/",
+  "apn": "2717002A",
+  "block": "2717",
+  "lot": "002A",
+  "eas_baseid": "345010",
+  "coordinates": {
+    "lat": 37.758101,
+    "lng": -122.444392
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 1683,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Twin Peaks",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3310 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1029718,
+    "assessed_improvement_value": 441305,
+    "last_sale_date": "2014-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305127717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-12",
+      "status_date": "2023-07-19",
+      "estimated_cost": 14600,
+      "revised_cost": 14600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405216412",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-21",
+      "status_date": "2014-10-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove and replace (e) kitchen cabinets, counters and appliances, install new drywall & insulation. no walls moved, removed or added. all current fixture layouts to remain unchaged. remove and replace dry rotted framing members at front porch.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810033340",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-03",
+      "status_date": "2009-10-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "enlarge existing bathroom on second fl. master bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804240588",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-24",
+      "status_date": "2008-04-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "comply with physical inspection report 3r-4520 including item #5 for bathroom remodel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3310",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717002A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&lot=002A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2717002A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "address": "689–691 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/689/",
+  "apn": "3544070",
+  "block": "3544",
+  "lot": "070",
+  "eas_baseid": "358928",
+  "coordinates": {
+    "lat": 37.767535,
+    "lng": -122.428248
+  },
+  "address_range": "689–691",
+  "street_numbers_on_parcel": [
+    "689",
+    "691"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 6,
+    "lot_area_sqft": 2750,
+    "lot_depth_ft": 10,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "UPMKT",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0691 0689 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43140,
+    "assessed_improvement_value": 154750
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506309786",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-30",
+      "status_date": "2025-06-30",
+      "estimated_cost": 14400,
+      "revised_cost": 29000,
+      "description": "upgrade (e) fire alarm system in non sprinklered building. to comply with sffc sec 1103.7.6.1 and current cbc/cfc 2022 & nfpa 72 2022 code requirements. install new facu with radio to monitor system. horn/strobes, detectors and pull stations in common areas and exits. install low frequency sounders",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804186726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-18",
+      "status_date": "2018-11-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change of occupancy to add b to existing m occupancy. no physical work. to include sale of beer and wine. all (e) work under pa 2017-0214-9395",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702149395",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-14",
+      "status_date": "2018-02-22",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "alter existing restroom to create ada code compliant bathroom. per planning code existing use grocery and liquor store. barrier removal. per planning code, existing use grocery and liquor store",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=689",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=070",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544070",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

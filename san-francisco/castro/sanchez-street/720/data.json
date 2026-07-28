@@ -1,0 +1,110 @@
+{
+  "address": "720 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/720/",
+  "apn": "3604006",
+  "block": "3604",
+  "lot": "006",
+  "eas_baseid": "362005",
+  "coordinates": {
+    "lat": 37.757534,
+    "lng": -122.430492
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1484,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0720 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2268938,
+    "assessed_improvement_value": 522256,
+    "last_sale_date": "2016-09-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507181097",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-18",
+      "status_date": "2025-08-12",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "(3) window replacement, like for like (e) wood, new vinyl on back and side of the house. none in front of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301180306",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-18",
+      "status_date": "2023-05-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove rotted (e) wood deck on lowest terrace lvl providing access from 1st level lvg space & basement. replce w/ new composite free standing deck detached from house covering over lowest terrace: 10'x20'x4'2\" deep & lvl with 2nd terrace at 54\" above lowest elevation - 60% grade. provide new stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706098993",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-09",
+      "status_date": "2017-06-09",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remove front iron gate, replace with double doors in existing opening.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=720",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604006",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

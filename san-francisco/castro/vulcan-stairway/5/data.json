@@ -1,0 +1,134 @@
+{
+  "address": "5 Vulcan Stairway, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/vulcan-stairway/5/",
+  "apn": "2626028",
+  "block": "2626",
+  "lot": "028",
+  "eas_baseid": "342627",
+  "coordinates": {
+    "lat": 37.763246,
+    "lng": -122.441063
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "lot_area_sqft": 2435,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0005 VULCAN              SW0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 169955,
+    "last_sale_date": "1994-06-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201002176667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-17",
+      "status_date": "2010-02-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair back yard retaining wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001205037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-20",
+      "status_date": "2011-01-18",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002182243",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-18",
+      "status_date": "2000-08-18",
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601460",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-01-29",
+      "status_date": "1998-01-02",
+      "estimated_cost": 50000,
+      "description": "new srairway connects 2 existing floors 1/2 bath grd flr hea",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9311878",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "1993-07-15",
+      "status_date": "1999-12-28",
+      "estimated_cost": 1500,
+      "description": "replace (e)treads & risers on front extr stairs/sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310936S",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1993-06-29",
+      "status_date": "1994-03-10",
+      "estimated_cost": 99325,
+      "description": "remove (e) rear addition, add (n) rear addition/n/2nd story",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VULCAN&street_type=STWY&address_number=5",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2626028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2626&lot=028",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2626028",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

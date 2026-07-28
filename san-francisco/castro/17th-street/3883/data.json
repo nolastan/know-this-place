@@ -1,0 +1,121 @@
+{
+  "address": "3883 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/3883/",
+  "apn": "3581070A",
+  "block": "3581",
+  "lot": "070A",
+  "eas_baseid": "360654",
+  "coordinates": {
+    "lat": 37.762423,
+    "lng": -122.432449
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2796,
+    "building_area_sqft": 2388,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3883 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2447749,
+    "assessed_improvement_value": 1049035,
+    "last_sale_date": "2023-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501148301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-14",
+      "status_date": "2025-01-23",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "1 square torchdown re-roof. like for like.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302071559",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-07",
+      "status_date": "2023-03-09",
+      "estimated_cost": 1000,
+      "revised_cost": 8000,
+      "description": "revison to pa# 2021-0128-3559. structural work only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101283559",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-28",
+      "status_date": "2023-03-09",
+      "estimated_cost": 220000,
+      "revised_cost": 220000,
+      "description": "remodel (e) living room, remodel (e) kitchen, remodel(e) bathroom, addition of (n) half bathroom on 2nd fl. additon of 3 (n) bedrooms on 1st fl. additon of 2 (n) bathrooms on 1st fl. additon of (n) laundry room on 1st fl. remove (e) rear deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911201794",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-20",
+      "status_date": "2009-12-01",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "install 11 hd 7s at post at gr level in garage and install 9 heavy duty 1212 ht t straps at post and beams, also install 2 hvy duty l straps at post and beas. voluntary",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3883",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3581070A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3581&lot=070A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581070A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

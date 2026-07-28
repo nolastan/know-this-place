@@ -1,0 +1,144 @@
+{
+  "address": "64–66 Eagle Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eagle-street/64/",
+  "apn": "2711015",
+  "block": "2711",
+  "lot": "015",
+  "eas_baseid": "344853",
+  "coordinates": {
+    "lat": 37.758576,
+    "lng": -122.443184
+  },
+  "address_range": "64–66",
+  "street_numbers_on_parcel": [
+    "64",
+    "66"
+  ],
+  "parcel": {
+    "year_built": 1962,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1855,
+    "building_area_sqft": 2014,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0066 0064 EAGLE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 922180,
+    "assessed_improvement_value": 614786,
+    "last_sale_date": "2000-05-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200111263850",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-26",
+      "status_date": "2002-03-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change balcony (deck) const details & square off upper deck/balcony (ref. 200010254089",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16885",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2001-08-15",
+      "status_date": "2001-08-15",
+      "revised_cost": 400000,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107254545",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-25",
+      "status_date": "2002-01-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "change to roof construction details (ref. pa #200010254089)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010254089",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-10-25",
+      "status_date": "2006-12-18",
+      "estimated_cost": 400000,
+      "revised_cost": 400000,
+      "description": "remodeling of 2 units & resizing both",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005230",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-19",
+      "status_date": "1990-09-19",
+      "estimated_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-09-12",
+      "status_date": "1983-11-28",
+      "estimated_cost": 2800,
+      "description": "remove approx 200 sq ft of stucco replace with shingle",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EAGLE&street_type=ST&address_number=64",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2711015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2711&lot=015",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2711015",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

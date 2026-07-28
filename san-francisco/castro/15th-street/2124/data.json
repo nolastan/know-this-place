@@ -1,0 +1,113 @@
+{
+  "address": "2124–2126 15th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/15th-street/2124/",
+  "apn": "3541012",
+  "block": "3541",
+  "lot": "012",
+  "eas_baseid": "358756",
+  "coordinates": {
+    "lat": 37.766202,
+    "lng": -122.431697
+  },
+  "address_range": "2124–2126",
+  "street_numbers_on_parcel": [
+    "2124",
+    "2126"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 2728,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "2126 2124 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1338390,
+    "assessed_improvement_value": 602872
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "2124-2126 15th Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509025928",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-02",
+      "status_date": "2015-09-02",
+      "estimated_cost": 8100,
+      "revised_cost": 8100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111038188",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-11-03",
+      "status_date": "2011-11-03",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "exterior stair repair less than 50%. paint will be stripped and repainted, cracked wood for landing will be replaced or patched.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305223",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-31",
+      "status_date": "1993-07-31",
+      "estimated_cost": 2000,
+      "description": "bathroom remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=2124",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3541012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3541&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3541012",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

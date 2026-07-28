@@ -1,0 +1,116 @@
+{
+  "address": "587 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/587/",
+  "apn": "3584036",
+  "block": "3584",
+  "lot": "036",
+  "eas_baseid": "360861",
+  "coordinates": {
+    "lat": 37.759706,
+    "lng": -122.43234
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 1494,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0587 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31850,
+    "assessed_improvement_value": 36241
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607267681",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-26",
+      "status_date": "2006-08-15",
+      "estimated_cost": 12300,
+      "revised_cost": 12300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401376",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-07",
+      "status_date": "1984-11-28",
+      "estimated_cost": 22000,
+      "description": "remove foundation under kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-01-10",
+      "status_date": "1984-05-23",
+      "estimated_cost": 1500,
+      "description": "new tile, tub, lavatory sheetrock walls 2nd. fl. bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312115",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-11-29",
+      "status_date": "1985-03-12",
+      "estimated_cost": 10000,
+      "description": "repair footing at rear of bldg. replace porch wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=587",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3584036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3584&lot=036",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3584036",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

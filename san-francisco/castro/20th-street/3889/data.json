@@ -1,0 +1,138 @@
+{
+  "address": "3889 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/3889/",
+  "apn": "3606065",
+  "block": "3606",
+  "lot": "065",
+  "eas_baseid": "362198",
+  "coordinates": {
+    "lat": 37.757895,
+    "lng": -122.427652
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 3,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 35,
+    "bedrooms": 4,
+    "lot_area_sqft": 2295,
+    "building_area_sqft": 4025,
+    "basement_area_sqft": 365,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3889 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79947,
+    "assessed_improvement_value": 397753
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9518993",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-09",
+      "status_date": "1996-03-12",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503074",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-03-02",
+      "status_date": "1996-02-14",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "legalize lower apartment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117850",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-09-24",
+      "status_date": "1993-04-09",
+      "estimated_cost": 7997,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8911472",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-06-30",
+      "status_date": "1994-12-05",
+      "estimated_cost": 15000,
+      "description": "bring building into code per dahi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605916",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-05-20",
+      "status_date": "1986-10-27",
+      "estimated_cost": 10000,
+      "description": "legalize existing 4th apartment in building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602886",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-03-13",
+      "status_date": "1989-10-02",
+      "estimated_cost": 5,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3889",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3606065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3606&lot=065",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3606065",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

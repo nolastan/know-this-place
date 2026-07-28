@@ -1,0 +1,119 @@
+{
+  "address": "3062 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/3062/",
+  "apn": "2656019",
+  "block": "2656",
+  "lot": "019",
+  "eas_baseid": "343491",
+  "coordinates": {
+    "lat": 37.761281,
+    "lng": -122.442602
+  },
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2217,
+    "building_area_sqft": 1375,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 3062 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1235676,
+    "assessed_improvement_value": 823782,
+    "last_sale_date": "2017-12-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709087405",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-08",
+      "status_date": "2017-09-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work already approved under pa# 7801172, all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205176860",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-17",
+      "status_date": "2002-05-21",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204265073",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-26",
+      "status_date": "2002-10-26",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "change old cabinets @kitchen & install tile @kitchen & bathrm flrs.no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204442",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-06-03",
+      "status_date": "1983-03-04",
+      "estimated_cost": 5000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3062",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2656019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2656&lot=019",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2656019",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

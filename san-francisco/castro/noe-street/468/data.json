@@ -1,0 +1,152 @@
+{
+  "address": "468 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/468/",
+  "apn": "3582012",
+  "block": "3582",
+  "lot": "012",
+  "eas_baseid": "360689",
+  "coordinates": {
+    "lat": 37.761533,
+    "lng": -122.4332
+  },
+  "parcel": {
+    "year_built": 1901,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2032,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0468 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1611934,
+    "assessed_improvement_value": 690823,
+    "last_sale_date": "2012-12-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1901",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200806023446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-02",
+      "status_date": "2008-08-21",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace in kind front steps that are damaged. treads and risers and assiblestringer rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606143985",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-06-14",
+      "status_date": "2006-06-14",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206259954",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-25",
+      "status_date": "2003-01-16",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "add bath & remodel (e) basement including new doors & windows to exterior",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203121193",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-12",
+      "status_date": "2002-07-12",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "revision to pa 200108035292",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17442",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-17",
+      "status_date": "2002-10-17",
+      "revised_cost": 35000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108035292",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-03",
+      "status_date": "2002-03-21",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel of one kitchen, two bathrooms, msc wall repair, install hydronic heating system, no change o",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614096",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-10",
+      "status_date": "1987-03-12",
+      "estimated_cost": 526,
+      "description": "install aluminum windows in existing frames.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=468",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3582012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3582&lot=012",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3582012",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

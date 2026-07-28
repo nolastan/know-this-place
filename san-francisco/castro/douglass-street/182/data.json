@@ -1,0 +1,145 @@
+{
+  "address": "182–184 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/182/",
+  "apn": "2651015",
+  "block": "2651",
+  "lot": "015",
+  "eas_baseid": "343339",
+  "coordinates": {
+    "lat": 37.760965,
+    "lng": -122.439631
+  },
+  "address_range": "182–184",
+  "street_numbers_on_parcel": [
+    "182",
+    "184"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2275,
+    "building_area_sqft": 3155,
+    "lot_depth_ft": 91,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0184 0182 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 851977,
+    "assessed_improvement_value": 603418,
+    "last_sale_date": "2010-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507070281",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-07",
+      "status_date": "2025-10-28",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "description": "kitchen and bathroom remodel. no structural work. relocate laundry hookups.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903135134",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-13",
+      "status_date": "2019-07-15",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "unit a: construct new master bathroom, remodel kitchen in kind. relocate furnace to be hung at ceiling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1035267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-02-04",
+      "status_date": "2019-02-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811095552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-09",
+      "status_date": "2019-03-26",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remodel kitchen like for like. no wall removal. kitchen is 10' x 13' = 130 sqft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820618",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-09",
+      "status_date": "1999-04-09",
+      "estimated_cost": 12500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411218",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-10-18",
+      "status_date": "1989-09-24",
+      "estimated_cost": 16000,
+      "description": "remodel kitchen and bath, completely",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=182",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2651015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2651&lot=015",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2651015",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

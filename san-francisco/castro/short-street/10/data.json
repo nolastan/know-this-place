@@ -1,0 +1,140 @@
+{
+  "address": "10 Short Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/short-street/10/",
+  "apn": "2713002A",
+  "block": "2713",
+  "lot": "002A",
+  "eas_baseid": "344903",
+  "coordinates": {
+    "lat": 37.757722,
+    "lng": -122.44249
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1511,
+    "building_area_sqft": 1206,
+    "basement_area_sqft": 375,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0010 SHORT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 525175,
+    "assessed_improvement_value": 186877
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201803305143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-30",
+      "status_date": "2018-07-10",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel and garage sheetrock. no changes on wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M37321",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-27",
+      "status_date": "2006-04-27",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412211922",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-21",
+      "status_date": "2004-12-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200405103420",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408121435",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-08-12",
+      "status_date": "2006-06-05",
+      "estimated_cost": 9500,
+      "revised_cost": 18000,
+      "description": "scope of work: 1. to enclose the (e) front roof ddeck of 6'6\" this will be part of the (e) bedrm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405103420",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-05-10",
+      "status_date": "2004-12-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "scope of work. remodel (e) bathroom & add a new bathroom per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-08-14",
+      "status_date": "1986-09-22",
+      "estimated_cost": 350,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHORT&street_type=ST&address_number=10",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2713002A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2713&lot=002A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2713002A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

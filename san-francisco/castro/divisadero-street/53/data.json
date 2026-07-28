@@ -1,0 +1,155 @@
+{
+  "address": "53–57 Divisadero Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/divisadero-street/53/",
+  "apn": "2610010",
+  "block": "2610",
+  "lot": "010",
+  "eas_baseid": "341957",
+  "coordinates": {
+    "lat": 37.768148,
+    "lng": -122.436827
+  },
+  "address_range": "53–57",
+  "street_numbers_on_parcel": [
+    "53",
+    "55",
+    "57"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2334,
+    "building_area_sqft": 5230,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0057 0053 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1680000,
+    "assessed_improvement_value": 720000,
+    "last_sale_date": "2017-12-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201002166568",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-16",
+      "status_date": "2010-02-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36085",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-20",
+      "status_date": "2006-01-20",
+      "revised_cost": 0,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310288775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-28",
+      "status_date": "2003-12-12",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "sidewall install vinyl siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305134503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-13",
+      "status_date": "2003-09-12",
+      "estimated_cost": 375,
+      "revised_cost": 375,
+      "description": "kitchen-replace one top sash with in kind wooden sash, not seen from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919083",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-10-10",
+      "status_date": "1990-09-06",
+      "estimated_cost": 2900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900544",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-12",
+      "status_date": "1989-06-06",
+      "estimated_cost": 4495,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312066",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-28",
+      "status_date": "1986-03-24",
+      "estimated_cost": 600,
+      "description": "bring into code as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=53",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2610010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2610&lot=010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2610010",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

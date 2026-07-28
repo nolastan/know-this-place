@@ -1,0 +1,115 @@
+{
+  "address": "319 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/319/",
+  "apn": "2750031",
+  "block": "2750",
+  "lot": "031",
+  "eas_baseid": "345472",
+  "coordinates": {
+    "lat": 37.75685,
+    "lng": -122.437575
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1375,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0319 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33697,
+    "assessed_improvement_value": 18221
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201402128382",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2014-02-12",
+      "status_date": "2014-04-25",
+      "estimated_cost": 98000,
+      "description": "renovate existing 2nd fl. bedroom into master bedroom suite & (n) vegetated roof & wood deck, (n) concrete footings & upgraded seismic & gravity structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M133938",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-11",
+      "status_date": "2008-09-11",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620105",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-18",
+      "status_date": "1997-08-21",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-12",
+      "status_date": "1991-09-13",
+      "estimated_cost": 14500,
+      "description": "replace exist brick foundation with concrete",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=319",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2750031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2750&lot=031",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2750031",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

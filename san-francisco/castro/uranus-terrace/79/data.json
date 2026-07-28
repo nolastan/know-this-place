@@ -1,0 +1,146 @@
+{
+  "address": "79–81 Uranus Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/uranus-terrace/79/",
+  "apn": "2654023",
+  "block": "2654",
+  "lot": "023",
+  "eas_baseid": "343430",
+  "coordinates": {
+    "lat": 37.760873,
+    "lng": -122.445095
+  },
+  "address_range": "79–81",
+  "street_numbers_on_parcel": [
+    "79",
+    "81"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 1700,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0081 0079 URANUS              TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1155000,
+    "assessed_improvement_value": 770000,
+    "last_sale_date": "2017-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201908169000",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2019-08-16",
+      "status_date": "2021-09-07",
+      "estimated_cost": 150000,
+      "revised_cost": 300000,
+      "description": "1st fl:12x15 horizontal add'n. rear yard: add pool per sfpc 136(c)24(b). 3rd fl: demo (e) deck & rebuild 5' from lot line. interior remodel. 1st fl: (n) bedroom, bath & stair. 2nd fl: remodel kitchen/bath,entryhall, new deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903084741",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-08",
+      "status_date": "2019-09-18",
+      "estimated_cost": 10237,
+      "revised_cost": 10237,
+      "description": "replace 6 double hung vinly windows, 5 on the facade and 1 in the rear, aluminum wood clad by marvin.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802211859",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-02-21",
+      "status_date": "2018-02-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for administrative purposes only to document the legal use and occupancy of this building as a two story structure with two residential dwelling units. this determination is based on a review of city records including dbi history (pa 70566 issued 5/4/42) sanborn map, assesors records. no work on",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802020204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-02",
+      "status_date": "2019-05-31",
+      "estimated_cost": 75000,
+      "revised_cost": 120000,
+      "description": "2nd fl: remodel: demolish interior stair; remodel interior including kitchen, bath, closets. replace decking and railing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606083457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-08",
+      "status_date": "2006-09-27",
+      "estimated_cost": 4100,
+      "revised_cost": 4100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925587",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-12-06",
+      "status_date": "2000-04-06",
+      "estimated_cost": 2000,
+      "description": "install 5 windows in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URANUS&street_type=TER&address_number=79",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2654023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2654&lot=023",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2654023",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "address": "4030 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/4030/",
+  "apn": "2751007A",
+  "block": "2751",
+  "lot": "007A",
+  "eas_baseid": "345498",
+  "coordinates": {
+    "lat": 37.756237,
+    "lng": -122.43624
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3795,
+    "building_area_sqft": 1267,
+    "lot_depth_ft": 15,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4030 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1133454,
+    "assessed_improvement_value": 755634,
+    "last_sale_date": "2007-02-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410112798",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-11",
+      "status_date": "2024-10-16",
+      "estimated_cost": 50000,
+      "revised_cost": 58000,
+      "description": "repair fences & gates; provide in floor radiant heating at lower level & bathroom; adding entry hall skylight. this work is separate from pa # 2024-0524-2966",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405242966",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2024-08-19",
+      "status_date": "2024-12-24",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "remodeling an (e) split-level home to enclose an (e) property line lightwell and adding a bathroom, adding skylights, remodeling (e) kitchen and bath; replacing some (e) doors and windows, revising closets and handrail.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008111535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-11",
+      "status_date": "2020-10-15",
+      "estimated_cost": 15236,
+      "revised_cost": 15236,
+      "description": "remove existing roof. install new asphalt composition shingles at sloped roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201308047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-30",
+      "status_date": "2002-03-01",
+      "estimated_cost": 2918,
+      "revised_cost": 2918,
+      "description": "6 windows to be replace size for size. front of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512919",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-15",
+      "status_date": "1995-10-18",
+      "estimated_cost": 1200,
+      "description": "repl fixed window w/french dbl pane and finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-14",
+      "status_date": "1995-10-18",
+      "estimated_cost": 4800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808237",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-06-22",
+      "status_date": "1993-01-25",
+      "estimated_cost": 40000,
+      "description": "construct & frame, new bedrm, living rm, bath & closet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=4030",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=007A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751007A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

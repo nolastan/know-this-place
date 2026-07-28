@@ -1,0 +1,136 @@
+{
+  "address": "724 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/724/",
+  "apn": "3604007",
+  "block": "3604",
+  "lot": "007",
+  "eas_baseid": "362006",
+  "coordinates": {
+    "lat": 37.757465,
+    "lng": -122.430486
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1512,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0724 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31154,
+    "assessed_improvement_value": 64199
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909181973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-18",
+      "status_date": "2020-01-17",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "replace (6) total windows on front-facing facade, with aluminum-clad marvin wood windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M283833",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-13",
+      "status_date": "2011-10-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M21822",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-01",
+      "status_date": "2002-10-01",
+      "revised_cost": 1,
+      "description": "street space repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M20154",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-08",
+      "status_date": "2002-09-08",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17934",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-28",
+      "status_date": "2002-03-28",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16699",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-25",
+      "status_date": "2001-11-25",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=724",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3604007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3604&lot=007",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3604007",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

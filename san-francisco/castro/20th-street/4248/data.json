@@ -1,0 +1,129 @@
+{
+  "address": "4248 20th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/20th-street/4248/",
+  "apn": "2696018",
+  "block": "2696",
+  "lot": "018",
+  "eas_baseid": "344434",
+  "coordinates": {
+    "lat": 37.757826,
+    "lng": -122.435598
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 5,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 5,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 3042,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4248 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1050809,
+    "assessed_improvement_value": 650184,
+    "last_sale_date": "2008-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311221316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-22",
+      "status_date": "2024-03-01",
+      "estimated_cost": 14960,
+      "revised_cost": 14960,
+      "description": "upgrade existing local fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706300823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-30",
+      "status_date": "2018-05-01",
+      "estimated_cost": 10000,
+      "revised_cost": 50000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4 n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608250535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-25",
+      "status_date": "2006-10-25",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace 12 dh windows-some visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011166000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-16",
+      "status_date": "2000-12-08",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "provide missing handrails repairs damaged treads new post as req per attached complaint report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310280",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-10-13",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1900,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=4248",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2696018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2696&lot=018",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2696018",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

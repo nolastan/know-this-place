@@ -1,0 +1,128 @@
+{
+  "address": "4741 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4741/",
+  "apn": "2689021",
+  "block": "2689",
+  "lot": "021",
+  "eas_baseid": "344196",
+  "coordinates": {
+    "lat": 37.759799,
+    "lng": -122.443826
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2739,
+    "building_area_sqft": 1200,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4741 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 722356,
+    "assessed_improvement_value": 245894,
+    "last_sale_date": "1999-07-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511290583",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-11-29",
+      "status_date": "2025-11-29",
+      "estimated_cost": 16521,
+      "revised_cost": 16521,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112054563",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-05",
+      "status_date": "2002-04-04",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "remove (e) brick fireplace and metal flue install new direct vent f. replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923056",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-29",
+      "status_date": "2000-02-29",
+      "estimated_cost": 2508,
+      "description": "install 7 windows in existing opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-19",
+      "status_date": "1999-06-01",
+      "estimated_cost": 11500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9206301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-04-17",
+      "status_date": "1992-05-29",
+      "estimated_cost": 750,
+      "description": "repair work per termite report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4741",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2689021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2689&lot=021",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2689021",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

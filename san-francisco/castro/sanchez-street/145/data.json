@@ -1,0 +1,156 @@
+{
+  "address": "145–147 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/145/",
+  "apn": "3542024A",
+  "block": "3542",
+  "lot": "024A",
+  "eas_baseid": "358838",
+  "coordinates": {
+    "lat": 37.766876,
+    "lng": -122.430764
+  },
+  "address_range": "145–147",
+  "street_numbers_on_parcel": [
+    "145",
+    "147"
+  ],
+  "parcel": {
+    "year_built": 1940,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3400,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0147 0145 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 78754
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1940",
+    "survey_name": "145 Sanchez Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809262785",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-26",
+      "status_date": "2008-10-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "supply & install alloy vinyl siding to back wall of home-in kind, no structural changes not visible from street, vinyl siding over rising wood siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807096290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-09",
+      "status_date": "2008-08-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair & replace decks as per nov# 200842238 in kind & add structural support for safety",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609273489",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-09-27",
+      "status_date": "2006-09-27",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "back stair repair: remove all dryrot/replace with pressure treated lumber and exterior lumber-redwood etc. all repairs to matche existing and ubc codes less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-05",
+      "status_date": "2000-04-04",
+      "estimated_cost": 850,
+      "description": "remove & replace fiev steps at stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802419",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-02-12",
+      "status_date": "1998-04-08",
+      "estimated_cost": 2000,
+      "revised_cost": 4000,
+      "description": "convert storage room to habitable accessory ref,pa#9700878",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802235",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-10",
+      "status_date": "1998-04-08",
+      "estimated_cost": 1,
+      "description": "to renew ap#9700878 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700878",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-01-16",
+      "status_date": "1998-04-08",
+      "estimated_cost": 5000,
+      "revised_cost": 11800,
+      "description": "to legalize violation,convert basement room ino storage area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=145",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3542024A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3542&lot=024A",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3542024A",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

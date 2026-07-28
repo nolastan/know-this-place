@@ -1,0 +1,107 @@
+{
+  "address": "79 Prosper Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/prosper-street/79/",
+  "apn": "3564025",
+  "block": "3564",
+  "lot": "025",
+  "eas_baseid": "359815",
+  "coordinates": {
+    "lat": 37.763087,
+    "lng": -122.431388
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2400,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0081 0079 PROSPER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 157442,
+    "assessed_improvement_value": 205095
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201812269114",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-26",
+      "status_date": "2018-12-31",
+      "estimated_cost": 11700,
+      "revised_cost": 11700,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-02-14",
+      "status_date": "1994-07-27",
+      "estimated_cost": 25000,
+      "description": "alteration of kitchen & back room, add toilet in back room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-02-04",
+      "status_date": "1985-11-07",
+      "estimated_cost": 8000,
+      "description": "remodel bathrm, replace window, new sink, counter, tub",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PROSPER&street_type=ST&address_number=79",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3564025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3564&lot=025",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3564025",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

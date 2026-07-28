@@ -1,0 +1,117 @@
+{
+  "address": "4010 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/4010/",
+  "apn": "2751006E",
+  "block": "2751",
+  "lot": "006E",
+  "eas_baseid": "345493",
+  "coordinates": {
+    "lat": 37.756435,
+    "lng": -122.436127
+  },
+  "parcel": {
+    "year_built": 1967,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 7244,
+    "building_area_sqft": 850,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4010 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1272939,
+    "assessed_improvement_value": 545544,
+    "last_sale_date": "2020-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001212348",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-21",
+      "status_date": "2020-01-21",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "replace 500 sf of siding to rear of house, not visible from street. no framing change. james harding siding will match existing siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-07-29",
+      "status_date": "1993-08-19",
+      "estimated_cost": 1600,
+      "description": "installation of fireplace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804268",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-04-05",
+      "status_date": "1989-07-27",
+      "estimated_cost": 8500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715553",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-10-29",
+      "status_date": "1988-04-18",
+      "estimated_cost": 3594,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=4010",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2751006E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2751&lot=006E",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2751006E",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

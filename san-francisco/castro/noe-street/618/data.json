@@ -1,0 +1,169 @@
+{
+  "address": "618 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/618/",
+  "apn": "3602006",
+  "block": "3602",
+  "lot": "006",
+  "eas_baseid": "361835",
+  "coordinates": {
+    "lat": 37.758737,
+    "lng": -122.432931
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1686,
+    "basement_area_sqft": 156,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0618 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1576217,
+    "assessed_improvement_value": 820941,
+    "last_sale_date": "2007-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "19th and Noe Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1905–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M29829",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-20",
+      "status_date": "2004-10-20",
+      "revised_cost": 0,
+      "description": "sidewalk repair only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405254792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-25",
+      "status_date": "2004-11-09",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "bathroom new - 1 shower, toilet, sink top floor, s kylights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301225613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-22",
+      "status_date": "2003-12-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew#200205237278 &200202088827 for final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206038037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-03",
+      "status_date": "2003-11-21",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "construction rear deck and stairs-replace kitch cabinets,rmdl,laundry rm/stiars in ex bsmt,gar door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205237278",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-23",
+      "status_date": "2002-09-23",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "fireplace repair, new fire box and chimney in kind, no change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202088827",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-08",
+      "status_date": "2002-08-08",
+      "estimated_cost": 18500,
+      "revised_cost": 18500,
+      "description": "remodel powder rm (existing pantry) sink and toilet bathroom toilet wall sink tub shower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112175390",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-17",
+      "status_date": "2002-03-01",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "foundation & pest work see pest report attached item 3h capp to be no more than 12\" 1d, 1e-1h, 3a-3c",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=618",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602006",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43293142095128%2037.75873679725883)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

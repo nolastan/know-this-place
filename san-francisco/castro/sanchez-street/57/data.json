@@ -1,0 +1,153 @@
+{
+  "address": "57 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/57/",
+  "apn": "3537039",
+  "block": "3537",
+  "lot": "039",
+  "eas_baseid": "358534",
+  "coordinates": {
+    "lat": 37.768288,
+    "lng": -122.430898
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 5,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 3,
+    "lot_area_sqft": 2935,
+    "building_area_sqft": 3333,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0057 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353590,
+    "assessed_improvement_value": 344745,
+    "last_sale_date": "1991-09-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "survey_name": "57 Sanchez St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M252507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-04-07",
+      "status_date": "2011-04-07",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M61024",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-03-20",
+      "status_date": "2007-03-20",
+      "revised_cost": 0,
+      "description": "street space and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010314471",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-31",
+      "status_date": "2001-04-30",
+      "estimated_cost": 5134,
+      "revised_cost": 5134,
+      "description": "install vinyl siding on the front only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925899",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-12-09",
+      "status_date": "2000-04-09",
+      "estimated_cost": 1,
+      "description": "revision to #9920690",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920690",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-30",
+      "status_date": "2000-03-31",
+      "estimated_cost": 10000,
+      "description": "dry rot repair per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824594",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-12-01",
+      "status_date": "1999-03-05",
+      "estimated_cost": 1000,
+      "description": "comply with complaint #199816225 dated 21 sep 1998",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=57",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&lot=039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3537039",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4308976237425%2037.76828840900339)%27)",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "address": "500 Liberty Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/liberty-street/500/",
+  "apn": "3603104",
+  "block": "3603",
+  "lot": "104",
+  "eas_baseid": "466400",
+  "coordinates": {
+    "lat": 37.75711,
+    "lng": -122.432604
+  },
+  "also_addressed": [
+    "740 NOE ST"
+  ],
+  "parcel": {
+    "year_built": 1903,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1600.73,
+    "building_area_sqft": 2867,
+    "lot_depth_ft": 28.08,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0500 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1411336,
+    "assessed_improvement_value": 1411336,
+    "last_sale_date": "2005-04-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010287572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-28",
+      "status_date": "2020-12-02",
+      "estimated_cost": 19200,
+      "revised_cost": 19200,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32920",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-06-13",
+      "status_date": "2005-06-13",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501143287",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-14",
+      "status_date": "2005-01-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200311109872 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311140276",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-14",
+      "status_date": "2003-11-14",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "proposed basement expansion no new habitable space. no change to bldg. envelope",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311109872",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-11-10",
+      "status_date": "2006-12-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "interior remodeling per n.o.v.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307240278",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-24",
+      "status_date": "2003-08-12",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "remove woodrot from back yard and repair handrail and landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=500",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3603104&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3603&lot=104",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3603104",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

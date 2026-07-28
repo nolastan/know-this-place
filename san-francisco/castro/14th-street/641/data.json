@@ -1,0 +1,133 @@
+{
+  "address": "641–643 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/641/",
+  "apn": "3544073C",
+  "block": "3544",
+  "lot": "073C",
+  "eas_baseid": "358934",
+  "coordinates": {
+    "lat": 37.767648,
+    "lng": -122.42753
+  },
+  "address_range": "641–643",
+  "street_numbers_on_parcel": [
+    "641",
+    "643"
+  ],
+  "parcel": {
+    "year_built": 1945,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 1900,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0643 0641 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 331428,
+    "last_sale_date": "1994-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1945",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911157404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-15",
+      "status_date": "2019-11-21",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309306168",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-30",
+      "status_date": "2003-09-30",
+      "estimated_cost": 5840,
+      "revised_cost": 5840,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510643",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-07-12",
+      "status_date": "1996-02-29",
+      "estimated_cost": 6500,
+      "description": "remove kitchenand and non-bearing wall partially,replace win",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408114",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-05-20",
+      "status_date": "1994-08-18",
+      "estimated_cost": 3500,
+      "description": "remodel kitchen & remove one non-bearing wall partially",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-08-11",
+      "status_date": "1987-10-23",
+      "estimated_cost": 5000,
+      "description": "termite damage front portion of structure",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=641",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3544073C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3544&lot=073C",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3544073C",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

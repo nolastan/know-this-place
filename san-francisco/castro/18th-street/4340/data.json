@@ -1,0 +1,142 @@
+{
+  "address": "4340–4346 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4340/",
+  "apn": "2649020",
+  "block": "2649",
+  "lot": "020",
+  "eas_baseid": "343274",
+  "coordinates": {
+    "lat": 37.760904,
+    "lng": -122.437901
+  },
+  "address_range": "4340–4346",
+  "street_numbers_on_parcel": [
+    "4340",
+    "4342",
+    "4344",
+    "4346"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 4,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 4080,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "4346 4340 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53658,
+    "assessed_improvement_value": 90577
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M189392",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-29",
+      "status_date": "2010-01-29",
+      "revised_cost": 1,
+      "description": "street space and sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M21113",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-07-12",
+      "status_date": "2002-07-12",
+      "revised_cost": 10000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-04",
+      "status_date": "1998-04-16",
+      "estimated_cost": 10000,
+      "description": "kitchen remodel-cabinets, fixtures/new bathrm/furnace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312683",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-07-27",
+      "status_date": "1994-02-23",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305888",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-04-12",
+      "status_date": "1993-05-19",
+      "estimated_cost": 1200,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507983",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-07-26",
+      "status_date": "1986-02-04",
+      "estimated_cost": 1100,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4340",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2649020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2649&lot=020",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2649020",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}

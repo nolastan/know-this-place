@@ -1,0 +1,152 @@
+{
+  "address": "350 Eureka Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/eureka-street/350/",
+  "apn": "2749011",
+  "block": "2749",
+  "lot": "011",
+  "eas_baseid": "345394",
+  "coordinates": {
+    "lat": 37.756462,
+    "lng": -122.438189
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 1758,
+    "lot_depth_ft": 30,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0350 EUREKA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1988771,
+    "assessed_improvement_value": 879629,
+    "last_sale_date": "2015-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708286171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-28",
+      "status_date": "2017-08-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "reduce scope of work for bpa#201606200379; remove stairs from front proposed scope of work, keep (e) stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606200379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-20",
+      "status_date": "2017-08-29",
+      "estimated_cost": 18000,
+      "revised_cost": 72000,
+      "description": "two new dormers, new alternating tread stair ot attic, new window at rear attic wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112070228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-07",
+      "status_date": "2012-07-13",
+      "estimated_cost": 42314,
+      "revised_cost": 42314,
+      "description": "remodel 2 bathroom, 1 kitchen. repair dry rot in garage & 1st flr level per pest report by (#20112341) for items #3e, 5c, 3d, 4e, 3h, 3f, 4a, 4c, 4d, 5a, 5b, 3a, 3b, 3c, 3g & 3f. new lighting in bathrooms & kitchen. kitchen 50% light watts in h.e. lights, bathroom h.e. or t-24 o.s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012247377",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-12-24",
+      "status_date": "2012-07-13",
+      "estimated_cost": 191000,
+      "revised_cost": 130000,
+      "description": "widen garage door. minor expansion of garage. renovate kitchen & expand (e) rear yard addition. renovate half bath. (n) master bath & renovated bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M203026",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-19",
+      "status_date": "2010-05-19",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313414",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-09",
+      "status_date": "1994-01-03",
+      "estimated_cost": 3850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1989-11-08",
+      "status_date": "1989-11-13",
+      "estimated_cost": 1134,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUREKA&street_type=ST&address_number=350",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2749011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2749&lot=011",
+      "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2749011",
+      "retrieved": "2026-07-28"
+    }
+  ],
+  "generator": {
+    "name": "scripts/seed_pages.py",
+    "version": 1
+  }
+}
