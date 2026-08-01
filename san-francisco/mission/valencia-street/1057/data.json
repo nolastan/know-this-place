@@ -1,0 +1,145 @@
+{
+  "address": "1057 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/1057/",
+  "apn": "3616018",
+  "block": "3616",
+  "lot": "018",
+  "eas_baseid": "362823",
+  "coordinates": {
+    "lat": 37.756026,
+    "lng": -122.420675
+  },
+  "parcel": {
+    "year_built": 1880,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1057 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 542112,
+    "assessed_improvement_value": 371672,
+    "last_sale_date": "2010-01-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M365947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-01-10",
+      "status_date": "2013-01-10",
+      "revised_cost": 1,
+      "description": "street space for pm20130110340",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104043443",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-04-04",
+      "status_date": "2013-10-02",
+      "estimated_cost": 4000,
+      "revised_cost": 5900,
+      "description": "to comply with nov# 201196566 dated 2/15/11.redo deck that fell apart. move stairs from in front of door to side of deck. create new deck room out of stair area. re-enclose under deck to use as bike storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005142505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-14",
+      "status_date": "2011-02-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel 2 bathrooms, upstairs & lower bathrooms, repl water heater with instant hot rated for outdoor installation to be installed on exterior wall behind laundry rm, bathroom, high effiacy lighting of occupancy sensor control",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003188533",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-18",
+      "status_date": "2010-12-21",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remove and replace all kitchen cabinets and appliances , no changes to walls, remove and replace bathroom cabinets and sinks, no changes to walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M79837",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-31",
+      "status_date": "2007-07-31",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904313",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-05",
+      "status_date": "2000-01-06",
+      "estimated_cost": 6360,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303753",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-05-02",
+      "status_date": "1983-10-24",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=1057",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3616018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3616&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3616018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

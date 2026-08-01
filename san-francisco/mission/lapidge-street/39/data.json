@@ -1,0 +1,113 @@
+{
+  "address": "39–41 Lapidge Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lapidge-street/39/",
+  "apn": "3588027",
+  "block": "3588",
+  "lot": "027",
+  "eas_baseid": "361094",
+  "coordinates": {
+    "lat": 37.761007,
+    "lng": -122.422142
+  },
+  "address_range": "39–41",
+  "street_numbers_on_parcel": [
+    "39",
+    "41"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3210,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0041 0039 LAPIDGE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 387265,
+    "assessed_improvement_value": 288828,
+    "last_sale_date": "1990-05-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M811490",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-20",
+      "status_date": "2017-07-20",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014407",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-07-23",
+      "status_date": "1991-03-09",
+      "estimated_cost": 2500,
+      "description": "proposed a garage to (e) building convert storage to garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAPIDGE&street_type=ST&address_number=39",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42214164320211%2037.761006856312974)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

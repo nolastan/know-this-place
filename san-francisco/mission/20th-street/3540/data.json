@@ -1,0 +1,117 @@
+{
+  "address": "3540–3546 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3540/",
+  "apn": "3596051",
+  "block": "3596",
+  "lot": "051",
+  "eas_baseid": "361494",
+  "coordinates": {
+    "lat": 37.758775,
+    "lng": -122.420117
+  },
+  "address_range": "3540–3546",
+  "street_numbers_on_parcel": [
+    "3540",
+    "3546"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 12,
+    "stories": 2,
+    "rooms": 21,
+    "bathrooms": 8,
+    "lot_area_sqft": 3187.5,
+    "building_area_sqft": 4500,
+    "lot_depth_ft": 85,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3546 3540 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 306008,
+    "assessed_improvement_value": 152992
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M180965",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-29",
+      "status_date": "2009-09-29",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27990",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-06-21",
+      "status_date": "2004-06-21",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17449",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-17",
+      "status_date": "2002-02-17",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317563",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-07",
+      "status_date": "1993-11-01",
+      "estimated_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3540",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596051",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

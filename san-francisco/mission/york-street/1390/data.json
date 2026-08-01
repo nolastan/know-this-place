@@ -1,0 +1,116 @@
+{
+  "address": "1390 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1390/",
+  "apn": "4274011C",
+  "block": "4274",
+  "lot": "011C",
+  "eas_baseid": "370951",
+  "coordinates": {
+    "lat": 37.749826,
+    "lng": -122.408049
+  },
+  "parcel": {
+    "year_built": 1954,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1642,
+    "building_area_sqft": 1295,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1390 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 659160,
+    "assessed_improvement_value": 282494,
+    "last_sale_date": "2011-03-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605080910",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-08",
+      "status_date": "2026-05-08",
+      "estimated_cost": 14600,
+      "revised_cost": 14600,
+      "description": "reroofing torch down, remove tar & gravel haul away, install new rubber.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107094120",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-09",
+      "status_date": "2021-10-01",
+      "estimated_cost": 35800,
+      "revised_cost": 36000,
+      "description": "replace 13 windows retroffit like for like. (e) material aluminum, (n) material fiberglass. 9 street visible. 4 non-street visible. u-factor <0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104144050",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-14",
+      "status_date": "2011-09-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen and bath remodel at 2nd fl. remove bearing wall between kitchen and living rm, bath remodel, add closet to master bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309104319",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-10",
+      "status_date": "2003-09-23",
+      "estimated_cost": 4850,
+      "revised_cost": 4850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1390",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4274011C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4274&lot=011C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4274011C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

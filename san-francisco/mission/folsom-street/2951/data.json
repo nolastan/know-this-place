@@ -1,0 +1,111 @@
+{
+  "address": "2951 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2951/",
+  "apn": "6524026",
+  "block": "6524",
+  "lot": "026",
+  "eas_baseid": "401159",
+  "coordinates": {
+    "lat": 37.750049,
+    "lng": -122.413509
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2752,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2953 2951 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41795,
+    "assessed_improvement_value": 89497
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507211204",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-21",
+      "status_date": "2025-07-22",
+      "estimated_cost": 14600,
+      "revised_cost": 14600,
+      "description": "re-roof. hot work. replace old roof and install new galvanized drain. install by torch down, ecotorch-g granulated sbs modified bitumen mambrane",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29251",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-15",
+      "status_date": "2004-09-15",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-03-21",
+      "status_date": "1984-10-09",
+      "estimated_cost": 100,
+      "description": "remove roof projection over neighbors yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-01-20",
+      "status_date": "1984-04-02",
+      "estimated_cost": 360,
+      "description": "replace install a new window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2951",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524026",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

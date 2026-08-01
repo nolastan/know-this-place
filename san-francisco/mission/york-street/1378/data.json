@@ -1,0 +1,138 @@
+{
+  "address": "1378 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1378/",
+  "apn": "4274011A",
+  "block": "4274",
+  "lot": "011A",
+  "eas_baseid": "370949",
+  "coordinates": {
+    "lat": 37.750011,
+    "lng": -122.408197
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1475,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1378 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1385874,
+    "assessed_improvement_value": 593943,
+    "last_sale_date": "2018-02-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501087910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-08",
+      "status_date": "2025-03-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 202211156502 limited to additional structural calcs and correction to special inspection requirements - no high strength bolting required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307111845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-11",
+      "status_date": "2023-08-25",
+      "estimated_cost": 15800,
+      "revised_cost": 15800,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304065149",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-04-06",
+      "status_date": "2023-04-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise pa# 2022-1115-6502: to revise property line foundaation detailing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211156502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-15",
+      "status_date": "2025-03-11",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "new windows to replace (e) at rear bedrooms at 1st & 2nd fl. new roof skylights with 1 hr fr parapet. replace siding at rear. new trellis and garden structure. reconfigure interior stair. reconfigure primary bedroom suite, laundry to replace (e) at 1st fl. new pwder room at 1st fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905077887",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-07",
+      "status_date": "2009-06-11",
+      "estimated_cost": 6325,
+      "revised_cost": 6325,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700291",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-01-09",
+      "status_date": "1987-06-03",
+      "estimated_cost": 5000,
+      "description": "build bathroom & closet off of existing room in basement.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1378",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4274011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4274&lot=011A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4274011A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

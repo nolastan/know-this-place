@@ -1,0 +1,144 @@
+{
+  "address": "1352–1362 Vermont Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/vermont-street/1352/",
+  "apn": "4262028",
+  "block": "4262",
+  "lot": "028",
+  "eas_baseid": "370602",
+  "coordinates": {
+    "lat": 37.752351,
+    "lng": -122.403633
+  },
+  "address_range": "1352–1362",
+  "street_numbers_on_parcel": [
+    "1352",
+    "1354",
+    "1356",
+    "1358",
+    "1360",
+    "1362"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 2,
+    "rooms": 26,
+    "bathrooms": 6,
+    "lot_area_sqft": 7500,
+    "building_area_sqft": 6868,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1362 1352 VERMONT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 70643,
+    "assessed_improvement_value": 204889
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510086959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-08",
+      "status_date": "2025-10-15",
+      "estimated_cost": 39900,
+      "revised_cost": 39900,
+      "description": "re roofing: no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503241730",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-24",
+      "status_date": "2015-03-24",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M318787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-05-03",
+      "status_date": "2012-05-03",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107089755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-08",
+      "status_date": "2011-07-21",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair dry rot post at stair landing per complaint #201130561 from department of building inspection housing inspection services. less than 50% work. no change to windows, walls or doors. to comply with his nov 201130561 dated 5-25-2011.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003037474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-03",
+      "status_date": "2010-03-10",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair misc. items per complaint #201031527. repair stairs @ rear less than 50%. repair damaged wall @ rear porch area. repair floor covering @ rear porch area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717800",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-11",
+      "status_date": "1998-03-19",
+      "estimated_cost": 9200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VERMONT&street_type=ST&address_number=1352",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4262028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4262&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4262028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

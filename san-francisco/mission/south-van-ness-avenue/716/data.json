@@ -1,0 +1,85 @@
+{
+  "address": "716 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/716/",
+  "apn": "3590114",
+  "block": "3590",
+  "lot": "114",
+  "eas_baseid": "501778",
+  "coordinates": {
+    "lat": 37.761569,
+    "lng": -122.41728
+  },
+  "parcel": {
+    "year_built": 1903,
+    "units": 3,
+    "stories": 3,
+    "bathrooms": 3,
+    "bedrooms": 9,
+    "lot_area_sqft": 3708,
+    "building_area_sqft": 5320,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0718 0714 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 83884,
+    "assessed_improvement_value": 341846
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Capp and Howard Streets Mid-Block Fire Line Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1909",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=716",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590114&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&lot=114",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3590114",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41727956357441%2037.76156880319569)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

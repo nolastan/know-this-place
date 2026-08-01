@@ -1,0 +1,142 @@
+{
+  "address": "2619–2621 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2619/",
+  "apn": "4142041",
+  "block": "4142",
+  "lot": "041",
+  "eas_baseid": "369246",
+  "coordinates": {
+    "lat": 37.757551,
+    "lng": -122.407245
+  },
+  "address_range": "2619–2621",
+  "street_numbers_on_parcel": [
+    "2619",
+    "2621"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 2673,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2621 2619 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 639796,
+    "assessed_improvement_value": 284348
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507151592",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2015-07-15",
+      "status_date": "2017-09-11",
+      "estimated_cost": 50000,
+      "revised_cost": 68100,
+      "description": "convert (e) attic to new habitable space (new 4th floor). add new bathroom, open family room & decks @ front, back & one side. new sprinklers system under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410169111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-16",
+      "status_date": "2015-06-15",
+      "estimated_cost": 1500,
+      "revised_cost": 6000,
+      "description": "remove: illegal unit @ ground floor & convert to storage, remove kitchen, convert full bath to 1/2 bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009291882",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2010-09-29",
+      "status_date": "2020-01-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "provide 2 new dormers with a new window each. new dormer to be locationd at west & south orientation. provide a new low partition & handrail to existing stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910158975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-15",
+      "status_date": "2009-10-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to pa # 200907313937 and abate nov. 200719551. increase of cost construction by $5,000. second floor - repaint section of the roof because of leaks.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909046284",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-04",
+      "status_date": "2009-10-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907313937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-07-31",
+      "status_date": "2009-10-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replaced 10 windows at front of building, 1st and 2nd level, repaired section of roof because of leaks, replaced attic window because it was deteriorated, remove added roof dormer, comply with nov 200719551",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2619",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

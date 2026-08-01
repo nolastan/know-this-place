@@ -1,0 +1,151 @@
+{
+  "address": "1316–1318 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1316/",
+  "apn": "4275001A",
+  "block": "4275",
+  "lot": "001A",
+  "eas_baseid": "492064",
+  "coordinates": {
+    "lat": 37.750999,
+    "lng": -122.407348
+  },
+  "address_range": "1316–1318",
+  "street_numbers_on_parcel": [
+    "1316",
+    "1318"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2046,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1318 1316 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139512,
+    "assessed_improvement_value": 397553,
+    "last_sale_date": "1995-08-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002205024",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-20",
+      "status_date": "2020-02-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "install new fire sprinkler system per nfpa 1312 for the main level only. total 18 heads. inlcude 2\" underground fire service. per app#201407312605 service.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1186347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-22",
+      "status_date": "2020-01-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810112992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-11",
+      "status_date": "2018-10-29",
+      "estimated_cost": 7860,
+      "revised_cost": 7860,
+      "description": "reroofing: remove composition shingles and replace with lifetime warranty shingles 19 squares",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M937327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-11",
+      "status_date": "2018-06-22",
+      "revised_cost": 244,
+      "description": "per pa #201407312605, add address to 2nd unit at block 4275, lot 001a as: 1316 hampshire street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M901307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-16",
+      "status_date": "2018-03-16",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M798667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-19",
+      "status_date": "2017-06-19",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407312605",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-07-31",
+      "status_date": "2017-06-19",
+      "estimated_cost": 225000,
+      "revised_cost": 269760,
+      "description": "remodel interior of (e) residential building, including kitchens & baths. add (1) residential unit within (e) envelope at ground level.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1316",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275001A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

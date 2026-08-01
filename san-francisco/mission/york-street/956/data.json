@@ -1,0 +1,149 @@
+{
+  "address": "956 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/956/",
+  "apn": "4144009",
+  "block": "4144",
+  "lot": "009",
+  "eas_baseid": "369299",
+  "coordinates": {
+    "lat": 37.756735,
+    "lng": -122.408842
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1115,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0956 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442098,
+    "assessed_improvement_value": 294727,
+    "last_sale_date": "2001-04-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202508213636",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-08-21",
+      "status_date": "2025-08-21",
+      "estimated_cost": 15749,
+      "revised_cost": 15749,
+      "description": "reroofing. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805142",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-25",
+      "status_date": "1999-03-01",
+      "estimated_cost": 300,
+      "description": "install 1 replacement window in bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505499",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-17",
+      "status_date": "1995-04-28",
+      "estimated_cost": 4000,
+      "description": "install stainless steel flue liners,rebar,pour solid",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-05-03",
+      "status_date": "1991-05-24",
+      "estimated_cost": 2000,
+      "description": "strip shingles, apply plywood per 9102465",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-30",
+      "status_date": "1991-05-24",
+      "estimated_cost": 3300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807749",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-10",
+      "status_date": "1989-05-05",
+      "estimated_cost": 600,
+      "description": "repair front steps, replace supporting beams, stringers",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=956",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4144009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4144&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4144009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40884154946623%2037.75673504266217)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

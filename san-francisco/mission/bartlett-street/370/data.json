@@ -1,0 +1,148 @@
+{
+  "address": "370 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/370/",
+  "apn": "6515009",
+  "block": "6515",
+  "lot": "009",
+  "eas_baseid": "400852",
+  "coordinates": {
+    "lat": 37.751132,
+    "lng": -122.419761
+  },
+  "parcel": {
+    "year_built": 1960,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3053,
+    "building_area_sqft": 3370,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0370 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1159025,
+    "assessed_improvement_value": 495838,
+    "last_sale_date": "2008-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010096281",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-10-09",
+      "status_date": "2026-01-23",
+      "estimated_cost": 30000,
+      "revised_cost": 0,
+      "description": "compliance with 2013 san francisco building code administrative bulletin ab-094. voluntary strengthening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812057539",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2018-12-05",
+      "status_date": "2022-11-14",
+      "estimated_cost": 6000,
+      "description": "legalization of rear level unit per ord #43-14",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711284921",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-11-28",
+      "status_date": "2024-07-02",
+      "estimated_cost": 15000,
+      "revised_cost": 76000,
+      "description": "add a unit at level 1 at street level per ord 162-16",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702239982",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-23",
+      "status_date": "2017-02-23",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "one unit: renovation of kitchen and one bath. high efficacy lightings. for bathroom high efficacy main light with occupancy sensor. no change in wall and opening layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606018843",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-06-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 25000,
+      "revised_cost": 45000,
+      "description": "develop level one storage into bedroom suite including bath and laundry. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212206602",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-12-20",
+      "status_date": "2012-12-20",
+      "estimated_cost": 4775,
+      "revised_cost": 4775,
+      "description": "#1 & #3- install 9 vinyl windows in kind into existing frames. no change in size or location. windows do face the street. if applicable, bedroom windows will comply with section cbc 1026 for rescue. all windows will be double pane and have a u-factor of 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403621",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-03-09",
+      "status_date": "2026-06-02",
+      "estimated_cost": 100,
+      "description": "comply with order of abatement notice",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=370",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6515009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6515&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6515009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

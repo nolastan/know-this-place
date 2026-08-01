@@ -1,0 +1,122 @@
+{
+  "address": "3276–3280 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3276/",
+  "apn": "3593006",
+  "block": "3593",
+  "lot": "006",
+  "eas_baseid": "361345",
+  "coordinates": {
+    "lat": 37.759145,
+    "lng": -122.414198
+  },
+  "address_range": "3276–3280",
+  "street_numbers_on_parcel": [
+    "3276",
+    "3278",
+    "3280"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 4500,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3280 3276 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 848966,
+    "assessed_improvement_value": 212241,
+    "last_sale_date": "2022-06-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502200653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-20",
+      "status_date": "2025-06-30",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "rev to pa# 2025-0113-8201: sqft ceiling in the hallway to run the furnance duct, relocate the kitchen sink, install new furnace, add lights in the hallway and outlets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202501138201",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-13",
+      "status_date": "2025-06-30",
+      "estimated_cost": 18000,
+      "revised_cost": 38888,
+      "description": "replace kitchen cabinets, retile bathroom, new toilet. new vanity, tile, shower enclosure, paint unit, and new laminated floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M233706",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-17",
+      "status_date": "2010-12-17",
+      "revised_cost": 1,
+      "description": "street space for scaffold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823735",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-17",
+      "status_date": "1999-03-25",
+      "estimated_cost": 5000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3276",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3593006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3593&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3593006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

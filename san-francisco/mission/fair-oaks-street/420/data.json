@@ -1,0 +1,92 @@
+{
+  "address": "420 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/420/",
+  "apn": "6534004",
+  "block": "6534",
+  "lot": "004",
+  "eas_baseid": "401494",
+  "coordinates": {
+    "lat": 37.749861,
+    "lng": -122.424109
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3092,
+    "building_area_sqft": 3150,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0420 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42935,
+    "assessed_improvement_value": 79904
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200204255035",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-25",
+      "status_date": "2002-08-25",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "4 windows-remove 4 aluminum sliders replace windows w/double pane sliders 3 in front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116550",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-09",
+      "status_date": "1992-03-09",
+      "estimated_cost": 9250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=420",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6534004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6534&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6534004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

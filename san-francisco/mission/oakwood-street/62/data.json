@@ -1,0 +1,159 @@
+{
+  "address": "62 Oakwood Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/oakwood-street/62/",
+  "apn": "3587056A",
+  "block": "3587",
+  "lot": "056A",
+  "eas_baseid": "361048",
+  "coordinates": {
+    "lat": 37.760575,
+    "lng": -122.42521
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 5,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 3297,
+    "building_area_sqft": 5446,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0062 OAKWOOD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1787563,
+    "assessed_improvement_value": 766098,
+    "last_sale_date": "2020-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911046316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-04",
+      "status_date": "2019-12-03",
+      "estimated_cost": 12000,
+      "revised_cost": 29000,
+      "description": "apt a: kitchen & bathroom remodel, install new cabinets, update (e) electrical & same plumbing locations. maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602038704",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-03",
+      "status_date": "2016-03-29",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install 2 new windows in kitchen area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512084438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-08",
+      "status_date": "2016-03-29",
+      "estimated_cost": 30000,
+      "revised_cost": 35000,
+      "description": "work only on one unit: remove closet, kitchen remodel, new powder room, remove laundry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510270940",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-10-27",
+      "status_date": "2026-01-09",
+      "estimated_cost": 62500,
+      "revised_cost": 66000,
+      "description": "one unit, remodel (e) bedroom apt to become 2 bed, 1 bath; relocate kitchen; (n) windows & space heat/ all interior work, not visble from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411088731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-08",
+      "status_date": "2004-11-18",
+      "estimated_cost": 14200,
+      "revised_cost": 14200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27999",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-06-22",
+      "status_date": "2004-06-22",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27646",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-26",
+      "status_date": "2004-05-26",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814104",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-10-12",
+      "status_date": "1989-01-30",
+      "estimated_cost": 1094,
+      "revised_cost": 0,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKWOOD&street_type=ST&address_number=62",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587056A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=056A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587056A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

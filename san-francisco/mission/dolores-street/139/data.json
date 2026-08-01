@@ -1,0 +1,152 @@
+{
+  "address": "139–143 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/dolores-street/139/",
+  "apn": "3545048",
+  "block": "3545",
+  "lot": "048",
+  "eas_baseid": "358982",
+  "coordinates": {
+    "lat": 37.767288,
+    "lng": -122.426289
+  },
+  "address_range": "139–143",
+  "street_numbers_on_parcel": [
+    "139",
+    "141",
+    "143"
+  ],
+  "parcel": {
+    "year_built": 1918,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 3348,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0143 0139 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162856,
+    "assessed_improvement_value": 594467,
+    "last_sale_date": "1997-05-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605221768",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-22",
+      "status_date": "2026-05-29",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "complete renovation to a 700 sq. ft. apt, including removal and replacement floor, wall and ceiling materials, kitchen and bathroom, rewiring of entire apartment, no wall stud demolition or construction, no change in plumbing fixture count, and no change in location of appliances.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506239216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-23",
+      "status_date": "2025-10-02",
+      "estimated_cost": 19000,
+      "revised_cost": 45215,
+      "description": "kitchen remodel 10x10. demo exisitng cabinets and new cabinet installation. bathroom remodel 7x7. shower pan demolition, new pan installation. tile, new fixtures, medicine cabinet, toilet, sink, and cabinets. shower valve replacement. paint 540 sq ft throughout apartment. paint door inside apt.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309267812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-26",
+      "status_date": "2013-10-16",
+      "estimated_cost": 6850,
+      "revised_cost": 6850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310309008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-30",
+      "status_date": "2003-12-03",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repairs to existing deck & stairs - primarily involving 2 by 6 redwood decking & some joists due to",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-27",
+      "status_date": "1995-04-21",
+      "estimated_cost": 11000,
+      "description": "remove stucco from front of bldg & repair any damaged sheat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-13",
+      "status_date": "1992-10-21",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003414",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-02-22",
+      "status_date": "1992-01-10",
+      "estimated_cost": 7500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=139",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545048",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

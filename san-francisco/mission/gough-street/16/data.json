@@ -1,0 +1,110 @@
+{
+  "address": "16–20 Gough Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/gough-street/16/",
+  "apn": "3504024",
+  "block": "3504",
+  "lot": "024",
+  "eas_baseid": "357710",
+  "coordinates": {
+    "lat": 37.772331,
+    "lng": -122.420532
+  },
+  "address_range": "16–20",
+  "street_numbers_on_parcel": [
+    "16",
+    "18",
+    "20"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2025,
+    "building_area_sqft": 1968,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0020 0016 GOUGH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 787940,
+    "assessed_improvement_value": 525279,
+    "last_sale_date": "2006-06-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "survey_name": "65-67 Crocker Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M504047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-14",
+      "status_date": "2014-07-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004127039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-12",
+      "status_date": "2000-06-08",
+      "estimated_cost": 5250,
+      "revised_cost": 5250,
+      "description": "install vinyl siding to front on building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414040",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-09-09",
+      "status_date": "1994-10-12",
+      "estimated_cost": 3700,
+      "description": "stucco face of building in front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOUGH&street_type=ST&address_number=16",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3504024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3504&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3504024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

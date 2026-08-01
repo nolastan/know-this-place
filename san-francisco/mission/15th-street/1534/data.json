@@ -1,0 +1,152 @@
+{
+  "address": "1534–1536 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/15th-street/1534/",
+  "apn": "3548022",
+  "block": "3548",
+  "lot": "022",
+  "eas_baseid": "359084",
+  "coordinates": {
+    "lat": 37.76686,
+    "lng": -122.418497
+  },
+  "address_range": "1534–1536",
+  "street_numbers_on_parcel": [
+    "1534",
+    "1536"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2517,
+    "building_area_sqft": 2796,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1536 1534 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45275,
+    "assessed_improvement_value": 73588
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606092846",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-09",
+      "status_date": "2026-07-09",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair dry rot subfloor section, remove and reinstall vanity patch holes and paint, bathroom replace 20 sf tile. to comply with nov #202654226.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507080392",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-08",
+      "status_date": "2025-09-12",
+      "estimated_cost": 280,
+      "revised_cost": 280,
+      "description": "change out rear exterior door. not street visible. same size, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108236919",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-08-23",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1930,
+      "revised_cost": 0,
+      "description": "replace (e) steel garage door - traditional style. no window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M180751",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-25",
+      "status_date": "2009-09-25",
+      "revised_cost": 1,
+      "description": "street space permit and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610195471",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-10-19",
+      "status_date": "2007-11-27",
+      "estimated_cost": 8300,
+      "revised_cost": 8300,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610104450",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-10-10",
+      "status_date": "2007-11-27",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819756",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-13",
+      "status_date": "1989-01-18",
+      "estimated_cost": 3775,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1534",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3548022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3548&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3548022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

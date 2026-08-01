@@ -1,0 +1,111 @@
+{
+  "address": "3376 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3376/",
+  "apn": "3636022",
+  "block": "3636",
+  "lot": "022",
+  "eas_baseid": "363787",
+  "coordinates": {
+    "lat": 37.753932,
+    "lng": -122.420301
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1760,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3376 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 211298,
+    "assessed_improvement_value": 316958,
+    "last_sale_date": "1996-06-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "23rd Street Shops and Rowhouses Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1873–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201006023677",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-02",
+      "status_date": "2010-06-02",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006023680",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-02",
+      "status_date": "2010-06-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replacement of sheating. reroofing under separate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3376",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3636022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3636&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3636022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42030113661176%2037.75393215381783)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

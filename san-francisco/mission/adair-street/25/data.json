@@ -1,0 +1,121 @@
+{
+  "address": "25–29 Adair Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/adair-street/25/",
+  "apn": "3553036",
+  "block": "3553",
+  "lot": "036",
+  "eas_baseid": "359271",
+  "coordinates": {
+    "lat": 37.765591,
+    "lng": -122.418043
+  },
+  "address_range": "25–29",
+  "street_numbers_on_parcel": [
+    "25",
+    "27",
+    "29"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 1500,
+    "building_area_sqft": 3161,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0029 0025 ADAIR               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 712554,
+    "assessed_improvement_value": 475028,
+    "last_sale_date": "2003-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Manual change by Planning staff",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505146333",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-05-14",
+      "status_date": "2020-09-17",
+      "estimated_cost": 107000,
+      "revised_cost": 60000,
+      "description": "proposed underpinningfor new construction @ 490 south van ness avenue, pa# 2010/10/05/2342-s.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902101778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-10",
+      "status_date": "2009-03-23",
+      "estimated_cost": 10,
+      "revised_cost": 10,
+      "description": "removel of 7-8' attached wooden ext. ladder @ rear of house per b.o.s ordinance file#081010.removal only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-16",
+      "status_date": "1992-09-25",
+      "estimated_cost": 600,
+      "description": "repair the garage door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400315",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-01-09",
+      "status_date": "1984-04-18",
+      "estimated_cost": 3000,
+      "description": "kitchen & bathroom remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ADAIR&street_type=ST&address_number=25",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3553036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3553&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3553036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

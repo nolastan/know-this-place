@@ -1,0 +1,167 @@
+{
+  "address": "3420–3430 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3420/",
+  "apn": "6529012B",
+  "block": "6529",
+  "lot": "012B",
+  "eas_baseid": "401322",
+  "coordinates": {
+    "lat": 37.749085,
+    "lng": -122.419101
+  },
+  "address_range": "3420–3430",
+  "street_numbers_on_parcel": [
+    "3420",
+    "3422",
+    "3424",
+    "3426",
+    "3428",
+    "3430"
+  ],
+  "also_addressed": [
+    "483 BARTLETT ST"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 6,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 6300,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3430 3420 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 751362,
+    "assessed_improvement_value": 682044,
+    "last_sale_date": "1988-08-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810011850",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-10-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "at 1st story of main building, rear building wall to be upgraded to 1 hour rating.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805149003",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2018-05-14",
+      "status_date": "2019-03-25",
+      "estimated_cost": 40000,
+      "revised_cost": 65000,
+      "description": "at accessory garage building of a 6-unit apartment bldg, convert (e) garage into new accessory dwelling unit with (1) bedroom & (1) bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M184787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-23",
+      "status_date": "2009-11-23",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706204570",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2007-06-20",
+      "status_date": "2010-05-07",
+      "estimated_cost": 500000,
+      "description": "erect: one 3 dwelling, 5 story residential structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9825459",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-14",
+      "status_date": "1999-11-05",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007260",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-04-13",
+      "status_date": "1990-12-06",
+      "estimated_cost": 1500,
+      "description": "repair rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813139",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-01",
+      "status_date": "1988-09-26",
+      "estimated_cost": 1500,
+      "description": "replacement aluminum sash and termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503180",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-03-29",
+      "status_date": "1985-10-01",
+      "estimated_cost": 300,
+      "description": "comply w/ inspection report.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3420",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6529012B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6529&lot=012B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6529012B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

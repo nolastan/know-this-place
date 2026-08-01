@@ -1,0 +1,115 @@
+{
+  "address": "3632 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3632/",
+  "apn": "3578081",
+  "block": "3578",
+  "lot": "081",
+  "eas_baseid": "360498",
+  "coordinates": {
+    "lat": 37.761755,
+    "lng": -122.424644
+  },
+  "parcel": {
+    "year_built": 1885,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2906,
+    "building_area_sqft": 1819,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3632 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 509497,
+    "assessed_improvement_value": 464016,
+    "last_sale_date": "1999-01-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605121111",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-12",
+      "status_date": "2026-07-16",
+      "estimated_cost": 140326,
+      "revised_cost": 138826,
+      "description": "interior remodel at 1st floor storage. new install of bathroom fixtures and finishes. new install of 2nd kitchen fixtures and appliances 2 burner cooktop, no oven). and cabinetry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M137988",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-20",
+      "status_date": "2008-10-20",
+      "revised_cost": 1,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610306414",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-10-30",
+      "status_date": "2009-03-30",
+      "estimated_cost": 209000,
+      "revised_cost": 209000,
+      "description": "seismic foundation upgrade; replace (e) 3 story rear portion of house with 2-story rear yard addition and new 3rd story addition interior remodel. 1'-9\" extension beyond (e) house into rear yard. new 3rd sotry addition is less than 500 sf & does not require 2nd means of egress.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-07",
+      "status_date": "1999-11-12",
+      "estimated_cost": 9500,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3632",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=081",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578081",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

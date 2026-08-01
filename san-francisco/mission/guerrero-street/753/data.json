@@ -1,0 +1,129 @@
+{
+  "address": "753 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/753/",
+  "apn": "3597034",
+  "block": "3597",
+  "lot": "034",
+  "eas_baseid": "361573",
+  "coordinates": {
+    "lat": 37.759139,
+    "lng": -122.423267
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 1635,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0753 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 650871,
+    "assessed_improvement_value": 433910,
+    "last_sale_date": "2002-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202107134296",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-13",
+      "status_date": "2021-09-07",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704199182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-19",
+      "status_date": "2007-05-08",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace side stairs in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M18529",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-11",
+      "status_date": "2002-05-11",
+      "revised_cost": 700,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-27",
+      "status_date": "1998-11-17",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=753",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42326729753403%2037.75913892843919)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

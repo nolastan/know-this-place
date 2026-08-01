@@ -1,0 +1,158 @@
+{
+  "address": "900 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/900/",
+  "apn": "4142001",
+  "block": "4142",
+  "lot": "001",
+  "eas_baseid": "369211",
+  "coordinates": {
+    "lat": 37.757564,
+    "lng": -122.407029
+  },
+  "parcel": {
+    "year_built": 1975,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "bedrooms": 8,
+    "lot_area_sqft": 3500,
+    "building_area_sqft": 5502,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0900 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1121024,
+    "assessed_improvement_value": 480436,
+    "last_sale_date": "2010-07-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1975",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M903407",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-22",
+      "status_date": "2018-03-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803012626",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-01",
+      "status_date": "2018-04-04",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "replacement of all 56 windows of multi-unit building - visible from street. replace (e) aluminum windows with (n) marvin integrity ultrex fiberglass windows. not age-eligible under ceqa. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M893907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-26",
+      "status_date": "2018-02-26",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802221921",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2018-02-22",
+      "status_date": "2019-09-12",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "add 5 units: 2 one bedroom units & 3 studio one unit kitchen and 1 bath for each unit. add units per ordinance 162-17",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301228462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-22",
+      "status_date": "2013-03-05",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "car damage near corner of bldg - install temp shoring, repair stem wall w/new re-enforced concrets doweled into existing. replace posts & 2x6 studs. replace necessary siding. comply w/nov #201384921",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210182341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-18",
+      "status_date": "2013-02-06",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace random broken shingles. approx 1100-1200 each",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9706840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-04-16",
+      "status_date": "1997-05-27",
+      "estimated_cost": 600,
+      "description": "repair of garage door jamb and trim smash by runaway car",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315177",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-02",
+      "status_date": "1993-09-22",
+      "estimated_cost": 875,
+      "description": "repair wall,plywood,wood shingles, patch drywall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=900",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

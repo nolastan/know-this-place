@@ -1,0 +1,127 @@
+{
+  "address": "939 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/939/",
+  "apn": "4142032",
+  "block": "4142",
+  "lot": "032",
+  "eas_baseid": "369237",
+  "coordinates": {
+    "lat": 37.757058,
+    "lng": -122.407415
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1477,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0939 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 207645,
+    "assessed_improvement_value": 248486,
+    "last_sale_date": "1996-03-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901291522",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-01-29",
+      "status_date": "2019-01-29",
+      "estimated_cost": 11000,
+      "revised_cost": 800,
+      "description": "replace rear window at walk-in closet like for like",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409013047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-01",
+      "status_date": "2004-09-07",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408161673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-16",
+      "status_date": "2004-11-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "clarify 3 new skylights on pa 200403239432s/s1 per correction notice",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403239432",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-03-23",
+      "status_date": "2004-11-12",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "interior / bathroom remodel. new deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102162334",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2001-02-16",
+      "status_date": "2003-02-21",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "addition of new floor w/ bedroom suite & deck to (e) 2-story residence-vertical addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=939",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

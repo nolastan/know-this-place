@@ -1,0 +1,143 @@
+{
+  "address": "154–156 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/154/",
+  "apn": "3597050",
+  "block": "3597",
+  "lot": "050",
+  "eas_baseid": "361587",
+  "coordinates": {
+    "lat": 37.759209,
+    "lng": -122.422992
+  },
+  "address_range": "154–156",
+  "street_numbers_on_parcel": [
+    "154",
+    "156"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1820,
+    "building_area_sqft": 3166,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0156 0154 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199125,
+    "assessed_improvement_value": 185185
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201008168825",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-16",
+      "status_date": "2011-07-12",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "removal of the exterior wood utility ladder attached to rear wall of the building at the top of the secondary stairway. (6-8 feet long - 2 feed wide)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501213779",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-21",
+      "status_date": "2005-06-14",
+      "estimated_cost": 550,
+      "revised_cost": 550,
+      "description": "repair back stair case to comply with nov",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908077",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-26",
+      "status_date": "2002-01-28",
+      "estimated_cost": 150,
+      "description": "repair in kind stairway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907032",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-04-27",
+      "status_date": "1989-10-12",
+      "estimated_cost": 572,
+      "description": "reinforcement of back door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502041",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-02-28",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1,
+      "description": "comply with pcd report h21450",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=154",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=050",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597050",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42299238870497%2037.759209234214076)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

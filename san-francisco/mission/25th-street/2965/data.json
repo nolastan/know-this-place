@@ -1,0 +1,93 @@
+{
+  "address": "2965 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2965/",
+  "apn": "4273026A",
+  "block": "4273",
+  "lot": "026A",
+  "eas_baseid": "370928",
+  "coordinates": {
+    "lat": 37.750958,
+    "lng": -122.409489
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 1552,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2965 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 26996,
+    "assessed_improvement_value": 20763
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200905289300",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-05-28",
+      "status_date": "2009-05-28",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "comply with nov 200851766 item 2: new sheetrock installation at walls and ceiling in first floor studio apartment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804328",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1988-04-05",
+      "status_date": "1990-03-29",
+      "estimated_cost": 5,
+      "revised_cost": 600,
+      "description": "bring building into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2965",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4273026A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4273&lot=026A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4273026A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

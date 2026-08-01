@@ -1,0 +1,112 @@
+{
+  "address": "2530 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/2530/",
+  "apn": "4025005",
+  "block": "4025",
+  "lot": "005",
+  "eas_baseid": "367411",
+  "coordinates": {
+    "lat": 37.760848,
+    "lng": -122.40775
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 3500,
+    "building_area_sqft": 1603,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2530 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 241161,
+    "assessed_improvement_value": 199050,
+    "last_sale_date": "1988-01-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9108195",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-05-13",
+      "status_date": "1992-04-06",
+      "estimated_cost": 800,
+      "description": "repair deck boards on existing deck rear of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901254",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-01-25",
+      "status_date": "1989-05-25",
+      "estimated_cost": 200,
+      "description": "replace door, install new door jam",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-22",
+      "status_date": "1989-02-23",
+      "estimated_cost": 600,
+      "description": "replace exterior siding @ social room,remove galvanized pipe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-01-14",
+      "status_date": "1988-07-19",
+      "estimated_cost": 3300,
+      "description": "repair stairs, bays, to comply with s.f. bldg code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=2530",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4025005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4025&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4025005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

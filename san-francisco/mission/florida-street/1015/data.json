@@ -1,0 +1,147 @@
+{
+  "address": "1015 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1015/",
+  "apn": "4150031",
+  "block": "4150",
+  "lot": "031",
+  "eas_baseid": "369550",
+  "coordinates": {
+    "lat": 37.755627,
+    "lng": -122.410109
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1125,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1015 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 711142,
+    "assessed_improvement_value": 765517,
+    "last_sale_date": "2013-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411215493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-21",
+      "status_date": "2024-12-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "1st fl - (e) garage wall & door to be removed;add fire rated wall and 20 min doors. 2nd & 3rd. fl (e) non bearing portion of wall to be removed (2) existing property line window to be infill w/1 hr fire wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410253742",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-25",
+      "status_date": "2024-10-25",
+      "estimated_cost": 312523,
+      "revised_cost": 10000,
+      "description": "recommencement and completion of work approved under pa # 2014-0610-7972",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410253764",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-10-25",
+      "status_date": "2024-10-25",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "revision tp bpa# 2014-0610-7972. change layout on 1st floor and excluded (2) windows, excluded window and post at stairs on 2nd floor. excluded window and bathroom suite on 3rd floor, and changed sun tunnel to a skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1033448",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-01-30",
+      "status_date": "2019-01-30",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M986948",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-28",
+      "status_date": "2018-09-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406107972",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-06-10",
+      "status_date": "2015-08-28",
+      "estimated_cost": 200000,
+      "revised_cost": 312523,
+      "description": "structural & non-structural renovations, alteration of garage entry, addition of partial 3rd fl w/ roof garden & new rear stairway for 2nd means of egress.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009231506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-23",
+      "status_date": "2011-02-03",
+      "estimated_cost": 10900,
+      "revised_cost": 10900,
+      "description": "removal of concrete steps at front, install new framing and new steps, and porch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4150031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4150&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4150031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

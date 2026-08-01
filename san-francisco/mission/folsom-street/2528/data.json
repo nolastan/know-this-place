@@ -1,0 +1,146 @@
+{
+  "address": "2528–2532 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2528/",
+  "apn": "3614067",
+  "block": "3614",
+  "lot": "067",
+  "eas_baseid": "474453",
+  "coordinates": {
+    "lat": 37.756803,
+    "lng": -122.41484
+  },
+  "address_range": "2528–2532",
+  "street_numbers_on_parcel": [
+    "2528",
+    "2530",
+    "2532"
+  ],
+  "parcel": {
+    "year_built": 1978,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 3798,
+    "building_area_sqft": 2790,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2532 2528 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56582,
+    "assessed_improvement_value": 255194
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202508012130",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-01",
+      "status_date": "2025-08-21",
+      "estimated_cost": 16555,
+      "revised_cost": 16555,
+      "description": "dry rot repair, install new flashing around skylights, general repair to ensure weather tight conditions- seal all joints roof repair. work at roof and rear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804099296",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-09",
+      "status_date": "2008-05-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to correct addresses on app#2006/12/14/9893 & 2007/12/13/0383 to be known as 2528-2530-2532 folsom st instead of 2530 & 2532 folsom st only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M102125",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-01-09",
+      "status_date": "2008-01-09",
+      "revised_cost": 1,
+      "description": "add/verify address (#2528 back unit on 1/f)(#2530 back unit on 2/f)(#2532 front unit on 2/f)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712130383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-13",
+      "status_date": "2008-05-30",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "increase of value of cost per inspector instruction $45,000. reference pa# 2006/12/14/9893.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612149893",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-12-14",
+      "status_date": "2008-05-30",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "legalize lower unit adjacent to garage at ground level.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2528",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3614067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3614&lot=067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3614067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4148401359768%2037.756802784289185)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

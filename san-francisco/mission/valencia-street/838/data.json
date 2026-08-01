@@ -1,0 +1,120 @@
+{
+  "address": "838 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/838/",
+  "apn": "3597073",
+  "block": "3597",
+  "lot": "073",
+  "eas_baseid": "463598",
+  "coordinates": {
+    "lat": 37.759477,
+    "lng": -122.421682
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "lot_area_sqft": 2800,
+    "building_area_sqft": 5040,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0838 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223534,
+    "assessed_improvement_value": 239503
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201207175045",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-17",
+      "status_date": "2012-07-23",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "comply w/complaint #201233941 & 201233261: extend a handrail remove non-required ladder, replace window (if needed).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28101",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-06-29",
+      "status_date": "2004-06-29",
+      "revised_cost": 0,
+      "description": "side walk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402196731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-19",
+      "status_date": "2004-04-16",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "repair/replace dryrot back stairs w/pressure treated & 2 times redwood steps. no modification & stru",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515205",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-15",
+      "status_date": "1996-05-29",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925466",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-12-29",
+      "status_date": "1990-06-01",
+      "estimated_cost": 15000,
+      "description": "sheetrock, taping & texturing walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=838",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597073",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

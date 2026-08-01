@@ -1,0 +1,104 @@
+{
+  "address": "515 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/515/",
+  "apn": "4013020",
+  "block": "4013",
+  "lot": "020",
+  "eas_baseid": "367313",
+  "coordinates": {
+    "lat": 37.762565,
+    "lng": -122.4069
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2424,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0515 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53107,
+    "assessed_improvement_value": 79904
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402135777",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-02-13",
+      "status_date": "2024-02-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202001021132. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001021132",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-02",
+      "status_date": "2020-01-02",
+      "estimated_cost": 1200,
+      "revised_cost": 3500,
+      "description": "lower lvl: sheet rock wall and closet, refinish hardwood floors, install new cabinets, new electrical plugs in kitchen, replace windows, taking up old floor in kitchen and replace, carpet steps and painting, outlets in basement. new front windows, wood or aluminum wood-clad, 6 windows, single hung.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110241550",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-24",
+      "status_date": "2002-02-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=515",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4013020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4013&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4013020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

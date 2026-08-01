@@ -1,0 +1,109 @@
+{
+  "address": "14–16 Dolores Terrace, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-terrace/14/",
+  "apn": "3578071B",
+  "block": "3578",
+  "lot": "071B",
+  "eas_baseid": "360484",
+  "coordinates": {
+    "lat": 37.762791,
+    "lng": -122.424997
+  },
+  "address_range": "14–16",
+  "street_numbers_on_parcel": [
+    "14",
+    "16"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1028,
+    "building_area_sqft": 1630,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0016 0014 DOLORES             TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 802886,
+    "assessed_improvement_value": 535254,
+    "last_sale_date": "2004-09-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305198122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-19",
+      "status_date": "2024-01-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace (5) street facing windows. material is wood w/ alum clad. no size change. u-fact<.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310207942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-20",
+      "status_date": "2003-11-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace in kind in back yard which are rotted",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715411",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-13",
+      "status_date": "1998-07-30",
+      "estimated_cost": 3985,
+      "description": "repl 3 windows in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=TER&address_number=14",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578071B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=071B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578071B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

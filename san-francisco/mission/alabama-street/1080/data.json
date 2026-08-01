@@ -1,0 +1,146 @@
+{
+  "address": "1080 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1080/",
+  "apn": "4148012",
+  "block": "4148",
+  "lot": "012",
+  "eas_baseid": "369453",
+  "coordinates": {
+    "lat": 37.754679,
+    "lng": -122.411431
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1080 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 26765,
+    "assessed_improvement_value": 35315
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708043922",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-04",
+      "status_date": "2017-10-25",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "remove existing composite shingle roof inside patio to workable surface. install new metal seam roof. roofing work @ central patio only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609289025",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-28",
+      "status_date": "2017-10-27",
+      "estimated_cost": 7850,
+      "revised_cost": 7850,
+      "description": "install 1 skylight on existing curb on flat roof over existing interior lightwell atrium",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603303471",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-30",
+      "status_date": "2017-02-17",
+      "estimated_cost": 20400,
+      "revised_cost": 20400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M177046",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-17",
+      "status_date": "2009-08-17",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806204984",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-20",
+      "status_date": "2008-11-21",
+      "estimated_cost": 7600,
+      "revised_cost": 7600,
+      "description": "replace 3 front windows with double pane broze anodized windows of same style/format .67 u factor max. replace 3 patio windows with anodized double paine windows of similar style /format.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317681",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-08",
+      "status_date": "1994-03-09",
+      "estimated_cost": 1475,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-05-01",
+      "status_date": "1989-12-01",
+      "estimated_cost": 9086,
+      "description": "vinyl siding (alside) to back and back sides.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1080",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

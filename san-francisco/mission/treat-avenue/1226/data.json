@@ -1,0 +1,133 @@
+{
+  "address": "1226–1228 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1226/",
+  "apn": "6524006",
+  "block": "6524",
+  "lot": "006",
+  "eas_baseid": "401140",
+  "coordinates": {
+    "lat": 37.750486,
+    "lng": -122.413092
+  },
+  "address_range": "1226–1228",
+  "street_numbers_on_parcel": [
+    "1226",
+    "1228"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 3360,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1228 1226 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 694832,
+    "assessed_improvement_value": 297778,
+    "last_sale_date": "2009-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M640387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-24",
+      "status_date": "2015-11-24",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-13",
+      "status_date": "2015-09-04",
+      "estimated_cost": 2500,
+      "revised_cost": 9037,
+      "description": "change floor tile, tile tub surround, install new vanity, no walls moved, removed or added, all fixture location and layout to remain unchanged",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410209318",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-20",
+      "status_date": "2015-09-04",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel one existing bath, remove tub and replace with shower, replace toilet and sink to stay in existing location in top level, high efficacy lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110186992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-18",
+      "status_date": "2012-08-31",
+      "estimated_cost": 12000,
+      "revised_cost": 18000,
+      "description": "job location: 1226 treat avenue only: remodel one unit bathroom in kind. add dishwasher to (e) kitchen; replace kitchen cabinets and counters in kind. all (n) lighting must comply with cec 150(k) 8 & 10.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504805S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-04-04",
+      "status_date": "1996-08-01",
+      "estimated_cost": 35000,
+      "revised_cost": 50500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1226",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "address": "332–338 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/332/",
+  "apn": "3590072",
+  "block": "3590",
+  "lot": "072",
+  "eas_baseid": "361324",
+  "coordinates": {
+    "lat": 37.761307,
+    "lng": -122.418541
+  },
+  "address_range": "332–338",
+  "street_numbers_on_parcel": [
+    "332",
+    "334",
+    "336",
+    "338"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 12,
+    "stories": 3,
+    "rooms": 43,
+    "bathrooms": 13,
+    "lot_area_sqft": 4325,
+    "building_area_sqft": 9975,
+    "basement_area_sqft": 900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0338 0332 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215061,
+    "assessed_improvement_value": 328552
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310188872",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-18",
+      "status_date": "2024-02-08",
+      "estimated_cost": 32400,
+      "revised_cost": 47973,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710131182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-13",
+      "status_date": "2019-09-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201606028961 for soft story retrofit 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606028961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-02",
+      "status_date": "2019-09-13",
+      "estimated_cost": 20000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M329267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-21",
+      "status_date": "2012-06-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405184149",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-05-18",
+      "status_date": "2005-06-20",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "repair & refinish (e) wood stair. replace in kind. less than 50% of stairway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8616261",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1986-12-29",
+      "status_date": "1987-11-17",
+      "description": "demolish residential",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506874",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-07-01",
+      "status_date": "1985-10-24",
+      "estimated_cost": 750,
+      "description": "demo rear 12'x12' one story addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110683",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-18",
+      "status_date": "1983-03-04",
+      "estimated_cost": 21000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=332",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&lot=072",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3590072",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

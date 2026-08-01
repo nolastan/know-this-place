@@ -1,0 +1,140 @@
+{
+  "address": "34–36 Alvarado Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alvarado-street/34/",
+  "apn": "3633007",
+  "block": "3633",
+  "lot": "007",
+  "eas_baseid": "363705",
+  "coordinates": {
+    "lat": 37.754676,
+    "lng": -122.422081
+  },
+  "address_range": "34–36",
+  "street_numbers_on_parcel": [
+    "34",
+    "36"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2873.94,
+    "building_area_sqft": 1190,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0034 ALVARADO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292846,
+    "assessed_improvement_value": 229384,
+    "last_sale_date": "1987-06-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201201303111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-30",
+      "status_date": "2013-01-25",
+      "estimated_cost": 1514,
+      "revised_cost": 1514,
+      "description": "replace 1 patio door, not visible from the street. no structural changes. max u factor is 0.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804099208",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-04-09",
+      "status_date": "2009-03-18",
+      "estimated_cost": 9945,
+      "revised_cost": 9945,
+      "description": "work @ one unit only. replace 8 windows into existing opening. not visible from the street. no structural changes. u factor 0.67 maximum.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809877",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-01",
+      "status_date": "1999-03-15",
+      "estimated_cost": 800,
+      "description": "remove & replace water damage sheet rock approx 25-30 sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518799",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-07",
+      "status_date": "1996-03-12",
+      "estimated_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308040",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-13",
+      "status_date": "1993-10-14",
+      "estimated_cost": 3300,
+      "description": "repair stairs exterior (structural)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8105539",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-06-19",
+      "status_date": "1981-11-25",
+      "estimated_cost": 300,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALVARADO&street_type=ST&address_number=34",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3633007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3633&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3633007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

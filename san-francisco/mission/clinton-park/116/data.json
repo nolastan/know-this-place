@@ -1,0 +1,119 @@
+{
+  "address": "116–118 Clinton Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/clinton-park/116/",
+  "apn": "3533038",
+  "block": "3533",
+  "lot": "038",
+  "eas_baseid": "358370",
+  "coordinates": {
+    "lat": 37.769385,
+    "lng": -122.422821
+  },
+  "address_range": "116–118",
+  "street_numbers_on_parcel": [
+    "116",
+    "118"
+  ],
+  "parcel": {
+    "year_built": 1958,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1920,
+    "building_area_sqft": 2318,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0118 0116 CLINTON             PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 350372,
+    "last_sale_date": "1998-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M515587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-05",
+      "status_date": "2014-09-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207312735",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-07-31",
+      "status_date": "2002-07-31",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008097377",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-09",
+      "status_date": "2000-12-09",
+      "estimated_cost": 2612,
+      "revised_cost": 2612,
+      "description": "4 windows to be replaced size for size back of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907837",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-22",
+      "status_date": "2000-11-20",
+      "estimated_cost": 3850,
+      "description": "install 6 replacement windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLINTON&street_type=PARK&address_number=116",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

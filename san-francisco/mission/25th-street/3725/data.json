@@ -1,0 +1,107 @@
+{
+  "address": "3725–3727 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3725/",
+  "apn": "6533039",
+  "block": "6533",
+  "lot": "039",
+  "eas_baseid": "401487",
+  "coordinates": {
+    "lat": 37.750095,
+    "lng": -122.423315
+  },
+  "address_range": "3725–3727",
+  "street_numbers_on_parcel": [
+    "3725",
+    "3727"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 3,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 5400,
+    "lot_depth_ft": 10,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3727 3725 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 163242,
+    "assessed_improvement_value": 319992
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M858307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-11-22",
+      "status_date": "2017-11-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M844208",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-16",
+      "status_date": "2017-10-16",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17856",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-26",
+      "status_date": "2002-03-26",
+      "revised_cost": 300,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3725",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6533039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6533&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6533039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

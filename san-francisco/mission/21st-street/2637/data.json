@@ -1,0 +1,121 @@
+{
+  "address": "2637–2641 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2637/",
+  "apn": "4142038",
+  "block": "4142",
+  "lot": "038",
+  "eas_baseid": "369243",
+  "coordinates": {
+    "lat": 37.757497,
+    "lng": -122.407501
+  },
+  "address_range": "2637–2641",
+  "street_numbers_on_parcel": [
+    "2637",
+    "2639",
+    "2641"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 4149,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2641 2637 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187587,
+    "assessed_improvement_value": 365866,
+    "last_sale_date": "1988-08-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301300997",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-30",
+      "status_date": "2023-02-13",
+      "estimated_cost": 7000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301300998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-30",
+      "status_date": "2023-02-24",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "violation 202293201: bring outdoor stairs up to code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208291463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-29",
+      "status_date": "2023-02-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "complying with complaint #202293083 violation #7 locate source of water damage and #8: remove and replace (14) windows (windows not seen from street) replace with tempered, double pane double hung.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415622",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-26",
+      "status_date": "1995-03-26",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2637",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

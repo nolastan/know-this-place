@@ -1,0 +1,140 @@
+{
+  "address": "134–136 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/134/",
+  "apn": "3636039",
+  "block": "3636",
+  "lot": "039",
+  "eas_baseid": "363805",
+  "coordinates": {
+    "lat": 37.754222,
+    "lng": -122.420069
+  },
+  "address_range": "134–136",
+  "street_numbers_on_parcel": [
+    "134",
+    "136"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 4073,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0134 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2748528,
+    "assessed_improvement_value": 1177940,
+    "last_sale_date": "2021-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "S20260224486",
+      "status": "complete",
+      "filed": "2026-02-26",
+      "status_date": "2026-05-13",
+      "revised_cost": 24000,
+      "description": "solar permit: installing 20 solar pv modules, 440 watts per module, total no. of rating 8.8 kw. mounted: roof, ballasted: n, including 2 energy storage unit, with 15 kwh each in capacity, ess units will not be closer than 3 feet | (n) residential roof-mount solar pv,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201246528",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-01-24",
+      "status_date": "2022-01-24",
+      "estimated_cost": 33400,
+      "revised_cost": 33400,
+      "description": "replace dryrot siding on south side of the building. siding is not street facing. approx. 1540 sqft. replace (2) gas tankless water heaters on side of the building. replace siding in like kind and paint 1540 sqft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M274815",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-10",
+      "status_date": "2011-08-10",
+      "revised_cost": 267,
+      "description": "add new address for pa #201005072014 for creating a new unit in the building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103111903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-11",
+      "status_date": "2011-11-16",
+      "estimated_cost": 1,
+      "revised_cost": 2000,
+      "description": "revision to appl #201005072014.: engineering updates, added cc caps, posts in beam, side of wall shear applied, block & strapping, length of shear wall 4/s5, footing length on foundation plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005072014",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-05-07",
+      "status_date": "2011-11-16",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "construct a small horizontal addition at the rear of (e) 2 story bldg totalling 133 sq. ft. 2 stories. also a deck @ rear of bldg (183 sq. ft), interior renovations thru out (incl kit. bathrms), remodel unit downstairs, and demolish dilapidated shed @ bldg rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700668",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-01-13",
+      "status_date": "1997-06-24",
+      "estimated_cost": 11600,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=134",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3636039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3636&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3636039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

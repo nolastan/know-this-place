@@ -1,0 +1,149 @@
+{
+  "address": "3653 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3653/",
+  "apn": "6511001C",
+  "block": "6511",
+  "lot": "001C",
+  "eas_baseid": "400719",
+  "coordinates": {
+    "lat": 37.751694,
+    "lng": -122.424257
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 8,
+    "stories": 2,
+    "rooms": 21,
+    "bathrooms": 8,
+    "bedrooms": 5,
+    "lot_area_sqft": 3624,
+    "building_area_sqft": 5822,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3653 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 831732,
+    "assessed_improvement_value": 1063498,
+    "last_sale_date": "2003-09-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910023321",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-02",
+      "status_date": "2020-07-02",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "soft story addition of steel ordinary moment frame at garage front elevaton with foundaton work, comply with nov",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704179013",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-04-17",
+      "status_date": "2009-02-05",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reinforce masonry foundation per plans in existing laundry room only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604280155",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-28",
+      "status_date": "2006-05-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew (e) pa#2005/11/22/8764, 2004/09/02/3216 for final insp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511228764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-22",
+      "status_date": "2006-11-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "infill below (e) habitable space- remove (e) stair & infill to expand (e) residential units. below (e) habitable space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511188618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-18",
+      "status_date": "2006-05-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise and renew 200409023216. new header to existing opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409023216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-02",
+      "status_date": "2006-05-03",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reapair dryrot @ one unit entry & remodel (e) kitchen in one unit. dry rot repair to effect entry landin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9812890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-08",
+      "status_date": "1998-07-31",
+      "estimated_cost": 9459,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3653",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511001C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=001C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511001C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

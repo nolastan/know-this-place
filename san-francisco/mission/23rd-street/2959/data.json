@@ -1,0 +1,136 @@
+{
+  "address": "2959 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2959/",
+  "apn": "4206036A",
+  "block": "4206",
+  "lot": "036A",
+  "eas_baseid": "370083",
+  "coordinates": {
+    "lat": 37.754176,
+    "lng": -122.411401
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 1947,
+    "building_area_sqft": 2915,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2959 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2403324,
+    "assessed_improvement_value": 1029996,
+    "last_sale_date": "2023-06-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208080082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-08",
+      "status_date": "2023-04-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "structural revisions to pa201707212560: shifted shearwall & walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203210427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-21",
+      "status_date": "2023-04-12",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "interior remodel: within the envelope, no change of front, no addition. remodel finishes, kitchen, and 3 bathrooms. finishes including: tiles, flooring, sheetrock, insulation. no moving walls/framing modification. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707212560",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-07-21",
+      "status_date": "2023-04-12",
+      "estimated_cost": 200000,
+      "revised_cost": 347650,
+      "description": "not adu (no adu on project). addition to rear of bldg (no change to front)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M708828",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-27",
+      "status_date": "2016-07-27",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217364",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-10-13",
+      "status_date": "1993-09-14",
+      "estimated_cost": 3900,
+      "description": "remove (e) roof, install 4-ply built-up roof- 33lb glas base",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213620",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-08-14",
+      "status_date": "1993-12-27",
+      "estimated_cost": 6250,
+      "description": "repair siding, ext. paint (front complete) drywall repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2959",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206036A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=036A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206036A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

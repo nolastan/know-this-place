@@ -1,0 +1,145 @@
+{
+  "address": "1100–1102 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1100/",
+  "apn": "6526001",
+  "block": "6526",
+  "lot": "001",
+  "eas_baseid": "401208",
+  "coordinates": {
+    "lat": 37.750694,
+    "lng": -122.415227
+  },
+  "address_range": "1100–1102",
+  "street_numbers_on_parcel": [
+    "1100",
+    "1102"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2135,
+    "building_area_sqft": 2504,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1102 1100 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234266,
+    "assessed_improvement_value": 292846
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202404250705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-25",
+      "status_date": "2024-07-11",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "inkind kitchen and bathroom remodel, no removal of walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M24354",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-18",
+      "status_date": "2003-07-18",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307159558",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-07-15",
+      "status_date": "2004-03-30",
+      "estimated_cost": 12400,
+      "revised_cost": 12400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105159166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-15",
+      "status_date": "2001-06-21",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "grip rails on rear stairs complaint 200117055",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700245",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-01-08",
+      "status_date": "1987-07-08",
+      "estimated_cost": 6000,
+      "description": "repair porch flooring",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1100",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6526001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6526&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6526001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41522680356482%2037.75069405835183)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

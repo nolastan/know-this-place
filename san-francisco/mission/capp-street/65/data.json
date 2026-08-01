@@ -1,0 +1,134 @@
+{
+  "address": "65 Capp Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/capp-street/65/",
+  "apn": "3553041",
+  "block": "3553",
+  "lot": "041",
+  "eas_baseid": "359275",
+  "coordinates": {
+    "lat": 37.765783,
+    "lng": -122.418409
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1125,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0065 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 239503,
+    "last_sale_date": "1997-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405095424",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2014-05-09",
+      "status_date": "2022-11-15",
+      "estimated_cost": 35000,
+      "description": "change of use from single family to single family with restaurant on ground floor. ada lift and bathroom and 3 basin sink in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609182592",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-18",
+      "status_date": "2006-10-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609182593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-18",
+      "status_date": "2006-10-10",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace 5 windows 1 sliding door bl only at rear of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711749",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1987-08-17",
+      "status_date": "1989-04-21",
+      "estimated_cost": 1000,
+      "description": "legalize as live work occupancy, no work done/reference only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207670",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-20",
+      "status_date": "1983-03-04",
+      "estimated_cost": 30000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207432",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-08",
+      "status_date": "1983-03-04",
+      "estimated_cost": 10000,
+      "description": "bldg use: dwg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=65",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3553041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3553&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3553041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

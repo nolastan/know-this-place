@@ -1,0 +1,114 @@
+{
+  "address": "2619 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2619/",
+  "apn": "4153032A",
+  "block": "4153",
+  "lot": "032A",
+  "eas_baseid": "369667",
+  "coordinates": {
+    "lat": 37.755906,
+    "lng": -122.407217
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 1650,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2619A2619 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1034390,
+    "assessed_improvement_value": 648967,
+    "last_sale_date": "2008-01-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907176184",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-07-17",
+      "status_date": "2020-10-29",
+      "estimated_cost": 14450,
+      "revised_cost": 50000,
+      "description": "build an (e) adu at the rear of the peroperty per sf city ord #162-16.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803143624",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-14",
+      "status_date": "2018-03-21",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "to comply with nov 201831919. replaced a gate that was no longer save. built an iron gate in front of property for security. 5'-6\" from retaining wall to top of the gate. there is another portion in front of the drivewa that is 6'.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M256826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-04-26",
+      "status_date": "2011-04-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9212273",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-07-23",
+      "status_date": "1993-03-04",
+      "estimated_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2619",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153032A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=032A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153032A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

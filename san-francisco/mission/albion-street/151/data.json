@@ -1,0 +1,111 @@
+{
+  "address": "151–153 Albion Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/albion-street/151/",
+  "apn": "3568020",
+  "block": "3568",
+  "lot": "020",
+  "eas_baseid": "360007",
+  "coordinates": {
+    "lat": 37.764006,
+    "lng": -122.422459
+  },
+  "address_range": "151–153",
+  "street_numbers_on_parcel": [
+    "151",
+    "153"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 6,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 4320,
+    "building_area_sqft": 4182,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0151 ALBION              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 422659,
+    "assessed_improvement_value": 461081,
+    "last_sale_date": "1999-11-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708255951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-25",
+      "status_date": "2019-05-28",
+      "estimated_cost": 49500,
+      "revised_cost": 49500,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208036479",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-03",
+      "status_date": "2012-08-03",
+      "estimated_cost": 22500,
+      "revised_cost": 22500,
+      "description": "underpin exisitng foundation per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503211",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-01",
+      "status_date": "1986-03-04",
+      "estimated_cost": 600,
+      "description": "to bring building into full compliance with the provisions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALBION&street_type=ST&address_number=151",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

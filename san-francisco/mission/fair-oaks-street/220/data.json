@@ -1,0 +1,170 @@
+{
+  "address": "220 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/220/",
+  "apn": "3648007",
+  "block": "3648",
+  "lot": "007",
+  "eas_baseid": "364300",
+  "coordinates": {
+    "lat": 37.752867,
+    "lng": -122.424215
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 8,
+    "stories": 2,
+    "rooms": 26,
+    "bathrooms": 8,
+    "lot_area_sqft": 3641,
+    "building_area_sqft": 5312,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0220 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1779500,
+    "assessed_improvement_value": 818354,
+    "last_sale_date": "2005-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201909252677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-25",
+      "status_date": "2021-03-19",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "upgrade (e) fa system to comply with sffc section 1103.7.6.1 and ref 201705151517",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703151512",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-15",
+      "status_date": "2017-08-25",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "seismic upgrade to comply with adopted ordinance 66-13 soft story retrofit per sfbc chapter 34b 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106067493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-06",
+      "status_date": "2011-07-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 4 windows in kind, visable from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M263726",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-24",
+      "status_date": "2011-05-24",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M189687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-02",
+      "status_date": "2010-02-02",
+      "revised_cost": 1,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816019",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-14",
+      "status_date": "1999-03-01",
+      "estimated_cost": 7394,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804825",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-14",
+      "status_date": "1988-07-22",
+      "estimated_cost": 2800,
+      "description": "fire damage repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611359",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-15",
+      "status_date": "1987-11-16",
+      "estimated_cost": 10000,
+      "description": "repairs to one unit due to fire damage 4'x8' sheet rock",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=220",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3648007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3648&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3648007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42421543536184%2037.75286700425678)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

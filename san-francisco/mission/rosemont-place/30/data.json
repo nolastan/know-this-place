@@ -1,0 +1,106 @@
+{
+  "address": "30 Rosemont Place, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/rosemont-place/30/",
+  "apn": "3534023",
+  "block": "3534",
+  "lot": "023",
+  "eas_baseid": "358436",
+  "coordinates": {
+    "lat": 37.76853,
+    "lng": -122.42587
+  },
+  "parcel": {
+    "year_built": 1976,
+    "units": 6,
+    "stories": 2,
+    "rooms": 26,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 5500,
+    "building_area_sqft": 5040,
+    "lot_depth_ft": 10,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0030 ROSEMONT            PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 204908,
+    "assessed_improvement_value": 384192,
+    "assessed_fixtures_value": 2100
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1976",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402236429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-23",
+      "status_date": "2024-06-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace (12) aluminum windows w/ fibrex windows. all visible from the street. u=0.30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403281945",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-28",
+      "status_date": "2014-05-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "comply with sfbc chap. 34b, structural calculations based on fema p-807",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900737",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-01-12",
+      "status_date": "1999-02-09",
+      "estimated_cost": 2100,
+      "description": "replace deck planking in various area on small decks at rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROSEMONT&street_type=PL&address_number=30",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

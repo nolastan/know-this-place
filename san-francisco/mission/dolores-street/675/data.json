@@ -1,0 +1,153 @@
+{
+  "address": "675 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/675/",
+  "apn": "3598027",
+  "block": "3598",
+  "lot": "027",
+  "eas_baseid": "361634",
+  "coordinates": {
+    "lat": 37.758599,
+    "lng": -122.425413
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 12,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 12,
+    "bedrooms": 12,
+    "lot_area_sqft": 3937.5,
+    "building_area_sqft": 9033,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0675 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 298704,
+    "assessed_improvement_value": 1413939
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202307262995",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-26",
+      "status_date": "2023-10-10",
+      "estimated_cost": 75600,
+      "revised_cost": 75600,
+      "description": "re-roofing. replace in-kind flat roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107154430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-15",
+      "status_date": "2021-08-17",
+      "estimated_cost": 20000,
+      "revised_cost": 21843,
+      "description": "voluntary upgrade of existing fire alarm system to comply with sffc section 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509177227",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-09-17",
+      "status_date": "2017-03-21",
+      "estimated_cost": 30000,
+      "revised_cost": 86000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria fema p-807.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302117235",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-02-11",
+      "status_date": "2003-02-11",
+      "estimated_cost": 9834,
+      "revised_cost": 9834,
+      "description": "install vinyl siding on the backside of the house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008228617",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-22",
+      "status_date": "2001-09-12",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "replace windows in kind front rear & side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412612",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-08",
+      "status_date": "1995-05-22",
+      "estimated_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=675",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42541289310347%2037.75859870913122)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "address": "1014–1018 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1014/",
+  "apn": "4149001A",
+  "block": "4149",
+  "lot": "001A",
+  "eas_baseid": "369479",
+  "coordinates": {
+    "lat": 37.755597,
+    "lng": -122.410533
+  },
+  "address_range": "1014–1018",
+  "street_numbers_on_parcel": [
+    "1014",
+    "1016",
+    "1018"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 1500,
+    "building_area_sqft": 3150,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1018 1014 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 109504,
+    "assessed_improvement_value": 189168
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602189947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-18",
+      "status_date": "2016-05-05",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace kitchen cabinets, counter top, replace water heater & laundry plumbing. replace furnace in the unoccupied attic & serving habitable spaces below. no lighting change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409247231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-24",
+      "status_date": "2014-10-28",
+      "estimated_cost": 8000,
+      "revised_cost": 12000,
+      "description": "replace bathtub, vanity, toilet in-kind, tile wall, tile floor, change light fixture.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406027211",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-02",
+      "status_date": "2014-06-25",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "comply with item 2 of nov 201469641- repair stair approx. 10%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405276764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-27",
+      "status_date": "2014-09-03",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "repair kitchen - new counter, new cabinets. repair bath - new toilet, new sink, new tub surround. no structural changes, everything in same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603227262",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-22",
+      "status_date": "2006-06-07",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "fire repair like for like plaster repair small stud repair (in kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602243",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-02-27",
+      "status_date": "1986-09-04",
+      "estimated_cost": 2000,
+      "description": "cement form at base of rear steps",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149001A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

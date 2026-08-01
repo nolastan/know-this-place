@@ -1,0 +1,157 @@
+{
+  "address": "1302–1310 Minna Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/minna-street/1302/",
+  "apn": "3548041",
+  "block": "3548",
+  "lot": "041",
+  "eas_baseid": "359102",
+  "coordinates": {
+    "lat": 37.768129,
+    "lng": -122.419319
+  },
+  "address_range": "1302–1310",
+  "street_numbers_on_parcel": [
+    "1302",
+    "1304",
+    "1306",
+    "1308",
+    "1310"
+  ],
+  "also_addressed": [
+    "269 14TH ST"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 5,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 6188,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1310 1302 MINNA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 156171,
+    "assessed_improvement_value": 273320
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307313335",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-07-31",
+      "status_date": "2023-07-31",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace (e) furnace w/ new. new flue to rent furnace. fixing small dryrot & paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301311046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-31",
+      "status_date": "2023-02-24",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace dry rotted wooden posts at rear deck, stair landing. like for like replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610271299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-27",
+      "status_date": "2016-11-02",
+      "estimated_cost": 25500,
+      "revised_cost": 25500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607253175",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-25",
+      "status_date": "2016-07-25",
+      "estimated_cost": 25500,
+      "revised_cost": 25000,
+      "description": "replace (e) roof in-kind, no alterations. remove existing roofing, build up roof less than 2/12 pitch, apply (n) 30lb base sheet, 3 layers of 11 lb ply sheet with flood coat of asphalt and gravel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606039120",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-03",
+      "status_date": "2016-06-03",
+      "estimated_cost": 31500,
+      "revised_cost": 31500,
+      "description": "to comply with violation #201620395. replace fire escape to roof ladder with new galv. metal ladder. repair dry rot in front of building, replace building sking, in kind, replace w/ matching molding detail. replace old breaker box from 100 amp to upgrade 200 amps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004022",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-01",
+      "status_date": "1990-07-01",
+      "estimated_cost": 950,
+      "description": "replace all steps 32. and repair three wood landings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509243",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-23",
+      "status_date": "1986-08-13",
+      "estimated_cost": 1900,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNA&street_type=ST&address_number=1302",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3548041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3548&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3548041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

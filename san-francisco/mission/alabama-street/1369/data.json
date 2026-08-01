@@ -1,0 +1,130 @@
+{
+  "address": "1369–1371 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1369/",
+  "apn": "4272023",
+  "block": "4272",
+  "lot": "023",
+  "eas_baseid": "370897",
+  "coordinates": {
+    "lat": 37.750019,
+    "lng": -122.410431
+  },
+  "address_range": "1369–1371",
+  "street_numbers_on_parcel": [
+    "1369",
+    "1371"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3014,
+    "building_area_sqft": 2360,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1371 1369 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 92183,
+    "last_sale_date": "1995-10-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409130757",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-13",
+      "status_date": "2024-09-18",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904299199",
+      "type": "otc alterations permit",
+      "status": "suspend",
+      "filed": "2019-04-29",
+      "status_date": "2025-08-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to change address to 1371 alabama st on pa 201808278456",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808278456",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-27",
+      "status_date": "2019-09-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to comply with nov #201882561 and 201886261 heating, windows, bathroom, kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720915",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-17",
+      "status_date": "1999-03-01",
+      "estimated_cost": 3700,
+      "description": "plumbing/install of new linoleum and srub floor/rpr concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503649",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-15",
+      "status_date": "1995-09-15",
+      "estimated_cost": 6250,
+      "description": "termite & dryrot damage repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1369",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4272023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4272&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4272023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

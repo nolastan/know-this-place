@@ -1,0 +1,118 @@
+{
+  "address": "1040 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1040/",
+  "apn": "3640043B",
+  "block": "3640",
+  "lot": "043B",
+  "eas_baseid": "363998",
+  "coordinates": {
+    "lat": 37.753442,
+    "lng": -122.413387
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 3185,
+    "building_area_sqft": 2481,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1040 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1925000,
+    "assessed_improvement_value": 825000,
+    "last_sale_date": "2022-04-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106132278",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-13",
+      "status_date": "2022-03-02",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102245213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-24",
+      "status_date": "2022-03-02",
+      "estimated_cost": 500,
+      "revised_cost": 4000,
+      "description": "revision to pa# 202009124072. reconfigure layout per plan. add 1 new skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009124072",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-12",
+      "status_date": "2022-03-02",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "description": "revision to bpa#202002275633. remove roof deck & relocate interior stairs; 1/f reconfigure layout per plans & rear patio, new wet bar; 2/f relocate kitch per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002275633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-27",
+      "status_date": "2022-03-02",
+      "estimated_cost": 95000,
+      "revised_cost": 160000,
+      "description": "1/f: add 2 bedrooms, 2 full baths, and family room; 2/f: remodel kitchen and bath, add (1) full bath, add roof deck, reconfigure interior stairs, new patio at rear, replace front windows in-kind with aluminum-wood clad.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640043B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=043B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640043B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

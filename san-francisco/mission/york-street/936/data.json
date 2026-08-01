@@ -1,0 +1,125 @@
+{
+  "address": "936–940 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/936/",
+  "apn": "4144005",
+  "block": "4144",
+  "lot": "005",
+  "eas_baseid": "369295",
+  "coordinates": {
+    "lat": 37.757012,
+    "lng": -122.408868
+  },
+  "address_range": "936–940",
+  "street_numbers_on_parcel": [
+    "936",
+    "938",
+    "940"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 4,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 4,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 5404,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0940 0936 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325726,
+    "assessed_improvement_value": 469056,
+    "last_sale_date": "1996-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202604240107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-24",
+      "status_date": "2026-04-24",
+      "estimated_cost": 38640,
+      "revised_cost": 38640,
+      "description": "re-roofing: tear off, apply one (1) layer of self adhered underlayment, install composition shingle pitch, no hotwork.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311059486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-05",
+      "status_date": "2003-11-17",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "in kind repair dry rot to remove n.o.v.#200343320 of rear stairs. repair work not to exceed 50% of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701986",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-03",
+      "status_date": "1997-06-24",
+      "estimated_cost": 9300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=936",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4144005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4144&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4144005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40886795669746%2037.75701231870757)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

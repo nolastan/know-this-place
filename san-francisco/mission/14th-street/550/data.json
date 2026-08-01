@@ -1,0 +1,147 @@
+{
+  "address": "550 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/550/",
+  "apn": "3534017A",
+  "block": "3534",
+  "lot": "017A",
+  "eas_baseid": "358430",
+  "coordinates": {
+    "lat": 37.768175,
+    "lng": -122.425386
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 15,
+    "stories": 3,
+    "rooms": 39,
+    "bathrooms": 15,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 11010,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0550 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 883131,
+    "assessed_improvement_value": 674313
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201610281382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-28",
+      "status_date": "2019-10-31",
+      "estimated_cost": 45000,
+      "revised_cost": 100560,
+      "description": "mandatory soft story upgrade per ordinance no 66-13 soft story ground floor retrofit per col 2 iebc app 4x caomply with 201642241",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307262905",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-07-26",
+      "status_date": "2016-03-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace allwindows in two units. street facing windows to be woodclad, vinly lightwell. with divided upper sash. to comply with cbc 1029 rescue/egress windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307242664",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-07-24",
+      "status_date": "2016-03-15",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "#104 & #105- remodel kitchen & bath, replace cabinets in kind, rewire unit, lighting to comply to title 24. lighting to comply with cec 150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301087508",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-01-08",
+      "status_date": "2013-01-08",
+      "estimated_cost": 850,
+      "revised_cost": 850,
+      "description": "replace kitchen cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209048878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-04",
+      "status_date": "2013-01-08",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "stucco & brick repair @ side of building approx. 125 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203125804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-12",
+      "status_date": "2012-05-17",
+      "estimated_cost": 33500,
+      "revised_cost": 33000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M19503",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-26",
+      "status_date": "2002-07-26",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=550",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534017A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=017A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534017A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

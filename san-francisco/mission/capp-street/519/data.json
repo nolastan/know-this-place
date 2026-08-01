@@ -1,0 +1,140 @@
+{
+  "address": "519 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/519/",
+  "apn": "3610044",
+  "block": "3610",
+  "lot": "044",
+  "eas_baseid": "362496",
+  "coordinates": {
+    "lat": 37.757938,
+    "lng": -122.417606
+  },
+  "parcel": {
+    "year_built": 1890,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 2390,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0519 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 999600,
+    "assessed_improvement_value": 428400,
+    "last_sale_date": "2023-11-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603036810",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-03-03",
+      "status_date": "2026-03-03",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "(n) front steps, fence & gate",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507181130",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-18",
+      "status_date": "2026-07-02",
+      "estimated_cost": 450000,
+      "revised_cost": 450000,
+      "description": "interior remodel including (n) kitchen w/(n) hood in each unit; bathroom remodel in each unit/ (n) 1/2 bath on lower floor. remove (e) unpermitted sunrooms & convert back to rear porch; add concrete foundation & concrete slab while lowering floor elevation to crawl space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601046304",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-04",
+      "status_date": "2016-01-12",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair rear porch wall due to dryrot. replace 2 existing windows at rear porch.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510230637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-23",
+      "status_date": "2016-01-12",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "repair work per complaint#201558931 itel #10. damaged walls & unapproved material at ceiling at rear porch enclosure & pantry room at lower unit. install 5/8\" sheetrock. mud, tape & paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509096507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-09",
+      "status_date": "2015-10-27",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "to comply with comlaint #201557611: repair work under items #2,5,10 only. #2: repair stairs & deck less than 50% repair. #5: repair stairs at side to rear yeard in-ikind. #6: install 5/8in sheetrock at basement corridor *type x).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307232521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-23",
+      "status_date": "2013-09-03",
+      "estimated_cost": 24600,
+      "revised_cost": 24600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=519",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3610044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3610&lot=044",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3610044",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

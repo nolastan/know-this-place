@@ -1,0 +1,96 @@
+{
+  "address": "2968 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2968/",
+  "apn": "4148016",
+  "block": "4148",
+  "lot": "016",
+  "eas_baseid": "369459",
+  "coordinates": {
+    "lat": 37.75446,
+    "lng": -122.411621
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1938,
+    "building_area_sqft": 2160,
+    "basement_area_sqft": 909,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2968 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1666000,
+    "assessed_improvement_value": 714000,
+    "last_sale_date": "2024-09-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503263119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-26",
+      "status_date": "2025-05-15",
+      "estimated_cost": 26900,
+      "revised_cost": 26900,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203149975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-14",
+      "status_date": "2022-12-14",
+      "estimated_cost": 100000,
+      "revised_cost": 200000,
+      "description": "1/f: new bedroom #b, bath, family rm, wet-bar, laundry rm and stair. new barn door, new low deck. 2/f: remodel existing bedroom to master room with new master bath. remodel existing kitchen and bathroom. infill lightwell, new stair. demo rear shed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2968",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "address": "2929–2931 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2929/",
+  "apn": "4269021",
+  "block": "4269",
+  "lot": "021",
+  "eas_baseid": "370791",
+  "coordinates": {
+    "lat": 37.752477,
+    "lng": -122.410625
+  },
+  "address_range": "2929–2931",
+  "street_numbers_on_parcel": [
+    "2929",
+    "2931"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2391,
+    "building_area_sqft": 2306,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2931 2929 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33446,
+    "assessed_improvement_value": 24194
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201503201424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-20",
+      "status_date": "2015-06-02",
+      "estimated_cost": 7310,
+      "revised_cost": 7310,
+      "description": "replace existing ductwork with new 26, gauge steel ductwork.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503110539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-11",
+      "status_date": "2015-06-02",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "ti to add 2 new treatment rooms, curtain walls only. widen bathroom door, passage way at end of new hallway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003299190",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-29",
+      "status_date": "2010-04-08",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "we want to hung drywall over extg drywall. there is about 600 foot to cover. 1/2 thick",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M126405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-17",
+      "status_date": "2008-07-17",
+      "revised_cost": 1,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406156447",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-06-15",
+      "status_date": "2005-02-17",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "comply nov 200345864-restore 2/fl,extent work is to restore appl in kitchen&minor wk at p.l.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404020382",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-04-02",
+      "status_date": "2005-02-03",
+      "estimated_cost": 1300,
+      "revised_cost": 1300,
+      "description": "repair rear steps less than 50% of the entire stairs being replace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2929",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4269021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4269&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4269021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

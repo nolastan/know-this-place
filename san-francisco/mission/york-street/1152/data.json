@@ -1,0 +1,103 @@
+{
+  "address": "1152 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1152/",
+  "apn": "4209009",
+  "block": "4209",
+  "lot": "009",
+  "eas_baseid": "370171",
+  "coordinates": {
+    "lat": 37.753529,
+    "lng": -122.408532
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1564,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1154 1152 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 302792,
+    "assessed_improvement_value": 208642,
+    "last_sale_date": "1988-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201902082506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-08",
+      "status_date": "2019-04-05",
+      "estimated_cost": 1585,
+      "revised_cost": 1585,
+      "description": "minor repairs: to comply with complaint #201916693 2) repair 2 windows; repair stairs, provide smoke and co detectors, replace electrical outlet cover, repair sink, walls and small leak in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M62212",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-03-30",
+      "status_date": "2007-03-30",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807581",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-06-07",
+      "status_date": "1989-02-03",
+      "estimated_cost": 950,
+      "description": "install a new iron hand railling on an existing stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1152",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

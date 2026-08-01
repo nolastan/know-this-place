@@ -1,0 +1,163 @@
+{
+  "address": "2871–2873 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2871/",
+  "apn": "4208037",
+  "block": "4208",
+  "lot": "037",
+  "eas_baseid": "370162",
+  "coordinates": {
+    "lat": 37.754239,
+    "lng": -122.409885
+  },
+  "address_range": "2871–2873",
+  "street_numbers_on_parcel": [
+    "2871",
+    "2873"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 905,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2873 2871 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119422,
+    "assessed_improvement_value": 89552
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200307189760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-18",
+      "status_date": "2003-11-03",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "front stair repair per inspector generated correction notice 200307099123 increase value",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307099123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-09",
+      "status_date": "2003-11-03",
+      "estimated_cost": 450,
+      "revised_cost": 450,
+      "description": "fix & replace in kind some certain stairs in front of the house which are rotting.repair work not to",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205317927",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-31",
+      "status_date": "2002-09-30",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revised floor plan per app #200204033064/relocate bth rm on ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204033064",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-03",
+      "status_date": "2002-10-03",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "new construction of bathroom and office on ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111294185",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-29",
+      "status_date": "2002-05-29",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "remove/replace (@ the garage) foundation and floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108307282",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-30",
+      "status_date": "2003-08-20",
+      "estimated_cost": 1100,
+      "revised_cost": 1100,
+      "description": "repl (e)floor beam(s)due to dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108045299",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-04",
+      "status_date": "2002-02-04",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remove and repl foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609703",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-11",
+      "status_date": "1987-12-10",
+      "estimated_cost": 2100,
+      "description": "repair bath room shower and dry-rot in basement.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2871",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4208037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4208&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4208037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

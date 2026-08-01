@@ -1,0 +1,92 @@
+{
+  "address": "2867 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2867/",
+  "apn": "4335003L",
+  "block": "4335",
+  "lot": "003L",
+  "eas_baseid": "371349",
+  "coordinates": {
+    "lat": 37.748745,
+    "lng": -122.408423
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 811,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2867 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29084,
+    "assessed_improvement_value": 14523
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810022045",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-10-02",
+      "status_date": "2020-12-21",
+      "estimated_cost": 45000,
+      "revised_cost": 55000,
+      "description": "the permit will replace in kind an existing failing deck & stairs at rear of home. existing unconditioned storage room below deck will be rebuilt in kind. windows & siding will be replaced on the rear of the home.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714382",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-05",
+      "status_date": "1999-02-24",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2867",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4335003L&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4335&lot=003L",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4335003L",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

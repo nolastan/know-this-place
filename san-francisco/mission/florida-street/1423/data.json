@@ -1,0 +1,125 @@
+{
+  "address": "1423 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1423/",
+  "apn": "4336014",
+  "block": "4336",
+  "lot": "014",
+  "eas_baseid": "371372",
+  "coordinates": {
+    "lat": 37.74913,
+    "lng": -122.409446
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1170,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1423 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 299699,
+    "assessed_improvement_value": 199796,
+    "last_sale_date": "2000-06-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310280439",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-28",
+      "status_date": "2013-12-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace baulisters and handrail on front stairs and porch.in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201106629",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-10",
+      "status_date": "2003-03-12",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "repair back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103083781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-08",
+      "status_date": "2001-06-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair stairs in front comply with hid complaint #200113568",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506040",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-04-26",
+      "status_date": "1995-12-26",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309061",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-14",
+      "status_date": "1983-12-08",
+      "estimated_cost": 999,
+      "description": "replace all wooden floors in room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1423",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4336014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4336&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4336014",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

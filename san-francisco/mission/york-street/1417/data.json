@@ -1,0 +1,116 @@
+{
+  "address": "1417 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1417/",
+  "apn": "4334017",
+  "block": "4334",
+  "lot": "017",
+  "eas_baseid": "371317",
+  "coordinates": {
+    "lat": 37.749413,
+    "lng": -122.407618
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1191,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1417 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1030474,
+    "assessed_improvement_value": 441631,
+    "last_sale_date": "2021-05-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512232498",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-23",
+      "status_date": "2026-01-06",
+      "estimated_cost": 11000,
+      "revised_cost": 34823,
+      "description": "install fire sprinkler system 24 heads. ref pa #2021-1119-2769",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111192769",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2021-11-19",
+      "status_date": "2024-10-09",
+      "estimated_cost": 300000,
+      "revised_cost": 548257,
+      "description": "single family residential remodel & horizontal addition less than 10' in back yard. (n) master bedroom & bathroom on level 1. remodel (e) kitchen & bathroom on level 2. replace all windows doors & repair (e) stucco. automatic sprinkler throughout bldg under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-22",
+      "status_date": "1996-03-19",
+      "estimated_cost": 1,
+      "description": "for final inspection -9420804",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420804",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-19",
+      "status_date": "1995-08-22",
+      "estimated_cost": 4000,
+      "description": "replace landing on front stairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1417",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

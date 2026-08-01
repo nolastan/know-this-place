@@ -1,0 +1,147 @@
+{
+  "address": "1170 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1170/",
+  "apn": "4210012",
+  "block": "4210",
+  "lot": "012",
+  "eas_baseid": "370208",
+  "coordinates": {
+    "lat": 37.753369,
+    "lng": -122.407613
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1915,
+    "basement_area_sqft": 681,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1170A1170 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 985012,
+    "assessed_improvement_value": 485612,
+    "last_sale_date": "2020-08-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602105680",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2026-02-10",
+      "status_date": "2026-02-27",
+      "estimated_cost": 600000,
+      "description": "interior remodel of 2 floors. add jadu. legalizing downstairs unit. landscaping/drainage - regarding front yard and driveway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211096200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-09",
+      "status_date": "2023-04-24",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "2/f: remove existing closet and reconfigure existing room to create new laundry room and bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204182449",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2022-04-18",
+      "status_date": "2022-04-18",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "to comply with complain # 202182090. legalizing downstairs unit. adding a bathroom, 2 kitchen, 2 bath remodel. restore front setback landscaping. front facade changes require preservation review.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M512747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-22",
+      "status_date": "2014-08-22",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610054254",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-05",
+      "status_date": "2006-10-05",
+      "estimated_cost": 6200,
+      "revised_cost": 6200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209247315",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-24",
+      "status_date": "2002-11-21",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "repair existing stairs at rear of building in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408013",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-07-25",
+      "status_date": "1985-03-12",
+      "estimated_cost": 500,
+      "description": "demo old in-law apt. in lower floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1170",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4210012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4210&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4210012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

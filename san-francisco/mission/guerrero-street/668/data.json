@@ -1,0 +1,123 @@
+{
+  "address": "668 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/668/",
+  "apn": "3587011",
+  "block": "3587",
+  "lot": "011",
+  "eas_baseid": "361012",
+  "coordinates": {
+    "lat": 37.760448,
+    "lng": -122.424004
+  },
+  "parcel": {
+    "year_built": 1905,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 4046,
+    "building_area_sqft": 4050,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0668 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2470845,
+    "assessed_improvement_value": 90283,
+    "last_sale_date": "2015-08-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M920187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-04-30",
+      "status_date": "2018-04-30",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708175087",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2017-08-17",
+      "status_date": "2024-10-08",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "demolition of a 1-story warehouse.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603182471",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2016-03-18",
+      "status_date": "2024-10-08",
+      "estimated_cost": 1900000,
+      "revised_cost": 1900000,
+      "description": "to erect 4 stories, no basement, 3 units residential building. ** maher: disturbance of at least 50 cu.yd. of soil; route to dph **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-22",
+      "status_date": "1998-05-29",
+      "estimated_cost": 21000,
+      "description": "emergency rprg only/rebuild a rear stairs to existing mezin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803239",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-03-14",
+      "status_date": "1988-05-10",
+      "estimated_cost": 4000,
+      "description": "replace garage door, repair roof, paint & new siding wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=668",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

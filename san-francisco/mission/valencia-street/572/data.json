@@ -1,0 +1,132 @@
+{
+  "address": "572–576 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/572/",
+  "apn": "3568010",
+  "block": "3568",
+  "lot": "010",
+  "eas_baseid": "359998",
+  "coordinates": {
+    "lat": 37.763736,
+    "lng": -122.422071
+  },
+  "address_range": "572–576",
+  "street_numbers_on_parcel": [
+    "572",
+    "574",
+    "576"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 9,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 9,
+    "lot_area_sqft": 2640,
+    "building_area_sqft": 5990,
+    "lot_depth_ft": 88,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0576 0572 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2239010,
+    "assessed_improvement_value": 959575,
+    "last_sale_date": "2021-05-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106162554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-16",
+      "status_date": "2021-08-20",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "remove and replace wall covering at tradesman walkway trash and laundry wall panel.s . rewire laundry outlets to dedicated circuits. repair and replace plumbing for washer. non structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1216719",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-17",
+      "status_date": "2020-07-20",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807134521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-13",
+      "status_date": "2020-10-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "commercial: mandatory soft story retrofit per 2016 sfebc appendix a4 do ada upgrad",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807134526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-13",
+      "status_date": "2020-10-23",
+      "estimated_cost": 65000,
+      "revised_cost": 120000,
+      "description": "residential: mandatory soft story retrofit per 2016 sf, appendix a4, add steel moment frame",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-07",
+      "status_date": "2000-12-29",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=572",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

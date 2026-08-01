@@ -1,0 +1,120 @@
+{
+  "address": "639–643 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/639/",
+  "apn": "3615050",
+  "block": "3615",
+  "lot": "050",
+  "eas_baseid": "362804",
+  "coordinates": {
+    "lat": 37.756477,
+    "lng": -122.417457
+  },
+  "address_range": "639–643",
+  "street_numbers_on_parcel": [
+    "639",
+    "641",
+    "643"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 3297,
+    "building_area_sqft": 5082,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0643 0639 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115472,
+    "assessed_improvement_value": 265652
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201809251307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-25",
+      "status_date": "2019-12-04",
+      "estimated_cost": 1,
+      "revised_cost": 4000,
+      "description": "revision to retrofit permit to moment frame existing for #201603010882",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804176538",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-17",
+      "status_date": "2018-05-16",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "to comply with complaint #201845101. replace existing wall heater",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603010882",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-03-01",
+      "status_date": "2019-12-05",
+      "estimated_cost": 6000,
+      "revised_cost": 75000,
+      "description": "to comply with san francisco mandatory soft story ordinance program. to comply with fema p-807 standard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515101",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-09-14",
+      "status_date": "1996-03-26",
+      "estimated_cost": 8000,
+      "description": "replacement of exist brick foundat into new concrete foundat",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=639",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3615050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3615&lot=050",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3615050",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

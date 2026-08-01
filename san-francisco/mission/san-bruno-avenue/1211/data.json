@@ -1,0 +1,126 @@
+{
+  "address": "1211 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1211/",
+  "apn": "4214025",
+  "block": "4214",
+  "lot": "025",
+  "eas_baseid": "370315",
+  "coordinates": {
+    "lat": 37.754017,
+    "lng": -122.404137
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2462,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1211 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95668,
+    "assessed_improvement_value": 325372,
+    "last_sale_date": "1987-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201410158966",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-15",
+      "status_date": "2014-11-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#2012-0918-0067. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308265261",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2013-08-26",
+      "status_date": "2014-04-10",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "infill rear addition on two floors, ground floor add new bedroom, 2nd floor add new familty room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306149636",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-14",
+      "status_date": "2013-06-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "add slab on grade patio and footing at rear south side of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M395588",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-05-20",
+      "status_date": "2013-05-20",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209180067",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-09-18",
+      "status_date": "2014-11-03",
+      "estimated_cost": 30000,
+      "revised_cost": 50000,
+      "description": "relocate kitchen and remodeling bathroom. add new bath room on ground floor. underpin reinforce extg footing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1211",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4214025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

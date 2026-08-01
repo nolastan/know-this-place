@@ -1,0 +1,127 @@
+{
+  "address": "2670 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2670/",
+  "apn": "4088019",
+  "block": "4088",
+  "lot": "019",
+  "eas_baseid": "368404",
+  "coordinates": {
+    "lat": 37.757885,
+    "lng": -122.408352
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2321,
+    "building_area_sqft": 1210,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2670 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 887853,
+    "assessed_improvement_value": 380505,
+    "last_sale_date": "2013-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410223449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-22",
+      "status_date": "2025-01-16",
+      "estimated_cost": 20000,
+      "revised_cost": 50000,
+      "description": "change kitchen cabinets,countertops, appliances. replace bathroom tiles + fixtures. (in kind remodel)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611152790",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-15",
+      "status_date": "2016-11-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "change toilet, sink & tub. redo some tile work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306038420",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-03",
+      "status_date": "2013-06-03",
+      "estimated_cost": 1500,
+      "revised_cost": 2500,
+      "description": "replace kitchen backsplash, replace kitchen floor, replace range hood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605091091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-09",
+      "status_date": "2006-05-30",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to remove (e) non-bearing wall on (e) 2nd floor per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103083814",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-08",
+      "status_date": "2001-12-08",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "legalize familyrm, baath,storage add guestrm w/bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2670",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

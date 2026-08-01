@@ -1,0 +1,105 @@
+{
+  "address": "826 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/826/",
+  "apn": "3642037",
+  "block": "3642",
+  "lot": "037",
+  "eas_baseid": "364113",
+  "coordinates": {
+    "lat": 37.753385,
+    "lng": -122.41777
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 2150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0826 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1208951,
+    "assessed_improvement_value": 789026,
+    "last_sale_date": "2011-12-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904309323",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2019-04-30",
+      "status_date": "2020-02-10",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "rear yard addition. no changes in building footprint, add (2) berooms on the 3rd level, overall (4) bedrooms, (2) full and (2) half bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201192499",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-01-19",
+      "status_date": "2013-05-15",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "renovattion of 1st floor garage + area behind garage, foundation upgrade, addition of 200 sq ft below existing deck - renovation of 2nd floor ktichen, addition of interior stair to lower level, renovation of 3rd floor master bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405724",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-12",
+      "status_date": "1994-12-05",
+      "estimated_cost": 7615,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=826",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

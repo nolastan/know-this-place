@@ -1,0 +1,129 @@
+{
+  "address": "61 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/61/",
+  "apn": "3618056",
+  "block": "3618",
+  "lot": "056",
+  "eas_baseid": "362971",
+  "coordinates": {
+    "lat": 37.755752,
+    "lng": -122.424044
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2935,
+    "building_area_sqft": 2752,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0063 0061 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1320900,
+    "assessed_improvement_value": 566100,
+    "last_sale_date": "2023-11-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202307252877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-25",
+      "status_date": "2023-09-01",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "to comply with nov #202305557: correct nov for rear stairs 202305557. less than 50% repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203121131",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-12",
+      "status_date": "2002-09-12",
+      "estimated_cost": 13125,
+      "revised_cost": 13125,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900728",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-01-12",
+      "status_date": "1999-01-26",
+      "estimated_cost": 3000,
+      "description": "foundation bolting - install 1/2\" struct. ply",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504534",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-05-01",
+      "status_date": "1985-06-06",
+      "estimated_cost": 4500,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=61",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=056",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618056",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4240438992224%2037.755751606644026)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

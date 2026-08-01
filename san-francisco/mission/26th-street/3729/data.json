@@ -1,0 +1,159 @@
+{
+  "address": "3729 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3729/",
+  "apn": "6567035",
+  "block": "6567",
+  "lot": "035",
+  "eas_baseid": "402627",
+  "coordinates": {
+    "lat": 37.748503,
+    "lng": -122.423697
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1942,
+    "building_area_sqft": 1250,
+    "basement_area_sqft": 525,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3729 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1051608,
+    "assessed_improvement_value": 450682,
+    "last_sale_date": "2014-08-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200709102245",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-10",
+      "status_date": "2008-04-09",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel bathroom on 2nd fl - replace tub w/steam shower, constr. soffit, install new cabinet, vanity, sink/toilet, connect exhaust fan to existing roof termination. 50% lighting to be h.e.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604068391",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-06",
+      "status_date": "2006-08-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace 2 windows, size for size. replace 7 windows, lower sill ht. 1 foot, same width, aluminum to wood composite, visible from street. u value .39.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603207044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-20",
+      "status_date": "2006-08-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal 200412171701 and 200308061329 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412171701",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-12-17",
+      "status_date": "2004-12-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit app 200308061329",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308061329",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-08-06",
+      "status_date": "2003-08-06",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel kitchen, upper unit, as is floor plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104056119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-05",
+      "status_date": "2001-05-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#8603238 & 8702589 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702589",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-02-27",
+      "status_date": "1988-02-09",
+      "estimated_cost": 1,
+      "description": "revision to approved p.a. 8603238",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603238",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-03-20",
+      "status_date": "1988-02-09",
+      "estimated_cost": 22126,
+      "description": "addition of 236 sq ft at front of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3729",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

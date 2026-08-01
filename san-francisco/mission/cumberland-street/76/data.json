@@ -1,0 +1,163 @@
+{
+  "address": "76–78 Cumberland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cumberland-street/76/",
+  "apn": "3598054B",
+  "block": "3598",
+  "lot": "054B",
+  "eas_baseid": "361660",
+  "coordinates": {
+    "lat": 37.759309,
+    "lng": -122.425272
+  },
+  "address_range": "76–78",
+  "street_numbers_on_parcel": [
+    "76",
+    "78"
+  ],
+  "parcel": {
+    "year_built": 1933,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3810,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0078 0076 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1324723,
+    "assessed_improvement_value": 591862
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M329167",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-21",
+      "status_date": "2012-06-21",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M319827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-05-09",
+      "status_date": "2012-05-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204279351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-27",
+      "status_date": "2012-11-27",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "kitchen/laundry remodel of the 2nd floor unit at 76 cumberland street in s.f. scope includes replaces replace extg cabinets, new finishes, relocate sink in kitchen, new laudnry sink, relocate extg washer and dryer and run new dedicated circuit for new receptacles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602154652",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-15",
+      "status_date": "2006-02-22",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M18773",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-04",
+      "status_date": "2002-06-04",
+      "revised_cost": 3000,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-24",
+      "status_date": "1999-05-12",
+      "estimated_cost": 17000,
+      "description": "replace kitchen cabinets, sink, enlarge (e) opening on wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209160",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-11-05",
+      "status_date": "1983-04-29",
+      "estimated_cost": 1669,
+      "description": "bldg use: dwg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=76",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598054B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=054B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598054B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4252717880347%2037.75930908813619)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

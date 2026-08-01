@@ -1,0 +1,159 @@
+{
+  "address": "1114–1116 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1114/",
+  "apn": "4209004",
+  "block": "4209",
+  "lot": "004",
+  "eas_baseid": "370166",
+  "coordinates": {
+    "lat": 37.753885,
+    "lng": -122.408566
+  },
+  "address_range": "1114–1116",
+  "street_numbers_on_parcel": [
+    "1114",
+    "1116"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 2610,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1116 1114 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 181822,
+    "assessed_improvement_value": 334958,
+    "last_sale_date": "1988-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200201026168",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-02",
+      "status_date": "2002-05-02",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "replace siding one south wall, (termite work), replace top sheet metal flashing of roof, build a wal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201026166",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-02",
+      "status_date": "2002-05-02",
+      "estimated_cost": 450,
+      "revised_cost": 450,
+      "description": "replace tile in shower(3walls,n,s,&w)&paint all rooms.no structural work.replace floor w/ marble in",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320979",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-11-29",
+      "status_date": "1993-12-07",
+      "estimated_cost": 500,
+      "description": "bedrm #2-repl walls,insulate-decor beam bdrm-repl drs @ fren",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-08-31",
+      "status_date": "1993-12-07",
+      "estimated_cost": 1000,
+      "description": "replace sidingon south wall/replace top plate of wall/header",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-24",
+      "status_date": "1991-08-16",
+      "estimated_cost": 1000,
+      "description": "renewal of permit #9018217",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110431",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-13",
+      "status_date": "1991-12-13",
+      "estimated_cost": 10000,
+      "description": "remodel kitchen with new cabinets. replace two windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108697",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-05-17",
+      "status_date": "1991-09-17",
+      "estimated_cost": 1500,
+      "description": "replacement of doors on rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018217",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-09-11",
+      "status_date": "1991-04-03",
+      "estimated_cost": 5000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1114",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "address": "2974–2976 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/2974/",
+  "apn": "4273031",
+  "block": "4273",
+  "lot": "031",
+  "eas_baseid": "370933",
+  "coordinates": {
+    "lat": 37.749788,
+    "lng": -122.409464
+  },
+  "address_range": "2974–2976",
+  "street_numbers_on_parcel": [
+    "2974",
+    "2976"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2976 2974 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1318550,
+    "assessed_improvement_value": 565093,
+    "last_sale_date": "2021-10-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312123983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-12",
+      "status_date": "2014-01-16",
+      "estimated_cost": 7480,
+      "revised_cost": 7480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=2974",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4273031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4273&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4273031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

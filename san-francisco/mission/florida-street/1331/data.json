@@ -1,0 +1,149 @@
+{
+  "address": "1331 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1331/",
+  "apn": "4273018",
+  "block": "4273",
+  "lot": "018",
+  "eas_baseid": "370921",
+  "coordinates": {
+    "lat": 37.750059,
+    "lng": -122.409533
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1664,
+    "basement_area_sqft": 802,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1331 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22144,
+    "assessed_improvement_value": 154297
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201011245620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-24",
+      "status_date": "2010-12-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to permit #2010 0112 4578; change study room to bedroom and relocate stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011225424",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-11-22",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "revision to 201001144578. show approved gr floor study to reflect as bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006285421",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-28",
+      "status_date": "2010-12-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2010.01.12.4578. 1st fl: changed washroom, bedroom and study room to family room. 2nd fl: kitchen lay out changed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001124578",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-12",
+      "status_date": "2010-12-22",
+      "estimated_cost": 1,
+      "revised_cost": 1000,
+      "description": "revision of previous permit appl. #2008/0915/1594; basement to be smaller to allow walkway between house. reconfigure interior stairway from 1st to 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906059836",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2009-06-05",
+      "status_date": "2026-01-27",
+      "estimated_cost": 550,
+      "revised_cost": 0,
+      "description": "foundation strengthening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809151594",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-09-15",
+      "status_date": "2010-12-22",
+      "estimated_cost": 115000,
+      "revised_cost": 115000,
+      "description": "add 240sf horizontal addition to the ex. bldg in the rear. leagalize & remodel ex. kitchen on the grd fl. remodel the kitchen on the 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606554",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-06-04",
+      "status_date": "1986-11-18",
+      "estimated_cost": 1000,
+      "description": "repair plaster ceiling in garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1331",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4273018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4273&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4273018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

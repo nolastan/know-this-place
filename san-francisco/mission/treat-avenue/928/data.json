@@ -1,0 +1,90 @@
+{
+  "address": "928 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/928/",
+  "apn": "3639020",
+  "block": "3639",
+  "lot": "020",
+  "eas_baseid": "363944",
+  "coordinates": {
+    "lat": 37.755189,
+    "lng": -122.413553
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3341,
+    "building_area_sqft": 1236,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0928 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 126772,
+    "assessed_improvement_value": 126772
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9511461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-24",
+      "status_date": "1996-03-26",
+      "estimated_cost": 800,
+      "description": "repair roof shingle & any necessary wood repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312680",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-12-13",
+      "status_date": "1984-02-02",
+      "estimated_cost": 5000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=928",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

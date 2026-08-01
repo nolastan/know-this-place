@@ -1,0 +1,130 @@
+{
+  "address": "2431–2433 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2431/",
+  "apn": "4262024",
+  "block": "4262",
+  "lot": "024",
+  "eas_baseid": "370598",
+  "coordinates": {
+    "lat": 37.752915,
+    "lng": -122.403988
+  },
+  "address_range": "2431–2433",
+  "street_numbers_on_parcel": [
+    "2431",
+    "2433"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2162,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2433 2431 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1931398,
+    "assessed_improvement_value": 827742,
+    "last_sale_date": "2021-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110210959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-21",
+      "status_date": "2021-10-27",
+      "estimated_cost": 3700,
+      "revised_cost": 3700,
+      "description": "replace garage door. install steel insulated garage door. same size and same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M822147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-08-23",
+      "status_date": "2017-08-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707030972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-03",
+      "status_date": "2018-06-29",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "build fence 10' high west side of property.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305177249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-17",
+      "status_date": "2014-03-26",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "repl foundation & add new slab on grade, add 135 sq ft. reconfigure & remodel ground floor unit includes 1 kitchen, 1 bathroom, relocate & remodel bathroom on 2nd floor. add skylights & re-roof gable section over ground floor. repl deck at 2nd floor. remove kitchen on 2nd floor to comply with 3r",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M336327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-19",
+      "status_date": "2012-07-19",
+      "revised_cost": 1,
+      "description": "street space for pp20120719149",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2431",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4262024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4262&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4262024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

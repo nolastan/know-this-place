@@ -1,0 +1,144 @@
+{
+  "address": "1272–1274 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1272/",
+  "apn": "6524016",
+  "block": "6524",
+  "lot": "016",
+  "eas_baseid": "401150",
+  "coordinates": {
+    "lat": 37.749808,
+    "lng": -122.413028
+  },
+  "address_range": "1272–1274",
+  "street_numbers_on_parcel": [
+    "1272",
+    "1274"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 2752,
+    "building_area_sqft": 2418,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1274 1272 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 553034,
+    "assessed_improvement_value": 276723,
+    "last_sale_date": "2011-10-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505277249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-27",
+      "status_date": "2025-07-02",
+      "estimated_cost": 14200,
+      "revised_cost": 14200,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209180018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-18",
+      "status_date": "2012-11-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "kitchen remodel: replace cabinets and countertops, demolish non load bearing wall, install new window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205090068",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-09",
+      "status_date": "2012-07-03",
+      "estimated_cost": 8000,
+      "revised_cost": 15000,
+      "description": "upgrade (voluntary) exterior wall footing at rear crawlspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204259021",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-25",
+      "status_date": "2012-07-27",
+      "estimated_cost": 14000,
+      "revised_cost": 16000,
+      "description": "2nd floor: remove portion of non-bearing wall at kitchen, replace kitchen cabinets, fixtures & appliances, remove sink & water heater at laundry. install water heater at west exterior wall. no work at 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001285522",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-28",
+      "status_date": "2010-02-04",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "comply with complaint #201030630-convert basement & detached garage back to original non-habitable use. remove all illegal construction for one unit treat av",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811146619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-14",
+      "status_date": "2009-01-12",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace existing rear stairway in kind. comply with n.o.v.#200879415. start of work inspection required for verification of site conditions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1272",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

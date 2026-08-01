@@ -1,0 +1,116 @@
+{
+  "address": "267 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/267/",
+  "apn": "3647022",
+  "block": "3647",
+  "lot": "022",
+  "eas_baseid": "364275",
+  "coordinates": {
+    "lat": 37.752478,
+    "lng": -122.423744
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2713,
+    "building_area_sqft": 1374,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0267 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40738,
+    "assessed_improvement_value": 117755
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201503171080",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2015-03-17",
+      "status_date": "2018-01-12",
+      "estimated_cost": 10000,
+      "description": "fill in lightwell at south elevation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402458",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-15",
+      "status_date": "1994-07-25",
+      "estimated_cost": 80,
+      "description": "use property for fence posts 3' concrete along n side of pro",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910824",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-06-21",
+      "status_date": "1989-10-21",
+      "estimated_cost": 4200,
+      "description": "remove roofing-replace damaged or rotted joists",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=267",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3647022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3647&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3647022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42374366793375%2037.75247765547453)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

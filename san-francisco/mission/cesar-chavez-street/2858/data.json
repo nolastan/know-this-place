@@ -1,0 +1,83 @@
+{
+  "address": "2858 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2858/",
+  "apn": "4334002F",
+  "block": "4334",
+  "lot": "002F",
+  "eas_baseid": "468633",
+  "coordinates": {
+    "lat": 37.748987,
+    "lng": -122.40684
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1546,
+    "building_area_sqft": 1310,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2858 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 83967,
+    "assessed_improvement_value": 146956,
+    "last_sale_date": "1994-10-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200503298589",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-29",
+      "status_date": "2005-03-29",
+      "estimated_cost": 3900,
+      "revised_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2858",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334002F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=002F",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334002F",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

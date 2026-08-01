@@ -1,0 +1,107 @@
+{
+  "address": "534 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/534/",
+  "apn": "3578006",
+  "block": "3578",
+  "lot": "006",
+  "eas_baseid": "360434",
+  "coordinates": {
+    "lat": 37.762585,
+    "lng": -122.424174
+  },
+  "parcel": {
+    "year_built": 1952,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1425,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0534 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 697170,
+    "assessed_improvement_value": 464772,
+    "last_sale_date": "2000-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1952",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410102706",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-10",
+      "status_date": "2024-10-10",
+      "estimated_cost": 6499,
+      "revised_cost": 6499,
+      "description": "installing ductless mini split system 1 outdoor and 1 indoor unit. installing load management divise for electrical vihicle charger.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004137230",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-04-13",
+      "status_date": "2000-06-21",
+      "estimated_cost": 5000,
+      "revised_cost": 22000,
+      "description": "construct stairway from upper level to grd level rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122374",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-25",
+      "status_date": "1993-09-21",
+      "estimated_cost": 1500,
+      "revised_cost": 12000,
+      "description": "deck & horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=534",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

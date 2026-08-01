@@ -1,0 +1,145 @@
+{
+  "address": "1056 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1056/",
+  "apn": "4153008",
+  "block": "4153",
+  "lot": "008",
+  "eas_baseid": "369643",
+  "coordinates": {
+    "lat": 37.755199,
+    "lng": -122.40689
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2554,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1060 1056 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1623648,
+    "assessed_improvement_value": 262005,
+    "last_sale_date": "2022-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202007099897",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2020-07-09",
+      "status_date": "2022-04-13",
+      "estimated_cost": 1,
+      "revised_cost": 250000,
+      "description": "alter site: revise unit count and configuration as approved under bpa # 201612165168. create 3 dwelling units and 6 adu's within previously approved building envelope. previous permit had 4 dwelling units and 1 adu. additionally reference bpa #202005047290 (ab-094 for unlimited adu)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202005047290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-05-04",
+      "status_date": "2020-06-19",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "voluntary seismic upgrade of (e) soft story bldg per ab-094 to qualify for unlimited adu for property.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M860347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-11-29",
+      "status_date": "2017-11-29",
+      "revised_cost": 1,
+      "description": "street space permit - renewal of permit # m765268",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M765268",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-02",
+      "status_date": "2017-03-02",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612165168",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2016-12-16",
+      "status_date": "2019-02-20",
+      "estimated_cost": 825000,
+      "revised_cost": 1600000,
+      "description": "renovation & addition to existing single family structure over abandoned commecial by vertical/horiz addition. create 5 apts new bike parking. new exterior materials windows & doors, new landscaping at front and back yard. 1adu. sprinkler bldg to nfpa 13. comply w/nov#201634591, nov #200005593",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M202867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-18",
+      "status_date": "2010-05-18",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513730",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-12-04",
+      "status_date": "1986-04-04",
+      "estimated_cost": 560,
+      "description": "extend wooden cabinet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1056",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

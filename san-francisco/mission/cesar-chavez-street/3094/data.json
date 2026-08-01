@@ -1,0 +1,138 @@
+{
+  "address": "3094 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/3094/",
+  "apn": "4338014",
+  "block": "4338",
+  "lot": "014",
+  "eas_baseid": "371420",
+  "coordinates": {
+    "lat": 37.748533,
+    "lng": -122.411147
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1600,
+    "building_area_sqft": 1298,
+    "lot_depth_ft": 64,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3094 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 370655,
+    "assessed_improvement_value": 158848,
+    "last_sale_date": "2012-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310159280",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-15",
+      "status_date": "2013-10-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M30768",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-01-11",
+      "status_date": "2005-01-11",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411018248",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-01",
+      "status_date": "2005-05-02",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "repair foundation- approximately 56 linear feet as shown on plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408121371",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-12",
+      "status_date": "2005-07-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200203131311,200401264795 to comply nov and clear director's order of abatement 200121332",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401264795",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-26",
+      "status_date": "2004-06-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "renew 200203131311 to complete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203131311",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-03-13",
+      "status_date": "2004-01-12",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "cmply nov 200123725. legalized exist basement floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=3094",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338014",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

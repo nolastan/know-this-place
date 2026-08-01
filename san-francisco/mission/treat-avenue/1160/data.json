@@ -1,0 +1,122 @@
+{
+  "address": "1160 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1160/",
+  "apn": "6521042",
+  "block": "6521",
+  "lot": "042",
+  "eas_baseid": "476800",
+  "coordinates": {
+    "lat": 37.751556,
+    "lng": -122.413108
+  },
+  "parcel": {
+    "lot_area_sqft": 1575,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1160 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73192,
+    "assessed_improvement_value": 73192
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201007287653",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-07-28",
+      "status_date": "2012-02-08",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "comply with nov# 201058291. raise 14' of wall at north side (h=6') to increase room size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908104498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-10",
+      "status_date": "2010-05-28",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "revision 200809252596, 3rd fl: lower ceiling at north-west corner of building to be used as habitable space. add new window at 3rd floor facing rear yard. new square footage to be used as a livable space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809252596",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-25",
+      "status_date": "2010-05-28",
+      "estimated_cost": 25000,
+      "revised_cost": 42340,
+      "description": "lower ceiling level at front two rooms to create a higher ceiling at 2nd floor. relocate stairs from 2nd to 3rd floor from the center to the right side.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307088920",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2003-07-08",
+      "status_date": "2007-10-17",
+      "estimated_cost": 100000,
+      "description": "rebuild & seperate (e)3/f to add a 2nd dwelling unit. the overall ht. of bldg. will be increased by",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1160",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=042",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521042",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41310759650256%2037.751556434997234)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

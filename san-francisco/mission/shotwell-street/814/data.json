@@ -1,0 +1,128 @@
+{
+  "address": "814 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/814/",
+  "apn": "3638038",
+  "block": "3638",
+  "lot": "038",
+  "eas_baseid": "363897",
+  "coordinates": {
+    "lat": 37.755348,
+    "lng": -122.415717
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2705,
+    "building_area_sqft": 2030,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0814 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29290,
+    "assessed_improvement_value": 23512
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200905198652",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-19",
+      "status_date": "2009-08-24",
+      "estimated_cost": 19000,
+      "revised_cost": 49000,
+      "description": "replace old foundation with new. foundation only, no arch. changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810204581",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-20",
+      "status_date": "2008-11-03",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808141",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-06-16",
+      "status_date": "1989-02-03",
+      "estimated_cost": 600,
+      "description": "repair dry rot at front stairs case",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8405168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-05-14",
+      "status_date": "1984-07-24",
+      "estimated_cost": 16000,
+      "description": "misc. repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=814",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3638038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3638&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3638038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41571730573112%2037.75534752211675)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

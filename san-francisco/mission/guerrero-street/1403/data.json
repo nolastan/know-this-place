@@ -1,0 +1,113 @@
+{
+  "address": "1403 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1403/",
+  "apn": "6568016",
+  "block": "6568",
+  "lot": "016",
+  "eas_baseid": "402635",
+  "coordinates": {
+    "lat": 37.748599,
+    "lng": -122.422237
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1403 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34855,
+    "assessed_improvement_value": 26537
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507091088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-09",
+      "status_date": "2015-07-20",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110066309",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-06",
+      "status_date": "2011-10-06",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace dryrot wood on back deck & stairs with new and re-usable lumber (less than 50%). same layout as existing. prime, paint deck and steps. to comply with complaint #201158527. no changes to window, walls or doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-13",
+      "status_date": "1990-03-15",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608441",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-07-15",
+      "status_date": "1987-02-03",
+      "estimated_cost": 8500,
+      "description": "remodel kitchen, remodel bathroom & repair rear deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1403",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6568016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6568&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6568016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

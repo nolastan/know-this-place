@@ -1,0 +1,167 @@
+{
+  "address": "949 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/949/",
+  "apn": "6518019",
+  "block": "6518",
+  "lot": "019",
+  "eas_baseid": "400949",
+  "coordinates": {
+    "lat": 37.751434,
+    "lng": -122.416963
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 30,
+    "stories": 3,
+    "rooms": 66,
+    "bathrooms": 30,
+    "lot_area_sqft": 7474,
+    "building_area_sqft": 17475,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0949 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1031246,
+    "assessed_improvement_value": 1204009,
+    "last_sale_date": "1990-02-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510076917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-07",
+      "status_date": "2026-01-06",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "two units: take out sheetrock to expose pipes, in kitchen, replace sheetrock. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202312192806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-19",
+      "status_date": "2024-01-18",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "to comply with nov 202315282: item #2repair garage ceiling opening due to plumbing repair (approx. 2'x3' area)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701137206",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-01-13",
+      "status_date": "2024-04-30",
+      "estimated_cost": 1,
+      "revised_cost": 8000,
+      "description": "revision to 201610210930. revise frame layout for soft story retrofit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610210930",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2016-10-21",
+      "status_date": "2024-04-30",
+      "estimated_cost": 65000,
+      "revised_cost": 145000,
+      "description": "soft story retrofit per sfbc chapter 34b 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M185645",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-12-07",
+      "status_date": "2009-12-07",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M181265",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-02",
+      "status_date": "2009-10-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906261381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-26",
+      "status_date": "2010-01-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "surround bathtub/shower, remodel three units to abate complaint #200911721 for work started without permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823584",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1998-11-16",
+      "status_date": "1998-11-16",
+      "estimated_cost": 2000,
+      "description": "comply with n.o.v.199816798",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211055",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-07-06",
+      "status_date": "1993-05-19",
+      "estimated_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=949",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

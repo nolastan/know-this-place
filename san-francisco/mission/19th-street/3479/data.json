@@ -1,0 +1,114 @@
+{
+  "address": "3479–3481 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3479/",
+  "apn": "3596101",
+  "block": "3596",
+  "lot": "101",
+  "eas_baseid": "361535",
+  "coordinates": {
+    "lat": 37.759925,
+    "lng": -122.420944
+  },
+  "address_range": "3479–3481",
+  "street_numbers_on_parcel": [
+    "3479",
+    "3481"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 2786,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3481 3479 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1764595,
+    "assessed_improvement_value": 923923,
+    "last_sale_date": "2020-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202010166691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-16",
+      "status_date": "2022-03-15",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "new ada restroom & entry door power operation at commercial pace w/tenant improvements for a private professional office, waiting area & break rooml & renovations to adjacent one unit w/infill at (e) lightwell, new kitchen & bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M27041",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-07",
+      "status_date": "2004-04-07",
+      "revised_cost": 0,
+      "description": "address assignment",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3479",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596101&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=101",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596101",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42094433648899%2037.75992515199873)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "address": "1 Juri Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/juri-street/1/",
+  "apn": "6532007",
+  "block": "6532",
+  "lot": "007",
+  "eas_baseid": "401414",
+  "coordinates": {
+    "lat": 37.749892,
+    "lng": -122.421613
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 1263,
+    "building_area_sqft": 2820,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1000A0001-JURI                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1647124,
+    "assessed_improvement_value": 705901,
+    "last_sale_date": "2015-06-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Juri Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200610235761",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-23",
+      "status_date": "2006-11-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew pa#2005/06/20/5535, 2005/08/17/0540, 2005/12/06/9590, 2005/07/20/8125 for final insp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512069590",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-12-06",
+      "status_date": "2006-11-17",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "minor revisiont o plans under bldg app 2005/07/20/8125 for citys as built record per request of bldg inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508170540",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-08-17",
+      "status_date": "2006-11-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel existing bath, one, and kitchen in upper unit (1 juri) only, non structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507208125",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-07-20",
+      "status_date": "2006-11-17",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to alter ground floor unit, including relocation of bathroom, expansion of kitchen & addition of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506205535",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-06-20",
+      "status_date": "2006-11-17",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel existing kitchen (1) bath in lower unit (1a) only -non structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504200478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-20",
+      "status_date": "2006-01-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to conduct dry rot repair, replace of rear wall foundation and cap all the rest perimaster wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411269",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-07-15",
+      "status_date": "1995-02-07",
+      "estimated_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JURI&street_type=ST&address_number=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42161345143906%2037.74989209133219)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

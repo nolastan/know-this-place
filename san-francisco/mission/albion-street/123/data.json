@@ -1,0 +1,144 @@
+{
+  "address": "123–127 Albion Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/albion-street/123/",
+  "apn": "3568025",
+  "block": "3568",
+  "lot": "025",
+  "eas_baseid": "360010",
+  "coordinates": {
+    "lat": 37.764425,
+    "lng": -122.4225
+  },
+  "address_range": "123–127",
+  "street_numbers_on_parcel": [
+    "123",
+    "125",
+    "127"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 5,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 5,
+    "bedrooms": 10,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 6795,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0127 0123 ALBION              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47362,
+    "assessed_improvement_value": 87174
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "16th and Valencia Streets Post-Fire Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1926",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202502069818",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-06",
+      "status_date": "2025-02-06",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "re-roofing like for like (with torch down)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M30025",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-11-02",
+      "status_date": "2004-11-02",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29260",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-16",
+      "status_date": "2004-09-16",
+      "revised_cost": 0,
+      "description": "street space for scaffold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9924637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-19",
+      "status_date": "1999-12-28",
+      "estimated_cost": 5050,
+      "description": "install 15 replacement windows in living rooms & bedrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9803309",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-27",
+      "status_date": "1998-03-03",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALBION&street_type=ST&address_number=123",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42249961102624%2037.76442513460663)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

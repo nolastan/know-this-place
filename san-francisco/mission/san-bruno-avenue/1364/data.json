@@ -1,0 +1,103 @@
+{
+  "address": "1364 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1364/",
+  "apn": "4263006",
+  "block": "4263",
+  "lot": "006",
+  "eas_baseid": "370612",
+  "coordinates": {
+    "lat": 37.752293,
+    "lng": -122.404597
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1030,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1364 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119464,
+    "assessed_improvement_value": 79633
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507231449",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-23",
+      "status_date": "2025-07-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200305285582. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302011195",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2023-02-01",
+      "status_date": "2023-02-01",
+      "estimated_cost": 5000,
+      "description": "to comply with nov # 202183390. and second unit addition (upper one unit sq ft and lower one unit sq ft). under the state adu ordinance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305285582",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-05-28",
+      "status_date": "2025-07-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair (e) in kind structural members and materials front entry porch deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1364",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4263006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4263&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4263006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

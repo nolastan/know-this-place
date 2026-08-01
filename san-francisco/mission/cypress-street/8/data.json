@@ -1,0 +1,161 @@
+{
+  "address": "8–14 Cypress Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cypress-street/8/",
+  "apn": "6518024",
+  "block": "6518",
+  "lot": "024",
+  "eas_baseid": "400954",
+  "coordinates": {
+    "lat": 37.751961,
+    "lng": -122.416893
+  },
+  "address_range": "8–14",
+  "street_numbers_on_parcel": [
+    "8",
+    "10",
+    "12",
+    "14"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 4485,
+    "building_area_sqft": 2816,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0014 0008 CYPRESS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1302243,
+    "assessed_improvement_value": 558103,
+    "last_sale_date": "2017-11-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104057913",
+      "type": "new construction",
+      "status": "filed",
+      "filed": "2021-04-05",
+      "status_date": "2021-04-05",
+      "estimated_cost": 1173300,
+      "description": "erect 3 story type iiia 7 residential unit building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606220562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-22",
+      "status_date": "2016-12-19",
+      "estimated_cost": 40000,
+      "revised_cost": 50000,
+      "description": "remodel two bathrooms @ two units to two units per plan. add partition wall @ one unit #10. sheetrock on one unit ceiling (e) living room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406108042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-10",
+      "status_date": "2014-06-17",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "comply with nov #201474852 item #2, repair & replace stair handrail components.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M399872",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-06",
+      "status_date": "2013-06-06",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110441",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-14",
+      "status_date": "1992-12-04",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-12-01",
+      "status_date": "1988-02-01",
+      "estimated_cost": 165,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403131",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-03-23",
+      "status_date": "1986-03-04",
+      "estimated_cost": 20000,
+      "description": "to comply with vilations #t20651",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301031",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-02-04",
+      "status_date": "1986-03-04",
+      "estimated_cost": 35000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CYPRESS&street_type=ST&address_number=8",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

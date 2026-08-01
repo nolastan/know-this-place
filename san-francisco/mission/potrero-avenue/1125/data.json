@@ -1,0 +1,137 @@
+{
+  "address": "1125 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1125/",
+  "apn": "4212009",
+  "block": "4212",
+  "lot": "009",
+  "eas_baseid": "370281",
+  "coordinates": {
+    "lat": 37.753899,
+    "lng": -122.40607
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1125 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 629962,
+    "assessed_improvement_value": 269983,
+    "last_sale_date": "2023-06-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604018721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-01",
+      "status_date": "2026-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202306129894. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309196879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-19",
+      "status_date": "2026-04-10",
+      "estimated_cost": 30000,
+      "revised_cost": 120000,
+      "description": "convert storage into office and game room at 1st flr. add 1-bathroom at 2nd flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306129894",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2023-06-12",
+      "status_date": "2026-04-10",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel (e) kitchen and full bath on 2nd floor. remodel in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508144257",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-14",
+      "status_date": "2015-08-28",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-19",
+      "status_date": "1990-12-31",
+      "estimated_cost": 3200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003149",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-15",
+      "status_date": "1990-03-01",
+      "estimated_cost": 1000,
+      "description": "repair framing under front landing, treat for beetles",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1125",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4212009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4212&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4212009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

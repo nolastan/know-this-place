@@ -1,0 +1,167 @@
+{
+  "address": "1136–1138 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1136/",
+  "apn": "4207005",
+  "block": "4207",
+  "lot": "005",
+  "eas_baseid": "370091",
+  "coordinates": {
+    "lat": 37.753713,
+    "lng": -122.410437
+  },
+  "address_range": "1136–1138",
+  "street_numbers_on_parcel": [
+    "1136",
+    "1138"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2350,
+    "building_area_sqft": 2014,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1138 1136 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 226722,
+    "assessed_improvement_value": 67152,
+    "last_sale_date": "1995-06-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "20000106436",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-06",
+      "status_date": "2000-12-15",
+      "revised_cost": 1,
+      "description": "renew expired appl #9918626",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918626",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-03",
+      "status_date": "2000-12-15",
+      "estimated_cost": 1,
+      "description": "delete work per plans from pa#9613122",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-29",
+      "status_date": "1998-10-05",
+      "estimated_cost": 1,
+      "description": "renew expired permit appn. 9517507",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802238",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-02-10",
+      "status_date": "1998-06-10",
+      "estimated_cost": 1,
+      "description": "renew permit #9705578, 9613122, 9719733 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719733",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-03",
+      "status_date": "1998-02-03",
+      "estimated_cost": 1,
+      "description": "renew 9705578, 9613122",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705528",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-26",
+      "status_date": "1997-09-26",
+      "estimated_cost": 15000,
+      "description": "legalize bedrm ar grd flr,remove illegal 3rd unit pa#9613122",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613122",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-07-19",
+      "status_date": "1999-03-01",
+      "estimated_cost": 15000,
+      "description": "legalize bedroom at remove illegal 3 unit & upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517507",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-10-19",
+      "status_date": "1998-10-05",
+      "estimated_cost": 3500,
+      "description": "replace exist stair with new metal stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302717",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1993-02-18",
+      "status_date": "1994-02-23",
+      "estimated_cost": 2000,
+      "description": "revert use to 2-family dwelling on 3frs./rebuild rear stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1136",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

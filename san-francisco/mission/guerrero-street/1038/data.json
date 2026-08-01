@@ -1,0 +1,152 @@
+{
+  "address": "1038–1042 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1038/",
+  "apn": "3632005",
+  "block": "3632",
+  "lot": "005",
+  "eas_baseid": "363677",
+  "coordinates": {
+    "lat": 37.754518,
+    "lng": -122.423466
+  },
+  "address_range": "1038–1042",
+  "street_numbers_on_parcel": [
+    "1038",
+    "1040",
+    "1042"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 8,
+    "stories": 3,
+    "rooms": 25,
+    "bathrooms": 9,
+    "bedrooms": 9,
+    "lot_area_sqft": 3583.75,
+    "building_area_sqft": 5351,
+    "lot_depth_ft": 17.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1042 1038 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2767099,
+    "assessed_improvement_value": 1185899,
+    "last_sale_date": "2021-09-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1216653",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2020-07-17",
+      "status_date": "2020-07-17",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1216512",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2020-07-16",
+      "status_date": "2020-07-16",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1215327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-06",
+      "status_date": "2020-07-07",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412294622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-29",
+      "status_date": "2015-04-27",
+      "estimated_cost": 8000,
+      "revised_cost": 25000,
+      "description": "soft story improvements to comply with sr building ord. 34b, cbc 2013.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205080013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-08",
+      "status_date": "2012-07-24",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen and bath remodel (top unit) new cabinets, fixtures, tile, no structural work, new lighting comply with cec 150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9927060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-12-28",
+      "status_date": "2000-04-28",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306625",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-07-13",
+      "status_date": "1984-04-18",
+      "estimated_cost": 60000,
+      "description": "new plumbing 100% new kitchens new bathrooms new roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3632005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3632&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3632005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

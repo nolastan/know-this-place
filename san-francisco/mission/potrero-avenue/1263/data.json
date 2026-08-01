@@ -1,0 +1,151 @@
+{
+  "address": "1263–1265 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1263/",
+  "apn": "4264013",
+  "block": "4264",
+  "lot": "013",
+  "eas_baseid": "370648",
+  "coordinates": {
+    "lat": 37.752215,
+    "lng": -122.405907
+  },
+  "address_range": "1263–1265",
+  "street_numbers_on_parcel": [
+    "1263",
+    "1265"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2516,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1265 1263 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36932,
+    "assessed_improvement_value": 30692
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506209118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-20",
+      "status_date": "2026-04-27",
+      "estimated_cost": 14600,
+      "revised_cost": 14600,
+      "description": "reroofing. replace existing shingle roof w/ new composition shingles. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904277115",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-27",
+      "status_date": "2009-05-28",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "alum single pane window replaced with double pane 4 windows total of 8 windows, wood clad alum",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M151165",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-11",
+      "status_date": "2009-02-11",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805011091",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-01",
+      "status_date": "2008-05-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 200803247815, change address in title 24 energy calculations to the subject property.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803247815",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-03-24",
+      "status_date": "2008-03-27",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "install 1 wall electric heaters of 2000 to 3000 watts to comply with his nov# 200736050",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104025806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-02",
+      "status_date": "2001-05-03",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "approx 14 ft linear foundation replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-03",
+      "status_date": "1984-07-27",
+      "estimated_cost": 1445,
+      "description": "install seven aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1263",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4264013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4264&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4264013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "address": "950 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/950/",
+  "apn": "3639023",
+  "block": "3639",
+  "lot": "023",
+  "eas_baseid": "363947",
+  "coordinates": {
+    "lat": 37.754926,
+    "lng": -122.413528
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 5510,
+    "building_area_sqft": 1590,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0950 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55488,
+    "assessed_improvement_value": 115001
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606304206",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-30",
+      "status_date": "2026-06-30",
+      "estimated_cost": 62000,
+      "revised_cost": 62000,
+      "description": "recommencement and completion of work approved under pa#202501148298",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510036709",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-03",
+      "status_date": "2026-06-30",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "siding replacement and address compliant 202542803. skylight work. (small one going up stairs).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202502271218",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-27",
+      "status_date": "2026-06-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "revision to pa 2023-0828-5375 to include east & south walls foundation replacement at rear cottage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202501148298",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-14",
+      "status_date": "2025-01-14",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "complete remodel including kitchen & bathroom. new sheetrock & insulation, paint interior work. all work in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308285375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-28",
+      "status_date": "2025-08-28",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "partial foundatoin replacement at north and west walls of rear cottage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012241705",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-12-24",
+      "status_date": "2020-12-24",
+      "estimated_cost": 180000,
+      "description": "legalize existing second unit as adu.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708013453",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-08-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "under-pinning & tie backs for adjacent shoring systems at 2675 folsom st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M24321",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-16",
+      "status_date": "2003-07-16",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=950",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

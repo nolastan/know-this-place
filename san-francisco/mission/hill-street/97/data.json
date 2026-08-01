@@ -1,0 +1,167 @@
+{
+  "address": "97–99 Hill Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hill-street/97/",
+  "apn": "3617031",
+  "block": "3617",
+  "lot": "031",
+  "eas_baseid": "362870",
+  "coordinates": {
+    "lat": 37.755879,
+    "lng": -122.423031
+  },
+  "address_range": "97–99",
+  "street_numbers_on_parcel": [
+    "97",
+    "99"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2430,
+    "building_area_sqft": 2560,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "9900 0097 HILL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1750988,
+    "assessed_improvement_value": 583658,
+    "last_sale_date": "2021-08-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202111081995",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-08",
+      "status_date": "2022-08-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108236951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-23",
+      "status_date": "2022-08-02",
+      "estimated_cost": 20000,
+      "revised_cost": 45000,
+      "description": "remodel kitchen (10'x12') and master bathroom (8'x5')in kind. remodel powder room (5'x5')in kind. h.e. lighting and controlled per cec 150.0(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108236953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-23",
+      "status_date": "2022-08-02",
+      "estimated_cost": 20000,
+      "revised_cost": 42000,
+      "description": "remodel kitchen (10'x12')and master bathroom (8'x5'), in kind repair back stair case in kind, less than 50%. no change in one unit-location or design. h.e. lighting and controlled per cec 150.0(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M217846",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-25",
+      "status_date": "2010-08-25",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419408",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-23",
+      "status_date": "1995-06-02",
+      "estimated_cost": 1600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014195",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-07-18",
+      "status_date": "1991-03-05",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900388",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-01-10",
+      "status_date": "1989-04-28",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HILL&street_type=ST&address_number=97",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3617031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42303053317129%2037.75587872189689)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

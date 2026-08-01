@@ -1,0 +1,159 @@
+{
+  "address": "876 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/876/",
+  "apn": "3613046",
+  "block": "3613",
+  "lot": "046",
+  "eas_baseid": "362688",
+  "coordinates": {
+    "lat": 37.756134,
+    "lng": -122.413646
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 3675,
+    "building_area_sqft": 6840,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0876 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 822404,
+    "assessed_improvement_value": 418166,
+    "last_sale_date": "2005-01-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308315732",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-31",
+      "status_date": "2023-12-26",
+      "estimated_cost": 26700,
+      "revised_cost": 33840,
+      "description": "upgrade existing local fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M179847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-15",
+      "status_date": "2009-09-15",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511037332",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-03",
+      "status_date": "2015-05-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired pa no 2004/10/14/6777 and 200404282492",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410146777",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-14",
+      "status_date": "2004-10-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "under pin (e) foundatiion-discovered during work on permit #200404282492. foundation bolts & plywood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404282492",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-04-28",
+      "status_date": "2004-07-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove 2 illegal units in garage area of property cap all utilities at source. legalize one of the",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404151429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-15",
+      "status_date": "2004-05-18",
+      "estimated_cost": 5376,
+      "revised_cost": 5376,
+      "description": "replace 12 windows size for size same place & location, keep same grid pattern wood to vinyl. neighb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308142059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-14",
+      "status_date": "2003-09-05",
+      "estimated_cost": 5200,
+      "revised_cost": 5200,
+      "description": "12 windows to be replaced size for size rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403557",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-04-04",
+      "status_date": "1984-05-09",
+      "estimated_cost": 5000,
+      "description": "install 6 walls furnaces frame area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=876",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613046",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

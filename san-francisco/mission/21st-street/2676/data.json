@@ -1,0 +1,132 @@
+{
+  "address": "2676 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2676/",
+  "apn": "4088020",
+  "block": "4088",
+  "lot": "020",
+  "eas_baseid": "368405",
+  "coordinates": {
+    "lat": 37.757769,
+    "lng": -122.408428
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2321,
+    "building_area_sqft": 1994,
+    "basement_area_sqft": 729,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2676 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 457368,
+    "assessed_improvement_value": 332410,
+    "last_sale_date": "2010-11-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202204111920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-11",
+      "status_date": "2022-05-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "new 10' high fence on backyard's side and rear yards sunshade structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103091674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-09",
+      "status_date": "2011-04-27",
+      "estimated_cost": 7540,
+      "revised_cost": 7450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012025980",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-02",
+      "status_date": "2011-07-19",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "1st fl remodel, add 1 bedroom, full bath, office, family rm, laundry rm. 2nd fl add bath, reconfigure bedrooms. roof repairs. demolish existing rear stair/eliminate door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921483",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-08",
+      "status_date": "1989-12-19",
+      "estimated_cost": 4500,
+      "description": "repair baywindow & front of house, replace window frames etc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2676",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40842798969038%2037.7577692512907)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

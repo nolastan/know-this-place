@@ -1,0 +1,131 @@
+{
+  "address": "773–777 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/773/",
+  "apn": "3607027",
+  "block": "3607",
+  "lot": "027",
+  "eas_baseid": "362246",
+  "coordinates": {
+    "lat": 37.757049,
+    "lng": -122.425285
+  },
+  "address_range": "773–777",
+  "street_numbers_on_parcel": [
+    "773",
+    "775",
+    "777"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2312.5,
+    "building_area_sqft": 4650,
+    "lot_depth_ft": 92.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0777 0773 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179611,
+    "assessed_improvement_value": 306416
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603308532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-30",
+      "status_date": "2026-04-16",
+      "estimated_cost": 30600,
+      "revised_cost": 30600,
+      "description": "reroof w/hot work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M992507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-10-12",
+      "status_date": "2018-10-12",
+      "revised_cost": 1,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612260540",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-26",
+      "status_date": "2006-12-29",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "correct nov - replace posts on back stairs repair and replace in kind less than 50% of stairway repair to comply with his nov 200681451 dated 11/7/2006",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32435",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-12",
+      "status_date": "2005-05-12",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108226579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-22",
+      "status_date": "2001-09-12",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=773",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

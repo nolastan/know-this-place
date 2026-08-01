@@ -1,0 +1,160 @@
+{
+  "address": "3640 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3640/",
+  "apn": "6532017",
+  "block": "6532",
+  "lot": "017",
+  "eas_baseid": "401426",
+  "coordinates": {
+    "lat": 37.749035,
+    "lng": -122.421992
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 5,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 7,
+    "bedrooms": 11,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 4480,
+    "basement_area_sqft": 2300,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3640 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2679430,
+    "assessed_improvement_value": 1509984,
+    "last_sale_date": "2019-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209082117",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-08",
+      "status_date": "2023-02-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa202205254999: structural changes only per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205254999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-25",
+      "status_date": "2023-02-07",
+      "estimated_cost": 1,
+      "revised_cost": 5000,
+      "description": "revision to pa# 202001303155. structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101072224",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "2021-01-07",
+      "status_date": "2023-06-05",
+      "estimated_cost": 90000,
+      "revised_cost": 245000,
+      "description": "1st floor : add 2 units per ordinance 162-16. one unit: add 2 bedroom, 2 full bath, kitchen & living room one unit: add 2 bedroom, 1 full bath, kitchen & living room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101072228",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2021-01-07",
+      "status_date": "2022-07-06",
+      "estimated_cost": 70000,
+      "description": "1st floor : add 1 units at rear per state law one unit: add 1 bedroom, 1 full bath & kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010287671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-28",
+      "status_date": "2021-05-24",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "like for like fire system replacement with upgrade. replace exisring devices with new at the same location tie-in existing bells to new panel. in stall new low frequency horns inside units. install new radio communicator.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001303155",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-30",
+      "status_date": "2023-02-02",
+      "estimated_cost": 20000,
+      "revised_cost": 70000,
+      "description": "soft story per sfbc chapter 4d. 2016 appendix a4 .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903256121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-25",
+      "status_date": "2021-09-17",
+      "estimated_cost": 80000,
+      "revised_cost": 150000,
+      "description": "one unit remodel kitchen and bath, add 1 bedroom and laundry; one unit - remodel kitchen and bath, add 1 laundry; one unit - remodel kitchen and bath, add 1 bedroom and laundry; two units - remodel kitchen and bath. add 1 bedroom, 1 bath and laundry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310903",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-28",
+      "status_date": "1994-01-13",
+      "estimated_cost": 11300,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3640",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

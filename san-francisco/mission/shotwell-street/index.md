@@ -1,0 +1,191 @@
+# Shotwell Street
+
+Every residential parcel on Shotwell Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [12–16](12/) — A 1906 4-unit apartment building, with window replacement permitted in 2011.
+- [18–20](18/) — A 1907 two dwellings on one parcel, with an addition permitted in 2019.
+- [28–30](28/) — A 1924 three-flat, with an addition permitted in 2000.
+- [32](32/) — A 1918 single-family house, with a kitchen remodel permitted in 2003.
+- [42–44](42/) — A 1908 two-flat, with a rear addition permitted in 2002.
+- [48–50](48/) — A 1907 two-flat, with reroofing permitted in 1991.
+- [58](58/) — A 1908 two-flat.
+- [62–66](62/) — A 1906 four-flat.
+- [68](68/) — A 1907 single-family house, with foundation work permitted in 2008.
+- [74](74/) — A 1907 two-flat, with stair work permitted in 1984.
+- [83](83/) — A 1909 1-unit building with a ground-floor store, with garage work permitted in 2015.
+- [88](88/) — A 2017 23-unit apartment building, with reroofing permitted in 1995.
+- [100–110](100/) — A 1900 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2018.
+- [101–119](101/) — A 1900 15-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2018.
+- [112–118](112/) — A 1914 4-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with reroofing permitted in 2023.
+- [120](120/) — A 1900 two-flat in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with reroofing permitted in 2025.
+- [121–125](121/) — A 1900 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2016.
+- [126–128](126/) — A 1900 three-flat in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [168](168/) — A 1900 two-flat.
+- [262](262/) — A 1910 single-family house, with one permit record from 1982.
+- [306](306/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2011.
+- [307](307/) — A 1945 single-family house, with a bathroom remodel permitted in 2013.
+- [309](309/) — A 1900 single-family house, with window replacement permitted in 2024.
+- [311](311/) — A 1900 single-family house, with deck work permitted in 2025.
+- [313–315](313/) — A 1900 single-family house, with foundation work permitted in 1988.
+- [334](334/) — A 1992 two-flat, with stair work permitted in 1984.
+- [335](335/) — A 1900 two-flat, with a rear addition permitted in 2003.
+- [340](340/) — A 1992 three-flat, with reroofing permitted in 2012.
+- [348](348/) — A 1996 two-flat, with stair work permitted in 2004.
+- [358](358/) — A 1992 three-flat, with deck work permitted in 2014.
+- [370–374](370/) — A 1908 3-unit tic building, with a kitchen and bathroom remodel permitted in 2020.
+- [379–381](379/) — A 1900 4-unit apartment building, with reroofing permitted in 1992.
+- [385](385/) — A 1900 three-flat, with stair work permitted in 1997.
+- [502–504](502/) — A 1909 4-unit apartment building, with reroofing permitted in 1989.
+- [506–508](506/) — A 1904 4-unit apartment building, with reroofing permitted in 2024.
+- [512–516](512/) — A 1900 4-unit apartment building, with stair work permitted in 2002.
+- [522](522/) — A 1904 1-unit apartment building, with permit records from 2001 to 2002.
+- [528](528/) — A 1964 8-unit apartment building, with a seismic retrofit permitted in 2015.
+- [532–534](532/) — A 1900 4-unit tic building, with an addition permitted in 2011.
+- [540](540/) — A 1900 single-family house, with reroofing permitted in 2019.
+- [546](546/) — A 1901 single-family house, with one permit record from 1988.
+- [548](548/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2010.
+- [550](550/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2017.
+- [552](552/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2017.
+- [554](554/) — A 1900 single-family house, with reroofing permitted in 2005.
+- [559–563](559/) — A 1914 13-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [562](562/) — A 1900 single-family house, with window replacement permitted in 2023.
+- [565–573](565/) — A 1900 7-unit apartment building, with stair work permitted in 2025.
+- [568–572](568/) — A 1903 6-unit apartment building, with a bathroom remodel permitted in 2021.
+- [604–610](604/) — A 1900 8-unit apartment building, with a seismic retrofit permitted in 2016.
+- [607](607/) — A 1900 4-unit tic building in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [618](618/) — A 1900 three-flat in the Shotwell Street Historic District, with reroofing permitted in 2021.
+- [625–629](625/) — A 1900 5-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 1994.
+- [626–628](626/) — A 1900 7-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2019.
+- [631](631/) — A 1900 single-family house in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2021.
+- [632–634](632/) — A 1915 three-flat in the Shotwell Street Historic District, with a rear addition permitted in 1989.
+- [635](635/) — A 1900 two-flat in the Shotwell Street Historic District, with window replacement permitted in 2015.
+- [639](639/) — A 1900 3-unit tic building in the Shotwell Street Historic District, with foundation work permitted in 1999.
+- [640–642](640/) — A 1900 2-unit tic building in the Shotwell Street Historic District, with an addition permitted in 2009.
+- [643–645](643/) — An 1895 three-flat in the Shotwell Street Historic District, with reroofing permitted in 1991.
+- [647](647/) — A 1924 3-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 2019.
+- [651–657](651/) — A 1900 4-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 2016.
+- [671–673](671/) — A 1900 three-flat in the Shotwell Street Historic District, with deck work permitted in 2021.
+- [680–682](680/) — A 1900 2-unit apartment building in the Shotwell Street Historic District, with a vertical addition permitted in 1989.
+- [688–692](688/) — A 1900 three-flat in the Shotwell Street Historic District, with stair work permitted in 2008.
+- [694](694/) — A 1900 5-unit apartment building in the Shotwell Street Historic District, with a bathroom remodel permitted in 1992.
+- [700](700/) — A 1963 4-unit apartment building in the Shotwell Street Historic District, with one permit record from 2007.
+- [701](701/) — An 1880 two-flat in the Shotwell Street Historic District, with reroofing permitted in 2015.
+- [703](703/) — A 1900 three-flat in the Shotwell Street Historic District, with plumbing work permitted in 2013.
+- [705](705/) — A 1900 two-flat in the Shotwell Street Historic District, with a bathroom remodel permitted in 1986.
+- [707](707/) — An 1885 two-flat in the Shotwell Street Historic District, with reroofing permitted in 2015.
+- [709](709/) — A 1900 two-flat in the Shotwell Street Historic District, with a bathroom remodel permitted in 2023.
+- [711](711/) — A 1900 single-family house in the Shotwell Street Historic District, with an addition permitted in 2007.
+- [712–716](712/) — A 1927 4-unit apartment building in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2014.
+- [715](715/) — A 1900 single-family house in the Shotwell Street Historic District, with one permit record from 2008.
+- [718–720](718/) — A 1900 3-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 2002.
+- [719–721](719/) — An 1880 3-unit apartment building in the Shotwell Street Historic District, with foundation work permitted in 1999.
+- [722](722/) — A 1900 11-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2016.
+- [723–725](723/) — An 1890 two-flat in the Shotwell Street Historic District, with foundation work permitted in 2006.
+- [727](727/) — An 1880 single-family house in the Shotwell Street Historic District, with a rear addition permitted in 2000.
+- [729](729/) — A 1900 single-family house in the Shotwell Street Historic District, with fire repair permitted in 2005.
+- [731](731/) — A 1900 single-family house in the Shotwell Street Historic District, with foundation work permitted in 1991.
+- [733](733/) — A 1900 two-flat in the Shotwell Street Historic District, with window replacement permitted in 2003.
+- [740](740/) — A 1900 two-flat in the Shotwell Street Historic District, with a rear addition permitted in 2019.
+- [741](741/) — A 1960 single-family house in the Shotwell Street Historic District, with reroofing permitted in 2004.
+- [746](746/) — A 1927 single-family house in the Shotwell Street Historic District, with a kitchen remodel permitted in 2020.
+- [747](747/) — A 1900 single-family house in the Shotwell Street Historic District, with one permit record from 2019.
+- [754](754/) — A 1900 two-flat in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2023.
+- [760–762](760/) — An 1875 3-unit apartment building in the Shotwell Street Historic District, with a bathroom remodel permitted in 1990.
+- [764](764/) — A 1900 three-flat in the Shotwell Street Historic District, with a rear addition permitted in 1987.
+- [770](770/) — A 1900 3-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 2024.
+- [772–774](772/) — A 1900 4-unit apartment building in the Shotwell Street Historic District, with foundation work permitted in 2004.
+- [778–788](778/) — A 1908 6-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2018.
+- [790](790/) — A 1900 single-family house in the Shotwell Street Historic District.
+- [806](806/) — A 1900 single-family house in the Shotwell Street Historic District.
+- [814](814/) — A 1900 two-flat in the Shotwell Street Historic District, with foundation work permitted in 2009.
+- [816](816/) — A 1900 four-flat in the Shotwell Street Historic District, with an addition permitted in 2019.
+- [822](822/) — A 1915 two-flat in the Shotwell Street Historic District, with one permit record from 2008.
+- [824](824/) — A 1916 single-family house in the Shotwell Street Historic District, with an accessory dwelling unit permitted in 2025.
+- [830–832](830/) — A 1922 two-flat in the Shotwell Street Historic District, with foundation work permitted in 2019.
+- [840–844](840/) — A 1905 6-unit apartment building in the Shotwell Street Historic District, with an accessory dwelling unit permitted in 2016.
+- [846](846/) — A 1900 5-unit apartment building in the Shotwell Street Historic District, with foundation work permitted in 2020.
+- [854–856](854/) — A 1900 three-flat in the Shotwell Street Historic District, with a bathroom remodel permitted in 2009.
+- [858](858/) — A 1900 single-family house in the Shotwell Street Historic District, with reroofing permitted in 2006.
+- [862](862/) — A 1900 5-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2026.
+- [868](868/) — A 1904 5-unit apartment building in the Shotwell Street Historic District, with one permit record from 1992.
+- [869–873](869/) — A 1900 three-flat in the Shotwell Street Historic District, with reroofing permitted in 1996.
+- [870–874](870/) — A 1908 3-unit tic building in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [875](875/) — A 1900 single-family house in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2015.
+- [877](877/) — A 1904 two-flat in the Shotwell Street Historic District, with reroofing permitted in 2002.
+- [879–881](879/) — A 1904 two-flat in the Shotwell Street Historic District, with permit records from 2002 to 2025.
+- [880–890](880/) — A 1900 6-unit apartment building in the Shotwell Street Historic District, with a kitchen remodel permitted in 1986.
+- [908](908/) — A 1900 single-family house in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2015.
+- [910](910/) — An 1875 two-flat in the Shotwell Street Historic District, with foundation work permitted in 2026.
+- [932](932/) — A 1900 3-unit apartment building in the Shotwell Street Historic District, with window replacement permitted in 2013.
+- [934](934/) — A 1900 single-family house in the Shotwell Street Historic District, with stair work permitted in 2008.
+- [935](935/) — A 1941 single-family house, with deck work permitted in 2020.
+- [938](938/) — A 1900 two-flat in the Shotwell Street Historic District, with deck work permitted in 2007.
+- [939–941](939/) — A 1960 7-unit apartment building, with a kitchen remodel permitted in 2006.
+- [945](945/) — A 1961 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [951](951/) — A 1900 two-flat.
+- [957](957/) — A 1900 two-flat, with a kitchen remodel permitted in 2012.
+- [963](963/) — A 1900 three-flat.
+- [969–971](969/) — A 1900 two-flat, with a rear addition permitted in 2018.
+- [973](973/) — A 1900 single-family house.
+- [977](977/) — A 1900 single-family house, with reroofing permitted in 2017.
+- [981](981/) — A 1900 single-family house in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2018.
+- [1003–1007](1003/) — A 1916 5-unit building with a ground-floor store in the Shotwell Street Historic District, with reroofing permitted in 2018.
+- [1010](1010/) — A 1900 single-family house in the Shotwell Street Historic District, with reroofing permitted in 1997.
+- [1011](1011/) — A 1900 4-unit tic building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2018.
+- [1012](1012/) — A 1900 three-flat in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2020.
+- [1013](1013/) — A 1900 three-flat in the Shotwell Street Historic District, with reroofing permitted in 1990.
+- [1014](1014/) — A 1900 single-family house in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2005.
+- [1015](1015/) — A 1900 10-unit apartment building, with facade work permitted in 2013.
+- [1016–1018](1016/) — A 1900 6-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 2002.
+- [1020](1020/) — A 1900 two-flat in the Shotwell Street Historic District, with reroofing permitted in 1998.
+- [1022](1022/) — A 1900 4-unit apartment building in the Shotwell Street Historic District, with reroofing permitted in 1993.
+- [1024](1024/) — A 1900 two-flat in the Shotwell Street Historic District, with fire repair permitted in 1991.
+- [1026](1026/) — A 1900 three-flat in the Shotwell Street Historic District, with window replacement permitted in 2022.
+- [1045](1045/) — A 1900 single-family house, with a vertical addition permitted in 1993.
+- [1051](1051/) — A 1930 single-family house, with a bathroom remodel permitted in 2012.
+- [1055](1055/) — A 1930 single-family house, with a kitchen remodel permitted in 2011.
+- [1061](1061/) — A 1930 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [1064–1066](1064/) — A 1909 two-flat in the Shotwell Street Historic District, with garage work permitted in 2004.
+- [1065–1067](1065/) — A 1900 two-flat, with reroofing permitted in 1993.
+- [1070–1072](1070/) — A 1900 two-flat in the Shotwell Street Historic District, with reroofing permitted in 2017.
+- [1073](1073/) — A 1921 single-family house, with window replacement permitted in 2004.
+- [1074](1074/) — A 1900 single-family house in the Shotwell Street Historic District, with window replacement permitted in 2010.
+- [1075](1075/) — A 1908 two-flat, with window replacement permitted in 2013.
+- [1080](1080/) — A 1900 4-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2014.
+- [1081](1081/) — A 1908 two dwellings on one parcel, with a bathroom remodel permitted in 1989.
+- [1084–1086](1084/) — A 1900 two-flat in the Shotwell Street Historic District, with window replacement permitted in 2025.
+- [1087–1089](1087/) — A 1912 three-flat in the Shotwell Street Historic District, with a rear addition permitted in 1988.
+- [1100–1102](1100/) — A 1900 two-flat in the Shotwell Street Historic District, with a kitchen and bathroom remodel permitted in 2024.
+- [1105](1105/) — A 1900 single-family house in the Shotwell Street Historic District, with reroofing permitted in 1997.
+- [1112–1120](1112/) — A 1907 7-unit apartment building in the Shotwell Street Historic District, with an accessory dwelling unit permitted in 2020.
+- [1115](1115/) — A 1900 single-family house in the Shotwell Street Historic District, with reroofing permitted in 1997.
+- [1119](1119/) — A 1900 7-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2017.
+- [1125](1125/) — A 1900 single-family house in the Shotwell Street Historic District, with window replacement permitted in 2005.
+- [1126](1126/) — A 1936 single-family house, with one permit record from 2003.
+- [1130](1130/) — A 1936 single-family house, with reroofing permitted in 2015.
+- [1131–1137](1131/) — A 1900 5-unit apartment building, with window replacement permitted in 2005.
+- [1136](1136/) — A 1936 single-family house, with a kitchen and bathroom remodel permitted in 2008.
+- [1139](1139/) — A 1900 single-family house, with window replacement permitted in 1999.
+- [1142](1142/) — A 1936 single-family house, with a bathroom remodel permitted in 2013.
+- [1145](1145/) — A 1900 single-family house.
+- [1147](1147/) — A 1900 single-family house, with reroofing permitted in 1998.
+- [1148](1148/) — A 1907 single-family house, with a bathroom remodel permitted in 2010.
+- [1150–1152](1150/) — An apartment building, with reroofing permitted in 2017.
+- [1153](1153/) — A 1900 single-family house, with stair work permitted in 2019.
+- [1155](1155/) — A 1978 two-flat.
+- [1156–1164](1156/) — A 1900 single-family house, with dry-rot repair permitted in 2001.
+- [1167](1167/) — A 1900 two-flat, with deck work permitted in 2006.
+- [1175–1177](1175/) — A 1900 4-unit apartment building, with a kitchen remodel permitted in 2001.
+- [1176–1178](1176/) — A 1907 3-unit apartment building, with reroofing permitted in 1997.
+- [1179](1179/) — A 1900 two-flat, with reroofing permitted in 2010.
+- [1182](1182/) — A 1908 two-flat, with deck work permitted in 2006.
+- [1183](1183/) — An 1885 single-family house, with deck work permitted in 2013.
+- [1185](1185/) — An 1898 single-family house, with reroofing permitted in 1996.
+- [1186](1186/) — A 1902 two-flat, with reroofing permitted in 2002.
+- [1189–1191](1189/) — A 1908 two-flat, with permit records from 1998 to 2007.
+- [1296](1296/) — A 1948 apartment building, with stair work permitted in 2018.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

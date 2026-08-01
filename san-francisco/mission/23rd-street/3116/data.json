@@ -1,0 +1,124 @@
+{
+  "address": "3116 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3116/",
+  "apn": "3638017",
+  "block": "3638",
+  "lot": "017",
+  "eas_baseid": "363879",
+  "coordinates": {
+    "lat": 37.754246,
+    "lng": -122.414693
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 1189,
+    "building_area_sqft": 2790,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3118 3116 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 136643,
+    "assessed_improvement_value": 78074,
+    "last_sale_date": "1987-04-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409301929",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-30",
+      "status_date": "2024-10-16",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing, modified bitumen (flat), about 1600 square feet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M283248",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-11",
+      "status_date": "2011-10-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806878",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-25",
+      "status_date": "1989-05-01",
+      "estimated_cost": 100,
+      "description": "change 3r report to read as \"4 legal units\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-12-02",
+      "status_date": "1987-11-17",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "update existing kitchens & bathrooms/replace plaster",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613749",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-31",
+      "status_date": "1987-11-17",
+      "estimated_cost": 17500,
+      "description": "repair front exterior stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3116",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3638017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3638&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3638017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

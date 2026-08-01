@@ -1,0 +1,141 @@
+{
+  "address": "36–38 Elizabeth Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/elizabeth-street/36/",
+  "apn": "3646009",
+  "block": "3646",
+  "lot": "009",
+  "eas_baseid": "364236",
+  "coordinates": {
+    "lat": 37.753059,
+    "lng": -122.422186
+  },
+  "address_range": "36–38",
+  "street_numbers_on_parcel": [
+    "36",
+    "38"
+  ],
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1499,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0036 ELIZABETH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 777747,
+    "assessed_improvement_value": 518494,
+    "last_sale_date": "2003-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M632588",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-26",
+      "status_date": "2015-10-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608240424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-24",
+      "status_date": "2006-09-19",
+      "estimated_cost": 12350,
+      "revised_cost": 12350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23524",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-24",
+      "status_date": "2003-04-24",
+      "revised_cost": 0,
+      "description": "address assignment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212123412",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-12-12",
+      "status_date": "2003-04-22",
+      "estimated_cost": 12000,
+      "revised_cost": 16000,
+      "description": "install kchn & bthrm at garage level/install bdrm at grg/construct deck and stair at rear building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212052852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-05",
+      "status_date": "2003-04-22",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace two front wood window assemblies with new vinyl window assemblies existing window assembly",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210249830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-24",
+      "status_date": "2003-04-22",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "remodel kitchen & bathrm. replace 14 windows (not visible from st) replace furnace & water heater. d",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELIZABETH&street_type=ST&address_number=36",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3646009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3646&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3646009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

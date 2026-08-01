@@ -1,0 +1,156 @@
+{
+  "address": "520 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/520/",
+  "apn": "6569019",
+  "block": "6569",
+  "lot": "019",
+  "eas_baseid": "402655",
+  "coordinates": {
+    "lat": 37.748613,
+    "lng": -122.419489
+  },
+  "parcel": {
+    "year_built": 1969,
+    "units": 5,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 6,
+    "bedrooms": 11,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 5643,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0520 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42456,
+    "assessed_improvement_value": 197196
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1969",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910295852",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-29",
+      "status_date": "2019-10-30",
+      "estimated_cost": 57172,
+      "revised_cost": 57172,
+      "description": "installing 14 units w/ wood composite. replacing aluminum frame windows. like for like. street facing. fibrex, match existing configuration in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M933787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-01",
+      "status_date": "2018-06-01",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M894207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-26",
+      "status_date": "2018-02-26",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M874307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-08",
+      "status_date": "2018-01-08",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701106894",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-01-10",
+      "status_date": "2018-11-21",
+      "estimated_cost": 35000,
+      "revised_cost": 60000,
+      "description": "weak soft story seismic retrofit per sfebc chapter 4d. installation of simpson strong frame and shearwalls per cebc appendix a-4. n/a for maher ordinance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504294920",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-29",
+      "status_date": "2015-04-29",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit: kitchen remodel/replace cabinets, upgrade electrical, new appliances. no structural work. compliance with maher ordinance no. 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103023303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-02",
+      "status_date": "2001-06-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remove & replace same as existing. dry rot at rear of bldg by patio door. at one unit,n 50 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217480",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-10-07",
+      "status_date": "1993-02-07",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=520",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6569019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6569&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6569019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

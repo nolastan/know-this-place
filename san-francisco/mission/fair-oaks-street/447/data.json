@@ -1,0 +1,93 @@
+{
+  "address": "447 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/447/",
+  "apn": "6533029",
+  "block": "6533",
+  "lot": "029",
+  "eas_baseid": "401478",
+  "coordinates": {
+    "lat": 37.749549,
+    "lng": -122.423437
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1780,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0447 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 398690,
+    "assessed_improvement_value": 274091,
+    "last_sale_date": "1995-12-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201105136026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-13",
+      "status_date": "2011-10-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace existing deck and stairs in kind. exiting decking, framing, rails are delapiated and structurally undsound. deck is on 2nd floor, there are 2 sets of stairs. grade to deck and deck to 3rd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-08",
+      "status_date": "1998-09-14",
+      "estimated_cost": 1500,
+      "description": "voluntary bolting of mudsill to foundation instal connector",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=447",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6533029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6533&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6533029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

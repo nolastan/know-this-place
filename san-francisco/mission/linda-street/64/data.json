@@ -1,0 +1,120 @@
+{
+  "address": "64–66 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/64/",
+  "apn": "3588049J",
+  "block": "3588",
+  "lot": "049J",
+  "eas_baseid": "361125",
+  "coordinates": {
+    "lat": 37.760598,
+    "lng": -122.42311
+  },
+  "address_range": "64–66",
+  "street_numbers_on_parcel": [
+    "64",
+    "66"
+  ],
+  "parcel": {
+    "year_built": 1940,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2710,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0066 0064 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1621807,
+    "assessed_improvement_value": 741463,
+    "last_sale_date": "2014-06-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606099550",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-09",
+      "status_date": "2016-09-08",
+      "estimated_cost": 40000,
+      "revised_cost": 25000,
+      "description": "two bathroom remodel, new fixtures, tiles, drywall, one bath remodel in ea ch one unit baths total",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206182760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-18",
+      "status_date": "2012-08-15",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "changing of 4 window at front of home in kind replacement of (e) cabinets in kithcen, in kind. removal of old existing tile in kitchen area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212234072",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-23",
+      "status_date": "2002-12-31",
+      "estimated_cost": 4400,
+      "revised_cost": 4400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016341",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-16",
+      "status_date": "1990-12-24",
+      "estimated_cost": 1539,
+      "description": "insall aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=64",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588049J&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=049J",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588049J",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

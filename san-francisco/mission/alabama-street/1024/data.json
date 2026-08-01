@@ -1,0 +1,116 @@
+{
+  "address": "1024 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1024/",
+  "apn": "4148008",
+  "block": "4148",
+  "lot": "008",
+  "eas_baseid": "369448",
+  "coordinates": {
+    "lat": 37.755042,
+    "lng": -122.411448
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1886,
+    "building_area_sqft": 756,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1024 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 765278,
+    "assessed_improvement_value": 376684,
+    "last_sale_date": "2020-08-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310027850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-02",
+      "status_date": "2023-10-25",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202011038008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-03",
+      "status_date": "2021-02-04",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "revision to pa# 202010146470. demo wall on 2nd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010146470",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-14",
+      "status_date": "2021-02-04",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "remodel bathroom - install bath tub, new flooring, led lights, gfci outlets, new 110 cfm fan w/ occupancy sensor, new toilet, fixtures, tile, upgrade electrical panel, ceramic floor in kitchen, hardwood floor at 2nd flr throughout, upgrade plumbing, install electric heaters",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601923",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-02-20",
+      "status_date": "1986-03-14",
+      "estimated_cost": 298,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

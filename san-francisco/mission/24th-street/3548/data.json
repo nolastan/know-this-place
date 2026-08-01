@@ -1,0 +1,132 @@
+{
+  "address": "3548 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3548/",
+  "apn": "3645013",
+  "block": "3645",
+  "lot": "013",
+  "eas_baseid": "364213",
+  "coordinates": {
+    "lat": 37.752194,
+    "lng": -122.42245
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 2573,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3550 3548 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191033,
+    "assessed_improvement_value": 346015,
+    "last_sale_date": "1995-08-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202502180519",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-18",
+      "status_date": "2025-09-22",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "manufacture and install six front facing windows. wooden double hung windows with dual glazed insulated glass and weeather strip to mimic the original design.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607293720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-29",
+      "status_date": "2017-06-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "old garage door to be replaced with roll up overhead door w/1/2 horse power electric motor w/2 vents 4x8 header on front of opening and 2 side uprights (2x4) revised pa# 201509217617",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509217617",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2015-09-21",
+      "status_date": "2017-06-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace garage door with new door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304094041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-09",
+      "status_date": "2013-07-19",
+      "estimated_cost": 20000,
+      "revised_cost": 56191,
+      "description": "comply w/nov 201385737 - remove kitchen/bath, build communicating stair level one to level two, build bath, bedroom, laundry, family, new garage door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3548",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.422450138104%2037.752194027404045)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

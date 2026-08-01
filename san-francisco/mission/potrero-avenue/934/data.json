@@ -1,0 +1,140 @@
+{
+  "address": "934–938 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/934/",
+  "apn": "4142006",
+  "block": "4142",
+  "lot": "006",
+  "eas_baseid": "369215",
+  "coordinates": {
+    "lat": 37.757155,
+    "lng": -122.407076
+  },
+  "address_range": "934–938",
+  "street_numbers_on_parcel": [
+    "934",
+    "936",
+    "938"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 4,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0938 0934 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215950,
+    "assessed_improvement_value": 365466,
+    "last_sale_date": "1996-04-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200702204515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-20",
+      "status_date": "2007-08-22",
+      "estimated_cost": 72000,
+      "revised_cost": 72000,
+      "description": "remodel kitchens and baths upper 2 units. replace inkind windows at upper 2 units rear of building with solid vinyl- replace windows at front bays with wood/clad sash at upper unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M14823",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-23",
+      "status_date": "2001-02-23",
+      "revised_cost": 800,
+      "description": "street use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006263662",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-26",
+      "status_date": "2001-03-13",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "remove tub in garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709893",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-30",
+      "status_date": "1998-04-23",
+      "estimated_cost": 4400,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615563",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-21",
+      "status_date": "1997-08-25",
+      "estimated_cost": 200,
+      "description": "replace water damaged dry wall in living room ceiling & wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814030",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-22",
+      "status_date": "1989-10-29",
+      "estimated_cost": 750,
+      "description": "remove bath to comply w/city planning variance 86-385v",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=934",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "address": "1131–1133 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1131/",
+  "apn": "6522036",
+  "block": "6522",
+  "lot": "036",
+  "eas_baseid": "401124",
+  "coordinates": {
+    "lat": 37.752053,
+    "lng": -122.412642
+  },
+  "address_range": "1131–1133",
+  "street_numbers_on_parcel": [
+    "1131",
+    "1133"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1133 1131 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1597114,
+    "assessed_improvement_value": 684475,
+    "last_sale_date": "2022-05-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408148657",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-14",
+      "status_date": "2024-08-29",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806293395",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-29",
+      "status_date": "2018-07-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair in lik ind of rear stairs less than 50%. comply with nov 201870702 elec l/f front stairs install #6 comply with nove 201870762",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109307",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-05-28",
+      "status_date": "1991-11-28",
+      "estimated_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1131",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6522036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6522&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6522036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

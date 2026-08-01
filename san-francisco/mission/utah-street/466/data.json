@@ -1,0 +1,119 @@
+{
+  "address": "466–468 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/466/",
+  "apn": "3974011",
+  "block": "3974",
+  "lot": "011",
+  "eas_baseid": "366845",
+  "coordinates": {
+    "lat": 37.763655,
+    "lng": -122.406656
+  },
+  "address_range": "466–468",
+  "street_numbers_on_parcel": [
+    "466",
+    "468"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2260,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0468 0466 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29740,
+    "assessed_improvement_value": 35294
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201806010702",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-01",
+      "status_date": "2018-08-01",
+      "estimated_cost": 22450,
+      "revised_cost": 22450,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301097572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-09",
+      "status_date": "2013-08-30",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "to comply nov #201280462 & 201281781 dated 12/13/12. in kind repair of less than 50% of rear egress stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104184239",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-18",
+      "status_date": "2011-05-11",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310288784",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-28",
+      "status_date": "2003-10-29",
+      "estimated_cost": 7296,
+      "revised_cost": 7296,
+      "description": "install 22 vinyl windows in kind into existing frames. no change in size or location. no structrl ch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=466",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3974011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3974&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3974011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

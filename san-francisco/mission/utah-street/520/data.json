@@ -1,0 +1,95 @@
+{
+  "address": "520 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/520/",
+  "apn": "4013006",
+  "block": "4013",
+  "lot": "006",
+  "eas_baseid": "367298",
+  "coordinates": {
+    "lat": 37.76275,
+    "lng": -122.406569
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1940,
+    "basement_area_sqft": 480,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0522 0520 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 260341,
+    "assessed_improvement_value": 193152,
+    "last_sale_date": "1994-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9502975",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-03-01",
+      "status_date": "1996-07-26",
+      "estimated_cost": 5000,
+      "description": "replace termite damaged rear deck stair rear wall siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418149",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-11-03",
+      "status_date": "1996-01-12",
+      "estimated_cost": 2500,
+      "revised_cost": 5000,
+      "description": "install aluminum window repair rear deck and stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=520",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4013006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4013&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4013006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "address": "171 Liberty Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/liberty-street/171/",
+  "apn": "3607034",
+  "block": "3607",
+  "lot": "034",
+  "eas_baseid": "362252",
+  "coordinates": {
+    "lat": 37.757234,
+    "lng": -122.424882
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 12,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 12,
+    "lot_area_sqft": 5700,
+    "building_area_sqft": 12600,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0171 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 345272,
+    "assessed_improvement_value": 1107020
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605131220",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-13",
+      "status_date": "2026-05-13",
+      "estimated_cost": 35000,
+      "revised_cost": 65000,
+      "description": "one unit- remodel kitchen and 2x bathrooms in kind no layout change or wall removal . upgrade with new plugs and lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506128583",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-12",
+      "status_date": "2025-07-15",
+      "estimated_cost": 43500,
+      "revised_cost": 43500,
+      "description": "upgrade (e) fire alarm system to comply with sffc section 1103.7.6.1 to meet 75db in all sleeping areas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M134525",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-18",
+      "status_date": "2008-09-18",
+      "revised_cost": 1,
+      "description": "street space only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602275525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-27",
+      "status_date": "2006-04-26",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "remove (e) french doors 92 pairs), replace with 2 windows for required natural light & vent",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602084070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-08",
+      "status_date": "2006-02-27",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace window #501, bathroom @ lightwell, in kind. repair railings on back stairs less than 50% .remove illegally constructed deck east side of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-18",
+      "status_date": "1996-02-15",
+      "estimated_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019568",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-09-25",
+      "status_date": "1991-03-09",
+      "estimated_cost": 4000,
+      "revised_cost": 0,
+      "description": "replace broken studs @ plaster",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=171",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607034",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

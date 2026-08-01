@@ -1,0 +1,146 @@
+{
+  "address": "233–235 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/233/",
+  "apn": "3596065",
+  "block": "3596",
+  "lot": "065",
+  "eas_baseid": "361508",
+  "coordinates": {
+    "lat": 37.7596,
+    "lng": -122.4204
+  },
+  "address_range": "233–235",
+  "street_numbers_on_parcel": [
+    "233",
+    "235"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3400,
+    "basement_area_sqft": 900,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0235 0233 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119722,
+    "assessed_improvement_value": 105566
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200202219688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-21",
+      "status_date": "2002-05-28",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "comply with routine inspection 200225645 to replace deck boards u. pt or redwood for repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219072",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-11-03",
+      "status_date": "1993-10-18",
+      "estimated_cost": 1000,
+      "description": "comply w bbi cklist. legalize exist 3d unit appr'd by dcp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218610",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-10-27",
+      "status_date": "1993-10-18",
+      "estimated_cost": 2600,
+      "description": "install autofire sprinkler sys in basemt/garage living area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904645",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-03-24",
+      "status_date": "1992-06-10",
+      "estimated_cost": 1000,
+      "revised_cost": 3500,
+      "description": "install sprklrs @ bsmnt, hardwire smoke detectors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "0379603",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1972-08-03",
+      "status_date": "1993-06-14",
+      "estimated_cost": 40975,
+      "description": "created during job card conversion on: 04/19/84",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=233",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=065",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596065",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42039968529322%2037.75959999962579)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "address": "283–289 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/283/",
+  "apn": "3643036",
+  "block": "3643",
+  "lot": "036",
+  "eas_baseid": "364168",
+  "coordinates": {
+    "lat": 37.752496,
+    "lng": -122.419275
+  },
+  "address_range": "283–289",
+  "street_numbers_on_parcel": [
+    "283",
+    "285",
+    "287",
+    "289"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 4,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "lot_area_sqft": 5087,
+    "building_area_sqft": 6090,
+    "basement_area_sqft": 946,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0289 0283 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2035396,
+    "assessed_improvement_value": 872312
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508122804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-12",
+      "status_date": "2025-09-04",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "re-roof. hot work. tear off and disposal of existing roofing material. install 20 sq. ft. of roof using torch down.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803274652",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-27",
+      "status_date": "2018-06-26",
+      "estimated_cost": 82000,
+      "revised_cost": 82000,
+      "description": "voluntary lateral strengthening at gr fl, maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M424847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-10",
+      "status_date": "2013-09-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=283",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3643036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3643&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3643036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

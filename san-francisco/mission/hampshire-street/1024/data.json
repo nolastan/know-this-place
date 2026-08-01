@@ -1,0 +1,116 @@
+{
+  "address": "1024 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1024/",
+  "apn": "4152006",
+  "block": "4152",
+  "lot": "006",
+  "eas_baseid": "369595",
+  "coordinates": {
+    "lat": 37.755625,
+    "lng": -122.407831
+  },
+  "parcel": {
+    "year_built": 1935,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1024 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 659169,
+    "assessed_improvement_value": 439443,
+    "last_sale_date": "2006-08-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1935",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305107509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-10",
+      "status_date": "2023-08-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "voluntary seismic strengthening of the walls at the garage/storage level. addition of new hfx panel, plywood shear walls, anchor bolts, holdowns, shear clips.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708296268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-29",
+      "status_date": "2017-09-13",
+      "estimated_cost": 31349,
+      "revised_cost": 31349,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703242249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-24",
+      "status_date": "2017-04-05",
+      "estimated_cost": 7655,
+      "revised_cost": 7655,
+      "description": "replace (e) duct work in garage with new 26 gauge steel duct work per cbc406.1 in conjunction with replacement of 1 forced air furnace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002025736",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-02",
+      "status_date": "2010-03-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

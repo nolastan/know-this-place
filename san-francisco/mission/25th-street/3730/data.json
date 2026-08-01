@@ -1,0 +1,149 @@
+{
+  "address": "3730 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3730/",
+  "apn": "6512031",
+  "block": "6512",
+  "lot": "031",
+  "eas_baseid": "400776",
+  "coordinates": {
+    "lat": 37.750576,
+    "lng": -122.423318
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 12,
+    "stories": 4,
+    "rooms": 46,
+    "bathrooms": 12,
+    "bedrooms": 22,
+    "lot_area_sqft": 5500,
+    "building_area_sqft": 11600,
+    "basement_area_sqft": 1008,
+    "lot_depth_ft": 10,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3730 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1885132,
+    "assessed_improvement_value": 1244197,
+    "assessed_fixtures_value": 2057
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604300417",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-30",
+      "status_date": "2026-07-10",
+      "estimated_cost": 15000,
+      "revised_cost": 35000,
+      "description": "one unit: in-kind kitchen remodel, remove & replace cabinets, countertops and sink/faucet. perform necessary plumbing & electrical scope to meet requirements.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407267379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-26",
+      "status_date": "2025-08-18",
+      "estimated_cost": 1000,
+      "revised_cost": 2161,
+      "description": "as built ref pa 202309116318 install 3 smoke detectors in the 2nd, 3rd and 4th stair landings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309116318",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-11",
+      "status_date": "2025-08-20",
+      "estimated_cost": 10000,
+      "revised_cost": 55000,
+      "description": "replace existing fire alarm to comply with sffc 1103.7.6.1. replace annunciator, smoke detector, manual pulls, moto bells, install new facu, power supply, pull stations, monitoring modules, lf sounders, and horn/strobes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M764147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-27",
+      "status_date": "2017-02-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611223396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-22",
+      "status_date": "2019-09-16",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "soft story retrofit to comply with sfbc ch 34b based on iebc appendix a-4 & calculations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9924618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-19",
+      "status_date": "2000-10-20",
+      "estimated_cost": 20700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706900",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-05-22",
+      "status_date": "1989-02-06",
+      "estimated_cost": 1400,
+      "description": "bring building into compliance required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3730",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6512031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6512&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6512031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

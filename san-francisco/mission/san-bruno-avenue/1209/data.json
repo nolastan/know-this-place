@@ -1,0 +1,146 @@
+{
+  "address": "1209 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1209/",
+  "apn": "4214026",
+  "block": "4214",
+  "lot": "026",
+  "eas_baseid": "370316",
+  "coordinates": {
+    "lat": 37.754085,
+    "lng": -122.404143
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1290,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1209 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 883544,
+    "assessed_improvement_value": 378658,
+    "last_sale_date": "2013-04-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201802201739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-20",
+      "status_date": "2018-02-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with nov # 200925355 - roofing permit to close out old violation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M359888",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-28",
+      "status_date": "2012-11-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210010942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-01",
+      "status_date": "2013-04-22",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "legalize playroom, storage & laundry room at ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M350107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-26",
+      "status_date": "2012-09-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M335087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-13",
+      "status_date": "2012-07-13",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207114628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-11",
+      "status_date": "2013-04-22",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel bathroom and kitchen in kind.nw bathtub, vanity, toilete, cabinets, dishwasher, sinks, garbage disposal. comply with cec150(k). kitchen: min 50% of kitchen lighting by h.e. watt fixture. bathroom h.e. or t-24 occupancy sensor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901150301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-15",
+      "status_date": "2009-01-21",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "replacement of extg front stairs and stringers in kind to comply with nov #200878376",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1209",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4214026",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

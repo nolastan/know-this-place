@@ -1,0 +1,146 @@
+{
+  "address": "632–634 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/632/",
+  "apn": "3611037",
+  "block": "3611",
+  "lot": "037",
+  "eas_baseid": "362544",
+  "coordinates": {
+    "lat": 37.758216,
+    "lng": -122.416038
+  },
+  "address_range": "632–634",
+  "street_numbers_on_parcel": [
+    "632",
+    "634"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 7105,
+    "building_area_sqft": 2664,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0634 0632 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 296665,
+    "assessed_improvement_value": 162189
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201509025972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-02",
+      "status_date": "2015-09-22",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair electrical cut comply with violation # 201567121 repair siding. repair wood siding in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608240420",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-08-24",
+      "status_date": "2006-08-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove int. plaster board and plaster, inspect for dryrot. insulate walls put new sheetrock on. approx. 600 sqft. repair and replace deto wood on ext. staircase. less than 50% of (e) stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302207848",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-20",
+      "status_date": "2004-01-07",
+      "estimated_cost": 9400,
+      "revised_cost": 9400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909117",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-25",
+      "status_date": "1991-04-08",
+      "estimated_cost": 2500,
+      "description": "this application apply for penalty only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903978",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-03-14",
+      "status_date": "1992-01-28",
+      "estimated_cost": 15000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=632",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3611037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3611&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3611037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41603813349298%2037.75821567514667)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

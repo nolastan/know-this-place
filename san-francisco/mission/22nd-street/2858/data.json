@@ -1,0 +1,170 @@
+{
+  "address": "2858 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2858/",
+  "apn": "4147015",
+  "block": "4147",
+  "lot": "015",
+  "eas_baseid": "369422",
+  "coordinates": {
+    "lat": 37.756091,
+    "lng": -122.411607
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2568,
+    "basement_area_sqft": 1105,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2858 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2356200,
+    "assessed_improvement_value": 1009800,
+    "last_sale_date": "2023-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311080434",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-08",
+      "status_date": "2023-11-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 202206156358. change to front fence. existing rear porch to remain. show location of grill & firepit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310199034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-19",
+      "status_date": "2023-11-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to bpa# 2022-0615-6358. replace hvac scope with (n) boiler & rediant heat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308023526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-02",
+      "status_date": "2023-11-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "dry rot repair on 2nd floor porch @ rear - less than 50%. (n) ledger board, floor, and stair treads. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212208716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-20",
+      "status_date": "2023-11-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revison to pa# 2022-0615-6358, add n piers, posts & headers at gridlines 4-7.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206156358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-15",
+      "status_date": "2023-11-28",
+      "estimated_cost": 160000,
+      "revised_cost": 236250,
+      "description": "interior remodel of 2 story sfr expand into lower level garage/storage space to increase habitable space by 1,105 sqft add (3) new bedrooms + bathroom add (n) laundry room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203210406",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-03-21",
+      "status_date": "2026-01-23",
+      "estimated_cost": 60000,
+      "revised_cost": 0,
+      "description": "remove and replace all drywall in habitable space. 1500 sqft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M130507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-11",
+      "status_date": "2008-08-11",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M14878",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-01",
+      "status_date": "2001-03-01",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-20",
+      "status_date": "1989-10-16",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2858",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4147015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4147&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4147015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

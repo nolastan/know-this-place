@@ -1,0 +1,92 @@
+{
+  "address": "179 Duboce Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/duboce-avenue/179/",
+  "apn": "3533059",
+  "block": "3533",
+  "lot": "059",
+  "eas_baseid": "358390",
+  "coordinates": {
+    "lat": 37.76955,
+    "lng": -122.423986
+  },
+  "parcel": {
+    "year_built": 1955,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 3186,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0179 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37859,
+    "assessed_improvement_value": 125423,
+    "last_sale_date": "1999-12-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9712228",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-02",
+      "status_date": "1998-05-21",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501544",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-13",
+      "status_date": "1986-03-04",
+      "estimated_cost": 530,
+      "description": "to bring building into full compliance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=179",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=059",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533059",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

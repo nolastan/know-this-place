@@ -1,0 +1,134 @@
+{
+  "address": "141–143 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/141/",
+  "apn": "3589030",
+  "block": "3589",
+  "lot": "030",
+  "eas_baseid": "361191",
+  "coordinates": {
+    "lat": 37.761105,
+    "lng": -122.419854
+  },
+  "address_range": "141–143",
+  "street_numbers_on_parcel": [
+    "141",
+    "143"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2420,
+    "basement_area_sqft": 1,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0143 0141 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 794522,
+    "assessed_improvement_value": 622012,
+    "last_sale_date": "2005-01-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102235169",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-23",
+      "status_date": "2021-03-01",
+      "estimated_cost": 8900,
+      "revised_cost": 8900,
+      "description": "tear off existing roof covering; modified bitumen system shall be installed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601086650",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-01-08",
+      "status_date": "2016-01-08",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "bathroom remodel: replace shower, toilet, vanity in-kind, tile floor, move water heater 2 feet within same room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508204848",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-20",
+      "status_date": "2015-11-20",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "complete kitchen and bathroom remodel. all new plumb & elect. to comply with title 24. new bathtub, cabinets 7 countertops. refinish floors. no showe pan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105159172",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-15",
+      "status_date": "2001-06-27",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to install four spread footings under existing posts of rear porch per request of bldg, inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102152209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-15",
+      "status_date": "2001-06-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "to replace existing rotten stairs both at front and rear in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=141",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=030",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589030",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

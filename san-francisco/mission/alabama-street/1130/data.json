@@ -1,0 +1,163 @@
+{
+  "address": "1130–1132 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1130/",
+  "apn": "4206005",
+  "block": "4206",
+  "lot": "005",
+  "eas_baseid": "460597",
+  "coordinates": {
+    "lat": 37.753717,
+    "lng": -122.411339
+  },
+  "address_range": "1130–1132",
+  "street_numbers_on_parcel": [
+    "1130",
+    "1132"
+  ],
+  "parcel": {
+    "year_built": 1941,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2239,
+    "basement_area_sqft": 750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1132 1130 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1531102,
+    "assessed_improvement_value": 656186,
+    "last_sale_date": "2020-05-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202112033617",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-03",
+      "status_date": "2021-12-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing. tear off existing to sheathing. install new 3 ply self adhearing roof system and new compositions shingles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108025598",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-08-02",
+      "status_date": "2026-01-23",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "replace kitchen cabinets in-kind. replace all plumbing fixtures. restore tile & other finishes as needed. no framing change under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15866",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-05",
+      "status_date": "2001-08-05",
+      "revised_cost": 0,
+      "description": "address assignment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006142679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-14",
+      "status_date": "2000-12-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of application 9923349",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9926338S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-12-15",
+      "status_date": "2001-04-19",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "construct 2nd unit in basement, add rear deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923349",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-11-02",
+      "status_date": "2000-12-12",
+      "estimated_cost": 5200,
+      "description": "replace kitchen cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600473",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-01-10",
+      "status_date": "1996-05-10",
+      "estimated_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-10-20",
+      "status_date": "1984-01-11",
+      "estimated_cost": 1066,
+      "description": "installation of 2 aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1130",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

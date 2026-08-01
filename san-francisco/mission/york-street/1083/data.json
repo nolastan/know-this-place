@@ -1,0 +1,110 @@
+{
+  "address": "1083–1085 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1083/",
+  "apn": "4152024",
+  "block": "4152",
+  "lot": "024",
+  "eas_baseid": "369614",
+  "coordinates": {
+    "lat": 37.754783,
+    "lng": -122.408097
+  },
+  "address_range": "1083–1085",
+  "street_numbers_on_parcel": [
+    "1083",
+    "1085"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2484,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1085 1083 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 133968,
+    "assessed_improvement_value": 407698,
+    "last_sale_date": "1987-10-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202202147950",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-14",
+      "status_date": "2022-03-11",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing. tear off roof down to original wood, install new roof w/(3) ply of s,a flintlastic certainteed self adhered system fire free.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507087124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-08",
+      "status_date": "2005-08-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "submit drawings for full stair replacement.rev.to appl#200503217979",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503217979",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-21",
+      "status_date": "2005-08-22",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "replace front stairs in kind from sidewalk to landing at front doors. add wrought iron handrail.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1083",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

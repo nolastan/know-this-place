@@ -1,0 +1,131 @@
+{
+  "address": "907–911 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/907/",
+  "apn": "3631031",
+  "block": "3631",
+  "lot": "031",
+  "eas_baseid": "363666",
+  "coordinates": {
+    "lat": 37.754843,
+    "lng": -122.42503
+  },
+  "address_range": "907–911",
+  "street_numbers_on_parcel": [
+    "907",
+    "909",
+    "911"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 3525,
+    "building_area_sqft": 4476,
+    "lot_depth_ft": 17.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0911 0907 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 342939,
+    "assessed_improvement_value": 541089,
+    "last_sale_date": "1990-10-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M190466",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-10",
+      "status_date": "2010-02-10",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202269993",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-26",
+      "status_date": "2002-04-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111193482",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-19",
+      "status_date": "2002-06-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "comply w/inspection report 8-22-85,revert 3 units on 3 floors by revert attic fl of occupancy to sto",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714463",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-10-09",
+      "status_date": "1988-04-08",
+      "estimated_cost": 2500,
+      "description": "extend back stairway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510746",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1985-09-27",
+      "status_date": "1985-09-27",
+      "estimated_cost": 5,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=907",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3631031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3631&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3631031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

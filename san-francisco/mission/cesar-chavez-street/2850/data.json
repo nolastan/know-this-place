@@ -1,0 +1,135 @@
+{
+  "address": "2850 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2850/",
+  "apn": "4334002D",
+  "block": "4334",
+  "lot": "002D",
+  "eas_baseid": "371298",
+  "coordinates": {
+    "lat": 37.749039,
+    "lng": -122.406686
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1550,
+    "building_area_sqft": 1780,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2850 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1098668,
+    "assessed_improvement_value": 470857,
+    "last_sale_date": "2021-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104198794",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-19",
+      "status_date": "2021-04-22",
+      "estimated_cost": 8240,
+      "revised_cost": 8240,
+      "description": "spcb wood destroying rpt. #pd200613pd28 . items 1) repair the rear stairs and landings 2) repair base of support wall below upper deck 3) add a cap at the top of the deck wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402219048",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-21",
+      "status_date": "2015-07-23",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "return garage entrance to cesar chavez street from hampshire street & eliminate illegal office. remodel ground fl w/ master suite, bath & laundry rm. remodel 2nd fl kitchen & bath. replace windows throughout w/ wood windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014328",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-07-19",
+      "status_date": "1991-01-19",
+      "estimated_cost": 10000,
+      "description": "replace old slider window door & installed new one, double",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005225",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-19",
+      "status_date": "1990-04-10",
+      "estimated_cost": 2450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-09",
+      "status_date": "1990-12-05",
+      "estimated_cost": 17500,
+      "description": "remodel bath & kitchen. replace 4 windows. paint ext & int",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8412646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-11-29",
+      "status_date": "1985-05-08",
+      "estimated_cost": 1000,
+      "description": "install 02 windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2850",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334002D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=002D",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334002D",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

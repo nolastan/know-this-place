@@ -1,0 +1,109 @@
+{
+  "address": "937 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/937/",
+  "apn": "3611026",
+  "block": "3611",
+  "lot": "026",
+  "eas_baseid": "362532",
+  "coordinates": {
+    "lat": 37.758152,
+    "lng": -122.416458
+  },
+  "parcel": {
+    "year_built": 1875,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3375,
+    "building_area_sqft": 2281,
+    "lot_depth_ft": 12.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0937 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367944,
+    "assessed_improvement_value": 275952,
+    "last_sale_date": "1990-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1875",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201403140767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-14",
+      "status_date": "2014-09-04",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007015",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-04-11",
+      "status_date": "1990-09-19",
+      "estimated_cost": 5000,
+      "description": "strip off old roof, replace strip with new one",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=937",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3611026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3611&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3611026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41645828933059%2037.75815184439871)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "address": "1442 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1442/",
+  "apn": "4338007",
+  "block": "4338",
+  "lot": "007",
+  "eas_baseid": "371412",
+  "coordinates": {
+    "lat": 37.748881,
+    "lng": -122.410877
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2817,
+    "basement_area_sqft": 902,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1442 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143664,
+    "assessed_improvement_value": 669046
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202101223154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-22",
+      "status_date": "2021-02-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa 201911127054: reduce scope and remove proposed stitz wheelchair elevator. all other layouts remain the same on approved pa201911127054.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1218247",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-30",
+      "status_date": "2020-08-03",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1217629",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2020-07-27",
+      "status_date": "2020-07-27",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911127054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-12",
+      "status_date": "2021-02-25",
+      "estimated_cost": 50000,
+      "revised_cost": 280000,
+      "description": "redesign interior staircase & add elevator between 1st & 2nd floor. convert existing mech room into 2 bedrooms. add one bathroon on 1st floor per plan. change existing full bath to master bedroom. kitchen remodel. convert existing storage on attic to 2 bedroom 1 bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706068532",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-06-06",
+      "status_date": "2019-04-29",
+      "estimated_cost": 140000,
+      "description": "rear addition. front addition. remodel & reinforce of (e) bldg 1st & 2nd fl. add 1st floor (2) bedrooms, (1) bath, (1) family room, laundry, (1) utility room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15213",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-12-27",
+      "status_date": "2001-04-27",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1442",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

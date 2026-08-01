@@ -1,0 +1,145 @@
+{
+  "address": "561–563 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/561/",
+  "apn": "3587036",
+  "block": "3587",
+  "lot": "036",
+  "eas_baseid": "361032",
+  "coordinates": {
+    "lat": 37.76055,
+    "lng": -122.425591
+  },
+  "address_range": "561–563",
+  "street_numbers_on_parcel": [
+    "561",
+    "563"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 3064,
+    "lot_depth_ft": 10,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0563 0561 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1065929,
+    "assessed_improvement_value": 710616,
+    "last_sale_date": "2006-02-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201503120718",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-12",
+      "status_date": "2015-03-12",
+      "estimated_cost": 13800,
+      "revised_cost": 13800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M250446",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-03-29",
+      "status_date": "2011-03-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012176942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-17",
+      "status_date": "2011-05-18",
+      "estimated_cost": 13500,
+      "revised_cost": 10000,
+      "description": "replace rear yard stairway 2nd means of egress in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M221346",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-17",
+      "status_date": "2010-09-17",
+      "revised_cost": 1,
+      "description": "street space for scaffold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310842",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-28",
+      "status_date": "1994-01-03",
+      "estimated_cost": 7100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=561",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42559147989043%2037.760550455206754)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

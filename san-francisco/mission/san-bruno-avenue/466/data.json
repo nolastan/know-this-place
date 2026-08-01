@@ -1,0 +1,147 @@
+{
+  "address": "466 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/466/",
+  "apn": "3975001G",
+  "block": "3975",
+  "lot": "001G",
+  "eas_baseid": "366868",
+  "coordinates": {
+    "lat": 37.763708,
+    "lng": -122.40569
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1525,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0466 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 451873,
+    "assessed_improvement_value": 395526,
+    "last_sale_date": "2003-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512101433",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-10",
+      "status_date": "2025-12-10",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511203200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-20",
+      "status_date": "2016-03-11",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "revision to pa #201504173935 - partially infill (e) lightwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504173935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-17",
+      "status_date": "2016-03-11",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remove bearing wall between kitchen and dining room, remodel e kitchen and dining room. replace fixtures and tile in upper floor bathroom. maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308182276",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-18",
+      "status_date": "2003-09-02",
+      "estimated_cost": 1700,
+      "revised_cost": 1700,
+      "description": "replace existing ductwork in garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307099106",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-09",
+      "status_date": "2003-09-02",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "build a half bathroom in basement, plus rebuilt/remodel storage room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9711425",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-06-23",
+      "status_date": "1998-04-23",
+      "estimated_cost": 6260,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203494",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-05",
+      "status_date": "1983-03-04",
+      "estimated_cost": 40000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=466",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3975001G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3975&lot=001G",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3975001G",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

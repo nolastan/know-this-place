@@ -1,0 +1,98 @@
+{
+  "address": "2434–2436 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2434/",
+  "apn": "4214015",
+  "block": "4214",
+  "lot": "015",
+  "eas_baseid": "370306",
+  "coordinates": {
+    "lat": 37.753369,
+    "lng": -122.404031
+  },
+  "address_range": "2434–2436",
+  "street_numbers_on_parcel": [
+    "2434",
+    "2436"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2410,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2436 2434 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239503,
+    "assessed_improvement_value": 250678,
+    "last_sale_date": "1998-04-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009214599",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-09-21",
+      "status_date": "2020-09-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "comply w/ nov #2020054414: fix/repair roof. reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1081547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-16",
+      "status_date": "2019-05-16",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2434",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4214015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

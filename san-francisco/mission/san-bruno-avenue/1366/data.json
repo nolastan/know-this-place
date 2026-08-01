@@ -1,0 +1,128 @@
+{
+  "address": "1366–1368 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1366/",
+  "apn": "4263007",
+  "block": "4263",
+  "lot": "007",
+  "eas_baseid": "370613",
+  "coordinates": {
+    "lat": 37.752225,
+    "lng": -122.40459
+  },
+  "address_range": "1366–1368",
+  "street_numbers_on_parcel": [
+    "1366",
+    "1368"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 7,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2693,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1366 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 590355,
+    "assessed_improvement_value": 393565,
+    "last_sale_date": "2005-07-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604285935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-28",
+      "status_date": "2016-05-27",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply w/ complaint#'s 201611284, 201610482 & 201609441. replace dryrot exterior door, dry rot in back only, replace everything in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811055868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-05",
+      "status_date": "2009-12-17",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace tubs, tile, kitchen cabinets, 1 door, light fixtures, painting patch, closets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703216789",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2007-03-21",
+      "status_date": "2015-12-11",
+      "estimated_cost": 850000,
+      "description": "erect a new 4 story 3 unit residential over parking building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703216793",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2007-03-21",
+      "status_date": "2015-12-11",
+      "description": "demolish a 3 story 3 unit residential building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511228839",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2005-11-22",
+      "status_date": "2008-06-24",
+      "description": "demolish a storage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1366",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4263007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4263&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4263007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

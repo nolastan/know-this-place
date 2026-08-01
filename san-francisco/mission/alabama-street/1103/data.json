@@ -1,0 +1,132 @@
+{
+  "address": "1103–1105 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1103/",
+  "apn": "4207031",
+  "block": "4207",
+  "lot": "031",
+  "eas_baseid": "370118",
+  "coordinates": {
+    "lat": 37.753965,
+    "lng": -122.410893
+  },
+  "address_range": "1103–1105",
+  "street_numbers_on_parcel": [
+    "1103",
+    "1105"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1594,
+    "building_area_sqft": 2500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1105 1103 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1358850,
+    "assessed_improvement_value": 582362,
+    "last_sale_date": "2019-11-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1067867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-04-17",
+      "status_date": "2019-04-17",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812107935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-10",
+      "status_date": "2018-12-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to document the legal use and occupancy of building as a 2-story structure w/ 2 res units. this determination is based on review of city records incl water dept records, assessors office, sanborn map & dbi records. site visit conducted by dbi inspector. no work on this permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202118866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-11",
+      "status_date": "2002-04-01",
+      "estimated_cost": 5000,
+      "revised_cost": 1,
+      "description": "repair existing stairs and upgrade to pres treated lumber,support piers/columns,handrail rvsn 200110",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201086477",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-08",
+      "status_date": "2002-04-01",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair existing stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110231487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-23",
+      "status_date": "2002-04-01",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "repair existing porch.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1103",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

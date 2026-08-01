@@ -1,0 +1,163 @@
+{
+  "address": "25 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/25/",
+  "apn": "3618062",
+  "block": "3618",
+  "lot": "062",
+  "eas_baseid": "362974",
+  "coordinates": {
+    "lat": 37.756264,
+    "lng": -122.424093
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 3053,
+    "building_area_sqft": 2158,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0025 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32317,
+    "assessed_improvement_value": 46042
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202405303258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-30",
+      "status_date": "2024-08-30",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one bathroom remodel - like for like.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205234798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-23",
+      "status_date": "2023-05-08",
+      "estimated_cost": 20000,
+      "revised_cost": 25000,
+      "description": "response to nov 2021173028, new rear retaining wall and conc piers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701116935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-11",
+      "status_date": "2017-03-10",
+      "estimated_cost": 7300,
+      "revised_cost": 7300,
+      "description": "4 windows replacement, like for like aluminum wood-clad, not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701106815",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-01-10",
+      "status_date": "2017-02-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "install all new r-8 flexible ductwork in crawl space to replace existing ductwork in conjunction with air conditioning replacement, less than 40 ft ducts. flexible ducts shall comply with cmc 603.5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221273",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-12-09",
+      "status_date": "1993-03-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev #9210602-chng bathrm to rectangular. 2 hr roof. no parpt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210602S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-06-26",
+      "status_date": "1993-03-08",
+      "estimated_cost": 25000,
+      "revised_cost": 33900,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-02",
+      "status_date": "1990-06-19",
+      "estimated_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=25",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=062",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618062",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4240929537043%2037.7562636946548)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

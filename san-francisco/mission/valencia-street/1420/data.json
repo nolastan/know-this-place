@@ -1,0 +1,95 @@
+{
+  "address": "1420 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/1420/",
+  "apn": "6531005",
+  "block": "6531",
+  "lot": "005",
+  "eas_baseid": "401373",
+  "coordinates": {
+    "lat": 37.75008,
+    "lng": -122.420765
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 4,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 3004,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1420 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 873936,
+    "assessed_improvement_value": 374544,
+    "last_sale_date": "2023-02-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605070857",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-05-07",
+      "status_date": "2026-05-07",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "two units: dryrot repairs in both units, all repairs in kind. all work is interior. repairs floor and walls as needed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202602196168",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-02-19",
+      "status_date": "2026-02-24",
+      "estimated_cost": 40000,
+      "revised_cost": 189081,
+      "description": "three units convert (e) kitchen to bedroom, relocate kitchen in living/dining room; add washer/dryer to each unit; one unit - provide plumbed wall for future kitchen relocation. (no structural or exterior changes)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=1420",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6531005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6531&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6531005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

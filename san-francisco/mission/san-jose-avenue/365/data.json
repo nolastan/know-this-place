@@ -1,0 +1,113 @@
+{
+  "address": "365 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/365/",
+  "apn": "6531021",
+  "block": "6531",
+  "lot": "021",
+  "eas_baseid": "401390",
+  "coordinates": {
+    "lat": 37.749363,
+    "lng": -122.421061
+  },
+  "parcel": {
+    "year_built": 1880,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2430,
+    "building_area_sqft": 1797,
+    "lot_depth_ft": 27,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0367 0365 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169934,
+    "assessed_improvement_value": 169934
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M332427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-03",
+      "status_date": "2012-07-03",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607136428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-13",
+      "status_date": "2006-09-07",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "repair and reroof flat roof over kitchen, demolish (e) deck over that area of roof and replace it with a smaller deck on sleepers over repaired flat roof, roof line will remain unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408130",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-05-23",
+      "status_date": "1994-12-02",
+      "estimated_cost": 2500,
+      "description": "install shingle,exterior plywood & par felt as a base sheet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-28",
+      "status_date": "1993-10-25",
+      "estimated_cost": 20000,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=365",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6531021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6531&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6531021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

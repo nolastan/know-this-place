@@ -1,0 +1,129 @@
+{
+  "address": "3543 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3543/",
+  "apn": "6513026",
+  "block": "6513",
+  "lot": "026",
+  "eas_baseid": "400810",
+  "coordinates": {
+    "lat": 37.751757,
+    "lng": -122.422381
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2731,
+    "building_area_sqft": 1449,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3543 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187609,
+    "assessed_improvement_value": 397106,
+    "last_sale_date": "1989-01-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202511109255",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-10",
+      "status_date": "2026-02-19",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "re roofing no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009080427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-08",
+      "status_date": "2010-09-08",
+      "estimated_cost": 5400,
+      "revised_cost": 5400,
+      "description": "replace (e) (12) windows @ rear of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913099",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-07-25",
+      "status_date": "1989-12-05",
+      "estimated_cost": 8500,
+      "description": "repair sheet rock, replace window @ dormer, repair floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900280",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-09",
+      "status_date": "1990-01-17",
+      "estimated_cost": 99000,
+      "description": "vertical & horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3543",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6513026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6513&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42238141200475%2037.75175697402148)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

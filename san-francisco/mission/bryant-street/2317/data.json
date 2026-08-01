@@ -1,0 +1,146 @@
+{
+  "address": "2317–2319 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2317/",
+  "apn": "4144034",
+  "block": "4144",
+  "lot": "034",
+  "eas_baseid": "369322",
+  "coordinates": {
+    "lat": 37.757262,
+    "lng": -122.409237
+  },
+  "address_range": "2317–2319",
+  "street_numbers_on_parcel": [
+    "2317",
+    "2319"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2740,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2319 2317 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72491,
+    "assessed_improvement_value": 171940
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202001282896",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-28",
+      "status_date": "2020-01-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "provide temporary shoring for south property line to replace 6 feet or foundation, replace 10 feet of studs damaged by dryrot. repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001061272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-06",
+      "status_date": "2020-06-17",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "under supervision of licensed engineer temporary emergency & support of property line wall @ basement by sistering 2x6 to (e) 2x6 @ 16\" on center for 15' of south wall. dryrot repair under separate permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510115216",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-10-11",
+      "status_date": "2008-02-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "repair rear stairs,50% or less of (e) condition of 2 units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510115217",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-11",
+      "status_date": "2006-02-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200208012899 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208012899",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-08-01",
+      "status_date": "2003-09-02",
+      "estimated_cost": 13119,
+      "revised_cost": 13119,
+      "description": "demo existing counters/redo plumbing & install new cabinets,counter tops in both units.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2317",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4144034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4144&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4144034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40923748911563%2037.75726203492512)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

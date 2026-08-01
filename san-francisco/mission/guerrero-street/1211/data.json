@@ -1,0 +1,110 @@
+{
+  "address": "1211 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1211/",
+  "apn": "6513022",
+  "block": "6513",
+  "lot": "022",
+  "eas_baseid": "400808",
+  "coordinates": {
+    "lat": 37.751635,
+    "lng": -122.422557
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1995,
+    "building_area_sqft": 2000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1211 1211 GUERRERO            ST01/2"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1034263,
+    "assessed_improvement_value": 443254,
+    "last_sale_date": "2021-05-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202106142292",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-06-14",
+      "status_date": "2021-06-14",
+      "estimated_cost": 5000,
+      "revised_cost": 30000,
+      "description": "in kind kitchen reface and remodel, in kind bathroom reface and remodel, minor repair of dryrot on rear deck and stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301275988",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-27",
+      "status_date": "2003-10-01",
+      "estimated_cost": 7400,
+      "revised_cost": 7400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1211",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6513022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6513&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42255706034375%2037.75163511824774)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

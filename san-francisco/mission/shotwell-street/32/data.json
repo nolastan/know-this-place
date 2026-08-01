@@ -1,0 +1,146 @@
+{
+  "address": "32 Shotwell Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/shotwell-street/32/",
+  "apn": "3549054",
+  "block": "3549",
+  "lot": "054",
+  "eas_baseid": "359182",
+  "coordinates": {
+    "lat": 37.767851,
+    "lng": -122.41696
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1075,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0032 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325726,
+    "assessed_improvement_value": 146570,
+    "last_sale_date": "1996-09-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804277691",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-04-27",
+      "status_date": "2026-01-09",
+      "estimated_cost": 950,
+      "revised_cost": 950,
+      "description": "replace garage door, no rough opening changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803143607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-14",
+      "status_date": "2018-03-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "this permit is to correct the record of legal use and occupancy of this building as a two story structure containing a ground floor commercial warehouse and a single residential dwelling unit on the 2nd floor. pa# 8010698 and 200306247816 did not reflect both legal uses and occupancies. however,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307300741",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-30",
+      "status_date": "2003-10-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "refinish stucco facade at front. install two windows at front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306247816",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-06-24",
+      "status_date": "2004-08-05",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel & interior alterations as per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810857",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-12",
+      "status_date": "1998-12-12",
+      "estimated_cost": 8700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619603",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-11",
+      "status_date": "1997-02-11",
+      "estimated_cost": 2500,
+      "description": "repair dry rot on bottom of front stucco bay",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105963",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-10",
+      "status_date": "1991-08-22",
+      "estimated_cost": 3950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=32",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3549054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3549&lot=054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3549054",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

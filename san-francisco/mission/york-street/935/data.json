@@ -1,0 +1,140 @@
+{
+  "address": "935 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/935/",
+  "apn": "4143031",
+  "block": "4143",
+  "lot": "031",
+  "eas_baseid": "369280",
+  "coordinates": {
+    "lat": 37.757073,
+    "lng": -122.408319
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1130,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0935 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 831184,
+    "assessed_improvement_value": 76121
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202508052373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-05",
+      "status_date": "2025-09-07",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing: remove (e) shingle, reaplce all gutter, downspouts, roof flashing, vent pipe flashing, chimnet flashing. install a layer of hybrid underlayment. intstall new class a fire-rated laminated shingles. no sheathing plywood replacment and skylight. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202502200671",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-05-08",
+      "status_date": "2025-11-19",
+      "estimated_cost": 133320,
+      "revised_cost": 204318,
+      "description": "to convert this 3-story single family dwelling into two units. the 2/f and 3/f will be the main unit, one unit. one unit at the ground floor will be converted to an adu, legalized under the state adu program.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411205433",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2024-11-20",
+      "status_date": "2025-01-03",
+      "estimated_cost": 400000,
+      "description": "convert single family dwelling 1-unit into 2-units. ground floor unit will be legalized under the state adu process. 2/f & 3/f renovations due to fire damage will be under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403198164",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-03-19",
+      "status_date": "2025-06-27",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "repair all fire damage like for like. remove and replace all drywall and insulation on 2nd and 3rd floors. repair kitchen in kind. repair roof due to fire damage and repair ceiling joists at 2nd and 3rd floor at rear. replace doors and windows. replace hvac & electrical wires.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17421",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-15",
+      "status_date": "2002-04-15",
+      "revised_cost": 6000,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=935",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4143031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4143&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4143031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40831892336281%2037.75707286100218)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

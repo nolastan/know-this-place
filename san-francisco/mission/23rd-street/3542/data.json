@@ -1,0 +1,159 @@
+{
+  "address": "3542 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3542/",
+  "apn": "3634011",
+  "block": "3634",
+  "lot": "011",
+  "eas_baseid": "363740",
+  "coordinates": {
+    "lat": 37.753844,
+    "lng": -122.422547
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 7,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 7,
+    "bedrooms": 4,
+    "lot_area_sqft": 2964,
+    "building_area_sqft": 5346,
+    "basement_area_sqft": 450,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3542 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36311,
+    "assessed_improvement_value": 107177
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506168806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-16",
+      "status_date": "2025-08-04",
+      "estimated_cost": 1,
+      "revised_cost": 720,
+      "description": "as built 202505015627 addition of 1 heat detector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506108314",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-10",
+      "status_date": "2025-06-10",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "four units: partial insulation and patch/repair sheetrock-mud/tape/sand prime+ paint following electrical work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505015627",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-01",
+      "status_date": "2025-07-31",
+      "estimated_cost": 26000,
+      "revised_cost": 32405,
+      "description": "full 1103.6.7.1 fire alarm upgrade to add low frequency sounders to all sleeping areas, full addressable system upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407015654",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-07-01",
+      "status_date": "2024-07-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under permit 201602058996. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M661887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-08",
+      "status_date": "2016-02-08",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602058996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-05",
+      "status_date": "2025-02-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace (18) front street facade windows with fiberglass, single - or double-hung with horizontal sash. prep and paint full exterior around, no change to exterior siding (stucco). repair dry rot trims (minimal only as needed) with wood trim.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810477",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-07-26",
+      "status_date": "1988-11-22",
+      "estimated_cost": 4700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510036",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-12",
+      "status_date": "1986-02-21",
+      "estimated_cost": 635,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3542",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "address": "2605–2607 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2605/",
+  "apn": "4267029",
+  "block": "4267",
+  "lot": "029",
+  "eas_baseid": "370741",
+  "coordinates": {
+    "lat": 37.752416,
+    "lng": -122.408774
+  },
+  "address_range": "2605–2607",
+  "street_numbers_on_parcel": [
+    "2605",
+    "2607"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2036,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2607 2605 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 754243,
+    "assessed_improvement_value": 471808,
+    "last_sale_date": "2013-03-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M466107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-02-24",
+      "status_date": "2014-02-25",
+      "revised_cost": 267,
+      "description": "add address to apartment bldg at block 4267, lot 029 as: 2605a bryant street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308164520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-16",
+      "status_date": "2014-07-24",
+      "estimated_cost": 55000,
+      "revised_cost": 80000,
+      "description": "comply with nov 200009226 and 200346303 remoe e non permitted shed at the rear for one unit. remodel bath, kitchen, new bedroom . one unit: remodel bathroom, kitchen, new bedroom, and bath. new lighting and fixtures for both unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305227613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-22",
+      "status_date": "2014-02-12",
+      "estimated_cost": 15000,
+      "revised_cost": 22000,
+      "description": "one unit - remodel (e) kitchen & bathroom, no change to bldg envelope. new windows at rear and two water heater. new foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M60364",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-03-13",
+      "status_date": "2007-03-13",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304788",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-05-26",
+      "status_date": "1983-10-11",
+      "estimated_cost": 2100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2605",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

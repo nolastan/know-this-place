@@ -1,0 +1,118 @@
+{
+  "address": "2918–2920 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2918/",
+  "apn": "4207016",
+  "block": "4207",
+  "lot": "016",
+  "eas_baseid": "370104",
+  "coordinates": {
+    "lat": 37.752945,
+    "lng": -122.410493
+  },
+  "address_range": "2918–2920",
+  "street_numbers_on_parcel": [
+    "2918",
+    "2920"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 3030,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2920 2918 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124290,
+    "assessed_improvement_value": 160549
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407035777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-03",
+      "status_date": "2024-08-16",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006013526",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-06-01",
+      "status_date": "2010-06-28",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "voluntary removal of general advertising sign 6'x12' on building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407320",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-07-09",
+      "status_date": "1985-04-30",
+      "estimated_cost": 2000,
+      "description": "location of bathroom revised, added at rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404647",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-05-01",
+      "status_date": "1984-09-24",
+      "estimated_cost": 20000,
+      "description": "remove 2-4x4 posts add beam, remodel interior",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2918",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

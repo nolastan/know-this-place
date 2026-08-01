@@ -1,0 +1,130 @@
+{
+  "address": "2633–2635 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2633/",
+  "apn": "4142039",
+  "block": "4142",
+  "lot": "039",
+  "eas_baseid": "369244",
+  "coordinates": {
+    "lat": 37.757503,
+    "lng": -122.407414
+  },
+  "address_range": "2633–2635",
+  "street_numbers_on_parcel": [
+    "2633",
+    "2635"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 2992,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2635 2633 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1227221,
+    "assessed_improvement_value": 525943,
+    "last_sale_date": "2014-07-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509247950",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-24",
+      "status_date": "2016-03-14",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit - replace kitchen cabinets, sink & ocuntertop; replace bathroom plumbing fixtures; new wall finishes at ktichen; replace pull down attic ladder @ hallway next to bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002186773",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-18",
+      "status_date": "2010-06-25",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit only. new full bathroom, coat closet, new office door, reiforce stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603318060",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-31",
+      "status_date": "2006-05-26",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102222706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-22",
+      "status_date": "2001-08-20",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel-kitchen, bathroom, utility room, repair back stairs (ext) one unit-21st, repair stairs in k",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307928",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-12",
+      "status_date": "1984-10-03",
+      "estimated_cost": 2590,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2633",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

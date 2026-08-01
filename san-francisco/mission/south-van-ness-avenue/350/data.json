@@ -1,0 +1,150 @@
+{
+  "address": "350–354 South Van Ness Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/south-van-ness-avenue/350/",
+  "apn": "3548009",
+  "block": "3548",
+  "lot": "009",
+  "eas_baseid": "359076",
+  "coordinates": {
+    "lat": 37.767553,
+    "lng": -122.418004
+  },
+  "address_range": "350–354",
+  "street_numbers_on_parcel": [
+    "350",
+    "352",
+    "354"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 4831,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0354 0350 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2259382,
+    "assessed_improvement_value": 968305,
+    "last_sale_date": "2014-04-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602119426",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-11",
+      "status_date": "2016-12-20",
+      "estimated_cost": 45000,
+      "revised_cost": 50000,
+      "description": "in kind stair rehabilitation in rear of bulding; in-kind window replacement in back non-street facing. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M405487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-03",
+      "status_date": "2013-07-03",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211164447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-16",
+      "status_date": "2012-11-16",
+      "estimated_cost": 12200,
+      "revised_cost": 12200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214193",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-20",
+      "status_date": "1992-09-08",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903009",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-02-27",
+      "status_date": "1989-04-26",
+      "estimated_cost": 1,
+      "description": "final inspection for appl.#8806857.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806857",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-24",
+      "status_date": "1988-12-20",
+      "estimated_cost": 15000,
+      "description": "kitchen & bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411229",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-10-23",
+      "status_date": "1989-09-24",
+      "estimated_cost": 5800,
+      "description": "install aluminums windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=350",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3548009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3548&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3548009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

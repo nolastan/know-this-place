@@ -1,0 +1,129 @@
+{
+  "address": "3621 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3621/",
+  "apn": "3608071",
+  "block": "3608",
+  "lot": "071",
+  "eas_baseid": "362351",
+  "coordinates": {
+    "lat": 37.758223,
+    "lng": -122.421813
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 2926,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3621 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1204000,
+    "assessed_improvement_value": 516000,
+    "last_sale_date": "2024-07-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202410022150",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-02",
+      "status_date": "2024-10-22",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909161711",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-16",
+      "status_date": "2019-09-16",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "new kitcen cabinets and counter. new bath and shower value. interior work only. no change of floor plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908753",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-05-22",
+      "status_date": "1990-05-22",
+      "estimated_cost": 28000,
+      "description": "revise estimate on appl. #8908206. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-05-12",
+      "status_date": "1989-07-25",
+      "estimated_cost": 10000,
+      "description": "replae 8 aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3621",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=071",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608071",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42181337940416%2037.758223252501395)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

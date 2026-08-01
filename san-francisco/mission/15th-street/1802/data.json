@@ -1,0 +1,121 @@
+{
+  "address": "1802–1806 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/15th-street/1802/",
+  "apn": "3545018",
+  "block": "3545",
+  "lot": "018",
+  "eas_baseid": "358954",
+  "coordinates": {
+    "lat": 37.766519,
+    "lng": -122.424535
+  },
+  "address_range": "1802–1806",
+  "street_numbers_on_parcel": [
+    "1802",
+    "1804",
+    "1806"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 4,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 5204,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1806 1802 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 906037,
+    "assessed_improvement_value": 557556,
+    "last_sale_date": "2004-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M740027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-17",
+      "status_date": "2016-11-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504200503",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-04-20",
+      "status_date": "2005-04-20",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace windows not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411129006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-12",
+      "status_date": "2004-11-18",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "repair wooden rear steps with pressur treated wood (upgrade) steps to be repaired/replace is.....",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111304236",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-30",
+      "status_date": "2002-05-31",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1802",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

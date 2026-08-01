@@ -1,0 +1,133 @@
+{
+  "address": "156–160 Albion Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/albion-street/156/",
+  "apn": "3568033",
+  "block": "3568",
+  "lot": "033",
+  "eas_baseid": "360018",
+  "coordinates": {
+    "lat": 37.76386,
+    "lng": -122.422884
+  },
+  "address_range": "156–160",
+  "street_numbers_on_parcel": [
+    "156",
+    "158",
+    "160"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 4,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 6260,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0160 0156 ALBION              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 986502,
+    "assessed_improvement_value": 422780,
+    "last_sale_date": "2010-11-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203150014",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-15",
+      "status_date": "2022-03-17",
+      "estimated_cost": 24000,
+      "revised_cost": 35000,
+      "description": "kitchen: replacing cabinets in kind, replacing counters/sink in kind, replacing stove in kind, adding dishwasher, replacing vinyl flooring in kind. bathroom: replacing vanity in kind, replacing bathtub/tile in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905150752",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-15",
+      "status_date": "2022-12-29",
+      "estimated_cost": 15000,
+      "revised_cost": 6500,
+      "description": "top floor window replacement: replacing six windows in front of building (currently metal windows - installing marvin all-wood white double-hung windows). replacing 11 windows on side and reaer of building (currently metal windows - isntalling marvin vinyl double-hung windows).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309195197",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-19",
+      "status_date": "2003-10-09",
+      "estimated_cost": 5700,
+      "revised_cost": 5700,
+      "description": "comply nov 200342002 - repair exterior stairs at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012288764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-12-28",
+      "status_date": "2001-03-14",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203491",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-03-06",
+      "status_date": "1992-04-16",
+      "estimated_cost": 5000,
+      "revised_cost": 6400,
+      "description": "structural modification to garage framing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALBION&street_type=ST&address_number=156",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568033",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

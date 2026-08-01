@@ -1,0 +1,151 @@
+{
+  "address": "1169 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1169/",
+  "apn": "3645017",
+  "block": "3645",
+  "lot": "017",
+  "eas_baseid": "364218",
+  "coordinates": {
+    "lat": 37.752411,
+    "lng": -122.422601
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 1940,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1171 1169 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1019734,
+    "assessed_improvement_value": 437018,
+    "last_sale_date": "2012-08-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201211274878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-27",
+      "status_date": "2013-02-06",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "kitchen remodel, new lighting, electrical & plumbming, caniets, counter tops and flooring.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M358367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-15",
+      "status_date": "2012-11-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M351808",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-05",
+      "status_date": "2012-10-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209240465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-24",
+      "status_date": "2013-02-06",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replacement of existing brick foundation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008168848",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-16",
+      "status_date": "2010-10-27",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "bathroom remodel. remove and replace. tub toilet, vanity, sink, faucet, tile floor tub surround, shower valve. provide h.e. light or manual on 0.5",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M35282",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-09",
+      "status_date": "2005-11-09",
+      "revised_cost": 0,
+      "description": "sidewalk only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1169",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42260104574716%2037.75241147739692)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

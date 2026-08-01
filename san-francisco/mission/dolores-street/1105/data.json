@@ -1,0 +1,82 @@
+{
+  "address": "1105 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1105/",
+  "apn": "6511038",
+  "block": "6511",
+  "lot": "038",
+  "eas_baseid": "400755",
+  "coordinates": {
+    "lat": 37.751638,
+    "lng": -122.424836
+  },
+  "parcel": {
+    "year_built": 1956,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 1140,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1105 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 710890,
+    "assessed_improvement_value": 473922,
+    "last_sale_date": "2004-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8611955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-09-26",
+      "status_date": "1987-03-30",
+      "estimated_cost": 7700,
+      "description": "vinyl siding to be installed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1105",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

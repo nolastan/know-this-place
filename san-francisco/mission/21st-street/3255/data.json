@@ -1,0 +1,104 @@
+{
+  "address": "3255 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3255/",
+  "apn": "3616063",
+  "block": "3616",
+  "lot": "063",
+  "eas_baseid": "486282",
+  "coordinates": {
+    "lat": 37.756825,
+    "lng": -122.420294
+  },
+  "parcel": {
+    "units": 1,
+    "stories": 2,
+    "lot_area_sqft": 65945,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3255 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "permits": [
+    {
+      "number": "201904026902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-02",
+      "status_date": "2020-02-27",
+      "estimated_cost": 332126,
+      "revised_cost": 332126,
+      "description": "electrical works associated with the replacement of parking access & revenue control systems (parcs) equipement for the garage parcs equipments are not part of this permit application",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903215860",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2019-03-21",
+      "status_date": "2020-03-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "electric wall sign single faced (mission bartlett) n/a maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903215862",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2019-03-21",
+      "status_date": "2019-04-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "electric wall projecting double faced (p) n/a maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706209762",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-20",
+      "status_date": "2017-06-20",
+      "estimated_cost": 55207,
+      "revised_cost": 62400,
+      "description": "replace 104 windows; 36 visible from street; no structural changes; max u-factor .32 - 36 visible to be fiberglass; 68 non-visible to be vinyl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M596227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-06-18",
+      "status_date": "2015-06-18",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3255",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3616063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3616&lot=063",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

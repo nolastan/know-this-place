@@ -1,0 +1,121 @@
+{
+  "address": "2543–2545 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2543/",
+  "apn": "4209028",
+  "block": "4209",
+  "lot": "028",
+  "eas_baseid": "370187",
+  "coordinates": {
+    "lat": 37.753728,
+    "lng": -122.4089
+  },
+  "address_range": "2543–2545",
+  "street_numbers_on_parcel": [
+    "2543",
+    "2545"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 2720,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2545 2543 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 656271,
+    "assessed_improvement_value": 437505,
+    "last_sale_date": "2001-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201403271818",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-03-27",
+      "status_date": "2014-04-03",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "replace 10 windows. retrofit installation. like for like windows. not visible from street. bedroom egress cear 20 in wide min clear 24 in ht min. 5.7 sq ft net clear opening. window sill within 44 in of floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302218032",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-21",
+      "status_date": "2003-09-15",
+      "estimated_cost": 1129,
+      "revised_cost": 1129,
+      "description": "install 3 replacement windows. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202199481",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-19",
+      "status_date": "2002-05-22",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "kitchen & bathrm remodel- new fixtures, cabinets, lower sink, toilet, lavatory.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102081677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-08",
+      "status_date": "2001-04-02",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2543",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

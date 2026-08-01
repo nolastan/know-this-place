@@ -1,0 +1,118 @@
+{
+  "address": "2961–2963 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/2961/",
+  "apn": "4336020",
+  "block": "4336",
+  "lot": "020",
+  "eas_baseid": "371377",
+  "coordinates": {
+    "lat": 37.749331,
+    "lng": -122.409249
+  },
+  "address_range": "2961–2963",
+  "street_numbers_on_parcel": [
+    "2961",
+    "2963"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2822,
+    "building_area_sqft": 2240,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2963 2961 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37378,
+    "assessed_improvement_value": 24664
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311150871",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-11-15",
+      "status_date": "2023-11-22",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "response to complaint # 202311220: remove single story shed. add 6 ft. fence to match (e) fence (side and rear of property) fence boards, posts and post footing to be on subject property.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308134138",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-13",
+      "status_date": "2013-08-13",
+      "estimated_cost": 7780,
+      "revised_cost": 7780,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-01",
+      "status_date": "1996-05-04",
+      "estimated_cost": 1400,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320943",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-11-29",
+      "status_date": "1994-07-25",
+      "estimated_cost": 8800,
+      "description": "rear wall isntall vinyl siding icbo 3985",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=2961",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4336020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4336&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4336020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

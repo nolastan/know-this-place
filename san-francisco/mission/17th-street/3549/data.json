@@ -1,0 +1,124 @@
+{
+  "address": "3549 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3549/",
+  "apn": "3578071",
+  "block": "3578",
+  "lot": "071",
+  "eas_baseid": "360482",
+  "coordinates": {
+    "lat": 37.762929,
+    "lng": -122.424966
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 3057,
+    "building_area_sqft": 6309,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3549 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58112,
+    "assessed_improvement_value": 120052,
+    "assessed_fixtures_value": 483
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709148123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-14",
+      "status_date": "2017-10-12",
+      "estimated_cost": 29900,
+      "revised_cost": 29900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M628188",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-08",
+      "status_date": "2015-10-08",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503100428",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-03-10",
+      "status_date": "2016-03-09",
+      "estimated_cost": 35000,
+      "revised_cost": 60000,
+      "description": "compliance with mandatory soft story retrofit program. 2013 sfbc sec 34b & 2012 iebc apendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M273926",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-29",
+      "status_date": "2011-07-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616638",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-05",
+      "status_date": "1997-08-08",
+      "estimated_cost": 14000,
+      "description": "repair rear stairs with the same materials",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3549",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=071",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578071",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

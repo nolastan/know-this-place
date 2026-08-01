@@ -1,0 +1,93 @@
+{
+  "address": "1417 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1417/",
+  "apn": "4279021",
+  "block": "4279",
+  "lot": "021",
+  "eas_baseid": "371049",
+  "coordinates": {
+    "lat": 37.751328,
+    "lng": -122.40388
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1350,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1417 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 890299,
+    "assessed_improvement_value": 381556
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611233487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-23",
+      "status_date": "2017-02-28",
+      "estimated_cost": 2221,
+      "revised_cost": 2221,
+      "description": "replace (1) marvin wood clad. not visible. no size change. u-factor less than .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606018834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-01",
+      "status_date": "2017-02-28",
+      "estimated_cost": 6601,
+      "revised_cost": 6601,
+      "description": "replace (4) windows with marvin wood clad in kind, not visible from the street. u-factor shall not exceed 0.32. n/a maher ord 155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1417",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4279021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4279&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4279021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

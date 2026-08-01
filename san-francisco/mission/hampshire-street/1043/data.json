@@ -1,0 +1,117 @@
+{
+  "address": "1043–1045 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1043/",
+  "apn": "4153028",
+  "block": "4153",
+  "lot": "028",
+  "eas_baseid": "369662",
+  "coordinates": {
+    "lat": 37.755384,
+    "lng": -122.407254
+  },
+  "address_range": "1043–1045",
+  "street_numbers_on_parcel": [
+    "1043",
+    "1045"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2392,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1045 1043 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29770,
+    "assessed_improvement_value": 26765
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807245328",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-24",
+      "status_date": "2018-07-27",
+      "estimated_cost": 1284,
+      "revised_cost": 1284,
+      "description": "replace existing roll-up garage door with new metal roll-up garage door. approved otc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702993",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-02-19",
+      "status_date": "1997-12-19",
+      "estimated_cost": 10000,
+      "description": "leglze storage rms & 1/2 bath on grnd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-26",
+      "status_date": "1991-12-18",
+      "estimated_cost": 23824,
+      "description": "vinyl siding left side of back, frt bckwall & right sides",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102625",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-02-19",
+      "status_date": "1992-12-28",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1043",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "address": "3706 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3706/",
+  "apn": "6533018A",
+  "block": "6533",
+  "lot": "018A",
+  "eas_baseid": "401467",
+  "coordinates": {
+    "lat": 37.748928,
+    "lng": -122.422973
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1816,
+    "building_area_sqft": 970,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3706 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1136553,
+    "assessed_improvement_value": 487093
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200008218424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-21",
+      "status_date": "2000-11-14",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove and replace stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004415",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-07",
+      "status_date": "1990-08-10",
+      "estimated_cost": 2685,
+      "description": "install aluminum windows in frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3706",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6533018A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6533&lot=018A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6533018A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

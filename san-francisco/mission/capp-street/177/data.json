@@ -1,0 +1,157 @@
+{
+  "address": "177 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/177/",
+  "apn": "3570042",
+  "block": "3570",
+  "lot": "042",
+  "eas_baseid": "360145",
+  "coordinates": {
+    "lat": 37.763935,
+    "lng": -122.4183
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 15,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 15,
+    "lot_area_sqft": 5244,
+    "building_area_sqft": 9434,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0177 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 548691,
+    "assessed_improvement_value": 705465,
+    "last_sale_date": "1999-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410283869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-28",
+      "status_date": "2025-02-20",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "new hardie plank siding will be installed over existing siding on the back walo of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612064303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-06",
+      "status_date": "2017-08-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "voluntary hold downs and shear plywood installation. (not comply with bldg code seismic upgarde requirement)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101128261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-12",
+      "status_date": "2011-03-18",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair damaged siding, egress decks and stairs. provide handrails. repair smoke enclosure door, strap water heaters per n.o.v complaint # 201185630. less than 50% repair on decks and stairs; provide 604 affidavit form for item # 9",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508190734",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-08-19",
+      "status_date": "2006-05-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "temporary shoring.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004248049",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-24",
+      "status_date": "2000-05-05",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304504",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-18",
+      "status_date": "1994-06-21",
+      "estimated_cost": 1,
+      "description": "permit inspection renewal #9216462",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216462",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-09-24",
+      "status_date": "1993-05-17",
+      "estimated_cost": 5500,
+      "description": "fire sprinklers basement ground level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305533",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-06-17",
+      "status_date": "1983-10-26",
+      "estimated_cost": 400,
+      "description": "repair fire escape landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=177",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3570042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3570&lot=042",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3570042",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

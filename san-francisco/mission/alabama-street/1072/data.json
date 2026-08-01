@@ -1,0 +1,146 @@
+{
+  "address": "1072 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1072/",
+  "apn": "4148011",
+  "block": "4148",
+  "lot": "011",
+  "eas_baseid": "369452",
+  "coordinates": {
+    "lat": 37.75475,
+    "lng": -122.411437
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1800,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1074 1072 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 219858,
+    "assessed_improvement_value": 108292,
+    "last_sale_date": "1997-05-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203180347",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2022-03-18",
+      "status_date": "2022-03-18",
+      "estimated_cost": 325000,
+      "revised_cost": 1255000,
+      "description": "front and rear horizontal additions plus vertical addition of 3rd floor. lower (e) basement floor level. (n) rear deck, and spiral stair to all levels. interior remodel of existing floors. raise (e) garage floor to street level. (n) front balcony at level 2, and front roof deck at level 3.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111189203",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-18",
+      "status_date": "2012-12-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to complete and finalize work under pa 200911242017",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911242017",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-24",
+      "status_date": "2009-12-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "current storage space in garage to be made accessible through first floor bedroom and enclosed to elements for new loft space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M115808",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-09",
+      "status_date": "2008-04-09",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301306283",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-30",
+      "status_date": "2003-04-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair & existing rear porch (due to rot)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-15",
+      "status_date": "1998-04-15",
+      "estimated_cost": 700,
+      "description": "renew app # 9709597",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709597",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-28",
+      "status_date": "1998-04-15",
+      "estimated_cost": 8000,
+      "description": "kitchen & bathroom remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1072",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

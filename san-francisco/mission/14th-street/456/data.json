@@ -1,0 +1,164 @@
+{
+  "address": "456 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/456/",
+  "apn": "3533020",
+  "block": "3533",
+  "lot": "020",
+  "eas_baseid": "358355",
+  "coordinates": {
+    "lat": 37.768297,
+    "lng": -122.423441
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 9,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 9,
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 5475,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0456 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1514012,
+    "assessed_improvement_value": 648860,
+    "last_sale_date": "2022-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301120084",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-01-12",
+      "status_date": "2026-01-23",
+      "description": "replace (22) windows, (9) street facging in kind, (13) back replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009265086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-26",
+      "status_date": "2022-03-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "installation of new f/a system, new facp, smoke detectors, pull station, horn strobes, lf sounders. to comply w/sffc 2019 sec 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M575808",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-06",
+      "status_date": "2015-04-06",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411030502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-03",
+      "status_date": "2015-12-03",
+      "estimated_cost": 30000,
+      "revised_cost": 50000,
+      "description": "soft story, structural upgrade: install shear wall & moment frame per soft story ordinance per sfbc chapter 34b, 2012 iebc appendix a-4; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701242427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-24",
+      "status_date": "2008-02-15",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "repair to fire damage areas to include demo framing, exterior siding, plumbing, electrical, plaster finish carpentry flooring & paint, sacffolding. no plans req'd per inspector.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819692",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-29",
+      "status_date": "1998-11-13",
+      "estimated_cost": 7900,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-28",
+      "status_date": "2001-09-26",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815441",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-10-07",
+      "status_date": "1989-04-10",
+      "estimated_cost": 9000,
+      "description": "termite report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200893",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-02-05",
+      "status_date": "1982-03-16",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=456",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

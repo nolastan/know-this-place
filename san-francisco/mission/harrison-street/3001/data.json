@@ -1,0 +1,109 @@
+{
+  "address": "3001–3005 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/3001/",
+  "apn": "4338026",
+  "block": "4338",
+  "lot": "026",
+  "eas_baseid": "371430",
+  "coordinates": {
+    "lat": 37.749329,
+    "lng": -122.41131
+  },
+  "address_range": "3001–3005",
+  "street_numbers_on_parcel": [
+    "3001",
+    "3003",
+    "3005"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 1625,
+    "building_area_sqft": 3840,
+    "lot_depth_ft": 65,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3005 3001 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 137619,
+    "assessed_improvement_value": 175381
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905019464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-01",
+      "status_date": "2019-07-02",
+      "estimated_cost": 16630,
+      "revised_cost": 16630,
+      "description": "to comply with nov 201932191 (4) (stair case), nov 201925762 (3) bathrm, nov 201933462 1 thru 4. repairs to 1st flr bathrm: replace (sheetrock), toilet and lav. ptraps to connect to (e) drain waste connections. repairs to exterior stairs (rear) - cosmetic, tighten boards/railings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-08",
+      "status_date": "1999-05-18",
+      "estimated_cost": 2500,
+      "description": "replace existng dry rot rear stairs in kind, extra replacemt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9716757",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-29",
+      "status_date": "1998-06-15",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=3001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338026",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "address": "784 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/784/",
+  "apn": "4078004A",
+  "block": "4078",
+  "lot": "004A",
+  "eas_baseid": "368164",
+  "coordinates": {
+    "lat": 37.759549,
+    "lng": -122.40726
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1700,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0784 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 492568,
+    "assessed_improvement_value": 338635,
+    "last_sale_date": "2012-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1201987",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-03-04",
+      "status_date": "2020-03-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002255343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-25",
+      "status_date": "2020-03-13",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "to comply with nov #202012481. document extg conc. install drainage system with sump pump at rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1182747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-08",
+      "status_date": "2020-01-08",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M649947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-12-28",
+      "status_date": "2015-12-28",
+      "revised_cost": 1,
+      "description": "street space permit - pw20151217781",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211214683",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-21",
+      "status_date": "2013-01-23",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "kitchen replace cabinets, re-build bar and counter top, re-tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-01-06",
+      "status_date": "1983-03-04",
+      "estimated_cost": 40000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1981-12-14",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1900,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=784",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4078004A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4078&lot=004A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4078004A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

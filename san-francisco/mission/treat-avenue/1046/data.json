@@ -1,0 +1,137 @@
+{
+  "address": "1046 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1046/",
+  "apn": "3640043A",
+  "block": "3640",
+  "lot": "043A",
+  "eas_baseid": "363997",
+  "coordinates": {
+    "lat": 37.753371,
+    "lng": -122.41338
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 5,
+    "bedrooms": 3,
+    "lot_area_sqft": 3184,
+    "building_area_sqft": 3122,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1046 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 294387,
+    "last_sale_date": "1996-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308184765",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-18",
+      "status_date": "2023-08-18",
+      "estimated_cost": 1,
+      "revised_cost": 60000,
+      "description": "recommencement and completion of work approved under pa# 20170273145 and 201702270192.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707273145",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-07-27",
+      "status_date": "2019-12-31",
+      "estimated_cost": 15000,
+      "revised_cost": 61320,
+      "description": "to comply with violation #201788171. remodel/convert (e) ground fl (1) kitchen, (1) bathroom and (1) bedroom into (1) bedroom, (1) kitchen, (2) bathrms, & (1) laundry room. refinish the interior of the entire ground unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707061107",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2017-07-06",
+      "status_date": "2017-07-27",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "comply with nov 201788171 - remodel/convert (e) ground fl kitchen, bathrm and bedrm into new 1 bedrm, 1 kitchen 2 bathrms and 1 laundry rm. add 18 feet long, full width at ground fl as 1 bedrm. connect rooftop level of addition as new deck to (e) deck. remove (e) exterior stairs in rear yard, build",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702270192",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-02-27",
+      "status_date": "2019-12-31",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodeling 2 bathrooms and kitchen on 2/f. no change on walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-01",
+      "status_date": "2000-01-12",
+      "estimated_cost": 500,
+      "description": "replace rear landing w/one flight of stairs as existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913511",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-07-01",
+      "status_date": "2000-01-12",
+      "estimated_cost": 5000,
+      "description": "legalize 2nd unit on ground floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640043A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=043A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640043A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

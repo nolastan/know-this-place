@@ -1,0 +1,119 @@
+{
+  "address": "1115 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1115/",
+  "apn": "6525032",
+  "block": "6525",
+  "lot": "032",
+  "eas_baseid": "401204",
+  "coordinates": {
+    "lat": 37.750545,
+    "lng": -122.414684
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3737,
+    "building_area_sqft": 1896,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1115 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1074131,
+    "assessed_improvement_value": 716084,
+    "last_sale_date": "2005-11-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M67064",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-03",
+      "status_date": "2007-05-03",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211191775",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-11-19",
+      "status_date": "2003-06-24",
+      "estimated_cost": 500,
+      "revised_cost": 2000,
+      "description": "remove shower & kitchen in illegal grade level apt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713469",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-21",
+      "status_date": "1998-04-09",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1115",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6525032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41468369468588%2037.75054526352661)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

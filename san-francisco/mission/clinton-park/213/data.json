@@ -1,0 +1,108 @@
+{
+  "address": "213–217 Clinton Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/clinton-park/213/",
+  "apn": "3534006A",
+  "block": "3534",
+  "lot": "006A",
+  "eas_baseid": "358420",
+  "coordinates": {
+    "lat": 37.768974,
+    "lng": -122.424891
+  },
+  "address_range": "213–217",
+  "street_numbers_on_parcel": [
+    "213",
+    "215",
+    "217"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 1572,
+    "building_area_sqft": 3440,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0217 0213 CLINTON             PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 125439,
+    "assessed_improvement_value": 250903
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200401264780",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-26",
+      "status_date": "2004-02-12",
+      "estimated_cost": 4450,
+      "revised_cost": 4450,
+      "description": "comply w/nov (his) violation dated 09/29/03",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014662",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1990-07-25",
+      "status_date": "1990-12-28",
+      "estimated_cost": 1,
+      "description": "(remodeling kitchen cabinets) for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8911132",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-06-26",
+      "status_date": "1989-10-26",
+      "estimated_cost": 2000,
+      "description": "remodeling kitchen, cabients",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLINTON&street_type=PARK&address_number=213",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534006A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=006A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534006A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

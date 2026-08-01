@@ -1,0 +1,166 @@
+{
+  "address": "1425 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1425/",
+  "apn": "4337001D",
+  "block": "4337",
+  "lot": "001D",
+  "eas_baseid": "371384",
+  "coordinates": {
+    "lat": 37.749139,
+    "lng": -122.410347
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1608,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1425 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1056006,
+    "assessed_improvement_value": 452574
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201402057861",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-02-05",
+      "status_date": "2014-02-05",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311040996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-04",
+      "status_date": "2014-01-30",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "comply with n.o.v.#201333441. to repair fire damage at hallway. replace dry wall and exterior siding also repair roof area approx. 4x4. repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310240199",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-24",
+      "status_date": "2013-10-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "lower unit - kitchen remodel; to comply with cec150(e) 8",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702063528",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-02-06",
+      "status_date": "2009-08-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 9904274s for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904274S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-05-10",
+      "status_date": "2001-10-10",
+      "estimated_cost": 5000,
+      "revised_cost": 50000,
+      "description": "increase number of dwelling one unit to 2 w/in same building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003104094",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-10",
+      "status_date": "2000-06-07",
+      "revised_cost": 1,
+      "description": "renewal of pa 9922008",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922008",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-15",
+      "status_date": "2000-05-03",
+      "estimated_cost": 4860,
+      "description": "converting study room on 2nd floor to full bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-04",
+      "status_date": "1998-05-07",
+      "estimated_cost": 320,
+      "description": "revision to pa#9623583",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623583",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-12-06",
+      "status_date": "1998-05-07",
+      "estimated_cost": 10000,
+      "description": "revert to one unit and comply with nov dated 5-2-96",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1425",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4337001D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4337&lot=001D",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4337001D",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

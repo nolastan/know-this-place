@@ -1,0 +1,137 @@
+{
+  "address": "2758 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2758/",
+  "apn": "4152019",
+  "block": "4152",
+  "lot": "019",
+  "eas_baseid": "369607",
+  "coordinates": {
+    "lat": 37.7546,
+    "lng": -122.407668
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "lot_area_sqft": 1271.2,
+    "building_area_sqft": 1372,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2760 2758 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 564622,
+    "assessed_improvement_value": 241979,
+    "last_sale_date": "2016-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607275638",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-07-27",
+      "status_date": "2026-07-27",
+      "estimated_cost": 80000,
+      "revised_cost": 0,
+      "description": "one unit 1st fl: remodel kitchen,bath,bdrm in the same plance. replace all window and doors in kind. install new gas tankless water heater. rebuild new stair and wood deck 45 sf.one unit 2nd fl: bath and bdrm remodel. relocate kitchen and add new bdrm.replace all doors and windows in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202603187836",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-18",
+      "status_date": "2026-03-31",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "aka 2760 23rd street: re roofing no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202603167588",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-16",
+      "status_date": "2026-03-19",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel & enhance (e) front facade of residence; e9) stucco exterior wall to remain. provide (n) stucco finish to match (e) and install decorative victorian style window trim, moldings and facade medallions. decorative elements to be mechanically attached to framing w/appropriate waterproofing and",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109138310",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2021-09-13",
+      "status_date": "2023-10-13",
+      "estimated_cost": 495000,
+      "description": "remodel of the existing two story, two-flat building including the addition of a new basement level, new third floor, and new roof terrace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709289889",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "2017-09-28",
+      "status_date": "2019-12-11",
+      "estimated_cost": 500000,
+      "description": "remodel (e) 2 unit building including the addition of a new basement 3rd fl and roof terrace. total of 2 new bedrooms and 2 new bedrooms and 2 new bathrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606293",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-12",
+      "status_date": "1996-05-10",
+      "estimated_cost": 9850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2758",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

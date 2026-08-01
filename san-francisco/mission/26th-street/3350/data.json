@@ -1,0 +1,112 @@
+{
+  "address": "3350–3352 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3350/",
+  "apn": "6528016",
+  "block": "6528",
+  "lot": "016",
+  "eas_baseid": "401284",
+  "coordinates": {
+    "lat": 37.749273,
+    "lng": -122.417216
+  },
+  "address_range": "3350–3352",
+  "street_numbers_on_parcel": [
+    "3350",
+    "3352"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 1950,
+    "building_area_sqft": 2800,
+    "lot_depth_ft": 65,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3352 3350 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1225695,
+    "assessed_improvement_value": 525297,
+    "last_sale_date": "2022-06-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508180585",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-18",
+      "status_date": "2005-08-18",
+      "estimated_cost": 4550,
+      "revised_cost": 4550,
+      "description": "install a fire sprinkler sys to protect storage area as req by his insp.bsmt only.nov 200453759.....",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501042525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-04",
+      "status_date": "2005-01-31",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace damaged tread & riser on rear stairs. less than 50 percent stairs replaced his complaint no.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009120326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-12",
+      "status_date": "2000-09-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3350",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6528016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

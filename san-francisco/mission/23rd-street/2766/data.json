@@ -1,0 +1,106 @@
+{
+  "address": "2766 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2766/",
+  "apn": "4152021",
+  "block": "4152",
+  "lot": "021",
+  "eas_baseid": "369609",
+  "coordinates": {
+    "lat": 37.754669,
+    "lng": -122.407819
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 1,
+    "lot_area_sqft": 3045.6,
+    "building_area_sqft": 1814,
+    "basement_area_sqft": 213,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2768 2766 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183963,
+    "assessed_improvement_value": 342217,
+    "last_sale_date": "1989-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504285340",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-28",
+      "status_date": "2025-05-20",
+      "estimated_cost": 4991,
+      "revised_cost": 4991,
+      "description": "reroofing- remove composition shingles 8 squares, replace w/ new 30yr composition shingles no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503228110",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-03-22",
+      "status_date": "2006-08-24",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "remove an (e) 5'0\" depth extension at the rear. a new 12'-0\" depth (1) story will be constructed to",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-01-28",
+      "status_date": "1986-03-07",
+      "estimated_cost": 1610,
+      "description": "regroute fron stairs and repair cut off corner",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2766",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

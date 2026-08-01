@@ -1,0 +1,155 @@
+{
+  "address": "804–806 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/804/",
+  "apn": "3607002",
+  "block": "3607",
+  "lot": "002",
+  "eas_baseid": "362219",
+  "coordinates": {
+    "lat": 37.758061,
+    "lng": -122.423692
+  },
+  "address_range": "804–806",
+  "street_numbers_on_parcel": [
+    "804",
+    "806"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1524,
+    "building_area_sqft": 2248,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0806 0804 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41324,
+    "assessed_improvement_value": 30232
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201909121436",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-09-12",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to permit 201701207614. we repair siding after removing deck. 3 pieces of siding(8 in x 6 ft), non-street facing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811155973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-15",
+      "status_date": "2019-09-20",
+      "estimated_cost": 6000,
+      "revised_cost": 100,
+      "description": "recommencement and completion of work approved under pa#201701207614",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701207614",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-01-20",
+      "status_date": "2019-09-20",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove porch (build without permit) to leave property as original construction and repair stairs less than 50%. comply with complaint #201651241",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701187431",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-01-18",
+      "status_date": "2017-01-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair existign windows, 3 total. to comply with nov 201651241 (12/12/16), 201647301 (11/30/16).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M291268",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-12-05",
+      "status_date": "2011-12-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9026152",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-27",
+      "status_date": "1991-01-29",
+      "estimated_cost": 3270,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=804",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42369160798499%2037.75806112273071)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

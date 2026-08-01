@@ -1,0 +1,139 @@
+{
+  "address": "1156–1164 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1156/",
+  "apn": "6526008",
+  "block": "6526",
+  "lot": "008",
+  "eas_baseid": "422993",
+  "coordinates": {
+    "lat": 37.749885,
+    "lng": -122.415228
+  },
+  "address_range": "1156–1164",
+  "street_numbers_on_parcel": [
+    "1156",
+    "1164"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 6324,
+    "building_area_sqft": 2586,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1164 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 51916,
+    "assessed_improvement_value": 33325
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307273140",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-27",
+      "status_date": "2023-09-26",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "remove existing wood gutters at front exterior and right side property line. install new ogee aluminum gutters. repair dry rot as necessary.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712217111",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-12-21",
+      "status_date": "2017-12-21",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "strip all existing roofs. install new roof consisting of one layer 28lb. fiberglass base, one layer type iv fiberglass sheet, one layer gta membrane cap sheet. flat roof building only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206189272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-18",
+      "status_date": "2002-10-09",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "cosmetic kitchen remodel w/ replacement of dry rotted rear door & window frames & units. 2windows in",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105250036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-25",
+      "status_date": "2001-10-24",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "remove terrazo at top landing,repair dry rot damage install membrane & terrazo remove existing stuc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513801",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-25",
+      "status_date": "1996-03-12",
+      "estimated_cost": 12400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410209",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-09-20",
+      "status_date": "1990-02-07",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1156",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6526008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6526&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6526008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

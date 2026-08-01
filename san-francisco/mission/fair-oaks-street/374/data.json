@@ -1,0 +1,134 @@
+{
+  "address": "374 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/374/",
+  "apn": "6511011",
+  "block": "6511",
+  "lot": "011",
+  "eas_baseid": "400729",
+  "coordinates": {
+    "lat": 37.750709,
+    "lng": -122.424187
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2650,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0374 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 268703,
+    "assessed_improvement_value": 268703,
+    "last_sale_date": "1993-06-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M35434",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-21",
+      "status_date": "2005-11-21",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505041534",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-04",
+      "status_date": "2006-08-02",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "rev.appl#200102162390 enlarge garage depth,enclose lightwell,install residental elevator",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102162390",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-02-16",
+      "status_date": "2006-11-28",
+      "estimated_cost": 30000,
+      "revised_cost": 55000,
+      "description": "widen e singl car gar to fit 2 cars side by side alter frnt stairs new inter stair frm garge- bsmt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313855",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-13",
+      "status_date": "1994-01-03",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310974",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-29",
+      "status_date": "1993-12-29",
+      "estimated_cost": 10000,
+      "description": "n/b partition changes add n/bathrm at 2/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310631",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-23",
+      "status_date": "1993-12-23",
+      "estimated_cost": 15000,
+      "description": "termite work/remodel kitchen and baths",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=374",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

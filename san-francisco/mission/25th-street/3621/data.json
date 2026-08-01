@@ -1,0 +1,118 @@
+{
+  "address": "3621–3623 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3621/",
+  "apn": "6532001A",
+  "block": "6532",
+  "lot": "001A",
+  "eas_baseid": "401408",
+  "coordinates": {
+    "lat": 37.750287,
+    "lng": -122.421876
+  },
+  "address_range": "3621–3623",
+  "street_numbers_on_parcel": [
+    "3621",
+    "3623"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1716,
+    "building_area_sqft": 1980,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3623 3621 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199125,
+    "assessed_improvement_value": 284754
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201503120609",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-12",
+      "status_date": "2015-07-06",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "demolish and remove siding at rear property line wall due to dryrot. no structural work. replace with new siding approx 1000 sq ft. replace in-kind. replace windows in (e) openings (rear)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303038648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-03",
+      "status_date": "2003-08-11",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace (e0 deck snd stair in like kind (rear)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-12",
+      "status_date": "1986-03-14",
+      "estimated_cost": 5000,
+      "description": "repair & replace door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510965",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-10-01",
+      "status_date": "1986-04-15",
+      "estimated_cost": 12000,
+      "description": "rebuild back porch and some renovations",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3621",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532001A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

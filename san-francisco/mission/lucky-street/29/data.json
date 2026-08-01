@@ -1,0 +1,120 @@
+{
+  "address": "29 Lucky Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lucky-street/29/",
+  "apn": "6521007A",
+  "block": "6521",
+  "lot": "007A",
+  "eas_baseid": "401055",
+  "coordinates": {
+    "lat": 37.752024,
+    "lng": -122.413346
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1245,
+    "building_area_sqft": 1442,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0029 LUCKY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 489542,
+    "assessed_improvement_value": 326352,
+    "last_sale_date": "2007-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201401236889",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-23",
+      "status_date": "2014-03-13",
+      "estimated_cost": 13325,
+      "revised_cost": 13325,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410298100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-29",
+      "status_date": "2004-11-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200307189827 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307189827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-18",
+      "status_date": "2003-07-18",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "repair front exterior wood stairs.replace stringers,bottom handrail post,kick plate,3 treads on",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LUCKY&street_type=ST&address_number=29",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=007A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521007A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41334612972152%2037.752024056044725)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

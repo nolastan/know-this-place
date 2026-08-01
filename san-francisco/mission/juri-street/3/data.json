@@ -1,0 +1,141 @@
+{
+  "address": "3 Juri Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/juri-street/3/",
+  "apn": "6532007A",
+  "block": "6532",
+  "lot": "007A",
+  "eas_baseid": "401415",
+  "coordinates": {
+    "lat": 37.749856,
+    "lng": -122.421712
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1071,
+    "building_area_sqft": 860,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0003 JURI                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22336,
+    "assessed_improvement_value": 27184
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Juri Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201606149932",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-14",
+      "status_date": "2016-06-14",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209240520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-24",
+      "status_date": "2013-03-01",
+      "estimated_cost": 5500,
+      "revised_cost": 10000,
+      "description": "1 bathroom renovation at main level. new fixtures & finishes at existing bathroo location. no change to bathroom footprint. replace window to match existing in existing openings in bath: replacement door to exterior match existing in existing opening. door permanent lighting in bath to be high eff",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203146073",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-03-14",
+      "status_date": "2012-03-14",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair stairs of existing deck, max 50% of existing conditions to be repaired",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107120041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-12",
+      "status_date": "2012-01-23",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace 2 double hung windows with new insulated double hung windows. new windows in existing window openings & to match character of existing. windows not visable from street, replace in kind. no structural work, u-factor=0.40 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111799",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-05",
+      "status_date": "1992-12-28",
+      "estimated_cost": 2400,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JURI&street_type=ST&address_number=3",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=007A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532007A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42171182580816%2037.74985552825183)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

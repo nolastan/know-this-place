@@ -1,0 +1,103 @@
+{
+  "address": "812 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/812/",
+  "apn": "4087003",
+  "block": "4087",
+  "lot": "003",
+  "eas_baseid": "368348",
+  "coordinates": {
+    "lat": 37.758972,
+    "lng": -122.409055
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2572,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0814 0812 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 103576,
+    "assessed_improvement_value": 118072
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503071765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-07",
+      "status_date": "2025-04-28",
+      "estimated_cost": 16200,
+      "revised_cost": 16200,
+      "description": "reroofing. torch down. no work to (e) roof structural sheathing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909227340",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-22",
+      "status_date": "2010-03-23",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "remove (e) wooden utility ladder to comply with nov# 200920759",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604163",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-11",
+      "status_date": "1986-12-15",
+      "estimated_cost": 7000,
+      "description": "replace existing w/ new stairway @ rear of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=812",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

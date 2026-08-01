@@ -1,0 +1,102 @@
+{
+  "address": "3548 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3548/",
+  "apn": "3577012C",
+  "block": "3577",
+  "lot": "012C",
+  "eas_baseid": "360381",
+  "coordinates": {
+    "lat": 37.761861,
+    "lng": -122.422694
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 5009,
+    "building_area_sqft": 7800,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3548 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 71816,
+    "assessed_improvement_value": 149450
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304034924",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-03",
+      "status_date": "2024-02-06",
+      "estimated_cost": 25250,
+      "revised_cost": 26295,
+      "description": "fire alarm only new fire alarm to replace (e) panel adding cellular communicator (e) mannual pull station and smoke detector will be replaced (e) notifiaction appliances will be replaced new low frequency sounder will be added to sleeping and dwelling areas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M579727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-21",
+      "status_date": "2015-04-21",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32224",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-04-27",
+      "status_date": "2005-04-27",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3548",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577012C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=012C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577012C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

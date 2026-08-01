@@ -1,0 +1,119 @@
+{
+  "address": "460–462 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/460/",
+  "apn": "6534011",
+  "block": "6534",
+  "lot": "011",
+  "eas_baseid": "401501",
+  "coordinates": {
+    "lat": 37.749319,
+    "lng": -122.424057
+  },
+  "address_range": "460–462",
+  "street_numbers_on_parcel": [
+    "460",
+    "462"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3625,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0462 0460 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43164,
+    "assessed_improvement_value": 54956
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510076898",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-12-01",
+      "status_date": "2026-05-07",
+      "estimated_cost": 429000,
+      "revised_cost": 1383232,
+      "description": "expand unit on level 1 (#462a) to add a bathroom and relocate bedrooms. interior remodel/reconfigure level 2 (#460) & level 3 (#462). add new 297 sqft roof deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508184571",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-08-18",
+      "status_date": "2016-08-04",
+      "estimated_cost": 14500,
+      "revised_cost": 25000,
+      "description": "to comply with nov 2015 43251: enlarge (e) rof deck and 42\" high opening guardrail at deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207302640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-30",
+      "status_date": "2002-10-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "repair stringer rear steps. to comply w/ complaint#200230976.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614495",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-07",
+      "status_date": "1997-01-16",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=460",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6534011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6534&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6534011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

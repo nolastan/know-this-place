@@ -1,0 +1,106 @@
+{
+  "address": "915–917 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/915/",
+  "apn": "6518025B",
+  "block": "6518",
+  "lot": "025B",
+  "eas_baseid": "400957",
+  "coordinates": {
+    "lat": 37.751973,
+    "lng": -122.417099
+  },
+  "address_range": "915–917",
+  "street_numbers_on_parcel": [
+    "915",
+    "917"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1285,
+    "building_area_sqft": 1530,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0917 0915 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142138,
+    "assessed_improvement_value": 97450
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M132832",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-29",
+      "status_date": "2008-08-29",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319020",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-28",
+      "status_date": "1994-03-09",
+      "estimated_cost": 1250,
+      "description": "install hardwired smoke detectors in each sleeping room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409780",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-11",
+      "status_date": "1984-12-21",
+      "estimated_cost": 1895,
+      "description": "cut off base of garage door jambs, install msonry bases",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=915",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518025B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=025B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518025B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

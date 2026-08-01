@@ -1,0 +1,126 @@
+{
+  "address": "170 Albion Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/albion-street/170/",
+  "apn": "3568034A",
+  "block": "3568",
+  "lot": "034A",
+  "eas_baseid": "360020",
+  "coordinates": {
+    "lat": 37.763673,
+    "lng": -122.423001
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 8,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 8,
+    "lot_area_sqft": 3210,
+    "building_area_sqft": 5118,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0170 ALBION              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 646310,
+    "assessed_improvement_value": 646310,
+    "last_sale_date": "2002-01-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104158674",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-15",
+      "status_date": "2021-06-03",
+      "estimated_cost": 11614,
+      "revised_cost": 11614,
+      "description": "voluntary replacement + lf sounder upgrade to meet sffc 2019 sec 1103.6.7.1; replace of facu, smoke detector, pull station and horn strobe. install of new lf sounder in every sleeping area. upgrade is done to comply csfm bulleting (9/4/2008) and csfm code interpretation #12-001 (7/23/2012)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101253243",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-25",
+      "status_date": "2021-05-18",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing - remove old layer. apply first layer base appex fiber glass. second layer hot torch modififed dibiten",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M861527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-12-01",
+      "status_date": "2017-12-01",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703171674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-17",
+      "status_date": "2018-01-25",
+      "estimated_cost": 55000,
+      "revised_cost": 84000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria 2012 iebc appendix a4. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201237532",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-23",
+      "status_date": "2002-08-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "items 3b,4a of pest report#7858a dated 10/20/98 ie.repair dry rotted section of stairs.cap",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALBION&street_type=ST&address_number=170",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568034A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=034A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568034A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

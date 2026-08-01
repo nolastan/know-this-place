@@ -1,0 +1,138 @@
+{
+  "address": "2525 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2525/",
+  "apn": "3613027",
+  "block": "3613",
+  "lot": "027",
+  "eas_baseid": "362666",
+  "coordinates": {
+    "lat": 37.756828,
+    "lng": -122.414134
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 5512.5,
+    "building_area_sqft": 1645,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2525 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 251944,
+    "assessed_improvement_value": 193152,
+    "last_sale_date": "1994-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108025572",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-02",
+      "status_date": "2021-09-23",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "exterior wood repair and replacement. new windows, one new door and two stair replacements.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602179850",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-02-17",
+      "status_date": "2017-12-11",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace steel roll up door with an electric operated steel gate",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508184625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-18",
+      "status_date": "2015-08-24",
+      "estimated_cost": 5900,
+      "revised_cost": 5900,
+      "description": "remove 2 layers of non-historic exterior siding. all sides all elevations to prep for restoration of original wood siding. (existing origial exterior siding is under siding to be removed).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104144122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-14",
+      "status_date": "2011-06-28",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "replacing perimeter foundation, construct new stairs to (e) driveway and replacing retaining wall at driveway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103282930",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-28",
+      "status_date": "2011-06-28",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace less than 4' high retaining walls on both sides of driveway within lot, approx 100 lf. also approx. 500 sf. of driveway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510385",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-07",
+      "status_date": "1995-10-23",
+      "estimated_cost": 1500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2525",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

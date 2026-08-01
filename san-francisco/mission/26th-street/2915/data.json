@@ -1,0 +1,145 @@
+{
+  "address": "2915 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/2915/",
+  "apn": "4335001Q",
+  "block": "4335",
+  "lot": "001Q",
+  "eas_baseid": "371340",
+  "coordinates": {
+    "lat": 37.749443,
+    "lng": -122.408271
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1364,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2915 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101543,
+    "assessed_improvement_value": 111695
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201008269628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-26",
+      "status_date": "2011-08-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for final inspection of work done under pa #9615950 to comply w/n.o.v. #9500997 dated march 10, 1995.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605232296",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-05-23",
+      "status_date": "2007-10-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200310298913, 9615950,9721526 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310298913",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-29",
+      "status_date": "2007-10-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final inspection 9615950",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721526",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-24",
+      "status_date": "2007-10-25",
+      "estimated_cost": 1,
+      "description": "finalize work on appn.9615950",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709584",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-28",
+      "status_date": "1997-09-28",
+      "estimated_cost": 4000,
+      "description": "renewal pa#9615950 to continue work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615950",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-08-26",
+      "status_date": "2007-10-25",
+      "estimated_cost": 10000,
+      "description": "revert back to one unit, single family on 2 floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-25",
+      "status_date": "1990-07-26",
+      "estimated_cost": 1800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=2915",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4335001Q&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4335&lot=001Q",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4335001Q",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

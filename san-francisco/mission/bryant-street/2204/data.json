@@ -1,0 +1,128 @@
+{
+  "address": "2204–2206 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2204/",
+  "apn": "4086002",
+  "block": "4086",
+  "lot": "002",
+  "eas_baseid": "368314",
+  "coordinates": {
+    "lat": 37.758981,
+    "lng": -122.410043
+  },
+  "address_range": "2204–2206",
+  "street_numbers_on_parcel": [
+    "2204",
+    "2206"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2150,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2206 2204 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 28849,
+    "assessed_improvement_value": 17059
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305198196",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-05-19",
+      "status_date": "2023-05-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with the abe program, add ada door opener, change door hardware. abe#: 201902115100",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408121417",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-12",
+      "status_date": "2004-08-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace (e) rear stairway in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906162",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-17",
+      "status_date": "1990-01-24",
+      "estimated_cost": 12000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704219",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-01",
+      "status_date": "1987-12-28",
+      "estimated_cost": 30000,
+      "description": "horizontal extension, laundromat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602356",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-03-03",
+      "status_date": "1986-06-18",
+      "estimated_cost": 3000,
+      "description": "remove cracked plaster walls and install sheet rock paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2204",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4086002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4086&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4086002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

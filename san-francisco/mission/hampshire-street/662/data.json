@@ -1,0 +1,138 @@
+{
+  "address": "662 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/662/",
+  "apn": "4024007",
+  "block": "4024",
+  "lot": "007",
+  "eas_baseid": "367379",
+  "coordinates": {
+    "lat": 37.761045,
+    "lng": -122.408421
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3350,
+    "basement_area_sqft": 992,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0662 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2817435,
+    "assessed_improvement_value": 1207470,
+    "last_sale_date": "2016-06-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M635487",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-04",
+      "status_date": "2016-02-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M621027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-10",
+      "status_date": "2015-09-10",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508113987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-11",
+      "status_date": "2016-03-23",
+      "estimated_cost": 7000,
+      "revised_cost": 25000,
+      "description": "revision to 2014 0124 7059: add to rof deck and interior stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506017706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-01",
+      "status_date": "2016-03-03",
+      "estimated_cost": 18504,
+      "revised_cost": 28000,
+      "description": "install new fire sprinkler system throughout bld. per nfpa 13r including new 2\" combination service and underground off of 6-inch main on hampshire st. total sprinklers 36.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401247059",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-01-24",
+      "status_date": "2016-03-23",
+      "estimated_cost": 300000,
+      "revised_cost": 487000,
+      "description": "(e)structure is to be rasised, reloc & a new ground story is to be added. this new ground story is to be added to contain a garage,as today a play rm&2 bathrms.the relocateds lower flr,the proposes 2nd story has a 12'11\" addition a living rm, the(e)upper 2 stories to be remodel&a bath add on top fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810234954",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-23",
+      "status_date": "2008-10-23",
+      "estimated_cost": 6931,
+      "revised_cost": 6931,
+      "description": "replace existing 9 alluminum windows with new dual pane windows. replace 1 existing alluminum patio door with new vinyl dual pane patio door. window on front facade will be alluminum clad wood window. u factor less than 0.67.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=662",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4024007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4024&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4024007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

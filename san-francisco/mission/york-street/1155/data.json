@@ -1,0 +1,176 @@
+{
+  "address": "1155 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1155/",
+  "apn": "4210025",
+  "block": "4210",
+  "lot": "025",
+  "eas_baseid": "370221",
+  "coordinates": {
+    "lat": 37.753562,
+    "lng": -122.407979
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1176,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1155 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95689,
+    "assessed_improvement_value": 107168,
+    "last_sale_date": "1987-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505086032",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-08",
+      "status_date": "2025-05-14",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505086035",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-05-08",
+      "status_date": "2025-05-08",
+      "estimated_cost": 750,
+      "revised_cost": 750,
+      "description": "remove 2 pieces of plywood around the drain and install 2 new plywood (reroofing permit 2025-0508-6032)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303214064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-21",
+      "status_date": "2023-03-30",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "replace small bedroom window per nov# 202301058#2- non street facing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414794",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-09-21",
+      "status_date": "1995-11-08",
+      "estimated_cost": 1,
+      "description": "revision to appliation 9103023",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103023",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-02-26",
+      "status_date": "1996-07-29",
+      "estimated_cost": 1,
+      "revised_cost": 20000,
+      "description": "refile 8804107 replace rotten walls, update elec, plumb,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004580",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-03-08",
+      "status_date": "1990-08-25",
+      "estimated_cost": 1,
+      "description": "relocate kitchen revision application number 8804107",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921895",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-11-14",
+      "status_date": "1990-06-01",
+      "estimated_cost": 10000,
+      "description": "replace rotten walls, update electrial wiring",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913550",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-07-28",
+      "status_date": "1990-01-22",
+      "estimated_cost": 10000,
+      "description": "structural reinforcement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810738",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-07-29",
+      "status_date": "1989-09-24",
+      "estimated_cost": 950,
+      "description": "for penalty work already performed see under appl.#8804107.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804107",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-04-01",
+      "status_date": "1989-08-01",
+      "estimated_cost": 80000,
+      "description": "replace rotten walls, update elec, plumb, install foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1155",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4210025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4210&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4210025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

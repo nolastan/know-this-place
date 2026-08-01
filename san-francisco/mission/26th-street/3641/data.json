@@ -1,0 +1,142 @@
+{
+  "address": "3641–3643 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3641/",
+  "apn": "6568018",
+  "block": "6568",
+  "lot": "018",
+  "eas_baseid": "402638",
+  "coordinates": {
+    "lat": 37.748581,
+    "lng": -122.422025
+  },
+  "address_range": "3641–3643",
+  "street_numbers_on_parcel": [
+    "3641",
+    "3643"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2147,
+    "building_area_sqft": 2230,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3643 3641 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 901012,
+    "assessed_improvement_value": 600669,
+    "last_sale_date": "2004-06-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508042203",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-04",
+      "status_date": "2025-08-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roof. tear off old roof membrane and install new modified bitumen. no hot work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010173272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-17",
+      "status_date": "2001-02-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace existing rea deck and stiars in kind , replace rear windows and patio doors in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008309217",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-30",
+      "status_date": "2001-02-15",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "ro remodel (e) toilet rm and remove posts in (e) garage fl by installing steel beam as per/plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007205640",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-20",
+      "status_date": "2001-02-15",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "remodel 2 bathrooms,2 kitchens,some termite repair,sand floors,ext & int painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-13",
+      "status_date": "1990-08-31",
+      "estimated_cost": 21763,
+      "description": "vinyl siding (alside) to 3 walls in back. icbo #3663",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809407",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-07-12",
+      "status_date": "1988-11-17",
+      "estimated_cost": 1690,
+      "revised_cost": 0,
+      "description": "replacement installation of five (5)aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3641",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6568018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6568&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6568018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

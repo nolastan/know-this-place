@@ -1,0 +1,145 @@
+{
+  "address": "1047 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1047/",
+  "apn": "4152031",
+  "block": "4152",
+  "lot": "031",
+  "eas_baseid": "369621",
+  "coordinates": {
+    "lat": 37.755262,
+    "lng": -122.408143
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1049 1047 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 261381,
+    "assessed_improvement_value": 207262,
+    "last_sale_date": "1990-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607074611",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-07",
+      "status_date": "2026-07-07",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "landing stair repair front of bldg, less than 50% of stair, street facing, stucco reapir around garage, garage door replacement, front of bldg, street facing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301230540",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-23",
+      "status_date": "2023-04-26",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M621667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-11",
+      "status_date": "2015-09-11",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M593688",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-06-08",
+      "status_date": "2015-06-08",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006132593",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-13",
+      "status_date": "2001-04-11",
+      "estimated_cost": 3850,
+      "revised_cost": 3850,
+      "description": "install 6 replacement windows front of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-12",
+      "status_date": "1995-08-03",
+      "estimated_cost": 2500,
+      "description": "remove tile on landing ,install new membrane,new tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-01-14",
+      "status_date": "1991-06-27",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

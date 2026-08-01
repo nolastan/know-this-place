@@ -1,0 +1,123 @@
+# Fair Oaks Street
+
+Every residential parcel on Fair Oaks Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [1](1/) — A 1924 10-unit apartment building in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2023.
+- [2](2/) — A 1929 4-unit tic building in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2024.
+- [8](8/) — A 1900 two-flat in the Liberty Hill Historic District, with reroofing permitted in 2004.
+- [11](11/) — A 1900 single-family house in the Liberty Hill Historic District, with reroofing permitted in 2001.
+- [14](14/) — An 1885 single-family house in the Liberty Hill Historic District, with a kitchen remodel permitted in 1986.
+- [25](25/) — A 1904 single-family house in the Liberty Hill Historic District, with a bathroom remodel permitted in 2024.
+- [30](30/) — A 1959 4-unit apartment building in the Liberty Hill Historic District, with facade work permitted in 2006.
+- [31](31/) — A 1900 single-family house in the Liberty Hill Historic District, with a rear addition permitted in 1986.
+- [36](36/) — A 1960 6-unit apartment building in the Liberty Hill Historic District, with facade work permitted in 2021.
+- [39](39/) — A 1962 17-unit apartment building in the Liberty Hill Historic District, with an addition permitted in 2020.
+- [40–44](40/) — A 1904 3-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 2004.
+- [50–52](50/) — A 1906 two-flat in the Liberty Hill Historic District, with foundation work permitted in 2017.
+- [54](54/) — A 1900 single-family house in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2022.
+- [55–57](55/) — A 1910 two-flat in the Liberty Hill Historic District, with window replacement permitted in 2007.
+- [58](58/) — A 1900 two-flat in the Liberty Hill Historic District.
+- [61](61/) — A 1910 two-flat in the Liberty Hill Historic District, with reroofing permitted in 2002.
+- [62–64](62/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2016.
+- [68–70](68/) — An 1888 two-flat in the Liberty Hill Historic District, with a rear addition permitted in 2002.
+- [69](69/) — A 1906 1-unit apartment building in the Liberty Hill Historic District, with an addition permitted in 2013.
+- [72–74](72/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2024.
+- [73–75](73/) — A 1906 2-unit tic building in the Liberty Hill Historic District, with window replacement permitted in 2019.
+- [83–91](83/) — A 1904 5-unit apartment building in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2025.
+- [86](86/) — A 1908 single-family house in the Liberty Hill Historic District, with a seismic retrofit permitted in 2021.
+- [106](106/) — A 1961 6-unit apartment building in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2014.
+- [108](108/) — A 1900 two-flat in the Fair Oaks Street Historic District, with deck work permitted in 2006.
+- [110](110/) — A 1900 single-family house in the Fair Oaks Street Historic District, with reroofing permitted in 1995.
+- [112](112/) — A 1904 three-flat in the Fair Oaks Street Historic District, with a rear addition permitted in 1988.
+- [114](114/) — A 1900 single-family house in the Fair Oaks Street Historic District, with reroofing permitted in 2026.
+- [116](116/) — A 1900 three-flat in the Fair Oaks Street Historic District, with reroofing permitted in 1990.
+- [119–121](119/) — An 1890 flats building in the Fair Oaks Street Historic District, with deck work permitted in 2004.
+- [120](120/) — A 1900 two-flat in the Fair Oaks Street Historic District, with a kitchen remodel permitted in 1997.
+- [125–129](125/) — A 1914 10-unit apartment building in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2017.
+- [131–135](131/) — A 1910 7-unit apartment building in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2018.
+- [137–139](137/) — A 1900 two-flat in the Fair Oaks Street Historic District, with garage work permitted in 2015.
+- [155–159](155/) — A 1910 5-unit apartment building in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2018.
+- [167–173](167/) — A 1900 12-unit apartment building in the Fair Oaks Street Historic District, with foundation work permitted in 2024.
+- [175](175/) — A 1900 three-flat in the Fair Oaks Street Historic District, with deck work permitted in 2004.
+- [177–181](177/) — A 1911 6-unit apartment building in the Fair Oaks Street Historic District, with one permit record from 2022.
+- [183–189](183/) — A 1900 4-unit apartment building in the Fair Oaks Street Historic District, with reroofing permitted in 2013.
+- [204](204/) — An 1895 single-family house in the Fair Oaks Street Historic District, with a kitchen remodel permitted in 2022.
+- [206](206/) — A 1900 two-flat in the Fair Oaks Street Historic District, with reroofing permitted in 1993.
+- [208–210](208/) — A 1900 4-unit apartment building in the Fair Oaks Street Historic District, with a kitchen remodel permitted in 2015.
+- [209](209/) — A 1900 two-flat in the Fair Oaks Street Historic District, with a rear addition permitted in 1988.
+- [211](211/) — A 1900 three-flat in the Fair Oaks Street Historic District, with a vertical addition permitted in 1993.
+- [212](212/) — A 1900 three-flat in the Fair Oaks Street Historic District, with window replacement permitted in 2010.
+- [214–216](214/) — A 1900 two dwellings on one parcel in the Fair Oaks Street Historic District, with foundation work permitted in 2018.
+- [217](217/) — A 1900 single-family house in the Fair Oaks Street Historic District, with foundation work permitted in 1984.
+- [220](220/) — A 1965 8-unit apartment building in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2017.
+- [221](221/) — A 1933 single-family house in the Fair Oaks Street Historic District, with a rear addition permitted in 2003.
+- [223–227](223/) — An 1885 three-flat in the Fair Oaks Street Historic District, with a rear addition permitted in 1998.
+- [242–246](242/) — A 1925 4-unit apartment building in the Fair Oaks Street Historic District, with permit records from 1983 to 2018.
+- [248–250](248/) — A 1904 3-unit apartment building in the Fair Oaks Street Historic District, with window replacement permitted in 2014.
+- [249](249/) — An 1885 single-family house in the Fair Oaks Street Historic District, with deck work permitted in 1994.
+- [255–259](255/) — A 1931 7-unit apartment building in the Fair Oaks Street Historic District, with permit records from 2008 to 2022.
+- [258](258/) — A 1900 single-family house in the Fair Oaks Street Historic District, with stair work permitted in 1986.
+- [260](260/) — An 1870 single-family house in the Fair Oaks Street Historic District, with reroofing permitted in 2000.
+- [261–265](261/) — An 1880 single-family house in the Fair Oaks Street Historic District, with a rear addition permitted in 2000.
+- [264](264/) — A 1900 single-family house in the Fair Oaks Street Historic District, with reroofing permitted in 2005.
+- [267](267/) — A 1900 single-family house in the Fair Oaks Street Historic District, with permit records from 1989 to 2015.
+- [268–270](268/) — A 1900 three-flat in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2025.
+- [271](271/) — A 1900 single-family house in the Fair Oaks Street Historic District, with a rear addition permitted in 2015.
+- [275](275/) — A 1900 single-family house in the Fair Oaks Street Historic District, with reroofing permitted in 2011.
+- [280–282](280/) — A 1900 two-flat in the Fair Oaks Street Historic District, with a kitchen and bathroom remodel permitted in 2025.
+- [283](283/) — A 1900 single-family house in the Fair Oaks Street Historic District, with stair work permitted in 2012.
+- [285](285/) — A 1900 single-family house in the Fair Oaks Street Historic District, with garage work permitted in 2000.
+- [286–288](286/) — A 1905 two-flat in the Fair Oaks Street Historic District, with garage work permitted in 2015.
+- [287](287/) — A 1900 single-family house in the Fair Oaks Street Historic District, with a kitchen remodel permitted in 2024.
+- [290](290/) — A 1916 two-flat in the Fair Oaks Street Historic District, with a seismic retrofit permitted in 2014.
+- [296–298](296/) — A 1903 two-flat in the Fair Oaks Street Historic District, with garage work permitted in 1986.
+- [306](306/) — A 1926 9-unit apartment building, with a seismic retrofit permitted in 2017.
+- [322–324](322/) — A 1905 two-flat, with a rear addition permitted in 2014.
+- [332](332/) — A 1900 5-unit apartment building.
+- [342](342/) — A 1900 single-family house, with an addition permitted in 2005.
+- [346](346/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2013.
+- [354](354/) — A 1908 single-family house, with a rear addition permitted in 1990.
+- [355](355/) — A 1905 single-family house, with a rear addition permitted in 1990.
+- [360](360/) — A 1911 single-family house, with a kitchen and bathroom remodel permitted in 2022.
+- [364](364/) — A 1911 single-family house, with a bathroom remodel permitted in 2023.
+- [370](370/) — A 1978 single-family house, with a bathroom remodel permitted in 2012.
+- [374](374/) — A 1909 single-family house, with garage work permitted in 2005.
+- [375–377](375/) — A 1908 two-flat, with foundation work permitted in 2025.
+- [380–382](380/) — A 1907 two-flat, with garage work permitted in 2000.
+- [383–385](383/) — A 1900 two-flat, with a rear addition permitted in 2012.
+- [384–386](384/) — An 1890 2-unit apartment building, with garage work permitted in 2017.
+- [387–389](387/) — A 1900 2-unit apartment building, with facade work permitted in 2014.
+- [390–392](390/) — A 1907 two-flat, with facade work permitted in 2022.
+- [400](400/) — A 1910 single-family house, with an addition permitted in 2011.
+- [402](402/) — A 1908 single-family house, with a rear addition permitted in 2016.
+- [403](403/) — A 1900 4-unit apartment building, with reroofing permitted in 2003.
+- [410–418](410/) — A 1908 8-unit apartment building, with plumbing work permitted in 2011.
+- [411–413](411/) — A 1906 6-unit apartment building, with reroofing permitted in 1995.
+- [417](417/) — A 1900 two-flat, with reroofing permitted in 1990.
+- [420](420/) — A 1906 two-flat, with reroofing permitted in 1991.
+- [421](421/) — A 1961 4-unit apartment building, with reroofing permitted in 2025.
+- [425](425/) — A 1961 4-unit apartment building, with reroofing permitted in 2025.
+- [433](433/) — A 1900 single-family house.
+- [434](434/) — A 1926 single-family house, with reroofing permitted in 2024.
+- [435](435/) — A 1900 single-family house, with window replacement permitted in 2023.
+- [441](441/) — A 1900 two-flat.
+- [443](443/) — A 1900 2-unit apartment building, with a rear addition permitted in 2026.
+- [444](444/) — A 1910 single-family house, with an addition permitted in 2002.
+- [447](447/) — A 1900 single-family house, with deck work permitted in 2011.
+- [451](451/) — A 1900 single-family house, with a bathroom remodel permitted in 2017.
+- [452–454](452/) — A 1900 two-flat, with a rear addition permitted in 2025.
+- [460–462](460/) — A 1900 three-flat, with deck work permitted in 2025.
+- [463](463/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 1990.
+- [464](464/) — A 1900 single-family house, with reroofing permitted in 1996.
+- [469–471](469/) — A 1908 two-flat, with foundation work permitted in 2022.
+- [470–472](470/) — A 1906 two-flat, with a kitchen remodel permitted in 2020.
+- [473–475](473/) — A 1908 two-flat, with foundation work permitted in 2012.
+- [479](479/) — A 1964 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [487–489](487/) — A 1912 7-unit apartment building, with reroofing permitted in 2015.
+- [492–494](492/) — A 1903 two-flat, with deck work permitted in 2022.
+- [496–498](496/) — A 1900 two-flat, with facade work permitted in 2011.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

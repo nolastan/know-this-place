@@ -1,0 +1,113 @@
+{
+  "address": "2627 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2627/",
+  "apn": "4089037",
+  "block": "4089",
+  "lot": "037",
+  "eas_baseid": "368465",
+  "coordinates": {
+    "lat": 37.7591,
+    "lng": -122.407565
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1060,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2627 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 25840,
+    "assessed_improvement_value": 15218
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1186747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-23",
+      "status_date": "2020-01-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907267052",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-26",
+      "status_date": "2019-07-26",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "roofing repair to fix leak that caused damange. fix 15% or less of roof; repair inkind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907165985",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-16",
+      "status_date": "2021-07-13",
+      "estimated_cost": 57000,
+      "revised_cost": 57000,
+      "description": "flooring, replace dry rot boards in light well, replace cabints, upgrade ele as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-07-26",
+      "status_date": "1994-11-17",
+      "estimated_cost": 2700,
+      "description": "install vinyl siding to bk wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2627",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4089037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4089&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4089037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

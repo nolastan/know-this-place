@@ -1,0 +1,146 @@
+{
+  "address": "1041–1043 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1041/",
+  "apn": "4149027",
+  "block": "4149",
+  "lot": "027",
+  "eas_baseid": "369506",
+  "coordinates": {
+    "lat": 37.75521,
+    "lng": -122.410929
+  },
+  "address_range": "1041–1043",
+  "street_numbers_on_parcel": [
+    "1041",
+    "1043"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2950,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1043 1041 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 974187,
+    "assessed_improvement_value": 974187,
+    "last_sale_date": "2000-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alabama Street Pioneers Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1884",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202107154488",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-15",
+      "status_date": "2021-08-25",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel one kitchen and 2 bathrooms. non structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812138304",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-12-13",
+      "status_date": "2019-06-06",
+      "estimated_cost": 1200,
+      "revised_cost": 3000,
+      "description": "comply with nov 201786611, per planning commission, approved of 11/15/18- remove unauthorized dwelling unit. remove all plumbing in basement rooms. remove bathtub, shower, 2 sinks, toilet, & gas pipe. cap utilities back to their sources.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411159156",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-11-15",
+      "status_date": "2005-10-18",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "remove porch about 100 sq ft, one level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409224820",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-22",
+      "status_date": "2004-10-14",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "remove tile on stairs landing, to comply with his nov 200453021",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705717",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-28",
+      "status_date": "1997-08-05",
+      "estimated_cost": 2850,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41092935158991%2037.755209798120504)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

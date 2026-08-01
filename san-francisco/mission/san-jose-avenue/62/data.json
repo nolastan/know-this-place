@@ -1,0 +1,144 @@
+{
+  "address": "62–64 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/62/",
+  "apn": "3634001A",
+  "block": "3634",
+  "lot": "001A",
+  "eas_baseid": "363730",
+  "coordinates": {
+    "lat": 37.754175,
+    "lng": -122.421711
+  },
+  "address_range": "62–64",
+  "street_numbers_on_parcel": [
+    "62",
+    "64"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 6,
+    "bedrooms": 8,
+    "lot_area_sqft": 1768,
+    "building_area_sqft": 3605,
+    "basement_area_sqft": 885,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0064 0062 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1491582,
+    "assessed_improvement_value": 1197004,
+    "last_sale_date": "2015-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201703211943",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-21",
+      "status_date": "2018-12-04",
+      "estimated_cost": 20000,
+      "revised_cost": 108180,
+      "description": "foundation strengthening and structural strenthening at ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610180571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-18",
+      "status_date": "2018-12-04",
+      "estimated_cost": 55000,
+      "revised_cost": 250000,
+      "description": "remodel powder room, add bedrooms, 1 office, bath, mudroom on 1st fl, remodel kitchen/dining rm and bath, add 3 bedrooms, baths, game room on 2nd fl. remodel kitchen/dining and bath, add 2 bedrooms, office bath on 3rd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510058863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-05",
+      "status_date": "2015-10-27",
+      "estimated_cost": 3400,
+      "revised_cost": 3400,
+      "description": "repair back stairs less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310189694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-18",
+      "status_date": "2014-09-24",
+      "estimated_cost": 2085,
+      "revised_cost": 2085,
+      "description": "replace foundation into existing opening. not visible from street. no structural changes. max u factor. 40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308154394",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-15",
+      "status_date": "2013-08-30",
+      "estimated_cost": 1777,
+      "revised_cost": 1777,
+      "description": "replace 3 windows, not visible from street. no structural changes, max u factor is 0.40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-05",
+      "status_date": "1996-03-21",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=62",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634001A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

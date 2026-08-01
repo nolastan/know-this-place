@@ -1,0 +1,138 @@
+{
+  "address": "2770 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2770/",
+  "apn": "4152021A",
+  "block": "4152",
+  "lot": "021A",
+  "eas_baseid": "369610",
+  "coordinates": {
+    "lat": 37.754591,
+    "lng": -122.407892
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1285,
+    "building_area_sqft": 1454,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2772 2770 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 837292,
+    "assessed_improvement_value": 320917,
+    "last_sale_date": "2021-09-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301110006",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-01-11",
+      "status_date": "2024-09-19",
+      "estimated_cost": 225000,
+      "revised_cost": 225000,
+      "description": "vertical addition to create 3rd floor into livable space by raising attic roof, add gas tankless water heater and ductless mini-split",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208251277",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-25",
+      "status_date": "2024-09-19",
+      "estimated_cost": 60000,
+      "revised_cost": 90000,
+      "description": "interior stair to 3/f attic, one dormer, remodel 3rd bathroom @ 2/f, new study @ portion of attic floor, attic floor to be upgraded. new double hung aluminum clad wood windows to replace fixed windows at front facade. new horizontal wood siding at front facade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202112023537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-02",
+      "status_date": "2024-09-16",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "voluntary seismic retrofit and foundation replacement except at rear line 5. no room layout change. no wall layout change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110140484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-14",
+      "status_date": "2024-09-16",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 9 new windows front of bldg,repair front steps & siding repair ~100 sqft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109309535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-30",
+      "status_date": "2024-09-06",
+      "estimated_cost": 60000,
+      "revised_cost": 110000,
+      "description": "one kitchen remodel, in kind bathroom remodels (2 full one 1/2 bath), redo flooring (1000 sqft) redo drywall (50% of unit), minor dry rot repairs, replace 3-5 windows (same locations) repair rear deck stairs (<50%), all work at the rear not the front facade (e.o) 9/30/2021",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808759",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-29",
+      "status_date": "1988-08-18",
+      "estimated_cost": 1200,
+      "description": "replace plaster walls with sheetrock , drywall and windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2770",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152021A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=021A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152021A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "address": "259 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/dolores-street/259/",
+  "apn": "3556053",
+  "block": "3556",
+  "lot": "053",
+  "eas_baseid": "359428",
+  "coordinates": {
+    "lat": 37.765411,
+    "lng": -122.4259
+  },
+  "parcel": {
+    "year_built": 1961,
+    "units": 12,
+    "stories": 3,
+    "rooms": 27,
+    "bathrooms": 12,
+    "lot_area_sqft": 5083,
+    "building_area_sqft": 7569,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0259 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 509895,
+    "assessed_improvement_value": 594885,
+    "last_sale_date": "1993-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1961",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508073706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-07",
+      "status_date": "2015-12-23",
+      "estimated_cost": 48550,
+      "revised_cost": 48550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207161577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-16",
+      "status_date": "2002-10-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair in kind of wood & stucco railings & walls (rev. to 200206260039",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206260039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-06-26",
+      "status_date": "2002-10-26",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair in kind of wood & stucco railings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-23",
+      "status_date": "1988-09-29",
+      "estimated_cost": 5660,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=259",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&lot=053",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3556053",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

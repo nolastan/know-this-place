@@ -1,0 +1,137 @@
+{
+  "address": "3634–3650 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3634/",
+  "apn": "3632014",
+  "block": "3632",
+  "lot": "014",
+  "eas_baseid": "422484",
+  "coordinates": {
+    "lat": 37.753693,
+    "lng": -122.423846
+  },
+  "address_range": "3634–3650",
+  "street_numbers_on_parcel": [
+    "3634",
+    "3636",
+    "3638",
+    "3640",
+    "3646",
+    "3648",
+    "3650"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 9,
+    "stories": 3,
+    "rooms": 43,
+    "bathrooms": 9,
+    "lot_area_sqft": 7165,
+    "building_area_sqft": 10905,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3646 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98856,
+    "assessed_improvement_value": 109716
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200704189125",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-18",
+      "status_date": "2007-04-18",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "repair & replace one post on the back stairs.to comply nov#200794299.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-04-13",
+      "status_date": "1988-06-17",
+      "estimated_cost": 2000,
+      "description": "repair rear stairs including landing & rails.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801684",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-10",
+      "status_date": "1988-06-17",
+      "estimated_cost": 25621,
+      "description": "repair fire damage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801685",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-10",
+      "status_date": "1988-04-08",
+      "estimated_cost": 12000,
+      "description": "repair fire damage, replace windows, sheetrock, doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3634",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3632014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3632&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3632014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42384614916742%2037.75369257265645)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

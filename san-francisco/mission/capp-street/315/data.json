@@ -1,0 +1,114 @@
+{
+  "address": "315 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/315/",
+  "apn": "3590063",
+  "block": "3590",
+  "lot": "063",
+  "eas_baseid": "361320",
+  "coordinates": {
+    "lat": 37.761613,
+    "lng": -122.417927
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3672,
+    "building_area_sqft": 1600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0315 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 109504
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606183560",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-18",
+      "status_date": "2026-06-26",
+      "estimated_cost": 1500,
+      "revised_cost": 9000,
+      "description": "revision to permit 202604179641. 1/f: demo wall next to the staircase. add wet bar in kitchen. all bathroom relayout. no exterior change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202605131215",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-13",
+      "status_date": "2026-05-14",
+      "estimated_cost": 1000,
+      "revised_cost": 10000,
+      "description": "replace (e) drywall throughout the entire house. (no exterior change, no electircal, no plumbing work)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202604179641",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-17",
+      "status_date": "2026-04-24",
+      "estimated_cost": 75000,
+      "revised_cost": 98000,
+      "description": "1st floor existing kitchen and bathroom remodel. demo wall between kitchen and family room. 2nd floor bathroom relayout, relocate laundry room, convert office to one full bath and walk in closet. replace heater and furnace. no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802576",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-03-02",
+      "status_date": "1988-07-19",
+      "estimated_cost": 5000,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=315",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&lot=063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3590063",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

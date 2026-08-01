@@ -1,0 +1,161 @@
+{
+  "address": "1189 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1189/",
+  "apn": "6522024",
+  "block": "6522",
+  "lot": "024",
+  "eas_baseid": "401114",
+  "coordinates": {
+    "lat": 37.751231,
+    "lng": -122.412564
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 1150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1189 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27616,
+    "assessed_improvement_value": 14122
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202501249043",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-24",
+      "status_date": "2025-02-05",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "re-roofing, no torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208217945",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-21",
+      "status_date": "2012-09-19",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207104471",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-10",
+      "status_date": "2012-09-26",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair fire damage to siding & a few studs at front by garage & side @ rear building. approx 140 sq. ft. repair work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108035234",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-03",
+      "status_date": "2001-12-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915614",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-30",
+      "status_date": "1999-08-20",
+      "estimated_cost": 1,
+      "description": "renew expired appn. 441085 & 454699 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915615",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-30",
+      "status_date": "1999-11-08",
+      "estimated_cost": 500,
+      "description": "repair rear deck-not replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-12",
+      "status_date": "1992-06-01",
+      "estimated_cost": 2500,
+      "revised_cost": 0,
+      "description": "remove & replace dryrot siding 25'wx16'h & replace garage dr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1189",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6522024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6522&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6522024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41256429863506%2037.75123111575895)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

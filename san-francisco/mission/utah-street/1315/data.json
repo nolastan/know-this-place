@@ -1,0 +1,129 @@
+{
+  "address": "1315 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/1315/",
+  "apn": "4263016",
+  "block": "4263",
+  "lot": "016",
+  "eas_baseid": "482886",
+  "coordinates": {
+    "lat": 37.752546,
+    "lng": -122.404967
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2541,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1315 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234540,
+    "assessed_improvement_value": 491402,
+    "last_sale_date": "1988-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201704043081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-04",
+      "status_date": "2017-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#'s 201112070272, 201206263462 and 201511233405.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511233405",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2015-11-23",
+      "status_date": "2017-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "reduce the scope of project to exclude exterior stairs from 2/f to 3/f and exclude marked path through garage. revision to pa#201206263462-s1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206263462",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-06-26",
+      "status_date": "2017-04-07",
+      "estimated_cost": 100000,
+      "revised_cost": 109556,
+      "description": "add new 3rd story to front portion of building. new interior stair. new exterior stair at rear from 2nd to 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112070272",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-12-07",
+      "status_date": "2017-04-10",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "replace portions of foundation, remove posts on 1st floor & re-structure framing in ceiling above, remove & install various walls & re-structure framing in ceiling/roof above, relocate (e) stair & rebuild to 2nd floor. lightwell in-fill. remove & reframe new roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508089729",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2005-08-08",
+      "status_date": "2017-05-02",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "patch stucco 2;x4' on front corner exterior. all work in kine approx 8 sq ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=1315",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4263016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4263&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4263016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

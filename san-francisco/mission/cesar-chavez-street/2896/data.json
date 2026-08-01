@@ -1,0 +1,130 @@
+{
+  "address": "2896–2898 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2896/",
+  "apn": "4334007",
+  "block": "4334",
+  "lot": "007",
+  "eas_baseid": "371308",
+  "coordinates": {
+    "lat": 37.748723,
+    "lng": -122.407646
+  },
+  "address_range": "2896–2898",
+  "street_numbers_on_parcel": [
+    "2896",
+    "2898"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1860,
+    "building_area_sqft": 2531,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2898 2896 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 262939,
+    "assessed_improvement_value": 275632,
+    "last_sale_date": "1990-05-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709148226",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-14",
+      "status_date": "2017-09-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply w/ nov#201702611. insulating the ceiling of garage and a wall, put dry wall (fire protection) at garage area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901160326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-16",
+      "status_date": "2009-02-12",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reconstruction of existing exterior rear stairs and landing in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207302607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-30",
+      "status_date": "2002-11-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "to comply w/ n.o.v.200231389 roughly about 35' of foundation capping work on york street side & dryr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916412",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-10",
+      "status_date": "2000-01-21",
+      "estimated_cost": 4624,
+      "description": "replace 2 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611423",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-09-16",
+      "status_date": "1986-12-16",
+      "estimated_cost": 1868,
+      "description": "install new aluminum sliders",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2896",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

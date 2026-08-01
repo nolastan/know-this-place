@@ -1,0 +1,124 @@
+{
+  "address": "1212 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1212/",
+  "apn": "4266003",
+  "block": "4266",
+  "lot": "003",
+  "eas_baseid": "370676",
+  "coordinates": {
+    "lat": 37.752428,
+    "lng": -122.407524
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1304,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1212 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 11751,
+    "assessed_improvement_value": 36469
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508273983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-27",
+      "status_date": "2025-10-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #202505075982 to perform specifically in unit a as per inspector's request.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505075982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-07",
+      "status_date": "2025-10-03",
+      "estimated_cost": 33000,
+      "revised_cost": 33000,
+      "description": "2/f upper unit: bathroom remodel- no change in plumbing fixture count.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504235104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-23",
+      "status_date": "2025-05-14",
+      "estimated_cost": 9513,
+      "revised_cost": 9513,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23214",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-19",
+      "status_date": "2003-03-19",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611555",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-27",
+      "status_date": "1997-01-16",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1212",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4266003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4266&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4266003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

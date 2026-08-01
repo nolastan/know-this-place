@@ -1,0 +1,144 @@
+{
+  "address": "75–79 Brosnan Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/brosnan-street/75/",
+  "apn": "3533031",
+  "block": "3533",
+  "lot": "031",
+  "eas_baseid": "358364",
+  "coordinates": {
+    "lat": 37.768506,
+    "lng": -122.423883
+  },
+  "address_range": "75–79",
+  "street_numbers_on_parcel": [
+    "75",
+    "77",
+    "79"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "lot_area_sqft": 2296,
+    "building_area_sqft": 3656,
+    "lot_depth_ft": 82,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0079 0075 BROSNAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 281469,
+    "assessed_improvement_value": 469140,
+    "last_sale_date": "1989-04-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412187050",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-18",
+      "status_date": "2025-03-04",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "to comply with complaint# 202431214. repair stairs by replacing posts, foundations and install new guardrail and handrail. repair in-kind <50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308081637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-08",
+      "status_date": "2003-10-27",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "correct complaint#200342209.replace glass window-side,repair sash frame,repair stairs & exterior-bac",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M22619",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-01-16",
+      "status_date": "2003-01-16",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209257466",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-09-25",
+      "status_date": "2003-01-29",
+      "estimated_cost": 3000,
+      "revised_cost": 4000,
+      "description": "cover (e) wood sidiing w/vynyl siding. vinyl siding to be on top of the (e) wood siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900208",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-05",
+      "status_date": "1989-01-11",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510386",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1985-09-24",
+      "status_date": "1985-12-27",
+      "estimated_cost": 5,
+      "revised_cost": 1200,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROSNAN&street_type=ST&address_number=75",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

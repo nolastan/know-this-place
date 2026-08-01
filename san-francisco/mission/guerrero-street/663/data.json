@@ -1,0 +1,128 @@
+{
+  "address": "663 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/663/",
+  "apn": "3588055",
+  "block": "3588",
+  "lot": "055",
+  "eas_baseid": "361137",
+  "coordinates": {
+    "lat": 37.760581,
+    "lng": -122.423398
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2291.75,
+    "building_area_sqft": 1875,
+    "basement_area_sqft": 725,
+    "lot_depth_ft": 91.67,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0663 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 514090,
+    "assessed_improvement_value": 574933,
+    "last_sale_date": "2001-08-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407020411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-02",
+      "status_date": "2014-08-07",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M210548",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-12",
+      "status_date": "2010-07-12",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905077868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-07",
+      "status_date": "2010-12-23",
+      "estimated_cost": 70000,
+      "revised_cost": 90000,
+      "description": "conversion of unheated storage space to new master bedroom, bathroom, and laundry room on ground floor garage area. new rear windows and modification to rear wall. add 5' - 5\" plywood wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203060728",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-06",
+      "status_date": "2002-09-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel kitchen, replace cabinets and counter top, new flooring and paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909518",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-14",
+      "status_date": "2000-01-03",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=663",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588055",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "address": "3324 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3324/",
+  "apn": "3608012",
+  "block": "3608",
+  "lot": "012",
+  "eas_baseid": "362306",
+  "coordinates": {
+    "lat": 37.757108,
+    "lng": -122.421792
+  },
+  "parcel": {
+    "year_built": 1885,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2990,
+    "building_area_sqft": 2636,
+    "basement_area_sqft": 628,
+    "lot_depth_ft": 15,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3324 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152318,
+    "assessed_improvement_value": 202334
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201909192135",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2019-09-19",
+      "status_date": "2019-12-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace eight non-street facing rear windows in back sunroom addition and one at lower level kitchen - total nine windows - all to be andersen architectural collection: e-series aluminum-clad wood awning windows within the existing openings. no other work under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011216357",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-21",
+      "status_date": "2000-11-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew to permit for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003305932",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-30",
+      "status_date": "2000-11-28",
+      "revised_cost": 1,
+      "description": "renew expired appl #9322692s & #9724808 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724808",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-12-10",
+      "status_date": "2000-11-28",
+      "estimated_cost": 3000,
+      "description": "install new kitchen cabs & counter tops",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9322692S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-12-31",
+      "status_date": "2000-11-28",
+      "estimated_cost": 15000,
+      "revised_cost": 22000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-10",
+      "status_date": "1990-11-14",
+      "estimated_cost": 500,
+      "description": "bolt foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818842",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-11-29",
+      "status_date": "1988-12-16",
+      "estimated_cost": 2000,
+      "description": "replace 25 linear feet of foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3324",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42179156518355%2037.757107939288936)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

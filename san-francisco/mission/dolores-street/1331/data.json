@@ -1,0 +1,95 @@
+{
+  "address": "1331 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1331/",
+  "apn": "6567023",
+  "block": "6567",
+  "lot": "023",
+  "eas_baseid": "402616",
+  "coordinates": {
+    "lat": 37.748191,
+    "lng": -122.424385
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1575,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1331 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1570800,
+    "assessed_improvement_value": 673200,
+    "last_sale_date": "2024-04-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200206068341",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-06-06",
+      "status_date": "2002-06-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010203660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-20",
+      "status_date": "2000-12-13",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "install cap under existing foundation not more than 1' high, mudsill, new bolts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1331",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

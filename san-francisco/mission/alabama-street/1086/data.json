@@ -1,0 +1,146 @@
+{
+  "address": "1086 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1086/",
+  "apn": "4148013",
+  "block": "4148",
+  "lot": "013",
+  "eas_baseid": "369454",
+  "coordinates": {
+    "lat": 37.754609,
+    "lng": -122.411424
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2017,
+    "basement_area_sqft": 784,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1086 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1316748,
+    "assessed_improvement_value": 836008,
+    "last_sale_date": "2019-12-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102023832",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-02-02",
+      "status_date": "2022-05-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove (e) deck & stair at rear & contruct (n) deck & stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002204999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-20",
+      "status_date": "2022-05-09",
+      "estimated_cost": 215000,
+      "revised_cost": 215000,
+      "description": "renovate 2nd level including extg kitchen and bath, new 1/2 bath. renovate 1st level including new bedroom, bath and laundry. renovate front east facade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015120",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-07-31",
+      "status_date": "1990-09-07",
+      "estimated_cost": 25000,
+      "description": "replace windows, doors, on room of house w/identical, ect",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011694",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-06-14",
+      "status_date": "1990-08-13",
+      "estimated_cost": 50,
+      "description": "request for final inspection of kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009049",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-10",
+      "status_date": "1990-08-13",
+      "estimated_cost": 1,
+      "description": "final inspection for work done on permit #8717435",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802947",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-03-08",
+      "status_date": "1988-10-06",
+      "estimated_cost": 5000,
+      "description": "replace windows, door in rear of the house, new cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717435",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-12-09",
+      "status_date": "1988-04-11",
+      "estimated_cost": 3600,
+      "description": "termite fungus repair.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1086",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "address": "23–25 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/23/",
+  "apn": "3576041",
+  "block": "3576",
+  "lot": "041",
+  "eas_baseid": "360325",
+  "coordinates": {
+    "lat": 37.762322,
+    "lng": -122.420663
+  },
+  "address_range": "23–25",
+  "street_numbers_on_parcel": [
+    "23",
+    "25"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2372,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0025 0023 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 288377,
+    "assessed_improvement_value": 244944,
+    "last_sale_date": "1997-06-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M174827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-07-31",
+      "status_date": "2009-07-31",
+      "revised_cost": 1,
+      "description": "sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806114150",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-11",
+      "status_date": "2008-12-04",
+      "estimated_cost": 150000,
+      "revised_cost": 182000,
+      "description": "#21,replace fl covering,ceiling,walls, replace lights fixt,replace windows in kind.# 23 repair ceiling, drywall & plaster,replace light,add closet,remove fireplace, windows.# 25 fire smoke &fire damage,strip down bare frame,seal framing,install r-13 walls r30 in attic,new cabnetry, replace windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=23",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

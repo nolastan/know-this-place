@@ -1,0 +1,99 @@
+{
+  "address": "2485–2487 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2485/",
+  "apn": "4084020",
+  "block": "4084",
+  "lot": "020",
+  "eas_baseid": "422573",
+  "coordinates": {
+    "lat": 37.757712,
+    "lng": -122.412069
+  },
+  "address_range": "2485–2487",
+  "street_numbers_on_parcel": [
+    "2485",
+    "2487"
+  ],
+  "parcel": {
+    "year_built": 1979,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 2838,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2487 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 335308,
+    "last_sale_date": "1998-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201103182405",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-18",
+      "status_date": "2012-01-11",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#1 & 3- remove & replace existing single pane windows with double pane, visable from street, u factor 0.40 max, new windows to be casement or double casement aluminum clad wood, same size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821444",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-20",
+      "status_date": "1999-03-03",
+      "estimated_cost": 4830,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2485",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4084020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4084&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4084020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

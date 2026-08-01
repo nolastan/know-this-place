@@ -1,0 +1,142 @@
+{
+  "address": "912–914 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/912/",
+  "apn": "4142003",
+  "block": "4142",
+  "lot": "003",
+  "eas_baseid": "369213",
+  "coordinates": {
+    "lat": 37.75736,
+    "lng": -122.407096
+  },
+  "address_range": "912–914",
+  "street_numbers_on_parcel": [
+    "912",
+    "914"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2684,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0916 0912 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 275952,
+    "assessed_improvement_value": 505934,
+    "last_sale_date": "1990-03-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201003168279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-16",
+      "status_date": "2010-04-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to establish the legality of the rear building (cottage)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M193187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-16",
+      "status_date": "2010-03-16",
+      "revised_cost": 0,
+      "description": "to request to assign 916 potrero ave to the rear building dwelling unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709041595",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-04",
+      "status_date": "2007-09-18",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607146513",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-14",
+      "status_date": "2006-07-14",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "replace finishes cabinets, fixtures and appliances (e) kitchen & bath in kitchen & bathroom of ground floor apartment. repair damaged wall finishes. upgrade electrical and plumbing as required. no structural work. no change to partition or windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506104849",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-06-10",
+      "status_date": "2006-02-24",
+      "estimated_cost": 50000,
+      "revised_cost": 18000,
+      "description": "windows replacement replace rotted beam, addition of light fixture and switch, replumb for washer, remove existing 3'6 approx deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301145144",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-14",
+      "status_date": "2006-04-17",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "foundation repair/recap foundation for deck post replace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=912",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

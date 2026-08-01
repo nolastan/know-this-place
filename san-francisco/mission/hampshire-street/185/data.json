@@ -1,0 +1,112 @@
+{
+  "address": "185–191 Hampshire Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/hampshire-street/185/",
+  "apn": "3920007B",
+  "block": "3920",
+  "lot": "007B",
+  "eas_baseid": "366694",
+  "coordinates": {
+    "lat": 37.767242,
+    "lng": -122.408449
+  },
+  "address_range": "185–191",
+  "street_numbers_on_parcel": [
+    "185",
+    "187",
+    "189",
+    "191"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 1818.9,
+    "building_area_sqft": 3016,
+    "lot_depth_ft": 64.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0191 0185 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 697378,
+    "assessed_improvement_value": 359218,
+    "assessed_fixtures_value": 222
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201107120003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-12",
+      "status_date": "2011-07-15",
+      "estimated_cost": 1075,
+      "revised_cost": 1075,
+      "description": "provide handrails, wager heater straps, replace vent for water heater with b type approximately 25' and remove wooden ladder. to comply with housing inspection div. nov issued 6/13/2011. complaint tracking # 201144201. run flue exterior wall along back corner of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16257",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-22",
+      "status_date": "2001-09-22",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008289041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-28",
+      "status_date": "2000-09-22",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "underpinning of existing foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=185",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3920007B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3920&lot=007B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3920007B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

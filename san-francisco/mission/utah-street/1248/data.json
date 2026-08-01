@@ -1,0 +1,146 @@
+{
+  "address": "1248 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/1248/",
+  "apn": "4212003G",
+  "block": "4212",
+  "lot": "003G",
+  "eas_baseid": "370278",
+  "coordinates": {
+    "lat": 37.753647,
+    "lng": -122.405683
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2509,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1248 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2159447,
+    "assessed_improvement_value": 925475,
+    "last_sale_date": "2021-05-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403258511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-25",
+      "status_date": "2024-06-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M605107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-17",
+      "status_date": "2015-07-17",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501276836",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-27",
+      "status_date": "2015-10-28",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "revision to 201411131347. remove existing stucco for new stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M541628",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-05",
+      "status_date": "2014-12-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-13",
+      "status_date": "2015-10-28",
+      "estimated_cost": 320000,
+      "revised_cost": 320000,
+      "description": "1st fl remodel area behind garage to include media room, laundry, bedroom and bath. 2nd fl reconfig plan to include liv rm,din rm, kitchen, family rm, 1/2 bath. 3rd fl reconfig 3 bedrooms, 2 baths. replace deck at rear with smaller, enclose lightwell 3rd fl maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-04-07",
+      "status_date": "1988-09-13",
+      "estimated_cost": 11035,
+      "description": "remove dry rot, tear banister on botton front porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-06-16",
+      "status_date": "1986-12-19",
+      "estimated_cost": 950,
+      "description": "putting sheet rock of two rooms, install a shower room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=1248",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4212003G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4212&lot=003G",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4212003G",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

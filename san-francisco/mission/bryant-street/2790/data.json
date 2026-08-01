@@ -1,0 +1,145 @@
+{
+  "address": "2790–2792 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2790/",
+  "apn": "4273013",
+  "block": "4273",
+  "lot": "013",
+  "eas_baseid": "370918",
+  "coordinates": {
+    "lat": 37.749767,
+    "lng": -122.409005
+  },
+  "address_range": "2790–2792",
+  "street_numbers_on_parcel": [
+    "2790",
+    "2792"
+  ],
+  "also_addressed": [
+    "2950 26TH ST",
+    "2966 26TH ST"
+  ],
+  "parcel": {
+    "year_built": 1957,
+    "units": 11,
+    "stories": 2,
+    "rooms": 37,
+    "bathrooms": 11,
+    "lot_area_sqft": 6499,
+    "building_area_sqft": 10773,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2792 2790 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 207854,
+    "assessed_improvement_value": 450443
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412173981",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-17",
+      "status_date": "2014-12-26",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408063103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-06",
+      "status_date": "2015-10-06",
+      "estimated_cost": 55000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfbc chapter 34b fema p- 807",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M303467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-02-22",
+      "status_date": "2012-02-22",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605091149",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-09",
+      "status_date": "2006-06-09",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "install vinyl side 2 side walls. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206259944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-25",
+      "status_date": "2002-07-10",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "stucco repair approx. 3'-15' remove stucco.remove dry rot replaced w/ p.t.plywood restucco. wall at",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005099410",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-09",
+      "status_date": "2001-02-01",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2790",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4273013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4273&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4273013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "address": "127 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/127/",
+  "apn": "3644023",
+  "block": "3644",
+  "lot": "023",
+  "eas_baseid": "364202",
+  "coordinates": {
+    "lat": 37.752654,
+    "lng": -122.421312
+  },
+  "parcel": {
+    "year_built": 1903,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1925.17,
+    "building_area_sqft": 2800,
+    "lot_depth_ft": 76.7,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0127 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56487,
+    "assessed_improvement_value": 89554
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200301215541",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-01-21",
+      "status_date": "2003-01-21",
+      "estimated_cost": 8200,
+      "revised_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108025124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-02",
+      "status_date": "2001-09-19",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace existing damaged/dryrot & non-conforming rear stair as direct by dit insp-to comply w/nov 20",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104096331",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-09",
+      "status_date": "2001-09-19",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "remove & replace one two foot stringer & two steps, at rear deck. comply with his compalint#20015472",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603537",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-04",
+      "status_date": "1996-07-04",
+      "estimated_cost": 500,
+      "description": "repl/repair 1 stringer, 1 face joint. strengthen cntr sectio",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200081",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-01-03",
+      "status_date": "1992-02-19",
+      "estimated_cost": 2704,
+      "revised_cost": 2705,
+      "description": "replace dry rot stringers & landings,risers and posts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=127",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3644023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3644&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3644023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "address": "2751 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2751/",
+  "apn": "4206023",
+  "block": "4206",
+  "lot": "023",
+  "eas_baseid": "370069",
+  "coordinates": {
+    "lat": 37.75334,
+    "lng": -122.411651
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2409,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2751 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212444,
+    "assessed_improvement_value": 169955,
+    "last_sale_date": "1994-04-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9014527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-23",
+      "status_date": "1990-12-24",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009804",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-18",
+      "status_date": "1991-09-26",
+      "estimated_cost": 5000,
+      "description": "storage clear abatment, remove residential use in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923119",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-11-28",
+      "status_date": "1991-05-24",
+      "estimated_cost": 100,
+      "description": "comply with inspection report file #bw26267 dated 12-28-87",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717418",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1987-12-09",
+      "status_date": "1987-12-09",
+      "estimated_cost": 1200,
+      "description": "dry rot residue to existing rear deck and stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2751",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

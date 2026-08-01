@@ -1,0 +1,133 @@
+{
+  "address": "71–75 Oakwood Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/oakwood-street/71/",
+  "apn": "3587060",
+  "block": "3587",
+  "lot": "060",
+  "eas_baseid": "361052",
+  "coordinates": {
+    "lat": 37.760374,
+    "lng": -122.424641
+  },
+  "address_range": "71–75",
+  "street_numbers_on_parcel": [
+    "71",
+    "73",
+    "75"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 3,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2650,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0075 0071 OAKWOOD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33233,
+    "assessed_improvement_value": 47334,
+    "last_sale_date": "2004-05-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201903276349",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-27",
+      "status_date": "2019-07-03",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "all work in one unit: install new cabinets like for like. upgrade electrical by installing 2/3 dedicated circuits for gfci plugs. install hood and duct pipes. everything is like for like. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903276350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-27",
+      "status_date": "2019-07-03",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "all work in one unit: install new cabinets like for like. upgrade electrical by installing 2/3 dedicated circuits for gfci plugs. install hood and duct pipes. everything is like for like. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M309007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-03-20",
+      "status_date": "2012-03-20",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809101273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-10",
+      "status_date": "2008-12-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200210189387 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210189387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-18",
+      "status_date": "2002-10-18",
+      "estimated_cost": 1300,
+      "revised_cost": 1300,
+      "description": "repair rear stairs less than 50% in kind. back stairs repair.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKWOOD&street_type=ST&address_number=71",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=060",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587060",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "address": "1216 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1216/",
+  "apn": "4266005",
+  "block": "4266",
+  "lot": "005",
+  "eas_baseid": "370677",
+  "coordinates": {
+    "lat": 37.752288,
+    "lng": -122.40751
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 1416,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1216 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 833700,
+    "assessed_improvement_value": 357300,
+    "last_sale_date": "2024-10-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201908279946",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-27",
+      "status_date": "2019-10-15",
+      "estimated_cost": 10445,
+      "revised_cost": 10445,
+      "description": "replace one front vinyl double-hung window (2nd floor middle window) w/renewal by andersen fibrex composite double-hung window. replace three other non-visible windows elsewhere. all within existing openings. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408181844",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-18",
+      "status_date": "2004-09-03",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M22252",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-15",
+      "status_date": "2002-11-15",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-14",
+      "status_date": "2000-01-25",
+      "estimated_cost": 2100,
+      "description": "install 6 replacement windows all in bedrooms rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-19",
+      "status_date": "1996-07-10",
+      "estimated_cost": 800,
+      "description": "minor remodel in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607419",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-30",
+      "status_date": "1996-06-17",
+      "estimated_cost": 5600,
+      "description": "repair work according to termite report 10977",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317426",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-07",
+      "status_date": "1994-03-11",
+      "estimated_cost": 2650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1216",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4266005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4266&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4266005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

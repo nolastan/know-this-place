@@ -1,0 +1,126 @@
+{
+  "address": "392 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/392/",
+  "apn": "6532013",
+  "block": "6532",
+  "lot": "013",
+  "eas_baseid": "401422",
+  "coordinates": {
+    "lat": 37.749047,
+    "lng": -122.421576
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0392 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 651468,
+    "assessed_improvement_value": 712080,
+    "last_sale_date": "2001-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M914667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-04-18",
+      "status_date": "2018-04-18",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608044238",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-08-04",
+      "status_date": "2020-02-18",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "raise (e) sloped roof over rear 1 - story extension, appx. 5 ft. remodel (e) kitchen, replace dryrot at area of remodel. replace (e)deteriorate deck @ grade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M603787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-15",
+      "status_date": "2015-07-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507141498",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-14",
+      "status_date": "2015-07-14",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "cap foundation, plywood bracing, anchor bolts, holddowns in crawlspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M35223",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-08",
+      "status_date": "2005-11-08",
+      "revised_cost": 0,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=392",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

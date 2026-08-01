@@ -1,0 +1,115 @@
+{
+  "address": "1133 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1133/",
+  "apn": "4208032",
+  "block": "4208",
+  "lot": "032",
+  "eas_baseid": "370157",
+  "coordinates": {
+    "lat": 37.753805,
+    "lng": -122.409887
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1875,
+    "basement_area_sqft": 520,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1133 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162836,
+    "assessed_improvement_value": 231786,
+    "last_sale_date": "1997-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607196968",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-07-19",
+      "status_date": "2008-09-23",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9723897",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-26",
+      "status_date": "1998-07-23",
+      "estimated_cost": 750,
+      "description": "repair dryrot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720876",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-10-17",
+      "status_date": "1998-11-09",
+      "estimated_cost": 39250,
+      "description": "add 2 bedrms,1 bath,foyer,hallway,stair to 2nd flr,conc slab",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010480",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-30",
+      "status_date": "1990-09-18",
+      "estimated_cost": 12371,
+      "description": "fire repair at back of house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1133",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4208032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4208&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4208032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

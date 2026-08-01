@@ -1,0 +1,152 @@
+{
+  "address": "44 Cumberland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cumberland-street/44/",
+  "apn": "3598049B",
+  "block": "3598",
+  "lot": "049B",
+  "eas_baseid": "361654",
+  "coordinates": {
+    "lat": 37.759353,
+    "lng": -122.424547
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2585,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0044 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 346722,
+    "assessed_improvement_value": 520163,
+    "last_sale_date": "1993-06-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M1127187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-08-21",
+      "status_date": "2019-08-21",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805310666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-31",
+      "status_date": "2018-07-19",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406208964",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-20",
+      "status_date": "2014-06-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201312305269. remodel kitchen and bathroom per district inspector comments.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312305269",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-30",
+      "status_date": "2014-09-29",
+      "estimated_cost": 64000,
+      "revised_cost": 64000,
+      "description": "kitchen remodel to include removal of 2 walls between kitchen and adjacent rooms. 1 kitchen window downsized and upgraded to insulated low e glass. new fixtures and surfaces. no additinal sq ft added. bath remodel to include window replacement in kind and uprgaded to low e glass. new fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615455S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-20",
+      "status_date": "1998-05-07",
+      "estimated_cost": 40000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319314",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-02",
+      "status_date": "1994-04-20",
+      "estimated_cost": 2700,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=44",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598049B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=049B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598049B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42454744821238%2037.75935287467369)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

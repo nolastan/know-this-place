@@ -1,0 +1,169 @@
+{
+  "address": "254 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/254/",
+  "apn": "6513008A",
+  "block": "6513",
+  "lot": "008A",
+  "eas_baseid": "400788",
+  "coordinates": {
+    "lat": 37.751137,
+    "lng": -122.421923
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 4875.5,
+    "building_area_sqft": 2273,
+    "basement_area_sqft": 403,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0254 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 278169,
+    "assessed_improvement_value": 519412,
+    "last_sale_date": "1996-07-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M531947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-29",
+      "status_date": "2014-10-29",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M509988",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-11",
+      "status_date": "2014-08-11",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406188765",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-06-18",
+      "status_date": "2016-09-28",
+      "estimated_cost": 180000,
+      "revised_cost": 180000,
+      "description": "horizontal addition @ rear: enlargement of main floor kitchen & upper floor master bedroom into the rear yard. expansion of rear wood deck. install new elevator to connect all 3 floors. add new shower & relocate kitchen sink, bathroom sink & washer / dryer.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312033156",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-03",
+      "status_date": "2015-03-16",
+      "estimated_cost": 40000,
+      "revised_cost": 80000,
+      "description": "creation of basement accessory room (403 sq.ft.) in existing 970 sq.ft. basement/garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503016481",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-01",
+      "status_date": "2006-03-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "install swim spa in rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110049935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-04",
+      "status_date": "2001-11-16",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "install new bath fixtures in 2nd flr ;install new closet doors & trim",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703616",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-02-27",
+      "status_date": "1997-10-28",
+      "estimated_cost": 5000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-13",
+      "status_date": "1996-07-11",
+      "estimated_cost": 5500,
+      "description": "dry rot repair, foundation work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906780",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-04-24",
+      "status_date": "1989-10-10",
+      "estimated_cost": 3500,
+      "description": "remodel bathroom -- enlarge closet, partition wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=254",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6513008A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6513&lot=008A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513008A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

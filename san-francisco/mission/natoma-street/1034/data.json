@@ -1,0 +1,122 @@
+{
+  "address": "1034–1036 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/natoma-street/1034/",
+  "apn": "3511060",
+  "block": "3511",
+  "lot": "060",
+  "eas_baseid": "357861",
+  "coordinates": {
+    "lat": 37.773193,
+    "lng": -122.416755
+  },
+  "address_range": "1034–1036",
+  "street_numbers_on_parcel": [
+    "1034",
+    "1036"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2300,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RED",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1036 1034 NATOMA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79616,
+    "assessed_improvement_value": 117450
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M351308",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-03",
+      "status_date": "2012-10-03",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501203585",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-20",
+      "status_date": "2005-03-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "install 7 underpinning pier at east wall foundation. install lagging between piers.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500105",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-04",
+      "status_date": "1995-03-16",
+      "estimated_cost": 9863,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NATOMA&street_type=ST&address_number=1034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3511060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3511&lot=060",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3511060",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41675493126125%2037.77319304642996)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

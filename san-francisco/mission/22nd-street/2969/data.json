@@ -1,0 +1,92 @@
+{
+  "address": "2969 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2969/",
+  "apn": "3639014A",
+  "block": "3639",
+  "lot": "014A",
+  "eas_baseid": "363938",
+  "coordinates": {
+    "lat": 37.755524,
+    "lng": -122.413665
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 1790,
+    "basement_area_sqft": 676,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2971 2969 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 28849,
+    "assessed_improvement_value": 32077
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M223826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-06",
+      "status_date": "2010-10-06",
+      "revised_cost": 1,
+      "description": "street space and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715118",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-11",
+      "status_date": "1999-02-24",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2969",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=014A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639014A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

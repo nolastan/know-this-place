@@ -1,0 +1,128 @@
+{
+  "address": "833 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/833/",
+  "apn": "4088022",
+  "block": "4088",
+  "lot": "022",
+  "eas_baseid": "368407",
+  "coordinates": {
+    "lat": 37.758044,
+    "lng": -122.408411
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1851,
+    "basement_area_sqft": 751,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0833 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 683274,
+    "assessed_improvement_value": 683603,
+    "last_sale_date": "2006-11-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910245429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-24",
+      "status_date": "2021-04-19",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "replace approx 36'-2\" of ground level and 33'-0 of 2nd floor north exterior wall per approved plans due to dry rot and dilapitaed conditions. provide fire rated assessibly. revision to app#201609066883",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906062678",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-06",
+      "status_date": "2021-04-19",
+      "estimated_cost": 1,
+      "revised_cost": 50000,
+      "description": "provide underpinning detail for perimeter foundation due to conc slab being lowered to create min legal head height for rooms on 1st fl. ref # 201609066883",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609066883",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-09-06",
+      "status_date": "2021-04-19",
+      "estimated_cost": 8000,
+      "revised_cost": 225000,
+      "description": "legalize illegal expansion at rear of building, re-config interior layout on g/f behind garage w/ two full baths, sunrm,one bedrm, family room, laundry. 2nd fl; w/ one bedrm, living, kitchen, dinningrm, two full bath per plan, relocate intterior connection 1st & 2nd floor per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608235773",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2016-08-23",
+      "status_date": "2016-08-23",
+      "estimated_cost": 170000,
+      "description": "interior remodel, 2nd flr: reconfigure kitchen, relocate (e) bathroom, add new bathroom, new relocated connecting stair to ground floor. grnd flr: relocate w/h & furnance. new w/d,add new bathroom, new concrete slab, new family room and cedroom. new concrete slab in bedroom, partial foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611137532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-13",
+      "status_date": "2007-03-15",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "repair 30 feet of dry rot damaged mudsill at 3\"pressure treat sill anchor bolted garage/basmnt. repair 30' of dry rot damaged at south side of bldg not visible from street. mudsill anchor 5/8\" threaded rod set with approx. at 32\" o.c. min 7\" embeded in extg foundation for permit word only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=833",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

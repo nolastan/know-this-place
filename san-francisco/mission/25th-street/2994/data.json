@@ -1,0 +1,139 @@
+{
+  "address": "2994–2998 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2994/",
+  "apn": "4268033",
+  "block": "4268",
+  "lot": "033",
+  "eas_baseid": "370779",
+  "coordinates": {
+    "lat": 37.751261,
+    "lng": -122.409754
+  },
+  "address_range": "2994–2998",
+  "street_numbers_on_parcel": [
+    "2994",
+    "2998"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 1711,
+    "building_area_sqft": 3768,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2998 2994 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 24454,
+    "assessed_improvement_value": 53107
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M184605",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-19",
+      "status_date": "2009-11-19",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206209500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-20",
+      "status_date": "2002-10-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "addendum to app #200205025552 repalcement of back stair and deck in kind at rear of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205025552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-02",
+      "status_date": "2002-10-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace deteriated rear stairwy same footprint in kind comply w/housing notice of violation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-07",
+      "status_date": "1996-04-19",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809934",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-07-19",
+      "status_date": "1989-03-24",
+      "estimated_cost": 2500,
+      "description": "dry rot repair rear deck and stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808402",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-06-22",
+      "status_date": "1989-03-24",
+      "estimated_cost": 800,
+      "revised_cost": 0,
+      "description": "repiar rear stairs, replace threads & risers, non structural",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2994",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268033",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

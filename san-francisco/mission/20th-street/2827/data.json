@@ -1,0 +1,164 @@
+{
+  "address": "2827–2829 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2827/",
+  "apn": "4087040",
+  "block": "4087",
+  "lot": "040",
+  "eas_baseid": "368380",
+  "coordinates": {
+    "lat": 37.759066,
+    "lng": -122.409283
+  },
+  "address_range": "2827–2829",
+  "street_numbers_on_parcel": [
+    "2827",
+    "2829"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 1328,
+    "building_area_sqft": 2292,
+    "basement_area_sqft": 300,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2829 2827 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1216111,
+    "assessed_improvement_value": 521190,
+    "last_sale_date": "2020-11-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508294231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-29",
+      "status_date": "2025-09-17",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "re-roofing with hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104088162",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-08",
+      "status_date": "2021-04-08",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "bathroom remodel in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508124101",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-08-12",
+      "status_date": "2015-08-12",
+      "estimated_cost": 14440,
+      "revised_cost": 14440,
+      "description": "(2) retrofit vinyl replace windows, not visable, u factor less than 0.32, no size change. 11 square vinyl siding on rear, not visable. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007217085",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2010-07-21",
+      "status_date": "2010-07-21",
+      "estimated_cost": 20000,
+      "description": "rebuild (e) wood stair in disrepair will rebuild in exact same layout, using trex for landings & treads, cable rail for railings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908366",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-04-29",
+      "status_date": "2000-06-28",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "perform work to comply with n.o.v. 199817084",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901979",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1999-02-01",
+      "status_date": "1999-08-30",
+      "estimated_cost": 9000,
+      "revised_cost": 15000,
+      "description": "correct violation 9817084",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900400",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-01-07",
+      "status_date": "1999-05-07",
+      "estimated_cost": 1300,
+      "description": "repair rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-20",
+      "status_date": "1989-01-12",
+      "estimated_cost": 4995,
+      "description": "vinyl siding to back.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2827",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087040",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "address": "65–69 Rosemont Place, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/rosemont-place/65/",
+  "apn": "3534017B",
+  "block": "3534",
+  "lot": "017B",
+  "eas_baseid": "358431",
+  "coordinates": {
+    "lat": 37.768354,
+    "lng": -122.425317
+  },
+  "address_range": "65–69",
+  "street_numbers_on_parcel": [
+    "65",
+    "69"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 3152,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0065 ROSEMONT            PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1883110,
+    "assessed_improvement_value": 807048,
+    "last_sale_date": "2021-10-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303224156",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-22",
+      "status_date": "2023-09-06",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "to comply with w/ physical inspection report# cc-8545.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111192766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-19",
+      "status_date": "2021-11-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for documentation purpose, the legal use of this building is a 2 unit building. this determination is based on review of city records and a site visit. no work performed under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307081312",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-08",
+      "status_date": "2014-06-20",
+      "estimated_cost": 840,
+      "revised_cost": 840,
+      "description": "install 2 vinyl windows in kind into existing frames. no chnge in size or location. windows do not face the street. if applicable, bedroom windows will comply with section cbc1026 for rescue. all windows will be double pane and have a u factor of .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103021187",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-02",
+      "status_date": "2011-07-26",
+      "estimated_cost": 3135,
+      "revised_cost": 3135,
+      "description": "install 6 windows in kind into existing frames, no change in size or location. windows do not face the street. if applicable, bedrm windows will comply with section cbc1026 for rescue. all windows will be double pane and have a u-factor of .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207312717",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-07-31",
+      "status_date": "2002-07-31",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712686",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-09-03",
+      "status_date": "1988-02-08",
+      "estimated_cost": 2500,
+      "description": "repair shower unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROSEMONT&street_type=PL&address_number=65",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534017B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=017B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534017B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

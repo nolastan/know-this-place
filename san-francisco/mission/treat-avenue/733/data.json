@@ -1,0 +1,117 @@
+{
+  "address": "733 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/733/",
+  "apn": "3612064",
+  "block": "3612",
+  "lot": "064",
+  "eas_baseid": "362623",
+  "coordinates": {
+    "lat": 37.758359,
+    "lng": -122.413226
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 6125,
+    "building_area_sqft": 6125,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0733 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1932141,
+    "assessed_improvement_value": 340965,
+    "last_sale_date": "2020-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012019889",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "2020-12-01",
+      "status_date": "2023-05-03",
+      "estimated_cost": 3000000,
+      "revised_cost": 3400000,
+      "description": "erect a five story type iii-a construction no basement 7 units residential building (5th story not a penthouse per bldg elevator housing, four stories of occupancy and roof deck)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012019891",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2020-12-01",
+      "status_date": "2023-05-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "demolition of type five construction 2 story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16825",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-07",
+      "status_date": "2001-12-07",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103154408",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-15",
+      "status_date": "2001-11-08",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "install blindwall on south wall, framing exposed by adjacent demolition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=733",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=064",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612064",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

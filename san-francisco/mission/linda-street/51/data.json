@@ -1,0 +1,147 @@
+{
+  "address": "51 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/51/",
+  "apn": "3588075",
+  "block": "3588",
+  "lot": "075",
+  "eas_baseid": "361156",
+  "coordinates": {
+    "lat": 37.760859,
+    "lng": -122.422789
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1555,
+    "building_area_sqft": 1480,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0051 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 406841,
+    "assessed_improvement_value": 271220,
+    "last_sale_date": "2000-07-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201109225291",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-22",
+      "status_date": "2011-09-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revison to approved pa# 2010.08.108512. no change at ground floor. existing to remain. eliminate new stair ( previusly approved) from 2nd fl to ground fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106137962",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-06-13",
+      "status_date": "2011-06-13",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace (e) windows with double pane vinyl windows total (7) - (3) windows visible from the street. u-factor not more than 0.4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008108512",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-08-10",
+      "status_date": "2013-01-03",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "replace(e) front stair with new to 2nd fl. new interior stair at garage to 2nd fl. relocate (e) kitchen to the rear of (e) bldg and remodel (e) bathrm at 2nd fl. convert (e) bath rm to closet. change (e) storage to family rm, add 1 new toilet at ground fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305285577",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2003-05-28",
+      "status_date": "2003-09-08",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "rev. appl#200304021268 legalize (e) 1/2 bath @ g/fl. 1 full & 1/2 bath @ 3/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304021268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-02",
+      "status_date": "2003-09-11",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove (e) toilet room and sink and g/f remove (e) toilet rooms at 3rd floor per plan to comply with",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904721",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-27",
+      "status_date": "1990-07-24",
+      "estimated_cost": 8000,
+      "description": "revert back to original comply with san francisco codes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900302",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-09",
+      "status_date": "1990-07-24",
+      "estimated_cost": 2000,
+      "description": "replace kitchen cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=51",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588075",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

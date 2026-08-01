@@ -1,0 +1,133 @@
+{
+  "address": "1227 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1227/",
+  "apn": "6534028",
+  "block": "6534",
+  "lot": "028",
+  "eas_baseid": "401520",
+  "coordinates": {
+    "lat": 37.749769,
+    "lng": -122.424533
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 2500,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1229 1227 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1013830,
+    "assessed_improvement_value": 304141,
+    "last_sale_date": "2002-09-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9808017",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-05",
+      "status_date": "1999-03-02",
+      "estimated_cost": 6000,
+      "description": "foundation capping and termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720078",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "1997-10-08",
+      "status_date": "1997-11-07",
+      "estimated_cost": 12000,
+      "description": "repair dry-rot in basement of front of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9706647",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-14",
+      "status_date": "1999-02-24",
+      "estimated_cost": 7200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-29",
+      "status_date": "1996-03-15",
+      "estimated_cost": 5275,
+      "description": "termite & dryrot damage repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-14",
+      "status_date": "1996-05-29",
+      "estimated_cost": 6750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210643",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-29",
+      "status_date": "1993-12-03",
+      "estimated_cost": 33000,
+      "description": "new kitchen cabinets, relocate water heaters",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1227",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6534028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6534&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6534028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

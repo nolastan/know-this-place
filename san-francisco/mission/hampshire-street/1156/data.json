@@ -1,0 +1,125 @@
+{
+  "address": "1156 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1156/",
+  "apn": "4210009",
+  "block": "4210",
+  "lot": "009",
+  "eas_baseid": "370205",
+  "coordinates": {
+    "lat": 37.753583,
+    "lng": -122.407634
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1136,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1156 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 696489,
+    "assessed_improvement_value": 298492,
+    "last_sale_date": "2012-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912099012",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-09",
+      "status_date": "2020-10-30",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace 6 windows size-for-size, 2 street-visible to be aluminum clad wood; four at rear milguard vinyl.u factor less than equal to 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312164241",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-16",
+      "status_date": "2013-12-24",
+      "estimated_cost": 7610,
+      "revised_cost": 7610,
+      "description": "replace existing ductwork in crawl space with new flexible ductwork.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15381",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-26",
+      "status_date": "2001-05-26",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-24",
+      "status_date": "1991-08-15",
+      "estimated_cost": 4712,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707749",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-04",
+      "status_date": "1987-07-22",
+      "estimated_cost": 15150,
+      "description": "termite repair. repair foundation & subframing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1156",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4210009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4210&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4210009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

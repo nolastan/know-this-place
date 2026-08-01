@@ -1,0 +1,130 @@
+{
+  "address": "770 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/770/",
+  "apn": "3614038B",
+  "block": "3614",
+  "lot": "038B",
+  "eas_baseid": "362724",
+  "coordinates": {
+    "lat": 37.756153,
+    "lng": -122.415839
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2935,
+    "building_area_sqft": 2230,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0770 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1561722,
+    "assessed_improvement_value": 669308,
+    "last_sale_date": "2019-05-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202501289195",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-28",
+      "status_date": "2025-01-28",
+      "estimated_cost": 51000,
+      "revised_cost": 51000,
+      "description": "revision 202410152927 to include kitchen remodel at upper unit. new beam new closet at bedroom and associated structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410152927",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-15",
+      "status_date": "2024-11-05",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "remodel first story dwelling unit to add bedroom and bathroom, new kitchen, and relocate (e) bathroom.remove rear chimney all levels, infill floors and roof, new beam at patio to remove post.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-30",
+      "status_date": "1988-09-29",
+      "estimated_cost": 2360,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711296",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-08-07",
+      "status_date": "1988-09-21",
+      "estimated_cost": 400,
+      "description": "cut curb to city standard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=770",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3614038B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3614&lot=038B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3614038B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41583949816766%2037.75615327849457)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

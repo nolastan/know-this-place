@@ -1,0 +1,127 @@
+{
+  "address": "1097 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1097/",
+  "apn": "4152022B",
+  "block": "4152",
+  "lot": "022B",
+  "eas_baseid": "369613",
+  "coordinates": {
+    "lat": 37.754597,
+    "lng": -122.408157
+  },
+  "also_addressed": [
+    "2790 23RD ST"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 5,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 1785,
+    "building_area_sqft": 4076,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1097 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1194718,
+    "assessed_improvement_value": 512020,
+    "last_sale_date": "2017-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1077747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-08",
+      "status_date": "2019-05-08",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905079952",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-07",
+      "status_date": "2019-05-07",
+      "estimated_cost": 31336,
+      "revised_cost": 31336,
+      "description": "kitchen and bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109107925",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-10",
+      "status_date": "2002-03-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove & replace stucco @ front of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718518",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-22",
+      "status_date": "1998-03-19",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303551",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1993-03-04",
+      "status_date": "1994-08-26",
+      "estimated_cost": 2000,
+      "description": "to legalize 4 units/1 commercial to 5 dwelling units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1097",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152022B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=022B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152022B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

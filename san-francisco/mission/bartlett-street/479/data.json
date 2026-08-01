@@ -1,0 +1,144 @@
+{
+  "address": "479–481 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/479/",
+  "apn": "6529012A",
+  "block": "6529",
+  "lot": "012A",
+  "eas_baseid": "401321",
+  "coordinates": {
+    "lat": 37.749381,
+    "lng": -122.418977
+  },
+  "address_range": "479–481",
+  "street_numbers_on_parcel": [
+    "479",
+    "481"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 4700,
+    "building_area_sqft": 3428,
+    "lot_depth_ft": 17.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0481 0479 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 765584,
+    "assessed_improvement_value": 625301,
+    "last_sale_date": "2002-11-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107013608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-01",
+      "status_date": "2021-07-09",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706129017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-12",
+      "status_date": "2017-09-27",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "renovate kitchen, add bathroom, new window/door of dining rm is replacement window and door of existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402136408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-13",
+      "status_date": "2004-07-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace existing deck in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-10",
+      "status_date": "1995-05-03",
+      "estimated_cost": 2000,
+      "description": "rev to pa #9210459",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415786",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-09-30",
+      "status_date": "1995-07-17",
+      "estimated_cost": 500,
+      "revised_cost": 3800,
+      "description": "new smoke detectors additional doors at garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210459",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-06-26",
+      "status_date": "1995-01-06",
+      "estimated_cost": 5000,
+      "revised_cost": 18125,
+      "description": "revert to 2 legal units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=479",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6529012A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6529&lot=012A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6529012A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

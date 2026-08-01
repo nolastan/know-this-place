@@ -1,0 +1,111 @@
+{
+  "address": "1326–1338 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1326/",
+  "apn": "6518004",
+  "block": "6518",
+  "lot": "004",
+  "eas_baseid": "400932",
+  "coordinates": {
+    "lat": 37.751864,
+    "lng": -122.4164
+  },
+  "address_range": "1326–1338",
+  "street_numbers_on_parcel": [
+    "1326",
+    "1328",
+    "1330",
+    "1338"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 3449,
+    "building_area_sqft": 5625,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1330 1326 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45478,
+    "assessed_improvement_value": 36705
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807114343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-11",
+      "status_date": "2018-11-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair back stirs less than 50%. not visible from the street. repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709253640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-25",
+      "status_date": "2008-03-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair stringer @ rear stairs that is deterorated comply with n.o.v#200717531",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408111258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-11",
+      "status_date": "2004-10-08",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair stair deteriorated post",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1326",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

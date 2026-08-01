@@ -1,0 +1,103 @@
+{
+  "address": "2728 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2728/",
+  "apn": "3641003",
+  "block": "3641",
+  "lot": "003",
+  "eas_baseid": "364027",
+  "coordinates": {
+    "lat": 37.753569,
+    "lng": -122.414534
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 1550,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2728 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 349560,
+    "assessed_improvement_value": 138519
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606163299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-16",
+      "status_date": "2026-07-06",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing: full tear off to install 1900 sq ft of comp shingles. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418162",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-11-03",
+      "status_date": "1995-03-31",
+      "estimated_cost": 15000,
+      "description": "repair approx 75' of foundation.............................",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314551",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-24",
+      "status_date": "1994-03-11",
+      "estimated_cost": 7800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2728",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3641003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3641&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3641003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

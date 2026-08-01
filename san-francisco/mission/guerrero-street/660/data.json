@@ -1,0 +1,142 @@
+{
+  "address": "660–666 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/660/",
+  "apn": "3587010",
+  "block": "3587",
+  "lot": "010",
+  "eas_baseid": "361011",
+  "coordinates": {
+    "lat": 37.760561,
+    "lng": -122.424015
+  },
+  "address_range": "660–666",
+  "street_numbers_on_parcel": [
+    "660",
+    "662",
+    "664",
+    "666"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 4199,
+    "building_area_sqft": 4680,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0666 0660 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1782829,
+    "assessed_improvement_value": 764069
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1070229",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-04-23",
+      "status_date": "2019-04-23",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705035619",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-05-03",
+      "status_date": "2017-05-03",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201302260924",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-02-26",
+      "status_date": "2013-05-03",
+      "estimated_cost": 64000,
+      "revised_cost": 64000,
+      "description": "remodel unit kitchen cabinets, new bath room tub, toilet, sink, new windows to match existing front of building wood, total of 4 windows. 5 vinyl windows @ side & rear with low e. bedroom to meet egress, replace gas wall heater, rewire unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207245579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-24",
+      "status_date": "2012-09-24",
+      "estimated_cost": 64000,
+      "revised_cost": 64000,
+      "description": "remodel unit, new kitchen cabinets, new bathroom tub, sink & toilet, 4 new wood windows in front living room, double glass, 5 vinyl windows @ rear & side of bldg, replace wall heater (gas), demo closet in hallway & close up. rewire unit, refinish floor & paint. windows visable from street (wood),",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007267442",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-26",
+      "status_date": "2010-10-22",
+      "estimated_cost": 34000,
+      "revised_cost": 34000,
+      "description": "install new kitchen cabinets, replace bathroom with new toilet, tub & vanity, install fan, upgrade electric service, new panel, repaint unit, new lighting comply cec 150(k), no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308242",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-18",
+      "status_date": "1993-09-14",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=660",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

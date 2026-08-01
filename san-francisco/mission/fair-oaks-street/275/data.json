@@ -1,0 +1,138 @@
+{
+  "address": "275 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/275/",
+  "apn": "3647020",
+  "block": "3647",
+  "lot": "020",
+  "eas_baseid": "364273",
+  "coordinates": {
+    "lat": 37.752339,
+    "lng": -122.423741
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 8,
+    "lot_area_sqft": 2517,
+    "building_area_sqft": 2380,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0275 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 815035,
+    "assessed_improvement_value": 482570
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201107119866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-11",
+      "status_date": "2012-02-15",
+      "estimated_cost": 9900,
+      "revised_cost": 9900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36071",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-19",
+      "status_date": "2006-01-19",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810904",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-12",
+      "status_date": "1999-03-01",
+      "estimated_cost": 3400,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922831",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-27",
+      "status_date": "1992-04-03",
+      "estimated_cost": 1500,
+      "description": "comply7 with notice of 12/17/87 by c. dare hid",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600429",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-01-13",
+      "status_date": "1987-01-14",
+      "estimated_cost": 1000,
+      "description": "misc. repairs, remove porch, leave deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=275",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3647020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3647&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3647020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42374060150597%2037.7523394072184)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

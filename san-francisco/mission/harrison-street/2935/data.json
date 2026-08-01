@@ -1,0 +1,91 @@
+{
+  "address": "2935 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2935/",
+  "apn": "4271032",
+  "block": "4271",
+  "lot": "032",
+  "eas_baseid": "370858",
+  "coordinates": {
+    "lat": 37.75052,
+    "lng": -122.41138
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1596,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2935 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 462825,
+    "assessed_improvement_value": 198349,
+    "last_sale_date": "2012-01-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "S20260407541",
+      "status": "filed",
+      "filed": "2026-04-09",
+      "status_date": "2026-04-09",
+      "revised_cost": 26474,
+      "description": "solar permit: installing 12 solar pv modules, 435 watts per module, total no. of rating 5.22 kw. mounted: roof, ballasted: n, including 1 energy storage unit, with 13.5 kwh each in capacity, ess units will not be closer than 3 feet | 5.22kw pv system with ess (x1)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M133005",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-02",
+      "status_date": "2008-09-02",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2935",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

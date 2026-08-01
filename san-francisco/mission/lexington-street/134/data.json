@@ -1,0 +1,98 @@
+{
+  "address": "134–136 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/134/",
+  "apn": "3589073",
+  "block": "3589",
+  "lot": "073",
+  "eas_baseid": "361230",
+  "coordinates": {
+    "lat": 37.761106,
+    "lng": -122.420961
+  },
+  "address_range": "134–136",
+  "street_numbers_on_parcel": [
+    "134",
+    "136"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2260,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0136 0134 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 327500,
+    "assessed_improvement_value": 239545
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206226816",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-06-22",
+      "status_date": "2022-06-22",
+      "estimated_cost": 8000,
+      "revised_cost": 26000,
+      "description": "unit b: remodel one bath and one kitchen in kind. no structural change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311210881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-21",
+      "status_date": "2004-01-16",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "comply nov 200345156. repair rear stair, repair in kind. less than 50%.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=134",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589073",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

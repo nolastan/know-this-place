@@ -1,0 +1,138 @@
+{
+  "address": "3776 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/3776/",
+  "apn": "6567018C",
+  "block": "6567",
+  "lot": "018C",
+  "eas_baseid": "402613",
+  "coordinates": {
+    "lat": 37.748038,
+    "lng": -122.424048
+  },
+  "parcel": {
+    "year_built": 1947,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 792,
+    "building_area_sqft": 1016,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3776 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 849702,
+    "assessed_improvement_value": 364155,
+    "last_sale_date": "2015-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512091299",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-09",
+      "status_date": "2026-03-16",
+      "estimated_cost": 10000,
+      "revised_cost": 70000,
+      "description": "revision to pa# 2025-0702-0033: expand the area of the previously approved roof deck, add new rolling skylight adjacent to roof hatch, construct new bathroom and media room in level 1, perform minor structural modifications per field/construction conditions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507020033",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-02",
+      "status_date": "2025-08-07",
+      "estimated_cost": 237000,
+      "revised_cost": 237000,
+      "description": "interior renovation: vertical addition (329 sq.ft) on level 3 with roof deck above.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304266462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-26",
+      "status_date": "2023-12-05",
+      "estimated_cost": 13400,
+      "revised_cost": 13400,
+      "description": "replace (5) windows, the same size, location and style, including (3) front windows to marvin wood alum clad.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302272707",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-27",
+      "status_date": "2023-03-27",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506088405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-06-08",
+      "status_date": "2015-06-08",
+      "estimated_cost": 8600,
+      "revised_cost": 8600,
+      "description": "reroofing: remove (e) roof. install modified bitument roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920312",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-25",
+      "status_date": "1990-08-01",
+      "estimated_cost": 600,
+      "description": "replace existing garage door and frame.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=3776",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567018C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=018C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567018C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

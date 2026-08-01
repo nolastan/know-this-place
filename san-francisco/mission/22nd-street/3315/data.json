@@ -1,0 +1,146 @@
+{
+  "address": "3315–3317 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3315/",
+  "apn": "3633001",
+  "block": "3633",
+  "lot": "001",
+  "eas_baseid": "363700",
+  "coordinates": {
+    "lat": 37.755163,
+    "lng": -122.421611
+  },
+  "address_range": "3315–3317",
+  "street_numbers_on_parcel": [
+    "3315",
+    "3317"
+  ],
+  "also_addressed": [
+    "30 SAN JOSE AVE"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2517,
+    "building_area_sqft": 1925,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3315 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 277828,
+    "assessed_improvement_value": 320074,
+    "last_sale_date": "1989-10-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110019611",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-01",
+      "status_date": "2022-05-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 202108136361: change 3 bedroom street facing windows from double hung to casement for egress. 2 shall be nail finish - windows shall have check rail for dh appearance- aluminum wood clad",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108136361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-13",
+      "status_date": "2022-05-18",
+      "estimated_cost": 32898,
+      "revised_cost": 32898,
+      "description": "remove 18 aluminum windows replace w/aluminum wood clad same size and location 2 windows installed as nail on to meet egress all others are retrofit all to be casement or fixed - street facing too front all double hung. u factor .30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701257923",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-25",
+      "status_date": "2017-05-26",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "remove and replace (2) windows. (1) at 2nd floor 36\" x 60\" and (1) at 1st floor 60\" x 48\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706265154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-26",
+      "status_date": "2007-08-14",
+      "estimated_cost": 3100,
+      "revised_cost": 3100,
+      "description": "remove & replace bathtub, install 1/2 inch wonder board & install tile on walls. install new shower head water valance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609142291",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-14",
+      "status_date": "2006-12-11",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replacing dry rot post at corner of building. new post is pressure terated dl# 1 6x6 verify in field for footing otherwise install 16x16x18 deep with 3-#4 each way near bottom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405244622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-24",
+      "status_date": "2004-06-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3315",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3633001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3633&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3633001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

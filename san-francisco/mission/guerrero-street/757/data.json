@@ -1,0 +1,154 @@
+{
+  "address": "757–759 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/757/",
+  "apn": "3597033",
+  "block": "3597",
+  "lot": "033",
+  "eas_baseid": "361572",
+  "coordinates": {
+    "lat": 37.759064,
+    "lng": -122.42326
+  },
+  "address_range": "757–759",
+  "street_numbers_on_parcel": [
+    "757",
+    "759"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 5250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0759 0757 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 583919,
+    "assessed_improvement_value": 449873
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M372007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-02-19",
+      "status_date": "2013-02-19",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110207249",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-20",
+      "status_date": "2011-10-20",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302076968",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-02-07",
+      "status_date": "2003-02-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reapair rear stair tower perhousing inspection <50% repair in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210229653",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-22",
+      "status_date": "2002-10-22",
+      "estimated_cost": 1600,
+      "revised_cost": 1600,
+      "description": "repair &/or replace deteriorated wood on rear stairs per complaint#200233359. less than 50%of stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-29",
+      "status_date": "1998-02-06",
+      "estimated_cost": 2674,
+      "description": "repalce th first terrazzo step, replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-17",
+      "status_date": "1990-07-09",
+      "estimated_cost": 7000,
+      "description": "non-s remodel of existing kitchen - upper unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=757",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42326008405675%2037.75906362130122)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

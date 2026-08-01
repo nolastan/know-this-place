@@ -1,0 +1,165 @@
+{
+  "address": "25–35 Hoff Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hoff-street/25/",
+  "apn": "3569020",
+  "block": "3569",
+  "lot": "020",
+  "eas_baseid": "360079",
+  "coordinates": {
+    "lat": 37.764426,
+    "lng": -122.420278
+  },
+  "address_range": "25–35",
+  "street_numbers_on_parcel": [
+    "25",
+    "27",
+    "29",
+    "31",
+    "33",
+    "35"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 60,
+    "bathrooms": 12,
+    "bedrooms": 24,
+    "lot_area_sqft": 7361,
+    "building_area_sqft": 16470,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0035 0025 HOFF                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3125522,
+    "assessed_improvement_value": 1339508,
+    "last_sale_date": "2020-11-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511199983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-19",
+      "status_date": "2026-04-23",
+      "estimated_cost": 500,
+      "revised_cost": 2000,
+      "description": "replacement in kind wood members less than 50% for rear exterior staircase for sb 721 compliance. non street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604185021",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-18",
+      "status_date": "2016-08-19",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "remodel kitchen & bathroom. remove & replace cabinet & counter. replace all bath fixts. no structural walls removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406027204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-02",
+      "status_date": "2015-01-23",
+      "estimated_cost": 45000,
+      "revised_cost": 120000,
+      "description": "soft story retrofit per sf ordinance no. 66-13, bldg code ch 34b, & admin. bulletin 106. seismic analysis per frma b807.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104123949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-12",
+      "status_date": "2011-05-25",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "work on #31 hoff only -to comply with nov #201110781 dated 3/30/2011: remove partition wall, repair window sash, remove mildew from bath ceiling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28718",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-12",
+      "status_date": "2004-08-12",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503552",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-14",
+      "status_date": "1995-12-11",
+      "estimated_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020082",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-10-01",
+      "status_date": "1991-11-21",
+      "estimated_cost": 11000,
+      "description": "replace damaged redwood siding, new sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306514",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-07-11",
+      "status_date": "1986-02-25",
+      "estimated_cost": 6300,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOFF&street_type=ST&address_number=25",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3569020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3569&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3569020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "address": "3764 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3764/",
+  "apn": "3598019",
+  "block": "3598",
+  "lot": "019",
+  "eas_baseid": "361626",
+  "coordinates": {
+    "lat": 37.758523,
+    "lng": -122.424921
+  },
+  "parcel": {
+    "year_built": 1986,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 5181,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3764 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45725,
+    "assessed_improvement_value": 780641
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201011195332",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-11-19",
+      "status_date": "2013-02-01",
+      "estimated_cost": 7500,
+      "revised_cost": 12000,
+      "description": "repair fire damaged floor joist by garaged area. repair fire damaged cripple walls. repair fire damage sub floor, install new sheetrock on storage area and cement garage flooring. same for same",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003258987",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-03-25",
+      "status_date": "2013-02-01",
+      "estimated_cost": 4750,
+      "revised_cost": 4750,
+      "description": "repair of patio on 2nd floor, replace sheetrock that is damage. repair of patio is less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501242",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-02-05",
+      "status_date": "1985-11-29",
+      "estimated_cost": 3000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301223",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-02-11",
+      "status_date": "1983-07-05",
+      "estimated_cost": 2500,
+      "description": "sprinkle system install in a light harrard 3 unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208025",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1982-09-30",
+      "status_date": "1984-04-19",
+      "estimated_cost": 441400,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3764",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4249209848189%2037.75852309473762)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

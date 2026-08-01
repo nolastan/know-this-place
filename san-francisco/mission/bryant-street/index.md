@@ -1,0 +1,205 @@
+# Bryant Street
+
+Every residential parcel on Bryant Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [1712–1716](1712/) — A 1905 3-unit tic building, with a kitchen and bathroom remodel permitted in 2021.
+- [1718–1722](1718/) — A 1900 4-unit apartment building, with a kitchen remodel permitted in 1983.
+- [1724–1726](1724/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 1991.
+- [1728](1728/) — A 1900 2-unit building with a ground-floor store.
+- [1730–1734](1730/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2020.
+- [1736–1738](1736/) — A 1904 two-flat, with a bathroom remodel permitted in 2016.
+- [1740–1742](1740/) — A 1905 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2008.
+- [1744–1746](1744/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2015.
+- [2080](2080/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2008.
+- [2088](2088/) — A 1900 two-flat, with reroofing permitted in 2006.
+- [2095–2099](2095/) — A 2023 63-unit apartment building, with an addition permitted in 2017.
+- [2098](2098/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 1992.
+- [2104](2104/) — A 1906 single-family house, with an addition permitted in 2013.
+- [2108–2110](2108/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2003.
+- [2116–2118](2116/) — A 1900 two-flat, with a bathroom remodel permitted in 2008.
+- [2120](2120/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2003.
+- [2132](2132/) — A 1915 2-unit building with a ground-floor store, with an addition permitted in 2005.
+- [2154–2156](2154/) — A 1900 two-flat, with reroofing permitted in 2026.
+- [2158–2160](2158/) — A 1900 two-flat, with facade work permitted in 2023.
+- [2200–2202](2200/) — A 1908 4-unit building with a ground-floor store, with reroofing permitted in 2008.
+- [2204–2206](2204/) — A 1909 2-unit building with a ground-floor store, with a rear addition permitted in 1987.
+- [2210](2210/) — A 1907 single-family house.
+- [2213–2215](2213/) — A 1907 two-flat, with an accessory dwelling unit permitted in 2026.
+- [2219](2219/) — A 1941 single-family house, with a rear addition permitted in 2006.
+- [2227–2229](2227/) — A 1906 2-unit tic building, with deck work permitted in 2022.
+- [2230–2240](2230/) — A 1900 48-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2233–2235](2233/) — A 1900 two-flat, with reroofing permitted in 1997.
+- [2237–2239](2237/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2024.
+- [2241–2243](2241/) — A 1908 single-family house, with an addition permitted in 1993.
+- [2249](2249/) — A 1906 two-flat, with window replacement permitted in 2024.
+- [2258–2260](2258/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2014.
+- [2262–2264](2262/) — A 1900 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [2266–2268](2266/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2269](2269/) — A 1910 two-flat, with reroofing permitted in 2024.
+- [2270–2272](2270/) — A 1900 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
+- [2274–2284](2274/) — A 1907 two-flat, with a vertical addition permitted in 2000.
+- [2275](2275/) — A 1906 single-family house, with reroofing permitted in 2006.
+- [2286–2290](2286/) — A 1905 6-unit building with a ground-floor store, with reroofing permitted in 2003.
+- [2287–2289](2287/) — An 1895 two-flat, with foundation work permitted in 2012.
+- [2291](2291/) — A 1907 single-family house.
+- [2304](2304/) — A 1900 two-flat, with one permit record from 2018.
+- [2307–2309](2307/) — A 1900 2-unit building with a ground-floor store, with a kitchen remodel permitted in 1991.
+- [2308](2308/) — A 1900 two-flat, with an addition permitted in 2024.
+- [2310](2310/) — A 1906 two-flat, with reroofing permitted in 2022.
+- [2311–2315](2311/) — A 1900 2-unit tic building, with a kitchen and bathroom remodel permitted in 2016.
+- [2312](2312/) — A 1900 single-family house.
+- [2314](2314/) — A 1900 single-family house, with reroofing permitted in 1997.
+- [2316](2316/) — A 1900 single-family house, with reroofing permitted in 2019.
+- [2317–2319](2317/) — A 1908 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with plumbing work permitted in 2002.
+- [2318](2318/) — A 1900 single-family house, with window replacement permitted in 2008.
+- [2320](2320/) — A 1900 single-family house, with foundation work permitted in 2017.
+- [2321–2323](2321/) — An 1896 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with reroofing permitted in 2000.
+- [2322](2322/) — A 1900 single-family house, with facade work permitted in 1985.
+- [2325–2327](2325/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with stair work permitted in 2020.
+- [2331–2333](2331/) — A 1907 3-unit tic building in the East Mission Florida-to-Hampshire Streets Historic District, with stair work permitted in 2014.
+- [2339](2339/) — A 1900 single-family house in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen and bathroom remodel permitted in 2015.
+- [2341–2343](2341/) — A 1906 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with window replacement permitted in 2018.
+- [2345–2347](2345/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with window replacement permitted in 2005.
+- [2350–2354](2350/) — A 1907 5-unit apartment building, with a kitchen remodel permitted in 2018.
+- [2351](2351/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with stair work permitted in 2025.
+- [2355–2357](2355/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with reroofing permitted in 1992.
+- [2356–2360](2356/) — A 1900 three-flat, with an addition permitted in 2003.
+- [2361–2363](2361/) — A 1900 three-flat in the East Mission Florida-to-Hampshire Streets Historic District, with window replacement permitted in 2025.
+- [2362–2366](2362/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2001.
+- [2365–2367](2365/) — A 1900 three-flat in the East Mission Florida-to-Hampshire Streets Historic District, with stair work permitted in 1997.
+- [2368–2372](2368/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2001.
+- [2369](2369/) — A 1900 single-family house in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen remodel permitted in 2003.
+- [2373](2373/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with reroofing permitted in 2026.
+- [2374](2374/) — A 1900 two-flat, with reroofing permitted in 2005.
+- [2376](2376/) — A 1900 single-family house, with an addition permitted in 1985.
+- [2379–2381](2379/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with reroofing permitted in 2022.
+- [2380–2382](2380/) — A 1902 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen and bathroom remodel permitted in 2005.
+- [2384–2386](2384/) — A 1902 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen and bathroom remodel permitted in 2014.
+- [2385](2385/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with reroofing permitted in 2003.
+- [2388](2388/) — A 1902 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with window replacement permitted in 2025.
+- [2389–2393](2389/) — A 1906 three-flat in the East Mission Florida-to-Hampshire Streets Historic District, with permit records from 1983 to 1986.
+- [2392–2394](2392/) — A 1902 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen and bathroom remodel permitted in 2014.
+- [2396–2398](2396/) — A 1902 2-unit building with a ground-floor store in the East Mission Florida-to-Hampshire Streets Historic District, with facade work permitted in 1984.
+- [2401–2415](2401/) — A 1908 8-unit apartment building in the East Mission Florida-to-Hampshire Streets Historic District, with stair work permitted in 1983.
+- [2408](2408/) — A 1904 single-family house in the East Mission Florida-to-Hampshire Streets Historic District, with deck work permitted in 2011.
+- [2425](2425/) — A 1931 single-family house, with a kitchen and bathroom remodel permitted in 1990.
+- [2426](2426/) — A 1900 6-unit apartment building in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen and bathroom remodel permitted in 2020.
+- [2429–2433](2429/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2432](2432/) — A 1900 single-family house in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen remodel permitted in 2014.
+- [2435](2435/) — A 1932 single-family house, with deck work permitted in 2013.
+- [2436–2438](2436/) — A 1904 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with a kitchen remodel permitted in 2026.
+- [2442–2444](2442/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District, with reroofing permitted in 2014.
+- [2446](2446/) — A 1900 two-flat in the East Mission Florida-to-Hampshire Streets Historic District.
+- [2450–2460](2450/) — A 1911 12-unit apartment building, with an addition permitted in 2016.
+- [2461–2467](2461/) — A 1900 4-unit apartment building, with a vertical addition permitted in 1996.
+- [2464](2464/) — A 1900 two-flat, with one permit record from 1988.
+- [2468](2468/) — A 1900 three-flat.
+- [2472](2472/) — A 1900 four-flat, with one permit record from 1986.
+- [2478](2478/) — A 1914 two-flat, with reroofing permitted in 1997.
+- [2481](2481/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 1991.
+- [2500](2500/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2013.
+- [2505–2509](2505/) — A 18-unit apartment building, with a dormer permitted in 2020.
+- [2506–2508](2506/) — A 1912 two-flat, with stair work permitted in 2004.
+- [2510](2510/) — A 1900 single-family house, with garage work permitted in 2014.
+- [2516](2516/) — A 1900 single-family house, with facade work permitted in 2025.
+- [2520–2522](2520/) — A 1900 two-flat, with a rear addition permitted in 1987.
+- [2526](2526/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2010.
+- [2527–2529](2527/) — A 1900 three-flat, with reroofing permitted in 2003.
+- [2530](2530/) — A 1900 two-flat, with permit records from 1996 to 2010.
+- [2535](2535/) — A 1900 single-family house, with reroofing permitted in 2000.
+- [2537](2537/) — A 1900 two-flat.
+- [2542](2542/) — A 1924 two-flat, with deck work permitted in 2026.
+- [2543–2545](2543/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2002.
+- [2546](2546/) — A 1924 two-flat.
+- [2547–2549](2547/) — A 1907 three-flat, with an addition permitted in 2008.
+- [2550](2550/) — An 1890 flats building, with garage work permitted in 1985.
+- [2553–2555](2553/) — A 1907 two-flat, with an addition permitted in 2019.
+- [2554–2558](2554/) — A 1906 three-flat, with window replacement permitted in 2016.
+- [2557](2557/) — A 1926 single-family house.
+- [2565](2565/) — A 1900 single-family house, with one permit record from 2008.
+- [2566–2568](2566/) — A 1900 two-flat, with stair work permitted in 1983.
+- [2567](2567/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2026.
+- [2570–2572](2570/) — A 1925 two-flat, with a kitchen remodel permitted in 2000.
+- [2571](2571/) — A 1976 two-flat, with reroofing permitted in 2023.
+- [2576](2576/) — A 1900 two-flat, with dry-rot repair permitted in 2003.
+- [2577](2577/) — A 2007 three-flat, with reroofing permitted in 2024.
+- [2600–2606](2600/) — A 1900 10-unit building with a ground-floor store, with reroofing permitted in 2015.
+- [2605–2607](2605/) — A 1907 four-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [2609–2615](2609/) — A 1926 two-flat, with stair work permitted in 2023.
+- [2617–2619](2617/) — A 1926 two-flat, with stair work permitted in 2001.
+- [2621](2621/) — A 1906 two-flat, with a seismic retrofit permitted in 2008.
+- [2622–2624](2622/) — A 1900 two-flat, with window replacement permitted in 2015.
+- [2632](2632/) — A 1900 single-family house, with one permit record from 2007.
+- [2636](2636/) — A 1900 single-family house, with reroofing permitted in 2001.
+- [2640–2642](2640/) — A 1940 single-family house, with garage work permitted in 2006.
+- [2641](2641/) — A 1927 single-family house, with reroofing permitted in 1993.
+- [2645–2647](2645/) — A 1900 two-flat, with reroofing permitted in 2023.
+- [2648](2648/) — A 1900 single-family house, with reroofing permitted in 2002.
+- [2651](2651/) — A 1930 single-family house, with one permit record from 2006.
+- [2655](2655/) — A 1914 single-family house, with garage work permitted in 2001.
+- [2660–2664](2660/) — A 1904 three-flat, with stair work permitted in 2021.
+- [2661–2663](2661/) — A 1900 two-flat, with reroofing permitted in 2025.
+- [2665–2667](2665/) — A 1900 two-flat, with window replacement permitted in 2021.
+- [2666–2670](2666/) — A 1904 three-flat, with a kitchen and bathroom remodel permitted in 1985.
+- [2671–2677](2671/) — A 1924 4-unit tic building, with a kitchen and bathroom remodel permitted in 2006.
+- [2676](2676/) — A 1940 single-family house, with reroofing permitted in 2003.
+- [2679](2679/) — A 1922 single-family house, with window replacement permitted in 2007.
+- [2680](2680/) — A 1915 single-family house, with stair work permitted in 1991.
+- [2683](2683/) — A 1900 two-flat, with garage work permitted in 2015.
+- [2684–2690](2684/) — A 1916 4-unit apartment building, with a kitchen remodel permitted in 1989.
+- [2685–2687](2685/) — A 1964 4-unit apartment building, with facade work permitted in 1997.
+- [2689–2699](2689/) — A 1900 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2010.
+- [2701](2701/) — A 1906 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2016.
+- [2705–2711](2705/) — A 1923 4-unit tic building, with a kitchen and bathroom remodel permitted in 2005.
+- [2706–2710](2706/) — A 1904 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2007.
+- [2712–2714](2712/) — A 1900 two-flat, with window replacement permitted in 2008.
+- [2715–2717](2715/) — A 1907 two-flat, with window replacement permitted in 1998.
+- [2719](2719/) — A 1900 single-family house, with an addition permitted in 1997.
+- [2723](2723/) — A 1900 single-family house, with reroofing permitted in 2011.
+- [2729–2731](2729/) — A 1918 three-flat, with a kitchen remodel permitted in 2015.
+- [2733](2733/) — A 1900 single-family house, with reroofing permitted in 1996.
+- [2735–2737](2735/) — A 1980 two-flat, with reroofing permitted in 2008.
+- [2743](2743/) — A 1900 two-flat, with stair work permitted in 2012.
+- [2747](2747/) — A 1900 single-family house, with reroofing permitted in 2007.
+- [2753–2757](2753/) — A 1900 3-unit tic building, with a kitchen and bathroom remodel permitted in 2018.
+- [2759–2761](2759/) — A 1914 two-flat, with reroofing permitted in 2006.
+- [2764](2764/) — A 1910 two-flat, with one permit record from 2003.
+- [2767–2769](2767/) — A 1914 4-unit apartment building, with stair work permitted in 2022.
+- [2770](2770/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [2771](2771/) — A 1900 two-flat, with deck work permitted in 2012.
+- [2773](2773/) — A 1914 three-flat, with stair work permitted in 2005.
+- [2774–2784](2774/) — A 1900 6-unit apartment building, with garage work permitted in 2015.
+- [2779–2781](2779/) — A 1922 two-flat, with stair work permitted in 2013.
+- [2783–2785](2783/) — A 1904 two-flat, with facade work permitted in 2019.
+- [2786](2786/) — A 1900 single-family house, with reroofing permitted in 2003.
+- [2787–2789](2787/) — A 1928 2-unit tic building, with an accessory dwelling unit permitted in 2025.
+- [2790–2792](2790/) — A 1957 11-unit apartment building, with a seismic retrofit permitted in 2014.
+- [2800–2818](2800/) — A 1907 8-unit building with a ground-floor store, with a seismic retrofit permitted in 2020.
+- [2807–2809](2807/) — A 1908 two-flat, with deck work permitted in 2018.
+- [2815](2815/) — A 1920 5-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2819](2819/) — A 1922 single-family house, with reroofing permitted in 1996.
+- [2822–2824](2822/) — A 1926 three-flat, with reroofing permitted in 1989.
+- [2825](2825/) — A 1922 single-family house, with dry-rot repair permitted in 2017.
+- [2828–2832](2828/) — A 1926 3-unit tic building, with garage work permitted in 2014.
+- [2831](2831/) — A 1922 single-family house, with deck work permitted in 2013.
+- [2834](2834/) — A 1923 single-family house, with reroofing permitted in 2024.
+- [2837](2837/) — A 1922 single-family house, with foundation work permitted in 1999.
+- [2840](2840/) — A 1923 two-flat, with reroofing permitted in 1995.
+- [2843](2843/) — A 1922 single-family house, with a rear addition permitted in 2004.
+- [2848](2848/) — A 1936 3-unit apartment building, with a bathroom remodel permitted in 2010.
+- [2849](2849/) — A 1922 single-family house, with a bathroom remodel permitted in 2021.
+- [2852](2852/) — A 1915 single-family house, with window replacement permitted in 2014.
+- [2855](2855/) — A 1922 single-family house, with window replacement permitted in 2012.
+- [2858](2858/) — A 1915 single-family house, with facade work permitted in 1986.
+- [2864](2864/) — A 1915 single-family house, with one permit record from 1983.
+- [2865](2865/) — A 1918 single-family house, with deck work permitted in 2022.
+- [2867](2867/) — A 1915 single-family house, with deck work permitted in 2018.
+- [2868](2868/) — A 1915 single-family house, with facade work permitted in 2001.
+- [2873](2873/) — A 1915 single-family house, with garage work permitted in 1996.
+- [2879–2885](2879/) — A 1916 4-unit apartment building, with facade work permitted in 1998.
+- [2884–2888](2884/) — A 1925 4-unit building with a ground-floor store, with window replacement permitted in 1988.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

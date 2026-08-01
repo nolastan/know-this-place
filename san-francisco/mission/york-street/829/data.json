@@ -1,0 +1,143 @@
+{
+  "address": "829 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/829/",
+  "apn": "4088024",
+  "block": "4088",
+  "lot": "024",
+  "eas_baseid": "368409",
+  "coordinates": {
+    "lat": 37.758181,
+    "lng": -122.408424
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2480,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0829 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 532381,
+    "assessed_improvement_value": 220694,
+    "last_sale_date": "1996-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "S20260303494",
+      "status": "issued",
+      "filed": "2026-03-05",
+      "status_date": "2026-03-23",
+      "estimated_cost": 24900,
+      "revised_cost": 24900,
+      "description": "solar permit: installing 12 solar pv modules, 405 watts per module, total no. of rating 4.86 kw. mounted: roof, ballasted: n | installation of 4.8kw dc rooftop solar system with modules: 12 × lg solar lg405n2t-j5, 405 w inverters: 12 × enphase iq8plus-72-m-us microin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "S20260303493",
+      "status": "triage",
+      "filed": "2026-03-03",
+      "status_date": "2026-03-03",
+      "revised_cost": 24900,
+      "description": "solar permit: installing 12 solar pv modules, 405 watts per module, total no. of rating 4.86 kw. mounted: roof, ballasted: n | installation of 4.8kw dc rooftop solar system with modules: 12 × lg solar lg405n2t-j5, 405 w inverters: 12 × enphase iq8plus-72-m-us microin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602089074",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2016-02-08",
+      "status_date": "2022-11-15",
+      "estimated_cost": 40000,
+      "revised_cost": 90000,
+      "description": "to comply with nov 201322371. legalize (e) ground floor unit into a 3rd dwelling unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303079132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-07",
+      "status_date": "2003-05-08",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "wall in front of living room is going to be replace on the top unt/addg a door to extg lvgrm on top",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502754",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-02-24",
+      "status_date": "1995-07-28",
+      "estimated_cost": 1000,
+      "description": "to remove violation (illegal unit)&revert to original use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413189",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-17",
+      "status_date": "1995-02-07",
+      "estimated_cost": 2500,
+      "description": "paint front & rear bldg., repair stair on back, steps,dryrot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408833",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-06-14",
+      "status_date": "1994-12-15",
+      "estimated_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=829",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

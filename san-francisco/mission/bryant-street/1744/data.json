@@ -1,0 +1,120 @@
+{
+  "address": "1744–1746 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/1744/",
+  "apn": "3965009",
+  "block": "3965",
+  "lot": "009",
+  "eas_baseid": "366810",
+  "coordinates": {
+    "lat": 37.764691,
+    "lng": -122.410713
+  },
+  "address_range": "1744–1746",
+  "street_numbers_on_parcel": [
+    "1744",
+    "1746"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2840,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1746 1744 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470288,
+    "assessed_improvement_value": 646574,
+    "last_sale_date": "1998-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412207250",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-20",
+      "status_date": "2025-03-13",
+      "estimated_cost": 7500,
+      "revised_cost": 20000,
+      "description": "demo (e) tub, valve, & surround. install new formed shower pan, new valve & new acrylic walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509116768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-11",
+      "status_date": "2015-12-08",
+      "estimated_cost": 12000,
+      "revised_cost": 37550,
+      "description": "add bathroom and kitchen remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509152971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-15",
+      "status_date": "2005-09-22",
+      "estimated_cost": 6540,
+      "revised_cost": 6540,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902568",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-09",
+      "status_date": "1999-08-09",
+      "estimated_cost": 10000,
+      "description": "heating forced air unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=1744",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3965009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3965&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3965009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "address": "104–108 Liberty Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/liberty-street/104/",
+  "apn": "3607007",
+  "block": "3607",
+  "lot": "007",
+  "eas_baseid": "473374",
+  "coordinates": {
+    "lat": 37.75765,
+    "lng": -122.423735
+  },
+  "address_range": "104–108",
+  "street_numbers_on_parcel": [
+    "104",
+    "106",
+    "108"
+  ],
+  "also_addressed": [
+    "842 GUERRERO ST",
+    "844 GUERRERO ST",
+    "846 GUERRERO ST"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 7,
+    "stories": 3,
+    "rooms": 27,
+    "bathrooms": 7,
+    "lot_area_sqft": 2896,
+    "building_area_sqft": 7695,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0846 0842 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66736,
+    "assessed_improvement_value": 100932,
+    "assessed_fixtures_value": 595
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Liberty Street Historic District",
+      "california_register_status": "Listed",
+      "national_register_status": "Listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1867–1911",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202208190945",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-08-19",
+      "status_date": "2022-09-15",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "842-844-846 guerrero st; 104-106-108 liberty st: reroofing(remove existing and install new bitumen) & replace 1 back door in kind for one unit guerrero st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709067105",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-09-06",
+      "status_date": "2021-03-26",
+      "estimated_cost": 32000,
+      "revised_cost": 65000,
+      "description": "seismic upgrade. soft story retrofit per 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707192377",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-07-19",
+      "status_date": "2026-01-09",
+      "estimated_cost": 9500,
+      "revised_cost": 0,
+      "description": "mandatory soft story retrofit per ch 40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508039376",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-03",
+      "status_date": "2005-08-03",
+      "estimated_cost": 2000,
+      "revised_cost": 5000,
+      "description": "fill in small gaps in (e) foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=104",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42373483961816%2037.75764976977432)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "address": "3445–3447 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3445/",
+  "apn": "3589106",
+  "block": "3589",
+  "lot": "106",
+  "eas_baseid": "361254",
+  "coordinates": {
+    "lat": 37.761566,
+    "lng": -122.420408
+  },
+  "address_range": "3445–3447",
+  "street_numbers_on_parcel": [
+    "3445",
+    "3447"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 4665,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3447 3445 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36932,
+    "assessed_improvement_value": 115253
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200610114624",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-11",
+      "status_date": "2006-10-11",
+      "estimated_cost": 9250,
+      "revised_cost": 9250,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3445",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=106",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589106",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

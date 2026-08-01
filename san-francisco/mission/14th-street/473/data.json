@@ -1,0 +1,168 @@
+{
+  "address": "473–475 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/473/",
+  "apn": "3546021",
+  "block": "3546",
+  "lot": "021",
+  "eas_baseid": "359040",
+  "coordinates": {
+    "lat": 37.767778,
+    "lng": -122.423741
+  },
+  "address_range": "473–475",
+  "street_numbers_on_parcel": [
+    "473",
+    "475"
+  ],
+  "parcel": {
+    "year_built": 1898,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 3733,
+    "building_area_sqft": 3504,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0475 0473 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 407167,
+    "assessed_improvement_value": 289896,
+    "last_sale_date": "1997-06-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1898",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200009211164",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-21",
+      "status_date": "2001-01-21",
+      "estimated_cost": 1300,
+      "revised_cost": 1300,
+      "description": "repair stairway on back of the bldg. total 18 steps and one landing repair 50% in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-06",
+      "status_date": "1996-04-02",
+      "estimated_cost": 6000,
+      "description": "install a toilet compartment on grnd flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519456",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-15",
+      "status_date": "1995-12-07",
+      "estimated_cost": 2000,
+      "description": "voluntary fire protection upgrade install min double 5/8\" sr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9514933",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-13",
+      "status_date": "1995-10-30",
+      "estimated_cost": 500,
+      "description": "revision to appl #9501535,remove walls installed on basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501535",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-02-03",
+      "status_date": "1995-10-30",
+      "estimated_cost": 800,
+      "revised_cost": 42000,
+      "description": "comply w/hid report dtd 6/18/92 & order of abatemt #164358.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-24",
+      "status_date": "1994-08-30",
+      "estimated_cost": 975,
+      "description": "repair rear deck stairs at per bldg. violation report.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-05-31",
+      "status_date": "1990-02-06",
+      "estimated_cost": 4350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8405864",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-06-01",
+      "status_date": "1986-03-04",
+      "estimated_cost": 20000,
+      "description": "to comply with complaint #h21390",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308647",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-08-31",
+      "status_date": "1986-03-04",
+      "estimated_cost": 15000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=473",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3546021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3546&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3546021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

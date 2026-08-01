@@ -1,0 +1,147 @@
+{
+  "address": "1055 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1055/",
+  "apn": "3648036",
+  "block": "3648",
+  "lot": "036",
+  "eas_baseid": "364326",
+  "coordinates": {
+    "lat": 37.752568,
+    "lng": -122.424812
+  },
+  "parcel": {
+    "year_built": 1975,
+    "units": 6,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 6,
+    "bedrooms": 7,
+    "lot_area_sqft": 3510,
+    "building_area_sqft": 4882,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1055 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1062060,
+    "assessed_improvement_value": 708038,
+    "last_sale_date": "2003-10-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1975",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408289625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-28",
+      "status_date": "2024-10-11",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104067957",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-06",
+      "status_date": "2021-04-06",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "dry rot abatement investigation work req opening up exterior siding and cover open completion of approx 30 sq sf of wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509046238",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-04",
+      "status_date": "2015-09-23",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "remove (e) front yard & front stair steel guardrail & stair handrails & replace w/new guardrails & handrails. remove (e) stairs & landing and replace w/new stair & landscaping to ground flr unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404211812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-21",
+      "status_date": "2004-05-11",
+      "estimated_cost": 4185,
+      "revised_cost": 4185,
+      "description": "install 12 windows in kind.no chg in size or loc.face the stree. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9800192",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-01-06",
+      "status_date": "1998-01-15",
+      "estimated_cost": 3960,
+      "description": "termit/dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-22",
+      "status_date": "1990-09-06",
+      "estimated_cost": 6635,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011089",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-05",
+      "status_date": "1990-06-12",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3648036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3648&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3648036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

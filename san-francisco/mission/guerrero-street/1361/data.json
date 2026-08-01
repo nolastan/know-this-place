@@ -1,0 +1,129 @@
+{
+  "address": "1361–1363 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1361/",
+  "apn": "6532036",
+  "block": "6532",
+  "lot": "036",
+  "eas_baseid": "450414",
+  "coordinates": {
+    "lat": 37.749475,
+    "lng": -122.422338
+  },
+  "address_range": "1361–1363",
+  "street_numbers_on_parcel": [
+    "1361",
+    "1363"
+  ],
+  "parcel": {
+    "year_built": 1986,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3024,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1363 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325712,
+    "assessed_improvement_value": 610080,
+    "last_sale_date": "1997-05-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404109733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-10",
+      "status_date": "2024-04-26",
+      "estimated_cost": 18500,
+      "revised_cost": 18500,
+      "description": "install fiber cement siding at rear entry back of building, replace 5 ( not visible from street) windows in that wall / same size as existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905140615",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-14",
+      "status_date": "2019-06-20",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "install fiber cement siding at right side of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M559507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-17",
+      "status_date": "2015-02-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600746",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-01-21",
+      "status_date": "1986-08-13",
+      "estimated_cost": 28000,
+      "description": "convert existing stair house on roof to a penthouse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506347",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1985-06-18",
+      "status_date": "1986-08-13",
+      "estimated_cost": 240000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1361",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

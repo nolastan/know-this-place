@@ -1,0 +1,146 @@
+{
+  "address": "1307 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1307/",
+  "apn": "6567027",
+  "block": "6567",
+  "lot": "027",
+  "eas_baseid": "402620",
+  "coordinates": {
+    "lat": 37.748462,
+    "lng": -122.424454
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1309 1307 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 113230,
+    "assessed_improvement_value": 152867
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201108263375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-26",
+      "status_date": "2011-09-02",
+      "estimated_cost": 1,
+      "revised_cost": 3000,
+      "description": "revision to permit application #201108253252 install plywood for reroof shingle. area= 1500 sq. ft. from 10d nails to 8d nails. 1/2\" plywood 6\" to 9\" o/c",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108253252",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-25",
+      "status_date": "2011-09-02",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "install 1/2 plywood for reroof. w/ 10d @ 6\" and 12\" in field. reroofing under separate permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108243176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-24",
+      "status_date": "2011-09-02",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M178585",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-28",
+      "status_date": "2009-08-28",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207191833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-19",
+      "status_date": "2002-12-06",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace kitchen cabinets, remove/relocate gas lines, add electrical.rev#200204053284",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204053284",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-05",
+      "status_date": "2002-10-05",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "a. top floor/remore non struct. interior walls @ kitchen & instlall (n) header, end posts & patchfin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808990",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-07-05",
+      "status_date": "1990-01-22",
+      "estimated_cost": 12000,
+      "description": "build two story deck with stair to back yard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1307",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

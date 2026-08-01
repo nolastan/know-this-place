@@ -1,0 +1,103 @@
+{
+  "address": "3130 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3130/",
+  "apn": "3641015",
+  "block": "3641",
+  "lot": "015",
+  "eas_baseid": "364040",
+  "coordinates": {
+    "lat": 37.752666,
+    "lng": -122.414778
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2025,
+    "building_area_sqft": 3042,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3132 3130 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 284989,
+    "assessed_improvement_value": 437460,
+    "last_sale_date": "1988-09-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M275527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-18",
+      "status_date": "2011-08-18",
+      "revised_cost": 1,
+      "description": "street space and sidewalk and mta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001584",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-25",
+      "status_date": "1990-07-26",
+      "estimated_cost": 400,
+      "description": "custom build and install a new canvas awning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815790",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-10-14",
+      "status_date": "1989-03-24",
+      "estimated_cost": 5000,
+      "description": "repair damaged walls & increase foundation heights",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3130",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3641015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3641&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3641015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

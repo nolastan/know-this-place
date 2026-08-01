@@ -1,0 +1,102 @@
+{
+  "address": "3469 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3469/",
+  "apn": "3610030",
+  "block": "3610",
+  "lot": "030",
+  "eas_baseid": "362486",
+  "coordinates": {
+    "lat": 37.75848,
+    "lng": -122.418428
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1855,
+    "building_area_sqft": 2362,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3471 3469 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47468,
+    "assessed_improvement_value": 144872
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M120868",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-28",
+      "status_date": "2008-05-28",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010132970",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-13",
+      "status_date": "2001-12-18",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "repair backyard stair railings & top & bottom landing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-04",
+      "status_date": "1990-06-29",
+      "estimated_cost": 3700,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3469",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3610030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3610&lot=030",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3610030",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

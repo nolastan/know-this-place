@@ -1,0 +1,122 @@
+{
+  "address": "831–833 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/831/",
+  "apn": "4089034",
+  "block": "4089",
+  "lot": "034",
+  "eas_baseid": "368463",
+  "coordinates": {
+    "lat": 37.758805,
+    "lng": -122.407581
+  },
+  "address_range": "831–833",
+  "street_numbers_on_parcel": [
+    "831",
+    "833"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2360,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0833 0831 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1234542,
+    "assessed_improvement_value": 529088,
+    "assessed_fixtures_value": 14,
+    "last_sale_date": "2018-03-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501108090",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-02-07",
+      "status_date": "2025-07-03",
+      "estimated_cost": 425000,
+      "revised_cost": 425000,
+      "description": "remodel and alteration to a two-unit duplex. convert ground level to habitable space w/ new interior staircase to connect with lower unit. minor improvements to upper level. less than 50 c.y. of excavation. (n) conditioned area 855 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209122221",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-12",
+      "status_date": "2022-10-17",
+      "estimated_cost": 20240,
+      "revised_cost": 20240,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111011532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-01",
+      "status_date": "2022-07-13",
+      "estimated_cost": 33000,
+      "revised_cost": 33000,
+      "description": "replace total 19 windows. 11 front windows to marvin wood-alum clad double hangs. not visible 8 windows to vinyl frames. in (e) opening. u factor max 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806111561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-11",
+      "status_date": "2018-12-10",
+      "estimated_cost": 41817,
+      "revised_cost": 41817,
+      "description": "work is on 831 hampshire. cosmetic upgrade of kitchen & bathroom. no other plumbing work. electrical upgrade for the whole unit. lighting per ce c 150.0 (k). kitchen size 175 sq ft & bathroom 35 sq ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=831",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4089034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4089&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4089034",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

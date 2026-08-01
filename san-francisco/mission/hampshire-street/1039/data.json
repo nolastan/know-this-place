@@ -1,0 +1,99 @@
+{
+  "address": "1039–1041 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1039/",
+  "apn": "4153029",
+  "block": "4153",
+  "lot": "029",
+  "eas_baseid": "369663",
+  "coordinates": {
+    "lat": 37.755453,
+    "lng": -122.407261
+  },
+  "address_range": "1039–1041",
+  "street_numbers_on_parcel": [
+    "1039",
+    "1041"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1150,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1041 1039 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 153088,
+    "assessed_improvement_value": 162660,
+    "last_sale_date": "1988-02-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201309177036",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-17",
+      "status_date": "2013-09-17",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802134706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-13",
+      "status_date": "2008-06-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "to comply w/ nov #200839194. stairs and landings removed and replaced without permit. same size, same kind, same location @ front of building per sfbc section 1001.1.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

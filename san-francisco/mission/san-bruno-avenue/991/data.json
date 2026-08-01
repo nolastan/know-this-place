@@ -1,0 +1,149 @@
+{
+  "address": "991 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/991/",
+  "apn": "4139012",
+  "block": "4139",
+  "lot": "012",
+  "eas_baseid": "369203",
+  "coordinates": {
+    "lat": 37.757091,
+    "lng": -122.404521
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1250,
+    "building_area_sqft": 1018,
+    "lot_depth_ft": 50,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0991 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73943,
+    "assessed_improvement_value": 122547
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210053745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-05",
+      "status_date": "2022-10-31",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808128952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-12",
+      "status_date": "2009-01-13",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "dry rot repair front stair, need structure work, submit plan to increase cost of construction for approved pa# 2008-0314-7129",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803147129",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-03-14",
+      "status_date": "2009-01-13",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair front wall and stair dry rot on stucco. less than 50% of existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311190635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-19",
+      "status_date": "2004-01-06",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "increase the cost of construction of approved app #200311140268 frm $10,000 to $26,000 to reflect",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311140268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-14",
+      "status_date": "2004-01-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair the concrete stair and broken foundation & damaged walls at north-east corner of structure,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220620",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-12-01",
+      "status_date": "1993-03-12",
+      "estimated_cost": 1,
+      "description": "remove partial 3rd story addition from approved plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900980",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-01-19",
+      "status_date": "1992-11-14",
+      "estimated_cost": 1600,
+      "revised_cost": 20000,
+      "description": "construct two short walls for more efficient use of space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=991",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4139012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4139&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4139012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "address": "2264–2268 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2264/",
+  "apn": "3589012",
+  "block": "3589",
+  "lot": "012",
+  "eas_baseid": "361175",
+  "coordinates": {
+    "lat": 37.76078,
+    "lng": -122.419543
+  },
+  "address_range": "2264–2268",
+  "street_numbers_on_parcel": [
+    "2264",
+    "2268"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 5312,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2264 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67431,
+    "assessed_improvement_value": 45478
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208261342",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2022-08-26",
+      "status_date": "2022-08-26",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "inkind repair of rear wood stairs replace less than 50%. in back of building to comply with nov#201963065 & nov#201941228",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612018950",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-01",
+      "status_date": "2006-12-04",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "manufacture and install one traditional shape awning on front of store. dimensions are 20'-5\" wide x 4'-0\" high x 4'-0\" projection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111607",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-07-03",
+      "status_date": "1992-07-31",
+      "estimated_cost": 93750,
+      "description": "repair dire damage area's paint/drywall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109785",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-11-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2264",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "address": "2906 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2906/",
+  "apn": "4335003D",
+  "block": "4335",
+  "lot": "003D",
+  "eas_baseid": "475135",
+  "coordinates": {
+    "lat": 37.748594,
+    "lng": -122.408018
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1293,
+    "building_area_sqft": 1650,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2906 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1103130,
+    "assessed_improvement_value": 472770,
+    "last_sale_date": "2024-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603137537",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-13",
+      "status_date": "2026-04-16",
+      "estimated_cost": 10000,
+      "revised_cost": 16026,
+      "description": "remove & replace (e) stair. replace w/new stair as per sec.1881.(a) and sec.188",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512292912",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-29",
+      "status_date": "2026-02-10",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel 3 bathrooms and laundry room. relocate structural wall. new plumbing fixtures and lighting, new millwork to be added.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011245623",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-11-24",
+      "status_date": "2010-11-24",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "replace jalosy window with double pane window. same size window from the same location. \"aluminum frame material\". visible from street. max u-factor of 0.40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010122686",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-12",
+      "status_date": "2010-12-02",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remodel (e) bedroom-(n) drywall, (n) lights & (n) electrical outlets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-31",
+      "status_date": "1999-02-02",
+      "estimated_cost": 25150,
+      "description": "replace front stairs & repair damaged front wall of stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2906",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4335003D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4335&lot=003D",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4335003D",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

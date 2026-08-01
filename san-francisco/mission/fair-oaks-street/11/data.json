@@ -1,0 +1,161 @@
+{
+  "address": "11 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/11/",
+  "apn": "3618063",
+  "block": "3618",
+  "lot": "063",
+  "eas_baseid": "362975",
+  "coordinates": {
+    "lat": 37.756338,
+    "lng": -122.424202
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1938,
+    "building_area_sqft": 1699,
+    "basement_area_sqft": 192,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0011 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 75170,
+    "assessed_improvement_value": 241471
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M27058",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-09",
+      "status_date": "2004-04-09",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401023278",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-01-02",
+      "status_date": "2004-01-02",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "renew 200206249749 for remaining work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M24907",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-18",
+      "status_date": "2003-09-18",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23912",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-06-06",
+      "status_date": "2003-06-06",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206249749",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2002-06-24",
+      "status_date": "2002-12-24",
+      "estimated_cost": 10000,
+      "revised_cost": 60000,
+      "description": "new garage under (e) space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105159226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-15",
+      "status_date": "2001-08-20",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8911330",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-06-30",
+      "status_date": "1991-08-27",
+      "estimated_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=11",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4242018680774%2037.75633838598105)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

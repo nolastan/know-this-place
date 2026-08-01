@@ -1,0 +1,120 @@
+{
+  "address": "2659–2661 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2659/",
+  "apn": "4152043",
+  "block": "4152",
+  "lot": "043",
+  "eas_baseid": "369632",
+  "coordinates": {
+    "lat": 37.755899,
+    "lng": -122.407901
+  },
+  "address_range": "2659–2661",
+  "street_numbers_on_parcel": [
+    "2659",
+    "2661"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1850,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2659 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 378084,
+    "assessed_improvement_value": 252053,
+    "last_sale_date": "2000-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200210189357",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-18",
+      "status_date": "2002-10-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 200106222210 to interior partitions, enlarge bathroom garage level, reduce and revise",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206149084",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-14",
+      "status_date": "2002-10-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change siding at rear from shingles to redwood siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106222210",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2001-06-22",
+      "status_date": "2001-12-14",
+      "estimated_cost": 70000,
+      "revised_cost": 85000,
+      "description": "rear extension at garage, 1st and 2nd flrs including replacement of e rear stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-01",
+      "status_date": "1991-03-18",
+      "estimated_cost": 700,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2659",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=043",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152043",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

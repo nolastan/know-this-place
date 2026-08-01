@@ -1,0 +1,111 @@
+{
+  "address": "2976 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2976/",
+  "apn": "4206039",
+  "block": "4206",
+  "lot": "039",
+  "eas_baseid": "370086",
+  "coordinates": {
+    "lat": 37.752875,
+    "lng": -122.41165
+  },
+  "parcel": {
+    "units": 1,
+    "lot_area_sqft": 2600,
+    "lot_depth_ft": 4,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "NCT1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2976 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1057375,
+    "assessed_improvement_value": 453156,
+    "last_sale_date": "2008-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201702179643",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-17",
+      "status_date": "2017-11-21",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "barrier removal -demolition of (e) non compliant ada counter and add new ada compliant counter for new tattoo shop. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011235523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-23",
+      "status_date": "2011-01-18",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "drop 18\", 5 ft x 20' of ceiling in commercial for sound barrier. no window; no wall; no door work on this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611147657",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-11-14",
+      "status_date": "2009-09-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to legalize work w/o poermit for the manager office 1 social room. to comply with notyice of viiolations 200672927 .and amended nov to first violatiions to document no kitchen in existing social room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605232290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-05-23",
+      "status_date": "2006-05-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "install (1) toilet room to existing social room at 2nd floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2976",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

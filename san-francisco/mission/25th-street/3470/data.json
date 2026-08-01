@@ -1,0 +1,167 @@
+{
+  "address": "3470 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3470/",
+  "apn": "6515014A",
+  "block": "6515",
+  "lot": "014A",
+  "eas_baseid": "400855",
+  "coordinates": {
+    "lat": 37.750733,
+    "lng": -122.419835
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 6,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 6,
+    "bedrooms": 2,
+    "lot_area_sqft": 3449,
+    "building_area_sqft": 3928,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3470 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 451089,
+    "assessed_improvement_value": 235810
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511190003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-19",
+      "status_date": "2026-07-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under 201709117605 and 202309217069. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309217069",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-09-21",
+      "status_date": "2023-10-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "add new laundry room @ 1st fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710272500",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-10-27",
+      "status_date": "2026-01-09",
+      "estimated_cost": 45000,
+      "revised_cost": 0,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709117605",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-09-11",
+      "status_date": "2026-07-30",
+      "estimated_cost": 45000,
+      "revised_cost": 67000,
+      "description": "soft story upgarde of first floor per ab-106, 107 and chapter 4d of sfbc and chapter 34 of cbc 2016",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010193323",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-19",
+      "status_date": "2010-10-21",
+      "estimated_cost": 300,
+      "revised_cost": 900,
+      "description": "add (2) fire sprinkler heads to garbage shoot extend existing sprinkler system, install 2 sidewall sprinklers in garbage shoot with sprinkler guard & (1) sprinkler head under stairwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M186015",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-12-10",
+      "status_date": "2009-12-10",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609051434",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-05",
+      "status_date": "2007-02-09",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "replace in like kind dry rotted required egress stair. 1st floor to 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704847",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-17",
+      "status_date": "1997-03-27",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402051",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-29",
+      "status_date": "1984-03-23",
+      "estimated_cost": 2000,
+      "description": "replace 2 flights of stairs rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3470",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6515014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6515&lot=014A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6515014A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

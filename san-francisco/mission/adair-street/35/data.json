@@ -1,0 +1,142 @@
+{
+  "address": "35–37 Adair Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/adair-street/35/",
+  "apn": "3553034",
+  "block": "3553",
+  "lot": "034",
+  "eas_baseid": "359269",
+  "coordinates": {
+    "lat": 37.765581,
+    "lng": -122.418216
+  },
+  "address_range": "35–37",
+  "street_numbers_on_parcel": [
+    "35",
+    "37"
+  ],
+  "parcel": {
+    "year_built": 1902,
+    "units": 2,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 1447,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0037 0035 ADAIR               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 658037,
+    "assessed_improvement_value": 282011,
+    "last_sale_date": "2008-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402206145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-20",
+      "status_date": "2024-04-24",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809232333",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-09-23",
+      "status_date": "2012-09-11",
+      "estimated_cost": 51000,
+      "revised_cost": 51000,
+      "description": "new perimeter foundation where noted. replace garage & interior concrete slab on grade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803076587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-07",
+      "status_date": "2008-07-10",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803036137",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-03",
+      "status_date": "2008-06-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "work @ upper flat only. kitchen remodel. cabinets, counters, plumbing, electrical, appliances, flooring. bath remodels: flooring, tile wall, toilets, vanities. general work: paint, hardwood, carpet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008434",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-02",
+      "status_date": "1991-02-28",
+      "estimated_cost": 20000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005921",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-28",
+      "status_date": "1990-07-05",
+      "estimated_cost": 1600,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ADAIR&street_type=ST&address_number=35",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3553034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3553&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3553034",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

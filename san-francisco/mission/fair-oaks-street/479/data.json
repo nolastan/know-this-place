@@ -1,0 +1,103 @@
+{
+  "address": "479 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/479/",
+  "apn": "6533023",
+  "block": "6533",
+  "lot": "023",
+  "eas_baseid": "401472",
+  "coordinates": {
+    "lat": 37.749076,
+    "lng": -122.423391
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 6,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 6,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4386,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0479 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46992,
+    "assessed_improvement_value": 212250
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201607283661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-28",
+      "status_date": "2017-02-15",
+      "estimated_cost": 65000,
+      "revised_cost": 75500,
+      "description": "soft story seismic retrofit program per sfbc ch 34b using 212 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806114192",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-11",
+      "status_date": "2008-08-22",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "replace 6 front windows from single pane to double pane made by milgard, total 6 windows replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502983",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-01",
+      "status_date": "1995-09-02",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=479",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6533023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6533&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6533023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

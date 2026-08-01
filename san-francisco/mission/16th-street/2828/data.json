@@ -1,0 +1,79 @@
+{
+  "address": "2828 16th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/16th-street/2828/",
+  "apn": "3552048",
+  "block": "3552",
+  "lot": "048",
+  "eas_baseid": "504368",
+  "coordinates": {
+    "lat": 37.76543,
+    "lng": -122.41587
+  },
+  "parcel": {
+    "year_built": 2021,
+    "units": 143,
+    "stories": 9,
+    "lot_area_sqft": 140667,
+    "building_area_sqft": 91378,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "zoning": "UMU",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2828 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8422142,
+    "assessed_improvement_value": 85533364
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2021",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1223347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-11-28",
+      "status_date": "2020-12-08",
+      "revised_cost": 244,
+      "description": "per dpw lot segmentation, add new address to block 3552, lot 048 as; 2828 16th street (residential) for pa#201707051030s.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=2828",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3552048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3552&lot=048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3552048",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

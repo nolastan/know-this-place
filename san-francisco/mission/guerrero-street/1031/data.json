@@ -1,0 +1,167 @@
+{
+  "address": "1031–1033 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1031/",
+  "apn": "3634014",
+  "block": "3634",
+  "lot": "014",
+  "eas_baseid": "363743",
+  "coordinates": {
+    "lat": 37.754023,
+    "lng": -122.422799
+  },
+  "address_range": "1031–1033",
+  "street_numbers_on_parcel": [
+    "1031",
+    "1033"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2025,
+    "building_area_sqft": 2270,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1033 1031 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169955,
+    "assessed_improvement_value": 309329,
+    "last_sale_date": "1993-11-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202007290901",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-29",
+      "status_date": "2020-07-29",
+      "estimated_cost": 300,
+      "revised_cost": 1000,
+      "description": "re-doing fence & trellis. fence less than 6' feet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202006198928",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-06-19",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replacement of damaged trellis and replaced wood slates for wall less than 6 feet. it will separate back stair well with adjacent building, mainly for security reasons. simple repair and replacement of damaged wood fence. 6ft or less..",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M480747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-17",
+      "status_date": "2014-04-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909026061",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-02",
+      "status_date": "2009-09-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app #200710296687. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710296687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-29",
+      "status_date": "2007-10-29",
+      "estimated_cost": 5000,
+      "revised_cost": 7500,
+      "description": "remove illegal kitchen and bath at garage in basement. cap all utilities at source and return space to storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9205236",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-04-03",
+      "status_date": "1993-04-09",
+      "estimated_cost": 15000,
+      "description": "voluntary seismic up grade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119966",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-10-22",
+      "status_date": "1992-07-17",
+      "estimated_cost": 15000,
+      "description": "garage door and concrete driveway",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42279872573232%2037.754022801175246)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "address": "1069 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1069/",
+  "apn": "4153023",
+  "block": "4153",
+  "lot": "023",
+  "eas_baseid": "369657",
+  "coordinates": {
+    "lat": 37.755042,
+    "lng": -122.407222
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1960,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1069 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93212,
+    "assessed_improvement_value": 262334
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408088205",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-08-08",
+      "status_date": "2024-08-08",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009204571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-20",
+      "status_date": "2021-05-18",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "install home lift from basement to 1/f - 2 stops.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1183748",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-10",
+      "status_date": "2020-01-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1114828",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-25",
+      "status_date": "2019-07-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902263827",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-02-26",
+      "status_date": "2019-12-20",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remove (e) non-complying sun room and install new rear addition. deck and stair to yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808018265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-01",
+      "status_date": "2008-08-18",
+      "estimated_cost": 11400,
+      "revised_cost": 11400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501284265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-28",
+      "status_date": "2005-05-26",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "remove existing lath and plaster in upper floor replace with gypsum board replace 2 windows in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025215",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-10",
+      "status_date": "1990-12-27",
+      "estimated_cost": 7785,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1069",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

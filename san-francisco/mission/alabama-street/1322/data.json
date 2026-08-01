@@ -1,0 +1,82 @@
+{
+  "address": "1322 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1322/",
+  "apn": "4271044",
+  "block": "4271",
+  "lot": "044",
+  "eas_baseid": "370870",
+  "coordinates": {
+    "lat": 37.75063,
+    "lng": -122.411044
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2050,
+    "building_area_sqft": 2200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1322 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 25936,
+    "assessed_improvement_value": 69682
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201806182175",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-18",
+      "status_date": "2018-06-18",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace drywall, cabinetry, tiles, carpet, wood floor. rebuild from water damaged. elecrical to be done by electrician. repair in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1322",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=044",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271044",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

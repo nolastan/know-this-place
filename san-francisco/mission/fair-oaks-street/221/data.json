@@ -1,0 +1,154 @@
+{
+  "address": "221 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/221/",
+  "apn": "3647027",
+  "block": "3647",
+  "lot": "027",
+  "eas_baseid": "364280",
+  "coordinates": {
+    "lat": 37.752894,
+    "lng": -122.423752
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3728,
+    "building_area_sqft": 3114,
+    "basement_area_sqft": 890,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0221 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 673920,
+    "assessed_improvement_value": 775965,
+    "last_sale_date": "2003-09-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201009171110",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-17",
+      "status_date": "2010-09-17",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "fix dry-rot on front of house. fix window on side. replace stucco in-kind, no alteration of look. eliminate steel beams in garage keep as is ref. 200309306155",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009171114",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-17",
+      "status_date": "2010-09-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#2003102180254 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009171115",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-17",
+      "status_date": "2010-09-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200309306155 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310218054",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2003-10-21",
+      "status_date": "2004-08-27",
+      "estimated_cost": 40720,
+      "revised_cost": 60000,
+      "description": "add 3rd level penthouse,legalize 2nd unit,add rear stairs/deck,remove 2 columns in garage,add beam/",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309306155",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-30",
+      "status_date": "2006-12-11",
+      "estimated_cost": 26500,
+      "revised_cost": 26500,
+      "description": "remodel upstairs kitchen,remodel upstairs bath/1-2 bath.relocate domstairs bathroom, new fix./finish",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9903997",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-02",
+      "status_date": "2001-02-26",
+      "estimated_cost": 8700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=221",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3647027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3647&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3647027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42375166857403%2037.75289387191185)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

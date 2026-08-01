@@ -1,0 +1,120 @@
+{
+  "address": "1074 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1074/",
+  "apn": "6519012",
+  "block": "6519",
+  "lot": "012",
+  "eas_baseid": "400978",
+  "coordinates": {
+    "lat": 37.751282,
+    "lng": -122.415375
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 1500,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1074 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 201530,
+    "assessed_improvement_value": 146098,
+    "last_sale_date": "1994-08-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201009030215",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-03",
+      "status_date": "2011-08-19",
+      "estimated_cost": 17120,
+      "revised_cost": 17120,
+      "description": "replace wood windows with wood windows. same config. liv rm 4, music rm 1, dining rm 1, bedrm 2, bath 1, bath 2:2, total 11 double hung openings. living rm windows visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009019998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-01",
+      "status_date": "2011-08-19",
+      "estimated_cost": 1,
+      "revised_cost": 200,
+      "description": "to comply with n.o.v. #200229758 - 25' x8' wood shed framed at rear of proeprty has been removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M35377",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-16",
+      "status_date": "2005-11-16",
+      "revised_cost": 0,
+      "description": "street space pemit and sidewalk permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1074",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6519012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6519&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6519012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41537473831926%2037.751282105149464)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

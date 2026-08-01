@@ -1,0 +1,95 @@
+{
+  "address": "907 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/907/",
+  "apn": "3639033",
+  "block": "3639",
+  "lot": "033",
+  "eas_baseid": "363952",
+  "coordinates": {
+    "lat": 37.75556,
+    "lng": -122.412958
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3672,
+    "building_area_sqft": 1712,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0907 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1377992,
+    "assessed_improvement_value": 590566,
+    "last_sale_date": "2019-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201802161479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-16",
+      "status_date": "2018-05-11",
+      "estimated_cost": 28000,
+      "revised_cost": 35000,
+      "description": "voluntary ground floor strengthening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611308771",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-30",
+      "status_date": "2006-12-06",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=907",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639033",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

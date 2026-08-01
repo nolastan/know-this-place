@@ -1,0 +1,106 @@
+{
+  "address": "1036 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1036/",
+  "apn": "4149005",
+  "block": "4149",
+  "lot": "005",
+  "eas_baseid": "369484",
+  "coordinates": {
+    "lat": 37.755302,
+    "lng": -122.410591
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1036,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1036 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166113,
+    "assessed_improvement_value": 111289,
+    "last_sale_date": "1995-11-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200407209221",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-20",
+      "status_date": "2004-11-23",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "eliminate 8'long int.wall (non bearing),install new plywood on 7'long (e)int.wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407148794",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-14",
+      "status_date": "2004-11-23",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "new ktichen cabainets to be installed new appliances and hardwood floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406106060",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-10",
+      "status_date": "2004-11-23",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "remove lath&plaster to inspect wall.structural engr inspect&draws plans later date when wall remove.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

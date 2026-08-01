@@ -1,0 +1,95 @@
+{
+  "address": "550 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/550/",
+  "apn": "3594037A",
+  "block": "3594",
+  "lot": "037A",
+  "eas_baseid": "361390",
+  "coordinates": {
+    "lat": 37.759602,
+    "lng": -122.416113
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1507,
+    "building_area_sqft": 851,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0550 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 678360,
+    "assessed_improvement_value": 352075,
+    "last_sale_date": "2016-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201710201782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-20",
+      "status_date": "2018-08-03",
+      "estimated_cost": 75952,
+      "revised_cost": 75952,
+      "description": "project consists of demo and interior renovation of an extg free standing s.f.d. demo will include walls, moldings, floors, dists + framing, bath & kitchen fixtures, doors, renovate to include nw framing, gwb, fixtures, interior doors & frames. exterior work to be paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506044196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-04",
+      "status_date": "2005-09-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=550",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3594037A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3594&lot=037A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3594037A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

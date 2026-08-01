@@ -1,0 +1,127 @@
+{
+  "address": "338–340 12th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/12th-street/338/",
+  "apn": "3522077",
+  "block": "3522",
+  "lot": "077",
+  "eas_baseid": "480154",
+  "coordinates": {
+    "lat": 37.77042,
+    "lng": -122.414241
+  },
+  "address_range": "338–340",
+  "street_numbers_on_parcel": [
+    "338",
+    "340"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "lot_area_sqft": 1929,
+    "building_area_sqft": 3078,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3400 0338 12TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 43112
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201712055493",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-12-05",
+      "status_date": "2017-12-05",
+      "estimated_cost": 7400,
+      "revised_cost": 7400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610042",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-07",
+      "status_date": "1997-01-11",
+      "estimated_cost": 5400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316668",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-27",
+      "status_date": "1994-01-20",
+      "estimated_cost": 22000,
+      "description": "fungus damage/dryrot. repair foundation. remove mud sill.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301401",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-02-18",
+      "status_date": "1983-09-08",
+      "estimated_cost": 10000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=ST&address_number=338",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3522077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3522&lot=077",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3522077",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41424110206088%2037.77042033573462)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

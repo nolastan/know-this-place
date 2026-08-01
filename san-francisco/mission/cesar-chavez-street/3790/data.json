@@ -1,0 +1,138 @@
+{
+  "address": "3790 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/3790/",
+  "apn": "6567020",
+  "block": "6567",
+  "lot": "020",
+  "eas_baseid": "473178",
+  "coordinates": {
+    "lat": 37.748053,
+    "lng": -122.424365
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1886,
+    "building_area_sqft": 1699,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3790 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1279544,
+    "assessed_improvement_value": 548373,
+    "last_sale_date": "2016-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411255682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-25",
+      "status_date": "2025-05-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 2016-0426-8743 & 2014-0408-2738. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202011038065",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-03",
+      "status_date": "2022-01-13",
+      "estimated_cost": 15800,
+      "revised_cost": 15800,
+      "description": "tear off (e) asphalt comp shingles, install 2300 sqft of asphalt comp shingles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604265743",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-04-26",
+      "status_date": "2016-04-26",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "relocate electric meter from interior of home to the exterior. install new meter panel and weather head per pg&e",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404082738",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-08",
+      "status_date": "2014-05-12",
+      "estimated_cost": 60000,
+      "revised_cost": 120000,
+      "description": "first floor: convert storage room into bedroom and full bath. new 2-4'x4' sliding wood clad windows at front. remodel 2nd floor kitchen and bath, and 3rd floor bath. convert laundry to den on 2nd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M153284",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-26",
+      "status_date": "2009-02-26",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707308152",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-30",
+      "status_date": "2008-02-19",
+      "estimated_cost": 6900,
+      "revised_cost": 6900,
+      "description": "new kitchen cabinet w/ granite counters, new flag stones on ext steps & iron fence. exhaust connect to existing duct.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=3790",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "address": "3434–3436 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3434/",
+  "apn": "3618016",
+  "block": "3618",
+  "lot": "016",
+  "eas_baseid": "362929",
+  "coordinates": {
+    "lat": 37.755293,
+    "lng": -122.424001
+  },
+  "address_range": "3434–3436",
+  "street_numbers_on_parcel": [
+    "3434",
+    "3436"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1424,
+    "building_area_sqft": 1844,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3436 3434 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244238,
+    "assessed_improvement_value": 146506
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211287230",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-11-28",
+      "status_date": "2022-11-28",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508109926",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-10",
+      "status_date": "2005-08-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "underpin foundation on left side of building due to new foundation at 3438-40 22nd street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623811",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-12-11",
+      "status_date": "1997-08-27",
+      "estimated_cost": 5000,
+      "description": "tile at kitchen fl/bathrm wall and floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3434",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

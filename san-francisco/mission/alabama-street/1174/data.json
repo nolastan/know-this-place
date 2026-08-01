@@ -1,0 +1,153 @@
+{
+  "address": "1174–1176 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1174/",
+  "apn": "4206012",
+  "block": "4206",
+  "lot": "012",
+  "eas_baseid": "370059",
+  "coordinates": {
+    "lat": 37.753147,
+    "lng": -122.411285
+  },
+  "address_range": "1174–1176",
+  "street_numbers_on_parcel": [
+    "1174",
+    "1176"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 2222,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1176 1174 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 407221,
+    "assessed_improvement_value": 307515,
+    "last_sale_date": "2003-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804247221",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-24",
+      "status_date": "2018-07-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "new bathroom and walkthrough closet maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605127326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-12",
+      "status_date": "2016-06-14",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404304629",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-30",
+      "status_date": "2014-07-14",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "rev. to 201404092802 - re-frame property line wall in kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404092802",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-09",
+      "status_date": "2014-07-14",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "kitchen remodel:new cabinets and appliances. 2 new wall openings. change one window; compliance with ordinance no. 155-13 not required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602275532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-27",
+      "status_date": "2006-06-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to approved appl#200501072754 strong walls replaced w/plywood shearwall. (e) sheating & framing @g/f revised to (n) sheathing & framing due to dry rotted (e) conditions. also upper floors strongwalls replaced w/(n) conventional shearwall (plywood) panels.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501072754",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-01-07",
+      "status_date": "2009-12-07",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "2nd floor room addition and required seismic upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003305872",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-30",
+      "status_date": "2001-01-26",
+      "revised_cost": 15000,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1174",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

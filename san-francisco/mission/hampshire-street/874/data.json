@@ -1,0 +1,131 @@
+{
+  "address": "874–876 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/874/",
+  "apn": "4088012",
+  "block": "4088",
+  "lot": "012",
+  "eas_baseid": "368397",
+  "coordinates": {
+    "lat": 37.758133,
+    "lng": -122.408072
+  },
+  "address_range": "874–876",
+  "street_numbers_on_parcel": [
+    "874",
+    "876"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2850,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0876 0874 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29770,
+    "assessed_improvement_value": 64888
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202008151872",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-15",
+      "status_date": "2020-08-25",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "replace both units windows and 2 patio doors, all marvin windows, ultimate signature series, aluminum clad wood windows, front windows full casements, back of the house ,double hung windows, replace in kind. no structural works, same location, same size. title 24 equivalent , u factor 0.3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409073496",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-07",
+      "status_date": "2004-09-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "finish sheet rock walls/paint install floring per app #200302036551/200309235545/200404010262",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404010262",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-01",
+      "status_date": "2004-04-01",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "relocate water heater/upgrade plmg & elec./convert storage room into bdrm/renew app #200302036551",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309235545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-23",
+      "status_date": "2003-10-30",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repairs to back stairs to comply w/no.o.v#200343602. repair work will be less than 50%. all repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302036551",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-03",
+      "status_date": "2004-09-07",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "to make on 876a one bedroom and one bathroom on the 1st floor (new bedroom) & (n) bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=874",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

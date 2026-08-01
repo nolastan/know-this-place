@@ -1,0 +1,104 @@
+{
+  "address": "2419 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2419/",
+  "apn": "4026011",
+  "block": "4026",
+  "lot": "011",
+  "eas_baseid": "367424",
+  "coordinates": {
+    "lat": 37.761737,
+    "lng": -122.40669
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 2166,
+    "basement_area_sqft": 720,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2419 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34931,
+    "assessed_improvement_value": 116384
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201409307708",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-30",
+      "status_date": "2014-11-20",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "cosmetic bathroom remodel w/new fixtures & tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502028",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-02-13",
+      "status_date": "1995-11-20",
+      "estimated_cost": 45000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-13",
+      "status_date": "1989-05-08",
+      "estimated_cost": 6700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2419",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4026011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4026&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4026011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

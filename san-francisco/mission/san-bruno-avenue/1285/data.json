@@ -1,0 +1,111 @@
+{
+  "address": "1285–1287 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1285/",
+  "apn": "4214017",
+  "block": "4214",
+  "lot": "017",
+  "eas_baseid": "370307",
+  "coordinates": {
+    "lat": 37.753459,
+    "lng": -122.404229
+  },
+  "address_range": "1285–1287",
+  "street_numbers_on_parcel": [
+    "1285",
+    "1287"
+  ],
+  "also_addressed": [
+    "2446 24TH ST"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1287 1285 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 748552,
+    "assessed_improvement_value": 499031,
+    "last_sale_date": "2004-02-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201812249062",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-12-24",
+      "status_date": "2019-05-15",
+      "estimated_cost": 5000,
+      "revised_cost": 6000,
+      "description": "nov complaint 201652981 correction, remove existing non-permitted one unit space as part of one unit. the unwarranted dwelling unit has no path to become a legal dwelling unit under the planning code due to an owner move-in eviction which occurred february of 2017",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402186665",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-18",
+      "status_date": "2004-02-18",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "repair and replace drywall/replace new floor covering/patchup roof only/rplce gutter/paintg/plmg/ele",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307729",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-08-09",
+      "status_date": "1984-03-27",
+      "estimated_cost": 1010,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1285",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4214017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

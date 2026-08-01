@@ -1,0 +1,93 @@
+{
+  "address": "3219 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3219/",
+  "apn": "3575068",
+  "block": "3575",
+  "lot": "068",
+  "eas_baseid": "360279",
+  "coordinates": {
+    "lat": 37.763306,
+    "lng": -122.417825
+  },
+  "parcel": {
+    "year_built": 2001,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 5,
+    "bedrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3219 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58814,
+    "assessed_improvement_value": 993136
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2001",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M48282",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-11-14",
+      "status_date": "2006-11-14",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818542S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2000-02-02",
+      "status_date": "2001-10-11",
+      "estimated_cost": 250000,
+      "revised_cost": 435000,
+      "description": "erect a two story two family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3219",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3575068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3575&lot=068",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3575068",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

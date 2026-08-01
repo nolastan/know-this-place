@@ -1,0 +1,129 @@
+{
+  "address": "2878–2880 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2878/",
+  "apn": "6520012",
+  "block": "6520",
+  "lot": "012",
+  "eas_baseid": "401020",
+  "coordinates": {
+    "lat": 37.751332,
+    "lng": -122.414319
+  },
+  "address_range": "2878–2880",
+  "street_numbers_on_parcel": [
+    "2878",
+    "2880"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 8,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 4900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2880 2878 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31499,
+    "assessed_improvement_value": 45563
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205275177",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-27",
+      "status_date": "2023-03-06",
+      "estimated_cost": 3850,
+      "revised_cost": 3850,
+      "description": "(3) windows replacement in front of the house. (e) wood, (n) wood. same size and location. retrofit. u factor not to exceed 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108317509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-31",
+      "status_date": "2023-03-06",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "window replacement: like for like retrofit. 2 windows: remove (e) aluminum. install new wood clad. location: right side not visible. u-factor not to exceed .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310189674",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-18",
+      "status_date": "2013-10-21",
+      "estimated_cost": 19209,
+      "revised_cost": 19209,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M276231",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-25",
+      "status_date": "2011-08-25",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303332",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-02",
+      "status_date": "1993-12-09",
+      "estimated_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2878",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6520012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6520&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6520012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

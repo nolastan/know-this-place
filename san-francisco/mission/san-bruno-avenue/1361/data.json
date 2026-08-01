@@ -1,0 +1,137 @@
+{
+  "address": "1361–1363 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1361/",
+  "apn": "4262017",
+  "block": "4262",
+  "lot": "017",
+  "eas_baseid": "370589",
+  "coordinates": {
+    "lat": 37.75233,
+    "lng": -122.403976
+  },
+  "address_range": "1361–1363",
+  "street_numbers_on_parcel": [
+    "1361",
+    "1363"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2447,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1363 1361 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459583,
+    "assessed_improvement_value": 196958
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1208707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-06-11",
+      "status_date": "2020-06-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510291182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-29",
+      "status_date": "2015-12-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1500,
+      "description": "to comply with complaint #201574451: 3 post dry rot repair. work in rear, repair in-kind, less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108246798",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2001-08-24",
+      "status_date": "2002-10-07",
+      "estimated_cost": 2000,
+      "description": "repair 3 stairs in alley off kitchen area, demo garage/storage replace by alum shed same footage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321515",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-12-07",
+      "status_date": "1994-07-19",
+      "estimated_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916797",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-11",
+      "status_date": "1989-12-05",
+      "estimated_cost": 1200,
+      "description": "remove dry rot members of porch/stairs-replace/repair work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711535",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "1987-08-14",
+      "status_date": "1988-08-20",
+      "estimated_cost": 1000,
+      "description": "all work required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1361",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4262017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4262&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4262017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "address": "2213–2215 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2213/",
+  "apn": "4087038",
+  "block": "4087",
+  "lot": "038",
+  "eas_baseid": "368379",
+  "coordinates": {
+    "lat": 37.758882,
+    "lng": -122.409394
+  },
+  "address_range": "2213–2215",
+  "street_numbers_on_parcel": [
+    "2213",
+    "2215"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3307,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2215 2213 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29292,
+    "assessed_improvement_value": 46840
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603238079",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2026-03-23",
+      "status_date": "2026-03-23",
+      "estimated_cost": 118000,
+      "description": "new adu per state govt code 65852.2 at first floor. modify (e) space into adu (2213a bryant st). include new bedroom, bathroom and kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706058479",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-06-05",
+      "status_date": "2026-03-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "2213a bryant street: to obtain a final inspection for work approved under pa#9209939/890085/8806725. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710044613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-04",
+      "status_date": "2008-01-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace existing rear deck and landing (2nd means of egress) and portion of (e) laundry room due to dry rot damages. no other work. no change (e) envelope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209939",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-16",
+      "status_date": "1992-10-16",
+      "estimated_cost": 500,
+      "description": "for final see 8922812",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922812",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-11-27",
+      "status_date": "1990-08-13",
+      "estimated_cost": 100,
+      "revised_cost": 2500,
+      "description": "alterate (e) dwelling unit layout at g/f & relocate (e) post",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900085",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-01-05",
+      "status_date": "1989-09-01",
+      "estimated_cost": 11000,
+      "description": "existing w/modification, new bedrm, living rm, passageway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806725",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-20",
+      "status_date": "1991-06-21",
+      "estimated_cost": 8500,
+      "description": "reframe & sheetrock walls @ exact location",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2213",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

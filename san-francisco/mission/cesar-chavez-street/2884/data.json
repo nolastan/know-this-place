@@ -1,0 +1,114 @@
+{
+  "address": "2884 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2884/",
+  "apn": "4334004",
+  "block": "4334",
+  "lot": "004",
+  "eas_baseid": "371305",
+  "coordinates": {
+    "lat": 37.748777,
+    "lng": -122.407378
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1232,
+    "building_area_sqft": 2415,
+    "basement_area_sqft": 465,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2884 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 448816,
+    "assessed_improvement_value": 364272,
+    "last_sale_date": "2003-06-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M944828",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-28",
+      "status_date": "2018-06-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307099016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-09",
+      "status_date": "2003-10-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "add 2 bedroom, 1 half bath, 1 storage & laundry room, 1 utility room on (e) g/f per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620433",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-23",
+      "status_date": "1997-06-11",
+      "estimated_cost": 4750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915825",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-28",
+      "status_date": "1990-01-12",
+      "estimated_cost": 10000,
+      "description": "vehicle damage steps, platch, stucco, paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2884",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "address": "1828 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/15th-street/1828/",
+  "apn": "3545098",
+  "block": "3545",
+  "lot": "098",
+  "eas_baseid": "359021",
+  "coordinates": {
+    "lat": 37.766587,
+    "lng": -122.424989
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 6,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 6,
+    "bedrooms": 4,
+    "lot_area_sqft": 2879,
+    "building_area_sqft": 4314,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1828 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1598456,
+    "assessed_improvement_value": 685049,
+    "last_sale_date": "2015-01-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301250710",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-25",
+      "status_date": "2023-02-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201608165103. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608165103",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2016-08-16",
+      "status_date": "2017-04-03",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "compliance w/ mandatory soft story retrofit program, iebc 2012 app a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504143535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-14",
+      "status_date": "2015-04-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-25",
+      "status_date": "2000-04-03",
+      "estimated_cost": 3000,
+      "description": "revision to pa 9921211 dry rot repair, remove & replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921211",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-07",
+      "status_date": "2000-04-03",
+      "estimated_cost": 6500,
+      "description": "replace 4 windows in full wall, patch stucco, drywall, paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9406515",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-04-26",
+      "status_date": "1994-06-10",
+      "estimated_cost": 20000,
+      "description": "fire repair, minor wall & ceiling framing,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1828",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=098",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545098",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

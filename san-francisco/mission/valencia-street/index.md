@@ -1,0 +1,132 @@
+# Valencia Street
+
+Every residential parcel on Valencia Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [204–206](204/) — A 1908 7-unit apartment building, with a kitchen remodel permitted in 2015.
+- [207–215](207/) — A 1924 11-unit apartment building, with a rear addition permitted in 2012.
+- [212–214](212/) — A 1906 5-unit apartment building, with stair work permitted in 2002.
+- [286–298](286/) — A 2000 36-unit apartment building, with plumbing work permitted in 2008.
+- [300–320](300/) — A 1908 30-unit apartment building, with window replacement permitted in 2017.
+- [301–319](301/) — A 1926 26-unit apartment building, with a seismic retrofit permitted in 2019.
+- [400](400/) — A 1910 1-unit building with a ground-floor store, with a seismic retrofit permitted in 2003.
+- [440](440/) — A 1994 59-unit apartment building, with garage work permitted in 1992.
+- [519–521](519/) — A 1906 3-unit building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with stair work permitted in 2001.
+- [523–525](523/) — A 1906 four-flat in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen remodel permitted in 2025.
+- [529–533](529/) — A 1924 3-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with reroofing permitted in 1995.
+- [530–534](530/) — A 1906 3-unit building with a ground-floor store, with deck work permitted in 2005.
+- [535–539](535/) — A 1907 8-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with reroofing permitted in 2017.
+- [538](538/) — A 1906 three-flat, with a kitchen remodel permitted in 2001.
+- [540–542](540/) — A 1908 3-unit building with a ground-floor store, with fire repair permitted in 2013.
+- [544–546](544/) — A 1906 3-unit apartment building, with window replacement permitted in 2004.
+- [567–575](567/) — A 1907 9-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with a seismic retrofit permitted in 2018.
+- [572–576](572/) — A 1923 9-unit apartment building, with a seismic retrofit permitted in 2018.
+- [590–598](590/) — A 1907 24-unit apartment building, with a seismic retrofit permitted in 2015.
+- [656–660](656/) — A 1906 four-flat, with foundation work permitted in 1996.
+- [662](662/) — An apartment building, with one permit record from 1995.
+- [666–668](666/) — An apartment building, with permit records from 1985 to 1995.
+- [670](670/) — An apartment building, with permit records from 1995 to 1998.
+- [692–694](692/) — A 2-unit building with a ground-floor store, with a rear addition permitted in 1999.
+- [714–716](714/) — A 1923 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [715](715/) — A 1907 2-unit building with a ground-floor store.
+- [720](720/) — A 1909 2-unit building with a ground-floor store, with stair work permitted in 2002.
+- [724](724/) — A 1921 building with a ground-floor store, with reroofing permitted in 2007.
+- [756–758](756/) — A 1909 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2016.
+- [760–762](760/) — A 1908 2-unit building with a ground-floor store, with window replacement permitted in 2012.
+- [785–789](785/) — A 1911 3-unit building with a ground-floor store, with window replacement permitted in 2020.
+- [800–820](800/) — A 1978 20-unit apartment building, with a bathroom remodel permitted in 2017.
+- [801–807](801/) — A 1906 23-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with a seismic retrofit permitted in 2018.
+- [824](824/) — A 1908 3-unit apartment building, with window replacement permitted in 1999.
+- [838](838/) — A 1908 4-unit building with a ground-floor store, with reroofing permitted in 1995.
+- [840–842](840/) — A 1924 5-unit building with a ground-floor store, with stair work permitted in 2004.
+- [855–857](855/) — A 1938 5-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2025.
+- [861](861/) — A 1979 4-unit apartment building, with reroofing permitted in 2000.
+- [867–871](867/) — A 1906 3-unit building with a ground-floor store, with reroofing permitted in 1999.
+- [873](873/) — A 1911 3-unit building with a ground-floor store, with reroofing permitted in 2022.
+- [876–878](876/) — A 1906 4-unit apartment building, with fire repair permitted in 1989.
+- [877–881](877/) — A 1909 3-unit building with a ground-floor store, with foundation work permitted in 2013.
+- [884–896](884/) — A 1926 52-unit apartment building, with window replacement permitted in 1988.
+- [900–914](900/) — A 1904 24-unit apartment building in the Liberty Hill Historic District, with a bathroom remodel permitted in 2016.
+- [901–909](901/) — A 1908 28-unit apartment building in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2010.
+- [911–913](911/) — A 1907 6-unit apartment building in the Liberty Hill Historic District, with window replacement permitted in 2016.
+- [920–924](920/) — An 1890 6-unit apartment building in the Liberty Hill Historic District, with window replacement permitted in 2017.
+- [929](929/) — An 1870 single-family house in the Liberty Hill Historic District, with window replacement permitted in 2004.
+- [933–935](933/) — A 1900 two-flat in the Liberty Hill Historic District, with window replacement permitted in 2018.
+- [937–939](937/) — An 1880 two-flat in the Liberty Hill Historic District, with a bathroom remodel permitted in 2015.
+- [945](945/) — An 1880 single-family house in the Liberty Hill Historic District, with a kitchen remodel permitted in 2011.
+- [949–951](949/) — A 1916 4-unit building with a ground-floor store in the Liberty Hill Historic District, with foundation work permitted in 2006.
+- [953–955](953/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2017.
+- [956–968](956/) — A 1900 9-unit apartment building in the Liberty Hill Historic District, with a seismic retrofit permitted in 2019.
+- [959](959/) — A 1900 two-flat in the Liberty Hill Historic District, with facade work permitted in 1992.
+- [963](963/) — A 1962 5-unit apartment building, with reroofing permitted in 2025.
+- [969–975](969/) — A 1925 12-unit apartment building, with fire repair permitted in 2024.
+- [970–974](970/) — An 1880 3-unit apartment building in the Liberty Hill Historic District, with plumbing work permitted in 2010.
+- [976–980](976/) — A 1907 20-unit apartment building in the Liberty Hill Historic District, with a seismic retrofit permitted in 2015.
+- [977](977/) — A 1900 single-family house, with deck work permitted in 2013.
+- [981–987](981/) — An 1880 5-unit building with a ground-floor store, with reroofing permitted in 2018.
+- [991–999](991/) — A 1900 15-unit apartment building, with facade work permitted in 2020.
+- [992–998](992/) — A 1901 19-unit apartment building in the Liberty Hill Historic District, with a seismic retrofit permitted in 2016.
+- [1000](1000/) — A 1978 10-unit apartment building, with garage work permitted in 2023.
+- [1001–1005](1001/) — A 1900 5-unit apartment building, with electrical work permitted in 2006.
+- [1007–1017](1007/) — A 1900 11-unit apartment building, with reroofing permitted in 2009.
+- [1014–1024](1014/) — A 1909 6-unit building with a ground-floor store, with a seismic retrofit permitted in 2019.
+- [1030–1034](1030/) — A 1905 3-unit building with a ground-floor store, with window replacement permitted in 2025.
+- [1049–1051](1049/) — An 1878 2-unit building with a ground-floor store, with foundation work permitted in 2008.
+- [1050–1058](1050/) — A 2017 13-unit apartment building, with a kitchen remodel permitted in 2017.
+- [1053–1055](1053/) — An 1885 3-unit apartment building, with reroofing permitted in 2023.
+- [1057](1057/) — An 1880 single-family house, with a bathroom remodel permitted in 2010.
+- [1061–1065](1061/) — A 1900 4-unit apartment building, with a rear addition permitted in 1991.
+- [1067–1071](1067/) — A 1914 18-unit apartment building, with reroofing permitted in 2025.
+- [1075–1077](1075/) — A 1925 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [1081–1089](1081/) — An 1890 9-unit apartment building, with plumbing work permitted in 2016.
+- [1100](1100/) — A 1907 2-unit building with a ground-floor store, with permit records from 1989 to 2025.
+- [1102–1110](1102/) — An 1890 5-unit building with a ground-floor store, with a seismic retrofit permitted in 2021.
+- [1114–1118](1114/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2003.
+- [1128–1142](1128/) — A 1909 19-unit building with a ground-floor store, with window replacement permitted in 2007.
+- [1149–1153](1149/) — A 1900 5-unit apartment building, with foundation work permitted in 2005.
+- [1150–1152](1150/) — A 1906 7-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1155–1159](1155/) — A 1979 10-unit apartment building, with an accessory dwelling unit permitted in 2020.
+- [1167–1169](1167/) — A 1900 3-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with deck work permitted in 2010.
+- [1171–1173](1171/) — An 1885 5-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with reroofing permitted in 1999.
+- [1172–1176](1172/) — A 1906 5-unit building with a ground-floor store, with facade work permitted in 2017.
+- [1175–1177](1175/) — A 1900 4-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with reroofing permitted in 2004.
+- [1181–1183](1181/) — A 1900 3-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with garage work permitted in 2014.
+- [1185–1187](1185/) — A 1900 two-flat in the 23rd Street Shops and Rowhouses Historic District, with garage work permitted in 2004.
+- [1189–1193](1189/) — An 1880 5-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [1195–1199](1195/) — A 1900 3-unit building with a ground-floor store in the 23rd Street Shops and Rowhouses Historic District, with stair work permitted in 2003.
+- [1200–1210](1200/) — A 1923 21-unit apartment building, with a seismic retrofit permitted in 2012.
+- [1228–1234](1228/) — A 1904 8-unit apartment building, with reroofing permitted in 2022.
+- [1245–1247](1245/) — A 1900 two-flat, with reroofing permitted in 1991.
+- [1252](1252/) — A 1900 2-unit apartment building, with facade work permitted in 1998.
+- [1260–1264](1260/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 1986.
+- [1304–1306](1304/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 2022.
+- [1312](1312/) — A 1900 single-family house, with reroofing permitted in 2023.
+- [1326–1328](1326/) — A 1908 5-unit building with a ground-floor store, with an addition permitted in 2022.
+- [1330](1330/) — A 1906 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [1341](1341/) — A 1904 32-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1359–1363](1359/) — A 1909 6-unit apartment building, with reroofing permitted in 2023.
+- [1360–1362](1360/) — A 1904 14-unit building with a ground-floor store, with a seismic retrofit permitted in 2014.
+- [1365–1367](1365/) — A 1908 5-unit apartment building, with reroofing permitted in 2022.
+- [1401–1405](1401/) — A 1925 6-unit apartment building, with reroofing permitted in 2000.
+- [1406](1406/) — A 1975 12-unit apartment building, with reroofing permitted in 2007.
+- [1407–1411](1407/) — A 1900 2-unit building with a ground-floor store, with foundation work permitted in 2011.
+- [1413–1419](1413/) — A 1900 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2008.
+- [1420](1420/) — A 1962 4-unit apartment building, with a kitchen remodel permitted in 2026.
+- [1424](1424/) — A 1906 15-unit apartment building, with an accessory dwelling unit permitted in 2018.
+- [1427](1427/) — A 1908 single-family house in the Orange Alley Stables and Lofts Historic District, with foundation work permitted in 2018.
+- [1430–1432](1430/) — A 1916 4-unit building with a ground-floor store, with an addition permitted in 2023.
+- [1442–1446](1442/) — A 1900 4-unit apartment building, with fire repair permitted in 2014.
+- [1448–1450](1448/) — A 1900 two-flat, with foundation work permitted in 2015.
+- [1451–1453](1451/) — A 1977 5-unit apartment building, with a kitchen remodel permitted in 2004.
+- [1458](1458/) — A 1900 single-family house, with a rear addition permitted in 2005.
+- [1460–1464](1460/) — A 1925 5-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1468–1474](1468/) — A 1900 6-unit building with a ground-floor store, with deck work permitted in 2008.
+- [1476–1480](1476/) — A 1925 23-unit apartment building, with reroofing permitted in 2010.
+- [1485–1487](1485/) — A 1909 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2019.
+- [1488](1488/) — A 1962 6-unit apartment building, with reroofing permitted in 2023.
+- [1492–1494](1492/) — A 1900 6-unit building with a ground-floor store, with a bathroom remodel permitted in 1987.
+- [1497–1499](1497/) — A 1900 two-flat, with plumbing work permitted in 2015.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

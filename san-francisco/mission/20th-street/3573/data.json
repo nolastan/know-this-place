@@ -1,0 +1,118 @@
+{
+  "address": "3573 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3573/",
+  "apn": "3609045",
+  "block": "3609",
+  "lot": "045",
+  "eas_baseid": "362391",
+  "coordinates": {
+    "lat": 37.758333,
+    "lng": -122.42061
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 6,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 6,
+    "lot_area_sqft": 3400,
+    "building_area_sqft": 3852,
+    "lot_depth_ft": 40,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3573 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212630,
+    "assessed_improvement_value": 293948,
+    "last_sale_date": "1988-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M184092",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-12",
+      "status_date": "2009-11-12",
+      "revised_cost": 1,
+      "description": "side walk & street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M37298",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-26",
+      "status_date": "2006-04-26",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415870",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-29",
+      "status_date": "1995-05-11",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3573",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42060971976836%2037.75833331039879)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

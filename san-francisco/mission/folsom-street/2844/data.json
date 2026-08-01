@@ -1,0 +1,109 @@
+{
+  "address": "2844 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2844/",
+  "apn": "6520008",
+  "block": "6520",
+  "lot": "008",
+  "eas_baseid": "401015",
+  "coordinates": {
+    "lat": 37.751743,
+    "lng": -122.414358
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "bedrooms": 9,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 4819,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2848 2844 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1358997,
+    "assessed_improvement_value": 582425,
+    "last_sale_date": "2015-09-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201607122097",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-12",
+      "status_date": "2016-12-20",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "soft story retrofit pes sfbc chapter 34b engineering criteria 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321816",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-12-13",
+      "status_date": "1994-01-31",
+      "estimated_cost": 37000,
+      "description": "fire dmg-remv, repl llstr,studs-repl lgt switch-instl crpts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2844",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6520008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6520&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6520008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41435763251795%2037.751742767955406)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

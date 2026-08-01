@@ -1,0 +1,99 @@
+{
+  "address": "2782–2788 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2782/",
+  "apn": "3640010",
+  "block": "3640",
+  "lot": "010",
+  "eas_baseid": "363967",
+  "coordinates": {
+    "lat": 37.752933,
+    "lng": -122.412215
+  },
+  "address_range": "2782–2788",
+  "street_numbers_on_parcel": [
+    "2782",
+    "2784",
+    "2786",
+    "2788"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 3020,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2788 2782 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 870856,
+    "assessed_improvement_value": 334938,
+    "last_sale_date": "2006-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9515356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-19",
+      "status_date": "1995-09-27",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509673",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-06-23",
+      "status_date": "1996-02-14",
+      "estimated_cost": 50000,
+      "description": "fire repair only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2782",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

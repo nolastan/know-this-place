@@ -1,0 +1,122 @@
+{
+  "address": "130–134 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/130/",
+  "apn": "3597054",
+  "block": "3597",
+  "lot": "054",
+  "eas_baseid": "361591",
+  "coordinates": {
+    "lat": 37.759483,
+    "lng": -122.423019
+  },
+  "address_range": "130–134",
+  "street_numbers_on_parcel": [
+    "130",
+    "132",
+    "134"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 1820,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0134A0130 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 731076,
+    "assessed_improvement_value": 487381,
+    "last_sale_date": "2003-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M199655",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-28",
+      "status_date": "2010-04-28",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925285",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-12-01",
+      "status_date": "2001-01-18",
+      "estimated_cost": 4500,
+      "description": "remodel kitchen & bath,replace cabinets,countertop,repaint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201969",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-03-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 4700,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=130",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42301861825534%2037.759483078117725)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "address": "415–421 South Van Ness Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/south-van-ness-avenue/415/",
+  "apn": "3552045",
+  "block": "3552",
+  "lot": "045",
+  "eas_baseid": "359253",
+  "coordinates": {
+    "lat": 37.766483,
+    "lng": -122.417305
+  },
+  "address_range": "415–421",
+  "street_numbers_on_parcel": [
+    "415",
+    "417",
+    "421"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 27,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 3325,
+    "building_area_sqft": 7145,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0421 0415 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1313512,
+    "assessed_improvement_value": 755267,
+    "last_sale_date": "2007-12-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Van Ness Avenue-Shotwell-Folsom Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200712311655",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-31",
+      "status_date": "2007-12-31",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "remove plaster to upgrade electrical & plumbing, bathroom remodeling & kitchen remodeling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36561",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-01",
+      "status_date": "2006-03-01",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009261597",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-26",
+      "status_date": "2001-03-26",
+      "estimated_cost": 19400,
+      "revised_cost": 19400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020251",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-04",
+      "status_date": "1992-01-14",
+      "estimated_cost": 2450,
+      "description": "repair stucco, painting repair from car damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000367",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-01-05",
+      "status_date": "1990-07-30",
+      "estimated_cost": 1500,
+      "description": "earthquake dameged repair- patch plaster, replace skylights",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=415",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3552045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3552&lot=045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3552045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4173046883077%2037.7664829100529)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

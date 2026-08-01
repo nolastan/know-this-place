@@ -1,0 +1,93 @@
+{
+  "address": "2301 Mariposa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mariposa-street/2301/",
+  "apn": "4013001",
+  "block": "4013",
+  "lot": "001",
+  "eas_baseid": "367293",
+  "coordinates": {
+    "lat": 37.76311,
+    "lng": -122.406604
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 2940,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2305 2301 MARIPOSA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117123,
+    "assessed_improvement_value": 75121
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809232391",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-23",
+      "status_date": "2008-12-23",
+      "estimated_cost": 10000,
+      "revised_cost": 13000,
+      "description": "replace in kind 2 sets of rear stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006152729",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-15",
+      "status_date": "2001-03-12",
+      "estimated_cost": 6950,
+      "revised_cost": 6950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARIPOSA&street_type=ST&address_number=2301",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4013001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4013&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4013001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

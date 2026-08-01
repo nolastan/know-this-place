@@ -1,0 +1,108 @@
+{
+  "address": "361–363 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/361/",
+  "apn": "3555031H",
+  "block": "3555",
+  "lot": "031H",
+  "eas_baseid": "359366",
+  "coordinates": {
+    "lat": 37.765494,
+    "lng": -122.423837
+  },
+  "address_range": "361–363",
+  "street_numbers_on_parcel": [
+    "361",
+    "363"
+  ],
+  "parcel": {
+    "year_built": 1938,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3080,
+    "building_area_sqft": 3414,
+    "lot_depth_ft": 12,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0363 0361 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335929,
+    "assessed_improvement_value": 228429,
+    "last_sale_date": "1995-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M479567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-14",
+      "status_date": "2014-04-14",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507197987",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-07-19",
+      "status_date": "2009-09-23",
+      "estimated_cost": 7000,
+      "description": "horizontal addition- remove existing deck construction & construct new decks in rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807667",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-04-30",
+      "status_date": "1999-12-06",
+      "estimated_cost": 4100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=361",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3555031H&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3555&lot=031H",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3555031H",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

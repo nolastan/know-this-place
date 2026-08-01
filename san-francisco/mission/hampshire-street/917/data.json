@@ -1,0 +1,122 @@
+{
+  "address": "917–919 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/917/",
+  "apn": "4142036",
+  "block": "4142",
+  "lot": "036",
+  "eas_baseid": "369241",
+  "coordinates": {
+    "lat": 37.757332,
+    "lng": -122.407441
+  },
+  "address_range": "917–919",
+  "street_numbers_on_parcel": [
+    "917",
+    "919"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2062,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0919 0917 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1634260,
+    "assessed_improvement_value": 700397,
+    "last_sale_date": "2022-06-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306139951",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-06-13",
+      "status_date": "2023-06-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "partial roof repair. french drain installation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804210167",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-21",
+      "status_date": "2008-10-08",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "increase valution of permit 2007 0720 7366 by 50,000.00 per correction notice from inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803288286",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-28",
+      "status_date": "2008-10-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace 10 windows w/ same size, vinly window u factor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707207366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-20",
+      "status_date": "2008-10-08",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "remodel the kitchen and 1 bath on 2nd floor, repair gypsum wall boards on 1st and 2nd floors, remove one existing bath and add 1 new bath on 1st floor. replace 2 existing windows on 1st floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=917",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4142036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4142&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4142036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

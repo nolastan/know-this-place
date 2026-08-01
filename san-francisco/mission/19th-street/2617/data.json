@@ -1,0 +1,131 @@
+{
+  "address": "2617 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/2617/",
+  "apn": "4079031",
+  "block": "4079",
+  "lot": "031",
+  "eas_baseid": "368215",
+  "coordinates": {
+    "lat": 37.760355,
+    "lng": -122.40857
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2184,
+    "building_area_sqft": 1280,
+    "lot_depth_ft": 91,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2617 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606919,
+    "assessed_improvement_value": 404606,
+    "last_sale_date": "2006-11-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Gottlieb Knopf Block Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1889–1892, 1920–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201604296184",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-29",
+      "status_date": "2017-04-27",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "to comply with complaint #201613791. replace plaster & lath on wall adjoning neighboring house/east wall in 2 rooms and 2 ft of ceiling along walls in 2 rooms. replace insulation and trim. repair in kind. bathroom remodel: replace bathtub, tile shower walls & flr, shower valve, vanity & sink faucets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008016671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-01",
+      "status_date": "2000-08-31",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "repair or replace rotten door & windows on back of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916811",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-16",
+      "status_date": "2000-06-21",
+      "estimated_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908971",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-07",
+      "status_date": "2000-01-12",
+      "estimated_cost": 750,
+      "description": "replace kitchen cabinets and move plumbing & vent into wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=2617",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4079031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4079&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4079031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40857039076901%2037.76035453806868)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

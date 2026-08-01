@@ -1,0 +1,135 @@
+{
+  "address": "2664 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2664/",
+  "apn": "4143018A",
+  "block": "4143",
+  "lot": "018A",
+  "eas_baseid": "369266",
+  "coordinates": {
+    "lat": 37.756303,
+    "lng": -122.408072
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1616,
+    "building_area_sqft": 2147,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2664 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 19808,
+    "assessed_improvement_value": 28596
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309207007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-20",
+      "status_date": "2024-12-05",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "restore unwarrented rooms at garage level (behind garage to storage space).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106071783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-07",
+      "status_date": "2021-08-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply with nov# 202022503 and 20190781. removal of hot water structure and handrail repair on rear deck. move dryer vent 3 ft away from property line. plumging permit was pull sep.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506088387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-08",
+      "status_date": "2015-06-18",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "compliant 201551101-change countertops from formica to granite to comply with",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303311095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-31",
+      "status_date": "2003-06-18",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair broken steps in front stairs (remove damaged wood & tile-repair not to exceed 50% of stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906311",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-02",
+      "status_date": "1999-05-03",
+      "estimated_cost": 5300,
+      "description": "install vinyl siding i.c.b.o. #3985-replacement aluminum sid",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-17",
+      "status_date": "1989-10-17",
+      "estimated_cost": 2200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2664",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4143018A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4143&lot=018A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4143018A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

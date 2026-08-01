@@ -1,0 +1,138 @@
+{
+  "address": "338 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/338/",
+  "apn": "3609089",
+  "block": "3609",
+  "lot": "089",
+  "eas_baseid": "362434",
+  "coordinates": {
+    "lat": 37.757924,
+    "lng": -122.419975
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 3,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 1650,
+    "building_area_sqft": 1380,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0338 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 529876,
+    "assessed_improvement_value": 413221,
+    "last_sale_date": "2005-04-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200809181992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-18",
+      "status_date": "2008-10-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair stairs less than 50%. to comply with nov#200868453 dated 08/20/08: (one unit only replace window in rear building, same size & location, not visible from street).. remove roof skylight covering over exterior stairway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200554",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-01-13",
+      "status_date": "1992-07-17",
+      "estimated_cost": 150,
+      "revised_cost": 500,
+      "description": "remove cooking facility",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906379",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-04-18",
+      "status_date": "1989-09-06",
+      "estimated_cost": 180,
+      "description": "install aluminum window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209825",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-29",
+      "status_date": "1983-08-18",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209829",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-29",
+      "status_date": "1983-08-18",
+      "estimated_cost": 5000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=338",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=089",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609089",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41997509671101%2037.75792372920906)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

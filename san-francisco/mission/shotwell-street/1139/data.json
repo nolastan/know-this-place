@@ -1,0 +1,114 @@
+{
+  "address": "1139 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1139/",
+  "apn": "6525028",
+  "block": "6525",
+  "lot": "028",
+  "eas_baseid": "401200",
+  "coordinates": {
+    "lat": 37.750204,
+    "lng": -122.414651
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2491,
+    "building_area_sqft": 1035,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1139 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 627242,
+    "assessed_improvement_value": 418147,
+    "last_sale_date": "2005-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200511087638",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-08",
+      "status_date": "2005-11-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final. 200403229209",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403229209",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-03-22",
+      "status_date": "2006-11-29",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923379",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-11-03",
+      "status_date": "2000-06-19",
+      "estimated_cost": 4430,
+      "description": "replace 6 aluminum windows with vinyl gasements & sliders",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-20",
+      "status_date": "1996-12-03",
+      "estimated_cost": 14000,
+      "description": "dryrot and termite damage repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1139",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6525028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

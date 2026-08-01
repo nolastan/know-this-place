@@ -1,0 +1,84 @@
+{
+  "address": "1387 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1387/",
+  "apn": "4275013B",
+  "block": "4275",
+  "lot": "013B",
+  "eas_baseid": "371000",
+  "coordinates": {
+    "lat": 37.749919,
+    "lng": -122.407632
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1425,
+    "basement_area_sqft": 675,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1387 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39240,
+    "assessed_improvement_value": 167611
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200806235077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-23",
+      "status_date": "2008-12-09",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "add one family room, one bedroom, one storage and remodel existing bedroom & bath at ground floor, remove existing exterior stairs in lighwell area.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1387",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275013B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=013B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275013B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

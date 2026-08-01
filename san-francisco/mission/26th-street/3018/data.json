@@ -1,0 +1,138 @@
+{
+  "address": "3018–3020 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3018/",
+  "apn": "4272020",
+  "block": "4272",
+  "lot": "020",
+  "eas_baseid": "370893",
+  "coordinates": {
+    "lat": 37.749734,
+    "lng": -122.41036
+  },
+  "address_range": "3018–3020",
+  "street_numbers_on_parcel": [
+    "3018",
+    "3020"
+  ],
+  "parcel": {
+    "year_built": 1989,
+    "units": 2,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3673,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3020 3018 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29865,
+    "assessed_improvement_value": 741174
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1989",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M553767",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-26",
+      "status_date": "2015-01-26",
+      "revised_cost": 1,
+      "description": "street space w/mta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601263071",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-01-26",
+      "status_date": "2008-02-01",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910648",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-06-20",
+      "status_date": "1989-12-11",
+      "estimated_cost": 2500,
+      "description": "install sprinkler system basement and fire escape",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902409",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-02-15",
+      "status_date": "1989-09-24",
+      "estimated_cost": 1,
+      "description": "revision to approved application no 8807649 foundation work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807649",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-06-10",
+      "status_date": "1990-12-28",
+      "estimated_cost": 200000,
+      "revised_cost": 386250,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804311",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "1988-04-05",
+      "status_date": "1988-05-27",
+      "estimated_cost": 400000,
+      "description": "two unit three story residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4272020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4272&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4272020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

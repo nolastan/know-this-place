@@ -1,0 +1,127 @@
+{
+  "address": "912 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/912/",
+  "apn": "4144004",
+  "block": "4144",
+  "lot": "004",
+  "eas_baseid": "369294",
+  "coordinates": {
+    "lat": 37.757088,
+    "lng": -122.408875
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 2304,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0912 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239503,
+    "assessed_improvement_value": 259458,
+    "last_sale_date": "1997-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9217429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-07",
+      "status_date": "1993-02-12",
+      "estimated_cost": 1,
+      "description": "renew pa#9111277",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111277",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-26",
+      "status_date": "1991-12-26",
+      "estimated_cost": 21000,
+      "description": "renew of permit appl#9100572.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100572",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-01-16",
+      "status_date": "1991-06-26",
+      "estimated_cost": 21000,
+      "description": "interior renovation only kitchen and bathroom renovation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605229",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-05",
+      "status_date": "1987-01-09",
+      "estimated_cost": 19990,
+      "description": "remove wood floor and install concrete slab in basement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=912",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4144004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4144&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4144004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40887512891246%2037.75708762830079)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

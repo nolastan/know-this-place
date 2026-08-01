@@ -1,0 +1,102 @@
+{
+  "address": "1386 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1386/",
+  "apn": "4275012",
+  "block": "4275",
+  "lot": "012",
+  "eas_baseid": "370992",
+  "coordinates": {
+    "lat": 37.750116,
+    "lng": -122.407303
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2512,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1388 1386 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 391093,
+    "assessed_improvement_value": 184143
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202312283193",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-12-28",
+      "status_date": "2023-12-28",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-26",
+      "status_date": "1993-10-29",
+      "estimated_cost": 1200,
+      "description": "repair dry rot in front of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005698",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-26",
+      "status_date": "1990-10-04",
+      "estimated_cost": 7250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1386",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

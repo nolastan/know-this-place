@@ -1,0 +1,146 @@
+{
+  "address": "367 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/367/",
+  "apn": "3590055",
+  "block": "3590",
+  "lot": "055",
+  "eas_baseid": "361311",
+  "coordinates": {
+    "lat": 37.760894,
+    "lng": -122.417858
+  },
+  "parcel": {
+    "year_built": 1890,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 2792,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0367 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 155367,
+    "assessed_improvement_value": 223743
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409191191",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-09-19",
+      "status_date": "2024-09-19",
+      "estimated_cost": 13800,
+      "revised_cost": 13800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403259678",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-25",
+      "status_date": "2004-05-26",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove (e)posts in garage by installing steel members per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402106076",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-02-10",
+      "status_date": "2006-01-27",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911219",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-07",
+      "status_date": "2000-12-20",
+      "estimated_cost": 120,
+      "description": "repair back stair to comply & abate complaint-9900245",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904516",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-09",
+      "status_date": "2000-10-10",
+      "estimated_cost": 9000,
+      "description": "install 32 block replacement windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608759",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-07-21",
+      "status_date": "1986-12-22",
+      "estimated_cost": 1200,
+      "description": "repair back stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8300760",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-01-26",
+      "status_date": "1983-03-04",
+      "estimated_cost": 10000,
+      "description": "remodel kitchens & bathrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=367",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&lot=055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3590055",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

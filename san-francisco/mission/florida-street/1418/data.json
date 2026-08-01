@@ -1,0 +1,127 @@
+{
+  "address": "1418 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1418/",
+  "apn": "4337001A",
+  "block": "4337",
+  "lot": "001A",
+  "eas_baseid": "371381",
+  "coordinates": {
+    "lat": 37.749159,
+    "lng": -122.410003
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1608,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1418 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 334099,
+    "assessed_improvement_value": 261804,
+    "last_sale_date": "1988-06-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804078973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-07",
+      "status_date": "2008-04-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200701111500, 200706275338 and 200710034511 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803126936",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-12",
+      "status_date": "2008-04-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace existing deck floor only @ rear (steps @ stairs) less than 50%. deck size approx. (14'x16').",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710034511",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-10-03",
+      "status_date": "2008-04-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to appl 200701111500. replace existing sliding board at backyard exterior wall. repaint exterior wall for whole building. replace in kind. add 1/2\" plywood sheathing below same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706275338",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-06-27",
+      "status_date": "2008-04-16",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "revision to permit # 200701111500. replace interior drywall. replace existing furnace and ducts. new furnace in extg location. raise ignition 18\" above floor. terminate flue 4' min from p.l. per sfc 806.6",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701111500",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-01-11",
+      "status_date": "2008-04-16",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "termite and dry rotted work around windows. 1st floor remodel, add a storage. all (e) windows to be replaced w/dual pane wooden windows (typ). recessed a minimum of 3\" w/1/4 wd trim (typ).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1418",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4337001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4337&lot=001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4337001A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

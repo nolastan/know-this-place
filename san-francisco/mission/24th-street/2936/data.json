@@ -1,0 +1,134 @@
+{
+  "address": "2936 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2936/",
+  "apn": "4207019",
+  "block": "4207",
+  "lot": "019",
+  "eas_baseid": "370105",
+  "coordinates": {
+    "lat": 37.752929,
+    "lng": -122.410752
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 3130,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2940 2936 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 567959,
+    "assessed_improvement_value": 260699
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201612155026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-15",
+      "status_date": "2017-03-22",
+      "estimated_cost": 11880,
+      "revised_cost": 11880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603015678",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-01",
+      "status_date": "2006-03-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200006283962 for final inspection only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M30924",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-01-24",
+      "status_date": "2005-01-24",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006283962",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-06-28",
+      "status_date": "2001-02-01",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "creating opening between 2 immediate properties with 3hr fire rtd door/new unisex bthrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606830",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-06-11",
+      "status_date": "1986-12-03",
+      "estimated_cost": 2000,
+      "description": "wals'll be built with 2\"x4\" by 4\"x4\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505361",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-05-23",
+      "status_date": "1989-10-13",
+      "estimated_cost": 2000,
+      "description": "correct code violations cited on warning",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2936",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

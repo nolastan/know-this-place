@@ -1,0 +1,119 @@
+{
+  "address": "761–765 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/761/",
+  "apn": "3607029",
+  "block": "3607",
+  "lot": "029",
+  "eas_baseid": "362247",
+  "coordinates": {
+    "lat": 37.757196,
+    "lng": -122.425439
+  },
+  "address_range": "761–765",
+  "street_numbers_on_parcel": [
+    "761",
+    "763",
+    "765"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2308,
+    "building_area_sqft": 3808,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0765 0761 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1142059,
+    "assessed_improvement_value": 372052
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408158783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-15",
+      "status_date": "2024-08-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing shingle & flat roof rear off, like for like",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904035513",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-03",
+      "status_date": "2009-04-03",
+      "estimated_cost": 4780,
+      "revised_cost": 4780,
+      "description": "back of top floor. replace 2 aluminum xo sliders in kind with double paned white vinyl. top floor front: replace 1 xox aluminum silder with double paned casement / picture / casement with paintable fiber glass. this design was original design. total 3 windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-29",
+      "status_date": "1997-07-28",
+      "estimated_cost": 2150,
+      "description": "install 2 replacement windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-24",
+      "status_date": "1988-09-01",
+      "estimated_cost": 7540,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=761",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

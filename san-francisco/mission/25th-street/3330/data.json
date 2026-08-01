@@ -1,0 +1,112 @@
+{
+  "address": "3330 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3330/",
+  "apn": "6518014B",
+  "block": "6518",
+  "lot": "014B",
+  "eas_baseid": "400943",
+  "coordinates": {
+    "lat": 37.750905,
+    "lng": -122.416832
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1494,
+    "building_area_sqft": 2208,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3332 3330 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 127384,
+    "assessed_improvement_value": 246354,
+    "last_sale_date": "1989-08-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M22310",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-26",
+      "status_date": "2002-11-26",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113610S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-07-31",
+      "status_date": "1993-03-24",
+      "estimated_cost": 10000,
+      "description": "install garage door & driveway & depress basement slab.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-14",
+      "status_date": "1989-06-06",
+      "estimated_cost": 5500,
+      "description": "dry rot repair, replace shower surround and subfloor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900372",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-01-10",
+      "status_date": "1989-05-04",
+      "estimated_cost": 2550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3330",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518014B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=014B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518014B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

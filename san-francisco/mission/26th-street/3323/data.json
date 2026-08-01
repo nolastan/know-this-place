@@ -1,0 +1,141 @@
+{
+  "address": "3323–3325 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3323/",
+  "apn": "6571023A",
+  "block": "6571",
+  "lot": "023A",
+  "eas_baseid": "402689",
+  "coordinates": {
+    "lat": 37.748881,
+    "lng": -122.416498
+  },
+  "address_range": "3323–3325",
+  "street_numbers_on_parcel": [
+    "3323",
+    "3325"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 2870,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3325 3323 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1110048,
+    "assessed_improvement_value": 475734,
+    "last_sale_date": "2019-10-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009083692",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2020-09-08",
+      "status_date": "2023-12-05",
+      "estimated_cost": 115000,
+      "revised_cost": 330000,
+      "description": "addition of 2 adu to (e) 2 unit building per oridinance 162-16. total of 4 one unit (n) adu located within (e) building envelope at the basement level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1186887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-01-23",
+      "status_date": "2020-03-04",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1176247",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-17",
+      "status_date": "2019-12-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911056480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-05",
+      "status_date": "2019-11-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing - remove old roof (flat roof). replace with double layers modified bitman job c#80, #180",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910083930",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-08",
+      "status_date": "2020-05-15",
+      "estimated_cost": 30000,
+      "revised_cost": 36000,
+      "description": "same layout on 2nd fl - remove and replace kitchen and bath in kind to includes appliances, fixtures, cabinets and counters, tile. no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412695",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-09",
+      "status_date": "1995-02-07",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3323",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6571023A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6571&lot=023A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6571023A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

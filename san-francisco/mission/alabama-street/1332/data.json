@@ -1,0 +1,113 @@
+{
+  "address": "1332 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1332/",
+  "apn": "4271005",
+  "block": "4271",
+  "lot": "005",
+  "eas_baseid": "370833",
+  "coordinates": {
+    "lat": 37.750427,
+    "lng": -122.411025
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 2183,
+    "building_area_sqft": 810,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1332 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 514452,
+    "assessed_improvement_value": 342972,
+    "last_sale_date": "2006-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M59533",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-03-05",
+      "status_date": "2007-03-05",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817730",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-04",
+      "status_date": "1999-03-24",
+      "estimated_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712148",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-08-25",
+      "status_date": "1988-01-15",
+      "estimated_cost": 1200,
+      "description": "(c) foundation w/new concrete, revision of #8711123",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711123",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-08-05",
+      "status_date": "1988-02-11",
+      "estimated_cost": 17950,
+      "description": "repair termite damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1332",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "address": "1311 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1311/",
+  "apn": "4272031",
+  "block": "4272",
+  "lot": "031",
+  "eas_baseid": "370906",
+  "coordinates": {
+    "lat": 37.75069,
+    "lng": -122.410495
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1311 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 293934,
+    "assessed_improvement_value": 319130,
+    "last_sale_date": "1995-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910083837",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-08",
+      "status_date": "2019-12-20",
+      "estimated_cost": 23600,
+      "revised_cost": 23600,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36883",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-24",
+      "status_date": "2006-03-24",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614028",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-01",
+      "status_date": "1997-01-16",
+      "estimated_cost": 4000,
+      "description": "replace back stairs to same configuration & construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101364",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-01-29",
+      "status_date": "1992-09-29",
+      "estimated_cost": 74000,
+      "description": "voluntary upgrade, replace foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9021033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-12",
+      "status_date": "1990-12-31",
+      "estimated_cost": 6974,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1311",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4272031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4272&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4272031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

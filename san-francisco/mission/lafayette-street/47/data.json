@@ -1,0 +1,153 @@
+{
+  "address": "47–49 Lafayette Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/lafayette-street/47/",
+  "apn": "3511065",
+  "block": "3511",
+  "lot": "065",
+  "eas_baseid": "357865",
+  "coordinates": {
+    "lat": 37.77313,
+    "lng": -122.417073
+  },
+  "address_range": "47–49",
+  "street_numbers_on_parcel": [
+    "47",
+    "49"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 1829,
+    "building_area_sqft": 3600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RED",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0049 0047 LAFAYETTE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 680252,
+    "assessed_improvement_value": 359568
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202005077362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-07",
+      "status_date": "2020-09-04",
+      "estimated_cost": 14220,
+      "revised_cost": 14220,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M843707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-13",
+      "status_date": "2017-10-13",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312222804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-22",
+      "status_date": "2004-01-23",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "six steps to replaced-front entrance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-26",
+      "status_date": "1991-05-09",
+      "estimated_cost": 15000,
+      "description": "remove fire damaged wall ceiling,renew appl. #9014233",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-13",
+      "status_date": "1991-03-12",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014233",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-07-18",
+      "status_date": "1991-04-16",
+      "estimated_cost": 9500,
+      "description": "remove fire damage wall, ceiling electric wire. install",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAFAYETTE&street_type=ST&address_number=47",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3511065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3511&lot=065",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3511065",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41707277746488%2037.77312966957935)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

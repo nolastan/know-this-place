@@ -1,0 +1,130 @@
+{
+  "address": "149–151 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/dolores-street/149/",
+  "apn": "3545047",
+  "block": "3545",
+  "lot": "047",
+  "eas_baseid": "358981",
+  "coordinates": {
+    "lat": 37.767219,
+    "lng": -122.426283
+  },
+  "address_range": "149–151",
+  "street_numbers_on_parcel": [
+    "149",
+    "151"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 7,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 7,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 5450,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0151 0149 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169014,
+    "assessed_improvement_value": 428974
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603026768",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2026-03-02",
+      "status_date": "2026-05-07",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: remodel kitchen- cabinets, countertops, appliances in kind. remodel bathroom- stall shower, vanity, toilet in kind. upgrade electrical subpanel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305087261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-08",
+      "status_date": "2023-06-26",
+      "estimated_cost": 16000,
+      "revised_cost": 16237,
+      "description": "upgrade the existing fire alarm system by replacing it with 1 addressible fire alarm unit, 1 wireless communicator next to facu, 4 addressible smoke detector, 3 addressible manual pull station, 3 horn strobe, 7 lf horns at all residential sleeping area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1140307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-19",
+      "status_date": "2019-09-19",
+      "revised_cost": 1,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907297240",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-29",
+      "status_date": "2021-07-16",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "mandatory soft story retrofit per 2016 sfebc appendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820094",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-05",
+      "status_date": "1999-12-28",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=149",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545047",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

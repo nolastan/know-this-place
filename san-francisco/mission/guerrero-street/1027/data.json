@@ -1,0 +1,123 @@
+{
+  "address": "1027–1029 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1027/",
+  "apn": "3634015",
+  "block": "3634",
+  "lot": "015",
+  "eas_baseid": "363744",
+  "coordinates": {
+    "lat": 37.754094,
+    "lng": -122.422849
+  },
+  "address_range": "1027–1029",
+  "street_numbers_on_parcel": [
+    "1027",
+    "1029"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1346,
+    "building_area_sqft": 2270,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1029 1027 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 458473,
+    "assessed_improvement_value": 376378,
+    "last_sale_date": "1992-01-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202401234498",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-01-23",
+      "status_date": "2024-06-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace front building stair in same location, no changes to tread riser size, new posts and guardrails, new gate at base.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004631",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-09",
+      "status_date": "1990-03-15",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803750",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-03-24",
+      "status_date": "1989-07-14",
+      "estimated_cost": 16000,
+      "description": "bathroom & kitchen remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42284892068581%2037.754094143321154)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

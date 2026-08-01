@@ -1,0 +1,147 @@
+{
+  "address": "984–986 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/984/",
+  "apn": "4143015",
+  "block": "4143",
+  "lot": "015",
+  "eas_baseid": "369262",
+  "coordinates": {
+    "lat": 37.756392,
+    "lng": -122.407759
+  },
+  "address_range": "984–986",
+  "street_numbers_on_parcel": [
+    "984",
+    "986"
+  ],
+  "also_addressed": [
+    "2650 22ND ST",
+    "2652 22ND ST"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 2435,
+    "building_area_sqft": 4206,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0986 0984 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1301437,
+    "assessed_improvement_value": 557756,
+    "last_sale_date": "2019-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408027846",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-02",
+      "status_date": "2024-10-04",
+      "estimated_cost": 25000,
+      "revised_cost": 40000,
+      "description": "update 2 existing bathrooms. install new subpanel (electric) and layout to remain. no removal of walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104138402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-13",
+      "status_date": "2021-11-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kitchen cabinets in-kind, replace bathroom tile and plumbing fixtures, no structural changes, no change of wall layout & opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102194996",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-19",
+      "status_date": "2021-02-19",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010307823",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-10-30",
+      "status_date": "2021-02-05",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "in-kind windows replacement at upper floor front and side of bldg. total 16 windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805232784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-23",
+      "status_date": "2008-10-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "work @ one unit only. remodel (e) kitchen & bathroom. install new cabinets, kitchen sink. bathroom: install new bathtub.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610175237",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-17",
+      "status_date": "2007-02-05",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "work # one unit only. remodel (e) kitchen & bathroom. install new cabinets, kitchen, sink, bathtub & 2nd floor & paint. total 1 kitchen & 1 bath. no new lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=984",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4143015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4143&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4143015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

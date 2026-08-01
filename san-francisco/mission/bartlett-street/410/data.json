@@ -1,0 +1,146 @@
+{
+  "address": "410 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/410/",
+  "apn": "6530001",
+  "block": "6530",
+  "lot": "001",
+  "eas_baseid": "401338",
+  "coordinates": {
+    "lat": 37.750363,
+    "lng": -122.419586
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 21,
+    "stories": 3,
+    "rooms": 45,
+    "bathrooms": 21,
+    "lot_area_sqft": 4695,
+    "building_area_sqft": 11451,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0410 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 116619,
+    "assessed_improvement_value": 353449
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503192561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-19",
+      "status_date": "2025-04-02",
+      "estimated_cost": 47500,
+      "revised_cost": 47500,
+      "description": "reroofing-no hot works/torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304145723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-14",
+      "status_date": "2023-05-30",
+      "estimated_cost": 25000,
+      "revised_cost": 35679,
+      "description": "low frequency horn upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511253656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-25",
+      "status_date": "2015-12-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201408254625. structural details at eliminated garage 11 and garage door, new use electrical room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408254625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-25",
+      "status_date": "2015-12-01",
+      "estimated_cost": 1,
+      "revised_cost": 2000,
+      "description": "revision/modification pa #2014.0305.9906 (soft story retrofit) - there was no existing foundation, the new footing is added. minor changes according to (e) job site condition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403059906",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-03-05",
+      "status_date": "2015-12-01",
+      "estimated_cost": 35000,
+      "revised_cost": 45000,
+      "description": "mandated tier ii soft story upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M185290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-12-02",
+      "status_date": "2009-12-02",
+      "revised_cost": 1,
+      "description": "street space and sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509970",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-29",
+      "status_date": "1996-04-26",
+      "estimated_cost": 10250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=410",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6530001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6530&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6530001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

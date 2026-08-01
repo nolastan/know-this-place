@@ -1,0 +1,165 @@
+{
+  "address": "1149 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1149/",
+  "apn": "4212018",
+  "block": "4212",
+  "lot": "018",
+  "eas_baseid": "464209",
+  "coordinates": {
+    "lat": 37.753626,
+    "lng": -122.406027
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 3250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1149 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 107967,
+    "assessed_improvement_value": 529316
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1997",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709269602",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-26",
+      "status_date": "2017-09-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace extg side windows in kind with double pane. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406067769",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-06",
+      "status_date": "2014-06-06",
+      "estimated_cost": 4000,
+      "revised_cost": 6000,
+      "description": "repalce exterior stucco in kind to repair leakage, visible from street. n/a maher ordinance 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M493747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-06",
+      "status_date": "2014-06-06",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M494207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-06",
+      "status_date": "2014-06-06",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306200059",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-20",
+      "status_date": "2013-06-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace dry rot siding in kind in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717212",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-09-05",
+      "status_date": "1999-03-01",
+      "estimated_cost": 5000,
+      "description": "legalize bedroom in basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621819",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-08",
+      "status_date": "1997-02-14",
+      "estimated_cost": 1,
+      "description": "revise to appln #9603994",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-06",
+      "status_date": "1997-02-14",
+      "estimated_cost": 1,
+      "description": "revise to appln #9603994 provide additional detail for fondt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603994S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1996-03-11",
+      "status_date": "1997-02-14",
+      "estimated_cost": 225000,
+      "description": "erect a three story two unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1149",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4212018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4212&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4212018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

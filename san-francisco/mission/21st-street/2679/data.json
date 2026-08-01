@@ -1,0 +1,169 @@
+{
+  "address": "2679–2681 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2679/",
+  "apn": "4143035",
+  "block": "4143",
+  "lot": "035",
+  "eas_baseid": "369284",
+  "coordinates": {
+    "lat": 37.757554,
+    "lng": -122.408477
+  },
+  "address_range": "2679–2681",
+  "street_numbers_on_parcel": [
+    "2679",
+    "2681"
+  ],
+  "also_addressed": [
+    "915 YORK ST"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2443.75,
+    "building_area_sqft": 4075,
+    "lot_depth_ft": 97.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2679 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 133968,
+    "assessed_improvement_value": 468538,
+    "last_sale_date": "1987-10-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202304125583",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-12",
+      "status_date": "2023-05-03",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003137077",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2020-03-13",
+      "status_date": "2022-11-09",
+      "estimated_cost": 23750,
+      "revised_cost": 68950,
+      "description": "convert empty storage space to limited use restaurant coffee bar.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807255475",
+      "type": "wall or painted sign",
+      "status": "filed",
+      "filed": "2018-07-25",
+      "status_date": "2018-07-25",
+      "description": "new copy for existing sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807255477",
+      "type": "wall or painted sign",
+      "status": "cancelled",
+      "filed": "2018-07-25",
+      "status_date": "2026-01-09",
+      "estimated_cost": 500,
+      "description": "new copy on existing sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805290289",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-29",
+      "status_date": "2018-05-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "remove (e) green awning.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M13060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-19",
+      "status_date": "2000-10-19",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005018650",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-01",
+      "status_date": "2001-03-23",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "repair the rear stairs, tread and raiser only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2679",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4143035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4143&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4143035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40847685843512%2037.757553777116854)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

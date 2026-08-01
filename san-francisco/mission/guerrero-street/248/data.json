@@ -1,0 +1,147 @@
+{
+  "address": "248 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/248/",
+  "apn": "3545008",
+  "block": "3545",
+  "lot": "008",
+  "eas_baseid": "358945",
+  "coordinates": {
+    "lat": 37.767204,
+    "lng": -122.424706
+  },
+  "parcel": {
+    "year_built": 1968,
+    "units": 6,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 3293,
+    "building_area_sqft": 4798,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0248 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 400266
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1968",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507291808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-29",
+      "status_date": "2026-03-25",
+      "estimated_cost": 19800,
+      "revised_cost": 32433,
+      "description": "to comply with sffc sec 1103.7.6.1 and current cbc/cfc 2022 * nfpa 72 2022 code requirement. install new facu with radio to monitor system. horn/storbes, detectors and pull stations in common areas and exits. install low frequency sounders inside sleeping rooms. to comply with fire alarm system in",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001222492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-22",
+      "status_date": "2021-03-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710030304",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-10-03",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "plan revision to pa #201707283226.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707283226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-28",
+      "status_date": "2018-07-03",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011306918",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-11-30",
+      "status_date": "2001-03-29",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reconstruction of ex structure including rough framing of flr joist wall add on to 08117713 attachd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117713",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-08-11",
+      "status_date": "2001-03-29",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "framing repairs in garage & electrical, drywall & paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-26",
+      "status_date": "1997-12-02",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=248",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

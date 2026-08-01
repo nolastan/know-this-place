@@ -1,0 +1,128 @@
+# Harrison Street
+
+Every residential parcel on Harrison Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [2185](2185/) — A 1900 two-flat, with window replacement permitted in 1992.
+- [2400](2400/) — A 1906 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2024.
+- [2402](2402/) — A 1906 two-flat, with stair work permitted in 2003.
+- [2404](2404/) — A 1906 two-flat, with a seismic retrofit permitted in 2015.
+- [2406](2406/) — A 1900 three-flat, with dry-rot repair permitted in 2012.
+- [2407](2407/) — A 2002 residential building, with deck work permitted in 2023.
+- [2415](2415/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2017.
+- [2445–2449](2445/) — A 1907 6-unit apartment building, with reroofing permitted in 1998.
+- [2461](2461/) — A 1900 1-unit flats building, with reroofing permitted in 1998.
+- [2471](2471/) — A 1900 single-family house, with permit records from 1989 to 2000.
+- [2472](2472/) — A 1900 single-family house, with reroofing permitted in 1999.
+- [2473–2475](2473/) — A 1900 two-flat, with a rear addition permitted in 2021.
+- [2476–2478](2476/) — An 1890 3-unit building with a ground-floor store, with deck work permitted in 1987.
+- [2481](2481/) — A 1900 three-flat, with reroofing permitted in 2005.
+- [2485–2487](2485/) — A 1979 3-unit apartment building, with window replacement permitted in 2011.
+- [2489–2493](2489/) — A 1900 3-unit tic building, with garage work permitted in 2017.
+- [2495](2495/) — A two dwellings on one parcel, with an addition permitted in 2026.
+- [2509–2515](2509/) — A 1907 4-unit apartment building, with reroofing permitted in 2022.
+- [2517](2517/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with a vertical addition permitted in 2018.
+- [2519](2519/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with a vertical addition permitted in 2018.
+- [2521](2521/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with reroofing permitted in 1999.
+- [2523](2523/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with foundation work permitted in 2017.
+- [2525](2525/) — A 1904 single-family house in the Olsen's Queen Anne Cottages Historic District, with reroofing permitted in 1989.
+- [2527](2527/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with stair work permitted in 1987.
+- [2529](2529/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with one permit record from 2007.
+- [2573](2573/) — A 1934 single-family house, with reroofing permitted in 1995.
+- [2600](2600/) — A 1924 apartment building, with reroofing permitted in 1990.
+- [2617–2619](2617/) — A 1912 4-unit apartment building, with a kitchen remodel permitted in 1988.
+- [2621](2621/) — A 2019 three-flat, with garage work permitted in 2014.
+- [2625–2629](2625/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [2633](2633/) — A 1937 single-family house, with garage work permitted in 2017.
+- [2635–2645](2635/) — A 1900 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2008.
+- [2647–2649](2647/) — A 1904 two-flat, with permit records from 1990 to 2021.
+- [2651–2653](2651/) — An 1885 two-flat, with stair work permitted in 2007.
+- [2652](2652/) — A 2013 20-unit apartment building, with garage work permitted in 2011.
+- [2655](2655/) — A 1929 single-family house, with a bathroom remodel permitted in 2010.
+- [2661](2661/) — A 1900 single-family house, with reroofing permitted in 2020.
+- [2663](2663/) — A 1900 single-family house, with reroofing permitted in 2002.
+- [2665–2667](2665/) — A 1900 single-family house, with stair work permitted in 1987.
+- [2681](2681/) — A 1900 single-family house, with plumbing work permitted in 2004.
+- [2685](2685/) — A 1900 4-unit building with a ground-floor store, with permit records from 1992 to 1994.
+- [2690](2690/) — A 2006 54-unit apartment building, with an addition permitted in 2023.
+- [2708](2708/) — An 1870 single-family house, with window replacement permitted in 2002.
+- [2710](2710/) — A 1900 single-family house, with a kitchen remodel permitted in 2019.
+- [2711](2711/) — A 1905 two-flat, with a kitchen and bathroom remodel permitted in 2026.
+- [2712](2712/) — A 1906 single-family house, with reroofing permitted in 1989.
+- [2714](2714/) — A 1900 single-family house, with facade work permitted in 2024.
+- [2715–2717](2715/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2008.
+- [2721–2725](2721/) — A 1945 four-flat, with reroofing permitted in 2007.
+- [2727](2727/) — A 1923 single-family house.
+- [2737–2739](2737/) — A 1900 three-flat, with reroofing permitted in 2013.
+- [2740–2746](2740/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
+- [2747](2747/) — A 1900 two-flat, with foundation work permitted in 2006.
+- [2749](2749/) — A 1937 single-family house, with fire repair permitted in 2006.
+- [2751](2751/) — A 1900 three-flat, with reroofing permitted in 1990.
+- [2752–2754](2752/) — A 1900 two-flat, with fire repair permitted in 2003.
+- [2753](2753/) — A 1906 single-family house.
+- [2755](2755/) — A 1900 single-family house, with an addition permitted in 2026.
+- [2757](2757/) — A 1902 two-flat, with garage work permitted in 2007.
+- [2758](2758/) — A 1941 single-family house, with deck work permitted in 2008.
+- [2759](2759/) — A 1900 two-flat, with a kitchen remodel permitted in 1996.
+- [2762](2762/) — A 1925 two-flat.
+- [2770–2776](2770/) — An 1885 4-unit apartment building, with an addition permitted in 2021.
+- [2782–2788](2782/) — A 1906 4-unit apartment building, with fire repair permitted in 1995.
+- [2805–2807](2805/) — A 1914 two-flat in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2017.
+- [2809–2811](2809/) — A 1914 two-flat in the South Mission Avenues and Alleys Historic District, with dry-rot repair permitted in 2004.
+- [2814–2818](2814/) — A 1900 4-unit apartment building in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2018.
+- [2819](2819/) — An 1895 single-family house in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2026.
+- [2827](2827/) — A 1900 single-family house in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2016.
+- [2828](2828/) — A 1940 1-unit apartment building in the South Mission Avenues and Alleys Historic District, with one permit record from 1999.
+- [2829](2829/) — A 1923 single-family house in the South Mission Avenues and Alleys Historic District, with garage work permitted in 2003.
+- [2830–2832](2830/) — A 1900 two-flat in the South Mission Avenues and Alleys Historic District, with foundation work permitted in 1998.
+- [2834](2834/) — A 1908 2-unit apartment building in the South Mission Avenues and Alleys Historic District, with foundation work permitted in 2007.
+- [2837](2837/) — A 1900 3-unit apartment building in the South Mission Avenues and Alleys Historic District, with facade work permitted in 1989.
+- [2840](2840/) — A 1900 two-flat in the South Mission Avenues and Alleys Historic District, with a kitchen remodel permitted in 2020.
+- [2841–2843](2841/) — A 1914 4-unit apartment building in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2016.
+- [2844–2848](2844/) — A 1906 three-flat in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2014.
+- [2849–2851](2849/) — A 1914 two-flat in the South Mission Avenues and Alleys Historic District, with a kitchen remodel permitted in 2005.
+- [2850](2850/) — A 1908 two-flat in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 1991.
+- [2854](2854/) — A 1900 single-family house in the South Mission Avenues and Alleys Historic District.
+- [2859](2859/) — A 1914 two-flat in the South Mission Avenues and Alleys Historic District, with a seismic retrofit permitted in 2022.
+- [2860–2862](2860/) — A 1908 two-flat in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2008.
+- [2861](2861/) — A 1914 two-flat in the South Mission Avenues and Alleys Historic District, with window replacement permitted in 2023.
+- [2864–2868](2864/) — A 1908 three-flat in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 1990.
+- [2865–2867](2865/) — A 1914 two-flat in the South Mission Avenues and Alleys Historic District, with deck work permitted in 2018.
+- [2869](2869/) — A 1900 single-family house in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2009.
+- [2870–2878](2870/) — A 1908 9-unit apartment building in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [2880](2880/) — A 1908 single-family house.
+- [2881–2883](2881/) — A 1912 two-flat in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2024.
+- [2886](2886/) — A 1900 two-flat, with one permit record from 2005.
+- [2888–2890](2888/) — A 1900 two-flat, with window replacement permitted in 2024.
+- [2892](2892/) — A 1910 two-flat, with a seismic retrofit permitted in 2012.
+- [2895](2895/) — A 1928 4-unit apartment building, with reroofing permitted in 2024.
+- [2903](2903/) — A 1900 two-flat, with a rear addition permitted in 1992.
+- [2905](2905/) — A 1900 two-flat, with an addition permitted in 2005.
+- [2907](2907/) — A 1900 single-family house, with window replacement permitted in 1999.
+- [2921–2923](2921/) — A 1932 single-family house, with a bathroom remodel permitted in 2012.
+- [2929](2929/) — A 1905 two-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [2935](2935/) — A 1936 single-family house, with reroofing permitted in 2026.
+- [2937–2939](2937/) — A 1906 three-flat, with a kitchen and bathroom remodel permitted in 2024.
+- [2945–2949](2945/) — A 1906 three-flat, with fire repair permitted in 1991.
+- [2951](2951/) — A 1910 two-flat, with window replacement permitted in 2016.
+- [2955–2957](2955/) — A 1928 two-flat, with deck work permitted in 2022.
+- [2959–2967](2959/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2013.
+- [2969](2969/) — A 1914 single-family house, with reroofing permitted in 2015.
+- [2975](2975/) — A 1900 single-family house.
+- [2981–2983](2981/) — A 1902 two-flat, with a rear addition permitted in 1990.
+- [2989](2989/) — A 1900 two-flat, with stair work permitted in 2014.
+- [2995](2995/) — A 1900 single-family house, with reroofing permitted in 2018.
+- [3001–3005](3001/) — A 1923 three-flat, with stair work permitted in 2019.
+- [3007](3007/) — A 1923 single-family house, with a kitchen and bathroom remodel permitted in 2012.
+- [3015](3015/) — A 1900 single-family house, with reroofing permitted in 1996.
+- [3019](3019/) — A 1907 two-flat, with facade work permitted in 2004.
+- [3025–3027](3025/) — A 1927 two-flat, with a kitchen and bathroom remodel permitted in 2018.
+- [3033](3033/) — A 1912 single-family house, with a seismic retrofit permitted in 2025.
+- [3037–3043](3037/) — A 1907 6-unit apartment building, with an accessory dwelling unit permitted in 2023.
+- [3059–3063](3059/) — A 1900 flats building, with fire repair permitted in 2008.
+- [3071](3071/) — A 1907 single-family house, with deck work permitted in 2020.
+- [3085](3085/) — A 1956 3-unit apartment building, with a seismic retrofit permitted in 2016.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

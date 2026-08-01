@@ -1,0 +1,111 @@
+{
+  "address": "161–163 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/161/",
+  "apn": "3589026",
+  "block": "3589",
+  "lot": "026",
+  "eas_baseid": "361187",
+  "coordinates": {
+    "lat": 37.760831,
+    "lng": -122.419828
+  },
+  "address_range": "161–163",
+  "street_numbers_on_parcel": [
+    "161",
+    "163"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2400,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0163 0161 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 777114,
+    "assessed_improvement_value": 369973,
+    "last_sale_date": "2006-08-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200902041380",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2009-02-04",
+      "status_date": "2009-11-23",
+      "estimated_cost": 12000,
+      "revised_cost": 15800,
+      "description": "convert 2 units bldg to 3 units bldg, remove staircase joining upstairs and downstairs, put in kitchen in downstair unit, hook ups already there.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409204629",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-20",
+      "status_date": "2005-05-10",
+      "estimated_cost": 6000,
+      "revised_cost": 11000,
+      "description": "remodel of kitchen and bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908435",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-16",
+      "status_date": "1990-06-28",
+      "estimated_cost": 1500,
+      "description": "to remove bedroom & kitchen from ground floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=161",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589026",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

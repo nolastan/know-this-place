@@ -1,0 +1,98 @@
+{
+  "address": "731–733 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/731/",
+  "apn": "3591012",
+  "block": "3591",
+  "lot": "012",
+  "eas_baseid": "361330",
+  "coordinates": {
+    "lat": 37.761462,
+    "lng": -122.416774
+  },
+  "address_range": "731–733",
+  "street_numbers_on_parcel": [
+    "731",
+    "733"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 8,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 8,
+    "lot_area_sqft": 7348,
+    "building_area_sqft": 3680,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0733 0731 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166075,
+    "assessed_improvement_value": 187446
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810042279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-04",
+      "status_date": "2018-11-19",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair brick work on front facade of building. 60 sq ft of repair, repointing, replacement of mortar joints in kind at 2nd level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801088063",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-08",
+      "status_date": "2018-02-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=731",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3591012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3591&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3591012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

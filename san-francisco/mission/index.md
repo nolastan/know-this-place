@@ -4,4 +4,103 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 
 ## Streets documented so far
 
-- [21st Street](21st-street/) — A two-flat c.1900 building on Liberty Hill; Mel Blanc's childhood home.
+- [11th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
+- [12th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
+- [14th Street](14th-street/) — 46 buildings, built 1898–1975; 2 in the Ramona Street Historic District.
+- [15th Street](15th-street/) — 36 buildings, built 1875–2017; 4 in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District.
+- [16th Street](16th-street/) — 29 buildings, built 1905–2021; 5 in the 16th and Valencia Streets Post-Fire Historic District.
+- [17th Street](17th-street/) — 50 buildings, built 1900–2001.
+- [18th Street](18th-street/) — 69 buildings, built 1876–2018; 13 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [19th Street](19th-street/) — 68 buildings, built 1880–2002; 14 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [20th Street](20th-street/) — 114 buildings, built 1870–1986; 28 in the Liberty Hill Historic District.
+- [21st Street](21st-street/) — 133 buildings, built 1870–1998; 27 in the Liberty Hill Historic District.
+- [22nd Street](22nd-street/) — 132 buildings, built 1870–1978; 12 in the Horner's Addition East Historic District.
+- [23rd Street](23rd-street/) — 131 buildings, built 1878–1973; 14 in the 23rd Street Shops and Rowhouses Historic District.
+- [24th Street](24th-street/) — 139 buildings, built 1860–2020; 13 in the Horner's Addition East Historic District.
+- [25th Street](25th-street/) — 122 buildings, built 1890–1987; 7 in the Shotwell Street Historic District.
+- [26th Street](26th-street/) — 84 buildings, built 1868–1989.
+- [Adair Street](adair-street/) — 5 buildings, built 1902–1911.
+- [Alabama Street](alabama-street/) — 141 buildings, built 1900–2009; 15 in the Alabama Street Pioneers Historic District.
+- [Albion Street](albion-street/) — 40 buildings, built 1906–1990; 9 in the 16th and Valencia Streets Post-Fire Historic District.
+- [Alvarado Street](alvarado-street/) — 17 buildings, built 1880–1983.
+- [Ames Street](ames-street/) — 1 building, built 1902.
+- [Balmy Street](balmy-street/) — 4 buildings, built 1900–1950; 3 in the South Mission Avenues and Alleys Historic District.
+- [Bartlett Street](bartlett-street/) — 73 buildings, built 1880–1986.
+- [Bernice Street](bernice-street/) — 3 buildings, built 1907–1997; 2 in the Western SOMA Light Industrial and Residential Historic District.
+- [Bird Street](bird-street/) — 4 buildings, built 1900–1966.
+- [Brady Street](brady-street/) — 3 buildings, built 1906–1912; 1 in the Market Street Masonry Historic District.
+- [Brosnan Street](brosnan-street/) — 8 buildings, built 1900–1936.
+- [Bryant Street](bryant-street/) — 196 buildings, built 1890–2023; 28 in the East Mission Florida-to-Hampshire Streets Historic District.
+- [Caledonia Street](caledonia-street/) — 1 building, built 1908.
+- [Camp Street](camp-street/) — 7 buildings, built 1907–1932; 6 in the 16th and Valencia Streets Post-Fire Historic District.
+- [Capp Street](capp-street/) — 187 buildings, built 1870–2019; 11 in the Von Schroeder-Welsh Block Historic District.
+- [Cesar Chavez Street](cesar-chavez-street/) — 46 buildings, built 1900–1993.
+- [Clarion Alley](clarion-alley/) — 4 buildings, built 1908–2006; 1 in the Mission Miracle Mile at 17th Street Historic District.
+- [Clinton Park](clinton-park/) — 29 buildings, built 1885–1980; 4 in the Guerrero Street Fire Line Historic District.
+- [Colton Street](colton-street/) — 1 building, built 1908.
+- [Cumberland Street](cumberland-street/) — 22 buildings, built 1906–1933; 22 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Cunningham Place](cunningham-place/) — 3 buildings, built 1901–1910; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Cypress Street](cypress-street/) — 3 buildings, built 1900–1915.
+- [Dearborn Street](dearborn-street/) — 11 buildings, built 1900–1926.
+- [Dolores Street](dolores-street/) — 138 buildings, built 1895–2019; 20 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Dolores Terrace](dolores-terrace/) — 9 buildings, built 1906–1997.
+- [Dorland Street](dorland-street/) — 16 buildings, built 1906–1939.
+- [Duboce Avenue](duboce-avenue/) — 33 buildings, built 1900–1958; 3 in the Guerrero Street Fire Line Historic District.
+- [Elgin Park](elgin-park/) — 16 buildings, built 1906–1963; 12 in the Elgin Park-Pearl Street Reconstruction Historic District.
+- [Elizabeth Street](elizabeth-street/) — 11 buildings, built 1885–1958; 4 in the Horner's Addition East Historic District.
+- [Enterprise Street](enterprise-street/) — 1 building, built 1900.
+- [Fair Oaks Street](fair-oaks-street/) — 114 buildings, built 1870–1978; 46 in the Fair Oaks Street Historic District.
+- [Florida Street](florida-street/) — 164 buildings, built 1885–2020; 12 in the East Mission Florida-to-Hampshire Streets Historic District.
+- [Folsom Street](folsom-street/) — 179 buildings, built 1879–2021; 18 in the South Mission Avenues and Alleys Historic District.
+- [Gough Street](gough-street/) — 6 buildings, built 1906–1947.
+- [Guerrero Street](guerrero-street/) — 276 buildings, built 1873–1989; 37 in the Liberty Hill Historic District.
+- [Hampshire Street](hampshire-street/) — 197 buildings, built 1878–2012; 14 in the Hampshire Street False-Front Historic District.
+- [Harrison Street](harrison-street/) — 119 buildings, built 1870–2019; 24 in the South Mission Avenues and Alleys Historic District.
+- [Hidalgo Terrace](hidalgo-terrace/) — 12 buildings, built 1919–1925; 12 in the Hidalgo Terrace Historic District.
+- [Hill Street](hill-street/) — 28 buildings, built 1880–1989; 28 in the Liberty Hill Historic District.
+- [Hoff Street](hoff-street/) — 5 buildings, built 1906–1986.
+- [Horace Street](horace-street/) — 2 buildings, built 1900–1937; 1 in the Shotwell Street Historic District.
+- [Howard Street](howard-street/) — 10 buildings, built 1906–2019; 8 in the Western SOMA Light Industrial and Residential Historic District.
+- [Isis Street](isis-street/) — 4 buildings, built 1906–1914; 4 in the Western SOMA Light Industrial and Residential Historic District.
+- [Jessie Street](jessie-street/) — 3 buildings, built 1906–1907; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
+- [Julian Avenue](julian-avenue/) — 17 buildings, built 1900–1951.
+- [Juri Street](juri-street/) — 8 buildings, built 1898–1918; 7 in the Juri Street Historic District.
+- [Kissling Street](kissling-street/) — 3 buildings, built 1906–1923; 3 in the Western SOMA Light Industrial and Residential Historic District.
+- [Lafayette Street](lafayette-street/) — 7 buildings, built 1906–1993; 7 in the Western SOMA Light Industrial and Residential Historic District.
+- [Lapidge Street](lapidge-street/) — 23 buildings, built 1900–1993; 18 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Lexington Street](lexington-street/) — 85 buildings, built 1876–1990; 30 in the Liberty Hill Historic District.
+- [Liberty Street](liberty-street/) — 45 buildings, built 1880–1965; 40 in the Liberty Hill Historic District.
+- [Lilac Street](lilac-street/) — 3 buildings, built 1890–1914.
+- [Linda Street](linda-street/) — 29 buildings, built 1900–1949; 17 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Lucky Street](lucky-street/) — 17 buildings, built 1890–1998; 13 in the South Mission Avenues and Alleys Historic District.
+- [Mariposa Street](mariposa-street/) — 11 buildings, built 1908–1991.
+- [Market Street](market-street/) — 1 building, built 1979.
+- [Mccoppin Street](mccoppin-street/) — 4 buildings, built 1907–1996; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
+- [Minna Street](minna-street/) — 17 buildings, built 1906–1938; 6 in the Western SOMA Light Industrial and Residential Historic District.
+- [Mission Street](mission-street/) — 77 buildings, built 1885–2023; 7 in the Mission Miracle Mile at 17th Street Historic District.
+- [Natoma Street](natoma-street/) — 25 buildings, built 1906–1990; 7 in the Western SOMA Light Industrial and Residential Historic District.
+- [Oakwood Street](oakwood-street/) — 20 buildings, built 1900–1988; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Orange Alley](orange-alley/) — 1 building, built 1900.
+- [Pearl Street](pearl-street/) — 17 buildings, built 1906–1926; 15 in the Elgin Park-Pearl Street Reconstruction Historic District.
+- [Pink Alley](pink-alley/) — 1 building, built 1907; 1 in the Elgin Park-Pearl Street Reconstruction Historic District.
+- [Potrero Avenue](potrero-avenue/) — 118 buildings, built 1890–2016.
+- [Ramona Avenue](ramona-avenue/) — 21 buildings, built 1875–1923; 21 in the Ramona Street Historic District.
+- [Rondel Place](rondel-place/) — 12 buildings, built 1904–1925.
+- [Rosemont Place](rosemont-place/) — 5 buildings, built 1906–1976.
+- [San Bruno Avenue](san-bruno-avenue/) — 55 buildings, built 1895–1938.
+- [San Carlos Street](san-carlos-street/) — 80 buildings, built 1880–1986; 22 in the Liberty Hill Historic District.
+- [San Jose Avenue](san-jose-avenue/) — 66 buildings, built 1865–2017; 5 in the Horner's Addition East Historic District.
+- [Shotwell Street](shotwell-street/) — 182 buildings, built 1875–2017; 91 in the Shotwell Street Historic District.
+- [South Van Ness Avenue](south-van-ness-avenue/) — 195 buildings, built 1863–2021; 16 in the Shotwell Street Historic District.
+- [Spencer Street](spencer-street/) — 1 building, built 1904.
+- [Stevenson Street](stevenson-street/) — 9 buildings, built 1906–1926; 9 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
+- [Sycamore Street](sycamore-street/) — 14 buildings, built 1906–1928; 11 in the Sycamore Street Reconstruction Historic District.
+- [Treat Avenue](treat-avenue/) — 105 buildings, built 1880–1982; 16 in the South Mission Avenues and Alleys Historic District.
+- [Treat Way](treat-way/) — 1 building.
+- [Utah Street](utah-street/) — 72 buildings, built 1890–1978.
+- [Valencia Street](valencia-street/) — 123 buildings, built 1870–2017; 15 in the Liberty Hill Historic District.
+- [Vermont Street](vermont-street/) — 13 buildings, built 1890–1931.
+- [Virgil Street](virgil-street/) — 3 buildings, built 1902–1936.
+- [Wiese Street](wiese-street/) — 1 building, built 2000.
+- [Woodward Street](woodward-street/) — 20 buildings, built 1906–2018; 20 in the Woodward St. Romeo Flats Reconstruction Historic District.
+- [York Street](york-street/) — 184 buildings, built 1880–1999; 23 in the East Mission Florida-to-Hampshire Streets Historic District.

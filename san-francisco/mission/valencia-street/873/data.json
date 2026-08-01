@@ -1,0 +1,124 @@
+{
+  "address": "873 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/873/",
+  "apn": "3596088",
+  "block": "3596",
+  "lot": "088",
+  "eas_baseid": "361526",
+  "coordinates": {
+    "lat": 37.759011,
+    "lng": -122.421039
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 4727,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0875 0873 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111008,
+    "assessed_improvement_value": 233146
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208231052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-23",
+      "status_date": "2022-10-14",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804179971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-17",
+      "status_date": "2008-04-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "revision to pa# 2007/11/06/7430 to increase valuation by $15,000 per inspector.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711067430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-06",
+      "status_date": "2008-04-23",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "repair existing (rear) stairs. new footings, new post, new tread & risers (stairs at same location). repair only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8914052",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-08-04",
+      "status_date": "1990-06-06",
+      "estimated_cost": 4884,
+      "description": "vinyl siding (alside) to back and front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8412639",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-12-03",
+      "status_date": "1985-08-30",
+      "estimated_cost": 4000,
+      "description": "lay foundation 7'8\" x 15'6\" frame",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=873",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596088&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=088",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596088",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "address": "2687 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2687/",
+  "apn": "4152038A",
+  "block": "4152",
+  "lot": "038A",
+  "eas_baseid": "369628",
+  "coordinates": {
+    "lat": 37.755844,
+    "lng": -122.408241
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1330,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2687 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 632893,
+    "assessed_improvement_value": 271229
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111122270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-12",
+      "status_date": "2021-11-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401287235",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-28",
+      "status_date": "2014-01-28",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002293032",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-29",
+      "status_date": "2000-06-20",
+      "revised_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824821",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-04",
+      "status_date": "2000-04-17",
+      "estimated_cost": 9000,
+      "description": "repl 11 windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2687",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152038A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=038A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152038A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

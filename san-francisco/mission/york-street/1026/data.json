@@ -1,0 +1,112 @@
+{
+  "address": "1026 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1026/",
+  "apn": "4151004",
+  "block": "4151",
+  "lot": "004",
+  "eas_baseid": "369566",
+  "coordinates": {
+    "lat": 37.755547,
+    "lng": -122.408724
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1875,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1028 1026 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46181,
+    "assessed_improvement_value": 70432
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9505053",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-04-07",
+      "status_date": "1996-01-09",
+      "estimated_cost": 1500,
+      "description": "comply w/violation notice. remove illegal kitchen, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-11-29",
+      "status_date": "1993-12-02",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9120429",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120429",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-29",
+      "status_date": "1993-10-01",
+      "estimated_cost": 8000,
+      "revised_cost": 20570,
+      "description": "illegal unit-remove kitchen on ground floor/lglize living sp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815671",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-10-12",
+      "status_date": "1989-05-05",
+      "estimated_cost": 1000,
+      "description": "repair of stairs/repair existing condition only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4151004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4151&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4151004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

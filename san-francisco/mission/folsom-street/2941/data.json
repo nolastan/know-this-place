@@ -1,0 +1,104 @@
+{
+  "address": "2941 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2941/",
+  "apn": "6524028",
+  "block": "6524",
+  "lot": "028",
+  "eas_baseid": "401161",
+  "coordinates": {
+    "lat": 37.750185,
+    "lng": -122.413522
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 3740,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2943 2941 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32077,
+    "assessed_improvement_value": 117908
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611223308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-22",
+      "status_date": "2017-06-08",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "install residential elevator two stop 2 new electrical circuits for eq.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M740988",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-22",
+      "status_date": "2016-11-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705141142",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-14",
+      "status_date": "2007-05-14",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2941",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

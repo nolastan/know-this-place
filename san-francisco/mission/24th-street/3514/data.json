@@ -1,0 +1,140 @@
+{
+  "address": "3514 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3514/",
+  "apn": "3645008",
+  "block": "3645",
+  "lot": "008",
+  "eas_baseid": "364208",
+  "coordinates": {
+    "lat": 37.752279,
+    "lng": -122.422036
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3772,
+    "building_area_sqft": 1700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3514 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 44196,
+    "assessed_improvement_value": 210765
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M303587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-02-22",
+      "status_date": "2012-02-22",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108303590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-30",
+      "status_date": "2012-11-30",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "provide new hvac installation at the ground floor. same location of the existing one.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108081953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-08",
+      "status_date": "2012-11-30",
+      "estimated_cost": 30000,
+      "revised_cost": 52000,
+      "description": "revision to pa# 2010.10.28.3925. provide (n) den, bedroom, add a tub, and cut (e) brick chimney and supported by steel tube at ground floor. change the storage to new bathrm at 1st fl. strengthen ceiling joist at 2nd fl and structural strenghtening upgrade at ground and 1st fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010283925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-28",
+      "status_date": "2012-11-30",
+      "estimated_cost": 32000,
+      "revised_cost": 45000,
+      "description": "replace approx 80% of foundation, add new deck & stairs at rear of building. remodel kitchen. remove (e) plaster at basement and first floor and replace with new dry wall and insulation at wall & ceiling; drywall replacement not to exceed two-thirds of entire building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407900",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-20",
+      "status_date": "1984-10-17",
+      "estimated_cost": 4500,
+      "description": "repair fire damaged roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3514",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42203646617156%2037.75227876046285)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

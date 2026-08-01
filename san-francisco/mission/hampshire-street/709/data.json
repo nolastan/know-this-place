@@ -1,0 +1,125 @@
+{
+  "address": "709 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/709/",
+  "apn": "4078016",
+  "block": "4078",
+  "lot": "016",
+  "eas_baseid": "368179",
+  "coordinates": {
+    "lat": 37.760176,
+    "lng": -122.407711
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2784,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0709 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101543,
+    "assessed_improvement_value": 233575
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808107100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-10",
+      "status_date": "2018-08-27",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "fix dryrot on back side 6'x 8' in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507101241",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-10",
+      "status_date": "2015-07-23",
+      "estimated_cost": 8860,
+      "revised_cost": 8860,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204118114",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-11",
+      "status_date": "2012-07-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "install stair lift in front stairs building to sidewalk.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902090",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-02",
+      "status_date": "1999-12-13",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623691",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-12-10",
+      "status_date": "1997-08-21",
+      "estimated_cost": 18000,
+      "revised_cost": 26000,
+      "description": "construct handicapped bath & rms at ground floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=709",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4078016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4078&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4078016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

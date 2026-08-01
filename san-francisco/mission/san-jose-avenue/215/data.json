@@ -1,0 +1,125 @@
+{
+  "address": "215 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/215/",
+  "apn": "6514024A",
+  "block": "6514",
+  "lot": "024A",
+  "eas_baseid": "400840",
+  "coordinates": {
+    "lat": 37.75174,
+    "lng": -122.421289
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 5950,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0215 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1245706,
+    "assessed_improvement_value": 533868,
+    "last_sale_date": "2000-08-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510238021",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-23",
+      "status_date": "2026-04-21",
+      "estimated_cost": 38000,
+      "revised_cost": 40000,
+      "description": "replace fire alarm to meet sf/ca codes and add lf horns in units and add wireless radio monitor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810304520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-30",
+      "status_date": "2018-12-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201707202419 soft story retrofit. change 2 simpson bolted steel moment frames to 1 omf on line #5 and chang momement frame to 2 each simpson ssw18-7 at line #1 at garage door opening and revise foundatoin plan, shear walls and hd as shown on plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707202419",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-20",
+      "status_date": "2018-08-21",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "soft story retrofit per sfebc chapter 4d, 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712051",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-06-30",
+      "status_date": "1997-10-27",
+      "estimated_cost": 400,
+      "description": "repair rear stairs as per inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307780",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-10",
+      "status_date": "1983-11-15",
+      "estimated_cost": 6200,
+      "description": "installation of 2 solar panels,supply domestic hot water",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=215",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6514024A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6514&lot=024A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6514024A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

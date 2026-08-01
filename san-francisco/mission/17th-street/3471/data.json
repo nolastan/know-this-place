@@ -1,0 +1,108 @@
+{
+  "address": "3471–3475 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3471/",
+  "apn": "3577039",
+  "block": "3577",
+  "lot": "039",
+  "eas_baseid": "360406",
+  "coordinates": {
+    "lat": 37.762985,
+    "lng": -122.423362
+  },
+  "address_range": "3471–3475",
+  "street_numbers_on_parcel": [
+    "3471",
+    "3473",
+    "3475"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 4680,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3475 3471 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 80836,
+    "assessed_improvement_value": 184805
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606160174",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-16",
+      "status_date": "2016-11-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair work damaged & done by tenants such as dry wall/sub paining., floor covering, windows etc. drywall to be replaced in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M99226",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-14",
+      "status_date": "2007-12-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017293",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-28",
+      "status_date": "1991-02-28",
+      "estimated_cost": 2300,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3471",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "address": "65–67 Ramona Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/ramona-avenue/65/",
+  "apn": "3545085",
+  "block": "3545",
+  "lot": "085",
+  "eas_baseid": "359008",
+  "coordinates": {
+    "lat": 37.766977,
+    "lng": -122.425145
+  },
+  "address_range": "65–67",
+  "street_numbers_on_parcel": [
+    "65",
+    "67"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2848,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0067 0065 RAMONA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1014105,
+    "assessed_improvement_value": 434612,
+    "last_sale_date": "2009-01-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ramona Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1911–1923",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202207128248",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-07-12",
+      "status_date": "2024-02-22",
+      "estimated_cost": 99886,
+      "revised_cost": 128675,
+      "description": "remodel (e) storage space & add a bathroom @ the area of the remodel. horizontal addition @ rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507282689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-28",
+      "status_date": "2017-02-02",
+      "estimated_cost": 18000,
+      "revised_cost": 20000,
+      "description": "rebuild rear egress stairs as in kind. no fire wall. repair laundry area in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206293748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-29",
+      "status_date": "2012-08-17",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel bathroom: add toilet, add shower, move sink, remove 2 closet walls to enlarge bathroom & allow access from bedroom, install new tub in same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205100223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-10",
+      "status_date": "2012-08-17",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "replace (16) windows retrofit installation. style like for like. aluminum to fiberlass. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305811",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-04-09",
+      "status_date": "1994-01-04",
+      "estimated_cost": 4000,
+      "description": "repair (e) stair, no changes to original stair configuration",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RAMONA&street_type=AVE&address_number=65",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=085",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545085",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42514536730046%2037.7669766376504)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

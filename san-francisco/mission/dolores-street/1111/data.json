@@ -1,0 +1,105 @@
+{
+  "address": "1111 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1111/",
+  "apn": "6511037",
+  "block": "6511",
+  "lot": "037",
+  "eas_baseid": "400754",
+  "coordinates": {
+    "lat": 37.751535,
+    "lng": -122.424827
+  },
+  "parcel": {
+    "year_built": 1956,
+    "units": 2,
+    "stories": 1,
+    "bathrooms": 3,
+    "lot_area_sqft": 1624,
+    "building_area_sqft": 1671,
+    "basement_area_sqft": 422,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1111 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 966783,
+    "assessed_improvement_value": 578574,
+    "last_sale_date": "2009-01-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201605258269",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2016-05-25",
+      "status_date": "2022-06-27",
+      "estimated_cost": 450000,
+      "revised_cost": 450000,
+      "description": "vertical addition of 3rd fl for (n) kitchen, dining & living room. interior remodel. n/a for maher ordinance no.155-13.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201202214551",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-21",
+      "status_date": "2012-05-11",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "the project is a revision to 201012247385 s1. the studio oat ground floor will be converted to 1 bedroom unit by moving the kitchen to the living room/bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012247385",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-12-24",
+      "status_date": "2012-05-11",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel the facade with new windows & finishes & to remodel the kitchen & baths & raise the ceiling in the living /dining , kitchen area of the upper unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1111",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "address": "3535 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3535/",
+  "apn": "3597063",
+  "block": "3597",
+  "lot": "063",
+  "eas_baseid": "361599",
+  "coordinates": {
+    "lat": 37.759817,
+    "lng": -122.422232
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "bathrooms": 8,
+    "lot_area_sqft": 5349,
+    "building_area_sqft": 12666,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3535 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1654909,
+    "assessed_improvement_value": 183874,
+    "last_sale_date": "2014-04-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "survey_name": "B'NAI DAVID CHEVRA MIKVAH ISRAEL",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202302031366",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2023-02-03",
+      "status_date": "2024-08-13",
+      "estimated_cost": 5000,
+      "description": "change of occupacy from r-3 2-unit to r-2 4 unit. no work proposed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201303179",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-30",
+      "status_date": "2012-01-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110207248",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2011-10-20",
+      "status_date": "2026-01-09",
+      "description": "remove",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110207254",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-20",
+      "status_date": "2011-10-20",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "selected/limited finish removal for engineer. to be replaced when complete. for exploratory work at multipurpose room & upper floor meeting room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900059",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-01-03",
+      "status_date": "1989-05-04",
+      "estimated_cost": 30000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8000370",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1980-01-11",
+      "status_date": "1981-12-24",
+      "estimated_cost": 50000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3535",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42223209046296%2037.75981726179666)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

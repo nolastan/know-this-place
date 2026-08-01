@@ -1,0 +1,125 @@
+{
+  "address": "836–838 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/836/",
+  "apn": "3607006",
+  "block": "3607",
+  "lot": "006",
+  "eas_baseid": "362223",
+  "coordinates": {
+    "lat": 37.75775,
+    "lng": -122.423744
+  },
+  "address_range": "836–838",
+  "street_numbers_on_parcel": [
+    "836",
+    "838"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0838 0836 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1541404,
+    "assessed_improvement_value": 660601,
+    "last_sale_date": "2021-07-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202110070072",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-10-07",
+      "status_date": "2021-10-07",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "termits and dryrot report # 20656 10/12/2020",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810093791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-09",
+      "status_date": "2009-03-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "work to be done at 836 guerrero st.: tear out lath and plaster, install new sheetrck and new cabinets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808209601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-20",
+      "status_date": "2008-08-27",
+      "estimated_cost": 4700,
+      "revised_cost": 4700,
+      "description": "replace stair treads at existing rear stairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=836",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42374441695185%2037.757749722699245)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

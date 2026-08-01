@@ -1,0 +1,133 @@
+{
+  "address": "2851 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2851/",
+  "apn": "4148001",
+  "block": "4148",
+  "lot": "001",
+  "eas_baseid": "369439",
+  "coordinates": {
+    "lat": 37.75566,
+    "lng": -122.411397
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 1160,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2853 2851 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 114673,
+    "assessed_improvement_value": 90514
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201204027305",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-04-02",
+      "status_date": "2012-04-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M34969",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-24",
+      "status_date": "2005-10-24",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404201695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-20",
+      "status_date": "2004-05-27",
+      "estimated_cost": 750,
+      "revised_cost": 750,
+      "description": "replace exerior plywood on west side of grage property line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220290",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-19",
+      "status_date": "1993-09-14",
+      "estimated_cost": 4600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-09-12",
+      "status_date": "1985-10-09",
+      "estimated_cost": 3600,
+      "description": "apply alcoa siding to left side of home",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-07-07",
+      "status_date": "1983-07-14",
+      "estimated_cost": 2800,
+      "description": "install insulation , alcoa dbl 4\" vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2851",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

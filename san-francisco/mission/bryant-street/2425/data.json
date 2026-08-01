@@ -1,0 +1,124 @@
+{
+  "address": "2425 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2425/",
+  "apn": "4151022B",
+  "block": "4151",
+  "lot": "022B",
+  "eas_baseid": "369587",
+  "coordinates": {
+    "lat": 37.755595,
+    "lng": -122.409059
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2722,
+    "building_area_sqft": 1375,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2425 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119464,
+    "assessed_improvement_value": 411670
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206015401",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-01",
+      "status_date": "2023-10-17",
+      "estimated_cost": 28900,
+      "revised_cost": 28900,
+      "description": "1st floor: add media room. 2nd floor: remodel kitchen. infill lightwell",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207175048",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-07-17",
+      "status_date": "2014-04-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace shower. remove tub, retile, add electrical outlets. bath remodel at 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-01",
+      "status_date": "1994-03-10",
+      "estimated_cost": 9750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010085",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-23",
+      "status_date": "1990-11-20",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "removing existing kitchen cabinets; install new cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003674",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-02-26",
+      "status_date": "1990-11-30",
+      "estimated_cost": 35000,
+      "description": "new kitchen remodel new family room 2 bedrooms and bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2425",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4151022B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4151&lot=022B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4151022B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

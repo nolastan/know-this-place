@@ -1,0 +1,62 @@
+{
+  "address": "655 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/655/",
+  "apn": "4021003",
+  "block": "4021",
+  "lot": "003",
+  "eas_baseid": "473579",
+  "coordinates": {
+    "lat": 37.761034,
+    "lng": -122.411506
+  },
+  "parcel": {
+    "year_built": 2009,
+    "units": 24,
+    "bedrooms": 24,
+    "building_area_sqft": 16759,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0655 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 549154,
+    "assessed_improvement_value": 4316335
+  },
+  "permits": [
+    {
+      "number": "M84207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-30",
+      "status_date": "2007-08-30",
+      "revised_cost": 0,
+      "description": "additional address for senior residential upstairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=655",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4021003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4021&lot=003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

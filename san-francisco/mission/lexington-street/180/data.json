@@ -1,0 +1,131 @@
+{
+  "address": "180–182 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/180/",
+  "apn": "3589081",
+  "block": "3589",
+  "lot": "081",
+  "eas_baseid": "361237",
+  "coordinates": {
+    "lat": 37.76049,
+    "lng": -122.420902
+  },
+  "address_range": "180–182",
+  "street_numbers_on_parcel": [
+    "180",
+    "182"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2520,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0182 0180 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 795185,
+    "assessed_improvement_value": 428172
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M178185",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-25",
+      "status_date": "2009-08-25",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M70049",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-23",
+      "status_date": "2007-05-23",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M22182",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-12",
+      "status_date": "2002-11-12",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9421241",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-28",
+      "status_date": "1995-08-22",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=180",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=081",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589081",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42090171253999%2037.7604896016174)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

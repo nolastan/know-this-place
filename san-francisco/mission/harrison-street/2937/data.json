@@ -1,0 +1,154 @@
+{
+  "address": "2937–2939 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2937/",
+  "apn": "4271031",
+  "block": "4271",
+  "lot": "031",
+  "eas_baseid": "370857",
+  "coordinates": {
+    "lat": 37.750451,
+    "lng": -122.411374
+  },
+  "address_range": "2937–2939",
+  "street_numbers_on_parcel": [
+    "2937",
+    "2939"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 3,
+    "bedrooms": 9,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3120,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2939 2937 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1002841,
+    "assessed_improvement_value": 429789,
+    "last_sale_date": "2022-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602115764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-11",
+      "status_date": "2026-02-24",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace drywall after electrical rewire in (e) walls. no structural changes layout or use. patch of small holes not entire walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202502049682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-04",
+      "status_date": "2025-02-06",
+      "estimated_cost": 1,
+      "revised_cost": 3000,
+      "description": "revision to bpa: 202410304056 to include 4 more front windows with fiberglass. replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410304056",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-30",
+      "status_date": "2025-02-06",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace 6 front bay windows with fiberglass. replace in-kind. no change in size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402236474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-23",
+      "status_date": "2024-07-16",
+      "estimated_cost": 25000,
+      "revised_cost": 50000,
+      "description": "remodel one kitchen and one bathroom, same layout. add new subpanel to 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M180485",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-23",
+      "status_date": "2009-09-23",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904226795",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-22",
+      "status_date": "2009-04-30",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109249047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-24",
+      "status_date": "2001-11-05",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove (e) kitchen cabinets & utility to saura",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2937",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

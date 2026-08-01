@@ -1,0 +1,111 @@
+{
+  "address": "2817 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/2817/",
+  "apn": "4081016",
+  "block": "4081",
+  "lot": "016",
+  "eas_baseid": "368234",
+  "coordinates": {
+    "lat": 37.760295,
+    "lng": -122.410507
+  },
+  "parcel": {
+    "year_built": 1880,
+    "units": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1250,
+    "building_area_sqft": 1090,
+    "lot_depth_ft": 50,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2817 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79633,
+    "assessed_improvement_value": 27858
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8813083",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-01",
+      "status_date": "1988-09-07",
+      "estimated_cost": 1,
+      "description": "for final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714277",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-10-05",
+      "status_date": "1988-07-22",
+      "estimated_cost": 1500,
+      "description": "re #8606441, no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606441",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-06-03",
+      "status_date": "1989-01-10",
+      "estimated_cost": 5000,
+      "description": "replace foundation & walls. raise ht of bldg by 28f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606444",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-06-02",
+      "status_date": "1987-07-22",
+      "estimated_cost": 800,
+      "description": "take plaster out of dwelling unit/no sheet rock/no structurl",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=2817",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4081016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

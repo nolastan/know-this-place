@@ -1,0 +1,160 @@
+{
+  "address": "3059–3063 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/3059/",
+  "apn": "4338018",
+  "block": "4338",
+  "lot": "018",
+  "eas_baseid": "371424",
+  "coordinates": {
+    "lat": 37.748752,
+    "lng": -122.411211
+  },
+  "address_range": "3059–3063",
+  "street_numbers_on_parcel": [
+    "3059",
+    "3061",
+    "3063"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 4791,
+    "building_area_sqft": 3418,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3063 3059 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244031,
+    "assessed_improvement_value": 153438,
+    "last_sale_date": "1987-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200811066044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-06",
+      "status_date": "2009-03-31",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "fire repair, burnt siding, minial framing and drywall repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810224803",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-22",
+      "status_date": "2008-10-22",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "remove asbestos containing exterior transite siding. (800 sq. ft.) removal & disposal only. provide bay area air quality app.)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610023839",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-02",
+      "status_date": "2006-10-20",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106765",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-22",
+      "status_date": "1991-08-22",
+      "estimated_cost": 4000,
+      "description": "complete work under permit #8813620",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106766",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-22",
+      "status_date": "1991-08-22",
+      "estimated_cost": 1,
+      "description": "complete work under permit #9015389",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-22",
+      "status_date": "1991-12-18",
+      "estimated_cost": 3000,
+      "description": "replace plaster destroyedby earthequake with sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015389",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-02",
+      "status_date": "1991-05-15",
+      "estimated_cost": 800,
+      "description": "raise foundation on north wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813620",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-09-13",
+      "status_date": "1991-05-15",
+      "estimated_cost": 18000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=3059",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

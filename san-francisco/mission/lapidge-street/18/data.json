@@ -1,0 +1,141 @@
+{
+  "address": "18 Lapidge Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lapidge-street/18/",
+  "apn": "3588033",
+  "block": "3588",
+  "lot": "033",
+  "eas_baseid": "361100",
+  "coordinates": {
+    "lat": 37.761257,
+    "lng": -122.422582
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1083,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0018 LAPIDGE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1136553,
+    "assessed_improvement_value": 487093,
+    "last_sale_date": "2021-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Evaluation Response",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M202348",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-14",
+      "status_date": "2010-05-14",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004200555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-20",
+      "status_date": "2010-05-18",
+      "estimated_cost": 9815,
+      "revised_cost": 9815,
+      "description": "install vinyl siding on left and back sides of house only.not visible from the street. no structural changes 1300 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004140225",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-14",
+      "status_date": "2010-04-14",
+      "estimated_cost": 7585,
+      "revised_cost": 7585,
+      "description": "replace 9 windows into extg opening. no structural work. not visible from the street.max u factor .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624445",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-12-20",
+      "status_date": "1997-06-11",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810951",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1988-08-02",
+      "status_date": "1988-12-13",
+      "estimated_cost": 500,
+      "description": "rat proof basement approx 400 sq. ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAPIDGE&street_type=ST&address_number=18",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42258190983094%2037.76125693558826)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

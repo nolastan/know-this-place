@@ -1,0 +1,128 @@
+{
+  "address": "2985–2987 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2985/",
+  "apn": "6524041",
+  "block": "6524",
+  "lot": "041",
+  "eas_baseid": "401173",
+  "coordinates": {
+    "lat": 37.74958,
+    "lng": -122.413465
+  },
+  "address_range": "2985–2987",
+  "street_numbers_on_parcel": [
+    "2985",
+    "2987"
+  ],
+  "parcel": {
+    "year_built": 1979,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 3200,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2985 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 132015,
+    "assessed_improvement_value": 253893
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502049615",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-04",
+      "status_date": "2025-02-04",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "we are replacing the exterior front only siding and trim like for like, plywood might be installed per customer. james hardies shiplop siding 300 -400 approx sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311121593",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-11-12",
+      "status_date": "2013-11-12",
+      "estimated_cost": 6700,
+      "revised_cost": 6700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215302",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-04",
+      "status_date": "1992-10-14",
+      "estimated_cost": 1650,
+      "description": "repair siding at top area, at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309115",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-09-14",
+      "status_date": "1985-05-07",
+      "estimated_cost": 3000,
+      "description": "use as per plan basement not to be used as living quarters",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110502",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-11",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2985",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

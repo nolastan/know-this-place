@@ -1,0 +1,159 @@
+{
+  "address": "756 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/756/",
+  "apn": "4078003C",
+  "block": "4078",
+  "lot": "003C",
+  "eas_baseid": "368159",
+  "coordinates": {
+    "lat": 37.759889,
+    "lng": -122.407336
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2424,
+    "basement_area_sqft": 710,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0756 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1017087,
+    "assessed_improvement_value": 938924,
+    "last_sale_date": "2019-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001162084",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-16",
+      "status_date": "2020-07-28",
+      "estimated_cost": 48000,
+      "revised_cost": 78000,
+      "description": "interior ground floor remodel with 2 bedrooms and full bathroom. add new deck on ground floor less then 10' high. change front windows in kind with aluminum clad.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912038584",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-03",
+      "status_date": "2020-07-28",
+      "estimated_cost": 52000,
+      "revised_cost": 80000,
+      "description": "propose new stair access from garage floor to 2nd floor. 2nd fl - remove wall to create open kitchen connect to dining area. no change of (e) bldg envelop and facade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911137216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-13",
+      "status_date": "2020-07-28",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "demo minimum sheerock to expose the stud & foumndation for site inspetoin by engineer & constractor. 150sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812208859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-20",
+      "status_date": "2019-02-14",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001044103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-04",
+      "status_date": "2010-01-15",
+      "estimated_cost": 16870,
+      "revised_cost": 16870,
+      "description": "section i items in fox structural & termite report #12869 dated 11/17/09, items #'s 1b,1d,1f,1g,1h,2a,3a,3b,5a,5c.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400434",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-01-11",
+      "status_date": "1994-01-20",
+      "estimated_cost": 1,
+      "description": "extension (renewal appln #9309070 for final inspection)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310334",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-18",
+      "status_date": "1993-10-25",
+      "estimated_cost": 3950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-01",
+      "status_date": "1993-07-16",
+      "estimated_cost": 4000,
+      "description": "dry rot repair, replace deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=756",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4078003C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4078&lot=003C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4078003C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

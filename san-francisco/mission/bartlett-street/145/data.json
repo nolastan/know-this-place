@@ -1,0 +1,136 @@
+{
+  "address": "145 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/145/",
+  "apn": "3636044A",
+  "block": "3636",
+  "lot": "044A",
+  "eas_baseid": "363811",
+  "coordinates": {
+    "lat": 37.754667,
+    "lng": -122.419471
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 5871,
+    "building_area_sqft": 3580,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0147 0145 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 295338,
+    "assessed_improvement_value": 258730,
+    "last_sale_date": "1990-07-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202201146012",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-14",
+      "status_date": "2022-06-06",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: existing kitchen remodeling: install subpanel: partial electric rewiring work. install 8 recessed lights. in one unit bartlett st. sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1111047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-17",
+      "status_date": "2019-07-17",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806051043",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-05",
+      "status_date": "2018-06-05",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "regular repair and maintenamce of front stairs; wood treads and rustic wood siding to match existing; less than 50% repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805229845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-22",
+      "status_date": "2018-08-08",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "comply with nov #201865701. insulate vapor burner, new siding was removed to replace plumbing. in kind wood siding to match existing, visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402196761",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-19",
+      "status_date": "2004-03-04",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace 25 liner foot of foundation eastwall with 8\" wude cibc,wakkm 15\"footing,7\" thickness of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416106",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-03",
+      "status_date": "1995-06-15",
+      "estimated_cost": 2500,
+      "description": "repair front staircase",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=145",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3636044A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3636&lot=044A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3636044A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

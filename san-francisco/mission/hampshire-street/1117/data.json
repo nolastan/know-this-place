@@ -1,0 +1,105 @@
+{
+  "address": "1117 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1117/",
+  "apn": "4211025",
+  "block": "4211",
+  "lot": "025",
+  "eas_baseid": "370262",
+  "coordinates": {
+    "lat": 37.753867,
+    "lng": -122.407105
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 955,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1117 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 789600,
+    "assessed_improvement_value": 338400,
+    "last_sale_date": "2017-02-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602125806",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-06-30",
+      "status_date": "2026-06-30",
+      "estimated_cost": 190000,
+      "description": "residence remodel and addition, including partial demo at the rear and ground level excavation to increase floor to ceiling height.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307142242",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-07-14",
+      "status_date": "2023-07-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312265044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-26",
+      "status_date": "2014-03-04",
+      "estimated_cost": 1000,
+      "revised_cost": 2000,
+      "description": "remove and replace front ally door. remove wooden sach front alley window and install new single hung block frame doule insualted millguard window. replace with fiberglass divded light window.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1117",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4211025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4211&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4211025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

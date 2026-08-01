@@ -1,0 +1,114 @@
+{
+  "address": "2334–2336 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2334/",
+  "apn": "3596007",
+  "block": "3596",
+  "lot": "007",
+  "eas_baseid": "361457",
+  "coordinates": {
+    "lat": 37.75964,
+    "lng": -122.419452
+  },
+  "address_range": "2334–2336",
+  "street_numbers_on_parcel": [
+    "2334",
+    "2336"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 13,
+    "stories": 3,
+    "rooms": 25,
+    "bathrooms": 13,
+    "lot_area_sqft": 3150,
+    "building_area_sqft": 7564,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2336 2334 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 390364,
+    "assessed_improvement_value": 575846,
+    "assessed_fixtures_value": 504,
+    "last_sale_date": "1987-03-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Mission Miracle Mile 19th to 20th Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1927; 1925–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M29728",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-13",
+      "status_date": "2004-10-13",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419302",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-22",
+      "status_date": "1995-08-11",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2334",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41945195415374%2037.759639923667216)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

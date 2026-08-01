@@ -1,0 +1,86 @@
+# Mission Street
+
+Every residential parcel on Mission Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [1551–1559](1551/) — A 1909 27-unit apartment building in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 2018.
+- [1714–1718](1714/) — A 1910 4-unit apartment building, with foundation work permitted in 2007.
+- [1720–1724](1720/) — A 1909 5-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1738–1744](1738/) — A 1907 5-unit building, with reroofing permitted in 1989.
+- [1746–1748](1746/) — A 1907 5-unit building, with reroofing permitted in 1989.
+- [1750](1750/) — A 1912 27-unit apartment building, with fire repair permitted in 2025.
+- [1754–1760](1754/) — A 1906 9-unit building with a ground-floor store, with a seismic retrofit permitted in 2018.
+- [1764–1766](1764/) — A 1906 2-unit building with a ground-floor store, with garage work permitted in 2010.
+- [1776–1780](1776/) — A 1915 16-unit apartment building, with a seismic retrofit permitted in 1997.
+- [1801](1801/) — A 2020 19-unit apartment building, with permit records from 1985 to 2024.
+- [1815–1825](1815/) — A 1949 126-unit apartment building, with reroofing permitted in 2013.
+- [1845](1845/) — A 1916 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [1863–1867](1863/) — A 2023 39-unit apartment building in the SoMa LGBTQ Historic District, with permit records from 2000 to 2023.
+- [1912–1922](1912/) — A 1907 7-unit apartment building, with a seismic retrofit permitted in 2015.
+- [1933](1933/) — A 1991 14-unit apartment building, with electrical work permitted in 2009.
+- [1945–1947](1945/) — A 1900 3-unit building with a ground-floor store, with fire repair permitted in 1996.
+- [1950–1954](1950/) — An apartment building, with a bathroom remodel permitted in 2015.
+- [2023–2045](2023/) — A 1981 132-unit apartment building, with facade work permitted in 2016.
+- [2059–2065](2059/) — A 1914 36-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with an accessory dwelling unit permitted in 2026.
+- [2060–2062](2060/) — A 1915 three-flat in the Mission Miracle Mile at 17th Street Historic District, with facade work permitted in 2022.
+- [2069–2071](2069/) — A 1909 three-flat in the Mission Miracle Mile at 17th Street Historic District, with a kitchen and bathroom remodel permitted in 2016.
+- [2081–2097](2081/) — A 1922 16-unit building with a ground-floor store in the Mission Miracle Mile at 17th Street Historic District, with dry-rot repair permitted in 2024.
+- [2088–2092](2088/) — A 1914 10-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2017.
+- [2094–2098](2094/) — A 1906 3-unit building with a ground-floor store in the Mission Miracle Mile at 17th Street Historic District, with a kitchen and bathroom remodel permitted in 2014.
+- [2114–2118](2114/) — A 1912 15-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with an addition permitted in 1987.
+- [2155](2155/) — A 1991 48-unit apartment building, with reroofing permitted in 2011.
+- [2211](2211/) — A 1900 building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1998.
+- [2217–2221](2217/) — A 1904 9-unit building with a ground-floor store, with facade work permitted in 1997.
+- [2230–2232](2230/) — A 1912 21-unit apartment building, with foundation work permitted in 2025.
+- [2234–2238](2234/) — A 1907 5-unit apartment building, with deck work permitted in 2001.
+- [2246–2248](2246/) — A 1978 5-unit apartment building, with reroofing permitted in 2007.
+- [2250](2250/) — A 1975 19-unit apartment building, with a seismic retrofit permitted in 2018.
+- [2260–2262](2260/) — A 1912 7-unit apartment building, with plumbing work permitted in 2020.
+- [2261–2263](2261/) — A 1916 9-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2264–2268](2264/) — A 1908 3-unit building with a ground-floor store, with stair work permitted in 2022.
+- [2265](2265/) — A 1912 18-unit apartment building, with foundation work permitted in 2008.
+- [2270–2272](2270/) — A 1907 2-unit building with a ground-floor store, with facade work permitted in 2008.
+- [2271–2275](2271/) — A 1907 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2018.
+- [2280–2282](2280/) — A 1910 9-unit apartment building, with window replacement permitted in 1991.
+- [2315–2317](2315/) — A 1900 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2017.
+- [2316–2318](2316/) — A 1906 1-unit building with a ground-floor store in the Mission Miracle Mile 19th to 20th Streets Historic District, with a kitchen and bathroom remodel permitted in 1999.
+- [2326–2330](2326/) — A 1911 2-unit building with a ground-floor store in the Mission Miracle Mile 19th to 20th Streets Historic District, with a bathroom remodel permitted in 2023.
+- [2327–2329](2327/) — A 1911 17-unit apartment building, with a seismic retrofit permitted in 1998.
+- [2334–2336](2334/) — A 1912 13-unit apartment building in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1994.
+- [2360–2366](2360/) — A 1926 15-unit apartment building in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1993.
+- [2386–2388](2386/) — A 1907 two-flat in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1989.
+- [2391–2393](2391/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2024.
+- [2397–2399](2397/) — A 7-unit building with a ground-floor store, with foundation work permitted in 2019.
+- [2419–2429](2419/) — A 1904 12-unit building with a ground-floor store, with reroofing permitted in 2022.
+- [2422–2426](2422/) — A 1904 10-unit apartment building, with a seismic retrofit permitted in 2013.
+- [2471](2471/) — An 1885 4-unit building with a ground-floor store, with electrical work permitted in 2007.
+- [2475](2475/) — A 1900 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2001.
+- [2619–2629](2619/) — A 1904 38-unit apartment building, with stair work permitted in 2022.
+- [2637–2645](2637/) — A 1904 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [2647–2653](2647/) — A 1900 24-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2687–2689](2687/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2006.
+- [2728–2738](2728/) — A 1904 6-unit building with a ground-floor store, with reroofing permitted in 2005.
+- [2745–2747](2745/) — A 1912 20-unit apartment building, with a seismic retrofit permitted in 2018.
+- [2840–2844](2840/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 1993.
+- [2843–2849](2843/) — A 1904 6-unit apartment building, with dry-rot repair permitted in 2011.
+- [2852–2854](2852/) — A 1916 6-unit apartment building, with a vertical addition permitted in 2017.
+- [2857–2859](2857/) — A 1908 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2020.
+- [2861–2869](2861/) — A 1910 6-unit apartment building, with dry-rot repair permitted in 2014.
+- [2875–2877](2875/) — A 1900 3-unit apartment building, with reroofing permitted in 2015.
+- [2881–2883](2881/) — A 1981 6-unit building with a ground-floor store, with deck work permitted in 2012.
+- [2901–2903](2901/) — An 1885 7-unit building with a ground-floor store, with deck work permitted in 2006.
+- [2943–2945](2943/) — A 1906 4-unit apartment building, with reroofing permitted in 1997.
+- [2955](2955/) — A 1900 2-unit building with a ground-floor store, with one permit record from 2021.
+- [2960](2960/) — A 1963 11-unit apartment building, with reroofing permitted in 2023.
+- [2961](2961/) — A 1900 2-unit building with a ground-floor store, with window replacement permitted in 2012.
+- [2970–2974](2970/) — A 1907 6-unit building with a ground-floor store, with fire repair permitted in 2021.
+- [2982–2984](2982/) — A 1902 2-unit building with a ground-floor store, with permit records from 1983 to 2021.
+- [2988–2990](2988/) — A 1902 2-unit building with a ground-floor store, with reroofing permitted in 1992.
+- [3000–3002](3000/) — A flats building, with a bathroom remodel permitted in 2021.
+- [3001–3019](3001/) — A 1916 33-unit apartment building, with electrical work permitted in 2024.
+- [3006–3010](3006/) — A 1900 2-unit building with a ground-floor store, with a kitchen remodel permitted in 1983.
+- [3018–3024](3018/) — A 1925 30-unit apartment building, with a seismic retrofit permitted in 2018.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

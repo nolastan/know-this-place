@@ -1,0 +1,131 @@
+{
+  "address": "971–975 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/971/",
+  "apn": "3631020",
+  "block": "3631",
+  "lot": "020",
+  "eas_baseid": "363656",
+  "coordinates": {
+    "lat": 37.753883,
+    "lng": -122.424938
+  },
+  "address_range": "971–975",
+  "street_numbers_on_parcel": [
+    "971",
+    "973",
+    "975"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "bedrooms": 9,
+    "lot_area_sqft": 2935,
+    "building_area_sqft": 4785,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0975 0971 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1559975,
+    "assessed_improvement_value": 668561,
+    "last_sale_date": "2022-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201710252206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-25",
+      "status_date": "2017-11-28",
+      "estimated_cost": 17800,
+      "revised_cost": 17800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208022999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-02",
+      "status_date": "2003-11-05",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "to correct n.o.v#200229437,199925427",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002111691",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-11",
+      "status_date": "2001-08-29",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "comply with n .o.v. 199925427",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310056",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-15",
+      "status_date": "1993-10-25",
+      "estimated_cost": 3500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109346",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-10-28",
+      "status_date": "1982-05-18",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=971",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3631020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3631&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3631020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

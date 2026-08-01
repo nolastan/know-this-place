@@ -1,0 +1,126 @@
+{
+  "address": "240 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/240/",
+  "apn": "3596041",
+  "block": "3596",
+  "lot": "041",
+  "eas_baseid": "361485",
+  "coordinates": {
+    "lat": 37.759479,
+    "lng": -122.420122
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2826,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0242 0240 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 113927,
+    "assessed_improvement_value": 160549
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M704408",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-11",
+      "status_date": "2016-07-11",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-22",
+      "status_date": "1990-01-30",
+      "estimated_cost": 2100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402058",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-29",
+      "status_date": "1984-03-15",
+      "estimated_cost": 200,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400355",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-01-10",
+      "status_date": "1984-04-04",
+      "estimated_cost": 3400,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=240",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42012232649645%2037.75947904092577)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

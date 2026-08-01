@@ -1,0 +1,155 @@
+{
+  "address": "57 Oakwood Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/oakwood-street/57/",
+  "apn": "3587063",
+  "block": "3587",
+  "lot": "063",
+  "eas_baseid": "361055",
+  "coordinates": {
+    "lat": 37.760597,
+    "lng": -122.424679
+  },
+  "parcel": {
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2443,
+    "building_area_sqft": 2533,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0059 0057 OAKWOOD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1879101,
+    "assessed_improvement_value": 805328,
+    "last_sale_date": "2021-04-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604290319",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-29",
+      "status_date": "2026-04-29",
+      "estimated_cost": 20000,
+      "revised_cost": 25000,
+      "description": "one unit on level 1: bathroom remodel and lightwell infill (15 sq.ft. only)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106172656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-17",
+      "status_date": "2022-01-13",
+      "estimated_cost": 17775,
+      "revised_cost": 17775,
+      "description": "replace 10 windows total retrofit in kind. 6 extg aluminum with new aluminum clad that face the street. 4 extg aluminum with new vinyl non street facing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104168768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-16",
+      "status_date": "2021-04-26",
+      "estimated_cost": 9200,
+      "revised_cost": 9200,
+      "description": "one unit: repair dry rot, same kind for 6 steps out 14 steps and caement 12x12 landing; repair less tahn 50% of stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-23",
+      "status_date": "1997-12-31",
+      "estimated_cost": 1500,
+      "description": "put up siding-1/hr wall & flashing as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609661",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-06-03",
+      "status_date": "1997-07-03",
+      "estimated_cost": 75000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9021733",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-22",
+      "status_date": "1991-01-11",
+      "estimated_cost": 7000,
+      "description": "replace (e) foundation due to earthquake revis. #9020428",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-04",
+      "status_date": "1991-01-11",
+      "estimated_cost": 4500,
+      "description": "repair existing fndtn at crack, dowel steel & epoxy.........",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812272",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-08-22",
+      "status_date": "1988-12-15",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKWOOD&street_type=ST&address_number=57",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587063",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

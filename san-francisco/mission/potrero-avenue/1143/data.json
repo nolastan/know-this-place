@@ -1,0 +1,144 @@
+{
+  "address": "1143 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1143/",
+  "apn": "4212017",
+  "block": "4212",
+  "lot": "017",
+  "eas_baseid": "464657",
+  "coordinates": {
+    "lat": 37.753694,
+    "lng": -122.40605
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3300,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1143 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 107967,
+    "assessed_improvement_value": 537461,
+    "last_sale_date": "1996-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1997",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406067756",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-06",
+      "status_date": "2014-06-06",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace exterior stucco to repair leakage. the new stucco will be in kind, visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M493728",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-06",
+      "status_date": "2014-06-06",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M494187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-06",
+      "status_date": "2014-06-06",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717213",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-09-05",
+      "status_date": "1999-03-01",
+      "estimated_cost": 5000,
+      "description": "legalize bedroom in basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-08",
+      "status_date": "1997-02-14",
+      "estimated_cost": 1,
+      "description": "revise to appln #9603993",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-06",
+      "status_date": "1997-02-14",
+      "estimated_cost": 1,
+      "description": "revise to app #9603993 provide additional detail for foundtn",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603993S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1996-03-11",
+      "status_date": "1997-02-14",
+      "estimated_cost": 225000,
+      "description": "erect a three story two unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1143",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4212017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4212&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4212017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

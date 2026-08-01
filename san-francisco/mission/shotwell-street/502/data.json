@@ -1,0 +1,108 @@
+{
+  "address": "502–504 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/502/",
+  "apn": "3594029A",
+  "block": "3594",
+  "lot": "029A",
+  "eas_baseid": "361381",
+  "coordinates": {
+    "lat": 37.760283,
+    "lng": -122.416136
+  },
+  "address_range": "502–504",
+  "street_numbers_on_parcel": [
+    "502",
+    "504"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 4,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 2289.7,
+    "building_area_sqft": 4272,
+    "lot_depth_ft": 65.42,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0504 0502 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 287020,
+    "assessed_improvement_value": 392308,
+    "last_sale_date": "1987-11-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200311059445",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-05",
+      "status_date": "2003-11-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair stairs to comply w/nov #200344418 all wood shall be redwood or treated wood & replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8914438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-10",
+      "status_date": "1989-09-25",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310359",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-10-14",
+      "status_date": "1984-03-16",
+      "estimated_cost": 6130,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=502",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3594029A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3594&lot=029A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3594029A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

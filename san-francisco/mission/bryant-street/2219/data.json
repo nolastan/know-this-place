@@ -1,0 +1,147 @@
+{
+  "address": "2219 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2219/",
+  "apn": "4087037",
+  "block": "4087",
+  "lot": "037",
+  "eas_baseid": "368378",
+  "coordinates": {
+    "lat": 37.758814,
+    "lng": -122.409387
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2219B2219 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 232566,
+    "assessed_improvement_value": 929180,
+    "last_sale_date": "1996-05-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411185239",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-18",
+      "status_date": "2024-12-03",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to pa# 201805148955: install 42\" ht glass guardrail at stair instead of metal guardrail.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202202238519",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-23",
+      "status_date": "2023-04-19",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "new installation of a automatic fire alarm system. ref arch. #201805148955 and sprinkler ref #202111031735",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202112285129",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-12-28",
+      "status_date": "2026-01-23",
+      "estimated_cost": 8000,
+      "revised_cost": 0,
+      "description": "revision to 201805148955. new roof decj @ 4th fl roof and spirial stair as access. new roof deck is for the top one unit a use only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111031735",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-11-03",
+      "status_date": "2021-11-03",
+      "estimated_cost": 31500,
+      "revised_cost": 31500,
+      "description": "installation of 63 fire sprnklers througout the building per pa201805148955 per nfpa13 & ug piping per nfpa24 (trench, backfill & s/w repair by sep permit).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805148955",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-05-14",
+      "status_date": "2024-12-03",
+      "estimated_cost": 100000,
+      "revised_cost": 950000,
+      "description": "full remodel (e) 2nd flr(one unit). 3rd and 4th flr vertical addition for new upper unit. 4th flr roof deck front & rear(one unit). convert (e) 1st flr space to 3rd unit(2219b). provide full seismic retrofit to entire building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604259790",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2006-04-25",
+      "status_date": "2020-06-12",
+      "estimated_cost": 300000,
+      "revised_cost": 440000,
+      "description": "remodel ground and second floor. third floor vertical addition. alter frontage and construct bay window. add rear exterior stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-20",
+      "status_date": "1990-09-04",
+      "estimated_cost": 3984,
+      "description": "vinyl siding - to back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2219",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

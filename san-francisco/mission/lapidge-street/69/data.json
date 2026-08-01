@@ -1,0 +1,137 @@
+{
+  "address": "69–73 Lapidge Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lapidge-street/69/",
+  "apn": "3588021A",
+  "block": "3588",
+  "lot": "021A",
+  "eas_baseid": "361089",
+  "coordinates": {
+    "lat": 37.760596,
+    "lng": -122.422102
+  },
+  "address_range": "69–73",
+  "street_numbers_on_parcel": [
+    "69",
+    "71",
+    "73"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 4860,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0073 0069 LAPIDGE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 360704,
+    "assessed_improvement_value": 270523,
+    "assessed_fixtures_value": 385,
+    "last_sale_date": "1990-09-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201907246755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-24",
+      "status_date": "2019-10-17",
+      "estimated_cost": 1,
+      "revised_cost": 150000,
+      "description": "comply w/ 2016 sfebc chap 4d per 2016 cebc appendix a-4 standards",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1114387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-24",
+      "status_date": "2019-07-24",
+      "revised_cost": 1,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707283249",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2017-07-28",
+      "status_date": "2020-01-17",
+      "estimated_cost": 70000,
+      "revised_cost": 283500,
+      "description": "soft story retrofit per sfebc chapter 4d, asce41-06",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205247493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-24",
+      "status_date": "2002-11-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repl of (e)exterior wood stair in kind to fit in (e)available space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAPIDGE&street_type=ST&address_number=69",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588021A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=021A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588021A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.422102302836%2037.76059609018175)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

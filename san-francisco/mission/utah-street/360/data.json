@@ -1,0 +1,143 @@
+{
+  "address": "360–364 Utah Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/utah-street/360/",
+  "apn": "3961006A",
+  "block": "3961",
+  "lot": "006A",
+  "eas_baseid": "366792",
+  "coordinates": {
+    "lat": 37.764997,
+    "lng": -122.406781
+  },
+  "address_range": "360–364",
+  "street_numbers_on_parcel": [
+    "360",
+    "362",
+    "364"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0364 0360 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 923017,
+    "assessed_improvement_value": 615345,
+    "last_sale_date": "2014-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211045890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-04",
+      "status_date": "2022-12-09",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508194760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-19",
+      "status_date": "2015-09-10",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair rear stair less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508184627",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-18",
+      "status_date": "2015-09-08",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace bathroom tiles in shower only. no other work under this permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408012838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-01",
+      "status_date": "2014-11-07",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "2/f- remodel kitchen & bathroom; to comply with cec 150.0(k)3 & 5",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604118703",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-11",
+      "status_date": "2014-05-29",
+      "estimated_cost": 10250,
+      "revised_cost": 10250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-21",
+      "status_date": "1990-03-16",
+      "estimated_cost": 5000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=360",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3961006A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3961&lot=006A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3961006A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

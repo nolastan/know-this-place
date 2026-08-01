@@ -1,0 +1,142 @@
+{
+  "address": "121–125 Duboce Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/duboce-avenue/121/",
+  "apn": "3533070",
+  "block": "3533",
+  "lot": "070",
+  "eas_baseid": "358400",
+  "coordinates": {
+    "lat": 37.769599,
+    "lng": -122.422937
+  },
+  "address_range": "121–125",
+  "street_numbers_on_parcel": [
+    "121",
+    "123",
+    "125"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2474,
+    "building_area_sqft": 5291,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0125 0121 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1708544,
+    "assessed_improvement_value": 732233,
+    "last_sale_date": "2021-08-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "survey_name": "124 Duboce Ave.",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201504143531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-14",
+      "status_date": "2015-07-20",
+      "estimated_cost": 40000,
+      "revised_cost": 80000,
+      "description": "comply with sf seismic retrofit program (soft story) per sfbc chapter 34 b. 2012 iebc appendix a4. install new plywood, install new footing, new holddown",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M411087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-25",
+      "status_date": "2013-07-25",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M404848",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-28",
+      "status_date": "2013-06-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M394527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-05-15",
+      "status_date": "2013-05-15",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304023573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-02",
+      "status_date": "2013-04-29",
+      "estimated_cost": 2400,
+      "revised_cost": 2400,
+      "description": "additional work for pa#201303293409 change 6 windows in light well and back. not visable from street, u factor 0.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303293409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-29",
+      "status_date": "2013-04-29",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "to comply and complete the complaint #201391841 with the item #2,3,4, and 5 #201392481 with item #2,3, and 5. stair less 50%",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=121",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=070",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533070",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

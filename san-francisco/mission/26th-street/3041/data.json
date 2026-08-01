@@ -1,0 +1,106 @@
+{
+  "address": "3041 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3041/",
+  "apn": "4337001F",
+  "block": "4337",
+  "lot": "001F",
+  "eas_baseid": "371386",
+  "coordinates": {
+    "lat": 37.749294,
+    "lng": -122.410404
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2234,
+    "building_area_sqft": 1265,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3041 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 928182,
+    "assessed_improvement_value": 397790,
+    "last_sale_date": "2020-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201903135168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-13",
+      "status_date": "2019-05-20",
+      "estimated_cost": 5000,
+      "revised_cost": 30000,
+      "description": "kitchen remodel and addition of bathroom at (e) dining space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511092197",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-09",
+      "status_date": "2015-11-10",
+      "estimated_cost": 4221,
+      "revised_cost": 4221,
+      "description": "replace 3 windows in-kind with double-pane, low e with argon wood-frame windowes. one window visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304094101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-09",
+      "status_date": "2013-04-18",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4337001F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4337&lot=001F",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4337001F",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

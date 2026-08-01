@@ -1,0 +1,119 @@
+{
+  "address": "2850 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2850/",
+  "apn": "6522011",
+  "block": "6522",
+  "lot": "011",
+  "eas_baseid": "401100",
+  "coordinates": {
+    "lat": 37.751806,
+    "lng": -122.412159
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 2016,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2850 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176796,
+    "assessed_improvement_value": 150274,
+    "last_sale_date": "1991-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200911030431",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-03",
+      "status_date": "2009-11-03",
+      "estimated_cost": 5675,
+      "revised_cost": 5675,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116631",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-09",
+      "status_date": "1993-11-03",
+      "estimated_cost": 850,
+      "description": "repair plaster",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112630",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-07-18",
+      "status_date": "1993-01-14",
+      "estimated_cost": 20750,
+      "description": "add 2nd unit to basement, 1 bathrm., 1 kitchen, 2 bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2850",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6522011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6522&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6522011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41215888902639%2037.75180638649111)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "address": "2721 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2721/",
+  "apn": "3640032",
+  "block": "3640",
+  "lot": "032",
+  "eas_baseid": "363986",
+  "coordinates": {
+    "lat": 37.753701,
+    "lng": -122.413847
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 6290,
+    "building_area_sqft": 2842,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2721 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58423,
+    "assessed_improvement_value": 23761
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201002186800",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-18",
+      "status_date": "2010-06-11",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "to complete and finalize work under app #200711309352",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909187188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-18",
+      "status_date": "2010-06-23",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "cto comply with 200853772, replace a 3 ft high by approx 20 ft long wood fence @ front of property @left side only no other work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711309352",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-11-30",
+      "status_date": "2010-06-11",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "repair stairs at rear, less than 50% of structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210799",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-06-30",
+      "status_date": "1993-12-06",
+      "estimated_cost": 270,
+      "description": "alum. window (one) installed in kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2721",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

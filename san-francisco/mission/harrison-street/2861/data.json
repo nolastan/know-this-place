@@ -1,0 +1,118 @@
+{
+  "address": "2861 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2861/",
+  "apn": "4270024",
+  "block": "4270",
+  "lot": "024",
+  "eas_baseid": "370816",
+  "coordinates": {
+    "lat": 37.751748,
+    "lng": -122.411498
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2646,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2863 2861 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34855,
+    "assessed_improvement_value": 37859
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202302242566",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-24",
+      "status_date": "2023-09-19",
+      "estimated_cost": 13100,
+      "revised_cost": 13100,
+      "description": "replace (9) windows- (e) aluminum clad wood windows- street vsible/ front of house: double hung and fixed: same size and location retro fit installation: u-factor not to exceed 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405113540",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-05-11",
+      "status_date": "2006-07-24",
+      "estimated_cost": 47000,
+      "revised_cost": 47000,
+      "description": "remnove (e) sheetrock and plasterinterior walls, replace knob and tube wiring with romex, (2) br,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-09",
+      "status_date": "1989-07-07",
+      "estimated_cost": 7950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2861",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4270024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4270&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4270024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41149819007312%2037.75174753244214)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

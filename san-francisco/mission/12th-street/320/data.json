@@ -1,0 +1,153 @@
+{
+  "address": "320–324 12th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/12th-street/320/",
+  "apn": "3522003",
+  "block": "3522",
+  "lot": "003",
+  "eas_baseid": "358137",
+  "coordinates": {
+    "lat": 37.770569,
+    "lng": -122.414577
+  },
+  "address_range": "320–324",
+  "street_numbers_on_parcel": [
+    "320",
+    "322",
+    "324"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 3,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 4638,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0324 0320 12TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 18221,
+    "assessed_improvement_value": 47099
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201805239960",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-23",
+      "status_date": "2018-09-10",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "some floor boards on rear exterior stairs dry rot and need to be replaced. less than 10% and remove bracing used on neighboring property for extra support for stairs. comply with nov 20185541 #2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M348888",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-19",
+      "status_date": "2012-09-19",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707237514",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-23",
+      "status_date": "2008-04-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair rear stairs. less than 50% of structural to comply w/bid nov#200707654.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606185",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-05-27",
+      "status_date": "1986-09-25",
+      "estimated_cost": 3000,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505029",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-05-14",
+      "status_date": "1985-12-20",
+      "estimated_cost": 1000,
+      "description": "replace aluminum windows, add deadbolts to all units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8202121",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-03-22",
+      "status_date": "1983-03-04",
+      "estimated_cost": 12000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=ST&address_number=320",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3522003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3522&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3522003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4145774740073%2037.77056934096506)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

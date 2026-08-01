@@ -1,0 +1,135 @@
+{
+  "address": "1207–1209 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1207/",
+  "apn": "6534036",
+  "block": "6534",
+  "lot": "036",
+  "eas_baseid": "401526",
+  "coordinates": {
+    "lat": 37.750054,
+    "lng": -122.424647
+  },
+  "address_range": "1207–1209",
+  "street_numbers_on_parcel": [
+    "1207",
+    "1209"
+  ],
+  "parcel": {
+    "year_built": 1992,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 3329,
+    "basement_area_sqft": 483,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1209 1207 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215791,
+    "assessed_improvement_value": 489504,
+    "last_sale_date": "1988-10-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1992",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304034899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-03",
+      "status_date": "2023-06-05",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove storm damaged vinyl siding and replace with hardie fiber cement siding - south side. approx 1500sqft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604280179",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-28",
+      "status_date": "2007-02-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (e) front windows (12 each) anderson 200 series tilt wash double hung replace window and door casings install hardiplank lap siding over existing redwood siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212022518",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-12-02",
+      "status_date": "2002-12-02",
+      "estimated_cost": 3560,
+      "revised_cost": 3560,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006011488",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-01",
+      "status_date": "2000-10-23",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "install vinyl siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918408S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1989-09-29",
+      "status_date": "1993-07-20",
+      "estimated_cost": 220000,
+      "revised_cost": 288000,
+      "description": "to erect a 2 dwelling units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1207",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6534036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6534&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6534036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

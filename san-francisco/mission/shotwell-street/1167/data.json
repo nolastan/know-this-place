@@ -1,0 +1,103 @@
+{
+  "address": "1167 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1167/",
+  "apn": "6525022",
+  "block": "6525",
+  "lot": "022",
+  "eas_baseid": "401194",
+  "coordinates": {
+    "lat": 37.749795,
+    "lng": -122.414612
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2713,
+    "building_area_sqft": 3185,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1169 1167 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 182704,
+    "assessed_improvement_value": 157782,
+    "last_sale_date": "1995-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200603318057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-31",
+      "status_date": "2006-04-28",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "rebuild landing/deck and stairs, fire well, etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815951",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-14",
+      "status_date": "1999-03-01",
+      "estimated_cost": 4775,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117876",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-25",
+      "status_date": "1993-05-14",
+      "estimated_cost": 1663,
+      "description": "aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1167",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6525022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

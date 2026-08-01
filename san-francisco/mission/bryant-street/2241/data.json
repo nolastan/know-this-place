@@ -1,0 +1,119 @@
+{
+  "address": "2241–2243 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2241/",
+  "apn": "4087033",
+  "block": "4087",
+  "lot": "033",
+  "eas_baseid": "368374",
+  "coordinates": {
+    "lat": 37.75854,
+    "lng": -122.409361
+  },
+  "address_range": "2241–2243",
+  "street_numbers_on_parcel": [
+    "2241",
+    "2243"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2241 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187640,
+    "assessed_improvement_value": 140725,
+    "last_sale_date": "1989-05-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201601046288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-04",
+      "status_date": "2016-01-20",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520216",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-11-30",
+      "status_date": "1996-08-31",
+      "estimated_cost": 1,
+      "description": "modification oto approved appl #9414294,deck modification",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414294S",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1994-09-09",
+      "status_date": "1996-06-26",
+      "estimated_cost": 40000,
+      "revised_cost": 101000,
+      "description": "erect a two story two family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300537",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1993-01-14",
+      "status_date": "1994-11-03",
+      "estimated_cost": 12000,
+      "description": "addition-2 story horizontal & 2 car park garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2241",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087033",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

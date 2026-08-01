@@ -1,0 +1,93 @@
+{
+  "address": "1242 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/1242/",
+  "apn": "4212003",
+  "block": "4212",
+  "lot": "003",
+  "eas_baseid": "370273",
+  "coordinates": {
+    "lat": 37.753715,
+    "lng": -122.405706
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1620,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1242 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67921,
+    "assessed_improvement_value": 63390
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304105399",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-04-10",
+      "status_date": "2026-01-23",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "replace panels at garage door- add vents as per code- no plans required- kb-senior building inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206176588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-17",
+      "status_date": "2022-09-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "convert garage back to original use: keep finishes in place.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=1242",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4212003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4212&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4212003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

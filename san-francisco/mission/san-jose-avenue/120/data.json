@@ -1,0 +1,157 @@
+{
+  "address": "120 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/120/",
+  "apn": "3645004",
+  "block": "3645",
+  "lot": "004",
+  "eas_baseid": "364205",
+  "coordinates": {
+    "lat": 37.752454,
+    "lng": -122.421853
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 1752,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0120 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169934,
+    "assessed_improvement_value": 237930,
+    "last_sale_date": "1994-05-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010166641",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-16",
+      "status_date": "2021-02-08",
+      "estimated_cost": 22800,
+      "revised_cost": 22800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M526167",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-10",
+      "status_date": "2014-10-10",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404183662",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-18",
+      "status_date": "2014-04-18",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "install kitchen cabinets and countertops in extg kitchen area at 1st floor. replace lavatory and toilet at bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903093671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-09",
+      "status_date": "2010-03-08",
+      "estimated_cost": 2250,
+      "revised_cost": 2250,
+      "description": "replace downstairs bath tub/repair dry rot as necessary, install new bath surround, replace damaged bathroom door, retile 3 side tub walls, work on #120a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709263740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-26",
+      "status_date": "2007-11-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "re-siding @ front & 25' of sidewall @ north & south elevation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704199169",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-19",
+      "status_date": "2007-05-24",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "comply with nov# 200797678. remove & replace (e) windows. front windows are wood / vinyl clad windows. window openings are like for like openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615773",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-23",
+      "status_date": "1996-12-23",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9407865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-06-03",
+      "status_date": "1994-06-09",
+      "estimated_cost": 1200,
+      "description": "item 1b and 3a of pest report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=120",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

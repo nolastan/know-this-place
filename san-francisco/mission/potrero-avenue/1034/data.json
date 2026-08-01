@@ -1,0 +1,96 @@
+{
+  "address": "1034 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1034/",
+  "apn": "4153004",
+  "block": "4153",
+  "lot": "004",
+  "eas_baseid": "369640",
+  "coordinates": {
+    "lat": 37.755542,
+    "lng": -122.406923
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3688,
+    "basement_area_sqft": 468,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1034 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 516324,
+    "assessed_improvement_value": 557466,
+    "last_sale_date": "2009-11-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404220482",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-22",
+      "status_date": "2024-05-06",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101108147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-10",
+      "status_date": "2011-10-17",
+      "estimated_cost": 15000,
+      "revised_cost": 27000,
+      "description": "add a gym room and 1/2 bath room at garage floor per plan. retain (e) four parking spaces in garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

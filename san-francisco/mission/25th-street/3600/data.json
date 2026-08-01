@@ -1,0 +1,119 @@
+{
+  "address": "3600–3602 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3600/",
+  "apn": "6513011B",
+  "block": "6513",
+  "lot": "011B",
+  "eas_baseid": "400795",
+  "coordinates": {
+    "lat": 37.750561,
+    "lng": -122.421685
+  },
+  "address_range": "3600–3602",
+  "street_numbers_on_parcel": [
+    "3600",
+    "3602"
+  ],
+  "parcel": {
+    "year_built": 1946,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1942,
+    "building_area_sqft": 3245,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3602 3600 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 173324,
+    "assessed_improvement_value": 502740,
+    "last_sale_date": "1993-01-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411044283",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-11-04",
+      "status_date": "2024-11-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503312447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-31",
+      "status_date": "2015-06-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel kitchen in kind @ top unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616203",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-29",
+      "status_date": "1997-02-28",
+      "estimated_cost": 7480,
+      "description": "foundation bolting and plywood 3/4 x 15 all tread set",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9404251",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-16",
+      "status_date": "1994-12-14",
+      "estimated_cost": 18000,
+      "description": "replace exterior stairwell in kind at rear of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3600",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6513011B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6513&lot=011B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513011B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

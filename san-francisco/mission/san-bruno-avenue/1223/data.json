@@ -1,0 +1,124 @@
+{
+  "address": "1223 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1223/",
+  "apn": "4214020",
+  "block": "4214",
+  "lot": "020",
+  "eas_baseid": "370310",
+  "coordinates": {
+    "lat": 37.753672,
+    "lng": -122.404147
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1005,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1223 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 85352,
+    "assessed_improvement_value": 96346
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512010659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-01",
+      "status_date": "2025-12-15",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219513",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-09",
+      "status_date": "1993-10-29",
+      "estimated_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607833",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-07-02",
+      "status_date": "1987-03-16",
+      "estimated_cost": 4000,
+      "description": "repair existing front & back stairway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607734",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-07-01",
+      "status_date": "1986-11-18",
+      "estimated_cost": 2612,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508964",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-16",
+      "status_date": "1987-02-04",
+      "estimated_cost": 7000,
+      "description": "extension at rear, add garage, repair front & back stairway",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1223",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4214020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

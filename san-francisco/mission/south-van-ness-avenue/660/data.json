@@ -1,0 +1,119 @@
+{
+  "address": "660–664 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/660/",
+  "apn": "3575012",
+  "block": "3575",
+  "lot": "012",
+  "eas_baseid": "360251",
+  "coordinates": {
+    "lat": 37.762555,
+    "lng": -122.417591
+  },
+  "address_range": "660–664",
+  "street_numbers_on_parcel": [
+    "660",
+    "662",
+    "664"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 3600,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0664 0660 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142161,
+    "assessed_improvement_value": 284361
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201104154152",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-15",
+      "status_date": "2011-05-09",
+      "estimated_cost": 23875,
+      "revised_cost": 23875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009149",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-11",
+      "status_date": "1990-07-26",
+      "estimated_cost": 6000,
+      "description": "replace dry rotted wood members, raise concrete footings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807346",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-02",
+      "status_date": "1988-09-23",
+      "estimated_cost": 4000,
+      "description": "replace linoliums in bathroom, cabinets in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803784",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-03-25",
+      "status_date": "1988-08-24",
+      "estimated_cost": 30000,
+      "description": "termite repair, replace tubs, vanities, windows, walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=660",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3575012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3575&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3575012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

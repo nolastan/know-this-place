@@ -1,0 +1,127 @@
+{
+  "address": "326 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/326/",
+  "apn": "3590041",
+  "block": "3590",
+  "lot": "041",
+  "eas_baseid": "361299",
+  "coordinates": {
+    "lat": 37.761398,
+    "lng": -122.418538
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3675,
+    "building_area_sqft": 3495,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0326 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2800000,
+    "assessed_improvement_value": 1200000,
+    "last_sale_date": "2019-09-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304286679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-28",
+      "status_date": "2023-07-07",
+      "estimated_cost": 27060,
+      "revised_cost": 27060,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611223380",
+      "type": "additions alterations or repairs",
+      "status": "reinstated",
+      "filed": "2016-11-22",
+      "status_date": "2019-02-19",
+      "estimated_cost": 325000,
+      "revised_cost": 430000,
+      "description": "renovations to legalize (e) rear unit to provide light, ventilation, fire egress, exit corridor & outdoor space. add 688 sq ft vertical additon with 123 sq ft roof deck above (e) renovated rear unit. provide type 13-d sprinkler system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M695588",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-02",
+      "status_date": "2016-06-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404141261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-14",
+      "status_date": "2004-10-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair water damage in kitchen/bath area.replace some drywall,paint & some flooring",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413112",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-12-12",
+      "status_date": "1985-06-11",
+      "estimated_cost": 2300,
+      "description": "repair dry rot & roof & wood floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=326",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3590041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

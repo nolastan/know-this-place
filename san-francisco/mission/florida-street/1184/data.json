@@ -1,0 +1,99 @@
+{
+  "address": "1184–1186 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1184/",
+  "apn": "4207014A",
+  "block": "4207",
+  "lot": "014A",
+  "eas_baseid": "370101",
+  "coordinates": {
+    "lat": 37.753011,
+    "lng": -122.410283
+  },
+  "address_range": "1184–1186",
+  "street_numbers_on_parcel": [
+    "1184",
+    "1186"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1110,
+    "building_area_sqft": 1908,
+    "lot_depth_ft": 50,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1186 1184 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 235144,
+    "assessed_improvement_value": 211631,
+    "last_sale_date": "1999-05-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M17455",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-17",
+      "status_date": "2002-02-17",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110039872",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-03",
+      "status_date": "2001-10-31",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1184",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=014A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207014A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

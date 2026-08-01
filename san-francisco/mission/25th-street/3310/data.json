@@ -1,0 +1,135 @@
+{
+  "address": "3310–3314 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3310/",
+  "apn": "6518013A",
+  "block": "6518",
+  "lot": "013A",
+  "eas_baseid": "275210",
+  "coordinates": {
+    "lat": 37.750852,
+    "lng": -122.416457
+  },
+  "address_range": "3310–3314",
+  "street_numbers_on_parcel": [
+    "3310",
+    "3312",
+    "3314"
+  ],
+  "also_addressed": [
+    "1394 SOUTH VAN NESS AVE",
+    "1398 SOUTH VAN NESS AVE"
+  ],
+  "parcel": {
+    "year_built": 1917,
+    "units": 6,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 7,
+    "lot_area_sqft": 3105,
+    "building_area_sqft": 6150,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1398 1394 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 735761,
+    "assessed_improvement_value": 490506,
+    "last_sale_date": "2009-10-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203210394",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-21",
+      "status_date": "2022-05-05",
+      "estimated_cost": 1,
+      "revised_cost": 1000,
+      "description": "we are removing parklet attached to our building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012231607",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-12-23",
+      "status_date": "2020-12-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to comply w/ complaint #202060562: 8 windows being replaced street facing. arellanos windows. & new heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9507384",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-18",
+      "status_date": "1996-03-12",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317259",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-04",
+      "status_date": "1993-12-13",
+      "estimated_cost": 4000,
+      "description": "replace some treads, risers & stringers from exst. rear stry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401670",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-15",
+      "status_date": "1984-08-09",
+      "estimated_cost": 1800,
+      "description": "raise fffoundation wall along north wall of building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3310",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=013A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518013A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

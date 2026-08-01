@@ -1,0 +1,137 @@
+{
+  "address": "3277–3279 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3277/",
+  "apn": "3636035",
+  "block": "3636",
+  "lot": "035",
+  "eas_baseid": "363800",
+  "coordinates": {
+    "lat": 37.755171,
+    "lng": -122.420437
+  },
+  "address_range": "3277–3279",
+  "street_numbers_on_parcel": [
+    "3277",
+    "3279"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "stories": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 1815,
+    "building_area_sqft": 4480,
+    "lot_depth_ft": 55,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3277 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106699,
+    "assessed_improvement_value": 234770
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200910290091",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-29",
+      "status_date": "2009-10-29",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512079782",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2005-12-07",
+      "status_date": "2006-01-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rvision to permit#200505132430",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505132430",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2005-05-13",
+      "status_date": "2005-07-22",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "shoring & underpinning along west property line for construction of ccsf new mission campus",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M25434",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-03",
+      "status_date": "2003-11-03",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9507796",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-24",
+      "status_date": "1996-07-26",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110872",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-29",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3277",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3636035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3636&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3636035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "address": "2981–2983 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2981/",
+  "apn": "6524042",
+  "block": "6524",
+  "lot": "042",
+  "eas_baseid": "401174",
+  "coordinates": {
+    "lat": 37.749649,
+    "lng": -122.413472
+  },
+  "address_range": "2981–2983",
+  "street_numbers_on_parcel": [
+    "2981",
+    "2983"
+  ],
+  "parcel": {
+    "year_built": 1979,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 3200,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2981 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223476,
+    "assessed_improvement_value": 367184,
+    "last_sale_date": "1997-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9725364",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-12-18",
+      "status_date": "1999-02-24",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-12-26",
+      "status_date": "1997-01-31",
+      "estimated_cost": 5000,
+      "description": "repair damaged sheetrock & tile in two units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305820",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-06-24",
+      "status_date": "1984-02-08",
+      "estimated_cost": 7778,
+      "description": "change existing space to living area, bath, kitchen,& bdrs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2981",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=042",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524042",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -4,13 +4,13 @@ Know This Place's coverage begins in San Francisco. Neighborhoods
 documented so far:
 
 - [Castro / Eureka Valley](castro/) — where coverage began; every residential parcel in the city's Castro/Upper Market boundary, 3,142 buildings across 73 streets
+- [Mission](mission/) — every residential parcel in the city's Mission boundary, 5,004 buildings across 100 streets; Liberty Hill, the Inner Mission alleys and Mel Blanc's childhood home
 - [Corbett Heights](corbett-heights/) — the hillside neighborhood around Corbett Avenue; 19 buildings on Corbett Avenue, Mars Street and Danvers Street
 - [Haight Ashbury](haight-ashbury/) — the counterculture district east of Golden Gate Park; six buildings tied to the Grateful Dead, Janis Joplin, Jimi Hendrix, Charles Manson and others
 - [Pacific Heights](pacific-heights/) — the ridge of mansions north of Japantown; the Spreckels Mansion and two other houses
 - [Seacliff](seacliff/) — the bluffs above the Golden Gate; a Robin Williams residence and a house tied to Ansel Adams
 - [Russian Hill](russian-hill/) — the cable-car grades above the waterfront; houses tied to Joe DiMaggio and Nicolas Cage
 - [Bernal Heights](bernal-heights/) — the hill south of the Mission; a Patty Hearst address and Carlos Santana's high-school home
-- [Mission](mission/) — Liberty Hill and Mel Blanc's childhood home
 - [Hayes Valley](hayes-valley/) — the Alamo Square Painted Ladies; Alice Walker's home until 1996
 - [Marina](marina/) — the northern waterfront; Joe DiMaggio's house during his marriage to Marilyn Monroe
 - [Lone Mountain / USF](lone-mountain/) — Jefferson Airplane's house facing Golden Gate Park

@@ -1,0 +1,168 @@
+{
+  "address": "3435 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3435/",
+  "apn": "6529022",
+  "block": "6529",
+  "lot": "022",
+  "eas_baseid": "401333",
+  "coordinates": {
+    "lat": 37.750376,
+    "lng": -122.419141
+  },
+  "parcel": {
+    "year_built": 1890,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1890,
+    "building_area_sqft": 1640,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3435 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 717453,
+    "assessed_improvement_value": 339752,
+    "last_sale_date": "2010-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512101454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-10",
+      "status_date": "2026-01-27",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "re roofing no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M430107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-27",
+      "status_date": "2013-09-27",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304235290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-23",
+      "status_date": "2014-05-16",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "voluntary lateral stiffening with shearwalls. replace dry rotted roof joists. replace sub-standard foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304053856",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-05",
+      "status_date": "2014-05-16",
+      "estimated_cost": 15000,
+      "revised_cost": 25000,
+      "description": "remodel of kitchen and add office at 1st floor. repair/replace extg deck boards & guardrails at 2nd floor, less than 50%. voluntary lateral strengthening at remodeled area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M62111",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-03-29",
+      "status_date": "2007-03-29",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703095901",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-09",
+      "status_date": "2007-05-24",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "addition of skylight to existing projec5t, permit job card bldg <100sf, skylight 3'0\" from property line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702234817",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-23",
+      "status_date": "2007-05-24",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "existing to be demo, new tile, sink, vanity, tub and toilet, new lights and window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M58762",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-02-23",
+      "status_date": "2007-02-23",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020986",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-12",
+      "status_date": "1991-05-23",
+      "estimated_cost": 8300,
+      "description": "remove lath plaster 55 sq. in living room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3435",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6529022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6529&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6529022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

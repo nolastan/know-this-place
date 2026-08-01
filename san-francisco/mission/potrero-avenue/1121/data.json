@@ -1,0 +1,154 @@
+{
+  "address": "1121 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1121/",
+  "apn": "4212010",
+  "block": "4212",
+  "lot": "010",
+  "eas_baseid": "370282",
+  "coordinates": {
+    "lat": 37.753968,
+    "lng": -122.406076
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2616,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1123 1121 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159636,
+    "assessed_improvement_value": 22818
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210315490",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-31",
+      "status_date": "2022-11-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1144108",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-26",
+      "status_date": "2019-09-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M510787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-13",
+      "status_date": "2014-08-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003188526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-18",
+      "status_date": "2010-05-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace old cabinets, paint, install new counter top, install appliances, new sink & faucet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218376",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-21",
+      "status_date": "1992-12-22",
+      "estimated_cost": 6029,
+      "revised_cost": 0,
+      "description": "existing bathroom alteration by removal of basin & bathtub.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022538",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-11-01",
+      "status_date": "1991-09-19",
+      "estimated_cost": 6000,
+      "description": "rebuild rear stairs, repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922860",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-22",
+      "status_date": "1990-02-21",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-07-01",
+      "status_date": "1983-03-04",
+      "estimated_cost": 345,
+      "description": "bldg use: flat",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1121",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4212010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4212&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4212010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

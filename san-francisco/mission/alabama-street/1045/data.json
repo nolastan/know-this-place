@@ -1,0 +1,125 @@
+{
+  "address": "1045–1047 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1045/",
+  "apn": "4149026",
+  "block": "4149",
+  "lot": "026",
+  "eas_baseid": "369505",
+  "coordinates": {
+    "lat": 37.755139,
+    "lng": -122.410923
+  },
+  "address_range": "1045–1047",
+  "street_numbers_on_parcel": [
+    "1045",
+    "1047"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 2148,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1047 1045 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 216412,
+    "assessed_improvement_value": 270522,
+    "last_sale_date": "1991-02-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alabama Street Pioneers Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1884",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202502200688",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-20",
+      "status_date": "2025-02-20",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit- remodel 1 ktichen no structural no walls to be moved",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610120057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-12",
+      "status_date": "2016-12-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair dry rot, reinforce (e) rear wood deck in kind, upgrade railing comply to code;",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605117181",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-05-11",
+      "status_date": "2016-10-27",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "replace damaged wood @ back yard stairs; less than 50% repair (must contact district inspector prior to start of work).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41092267050429%2037.75513859034643)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

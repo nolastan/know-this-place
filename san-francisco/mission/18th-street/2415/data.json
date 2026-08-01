@@ -1,0 +1,130 @@
+{
+  "address": "2415–2417 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2415/",
+  "apn": "4026012",
+  "block": "4026",
+  "lot": "012",
+  "eas_baseid": "367425",
+  "coordinates": {
+    "lat": 37.761742,
+    "lng": -122.406605
+  },
+  "address_range": "2415–2417",
+  "street_numbers_on_parcel": [
+    "2415",
+    "2417"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1906,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2417 2415 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46181,
+    "assessed_improvement_value": 200601
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611223383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-22",
+      "status_date": "2016-12-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512059539",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-12-05",
+      "status_date": "2005-12-05",
+      "estimated_cost": 3400,
+      "revised_cost": 3400,
+      "description": "install alcoa vinyl siding rear wall of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306167189",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-16",
+      "status_date": "2003-07-30",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repl front stairs to upper level unit; repl to be in exactg configuration as existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610957",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-06-19",
+      "status_date": "1997-04-04",
+      "estimated_cost": 40000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411024",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-07-12",
+      "status_date": "1996-06-13",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2415",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4026012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4026&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4026012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}
