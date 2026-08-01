@@ -1,0 +1,152 @@
+{
+  "address": "39–41 Dearborn Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dearborn-street/39/",
+  "apn": "3577051",
+  "block": "3577",
+  "lot": "051",
+  "eas_baseid": "360415",
+  "coordinates": {
+    "lat": 37.762569,
+    "lng": -122.422762
+  },
+  "address_range": "39–41",
+  "street_numbers_on_parcel": [
+    "39",
+    "41"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 2990,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0041 0039 DEARBORN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191394,
+    "assessed_improvement_value": 457752,
+    "last_sale_date": "1987-08-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M517347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-15",
+      "status_date": "2014-09-15",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408274830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-27",
+      "status_date": "2015-05-08",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "alteration of basement to habitable space, alter partition wall locations on main floor, hydronic radiant heat for 1/f flat, extend bay window on the ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203307200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-30",
+      "status_date": "2012-04-26",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M280247",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-20",
+      "status_date": "2011-09-20",
+      "revised_cost": 1,
+      "description": "street space and sidewalk permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106017189",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-06-01",
+      "status_date": "2014-12-10",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remodel bathroom, tile shower & floor, new vanity, shower valve, bath fan. florescent light or \"manuel on\" occupancy sensor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208143963",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-14",
+      "status_date": "2002-11-18",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "install photo voltaic solar panels on the roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207700",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-12",
+      "status_date": "1992-10-21",
+      "estimated_cost": 3500,
+      "description": "remodel kitchen & bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DEARBORN&street_type=ST&address_number=39",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577051",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

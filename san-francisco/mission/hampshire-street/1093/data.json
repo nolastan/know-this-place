@@ -1,0 +1,122 @@
+{
+  "address": "1093–1095 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1093/",
+  "apn": "4153018",
+  "block": "4153",
+  "lot": "018",
+  "eas_baseid": "369653",
+  "coordinates": {
+    "lat": 37.754699,
+    "lng": -122.407189
+  },
+  "address_range": "1093–1095",
+  "street_numbers_on_parcel": [
+    "1093",
+    "1095"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1095 1093 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1360784,
+    "assessed_improvement_value": 583192,
+    "last_sale_date": "2016-10-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403147777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-14",
+      "status_date": "2024-06-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503241688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-24",
+      "status_date": "2015-06-12",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen remodel include new drywall and trim. replace 7 windows and 1 door in kind not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908175001",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-17",
+      "status_date": "2009-08-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "new plywood 3/4 inches. new gutters and downspout. 10 nails at 6\"oc edges, 12\" oc field",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908175002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-17",
+      "status_date": "2009-09-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1093",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

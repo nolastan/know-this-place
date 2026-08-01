@@ -1,0 +1,142 @@
+{
+  "address": "2405 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2405/",
+  "apn": "4026017",
+  "block": "4026",
+  "lot": "017",
+  "eas_baseid": "367428",
+  "coordinates": {
+    "lat": 37.761799,
+    "lng": -122.406417
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 6,
+    "lot_area_sqft": 2648,
+    "building_area_sqft": 2199,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2405 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20920,
+    "assessed_improvement_value": 23034
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905150655",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2019-05-15",
+      "status_date": "2019-05-15",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "replacement of (e) deck (like for like) from 2nd flr to rear yard to comply with complaint 201853151 item #2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808016186",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-01",
+      "status_date": "2018-08-02",
+      "estimated_cost": 150,
+      "revised_cost": 5750,
+      "description": "comply with nov 201853151. repair windows, putty windows, repair siding, weather proofing, replace 5 front stair treads; repair rear stairs and deck. repair less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M935689",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-06",
+      "status_date": "2018-06-06",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9826158",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-12-23",
+      "status_date": "1999-02-02",
+      "estimated_cost": 3200,
+      "description": "vehicle impact to front concrete steps,repair steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509678",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-09-04",
+      "status_date": "1989-09-24",
+      "estimated_cost": 26501,
+      "description": "repair of fire damage bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-09-04",
+      "status_date": "1986-01-15",
+      "estimated_cost": 1000,
+      "description": "non structural demolition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-03-10",
+      "status_date": "1983-06-09",
+      "estimated_cost": 576,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2405",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4026017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4026&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4026017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

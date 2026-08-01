@@ -1,0 +1,121 @@
+{
+  "address": "487 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/487/",
+  "apn": "3974027",
+  "block": "3974",
+  "lot": "027",
+  "eas_baseid": "489732",
+  "coordinates": {
+    "lat": 37.763433,
+    "lng": -122.407053
+  },
+  "parcel": {
+    "year_built": 1986,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3150,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0487 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229955,
+    "assessed_improvement_value": 570326,
+    "last_sale_date": "1989-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201408184114",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-18",
+      "status_date": "2014-08-18",
+      "estimated_cost": 13320,
+      "revised_cost": 13320,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-13",
+      "status_date": "1991-02-04",
+      "estimated_cost": 1200,
+      "description": "install vinyl siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512022",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-10-23",
+      "status_date": "1985-11-07",
+      "estimated_cost": 1,
+      "description": "deletion of subdrain beneath garage slab",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409794",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1984-09-11",
+      "status_date": "1985-09-27",
+      "estimated_cost": 40000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8406386",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1984-06-13",
+      "status_date": "1985-11-06",
+      "estimated_cost": 185000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=487",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3974027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3974&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3974027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

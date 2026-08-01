@@ -1,0 +1,128 @@
+{
+  "address": "46 Elgin Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/elgin-park/46/",
+  "apn": "3502077",
+  "block": "3502",
+  "lot": "077",
+  "eas_baseid": "357679",
+  "coordinates": {
+    "lat": 37.770751,
+    "lng": -122.423436
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1646,
+    "building_area_sqft": 2970,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0048 0046 ELGIN               PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 329196,
+    "assessed_improvement_value": 470288,
+    "last_sale_date": "1998-08-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "survey_name": "46-48 elgin park",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Elgin Park-Pearl Street Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1913",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M50965",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-13",
+      "status_date": "2006-12-13",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M49670",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-11-30",
+      "status_date": "2006-11-30",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M46824",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-30",
+      "status_date": "2006-10-30",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818900",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-30",
+      "status_date": "1988-12-06",
+      "estimated_cost": 5650,
+      "description": "tear off - 1 layer 28lb glass base sheet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELGIN&street_type=PARK&address_number=46",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3502077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3502&lot=077",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3502077",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.423435884877%2037.77075086278476)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

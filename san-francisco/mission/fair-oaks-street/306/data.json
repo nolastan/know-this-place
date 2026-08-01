@@ -1,0 +1,145 @@
+{
+  "address": "306 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/306/",
+  "apn": "6511001",
+  "block": "6511",
+  "lot": "001",
+  "eas_baseid": "400716",
+  "coordinates": {
+    "lat": 37.751706,
+    "lng": -122.42412
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 9,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 9,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 5175,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0306 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 59576,
+    "assessed_improvement_value": 148758
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307182436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-18",
+      "status_date": "2023-09-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "comply with nov 202308468: item#2 only for this permit. minor stairs repair <50%. upgrade guardrailing height.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M900587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-15",
+      "status_date": "2018-03-15",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M876528",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-12",
+      "status_date": "2018-01-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709066991",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-09-06",
+      "status_date": "2018-08-17",
+      "estimated_cost": 90000,
+      "revised_cost": 95000,
+      "description": "soft story retrofit per sfebc chapter 4d, 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406259370",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-25",
+      "status_date": "2014-09-30",
+      "estimated_cost": 4500,
+      "revised_cost": 9000,
+      "description": "#1- fire damage repairs to comply with bid 04490 correction notice, roof & framing repairs in kind, south lightwell 2x8 section flooring & wall, replace flue, windows, garage ceiling and comply with nov #201473481",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208234833",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-08-23",
+      "status_date": "2002-08-23",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair dry rotten stairway at rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718109",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-16",
+      "status_date": "1999-02-24",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=306",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

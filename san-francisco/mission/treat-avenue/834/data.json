@@ -1,0 +1,92 @@
+{
+  "address": "834 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/834/",
+  "apn": "3613039",
+  "block": "3613",
+  "lot": "039",
+  "eas_baseid": "362681",
+  "coordinates": {
+    "lat": 37.756709,
+    "lng": -122.413701
+  },
+  "parcel": {
+    "year_built": 1972,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3641,
+    "building_area_sqft": 1910,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0834 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27916,
+    "assessed_improvement_value": 63038
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1972",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202312152571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-15",
+      "status_date": "2024-04-17",
+      "estimated_cost": 15885,
+      "revised_cost": 15885,
+      "description": "replace (1) rear window and (1) rear patio door, both non-street visible (e) aluminum (n) wood comp window, (n) wood clad vinyl-patio door. no size change <30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513441",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-22",
+      "status_date": "1996-03-22",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=834",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

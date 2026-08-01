@@ -1,0 +1,95 @@
+{
+  "address": "819 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/819/",
+  "apn": "4086023E",
+  "block": "4086",
+  "lot": "023E",
+  "eas_baseid": "368343",
+  "coordinates": {
+    "lat": 37.758752,
+    "lng": -122.410367
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2513,
+    "building_area_sqft": 1625,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0819 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1285200,
+    "assessed_improvement_value": 550800,
+    "last_sale_date": "2023-09-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409181033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-18",
+      "status_date": "2024-12-03",
+      "estimated_cost": 35000,
+      "revised_cost": 10000,
+      "description": "add 4 skylights and redo roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403229268",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-03-22",
+      "status_date": "2006-05-05",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "enclosing a walkway underneath an (e) deck leading out to back yard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=819",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4086023E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4086&lot=023E",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4086023E",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

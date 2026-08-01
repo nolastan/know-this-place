@@ -1,0 +1,146 @@
+{
+  "address": "2719 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2719/",
+  "apn": "4211033",
+  "block": "4211",
+  "lot": "033",
+  "eas_baseid": "370270",
+  "coordinates": {
+    "lat": 37.754401,
+    "lng": -122.407045
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1185,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2719 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 443181,
+    "assessed_improvement_value": 295451,
+    "last_sale_date": "2002-03-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1082767",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-20",
+      "status_date": "2019-05-20",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M971549",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-28",
+      "status_date": "2018-08-28",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702239956",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-23",
+      "status_date": "2018-02-20",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace front window with window of the same size and style - no changes to the final look of the house - currently wood will be replaced with wood or wood interior aluminum exterior clad.(metal clad).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503191268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-19",
+      "status_date": "2015-04-16",
+      "estimated_cost": 11880,
+      "revised_cost": 11880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910229585",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-22",
+      "status_date": "2009-10-22",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replacing 1 broken windos in kind with a new window from marvin historical series. wood/aluminum clad. face the street. u factor 3.33",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104197217",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-19",
+      "status_date": "2001-11-29",
+      "estimated_cost": 4400,
+      "revised_cost": 4400,
+      "description": "afix 1/2 plywood to 1/2\" studs in bsmt,install 5/8x10\" bolts in epoxy every 4ft. 8d nails @ 4\"oc edg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400107",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-01-04",
+      "status_date": "1994-08-22",
+      "estimated_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2719",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4211033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4211&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4211033",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

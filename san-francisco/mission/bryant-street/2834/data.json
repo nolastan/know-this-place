@@ -1,0 +1,114 @@
+{
+  "address": "2834 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2834/",
+  "apn": "4336003",
+  "block": "4336",
+  "lot": "003",
+  "eas_baseid": "371355",
+  "coordinates": {
+    "lat": 37.749013,
+    "lng": -122.409089
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1080,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2834 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 265237,
+    "assessed_improvement_value": 159138,
+    "last_sale_date": "1991-09-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406144521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-14",
+      "status_date": "2024-07-26",
+      "estimated_cost": 18900,
+      "revised_cost": 18900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M185129",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-30",
+      "status_date": "2009-11-30",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403057932",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-05",
+      "status_date": "2004-04-02",
+      "estimated_cost": 3930,
+      "revised_cost": 3930,
+      "description": "replace 6 windows size for size, visable from street, aluminum to vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113335",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-29",
+      "status_date": "1991-11-29",
+      "estimated_cost": 2171,
+      "description": "dry rot and termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2834",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4336003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4336&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4336003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

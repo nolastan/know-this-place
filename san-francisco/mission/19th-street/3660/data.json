@@ -1,0 +1,109 @@
+{
+  "address": "3660–3662 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3660/",
+  "apn": "3587025",
+  "block": "3587",
+  "lot": "025",
+  "eas_baseid": "361021",
+  "coordinates": {
+    "lat": 37.76011,
+    "lng": -122.425016
+  },
+  "address_range": "3660–3662",
+  "street_numbers_on_parcel": [
+    "3660",
+    "3662"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3188,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3662 3660 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115358,
+    "assessed_improvement_value": 259057,
+    "assessed_fixtures_value": 112
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303204012",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-20",
+      "status_date": "2023-05-19",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001255282",
+      "type": "otc alterations permit",
+      "status": "approved",
+      "filed": "2010-01-25",
+      "status_date": "2010-01-25",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "remove/replacement of kitchen sink, countertop and cabinet. water drain & faucet will use (e) drain pipe & water inlets, only 102 inches long kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9716710",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-28",
+      "status_date": "1999-01-04",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3660",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

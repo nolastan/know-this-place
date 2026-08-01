@@ -1,0 +1,130 @@
+{
+  "address": "1168–1172 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1168/",
+  "apn": "4207012",
+  "block": "4207",
+  "lot": "012",
+  "eas_baseid": "370098",
+  "coordinates": {
+    "lat": 37.753202,
+    "lng": -122.410388
+  },
+  "address_range": "1168–1172",
+  "street_numbers_on_parcel": [
+    "1168",
+    "1170",
+    "1172"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 9,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 3366,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1172 1168 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 974804,
+    "assessed_improvement_value": 417764,
+    "last_sale_date": "2017-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M830707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-12",
+      "status_date": "2017-09-12",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710266620",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-26",
+      "status_date": "2007-10-26",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9421392",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-12-30",
+      "status_date": "1996-01-18",
+      "estimated_cost": 143000,
+      "description": "replace fire damaged stair & utility room at rear of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715438",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-10-27",
+      "status_date": "1988-04-04",
+      "estimated_cost": 800,
+      "description": "bring building into compliance required by dahi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413504",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-12-28",
+      "status_date": "1985-06-03",
+      "estimated_cost": 2000,
+      "description": "fix the totten wood or replace rotten wood & fix the fence",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1168",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

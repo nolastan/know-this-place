@@ -1,0 +1,94 @@
+{
+  "address": "119 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/119/",
+  "apn": "3589035",
+  "block": "3589",
+  "lot": "035",
+  "eas_baseid": "361194",
+  "coordinates": {
+    "lat": 37.761447,
+    "lng": -122.419887
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1151,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0119 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 680595,
+    "assessed_improvement_value": 120105,
+    "last_sale_date": "2023-10-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311140744",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-11-14",
+      "status_date": "2023-11-14",
+      "estimated_cost": 20000,
+      "revised_cost": 60000,
+      "description": "replace (e) bath and kitchen, no structural changes remove all (e) drywallm insolate walls and ceiling, new sheet rock, prime and paint refinish floors, new cabinets, countertops and fixtures, plumbing, new appliances update electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806547",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-20",
+      "status_date": "1988-10-19",
+      "estimated_cost": 350,
+      "description": "replace front porch & stairs, add new handrail at side wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=119",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

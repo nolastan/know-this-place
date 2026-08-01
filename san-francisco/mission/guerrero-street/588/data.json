@@ -1,0 +1,120 @@
+{
+  "address": "588–592 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/588/",
+  "apn": "3578014",
+  "block": "3578",
+  "lot": "014",
+  "eas_baseid": "360442",
+  "coordinates": {
+    "lat": 37.761743,
+    "lng": -122.424092
+  },
+  "address_range": "588–592",
+  "street_numbers_on_parcel": [
+    "588",
+    "590",
+    "592"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 4260,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0592 0588 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 134168,
+    "assessed_improvement_value": 266313
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808288522",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2018-08-28",
+      "status_date": "2020-02-06",
+      "estimated_cost": 75000,
+      "revised_cost": 129553,
+      "description": "interior renovation. t.i. improvement within existing retail space including soft demolition, ada upgrades, replace interior finishes, window & door replacement. no structural work. ice cream parlour 1st fl, offices 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412163853",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-16",
+      "status_date": "2015-01-02",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove e partition walls. rebuild e non conforming stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305967",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-04-12",
+      "status_date": "1993-09-24",
+      "estimated_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603381",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-03-25",
+      "status_date": "1986-05-07",
+      "estimated_cost": 5000,
+      "description": "tear out wood & glass front, which includes entry doors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=588",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578014",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

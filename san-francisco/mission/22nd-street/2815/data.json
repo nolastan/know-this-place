@@ -1,0 +1,158 @@
+{
+  "address": "2815 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2815/",
+  "apn": "4149035",
+  "block": "4149",
+  "lot": "035",
+  "eas_baseid": "369514",
+  "coordinates": {
+    "lat": 37.755686,
+    "lng": -122.410758
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2017,
+    "basement_area_sqft": 747,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2815 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 681616,
+    "assessed_improvement_value": 573877,
+    "last_sale_date": "2005-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106233083",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-23",
+      "status_date": "2021-09-24",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M896047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-02",
+      "status_date": "2018-03-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M858528",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-11-22",
+      "status_date": "2017-11-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707283176",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-07-28",
+      "status_date": "2018-04-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to pa 2017-0329-2636 convert proposed office to (n) bathroom at 1st floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M786727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-05-17",
+      "status_date": "2017-05-17",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703292636",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-29",
+      "status_date": "2018-03-22",
+      "estimated_cost": 50000,
+      "revised_cost": 72000,
+      "description": "adding (n) bath, family, bedroom & office @ ground floor; one story infill @ lightwell < 10 ft in height. voluntary foundation strengthening & seismic upgrade @ ground floor only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801092129",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-09",
+      "status_date": "2008-05-01",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "kitchen remodel, new electric, plumbing & replacement window @ lightwell(u= 0.67 max.), new furnace at garage, same location as existing. efficiency min. 78%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609654",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-03",
+      "status_date": "1996-10-03",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2815",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

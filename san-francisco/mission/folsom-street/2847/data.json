@@ -1,0 +1,142 @@
+{
+  "address": "2847 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2847/",
+  "apn": "6521032",
+  "block": "6521",
+  "lot": "032",
+  "eas_baseid": "401078",
+  "coordinates": {
+    "lat": 37.751784,
+    "lng": -122.413675
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 6,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 6,
+    "bedrooms": 10,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 3954,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2847 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2307810,
+    "assessed_improvement_value": 989060,
+    "last_sale_date": "2016-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202205254976",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-25",
+      "status_date": "2022-07-13",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "upgrade (e) fire alarm system for new adu and to comply with sffc section 1103.7.6.1. ref pa# 201804055582. sprinkler pa# 202011027989.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202011027989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-02",
+      "status_date": "2022-07-13",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "install fire sprinkler system in first floor. adu units addition only per nfpa 13. building #2018-0405-5522.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804055582",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-04-05",
+      "status_date": "2023-11-14",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "construct (2)(n) adu's at (e) garage space. ordinance 162-17",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804045455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-04",
+      "status_date": "2023-03-29",
+      "estimated_cost": 50000,
+      "revised_cost": 67000,
+      "description": "to comply with sf soft story program: install new steel frame at garage area, install new plywood over (e) studwall, install mew holddown, install new footing for steel frame & new shearwalls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808673",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-28",
+      "status_date": "1990-05-31",
+      "estimated_cost": 1800,
+      "description": "bring bldg up to code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2847",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41367458540704%2037.75178392587682)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

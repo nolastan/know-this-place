@@ -1,0 +1,105 @@
+{
+  "address": "1341 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1341/",
+  "apn": "4262020",
+  "block": "4262",
+  "lot": "020",
+  "eas_baseid": "370593",
+  "coordinates": {
+    "lat": 37.752605,
+    "lng": -122.404002
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2522,
+    "building_area_sqft": 1040,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1341 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 230519,
+    "assessed_improvement_value": 145982,
+    "last_sale_date": "1999-09-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201607293741",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-29",
+      "status_date": "2016-07-29",
+      "estimated_cost": 1900,
+      "revised_cost": 1900,
+      "description": "replace rotten wooden moldings in kind front stairs less than 50% replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004036137",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-03",
+      "status_date": "2001-04-09",
+      "estimated_cost": 2400,
+      "revised_cost": 2400,
+      "description": "remove 24 lf of foundatin.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002041085",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-02-04",
+      "status_date": "2001-04-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace front steps",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1341",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4262020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4262&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4262020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

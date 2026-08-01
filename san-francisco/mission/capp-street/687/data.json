@@ -1,0 +1,110 @@
+{
+  "address": "687 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/687/",
+  "apn": "3615078",
+  "block": "3615",
+  "lot": "078",
+  "eas_baseid": "486279",
+  "coordinates": {
+    "lat": 37.755728,
+    "lng": -122.417549
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "lot_area_sqft": 2694,
+    "building_area_sqft": 4339,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3148 3144 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 684455,
+    "assessed_improvement_value": 301079
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M649547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-12-23",
+      "status_date": "2015-12-23",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M639947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-23",
+      "status_date": "2015-11-23",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407252226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-25",
+      "status_date": "2014-10-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "change flooring to new hardwood floor. replace damage sheet rock. painting, change front door to compliace with ada.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802265558",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-26",
+      "status_date": "2008-04-07",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "move wall of existing garage 3 1/2\" and upgrade walls, ceiling of garage to 1-hr fire resistive. where feasible, existing siding to be reused.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=687",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3615078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3615&lot=078",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3615078",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

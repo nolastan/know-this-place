@@ -1,0 +1,161 @@
+{
+  "address": "3421–3425 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3421/",
+  "apn": "3644019",
+  "block": "3644",
+  "lot": "019",
+  "eas_baseid": "364198",
+  "coordinates": {
+    "lat": 37.753472,
+    "lng": -122.421294
+  },
+  "address_range": "3421–3425",
+  "street_numbers_on_parcel": [
+    "3421",
+    "3423",
+    "3425"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 14,
+    "stories": 3,
+    "rooms": 31,
+    "bathrooms": 15,
+    "lot_area_sqft": 4098,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3425 3421 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142242,
+    "assessed_improvement_value": 201849
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504023565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-02",
+      "status_date": "2025-05-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "comply with nov #202307475 item #7. replace 3x stairwell windows with vinyl retrofit. repair in kind boiler room single hung wood window. top and bottom sashes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1154847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-18",
+      "status_date": "2019-10-18",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1123647",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-08-13",
+      "status_date": "2019-08-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810233956",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-23",
+      "status_date": "2020-02-26",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "residential: soft story per sfebc chapter 4d cebc 2016 appx a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810233959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-23",
+      "status_date": "2020-02-26",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "commercial: tier 4 soft story ada compliance 20% rule",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704113746",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-04-11",
+      "status_date": "2026-01-09",
+      "estimated_cost": 45000,
+      "revised_cost": 48000,
+      "description": "interior remodel of hair salon into a dental office on g/f area 340 sq.ft. no change in exits & occupied area. change of use from from hair salon to medical service per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M521887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-29",
+      "status_date": "2014-09-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102081706",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-02-08",
+      "status_date": "2001-08-17",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3421",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3644019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3644&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3644019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

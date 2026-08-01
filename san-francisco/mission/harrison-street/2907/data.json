@@ -1,0 +1,113 @@
+{
+  "address": "2907 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2907/",
+  "apn": "4271035",
+  "block": "4271",
+  "lot": "035",
+  "eas_baseid": "370861",
+  "coordinates": {
+    "lat": 37.750725,
+    "lng": -122.4114
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1258,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2907 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106435,
+    "assessed_improvement_value": 101111,
+    "last_sale_date": "1997-12-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M420047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-23",
+      "status_date": "2013-08-23",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913940",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-09",
+      "status_date": "1999-11-08",
+      "estimated_cost": 3000,
+      "description": "install & repl windows in (e)openings & paint frnt hse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-16",
+      "status_date": "1998-10-30",
+      "estimated_cost": 2500,
+      "description": "new roof. replace with new sheathing & comp. shingles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-08-11",
+      "status_date": "1983-10-24",
+      "estimated_cost": 1161,
+      "description": "installation of 3 aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2907",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "address": "1061 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1061/",
+  "apn": "4153025",
+  "block": "4153",
+  "lot": "025",
+  "eas_baseid": "369659",
+  "coordinates": {
+    "lat": 37.755179,
+    "lng": -122.407235
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 950,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1061 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 409464,
+    "assessed_improvement_value": 272974,
+    "last_sale_date": "2004-03-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407161427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-16",
+      "status_date": "2014-10-17",
+      "estimated_cost": 8950,
+      "revised_cost": 8950,
+      "description": "demo (e) staircase, construct new staircase in same location to code, replace wood on landing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708038685",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-03",
+      "status_date": "2008-01-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "demolish (e) staircase, footing, landing, support beams, corrugated roof. infill door & window to match existing siding. construct new deck 12'-3\"x15'-3 1/2\", stairs, footing, landing & necessary supports railings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410298041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-29",
+      "status_date": "2004-12-06",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1061",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

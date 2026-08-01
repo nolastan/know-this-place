@@ -1,0 +1,152 @@
+{
+  "address": "845 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/845/",
+  "apn": "3608051",
+  "block": "3608",
+  "lot": "051",
+  "eas_baseid": "362337",
+  "coordinates": {
+    "lat": 37.757709,
+    "lng": -122.42316
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1920,
+    "building_area_sqft": 1672,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0845 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1130444,
+    "assessed_improvement_value": 599637,
+    "last_sale_date": "2011-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "MARSDEN KERSHAW HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Liberty Street Historic District",
+      "california_register_status": "Listed",
+      "national_register_status": "Listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1867–1911",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "M354168",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-22",
+      "status_date": "2012-10-22",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207175030",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-17",
+      "status_date": "2012-07-17",
+      "estimated_cost": 420,
+      "revised_cost": 420,
+      "description": "remove dry rot at kitchen & bath. as necessary. no change on walls and openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M334987",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-13",
+      "status_date": "2012-07-13",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205311632",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-05-31",
+      "status_date": "2012-11-08",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "modify 1 window on the rear facing elevation & renovate the interior of the 1st floor kitchen & 2nd floor bathroom. structural work on sheet s0.1 thru s5.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506237",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-01",
+      "status_date": "1995-12-21",
+      "estimated_cost": 11520,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=845",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42316041798809%2037.75770858778978)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

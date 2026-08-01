@@ -1,0 +1,131 @@
+{
+  "address": "2758–2760 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2758/",
+  "apn": "4210016",
+  "block": "4210",
+  "lot": "016",
+  "eas_baseid": "461230",
+  "coordinates": {
+    "lat": 37.753117,
+    "lng": -122.407633
+  },
+  "address_range": "2758–2760",
+  "street_numbers_on_parcel": [
+    "2758",
+    "2760"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2300,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2760 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 643786,
+    "assessed_improvement_value": 275447,
+    "last_sale_date": "2011-05-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201705055797",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-05",
+      "status_date": "2017-06-21",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "install prefabricated 12-foot wide retaractable awning to comply with nov 201775362.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M151164",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-11",
+      "status_date": "2009-02-11",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206179182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-17",
+      "status_date": "2002-07-16",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "demolish shed attach at rear of house/built w/o permit. to comply nov 200121348.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109208869",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-20",
+      "status_date": "2002-01-20",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "build a wood shead for storage rm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913835",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-08-02",
+      "status_date": "1991-03-21",
+      "estimated_cost": 9000,
+      "description": "repair damage to ceiling & walls, remove damaged areas",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2758",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4210016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4210&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4210016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

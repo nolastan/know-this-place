@@ -1,0 +1,158 @@
+{
+  "address": "2865–2867 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2865/",
+  "apn": "4270023",
+  "block": "4270",
+  "lot": "023",
+  "eas_baseid": "370815",
+  "coordinates": {
+    "lat": 37.751676,
+    "lng": -122.411491
+  },
+  "address_range": "2865–2867",
+  "street_numbers_on_parcel": [
+    "2865",
+    "2867"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2310,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2867 2865 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 181822,
+    "assessed_improvement_value": 392593,
+    "last_sale_date": "1988-05-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201811216534",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2018-11-21",
+      "status_date": "2022-03-16",
+      "estimated_cost": 30000,
+      "revised_cost": 75000,
+      "description": "abatement of complaint #201766671, termite, dry rot repair @ rear, rebuild rear of building (3 story) rear deck per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808096902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-09",
+      "status_date": "2018-08-31",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805240091",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-24",
+      "status_date": "2018-06-04",
+      "estimated_cost": 1,
+      "revised_cost": 6000,
+      "description": "revision 201707202495 per inspector request, submit plans to previous \"no-plans\" permits. provide new half powder room at (e) 3rd flr pantry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805240093",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-24",
+      "status_date": "2018-06-04",
+      "estimated_cost": 1,
+      "revised_cost": 15000,
+      "description": "revision 201805078396 per inspector request, submit plans to previously \"no-plans\" permits. provide one new bath at 2nd, remodel (e) bath & (e) kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805078396",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-07",
+      "status_date": "2018-05-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. to pa#201707202495: amend for work being done in addition to original permit to include one unit harrison street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707202495",
+      "type": "otc alterations permit",
+      "status": "suspend",
+      "filed": "2017-07-20",
+      "status_date": "2018-10-03",
+      "estimated_cost": 30000,
+      "revised_cost": 60000,
+      "description": "two bathrooms remodel and (2) kitchens remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2865",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4270023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4270&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4270023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41149135583859%2037.751676333913146)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

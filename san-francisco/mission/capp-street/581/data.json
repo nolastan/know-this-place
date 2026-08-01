@@ -1,0 +1,121 @@
+{
+  "address": "581–583 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/581/",
+  "apn": "3610009C",
+  "block": "3610",
+  "lot": "009C",
+  "eas_baseid": "362468",
+  "coordinates": {
+    "lat": 37.75749,
+    "lng": -122.417572
+  },
+  "address_range": "581–583",
+  "street_numbers_on_parcel": [
+    "581",
+    "583"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1871,
+    "building_area_sqft": 2246,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0583 0581 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1113821,
+    "assessed_improvement_value": 885351,
+    "last_sale_date": "2020-11-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207259214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-25",
+      "status_date": "2024-06-14",
+      "estimated_cost": 95450,
+      "revised_cost": 95450,
+      "description": "replace existing foundation and slab on grade for structural drwawings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111102201",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-11-10",
+      "status_date": "2024-06-14",
+      "estimated_cost": 800000,
+      "revised_cost": 800000,
+      "description": "addition, restoration & interior renovation. capp st (west) historic facade restoration, replace single-pane wd wndws w/ (n) wd wndws to match historic. exterior restoration to match wd siding-details-doors-stoop-iron work. demo (e) 2-stry rear addition. construct (n) 3-stry addition at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M150964",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-10",
+      "status_date": "2009-02-10",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602235273",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-23",
+      "status_date": "2006-02-23",
+      "estimated_cost": 12450,
+      "revised_cost": 12450,
+      "description": "install thre vent heaters on each floor. living rooom direct vent gas wall furnace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=581",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3610009C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3610&lot=009C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3610009C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

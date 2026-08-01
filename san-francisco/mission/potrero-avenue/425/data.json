@@ -1,0 +1,90 @@
+{
+  "address": "425 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/425/",
+  "apn": "3974023",
+  "block": "3974",
+  "lot": "023",
+  "eas_baseid": "366856",
+  "coordinates": {
+    "lat": 37.76408,
+    "lng": -122.407035
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 5100,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0425 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292820,
+    "assessed_improvement_value": 1005455
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8609409",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-08-05",
+      "status_date": "1986-12-01",
+      "estimated_cost": 48142,
+      "description": "the new work is limited to the modification of the existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413241",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-12-18",
+      "status_date": "1985-05-09",
+      "estimated_cost": 300,
+      "description": "seal off windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=425",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3974023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3974&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3974023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

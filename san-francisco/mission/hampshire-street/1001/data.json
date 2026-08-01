@@ -1,0 +1,156 @@
+{
+  "address": "1001 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1001/",
+  "apn": "4153032",
+  "block": "4153",
+  "lot": "032",
+  "eas_baseid": "369666",
+  "coordinates": {
+    "lat": 37.755893,
+    "lng": -122.407432
+  },
+  "parcel": {
+    "year_built": 1952,
+    "units": 13,
+    "stories": 3,
+    "rooms": 25,
+    "bathrooms": 12,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 9250,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1001 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 705465,
+    "assessed_improvement_value": 608266,
+    "last_sale_date": "1999-06-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1952",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202312011795",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-01",
+      "status_date": "2024-04-19",
+      "estimated_cost": 27300,
+      "revised_cost": 38488,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703010440",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-01",
+      "status_date": "2017-05-01",
+      "estimated_cost": 3000,
+      "revised_cost": 7000,
+      "description": "one unit: remove sink cabinet & (3) upper cabinets in efficiency kitchen; reinstall new sink, new base cabinet & upper (3) cabinets in same location; reinstall (e) electrical stove.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603091588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-09",
+      "status_date": "2017-05-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: remove/replace (e) tile & sheetrock, replace damaged pipes, (e) vent to remain",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412173901",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-17",
+      "status_date": "2015-05-20",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "soft story seismic retrofit of multi unit apartment building per san francisco soft story ordinance, chapter 34b 1ebc 2012",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M273427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-22",
+      "status_date": "2011-07-22",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918135",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-30",
+      "status_date": "1999-10-14",
+      "estimated_cost": 6500,
+      "description": "termite repair as per report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402596",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-03-12",
+      "status_date": "1984-09-13",
+      "estimated_cost": 1535,
+      "description": "to bring building into full compliance with the provisions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402525",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-03-09",
+      "status_date": "1984-06-20",
+      "estimated_cost": 5,
+      "description": "to bring building into full compliance with the provisions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

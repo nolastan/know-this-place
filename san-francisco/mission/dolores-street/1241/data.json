@@ -1,0 +1,119 @@
+{
+  "address": "1241 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1241/",
+  "apn": "6534025",
+  "block": "6534",
+  "lot": "025",
+  "eas_baseid": "401517",
+  "coordinates": {
+    "lat": 37.749563,
+    "lng": -122.424514
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3115,
+    "building_area_sqft": 2875,
+    "basement_area_sqft": 625,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1243 1241 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1078422,
+    "assessed_improvement_value": 810593,
+    "last_sale_date": "2002-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510177653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-17",
+      "status_date": "2025-12-17",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "re-roofing: remove existing in-kind composition shingles and replace with new composition shingles on roof, class a fire rated, no change to facade, roofline, or appearance, no hotworks.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509294254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-29",
+      "status_date": "2006-12-06",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "2nd & 3rd story remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310308962",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-30",
+      "status_date": "2006-12-01",
+      "estimated_cost": 26887,
+      "revised_cost": 26887,
+      "description": "underpinning foundation along south property line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305275446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-27",
+      "status_date": "2003-06-12",
+      "estimated_cost": 1950,
+      "revised_cost": 1950,
+      "description": "reset south west corner post where accident pushed post out of place. remove & replace 50 sf of redw",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1241",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6534025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6534&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6534025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

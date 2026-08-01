@@ -1,0 +1,131 @@
+{
+  "address": "3487–3497 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3487/",
+  "apn": "3618037",
+  "block": "3618",
+  "lot": "037",
+  "eas_baseid": "362949",
+  "coordinates": {
+    "lat": 37.75653,
+    "lng": -122.42524
+  },
+  "address_range": "3487–3497",
+  "street_numbers_on_parcel": [
+    "3487",
+    "3489",
+    "3491",
+    "3493",
+    "3495",
+    "3497"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2339,
+    "building_area_sqft": 6114,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3497 3487 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93526,
+    "assessed_improvement_value": 198690
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201311121624",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-11-12",
+      "status_date": "2015-07-16",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply w/ pnoe 12258. removal of towerstream wifi antenna site: 3 antennas & keep one otard antenna.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M344447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-24",
+      "status_date": "2012-08-24",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M59164",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-02-28",
+      "status_date": "2007-02-28",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-28",
+      "status_date": "1996-04-04",
+      "estimated_cost": 6870,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203851",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-17",
+      "status_date": "1985-11-25",
+      "estimated_cost": 9800,
+      "description": "bldg use: apts.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3487",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

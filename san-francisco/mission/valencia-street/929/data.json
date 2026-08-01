@@ -1,0 +1,132 @@
+{
+  "address": "929 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/929/",
+  "apn": "3609038",
+  "block": "3609",
+  "lot": "038",
+  "eas_baseid": "362386",
+  "coordinates": {
+    "lat": 37.757988,
+    "lng": -122.420924
+  },
+  "parcel": {
+    "year_built": 1870,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2160,
+    "building_area_sqft": 2032,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0929 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 128041,
+    "assessed_improvement_value": 106699
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1870",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201103111961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-11",
+      "status_date": "2011-03-15",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "south wall (alley) of building: replace damaged redwood siding, cover openings & voids with new siding to match existing. remove, cap & plug abandened drain pipe, remove & replace basement door & frame.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103101831",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2011-03-10",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1500,
+      "revised_cost": 0,
+      "description": "repair damaged siding, replace blind windows with exterior siding (infill), all repair work south side. replace 1 door and frame at basement level. remove and cap abandonded drain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412282262",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-28",
+      "status_date": "2005-07-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 12 (e) windows (7 wood, clad units front elevation, 5 vinyl units rear & side elevations)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208077",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-05-18",
+      "status_date": "1993-01-27",
+      "estimated_cost": 4000,
+      "revised_cost": 14000,
+      "description": "parapet strengthing of one-story bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=929",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42092361457149%2037.75798782907979)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "address": "3484 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3484/",
+  "apn": "3576054",
+  "block": "3576",
+  "lot": "054",
+  "eas_baseid": "360338",
+  "coordinates": {
+    "lat": 37.761927,
+    "lng": -122.421165
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 6,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 6,
+    "lot_area_sqft": 1799,
+    "building_area_sqft": 3891,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3484 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244031,
+    "assessed_improvement_value": 244031,
+    "last_sale_date": "1987-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503041515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-04",
+      "status_date": "2025-03-31",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair damage step/tread at rear exterior stairway between 1st and 2nd floor. to comply with nov# 200010692. provide additional guardrails to bottom and top of landing of rear exterior stairs less than 50%. legalize existing gas heating unit in one unit to comply with nov #200010130.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303214108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-21",
+      "status_date": "2023-03-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201809109534. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809109534",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2018-09-10",
+      "status_date": "2023-03-24",
+      "estimated_cost": 5000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit to comply with sfebc ch 4 d based on cegc appendix a4 calculations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M722367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-15",
+      "status_date": "2016-09-15",
+      "revised_cost": 1,
+      "description": "street space w/mta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110247451",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-24",
+      "status_date": "2011-10-24",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110090191",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-09",
+      "status_date": "2003-01-09",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "do minor stairs repair at the back of the building less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-19",
+      "status_date": "1998-10-23",
+      "estimated_cost": 1,
+      "description": "renew expired permit appn. 9725062",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725062",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-12-15",
+      "status_date": "1998-10-23",
+      "estimated_cost": 3200,
+      "revised_cost": 12000,
+      "description": "comply w/n.o.v. #199706024,legalize 1/2 bath,replace sink",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3484",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576054",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

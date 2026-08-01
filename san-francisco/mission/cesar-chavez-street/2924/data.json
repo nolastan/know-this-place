@@ -1,0 +1,116 @@
+{
+  "address": "2924 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2924/",
+  "apn": "4335003G",
+  "block": "4335",
+  "lot": "003G",
+  "eas_baseid": "371345",
+  "coordinates": {
+    "lat": 37.748574,
+    "lng": -122.408276
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1389,
+    "building_area_sqft": 2664,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2926 2924 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 999500,
+    "assessed_improvement_value": 428354,
+    "last_sale_date": "2019-06-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307142263",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2023-07-18",
+      "status_date": "2023-07-18",
+      "estimated_cost": 109000,
+      "revised_cost": 205108,
+      "description": "change of occupancy. this project is to legalize first fl udu space,per ordinance 43-14. add 2 beds, 2 baths,1 kitchen & living area.demolish unpermitted deck & it's enclosure to comply with violation#2021-003088enf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M34378",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-16",
+      "status_date": "2005-09-16",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304293380",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-29",
+      "status_date": "2003-06-18",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "renew app #200109198556 with 20% work remaining",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109198656",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-19",
+      "status_date": "2002-03-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "work to comply with nov 200117319, remove (e) kitchen & shower. remove bars fm door/window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2924",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4335003G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4335&lot=003G",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4335003G",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

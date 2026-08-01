@@ -1,0 +1,109 @@
+{
+  "address": "2783–2785 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2783/",
+  "apn": "4274014",
+  "block": "4274",
+  "lot": "014",
+  "eas_baseid": "370957",
+  "coordinates": {
+    "lat": 37.749867,
+    "lng": -122.408531
+  },
+  "address_range": "2783–2785",
+  "street_numbers_on_parcel": [
+    "2783",
+    "2785"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 2,
+    "lot_area_sqft": 2330,
+    "building_area_sqft": 3219,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2785 2783 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1132615,
+    "assessed_improvement_value": 523385,
+    "last_sale_date": "1991-10-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1116268",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-29",
+      "status_date": "2019-07-29",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906042459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-04",
+      "status_date": "2020-05-26",
+      "estimated_cost": 34000,
+      "revised_cost": 34000,
+      "description": "remove and replace cedar shingle siding at front to match existing. replace (e) wood sash windows with (n) custom made wood sash windows to match existing. total 12 windows (10 at front, 2 on side). repair front wood stairs and risers to match existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303311055",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-31",
+      "status_date": "2003-07-10",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "kitchen-new cabinets,sheetrock.bathrm-tile,tub,sheetrock.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2783",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4274014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4274&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4274014",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "address": "1016–1020 Minna Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/minna-street/1016/",
+  "apn": "3511073",
+  "block": "3511",
+  "lot": "073",
+  "eas_baseid": "357873",
+  "coordinates": {
+    "lat": 37.773728,
+    "lng": -122.41706
+  },
+  "address_range": "1016–1020",
+  "street_numbers_on_parcel": [
+    "1016",
+    "1018",
+    "1020"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 4125,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1020 1016 MINNA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111008,
+    "assessed_improvement_value": 222042
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202009033396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-03",
+      "status_date": "2021-11-17",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "mandatory soft story retrofit in the basement per 2019 sfebc, appendix a.4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709117604",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-09-11",
+      "status_date": "2020-09-04",
+      "estimated_cost": 38000,
+      "revised_cost": 44000,
+      "description": "soft story upgarde of first floor per ab-106, 107 and chapter 4d of sfbc and chapter 34 of cbc 2016",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011165988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-16",
+      "status_date": "2001-09-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "install 3 underpinning piers, excavate 2 lox 8 by 12 , install new footing 23 lin ft, reinforce foot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNA&street_type=ST&address_number=1016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3511073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3511&lot=073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3511073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4170598573181%2037.77372821212443)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

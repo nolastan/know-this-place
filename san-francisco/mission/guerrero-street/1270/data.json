@@ -1,0 +1,149 @@
+{
+  "address": "1270–1272 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1270/",
+  "apn": "6512005",
+  "block": "6512",
+  "lot": "005",
+  "eas_baseid": "400760",
+  "coordinates": {
+    "lat": 37.750911,
+    "lng": -122.423134
+  },
+  "address_range": "1270–1272",
+  "street_numbers_on_parcel": [
+    "1270",
+    "1272"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1270 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602720,
+    "assessed_improvement_value": 361618,
+    "last_sale_date": "1991-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709056935",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-05",
+      "status_date": "2017-09-05",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706169561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-16",
+      "status_date": "2017-10-19",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace window glass only for second floor window (front of the house); no change to fenestration. also replace windows in light well area on side, and 17 windows at rear. total 28 windows & glass. u factor not > .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022509",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-11-01",
+      "status_date": "1991-04-23",
+      "estimated_cost": 50,
+      "description": "renew permit #623393 app #8914767",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8914767",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-08-15",
+      "status_date": "1990-08-10",
+      "estimated_cost": 500,
+      "description": "upgrade (e) apt. install drywall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902686",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-02-16",
+      "status_date": "1989-06-30",
+      "estimated_cost": 1000,
+      "description": "upgrading exist apt., relocate n/b walls, re #8805255",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811386",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-09",
+      "status_date": "1989-01-05",
+      "estimated_cost": 300,
+      "description": "construct smoke vent in poof of stair-well",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805255",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-04-22",
+      "status_date": "1988-12-16",
+      "estimated_cost": 5000,
+      "description": "upgrade exist apt., relocate non-bear walls, insall skylight",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1270",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6512005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6512&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6512005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

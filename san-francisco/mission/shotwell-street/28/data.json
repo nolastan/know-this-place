@@ -1,0 +1,112 @@
+{
+  "address": "28–30 Shotwell Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/shotwell-street/28/",
+  "apn": "3549053",
+  "block": "3549",
+  "lot": "053",
+  "eas_baseid": "359181",
+  "coordinates": {
+    "lat": 37.767919,
+    "lng": -122.416966
+  },
+  "address_range": "28–30",
+  "street_numbers_on_parcel": [
+    "28",
+    "30"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 3192,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0030 0028 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 963900,
+    "assessed_improvement_value": 413100,
+    "last_sale_date": "2023-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200012228530",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-12-22",
+      "status_date": "2002-03-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "addition of window on the bak wall, revise plan previously approved per#200009261554 relocate 1/2 ba",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009261554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-26",
+      "status_date": "2001-02-05",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "storage rooms & 1/2 bthrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312229",
+      "type": "additions alterations or repairs",
+      "status": "appeal",
+      "filed": "1993-07-20",
+      "status_date": "1999-12-28",
+      "estimated_cost": 500,
+      "revised_cost": 19000,
+      "description": "revert to storage room in the basement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=28",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3549053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3549&lot=053",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3549053",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

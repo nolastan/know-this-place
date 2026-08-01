@@ -1,0 +1,90 @@
+{
+  "address": "1114–1118 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/1114/",
+  "apn": "3635003",
+  "block": "3635",
+  "lot": "003",
+  "eas_baseid": "363758",
+  "coordinates": {
+    "lat": 37.75497,
+    "lng": -122.421206
+  },
+  "address_range": "1114–1118",
+  "street_numbers_on_parcel": [
+    "1114",
+    "1116",
+    "1118"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 9,
+    "lot_area_sqft": 1854,
+    "building_area_sqft": 5096,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1118 1114 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1717894,
+    "assessed_improvement_value": 736238,
+    "last_sale_date": "2019-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200308010978",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-01",
+      "status_date": "2003-08-12",
+      "estimated_cost": 14550,
+      "revised_cost": 14550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=1114",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3635003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3635&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3635003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

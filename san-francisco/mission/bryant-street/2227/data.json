@@ -1,0 +1,154 @@
+{
+  "address": "2227–2229 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2227/",
+  "apn": "4087036",
+  "block": "4087",
+  "lot": "036",
+  "eas_baseid": "368377",
+  "coordinates": {
+    "lat": 37.758745,
+    "lng": -122.409381
+  },
+  "address_range": "2227–2229",
+  "street_numbers_on_parcel": [
+    "2227",
+    "2229"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2533,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2229 2227 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1591811,
+    "assessed_improvement_value": 1061207,
+    "last_sale_date": "2023-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505166713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-16",
+      "status_date": "2025-05-20",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "to comply with physcial inspection report cc-8691. ref 202504214876",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504214876",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-21",
+      "status_date": "2025-04-24",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "ground level - install dryer vent, outlet to be in the light well.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410152957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-15",
+      "status_date": "2024-10-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for administrative purpose to verify building use as two dwelling units per city recordds (assessor's, water dept, and dbi site visit). no work under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211166646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-16",
+      "status_date": "2022-11-21",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204202649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-20",
+      "status_date": "2023-03-03",
+      "estimated_cost": 5000,
+      "revised_cost": 17000,
+      "description": "replace all rear windows (29 total) not visible from the street and require sheetrock at stairs (about 500 sf) u=.30max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201065518",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-06",
+      "status_date": "2023-03-03",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "2227 bryant - remodel kitchen (144 sf) & 2 bathrooms (80 sf) in-kind. 2229 bryant - remodel kitchen (144 sf) & 1 bathroom (40 sf) in-kind. no change in layouts and walls. repair rear deck (less than 50%).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403158549",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-03-15",
+      "status_date": "2004-03-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2227",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "address": "1119 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1119/",
+  "apn": "6525031",
+  "block": "6525",
+  "lot": "031",
+  "eas_baseid": "401203",
+  "coordinates": {
+    "lat": 37.750456,
+    "lng": -122.414675
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 7,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 5,
+    "lot_area_sqft": 3737,
+    "building_area_sqft": 3440,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1119 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 171813,
+    "assessed_improvement_value": 342808,
+    "last_sale_date": "1996-07-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202504094071",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-09",
+      "status_date": "2025-04-11",
+      "estimated_cost": 8000,
+      "revised_cost": 80000,
+      "description": "replace (e) concrete, slab and foundation per plan; replace (e) piping & electrical wiring @ ground floor; provide 5/8\" type'x' gyped on wand eiling @ ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707192312",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-19",
+      "status_date": "2017-10-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision 201706088745, soft story. provide new concrete bond beam gl c.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706088745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-08",
+      "status_date": "2017-10-04",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "soft story upgrade of 1st fl per ab 106, 107 and chapter 4d of sf building code 2016 and chapter 34 of ca building code 2016",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-24",
+      "status_date": "1997-02-07",
+      "estimated_cost": 700,
+      "description": "revision to appl #9613983, 4x4 post w/4x10 beams on 3rd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613983",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-07-31",
+      "status_date": "1997-02-07",
+      "estimated_cost": 12000,
+      "description": "new bathroom, enlarge fire exit hallway, skylight, closets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420073",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-07",
+      "status_date": "1995-07-28",
+      "estimated_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1119",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6525031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41467518093789%2037.75045626358378)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

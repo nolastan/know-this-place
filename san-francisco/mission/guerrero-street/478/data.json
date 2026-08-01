@@ -1,0 +1,100 @@
+{
+  "address": "478–482 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/478/",
+  "apn": "3567008",
+  "block": "3567",
+  "lot": "008",
+  "eas_baseid": "359957",
+  "coordinates": {
+    "lat": 37.763515,
+    "lng": -122.424265
+  },
+  "address_range": "478–482",
+  "street_numbers_on_parcel": [
+    "478",
+    "480",
+    "482"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 5105,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0482 0478 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 76979,
+    "assessed_improvement_value": 226482,
+    "last_sale_date": "1994-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201202134095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-13",
+      "status_date": "2012-04-17",
+      "estimated_cost": 880,
+      "revised_cost": 880,
+      "description": "per nov 201282933 to complete items from 1 to 8 dated 1/19/12. repair deteriorated stair, provide self closing device for passageway door located at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306026055",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-06-02",
+      "status_date": "2004-02-13",
+      "estimated_cost": 90000,
+      "revised_cost": 120000,
+      "description": "repair for fire damage per nov 200339202 & plans.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=478",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3567008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3567&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3567008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

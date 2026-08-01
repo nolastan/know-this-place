@@ -1,0 +1,125 @@
+{
+  "address": "1465 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1465/",
+  "apn": "4334009",
+  "block": "4334",
+  "lot": "009",
+  "eas_baseid": "371309",
+  "coordinates": {
+    "lat": 37.748868,
+    "lng": -122.407522
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1599,
+    "basement_area_sqft": 555,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1465 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1204746,
+    "assessed_improvement_value": 516318,
+    "last_sale_date": "2021-06-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405081646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-08",
+      "status_date": "2024-05-28",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-26",
+      "status_date": "1996-10-31",
+      "estimated_cost": 8000,
+      "description": "level floor, cap foundation, change (e) beam.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604129S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-03-13",
+      "status_date": "1996-10-31",
+      "estimated_cost": 15000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-30",
+      "status_date": "1986-01-08",
+      "estimated_cost": 480,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-08-29",
+      "status_date": "1984-12-05",
+      "estimated_cost": 800,
+      "description": "repair rear wooden stairs to yard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1465",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

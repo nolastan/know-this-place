@@ -1,0 +1,166 @@
+{
+  "address": "1181–1185 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1181/",
+  "apn": "3645015",
+  "block": "3645",
+  "lot": "015",
+  "eas_baseid": "364216",
+  "coordinates": {
+    "lat": 37.752259,
+    "lng": -122.42263
+  },
+  "address_range": "1181–1185",
+  "street_numbers_on_parcel": [
+    "1181",
+    "1183",
+    "1185"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 2437.5,
+    "building_area_sqft": 6390,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1185 1181 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 575444,
+    "assessed_improvement_value": 624445
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202202087575",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-02-08",
+      "status_date": "2022-02-08",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "voluntary installation of fire alarm system. new ifp75 pull station, smoke detectors, communicator, sounder inside unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707202427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-20",
+      "status_date": "2019-04-18",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfebc chapter 4d, 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M699929",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-22",
+      "status_date": "2016-06-22",
+      "revised_cost": 1,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503039792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-03",
+      "status_date": "2015-05-29",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29191",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-13",
+      "status_date": "2004-09-13",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-26",
+      "status_date": "1996-05-29",
+      "estimated_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605088",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-01",
+      "status_date": "1988-08-08",
+      "estimated_cost": 2000,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1181",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42262979927686%2037.752258952011026)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

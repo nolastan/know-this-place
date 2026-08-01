@@ -1,0 +1,138 @@
+{
+  "address": "46–52 Dearborn Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dearborn-street/46/",
+  "apn": "3577046",
+  "block": "3577",
+  "lot": "046",
+  "eas_baseid": "360410",
+  "coordinates": {
+    "lat": 37.762415,
+    "lng": -122.423232
+  },
+  "address_range": "46–52",
+  "street_numbers_on_parcel": [
+    "46",
+    "48",
+    "50",
+    "52"
+  ],
+  "parcel": {
+    "lot_area_sqft": 3092,
+    "use": "Multi-Family Residential",
+    "property_class": "TI Apartment",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0052 0046 DEARBORN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2236551,
+    "assessed_improvement_value": 1413654,
+    "last_sale_date": "2021-08-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304045017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-04",
+      "status_date": "2023-10-04",
+      "estimated_cost": 1,
+      "revised_cost": 3000,
+      "description": "rev to pa# 2022-1018-4624: replace drywall at living room with 5/8\" type x sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210184624",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-18",
+      "status_date": "2023-10-04",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodeling one bathroom and one kitchen. change new water heater, add new heater. change new electric wire.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110251103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-25",
+      "status_date": "2022-04-07",
+      "estimated_cost": 20000,
+      "revised_cost": 27000,
+      "description": "remodeling one bathroom and one kitchen. new tile, bathtop, faucet, cabinet, countertop. new paint. change new water heater. add the new heater. non structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105236564",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-23",
+      "status_date": "2011-05-23",
+      "estimated_cost": 350,
+      "revised_cost": 1200,
+      "description": "repair exterior stairs & drywall (patching only) interior public area, less than 50% repair, plumbing & electrical work on #52 only to comply with nov #201125741 & 201125381",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609263323",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-26",
+      "status_date": "2007-05-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove all sheet rock and replace with enw added insulation for one unit kitchen bathroom bedroom living room type \"x\" at property lines and between units kitchen and bathrooms cabinets and fixtures to remain",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608219991",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-08-21",
+      "status_date": "2009-04-02",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DEARBORN&street_type=ST&address_number=46",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577046",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

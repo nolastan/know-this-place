@@ -1,0 +1,108 @@
+{
+  "address": "380–382 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/380/",
+  "apn": "6511012",
+  "block": "6511",
+  "lot": "012",
+  "eas_baseid": "400730",
+  "coordinates": {
+    "lat": 37.750644,
+    "lng": -122.424137
+  },
+  "address_range": "380–382",
+  "street_numbers_on_parcel": [
+    "380",
+    "382"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2108,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0382 0380 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39661,
+    "assessed_improvement_value": 54216
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102124582",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-12",
+      "status_date": "2021-02-12",
+      "estimated_cost": 250,
+      "revised_cost": 1500,
+      "description": "replace two rotted 4x4 post under rear deck in backyard with 2 new pt posts. all work in-kind. to comply with complaint 201906536",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011206153",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-20",
+      "status_date": "2001-11-08",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remove concrete deck/roof of the 9 garage, rebuild with wood and concrete & the front stairway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712103",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-01",
+      "status_date": "1999-02-24",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=380",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

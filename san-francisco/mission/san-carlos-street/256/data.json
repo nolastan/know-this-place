@@ -1,0 +1,166 @@
+{
+  "address": "256–258 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/256/",
+  "apn": "3596044",
+  "block": "3596",
+  "lot": "044",
+  "eas_baseid": "361488",
+  "coordinates": {
+    "lat": 37.759274,
+    "lng": -122.420103
+  },
+  "address_range": "256–258",
+  "street_numbers_on_parcel": [
+    "256",
+    "258"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 3000,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0258 0256 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124290,
+    "assessed_improvement_value": 165728
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201703141415",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-03-14",
+      "status_date": "2017-06-22",
+      "estimated_cost": 9680,
+      "revised_cost": 9680,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702038581",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-02-03",
+      "status_date": "2026-01-09",
+      "estimated_cost": 9680,
+      "revised_cost": 9680,
+      "description": "re-roofing; roof slope less than 2:12",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211073770",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-07",
+      "status_date": "2012-11-07",
+      "estimated_cost": 10000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel in kind and bathroom remodel upgrade electrical plumbing in kind in same location and no structural; comply with cec 150(k) 8 and (k)10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219202",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-11-05",
+      "status_date": "1994-05-13",
+      "estimated_cost": 4000,
+      "description": "stairs work at rear of bldg from the floor with 2 platforms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816923",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-11-03",
+      "status_date": "1994-09-26",
+      "estimated_cost": 1000,
+      "description": "comply with warning of violation dated 10/18/88",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801939",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-02-18",
+      "status_date": "1988-08-08",
+      "estimated_cost": 1600,
+      "description": "replace back yard stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502021",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-28",
+      "status_date": "1985-10-28",
+      "estimated_cost": 6500,
+      "description": "install new cabinets in kitchen, remodel bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=256",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=044",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596044",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42010266247809%2037.75927365741532)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

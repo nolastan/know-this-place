@@ -1,0 +1,162 @@
+{
+  "address": "2707 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2707/",
+  "apn": "4144041",
+  "block": "4144",
+  "lot": "041",
+  "eas_baseid": "369329",
+  "coordinates": {
+    "lat": 37.757531,
+    "lng": -122.408874
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1910,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2707 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1475933,
+    "assessed_improvement_value": 632540,
+    "last_sale_date": "2013-11-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201612145008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-14",
+      "status_date": "2017-03-22",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "increase (e) garage door opening from 7'-6\" to 9'-0\" centered, and replacement garage door; no other exterior work. all work to match (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509258058",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2015-09-25",
+      "status_date": "2016-09-15",
+      "estimated_cost": 615000,
+      "revised_cost": 615000,
+      "description": "interior remodel & rear addition, convert (e) lower level storage to condition floor area. add one bedroom & one & one half bathrooms. kitchen & bathroom remodel; horiz addition at rear, no changes to front of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402259247",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-25",
+      "status_date": "2014-05-14",
+      "estimated_cost": 7700,
+      "revised_cost": 7700,
+      "description": "install epa certified wood stove, per sbc 3111.3 model 7940 jotul-not in bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312234796",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-23",
+      "status_date": "2013-12-23",
+      "estimated_cost": 9210,
+      "revised_cost": 9210,
+      "description": "repalce existing ducting in garage with new 26 gauge steel ductwork per cbc 406.1, replace existing furnace with new and install new flue",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921165",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-06",
+      "status_date": "1990-04-12",
+      "estimated_cost": 1700,
+      "description": "remove (e) non conforming stairs to 2/f install new one",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918393",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-10-02",
+      "status_date": "1990-04-12",
+      "estimated_cost": 30000,
+      "description": "new electrical service, install new copper valse lines",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-18",
+      "status_date": "1989-09-26",
+      "estimated_cost": 1900,
+      "description": "raising foundation concrete cap, concrete installation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2707",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4144041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4144&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4144041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40887354723631%2037.757531365717476)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

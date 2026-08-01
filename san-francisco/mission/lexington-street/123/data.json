@@ -1,0 +1,92 @@
+{
+  "address": "123 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/123/",
+  "apn": "3589067",
+  "block": "3589",
+  "lot": "067",
+  "eas_baseid": "361224",
+  "coordinates": {
+    "lat": 37.761343,
+    "lng": -122.420566
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 1598,
+    "building_area_sqft": 1950,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0125 0123 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139352,
+    "assessed_improvement_value": 71646
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201601126833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-12",
+      "status_date": "2016-10-07",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "fire damange repair to inside finishes per correction notice-6000sf of drywall repairs. all repairs in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-01-09",
+      "status_date": "1987-03-30",
+      "estimated_cost": 300,
+      "description": "comply w/warning of violation, repair ceiling & roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=123",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589067",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

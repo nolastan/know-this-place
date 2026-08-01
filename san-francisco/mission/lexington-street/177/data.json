@@ -1,0 +1,135 @@
+{
+  "address": "177–179 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/177/",
+  "apn": "3589055",
+  "block": "3589",
+  "lot": "055",
+  "eas_baseid": "361214",
+  "coordinates": {
+    "lat": 37.760583,
+    "lng": -122.420493
+  },
+  "address_range": "177–179",
+  "street_numbers_on_parcel": [
+    "177",
+    "179"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2584,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0179 0177 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159266,
+    "assessed_improvement_value": 109482
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201301107719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-10",
+      "status_date": "2013-01-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200912314078. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912314078",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-12-31",
+      "status_date": "2010-01-04",
+      "estimated_cost": 100,
+      "revised_cost": 500,
+      "description": "re-nailing a couple of loose stairs at exterior (rear) staircase per dbi complaint #200928961, repair/replace dry rot compenents of rear exterior staircase serving all units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M60269",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-03-12",
+      "status_date": "2007-03-12",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8610660",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-29",
+      "status_date": "1987-02-05",
+      "estimated_cost": 500,
+      "description": "repair rear doors, provide approved locks",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=177",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42049308909307%2037.76058314512719)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

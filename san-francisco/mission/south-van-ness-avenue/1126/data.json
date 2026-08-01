@@ -1,0 +1,132 @@
+{
+  "address": "1126 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1126/",
+  "apn": "3637006",
+  "block": "3637",
+  "lot": "006",
+  "eas_baseid": "363822",
+  "coordinates": {
+    "lat": 37.755056,
+    "lng": -122.416873
+  },
+  "parcel": {
+    "year_built": 1880,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 3189.9,
+    "building_area_sqft": 3120,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1126 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 627160,
+    "assessed_improvement_value": 340520,
+    "assessed_fixtures_value": 98,
+    "last_sale_date": "1987-09-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Von Schroeder-Welsh Block Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1889–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202107124151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-12",
+      "status_date": "2021-07-28",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M182363",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-19",
+      "status_date": "2009-10-19",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601091688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-09",
+      "status_date": "2006-03-02",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace rear extension stairs in kind. for one unit private stairs comply w/ nov# 200448682 item#2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813077",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-02",
+      "status_date": "1990-05-08",
+      "estimated_cost": 3000,
+      "description": "install a store room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1126",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3637006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3637&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3637006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41687315823114%2037.75505563434544)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

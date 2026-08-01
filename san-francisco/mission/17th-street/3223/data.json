@@ -1,0 +1,129 @@
+{
+  "address": "3223–3227 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3223/",
+  "apn": "3575090",
+  "block": "3575",
+  "lot": "090",
+  "eas_baseid": "360283",
+  "coordinates": {
+    "lat": 37.7633,
+    "lng": -122.417919
+  },
+  "address_range": "3223–3227",
+  "street_numbers_on_parcel": [
+    "3223",
+    "3227"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 8,
+    "stories": 3,
+    "rooms": 29,
+    "bathrooms": 8,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 6386,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3227 3223 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367944,
+    "assessed_improvement_value": 529846,
+    "last_sale_date": "1990-05-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709148272",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2017-09-14",
+      "status_date": "2017-12-18",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "soft story, seismic retrofit program, sfbc ch 4d, per iebc 2016 app a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708230729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-23",
+      "status_date": "2007-10-03",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "replace existing deck board (4x6), reinforce handrail, replace gaurdrail, install handrails, less than 50% of structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23197",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-17",
+      "status_date": "2003-03-17",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419738",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-01",
+      "status_date": "1995-08-22",
+      "estimated_cost": 4220,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716098",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-09",
+      "status_date": "1988-09-09",
+      "estimated_cost": 25000,
+      "description": "bring building into compliance required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3223",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3575090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3575&lot=090",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3575090",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

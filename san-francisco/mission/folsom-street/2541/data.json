@@ -1,0 +1,135 @@
+{
+  "address": "2541 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2541/",
+  "apn": "3613025",
+  "block": "3613",
+  "lot": "025",
+  "eas_baseid": "362664",
+  "coordinates": {
+    "lat": 37.756599,
+    "lng": -122.414112
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 3916,
+    "building_area_sqft": 5410,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2541 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 332239,
+    "assessed_improvement_value": 473451,
+    "last_sale_date": "1995-08-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512302950",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-30",
+      "status_date": "2026-02-10",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "install fire alarm system to comply with 2022 sffc sec 1103.7.6.1 anbd 2022 nfpa 72 sec 18.4.5 sleeping area ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902072396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-07",
+      "status_date": "2019-04-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "soft story retrofit per 2016 cbc. revision to an extg permit app#201610251095",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1016587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-12-12",
+      "status_date": "2018-12-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610251095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-25",
+      "status_date": "2019-04-12",
+      "estimated_cost": 74000,
+      "revised_cost": 103000,
+      "description": "seismic retrofit of soft story per 2012 iebc a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701952",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-02-03",
+      "status_date": "1997-06-11",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510983",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-10-02",
+      "status_date": "1986-04-01",
+      "estimated_cost": 350,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2541",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

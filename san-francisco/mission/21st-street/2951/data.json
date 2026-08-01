@@ -1,0 +1,143 @@
+{
+  "address": "2951–2953 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2951/",
+  "apn": "3613035",
+  "block": "3613",
+  "lot": "035",
+  "eas_baseid": "362676",
+  "coordinates": {
+    "lat": 37.757165,
+    "lng": -122.413574
+  },
+  "address_range": "2951–2953",
+  "street_numbers_on_parcel": [
+    "2951",
+    "2953"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1831.38,
+    "building_area_sqft": 3026,
+    "lot_depth_ft": 74.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2953 2951 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 273286,
+    "assessed_improvement_value": 283046,
+    "last_sale_date": "1987-03-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406178694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-17",
+      "status_date": "2014-06-23",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "add additional bolts & fondation voluntary 5/8\" 4ft, min 3x3 plate washer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305066161",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-05-06",
+      "status_date": "2013-05-06",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "five windows to be replace at top front . visble from street. will be painted same color.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906090096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-09",
+      "status_date": "2009-08-19",
+      "estimated_cost": 1500,
+      "revised_cost": 2500,
+      "description": "to comply with correction notice, repair (e) notched floor joists @ bathroom with new steel plates @ notches.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904236967",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-23",
+      "status_date": "2009-08-19",
+      "estimated_cost": 9100,
+      "revised_cost": 9100,
+      "description": "old shower, vanity & tub to be removed. new shower & sink to be replaced plus flooring. toilet stays. gfi box to be moved from 48\" down to 12\". bathroom to remain same size & location. no new walls. no modification to existing walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708170104",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-17",
+      "status_date": "2007-08-17",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8610548",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-28",
+      "status_date": "1986-12-12",
+      "estimated_cost": 5000,
+      "description": "repair and replace sheet rock, ceiling, walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2951",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

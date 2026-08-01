@@ -1,0 +1,132 @@
+{
+  "address": "3664–3666 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3664/",
+  "apn": "3578023",
+  "block": "3578",
+  "lot": "023",
+  "eas_baseid": "360446",
+  "coordinates": {
+    "lat": 37.76172,
+    "lng": -122.42523
+  },
+  "address_range": "3664–3666",
+  "street_numbers_on_parcel": [
+    "3664",
+    "3666"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 2492,
+    "building_area_sqft": 3094,
+    "lot_depth_ft": 12,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3666 3664 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187593,
+    "assessed_improvement_value": 356490,
+    "last_sale_date": "1988-08-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009093784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-09",
+      "status_date": "2022-08-02",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair fire damaged siding 1 breez way east side of bldg and sheetrock ceiling hole from sffd 40 sq ft siding. no stud replacement. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503036689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-03",
+      "status_date": "2005-03-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew appl#200408192057 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408192057",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-19",
+      "status_date": "2004-08-19",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace rear cottage require by housing inspector. comply nov 200451843.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9927319",
+      "type": "otc alterations permit",
+      "status": "suspend",
+      "filed": "1999-12-31",
+      "status_date": "2025-08-26",
+      "estimated_cost": 2200,
+      "revised_cost": 0,
+      "description": "repair & replace dry rotted steps, landings and handrails",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402066",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-02-08",
+      "status_date": "1994-04-20",
+      "estimated_cost": 25,
+      "description": "shut off to gas valve, repair self closing devise,deadlutch.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3664",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "address": "3552–3554 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3552/",
+  "apn": "3588049",
+  "block": "3588",
+  "lot": "049",
+  "eas_baseid": "361115",
+  "coordinates": {
+    "lat": 37.760242,
+    "lng": -122.422667
+  },
+  "address_range": "3552–3554",
+  "street_numbers_on_parcel": [
+    "3552",
+    "3554"
+  ],
+  "parcel": {
+    "year_built": 1940,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 2690,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3556 3552 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191394,
+    "assessed_improvement_value": 478523,
+    "last_sale_date": "1988-03-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M567147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-10",
+      "status_date": "2015-03-10",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501145773",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-14",
+      "status_date": "2015-01-14",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411101143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-10",
+      "status_date": "2015-07-09",
+      "estimated_cost": 1000,
+      "revised_cost": 12000,
+      "description": "revision to pa #201411030475 to replace roof deck in-kind and repair dry rotted stair less than 50% in-kind. structural post and foots. new electrical. ad hose bibb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411030475",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-03",
+      "status_date": "2015-07-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace in kind existing roof deck & stiar. includes replacement of elelctrical lights, switch, outlet (waterproof) & hosebibb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M161524",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-21",
+      "status_date": "2009-04-21",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012842",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-28",
+      "status_date": "1990-08-01",
+      "estimated_cost": 3950,
+      "description": "remove stucco,repair with new wodd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817000",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-10-31",
+      "status_date": "1989-03-24",
+      "estimated_cost": 3400,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805469",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-28",
+      "status_date": "1989-01-09",
+      "estimated_cost": 5000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3552",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588049",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

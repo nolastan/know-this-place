@@ -1,0 +1,121 @@
+{
+  "address": "454–458 South Van Ness Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/south-van-ness-avenue/454/",
+  "apn": "3553006",
+  "block": "3553",
+  "lot": "006",
+  "eas_baseid": "359259",
+  "coordinates": {
+    "lat": 37.765955,
+    "lng": -122.417835
+  },
+  "address_range": "454–458",
+  "street_numbers_on_parcel": [
+    "454",
+    "456",
+    "458"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 4980,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0458 0454 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274342,
+    "assessed_improvement_value": 336872,
+    "last_sale_date": "1998-08-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201502138365",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-13",
+      "status_date": "2015-03-05",
+      "estimated_cost": 2200,
+      "revised_cost": 22942,
+      "description": "remodel 2 bathrooms, replace 1 kitchen faucet,, comply with complaint 201526621; no alteration of wall, window and door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312222757",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-12-22",
+      "status_date": "2005-04-07",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "dryrot repair on (e)stairway @rear of bldg.replace 2 4x4 posts & 2x6 redwood decking.less than 60%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918961",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-09",
+      "status_date": "2000-01-09",
+      "estimated_cost": 1500,
+      "description": "remodel partition wall in kitchen,dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-09",
+      "status_date": "2000-03-09",
+      "estimated_cost": 82000,
+      "description": "remodel 3 kitchen & all bthrms with nw cbnts/tile/fxtr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=454",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3553006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3553&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3553006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

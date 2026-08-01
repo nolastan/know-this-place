@@ -1,0 +1,139 @@
+{
+  "address": "858–860 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/858/",
+  "apn": "4087012",
+  "block": "4087",
+  "lot": "012",
+  "eas_baseid": "368356",
+  "coordinates": {
+    "lat": 37.758287,
+    "lng": -122.408989
+  },
+  "address_range": "858–860",
+  "street_numbers_on_parcel": [
+    "858",
+    "860"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2708,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0860 0858 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29770,
+    "assessed_improvement_value": 35773
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410283886",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-28",
+      "status_date": "2024-11-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing - tear off existing roof and install tpo (no torch down), about 15 squares.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309237498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-23",
+      "status_date": "2013-10-17",
+      "estimated_cost": 6000,
+      "revised_cost": 9000,
+      "description": "replace cabinets, countertop, sink, garbage disposal & faucet in the kitchen @ #860 only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103164420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-16",
+      "status_date": "2001-04-17",
+      "estimated_cost": 6934,
+      "revised_cost": 6934,
+      "description": "install vinyl siding to side of house not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503298",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-03-08",
+      "status_date": "1995-06-26",
+      "estimated_cost": 500,
+      "revised_cost": 10000,
+      "description": "reverting back to storage (basement room)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918374",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-26",
+      "status_date": "1989-10-25",
+      "estimated_cost": 3000,
+      "description": "installation of aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302191",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-03-17",
+      "status_date": "1983-09-02",
+      "estimated_cost": 1850,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=858",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "address": "3440 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3440/",
+  "apn": "3644013",
+  "block": "3644",
+  "lot": "013",
+  "eas_baseid": "364191",
+  "coordinates": {
+    "lat": 37.752239,
+    "lng": -122.421377
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 13,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 13,
+    "lot_area_sqft": 4225,
+    "building_area_sqft": 11580,
+    "basement_area_sqft": 825,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3440 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223415,
+    "assessed_improvement_value": 812501
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603197948",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-19",
+      "status_date": "2026-04-03",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "electrical permit # ew202511201026 repaint and replace sheetrock around electrical panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510147347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-14",
+      "status_date": "2025-11-12",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "re-roofing: tear off the existing roof and install a new modified bitumen 3-ply roof system 5,750 sq ft, torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508213606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-21",
+      "status_date": "2025-11-21",
+      "estimated_cost": 38500,
+      "revised_cost": 38500,
+      "description": "upgrade exsiting fire alarm system to comply with sffc section 1103.7.6.1 to meet 75dpb in all sleeping areas.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508183289",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-18",
+      "status_date": "2025-09-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reface of 8 sf/ft damaged existing brick exterior brick vaneer, replace (1) wood stud at interior window sill, and repair drywall and paint interior at 8 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704214630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-21",
+      "status_date": "2018-09-12",
+      "estimated_cost": 50000,
+      "revised_cost": 120000,
+      "description": "soft story retrofit to comply with sfebc chpt 4d using 2012 iebc appendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M726327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-29",
+      "status_date": "2016-09-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9410898",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-07-11",
+      "status_date": "1995-05-16",
+      "estimated_cost": 9300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305405",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-06-13",
+      "status_date": "1986-03-04",
+      "estimated_cost": 4900,
+      "description": "correct code violation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8105714",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-06-26",
+      "status_date": "1981-11-23",
+      "estimated_cost": 1,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3440",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3644013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3644&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3644013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

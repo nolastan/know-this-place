@@ -1,0 +1,134 @@
+{
+  "address": "601 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/601/",
+  "apn": "4026008",
+  "block": "4026",
+  "lot": "008",
+  "eas_baseid": "367421",
+  "coordinates": {
+    "lat": 37.761722,
+    "lng": -122.406948
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 6,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 6,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4178,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0601 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1144666,
+    "assessed_improvement_value": 491002
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104158633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-15",
+      "status_date": "2024-08-29",
+      "estimated_cost": 12037,
+      "revised_cost": 13097,
+      "description": "voluntary replacement + lf horns upgrade: replace of (1) fire alarm control unit, (1) manual pull station, (3) smoke detectors and (2) wall mounted horn strobes. install (14) new low frequency horns",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1049387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-08",
+      "status_date": "2019-03-08",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706280620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-28",
+      "status_date": "2019-05-31",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "soft story retrofit per sfebc chapter 4d. 2016 cebc appendix a-4 n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011104755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-10",
+      "status_date": "2010-12-21",
+      "estimated_cost": 18800,
+      "revised_cost": 18800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001255245",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-25",
+      "status_date": "2010-02-24",
+      "estimated_cost": 13500,
+      "revised_cost": 13050,
+      "description": "replace 18-windows size for size some visable from the street with milgard vinyl windows in kind replace in-kind, not affecting any egress.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501347",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-07",
+      "status_date": "1986-03-04",
+      "estimated_cost": 800,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=601",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4026008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4026&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4026008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

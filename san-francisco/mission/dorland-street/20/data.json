@@ -1,0 +1,145 @@
+{
+  "address": "20–26 Dorland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dorland-street/20/",
+  "apn": "3578046",
+  "block": "3578",
+  "lot": "046",
+  "eas_baseid": "360463",
+  "coordinates": {
+    "lat": 37.762516,
+    "lng": -122.424449
+  },
+  "address_range": "20–26",
+  "street_numbers_on_parcel": [
+    "20",
+    "22",
+    "24",
+    "26"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 3300,
+    "building_area_sqft": 3834,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0026 0020 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 309625,
+    "assessed_improvement_value": 375304,
+    "last_sale_date": "1988-09-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507231405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-23",
+      "status_date": "2025-07-23",
+      "estimated_cost": 20000,
+      "revised_cost": 40000,
+      "description": "upgrade and remodel bath asnd kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409090365",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-09",
+      "status_date": "2025-12-02",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace floor joist between 20 & 22, replace cantilever beams",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307172335",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-07-17",
+      "status_date": "2023-07-17",
+      "estimated_cost": 12000,
+      "revised_cost": 28600,
+      "description": "upgrade floor from nylon to tile in kitchen and bathroom. replace kitchen countertop and base cabinet. replace old metal water pipe to copper.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106248931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-24",
+      "status_date": "2011-07-08",
+      "estimated_cost": 900,
+      "revised_cost": 1500,
+      "description": "replace dry rot of deck under 50% to comply with complaint # 201137681, item#1. 60 square feet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711057329",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-11-05",
+      "status_date": "2007-11-05",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8914345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-09",
+      "status_date": "1989-09-08",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=20",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578046",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

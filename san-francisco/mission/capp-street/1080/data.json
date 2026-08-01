@@ -1,0 +1,158 @@
+{
+  "address": "1080–1082 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1080/",
+  "apn": "6528013",
+  "block": "6528",
+  "lot": "013",
+  "eas_baseid": "401280",
+  "coordinates": {
+    "lat": 37.749505,
+    "lng": -122.417321
+  },
+  "address_range": "1080–1082",
+  "street_numbers_on_parcel": [
+    "1080",
+    "1082"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 1690.26,
+    "building_area_sqft": 3660,
+    "lot_depth_ft": 21.67,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1082 1080 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 151153,
+    "assessed_improvement_value": 442788
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M981187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-18",
+      "status_date": "2018-09-18",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M961227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-07",
+      "status_date": "2018-08-07",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712227296",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-22",
+      "status_date": "2023-08-03",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel (e) 4 bedroom apartment. relocate 1 full bath. adding 2-1/2 baths. replace 3 windows in the lightwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711154090",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-11-15",
+      "status_date": "2017-11-15",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "1080a capp st. - to comply with complaint #201713951, items #3 to 6. repair tub, faucet in an approved manner. repair ceiling in bathroom, broken kitchen cabinet, repair door to room with duct tape on the door handle. no change on walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M184085",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-12",
+      "status_date": "2009-11-12",
+      "revised_cost": 1,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-31",
+      "status_date": "2006-01-31",
+      "revised_cost": 0,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619601",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-11",
+      "status_date": "1997-02-11",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109977",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-11-20",
+      "status_date": "1982-02-19",
+      "estimated_cost": 100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=1080",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6528013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "address": "27–31 Duboce Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/duboce-avenue/27/",
+  "apn": "3532067",
+  "block": "3532",
+  "lot": "067",
+  "eas_baseid": "274967",
+  "coordinates": {
+    "lat": 37.769835,
+    "lng": -122.420748
+  },
+  "address_range": "27–31",
+  "street_numbers_on_parcel": [
+    "27",
+    "29",
+    "31"
+  ],
+  "also_addressed": [
+    "1 WOODWARD ST",
+    "5 WOODWARD ST"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 12,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 12,
+    "lot_area_sqft": 3471,
+    "building_area_sqft": 9807,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0005 0001 WOODWARD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1393912,
+    "assessed_improvement_value": 487861,
+    "last_sale_date": "2005-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Woodward St. Romeo Flats Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1912",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200901260761",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-26",
+      "status_date": "2009-01-26",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "basement level-alter permit issued under pa# 20080723-7385-add 8 smoke detectors, 2 strobes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809171918",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-17",
+      "status_date": "2009-02-02",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "replace 67 wood windows in kind on duboce & woodward sts. new custom made will match existing sash exactly. replace 36 windows at rear of building single hang double glazed vinyl. all windows u=0.67 max. replace windows because by fire damage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807237385",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-23",
+      "status_date": "2008-07-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "install replacement fire alarm system to fire damaged bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712241247",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-12-24",
+      "status_date": "2009-02-09",
+      "estimated_cost": 650000,
+      "revised_cost": 650000,
+      "description": "repair fire/ water damage to comply nov 200704683-bid. all repairs in kind - framing on 3rd floor & roof. replace plaster on all 12 units, new kitchen cabinet, new fixture in bathroom, and structural strengthing.all window replacement under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002110",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-02-01",
+      "status_date": "1990-11-21",
+      "estimated_cost": 1000,
+      "description": "bring into compliance with dahi insp. report dated 4-2-86",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=27",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3532067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3532&lot=067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3532067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42074820349649%2037.769835109784104)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

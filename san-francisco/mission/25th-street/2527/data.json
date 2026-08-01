@@ -1,0 +1,118 @@
+{
+  "address": "2527–2529 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2527/",
+  "apn": "4279026A",
+  "block": "4279",
+  "lot": "026A",
+  "eas_baseid": "371056",
+  "coordinates": {
+    "lat": 37.751685,
+    "lng": -122.403782
+  },
+  "address_range": "2527–2529",
+  "street_numbers_on_parcel": [
+    "2527",
+    "2529"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1744,
+    "building_area_sqft": 2096,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2529 2527 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 735979,
+    "assessed_improvement_value": 490646,
+    "last_sale_date": "2005-02-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305258595",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2023-05-25",
+      "status_date": "2024-11-06",
+      "estimated_cost": 50000,
+      "revised_cost": 135228,
+      "description": "convert existing ground level non-conforming unit and garage to 2-bedroom/ 1-bath adu: 708 sqft, per ordinance # 162-16. existing non-conforming adu will be added per government code section 65852.2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204914",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-03-27",
+      "status_date": "1993-03-24",
+      "estimated_cost": 500,
+      "description": "repair & refasten wood deck add lag screw to legger",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112405",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-15",
+      "status_date": "1991-11-15",
+      "estimated_cost": 1350,
+      "description": "replace dryrot treads and risers on front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910070",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-06-12",
+      "status_date": "1990-07-19",
+      "estimated_cost": 2000,
+      "description": "demo garage int. wall & rebuild to enlarge it",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2527",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4279026A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4279&lot=026A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4279026A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

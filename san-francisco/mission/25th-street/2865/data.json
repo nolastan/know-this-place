@@ -1,0 +1,137 @@
+{
+  "address": "2865 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2865/",
+  "apn": "4275027",
+  "block": "4275",
+  "lot": "027",
+  "eas_baseid": "371013",
+  "coordinates": {
+    "lat": 37.751041,
+    "lng": -122.407522
+  },
+  "parcel": {
+    "year_built": 1967,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 3850,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2865 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 216673,
+    "assessed_improvement_value": 173330,
+    "last_sale_date": "1992-10-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203220519",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-22",
+      "status_date": "2022-03-22",
+      "estimated_cost": 19500,
+      "revised_cost": 19500,
+      "description": "one unit: bathroom and kitchen remodeling like kind cabinet, countertop, fixture, flooring & lights replacement. no change in layout of walls and openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109027681",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-09-02",
+      "status_date": "2021-09-02",
+      "estimated_cost": 9580,
+      "revised_cost": 9580,
+      "description": "furnish and install 6 windows to fornt of unit (non bedroom windows) in same like and kind alum frames in e openings xo over fixed and xox in front kitchens. no change opening or size street facing. max u factor .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107164510",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-07-16",
+      "status_date": "2026-01-23",
+      "estimated_cost": 5000,
+      "description": "front window replacement from single pane to dual pane",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107164511",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-07-16",
+      "status_date": "2026-01-23",
+      "estimated_cost": 35000,
+      "revised_cost": 0,
+      "description": "in-kind ktchen & bath remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505192843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-19",
+      "status_date": "2005-07-18",
+      "estimated_cost": 4085,
+      "revised_cost": 4085,
+      "description": "install 8 vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402236935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-23",
+      "status_date": "2004-07-16",
+      "estimated_cost": 11260,
+      "revised_cost": 11260,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2865",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

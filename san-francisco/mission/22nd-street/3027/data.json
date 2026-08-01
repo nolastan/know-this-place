@@ -1,0 +1,136 @@
+{
+  "address": "3027 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3027/",
+  "apn": "3638063",
+  "block": "3638",
+  "lot": "063",
+  "eas_baseid": "363916",
+  "coordinates": {
+    "lat": 37.755445,
+    "lng": -122.414972
+  },
+  "parcel": {
+    "year_built": 1878,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2491,
+    "building_area_sqft": 2721,
+    "basement_area_sqft": 647,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3027 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 419517,
+    "assessed_improvement_value": 570293,
+    "last_sale_date": "2012-01-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1878",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201203196341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-19",
+      "status_date": "2013-09-20",
+      "estimated_cost": 42800,
+      "revised_cost": 186694,
+      "description": "interior remodel of one unit at first floor - relocate bath. interior remodel of one unit - relocate bath, kitchen & bedrooms. add one bedroom & one powder room. repair/replace exterior rear stairs in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909156867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-15",
+      "status_date": "2009-09-15",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "repair stairs & siding damaged by fire. repair 500 sq ft sheetrock damaged by water. stair repair is less than 50% of structure. not visible from street, no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712271389",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-27",
+      "status_date": "2007-12-27",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair rear stair landing less than 50%. repair siding at rear approx. 30 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202270208",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-27",
+      "status_date": "2002-12-10",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "dry rot repair /closet repair top floor remove improperly installed washer drain/supply rear yard,sh",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002071226",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-07",
+      "status_date": "2000-06-07",
+      "revised_cost": 3500,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910590",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-27",
+      "status_date": "2000-09-26",
+      "estimated_cost": 2500,
+      "description": "repair closet walls one unit (top flr)no structural alteration",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3638063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3638&lot=063",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3638063",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

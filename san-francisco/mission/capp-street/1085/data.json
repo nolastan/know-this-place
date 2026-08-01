@@ -1,0 +1,154 @@
+{
+  "address": "1085 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1085/",
+  "apn": "6527039",
+  "block": "6527",
+  "lot": "039",
+  "eas_baseid": "401265",
+  "coordinates": {
+    "lat": 37.749428,
+    "lng": -122.416771
+  },
+  "parcel": {
+    "year_built": 1986,
+    "units": 4,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 8,
+    "bedrooms": 6,
+    "lot_area_sqft": 3220,
+    "building_area_sqft": 5076,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1085 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119498,
+    "assessed_improvement_value": 527720
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205265111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-26",
+      "status_date": "2023-08-16",
+      "estimated_cost": 18600,
+      "revised_cost": 18600,
+      "description": "voluntary upgrade to existing fire alarm system to comply with sffc section 1103.7.6.1. facu, aes, 3 mods, 2 horn strobes, 12 lf sounders, 4 pulls, 4 smokes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805149050",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-14",
+      "status_date": "2018-05-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "cosmetic remodel of e kitchen and bath. same layout. no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610120058",
+      "type": "new construction wood frame",
+      "status": "approved",
+      "filed": "2016-10-12",
+      "status_date": "2019-10-16",
+      "estimated_cost": 220000,
+      "description": "construct (n) 3-story two-family dwelling unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010183341",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-18",
+      "status_date": "2001-06-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507675",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-07-19",
+      "status_date": "1985-11-26",
+      "estimated_cost": 1,
+      "description": "change in sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505959",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-07",
+      "status_date": "1985-11-26",
+      "estimated_cost": 1000,
+      "description": "revision to 8313053",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313053",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1983-12-23",
+      "status_date": "1985-12-10",
+      "estimated_cost": 352035,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8100816",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1981-01-27",
+      "status_date": "1983-03-04",
+      "estimated_cost": 406400,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=1085",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6527039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6527&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6527039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

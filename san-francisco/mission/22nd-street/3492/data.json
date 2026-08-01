@@ -1,0 +1,147 @@
+{
+  "address": "3492–3496 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3492/",
+  "apn": "3618022",
+  "block": "3618",
+  "lot": "022",
+  "eas_baseid": "362937",
+  "coordinates": {
+    "lat": 37.755151,
+    "lng": -122.425196
+  },
+  "address_range": "3492–3496",
+  "street_numbers_on_parcel": [
+    "3492",
+    "3494",
+    "3496"
+  ],
+  "also_addressed": [
+    "895 DOLORES ST"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 5,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 3525,
+    "building_area_sqft": 3438,
+    "lot_depth_ft": 94,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3496 3492 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1114588,
+    "assessed_improvement_value": 486820,
+    "last_sale_date": "2010-11-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303073183",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-07",
+      "status_date": "2023-06-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change of use from office to religious institution. a meditation temple for small gorup meditation. no change to (e) condition. no construction. apprx. 750 sq. ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211186835",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-11-18",
+      "status_date": "2026-01-23",
+      "estimated_cost": 43000,
+      "revised_cost": 43000,
+      "description": "barrier removal project. front entrance ramp and electric door for ada access. restroom conversion for ada access.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706169649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-16",
+      "status_date": "2017-07-07",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "to comply with complaint 201776781 rebuild stair at rear of home in-kind. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705085922",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-08",
+      "status_date": "2017-07-07",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "dry rot repair of existing rear stairs and balcony railing. complying with nov #201761811",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M771350",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-27",
+      "status_date": "2017-03-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208154082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-15",
+      "status_date": "2002-10-25",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel kitchen & bathroom. sheetrock, electrical & plumbing. no structural work. no change in walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3492",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "address": "3482–3488 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3482/",
+  "apn": "3568041",
+  "block": "3568",
+  "lot": "041",
+  "eas_baseid": "360030",
+  "coordinates": {
+    "lat": 37.763412,
+    "lng": -122.423591
+  },
+  "address_range": "3482–3488",
+  "street_numbers_on_parcel": [
+    "3482",
+    "3484",
+    "3486",
+    "3488"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 4,
+    "lot_area_sqft": 3667,
+    "building_area_sqft": 5480,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3488 3482 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1885222,
+    "assessed_improvement_value": 1015120
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603117334",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-11",
+      "status_date": "2026-03-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "change cabinets in kitchen, change bathroom sink, remodel in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202601093601",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-09",
+      "status_date": "2026-01-12",
+      "estimated_cost": 1000,
+      "revised_cost": 16000,
+      "description": "changed cabinets in kitchen, counter top & sink also. changed bathroom sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M205694",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-09",
+      "status_date": "2010-06-09",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-05",
+      "status_date": "1988-12-12",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3482",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

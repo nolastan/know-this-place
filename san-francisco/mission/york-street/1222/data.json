@@ -1,0 +1,134 @@
+{
+  "address": "1222 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1222/",
+  "apn": "4267007",
+  "block": "4267",
+  "lot": "007",
+  "eas_baseid": "370717",
+  "coordinates": {
+    "lat": 37.752147,
+    "lng": -122.4084
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1317,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1222 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 747066,
+    "assessed_improvement_value": 320167,
+    "last_sale_date": "2014-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201210041305",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-04",
+      "status_date": "2012-10-04",
+      "estimated_cost": 1500,
+      "revised_cost": 1800,
+      "description": "dry rot repair as the following: replace modsill of 2x4x8 with 2x4 pt bolted in the (e) foundation. shop off damage bottom of wood studs, 10 inches high to be cover with same siding after inspection. laminate 3 studs. can not see from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900314",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-07",
+      "status_date": "1999-08-26",
+      "estimated_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-04-24",
+      "status_date": "1998-05-27",
+      "estimated_cost": 1000,
+      "description": "remove/rebuild stud wall to accomodate parking stall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611196",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-06-21",
+      "status_date": "1998-06-02",
+      "estimated_cost": 2000,
+      "revised_cost": 12000,
+      "description": "repl(e)wndw w/sliding glass doors,install interior door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9409536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-06-15",
+      "status_date": "1994-06-28",
+      "estimated_cost": 800,
+      "description": "repair (e) stairs no change of stair stringers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304553",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-19",
+      "status_date": "1993-09-16",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1222",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

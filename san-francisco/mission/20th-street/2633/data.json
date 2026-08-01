@@ -1,0 +1,162 @@
+{
+  "address": "2633–2635 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2633/",
+  "apn": "4089042",
+  "block": "4089",
+  "lot": "042",
+  "eas_baseid": "368470",
+  "coordinates": {
+    "lat": 37.759136,
+    "lng": -122.407656
+  },
+  "address_range": "2633–2635",
+  "street_numbers_on_parcel": [
+    "2633",
+    "2635"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 2720,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2635 2633 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470290,
+    "assessed_improvement_value": 268049,
+    "last_sale_date": "1999-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302172159",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-17",
+      "status_date": "2026-01-14",
+      "estimated_cost": 148400,
+      "revised_cost": 148400,
+      "description": "voluntary foundation upgrade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M527949",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-16",
+      "status_date": "2014-10-16",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108253246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-25",
+      "status_date": "2011-12-21",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "replace in kind the (e) exterior stair system at the rear yard area interior renovations at 2nd & 3rd floor lvl kitchen and landry areas, replace (e) property line fence system at rear yard area west, south & east sides new exterior sideing, trip and window system at the south side exterior facade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407138620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-13",
+      "status_date": "2004-09-08",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "remodel bath, sink, bathtub, cabinets, tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406095975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-09",
+      "status_date": "2004-07-15",
+      "estimated_cost": 15625,
+      "revised_cost": 15625,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000118323",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-18",
+      "status_date": "2000-02-14",
+      "estimated_cost": 10565,
+      "revised_cost": 10565,
+      "description": "installation of anchor bolts, holddowns and plywood sneathing, voluntary structure strengthening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9201228",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-01-24",
+      "status_date": "1992-08-03",
+      "estimated_cost": 3800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002689",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-02-09",
+      "status_date": "1992-01-28",
+      "estimated_cost": 1850,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2633",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4089042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4089&lot=042",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4089042",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

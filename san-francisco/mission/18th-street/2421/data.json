@@ -1,0 +1,104 @@
+{
+  "address": "2421 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2421/",
+  "apn": "4026010",
+  "block": "4026",
+  "lot": "010",
+  "eas_baseid": "367423",
+  "coordinates": {
+    "lat": 37.761732,
+    "lng": -122.406776
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1100,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2421 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1103403,
+    "assessed_improvement_value": 472886,
+    "last_sale_date": "2020-12-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200601041485",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-01-04",
+      "status_date": "2007-06-26",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505263555",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-05-26",
+      "status_date": "2007-06-26",
+      "estimated_cost": 22000,
+      "revised_cost": 24000,
+      "description": "remodel 2 bathrm and kitchen, replace 9 windows in light wels & rear of bldg on upper level only w/",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505263557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-26",
+      "status_date": "2005-06-21",
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2421",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4026010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4026&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4026010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

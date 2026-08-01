@@ -1,0 +1,132 @@
+{
+  "address": "1013 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1013/",
+  "apn": "3633018",
+  "block": "3633",
+  "lot": "018",
+  "eas_baseid": "363713",
+  "coordinates": {
+    "lat": 37.754726,
+    "lng": -122.422866
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 2070,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1013 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1613256,
+    "assessed_improvement_value": 561749,
+    "last_sale_date": "2020-08-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309217090",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-09-21",
+      "status_date": "2025-02-11",
+      "estimated_cost": 1,
+      "revised_cost": 25000,
+      "description": "revision to pa# 202104219009. reduced skylight, exterior deck & stair revision. rear facade material change, t24 change (due to window changes. no (n) electrical work, electrical work shown on pa# 202104219009. (n) rear yard retaining walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308084003",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-08-08",
+      "status_date": "2024-09-19",
+      "estimated_cost": 44869,
+      "revised_cost": 44869,
+      "description": "photovoltaic-residential nominal 9.6kw rooftop solar pv sys (sent to pv permit) & ess-ac coupled energy storage sys outdoor installation nom 30kwh lifepo4 ess",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104219009",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-04-21",
+      "status_date": "2025-02-11",
+      "estimated_cost": 750000,
+      "revised_cost": 750000,
+      "description": "interior remodel. remove (e) non-conforming shed addition. new driveway curb cut & garage. curb cut. new and/or replace doors, windows & skylights throughout. partial lower floor excavation & basement addition. deck replacement & addition. deferred submit: street & sidewalk, pv panels.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702034S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-02-04",
+      "status_date": "1998-10-07",
+      "estimated_cost": 40000,
+      "revised_cost": 50000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3633018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3633&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3633018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42286611531567%2037.75472642507527)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

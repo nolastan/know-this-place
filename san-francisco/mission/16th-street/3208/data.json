@@ -1,0 +1,160 @@
+{
+  "address": "3208–3214 16th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/16th-street/3208/",
+  "apn": "3556016",
+  "block": "3556",
+  "lot": "016",
+  "eas_baseid": "359409",
+  "coordinates": {
+    "lat": 37.764984,
+    "lng": -122.42448
+  },
+  "address_range": "3208–3214",
+  "street_numbers_on_parcel": [
+    "3208",
+    "3210",
+    "3212",
+    "3214"
+  ],
+  "parcel": {
+    "year_built": 1935,
+    "units": 4,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 5,
+    "lot_area_sqft": 3955,
+    "building_area_sqft": 7688,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3214 3208 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 498372,
+    "assessed_improvement_value": 415308,
+    "last_sale_date": "1996-04-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1935",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206287261",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-06-28",
+      "status_date": "2022-06-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107200611",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2011-07-20",
+      "status_date": "2011-07-20",
+      "estimated_cost": 1920,
+      "revised_cost": 1920,
+      "description": "erect an electric, illuminated single faced wall sign.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107019350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-01",
+      "status_date": "2011-09-06",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "add one unisex handicap restroom, relocate mopsik, modified non structure partition wall for new restroom, modified front counter for add accessiblity.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206037985",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-06-03",
+      "status_date": "2003-01-14",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-02-04",
+      "status_date": "1993-03-17",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306565",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "1983-07-12",
+      "status_date": "1983-12-06",
+      "estimated_cost": 300,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306566",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "1983-07-12",
+      "status_date": "1983-12-06",
+      "estimated_cost": 175,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301725",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-03-02",
+      "status_date": "1983-09-07",
+      "estimated_cost": 4100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3208",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3556016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

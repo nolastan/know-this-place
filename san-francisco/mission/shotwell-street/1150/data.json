@@ -1,0 +1,122 @@
+{
+  "address": "1150–1152 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1150/",
+  "apn": "6526007",
+  "block": "6526",
+  "lot": "007",
+  "eas_baseid": "401218",
+  "coordinates": {
+    "lat": 37.749973,
+    "lng": -122.415236
+  },
+  "address_range": "1150–1152",
+  "street_numbers_on_parcel": [
+    "1150",
+    "1152"
+  ],
+  "parcel": {
+    "lot_area_sqft": 7474,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1162 1150 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 71730,
+    "assessed_improvement_value": 98536
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202011259717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-25",
+      "status_date": "2021-04-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "residential seismic strengthening - standard plan a for cripple wall bracing and foundation sill plate anchorage for high wall framed residence. this permit is for work performed in general conformance with the cebc appendix chapter a3 sfbc ab108",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712217120",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-12-21",
+      "status_date": "2017-12-21",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602174880",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-17",
+      "status_date": "2006-04-27",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "no structural work deck work max area +50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-24",
+      "status_date": "1996-07-05",
+      "estimated_cost": 5450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310090",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-15",
+      "status_date": "1993-11-09",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1150",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6526007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6526&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6526007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

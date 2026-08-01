@@ -1,0 +1,153 @@
+{
+  "address": "1184–1188 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1184/",
+  "apn": "4206037",
+  "block": "4206",
+  "lot": "037",
+  "eas_baseid": "370084",
+  "coordinates": {
+    "lat": 37.752997,
+    "lng": -122.411149
+  },
+  "address_range": "1184–1188",
+  "street_numbers_on_parcel": [
+    "1184",
+    "1186",
+    "1188"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 1106,
+    "building_area_sqft": 2895,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1188 1184 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55488,
+    "assessed_improvement_value": 122114
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202006259182",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-06-25",
+      "status_date": "2026-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 14361,
+      "description": "remodel bathroom in-kind, new tub, tile and drywall. new electrical & plumbing fixturs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108092047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-09",
+      "status_date": "2011-09-06",
+      "estimated_cost": 8000,
+      "revised_cost": 9200,
+      "description": "#1186- remodel kitchen, new cabinets, new sink, floor. at least 50% high efficacy lighting (by wattage) cec150(k). no change to exhaust system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005112238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-11",
+      "status_date": "2010-09-02",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "to complete work and obtain final inspection for work approved under app #200708079027.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708079027",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-07",
+      "status_date": "2010-04-23",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "to comply with nov#200701977 to remodel kitchens & bathrooms at 1184 & 1188 alabama street apt.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004177441",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-17",
+      "status_date": "2000-10-17",
+      "estimated_cost": 6980,
+      "revised_cost": 6980,
+      "description": "repair replace stairs and landings as necessary to comply w/nov complaint #200002600",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003245362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-24",
+      "status_date": "2000-04-19",
+      "revised_cost": 100,
+      "description": "to comply w/complaint #200002600 item #19",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400100",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-01-05",
+      "status_date": "1984-08-13",
+      "estimated_cost": 5,
+      "revised_cost": 965,
+      "description": "to bring building into fufll compliance with the provisions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1184",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

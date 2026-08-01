@@ -1,0 +1,142 @@
+{
+  "address": "2606–2610 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2606/",
+  "apn": "3638002",
+  "block": "3638",
+  "lot": "002",
+  "eas_baseid": "363873",
+  "coordinates": {
+    "lat": 37.75546,
+    "lng": -122.414675
+  },
+  "address_range": "2606–2610",
+  "street_numbers_on_parcel": [
+    "2606",
+    "2608",
+    "2610"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 3300,
+    "building_area_sqft": 4560,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2610 2606 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2005683,
+    "assessed_improvement_value": 859578,
+    "last_sale_date": "2022-02-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M300847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-02-10",
+      "status_date": "2012-02-10",
+      "revised_cost": 1,
+      "description": "street space with 40sf sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605192014",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-05-19",
+      "status_date": "2007-06-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace dry wall in bathroom, partial hallway also. replace kitchen and bathroom floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408060884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-06",
+      "status_date": "2004-12-27",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "comply nov 200451161 to repair stairs, replace broken window pane .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303038614",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-03",
+      "status_date": "2003-12-23",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503826",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-10",
+      "status_date": "1985-10-25",
+      "estimated_cost": 3000,
+      "description": "repair back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411648",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-30",
+      "status_date": "1985-10-25",
+      "estimated_cost": 3600,
+      "description": "dry rot repairs in back porches. repair stairs in porches",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2606",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3638002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3638&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3638002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

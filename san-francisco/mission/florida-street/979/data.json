@@ -1,0 +1,126 @@
+{
+  "address": "979 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/979/",
+  "apn": "4145023",
+  "block": "4145",
+  "lot": "023",
+  "eas_baseid": "369357",
+  "coordinates": {
+    "lat": 37.756419,
+    "lng": -122.41014
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0979 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 610028,
+    "assessed_improvement_value": 406681,
+    "last_sale_date": "2002-10-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001071314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-07",
+      "status_date": "2020-01-29",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "drywall e frame ceiling of garage. fire tape only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1138447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-13",
+      "status_date": "2019-09-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907125749",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-12",
+      "status_date": "2020-01-29",
+      "estimated_cost": 20000,
+      "revised_cost": 28000,
+      "description": "convert storage room to walk in closet. addnew partition wall and replace e window at rear elevation with new egress window at attic",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M56225",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-02-02",
+      "status_date": "2007-02-02",
+      "revised_cost": 0,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109128123",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-09-12",
+      "status_date": "2002-09-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repsonse to nov 200116582 and 200118712 addition of new dormer to contain new bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=979",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4145023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4145&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4145023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

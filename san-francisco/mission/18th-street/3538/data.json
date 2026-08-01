@@ -1,0 +1,135 @@
+{
+  "address": "3538 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3538/",
+  "apn": "3577012B",
+  "block": "3577",
+  "lot": "012B",
+  "eas_baseid": "360380",
+  "coordinates": {
+    "lat": 37.76187,
+    "lng": -122.422529
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 4499,
+    "building_area_sqft": 7090,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3538 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169855,
+    "assessed_improvement_value": 373723
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205275170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-27",
+      "status_date": "2023-01-31",
+      "estimated_cost": 15600,
+      "revised_cost": 15600,
+      "description": "upgrade (e) local fire alarm system to comply w/ sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809119740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-11",
+      "status_date": "2020-02-20",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "soft story mitigation per chapter 4d 2016 sfebc per 2016 ifbc app a4 maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M210666",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-12",
+      "status_date": "2010-07-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M209826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-06",
+      "status_date": "2010-07-06",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003198571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-19",
+      "status_date": "2010-04-19",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "remove all the stucco from the bottom part of the 2 baywindows 6'x 3' each. install new stucco vents and restucco only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704239425",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-23",
+      "status_date": "2007-04-23",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3538",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577012B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=012B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577012B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

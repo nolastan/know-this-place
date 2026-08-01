@@ -1,0 +1,152 @@
+{
+  "address": "1272 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1272/",
+  "apn": "3642075",
+  "block": "3642",
+  "lot": "075",
+  "eas_baseid": "364147",
+  "coordinates": {
+    "lat": 37.752709,
+    "lng": -122.416669
+  },
+  "parcel": {
+    "year_built": 1992,
+    "units": 12,
+    "stories": 3,
+    "rooms": 23,
+    "bathrooms": 12,
+    "bedrooms": 1,
+    "lot_area_sqft": 7773.5,
+    "building_area_sqft": 8500,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1272 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 545840,
+    "assessed_improvement_value": 1320969,
+    "assessed_fixtures_value": 172952
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1992",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604018669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-01",
+      "status_date": "2026-04-29",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reroofing. no torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M77524",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-16",
+      "status_date": "2007-07-16",
+      "revised_cost": 0,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123389",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-12-10",
+      "status_date": "1992-09-10",
+      "estimated_cost": 2500,
+      "description": "revision project under construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120580",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-31",
+      "status_date": "1992-06-05",
+      "estimated_cost": 13400,
+      "revised_cost": 22450,
+      "description": "install fire sprinkelrs on 3 floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025991",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1990-12-21",
+      "status_date": "1992-05-29",
+      "estimated_cost": 659500,
+      "description": "erect a three story twelve unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916519",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1989-09-08",
+      "status_date": "1990-05-15",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717505",
+      "type": "demolitions",
+      "status": "withdrawn",
+      "filed": "1987-12-11",
+      "status_date": "1988-01-07",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704388",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "1987-04-08",
+      "status_date": "1989-09-24",
+      "description": "demolish storage shed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1272",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642075",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

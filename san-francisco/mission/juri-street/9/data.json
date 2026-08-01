@@ -1,0 +1,157 @@
+{
+  "address": "9–21 Juri Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/juri-street/9/",
+  "apn": "6532038",
+  "block": "6532",
+  "lot": "038",
+  "eas_baseid": "401449",
+  "coordinates": {
+    "lat": 37.749731,
+    "lng": -122.421948
+  },
+  "address_range": "9–21",
+  "street_numbers_on_parcel": [
+    "9",
+    "15",
+    "17",
+    "19",
+    "21"
+  ],
+  "parcel": {
+    "year_built": 1918,
+    "units": 6,
+    "stories": 2,
+    "rooms": 21,
+    "bathrooms": 26,
+    "lot_area_sqft": 3824,
+    "building_area_sqft": 3944,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0021 0009 JURI                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42706,
+    "assessed_improvement_value": 83145
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Juri Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601204175",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-20",
+      "status_date": "2026-01-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa # 2024-0409-9652: revise structural plans to reflect work. correct scope of work to \" rebuild exterior stairs and replace windows at rear of front building. exploratory demo for dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404099652",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-04-09",
+      "status_date": "2025-09-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "front bldg: rebuild exterior stairs at rear. re-frame rear portion of front bldg. new window at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301299028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-29",
+      "status_date": "2013-12-13",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair exterior siding on rear of building and cover with vinyl siding (not visible from street)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9804164",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-11",
+      "status_date": "1998-04-21",
+      "estimated_cost": 1500,
+      "description": "repair back stairs in like kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602962",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-03-17",
+      "status_date": "1986-11-07",
+      "estimated_cost": 395,
+      "description": "change locks to comply w/city requirements",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-03-14",
+      "status_date": "1986-06-19",
+      "estimated_cost": 1500,
+      "description": "repair siding and back 3rd floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JURI&street_type=ST&address_number=9",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42194806219436%2037.74973063768165)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

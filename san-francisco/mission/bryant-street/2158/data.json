@@ -1,0 +1,160 @@
+{
+  "address": "2158–2160 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2158/",
+  "apn": "4081009A",
+  "block": "4081",
+  "lot": "009A",
+  "eas_baseid": "368229",
+  "coordinates": {
+    "lat": 37.759658,
+    "lng": -122.410229
+  },
+  "address_range": "2158–2160",
+  "street_numbers_on_parcel": [
+    "2158",
+    "2160"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2720,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2160 2158 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 235144,
+    "assessed_improvement_value": 298401,
+    "last_sale_date": "1995-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401314978",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-31",
+      "status_date": "2024-10-16",
+      "estimated_cost": 10000,
+      "revised_cost": 18000,
+      "description": "revision to 202311301716. partition existing laundry area and add new toilet and sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311301716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-30",
+      "status_date": "2024-10-16",
+      "estimated_cost": 30000,
+      "revised_cost": 45000,
+      "description": "all work at rear not visble from street. 2158 /zigo repair rot damge to siding and framing. replace 11 windows to rear of building; same size same location; u=0.3 max. add insulation to exterior walls. install new siding as needed at building rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805051337",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-05",
+      "status_date": "2008-07-28",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "#2160- install new hard flooring, exhaust fan in (e) bathroom, create new 1/2 bath in (e) closet, install new lavy & toilet. install exhaust fan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922194",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-19",
+      "status_date": "2000-08-09",
+      "estimated_cost": 2000,
+      "description": "install 2 ventinox liners up/ll, install spark arrester",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811893",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-25",
+      "status_date": "1999-03-24",
+      "estimated_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608348",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-14",
+      "status_date": "1996-11-14",
+      "estimated_cost": 20000,
+      "description": "remodel kitchen w/new cabinets appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9401448",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-01-28",
+      "status_date": "1994-08-15",
+      "estimated_cost": 15000,
+      "description": "renew expired appl #9221275",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221275",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-12-08",
+      "status_date": "1993-10-07",
+      "estimated_cost": 22000,
+      "description": "remodel kitchen, new cabinets, drywall, flooring, skylights.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2158",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&lot=009A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4081009A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

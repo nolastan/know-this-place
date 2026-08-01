@@ -1,0 +1,125 @@
+{
+  "address": "886 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/886/",
+  "apn": "4089017",
+  "block": "4089",
+  "lot": "017",
+  "eas_baseid": "368445",
+  "coordinates": {
+    "lat": 37.758037,
+    "lng": -122.407074
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1050,
+    "building_area_sqft": 1638,
+    "lot_depth_ft": 50,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0886 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 897990,
+    "assessed_improvement_value": 433667,
+    "last_sale_date": "2019-04-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912028417",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-02",
+      "status_date": "2021-11-09",
+      "estimated_cost": 35000,
+      "revised_cost": 40000,
+      "description": "kitchen and bathroom remodel in-kind. no structural work. comply w/ cec 150.0 k 3 & 150.0 k 5",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M177265",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-18",
+      "status_date": "2009-08-18",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610200",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-10",
+      "status_date": "1997-08-25",
+      "estimated_cost": 5000,
+      "description": "tear all cap & add plywood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704666",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-09",
+      "status_date": "1987-05-20",
+      "estimated_cost": 1750,
+      "description": "add a prefabricated fireplace with hearth in accordance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-06-10",
+      "status_date": "1986-10-10",
+      "estimated_cost": 4100,
+      "description": "remove termite infected wood in rear of house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=886",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4089017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4089&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4089017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

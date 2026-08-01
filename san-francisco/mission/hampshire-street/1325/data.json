@@ -1,0 +1,103 @@
+{
+  "address": "1325 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1325/",
+  "apn": "4276010",
+  "block": "4276",
+  "lot": "010",
+  "eas_baseid": "371029",
+  "coordinates": {
+    "lat": 37.750948,
+    "lng": -122.40687
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1724,
+    "building_area_sqft": 874,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1325 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 174416,
+    "assessed_improvement_value": 126239,
+    "last_sale_date": "1996-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200010284337",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-28",
+      "status_date": "2001-06-11",
+      "estimated_cost": 6200,
+      "revised_cost": 6200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518137",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-27",
+      "status_date": "1995-11-27",
+      "estimated_cost": 8350,
+      "description": "increase foundation height by capping (e) brick foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-15",
+      "status_date": "1992-06-23",
+      "estimated_cost": 11984,
+      "description": "vineyl siding alside to cover left,right,front & back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1325",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4276010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4276&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4276010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

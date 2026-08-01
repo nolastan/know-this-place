@@ -1,0 +1,114 @@
+{
+  "address": "18–20 Lucky Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lucky-street/18/",
+  "apn": "6521037A",
+  "block": "6521",
+  "lot": "037A",
+  "eas_baseid": "401087",
+  "coordinates": {
+    "lat": 37.752134,
+    "lng": -122.413613
+  },
+  "address_range": "18–20",
+  "street_numbers_on_parcel": [
+    "18",
+    "20"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1520.56,
+    "building_area_sqft": 2202,
+    "lot_depth_ft": 57.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0020 0018 LUCKY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 54386,
+    "assessed_improvement_value": 110984
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202011219485",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-21",
+      "status_date": "2021-03-03",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "to comply with nov# 201965391. revision to no plan pa# 201909121494. replace existing damaged exterior stairway at rear side of building. for 2nd mean of egress.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909121494",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-12",
+      "status_date": "2019-09-12",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "repair fire damage at rear of building; repairing siding, stairs, and window replacement.. to comply with nov# 201965391, second means of egress.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LUCKY&street_type=ST&address_number=18",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521037A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=037A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521037A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4136125431849%2037.75213414839308)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

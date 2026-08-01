@@ -1,0 +1,165 @@
+{
+  "address": "3722–3724 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3722/",
+  "apn": "3598010A",
+  "block": "3598",
+  "lot": "010A",
+  "eas_baseid": "361618",
+  "coordinates": {
+    "lat": 37.75857,
+    "lng": -122.424145
+  },
+  "address_range": "3722–3724",
+  "street_numbers_on_parcel": [
+    "3722",
+    "3724"
+  ],
+  "parcel": {
+    "year_built": 1930,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 6,
+    "bedrooms": 7,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 5470,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3724 3722 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1735135,
+    "assessed_improvement_value": 1430292,
+    "last_sale_date": "2020-10-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202203089429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-08",
+      "status_date": "2022-12-05",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "revision to pa# 202102195010. update p.l. foundation replacement. keep (e) conc retaining wall. remove 2 (e) posts in garage & replace with stl bm. add plywood sw at each side of garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102195010",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-19",
+      "status_date": "2022-12-05",
+      "estimated_cost": 210000,
+      "revised_cost": 210000,
+      "description": "ground floor: infill ground fl. underneath extg rear popout structure, add habitable space for lower unit (3722 20th st.) with interior stair conn.(1) new bath & kitchen. 2nd fl: remodel & add 2 bath & 1 bedroom. 3rd fl: remodel kitchen and (n) bath (3724 20th st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M117747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-28",
+      "status_date": "2008-04-28",
+      "revised_cost": 1,
+      "description": "street space permit. renewal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31999",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-04-11",
+      "status_date": "2005-04-11",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002293088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-29",
+      "status_date": "2000-04-07",
+      "revised_cost": 2200,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9514038",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-30",
+      "status_date": "1996-03-12",
+      "estimated_cost": 7950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314967",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-31",
+      "status_date": "1994-02-28",
+      "estimated_cost": 7195,
+      "description": "replace window in like",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3722",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598010A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=010A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598010A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42414491419184%2037.75857000642132)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

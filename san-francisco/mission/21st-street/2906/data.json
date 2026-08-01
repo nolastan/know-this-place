@@ -1,0 +1,131 @@
+{
+  "address": "2906–2908 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2906/",
+  "apn": "3612010",
+  "block": "3612",
+  "lot": "010",
+  "eas_baseid": "362571",
+  "coordinates": {
+    "lat": 37.757635,
+    "lng": -122.412686
+  },
+  "address_range": "2906–2908",
+  "street_numbers_on_parcel": [
+    "2906",
+    "2908"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2908 2906 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 103576,
+    "assessed_improvement_value": 103576
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102104343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-10",
+      "status_date": "2021-10-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "repair vehicle impact damage to front right corner to return to original conditions or better. no change to original apperance to original is proposed. comply w/ nov 202064381.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707055951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-05",
+      "status_date": "2007-07-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 6 windows in kind white vinyl. no structral changes back of house not visable from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608250565",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2006-08-25",
+      "status_date": "2006-09-21",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "replacing (e) 2 entry doors in kind. replacement doors will be wood doors with two lower panels. no change to transom lites above door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605010326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-01",
+      "status_date": "2006-05-18",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "removal of (e) windows, replacing old sashes with new vinyl windows within (e) frames (13) total, (11) windows at front to be trimmed out with wood stops.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210017858",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-01",
+      "status_date": "2003-09-12",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "abate nov 200231373. remove partitions revert or orig floor plan at garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2906",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

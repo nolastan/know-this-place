@@ -1,0 +1,124 @@
+{
+  "address": "971 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/971/",
+  "apn": "6518017",
+  "block": "6518",
+  "lot": "017",
+  "eas_baseid": "400947",
+  "coordinates": {
+    "lat": 37.751201,
+    "lng": -122.416941
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 1158,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0971 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33678,
+    "assessed_improvement_value": 57712
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201303182409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-18",
+      "status_date": "2013-04-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to document that no work was performed under pa#200407229494. site verification to be performed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901079672",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-07",
+      "status_date": "2009-01-07",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407229493",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "2004-07-22",
+      "status_date": "2009-02-25",
+      "description": "demolishing 2 story single family dweling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407229494",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "2004-07-22",
+      "status_date": "2009-01-26",
+      "estimated_cost": 481000,
+      "revised_cost": 662589,
+      "description": "erect a three story four units residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604606",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-03-20",
+      "status_date": "1997-06-12",
+      "estimated_cost": 1000,
+      "revised_cost": 12000,
+      "description": "legalize storage room per notice of 6/15/95",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=971",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "address": "16 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/16/",
+  "apn": "3588063A",
+  "block": "3588",
+  "lot": "063A",
+  "eas_baseid": "361146",
+  "coordinates": {
+    "lat": 37.761194,
+    "lng": -122.42312
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 6,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 6,
+    "lot_area_sqft": 2777.8,
+    "building_area_sqft": 3856,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0016 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 706525,
+    "assessed_improvement_value": 706525,
+    "last_sale_date": "2011-10-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202512101418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-10",
+      "status_date": "2026-01-27",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "reroofing hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M963388",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-10",
+      "status_date": "2018-08-10",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M566667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-09",
+      "status_date": "2015-03-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406097860",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-06-09",
+      "status_date": "2015-04-24",
+      "estimated_cost": 40000,
+      "revised_cost": 30000,
+      "description": "soft story retrofit per sfbc chapter 34b 2012 iebc appendix a-4. lateral upgrade to comply w/ sfbc chap 34b, calculations based on iebc a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403241471",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2014-03-24",
+      "status_date": "2014-06-24",
+      "estimated_cost": 25000,
+      "revised_cost": 0,
+      "description": "soft story seismic retrofit per ordinace sfbc 34b of 1st floor/garage target to a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M20315",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-05-20",
+      "status_date": "2002-05-20",
+      "revised_cost": 6000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620348",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-22",
+      "status_date": "1997-08-25",
+      "estimated_cost": 750,
+      "description": "install 1hr door bet.private garage & foyer",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=16",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588063A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=063A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588063A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42312038723652%2037.76119447115691)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

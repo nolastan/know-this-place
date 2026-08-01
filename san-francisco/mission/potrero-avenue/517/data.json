@@ -1,0 +1,123 @@
+{
+  "address": "517 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/517/",
+  "apn": "4013019",
+  "block": "4013",
+  "lot": "019",
+  "eas_baseid": "367312",
+  "coordinates": {
+    "lat": 37.762496,
+    "lng": -122.406893
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2424,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0517 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 231617,
+    "assessed_improvement_value": 180905
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309277488",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-27",
+      "status_date": "2023-10-20",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "exterior stair repair less than 50%, replace with new wood in kind. not visible from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1147067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-02",
+      "status_date": "2019-10-02",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705754",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-28",
+      "status_date": "1999-03-01",
+      "estimated_cost": 517,
+      "revised_cost": 7500,
+      "description": "install/replace retaining wall at rear of property",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-08",
+      "status_date": "1993-04-14",
+      "estimated_cost": 790,
+      "description": "install 2 windows in existing frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-15",
+      "status_date": "1987-01-15",
+      "estimated_cost": 2500,
+      "description": "repair of dry rot in bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=517",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4013019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4013&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4013019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "address": "2758 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2758/",
+  "apn": "3640009",
+  "block": "3640",
+  "lot": "009",
+  "eas_baseid": "363964",
+  "coordinates": {
+    "lat": 37.753257,
+    "lng": -122.412314
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 1400,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2758 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 471225,
+    "assessed_improvement_value": 321218,
+    "last_sale_date": "1999-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708154821",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-15",
+      "status_date": "2017-08-30",
+      "estimated_cost": 8680,
+      "revised_cost": 8680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M360788",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-12-04",
+      "status_date": "2012-12-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807187063",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-07-18",
+      "status_date": "2009-05-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "new deck off the upper floor of house at rear, w/ stair to rear yard, replace all aluminum windows at upper floor w/ wood sash, double hung units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802265657",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-26",
+      "status_date": "2008-02-26",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 6 windows in the rear. windows double pane wood frame. same size same location. non facing the street all in the rear.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2758",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

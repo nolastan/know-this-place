@@ -1,0 +1,101 @@
+{
+  "address": "675–677 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/675/",
+  "apn": "4025006A",
+  "block": "4025",
+  "lot": "006A",
+  "eas_baseid": "367413",
+  "coordinates": {
+    "lat": 37.760929,
+    "lng": -122.407888
+  },
+  "address_range": "675–677",
+  "street_numbers_on_parcel": [
+    "675",
+    "677"
+  ],
+  "parcel": {
+    "year_built": 1931,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1400,
+    "building_area_sqft": 2400,
+    "lot_depth_ft": 40,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0677 0675 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239503,
+    "assessed_improvement_value": 255466,
+    "last_sale_date": "1997-09-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708316581",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-08-31",
+      "status_date": "2017-08-31",
+      "estimated_cost": 600,
+      "revised_cost": 6000,
+      "description": "cover (e) wood siding with same color aluminum siding. ot visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915035",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-17",
+      "status_date": "1989-09-08",
+      "estimated_cost": 3900,
+      "revised_cost": 0,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=675",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4025006A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4025&lot=006A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4025006A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "address": "494–496 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/494/",
+  "apn": "6530011A",
+  "block": "6530",
+  "lot": "011A",
+  "eas_baseid": "401354",
+  "coordinates": {
+    "lat": 37.749102,
+    "lng": -122.419495
+  },
+  "address_range": "494–496",
+  "street_numbers_on_parcel": [
+    "494",
+    "496"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3036,
+    "building_area_sqft": 1855,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0496 0494 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143218,
+    "assessed_improvement_value": 55416
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309136539",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-09-13",
+      "status_date": "2023-09-15",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "repair 29lf side/rear 7ft fence in-kind at south side of buildng, 26th st. frontage. repair includes board replacement only throughout 29lf of side fence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402126272",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-12",
+      "status_date": "2004-02-12",
+      "estimated_cost": 815,
+      "revised_cost": 815,
+      "description": "install 8 vinyl windows in kind into (e)frames.no change in size/location.no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-14",
+      "status_date": "1998-12-28",
+      "estimated_cost": 10600,
+      "description": "foundation work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-14",
+      "status_date": "1996-03-20",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8406110",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-06-07",
+      "status_date": "1984-10-15",
+      "estimated_cost": 1000,
+      "revised_cost": 5000,
+      "description": "inspection report #21563",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=494",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6530011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6530&lot=011A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6530011A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

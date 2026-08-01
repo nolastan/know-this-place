@@ -1,0 +1,120 @@
+{
+  "address": "39–41 Camp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/camp-street/39/",
+  "apn": "3568048",
+  "block": "3568",
+  "lot": "048",
+  "eas_baseid": "360039",
+  "coordinates": {
+    "lat": 37.763757,
+    "lng": -122.423427
+  },
+  "address_range": "39–41",
+  "street_numbers_on_parcel": [
+    "39",
+    "41"
+  ],
+  "parcel": {
+    "year_built": 1932,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3450,
+    "building_area_sqft": 3964,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0041 0039 CAMP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 924113,
+    "assessed_improvement_value": 483183
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M553387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-26",
+      "status_date": "2015-01-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406168478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-16",
+      "status_date": "2019-04-24",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "combine existing ktichen breakfast room & closet into single kitchen by removing non-bearing walls. remodel existing bathroom, replace existing fixtures, remodel exisitng half bath, installing new wall mount sink. upgrade electrical to t-24 where work area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401317572",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-01-31",
+      "status_date": "2026-01-09",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "garage bearing beam replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414600",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-09",
+      "status_date": "1995-04-10",
+      "estimated_cost": 5200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAMP&street_type=ST&address_number=39",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568048",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

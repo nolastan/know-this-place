@@ -1,0 +1,119 @@
+{
+  "address": "216 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/216/",
+  "apn": "6513003",
+  "block": "6513",
+  "lot": "003",
+  "eas_baseid": "400782",
+  "coordinates": {
+    "lat": 37.751679,
+    "lng": -122.421828
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2214,
+    "building_area_sqft": 2880,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0216 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 134650,
+    "assessed_improvement_value": 155367
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201209079227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-07",
+      "status_date": "2012-09-20",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508231031",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-23",
+      "status_date": "2006-02-22",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace 5 windows,size for size,wood to wood composite.not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401939",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-23",
+      "status_date": "1984-04-10",
+      "estimated_cost": 6500,
+      "description": "add two skylites repair windowns sheetrock living rm.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=216",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6513003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6513&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4218276126877%2037.75167912395496)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

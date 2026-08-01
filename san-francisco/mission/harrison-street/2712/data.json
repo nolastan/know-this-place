@@ -1,0 +1,110 @@
+{
+  "address": "2712 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2712/",
+  "apn": "3640004",
+  "block": "3640",
+  "lot": "004",
+  "eas_baseid": "363959",
+  "coordinates": {
+    "lat": 37.753663,
+    "lng": -122.412315
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1220,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2712 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31154,
+    "assessed_improvement_value": 17295
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8924780",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-18",
+      "status_date": "1990-04-05",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301143",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-02-09",
+      "status_date": "1986-03-04",
+      "estimated_cost": 15000,
+      "description": "comply to codes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8210290",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1982-12-16",
+      "status_date": "1983-06-29",
+      "estimated_cost": 3500,
+      "description": "construct closets, etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8105341",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-06-12",
+      "status_date": "1981-11-25",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2712",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

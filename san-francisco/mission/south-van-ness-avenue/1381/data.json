@@ -1,0 +1,115 @@
+{
+  "address": "1381 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1381/",
+  "apn": "6519046",
+  "block": "6519",
+  "lot": "046",
+  "eas_baseid": "401007",
+  "coordinates": {
+    "lat": 37.751181,
+    "lng": -122.415791
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 1,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 2570,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1381 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 478523,
+    "assessed_improvement_value": 282315,
+    "last_sale_date": "1988-05-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "HAVENS MANSION & CARRIAGE HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200507187806",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-07-18",
+      "status_date": "2005-07-18",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31714",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-22",
+      "status_date": "2005-03-22",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101180145",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2001-01-18",
+      "status_date": "2006-08-14",
+      "estimated_cost": 8500,
+      "description": "replace 13 rotted wooden windows sash w/ marvin wooden windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713995",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-29",
+      "status_date": "1988-04-04",
+      "estimated_cost": 4000,
+      "description": "remodel bathrm, remove plaster, rewire, new fixtures, tile",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1381",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6519046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6519&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6519046",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

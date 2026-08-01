@@ -1,0 +1,115 @@
+{
+  "address": "2871 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2871/",
+  "apn": "4268031",
+  "block": "4268",
+  "lot": "031",
+  "eas_baseid": "370777",
+  "coordinates": {
+    "lat": 37.752545,
+    "lng": -122.409583
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2800,
+    "building_area_sqft": 3600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2871 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 394076,
+    "assessed_improvement_value": 363639
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510268157",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-26",
+      "status_date": "2025-10-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709087355",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-09-08",
+      "status_date": "2026-01-09",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "1/f-remodel (e) g/f counter service cafe, new accessible front entry door, new accessible all gender restroom, new non structural partitions, finishes, lighting, new exterior signage to replace existing. electrical, mechanical, plumbing, fire & life safety under seperate permit. no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510266607",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-10-26",
+      "status_date": "2006-12-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change of use from retail to small self service restaurant for 311 notification. no work this permit. all work done under 200508190750.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508190750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-19",
+      "status_date": "2005-11-14",
+      "estimated_cost": 1500,
+      "revised_cost": 4400,
+      "description": "interior remodeling of (e) commercial space. work will include alterations to (e) non-bearing walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2871",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

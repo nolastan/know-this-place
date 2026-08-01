@@ -1,0 +1,119 @@
+{
+  "address": "241–243 Clinton Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/clinton-park/241/",
+  "apn": "3534041",
+  "block": "3534",
+  "lot": "041",
+  "eas_baseid": "358459",
+  "coordinates": {
+    "lat": 37.768903,
+    "lng": -122.4255
+  },
+  "address_range": "241–243",
+  "street_numbers_on_parcel": [
+    "241",
+    "243"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2340,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0243 0241 CLINTON             PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27461,
+    "assessed_improvement_value": 39704
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901100039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-10",
+      "status_date": "2019-03-01",
+      "estimated_cost": 49309,
+      "revised_cost": 49309,
+      "description": "non strret visible - replacing 15 windows on back of property - fibrex. same size/location u factor 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206283670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-28",
+      "status_date": "2012-07-10",
+      "estimated_cost": 12300,
+      "revised_cost": 12300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805283068",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-28",
+      "status_date": "2008-08-08",
+      "estimated_cost": 32649,
+      "revised_cost": 32649,
+      "description": "replace front 9 wood windows with new wood windows with double hung operations. < 0.67. install fibercement james hardie siding on back wall and sided on the back. not visible from strett. over existing exterior t1-ii.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513056",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-08-16",
+      "status_date": "1996-01-29",
+      "estimated_cost": 17000,
+      "description": "existing storage area at basement to become garage/curb cut",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLINTON&street_type=PARK&address_number=241",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

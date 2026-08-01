@@ -1,0 +1,130 @@
+{
+  "address": "3236–3242 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3236/",
+  "apn": "3574089",
+  "block": "3574",
+  "lot": "089",
+  "eas_baseid": "360240",
+  "coordinates": {
+    "lat": 37.762238,
+    "lng": -122.415831
+  },
+  "address_range": "3236–3242",
+  "street_numbers_on_parcel": [
+    "3236",
+    "3238",
+    "3240",
+    "3242"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 4,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 4,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 4560,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3242 3236 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 706525,
+    "assessed_improvement_value": 706525,
+    "last_sale_date": "2012-06-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "W20020909593",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-09-09",
+      "status_date": "2003-12-24",
+      "estimated_cost": 6800,
+      "description": "gta m/b tear off reroofing work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910894",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-02",
+      "status_date": "2000-06-02",
+      "estimated_cost": 25050,
+      "description": "cut base of studding, make structural repairs, pest-report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502705",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-03-18",
+      "status_date": "1986-03-04",
+      "estimated_cost": 22800,
+      "description": "repair 3 apartments, windows, bath kitchen fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502103",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-03-01",
+      "status_date": "1985-04-12",
+      "estimated_cost": 20000,
+      "description": "wiring see file nd. dahi inspector medermot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410823",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-09",
+      "status_date": "1985-04-12",
+      "estimated_cost": 2200,
+      "description": "replace rotted girder as per inspector corsis report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3236",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3574089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3574&lot=089",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3574089",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

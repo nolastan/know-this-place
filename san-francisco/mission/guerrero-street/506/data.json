@@ -1,0 +1,131 @@
+{
+  "address": "506–508 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/506/",
+  "apn": "3578002",
+  "block": "3578",
+  "lot": "002",
+  "eas_baseid": "360430",
+  "coordinates": {
+    "lat": 37.762947,
+    "lng": -122.424094
+  },
+  "address_range": "506–508",
+  "street_numbers_on_parcel": [
+    "506",
+    "508"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3155,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0508 0506 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87014,
+    "assessed_improvement_value": 239426,
+    "last_sale_date": "2025-04-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201609097257",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-09",
+      "status_date": "2017-08-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401216699",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-21",
+      "status_date": "2014-03-24",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace footing and repair stucco to match; automobile damage. compliance with ordinance #155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210259907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-25",
+      "status_date": "2003-01-02",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove & replace 2 stairway stringer & 1 post of a wooden exterior stairway. with presure treated wo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923344",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-30",
+      "status_date": "1990-02-01",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208362",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-10-12",
+      "status_date": "1983-03-04",
+      "estimated_cost": 500,
+      "description": "bldg use: apts.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=506",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

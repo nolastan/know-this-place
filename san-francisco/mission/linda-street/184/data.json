@@ -1,0 +1,130 @@
+{
+  "address": "184 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/184/",
+  "apn": "3597045",
+  "block": "3597",
+  "lot": "045",
+  "eas_baseid": "361582",
+  "coordinates": {
+    "lat": 37.758853,
+    "lng": -122.422937
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2265,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0184 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 594453,
+    "assessed_improvement_value": 695531,
+    "last_sale_date": "2006-03-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M315507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-04-19",
+      "status_date": "2012-04-19",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112211145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-21",
+      "status_date": "2013-01-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#200706265152. change from cast in place concrete walls to shot-crete walls. removal of tie-back with replacement of helical anchors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706265152",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-06-26",
+      "status_date": "2013-01-16",
+      "estimated_cost": 320000,
+      "revised_cost": 320000,
+      "description": "horizontal addition: major sructural upgrades (both steel & wood), new extereior siding, new zinc roofing material, new foundation and concrete floor, radiant heating, new electrical, new plumbing, new kitchen, bath. repairs to retaining wall in rear yard, rear additon.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509972",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-29",
+      "status_date": "1995-12-18",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=184",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3597045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3597&lot=045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3597045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42293746356432%2037.75885311742558)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

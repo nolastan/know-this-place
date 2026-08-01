@@ -1,0 +1,88 @@
+{
+  "address": "1040–1042 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1040/",
+  "apn": "6528007",
+  "block": "6528",
+  "lot": "007",
+  "eas_baseid": "485421",
+  "coordinates": {
+    "lat": 37.750112,
+    "lng": -122.41739
+  },
+  "address_range": "1040–1042",
+  "street_numbers_on_parcel": [
+    "1040",
+    "1042"
+  ],
+  "parcel": {
+    "year_built": 1979,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "lot_area_sqft": 2673.75,
+    "building_area_sqft": 2650,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1042 1040 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 130282,
+    "assessed_improvement_value": 244292,
+    "last_sale_date": "1990-02-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9605008",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-26",
+      "status_date": "1996-09-26",
+      "estimated_cost": 5200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=1040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6528007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

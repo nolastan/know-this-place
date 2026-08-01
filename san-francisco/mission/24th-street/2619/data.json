@@ -1,0 +1,108 @@
+{
+  "address": "2619–2621 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2619/",
+  "apn": "4264019",
+  "block": "4264",
+  "lot": "019",
+  "eas_baseid": "370651",
+  "coordinates": {
+    "lat": 37.75281,
+    "lng": -122.405749
+  },
+  "address_range": "2619–2621",
+  "street_numbers_on_parcel": [
+    "2619",
+    "2621"
+  ],
+  "parcel": {
+    "year_built": 1901,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2460,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2621 2619 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 103576,
+    "assessed_improvement_value": 103576
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1901",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904036979",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-03",
+      "status_date": "2019-04-08",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406015225",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-01",
+      "status_date": "2004-06-17",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair bottom half of stairs - posts and stairs to remain in same location - approx. 50% of stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9507449",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-18",
+      "status_date": "1997-05-27",
+      "estimated_cost": 14994,
+      "description": "appn of vinyl siding to (e)wood surface not public view",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2619",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4264019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4264&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4264019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "address": "3550 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3550/",
+  "apn": "3634012",
+  "block": "3634",
+  "lot": "012",
+  "eas_baseid": "363741",
+  "coordinates": {
+    "lat": 37.753837,
+    "lng": -122.422665
+  },
+  "parcel": {
+    "year_built": 1958,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 4787,
+    "building_area_sqft": 7530,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3550 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1802857,
+    "assessed_improvement_value": 1030194,
+    "last_sale_date": "2008-10-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108136396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-13",
+      "status_date": "2021-09-22",
+      "estimated_cost": 23450,
+      "revised_cost": 23450,
+      "description": "2021 upgrade in a non-sprinklered system to comply w/current sffd-2019 section 1103.7.6.1. replacement of (e) facu w/new ifp-75, new telguard wide communicator, manual pull station, smoke detectors, horn strobes, low freq sounders & monitor modules.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608044158",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-04",
+      "status_date": "2017-12-13",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "comply with soft story sfbc chapter 34b wood frame seismic retrofit program. per iebc 2012 appx a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003027409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-02",
+      "status_date": "2010-03-18",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace 4-windows to vinyl, not visible from street; one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904025387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-02",
+      "status_date": "2009-04-21",
+      "estimated_cost": 1300,
+      "revised_cost": 1300,
+      "description": "repair dryrot stucco under the bay window in front of the building 2'x5'.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M158404",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-03-31",
+      "status_date": "2009-03-31",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602144554",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-14",
+      "status_date": "2006-02-14",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "dry rot repair in back lightwell in walls and floor, replace siding approx. 100 sq. ft., replace window all in like size and location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112074764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-07",
+      "status_date": "2002-04-04",
+      "estimated_cost": 26500,
+      "revised_cost": 26500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3550",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

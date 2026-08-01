@@ -1,0 +1,119 @@
+{
+  "address": "77–79 Brady Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/brady-street/77/",
+  "apn": "3505023",
+  "block": "3505",
+  "lot": "023",
+  "eas_baseid": "357735",
+  "coordinates": {
+    "lat": 37.772737,
+    "lng": -122.419897
+  },
+  "address_range": "77–79",
+  "street_numbers_on_parcel": [
+    "77",
+    "79"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2070,
+    "building_area_sqft": 2358,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0079 0077 BRADY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 332228,
+    "assessed_improvement_value": 333104
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808207759",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2018-08-20",
+      "status_date": "2019-01-08",
+      "estimated_cost": 115000,
+      "revised_cost": 100000,
+      "description": "shoring for new construction on 30 otis street. ref pa# 2016/11/28/3577-s.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810174492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-17",
+      "status_date": "2010-07-16",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "install 5 underpinning piers at right side property line footing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M67348",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-07",
+      "status_date": "2007-05-07",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401093757",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-01-09",
+      "status_date": "2004-01-09",
+      "estimated_cost": 5100,
+      "revised_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRADY&street_type=ST&address_number=77",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3505023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3505&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3505023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

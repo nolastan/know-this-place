@@ -1,0 +1,118 @@
+{
+  "address": "624–628 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/624/",
+  "apn": "3575005",
+  "block": "3575",
+  "lot": "005",
+  "eas_baseid": "360244",
+  "coordinates": {
+    "lat": 37.763066,
+    "lng": -122.41764
+  },
+  "address_range": "624–628",
+  "street_numbers_on_parcel": [
+    "624",
+    "628"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 3430,
+    "building_area_sqft": 5376,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0628 0624 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 140100,
+    "assessed_improvement_value": 239638
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M287247",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-11-01",
+      "status_date": "2011-11-01",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M83144",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-23",
+      "status_date": "2007-08-23",
+      "revised_cost": 0,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312112118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-11",
+      "status_date": "2004-01-23",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "rebuild existing damaged side stairs at the middle of bldg in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604668",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-04-23",
+      "status_date": "1986-05-12",
+      "estimated_cost": 200,
+      "description": "repair all defective electrical outlets in one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=624",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3575005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3575&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3575005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

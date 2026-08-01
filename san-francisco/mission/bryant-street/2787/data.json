@@ -1,0 +1,119 @@
+{
+  "address": "2787–2789 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2787/",
+  "apn": "4274013",
+  "block": "4274",
+  "lot": "013",
+  "eas_baseid": "370956",
+  "coordinates": {
+    "lat": 37.749803,
+    "lng": -122.408525
+  },
+  "address_range": "2787–2789",
+  "street_numbers_on_parcel": [
+    "2787",
+    "2789"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2330,
+    "building_area_sqft": 3195,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2789 2787 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1685344,
+    "assessed_improvement_value": 1123561,
+    "last_sale_date": "2004-10-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512292924",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2025-12-29",
+      "status_date": "2026-01-20",
+      "description": "add 1 state adu per ord 162-16, 95-17,162-1. new exit passageway.remove bath at attic.remove stairs 3/f attic.replace attic ladder.improve ext stairs at rear.handrail at front stairs.protective bollards at garage. new trash enclosure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210214888",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-10-21",
+      "status_date": "2022-10-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with physical insppection report # cc-8542.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209021825",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-09-02",
+      "status_date": "2022-09-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with physical inspection report cc-8542.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M940687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-18",
+      "status_date": "2018-06-18",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2787",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4274013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4274&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4274013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

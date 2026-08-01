@@ -1,0 +1,167 @@
+{
+  "address": "2828 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2828/",
+  "apn": "6520004",
+  "block": "6520",
+  "lot": "004",
+  "eas_baseid": "401012",
+  "coordinates": {
+    "lat": 37.752017,
+    "lng": -122.414384
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 3921,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2828 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29309,
+    "assessed_improvement_value": 202981
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505227038",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-05-22",
+      "status_date": "2025-05-22",
+      "estimated_cost": 50000,
+      "revised_cost": 0,
+      "description": "new bathroom of 49.92 sq ft in existing storage room at basement level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207306048",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-30",
+      "status_date": "2012-09-21",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "repair minor non structural fire damage at rear of top floor, per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707056061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-05",
+      "status_date": "2007-07-25",
+      "estimated_cost": 16800,
+      "revised_cost": 16800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707056062",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-07-05",
+      "status_date": "2010-02-01",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "install one new ply of 1/2 thick cdx plywood as sheating.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003275428",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-27",
+      "status_date": "2000-09-27",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "install 13d sprinkler system in new addition-at rear of existing buildings under sep permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809588",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-05-28",
+      "status_date": "2000-08-31",
+      "estimated_cost": 90000,
+      "revised_cost": 97000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9706210",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-07",
+      "status_date": "1999-03-01",
+      "estimated_cost": 11400,
+      "description": "alter existing bath to bath/laundry room, repl vinyl floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-05",
+      "status_date": "1996-11-07",
+      "estimated_cost": 8876,
+      "description": "replace 15 windows size for size no changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116980",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-09-13",
+      "status_date": "1992-07-06",
+      "estimated_cost": 4000,
+      "description": "demolition & rebuild of back exterior stairs, handrails.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2828",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6520004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6520&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6520004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "address": "2468–2470 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2468/",
+  "apn": "3611012",
+  "block": "3611",
+  "lot": "012",
+  "eas_baseid": "362519",
+  "coordinates": {
+    "lat": 37.757822,
+    "lng": -122.414944
+  },
+  "address_range": "2468–2470",
+  "street_numbers_on_parcel": [
+    "2468",
+    "2470"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 2390,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2470 2468 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 803712,
+    "assessed_improvement_value": 535800,
+    "last_sale_date": "2005-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M511027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-14",
+      "status_date": "2014-08-14",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406300020",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-30",
+      "status_date": "2014-08-18",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2468",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3611012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3611&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3611012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

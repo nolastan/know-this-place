@@ -1,0 +1,150 @@
+{
+  "address": "210 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/210/",
+  "apn": "6513002A",
+  "block": "6513",
+  "lot": "002A",
+  "eas_baseid": "400781",
+  "coordinates": {
+    "lat": 37.751753,
+    "lng": -122.421835
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 2480,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0210 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 265237,
+    "assessed_improvement_value": 601233,
+    "last_sale_date": "1991-09-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M188747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-22",
+      "status_date": "2010-01-22",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911030478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-03",
+      "status_date": "2010-12-10",
+      "estimated_cost": 47000,
+      "revised_cost": 86000,
+      "description": "foundation upgrade, shotcrete (e) brick wall. provide (n) steel beam & remove (e) wood posts @ 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803106709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-10",
+      "status_date": "2008-03-26",
+      "estimated_cost": 17900,
+      "revised_cost": 17900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710014121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-01",
+      "status_date": "2008-01-25",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "bath remodel in (e) bath with new fixtures & materials",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M25135",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-07",
+      "status_date": "2003-10-07",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208922",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-01",
+      "status_date": "1992-12-01",
+      "estimated_cost": 6000,
+      "description": "removal & rebuilding of firebrick in fire box of fire place.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=210",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6513002A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6513&lot=002A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513002A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42183470373789%2037.751753175658486)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

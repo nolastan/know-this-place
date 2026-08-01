@@ -1,0 +1,150 @@
+{
+  "address": "10–12 Alvarado Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alvarado-street/10/",
+  "apn": "3633003",
+  "block": "3633",
+  "lot": "003",
+  "eas_baseid": "363701",
+  "coordinates": {
+    "lat": 37.754696,
+    "lng": -122.421736
+  },
+  "address_range": "10–12",
+  "street_numbers_on_parcel": [
+    "10",
+    "12"
+  ],
+  "parcel": {
+    "year_built": 1980,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2700,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0012 0010 ALVARADO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179190,
+    "assessed_improvement_value": 326590
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1980",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200209095946",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-09-09",
+      "status_date": "2002-09-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402547",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-02-17",
+      "status_date": "1994-06-02",
+      "estimated_cost": 5000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9401426",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-01-27",
+      "status_date": "1994-05-18",
+      "estimated_cost": 1,
+      "description": "obtain final elec plumb & bldg inspection #9316991",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316691",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-09-27",
+      "status_date": "1994-02-10",
+      "estimated_cost": 500,
+      "description": "renew expired permit appn. #9123474",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123474",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1991-12-13",
+      "status_date": "1992-08-06",
+      "estimated_cost": 10000,
+      "revised_cost": 18000,
+      "description": "inter. alteration to top flr relocate kitchen add storage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818108",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-11-16",
+      "status_date": "1990-10-04",
+      "estimated_cost": 7500,
+      "description": "extension to rear wall & new deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815774",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-13",
+      "status_date": "1988-11-04",
+      "estimated_cost": 1000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALVARADO&street_type=ST&address_number=10",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3633003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3633&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3633003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

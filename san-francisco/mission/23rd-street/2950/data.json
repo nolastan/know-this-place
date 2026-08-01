@@ -1,0 +1,110 @@
+{
+  "address": "2950–2952 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2950/",
+  "apn": "4148013A",
+  "block": "4148",
+  "lot": "013A",
+  "eas_baseid": "369455",
+  "coordinates": {
+    "lat": 37.754474,
+    "lng": -122.411285
+  },
+  "address_range": "2950–2952",
+  "street_numbers_on_parcel": [
+    "2950",
+    "2952"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 1988.43,
+    "building_area_sqft": 3290,
+    "lot_depth_ft": 79,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2950 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 240873,
+    "assessed_improvement_value": 249177,
+    "last_sale_date": "1995-11-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602196206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-19",
+      "status_date": "2026-02-23",
+      "estimated_cost": 10,
+      "revised_cost": 8000,
+      "description": "revision to pa# 202508072574. replace double doors w/new double doors, not single door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508072574",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-07",
+      "status_date": "2026-02-23",
+      "estimated_cost": 3000,
+      "revised_cost": 8000,
+      "description": "replace existing front double doors with a single entry door and 32 inch min. clear width inches a pair of power door operators.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408284991",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "2014-08-28",
+      "status_date": "2017-03-30",
+      "estimated_cost": 2100,
+      "description": "to erect non-electric, wall, single-faced sign.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2950",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=013A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148013A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

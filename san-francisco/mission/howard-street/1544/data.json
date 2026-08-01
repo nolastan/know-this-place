@@ -1,0 +1,146 @@
+{
+  "address": "1544–1548 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/howard-street/1544/",
+  "apn": "3511017",
+  "block": "3511",
+  "lot": "017",
+  "eas_baseid": "357834",
+  "coordinates": {
+    "lat": 37.772714,
+    "lng": -122.416395
+  },
+  "address_range": "1544–1548",
+  "street_numbers_on_parcel": [
+    "1544",
+    "1546",
+    "1548"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 1855,
+    "building_area_sqft": 4248,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1548 1544 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20568,
+    "assessed_improvement_value": 50717
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "survey_name": "1544-1548 Howard Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201309136778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-13",
+      "status_date": "2013-10-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 201108112214. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108112214",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-08-11",
+      "status_date": "2013-02-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply with nov #201151643, provide handrail at exit stairs, replace drier vent. provide fire extinguqisher w/current date tag.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605040690",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-04",
+      "status_date": "2006-11-07",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008450",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-05-03",
+      "status_date": "1991-12-27",
+      "estimated_cost": 6000,
+      "description": "earthquake reinforcement, adding steel beams",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409782",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-09-11",
+      "status_date": "1985-07-26",
+      "estimated_cost": 7000,
+      "description": "repair existing rear end wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=1544",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3511017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3511&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3511017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41639476819623%2037.77271374617762)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "address": "1220 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1220/",
+  "apn": "6524005",
+  "block": "6524",
+  "lot": "005",
+  "eas_baseid": "401139",
+  "coordinates": {
+    "lat": 37.750555,
+    "lng": -122.413098
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 1360,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1220 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1045628,
+    "assessed_improvement_value": 804125,
+    "last_sale_date": "2021-03-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402296811",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-02-29",
+      "status_date": "2024-04-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to pa# 2023-0516-7860 rear-facing windows at the main floor to be removed. openings to be modified and new windows installed at sides and rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305167860",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-05-16",
+      "status_date": "2026-03-03",
+      "estimated_cost": 312550,
+      "revised_cost": 312550,
+      "description": "convert unimproved space at g/l into living space included living rm w/ kitchenette, bedrooms, bathrooms, laundry rm, and new interior stair connecting to main fl above. (net new sf: 1280 sf)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610195505",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-10-19",
+      "status_date": "2008-03-05",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1220",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "address": "2770–2776 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2770/",
+  "apn": "3640009B",
+  "block": "3640",
+  "lot": "009B",
+  "eas_baseid": "363966",
+  "coordinates": {
+    "lat": 37.753024,
+    "lng": -122.412292
+  },
+  "address_range": "2770–2776",
+  "street_numbers_on_parcel": [
+    "2770",
+    "2772",
+    "2774",
+    "2776"
+  ],
+  "parcel": {
+    "year_built": 1885,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 5517,
+    "building_area_sqft": 2800,
+    "lot_depth_ft": 22.6,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2776 2770 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183505,
+    "assessed_improvement_value": 235185
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111031757",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2021-11-03",
+      "status_date": "2021-11-03",
+      "estimated_cost": 150000,
+      "description": "rear yard addition @ 2/f & 3/f of the middle half of the north building. interior remodel @ a/f & 3/f of two units located in the sane half of north building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711148176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-14",
+      "status_date": "2007-12-04",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711148178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-14",
+      "status_date": "2007-12-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace extg plywood w/c dx 1/2\" plywood with 8d 6\" edge 12\" field",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711057299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-05",
+      "status_date": "2008-03-03",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "relocate existing kitchen, remodel bbathroom, add new wall to create new bedroom @ 1/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707176988",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-17",
+      "status_date": "2007-07-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to compliment permit #200707066135 one unit harrison st. is affected by the scope of work porposed for 2774 harrison st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707066125",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2007-07-06",
+      "status_date": "2007-07-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "to comply with notice of violation #200706621 and 200701881. replace existing exterior wall @ south side of the building. replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707066135",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-06",
+      "status_date": "2008-01-07",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace (e) wall at south side of the building, 2nd floor to clear violation #200706621, 200701881. replace in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2770",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640009B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=009B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640009B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

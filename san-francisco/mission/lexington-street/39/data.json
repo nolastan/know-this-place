@@ -1,0 +1,136 @@
+{
+  "address": "39 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/39/",
+  "apn": "3576038",
+  "block": "3576",
+  "lot": "038",
+  "eas_baseid": "360322",
+  "coordinates": {
+    "lat": 37.762117,
+    "lng": -122.420644
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2122,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0039 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 813204,
+    "assessed_improvement_value": 348506,
+    "last_sale_date": "2010-05-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201005273313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-27",
+      "status_date": "2010-08-23",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace (e) 6' window with (n) sliding door downstairs. install (n) 48\"x48\" skylight in kitchen & (n) 48\"x36\" skylight in living rm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902172204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-17",
+      "status_date": "2009-03-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2005/04/15/0105 to obtain final inspection. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M111285",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-03-07",
+      "status_date": "2008-03-07",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504150105",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-04-15",
+      "status_date": "2009-03-02",
+      "estimated_cost": 530000,
+      "revised_cost": 210000,
+      "description": "revise scope of project-remodel grd fl garage/bsmt to add 594 sf of useable living space.raise &removel existing 1/fl (1044 sq ft) and add 168 sq ft of living space. remove existing rear covered deck.upgrade the total structure/mechanical systems.address existing code violations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815020",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2002-08-30",
+      "status_date": "2002-08-30",
+      "description": "demolish a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815019S",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1998-08-04",
+      "status_date": "2001-05-21",
+      "estimated_cost": 258000,
+      "description": "erect a three story three unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=39",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

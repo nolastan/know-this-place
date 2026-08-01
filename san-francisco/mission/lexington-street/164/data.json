@@ -1,0 +1,144 @@
+{
+  "address": "164–166 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/164/",
+  "apn": "3589078",
+  "block": "3589",
+  "lot": "078",
+  "eas_baseid": "361234",
+  "coordinates": {
+    "lat": 37.760695,
+    "lng": -122.420921
+  },
+  "address_range": "164–166",
+  "street_numbers_on_parcel": [
+    "164",
+    "166"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2200,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0166 0164 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 696950,
+    "assessed_improvement_value": 391681,
+    "last_sale_date": "2004-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201607142343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-14",
+      "status_date": "2017-02-08",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "comply w/ nov 201600881 item#2 - replace rotted wood in stairs in back of building , approx. 3 riser & treads.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808048317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-04",
+      "status_date": "2008-08-08",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "remove and replace landing at rear stairs, less than 50% of the structure. comply w/nov#200864880.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921291",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-07",
+      "status_date": "2000-05-31",
+      "estimated_cost": 550,
+      "description": "rpr extg rr wood deck replace some flooring of deck/redwood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912335",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-21",
+      "status_date": "1999-07-02",
+      "estimated_cost": 1,
+      "description": "renew app 39824615",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-01",
+      "status_date": "1999-07-02",
+      "estimated_cost": 1000,
+      "description": "new garbage room to be constructed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=164",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=078",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589078",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42092137910316%2037.76069498507184)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

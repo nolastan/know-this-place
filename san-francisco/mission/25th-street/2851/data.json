@@ -1,0 +1,116 @@
+{
+  "address": "2851 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2851/",
+  "apn": "4275001",
+  "block": "4275",
+  "lot": "001",
+  "eas_baseid": "370976",
+  "coordinates": {
+    "lat": 37.751125,
+    "lng": -122.407269
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1625,
+    "building_area_sqft": 1860,
+    "lot_depth_ft": 65,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2851 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1284304,
+    "assessed_improvement_value": 550415,
+    "last_sale_date": "2020-11-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202105200659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-20",
+      "status_date": "2021-12-14",
+      "estimated_cost": 48000,
+      "revised_cost": 48000,
+      "description": "replace 27 windows, street facing. material is wood with aluminum clad. no size changed. u factor < 0.30. shgc 0.25",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M581507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-27",
+      "status_date": "2015-04-27",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905188604",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-18",
+      "status_date": "2009-09-16",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "kitchen remodel,upgrade(n)elect.&plbg.remove& replace appliances.remove(e)center wall to create open space betw. kitchen & dining rm.a (n)load bearing parallam beam.design & specs.will pan where all is removed.(n)fo0ting in bas.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901742",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-28",
+      "status_date": "1999-08-31",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2851",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

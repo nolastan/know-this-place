@@ -1,0 +1,113 @@
+{
+  "address": "906 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/906/",
+  "apn": "3639018",
+  "block": "3639",
+  "lot": "018",
+  "eas_baseid": "363942",
+  "coordinates": {
+    "lat": 37.755357,
+    "lng": -122.413569
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3672,
+    "building_area_sqft": 1405,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0906 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142161,
+    "assessed_improvement_value": 237780
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200606023085",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-06-02",
+      "status_date": "2008-12-24",
+      "estimated_cost": 75000,
+      "revised_cost": 82000,
+      "description": "add a new second level addition with a new family room, bathroom, closet, deck and new interior and exterior stairs to (e) one story, single family residence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-03",
+      "status_date": "1996-06-11",
+      "estimated_cost": 8000,
+      "description": "remove & replace trim,sheetrock,replace doors,insulate walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300113",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-01-07",
+      "status_date": "1993-10-18",
+      "estimated_cost": 20000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-14",
+      "status_date": "1990-11-06",
+      "estimated_cost": 1500,
+      "description": "non structural repair of entry stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=906",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

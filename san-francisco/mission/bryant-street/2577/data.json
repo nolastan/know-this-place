@@ -1,0 +1,147 @@
+{
+  "address": "2577 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2577/",
+  "apn": "4209040",
+  "block": "4209",
+  "lot": "040",
+  "eas_baseid": "370195",
+  "coordinates": {
+    "lat": 37.753223,
+    "lng": -122.408851
+  },
+  "parcel": {
+    "year_built": 2007,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 3321,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2577 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35748,
+    "assessed_improvement_value": 1454722
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2007",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412126664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-12",
+      "status_date": "2026-01-05",
+      "estimated_cost": 8580,
+      "revised_cost": 8580,
+      "description": "reroofing - remove (e) roof and replace with 3 new layers modified bitumen torch down granulated",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009254970",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-25",
+      "status_date": "2021-05-26",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M83066",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-22",
+      "status_date": "2007-08-22",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701121618",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-01-12",
+      "status_date": "2007-11-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "interior layout modifications to approved new construction permit #200312182558 s1/r-5. no structural impact.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M51424",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-18",
+      "status_date": "2006-12-18",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603237425",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-03-23",
+      "status_date": "2007-11-21",
+      "estimated_cost": 18000,
+      "revised_cost": 25004,
+      "description": "install new fire sprinkler system per nfpa13/1999.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312182558",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2003-12-18",
+      "status_date": "2007-11-21",
+      "estimated_cost": 250000,
+      "revised_cost": 729000,
+      "description": "erect a new three story three unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2577",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209040",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

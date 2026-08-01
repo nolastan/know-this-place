@@ -1,0 +1,142 @@
+{
+  "address": "2920–2924 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2920/",
+  "apn": "4267017",
+  "block": "4267",
+  "lot": "017",
+  "eas_baseid": "370728",
+  "coordinates": {
+    "lat": 37.751463,
+    "lng": -122.408466
+  },
+  "address_range": "2920–2924",
+  "street_numbers_on_parcel": [
+    "2920",
+    "2922",
+    "2924"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 6,
+    "stories": 3,
+    "rooms": 34,
+    "bathrooms": 6,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 8445,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2924 2920 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1148326,
+    "assessed_improvement_value": 492139,
+    "last_sale_date": "2020-04-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408269429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-26",
+      "status_date": "2025-11-20",
+      "estimated_cost": 42000,
+      "revised_cost": 16300,
+      "description": "new 3-story wood framed rear deck 68 sq ft total for decks at 3rd/2nd floor 95 sqft at first fl. deck. fire rated wall adj. to east property line. (ref pa# 202408269430)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304276575",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-27",
+      "status_date": "2025-12-02",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "for all units - kitchen remodel, bathr remodel, add bath; remove structural wall between kitchen/rear bedroom; partial seismic upgrades w/ ply shear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108206810",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-20",
+      "status_date": "2021-08-24",
+      "estimated_cost": 38000,
+      "revised_cost": 80000,
+      "description": "basement lateral upgrade to comply with sf ab-094 (per asce 7-16 standards) plywood shearwalls and new foundations in basement. retrofit at adjoing property (2926-2930 25th st) under separate permit - 202108206811.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105049790",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2021-05-04",
+      "status_date": "2023-04-05",
+      "estimated_cost": 10000,
+      "description": "this project renovates three existing units and creates 2 adus in the basement of a residential building at 25th street in san francisco. all existing windows will be replaces in-kind. a 462 sq ft adu and 697 sq ft adu will be added to the basement of the existing building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104309630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-30",
+      "status_date": "2021-05-04",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "to comply with complaint # 202172158. repair of broken guardrail at the rear stairs that descend to the ground level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824976",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-07",
+      "status_date": "1999-08-31",
+      "estimated_cost": 7200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2920",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

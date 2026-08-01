@@ -1,0 +1,151 @@
+{
+  "address": "830–836 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/830/",
+  "apn": "3642038",
+  "block": "3642",
+  "lot": "038",
+  "eas_baseid": "364114",
+  "coordinates": {
+    "lat": 37.753296,
+    "lng": -122.417761
+  },
+  "address_range": "830–836",
+  "street_numbers_on_parcel": [
+    "830",
+    "832",
+    "834",
+    "836"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 5,
+    "stories": 2,
+    "rooms": 26,
+    "bathrooms": 6,
+    "bedrooms": 16,
+    "lot_area_sqft": 4896,
+    "building_area_sqft": 6761,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0836 0830 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1722491,
+    "assessed_improvement_value": 738208,
+    "last_sale_date": "2020-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202011038090",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-11-03",
+      "status_date": "2020-11-03",
+      "estimated_cost": 75700,
+      "description": "addition of one (1) accessory dwelling unit (adu), to an existing five (5) unit building for a total of six (6). the proposed dwelling unit is located at the first floor within the existing building envelope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010146523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-14",
+      "status_date": "2021-12-29",
+      "estimated_cost": 78000,
+      "revised_cost": 105600,
+      "description": "soft story per sfebc 2019 cebc chapter 4d appendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-27",
+      "status_date": "1990-01-02",
+      "estimated_cost": 6100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709615",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-07-09",
+      "status_date": "1987-11-18",
+      "estimated_cost": 900,
+      "description": "install new tub enclosure. imitation marble.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-02-04",
+      "status_date": "1987-06-26",
+      "estimated_cost": 900,
+      "description": "remove dry rot inside wall roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604286",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-15",
+      "status_date": "1989-08-02",
+      "estimated_cost": 5,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504990",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-05-14",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1600,
+      "description": "8 sprinkler heads to be installed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=830",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

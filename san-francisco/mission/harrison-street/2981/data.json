@@ -1,0 +1,128 @@
+{
+  "address": "2981–2983 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2981/",
+  "apn": "4271022",
+  "block": "4271",
+  "lot": "022",
+  "eas_baseid": "370849",
+  "coordinates": {
+    "lat": 37.749852,
+    "lng": -122.411316
+  },
+  "address_range": "2981–2983",
+  "street_numbers_on_parcel": [
+    "2981",
+    "2983"
+  ],
+  "parcel": {
+    "year_built": 1902,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2280,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2983 2981 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22350,
+    "assessed_improvement_value": 92422
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200304242984",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-04-24",
+      "status_date": "2004-02-11",
+      "estimated_cost": 7550,
+      "revised_cost": 7550,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112034345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-03",
+      "status_date": "2002-03-08",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace 6 windows size for size/2 in bdrm/4 in lvg room visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-12-09",
+      "status_date": "1994-01-10",
+      "estimated_cost": 2500,
+      "description": "repair exist stairs as required,comply sec 2516 s.f.b.c.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019180",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-20",
+      "status_date": "1990-11-02",
+      "estimated_cost": 3100,
+      "description": "repair dry rot.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004948",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-03-15",
+      "status_date": "1991-02-07",
+      "estimated_cost": 16800,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2981",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

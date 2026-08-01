@@ -1,0 +1,121 @@
+{
+  "address": "2406–2408 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2406/",
+  "apn": "3611002",
+  "block": "3611",
+  "lot": "002",
+  "eas_baseid": "362509",
+  "coordinates": {
+    "lat": 37.758664,
+    "lng": -122.415023
+  },
+  "address_range": "2406–2408",
+  "street_numbers_on_parcel": [
+    "2406",
+    "2408"
+  ],
+  "parcel": {
+    "year_built": 1885,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2450,
+    "building_area_sqft": 2470,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2408 2406 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1120750,
+    "assessed_improvement_value": 480318,
+    "last_sale_date": "2015-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M813287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-25",
+      "status_date": "2017-07-25",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702169562",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-16",
+      "status_date": "2017-03-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "ti of (e) comm space in victorian storefront . new partitions and finishes, mep, upgrades to convert (e) vacant retail space to personal services. disabled access upgrades per 20% rule. removal of a step at entry and improve its accessibility. grnd flr storefront to be modofied",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510058831",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-05",
+      "status_date": "2015-10-05",
+      "estimated_cost": 300,
+      "revised_cost": 1000,
+      "description": "lay tile floor in kitchen of 2 story unit ~120sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618363",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-26",
+      "status_date": "1997-08-21",
+      "estimated_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2406",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3611002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3611&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3611002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

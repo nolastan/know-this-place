@@ -1,0 +1,134 @@
+{
+  "address": "2001–2009 16th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/16th-street/2001/",
+  "apn": "3961001",
+  "block": "3961",
+  "lot": "001",
+  "eas_baseid": "366783",
+  "coordinates": {
+    "lat": 37.765639,
+    "lng": -122.406844
+  },
+  "address_range": "2001–2009",
+  "street_numbers_on_parcel": [
+    "2001",
+    "2003",
+    "2005",
+    "2007",
+    "2009"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 5497,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2009 2001 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 606357,
+    "last_sale_date": "1995-12-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202112033663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-03",
+      "status_date": "2022-01-11",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "exterior work only: replace exterior wood door; repair masonry wall repair - cracking @ corner; reapir wood deck stairs & railing < 50%; repair masonry wall - fill in block/brick. all work side of property near back, not at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210292964",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-29",
+      "status_date": "2012-11-06",
+      "estimated_cost": 8800,
+      "revised_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102230744",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-02-23",
+      "status_date": "2012-11-06",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "install egress door in outside patio area per fire marshalls requiest. all installed items shall meet codes,like exit light, door hardware and clear access to street. provide bollard protection for exit path through parking area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703095893",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-03-09",
+      "status_date": "2009-05-11",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "upgrade automatic fire suppression system, dry chemical exchanged to ul-300 wet chemical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107234271",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-23",
+      "status_date": "2002-01-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "change of occupancy from b to a3 remodel (e) bathrms to comply with accessibility requirements",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=2001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3961001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3961&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3961001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

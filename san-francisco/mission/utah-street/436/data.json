@@ -1,0 +1,138 @@
+{
+  "address": "436–438 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/436/",
+  "apn": "3974006",
+  "block": "3974",
+  "lot": "006",
+  "eas_baseid": "366840",
+  "coordinates": {
+    "lat": 37.763994,
+    "lng": -122.406688
+  },
+  "address_range": "436–438",
+  "street_numbers_on_parcel": [
+    "436",
+    "438"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2747,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0438 0436 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212444,
+    "assessed_improvement_value": 85236
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406215039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-21",
+      "status_date": "2024-12-17",
+      "estimated_cost": 15000,
+      "revised_cost": 20552,
+      "description": "bath room remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302212283",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-21",
+      "status_date": "2023-09-12",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "make correction on existing wod stairs of rear elevation of the building: remove and upgrade hand rails. add 1/4\" p/t plywood at ballister for safety: remove and replace 3 post base new simpsom tie abuzmax galvanized to concrete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M349636",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-25",
+      "status_date": "2012-09-25",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M38746",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-28",
+      "status_date": "2006-07-28",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821930",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-26",
+      "status_date": "1999-03-02",
+      "estimated_cost": 800,
+      "description": "repair stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714417",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-01",
+      "status_date": "1998-03-24",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=436",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3974006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3974&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3974006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "address": "2849 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2849/",
+  "apn": "4335001K",
+  "block": "4335",
+  "lot": "001K",
+  "eas_baseid": "371334",
+  "coordinates": {
+    "lat": 37.74895,
+    "lng": -122.408443
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1444,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2849 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167955,
+    "assessed_improvement_value": 142757,
+    "last_sale_date": "1995-03-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106102088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-10",
+      "status_date": "2023-07-25",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "570 sqfr of existing basement remodeled to new bedroom, laundry room & full bathroom. windows & doors will be replaced at ground fl rear. existing exterior spiral stairs at rear to be replaced with straight stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010317915",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-31",
+      "status_date": "2023-07-25",
+      "estimated_cost": 40000,
+      "revised_cost": 45000,
+      "description": "voluntary structural strengthening of 1st fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704239417",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-23",
+      "status_date": "2007-07-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair existing front stairs, same - no change less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418639",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-14",
+      "status_date": "1995-05-05",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2849",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4335001K&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4335&lot=001K",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4335001K",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

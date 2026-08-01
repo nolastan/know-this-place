@@ -1,0 +1,130 @@
+{
+  "address": "1307–1309 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/1307/",
+  "apn": "4263026",
+  "block": "4263",
+  "lot": "026",
+  "eas_baseid": "370630",
+  "coordinates": {
+    "lat": 37.752615,
+    "lng": -122.404973
+  },
+  "address_range": "1307–1309",
+  "street_numbers_on_parcel": [
+    "1307",
+    "1309"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1875,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1309 1307 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 763766,
+    "assessed_improvement_value": 390796,
+    "last_sale_date": "2003-09-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404260831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-26",
+      "status_date": "2024-06-07",
+      "estimated_cost": 38500,
+      "revised_cost": 38500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606305504",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-30",
+      "status_date": "2006-07-17",
+      "estimated_cost": 4700,
+      "revised_cost": 4700,
+      "description": "voluntary bolting of the foundation & install shear panels & connectors at garage/ground floor level, as permittted by access. perimeter mudsill will be bolted with 5/8\" all thread, approx. 48\" on center & within 12\" from each corner or plate break. bolts will be embedded approx. 12\"in concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618403",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-26",
+      "status_date": "1997-01-26",
+      "estimated_cost": 3500,
+      "description": "tear off old roof down to skip sheathing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008105",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-04-30",
+      "status_date": "1992-07-15",
+      "estimated_cost": 500,
+      "description": "extend curb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-12-10",
+      "status_date": "1987-06-09",
+      "estimated_cost": 500,
+      "description": "repair of existing stairs & landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=1307",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4263026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4263&lot=026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4263026",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

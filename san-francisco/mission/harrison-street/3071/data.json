@@ -1,0 +1,149 @@
+{
+  "address": "3071 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/3071/",
+  "apn": "4338017",
+  "block": "4338",
+  "lot": "017",
+  "eas_baseid": "371423",
+  "coordinates": {
+    "lat": 37.748655,
+    "lng": -122.411202
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1645,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3071 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 486758,
+    "assessed_improvement_value": 324496,
+    "last_sale_date": "2009-01-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505287397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-28",
+      "status_date": "2025-06-09",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108267154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-26",
+      "status_date": "2022-07-18",
+      "estimated_cost": 1000,
+      "revised_cost": 2500,
+      "description": "remove exterior deck built w/o permit to comply with 202030329 dated 05/26/2020. install a guardrail at (e) sliding glass door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009174432",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2020-09-17",
+      "status_date": "2021-09-13",
+      "estimated_cost": 45000,
+      "revised_cost": 0,
+      "description": "to comply with nov # 202030329; 80 sq ft deck at 2nd story",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912129460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-12",
+      "status_date": "2021-09-22",
+      "estimated_cost": 3500,
+      "revised_cost": 4500,
+      "description": "replace sliding glass door and some of the current deck flooring approx 40 sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506034091",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-06-03",
+      "status_date": "2009-09-30",
+      "estimated_cost": 40000,
+      "description": "convert (e) sfd into 2 units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410277883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-27",
+      "status_date": "2005-02-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel (e) bedrooms, bath,reconst roof deck at 3 rd fl&satisfied nov 200454193.also install 2 skyli",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405143899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-14",
+      "status_date": "2004-12-01",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel kitchen & 2 bath @ 2/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=3071",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "address": "36–38 Camp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/camp-street/36/",
+  "apn": "3568054",
+  "block": "3568",
+  "lot": "054",
+  "eas_baseid": "360045",
+  "coordinates": {
+    "lat": 37.764216,
+    "lng": -122.42347
+  },
+  "address_range": "36–38",
+  "street_numbers_on_parcel": [
+    "36",
+    "38"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 5,
+    "lot_area_sqft": 2979,
+    "building_area_sqft": 3310,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0038 0036 CAMP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3365765,
+    "assessed_improvement_value": 1442470,
+    "last_sale_date": "2021-06-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "16th and Valencia Streets Post-Fire Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1926",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201608094596",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-09",
+      "status_date": "2017-03-27",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove interior wall and replace with post and beam at middle level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210162171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-16",
+      "status_date": "2013-08-01",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "remodel (e) kitchens/bathrms, change 1/2 bathrm to full bathrm, install beams for removing inter walls for residence. add den, bathrm, bedrm (503 sq ft) on 1st fl for one unit. add 243 sq ft roof deck for one unit only. replace windows & exterior doors for building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAMP&street_type=ST&address_number=36",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42346982472452%2037.76421634818755)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "address": "229 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/229/",
+  "apn": "3596066",
+  "block": "3596",
+  "lot": "066",
+  "eas_baseid": "361509",
+  "coordinates": {
+    "lat": 37.759668,
+    "lng": -122.420406
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0229 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 531840,
+    "assessed_improvement_value": 227927,
+    "last_sale_date": "2009-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lexington and San Carlos Streets Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202310188869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-18",
+      "status_date": "2023-11-27",
+      "estimated_cost": 12620,
+      "revised_cost": 12620,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207164973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-16",
+      "status_date": "2012-07-19",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "comply with complaint# 201245181-new wood fence at rear yard to address complaint. fence is 6'-8\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006084086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-08",
+      "status_date": "2012-07-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2009.06.26.1373. revision from (n0 study to (e) bedroom# 2. revision to show missing opening on approved plans. all shown as delta 1 of 6/8/10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906261373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-26",
+      "status_date": "2010-07-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel upper floor including in-fill of garage stairs & demo non-bearing wall. kitchen remodel. replace (e) 7'-4\" garage door with 10' garage door. 2 new 24\" skylights, replace front windows w/ double pane wood windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9417709",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-26",
+      "status_date": "1995-08-22",
+      "estimated_cost": 10789,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=229",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=066",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596066",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42040624056041%2037.75966846065015)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

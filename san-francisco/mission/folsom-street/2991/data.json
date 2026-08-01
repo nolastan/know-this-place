@@ -1,0 +1,160 @@
+{
+  "address": "2991–2993 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2991/",
+  "apn": "6524040",
+  "block": "6524",
+  "lot": "040",
+  "eas_baseid": "401172",
+  "coordinates": {
+    "lat": 37.749507,
+    "lng": -122.41354
+  },
+  "address_range": "2991–2993",
+  "street_numbers_on_parcel": [
+    "2991",
+    "2993"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1594,
+    "building_area_sqft": 3188,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2993 2991 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142161,
+    "assessed_improvement_value": 142161
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312033223",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2013-12-03",
+      "status_date": "2013-12-03",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312033230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-03",
+      "status_date": "2013-12-11",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103134124",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-13",
+      "status_date": "2002-02-06",
+      "estimated_cost": 5050,
+      "revised_cost": 5050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004278425",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-27",
+      "status_date": "2000-08-27",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "add foundation and rebuild back walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518963",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-08",
+      "status_date": "1995-11-14",
+      "estimated_cost": 600,
+      "description": "sheetrock ceiling and re-stucco at front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301963",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-02-08",
+      "status_date": "1993-07-07",
+      "estimated_cost": 4000,
+      "description": "building shall be sprinklered through out basement only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214447",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-08-26",
+      "status_date": "1993-10-02",
+      "estimated_cost": 85000,
+      "description": "fire repair-framing, roof, sheetrk, kitch cab, bath fix, etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210425",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-25",
+      "status_date": "1993-05-26",
+      "estimated_cost": 2900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2991",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6524040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6524&lot=040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6524040",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "address": "1017 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1017/",
+  "apn": "3648030A",
+  "block": "3648",
+  "lot": "030A",
+  "eas_baseid": "364321",
+  "coordinates": {
+    "lat": 37.753158,
+    "lng": -122.424868
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 4112,
+    "building_area_sqft": 3592,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1017 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101898,
+    "assessed_improvement_value": 321621
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201710262393",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-26",
+      "status_date": "2018-01-17",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "remove stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703292750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-29",
+      "status_date": "2017-06-08",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "remove stucco and siding to gain access to foundation in southwest corridor of property. raise/capping of extg foundation 14\" above exterior grade 30 plus or minus ft in length.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412083223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-08",
+      "status_date": "2015-03-11",
+      "estimated_cost": 27938,
+      "revised_cost": 27938,
+      "description": "replace 16 windows with anderson wood clad visible from the street. bedrooms to meet egress. u factor 3.32. 4 top grille circle tops to match photos. full sdls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M34754",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-07",
+      "status_date": "2005-10-07",
+      "revised_cost": 0,
+      "description": "street space permit & scaffold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208224685",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-22",
+      "status_date": "2002-09-26",
+      "estimated_cost": 9200,
+      "revised_cost": 9200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102142128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-14",
+      "status_date": "2001-07-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "deck remodel addition rear yard fence and gate replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-06",
+      "status_date": "1991-04-03",
+      "estimated_cost": 12000,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8406498",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-06-15",
+      "status_date": "1985-04-15",
+      "estimated_cost": 10000,
+      "description": "conversion of 2 existing rooms on the first floor a one-",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3648030A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3648&lot=030A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3648030A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

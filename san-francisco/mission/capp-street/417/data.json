@@ -1,0 +1,144 @@
+{
+  "address": "417–419 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/417/",
+  "apn": "3595043",
+  "block": "3595",
+  "lot": "043",
+  "eas_baseid": "361442",
+  "coordinates": {
+    "lat": 37.759987,
+    "lng": -122.417815
+  },
+  "address_range": "417–419",
+  "street_numbers_on_parcel": [
+    "417",
+    "419"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2437.5,
+    "building_area_sqft": 3192,
+    "basement_area_sqft": 1500,
+    "lot_depth_ft": 97.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0419 0417 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 709938,
+    "assessed_improvement_value": 389846,
+    "last_sale_date": "2009-09-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807114324",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-07-11",
+      "status_date": "2018-10-17",
+      "estimated_cost": 10000,
+      "revised_cost": 14500,
+      "description": "bathroom remodel. replace tub, tile, toilet, vanity, lights, floor, faucets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111098598",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-11-09",
+      "status_date": "2011-11-09",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110056187",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-05",
+      "status_date": "2013-03-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to appl #201104154154 - engineering change to post removals at garage level for garage renovation, beam detail change. footing revision.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104154154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-15",
+      "status_date": "2013-03-04",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "post removals @garage level for garage renovation, bearing wall removals @3rd flr as part of upper unit renovations, add plywood panels & anchor bolts @garage level, window replacement in kind @3rd flr (upper unit) double hung. not adding habitalbe space on garage level. relocate (e) bathrm on 3rd f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M229113",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-11-12",
+      "status_date": "2010-11-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709191",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-21",
+      "status_date": "1999-02-24",
+      "estimated_cost": 5520,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=417",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3595043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3595&lot=043",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3595043",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

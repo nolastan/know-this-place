@@ -1,0 +1,158 @@
+{
+  "address": "3240 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3240/",
+  "apn": "6520021",
+  "block": "6520",
+  "lot": "021",
+  "eas_baseid": "401029",
+  "coordinates": {
+    "lat": 37.750956,
+    "lng": -122.414792
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 1468,
+    "basement_area_sqft": 418,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3240 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1098668,
+    "assessed_improvement_value": 470857,
+    "last_sale_date": "2020-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305318873",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-05-31",
+      "status_date": "2026-06-10",
+      "estimated_cost": 150000,
+      "revised_cost": 162000,
+      "description": "addition to level 1. work to include 2 (n) bedrooms, bath, and laundry closet at level 1. (n) roof deck at level 2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101213018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-21",
+      "status_date": "2022-03-15",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "markoff structural pest control. comply w/ report 20785 item #1, 2, & 3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007207024",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-20",
+      "status_date": "2010-07-28",
+      "estimated_cost": 1,
+      "revised_cost": 50,
+      "description": "revision to pa#s 2008.03.07.6591 and 2009.11.25.2091 to extend rear deck to side for new french door. all changes shown on delta 2 of 6/6/10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911252091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-25",
+      "status_date": "2010-07-28",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to comply with work and obtain final inspection for work approved under app #200803076591",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803076591",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-03-07",
+      "status_date": "2010-07-28",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "new deck & stairs, 2 new doors on (e) windows spaces on the upper level. add plywood to the existing wall for structural strengthening only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802084376",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2008-02-08",
+      "status_date": "2026-01-27",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "adding front entrance door, build new hallway, modify existing bathroom to be a full bathroom, moving heaters and water meters. replace water plumbing to city main. add 2 windows and 2 doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203815",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-14",
+      "status_date": "1983-03-04",
+      "estimated_cost": 500,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109912",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-11-20",
+      "status_date": "1983-03-04",
+      "estimated_cost": 8000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3240",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6520021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6520&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6520021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

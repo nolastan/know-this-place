@@ -1,0 +1,143 @@
+{
+  "address": "2840 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2840/",
+  "apn": "6522009",
+  "block": "6522",
+  "lot": "009",
+  "eas_baseid": "401098",
+  "coordinates": {
+    "lat": 37.751943,
+    "lng": -122.412172
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 2434,
+    "basement_area_sqft": 1150,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2840 2840 HARRISON            ST01/2"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1607657,
+    "assessed_improvement_value": 1355801,
+    "last_sale_date": "2019-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202008282826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-28",
+      "status_date": "2021-03-23",
+      "estimated_cost": 85000,
+      "revised_cost": 130000,
+      "description": "1st fl - remodel (e) sunroom, enlarge (e) bedroom & kitchen, replace (e) windows, additional bedroom added; 2nd fl - remodel (e) sunroom; enlarge (e) bedroom & kitchen. replace window, additional bedroom added",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003025926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-03-02",
+      "status_date": "2022-08-16",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "demo kitchen in both units, demo closets in both units per plan. reinstall kitchen cabinets and new counters, rough plumbing and fixtures. construct 2 baths accordin to plans. convert dining rm to bedroom, expansion into sunroom no exterior work. install new fixture flooring in 2 (e) bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212055563",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-12-05",
+      "status_date": "2012-12-05",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705312615",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-31",
+      "status_date": "2007-05-31",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "kitchen work-remove linoleum floor, finish sottwood floor, replace tile around sink and drain board. bathroom-remove linoleum floor,tile floor,remove linoleum roll siding on wlls, replace w/ mainscoating,replace old toilet w/ low flow toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215188",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-09-03",
+      "status_date": "1993-03-03",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2840",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6522009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6522&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6522009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4121719445934%2037.75194331209118)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

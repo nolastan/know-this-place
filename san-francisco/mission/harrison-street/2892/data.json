@@ -1,0 +1,156 @@
+{
+  "address": "2892 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2892/",
+  "apn": "6522020",
+  "block": "6522",
+  "lot": "020",
+  "eas_baseid": "401108",
+  "coordinates": {
+    "lat": 37.751194,
+    "lng": -122.4121
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2526,
+    "building_area_sqft": 2519,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2892 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 668038,
+    "assessed_improvement_value": 286294,
+    "last_sale_date": "2012-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M458148",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-17",
+      "status_date": "2014-01-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M432547",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-04",
+      "status_date": "2013-10-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309237523",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-09-23",
+      "status_date": "2014-07-14",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "add skylight, add steel beams to 2nd fl framing. add lvl's to 3rd level and bld 2x10 new stair route. revise foundation plan. add steel details to s 3.2. revision to appln #201212286972",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304255430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-25",
+      "status_date": "2013-07-30",
+      "estimated_cost": 845,
+      "revised_cost": 845,
+      "description": "construct new 10 ft fence on part of south property line.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303011273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-01",
+      "status_date": "2013-03-22",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "installing an epa approved wood burning stove, using alloy 304 stainless, up the existing wood burning fireplace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212286972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-28",
+      "status_date": "2014-07-14",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "foundation replacement, basement around floor seismic strengthening, upper story wall removal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-30",
+      "status_date": "2014-07-14",
+      "estimated_cost": 9200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623721",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-12-10",
+      "status_date": "1997-04-01",
+      "estimated_cost": 5500,
+      "description": "fire damage repairs/kich wall repair/shtrock int/paint/sidin",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2892",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6522020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6522&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6522020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

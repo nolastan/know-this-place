@@ -1,0 +1,108 @@
+{
+  "address": "659–661 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/659/",
+  "apn": "3588056",
+  "block": "3588",
+  "lot": "056",
+  "eas_baseid": "361138",
+  "coordinates": {
+    "lat": 37.76065,
+    "lng": -122.423404
+  },
+  "address_range": "659–661",
+  "street_numbers_on_parcel": [
+    "659",
+    "661"
+  ],
+  "parcel": {
+    "year_built": 1948,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2291,
+    "building_area_sqft": 2566,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0661 0659 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1318852,
+    "assessed_improvement_value": 565219,
+    "last_sale_date": "2012-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201303263083",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2013-03-26",
+      "status_date": "2013-03-26",
+      "estimated_cost": 200000,
+      "revised_cost": 360000,
+      "description": "1/fl:add 1 br,1 ba,1 fam rm&stairs to 2/fl. 2/fl:adjust bedrm size&add interior stairs to 1/fl. 3/fl:adjust bedrm size.provide stairs to4/fl addition. 4/fl:new add'n of 2 br, 2ba,liv rm,dining rm. roof:prov hot tub & stairs to lower fls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707561",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-28",
+      "status_date": "1999-03-02",
+      "estimated_cost": 370,
+      "description": "install 2 alumn windows in(e) frames/not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310476",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-22",
+      "status_date": "1993-12-08",
+      "estimated_cost": 3500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=659",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=056",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588056",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

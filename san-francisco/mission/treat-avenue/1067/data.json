@@ -1,0 +1,122 @@
+{
+  "address": "1067–1069 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1067/",
+  "apn": "3640050",
+  "block": "3640",
+  "lot": "050",
+  "eas_baseid": "364005",
+  "coordinates": {
+    "lat": 37.753135,
+    "lng": -122.412726
+  },
+  "address_range": "1067–1069",
+  "street_numbers_on_parcel": [
+    "1067",
+    "1069"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 3185,
+    "building_area_sqft": 2792,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1069 1067 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1581245,
+    "assessed_improvement_value": 677675,
+    "last_sale_date": "2019-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200803267999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-26",
+      "status_date": "2008-07-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace aluminum windows with wood double hung sash double glazed windows (marvin). remove siding, repair & paint. (9 windows total).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210259917",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-25",
+      "status_date": "2002-10-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. appl#200202078745 to exclude expansion of room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202078745",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-02-07",
+      "status_date": "2004-01-27",
+      "estimated_cost": 50000,
+      "revised_cost": 65000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724796",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-10",
+      "status_date": "1998-01-05",
+      "estimated_cost": 500,
+      "description": "install fndtn anchor bolts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=050",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640050",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

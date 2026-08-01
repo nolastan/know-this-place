@@ -1,0 +1,133 @@
+{
+  "address": "1730–1734 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/1730/",
+  "apn": "3965006",
+  "block": "3965",
+  "lot": "006",
+  "eas_baseid": "366807",
+  "coordinates": {
+    "lat": 37.764897,
+    "lng": -122.410732
+  },
+  "address_range": "1730–1734",
+  "street_numbers_on_parcel": [
+    "1730",
+    "1732",
+    "1734"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4380,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1734 1730 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 669031,
+    "assessed_improvement_value": 518538,
+    "last_sale_date": "2001-03-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012140905",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-14",
+      "status_date": "2021-05-07",
+      "estimated_cost": 30000,
+      "revised_cost": 49500,
+      "description": "remodel kitchen and two bathrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202088775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-08",
+      "status_date": "2002-04-08",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "45% repair to repair deck. repair front bldg. steps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106111194",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-11",
+      "status_date": "2001-10-11",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "relocate water heater, replace furnace & replace dry rotten wood in den.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106111191",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-11",
+      "status_date": "2001-12-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel 1 kitchen, 2 1/2 bath, replace tumace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104247579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-24",
+      "status_date": "2002-02-07",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel kitchen & bathrms.repair plaster.prepare & paint install heating one unit only.inspec v.f.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=1730",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3965006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3965&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3965006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

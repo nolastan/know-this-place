@@ -1,0 +1,108 @@
+{
+  "address": "14 Cumberland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cumberland-street/14/",
+  "apn": "3598046A",
+  "block": "3598",
+  "lot": "046A",
+  "eas_baseid": "361649",
+  "coordinates": {
+    "lat": 37.759346,
+    "lng": -122.424088
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 5,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 2443,
+    "building_area_sqft": 3700,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0014 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1680000,
+    "assessed_improvement_value": 720000,
+    "last_sale_date": "2017-01-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201501216225",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-21",
+      "status_date": "2015-01-21",
+      "estimated_cost": 11240,
+      "revised_cost": 11240,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715277",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-12",
+      "status_date": "1999-03-01",
+      "estimated_cost": 2800,
+      "description": "repair wxisting balconies on unit-like in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=14",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598046A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=046A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598046A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42408800693445%2037.75934621717418)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

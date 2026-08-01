@@ -1,0 +1,103 @@
+{
+  "address": "2405 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2405/",
+  "apn": "4262029",
+  "block": "4262",
+  "lot": "029",
+  "eas_baseid": "370603",
+  "coordinates": {
+    "lat": 37.753052,
+    "lng": -122.403652
+  },
+  "parcel": {
+    "year_built": 1978,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3450,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2405 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 635195,
+    "assessed_improvement_value": 479113,
+    "last_sale_date": "1987-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201502249126",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-24",
+      "status_date": "2015-02-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408252536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-25",
+      "status_date": "2004-10-19",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "install thermocrete to 123 units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208306",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-10-12",
+      "status_date": "1983-04-04",
+      "estimated_cost": 2000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2405",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4262029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4262&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4262029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

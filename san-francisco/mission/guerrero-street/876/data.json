@@ -1,0 +1,135 @@
+{
+  "address": "876–878 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/876/",
+  "apn": "3607011",
+  "block": "3607",
+  "lot": "011",
+  "eas_baseid": "362228",
+  "coordinates": {
+    "lat": 37.75715,
+    "lng": -122.423674
+  },
+  "address_range": "876–878",
+  "street_numbers_on_parcel": [
+    "876",
+    "878"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2590,
+    "building_area_sqft": 2800,
+    "lot_depth_ft": 92.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0878 0876 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325740,
+    "assessed_improvement_value": 394145,
+    "assessed_fixtures_value": 280,
+    "last_sale_date": "1996-11-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9410107",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-06-23",
+      "status_date": "1994-07-25",
+      "estimated_cost": 4100,
+      "description": "termite & dry rot repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120159",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-10-24",
+      "status_date": "1992-04-24",
+      "estimated_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712824",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1987-09-08",
+      "status_date": "1988-02-04",
+      "estimated_cost": 4300,
+      "description": "underpinning exist foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204255",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-27",
+      "status_date": "1983-03-04",
+      "estimated_cost": 500,
+      "description": "bldg use: apts.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=876",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42367398144827%2037.75715022323962)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

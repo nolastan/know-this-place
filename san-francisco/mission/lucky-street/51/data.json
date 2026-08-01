@@ -1,0 +1,103 @@
+{
+  "address": "51 Lucky Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lucky-street/51/",
+  "apn": "6521012",
+  "block": "6521",
+  "lot": "012",
+  "eas_baseid": "488633",
+  "coordinates": {
+    "lat": 37.7517,
+    "lng": -122.413369
+  },
+  "also_addressed": [
+    "1152 TREAT AVE"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 5,
+    "bedrooms": 8,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 3600,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1154 1152 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1136553,
+    "assessed_improvement_value": 487093,
+    "last_sale_date": "2021-04-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202103247192",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-24",
+      "status_date": "2021-03-30",
+      "estimated_cost": 300,
+      "revised_cost": 900,
+      "description": "to address complaint # 201713061: replace kitchen cabinet drawers, repair door by bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LUCKY&street_type=ST&address_number=51",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4133694158112%2037.75169982736893)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

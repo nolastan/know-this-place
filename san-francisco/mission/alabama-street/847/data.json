@@ -1,0 +1,130 @@
+{
+  "address": "847–851 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/847/",
+  "apn": "4085028",
+  "block": "4085",
+  "lot": "028",
+  "eas_baseid": "368301",
+  "coordinates": {
+    "lat": 37.758335,
+    "lng": -122.411227
+  },
+  "address_range": "847–851",
+  "street_numbers_on_parcel": [
+    "847",
+    "849",
+    "851"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2750,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0851 0847 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 637260,
+    "assessed_improvement_value": 370917,
+    "last_sale_date": "2002-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200609111900",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-09-11",
+      "status_date": "2008-09-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200402247064 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402247064",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-24",
+      "status_date": "2004-02-24",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "r/r foundation in rar section of building (849&851).add bathroom. remodel kitchen (851 & 851-a).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913453",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-01",
+      "status_date": "2000-01-28",
+      "estimated_cost": 1650,
+      "description": "install 5 replacement windows in kchn/bthrm/3bdrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309426",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1993-06-07",
+      "status_date": "1993-06-30",
+      "estimated_cost": 10000,
+      "description": "superseded by 9303360",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303360",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-02",
+      "status_date": "1993-08-20",
+      "estimated_cost": 25000,
+      "description": "repair fire damage/plaster, sheet rock, framing, paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=847",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4085028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4085&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4085028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

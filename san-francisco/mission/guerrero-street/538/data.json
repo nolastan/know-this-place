@@ -1,0 +1,149 @@
+{
+  "address": "538–540 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/538/",
+  "apn": "3578007",
+  "block": "3578",
+  "lot": "007",
+  "eas_baseid": "360435",
+  "coordinates": {
+    "lat": 37.762516,
+    "lng": -122.424167
+  },
+  "address_range": "538–540",
+  "street_numbers_on_parcel": [
+    "538",
+    "540"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2700,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0540 0538 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142161,
+    "assessed_improvement_value": 209198
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306281110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-28",
+      "status_date": "2024-02-20",
+      "estimated_cost": 45000,
+      "revised_cost": 83033,
+      "description": "remodel kitchen in kind new cabinets, floors countertops to comply with nov#202309895. remodel bathroom in kind new tub, vanity, tub walls, replace two windows (non frontage) no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903074667",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-07",
+      "status_date": "2019-03-22",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M741007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-22",
+      "status_date": "2016-11-22",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314235",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-08-19",
+      "status_date": "1993-09-15",
+      "estimated_cost": 2500,
+      "description": "install mineral siding to teh rear wall of the building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-20",
+      "status_date": "1991-04-16",
+      "estimated_cost": 1500,
+      "description": "instlal anchor bolts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103895",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-11",
+      "status_date": "1991-05-20",
+      "estimated_cost": 4575,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501148",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-01",
+      "status_date": "1985-08-01",
+      "estimated_cost": 4200,
+      "description": "remodeling uppor flat kitchen remove existing install non",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=538",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

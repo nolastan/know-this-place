@@ -1,0 +1,88 @@
+{
+  "address": "3214–3216 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3214/",
+  "apn": "3570009A",
+  "block": "3570",
+  "lot": "009A",
+  "eas_baseid": "360127",
+  "coordinates": {
+    "lat": 37.76369,
+    "lng": -122.417791
+  },
+  "address_range": "3214–3216",
+  "street_numbers_on_parcel": [
+    "3214",
+    "3216"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1245,
+    "building_area_sqft": 2160,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3214 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 225447,
+    "assessed_improvement_value": 189374,
+    "last_sale_date": "1991-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201007156665",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-15",
+      "status_date": "2010-11-18",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair rear exit stairs, electrical outlets, water heater bracing to comply complaint #201050353 dated 6/10/10 & 201051699 dated 6/16/10",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3214",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3570009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3570&lot=009A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3570009A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

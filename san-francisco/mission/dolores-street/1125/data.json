@@ -1,0 +1,148 @@
+{
+  "address": "1125 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1125/",
+  "apn": "6511031",
+  "block": "6511",
+  "lot": "031",
+  "eas_baseid": "400748",
+  "coordinates": {
+    "lat": 37.751397,
+    "lng": -122.424666
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 3580,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1125 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1671402,
+    "assessed_improvement_value": 716315,
+    "last_sale_date": "1989-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407196909",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-19",
+      "status_date": "2025-05-13",
+      "estimated_cost": 1300,
+      "revised_cost": 27200,
+      "description": "installation of new fire alarm system with new control panel, smoke detectors, radio and pull stations to comply with new sec 1103.7.6.1. install horn/strobes throughout for complete coverage and low frequency horns inside all units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401163997",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-16",
+      "status_date": "2024-03-06",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "unit#: 4; 1 kitchen + 1 bath remodel following the existing layout. no wall moving or replacing windows. update old wiring to code. with new led light fixtures in the unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M927847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-16",
+      "status_date": "2018-05-16",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909116676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-11",
+      "status_date": "2010-03-02",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "sheetrock insulation, electrical plumbing foor refinishing 2nd floor one unit, kitchen-2nd floor. (no structural in kind) update plumbing @ bathroom, fixtures only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612079427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-07",
+      "status_date": "2007-01-23",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair rear stairs-comply with nov# 200680140 dated 10/26/06. back stairs repair. repair work is less than 50% of existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602144604",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-14",
+      "status_date": "2006-02-14",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "new shear wall at basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712413",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-07",
+      "status_date": "1999-02-24",
+      "estimated_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1125",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

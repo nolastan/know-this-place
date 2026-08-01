@@ -1,0 +1,160 @@
+{
+  "address": "647 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/647/",
+  "apn": "3611051",
+  "block": "3611",
+  "lot": "051",
+  "eas_baseid": "362554",
+  "coordinates": {
+    "lat": 37.758074,
+    "lng": -122.415391
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 3,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2940,
+    "building_area_sqft": 2144,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0647 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 307388,
+    "assessed_improvement_value": 379624,
+    "last_sale_date": "1999-09-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201911268193",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-26",
+      "status_date": "2019-11-26",
+      "estimated_cost": 15450,
+      "revised_cost": 15450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M559610",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-17",
+      "status_date": "2015-02-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403249567",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-24",
+      "status_date": "2004-04-07",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "comply with nov 200344426-repair rear side stairs, posts, treads, joists, partial repair - work less",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022582",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-11-02",
+      "status_date": "1991-06-13",
+      "estimated_cost": 1000,
+      "description": "renew application number #9007790",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010718",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-06-04",
+      "status_date": "1991-06-13",
+      "estimated_cost": 1,
+      "description": "revision to application 9007790",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007790",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-04-24",
+      "status_date": "1990-10-22",
+      "estimated_cost": 1000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806315",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-18",
+      "status_date": "1988-12-19",
+      "estimated_cost": 400,
+      "description": "comply w/housing inspection division, item 15 & 19",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=647",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3611051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3611&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3611051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4153914345412%2037.75807418851849)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

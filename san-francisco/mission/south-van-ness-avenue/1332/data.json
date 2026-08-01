@@ -1,0 +1,145 @@
+{
+  "address": "1332–1334 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1332/",
+  "apn": "6518035",
+  "block": "6518",
+  "lot": "035",
+  "eas_baseid": "400965",
+  "coordinates": {
+    "lat": 37.751779,
+    "lng": -122.416561
+  },
+  "address_range": "1332–1334",
+  "street_numbers_on_parcel": [
+    "1332",
+    "1334"
+  ],
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 2599,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1334 1332 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1647997,
+    "assessed_improvement_value": 706281,
+    "last_sale_date": "2021-06-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504033690",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-03",
+      "status_date": "2025-04-17",
+      "estimated_cost": 500,
+      "revised_cost": 20000,
+      "description": "to comply with physical inspection report #cc-8655",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301240610",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-01-24",
+      "status_date": "2023-01-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "close up hole with drywall due to electrical work repairs 100 sqft approx. on one bedroom wall within unit. electrical under separate electrical permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106222906",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-06-22",
+      "status_date": "2021-06-22",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "close up hole with drywall due to electrical repairs 100 sq.ft. approx. on one bedroom wall within unit. electrical work under separate electrical permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008209235",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-20",
+      "status_date": "2011-03-31",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair windows,repair rear exterior stairs, less than 50%, repair front hand drail one unit, repair toilet @ one unit, repair kitchen ceiling, repl front door deadbolt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-11",
+      "status_date": "2000-08-25",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121922",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-27",
+      "status_date": "1991-12-13",
+      "estimated_cost": 4055,
+      "revised_cost": 0,
+      "description": "clean 4 chimneys, install dampers/caps, replace fireboxes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1332",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

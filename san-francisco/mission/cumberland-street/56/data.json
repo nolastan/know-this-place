@@ -1,0 +1,140 @@
+{
+  "address": "56 Cumberland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cumberland-street/56/",
+  "apn": "3598051",
+  "block": "3598",
+  "lot": "051",
+  "eas_baseid": "361656",
+  "coordinates": {
+    "lat": 37.759335,
+    "lng": -122.424841
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1305,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0056 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1854582,
+    "assessed_improvement_value": 327279,
+    "last_sale_date": "2021-08-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202508284139",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-08-28",
+      "status_date": "2026-04-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "alter site to pa #202111152432. 2-story horizontal addition and deck on 2/f of rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111152432",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2021-11-15",
+      "status_date": "2023-06-09",
+      "estimated_cost": 150000,
+      "revised_cost": 351113,
+      "description": "horizontal addition of (e) two-story dwelling, relocate staircase & master bedroom, shift front doorway & recess garage door for vehicle access, update kitchen & (3) bedrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M99040",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-12",
+      "status_date": "2007-12-12",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8820395",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-12-28",
+      "status_date": "1989-04-21",
+      "estimated_cost": 2692,
+      "description": "install aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814014",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-09-19",
+      "status_date": "1989-01-19",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=56",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42484063354969%2037.75933515205111)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "address": "1325 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1325/",
+  "apn": "6532028",
+  "block": "6532",
+  "lot": "028",
+  "eas_baseid": "401436",
+  "coordinates": {
+    "lat": 37.750026,
+    "lng": -122.42233
+  },
+  "parcel": {
+    "year_built": 1880,
+    "units": 1,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 3335,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1325 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2498760,
+    "assessed_improvement_value": 1070895,
+    "last_sale_date": "2018-12-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1214637",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-06-30",
+      "status_date": "2020-07-01",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202005227688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-22",
+      "status_date": "2020-06-19",
+      "estimated_cost": 28900,
+      "revised_cost": 29000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310167657",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-16",
+      "status_date": "2003-10-16",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "see attached termite#03114,items 1,2,3,4,5,6 dated of inspection 1/7/03 by mark off pest control.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717620",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-11",
+      "status_date": "1998-03-11",
+      "estimated_cost": 18500,
+      "description": "repair/rebuild existing upper & lower deck/dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611913",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-03",
+      "status_date": "1997-06-11",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802407",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-26",
+      "status_date": "1988-11-22",
+      "estimated_cost": 35000,
+      "description": "remodeling existing kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1325",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

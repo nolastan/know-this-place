@@ -1,0 +1,153 @@
+{
+  "address": "519–521 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/519/",
+  "apn": "3569047",
+  "block": "3569",
+  "lot": "047",
+  "eas_baseid": "360092",
+  "coordinates": {
+    "lat": 37.764505,
+    "lng": -122.421582
+  },
+  "address_range": "519–521",
+  "street_numbers_on_parcel": [
+    "519",
+    "521"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 1572,
+    "building_area_sqft": 4463,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0521 0519 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1149321,
+    "assessed_improvement_value": 492565,
+    "last_sale_date": "2007-10-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "16th and Valencia Streets Post-Fire Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1926",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M303427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-02-22",
+      "status_date": "2012-02-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M65044",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-20",
+      "status_date": "2007-04-20",
+      "revised_cost": 0,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104106420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-10",
+      "status_date": "2001-04-27",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair building back wooden stair. some dry rotted repair on decking, stringer before painting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502845",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-02-28",
+      "status_date": "1997-06-02",
+      "estimated_cost": 20000,
+      "description": "to permit coffee shop/cafe in previous exist pizza parlor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901769",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-02-01",
+      "status_date": "1991-12-10",
+      "estimated_cost": 500,
+      "description": "open railing frame with 2x4 and 5/8 sheet rock mud paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712602",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-01",
+      "status_date": "1988-04-01",
+      "estimated_cost": 15000,
+      "description": "install partition wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=519",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3569047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3569&lot=047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3569047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42158237366033%2037.76450465566249)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

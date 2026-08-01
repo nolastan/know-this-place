@@ -1,0 +1,121 @@
+{
+  "address": "2721–2723 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2721/",
+  "apn": "4088037C",
+  "block": "4088",
+  "lot": "037C",
+  "eas_baseid": "368425",
+  "coordinates": {
+    "lat": 37.759117,
+    "lng": -122.408392
+  },
+  "address_range": "2721–2723",
+  "street_numbers_on_parcel": [
+    "2721",
+    "2723"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1528,
+    "building_area_sqft": 2760,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2723 2721 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 837522,
+    "assessed_improvement_value": 358938,
+    "last_sale_date": "2023-03-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107023722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-02",
+      "status_date": "2022-05-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "work to conform to his complaints 202177781, 202178672, 202178673, 202178674, kitchen cabinets, window as specified, stairs (rear), kitchen floor tiles or linoleum. windows not facing street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805098703",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-09",
+      "status_date": "2018-05-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace existing siding on rear side of bldg, approx 600 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308081548",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-08-08",
+      "status_date": "2003-08-08",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "install vinyl siding over 4 sides of the house visible from street no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306126904",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-06-12",
+      "status_date": "2003-06-12",
+      "estimated_cost": 20027,
+      "revised_cost": 20027,
+      "description": "vinyl siding over existing right side & back of house only.not doing front of house.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2721",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088037C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=037C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088037C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

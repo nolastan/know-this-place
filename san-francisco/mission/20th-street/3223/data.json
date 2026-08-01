@@ -1,0 +1,105 @@
+{
+  "address": "3223 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3223/",
+  "apn": "3612070",
+  "block": "3612",
+  "lot": "070",
+  "eas_baseid": "362631",
+  "coordinates": {
+    "lat": 37.758784,
+    "lng": -122.413143
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 2244,
+    "lot_depth_ft": 85,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3223 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 549512,
+    "assessed_improvement_value": 260115,
+    "last_sale_date": "2012-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103247164",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-24",
+      "status_date": "2021-03-31",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204168397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-16",
+      "status_date": "2013-05-28",
+      "estimated_cost": 10000,
+      "revised_cost": 11400,
+      "description": "interior remodel on 2nd fl only. construct new built in shelf in living room. convert e storage into new bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515682",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-22",
+      "status_date": "1996-03-12",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3223",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=070",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612070",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

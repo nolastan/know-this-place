@@ -1,0 +1,133 @@
+{
+  "address": "3418–3420 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3418/",
+  "apn": "3589020",
+  "block": "3589",
+  "lot": "020",
+  "eas_baseid": "361182",
+  "coordinates": {
+    "lat": 37.760407,
+    "lng": -122.419779
+  },
+  "address_range": "3418–3420",
+  "street_numbers_on_parcel": [
+    "3418",
+    "3420"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 3840,
+    "lot_depth_ft": 85,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3420 3418 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 307388,
+    "assessed_improvement_value": 461081,
+    "last_sale_date": "2000-01-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511129416",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-11-12",
+      "status_date": "2025-11-12",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing with torch-down modified bitumen membrane.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910295871",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-29",
+      "status_date": "2024-01-12",
+      "estimated_cost": 20000,
+      "revised_cost": 68000,
+      "description": "soft story retrofit per 2016 cebc appendix a-4 ordiance 66-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008178917",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-17",
+      "status_date": "2010-08-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remodel kitchen-change cabinets, lights, outlets, change sink & faucet. bathroom change-cabinet, sink, light, outlets. kitchen: at least 50% high efficacy (by wattage) lighting. bathroom: high efficacy or occupancy sensor. no change to exhaust system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302268317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-26",
+      "status_date": "2003-03-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2001/11/08/2726 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111082726",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-08",
+      "status_date": "2002-03-08",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair dry rot beam, joist,stairs and paint minor at bathrm of staris less than 50%of stair system w",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3418",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

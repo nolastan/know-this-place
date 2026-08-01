@@ -1,0 +1,150 @@
+{
+  "address": "1248–1250 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1248/",
+  "apn": "3642006",
+  "block": "3642",
+  "lot": "006",
+  "eas_baseid": "364086",
+  "coordinates": {
+    "lat": 37.753184,
+    "lng": -122.416692
+  },
+  "address_range": "1248–1250",
+  "street_numbers_on_parcel": [
+    "1248",
+    "1250"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 3062.5,
+    "building_area_sqft": 3250,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1250 1248 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139352,
+    "assessed_improvement_value": 238928
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001242689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-24",
+      "status_date": "2020-03-09",
+      "estimated_cost": 22500,
+      "revised_cost": 22500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004120090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-12",
+      "status_date": "2010-05-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "front bldg: install forced air furnace in basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002035812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-03",
+      "status_date": "2010-05-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "work on 1248 address, front building. remodel kitche incl. new cabinets, appliances, no wall removal. remodel bath incl. new fixtures, and one window not visible from the stree. no wall removal, new lighting, window u-factor 0.40 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M45404",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-18",
+      "status_date": "2006-10-18",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-09",
+      "status_date": "1996-12-20",
+      "estimated_cost": 15000,
+      "description": "kitchen remodel and skylights (1248 1/2 south van ness ave)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616446",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-03",
+      "status_date": "1997-03-03",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-15",
+      "status_date": "1996-12-20",
+      "estimated_cost": 20000,
+      "description": "kitchen remdoel new cabients appliances hardwood floors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1248",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

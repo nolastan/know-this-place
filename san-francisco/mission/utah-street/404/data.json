@@ -1,0 +1,107 @@
+{
+  "address": "404–406 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/404/",
+  "apn": "3974002",
+  "block": "3974",
+  "lot": "002",
+  "eas_baseid": "366837",
+  "coordinates": {
+    "lat": 37.764336,
+    "lng": -122.406721
+  },
+  "address_range": "404–406",
+  "street_numbers_on_parcel": [
+    "404",
+    "406"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2597,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0404 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234558,
+    "assessed_improvement_value": 375304,
+    "last_sale_date": "1988-08-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8806237",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-05-17",
+      "status_date": "1991-10-29",
+      "estimated_cost": 12000,
+      "description": "remodel exist unoccupied space @ rear ground flr to bedrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803923",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-03-28",
+      "status_date": "1988-12-20",
+      "estimated_cost": 1000,
+      "description": "remove old plaster in garage, insulate garage ceiling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513575",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-11-29",
+      "status_date": "1986-09-04",
+      "estimated_cost": 8000,
+      "description": "construction of new walls in rear yard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=404",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3974002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3974&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3974002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

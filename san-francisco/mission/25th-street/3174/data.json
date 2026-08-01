@@ -1,0 +1,148 @@
+{
+  "address": "3174–3194 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3174/",
+  "apn": "6521022",
+  "block": "6521",
+  "lot": "022",
+  "eas_baseid": "401069",
+  "coordinates": {
+    "lat": 37.751024,
+    "lng": -122.413603
+  },
+  "address_range": "3174–3194",
+  "street_numbers_on_parcel": [
+    "3174",
+    "3186",
+    "3188",
+    "3194"
+  ],
+  "also_addressed": [
+    "2887 FOLSOM ST"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 21,
+    "stories": 3,
+    "rooms": 84,
+    "bathrooms": 21,
+    "lot_area_sqft": 7312.5,
+    "building_area_sqft": 19740,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3194 3174 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 765644,
+    "assessed_improvement_value": 1215472,
+    "last_sale_date": "1988-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M763267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-23",
+      "status_date": "2017-02-23",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M755267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-01-20",
+      "status_date": "2017-01-20",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M744531",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-12-07",
+      "status_date": "2016-12-07",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M707507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-21",
+      "status_date": "2017-05-25",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M151976",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-18",
+      "status_date": "2009-02-18",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3174",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41360253941825%2037.75102396373008)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

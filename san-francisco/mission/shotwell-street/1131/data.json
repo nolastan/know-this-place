@@ -1,0 +1,162 @@
+{
+  "address": "1131–1137 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1131/",
+  "apn": "6525029",
+  "block": "6525",
+  "lot": "029",
+  "eas_baseid": "401201",
+  "coordinates": {
+    "lat": 37.750289,
+    "lng": -122.414659
+  },
+  "address_range": "1131–1137",
+  "street_numbers_on_parcel": [
+    "1131",
+    "1133",
+    "1135",
+    "1137"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 5,
+    "stories": 2,
+    "rooms": 27,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 4600,
+    "building_area_sqft": 6240,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1137 1131 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 898591,
+    "assessed_improvement_value": 552959,
+    "last_sale_date": "1997-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M933967",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-04",
+      "status_date": "2018-06-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M292607",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-12-13",
+      "status_date": "2011-12-13",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505313720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-31",
+      "status_date": "2005-07-14",
+      "estimated_cost": 5022,
+      "revised_cost": 5022,
+      "description": "install 14 vinyl windows in kind into (e) frames. no change in size or location. windows do face",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-26",
+      "status_date": "1999-09-17",
+      "estimated_cost": 500,
+      "description": "remove toilet and tub, repair dry rot , reset tub & toilet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906667",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-07",
+      "status_date": "1999-04-13",
+      "estimated_cost": 1,
+      "description": "revision to 9807026",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9826338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-12-29",
+      "status_date": "1999-04-13",
+      "estimated_cost": 1500,
+      "description": "renew app#9807206",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807206",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-04-24",
+      "status_date": "1999-04-13",
+      "estimated_cost": 10000,
+      "description": "replace (e) brick foudnation with sheel & concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-07-11",
+      "status_date": "1985-07-30",
+      "estimated_cost": 2695,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1131",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6525029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

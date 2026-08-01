@@ -1,0 +1,134 @@
+{
+  "address": "2201–2215 Mariposa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mariposa-street/2201/",
+  "apn": "4012030",
+  "block": "4012",
+  "lot": "030",
+  "eas_baseid": "461116",
+  "coordinates": {
+    "lat": 37.763199,
+    "lng": -122.405744
+  },
+  "address_range": "2201–2215",
+  "street_numbers_on_parcel": [
+    "2201",
+    "2215"
+  ],
+  "also_addressed": [
+    "504 SAN BRUNO AVE"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 1821,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2225 2201 MARIPOSA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 754929,
+    "assessed_improvement_value": 300102,
+    "last_sale_date": "1998-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604179683",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-17",
+      "status_date": "2026-05-01",
+      "estimated_cost": 17900,
+      "revised_cost": 17900,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208137273",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-13",
+      "status_date": "2012-08-13",
+      "estimated_cost": 5300,
+      "revised_cost": 5300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108246846",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-24",
+      "status_date": "2001-10-05",
+      "estimated_cost": 2950,
+      "revised_cost": 2950,
+      "description": "install 10 replacement windows (not visible from street)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310177",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-16",
+      "status_date": "1993-10-25",
+      "estimated_cost": 2700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908348",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-05-15",
+      "status_date": "1991-05-20",
+      "estimated_cost": 1200,
+      "description": "repair roof of carport & replace studs for garage door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARIPOSA&street_type=ST&address_number=2201",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4012030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4012&lot=030",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4012030",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

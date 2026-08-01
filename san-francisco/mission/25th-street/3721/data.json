@@ -1,0 +1,106 @@
+{
+  "address": "3721 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3721/",
+  "apn": "6533040",
+  "block": "6533",
+  "lot": "040",
+  "eas_baseid": "401488",
+  "coordinates": {
+    "lat": 37.750137,
+    "lng": -122.423233
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 6,
+    "stories": 4,
+    "rooms": 18,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 2121,
+    "building_area_sqft": 5145,
+    "basement_area_sqft": 1715,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3723 3721 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1678852,
+    "assessed_improvement_value": 719504,
+    "assessed_fixtures_value": 990
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603318599",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-31",
+      "status_date": "2026-05-20",
+      "estimated_cost": 21950,
+      "revised_cost": 21950,
+      "description": "reroofing hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410253785",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-25",
+      "status_date": "2025-06-04",
+      "estimated_cost": 20000,
+      "revised_cost": 29296,
+      "description": "replacement of the fire alarm system like for like. this is to meet the sf/ca fire marshall code interpretation 1103.6.71 & add low frequency horns inside of the residential units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M83064",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-08-22",
+      "status_date": "2007-08-22",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3721",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6533040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6533&lot=040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6533040",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

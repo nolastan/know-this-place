@@ -1,0 +1,116 @@
+{
+  "address": "1052–1054 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1052/",
+  "apn": "4152012",
+  "block": "4152",
+  "lot": "012",
+  "eas_baseid": "369601",
+  "coordinates": {
+    "lat": 37.755214,
+    "lng": -122.407792
+  },
+  "address_range": "1052–1054",
+  "street_numbers_on_parcel": [
+    "1052",
+    "1054"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1680,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1054 1052 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90576,
+    "assessed_improvement_value": 82644
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201503029729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-02",
+      "status_date": "2015-07-01",
+      "estimated_cost": 3350,
+      "revised_cost": 3350,
+      "description": "to comply with nov.# 201528321, repair 1 front stair and 1 rear stair, both repairs are less than 50% also items 4-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309718",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "1993-06-09",
+      "status_date": "1994-05-03",
+      "description": "demolish storage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204263",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1992-03-20",
+      "status_date": "1993-06-10",
+      "estimated_cost": 3800,
+      "description": "demolish storage shed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002191",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-02-02",
+      "status_date": "1992-11-16",
+      "estimated_cost": 5000,
+      "description": "replace (e) storage room at rear of lot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1052",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

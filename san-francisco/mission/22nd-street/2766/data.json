@@ -1,0 +1,144 @@
+{
+  "address": "2766–2768 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2766/",
+  "apn": "4145019",
+  "block": "4145",
+  "lot": "019",
+  "eas_baseid": "369353",
+  "coordinates": {
+    "lat": 37.756191,
+    "lng": -122.409988
+  },
+  "address_range": "2766–2768",
+  "street_numbers_on_parcel": [
+    "2766",
+    "2768"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2450,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2768 2766 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 583015,
+    "assessed_improvement_value": 370293
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202105140420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-14",
+      "status_date": "2021-12-02",
+      "estimated_cost": 25000,
+      "revised_cost": 40000,
+      "description": "kitchen and bath remodel at level one",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310078683",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-07",
+      "status_date": "2013-10-07",
+      "estimated_cost": 15200,
+      "revised_cost": 15200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M274810",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-10",
+      "status_date": "2011-08-10",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M37999",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-06-08",
+      "status_date": "2006-06-08",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M30371",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-12-01",
+      "status_date": "2004-12-01",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2766",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4145019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4145&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4145019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4099882323846%2037.7561908318324)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

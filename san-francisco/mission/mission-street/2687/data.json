@@ -1,0 +1,147 @@
+{
+  "address": "2687–2689 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2687/",
+  "apn": "3637021",
+  "block": "3637",
+  "lot": "021",
+  "eas_baseid": "363844",
+  "coordinates": {
+    "lat": 37.754147,
+    "lng": -122.418453
+  },
+  "address_range": "2687–2689",
+  "street_numbers_on_parcel": [
+    "2687",
+    "2689"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 4,
+    "lot_area_sqft": 5510,
+    "building_area_sqft": 2480,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2689 2687 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 291316,
+    "assessed_improvement_value": 60267
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201107291332",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "2011-07-29",
+      "status_date": "2026-01-09",
+      "description": "erect new sign illuminated cabinet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608250544",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-25",
+      "status_date": "2006-09-07",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31389",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-01",
+      "status_date": "2005-03-01",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500572",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1995-01-17",
+      "status_date": "1995-08-11",
+      "estimated_cost": 1100,
+      "description": "erect sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200837",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-01-16",
+      "status_date": "1992-03-13",
+      "estimated_cost": 5000,
+      "description": "remove outside tile,install stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819112",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-12-05",
+      "status_date": "1989-03-20",
+      "estimated_cost": 7000,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816581",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-11-02",
+      "status_date": "1989-07-05",
+      "estimated_cost": 1500,
+      "description": "install a new canvas awning over store front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2687",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3637021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3637&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3637021",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

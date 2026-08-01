@@ -1,0 +1,166 @@
+{
+  "address": "330 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/330/",
+  "apn": "3609049",
+  "block": "3609",
+  "lot": "049",
+  "eas_baseid": "362394",
+  "coordinates": {
+    "lat": 37.758001,
+    "lng": -122.420639
+  },
+  "parcel": {
+    "year_built": 1876,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1650,
+    "building_area_sqft": 1472,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0330 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442292,
+    "assessed_improvement_value": 376881,
+    "last_sale_date": "2002-01-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1876",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201911207773",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-20",
+      "status_date": "2020-06-29",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "kitchen remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911207784",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2019-11-20",
+      "status_date": "2022-08-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remove existing windows and doors and replace with new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905301995",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-30",
+      "status_date": "2019-06-10",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606240890",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-24",
+      "status_date": "2016-06-24",
+      "estimated_cost": 10000,
+      "revised_cost": 20000,
+      "description": "upper unit: new sliding doors, replace two windows (in back of house) dry rot repair b7 br windows,new tile in bathroom and on kitchen floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606240893",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-24",
+      "status_date": "2016-11-04",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "lower unit: bathroom remodel, tile/shower repair, tile floor, replace ceiling fan, repalce sink/toilet, all lighting is high efficacy.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307240333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-24",
+      "status_date": "2003-08-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2002/05/24/7468 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205247468",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-24",
+      "status_date": "2003-02-03",
+      "estimated_cost": 18500,
+      "revised_cost": 18500,
+      "description": "int remodel existing kitchen and bathroom on 1st floor, install new washer & dryer unit, replace exi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=330",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42063858475045%2037.75800095251015)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

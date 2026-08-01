@@ -1,0 +1,118 @@
+{
+  "address": "76–78 Dorland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dorland-street/76/",
+  "apn": "3578054E",
+  "block": "3578",
+  "lot": "054E",
+  "eas_baseid": "360473",
+  "coordinates": {
+    "lat": 37.76235,
+    "lng": -122.425487
+  },
+  "address_range": "76–78",
+  "street_numbers_on_parcel": [
+    "76",
+    "78"
+  ],
+  "parcel": {
+    "year_built": 1939,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1598,
+    "building_area_sqft": 2292,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0078 0076 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60037,
+    "assessed_improvement_value": 72055
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405031388",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-03",
+      "status_date": "2024-05-20",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404160091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-16",
+      "status_date": "2024-11-27",
+      "estimated_cost": 10000,
+      "revised_cost": 24653,
+      "description": "replace kitchen cabinets and counter top in kind, replace flooring in kind, replace lather/ plaster with sheetrock. approx 200sqft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M158864",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-03",
+      "status_date": "2009-04-03",
+      "revised_cost": 1,
+      "description": "street space only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-10",
+      "status_date": "2003-04-10",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=76",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578054E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=054E",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578054E",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "address": "1366 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1366/",
+  "apn": "4272012",
+  "block": "4272",
+  "lot": "012",
+  "eas_baseid": "370885",
+  "coordinates": {
+    "lat": 37.750115,
+    "lng": -122.410093
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 730,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1366 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 144277,
+    "assessed_improvement_value": 189374,
+    "last_sale_date": "1988-03-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202201135963",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-01-13",
+      "status_date": "2022-01-13",
+      "estimated_cost": 14960,
+      "revised_cost": 14960,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307088948",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-08",
+      "status_date": "2003-07-08",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair/remodel kitchen adn bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305124326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-12",
+      "status_date": "2003-07-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair fire damages to garage & extend to small section of side of building & to roof to org conditi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1366",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4272012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4272&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4272012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

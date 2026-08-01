@@ -1,0 +1,145 @@
+{
+  "address": "3270–3274 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3270/",
+  "apn": "3637019D",
+  "block": "3637",
+  "lot": "019D",
+  "eas_baseid": "363842",
+  "coordinates": {
+    "lat": 37.754085,
+    "lng": -122.417993
+  },
+  "address_range": "3270–3274",
+  "street_numbers_on_parcel": [
+    "3270",
+    "3272",
+    "3274"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 6,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 2925,
+    "building_area_sqft": 6970,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3274 3270 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 537719,
+    "last_sale_date": "1998-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904057290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-05",
+      "status_date": "2019-07-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "relocate ada bath in the first floor, rev to pa# 201809140324",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809140318",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-14",
+      "status_date": "2019-07-18",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "residential: soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809140324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-14",
+      "status_date": "2019-07-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "commercial: soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M21835",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-02",
+      "status_date": "2002-10-02",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005049031",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-04",
+      "status_date": "2001-01-04",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair some work on stairway,patch, rip wall, paint ,remove combustible storage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611932",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-07-03",
+      "status_date": "1999-03-01",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "convert (e)beauty parlor to medical office",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3270",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3637019D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3637&lot=019D",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3637019D",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

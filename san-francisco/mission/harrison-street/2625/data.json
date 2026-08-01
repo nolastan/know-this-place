@@ -1,0 +1,139 @@
+{
+  "address": "2625–2629 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2625/",
+  "apn": "4148025A",
+  "block": "4148",
+  "lot": "025A",
+  "eas_baseid": "369469",
+  "coordinates": {
+    "lat": 37.755299,
+    "lng": -122.411834
+  },
+  "address_range": "2625–2629",
+  "street_numbers_on_parcel": [
+    "2625",
+    "2627",
+    "2629"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2421,
+    "building_area_sqft": 4791,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2629 2625 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587479,
+    "assessed_improvement_value": 417212,
+    "last_sale_date": "2000-03-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M611027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-08-04",
+      "status_date": "2015-08-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506179191",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-06-17",
+      "status_date": "2015-11-12",
+      "estimated_cost": 45000,
+      "revised_cost": 50000,
+      "description": "soft story retrofit to comply with sfbc chap. 34b based on iebc appendix a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M338947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-31",
+      "status_date": "2012-07-31",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M338228",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-27",
+      "status_date": "2012-07-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907232",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-04-15",
+      "status_date": "2000-02-16",
+      "estimated_cost": 4500,
+      "description": "responding to nov of 3/16/99,removal of illegal gr fl unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401173",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-01-31",
+      "status_date": "1984-08-24",
+      "estimated_cost": 2500,
+      "description": "back stair are in need of repair and so use the front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2625",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148025A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=025A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148025A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

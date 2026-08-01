@@ -1,0 +1,139 @@
+{
+  "address": "2608–2610 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2608/",
+  "apn": "4089019A",
+  "block": "4089",
+  "lot": "019A",
+  "eas_baseid": "368448",
+  "coordinates": {
+    "lat": 37.757961,
+    "lng": -122.40722
+  },
+  "address_range": "2608–2610",
+  "street_numbers_on_parcel": [
+    "2608",
+    "2610"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 2835,
+    "building_area_sqft": 4220,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2610 2608 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33441,
+    "assessed_improvement_value": 84508
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201206142607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-14",
+      "status_date": "2012-08-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "provide duct at bedroom for new furnace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201297947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-29",
+      "status_date": "2002-04-08",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove illegal iron bars(fixed). replace decayed wood at rear.at grd fl-bedrms & kitchen windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000125138",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-25",
+      "status_date": "2000-09-19",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "install sheetrock over existing plaster at auto runway ceiling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-04",
+      "status_date": "1998-08-07",
+      "estimated_cost": 2000,
+      "description": "steel straps on garage door header",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-09",
+      "status_date": "1998-08-07",
+      "estimated_cost": 1,
+      "description": "renew pa#9720009 for final",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720009",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-08",
+      "status_date": "1998-08-07",
+      "estimated_cost": 10000,
+      "description": "remove top run of rear steps & treads & repair roof membrane",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2608",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4089019A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4089&lot=019A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4089019A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "address": "3075 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3075/",
+  "apn": "3638035",
+  "block": "3638",
+  "lot": "035",
+  "eas_baseid": "363894",
+  "coordinates": {
+    "lat": 37.755362,
+    "lng": -122.415978
+  },
+  "parcel": {
+    "year_built": 1963,
+    "units": 11,
+    "stories": 2,
+    "rooms": 36,
+    "bathrooms": 12,
+    "lot_area_sqft": 5131,
+    "building_area_sqft": 7718,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3075 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 768700,
+    "assessed_improvement_value": 768700,
+    "last_sale_date": "2010-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405152227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-15",
+      "status_date": "2024-07-26",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "replace siding due to dry rot in kind not facing street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906193891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-19",
+      "status_date": "2019-09-09",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "upgrade fire alarm system to comply with 1103.7.8 and include sprinkler monitoring ref 201709056830",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709056830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-05",
+      "status_date": "2019-08-28",
+      "estimated_cost": 95000,
+      "revised_cost": 100000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria asce 41-06 2016 cebc appendix a-4. design base shear for 100% cbc at target story. frame to be placed on exterior of north elevation. plans do not show projection past property line per cp-zoc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401156314",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-01-15",
+      "status_date": "2014-04-04",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply w/pnoe 12259 removal of towerstream wifi: 1 antennas & keep 1 otard antenna.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812168582",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-12-16",
+      "status_date": "2008-12-16",
+      "estimated_cost": 8350,
+      "revised_cost": 8350,
+      "description": "(one unit) install new kitchen cabinets and c -tops. in kitchen only. no other work excep kitchen cabinets & countertop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805142077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-14",
+      "status_date": "2008-06-13",
+      "estimated_cost": 8800,
+      "revised_cost": 8800,
+      "description": "work @ three units only. install 10 replacement windows. 8 visable from the street. white vinyl windows. all replace in kind. no change in size. u value 0.38 - 0.52.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512774",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-08",
+      "status_date": "1986-04-28",
+      "estimated_cost": 4000,
+      "description": "repair fire damage, no structural works",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3638035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3638&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3638035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

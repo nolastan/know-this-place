@@ -1,0 +1,100 @@
+{
+  "address": "32–34 Rondel Place, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/rondel-place/32/",
+  "apn": "3569054",
+  "block": "3569",
+  "lot": "054",
+  "eas_baseid": "360099",
+  "coordinates": {
+    "lat": 37.76437,
+    "lng": -122.421339
+  },
+  "address_range": "32–34",
+  "street_numbers_on_parcel": [
+    "32",
+    "34"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1415.36,
+    "building_area_sqft": 1372,
+    "lot_depth_ft": 63.87,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0034 0032 RONDEL              PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169955,
+    "assessed_improvement_value": 169100,
+    "last_sale_date": "1993-10-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200411098832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-09",
+      "status_date": "2004-11-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change scope of work of appl#200410207310.change (e)light to light fan in bathroom,close (e)skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410207310",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-20",
+      "status_date": "2004-11-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "to remodel (e) bathrm & stall 5 l/h ventilationf an on ceiling at grnd flr unit to repair(e) rear de",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RONDEL&street_type=PL&address_number=32",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3569054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3569&lot=054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3569054",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

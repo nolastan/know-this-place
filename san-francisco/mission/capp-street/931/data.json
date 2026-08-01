@@ -1,0 +1,106 @@
+{
+  "address": "931 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/931/",
+  "apn": "6518022",
+  "block": "6518",
+  "lot": "022",
+  "eas_baseid": "400952",
+  "coordinates": {
+    "lat": 37.751726,
+    "lng": -122.417173
+  },
+  "also_addressed": [
+    "32 CYPRESS ST"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2990,
+    "building_area_sqft": 2093,
+    "lot_depth_ft": 15,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0931A0931 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 145007,
+    "assessed_improvement_value": 103576
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M826087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-08-31",
+      "status_date": "2017-08-31",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208177601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-17",
+      "status_date": "2012-08-23",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply with the notice of violation # 201253921. replaced damage ceramic tile and sheet-rock on the shower area and install plastic panel on the shower and finish trim with tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M343188",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-17",
+      "status_date": "2012-08-17",
+      "revised_cost": 159,
+      "description": "add address at front bldg as 931, 931a capp st to blk 6518, lot 022.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=931",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

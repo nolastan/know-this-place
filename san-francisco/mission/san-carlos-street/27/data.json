@@ -1,0 +1,108 @@
+{
+  "address": "27–29 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/27/",
+  "apn": "3576020",
+  "block": "3576",
+  "lot": "020",
+  "eas_baseid": "360305",
+  "coordinates": {
+    "lat": 37.762295,
+    "lng": -122.419971
+  },
+  "address_range": "27–29",
+  "street_numbers_on_parcel": [
+    "27",
+    "29"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2700,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0029 0027 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 279421,
+    "assessed_improvement_value": 263453,
+    "last_sale_date": "1998-06-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200211262316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-26",
+      "status_date": "2003-03-19",
+      "estimated_cost": 4357,
+      "revised_cost": 4357,
+      "description": "replace 18 old aluminum windows with vinyl framed insulation windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419145",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-21",
+      "status_date": "1995-06-12",
+      "estimated_cost": 3770,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-05-01",
+      "status_date": "1991-07-26",
+      "estimated_cost": 15000,
+      "description": "repair back stairways decks rails per code violations",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=27",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576020",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

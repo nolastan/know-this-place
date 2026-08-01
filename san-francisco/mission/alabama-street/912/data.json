@@ -1,0 +1,115 @@
+{
+  "address": "912 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/912/",
+  "apn": "4147003",
+  "block": "4147",
+  "lot": "003",
+  "eas_baseid": "369410",
+  "coordinates": {
+    "lat": 37.756975,
+    "lng": -122.411654
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2362,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0912 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 54380,
+    "assessed_improvement_value": 49695,
+    "last_sale_date": "2006-10-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603238105",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-03-23",
+      "status_date": "2026-03-23",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "revision to bpa: 202511210227 - 1st floor: remodel kitchen and full bath in kind. 2nd fl windows at rear, new exterior staircase, new front door. skylights and pocket door. back deck addition. (4 aluminum windows)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202511210227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-11-21",
+      "status_date": "2025-11-21",
+      "estimated_cost": 60000,
+      "revised_cost": 92500,
+      "description": "complete kitchen & 2 bathroom remodel like for like; rewire and panel upgrade to 150 mps complete replumb. lightings per cenc 150.0(k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510298425",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-29",
+      "status_date": "2025-10-31",
+      "estimated_cost": 3300,
+      "revised_cost": 3300,
+      "description": "re-roofing: roofing and cleaning property, no hot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305897",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-06-24",
+      "status_date": "1983-11-01",
+      "estimated_cost": 8000,
+      "description": "repair porch and laundry room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=912",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4147003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4147&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4147003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

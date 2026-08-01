@@ -1,0 +1,133 @@
+{
+  "address": "818 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/818/",
+  "apn": "4088006",
+  "block": "4088",
+  "lot": "006",
+  "eas_baseid": "368390",
+  "coordinates": {
+    "lat": 37.758612,
+    "lng": -122.408118
+  },
+  "parcel": {
+    "year_built": 1902,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1504,
+    "basement_area_sqft": 460,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0818 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 203576,
+    "assessed_improvement_value": 126129,
+    "last_sale_date": "1996-10-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hampshire Street False-Front Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200505203059",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-05-20",
+      "status_date": "2009-03-20",
+      "estimated_cost": 15000,
+      "revised_cost": 70000,
+      "description": "legalize g/f rooms. works to be completed on appl#200107244377 (retrofit) & rear hor.extension appl #200303048772",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303048772",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-04",
+      "status_date": "2003-03-04",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "legalize lower level garage area. as a revison#200207111264 & 200107244317",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207111264",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-11",
+      "status_date": "2003-02-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew:200107244377 for final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107244377",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-07-24",
+      "status_date": "2002-04-26",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "retrofit partial foundation, add footing interior, repair rear stairway and supports",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=818",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40811767720136%2037.758612213808995)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

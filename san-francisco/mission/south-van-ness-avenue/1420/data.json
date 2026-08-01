@@ -1,0 +1,114 @@
+{
+  "address": "1420–1422 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1420/",
+  "apn": "6527003",
+  "block": "6527",
+  "lot": "003",
+  "eas_baseid": "401241",
+  "coordinates": {
+    "lat": 37.750341,
+    "lng": -122.416409
+  },
+  "address_range": "1420–1422",
+  "street_numbers_on_parcel": [
+    "1420",
+    "1422"
+  ],
+  "also_addressed": [
+    "121 CYPRESS ST"
+  ],
+  "parcel": {
+    "year_built": 1885,
+    "units": 4,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 2932.5,
+    "building_area_sqft": 4500,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1422A1420 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1423924,
+    "assessed_improvement_value": 694086,
+    "last_sale_date": "2020-02-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407085968",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-08",
+      "status_date": "2024-07-30",
+      "estimated_cost": 14253,
+      "revised_cost": 14253,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107023690",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-02",
+      "status_date": "2022-02-11",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bathroom anad add washer and dryer hook up. dryer shall comply with cmc 504.4 and 502.2.1. no new wall and no existing wall relocation new lighting shall comply with cec150.0(k)3 & (k)5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319448",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-03",
+      "status_date": "1994-06-27",
+      "estimated_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1420",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6527003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6527&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6527003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

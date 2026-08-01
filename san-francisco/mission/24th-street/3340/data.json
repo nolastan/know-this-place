@@ -1,0 +1,131 @@
+{
+  "address": "3340–3342 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3340/",
+  "apn": "3643051",
+  "block": "3643",
+  "lot": "051",
+  "eas_baseid": "364178",
+  "coordinates": {
+    "lat": 37.752347,
+    "lng": -122.419345
+  },
+  "address_range": "3340–3342",
+  "street_numbers_on_parcel": [
+    "3340",
+    "3342"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 1615.78,
+    "building_area_sqft": 4152,
+    "lot_depth_ft": 61.46,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3342 3340 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 265237,
+    "assessed_improvement_value": 548180,
+    "last_sale_date": "1991-02-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202601204141",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-20",
+      "status_date": "2026-04-15",
+      "estimated_cost": 60000,
+      "revised_cost": 156822,
+      "description": "remodeling 2 kitchens @ two units. remodeling 3 e) bathrooms @ 3340, 3342, & 3342a. remodel in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512182215",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-18",
+      "status_date": "2026-04-15",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "reinforce framing at rear of building and create bathrooms at all 3 levels",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116739",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-10",
+      "status_date": "1992-07-10",
+      "estimated_cost": 3000,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807132",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-27",
+      "status_date": "1990-01-10",
+      "estimated_cost": 800,
+      "description": "install security locks, handrail, front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612718",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-10-14",
+      "status_date": "1987-03-27",
+      "estimated_cost": 600,
+      "description": "install 1 hr. sheetrock on ceiling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3340",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3643051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3643&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3643051",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

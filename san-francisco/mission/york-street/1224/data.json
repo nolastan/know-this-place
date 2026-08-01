@@ -1,0 +1,87 @@
+{
+  "address": "1224–1226 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1224/",
+  "apn": "4267008",
+  "block": "4267",
+  "lot": "008",
+  "eas_baseid": "370718",
+  "coordinates": {
+    "lat": 37.752076,
+    "lng": -122.408394
+  },
+  "address_range": "1224–1226",
+  "street_numbers_on_parcel": [
+    "1224",
+    "1226"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1664,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1226 1224 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34855,
+    "assessed_improvement_value": 22373
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707212542",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-21",
+      "status_date": "2017-09-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace exterior siding in kind with house red cedar planks, new windows. add sheathing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1224",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

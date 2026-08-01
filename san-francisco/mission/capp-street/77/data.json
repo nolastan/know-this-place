@@ -1,0 +1,165 @@
+{
+  "address": "77–87 Capp Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/capp-street/77/",
+  "apn": "3553032",
+  "block": "3553",
+  "lot": "032",
+  "eas_baseid": "359268",
+  "coordinates": {
+    "lat": 37.765536,
+    "lng": -122.418385
+  },
+  "address_range": "77–87",
+  "street_numbers_on_parcel": [
+    "77",
+    "79",
+    "81",
+    "83",
+    "85",
+    "87"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 7100,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0087 0077 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1115519,
+    "assessed_improvement_value": 371832
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401103752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-10",
+      "status_date": "2024-02-16",
+      "estimated_cost": 35000,
+      "revised_cost": 45215,
+      "description": "unit#: 81, rehabilitate (e)1 kitchen; rehabilitate (e) 1 bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306210473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-21",
+      "status_date": "2023-07-10",
+      "estimated_cost": 26900,
+      "revised_cost": 26900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303203990",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-20",
+      "status_date": "2023-06-28",
+      "estimated_cost": 15000,
+      "revised_cost": 44000,
+      "description": "rehabilitate (e) kitchen in-kind, rehabilitate (e) bathroom in-kind one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303103486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-10",
+      "status_date": "2023-06-29",
+      "estimated_cost": 49000,
+      "revised_cost": 49000,
+      "description": "termite report# 23019 date 1/11/2023 items #1 through #8 all. fungus, dryrot, termite repairs. interior garage, lightwells, rear stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103247206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-24",
+      "status_date": "2021-04-01",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "nov correction 202172863. repair dry rot on rear staircase less than 50%. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M180872",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-28",
+      "status_date": "2009-09-28",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M67926",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-10",
+      "status_date": "2007-05-10",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402799",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-22",
+      "status_date": "1994-07-22",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=77",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3553032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3553&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3553032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

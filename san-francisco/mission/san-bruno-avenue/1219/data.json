@@ -1,0 +1,125 @@
+{
+  "address": "1219 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1219/",
+  "apn": "4214022",
+  "block": "4214",
+  "lot": "022",
+  "eas_baseid": "370312",
+  "coordinates": {
+    "lat": 37.753806,
+    "lng": -122.404116
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2100,
+    "building_area_sqft": 790,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1219 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 121852,
+    "assessed_improvement_value": 32474
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603167641",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-16",
+      "status_date": "2026-04-03",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "to comply with nov# 202547853: demolish of cabinets, bathroom, shower. replacement in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303081767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-08",
+      "status_date": "2013-03-19",
+      "estimated_cost": 350,
+      "revised_cost": 350,
+      "description": "to comply and abate nov# 201386131, remove intalled barb wire on (e) fence. no work performed inside house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910028160",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-02",
+      "status_date": "2010-09-01",
+      "estimated_cost": 2700,
+      "revised_cost": 2700,
+      "description": "abate nov#200987348 dated 1/15/09. remove illegal rear enclousure. relocate washer, dryer & water heater. replace (e) wood beam in kind. abate nov#200861837 in-fill removed dirt in basement excavation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409204585",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2004-09-20",
+      "status_date": "2008-02-29",
+      "estimated_cost": 150000,
+      "revised_cost": 175000,
+      "description": "jack up (e) bldg about 2' to convert (e) unfinished basement to living area (about 962 sqft includin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009221363",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2000-09-22",
+      "status_date": "2004-12-20",
+      "estimated_cost": 150000,
+      "description": "construct new 2 unit in place of old resident site pmt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1219",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4214022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "address": "157–159 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/157/",
+  "apn": "3589027",
+  "block": "3589",
+  "lot": "027",
+  "eas_baseid": "361188",
+  "coordinates": {
+    "lat": 37.7609,
+    "lng": -122.419835
+  },
+  "address_range": "157–159",
+  "street_numbers_on_parcel": [
+    "157",
+    "159"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2620,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0159 0157 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 562380,
+    "assessed_improvement_value": 344672,
+    "last_sale_date": "2003-12-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M180350",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-21",
+      "status_date": "2009-09-21",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109067689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-06",
+      "status_date": "2001-09-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew permit#2000/01/05/277 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15261",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-04",
+      "status_date": "2002-01-04",
+      "revised_cost": 28000,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M13833",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-25",
+      "status_date": "2001-01-25",
+      "revised_cost": 25000,
+      "description": "street space use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000105277",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-01-05",
+      "status_date": "2001-09-27",
+      "estimated_cost": 15000,
+      "revised_cost": 25000,
+      "description": "demolish existing deck & stairs to 2nd floor & replace w/ new deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907599",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-20",
+      "status_date": "2000-06-16",
+      "estimated_cost": 6000,
+      "description": "repair rear deck & stair system, replace wood members, heatr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-12",
+      "status_date": "1999-04-16",
+      "estimated_cost": 4380,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909273",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-06-02",
+      "status_date": "1990-06-27",
+      "estimated_cost": 1500,
+      "description": "rebuild back stairs with handrails, patched stairs & porch.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-14",
+      "status_date": "1988-07-21",
+      "estimated_cost": 800,
+      "description": "repair deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=157",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

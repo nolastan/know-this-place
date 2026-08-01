@@ -1,0 +1,153 @@
+{
+  "address": "3528–3530 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3528/",
+  "apn": "3634008",
+  "block": "3634",
+  "lot": "008",
+  "eas_baseid": "363737",
+  "coordinates": {
+    "lat": 37.753861,
+    "lng": -122.422263
+  },
+  "address_range": "3528–3530",
+  "street_numbers_on_parcel": [
+    "3528",
+    "3530"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 5,
+    "bedrooms": 4,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3634,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3530 3528 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1024930,
+    "assessed_improvement_value": 892396,
+    "last_sale_date": "2010-10-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606281019",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-28",
+      "status_date": "2016-06-28",
+      "estimated_cost": 8800,
+      "revised_cost": 8800,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506048109",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-04",
+      "status_date": "2015-12-16",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "reframe entry to living room with larger opening. replace all overhead lights, install smoke, co detectors. replace and relocate sub panel. remove tub and bath fixtures, add partition to create 2 baths. install 2 toilets, 2 sinkes, 2 tubs, 2 fans, kitchen cabs,appliances,doorway frm bdrm to new bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106278942",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-06-27",
+      "status_date": "2011-09-13",
+      "estimated_cost": 140000,
+      "revised_cost": 140000,
+      "description": "interior remodel including kitchen and bath remodel, new windows at e sunroom, 3 new skylights, add one full bath. maintaining existing size windows at rear north wall of sunroom, all work at 3rd floor unit only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012287465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-28",
+      "status_date": "2011-01-25",
+      "estimated_cost": 25600,
+      "revised_cost": 25600,
+      "description": "voluntary prescriptive seismic upgrade (improvement) seismic strengthening plan. shearwalls at first level, including shear clips, sheathing sill bolts, holdowns and grade beams.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803318387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-31",
+      "status_date": "2008-06-19",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 20 windows. size for size. some visable from street with vinyl windows. u value less than 0.67. windows visable from street to be replace with marvin wood clad windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M37248",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-24",
+      "status_date": "2006-04-24",
+      "revised_cost": 0,
+      "description": "sidewalk.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715797",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-18",
+      "status_date": "1999-02-24",
+      "estimated_cost": 6995,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3528",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

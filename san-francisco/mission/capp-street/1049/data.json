@@ -1,0 +1,132 @@
+{
+  "address": "1049–1055 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1049/",
+  "apn": "6527021A",
+  "block": "6527",
+  "lot": "021A",
+  "eas_baseid": "401259",
+  "coordinates": {
+    "lat": 37.749869,
+    "lng": -122.416813
+  },
+  "address_range": "1049–1055",
+  "street_numbers_on_parcel": [
+    "1049",
+    "1051",
+    "1053",
+    "1055"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 4600,
+    "building_area_sqft": 2372,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1053 1049 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 173353,
+    "assessed_improvement_value": 225364,
+    "last_sale_date": "1992-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200701040937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-04",
+      "status_date": "2007-05-04",
+      "estimated_cost": 350,
+      "revised_cost": 350,
+      "description": "repair back stairs less than 50% in kind to comply w/nov #200683953",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106252285",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-25",
+      "status_date": "2001-10-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair rear stairway add handrail to front steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917197",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-19",
+      "status_date": "1999-09-27",
+      "estimated_cost": 1,
+      "description": "renewal of permit pa 9820991",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820991",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-14",
+      "status_date": "1999-03-11",
+      "estimated_cost": 600,
+      "description": "repair exterior stairway & paint stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9026192",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-12-28",
+      "status_date": "1992-01-31",
+      "estimated_cost": 35000,
+      "description": "fire damage repair, nonstructural change elect plumbs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=1049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6527021A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6527&lot=021A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6527021A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

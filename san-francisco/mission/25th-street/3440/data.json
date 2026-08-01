@@ -1,0 +1,114 @@
+{
+  "address": "3440 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3440/",
+  "apn": "6516010",
+  "block": "6516",
+  "lot": "010",
+  "eas_baseid": "400874",
+  "coordinates": {
+    "lat": 37.750762,
+    "lng": -122.419107
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 55,
+    "stories": 6,
+    "rooms": 131,
+    "bathrooms": 55,
+    "lot_area_sqft": 7174,
+    "building_area_sqft": 37572,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3440 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 6381275,
+    "assessed_improvement_value": 4854868
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402266536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-26",
+      "status_date": "2025-12-18",
+      "estimated_cost": 10000,
+      "revised_cost": 65062,
+      "description": "install additional notification devices to tie into existing fire alarm to comply w/sffc 1103.7.6.1, install new rps, install low frequency sounders in all potential sleeping areas wo comply w/sffd 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108031693",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-03",
+      "status_date": "2011-09-16",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M190986",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-17",
+      "status_date": "2010-02-17",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305275534",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-27",
+      "status_date": "2004-01-14",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "replace wiring, drywall, doors, flooring, painting, windows, light fixtures in kitchen, bath, living",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3440",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6516010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6516&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6516010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

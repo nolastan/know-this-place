@@ -1,0 +1,142 @@
+{
+  "address": "656–660 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/656/",
+  "apn": "3577002",
+  "block": "3577",
+  "lot": "002",
+  "eas_baseid": "360373",
+  "coordinates": {
+    "lat": 37.762379,
+    "lng": -122.42196
+  },
+  "address_range": "656–660",
+  "street_numbers_on_parcel": [
+    "656",
+    "658",
+    "660"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 4,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 4,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 4584,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0660 0656 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 262708,
+    "assessed_improvement_value": 525435,
+    "last_sale_date": "1988-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201012066156",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-06",
+      "status_date": "2010-12-28",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "comply with nov# 201074266 dated 10-22-10, repair top section of back stairway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M229007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-11-10",
+      "status_date": "2010-11-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809302989",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-30",
+      "status_date": "2008-09-30",
+      "estimated_cost": 4300,
+      "revised_cost": 4300,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709284003",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-09-28",
+      "status_date": "2007-09-28",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207252315",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-25",
+      "status_date": "2003-01-27",
+      "estimated_cost": 1650,
+      "revised_cost": 1650,
+      "description": "repair stair step (rear stair) <50% in /kind no changes. abate 200229885",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623973",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-12-13",
+      "status_date": "1998-06-08",
+      "estimated_cost": 12000,
+      "description": "underpinning of building,related to prop 670-672 valencia",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=656",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

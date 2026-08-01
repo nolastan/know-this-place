@@ -1,0 +1,107 @@
+{
+  "address": "1340–1342 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1340/",
+  "apn": "4272006",
+  "block": "4272",
+  "lot": "006",
+  "eas_baseid": "370879",
+  "coordinates": {
+    "lat": 37.750475,
+    "lng": -122.410128
+  },
+  "address_range": "1340–1342",
+  "street_numbers_on_parcel": [
+    "1340",
+    "1342"
+  ],
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2769,
+    "building_area_sqft": 2758,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1342 1340 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119464,
+    "assessed_improvement_value": 151328
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205033491",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-03",
+      "status_date": "2022-06-29",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916332",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-09-05",
+      "status_date": "1990-02-02",
+      "estimated_cost": 12585,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905823",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-11",
+      "status_date": "1990-09-18",
+      "estimated_cost": 3000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1340",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4272006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4272&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4272006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

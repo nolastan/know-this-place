@@ -1,0 +1,121 @@
+{
+  "address": "32 Hidalgo Terrace, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/hidalgo-terrace/32/",
+  "apn": "3545045",
+  "block": "3545",
+  "lot": "045",
+  "eas_baseid": "358979",
+  "coordinates": {
+    "lat": 37.767228,
+    "lng": -122.426105
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1787.93,
+    "building_area_sqft": 970,
+    "lot_depth_ft": 76.9,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0032 HIDALGO             TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 748728,
+    "assessed_improvement_value": 547982,
+    "last_sale_date": "2011-07-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hidalgo Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1914–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202208049945",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-04",
+      "status_date": "2022-11-04",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "infill easterly blind lightwell. no adjacent well or windows. not visible from adj properties or prow. remodel 1 bathroom, including new skylight and parapet. rear additional under sep permit pa201706159523.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706159523",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2017-06-15",
+      "status_date": "2018-07-23",
+      "estimated_cost": 250000,
+      "revised_cost": 300000,
+      "description": "horizontal addition @ rear of builidng. general remodel include kitchen, baths, living room. 2 bedroom & 1 bath addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512059531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-05",
+      "status_date": "2005-12-16",
+      "estimated_cost": 7200,
+      "revised_cost": 7200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HIDALGO&street_type=TER&address_number=32",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545045",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42610534556367%2037.76722775853076)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

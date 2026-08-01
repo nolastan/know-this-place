@@ -1,0 +1,137 @@
+{
+  "address": "3741 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3741/",
+  "apn": "6567030",
+  "block": "6567",
+  "lot": "030",
+  "eas_baseid": "402623",
+  "coordinates": {
+    "lat": 37.748379,
+    "lng": -122.424151
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 3798,
+    "building_area_sqft": 1786,
+    "basement_area_sqft": 786,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3741 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 744359,
+    "assessed_improvement_value": 613662,
+    "last_sale_date": "2011-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507291817",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-29",
+      "status_date": "2025-11-14",
+      "estimated_cost": 25000,
+      "revised_cost": 32012,
+      "description": "1 bathroom remodel like for like, 60sqft, shower pan, no walls or layout changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M318607",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-05-03",
+      "status_date": "2012-05-03",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201202073683",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-07",
+      "status_date": "2012-05-15",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "revision to appl #2011.09.21.5200: removal of living room east wall, installation of beam above, new non-bearing wall @ lines c betwee line 2 + 4, new 1/2 bath on 2nd floor, shear wall @ line 1, new shear wall ta bedroom #1 @ gound floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109215200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-21",
+      "status_date": "2012-05-15",
+      "estimated_cost": 235000,
+      "revised_cost": 235000,
+      "description": "excavation (+/-18\") for new 1/f slab replacement of foundations. new bath, 3 new bedrooms at 1/f, new communication stair, new windows, doors throughout, remodel kitchen, fire separation of garage from occupied spaces at 1/f. new radiant heat system & elec distribution. replace front window w/wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17487",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-23",
+      "status_date": "2002-02-23",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714522",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-10-09",
+      "status_date": "1987-11-02",
+      "estimated_cost": 1,
+      "description": "final inspection for approved & expired pa 8610276",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3741",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=030",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567030",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

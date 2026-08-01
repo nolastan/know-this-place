@@ -1,0 +1,155 @@
+{
+  "address": "2770–2772 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2770/",
+  "apn": "4145020",
+  "block": "4145",
+  "lot": "020",
+  "eas_baseid": "369354",
+  "coordinates": {
+    "lat": 37.756186,
+    "lng": -122.410074
+  },
+  "address_range": "2770–2772",
+  "street_numbers_on_parcel": [
+    "2770",
+    "2772"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2672,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2772 2770 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81204,
+    "assessed_improvement_value": 186831
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "East Mission Florida-to-Hampshire Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1908",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202007240780",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2020-07-24",
+      "status_date": "2020-07-24",
+      "estimated_cost": 200,
+      "revised_cost": 0,
+      "description": "i a requesting a permit to place a privacy fence in a patio deck on the rear of my building. 7' ft w x 8' ft h.i will anchor two 4x4 posts using post bolt down steel to concrete base,attaching 2\" inch d x 4\" inch x 7' foot l whitewood in order to create a privacy fence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304235264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-23",
+      "status_date": "2013-05-20",
+      "estimated_cost": 2000,
+      "revised_cost": 18500,
+      "description": "sheet rock in the bedroom replaced, two windows installed. llighting installed on the 2nd fl. to comply with nov# 201398171 w/kitchen remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811146535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-14",
+      "status_date": "2009-02-13",
+      "estimated_cost": 11380,
+      "revised_cost": 11380,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M76784",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-11",
+      "status_date": "2007-07-11",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17903",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-27",
+      "status_date": "2002-03-27",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-27",
+      "status_date": "1990-01-12",
+      "estimated_cost": 1500,
+      "revised_cost": 0,
+      "description": "ewo",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2770",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4145020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4145&lot=020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4145020",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41007446116964%2037.756185634615264)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

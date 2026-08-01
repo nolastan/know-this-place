@@ -1,0 +1,125 @@
+{
+  "address": "3520 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3520/",
+  "apn": "3634006",
+  "block": "3634",
+  "lot": "006",
+  "eas_baseid": "363735",
+  "coordinates": {
+    "lat": 37.753871,
+    "lng": -122.42209
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 7,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 7,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 4587,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3520 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41554,
+    "assessed_improvement_value": 81528
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202101263284",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-26",
+      "status_date": "2021-04-08",
+      "estimated_cost": 8600,
+      "revised_cost": 14700,
+      "description": "replacement of old wired fire alarm system for new wireless system to comply with sf code 1103.7.6.1. for common area, replacing old wired fire alarm system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202006108365",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-06-10",
+      "status_date": "2023-07-28",
+      "estimated_cost": 8600,
+      "revised_cost": 0,
+      "description": "installation of full wireless fire alarm system for common area (replacing old fire alarm system), to install low frequency wireless sounders in all sleeping areas of the building, to comply with sf's new law of 7/2021.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512215628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-21",
+      "status_date": "2016-10-13",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering critaria per asce 41-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002232518",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-23",
+      "status_date": "2000-08-23",
+      "revised_cost": 22200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810445",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-08",
+      "status_date": "1999-03-02",
+      "estimated_cost": 4000,
+      "description": "dryrot repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3520",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=006",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634006",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

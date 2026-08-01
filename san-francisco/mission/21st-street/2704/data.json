@@ -1,0 +1,161 @@
+{
+  "address": "2704–2708 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2704/",
+  "apn": "4087044",
+  "block": "4087",
+  "lot": "044",
+  "eas_baseid": "368385",
+  "coordinates": {
+    "lat": 37.757742,
+    "lng": -122.408936
+  },
+  "address_range": "2704–2708",
+  "street_numbers_on_parcel": [
+    "2704",
+    "2708"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 1,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 4650,
+    "building_area_sqft": 2807,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2708 2704 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 220948,
+    "assessed_improvement_value": 152954,
+    "last_sale_date": "1994-01-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407055847",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-05",
+      "status_date": "2024-07-12",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "replace 2 front windows in kind, same location. no vinyl. u factor=.3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407055844",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-05",
+      "status_date": "2024-07-12",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402025117",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2024-02-02",
+      "status_date": "2024-07-11",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "replace 2 front windows in kind, same location. no vinyl. u factor=.3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401294853",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2024-01-29",
+      "status_date": "2024-07-11",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413542",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-23",
+      "status_date": "1994-09-01",
+      "estimated_cost": 1,
+      "description": "renew pa#9402119",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-02-09",
+      "status_date": "1994-08-08",
+      "estimated_cost": 5700,
+      "description": "replace fire damaged plaster with sheetrock. repl back deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402119",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-09",
+      "status_date": "1994-06-09",
+      "estimated_cost": 1000,
+      "description": "repair subfloor in #2709 back bathroom same size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116881",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-09-12",
+      "status_date": "1993-12-16",
+      "estimated_cost": 2300,
+      "description": "removal of burne frames & rocks, & replace of all walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2704",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=044",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087044",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

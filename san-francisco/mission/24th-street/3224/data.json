@@ -1,0 +1,108 @@
+{
+  "address": "3224–3226 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3224/",
+  "apn": "3642014",
+  "block": "3642",
+  "lot": "014",
+  "eas_baseid": "364094",
+  "coordinates": {
+    "lat": 37.752528,
+    "lng": -122.416802
+  },
+  "address_range": "3224–3226",
+  "street_numbers_on_parcel": [
+    "3224",
+    "3226"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1803,
+    "building_area_sqft": 1310,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3226 3224 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 382807,
+    "assessed_improvement_value": 112522,
+    "last_sale_date": "1988-01-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201403181011",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-18",
+      "status_date": "2014-03-26",
+      "estimated_cost": 1500,
+      "revised_cost": 2500,
+      "description": "to comply w/ ces#201445681repair & replace certain areas of back stairs & deck dryrot deck boards threads risers & guard rails. installing new hand rails for stairs. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M163746",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-05-12",
+      "status_date": "2009-05-12",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505710",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-04",
+      "status_date": "1985-07-03",
+      "estimated_cost": 1000,
+      "description": "repair floor & patch walls & paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3224",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642014",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "address": "333–335 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/333/",
+  "apn": "3609073",
+  "block": "3609",
+  "lot": "073",
+  "eas_baseid": "362418",
+  "coordinates": {
+    "lat": 37.757969,
+    "lng": -122.420236
+  },
+  "address_range": "333–335",
+  "street_numbers_on_parcel": [
+    "333",
+    "335"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1650,
+    "building_area_sqft": 1632,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0333 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 303368,
+    "assessed_improvement_value": 159665,
+    "last_sale_date": "1998-05-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201311041080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-04",
+      "status_date": "2013-12-12",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing- remove existing comp shingles & replace w/new \"in-kind\" composition shingles on roof class a fire rated. 2. certainteed flaintlastic sa modified bitumen membrane roofing system along w/an approved cenrtainteed sa base sheet. no change to facade, roofline on appearance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002031039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-03",
+      "status_date": "2000-08-03",
+      "revised_cost": 15000,
+      "description": "renew expired appl #9814733",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9814733",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-31",
+      "status_date": "2002-05-03",
+      "estimated_cost": 20000,
+      "description": "bathroom & kitchen renovation,convert 2 units into 1 unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-03-14",
+      "status_date": "1988-07-25",
+      "estimated_cost": 220,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801014",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-01-27",
+      "status_date": "1988-07-28",
+      "estimated_cost": 5700,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=333",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4202364969386%2037.75796859075574)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

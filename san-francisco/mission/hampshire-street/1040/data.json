@@ -1,0 +1,142 @@
+{
+  "address": "1040 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1040/",
+  "apn": "4152009",
+  "block": "4152",
+  "lot": "009",
+  "eas_baseid": "369598",
+  "coordinates": {
+    "lat": 37.75542,
+    "lng": -122.407812
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1950,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1040 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46181,
+    "assessed_improvement_value": 69284
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602065451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-06",
+      "status_date": "2026-05-12",
+      "estimated_cost": 2000,
+      "revised_cost": 5000,
+      "description": "to comply w/ nov# 202535490, construct 6 feet fence and door to keep homeless from entering, in place of metal gate.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709600",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-28",
+      "status_date": "1998-07-17",
+      "estimated_cost": 1500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705151",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-20",
+      "status_date": "1999-03-01",
+      "estimated_cost": 2000,
+      "description": "submit as per plans new foundation under back bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617766",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-18",
+      "status_date": "1997-01-18",
+      "estimated_cost": 1,
+      "description": "provide architectural plans to clarify work for app #9615247",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615247",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-16",
+      "status_date": "1997-08-16",
+      "estimated_cost": 65000,
+      "description": "fire damage, rebuilt stairs, 2 kitchen, 2 bathrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613991",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-01",
+      "status_date": "1997-01-16",
+      "estimated_cost": 5000,
+      "description": "repair fire damage replace gyp bd finishes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602914",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-02-23",
+      "status_date": "1997-01-16",
+      "estimated_cost": 1500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

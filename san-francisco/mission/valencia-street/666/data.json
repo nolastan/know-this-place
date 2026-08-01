@@ -1,0 +1,97 @@
+{
+  "address": "666–668 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/666/",
+  "apn": "3577004",
+  "block": "3577",
+  "lot": "004",
+  "eas_baseid": "360374",
+  "coordinates": {
+    "lat": 37.762233,
+    "lng": -122.422002
+  },
+  "address_range": "666–668",
+  "street_numbers_on_parcel": [
+    "666",
+    "668"
+  ],
+  "parcel": {
+    "lot_area_sqft": 3441,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0668 0666 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 346722,
+    "assessed_improvement_value": 173353
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9511950",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1995-07-31",
+      "status_date": "1997-03-04",
+      "description": "to demolish 3 units dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008259",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-30",
+      "status_date": "1990-06-20",
+      "estimated_cost": 5400,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512393",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1985-10-31",
+      "status_date": "1988-03-08",
+      "description": "demolish residential",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=666",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "address": "1012 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/1012/",
+  "apn": "6519003",
+  "block": "6519",
+  "lot": "003",
+  "eas_baseid": "400969",
+  "coordinates": {
+    "lat": 37.751967,
+    "lng": -122.41544
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 3,
+    "bedrooms": 7,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 3225,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1012 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 322338,
+    "assessed_improvement_value": 364792,
+    "last_sale_date": "1988-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202005067331",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-06",
+      "status_date": "2020-06-26",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "unit #b: remodel kitchen and bathroom like for like, smae locations. no walls to be changed, no exterior changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907155907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-15",
+      "status_date": "2020-02-06",
+      "estimated_cost": 7500,
+      "revised_cost": 8000,
+      "description": "replace 9 windows, size for size, not visible from st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M75132",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-06-27",
+      "status_date": "2007-06-27",
+      "revised_cost": 0,
+      "description": "street space & side walk permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M63166",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-09",
+      "status_date": "2007-04-09",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411179530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-17",
+      "status_date": "2005-01-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair existing rear stairs in kind. no additional work and no change to occupancy & unit count",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-28",
+      "status_date": "1997-06-23",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007311",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-16",
+      "status_date": "1990-05-04",
+      "estimated_cost": 6000,
+      "description": "removal of earthquake damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6519003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6519&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6519003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41544023602653%2037.751966719946026)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "address": "68–70 Albion Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/albion-street/68/",
+  "apn": "3555059",
+  "block": "3555",
+  "lot": "059",
+  "eas_baseid": "359396",
+  "coordinates": {
+    "lat": 37.765377,
+    "lng": -122.423432
+  },
+  "address_range": "68–70",
+  "street_numbers_on_parcel": [
+    "68",
+    "70"
+  ],
+  "parcel": {
+    "year_built": 1958,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1439,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0070 0068 ALBION              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 345809,
+    "assessed_improvement_value": 158296,
+    "last_sale_date": "1999-07-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501125414",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-12",
+      "status_date": "2015-01-12",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406045648",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2004-06-04",
+      "status_date": "2024-07-03",
+      "estimated_cost": 250000,
+      "revised_cost": 357000,
+      "description": "vertical & horizontal addition.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALBION&street_type=ST&address_number=68",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3555059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3555&lot=059",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3555059",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

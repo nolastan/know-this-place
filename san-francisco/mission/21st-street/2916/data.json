@@ -1,0 +1,132 @@
+{
+  "address": "2916–2918 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2916/",
+  "apn": "3612012",
+  "block": "3612",
+  "lot": "012",
+  "eas_baseid": "362573",
+  "coordinates": {
+    "lat": 37.757624,
+    "lng": -122.412859
+  },
+  "address_range": "2916–2918",
+  "street_numbers_on_parcel": [
+    "2916",
+    "2918"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2509,
+    "building_area_sqft": 2502,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "CM",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2918 2916 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1200933,
+    "assessed_improvement_value": 514685,
+    "last_sale_date": "2023-05-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M136738",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-10",
+      "status_date": "2008-10-10",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204164065",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-16",
+      "status_date": "2002-08-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 2000/11/13/5458, 2000/08/09/7456 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011135458",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-11-13",
+      "status_date": "2002-05-20",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "alteration @grnd leve,convert (e)grnd flr storage to habitable space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008097456",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-08-09",
+      "status_date": "2002-05-20",
+      "estimated_cost": 500,
+      "revised_cost": 15000,
+      "description": "remove/abate illegal ground fl (rear)unit per code violation. demo/remove kitchen/bathroom #20000238",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008097451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-09",
+      "status_date": "2002-05-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "demo (e) water damage plaster & 2nd fl in preparation for future alteration permit.no demon/alterati",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2916",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

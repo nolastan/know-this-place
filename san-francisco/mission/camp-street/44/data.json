@@ -1,0 +1,111 @@
+{
+  "address": "44–46 Camp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/camp-street/44/",
+  "apn": "3568055",
+  "block": "3568",
+  "lot": "055",
+  "eas_baseid": "360046",
+  "coordinates": {
+    "lat": 37.764211,
+    "lng": -122.423566
+  },
+  "address_range": "44–46",
+  "street_numbers_on_parcel": [
+    "44",
+    "46"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2578,
+    "building_area_sqft": 3036,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0046 0044 CAMP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39466,
+    "assessed_improvement_value": 46640
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "16th and Valencia Streets Post-Fire Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1926",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "8612299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-03",
+      "status_date": "1987-01-12",
+      "estimated_cost": 9775,
+      "description": "remove exist. kitchen cabinets & flue/install new cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-05-08",
+      "status_date": "1984-07-10",
+      "estimated_cost": 9772,
+      "description": "remove the existing cabinets and the flue, install new",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAMP&street_type=ST&address_number=44",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&lot=055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3568055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42356640970996%2037.764210511215644)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

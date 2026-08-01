@@ -1,0 +1,117 @@
+{
+  "address": "155–159 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/155/",
+  "apn": "3632021",
+  "block": "3632",
+  "lot": "021",
+  "eas_baseid": "363689",
+  "coordinates": {
+    "lat": 37.754235,
+    "lng": -122.423898
+  },
+  "address_range": "155–159",
+  "street_numbers_on_parcel": [
+    "155",
+    "157",
+    "159"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 5,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 6,
+    "bedrooms": 9,
+    "lot_area_sqft": 3580,
+    "building_area_sqft": 4350,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0159 0155 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1416136,
+    "assessed_improvement_value": 1416136,
+    "assessed_fixtures_value": 272,
+    "last_sale_date": "2013-01-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201808298662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-29",
+      "status_date": "2020-10-28",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "mandatory soft story seismic work; sfebc chapter 4d; app a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908124682",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-12",
+      "status_date": "2009-08-14",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "interior remodel on ground floor unit incl. new closet, lav, toilet, furnace, partitions and relocation of interior door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=155",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3632021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3632&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3632021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42389815217709%2037.754235468441465)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "address": "2636 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2636/",
+  "apn": "4268004",
+  "block": "4268",
+  "lot": "004",
+  "eas_baseid": "370751",
+  "coordinates": {
+    "lat": 37.752155,
+    "lng": -122.409387
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2958,
+    "building_area_sqft": 1695,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2636 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 103550,
+    "assessed_improvement_value": 124268,
+    "last_sale_date": "1983-12-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312204696",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-20",
+      "status_date": "2013-12-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove illegal kitchen & bathroom at ground floor. cap all utilities at source convert to storage & laundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101198613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-19",
+      "status_date": "2011-02-16",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "rebuild front stair exterior",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112074762",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-07",
+      "status_date": "2002-01-31",
+      "estimated_cost": 19435,
+      "revised_cost": 19435,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019378",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-21",
+      "status_date": "1990-10-02",
+      "estimated_cost": 1500,
+      "revised_cost": 0,
+      "description": "repair front stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506512",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-24",
+      "status_date": "1986-02-28",
+      "estimated_cost": 4000,
+      "description": "remove (eleven feet of wall space to enlarge room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-04-16",
+      "status_date": "1985-07-08",
+      "estimated_cost": 2000,
+      "revised_cost": 0,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2636",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

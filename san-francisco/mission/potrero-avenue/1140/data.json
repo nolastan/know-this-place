@@ -1,0 +1,156 @@
+{
+  "address": "1140 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1140/",
+  "apn": "4211009",
+  "block": "4211",
+  "lot": "009",
+  "eas_baseid": "370244",
+  "coordinates": {
+    "lat": 37.75386,
+    "lng": -122.406654
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2915,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1140 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 383874,
+    "assessed_improvement_value": 1085910,
+    "last_sale_date": "2004-03-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201105105709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-10",
+      "status_date": "2011-12-13",
+      "estimated_cost": 17000,
+      "revised_cost": 30000,
+      "description": "installation of fire sprinkler system throughout entire building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904025396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-02",
+      "status_date": "2012-01-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "boa #08-171 revision to 200705211784s to comply with board of appeal decision appeal # 08-171 to revise exterior door & window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705211784",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-05-21",
+      "status_date": "2012-01-19",
+      "estimated_cost": 220000,
+      "revised_cost": 650000,
+      "description": "one story additon and horizontal addition, change of occupancy from r-3 to r-2 new car lift and associated basement level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507268576",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-07-26",
+      "status_date": "2006-11-20",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "soft demolation for a soundness report investigation. remove sheer rock in house +-2'x2' access area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407239615",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2004-07-23",
+      "status_date": "2006-01-03",
+      "description": "demolish 1 dwelling units of 2 stories",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407239619",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2004-07-23",
+      "status_date": "2007-04-18",
+      "estimated_cost": 650000,
+      "description": "erect a 4 story 3 unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-23",
+      "status_date": "1998-07-09",
+      "estimated_cost": 800,
+      "description": "correct n.o.v.#199812156 issued by housing inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9521522",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-12-26",
+      "status_date": "2015-07-28",
+      "estimated_cost": 8000,
+      "description": "clear not of violation-remov kitch @ grnd flr & bath frn grn",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1140",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4211009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4211&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4211009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

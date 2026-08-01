@@ -1,0 +1,121 @@
+{
+  "address": "1062–1066 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1062/",
+  "apn": "3615006A",
+  "block": "3615",
+  "lot": "006A",
+  "eas_baseid": "362767",
+  "coordinates": {
+    "lat": 37.7561,
+    "lng": -122.416973
+  },
+  "address_range": "1062–1066",
+  "street_numbers_on_parcel": [
+    "1062",
+    "1064",
+    "1066"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 6,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 6,
+    "lot_area_sqft": 3675,
+    "building_area_sqft": 4080,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1066 1062 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 344809,
+    "assessed_improvement_value": 418933,
+    "last_sale_date": "1988-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910023293",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-02",
+      "status_date": "2020-01-24",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "to comply with ces #201721015. soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909287827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-28",
+      "status_date": "2009-11-13",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "repair wood stairs @ rear, less than 50% in-kind. stair threads & stringers (only).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-05-27",
+      "status_date": "2000-01-06",
+      "estimated_cost": 280,
+      "description": "repair stairway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705197",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-21",
+      "status_date": "1987-10-14",
+      "estimated_cost": 900,
+      "description": "build a 5' x13\" water heater room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1062",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3615006A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3615&lot=006A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3615006A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

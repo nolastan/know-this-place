@@ -1,0 +1,104 @@
+{
+  "address": "2404 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2404/",
+  "apn": "3612075",
+  "block": "3612",
+  "lot": "075",
+  "eas_baseid": "362636",
+  "coordinates": {
+    "lat": 37.758761,
+    "lng": -122.412733
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1635,
+    "building_area_sqft": 3052,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2404 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69912,
+    "assessed_improvement_value": 85461
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509156994",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2015-09-15",
+      "status_date": "2024-01-04",
+      "estimated_cost": 50000,
+      "revised_cost": 0,
+      "description": "soft story retrofit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28735",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-12",
+      "status_date": "2004-08-12",
+      "revised_cost": 0,
+      "description": "sidewalk repair only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312232883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-23",
+      "status_date": "2004-09-20",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "remove and replace existing front stair and rear landing as in kind. per aug 19, 1960 permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2404",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612075",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

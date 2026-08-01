@@ -1,0 +1,114 @@
+{
+  "address": "943 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/943/",
+  "apn": "4146029",
+  "block": "4146",
+  "lot": "029",
+  "eas_baseid": "369401",
+  "coordinates": {
+    "lat": 37.756803,
+    "lng": -122.411081
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0943 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 84502,
+    "assessed_improvement_value": 172452
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201305015838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-01",
+      "status_date": "2013-05-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under pa# 200405285109, all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304023600",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-02",
+      "status_date": "2013-04-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under 200405285109. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405285109",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-05-28",
+      "status_date": "2005-02-22",
+      "estimated_cost": 8000,
+      "revised_cost": 15000,
+      "description": "alteration to create garage at ground level, 1hr const. curb cut,, driveway apron.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106151",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-12",
+      "status_date": "1992-12-02",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=943",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4146029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4146&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4146029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "address": "3364 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3364/",
+  "apn": "3608021",
+  "block": "3608",
+  "lot": "021",
+  "eas_baseid": "362313",
+  "coordinates": {
+    "lat": 37.757061,
+    "lng": -122.422569
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 2580,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3364 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1115128,
+    "assessed_improvement_value": 449528,
+    "last_sale_date": "2005-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606253916",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-06-25",
+      "status_date": "2026-06-25",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "3/f renovation within (e) 3-unit residential bldg. scope includes removal of (e) interior walls & associated structural modifications. installation of new structural beam(s), removal of exterior door, window, & potion of rear exterior wall, install of new approx 11'x8' nanawall folding door system,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508253832",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-08-25",
+      "status_date": "2025-08-25",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "one unit: in kind remodel of existing kitchen and bathroom, top unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M383427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-05",
+      "status_date": "2013-04-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702234745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-23",
+      "status_date": "2007-03-06",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replacing three posts on a 2 story deck/stairs. to comply with#20079896 his nov dated 02/16/07.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311170406",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-11-17",
+      "status_date": "2010-01-27",
+      "estimated_cost": 7280,
+      "revised_cost": 7280,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001661",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-26",
+      "status_date": "1990-06-12",
+      "estimated_cost": 100,
+      "description": "permit #591935 has expired need a final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804173",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-04-01",
+      "status_date": "1990-04-09",
+      "estimated_cost": 50000,
+      "description": "enclose & horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614147",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-07",
+      "status_date": "1987-06-12",
+      "estimated_cost": 15000,
+      "description": "replace & repair missing or damaged mouldings, windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3364",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608021",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42256936340013%2037.75706111593317)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

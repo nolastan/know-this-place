@@ -1,0 +1,155 @@
+{
+  "address": "1162 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1162/",
+  "apn": "4206010B",
+  "block": "4206",
+  "lot": "010B",
+  "eas_baseid": "370057",
+  "coordinates": {
+    "lat": 37.7533,
+    "lng": -122.411428
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1014,
+    "building_area_sqft": 909,
+    "lot_depth_ft": 26,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1162AALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 505981,
+    "assessed_improvement_value": 337317,
+    "last_sale_date": "2004-07-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200812188734",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-18",
+      "status_date": "2019-01-31",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "for condo conversion repairs to building as noted in physical inspection 3r-5006, to include: (1) - exterior siding (2) - front handrail, (3) - rear stair rail; (4) rear stair risers; (5) - smoke detectors; (6) - weather stripping at doors; (7) exterior wall protection; (8) - rear hand rail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811106267",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-10",
+      "status_date": "2009-11-06",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "revision to pa #200810013098, remove a brick chase & rebuild chase from 1162 to roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810013096",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2008-10-01",
+      "status_date": "2026-01-27",
+      "description": "bath ad kitchen remodel. reiuse existing kitchen fixt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810013098",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-10-01",
+      "status_date": "2009-12-07",
+      "estimated_cost": 5800,
+      "revised_cost": 15000,
+      "description": "#1162 lower unit: relocate bath, kitchen, bedroom remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800962",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-27",
+      "status_date": "1988-03-01",
+      "estimated_cost": 5000,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615877",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-12-15",
+      "status_date": "1987-04-02",
+      "estimated_cost": 2450,
+      "description": "install aluminum siding to rear wall of dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614726",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-11-19",
+      "status_date": "1987-02-20",
+      "estimated_cost": 980,
+      "description": "repair maintenance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309928",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-10-04",
+      "status_date": "1984-01-11",
+      "estimated_cost": 1000,
+      "description": "repair siding in back of house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1162",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206010B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=010B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206010B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

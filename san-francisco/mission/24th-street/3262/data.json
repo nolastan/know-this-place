@@ -1,0 +1,118 @@
+{
+  "address": "3262–3264 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3262/",
+  "apn": "3642018",
+  "block": "3642",
+  "lot": "018",
+  "eas_baseid": "364097",
+  "coordinates": {
+    "lat": 37.7525,
+    "lng": -122.417715
+  },
+  "address_range": "3262–3264",
+  "street_numbers_on_parcel": [
+    "3262",
+    "3264"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2165,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3264 3262 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244266,
+    "assessed_improvement_value": 40682,
+    "last_sale_date": "1997-01-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506239170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-23",
+      "status_date": "2025-07-07",
+      "estimated_cost": 17460,
+      "revised_cost": 17460,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M22673",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-01-24",
+      "status_date": "2003-01-24",
+      "revised_cost": 0,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409341",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-08-28",
+      "status_date": "1985-02-07",
+      "estimated_cost": 3000,
+      "description": "repair existing roof & walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-04-27",
+      "status_date": "1984-09-26",
+      "estimated_cost": 1500,
+      "description": "minor interior repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3262",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

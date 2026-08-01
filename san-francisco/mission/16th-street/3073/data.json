@@ -1,0 +1,82 @@
+{
+  "address": "3073 16th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/16th-street/3073/",
+  "apn": "3569075",
+  "block": "3569",
+  "lot": "075",
+  "eas_baseid": "360112",
+  "coordinates": {
+    "lat": 37.764693,
+    "lng": -122.421146
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1332,
+    "building_area_sqft": 1400,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3073 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 516324,
+    "assessed_improvement_value": 258155,
+    "last_sale_date": "2009-12-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "survey_name": "3073 16TH STREET",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412022806",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2014-12-02",
+      "status_date": "2014-12-02",
+      "description": "remove (1) 3x7 door, frame and metal gate. replace w/new (2) 3x7 doors, (n) 6x8 header + double 2x6 @ jambm w/abu 46 + epc 68 simpson connections. work not in public way.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=3073",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3569075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3569&lot=075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3569075",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "address": "2962 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2962/",
+  "apn": "4148015",
+  "block": "4148",
+  "lot": "015",
+  "eas_baseid": "369457",
+  "coordinates": {
+    "lat": 37.75439,
+    "lng": -122.411422
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1441.75,
+    "building_area_sqft": 1627,
+    "basement_area_sqft": 679,
+    "lot_depth_ft": 79,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2962 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1069697,
+    "assessed_improvement_value": 458441,
+    "last_sale_date": "2022-05-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108307392",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-30",
+      "status_date": "2021-12-14",
+      "estimated_cost": 100,
+      "revised_cost": 12000,
+      "description": "to comply with nov# 202049071, legalize work at basement level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610049486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-04",
+      "status_date": "2018-08-21",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209129504",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-12",
+      "status_date": "2012-09-25",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to build a wood deck over existing concrete slab sitting on ground no more than 8\".",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207104407",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-10",
+      "status_date": "2012-09-14",
+      "estimated_cost": 9239,
+      "revised_cost": 13000,
+      "description": "change kitchen cabinets, replace flooring, lighting will comply with title 24, replace vanity in bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309124624",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-12",
+      "status_date": "2003-09-12",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to tear down existing white cinder block fence in front of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106262410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-26",
+      "status_date": "2001-07-06",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "stucco repair and dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210616",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-29",
+      "status_date": "1992-10-29",
+      "estimated_cost": 2200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2962",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

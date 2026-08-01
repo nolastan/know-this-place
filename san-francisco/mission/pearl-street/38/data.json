@@ -1,0 +1,157 @@
+{
+  "address": "38–40 Pearl Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/pearl-street/38/",
+  "apn": "3502047",
+  "block": "3502",
+  "lot": "047",
+  "eas_baseid": "357652",
+  "coordinates": {
+    "lat": 37.770599,
+    "lng": -122.424063
+  },
+  "address_range": "38–40",
+  "street_numbers_on_parcel": [
+    "38",
+    "40"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 1350,
+    "building_area_sqft": 3270,
+    "lot_depth_ft": 54,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0040 0038 PEARL               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 608292,
+    "assessed_improvement_value": 405522,
+    "last_sale_date": "2002-09-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1911",
+    "survey_name": "38-40 Pearl St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Elgin Park-Pearl Street Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1913",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202404109694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-10",
+      "status_date": "2024-04-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing, tear off, flat modified bitumen roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M892127",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-21",
+      "status_date": "2018-02-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705035525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-03",
+      "status_date": "2018-06-20",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "soft story retrofit per 2013 sfbc mandatory program 2015 iebc app a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612129703",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-12",
+      "status_date": "2006-12-12",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917158",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-15",
+      "status_date": "1989-11-02",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913928",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-02",
+      "status_date": "1990-02-13",
+      "estimated_cost": 12000,
+      "description": "remodeling kitchen cabinet and counter, replace bath tile",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PEARL&street_type=ST&address_number=38",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3502047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3502&lot=047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3502047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4240632211272%2037.770598600004334)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

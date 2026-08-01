@@ -1,0 +1,125 @@
+{
+  "address": "1181 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1181/",
+  "apn": "4207020A",
+  "block": "4207",
+  "lot": "020A",
+  "eas_baseid": "370107",
+  "coordinates": {
+    "lat": 37.753037,
+    "lng": -122.410849
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 527,
+    "building_area_sqft": 625,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1181 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 395650,
+    "assessed_improvement_value": 169562,
+    "last_sale_date": "2012-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302152005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-15",
+      "status_date": "2023-10-10",
+      "estimated_cost": 13300,
+      "revised_cost": 13300,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211134143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-13",
+      "status_date": "2014-08-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel extg kitchen. no other work. voluntary partial seismic upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202139047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-13",
+      "status_date": "2002-06-12",
+      "estimated_cost": 3110,
+      "revised_cost": 3110,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809307",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-22",
+      "status_date": "1999-03-02",
+      "estimated_cost": 5789,
+      "description": "vinyle siding in back of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-02-13",
+      "status_date": "1991-02-27",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1181",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4207020A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4207&lot=020A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4207020A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

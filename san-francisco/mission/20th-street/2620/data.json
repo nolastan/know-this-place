@@ -1,0 +1,117 @@
+{
+  "address": "2620 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2620/",
+  "apn": "4078005",
+  "block": "4078",
+  "lot": "005",
+  "eas_baseid": "368167",
+  "coordinates": {
+    "lat": 37.759545,
+    "lng": -122.407516
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2103,
+    "building_area_sqft": 1288,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2620 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 785161,
+    "assessed_improvement_value": 336493,
+    "last_sale_date": "2013-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310178789",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-17",
+      "status_date": "2024-02-14",
+      "estimated_cost": 4000,
+      "revised_cost": 10000,
+      "description": "relevel house on west side. remove & replace interior sheathing, raise west side of house approx 2\", replace or \"sistr\" 2x6 framing as needed, revise ex sill plate, bolting as exsiting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905080104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-08",
+      "status_date": "2019-08-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove and replace extg foundation. no plmg or electrical required. all work to take place at west foundation only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609288962",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-28",
+      "status_date": "2017-03-15",
+      "estimated_cost": 500,
+      "revised_cost": 1500,
+      "description": "revision to application 201609026699; remove & replace stairs in kind, due to dry rot & crumbling concrete support, reframe adjacent walls as needed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609026699",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-02",
+      "status_date": "2017-04-19",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace in kind windows and siding of front frame.repair dry rot at stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2620",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4078005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4078&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4078005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

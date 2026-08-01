@@ -1,0 +1,132 @@
+{
+  "address": "2926–2930 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2926/",
+  "apn": "4267018",
+  "block": "4267",
+  "lot": "018",
+  "eas_baseid": "370729",
+  "coordinates": {
+    "lat": 37.751456,
+    "lng": -122.408552
+  },
+  "address_range": "2926–2930",
+  "street_numbers_on_parcel": [
+    "2926",
+    "2928",
+    "2930"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 6,
+    "stories": 3,
+    "rooms": 34,
+    "bathrooms": 6,
+    "lot_area_sqft": 2574,
+    "building_area_sqft": 8445,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2930 2926 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1148326,
+    "assessed_improvement_value": 492139,
+    "last_sale_date": "2020-04-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408269430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-26",
+      "status_date": "2025-11-20",
+      "estimated_cost": 42000,
+      "revised_cost": 16300,
+      "description": "new 3-story wood framed rear deck. 7'1\" sq ft height total for decks at 3rd/2nd fl. 95 sq ft at 1st flr fire rated wall adj to west property line. (ref pa# 202408269429)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308295481",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-29",
+      "status_date": "2023-08-29",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "closet addition in 2930 25th st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304276576",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-27",
+      "status_date": "2025-12-02",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "for all units - kitchen remodel, bath remodel, add bathroom; remove structural wall betweek kitchen/rear bedroom; partial seismic upgrades w/ply shear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108206811",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-20",
+      "status_date": "2021-08-24",
+      "estimated_cost": 38000,
+      "revised_cost": 80000,
+      "description": "basement lateral upgrade to comply with sf ab-094 (per asce 7-16 standards) plywood shearwalls and new foundations in basement. retrofit at adjoing property (2920-2924 25th st) under separate permit - 202108206810",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105049792",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2021-05-04",
+      "status_date": "2023-04-05",
+      "estimated_cost": 10000,
+      "description": "this project renovates three existing units and creates 2 adus in the basement of a residential building at 25th street in san francisco. all existing windows will be replaces in-kind. a 462 sq ft adu and 697 sq ft adu will be added to the basement of the existing building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2926",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

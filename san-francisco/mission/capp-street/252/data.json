@@ -1,0 +1,128 @@
+{
+  "address": "252–254 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/252/",
+  "apn": "3575051",
+  "block": "3575",
+  "lot": "051",
+  "eas_baseid": "360272",
+  "coordinates": {
+    "lat": 37.762642,
+    "lng": -122.418659
+  },
+  "address_range": "252–254",
+  "street_numbers_on_parcel": [
+    "252",
+    "254"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 4494,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0254 0252 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61650,
+    "assessed_improvement_value": 90762
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310309779",
+      "type": "otc alterations permit",
+      "status": "suspend",
+      "filed": "2023-10-30",
+      "status_date": "2024-03-28",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing - overlay",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1047967",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-07",
+      "status_date": "2019-03-07",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106111196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-11",
+      "status_date": "2001-07-17",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701228",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-22",
+      "status_date": "1997-06-11",
+      "estimated_cost": 4300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615678",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-12-10",
+      "status_date": "1988-11-03",
+      "estimated_cost": 50000,
+      "description": "underpinning for const. of new structure on adj. property",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=252",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3575051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3575&lot=051",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3575051",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "address": "1379–1383 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1379/",
+  "apn": "4276004B",
+  "block": "4276",
+  "lot": "004B",
+  "eas_baseid": "371022",
+  "coordinates": {
+    "lat": 37.750327,
+    "lng": -122.406802
+  },
+  "address_range": "1379–1383",
+  "street_numbers_on_parcel": [
+    "1379",
+    "1381",
+    "1383"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 6,
+    "lot_area_sqft": 2456,
+    "building_area_sqft": 3477,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1383 1379 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 313534,
+    "last_sale_date": "1998-12-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707313411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-31",
+      "status_date": "2018-06-18",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "per nov complaint 201793131 remove damaged/lumber from front and near stairs and landings. replace with new pressure treated lumber, less than 50% replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805232864",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-23",
+      "status_date": "2008-06-11",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "repair front and rear stairs per item 2 per nov#200854878, repair less than 50% per stair, replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311129960",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-12",
+      "status_date": "2003-11-26",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "dry rot repair to rear stairs to correct complaint #200344078 comply with nov. #3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809097",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-19",
+      "status_date": "1998-09-19",
+      "estimated_cost": 2000,
+      "description": "dryrot repairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704963",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-16",
+      "status_date": "1988-03-04",
+      "estimated_cost": 1040,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1379",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4276004B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4276&lot=004B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4276004B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

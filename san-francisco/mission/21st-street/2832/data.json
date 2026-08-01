@@ -1,0 +1,92 @@
+{
+  "address": "2832 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2832/",
+  "apn": "4085019",
+  "block": "4085",
+  "lot": "019",
+  "eas_baseid": "368294",
+  "coordinates": {
+    "lat": 37.757733,
+    "lng": -122.411127
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 2140,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2832 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93212,
+    "assessed_improvement_value": 109781
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402206177",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-20",
+      "status_date": "2024-03-01",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "re-roofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M79146",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-26",
+      "status_date": "2007-07-26",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2832",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4085019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4085&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4085019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "address": "306 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/306/",
+  "apn": "3574052",
+  "block": "3574",
+  "lot": "052",
+  "eas_baseid": "360219",
+  "coordinates": {
+    "lat": 37.763145,
+    "lng": -122.416509
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2935,
+    "building_area_sqft": 3037,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0306 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 691826,
+    "assessed_improvement_value": 641762,
+    "last_sale_date": "2010-10-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911046375",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-11-04",
+      "status_date": "2020-09-15",
+      "estimated_cost": 9240,
+      "revised_cost": 10000,
+      "description": "revision to pa# 2016-0922-8506. addition at 2nd & 3rd flr against blank wall of adjacent bldg. lightwell infill 84 sqft.**maher n/a**",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1154407",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-17",
+      "status_date": "2019-10-17",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609228506",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-09-22",
+      "status_date": "2020-09-04",
+      "estimated_cost": 45000,
+      "revised_cost": 80000,
+      "description": "horizontal addition. replace exterior stair connecting all floors to rear yard. horizontal expansion of lower level to create habitable family room. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107130131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-13",
+      "status_date": "2012-02-15",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel extg kitchen, bath and watercloset at upper level dwelling unit. open wall at extg kitchen/breakfast area. provide new shear wall and new header beam at 3rd level. rebuild utility closet, new skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011295712",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-11-29",
+      "status_date": "2010-11-29",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011104739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-10",
+      "status_date": "2011-03-10",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "remodel kitchen, bath & w.c. @ lower level dwelling unit. open wall @ (e) kitchen. provide (n) header beam, create (n) shearwall with holdowns @ garage level & first level of unit (2nd. story).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013745",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-07-13",
+      "status_date": "1990-08-30",
+      "estimated_cost": 1600,
+      "description": "replace (e) concrete piers at rear stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=306",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3574052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3574&lot=052",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3574052",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

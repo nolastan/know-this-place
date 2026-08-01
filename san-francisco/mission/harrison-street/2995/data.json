@@ -1,0 +1,159 @@
+{
+  "address": "2995 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2995/",
+  "apn": "4271019",
+  "block": "4271",
+  "lot": "019",
+  "eas_baseid": "370847",
+  "coordinates": {
+    "lat": 37.749639,
+    "lng": -122.411444
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1424,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2995 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117530,
+    "assessed_improvement_value": 171164,
+    "last_sale_date": "1995-06-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M975227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-07",
+      "status_date": "2018-09-07",
+      "revised_cost": 1,
+      "description": "street space only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806040936",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-04",
+      "status_date": "2018-11-15",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace three windows \"like for like\" (wood aluminum cladding exterior) at the front façade. u-factor = 0.32 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805240132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-24",
+      "status_date": "2018-11-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to permit # 201805088576 to allow in-kind dry rot repair at front facade. change repacement siding from stucco to cedar wood siding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805088576",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-08",
+      "status_date": "2018-11-19",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "add scope of work to pa 201803295066 to comply with nov 201862231 replacing dryrot guardrails of front stairs in kind, finish remains per permit no. 201803295066 to be stucco and stone veneer.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803295066",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-29",
+      "status_date": "2018-11-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace exstg aluminum siding with smooth finish stucco on front facade; retain exstg wood window surrounds and clay tiles on roof and stone veneer; no other work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605268486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-26",
+      "status_date": "2016-06-14",
+      "estimated_cost": 8000,
+      "revised_cost": 80000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410300349",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-30",
+      "status_date": "2015-09-10",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "convert exsiting basement to add one bedroom, one full bathroom and one toilet room & laundry area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907100",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-04-28",
+      "status_date": "1989-09-22",
+      "estimated_cost": 3300,
+      "description": "remove all existing membran roofing to roof sheathing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2995",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4271019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

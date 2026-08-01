@@ -1,0 +1,168 @@
+{
+  "address": "948 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/948/",
+  "apn": "4143008",
+  "block": "4143",
+  "lot": "008",
+  "eas_baseid": "369255",
+  "coordinates": {
+    "lat": 37.756888,
+    "lng": -122.407955
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3215,
+    "basement_area_sqft": 775,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0948 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2240000,
+    "assessed_improvement_value": 960000,
+    "last_sale_date": "2018-01-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M589147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-20",
+      "status_date": "2015-05-20",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M536447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-11-12",
+      "status_date": "2014-11-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M488768",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-05-15",
+      "status_date": "2014-05-15",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310239987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-23",
+      "status_date": "2015-11-30",
+      "estimated_cost": 280000,
+      "revised_cost": 310000,
+      "description": "revision to 2005.0329.8688 & 2013.0301.1337. new roof deck. new interior floor plan. change to proposed rear stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M417467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-14",
+      "status_date": "2013-08-14",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303011337",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-01",
+      "status_date": "2016-01-05",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "to complete work and obtain final inspection for pa 200503298688s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103071561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-07",
+      "status_date": "2016-01-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa 200503298688; all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503298688",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-03-29",
+      "status_date": "2016-01-05",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "vertical addition with studio apartment on ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612549",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-08",
+      "status_date": "1986-12-12",
+      "estimated_cost": 1290,
+      "description": "install aluminum windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=948",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4143008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4143&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4143008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

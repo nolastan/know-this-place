@@ -1,0 +1,132 @@
+{
+  "address": "436 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/436/",
+  "apn": "3595037",
+  "block": "3595",
+  "lot": "037",
+  "eas_baseid": "361436",
+  "coordinates": {
+    "lat": 37.75963,
+    "lng": -122.418369
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2448,
+    "building_area_sqft": 1400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0436 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 688655,
+    "assessed_improvement_value": 459102,
+    "last_sale_date": "2025-01-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Wilhelm's Reconstruction Bungalows Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906; 1910",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202304276617",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-04-27",
+      "status_date": "2026-01-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "front steps dryrot repair; replace concrete landing & steps, (n) driveway gate.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910306002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-30",
+      "status_date": "2020-01-07",
+      "estimated_cost": 15535,
+      "revised_cost": 15535,
+      "description": "replace total of 13 windows, 1 patio door nail finish 1 bath window nail finish, raise sill 18\" for smaller window same header same location, not facing st , u+/- 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909161750",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-16",
+      "status_date": "2019-09-16",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "gut existing bedroom and hallway, insulate replace elec, dryrot work and replace windows in kind. move washer dryer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711295011",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-29",
+      "status_date": "2018-01-23",
+      "estimated_cost": 16880,
+      "revised_cost": 16880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=436",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3595037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3595&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3595037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41836894732559%2037.75962959335545)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

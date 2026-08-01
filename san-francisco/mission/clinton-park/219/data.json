@@ -1,0 +1,144 @@
+{
+  "address": "219 Clinton Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/clinton-park/219/",
+  "apn": "3534046",
+  "block": "3534",
+  "lot": "046",
+  "eas_baseid": "358463",
+  "coordinates": {
+    "lat": 37.768893,
+    "lng": -122.425037
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 12,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 12,
+    "lot_area_sqft": 5497,
+    "building_area_sqft": 10170,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0219 CLINTON             PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58572,
+    "assessed_improvement_value": 238182
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M976232",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-10",
+      "status_date": "2018-09-10",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M927027",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-15",
+      "status_date": "2018-05-15",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712217167",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-21",
+      "status_date": "2018-08-15",
+      "estimated_cost": 75000,
+      "revised_cost": 80000,
+      "description": "mandatory soft story retrofit per 2016 sfebc app a4. add ply shear walls, ssws and foundations. comply with complaint 201719011",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601288239",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-28",
+      "status_date": "2016-05-23",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "like for like voluntary fire system replacement with new control panel, smoke detectors & pull station at the same locations. 3 existing bells will be tie in to new panel. local system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312192750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-19",
+      "status_date": "2004-04-15",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "in kind repair two side staircase according to housing inspector report, repair work about 10 percen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-09",
+      "status_date": "1988-10-20",
+      "estimated_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-06-14",
+      "status_date": "1988-12-06",
+      "estimated_cost": 6345,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLINTON&street_type=PARK&address_number=219",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534046",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

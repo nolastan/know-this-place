@@ -1,0 +1,142 @@
+{
+  "address": "36 Dorland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dorland-street/36/",
+  "apn": "3578073C",
+  "block": "3578",
+  "lot": "073C",
+  "eas_baseid": "360490",
+  "coordinates": {
+    "lat": 37.762484,
+    "lng": -122.424706
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2021,
+    "building_area_sqft": 2806,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0036 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 480969,
+    "assessed_improvement_value": 384669,
+    "last_sale_date": "1990-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M627868",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-07",
+      "status_date": "2015-10-07",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23130",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-03-11",
+      "status_date": "2003-03-11",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001408",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-01-22",
+      "status_date": "1990-07-09",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-09",
+      "status_date": "1989-01-11",
+      "estimated_cost": 200,
+      "description": "replace two pieces of sheetrock in living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815263",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-10-11",
+      "status_date": "1989-01-11",
+      "estimated_cost": 600,
+      "description": "pay penalty for warning of violation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815384",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-07",
+      "status_date": "1989-02-07",
+      "estimated_cost": 400,
+      "description": "repair side (outside) staircase/replace 4 deteriorated tread",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-30",
+      "status_date": "1989-01-11",
+      "estimated_cost": 600,
+      "description": "patch & paint plaster walls & ceiling in lobby & enterior.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=36",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578073C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=073C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578073C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

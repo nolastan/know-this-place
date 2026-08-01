@@ -1,0 +1,163 @@
+{
+  "address": "250–254 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/250/",
+  "apn": "3545009",
+  "block": "3545",
+  "lot": "009",
+  "eas_baseid": "358946",
+  "coordinates": {
+    "lat": 37.767135,
+    "lng": -122.4247
+  },
+  "address_range": "250–254",
+  "street_numbers_on_parcel": [
+    "250",
+    "252",
+    "254"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 3293.75,
+    "building_area_sqft": 4804,
+    "lot_depth_ft": 31.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0254 0250 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 375304,
+    "assessed_improvement_value": 459749,
+    "last_sale_date": "1989-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1006267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-15",
+      "status_date": "2018-11-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807205082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-20",
+      "status_date": "2018-07-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired pa 2016-0317-2280. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807195000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-19",
+      "status_date": "2018-12-14",
+      "estimated_cost": 42000,
+      "revised_cost": 42000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M726227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-29",
+      "status_date": "2016-09-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603172280",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-03-17",
+      "status_date": "2016-03-17",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "unit #b: remove and replace (6) single hung windows at 3rd floor, rear unit apt. not visible from the street and will be white milgard retrofit and meet title 24 requirements.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108276904",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-27",
+      "status_date": "2002-02-05",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418620",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-10",
+      "status_date": "1995-04-24",
+      "estimated_cost": 1500,
+      "description": "rear stairs repair in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006464",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-04-04",
+      "status_date": "1990-08-06",
+      "estimated_cost": 500,
+      "description": "repair lower stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=250",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

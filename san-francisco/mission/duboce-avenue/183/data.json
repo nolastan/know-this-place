@@ -1,0 +1,153 @@
+{
+  "address": "183–185 Duboce Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/duboce-avenue/183/",
+  "apn": "3533058",
+  "block": "3533",
+  "lot": "058",
+  "eas_baseid": "358389",
+  "coordinates": {
+    "lat": 37.769543,
+    "lng": -122.42409
+  },
+  "address_range": "183–185",
+  "street_numbers_on_parcel": [
+    "183",
+    "185"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 6150,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0185 0183 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1071826,
+    "assessed_improvement_value": 535906,
+    "last_sale_date": "2007-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709117642",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-11",
+      "status_date": "2019-10-29",
+      "estimated_cost": 30000,
+      "revised_cost": 63000,
+      "description": "soft story retrofit sfbc chapter 4d. 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M164646",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-05-20",
+      "status_date": "2009-05-20",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801142478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-14",
+      "status_date": "2008-01-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2007/06/29/5573 to comply w/ nov.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706295573",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-06-29",
+      "status_date": "2007-07-02",
+      "estimated_cost": 4600,
+      "revised_cost": 4600,
+      "description": "replace windows vinyl in kind (thiry four total) same for same. some face street on front & some are on the side.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706295581",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-06-29",
+      "status_date": "2007-07-02",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "remodel kitchen in four units. install in toilet rooms and bathrooms in those four units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701181928",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-18",
+      "status_date": "2007-01-25",
+      "estimated_cost": 1600,
+      "revised_cost": 1600,
+      "description": "repair stair on both left of right lightwells. less than 50% . repair on both stairway. item #6,#7. no window + no doors. to comply w/nov#200455030.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503026587",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-03-02",
+      "status_date": "2007-05-24",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "to comply w/his nov 200455030 dated 01/11/05- fix up all items on housing violation report. dated",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=183",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=058",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533058",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

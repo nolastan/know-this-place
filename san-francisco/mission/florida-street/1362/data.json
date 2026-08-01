@@ -1,0 +1,146 @@
+{
+  "address": "1362 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1362/",
+  "apn": "4272011",
+  "block": "4272",
+  "lot": "011",
+  "eas_baseid": "370884",
+  "coordinates": {
+    "lat": 37.750184,
+    "lng": -122.4101
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1520,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1364 1362 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 207564,
+    "assessed_improvement_value": 135713,
+    "last_sale_date": "1997-10-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201605056656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-05",
+      "status_date": "2016-05-06",
+      "estimated_cost": 1,
+      "revised_cost": 5000,
+      "description": "revision to app#201502198781.rear stair as built for final",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502198781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-19",
+      "status_date": "2016-05-06",
+      "estimated_cost": 3000,
+      "revised_cost": 5000,
+      "description": "dry rot repair of (e) rear stairs, as required. less than 50%. (n) guardrails",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807227333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-22",
+      "status_date": "2008-10-20",
+      "estimated_cost": 4000,
+      "revised_cost": 7300,
+      "description": "remodel of exterior front stairs and replace in kind per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-17",
+      "status_date": "1998-05-21",
+      "estimated_cost": 16000,
+      "description": "kitch/bathrm remodeling/replace appl/cab/el/plg/patio dr/win",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708085",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-05-05",
+      "status_date": "1998-05-21",
+      "estimated_cost": 3000,
+      "revised_cost": 6000,
+      "description": "proposed remodeling (e) ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606573",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-17",
+      "status_date": "1997-01-16",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508180",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-07-31",
+      "status_date": "1985-12-23",
+      "estimated_cost": 1000,
+      "description": "replace rotten wooden stairs-front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1362",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4272011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4272&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4272011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

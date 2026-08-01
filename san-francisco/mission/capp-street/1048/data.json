@@ -1,0 +1,121 @@
+{
+  "address": "1048–1050 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1048/",
+  "apn": "6528008A",
+  "block": "6528",
+  "lot": "008A",
+  "eas_baseid": "401274",
+  "coordinates": {
+    "lat": 37.749979,
+    "lng": -122.417431
+  },
+  "address_range": "1048–1050",
+  "street_numbers_on_parcel": [
+    "1048",
+    "1050"
+  ],
+  "parcel": {
+    "year_built": 1898,
+    "units": 4,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2433.4,
+    "building_area_sqft": 2450,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1050 1048 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 560481,
+    "assessed_improvement_value": 373649,
+    "last_sale_date": "2003-02-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1898",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200609132216",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-09-13",
+      "status_date": "2006-09-13",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304081657",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-08",
+      "status_date": "2003-04-17",
+      "estimated_cost": 1100,
+      "revised_cost": 1100,
+      "description": "in back of houst two 8 ft. posts anchored 4 feet into cement will support to 10x8 ft. fence gates th",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712039",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-08-24",
+      "status_date": "1988-09-04",
+      "estimated_cost": 55000,
+      "description": "replace plaster w/sheetrock, remodel bathrm, kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702427",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-25",
+      "status_date": "1988-02-23",
+      "estimated_cost": 15000,
+      "description": "comply with code violations bbi - complaint no. d22413",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=1048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528008A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&lot=008A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6528008A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

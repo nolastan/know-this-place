@@ -1,0 +1,142 @@
+{
+  "address": "631 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/631/",
+  "apn": "3611055",
+  "block": "3611",
+  "lot": "055",
+  "eas_baseid": "362557",
+  "coordinates": {
+    "lat": 37.758307,
+    "lng": -122.415452
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1350,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0631 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1085000,
+    "assessed_improvement_value": 465000,
+    "last_sale_date": "2024-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202204222790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-22",
+      "status_date": "2022-09-02",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "install r-30 insulation at roof attic, r-15 at exterior wall. install 5/8\" type x drywall throughout the whole house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203039101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-03",
+      "status_date": "2022-03-08",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106112220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-11",
+      "status_date": "2022-09-02",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "amend bpa 202105120228: convert the (e) closets between bedrooms 2 & 3 into a full bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105120228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-12",
+      "status_date": "2022-09-02",
+      "estimated_cost": 30000,
+      "revised_cost": 47000,
+      "description": "kitchen and bathroom remodel in kind. replace 11 windows including 2 in front with wood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800956",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-01-27",
+      "status_date": "1989-09-24",
+      "estimated_cost": 3628,
+      "description": "aluminum siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=631",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3611055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3611&lot=055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3611055",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41545152804349%2037.75830742737049)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "address": "347–349 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/347/",
+  "apn": "3609106",
+  "block": "3609",
+  "lot": "106",
+  "eas_baseid": "362445",
+  "coordinates": {
+    "lat": 37.75783,
+    "lng": -122.419566
+  },
+  "address_range": "347–349",
+  "street_numbers_on_parcel": [
+    "347",
+    "349"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 1650,
+    "building_area_sqft": 2496,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0349 0345 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 796085,
+    "assessed_improvement_value": 266115
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201003037519",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-03",
+      "status_date": "2010-03-03",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair siding and replace with new siding approx. 20 boards",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M184347",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-16",
+      "status_date": "2009-11-16",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315436",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-09-10",
+      "status_date": "1994-03-01",
+      "estimated_cost": 4000,
+      "description": "replace rear stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=347",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=106",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609106",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41956571785848%2037.75782993336947)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "address": "2701 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2701/",
+  "apn": "4274029A",
+  "block": "4274",
+  "lot": "029A",
+  "eas_baseid": "370972",
+  "coordinates": {
+    "lat": 37.751093,
+    "lng": -122.408735
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1239.5,
+    "building_area_sqft": 2500,
+    "lot_depth_ft": 50,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2703 2701 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 384235,
+    "assessed_improvement_value": 345809,
+    "assessed_fixtures_value": 12234,
+    "last_sale_date": "1999-09-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611011602",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-11-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 2000,
+      "revised_cost": 0,
+      "description": "remove partial partition wall. replace w/4x12 psl beam & (2) 4x6 post on 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606069155",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-06",
+      "status_date": "2016-06-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "partial remodel kitchen - cabinet, sink, facuet at kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714853",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-08-06",
+      "status_date": "1997-10-02",
+      "estimated_cost": 1,
+      "description": "revised plan to app #9706272",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9706272",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-04-08",
+      "status_date": "1997-10-17",
+      "estimated_cost": 28000,
+      "revised_cost": 64000,
+      "description": "conversion of grocery to laundrymat",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2701",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4274029A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4274&lot=029A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4274029A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

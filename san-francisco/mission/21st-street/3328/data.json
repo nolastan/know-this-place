@@ -1,0 +1,165 @@
+{
+  "address": "3328–3330 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3328/",
+  "apn": "3608013",
+  "block": "3608",
+  "lot": "013",
+  "eas_baseid": "362307",
+  "coordinates": {
+    "lat": 37.757103,
+    "lng": -122.42188
+  },
+  "address_range": "3328–3330",
+  "street_numbers_on_parcel": [
+    "3328",
+    "3330"
+  ],
+  "parcel": {
+    "year_built": 1978,
+    "units": 2,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 2900,
+    "building_area_sqft": 3809,
+    "lot_depth_ft": 16,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3328 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 430663,
+    "assessed_improvement_value": 382807,
+    "last_sale_date": "1987-11-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202603046919",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-04",
+      "status_date": "2026-05-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "revision to 202506259416. interior remodel of 3rd floor with added electrical scope per revised plans. work includes installation of new lighting fixtures and upgrade to electrical service panel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202602035138",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-02-03",
+      "status_date": "2026-02-03",
+      "estimated_cost": 20000,
+      "revised_cost": 25000,
+      "description": "replace existing rear stairs with new going up to 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506259416",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-25",
+      "status_date": "2025-10-10",
+      "estimated_cost": 25000,
+      "revised_cost": 70000,
+      "description": "interior remodel of existing bathrooom and kitchen on the 3rd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516416",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-04",
+      "status_date": "1996-03-12",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207914",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-05-15",
+      "status_date": "1993-10-05",
+      "estimated_cost": 1600,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901580",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-31",
+      "status_date": "1989-06-26",
+      "estimated_cost": 4000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109666",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1981-06-10",
+      "status_date": "1982-08-24",
+      "estimated_cost": 7000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3328",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42187952030228%2037.75710264493523)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

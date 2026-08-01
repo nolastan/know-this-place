@@ -1,0 +1,110 @@
+{
+  "address": "1 Horace Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/horace-street/1/",
+  "apn": "6525001A",
+  "block": "6525",
+  "lot": "001A",
+  "eas_baseid": "401176",
+  "coordinates": {
+    "lat": 37.750723,
+    "lng": -122.414398
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1380,
+    "building_area_sqft": 400,
+    "lot_depth_ft": 46,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0001 HORACE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254973,
+    "assessed_improvement_value": 63737,
+    "last_sale_date": "2013-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201409247163",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2014-09-24",
+      "status_date": "2014-09-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "demolish part of 2906 folsom st 1 story garage at apn 6525/001a per pa #201409247158.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409247165",
+      "type": "new construction wood frame",
+      "status": "filed",
+      "filed": "2014-09-24",
+      "status_date": "2014-09-24",
+      "estimated_cost": 550000,
+      "description": "construct (n) 3-story single family residence.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HORACE&street_type=ST&address_number=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&lot=001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6525001A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41439795340908%2037.75072284500145)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "address": "3019 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/3019/",
+  "apn": "4338023",
+  "block": "4338",
+  "lot": "023",
+  "eas_baseid": "371427",
+  "coordinates": {
+    "lat": 37.749126,
+    "lng": -122.411247
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 995,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3021 3019 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 225430,
+    "assessed_improvement_value": 153280
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200406176716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-17",
+      "status_date": "2004-08-03",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair fire damge right & side of the front gate, replace fire damaged stucco, wood stud, and sheetr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=3019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

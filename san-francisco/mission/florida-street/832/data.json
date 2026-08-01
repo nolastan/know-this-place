@@ -1,0 +1,152 @@
+{
+  "address": "832–834 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/832/",
+  "apn": "4085005",
+  "block": "4085",
+  "lot": "005",
+  "eas_baseid": "368279",
+  "coordinates": {
+    "lat": 37.758498,
+    "lng": -122.410896
+  },
+  "address_range": "832–834",
+  "street_numbers_on_parcel": [
+    "832",
+    "834"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2345,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0834 0832 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 647076,
+    "assessed_improvement_value": 277318,
+    "last_sale_date": "2022-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603268361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-26",
+      "status_date": "2026-04-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#202401244513. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406184729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-18",
+      "status_date": "2024-07-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace small heater, replace gas line, replace outlet, open wall to run pipe. clear nov #202423405 item 4 only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401244513",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-01-24",
+      "status_date": "2024-01-25",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "new laundry service add washer, dryer & gas line on 2nd floor. no new walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311020027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-02",
+      "status_date": "2023-12-21",
+      "estimated_cost": 1200,
+      "revised_cost": 2200,
+      "description": "replace tub with shower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M14906",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-06",
+      "status_date": "2001-03-08",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805868",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-05",
+      "status_date": "1988-07-24",
+      "estimated_cost": 5500,
+      "description": "stucco repair, refurbish work, replace stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804592",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1988-04-12",
+      "status_date": "1988-05-04",
+      "estimated_cost": 1000,
+      "description": "replace front stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=832",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4085005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4085&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4085005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "address": "821–823 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/821/",
+  "apn": "3642060",
+  "block": "3642",
+  "lot": "060",
+  "eas_baseid": "364135",
+  "coordinates": {
+    "lat": 37.753536,
+    "lng": -122.41715
+  },
+  "address_range": "821–823",
+  "street_numbers_on_parcel": [
+    "821",
+    "823"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 4,
+    "rooms": 17,
+    "bathrooms": 4,
+    "lot_area_sqft": 3649.28,
+    "building_area_sqft": 5100,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0823 0821 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41274,
+    "assessed_improvement_value": 85626
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M181290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-02",
+      "status_date": "2009-10-02",
+      "revised_cost": 0,
+      "description": "streetspace and sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M85587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-09-10",
+      "status_date": "2007-09-10",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=821",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=060",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642060",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

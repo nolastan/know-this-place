@@ -1,0 +1,162 @@
+{
+  "address": "83 Lafayette Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/lafayette-street/83/",
+  "apn": "3511087",
+  "block": "3511",
+  "lot": "087",
+  "eas_baseid": "357882",
+  "coordinates": {
+    "lat": 37.772805,
+    "lng": -122.416535
+  },
+  "parcel": {
+    "year_built": 1993,
+    "units": 1,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "building_area_sqft": 726,
+    "use": "Single Family Residential",
+    "property_class": "Live/Work Condominium",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0083 LAFAYETTE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 399421,
+    "assessed_improvement_value": 266278,
+    "last_sale_date": "2012-04-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1993",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201208026402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-02",
+      "status_date": "2013-01-07",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "one unit-tenant improvement to (e) fire sprinkler system-1 relocated sprinkler & 2 new sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204279354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-27",
+      "status_date": "2013-02-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit-add an additional bath above the existing bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012297586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-29",
+      "status_date": "2011-02-07",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "removal of (e) 3/8 siding (8 sheets) south wall. inspect for water intrusion, install new flashing & building paper to a water tight condition. caulk, prime & paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008128645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-12",
+      "status_date": "2010-12-07",
+      "estimated_cost": 10000,
+      "revised_cost": 11329,
+      "description": "new bath room on 2nd mezzanine floor of one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307421",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-05-05",
+      "status_date": "1993-07-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise per built architectural changes refer to #9203217",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221811",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-12-18",
+      "status_date": "1993-06-02",
+      "estimated_cost": 3000,
+      "revised_cost": 7800,
+      "description": "ref #9203217-install fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203217S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1992-03-03",
+      "status_date": "1993-06-02",
+      "estimated_cost": 200000,
+      "revised_cost": 428200,
+      "description": "erect a two story four unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAFAYETTE&street_type=ST&address_number=83",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3511087&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3511&lot=087",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3511087",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41653464844028%2037.772805458493295)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

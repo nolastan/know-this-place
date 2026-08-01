@@ -1,0 +1,141 @@
+{
+  "address": "971–973 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/971/",
+  "apn": "4145024",
+  "block": "4145",
+  "lot": "024",
+  "eas_baseid": "369358",
+  "coordinates": {
+    "lat": 37.756488,
+    "lng": -122.410147
+  },
+  "address_range": "971–973",
+  "street_numbers_on_parcel": [
+    "971",
+    "973"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 3,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2631,
+    "use": "Multi-Family Residential",
+    "property_class": "1 Flat & Dwelling-1 Parcel",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0973 0971 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1609498,
+    "assessed_improvement_value": 689785,
+    "last_sale_date": "2022-07-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304286723",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-04-28",
+      "status_date": "2026-01-23",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "clerestory window installation and door replacement; replacement of exterior deck and existing stairs w/ minor increase to existing exterior deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707055960",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-05",
+      "status_date": "2007-07-30",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install (n) stairs @ (e) rear deck on 2/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M51707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-21",
+      "status_date": "2006-12-21",
+      "revised_cost": 0,
+      "description": "verification and additional address",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611167971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-16",
+      "status_date": "2007-02-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision 200509142871. addition of closets, movement and or additon or enlargement of windows skylights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603176977",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-17",
+      "status_date": "2006-03-17",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "soft demolition/exploritory demolition.not more than 10% of wall & ceiling area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509142871",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-09-14",
+      "status_date": "2007-02-16",
+      "estimated_cost": 100000,
+      "revised_cost": 125000,
+      "description": "addition of dormers to roof structure, legalization of ground floor unit & overall upgrade. scope of seismic upgrade (w/ calc) limited to 1st floor only. (horizontal addition)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=971",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4145024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4145&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4145024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "address": "3024 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3024/",
+  "apn": "3640013",
+  "block": "3640",
+  "lot": "013",
+  "eas_baseid": "363970",
+  "coordinates": {
+    "lat": 37.75291,
+    "lng": -122.412424
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1298,
+    "building_area_sqft": 1620,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3024 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8745,
+    "assessed_improvement_value": 1812
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M162564",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-28",
+      "status_date": "2009-04-28",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705183",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-20",
+      "status_date": "1997-08-21",
+      "estimated_cost": 14800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404692",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-05-03",
+      "status_date": "1985-02-08",
+      "estimated_cost": 10000,
+      "description": "install 2 new toilets,2 showers,2 vanities,2 exhaust fans,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308546",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-30",
+      "status_date": "1984-06-13",
+      "estimated_cost": 20500,
+      "description": "removal of existing interior wall finish and designated",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

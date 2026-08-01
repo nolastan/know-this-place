@@ -1,0 +1,112 @@
+{
+  "address": "1092 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1092/",
+  "apn": "4153015",
+  "block": "4153",
+  "lot": "015",
+  "eas_baseid": "369650",
+  "coordinates": {
+    "lat": 37.754727,
+    "lng": -122.406846
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1880,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1092 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33466,
+    "assessed_improvement_value": 103938
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200609132202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-13",
+      "status_date": "2006-11-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace dry rot at garage door. patch stucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411009",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1984-10-11",
+      "status_date": "1984-10-11",
+      "estimated_cost": 800,
+      "description": "repair sidewalk plumbing and concrete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408171",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-27",
+      "status_date": "1984-10-17",
+      "estimated_cost": 4800,
+      "description": "repair existing room frame and interior painting elect.plg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404802",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-05-03",
+      "status_date": "1984-10-17",
+      "estimated_cost": 2500,
+      "description": "repair flooring-water damage repair back-stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1092",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

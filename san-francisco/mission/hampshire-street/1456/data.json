@@ -1,0 +1,127 @@
+{
+  "address": "1456 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1456/",
+  "apn": "4334002A",
+  "block": "4334",
+  "lot": "002A",
+  "eas_baseid": "371295",
+  "coordinates": {
+    "lat": 37.749231,
+    "lng": -122.406945
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 1477,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1456 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 495994,
+    "assessed_improvement_value": 363012,
+    "last_sale_date": "2009-01-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211227052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-22",
+      "status_date": "2023-01-24",
+      "estimated_cost": 14782,
+      "revised_cost": 14782,
+      "description": "replacing 5 windows, non street visible, in-rear of home. same size and location. ufactor less than 0.30, proposed: wood composite",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412053134",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-12-05",
+      "status_date": "2015-06-16",
+      "estimated_cost": 15000,
+      "revised_cost": 16430,
+      "description": "revision to 201407080749; add 106 square feet at ground floor, relocate (e) stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407080749",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-08",
+      "status_date": "2016-04-01",
+      "estimated_cost": 75000,
+      "revised_cost": 86000,
+      "description": "addition of bathroom and living space to existing garage and storge area. infill addition under existing 2nd story space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206293819",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-29",
+      "status_date": "2012-10-15",
+      "estimated_cost": 15000,
+      "revised_cost": 25000,
+      "description": "replace e post and beram support and pad foundations for e rear addition to address inadequate structural system and correct settlement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314515",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-24",
+      "status_date": "1994-01-04",
+      "estimated_cost": 4648,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1456",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334002A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=002A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334002A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

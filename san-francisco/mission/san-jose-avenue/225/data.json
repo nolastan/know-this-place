@@ -1,0 +1,99 @@
+{
+  "address": "225–229 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/225/",
+  "apn": "6514023",
+  "block": "6514",
+  "lot": "023",
+  "eas_baseid": "400838",
+  "coordinates": {
+    "lat": 37.751576,
+    "lng": -122.421273
+  },
+  "address_range": "225–229",
+  "street_numbers_on_parcel": [
+    "225",
+    "227",
+    "229"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 4,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 5670,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0229 0225 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183963,
+    "assessed_improvement_value": 274512
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401254664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-25",
+      "status_date": "2024-02-23",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "third floor 1) 60 ft of dry wall and patch holes and painting. install new door(closet in house) 2) tapping into gas line and run about 12 ft of y2\" pipe to supply a heater. 3) run 10ft of electrical conduit for heater switch on third flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909121394",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-12",
+      "status_date": "2020-06-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: water damage to ceiling and walls at bathroom and kitchen removed replace tile at bathroom new sheetrock approx 225 sq ft repalce vanity.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=225",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6514023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6514&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6514023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "address": "1171–1173 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/1171/",
+  "apn": "3636029",
+  "block": "3636",
+  "lot": "029",
+  "eas_baseid": "363794",
+  "coordinates": {
+    "lat": 37.754216,
+    "lng": -122.420502
+  },
+  "address_range": "1171–1173",
+  "street_numbers_on_parcel": [
+    "1171",
+    "1173"
+  ],
+  "parcel": {
+    "year_built": 1885,
+    "units": 5,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 5,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4308,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1173 1171 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325726,
+    "assessed_improvement_value": 221489,
+    "last_sale_date": "1996-11-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "23rd Street Shops and Rowhouses Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1873–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M962887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-09",
+      "status_date": "2018-08-09",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504143621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-14",
+      "status_date": "2017-01-10",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "to comply with notice of voilation appl#201532941. install wire trellis above the existing 6'-0\" fence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206058325",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-05",
+      "status_date": "2002-06-20",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "#3- remove non structural wooden partition/non weight bearing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204032989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-03",
+      "status_date": "2002-06-20",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "replace runner on stairwell (wooden), replace 5 treads on (e) stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-04",
+      "status_date": "1999-11-04",
+      "estimated_cost": 6900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908838",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-05",
+      "status_date": "2000-12-06",
+      "estimated_cost": 5000,
+      "description": "replace dry rot in bath room at rear of property",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411199",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-24",
+      "status_date": "1984-12-20",
+      "estimated_cost": 4200,
+      "description": "install solar dhw pre-heat system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=1171",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3636029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3636&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3636029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42050177531526%2037.75421615744671)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

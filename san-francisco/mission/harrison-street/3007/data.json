@@ -1,0 +1,116 @@
+{
+  "address": "3007 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/3007/",
+  "apn": "4338025",
+  "block": "4338",
+  "lot": "025",
+  "eas_baseid": "371429",
+  "coordinates": {
+    "lat": 37.749263,
+    "lng": -122.41126
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1285,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3007 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 644200,
+    "assessed_improvement_value": 325320,
+    "last_sale_date": "2012-05-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502140321",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-14",
+      "status_date": "2025-02-18",
+      "estimated_cost": 16949,
+      "revised_cost": 16949,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502188635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-18",
+      "status_date": "2015-03-13",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "install 9 windows 6 visible from the street fiberglass frame. like for like retrofit, 2 casment, 3 pictures, 1 awining. u factor will be less than 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205251320",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-25",
+      "status_date": "2012-08-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "demo kitchen and bath. kitchen 120 sq. approx. bath 60 sq. remodel kitchen new plumb. elec, tile, cabinets. remodel bath, new plum, elect tile , fixtures. no structural work. lighting must comply with cec 150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512190578",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-12-19",
+      "status_date": "2005-12-19",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "retrofit 2 windows white vinyl in kind size.no structural changes.not visibale from street. u factor 0.67.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=3007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4338025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4338&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4338025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

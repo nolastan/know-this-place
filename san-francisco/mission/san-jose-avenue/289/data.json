@@ -1,0 +1,125 @@
+{
+  "address": "289 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/289/",
+  "apn": "6514013",
+  "block": "6514",
+  "lot": "013",
+  "eas_baseid": "400828",
+  "coordinates": {
+    "lat": 37.750697,
+    "lng": -122.421189
+  },
+  "parcel": {
+    "year_built": 1963,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "bedrooms": 8,
+    "lot_area_sqft": 3327,
+    "building_area_sqft": 4920,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0289 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1931398,
+    "assessed_improvement_value": 827742
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301170259",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-17",
+      "status_date": "2023-01-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved undera pa# 201706270470. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706270470",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-06-27",
+      "status_date": "2023-01-27",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702169579",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2017-02-16",
+      "status_date": "2017-02-16",
+      "revised_cost": 0,
+      "description": "retro fit 28 windows to the existing building in same kind. sliding / fixed / sliding door. 12 on front street - aluminum to aluminum.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012147896",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-12-14",
+      "status_date": "2001-08-23",
+      "estimated_cost": 19945,
+      "revised_cost": 19945,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309832",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-30",
+      "status_date": "1983-12-02",
+      "estimated_cost": 1439,
+      "description": "repair dry rot in front install additional vents",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=289",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6514013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6514&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6514013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

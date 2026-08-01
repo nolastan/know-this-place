@@ -1,0 +1,148 @@
+{
+  "address": "1217 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1217/",
+  "apn": "4266031",
+  "block": "4266",
+  "lot": "031",
+  "eas_baseid": "370705",
+  "coordinates": {
+    "lat": 37.752291,
+    "lng": -122.407858
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 2384,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1217 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2220099,
+    "assessed_improvement_value": 951470,
+    "last_sale_date": "2020-03-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110019631",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-10-01",
+      "status_date": "2026-01-23",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "replace (e) street windows, in-kind & 1 non-street facing window. 5 street, 1 non-street visible. replace (e) front entry door in-kind in (e) framing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110019633",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-10-01",
+      "status_date": "2026-01-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace french door with slide, awning window 3/f rear.rebuild (e) interior stair,remodel/reconfigure 2/f laundry & bathroom, 1/f powder room. windows under sep permit 202110019631.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609168048",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-16",
+      "status_date": "2016-09-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "amend the plan to remove non-historic storage shed in rear yard and install new fence less than 10' in height.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M696628",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-07",
+      "status_date": "2016-06-07",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603303503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-30",
+      "status_date": "2016-08-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroof rear gable roof with inkind comp shingles. no change to roof form or structure. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M664267",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-17",
+      "status_date": "2016-02-17",
+      "revised_cost": 1,
+      "description": "street space perimt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410300341",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-10-30",
+      "status_date": "2016-09-20",
+      "estimated_cost": 500000,
+      "revised_cost": 650000,
+      "description": "horizontal & vertical addition, renovation of 2 story single family residence. a full interior renovation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1217",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4266031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4266&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4266031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

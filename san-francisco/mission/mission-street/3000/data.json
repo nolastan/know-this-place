@@ -1,0 +1,126 @@
+{
+  "address": "3000–3002 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/3000/",
+  "apn": "6569001",
+  "block": "6569",
+  "lot": "001",
+  "eas_baseid": "402645",
+  "coordinates": {
+    "lat": 37.748903,
+    "lng": -122.418283
+  },
+  "address_range": "3000–3002",
+  "street_numbers_on_parcel": [
+    "3000",
+    "3002"
+  ],
+  "also_addressed": [
+    "3403 26TH ST",
+    "3407 26TH ST"
+  ],
+  "parcel": {
+    "lot_area_sqft": 2395,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3000 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 521362,
+    "assessed_improvement_value": 410891,
+    "last_sale_date": "2002-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202109239060",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-23",
+      "status_date": "2023-03-02",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "reconfigure floor plans @ one unit 26th st. add new bathroom. (coner bldg: 3000 mission st & 3407 26th st)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M184268",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-16",
+      "status_date": "2009-11-16",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304212698",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-04-21",
+      "status_date": "2005-01-12",
+      "estimated_cost": 140000,
+      "revised_cost": 140000,
+      "description": "remodel of interior of existing structure-structural upgrade of building includes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301155288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-15",
+      "status_date": "2003-01-22",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205296",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-06-29",
+      "status_date": "1983-07-29",
+      "estimated_cost": 3000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=3000",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6569001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6569&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6569001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

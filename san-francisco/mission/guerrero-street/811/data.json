@@ -1,0 +1,158 @@
+{
+  "address": "811 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/811/",
+  "apn": "3608056",
+  "block": "3608",
+  "lot": "056",
+  "eas_baseid": "362341",
+  "coordinates": {
+    "lat": 37.758126,
+    "lng": -122.423148
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2715,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0813 0811 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47334,
+    "assessed_improvement_value": 66736
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201007166775",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-16",
+      "status_date": "2010-07-16",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "install new 1/2\" exterior grade plywood sheathing over existing space sheathing with galvanized nails (10d) 6\" on seams and 12\" on fold area. 7/12 pitch.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007166776",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-16",
+      "status_date": "2010-07-16",
+      "estimated_cost": 16265,
+      "revised_cost": 16265,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M11669",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-22",
+      "status_date": "2000-06-22",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9711575",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-06-24",
+      "status_date": "1997-08-06",
+      "estimated_cost": 2000,
+      "description": "revision to permit #9614852",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9622048",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-13",
+      "status_date": "1997-03-11",
+      "estimated_cost": 1,
+      "description": "shearwall revision to appl #9614852",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-04",
+      "status_date": "1997-03-11",
+      "estimated_cost": 1,
+      "description": "foundation revision to permit,9614852",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614852",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-12",
+      "status_date": "1997-08-06",
+      "estimated_cost": 60000,
+      "description": "excavation of basement crawl space , const of new foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=811",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=056",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608056",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42314835282353%2037.75812590356524)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "address": "1275 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1275/",
+  "apn": "4268018",
+  "block": "4268",
+  "lot": "018",
+  "eas_baseid": "370767",
+  "coordinates": {
+    "lat": 37.751641,
+    "lng": -122.409684
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1659,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1275 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1420691,
+    "assessed_improvement_value": 608867,
+    "last_sale_date": "2020-12-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201510068888",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-06",
+      "status_date": "2016-03-16",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel extg kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M516207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-09",
+      "status_date": "2014-09-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903023124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-02",
+      "status_date": "2009-05-22",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "replace front stairs in kind-100%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109198635",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-19",
+      "status_date": "2002-03-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-19",
+      "status_date": "1997-03-25",
+      "estimated_cost": 15489,
+      "description": "partial kitchen remodeling/repairing fireplace-living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9410109",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-06-23",
+      "status_date": "1994-10-12",
+      "estimated_cost": 100,
+      "revised_cost": 5000,
+      "description": "remove kitchen cabinets and appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613699",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-30",
+      "status_date": "1986-12-15",
+      "estimated_cost": 1593,
+      "description": "aluminum siding (alside).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1275",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=018",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268018",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

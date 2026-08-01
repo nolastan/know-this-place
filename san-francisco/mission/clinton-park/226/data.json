@@ -1,0 +1,153 @@
+{
+  "address": "226 Clinton Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/clinton-park/226/",
+  "apn": "3534048",
+  "block": "3534",
+  "lot": "048",
+  "eas_baseid": "358465",
+  "coordinates": {
+    "lat": 37.769233,
+    "lng": -122.425212
+  },
+  "parcel": {
+    "year_built": 1885,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1784,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0226 CLINTON             PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 852215,
+    "assessed_improvement_value": 568140,
+    "last_sale_date": "2004-03-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Guerrero Street Fire Line Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202605080942",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-08",
+      "status_date": "2026-05-22",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "like for like replacement of e) deck, wood board and stais on the 1st/f. no work on 2nd/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108035617",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-03",
+      "status_date": "2021-08-10",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402219019",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2014-02-21",
+      "status_date": "2014-02-21",
+      "estimated_cost": 8250,
+      "revised_cost": 8250,
+      "description": "remove damaged concrete slab/driveway between garage & sidewalk, partial removal of concrete slab btwn garage door & (e) floor drain (approx 200 sq. ft.). install driveway concrete channel drain in front of garage door, connect to (e) floor drain. install new concrete slab, pitched toward drains.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410217405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-21",
+      "status_date": "2004-10-21",
+      "estimated_cost": 44000,
+      "revised_cost": 44000,
+      "description": "kitchen and bathroom remodel - replacement of two windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307310838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-31",
+      "status_date": "2004-02-05",
+      "estimated_cost": 7100,
+      "revised_cost": 7100,
+      "description": "repair floor in upstairs bath, replace tiles, sheetrock bdrm ceiling, remove cracked plaster, gravit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307119226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-11",
+      "status_date": "2004-02-05",
+      "estimated_cost": 5700,
+      "revised_cost": 5700,
+      "description": "elect: new service, wiring, upgrade. replace sheetrock for above (1 kitchen wall) 2 windows. retrofi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLINTON&street_type=PARK&address_number=226",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42521199923803%2037.76923346229961)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

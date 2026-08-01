@@ -1,0 +1,152 @@
+{
+  "address": "635–637 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/635/",
+  "apn": "3588061",
+  "block": "3588",
+  "lot": "061",
+  "eas_baseid": "361143",
+  "coordinates": {
+    "lat": 37.760993,
+    "lng": -122.423413
+  },
+  "address_range": "635–637",
+  "street_numbers_on_parcel": [
+    "635",
+    "637"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 2,
+    "bedrooms": 3250,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 3250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0637 0635 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2313962,
+    "assessed_improvement_value": 991696,
+    "last_sale_date": "2021-08-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505136388",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-13",
+      "status_date": "2025-12-16",
+      "estimated_cost": 1000,
+      "revised_cost": 1,
+      "description": "to comply w/ physical inspection report #cc-8575",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505136397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-13",
+      "status_date": "2025-12-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with physical inspection report cc8875 item#: 2 - ground floor resistive fire separation. removal of bathroom fitting for reversion to original storage use. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505136400",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-13",
+      "status_date": "2025-10-23",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "to comply w/ physical inspection report #cc-8575 item 3, rear wooden stairs and landing repair lessa than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204152316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-15",
+      "status_date": "2022-09-06",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1136287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-10",
+      "status_date": "2019-09-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M35454",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-23",
+      "status_date": "2005-11-23",
+      "revised_cost": 0,
+      "description": "sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-09-03",
+      "status_date": "2000-01-26",
+      "estimated_cost": 5270,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=635",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=061",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588061",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

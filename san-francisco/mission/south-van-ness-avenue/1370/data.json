@@ -1,0 +1,105 @@
+{
+  "address": "1370 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1370/",
+  "apn": "6518010",
+  "block": "6518",
+  "lot": "010",
+  "eas_baseid": "400937",
+  "coordinates": {
+    "lat": 37.751231,
+    "lng": -122.416494
+  },
+  "parcel": {
+    "year_built": 1971,
+    "units": 8,
+    "stories": 2,
+    "rooms": 28,
+    "bathrooms": 8,
+    "bedrooms": 12,
+    "lot_area_sqft": 3737,
+    "building_area_sqft": 5328,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1370 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 807136,
+    "assessed_improvement_value": 570895,
+    "last_sale_date": "2011-02-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1971",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905039738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-03",
+      "status_date": "2019-07-10",
+      "estimated_cost": 12000,
+      "revised_cost": 36000,
+      "description": "correction to comply w/ complaint 201939571 & 201942671, including remodel/repair 10'x10' kitchen & 5'x8' bathroom for one unit. drywall(5/8\" type) for the garage area, light switch & outlet repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510079133",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-07",
+      "status_date": "2016-06-29",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace cracked concrete topping on 2/f patio about 500 sq. ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303458",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-03",
+      "status_date": "1994-01-05",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=1370",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6518010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6518&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6518010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

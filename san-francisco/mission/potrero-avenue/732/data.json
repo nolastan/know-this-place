@@ -1,0 +1,114 @@
+{
+  "address": "732 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/732/",
+  "apn": "4078002",
+  "block": "4078",
+  "lot": "002",
+  "eas_baseid": "368155",
+  "coordinates": {
+    "lat": 37.760162,
+    "lng": -122.407362
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1352,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0732 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 88864,
+    "assessed_improvement_value": 51124
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201012317691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-31",
+      "status_date": "2011-01-10",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908195173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-19",
+      "status_date": "2009-08-25",
+      "estimated_cost": 6420,
+      "revised_cost": 6420,
+      "description": "replace wood windows w/ upgrade replace winyl double hung sash & fame assembly, w/ existing opening, 15 windows in total, all windows are not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908134792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-13",
+      "status_date": "2009-08-25",
+      "estimated_cost": 5958,
+      "revised_cost": 5958,
+      "description": "replace wooden, windows with upgraded windows (wood) within the existing openings, 3 in front bedrm, 3 in living rm, assembly shall be in kind (in kind replacement)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-12",
+      "status_date": "1989-01-06",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=732",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4078002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4078&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4078002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

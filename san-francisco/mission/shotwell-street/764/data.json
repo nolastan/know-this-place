@@ -1,0 +1,139 @@
+{
+  "address": "764 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/764/",
+  "apn": "3614038A",
+  "block": "3614",
+  "lot": "038A",
+  "eas_baseid": "362723",
+  "coordinates": {
+    "lat": 37.756212,
+    "lng": -122.415845
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2327.5,
+    "building_area_sqft": 2612,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0764 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 21711,
+    "assessed_improvement_value": 62863
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Shotwell Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201012076246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-07",
+      "status_date": "2011-07-06",
+      "estimated_cost": 3790,
+      "revised_cost": 3790,
+      "description": "replace front windows, 10 windows, replace in kind, u-factor =0.40 wood aluminum clad window or 100% wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29666",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-08",
+      "status_date": "2004-10-08",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711006",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-08-04",
+      "status_date": "1989-11-17",
+      "estimated_cost": 35000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709034",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-06-29",
+      "status_date": "1988-01-07",
+      "estimated_cost": 3200,
+      "description": "repair exterior stair and put new treds & risers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404736",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-05-03",
+      "status_date": "1984-08-15",
+      "estimated_cost": 346,
+      "revised_cost": 0,
+      "description": "installation of 01 aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=764",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3614038A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3614&lot=038A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3614038A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41584513207147%2037.756212155306095)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

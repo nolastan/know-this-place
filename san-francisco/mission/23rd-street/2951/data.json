@@ -1,0 +1,114 @@
+{
+  "address": "2951 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2951/",
+  "apn": "4206001",
+  "block": "4206",
+  "lot": "001",
+  "eas_baseid": "370045",
+  "coordinates": {
+    "lat": 37.754184,
+    "lng": -122.411222
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1962.5,
+    "building_area_sqft": 2250,
+    "lot_depth_ft": 78.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2953 2951 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119464,
+    "assessed_improvement_value": 179210
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203150046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-15",
+      "status_date": "2022-03-30",
+      "estimated_cost": 5000,
+      "revised_cost": 26000,
+      "description": "remodel one kitchen and one e bathroom in kind 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107084011",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-08",
+      "status_date": "2022-03-21",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "to comply with nov #202177093, 9x penalty. replace (5) aluminum windows, size 43\" x 56\" (2) total, 23\" x 56\" (3) total, with (5) fiberglass windows made by aurora windows & doors. same size windows, no enlargement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418422",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-08",
+      "status_date": "1995-06-15",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602325",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-28",
+      "status_date": "1986-11-25",
+      "estimated_cost": 4500,
+      "description": "remove some concreate floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2951",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

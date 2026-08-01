@@ -1,0 +1,112 @@
+{
+  "address": "2330–2332 Mariposa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mariposa-street/2330/",
+  "apn": "3974016",
+  "block": "3974",
+  "lot": "016",
+  "eas_baseid": "366850",
+  "coordinates": {
+    "lat": 37.763339,
+    "lng": -122.407043
+  },
+  "address_range": "2330–2332",
+  "street_numbers_on_parcel": [
+    "2330",
+    "2332"
+  ],
+  "also_addressed": [
+    "491 POTRERO AVE"
+  ],
+  "parcel": {
+    "year_built": 1940,
+    "units": 3,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 3010,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2332 2330 MARIPOSA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 354528,
+    "assessed_improvement_value": 354528,
+    "last_sale_date": "1998-09-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606012243",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-01",
+      "status_date": "2026-06-03",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "add (2) sheetrock with mass-loaded vinyl for soundproofing. replace (3) comp sink. add ac units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M152444",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-20",
+      "status_date": "2009-02-20",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203252261",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-25",
+      "status_date": "2003-04-30",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARIPOSA&street_type=ST&address_number=2330",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3974016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3974&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3974016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

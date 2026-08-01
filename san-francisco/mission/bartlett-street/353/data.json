@@ -1,0 +1,131 @@
+{
+  "address": "353–355 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/353/",
+  "apn": "6516016A",
+  "block": "6516",
+  "lot": "016A",
+  "eas_baseid": "400879",
+  "coordinates": {
+    "lat": 37.751354,
+    "lng": -122.419188
+  },
+  "address_range": "353–355",
+  "street_numbers_on_parcel": [
+    "353",
+    "355"
+  ],
+  "parcel": {
+    "year_built": 1931,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 3250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0355 0353 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 509358,
+    "last_sale_date": "1998-06-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603046949",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-04",
+      "status_date": "2026-03-05",
+      "estimated_cost": 21800,
+      "revised_cost": 21800,
+      "description": "common area: upgrade 5 sub panels and breakers and replace knob and tube with romex. remove and replace sheetrock and insulation to access new wiring. 355 bartlett: replace 1 p trap and 1 kitchen sink, 1 toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410027877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-02",
+      "status_date": "2014-10-23",
+      "estimated_cost": 8480,
+      "revised_cost": 8480,
+      "description": "reroofing. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301034557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-03",
+      "status_date": "2003-01-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for final inspection app 200105088618-work & inspections to complete need to extend permit in order",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105088618",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-08",
+      "status_date": "2001-11-08",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "renovate kitchen, remove nonload bearing wall, replace cabinets & counters",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024811",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-04",
+      "status_date": "1991-01-21",
+      "estimated_cost": 9242,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=353",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6516016A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6516&lot=016A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6516016A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

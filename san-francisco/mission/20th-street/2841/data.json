@@ -1,0 +1,147 @@
+{
+  "address": "2841–2847 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2841/",
+  "apn": "4087040B",
+  "block": "4087",
+  "lot": "040B",
+  "eas_baseid": "368381",
+  "coordinates": {
+    "lat": 37.759111,
+    "lng": -122.409462
+  },
+  "address_range": "2841–2847",
+  "street_numbers_on_parcel": [
+    "2841",
+    "2843",
+    "2845",
+    "2847"
+  ],
+  "also_addressed": [
+    "2201 BRYANT ST"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 5,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 5,
+    "lot_area_sqft": 1977,
+    "building_area_sqft": 4971,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2847 2841 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48719,
+    "assessed_improvement_value": 34617
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312134095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-13",
+      "status_date": "2014-05-15",
+      "estimated_cost": 2000,
+      "revised_cost": 6000,
+      "description": "revision to app#201307010891. replace 8 windows in kind at stair area at rear and modify structural detail.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307010891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-01",
+      "status_date": "2014-05-15",
+      "estimated_cost": 30000,
+      "revised_cost": 35000,
+      "description": "rebuild existing stair and decks in kind. complete dryrot damage. add storage at ground floor, not to exceed ht of adjacent neighbors lightwell roof and shall not exceed 10\" above existing (e) grade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901301190",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-30",
+      "status_date": "2009-02-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app 200802124616 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808209632",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-20",
+      "status_date": "2008-08-20",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802124616",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-12",
+      "status_date": "2008-02-12",
+      "estimated_cost": 500,
+      "revised_cost": 1500,
+      "description": "repair dry-rotted wood to rear stairway. rails, treads, post, less than 50% replacement. to comply with his nov#200838899",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603277602",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-03-27",
+      "status_date": "2007-03-16",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace accessory woodstair way/balcony in kind. per sf code amendment.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2841",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087040B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=040B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087040B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "address": "2386–2388 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2386/",
+  "apn": "3596119",
+  "block": "3596",
+  "lot": "119",
+  "eas_baseid": "361545",
+  "coordinates": {
+    "lat": 37.75888,
+    "lng": -122.419379
+  },
+  "address_range": "2386–2388",
+  "street_numbers_on_parcel": [
+    "2386",
+    "2388"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 2700,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2388 2386 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152318,
+    "assessed_improvement_value": 177718
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Mission Miracle Mile 19th to 20th Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1927; 1925–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M23942",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-06-10",
+      "status_date": "2003-06-10",
+      "revised_cost": 0,
+      "description": "side walk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-11",
+      "status_date": "1989-08-21",
+      "estimated_cost": 3800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806960",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-05-25",
+      "status_date": "1989-01-09",
+      "estimated_cost": 2000,
+      "description": "add central heating, run gas, hook-up electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805907",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-09",
+      "status_date": "1988-12-16",
+      "estimated_cost": 15000,
+      "description": "minor partition changes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2386",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596119&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=119",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596119",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41937920371733%2037.75888000448665)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

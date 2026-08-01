@@ -1,0 +1,93 @@
+{
+  "address": "8 Dolores Terrace, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-terrace/8/",
+  "apn": "3578071C",
+  "block": "3578",
+  "lot": "071C",
+  "eas_baseid": "360485",
+  "coordinates": {
+    "lat": 37.762796,
+    "lng": -122.424909
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1024.34,
+    "building_area_sqft": 1900,
+    "lot_depth_ft": 40.17,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0010 0008 DOLORES             TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244266,
+    "assessed_improvement_value": 203554,
+    "last_sale_date": "1997-01-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M34771",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-11",
+      "status_date": "2005-10-11",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818314",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-14",
+      "status_date": "1999-01-14",
+      "estimated_cost": 3000,
+      "description": "replace damaged wood post stringers risers steps railings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=TER&address_number=8",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578071C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=071C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578071C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

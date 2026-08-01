@@ -1,0 +1,150 @@
+{
+  "address": "3770 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/3770/",
+  "apn": "6567018A",
+  "block": "6567",
+  "lot": "018A",
+  "eas_baseid": "467074",
+  "coordinates": {
+    "lat": 37.748065,
+    "lng": -122.423979
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1729,
+    "building_area_sqft": 1281,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3770 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 946444,
+    "assessed_improvement_value": 518384,
+    "last_sale_date": "2014-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504094059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-09",
+      "status_date": "2025-12-09",
+      "estimated_cost": 124284,
+      "revised_cost": 124284,
+      "description": "to comply with nov 202301101- rebuild collapsed retaining wall for 3770 cesar chavez",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606240892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-24",
+      "status_date": "2016-12-06",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "interior renovation to 2nd level includes remodel of (e) kitchen and bathroom. cabinetry at living room and new gas fireplace to replace (e) wood burining fireplace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507151521",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-15",
+      "status_date": "2015-07-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "sheetrock ceiling and walls over existing accoustical tiles and paneling in existing storage room, gyp board to be 5/8\" type \"x\" at property line walls & ceiling. call district inspector prior to start of work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412194205",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-19",
+      "status_date": "2015-07-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "bathroom enlargement at g/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101198633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-19",
+      "status_date": "2011-02-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504150166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-15",
+      "status_date": "2005-05-02",
+      "estimated_cost": 1326,
+      "revised_cost": 1326,
+      "description": "install 3 vinyl windows in kind into (e)frame.no change in size/location.windows do not face street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401143985",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-14",
+      "status_date": "2004-02-25",
+      "estimated_cost": 2604,
+      "revised_cost": 2604,
+      "description": "install 4 vinyl windows in kind into (e)frames,no change in size/location.no structural changes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=3770",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6567018A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6567&lot=018A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6567018A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

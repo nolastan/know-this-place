@@ -1,0 +1,112 @@
+{
+  "address": "74–84 Spencer Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/spencer-street/74/",
+  "apn": "3556017",
+  "block": "3556",
+  "lot": "017",
+  "eas_baseid": "359410",
+  "coordinates": {
+    "lat": 37.765131,
+    "lng": -122.424774
+  },
+  "address_range": "74–84",
+  "street_numbers_on_parcel": [
+    "74",
+    "76",
+    "78",
+    "80",
+    "82",
+    "84"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 6,
+    "stories": 2,
+    "rooms": 28,
+    "bathrooms": 6,
+    "lot_area_sqft": 2164,
+    "building_area_sqft": 5120,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0084 0074 SPENCER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 84355,
+    "assessed_improvement_value": 333086
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909262780",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-26",
+      "status_date": "2019-09-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701237695",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-01-23",
+      "status_date": "2017-01-23",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "comply with nov 201755381. replace (1) window for bedroom, replace (1) window for bathroom, relace (3) windows for livingroom and dining room, clean and paint (2) bedrooms and bathroom. replace carpet for (2) bedrooms and hallway. replace light for bathroom. replace smoke detector on hallway,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-08",
+      "status_date": "1990-02-22",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SPENCER&street_type=ST&address_number=74",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3556017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "address": "237–239 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/237/",
+  "apn": "3575059",
+  "block": "3575",
+  "lot": "059",
+  "eas_baseid": "360274",
+  "coordinates": {
+    "lat": 37.762905,
+    "lng": -122.41805
+  },
+  "address_range": "237–239",
+  "street_numbers_on_parcel": [
+    "237",
+    "239"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 2390,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0239 0237 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61037,
+    "assessed_improvement_value": 6630
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9918760",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-08",
+      "status_date": "2000-07-31",
+      "estimated_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9201726",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-02-03",
+      "status_date": "1993-04-28",
+      "estimated_cost": 15000,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816757",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-11-03",
+      "status_date": "1989-04-07",
+      "estimated_cost": 250,
+      "revised_cost": 750,
+      "description": "repair front and rear stairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=237",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3575059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3575&lot=059",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3575059",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

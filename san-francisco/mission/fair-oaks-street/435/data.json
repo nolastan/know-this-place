@@ -1,0 +1,155 @@
+{
+  "address": "435 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/435/",
+  "apn": "6533032",
+  "block": "6533",
+  "lot": "032",
+  "eas_baseid": "401481",
+  "coordinates": {
+    "lat": 37.749713,
+    "lng": -122.423452
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2806,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0435 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27602,
+    "assessed_improvement_value": 80923
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308154412",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-15",
+      "status_date": "2024-06-11",
+      "estimated_cost": 76775,
+      "revised_cost": 76775,
+      "description": "1st fl: lower slab of storage room & convert to media room. add window, relocate furnace. add counter top & cooktop to (e) kitchenette. 2nd & 3rd fls-no work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410038082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-03",
+      "status_date": "2015-06-12",
+      "estimated_cost": 450,
+      "revised_cost": 450,
+      "description": "remove and replace extg guard rail at rear deck on 2nd floor. 42\" high openings not greater than 4\".",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407292404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-29",
+      "status_date": "2014-08-20",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing. strip all existing roofs and install new roof consisting of one layer 28lb fiberglass base sheet, one layer type iv fiberglass ply sheet and one layer granulated cap sheet. flat roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-07",
+      "status_date": "1996-04-29",
+      "estimated_cost": 3500,
+      "description": "rebuild firebox in (e) fireplace, reline flue with stain stl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519050",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-09",
+      "status_date": "1996-04-29",
+      "estimated_cost": 500,
+      "description": "window replacement (repair rotted sash windows w/identinc)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517376",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-17",
+      "status_date": "1997-01-24",
+      "estimated_cost": 26900,
+      "description": "electrical upgrade for kitch/roof repair/new cabinetry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8911899",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-07-07",
+      "status_date": "1989-12-04",
+      "estimated_cost": 800,
+      "description": "renew application number 8713823 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713823",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-25",
+      "status_date": "1988-12-02",
+      "estimated_cost": 20000,
+      "description": "horizontal extension",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=435",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6533032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6533&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6533032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

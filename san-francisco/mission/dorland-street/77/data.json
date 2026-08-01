@@ -1,0 +1,114 @@
+{
+  "address": "77 Dorland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dorland-street/77/",
+  "apn": "3578034",
+  "block": "3578",
+  "lot": "034",
+  "eas_baseid": "360456",
+  "coordinates": {
+    "lat": 37.762021,
+    "lng": -122.425447
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2760,
+    "building_area_sqft": 2614,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0079 0077 DORLAND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152318,
+    "assessed_improvement_value": 176698
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9904109",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-03",
+      "status_date": "1999-09-03",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208191",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-05-20",
+      "status_date": "1993-04-08",
+      "estimated_cost": 800,
+      "revised_cost": 1800,
+      "description": "remove decaying back stair each bldg new stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112993",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-07-24",
+      "status_date": "1992-02-21",
+      "estimated_cost": 800,
+      "revised_cost": 6000,
+      "description": "remove existing back stairs & replace with new stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901981",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-02-03",
+      "status_date": "1989-09-11",
+      "estimated_cost": 7300,
+      "description": "repair rear stair and replace of damage material.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORLAND&street_type=ST&address_number=77",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578034",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

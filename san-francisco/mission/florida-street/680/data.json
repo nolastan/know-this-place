@@ -1,0 +1,108 @@
+{
+  "address": "680 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/680/",
+  "apn": "4021004",
+  "block": "4021",
+  "lot": "004",
+  "eas_baseid": "474792",
+  "coordinates": {
+    "lat": 37.760836,
+    "lng": -122.411165
+  },
+  "parcel": {
+    "year_built": 2009,
+    "units": 93,
+    "stories": 5,
+    "bedrooms": 228,
+    "lot_area_sqft": 32875,
+    "building_area_sqft": 116530,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "zoning": "UMU",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2949 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8177291,
+    "assessed_improvement_value": 32312797
+  },
+  "permits": [
+    {
+      "number": "202305167859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-16",
+      "status_date": "2025-01-17",
+      "estimated_cost": 188876,
+      "revised_cost": 188876,
+      "description": "low frequency sounder modification to existing fire alarm sffd 308 sleeping rooms requirement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904057214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-05",
+      "status_date": "2019-04-18",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "remove finishes at up to 11 locations to investigate (e) waterproofing conditions, approx 2' x 2 ' repair in-kind. exploratory demo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M277089",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-30",
+      "status_date": "2011-08-30",
+      "revised_cost": 1,
+      "description": "street space & sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908144853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-14",
+      "status_date": "2009-09-28",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "one unit -insulation, drywall & paint secondary to water damage. repair to restroom & entry, hallway, closet. using 5/8\" type x gypsum board.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M114984",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-02",
+      "status_date": "2008-04-02",
+      "revised_cost": 1,
+      "description": "verify and add address for residential",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=680",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4021004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4021&lot=004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

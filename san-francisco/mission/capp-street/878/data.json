@@ -1,0 +1,147 @@
+{
+  "address": "878 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/878/",
+  "apn": "3642046",
+  "block": "3642",
+  "lot": "046",
+  "eas_baseid": "364120",
+  "coordinates": {
+    "lat": 37.752618,
+    "lng": -122.417579
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 1100,
+    "building_area_sqft": 1861,
+    "lot_depth_ft": 55,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0878 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1075243,
+    "assessed_improvement_value": 460813,
+    "last_sale_date": "2017-07-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207138408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-13",
+      "status_date": "2022-12-16",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "to document (e) storage units in garage, enclose (e) stairs. to comply w/bid nov#202288211",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504018969",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-01",
+      "status_date": "2005-05-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew for final only pa no. 200311140261",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409033389",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-03",
+      "status_date": "2005-05-25",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "renew app #200311140261",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311140261",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-11-14",
+      "status_date": "2005-04-06",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove walls and kchn at 1st fl/revert flr plan as shown on aproved per app #8717830",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717870",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-12-21",
+      "status_date": "1988-05-03",
+      "estimated_cost": 500,
+      "description": "minor termite repaairs in the basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717830",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-12-18",
+      "status_date": "1988-05-11",
+      "estimated_cost": 6500,
+      "description": "legalize existing room in basement & add a bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209230",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-11-05",
+      "status_date": "1983-10-19",
+      "estimated_cost": 4000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=878",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642046",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

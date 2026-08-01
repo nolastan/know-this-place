@@ -1,0 +1,151 @@
+{
+  "address": "119–121 Julian Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/julian-avenue/119/",
+  "apn": "3554048",
+  "block": "3554",
+  "lot": "048",
+  "eas_baseid": "359329",
+  "coordinates": {
+    "lat": 37.766205,
+    "lng": -122.420769
+  },
+  "address_range": "119–121",
+  "street_numbers_on_parcel": [
+    "119",
+    "121"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2100,
+    "building_area_sqft": 2728,
+    "lot_depth_ft": 84,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0121 0119 JULIAN              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 205748,
+    "assessed_improvement_value": 100765,
+    "last_sale_date": "1994-09-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201409196886",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-19",
+      "status_date": "2014-09-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 200110291910. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401156327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-15",
+      "status_date": "2014-04-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "change windows, fiberglass at front and vinyl at rear. u-factor .32;",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110291910",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-29",
+      "status_date": "2002-02-28",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair (e) dry rotten stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-13",
+      "status_date": "1995-09-11",
+      "estimated_cost": 13000,
+      "description": "remodel existing kitchen and bathroom on mid story",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-16",
+      "status_date": "1992-12-07",
+      "estimated_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301900",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-03-09",
+      "status_date": "1983-08-17",
+      "estimated_cost": 1500,
+      "description": "fix broken windows, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205910",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-07-19",
+      "status_date": "1983-07-18",
+      "estimated_cost": 2916,
+      "description": "bldg use: duplex",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JULIAN&street_type=AVE&address_number=119",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3554048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3554&lot=048",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3554048",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

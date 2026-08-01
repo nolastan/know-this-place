@@ -1,0 +1,164 @@
+{
+  "address": "1168 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1168/",
+  "apn": "6521015",
+  "block": "6521",
+  "lot": "015",
+  "eas_baseid": "401062",
+  "coordinates": {
+    "lat": 37.751483,
+    "lng": -122.413186
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 1391,
+    "basement_area_sqft": 266,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1168 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 905958,
+    "assessed_improvement_value": 388261,
+    "last_sale_date": "2012-07-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200505051677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-05",
+      "status_date": "2006-05-04",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "interior ground floor remodel to add a bedroom, a bathroom, & a storage closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406247281",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-24",
+      "status_date": "2004-12-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to #200402136416. replace (e) rear foundation with (n) conc. foundation (e) soil in the bac",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402136416",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-02-13",
+      "status_date": "2004-12-03",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "remove covered porch & replace w/ new deck at rear.remodel kitchen,bedroom&internal stair. from",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305084137",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-08",
+      "status_date": "2003-06-05",
+      "estimated_cost": 1860,
+      "revised_cost": 1860,
+      "description": "replace two extng windows w/ the same size windows at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205015381",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-01",
+      "status_date": "2003-06-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#2000/03/24/5288 & 9920062 for final insp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003245288",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-24",
+      "status_date": "2001-11-09",
+      "revised_cost": 3000,
+      "description": "complete work under application 9920062",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920062",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-23",
+      "status_date": "2001-11-15",
+      "estimated_cost": 15000,
+      "description": "interior remodel-remove partition wall between living room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1168",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41318647379265%2037.75148282656692)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

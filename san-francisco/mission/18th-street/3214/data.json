@@ -1,0 +1,120 @@
+{
+  "address": "3214–3216 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3214/",
+  "apn": "3574018B",
+  "block": "3574",
+  "lot": "018B",
+  "eas_baseid": "360206",
+  "coordinates": {
+    "lat": 37.762207,
+    "lng": -122.415442
+  },
+  "address_range": "3214–3216",
+  "street_numbers_on_parcel": [
+    "3214",
+    "3216"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1171,
+    "building_area_sqft": 1850,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3216 3214 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95668,
+    "assessed_improvement_value": 214336,
+    "last_sale_date": "1987-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201206263435",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-26",
+      "status_date": "2012-07-25",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to comply with his nov #201236762 dated 6/8/12. need to repair external stair about 45% and remodel bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303250622",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-25",
+      "status_date": "2003-12-26",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "replace 2 windows in front & one window in the kitchen & one window in the bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321927",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-12-14",
+      "status_date": "1993-12-28",
+      "estimated_cost": 500,
+      "description": "renewal of permit 9211941",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211941",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-07-21",
+      "status_date": "1993-01-16",
+      "estimated_cost": 4000,
+      "revised_cost": 1000,
+      "description": "remove (e) concrete wall lower w2all to less than 4 ft high",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3214",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3574018B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3574&lot=018B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3574018B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "address": "14–16 Lucky Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lucky-street/14/",
+  "apn": "6521038A",
+  "block": "6521",
+  "lot": "038A",
+  "eas_baseid": "401089",
+  "coordinates": {
+    "lat": 37.752203,
+    "lng": -122.413619
+  },
+  "address_range": "14–16",
+  "street_numbers_on_parcel": [
+    "14",
+    "16"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1385,
+    "building_area_sqft": 2122,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0016 0014 LUCKY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1061208,
+    "assessed_improvement_value": 707472
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202511179777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-17",
+      "status_date": "2025-11-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for documentation purpose the legal use of the building is two residential dwelling units. the determination is based on the review of the city records and a site visit. no wokr to be performed under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002184676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-18",
+      "status_date": "2020-05-27",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "replace 11 windows. marvin aluminum wood-clad paired double-hung. front slide and rear of building. two bathroom windows will be double-hung white windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911056524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-05",
+      "status_date": "2020-01-09",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace in kind 2 stairs at yard acting as 2nd means of egress for each of 2 units. repair in kind damaged laundry exterior finishes, replace fire damaged windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911016209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-01",
+      "status_date": "2020-01-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reduce exterior framing and siding due to fire damage. includes two bathroom windows on rear of property. all work in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-10",
+      "status_date": "1996-07-26",
+      "estimated_cost": 2000,
+      "description": "comply with nov #h9602366",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610069",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-06-07",
+      "status_date": "1997-07-21",
+      "estimated_cost": 350,
+      "description": "repair ceiling with sheet rock 10'x 10'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519048",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-09",
+      "status_date": "1995-12-08",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LUCKY&street_type=ST&address_number=14",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6521038A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6521&lot=038A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6521038A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41361908018484%2037.75220316151542)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

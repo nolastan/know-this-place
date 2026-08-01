@@ -1,0 +1,115 @@
+{
+  "address": "1113 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1113/",
+  "apn": "4211027",
+  "block": "4211",
+  "lot": "027",
+  "eas_baseid": "370264",
+  "coordinates": {
+    "lat": 37.754004,
+    "lng": -122.407118
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 895,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1113 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1266987,
+    "assessed_improvement_value": 599704,
+    "last_sale_date": "2020-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405091832",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-05-09",
+      "status_date": "2024-05-09",
+      "estimated_cost": 7605,
+      "revised_cost": 7605,
+      "description": "revision to 202302212280: install new gas fireplace in media rm w/ new chimney. relocate condensing unit of heat pump to front of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302212280",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-02-21",
+      "status_date": "2025-08-11",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "construct grd flr in-fill addition @ rear beneath (e) deck w/ steps & privacy screen firewall extend into reqd rear yard. convert (e) storage & laundry rm into primaty bedrm w/ full bath & laundry rm. construct interior stais to 2nd flr. remove rear bathrm & create bedrm. cp variance#2022000591var",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304265561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-26",
+      "status_date": "2013-08-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove existing kitchen cabinets, install new kitchen cabinets. branch circuits for countertop outlets, dishwasher, and garbage disposal. install gas shut off valve for stove, install sink 9 x 11 kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M337947",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-26",
+      "status_date": "2012-07-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1113",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4211027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4211&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4211027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

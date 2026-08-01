@@ -1,0 +1,124 @@
+{
+  "address": "960 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/960/",
+  "apn": "4146011",
+  "block": "4146",
+  "lot": "011",
+  "eas_baseid": "369382",
+  "coordinates": {
+    "lat": 37.756543,
+    "lng": -122.410707
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2400,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0962 0960 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 30920,
+    "assessed_improvement_value": 24222
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202412106535",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2024-12-10",
+      "status_date": "2025-04-14",
+      "estimated_cost": 9500,
+      "revised_cost": 0,
+      "description": "do repair work as per nov# 202306512 - legalize unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M461327",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "2014-02-04",
+      "status_date": "2014-02-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108092066",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2011-08-09",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to stair landing from 10' to 12' under permit #201106087658 per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106087658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-08",
+      "status_date": "2011-10-07",
+      "estimated_cost": 10000,
+      "revised_cost": 20000,
+      "description": "replace fire damage stair in kind at same location (at rear) comply with nov# 201127181. remove illegal unit at ground floor legalize, 1/2 bath. (convert back to storage).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002242673",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-24",
+      "status_date": "2000-06-24",
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=960",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4146011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4146&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4146011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

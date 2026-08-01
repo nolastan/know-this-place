@@ -1,0 +1,148 @@
+{
+  "address": "2665–2667 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2665/",
+  "apn": "4148033",
+  "block": "4148",
+  "lot": "033",
+  "eas_baseid": "369475",
+  "coordinates": {
+    "lat": 37.754729,
+    "lng": -122.411779
+  },
+  "address_range": "2665–2667",
+  "street_numbers_on_parcel": [
+    "2665",
+    "2667"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2667 2665 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 763819,
+    "assessed_improvement_value": 416367,
+    "last_sale_date": "1994-04-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M848177",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-26",
+      "status_date": "2017-10-26",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M640407",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-24",
+      "status_date": "2015-11-24",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806762",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-05-23",
+      "status_date": "1990-08-24",
+      "estimated_cost": 500,
+      "description": "construct 1 hour fire rated,4 foot high deck wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802364",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-02-25",
+      "status_date": "1994-10-24",
+      "estimated_cost": 1,
+      "revised_cost": 2500,
+      "description": "re #8707911, no change in scope of work of original appl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707911",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-08",
+      "status_date": "1990-02-27",
+      "estimated_cost": 2500,
+      "description": "install interior stairs to each unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608801",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-07-22",
+      "status_date": "1987-01-14",
+      "estimated_cost": 250,
+      "description": "front entrance stairs repair wood rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509960",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-09-11",
+      "status_date": "1990-06-14",
+      "estimated_cost": 4000,
+      "description": "replace wood rot and termite damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2665",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=033",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148033",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

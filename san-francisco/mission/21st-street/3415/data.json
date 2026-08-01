@@ -1,0 +1,121 @@
+{
+  "address": "3415 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3415/",
+  "apn": "3618066",
+  "block": "3618",
+  "lot": "066",
+  "eas_baseid": "362978",
+  "coordinates": {
+    "lat": 37.756569,
+    "lng": -122.423818
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1904,
+    "building_area_sqft": 2230,
+    "lot_depth_ft": 68,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3415 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 783853,
+    "assessed_improvement_value": 318235,
+    "last_sale_date": "1998-07-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202408209072",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-08-20",
+      "status_date": "2024-08-20",
+      "estimated_cost": 19800,
+      "revised_cost": 19800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310240110",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-24",
+      "status_date": "2013-10-24",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "install new flexible ductwork in attic and crawl space. replace existing furnace with new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205210922",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-05-21",
+      "status_date": "2015-08-25",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remove (e) fense & deck at rear of lot. create (n) curb cut & 1 off street parking space in rear setback. expand (e) laundry porch w/ roof deck by 46 sq ft. remodel interior.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3415",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3618066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3618&lot=066",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3618066",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42381790611516%2037.756568719721706)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

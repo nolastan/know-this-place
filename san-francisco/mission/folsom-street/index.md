@@ -1,0 +1,188 @@
+# Folsom Street
+
+Every residential parcel on Folsom Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [1545](1545/) — A 1906 two-flat in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2010.
+- [1582–1590](1582/) — A 1916 14-unit apartment building in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 1989.
+- [1608–1612](1608/) — A 1914 three-flat in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 1999.
+- [1615–1617](1615/) — A 1907 two-flat in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1996.
+- [1621–1623](1621/) — A 1906 two-flat in the Western SOMA Light Industrial and Residential Historic District, with foundation work permitted in 2009.
+- [1625–1629](1625/) — A 1907 three-flat in the Western SOMA Light Industrial and Residential Historic District, with one permit record from 2012.
+- [1626–1628](1626/) — A 1906 3-unit building with a ground-floor store in the Western SOMA Light Industrial and Residential Historic District, with a kitchen remodel permitted in 2017.
+- [1631–1637](1631/) — A 1912 4-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1988.
+- [1645](1645/) — A 1909 12-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2006.
+- [1689–1693](1689/) — A 1906 three-flat in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2009.
+- [1719–1721](1719/) — A 1916 4-unit apartment building, with reroofing permitted in 1992.
+- [1769–1777](1769/) — A 1911 4-unit apartment building, with an addition permitted in 2002.
+- [1900–1902](1900/) — A 1906 4-unit building with a ground-floor store in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a kitchen remodel permitted in 2015.
+- [1906–1908](1906/) — A 1907 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2026.
+- [1910–1914](1910/) — A 1907 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2017.
+- [1916–1918](1916/) — A 1907 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2017.
+- [1922](1922/) — A 1900 three-flat in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District.
+- [1926–1928](1926/) — A 1900 two-flat in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with window replacement permitted in 2015.
+- [1930–1934](1930/) — A 1902 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2018.
+- [1936](1936/) — A 1900 single-family house in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a dormer permitted in 2013.
+- [2023](2023/) — A 1902 11-unit apartment building, with a seismic retrofit permitted in 2021.
+- [2050–2070](2050/) — A 2021 131-unit apartment building, with plumbing work permitted in 2019.
+- [2104](2104/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2106](2106/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2108](2108/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2196–2198](2196/) — A 1900 3-unit apartment building, with facade work permitted in 1990.
+- [2301–2305](2301/) — A 1906 5-unit building with a ground-floor store, with reroofing permitted in 2003.
+- [2313–2317](2313/) — A 1900 3-unit apartment building, with reroofing permitted in 2015.
+- [2319–2333](2319/) — A 1904 three-flat, with a seismic retrofit permitted in 2005.
+- [2325](2325/) — A 1904 three-flat, with a seismic retrofit permitted in 2005.
+- [2331](2331/) — A 1904 three-flat, with reroofing permitted in 1989.
+- [2335–2337](2335/) — A 1907 two-flat, with reroofing permitted in 2001.
+- [2341](2341/) — A 1914 single-family house, with facade work permitted in 2008.
+- [2366–2368](2366/) — A 1925 4-unit apartment building, with reroofing permitted in 2016.
+- [2378–2380](2378/) — A 1990 3-unit apartment building, with stair work permitted in 2008.
+- [2385–2389](2385/) — A 1900 16-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
+- [2391–2399](2391/) — A 1902 8-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2016.
+- [2406–2408](2406/) — An 1885 2-unit building with a ground-floor store, with reroofing permitted in 1996.
+- [2410](2410/) — A 1900 three-flat, with stair work permitted in 2001.
+- [2411–2415](2411/) — A 1905 three-flat, with window replacement permitted in 1993.
+- [2414–2416](2414/) — A 1905 two-flat.
+- [2417–2419](2417/) — A 1906 two-flat, with reroofing permitted in 2010.
+- [2420](2420/) — A 1965 7-unit apartment building, with an accessory dwelling unit permitted in 2026.
+- [2421–2423](2421/) — A 1900 two-flat, with reroofing permitted in 2006.
+- [2424–2428](2424/) — A 1907 three-flat, with garage work permitted in 2009.
+- [2425–2427](2425/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2015.
+- [2430–2440](2430/) — A 1908 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
+- [2431](2431/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 1999.
+- [2433–2437](2433/) — A 1907 three-flat, with reroofing permitted in 1995.
+- [2441–2443](2441/) — A 1978 3-unit apartment building, with an addition permitted in 2021.
+- [2442](2442/) — A 1912 single-family house, with reroofing permitted in 2008.
+- [2445–2447](2445/) — A 1900 two-flat, with facade work permitted in 2008.
+- [2448](2448/) — A 1900 two-flat, with window replacement permitted in 2025.
+- [2451](2451/) — A 1904 single-family house, with foundation work permitted in 2016.
+- [2455–2457](2455/) — A 1900 two-flat, with reroofing permitted in 1995.
+- [2456](2456/) — A 1900 two-flat, with reroofing permitted in 2016.
+- [2460](2460/) — A 1900 three-flat, with deck work permitted in 2005.
+- [2461–2463](2461/) — A 1907 two-flat, with deck work permitted in 2015.
+- [2465–2469](2465/) — A 1908 three-flat, with reroofing permitted in 2015.
+- [2468–2470](2468/) — A 1900 two-flat, with one permit record from 2014.
+- [2471](2471/) — A 1905 two-flat, with reroofing permitted in 2026.
+- [2475–2479](2475/) — A 1905 three-flat, with reroofing permitted in 2019.
+- [2481–2483](2481/) — A 1905 three-flat, with a seismic retrofit permitted in 2015.
+- [2485–2489](2485/) — A 1912 6-unit apartment building, with an addition permitted in 2019.
+- [2500–2510](2500/) — A 1900 10-unit building with a ground-floor store in the Shotwell Street Historic District, with an addition permitted in 2017.
+- [2512–2516](2512/) — A 1900 three-flat in the Shotwell Street Historic District, with stair work permitted in 2004.
+- [2515](2515/) — A 1900 single-family house, with reroofing permitted in 2006.
+- [2520](2520/) — A 1978 two-flat in the Shotwell Street Historic District.
+- [2521–2523](2521/) — A 1900 3-unit apartment building, with reroofing permitted in 2002.
+- [2525](2525/) — A 1900 single-family house, with foundation work permitted in 2011.
+- [2528–2532](2528/) — A 1978 three-flat in the Shotwell Street Historic District, with garage work permitted in 2006.
+- [2533](2533/) — A 1900 single-family house, with a kitchen remodel permitted in 2024.
+- [2534](2534/) — A 1904 single-family house in the Shotwell Street Historic District, with garage work permitted in 2019.
+- [2540–2542](2540/) — A 1908 two-flat in the Shotwell Street Historic District, with reroofing permitted in 1999.
+- [2541](2541/) — A 1964 8-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2545](2545/) — A 1978 3-unit apartment building, with permit records from 1992 to 2012.
+- [2546–2548](2546/) — A 1900 2-unit tic building in the Shotwell Street Historic District, with garage work permitted in 2004.
+- [2550–2552](2550/) — An 1880 two-flat in the Shotwell Street Historic District, with a kitchen remodel permitted in 2017.
+- [2560](2560/) — A 1902 two-flat, with reroofing permitted in 2018.
+- [2561](2561/) — A 1900 two-flat, with one permit record from 2014.
+- [2564](2564/) — A 1900 single-family house, with a kitchen remodel permitted in 2009.
+- [2567](2567/) — A 1900 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
+- [2568](2568/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2005.
+- [2570](2570/) — An 1890 single-family house, with a kitchen and bathroom remodel permitted in 2015.
+- [2573](2573/) — A 1900 single-family house, with reroofing permitted in 2024.
+- [2576–2578](2576/) — An 1890 two-flat, with a kitchen and bathroom remodel permitted in 2016.
+- [2585](2585/) — A 1931 single-family house, with plumbing work permitted in 2012.
+- [2589](2589/) — A 1900 single-family house, with facade work permitted in 2005.
+- [2606–2610](2606/) — A 1904 three-flat, with a kitchen and bathroom remodel permitted in 2006.
+- [2607](2607/) — A 1900 two-flat, with deck work permitted in 2018.
+- [2611](2611/) — An 1880 two-flat, with reroofing permitted in 2005.
+- [2612–2616](2612/) — A 1900 9-unit apartment building, with deck work permitted in 2025.
+- [2615](2615/) — A 1900 single-family house.
+- [2619](2619/) — A 1912 single-family house, with reroofing permitted in 2015.
+- [2623](2623/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 1992.
+- [2629](2629/) — A 1965 18-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2637–2639](2637/) — A 1900 two-flat, with one permit record from 1993.
+- [2643–2645](2643/) — A 1906 2-unit tic building, with deck work permitted in 2010.
+- [2676–2682](2676/) — A 1900 8-unit apartment building, with foundation work permitted in 2020.
+- [2684–2688](2684/) — A 1981 3-unit apartment building, with reroofing permitted in 1993.
+- [2690](2690/) — A 1900 2-unit apartment building, with a rear addition permitted in 1991.
+- [2694](2694/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2007.
+- [2696–2698](2696/) — An 1880 4-unit building with a ground-floor store, with reroofing permitted in 2018.
+- [2700](2700/) — A 1964 26-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2701–2707](2701/) — A 1900 4-unit building with a ground-floor store, with a bathroom remodel permitted in 2014.
+- [2709](2709/) — A 1900 single-family house, with reroofing permitted in 2001.
+- [2712](2712/) — A 1932 single-family house, with reroofing permitted in 1990.
+- [2713–2717](2713/) — A 1908 3-unit tic building, with a kitchen and bathroom remodel permitted in 2013.
+- [2716](2716/) — A 1932 single-family house, with reroofing permitted in 2018.
+- [2721](2721/) — A 1900 single-family house, with a kitchen remodel permitted in 1992.
+- [2722–2724](2722/) — An 1896 2-unit tic building, with a bathroom remodel permitted in 2020.
+- [2728](2728/) — A 1900 single-family house, with foundation work permitted in 1994.
+- [2731–2735](2731/) — A 1900 three-flat, with foundation work permitted in 2013.
+- [2732](2732/) — A 1900 two dwellings on one parcel, with stair work permitted in 1987.
+- [2740](2740/) — A 1900 two-flat, with reroofing permitted in 1993.
+- [2742](2742/) — A 1932 single-family house, with one permit record from 1992.
+- [2743](2743/) — A 1900 single-family house, with reroofing permitted in 2012.
+- [2746](2746/) — An 1879 3-unit tic building, with window replacement permitted in 2017.
+- [2749](2749/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2001.
+- [2750–2752](2750/) — A 1902 four-flat, with stair work permitted in 2006.
+- [2755–2757](2755/) — A 1900 two-flat, with a kitchen remodel permitted in 2000.
+- [2756](2756/) — A 1900 single-family house.
+- [2760–2762](2760/) — A 1914 three-flat, with facade work permitted in 2001.
+- [2771](2771/) — A 1900 two-flat.
+- [2772](2772/) — A 1900 three-flat, with facade work permitted in 1991.
+- [2774](2774/) — A 1900 single-family house, with a bathroom remodel permitted in 2006.
+- [2782–2786](2782/) — A 1900 6-unit apartment building, with a vertical addition permitted in 2014.
+- [2804–2806](2804/) — A 1910 three-flat, with a kitchen and bathroom remodel permitted in 2012.
+- [2808–2818](2808/) — A 1912 6-unit apartment building, with an addition permitted in 2018.
+- [2813–2817](2813/) — A 1908 three-flat in the South Mission Avenues and Alleys Historic District, with deck work permitted in 2001.
+- [2819–2823](2819/) — A 1908 three-flat in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [2820–2824](2820/) — A 1900 three-flat, with electrical work permitted in 2019.
+- [2825–2829](2825/) — A 1908 3-unit tic building in the South Mission Avenues and Alleys Historic District, with deck work permitted in 2001.
+- [2828](2828/) — A 1900 three-flat, with a rear addition permitted in 1998.
+- [2831–2835](2831/) — A 1908 three-flat in the South Mission Avenues and Alleys Historic District, with stair work permitted in 1990.
+- [2834](2834/) — A 1900 4-unit apartment building, with reroofing permitted in 2023.
+- [2837–2841](2837/) — A 1908 3-unit apartment building in the South Mission Avenues and Alleys Historic District, with a kitchen and bathroom remodel permitted in 2017.
+- [2840–2848](2840/) — A 1900 three-flat in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2009.
+- [2843](2843/) — A 1900 4-unit apartment building in the South Mission Avenues and Alleys Historic District, with one permit record from 2017.
+- [2844](2844/) — A 1900 three-flat in the South Mission Avenues and Alleys Historic District, with a seismic retrofit permitted in 2016.
+- [2847](2847/) — A 1964 6-unit apartment building in the South Mission Avenues and Alleys Historic District, with an accessory dwelling unit permitted in 2018.
+- [2850–2852](2850/) — A 1900 two-flat in the South Mission Avenues and Alleys Historic District, with stair work permitted in 1986.
+- [2858–2860](2858/) — A 1906 two-flat in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 1988.
+- [2862–2864](2862/) — A 1906 two-flat in the South Mission Avenues and Alleys Historic District, with deck work permitted in 2010.
+- [2865–2867](2865/) — A 1905 4-unit apartment building in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2003.
+- [2869](2869/) — A 1900 single-family house in the South Mission Avenues and Alleys Historic District, with garage work permitted in 1996.
+- [2872](2872/) — A 1900 single-family house in the South Mission Avenues and Alleys Historic District, with a rear addition permitted in 2018.
+- [2873–2875](2873/) — A 1900 three-flat in the South Mission Avenues and Alleys Historic District, with permit records from 1987 to 2017.
+- [2878–2880](2878/) — A 1900 8-unit apartment building, with reroofing permitted in 2013.
+- [2882–2884](2882/) — A 1904 two-flat, with stair work permitted in 1989.
+- [2883–2885](2883/) — An 1895 three-flat in the South Mission Avenues and Alleys Historic District, with an addition permitted in 2007.
+- [2886–2888](2886/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2890–2894](2890/) — A 1900 3-unit apartment building, with a bathroom remodel permitted in 2013.
+- [2896–2898](2896/) — A 1900 5-unit building with a ground-floor store, with reroofing permitted in 2007.
+- [2901–2905](2901/) — A 1900 5-unit building in the South Mission Avenues and Alleys Historic District, with reroofing permitted in 2011.
+- [2906](2906/) — A 1900 4-unit apartment building in the Shotwell Street Historic District, with a vertical addition permitted in 2014.
+- [2907–2909](2907/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [2908](2908/) — A 1900 4-unit apartment building in the Shotwell Street Historic District, with one permit record from 2011.
+- [2911](2911/) — A 1907 two-flat.
+- [2915](2915/) — A 1957 two-flat, with one permit record from 2008.
+- [2918](2918/) — A 1900 single-family house in the Shotwell Street Historic District.
+- [2919–2921](2919/) — A 1900 4-unit apartment building, with reroofing permitted in 1986.
+- [2924](2924/) — A 1900 single-family house in the Shotwell Street Historic District.
+- [2927–2929](2927/) — A 1900 four-flat, with deck work permitted in 2007.
+- [2928](2928/) — A 1900 single-family house in the Shotwell Street Historic District, with reroofing permitted in 2004.
+- [2933–2937](2933/) — A 1910 three-flat, with window replacement permitted in 2018.
+- [2934](2934/) — A 1900 two dwellings on one parcel in the Shotwell Street Historic District, with window replacement permitted in 2014.
+- [2939](2939/) — A 1900 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [2941](2941/) — A 1908 two-flat, with electrical work permitted in 2016.
+- [2947–2949](2947/) — A 1907 4-unit building with a ground-floor store, with reroofing permitted in 1998.
+- [2951](2951/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2025.
+- [2952–2960](2952/) — A 1904 9-unit apartment building, with an accessory dwelling unit permitted in 2021.
+- [2973](2973/) — A 1963 20-unit apartment building, with window replacement permitted in 2021.
+- [2981–2983](2981/) — A 1979 two-flat, with a kitchen and bathroom remodel permitted in 1983.
+- [2984–2986](2984/) — A 1900 three-flat, with a dormer permitted in 1986.
+- [2985–2987](2985/) — A 1979 two-flat, with facade work permitted in 2025.
+- [2991–2993](2991/) — A 1908 two-flat, with fire repair permitted in 1992.
+- [2994–2998](2994/) — A 1906 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2001.
+- [2995–2997](2995/) — A 1910 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2015.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

@@ -1,0 +1,152 @@
+{
+  "address": "3460–3464 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3460/",
+  "apn": "3576037",
+  "block": "3576",
+  "lot": "037",
+  "eas_baseid": "360321",
+  "coordinates": {
+    "lat": 37.76196,
+    "lng": -122.420715
+  },
+  "address_range": "3460–3464",
+  "street_numbers_on_parcel": [
+    "3460",
+    "3462",
+    "3464"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 6,
+    "stories": 3,
+    "rooms": 28,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 2550,
+    "building_area_sqft": 6865,
+    "lot_depth_ft": 85,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3464 3460 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 253796,
+    "assessed_improvement_value": 283082
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502130246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-13",
+      "status_date": "2025-02-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201707283167. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907095449",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2019-07-09",
+      "status_date": "2025-02-26",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "to renew buiding permit application 201707283167 for work not started.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707283167",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-07-28",
+      "status_date": "2025-02-26",
+      "estimated_cost": 40000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M176429",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-11",
+      "status_date": "2009-08-11",
+      "revised_cost": 1,
+      "description": "street space & sidewalk repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316242",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-20",
+      "status_date": "1993-12-17",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314096",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-20",
+      "status_date": "1993-12-17",
+      "estimated_cost": 70000,
+      "description": "repr fire dmg-rf-rr strs-entry strs-kitch-bth rm-pnt int/ext",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019611",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-25",
+      "status_date": "1991-03-25",
+      "estimated_cost": 6350,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3460",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=037",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576037",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

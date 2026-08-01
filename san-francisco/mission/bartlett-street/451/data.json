@@ -1,0 +1,123 @@
+{
+  "address": "451 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/451/",
+  "apn": "6529016",
+  "block": "6529",
+  "lot": "016",
+  "eas_baseid": "401327",
+  "coordinates": {
+    "lat": 37.749823,
+    "lng": -122.419019
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 7,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 7,
+    "lot_area_sqft": 6168,
+    "building_area_sqft": 3490,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0451 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152605,
+    "assessed_improvement_value": 317767
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305258635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-25",
+      "status_date": "2023-08-18",
+      "estimated_cost": 35000,
+      "revised_cost": 54000,
+      "description": "one unit: to comply with nov# 202307242 #6: replace kitchen cabinets and flooring with new. replace bathroom floor tile and shower tile with new. no structural work. no wall modifications. no change in fixture location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209129559",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-12",
+      "status_date": "2012-10-12",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "not to exceed 50% repair of rear yard stair. any elements replaced will be pressure trated or decay resistant lumber. no change to size, layout or configuration. replace handrail at front entry stair with code compliant handrail of correct diameter, install at 34\"-38\" above stair nosings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M197207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-12",
+      "status_date": "2010-04-12",
+      "revised_cost": 1,
+      "description": "street and sidewalk permits",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713406",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-18",
+      "status_date": "1999-03-01",
+      "estimated_cost": 5050,
+      "description": "termite repair report #14300",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-23",
+      "status_date": "1996-03-22",
+      "estimated_cost": 20000,
+      "description": "dry rot & fire repr--jsts,floor,sheetrk,paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=451",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6529016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6529&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6529016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

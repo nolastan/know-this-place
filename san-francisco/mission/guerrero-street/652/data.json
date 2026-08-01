@@ -1,0 +1,105 @@
+{
+  "address": "652 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/652/",
+  "apn": "3587009",
+  "block": "3587",
+  "lot": "009",
+  "eas_baseid": "361010",
+  "coordinates": {
+    "lat": 37.760652,
+    "lng": -122.424024
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2865,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0654 0652 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1742714,
+    "assessed_improvement_value": 795775,
+    "last_sale_date": "2021-01-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210134303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-13",
+      "status_date": "2023-04-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "site revision to previous boa 2021-1029-1438 1st floor work only; relocate water heaters; reconfigure bathroom, wetbar & storage layout; exterior changes @ rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110291438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-29",
+      "status_date": "2023-04-07",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel of bldg storage behind garage. to add a web bar & half bath. relocation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M762511",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-21",
+      "status_date": "2017-02-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=652",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

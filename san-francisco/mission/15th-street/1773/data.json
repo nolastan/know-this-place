@@ -1,0 +1,109 @@
+{
+  "address": "1773–1777 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/15th-street/1773/",
+  "apn": "3555038",
+  "block": "3555",
+  "lot": "038",
+  "eas_baseid": "359378",
+  "coordinates": {
+    "lat": 37.766218,
+    "lng": -122.423629
+  },
+  "address_range": "1773–1777",
+  "street_numbers_on_parcel": [
+    "1773",
+    "1775",
+    "1777"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 3,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 4938,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1777 1773 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 250823,
+    "last_sale_date": "1998-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504295473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-29",
+      "status_date": "2026-04-16",
+      "estimated_cost": 35000,
+      "revised_cost": 65315,
+      "description": "1 kitchen and 1 bath remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714678",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-05",
+      "status_date": "1998-06-09",
+      "estimated_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702451",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-25",
+      "status_date": "1987-12-03",
+      "estimated_cost": 1500,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1773",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3555038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3555&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3555038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

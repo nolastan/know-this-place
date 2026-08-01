@@ -1,0 +1,114 @@
+{
+  "address": "76–78 Sycamore Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/sycamore-street/76/",
+  "apn": "3576075",
+  "block": "3576",
+  "lot": "075",
+  "eas_baseid": "360356",
+  "coordinates": {
+    "lat": 37.762805,
+    "lng": -122.420969
+  },
+  "address_range": "76–78",
+  "street_numbers_on_parcel": [
+    "76",
+    "78"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 3930,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0078 0076 SYCAMORE            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 765199,
+    "assessed_improvement_value": 510128,
+    "last_sale_date": "2003-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sycamore Street Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200710104976",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-10",
+      "status_date": "2007-10-10",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "install 5/8\" fire rated sheet rock (type \"x\") on both sides of existing glazing (transon). to comply with notice of violation#200714571.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010042307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-04",
+      "status_date": "2000-12-13",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair dryrot in rear exterior stairway & rear porches",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SYCAMORE&street_type=ST&address_number=76",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576075",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4209685364386%2037.76280452517622)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

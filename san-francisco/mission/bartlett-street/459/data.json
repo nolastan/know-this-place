@@ -1,0 +1,121 @@
+{
+  "address": "459–461 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/459/",
+  "apn": "6529015",
+  "block": "6529",
+  "lot": "015",
+  "eas_baseid": "401325",
+  "coordinates": {
+    "lat": 37.749648,
+    "lng": -122.419002
+  },
+  "address_range": "459–461",
+  "street_numbers_on_parcel": [
+    "459",
+    "461"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 2935,
+    "building_area_sqft": 3320,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0461 0459 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 452044,
+    "assessed_improvement_value": 323961,
+    "last_sale_date": "2001-01-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201502047429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-04",
+      "status_date": "2015-05-29",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702285108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-28",
+      "status_date": "2007-04-18",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "sheetrock living room wall in #459 barlett (one unit) one room. smoke treat wood with appropriot agent. insulate wall. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612180027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-18",
+      "status_date": "2007-03-26",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace burnt wood sidings in front of house. area of replace siding is approximately 60 sq.ft. siding are to be replaced in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114591",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-14",
+      "status_date": "1991-12-14",
+      "estimated_cost": 3850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=459",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6529015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6529&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6529015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

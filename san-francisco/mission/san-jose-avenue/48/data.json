@@ -1,0 +1,146 @@
+{
+  "address": "48 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/48/",
+  "apn": "3633038",
+  "block": "3633",
+  "lot": "038",
+  "eas_baseid": "363728",
+  "coordinates": {
+    "lat": 37.754629,
+    "lng": -122.421634
+  },
+  "parcel": {
+    "year_built": 1986,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1851.17,
+    "building_area_sqft": 2500,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0048 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1171955,
+    "assessed_improvement_value": 850342,
+    "last_sale_date": "2015-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201603010880",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-03-01",
+      "status_date": "2016-03-01",
+      "estimated_cost": 30000,
+      "revised_cost": 66100,
+      "description": "remodel one unit: kitchen & bathroom; remodel one unit: kitchen & bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111088541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-08",
+      "status_date": "2012-07-06",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "dry rot repair on front elevation (replace in kind), plywood and studs as needed, finish with paper, lathe and stucco to match existing exterior, 1000 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108222991",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-22",
+      "status_date": "2012-07-06",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "window replacements 1 total, faces the street, in kind, new window to be fiberglass, u value =0.30. no change in rough openings. new window to be marvin fiberglass.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010032142",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-03",
+      "status_date": "2000-10-12",
+      "estimated_cost": 17800,
+      "revised_cost": 17800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722733",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-10",
+      "status_date": "1999-03-01",
+      "estimated_cost": 1500,
+      "description": "repair dry-rot damage to front and side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-06",
+      "status_date": "1996-03-21",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410592",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1984-10-01",
+      "status_date": "1985-08-30",
+      "estimated_cost": 164737,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=48",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3633038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3633&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3633038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

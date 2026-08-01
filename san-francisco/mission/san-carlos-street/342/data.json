@@ -1,0 +1,125 @@
+{
+  "address": "342–344 San Carlos Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-carlos-street/342/",
+  "apn": "3609090",
+  "block": "3609",
+  "lot": "090",
+  "eas_baseid": "362435",
+  "coordinates": {
+    "lat": 37.757863,
+    "lng": -122.419969
+  },
+  "address_range": "342–344",
+  "street_numbers_on_parcel": [
+    "342",
+    "344"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1646,
+    "building_area_sqft": 2248,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0344 0342 SAN CARLOS          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 669056,
+    "assessed_improvement_value": 446036,
+    "last_sale_date": "2005-03-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200607318044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-31",
+      "status_date": "2006-10-12",
+      "estimated_cost": 4400,
+      "revised_cost": 4400,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409013172",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-01",
+      "status_date": "2004-12-22",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel (e) 2nd floor bath and kitchen, add one full bath to master bedrm, removing nonbearing walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312101987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-10",
+      "status_date": "2003-12-22",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair stair handrails,toilet,tub/shower,damaged ceiling,cord wiring,elimate mold,heat for each rm..",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20CARLOS&street_type=ST&address_number=342",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=090",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609090",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41996932859944%2037.75786348332341)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

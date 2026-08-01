@@ -1,0 +1,123 @@
+# 20th Street
+
+Every residential parcel on 20th Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [2618](2618/) — A 1924 single-family house, with reroofing permitted in 2013.
+- [2619](2619/) — A 1924 single-family house, with reroofing permitted in 2003.
+- [2620](2620/) — A 1923 single-family house, with dry-rot repair permitted in 2016.
+- [2625](2625/) — A 1923 single-family house, with reroofing permitted in 1997.
+- [2627](2627/) — A 1907 single-family house, with dry-rot repair permitted in 2019.
+- [2633–2635](2633/) — A 1907 two-flat, with foundation work permitted in 2023.
+- [2701–2703](2701/) — A 1908 3-unit building with a ground-floor store, with permit records from 1984 to 2023.
+- [2706](2706/) — A 1900 two-flat in the Gottlieb Knopf Block Historic District.
+- [2709–2711](2709/) — A 1900 two-flat, with reroofing permitted in 1990.
+- [2710](2710/) — A 1900 single-family house in the Gottlieb Knopf Block Historic District, with reroofing permitted in 2006.
+- [2716](2716/) — A 1900 single-family house in the Gottlieb Knopf Block Historic District, with reroofing permitted in 2000.
+- [2717](2717/) — A 1906 2-unit apartment building, with deck work permitted in 2006.
+- [2720](2720/) — A 1900 single-family house in the Gottlieb Knopf Block Historic District, with garage work permitted in 2023.
+- [2721–2723](2721/) — A 1906 two-flat, with a kitchen remodel permitted in 2021.
+- [2725](2725/) — A 1906 single-family house, with a kitchen and bathroom remodel permitted in 2023.
+- [2726](2726/) — A 1900 single-family house in the Gottlieb Knopf Block Historic District, with an addition permitted in 2019.
+- [2730](2730/) — A 1908 single-family house in the Gottlieb Knopf Block Historic District, with reroofing permitted in 2000.
+- [2731–2733](2731/) — A 1900 two-flat, with reroofing permitted in 1994.
+- [2734–2736](2734/) — A 1900 3-unit building with a ground-floor store, with a bathroom remodel permitted in 2019.
+- [2735–2737](2735/) — A 1912 2-unit building with a ground-floor store, with one permit record from 2020.
+- [2811](2811/) — A 1900 single-family house, with a vertical addition permitted in 1995.
+- [2827–2829](2827/) — A 1913 two-flat, with stair work permitted in 2010.
+- [2841–2847](2841/) — A 1900 5-unit building with a ground-floor store, with reroofing permitted in 2013.
+- [2925](2925/) — A 1907 two-flat, with window replacement permitted in 2014.
+- [2931](2931/) — A 1923 single-family house, with a kitchen and bathroom remodel permitted in 2008.
+- [3001–3005](3001/) — A 1900 3-unit tic building, with a bathroom remodel permitted in 2016.
+- [3007](3007/) — A 1964 3-unit apartment building, with reroofing permitted in 2023.
+- [3017](3017/) — A 1900 three-flat, with foundation work permitted in 2026.
+- [3223](3223/) — A 1900 single-family house, with reroofing permitted in 2021.
+- [3225–3227](3225/) — A 1900 two-flat, with garage work permitted in 2016.
+- [3229](3229/) — A two-flat, with fire repair permitted in 1998.
+- [3251–3253](3251/) — A 1900 two dwellings on one parcel, with a bathroom remodel permitted in 2007.
+- [3257](3257/) — A 1900 single-family house, with a vertical addition permitted in 1998.
+- [3267](3267/) — A 1900 single-family house, with foundation work permitted in 2016.
+- [3271](3271/) — A 1904 two-flat, with a seismic retrofit permitted in 2019.
+- [3276–3280](3276/) — A 1909 three-flat, with a kitchen and bathroom remodel permitted in 2025.
+- [3277–3279](3277/) — A 1906 two-flat, with reroofing permitted in 2007.
+- [3305–3321](3305/) — A 1905 9-unit apartment building, with a bathroom remodel permitted in 2013.
+- [3325–3327](3325/) — A 1900 2-unit building with a ground-floor store, with facade work permitted in 2018.
+- [3329–3333](3329/) — A 1900 10-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [3339–3345](3339/) — An 1885 4-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2010.
+- [3374–3376](3374/) — A 1900 three-flat, with stair work permitted in 1987.
+- [3401–3411](3401/) — A 1908 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [3421–3431](3421/) — A 1906 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [3432](3432/) — A 1900 single-family house, with reroofing permitted in 2019.
+- [3433–3437](3433/) — A 1900 6-unit apartment building, with a kitchen remodel permitted in 2001.
+- [3440](3440/) — A 1965 48-unit apartment building, with facade work permitted in 2017.
+- [3441–3447](3441/) — A 1900 9-unit apartment building, with a vertical addition permitted in 2015.
+- [3463–3465](3463/) — A 1909 two-flat, with garage work permitted in 2018.
+- [3466](3466/) — An 1885 single-family house, with facade work permitted in 2015.
+- [3469](3469/) — A 1924 2-unit building with a ground-floor store, with stair work permitted in 2000.
+- [3476](3476/) — A 1900 single-family house, with window replacement permitted in 2007.
+- [3515–3519](3515/) — A 1900 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2014.
+- [3525–3529](3525/) — A 1924 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3540–3546](3540/) — A 1907 12-unit apartment building, with reroofing permitted in 1993.
+- [3545–3547](3545/) — A 1900 single-family house, with fire repair permitted in 1997.
+- [3548](3548/) — A 1908 two-flat, with one permit record from 2002.
+- [3549–3551](3549/) — A 1900 two-flat in the Liberty Hill Historic District, with foundation work permitted in 2012.
+- [3552–3558](3552/) — A 1907 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2019.
+- [3553–3555](3553/) — A 1900 two-flat in the Liberty Hill Historic District, with stair work permitted in 2019.
+- [3557–3559](3557/) — A 1904 6-unit apartment building in the Liberty Hill Historic District, with a seismic retrofit permitted in 2017.
+- [3561–3565](3561/) — An 1880 4-unit building with a ground-floor store in the Liberty Hill Historic District, with window replacement permitted in 2012.
+- [3572–3576](3572/) — A 1911 5-unit apartment building, with reroofing permitted in 2006.
+- [3573](3573/) — A 1904 6-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 1994.
+- [3578–3582](3578/) — A 1905 three-flat, with fire repair permitted in 1990.
+- [3616–3618](3616/) — A 1907 two-flat, with window replacement permitted in 2007.
+- [3621](3621/) — A 1962 4-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 2024.
+- [3624–3626](3624/) — A 1907 two-flat, with a kitchen remodel permitted in 2016.
+- [3625](3625/) — A 1900 single-family house in the Liberty Hill Historic District, with a bathroom remodel permitted in 1988.
+- [3630](3630/) — A 1906 two-flat, with window replacement permitted in 2015.
+- [3635](3635/) — A 1900 single-family house in the Liberty Hill Historic District, with reroofing permitted in 1999.
+- [3639–3641](3639/) — A 1912 two-flat in the Liberty Hill Historic District, with reroofing permitted in 2017.
+- [3642–3644](3642/) — An 1899 two-flat, with reroofing permitted in 2001.
+- [3643](3643/) — A 1900 single-family house in the Liberty Hill Historic District, with garage work permitted in 2022.
+- [3646](3646/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [3647](3647/) — An 1870 single-family house in the Liberty Hill Historic District, with one permit record from 2007.
+- [3654–3656](3654/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [3655–3657](3655/) — A 1905 5-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 1995.
+- [3659–3677](3659/) — A 1906 20-unit apartment building in the Liberty Hill Historic District, with garage work permitted in 2016.
+- [3660](3660/) — A 1907 5-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3662–3664](3662/) — A 1909 two-flat, with reroofing permitted in 2004.
+- [3666–3670](3666/) — A 1907 5-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3672](3672/) — A 1907 5-unit apartment building, with reroofing permitted in 2015.
+- [3676](3676/) — A two-flat, with garage work permitted in 1993.
+- [3679](3679/) — A 1959 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [3680–3684](3680/) — A 1911 4-unit building with a ground-floor store, with an accessory dwelling unit permitted in 2025.
+- [3686–3698](3686/) — A 1906 9-unit building with a ground-floor store in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2017.
+- [3700](3700/) — A 1925 25-unit apartment building, with a seismic retrofit permitted in 2016.
+- [3701–3703](3701/) — A 1900 5-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 2006.
+- [3709–3711](3709/) — A 1900 two-flat in the Liberty Hill Historic District, with deck work permitted in 2005.
+- [3716–3720](3716/) — A 1906 two-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a rear addition permitted in 2025.
+- [3719](3719/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2006.
+- [3722–3724](3722/) — A 1930 two-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2021.
+- [3725](3725/) — An 1895 single-family house in the Liberty Hill Historic District, with a rear addition permitted in 2006.
+- [3726–3730](3726/) — A 1910 three-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with stair work permitted in 2001.
+- [3731](3731/) — A 1900 single-family house in the Liberty Hill Historic District, with garage work permitted in 2002.
+- [3733–3735](3733/) — A 1900 two-flat in the Liberty Hill Historic District, with garage work permitted in 2019.
+- [3736–3738](3736/) — A 1907 three-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with stair work permitted in 2021.
+- [3737–3739](3737/) — A 1900 two-flat in the Liberty Hill Historic District, with garage work permitted in 1999.
+- [3740–3744](3740/) — A 1908 three-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with reroofing permitted in 1999.
+- [3743](3743/) — A 1900 two-flat in the Liberty Hill Historic District, with dry-rot repair permitted in 1992.
+- [3746](3746/) — A 1907 single-family house in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with one permit record from 1994.
+- [3751–3753](3751/) — A 1900 single-family house in the Liberty Hill Historic District, with a rear addition permitted in 2015.
+- [3755](3755/) — A 1900 single-family house in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2022.
+- [3756](3756/) — A 1952 4-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with reroofing permitted in 2010.
+- [3758–3762](3758/) — A 1909 three-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a bathroom remodel permitted in 2010.
+- [3763](3763/) — A 1900 single-family house in the Liberty Hill Historic District, with reroofing permitted in 2015.
+- [3764](3764/) — A 1986 3-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with garage work permitted in 2010.
+- [3765](3765/) — A 1900 single-family house in the Liberty Hill Historic District, with reroofing permitted in 2015.
+- [3766–3768](3766/) — A 1907 two-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with reroofing permitted in 2010.
+- [3769](3769/) — A 1900 single-family house in the Liberty Hill Historic District, with reroofing permitted in 2012.
+- [3773](3773/) — An 1885 single-family house in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 1998.
+- [3783](3783/) — A 1924 20-unit apartment building, with an accessory dwelling unit permitted in 2018.
+- [3784–3786](3784/) — A 1908 two-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with garage work permitted in 2006.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

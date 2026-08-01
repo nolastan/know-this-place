@@ -1,0 +1,139 @@
+{
+  "address": "1374 Utah Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/utah-street/1374/",
+  "apn": "4264007A",
+  "block": "4264",
+  "lot": "007A",
+  "eas_baseid": "370639",
+  "coordinates": {
+    "lat": 37.752099,
+    "lng": -122.405547
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1878,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1374 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1156777,
+    "assessed_improvement_value": 495759,
+    "last_sale_date": "2014-09-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201805108794",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-10",
+      "status_date": "2018-05-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove non-load bearing wall to combine storage closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402279532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-27",
+      "status_date": "2014-08-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "revision to pa# 201307232522 per inspector request to increase estimated cost to $20000 inspection 2/26/14.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307232522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-23",
+      "status_date": "2014-08-06",
+      "estimated_cost": 35000,
+      "revised_cost": 60000,
+      "description": "new bathroom at 2nd floor. enclose (e) stairs. remodel (e) lower floor (garage) to create master suite, family room & laundry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305096541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-09",
+      "status_date": "2014-08-06",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "remove illegal unit in building/illegal kitchen from garage/basement area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305096564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-09",
+      "status_date": "2014-08-06",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with nov 201176535; replace siding affected by neighbors fire at rear of house not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305096574",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-09",
+      "status_date": "2014-08-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel kitchen (replace cabinets) on 2nd flr, remodel bathroom, refinish hardwood, paint inside and out",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=1374",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4264007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4264&lot=007A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4264007A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

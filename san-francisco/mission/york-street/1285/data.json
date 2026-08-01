@@ -1,0 +1,127 @@
+{
+  "address": "1285 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1285/",
+  "apn": "4266020A",
+  "block": "4266",
+  "lot": "020A",
+  "eas_baseid": "370692",
+  "coordinates": {
+    "lat": 37.751584,
+    "lng": -122.407834
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1270,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1285 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 800982,
+    "assessed_improvement_value": 343272,
+    "last_sale_date": "2012-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201210293031",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-29",
+      "status_date": "2012-11-07",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "fix dry rot in bay window at front of house below windows approx 35 sq.ft. on mid-level (stucco repair)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210010982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-01",
+      "status_date": "2012-10-31",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "cap existing foundation approx 50' lf on the left side wall due to grade max cap height to be 8\" 5/8 atr 48\" on center epoxy min 8\" & concrete foundation w/3x3 washer (2) #4 rebar in new cap new 3xpt mud sill.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605040722",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-05-04",
+      "status_date": "2006-05-04",
+      "estimated_cost": 5900,
+      "revised_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602275448",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-27",
+      "status_date": "2006-05-03",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "replace 19 windows, size for size, wood to wood composite, visible from street. u valve .39. replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-11",
+      "status_date": "1989-10-25",
+      "estimated_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1285",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4266020A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4266&lot=020A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4266020A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

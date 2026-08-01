@@ -1,0 +1,120 @@
+{
+  "address": "1026–1028 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1026/",
+  "apn": "4153003",
+  "block": "4153",
+  "lot": "003",
+  "eas_baseid": "369639",
+  "coordinates": {
+    "lat": 37.75561,
+    "lng": -122.406929
+  },
+  "address_range": "1026–1028",
+  "street_numbers_on_parcel": [
+    "1026",
+    "1028"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3060,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1026 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 766636,
+    "assessed_improvement_value": 327550,
+    "last_sale_date": "2004-09-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909091056",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-09",
+      "status_date": "2019-09-09",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "fixing siding for residential portion. exact in-kind replacement (wood siding for wood siding).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607247424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-24",
+      "status_date": "2006-12-21",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "comply with nov #200665965 rear stairs are being rebuilt- in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511218645",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-11-21",
+      "status_date": "2006-12-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "work in progress repair at rear exterior deck comply w/his nov 200563554- repair work will be less than 50 percent",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31485",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-08",
+      "status_date": "2005-03-08",
+      "revised_cost": 0,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1026",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4153003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

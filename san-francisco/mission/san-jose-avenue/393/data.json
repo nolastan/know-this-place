@@ -1,0 +1,142 @@
+{
+  "address": "393–399 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/393/",
+  "apn": "6531019B",
+  "block": "6531",
+  "lot": "019B",
+  "eas_baseid": "401387",
+  "coordinates": {
+    "lat": 37.749092,
+    "lng": -122.421171
+  },
+  "address_range": "393–399",
+  "street_numbers_on_parcel": [
+    "393",
+    "395",
+    "399"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1300,
+    "building_area_sqft": 1758,
+    "lot_depth_ft": 40,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0395 0393 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117123,
+    "assessed_improvement_value": 248909
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305268731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-26",
+      "status_date": "2024-02-15",
+      "estimated_cost": 16200,
+      "revised_cost": 16200,
+      "description": "replace siding on side of house approx 16x20 \"in kind\" to match ext. replace rotten wall studs as needed \"in-kind\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704053277",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-04-05",
+      "status_date": "2017-04-05",
+      "estimated_cost": 6000,
+      "revised_cost": 8000,
+      "description": "remove all floor covering, replace kitchen cabinets, counter.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309308063",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-30",
+      "status_date": "2015-09-29",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "recommencement and completion of work approved under pa 201104295020; to comply with nov 201111001",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109285712",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-28",
+      "status_date": "2011-12-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104295020",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-04-29",
+      "status_date": "2015-09-29",
+      "estimated_cost": 8500,
+      "revised_cost": 10240,
+      "description": "#395 only - comply with nov 201111001. minor repair of foundation in kind/like replacement of rear yard windows. remodel e kitchen and bath. in kind like replacement of fixtures. minor electrical and plumbing repairs; apply plywood panels to southeast corner of basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110520",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-14",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3900,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=393",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6531019B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6531&lot=019B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6531019B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

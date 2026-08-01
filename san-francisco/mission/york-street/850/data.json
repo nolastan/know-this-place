@@ -1,0 +1,141 @@
+{
+  "address": "850–852 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/850/",
+  "apn": "4087010",
+  "block": "4087",
+  "lot": "010",
+  "eas_baseid": "368354",
+  "coordinates": {
+    "lat": 37.758424,
+    "lng": -122.409002
+  },
+  "address_range": "850–852",
+  "street_numbers_on_parcel": [
+    "850",
+    "852"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2900,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0852 0850 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 720970,
+    "assessed_improvement_value": 308985,
+    "last_sale_date": "2011-12-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201803052838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-05",
+      "status_date": "2018-12-19",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "replacement of 5 rear existing doors, no change in location or size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711133793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-13",
+      "status_date": "2018-11-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace existing rear stairs in like kind. use existing foundation, anchor bolts & lcb-66, new stairs to comply with current code. reference pa #9023905. replace garage door only, hardward to remain as is.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M835509",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-26",
+      "status_date": "2017-09-26",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602099196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-09",
+      "status_date": "2016-05-24",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "bolt sole plate to foundation; install 12\" 5/8\" all thread & epoxy ; 3x3x0.222 or thicker washer. bolts at 16\" c/c; all to be hot dip galvanized.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508073730",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-07",
+      "status_date": "2015-08-12",
+      "estimated_cost": 20180,
+      "revised_cost": 20180,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023905",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-11-19",
+      "status_date": "2017-11-10",
+      "estimated_cost": 6000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=850",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4087010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4087&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4087010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

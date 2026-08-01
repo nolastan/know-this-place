@@ -1,0 +1,133 @@
+{
+  "address": "924–930 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/924/",
+  "apn": "3610003",
+  "block": "3610",
+  "lot": "003",
+  "eas_baseid": "362461",
+  "coordinates": {
+    "lat": 37.758266,
+    "lng": -122.417185
+  },
+  "address_range": "924–930",
+  "street_numbers_on_parcel": [
+    "924",
+    "930"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 8,
+    "stories": 2,
+    "rooms": 30,
+    "bathrooms": 8,
+    "bedrooms": 14,
+    "lot_area_sqft": 5641,
+    "building_area_sqft": 7856,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0930 0924 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1867722,
+    "assessed_improvement_value": 466926,
+    "last_sale_date": "2022-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306099726",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-06-09",
+      "status_date": "2026-01-23",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "replace 5 windows with the same style 4 front windows will fiberglass material",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208220961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-22",
+      "status_date": "2022-10-12",
+      "estimated_cost": 29000,
+      "revised_cost": 20000,
+      "description": "rev to pa201911268287: structural revisions: construct new concrete retaining wall at rear of garage since none exists. remove ol a/d ply sw - add vrfp clips to (e) full height concrete/masonary walls at n/s pl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911268287",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-26",
+      "status_date": "2022-10-12",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "comply with nov#201720732. soft story retrofit to comply with 2016 sfebc chapter 4d per 2016 cebc appendix a-4 standards.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204184314",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-18",
+      "status_date": "2002-10-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "install 74 replacement windows. visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106292653",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-29",
+      "status_date": "2002-02-14",
+      "estimated_cost": 11750,
+      "revised_cost": 11750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=924",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3610003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3610&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3610003",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

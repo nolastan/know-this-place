@@ -1,0 +1,105 @@
+{
+  "address": "58 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/58/",
+  "apn": "3588049H",
+  "block": "3588",
+  "lot": "049H",
+  "eas_baseid": "361123",
+  "coordinates": {
+    "lat": 37.760754,
+    "lng": -122.423101
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2308,
+    "building_area_sqft": 1943,
+    "basement_area_sqft": 404,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0058 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142161,
+    "assessed_improvement_value": 369290
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200505273659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-27",
+      "status_date": "2005-08-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise 200405204439.structural foundation rev to property line foundation.............",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405204439",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-05-20",
+      "status_date": "2006-03-13",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "horizontal addition- add (n) two story addition at front. remodel (e) upper & lower levels. remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418640",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-14",
+      "status_date": "1995-06-05",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=58",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588049H&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=049H",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588049H",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

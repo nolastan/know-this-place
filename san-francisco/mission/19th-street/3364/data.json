@@ -1,0 +1,87 @@
+{
+  "address": "3364–3366 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3364/",
+  "apn": "3590019",
+  "block": "3590",
+  "lot": "019",
+  "eas_baseid": "361277",
+  "coordinates": {
+    "lat": 37.760447,
+    "lng": -122.418528
+  },
+  "address_range": "3364–3366",
+  "street_numbers_on_parcel": [
+    "3364",
+    "3366"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 7,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 2290,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3366 3364 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 88799,
+    "assessed_improvement_value": 135431
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002255291",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-25",
+      "status_date": "2021-09-02",
+      "estimated_cost": 2000,
+      "revised_cost": 3000,
+      "description": "accessible business entrance program per ordinance 51-16. install power door operator.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3364",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3590019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

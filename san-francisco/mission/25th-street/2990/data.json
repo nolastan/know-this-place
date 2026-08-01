@@ -1,0 +1,111 @@
+{
+  "address": "2990 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2990/",
+  "apn": "4268015",
+  "block": "4268",
+  "lot": "015",
+  "eas_baseid": "370765",
+  "coordinates": {
+    "lat": 37.751266,
+    "lng": -122.40965
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 5196,
+    "building_area_sqft": 1380,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2990 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 52641,
+    "assessed_improvement_value": 39240
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401314976",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-31",
+      "status_date": "2024-06-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replaceing (e) kitchen cabinets, no layout changes, like for like replace vanity, same size, same location, upgrade faucets hallway bathroom primary bathroom: replace vainty same size, upgrade faucets, tile the batahtub, keeping original bathtub, no plumbing or elec changes. no wall alteration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506756",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-09",
+      "status_date": "1995-11-09",
+      "estimated_cost": 5700,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808343",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-06-21",
+      "status_date": "1989-09-24",
+      "estimated_cost": 800,
+      "description": "repair rear stairs, replacing treads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206044",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-07-22",
+      "status_date": "1983-03-23",
+      "estimated_cost": 2000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2990",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

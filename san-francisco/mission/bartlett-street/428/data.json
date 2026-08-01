@@ -1,0 +1,151 @@
+{
+  "address": "428–430 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/428/",
+  "apn": "6530003A",
+  "block": "6530",
+  "lot": "003A",
+  "eas_baseid": "401344",
+  "coordinates": {
+    "lat": 37.75003,
+    "lng": -122.419655
+  },
+  "address_range": "428–430",
+  "street_numbers_on_parcel": [
+    "428",
+    "430"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2232.5,
+    "building_area_sqft": 2050,
+    "lot_depth_ft": 17.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0430 0428 BARTLETT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 225336,
+    "assessed_improvement_value": 476730,
+    "last_sale_date": "1992-07-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511079195",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-07",
+      "status_date": "2026-04-01",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "remove and replace cabinets in the kitchen. no change on floor plan. counter will be replaced by home depot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001131701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-13",
+      "status_date": "2020-01-28",
+      "estimated_cost": 27300,
+      "revised_cost": 27300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404173457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-17",
+      "status_date": "2014-06-26",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace extg stairs in rear due to fire dry rot. replace rear stairs in kind. upper unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114922",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-08-19",
+      "status_date": "1992-01-21",
+      "estimated_cost": 3000,
+      "description": "horizontal addition (enclose exist ground floor porch)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901958",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-02-03",
+      "status_date": "1989-08-14",
+      "estimated_cost": 1,
+      "description": "re-instate existing appln. #8800208",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809340",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-07-12",
+      "status_date": "1989-05-29",
+      "estimated_cost": 6000,
+      "description": "legalize existing third floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800208",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-01-07",
+      "status_date": "1988-11-09",
+      "estimated_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BARTLETT&street_type=ST&address_number=428",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6530003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6530&lot=003A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6530003A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

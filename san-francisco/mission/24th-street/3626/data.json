@@ -1,0 +1,139 @@
+{
+  "address": "3626–3628 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3626/",
+  "apn": "3647015",
+  "block": "3647",
+  "lot": "015",
+  "eas_baseid": "364269",
+  "coordinates": {
+    "lat": 37.7521,
+    "lng": -122.423538
+  },
+  "address_range": "3626–3628",
+  "street_numbers_on_parcel": [
+    "3626",
+    "3628"
+  ],
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1677.5,
+    "building_area_sqft": 3000,
+    "lot_depth_ft": 61,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3628 3626 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1034103,
+    "assessed_improvement_value": 689399,
+    "last_sale_date": "2002-11-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201908279965",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2019-08-27",
+      "status_date": "2019-08-27",
+      "description": "repair pier flower pot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407231972",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-23",
+      "status_date": "2014-07-23",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211252175",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-25",
+      "status_date": "2002-11-25",
+      "estimated_cost": 9200,
+      "revised_cost": 9200,
+      "description": "tear off (e) roof, install plywood, 30 year shingle",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624832",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-12-31",
+      "status_date": "1997-04-30",
+      "estimated_cost": 100,
+      "description": "close over lot line window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604098",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-09",
+      "status_date": "1987-09-22",
+      "estimated_cost": 5000,
+      "description": "regalize roof deck & new stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8300713",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-01-25",
+      "status_date": "1992-08-12",
+      "estimated_cost": 6000,
+      "description": "repair roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3626",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3647015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3647&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3647015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

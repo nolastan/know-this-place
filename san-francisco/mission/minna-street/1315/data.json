@@ -1,0 +1,95 @@
+{
+  "address": "1315 Minna Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/minna-street/1315/",
+  "apn": "3548054",
+  "block": "3548",
+  "lot": "054",
+  "eas_baseid": "359112",
+  "coordinates": {
+    "lat": 37.767989,
+    "lng": -122.418996
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2003,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1315 MINNA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1314191,
+    "assessed_improvement_value": 615243,
+    "last_sale_date": "2017-12-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205033439",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-03",
+      "status_date": "2023-02-03",
+      "estimated_cost": 40000,
+      "revised_cost": 58000,
+      "description": "remove structural wall in kitchen at top level. new fixtures and finishes in kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006184884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-18",
+      "status_date": "2010-09-21",
+      "estimated_cost": 300,
+      "revised_cost": 1500,
+      "description": "tear down and remove fence. to comply with nov 201045180. to comply with his nov 201045058 dated 5/7/2010;",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNA&street_type=ST&address_number=1315",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3548054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3548&lot=054",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3548054",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

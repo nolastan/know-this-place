@@ -1,0 +1,113 @@
+{
+  "address": "2619 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2619/",
+  "apn": "4089038",
+  "block": "4089",
+  "lot": "038",
+  "eas_baseid": "368467",
+  "coordinates": {
+    "lat": 37.759213,
+    "lng": -122.407395
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 757,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2619 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 383874,
+    "assessed_improvement_value": 255914,
+    "last_sale_date": "2003-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602119340",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-11",
+      "status_date": "2016-02-11",
+      "estimated_cost": 2438,
+      "revised_cost": 2438,
+      "description": "replace garage door with wood sectional garage door, same size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311140214",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-14",
+      "status_date": "2003-11-14",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620699",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-25",
+      "status_date": "1997-06-11",
+      "estimated_cost": 2800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209923",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-12-03",
+      "status_date": "1984-02-16",
+      "estimated_cost": 20000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2619",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4089038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4089&lot=038",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4089038",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

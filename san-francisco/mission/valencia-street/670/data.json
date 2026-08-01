@@ -1,0 +1,104 @@
+{
+  "address": "670 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/670/",
+  "apn": "3577005",
+  "block": "3577",
+  "lot": "005",
+  "eas_baseid": "474113",
+  "coordinates": {
+    "lat": 37.762136,
+    "lng": -122.422081
+  },
+  "parcel": {
+    "lot_area_sqft": 9726,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0670 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 644924
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9803110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-24",
+      "status_date": "1998-06-08",
+      "estimated_cost": 28000,
+      "description": "install fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705165",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-03-20",
+      "status_date": "1998-06-08",
+      "estimated_cost": 91884,
+      "description": "install fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9521087",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1995-12-15",
+      "status_date": "1997-02-26",
+      "estimated_cost": 2000000,
+      "revised_cost": 3250000,
+      "description": "erect a 4 story 28 unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511951S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1995-07-31",
+      "status_date": "1998-06-11",
+      "estimated_cost": 2000000,
+      "description": "erect a four story 50 unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=670",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=005",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577005",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

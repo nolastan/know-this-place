@@ -1,0 +1,84 @@
+{
+  "address": "28 Clarion Alley, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/clarion-alley/28/",
+  "apn": "3576087A",
+  "block": "3576",
+  "lot": "087A",
+  "eas_baseid": "360367",
+  "coordinates": {
+    "lat": 37.763079,
+    "lng": -122.420173
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 980.5,
+    "building_area_sqft": 1854,
+    "lot_depth_ft": 37,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0028 CLARION             AL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 138656,
+    "assessed_improvement_value": 57174,
+    "last_sale_date": "1993-04-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509086370",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-08",
+      "status_date": "2015-10-02",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace 40\" x 46\" landing. install water heater straps and pressure relief valve and pipe. comply with nov 201564251 # 14, #3, #4, #5",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARION&street_type=ALY&address_number=28",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3576087A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3576&lot=087A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3576087A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

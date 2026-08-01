@@ -1,0 +1,108 @@
+{
+  "address": "318–320 Utah Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/utah-street/318/",
+  "apn": "3961001C",
+  "block": "3961",
+  "lot": "001C",
+  "eas_baseid": "366786",
+  "coordinates": {
+    "lat": 37.765398,
+    "lng": -122.406821
+  },
+  "address_range": "318–320",
+  "street_numbers_on_parcel": [
+    "318",
+    "320"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 2562,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0320 0318 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 695192,
+    "assessed_improvement_value": 362568,
+    "last_sale_date": "2002-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M628667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-09",
+      "status_date": "2015-10-09",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907142594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-07-14",
+      "status_date": "2009-09-17",
+      "estimated_cost": 6898,
+      "revised_cost": 6898,
+      "description": "replace 5 windows with 5 vinyl windows. not on front of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105967",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-10",
+      "status_date": "1991-08-22",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=318",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3961001C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3961&lot=001C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3961001C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

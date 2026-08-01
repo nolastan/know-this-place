@@ -1,0 +1,113 @@
+{
+  "address": "1367 San Bruno Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-bruno-avenue/1367/",
+  "apn": "4262016",
+  "block": "4262",
+  "lot": "016",
+  "eas_baseid": "370588",
+  "coordinates": {
+    "lat": 37.752262,
+    "lng": -122.403969
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 640,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1367 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 120194,
+    "assessed_improvement_value": 51509
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401123931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-12",
+      "status_date": "2024-08-08",
+      "estimated_cost": 200,
+      "revised_cost": 2000,
+      "description": "install fense and gates.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708033784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-03",
+      "status_date": "2017-09-26",
+      "estimated_cost": 700,
+      "revised_cost": 700,
+      "description": "replace 3 steps in staircase.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108246798",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2001-08-24",
+      "status_date": "2002-10-07",
+      "estimated_cost": 2000,
+      "description": "repair 3 stairs in alley off kitchen area, demo garage/storage replace by alum shed same footage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-02-22",
+      "status_date": "1991-05-10",
+      "estimated_cost": 2400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=1367",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4262016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4262&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4262016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

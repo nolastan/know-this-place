@@ -1,0 +1,161 @@
+{
+  "address": "823 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/823/",
+  "apn": "4088027",
+  "block": "4088",
+  "lot": "027",
+  "eas_baseid": "368412",
+  "coordinates": {
+    "lat": 37.758386,
+    "lng": -122.408443
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2485,
+    "basement_area_sqft": 832,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0823 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 438914,
+    "last_sale_date": "1998-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311160959",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-11-16",
+      "status_date": "2023-11-28",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310279669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-27",
+      "status_date": "2024-04-17",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102054160",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-02-05",
+      "status_date": "2026-01-23",
+      "estimated_cost": 15000,
+      "revised_cost": 45000,
+      "description": "create (n) 1-bedroom unit at ground floor. new kitchen. new half bath. this (e) habitable space was developed under pa# 201505206769. no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709198913",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-19",
+      "status_date": "2017-10-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #201505206769-s1: change property line window type, change location of mechanical room, change laundry location to storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505206769",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-05-20",
+      "status_date": "2017-10-11",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "single story addition with roof deck. remodel exist ground level space, new flooring, lighting mechanical, update (e) half bath, new gate at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007064474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-06",
+      "status_date": "2000-11-07",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel existing bathroom, add skylight, remodel existing bedroom, remove ceiling, add three skyligh",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005089334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-08",
+      "status_date": "2000-05-24",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install foundation anchor bolts with epoxy, plywood over studs at garage door opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900562",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-11",
+      "status_date": "1999-08-26",
+      "estimated_cost": 8350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=823",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

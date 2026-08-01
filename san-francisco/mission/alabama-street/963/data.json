@@ -1,0 +1,146 @@
+{
+  "address": "963 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/963/",
+  "apn": "4146025",
+  "block": "4146",
+  "lot": "025",
+  "eas_baseid": "369397",
+  "coordinates": {
+    "lat": 37.756522,
+    "lng": -122.411055
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 3054,
+    "basement_area_sqft": 1166,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0963 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2731050,
+    "assessed_improvement_value": 1170450,
+    "last_sale_date": "2022-12-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201612094590",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-12-09",
+      "status_date": "2016-12-09",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "2' addition to (e) 6' fence in rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M653467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-01-08",
+      "status_date": "2016-01-08",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506128818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-12",
+      "status_date": "2016-06-07",
+      "estimated_cost": 310000,
+      "revised_cost": 437100,
+      "description": "1st fl - relocate garage and add 3 bedrooms, 2 baths, laundry & interior stairs to 2nd fl. 2nd fl - reconfigure plan to include (n) front rm, 1 bedrm, 1 1/2 bath, liv, dining, kitchen, (n) interior stairs to attic. 3rd fl (attic) convert to (n) family rm & bath, (n) roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501216187",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2015-01-21",
+      "status_date": "2015-07-21",
+      "estimated_cost": 400000,
+      "description": "horizontal & vertical addition to remodel 2-story sfr to 4-story duplex. lower unit to have (3) bedrooms, (3) baths. upper unit to have (3) bedrooms, (2.5) baths. sprinkler system to be installed throughout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215167",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-09-03",
+      "status_date": "1993-11-19",
+      "estimated_cost": 2400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-01-07",
+      "status_date": "1992-02-05",
+      "estimated_cost": 12000,
+      "description": "dry rot and termite repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805486",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-04-27",
+      "status_date": "1988-10-07",
+      "estimated_cost": 325,
+      "description": "remove sink & stove, to legalize",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=963",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4146025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4146&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4146025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "address": "3435 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3435/",
+  "apn": "6514024C",
+  "block": "6514",
+  "lot": "024C",
+  "eas_baseid": "400842",
+  "coordinates": {
+    "lat": 37.751915,
+    "lng": -122.421305
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 18,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 18,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 9411,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3435 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78983,
+    "assessed_improvement_value": 269825
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810223752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-22",
+      "status_date": "2018-11-08",
+      "estimated_cost": 34000,
+      "revised_cost": 34000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M552467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-22",
+      "status_date": "2015-01-22",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408184079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-18",
+      "status_date": "2015-03-27",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "strengthening of the walls at the garage/storage level. the specific strengthening includes the addition of steel frames at the garage door openins, plywood sheathing, anchor bolts, hold downs & shear clips, strengthening to satisfy the soft story mandatory requirements,2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004099931",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2010-04-09",
+      "status_date": "2010-04-16",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "fire alarm system upgrade & new fire alarm control panel. smoke detectors, heat detectors, manual pull stations, horns and horn strobes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003017294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-01",
+      "status_date": "2010-03-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "one unit-lath & plaster repair in one unit in living/bedroom closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002176639",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-17",
+      "status_date": "2010-03-02",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "to comply with nov# 201031425, instalation of frencg doors, jamb trim in existing framing on one unit at 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M63724",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-12",
+      "status_date": "2007-04-12",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012172",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-20",
+      "status_date": "1990-07-13",
+      "estimated_cost": 5700,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3435",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6514024C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6514&lot=024C",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6514024C",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

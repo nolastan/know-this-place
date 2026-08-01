@@ -1,0 +1,141 @@
+{
+  "address": "537 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/537/",
+  "apn": "3545096",
+  "block": "3545",
+  "lot": "096",
+  "eas_baseid": "359019",
+  "coordinates": {
+    "lat": 37.767833,
+    "lng": -122.425126
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 6090,
+    "lot_depth_ft": 30,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0537 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 188525,
+    "assessed_improvement_value": 484807
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "survey_name": "535-545 14TH ST",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ramona Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1911–1923",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202012030212",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-12-03",
+      "status_date": "2021-01-15",
+      "estimated_cost": 9100,
+      "revised_cost": 9402,
+      "description": "like for like five system upgrade with radio monitoriing and low frequency sounders.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M716268",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-24",
+      "status_date": "2016-08-24",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503029750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-02",
+      "status_date": "2015-05-20",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "soft story retrofit of gr fl only per sfbc chp 34b and ab107. to 2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M37221",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-21",
+      "status_date": "2006-04-21",
+      "revised_cost": 0,
+      "description": "sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900768",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-13",
+      "status_date": "2001-11-26",
+      "estimated_cost": 7400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=537",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3545096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3545&lot=096",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3545096",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42512553483208%2037.76783318940687)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

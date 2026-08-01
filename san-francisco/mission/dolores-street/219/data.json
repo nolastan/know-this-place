@@ -1,0 +1,118 @@
+{
+  "address": "219–221 Dolores Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/dolores-street/219/",
+  "apn": "3556035",
+  "block": "3556",
+  "lot": "035",
+  "eas_baseid": "359422",
+  "coordinates": {
+    "lat": 37.765925,
+    "lng": -122.426041
+  },
+  "address_range": "219–221",
+  "street_numbers_on_parcel": [
+    "219",
+    "221"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 5,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 5,
+    "lot_area_sqft": 3724,
+    "building_area_sqft": 6484,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0221 0219 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 738643,
+    "assessed_improvement_value": 1125697,
+    "last_sale_date": "2001-07-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200511188601",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-18",
+      "status_date": "2005-11-18",
+      "estimated_cost": 5100,
+      "revised_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106404",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-16",
+      "status_date": "1991-10-31",
+      "estimated_cost": 840,
+      "description": "install three windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-25",
+      "status_date": "1986-01-27",
+      "estimated_cost": 1100,
+      "description": "install six aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-05-22",
+      "status_date": "1985-08-12",
+      "estimated_cost": 1800,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=219",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&lot=035",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3556035",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

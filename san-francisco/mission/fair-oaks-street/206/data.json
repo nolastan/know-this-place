@@ -1,0 +1,160 @@
+{
+  "address": "206 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/206/",
+  "apn": "3648003",
+  "block": "3648",
+  "lot": "003",
+  "eas_baseid": "364297",
+  "coordinates": {
+    "lat": 37.753209,
+    "lng": -122.424272
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3525,
+    "building_area_sqft": 3200,
+    "lot_depth_ft": 17.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0206A0206 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 39704
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202406063827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-06",
+      "status_date": "2024-06-17",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211295128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-29",
+      "status_date": "2013-02-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove & repair dry rot on back stair post, remove & replace 4 treads and 3 risers, bring handrail upto code.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210242760",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2012-10-24",
+      "status_date": "2026-01-09",
+      "estimated_cost": 9000,
+      "revised_cost": 0,
+      "description": "back stairs replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M317287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-04-27",
+      "status_date": "2012-04-27",
+      "revised_cost": 159,
+      "description": "add house number 206 a fair oaks st to 206 fair oaks st, block 3648 lot 003.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922390",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-21",
+      "status_date": "2001-02-26",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320147",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-15",
+      "status_date": "1994-06-21",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319711",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-08",
+      "status_date": "1994-06-21",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=206",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3648003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3648&lot=003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3648003",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42427197276821%2037.75320944272161)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

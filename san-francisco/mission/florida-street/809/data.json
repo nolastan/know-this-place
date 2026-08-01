@@ -1,0 +1,147 @@
+{
+  "address": "809 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/809/",
+  "apn": "4086025",
+  "block": "4086",
+  "lot": "025",
+  "eas_baseid": "368346",
+  "coordinates": {
+    "lat": 37.758918,
+    "lng": -122.41047
+  },
+  "parcel": {
+    "year_built": 1954,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1663,
+    "building_area_sqft": 1017,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0809 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 717044,
+    "assessed_improvement_value": 532759,
+    "last_sale_date": "2009-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M583667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-04",
+      "status_date": "2015-05-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M368627",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-01-28",
+      "status_date": "2013-01-28",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210101741",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2012-10-10",
+      "status_date": "2012-11-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "revision to pa# 2012-0718-5150-addition of structural foundation work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207185150",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-18",
+      "status_date": "2012-07-19",
+      "estimated_cost": 125000,
+      "revised_cost": 125000,
+      "description": "coversion of existing unconditioned garage flr space for new interior conditioned 1st flr space. replace (e) stairs, add (n) 1st flr bath, (n) rear windows and door, new fixtures and finsihes in 1st flr. add skylight over stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905128266",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-05-12",
+      "status_date": "2009-05-12",
+      "estimated_cost": 4100,
+      "revised_cost": 4100,
+      "description": "window & exterior door in garage. replace 5 windows (3 in front of bldg & 2 at the back of bldg). wood clad windows. u<=0.67, typical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511077553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-07",
+      "status_date": "2006-03-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200303068966 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303068966",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-06",
+      "status_date": "2004-03-01",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "new fixtures in bathroom, remove non-bearing wall, new kitchen cabinets & fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=809",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4086025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4086&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4086025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

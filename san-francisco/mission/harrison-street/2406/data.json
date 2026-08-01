@@ -1,0 +1,83 @@
+{
+  "address": "2406 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2406/",
+  "apn": "3612076",
+  "block": "3612",
+  "lot": "076",
+  "eas_baseid": "362637",
+  "coordinates": {
+    "lat": 37.758694,
+    "lng": -122.412727
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1289,
+    "building_area_sqft": 2178,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2406 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 586253,
+    "assessed_improvement_value": 390835,
+    "last_sale_date": "2006-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201210051487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-05",
+      "status_date": "2012-11-02",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "to comply with nov #201261924: replace lower flight of front stair and handrails due to dry rot in-kind as existing, total replace & repair work less than 50% in-kind replacement.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2406",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=076",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612076",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

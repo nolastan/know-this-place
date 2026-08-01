@@ -1,0 +1,94 @@
+{
+  "address": "510 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/510/",
+  "apn": "3534016",
+  "block": "3534",
+  "lot": "016",
+  "eas_baseid": "358428",
+  "coordinates": {
+    "lat": 37.768185,
+    "lng": -122.424972
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 1,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 3076,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0510 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 173353,
+    "assessed_improvement_value": 167253
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208090133",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-09",
+      "status_date": "2022-11-09",
+      "estimated_cost": 28800,
+      "revised_cost": 28800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303222854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-22",
+      "status_date": "2013-06-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "change shower/tub fixtures, change shower tiles, change bathroom floor tiles; complay with complaint 201390563. remodel one (1) bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=510",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

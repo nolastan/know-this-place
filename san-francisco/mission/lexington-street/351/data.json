@@ -1,0 +1,108 @@
+{
+  "address": "351 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/351/",
+  "apn": "3609069",
+  "block": "3609",
+  "lot": "069",
+  "eas_baseid": "362414",
+  "coordinates": {
+    "lat": 37.757732,
+    "lng": -122.420214
+  },
+  "parcel": {
+    "year_built": 1880,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1611,
+    "building_area_sqft": 2074,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0351 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 307388,
+    "assessed_improvement_value": 486215,
+    "last_sale_date": "1999-10-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202303214102",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-03-21",
+      "status_date": "2023-03-21",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "repair/replace existing rotten sashes in kind (7 front)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000126285",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-01-26",
+      "status_date": "2001-01-22",
+      "estimated_cost": 52500,
+      "revised_cost": 52500,
+      "description": "demo storage &bathrm,convert kitchen to bedrm,remove wall,new front dr,enlarge livingrm entrance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=351",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=069",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609069",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42021388307322%2037.75773239973045)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

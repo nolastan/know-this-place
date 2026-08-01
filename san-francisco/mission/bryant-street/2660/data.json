@@ -1,0 +1,110 @@
+{
+  "address": "2660–2664 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2660/",
+  "apn": "4268007",
+  "block": "4268",
+  "lot": "007",
+  "eas_baseid": "370755",
+  "coordinates": {
+    "lat": 37.751799,
+    "lng": -122.409353
+  },
+  "address_range": "2660–2664",
+  "street_numbers_on_parcel": [
+    "2660",
+    "2662",
+    "2664"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4239,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2664 2660 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79851,
+    "assessed_improvement_value": 213422
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108106158",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2021-08-10",
+      "status_date": "2021-08-10",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "replace rear stairway (second means of egress) & replace rear of building laundry all levels.to comply with complaint 201198170, 200793215, 200449091, 200346305.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208298513",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2012-08-29",
+      "status_date": "2021-04-28",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "replace \"in-kind\" rear stairway (2nd means of egress) and laundry rooms for each unit (3) due to deterioration and dry rot, match all finishes. comply with complaint # 201198470, 200793215, 200346305, 200449091. maintain an egress path at all times. upper units are not occupied.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112561",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-07-17",
+      "status_date": "1995-06-30",
+      "estimated_cost": 60000,
+      "revised_cost": 106800,
+      "description": "convert crawl space in basement to off-street parking garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2660",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=007",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268007",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "address": "3665–3667 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3665/",
+  "apn": "6511001B",
+  "block": "6511",
+  "lot": "001B",
+  "eas_baseid": "400718",
+  "coordinates": {
+    "lat": 37.751658,
+    "lng": -122.424391
+  },
+  "address_range": "3665–3667",
+  "street_numbers_on_parcel": [
+    "3665",
+    "3667"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 2270,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3667 3665 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 332226,
+    "assessed_improvement_value": 255144,
+    "last_sale_date": "1995-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202007170409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-17",
+      "status_date": "2022-03-04",
+      "estimated_cost": 50000,
+      "revised_cost": 75000,
+      "description": "voluntary strenghening at the garage at the g/f per 2019 sfebc, appendix a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509167079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-16",
+      "status_date": "2015-11-18",
+      "estimated_cost": 7880,
+      "revised_cost": 7880,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817921",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-11-16",
+      "status_date": "1989-03-02",
+      "estimated_cost": 1700,
+      "description": "comply with code sections 17299 (b2) & 24436-s (b2)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3665",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6511001B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6511&lot=001B",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6511001B",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

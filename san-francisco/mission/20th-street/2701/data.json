@@ -1,0 +1,109 @@
+{
+  "address": "2701–2703 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2701/",
+  "apn": "4088001",
+  "block": "4088",
+  "lot": "001",
+  "eas_baseid": "368386",
+  "coordinates": {
+    "lat": 37.759194,
+    "lng": -122.40804
+  },
+  "address_range": "2701–2703",
+  "street_numbers_on_parcel": [
+    "2701",
+    "2703"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2550,
+    "building_area_sqft": 4382,
+    "lot_depth_ft": 2,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2703 2701 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 133945,
+    "assessed_improvement_value": 398093,
+    "last_sale_date": "1987-11-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309297758",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-29",
+      "status_date": "2024-10-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply w/abe program/ordinance 51-16, abe#201902135170, provide portable ramp 8 feet long, install sign & buzzer to help client to use the ramp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502118120",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-11",
+      "status_date": "2015-02-11",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace dry rotted subflooring for one unit 20th street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312491",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-01-05",
+      "status_date": "1984-01-19",
+      "estimated_cost": 475,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2701",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

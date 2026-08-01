@@ -1,0 +1,147 @@
+{
+  "address": "1360 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1360/",
+  "apn": "4275008",
+  "block": "4275",
+  "lot": "008",
+  "eas_baseid": "370986",
+  "coordinates": {
+    "lat": 37.750508,
+    "lng": -122.407341
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2233,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1360 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1064565,
+    "assessed_improvement_value": 476949,
+    "last_sale_date": "2012-10-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604296154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-29",
+      "status_date": "2016-09-20",
+      "estimated_cost": 450,
+      "revised_cost": 1000,
+      "description": "revision to ref pa 201503061913: change in (e) foundation location requires a longer beam @ second flr alteration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503261913",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-26",
+      "status_date": "2016-09-20",
+      "estimated_cost": 12000,
+      "revised_cost": 14000,
+      "description": "1) the owner proposes to alter the extg deck by removing stairs and deck 3' from property line and add additional 120 sq ft of new deck. 2)remove windows at 3rd floor and install french doors. 3)remove wall at 3rd fl. & add a beam.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307121703",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-12",
+      "status_date": "2014-06-19",
+      "estimated_cost": 7000,
+      "revised_cost": 11300,
+      "description": "convert (e) walk-in closet into a new bathroom on top level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201302130094",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-02-13",
+      "status_date": "2014-06-19",
+      "estimated_cost": 50,
+      "revised_cost": 50,
+      "description": "remove dry wall to see if there is any damage or mold, and to determine if it is possible to convert large closet into second bathroom is 6'x6' wall is 6' long.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603136548",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-03-13",
+      "status_date": "2006-12-07",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "upgrading of (e) walls (r/r sheetrock) & insulation; upgrade the electrical system, plumbing & install 2 new furnaces, 2 water heaters & remodel 2 (e) bathrooms & 2 kitchens & change (replace) all windows, seismic upgrade. to comply with nov# 200667050.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609090",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-07-29",
+      "status_date": "1986-12-08",
+      "estimated_cost": 2600,
+      "description": "installation of one cheney co. wecolator to be installed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303087",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-04-15",
+      "status_date": "1984-02-01",
+      "estimated_cost": 33000,
+      "description": "structural addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1360",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

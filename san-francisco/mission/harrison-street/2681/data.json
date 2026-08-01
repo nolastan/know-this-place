@@ -1,0 +1,116 @@
+{
+  "address": "2681 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2681/",
+  "apn": "4148017",
+  "block": "4148",
+  "lot": "017",
+  "eas_baseid": "369461",
+  "coordinates": {
+    "lat": 37.754532,
+    "lng": -122.411801
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1773.08,
+    "building_area_sqft": 2020,
+    "lot_depth_ft": 76,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2681 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1814696,
+    "assessed_improvement_value": 777726,
+    "last_sale_date": "2020-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1204929",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-03-13",
+      "status_date": "2020-03-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1134147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-05",
+      "status_date": "2019-09-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908300408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-30",
+      "status_date": "2020-05-27",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "renovate extg s.f.dwelling 2 story home, 1st floor infill under rear of house, create hbitable area. 2 baths , study, washer and dryer, 1 car/bike. 2nd floor: renovate kit/liv/din/ bedrooms. relocate bath and powder room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411018163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-01",
+      "status_date": "2006-07-24",
+      "estimated_cost": 47000,
+      "revised_cost": 47000,
+      "description": "remove (e) part of the sheetrock and plaster in order to fix plumbing & electrical. replace knob &",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2681",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=017",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148017",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "address": "1359–1361 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1359/",
+  "apn": "4276004E",
+  "block": "4276",
+  "lot": "004E",
+  "eas_baseid": "371024",
+  "coordinates": {
+    "lat": 37.750567,
+    "lng": -122.406808
+  },
+  "address_range": "1359–1361",
+  "street_numbers_on_parcel": [
+    "1359",
+    "1361"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 2880,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1361 1359 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 322742,
+    "assessed_improvement_value": 215154,
+    "last_sale_date": "1999-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9821778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-23",
+      "status_date": "1998-12-16",
+      "estimated_cost": 980,
+      "description": "repair front stairs and paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611787",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-09-24",
+      "status_date": "1987-01-15",
+      "estimated_cost": 2000,
+      "description": "replace old cabinet w/new cabinet in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310374",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-10-14",
+      "status_date": "1984-09-18",
+      "estimated_cost": 1200,
+      "description": "take down existing deck & replace with new deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8210505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-12-28",
+      "status_date": "1983-09-07",
+      "estimated_cost": 590,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1359",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4276004E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4276&lot=004E",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4276004E",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

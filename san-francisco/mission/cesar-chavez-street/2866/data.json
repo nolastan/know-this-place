@@ -1,0 +1,115 @@
+{
+  "address": "2866 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cesar-chavez-street/2866/",
+  "apn": "4334003A",
+  "block": "4334",
+  "lot": "003A",
+  "eas_baseid": "371301",
+  "coordinates": {
+    "lat": 37.74896,
+    "lng": -122.407017
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 1145,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2866 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191600,
+    "assessed_improvement_value": 86835,
+    "last_sale_date": "1998-01-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M721367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-12",
+      "status_date": "2016-09-12",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604270051",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-27",
+      "status_date": "2006-04-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200409023181 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409023181",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-02",
+      "status_date": "2006-04-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "family rm exercise rm bathroom storage bar (wet) add to garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406297545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-29",
+      "status_date": "2004-09-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew:pa#9920176 for final only, no work under this permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=2866",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&lot=003A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4334003A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "address": "965 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/965/",
+  "apn": "4146024",
+  "block": "4146",
+  "lot": "024",
+  "eas_baseid": "369396",
+  "coordinates": {
+    "lat": 37.756451,
+    "lng": -122.411048
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 2240,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0967 0965 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 15454,
+    "assessed_improvement_value": 17422
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200911231952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-23",
+      "status_date": "2010-01-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace in kind siding at south east side of building apprx. 550 sqft not visible frpm the street. remove/repair water damaged drywall, tile from south side of lower unit bathroom. replace in kind , remove/repair water damaged drywall from south wall of lower unit rear bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911191716",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-19",
+      "status_date": "2009-11-19",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "repair rear wood exterior stairs & landing. repair/replace damaged wood stringers, treads, guardrails. no more than 50% of stairs & landing to be repaired. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915335",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-27",
+      "status_date": "2000-02-10",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=965",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4146024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4146&lot=024",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4146024",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

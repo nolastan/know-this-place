@@ -1,0 +1,162 @@
+{
+  "address": "3647–3649 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/3647/",
+  "apn": "6568017A",
+  "block": "6568",
+  "lot": "017A",
+  "eas_baseid": "402637",
+  "coordinates": {
+    "lat": 37.748674,
+    "lng": -122.422157
+  },
+  "address_range": "3647–3649",
+  "street_numbers_on_parcel": [
+    "3647",
+    "3649"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 1313.87,
+    "building_area_sqft": 2014,
+    "lot_depth_ft": 49.58,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3649 3647 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 82980,
+    "assessed_improvement_value": 134102
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709209059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-20",
+      "status_date": "2017-12-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply with nov #201617341 per ces requirement at public right of way. to remove shed structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508174431",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-17",
+      "status_date": "2016-04-20",
+      "estimated_cost": 11600,
+      "revised_cost": 11600,
+      "description": "siding repair of west wall of building only approx 200sf, painting of west wall only. install installatoing at area of siding repair (r-19).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508174432",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-17",
+      "status_date": "2016-04-20",
+      "estimated_cost": 6300,
+      "revised_cost": 6300,
+      "description": "ref t.i. 201508174431: reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910148914",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-14",
+      "status_date": "2009-12-15",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "repair dry rot of balcony. repair in kind less than 50%. replace 2 broken stairs and 1 broken stair rail. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M88931",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-02",
+      "status_date": "2007-10-02",
+      "revised_cost": 1,
+      "description": "street space and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206048209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-04",
+      "status_date": "2002-06-24",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair all violation stated on the attached notice of violation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9406195",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-20",
+      "status_date": "1994-12-15",
+      "estimated_cost": 6125,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-23",
+      "status_date": "1992-05-18",
+      "estimated_cost": 2000,
+      "description": "stair repair, replace only risers & treads",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=3647",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6568017A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6568&lot=017A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6568017A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "address": "3349–3351 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3349/",
+  "apn": "3617072",
+  "block": "3617",
+  "lot": "072",
+  "eas_baseid": "467334",
+  "coordinates": {
+    "lat": 37.756588,
+    "lng": -122.422264
+  },
+  "address_range": "3349–3351",
+  "street_numbers_on_parcel": [
+    "3349",
+    "3351"
+  ],
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1992,
+    "basement_area_sqft": 605,
+    "use": "Multi-Family Residential",
+    "property_class": "1 Flat & Dwelling-1 Parcel",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3351 3349 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1900857,
+    "assessed_improvement_value": 814652,
+    "last_sale_date": "2022-03-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606304327",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-06-30",
+      "status_date": "2026-06-30",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "rear deck replacement, remove (e) deck and replace with new deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202511240314",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-11-24",
+      "status_date": "2025-11-24",
+      "estimated_cost": 6000,
+      "revised_cost": 0,
+      "description": "at west wall install hardie plank sding overlay, approx 280 sq ft. new siding material, non street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801108333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-10",
+      "status_date": "2018-06-14",
+      "estimated_cost": 2357,
+      "revised_cost": 2357,
+      "description": "replace 3 non-visable rear windows,vinyl. u-fact 0.32 or better. no size changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709158712",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-15",
+      "status_date": "2017-10-06",
+      "estimated_cost": 12960,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312965",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-12-21",
+      "status_date": "1984-05-14",
+      "estimated_cost": 1202,
+      "revised_cost": 0,
+      "description": "installation of 03 aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3349",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&lot=072",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3617072",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42226389713667%2037.75658759249684)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

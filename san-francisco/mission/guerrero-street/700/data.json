@@ -1,0 +1,127 @@
+{
+  "address": "700 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/700/",
+  "apn": "3598001",
+  "block": "3598",
+  "lot": "001",
+  "eas_baseid": "472788",
+  "coordinates": {
+    "lat": 37.759821,
+    "lng": -122.423788
+  },
+  "also_addressed": [
+    "3611 19TH ST"
+  ],
+  "parcel": {
+    "year_built": 1959,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 4020,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3611 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48184,
+    "assessed_improvement_value": 151700
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206065677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-06",
+      "status_date": "2022-07-01",
+      "estimated_cost": 13200,
+      "revised_cost": 13200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M759087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-06",
+      "status_date": "2017-02-06",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303061650",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-06",
+      "status_date": "2013-03-07",
+      "estimated_cost": 2300,
+      "revised_cost": 2300,
+      "description": "remove old garage door replace with new door steel sectional door with opener. new steel garage door to have plain restangular window on top with a total of 4 panes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M64628",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-18",
+      "status_date": "2007-04-18",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704168843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-16",
+      "status_date": "2007-10-03",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace window with same size aluminum window, 7 windows. outside painting infront and 4 windows in back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=700",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

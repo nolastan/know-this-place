@@ -1,0 +1,112 @@
+{
+  "address": "2509–2515 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2509/",
+  "apn": "4147031",
+  "block": "4147",
+  "lot": "031",
+  "eas_baseid": "369438",
+  "coordinates": {
+    "lat": 37.756965,
+    "lng": -122.411998
+  },
+  "address_range": "2509–2515",
+  "street_numbers_on_parcel": [
+    "2509",
+    "2511",
+    "2513",
+    "2515"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 3560,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2515 2509 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1210488,
+    "assessed_improvement_value": 518779,
+    "last_sale_date": "2016-08-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203281051",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-28",
+      "status_date": "2022-04-11",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312303184",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-30",
+      "status_date": "2004-01-05",
+      "estimated_cost": 950,
+      "revised_cost": 950,
+      "description": "repair of rear stair less than 50 precent of structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217211",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-05",
+      "status_date": "1992-10-27",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2509",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4147031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4147&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4147031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

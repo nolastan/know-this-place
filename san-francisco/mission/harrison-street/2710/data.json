@@ -1,0 +1,122 @@
+{
+  "address": "2710 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2710/",
+  "apn": "3640003A",
+  "block": "3640",
+  "lot": "003A",
+  "eas_baseid": "363958",
+  "coordinates": {
+    "lat": 37.75374,
+    "lng": -122.412298
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2150,
+    "building_area_sqft": 923,
+    "lot_depth_ft": 86,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2710 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 211718,
+    "assessed_improvement_value": 97706,
+    "last_sale_date": "1996-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901089855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-08",
+      "status_date": "2019-05-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel. new cabinets, new counters. no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704108484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-10",
+      "status_date": "2007-07-02",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace front stairs due to dry rot per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702960",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-19",
+      "status_date": "1997-02-26",
+      "estimated_cost": 9000,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201088",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1982-02-11",
+      "status_date": "1983-03-04",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8105086",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "1981-06-08",
+      "status_date": "1999-12-28",
+      "estimated_cost": 10000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2710",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=003A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640003A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

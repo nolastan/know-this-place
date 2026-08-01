@@ -1,0 +1,145 @@
+{
+  "address": "1232–1234 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1232/",
+  "apn": "4270004",
+  "block": "4270",
+  "lot": "004",
+  "eas_baseid": "370801",
+  "coordinates": {
+    "lat": 37.752123,
+    "lng": -122.411213
+  },
+  "address_range": "1232–1234",
+  "street_numbers_on_parcel": [
+    "1232",
+    "1234"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 2990,
+    "building_area_sqft": 3620,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1234 1232 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38209,
+    "assessed_improvement_value": 65482
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202001081463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-08",
+      "status_date": "2020-12-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (e) rotted exterior egress stair at central courtyard - (n) stair to be near-exact like-for-like replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M741087",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-22",
+      "status_date": "2016-11-22",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502107873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-10",
+      "status_date": "2015-11-03",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "rear bldg - remove & replace 163 linear ft of brick foundation with reinforced concrete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403039648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-03",
+      "status_date": "2014-03-07",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair (e) staircase to front dodor in kind. less than 50% to be repaired.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400753",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-01-20",
+      "status_date": "1984-09-13",
+      "estimated_cost": 450,
+      "description": "fire damage to be repaired consisting of 3 studs form floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1232",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4270004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4270&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4270004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41121292985318%2037.75212254540069)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

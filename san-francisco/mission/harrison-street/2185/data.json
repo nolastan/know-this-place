@@ -1,0 +1,101 @@
+{
+  "address": "2185 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2185/",
+  "apn": "4019004A",
+  "block": "4019",
+  "lot": "004A",
+  "eas_baseid": "367344",
+  "coordinates": {
+    "lat": 37.762013,
+    "lng": -122.412549
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1550,
+    "building_area_sqft": 1800,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2187 2185 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81202,
+    "assessed_improvement_value": 192926
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9214383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-24",
+      "status_date": "1992-09-03",
+      "estimated_cost": 200,
+      "description": "24 mud sill anchors (bolt down mud sill plate)shear bsmt wal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209011",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-06-02",
+      "status_date": "1992-08-26",
+      "estimated_cost": 15000,
+      "description": "repair dry-rot, & replace double hung windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813355",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-08",
+      "status_date": "1988-12-29",
+      "estimated_cost": 300,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2185",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4019004A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4019&lot=004A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4019004A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

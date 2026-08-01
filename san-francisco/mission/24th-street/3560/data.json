@@ -1,0 +1,117 @@
+{
+  "address": "3560 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3560/",
+  "apn": "3645014",
+  "block": "3645",
+  "lot": "014",
+  "eas_baseid": "364214",
+  "coordinates": {
+    "lat": 37.752102,
+    "lng": -122.422615
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 5,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 5,
+    "lot_area_sqft": 2090,
+    "building_area_sqft": 5490,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3560 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 429534,
+    "assessed_improvement_value": 469670
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202308033701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-03",
+      "status_date": "2024-06-11",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "install low frequency sounders to existing fire alarm system to comply with sec 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623876",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-12-12",
+      "status_date": "1997-06-11",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404394",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-04-26",
+      "status_date": "1984-07-24",
+      "estimated_cost": 930,
+      "description": "motor vehicle damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3560",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42261477484635%2037.75210206653022)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

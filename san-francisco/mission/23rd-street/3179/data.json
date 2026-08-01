@@ -1,0 +1,148 @@
+{
+  "address": "3179 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3179/",
+  "apn": "3641036",
+  "block": "3641",
+  "lot": "036",
+  "eas_baseid": "364056",
+  "coordinates": {
+    "lat": 37.753772,
+    "lng": -122.415912
+  },
+  "parcel": {
+    "year_built": 1973,
+    "units": 6,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 4050,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3179 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1040009,
+    "assessed_improvement_value": 693336,
+    "assessed_fixtures_value": 3213,
+    "last_sale_date": "2011-10-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1973",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611162884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-16",
+      "status_date": "2019-09-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805152179",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-05-15",
+      "status_date": "2008-12-24",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "to legal establish new occupancy 6-bed residential care on 1st flr @ three units. comply w/nov #200232113 - re-install kitchens for two units on 1st flr(middle flr) & replace bathtubs by showers @ two units. re-install entrance door @ one unit. remove ground flr non-conforming entrance door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804179959",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2008-04-17",
+      "status_date": "2008-04-17",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "convert building back to original use as 6 unit apartment building. previous pa# 2002-0913-6413 os cancelled. comply with nov# 200232113",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509193288",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-09-19",
+      "status_date": "2009-01-27",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "fire sprinkler the entire structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M24309",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-15",
+      "status_date": "2003-07-15",
+      "revised_cost": 0,
+      "description": "sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209136413",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-09-13",
+      "status_date": "2008-06-16",
+      "estimated_cost": 2000,
+      "revised_cost": 380000,
+      "description": "convert (e) 6 dwelling units on two floors into a mentally-ill residential care facility (adult) for 22 and/ or fewer (legalization)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-12",
+      "status_date": "1991-02-04",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3179",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3641036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3641&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3641036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

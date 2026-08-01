@@ -1,0 +1,132 @@
+{
+  "address": "1385–1387 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/1385/",
+  "apn": "4276004A",
+  "block": "4276",
+  "lot": "004A",
+  "eas_baseid": "371021",
+  "coordinates": {
+    "lat": 37.75025,
+    "lng": -122.406795
+  },
+  "address_range": "1385–1387",
+  "street_numbers_on_parcel": [
+    "1385",
+    "1387"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1387 1385 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1298432,
+    "assessed_improvement_value": 975667,
+    "last_sale_date": "2004-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308073861",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-07",
+      "status_date": "2023-10-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107073912",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-07",
+      "status_date": "2021-10-14",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "1385a hampshire st: frame box for new bathroom fan/repair sheetrock damage and paint, repair celing. no structural changes. kitchen remodel using (e) cabinets, replace wiring. install washer/dryer under kitchen area. no new fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104088128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-08",
+      "status_date": "2021-10-14",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "remodeling bathroom, replace sub panel close (e) door with new wall, increse size of door opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102084196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-08",
+      "status_date": "2022-06-23",
+      "estimated_cost": 17000,
+      "revised_cost": 22400,
+      "description": "replace kitchen and install new sink. same layout. replace outlets and switches. new circuit for kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705126502",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2017-05-12",
+      "status_date": "2017-10-19",
+      "estimated_cost": 60000,
+      "description": "interior remodel one unit and expand to g/f by adding new living, new bedroom and bathroom, relocate existing kitchen & living to g/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=1385",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4276004A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4276&lot=004A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4276004A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

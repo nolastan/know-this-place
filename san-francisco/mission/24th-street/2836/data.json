@@ -1,0 +1,140 @@
+{
+  "address": "2836–2844 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2836/",
+  "apn": "4209039",
+  "block": "4209",
+  "lot": "039",
+  "eas_baseid": "422592",
+  "coordinates": {
+    "lat": 37.75304,
+    "lng": -122.40892
+  },
+  "address_range": "2836–2844",
+  "street_numbers_on_parcel": [
+    "2836",
+    "2838",
+    "2844"
+  ],
+  "parcel": {
+    "year_built": 1988,
+    "units": 7,
+    "stories": 3,
+    "rooms": 28,
+    "bathrooms": 10,
+    "lot_area_sqft": 5200,
+    "building_area_sqft": 12200,
+    "lot_depth_ft": 4,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2844 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 715678,
+    "assessed_improvement_value": 1169501,
+    "assessed_fixtures_value": 45842
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404180233",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-04-18",
+      "status_date": "2024-04-18",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "to comply with nov# 202419671; repair corner of bldg due to car collision. damaged corner structurally sound, a new cripple wall underneath window opening will be rebuilt with double 2x6 top plates,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M841407",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-10",
+      "status_date": "2017-10-10",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M197727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-15",
+      "status_date": "2010-04-15",
+      "revised_cost": 1,
+      "description": "street space and sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901230729",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-23",
+      "status_date": "2009-01-23",
+      "estimated_cost": 2000,
+      "revised_cost": 4000,
+      "description": "upgrade automatic fire suppresion system to the kitchen hood, using range guard 6 gallon & 4 gallons ul300 net chemical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114387",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-08-12",
+      "status_date": "1993-12-17",
+      "estimated_cost": 6800,
+      "description": "installation of one walk in cooler box",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109169",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-10-21",
+      "status_date": "1982-08-03",
+      "estimated_cost": 10000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2836",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "address": "2573 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2573/",
+  "apn": "4147022",
+  "block": "4147",
+  "lot": "022",
+  "eas_baseid": "369429",
+  "coordinates": {
+    "lat": 37.756311,
+    "lng": -122.411936
+  },
+  "parcel": {
+    "year_built": 1934,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1425,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2573 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169955,
+    "assessed_improvement_value": 183552,
+    "last_sale_date": "1994-04-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1934",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502281291",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-28",
+      "status_date": "2025-04-11",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504059221",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-05",
+      "status_date": "2005-05-06",
+      "estimated_cost": 5390,
+      "revised_cost": 5390,
+      "description": "replace 6 wndw size for size/back of house/not visible",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-08",
+      "status_date": "1996-02-28",
+      "estimated_cost": 3250,
+      "description": "repair damaged wood on/under stairs. repl tile on steps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-24",
+      "status_date": "1996-01-11",
+      "estimated_cost": 7875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-04-08",
+      "status_date": "1994-04-21",
+      "estimated_cost": 2606,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-18",
+      "status_date": "1990-05-07",
+      "estimated_cost": 2343,
+      "description": "installation of three windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=2573",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4147022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4147&lot=022",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4147022",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

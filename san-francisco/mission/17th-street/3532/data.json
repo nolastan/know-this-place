@@ -1,0 +1,136 @@
+{
+  "address": "3532 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3532/",
+  "apn": "3567016",
+  "block": "3567",
+  "lot": "016",
+  "eas_baseid": "359963",
+  "coordinates": {
+    "lat": 37.763419,
+    "lng": -122.424787
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 4024,
+    "building_area_sqft": 3400,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3534 3532 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46410,
+    "assessed_improvement_value": 57264
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606263978",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-26",
+      "status_date": "2026-06-30",
+      "estimated_cost": 180000,
+      "revised_cost": 179504,
+      "description": "interior remodel, 3532 17th st,2nd floor unit. work include interior alternations w/ adding three new bathrooms & kitchen relocation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507212046",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-07-21",
+      "status_date": "2017-09-12",
+      "estimated_cost": 10000,
+      "revised_cost": 13000,
+      "description": "replace rear satirs 100% & to comply with complaint #201117321.the existing stair are no longer in existing due to collapse. install temporary egress method from bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107251009",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2011-07-25",
+      "status_date": "2014-06-18",
+      "estimated_cost": 17000,
+      "description": "comply with nov# 201117321. replacement of (e) rear stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009130772",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-13",
+      "status_date": "2010-10-05",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "to comply with his nov#201060386 dated 8/25/2010 for repair of stairway steps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511168263",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-16",
+      "status_date": "2005-11-16",
+      "estimated_cost": 4450,
+      "revised_cost": 4450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510276642",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-27",
+      "status_date": "2005-10-27",
+      "estimated_cost": 6450,
+      "revised_cost": 6450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3532",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3567016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3567&lot=016",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3567016",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

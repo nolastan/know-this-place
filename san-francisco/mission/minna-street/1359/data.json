@@ -1,0 +1,159 @@
+{
+  "address": "1359 Minna Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/minna-street/1359/",
+  "apn": "3548047",
+  "block": "3548",
+  "lot": "047",
+  "eas_baseid": "359106",
+  "coordinates": {
+    "lat": 37.767373,
+    "lng": -122.418937
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3150,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1359 MINNA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1201341,
+    "assessed_improvement_value": 1965028,
+    "last_sale_date": "2014-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201806141899",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-14",
+      "status_date": "2018-07-05",
+      "estimated_cost": 14000,
+      "revised_cost": 15525,
+      "description": "ref pa# 201512185513 & 201806111554; installation of fire alarm, including (1) wireless fire alarm radio communicator, (2) manual pull station, (1) smoke detector, (2) wp horn strobes, (12) lf horns, and addressable monitor modules",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806111554",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-11",
+      "status_date": "2018-06-14",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "install new fire sprinkler system per nfpa13 with stand pipe includer 2\" underground fire service total 65 heads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M792747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-02",
+      "status_date": "2017-06-02",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512185513",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-12-18",
+      "status_date": "2019-03-18",
+      "estimated_cost": 350000,
+      "revised_cost": 600000,
+      "description": "remodel 3 units building with horizontal addition @ rear for basement level & 1st 2 stories. (e) 3 units will be 2 bedroo with 1 remodel bath & 1 new half bath, except 3rd floor unit with 1 new full bath. 3 remodel kitchens.1 new 2 bedrm, 1.5 bath in (e) basement / storage. new roof deck on main",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504244622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-24",
+      "status_date": "2019-03-18",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "structural strengthening at ground level, shear walls & moment frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407292452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-29",
+      "status_date": "2019-03-18",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "replace (e) foundation in basement, (n) slab elevation to remain unchanged relative to (e) slab elevation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119110",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-10",
+      "status_date": "1993-05-07",
+      "estimated_cost": 5000,
+      "revised_cost": 45000,
+      "description": "complete seismic upgrade, convert storage area to garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108605",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-05-17",
+      "status_date": "1992-01-04",
+      "estimated_cost": 2500,
+      "description": "permit to remove abatement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNA&street_type=ST&address_number=1359",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3548047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3548&lot=047",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3548047",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

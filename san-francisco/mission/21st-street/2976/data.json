@@ -1,0 +1,128 @@
+{
+  "address": "2976–2978 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2976/",
+  "apn": "3612023",
+  "block": "3612",
+  "lot": "023",
+  "eas_baseid": "362584",
+  "coordinates": {
+    "lat": 37.757566,
+    "lng": -122.414047
+  },
+  "address_range": "2976–2978",
+  "street_numbers_on_parcel": [
+    "2976",
+    "2978"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 3100,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2978 2976 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43003,
+    "assessed_improvement_value": 129081
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603046920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-04",
+      "status_date": "2026-04-01",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "re roofing no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703070828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-07",
+      "status_date": "2017-03-10",
+      "estimated_cost": 6850,
+      "revised_cost": 6850,
+      "description": "in-kind replacement of half composite shingle roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M271287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-01",
+      "status_date": "2011-07-01",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31312",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-02-24",
+      "status_date": "2005-02-24",
+      "revised_cost": 0,
+      "description": "streetspace and sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-23",
+      "status_date": "1990-08-09",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2976",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

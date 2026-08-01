@@ -1,0 +1,104 @@
+{
+  "address": "3012 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3012/",
+  "apn": "4269008",
+  "block": "4269",
+  "lot": "008",
+  "eas_baseid": "370782",
+  "coordinates": {
+    "lat": 37.751351,
+    "lng": -122.410341
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1800,
+    "lot_depth_ft": 4,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3014 3012 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 251091,
+    "assessed_improvement_value": 194503,
+    "last_sale_date": "1991-08-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912240450",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-24",
+      "status_date": "2019-12-24",
+      "estimated_cost": 5900,
+      "revised_cost": 5900,
+      "description": "install 5/8\" a307 -a36 8 1/2\" embed @ 32\" o.c. install plywood 1/2\" cdx to crawl space walls. install a-35- l70 simpson angles top plate to rim joist., 16\" o.c. simpson set-xp 8d common @ 4\"o.c edge nailing, 12\" fierld.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1155767",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-21",
+      "status_date": "2019-10-21",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M131205",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-18",
+      "status_date": "2008-08-18",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4269008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4269&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4269008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

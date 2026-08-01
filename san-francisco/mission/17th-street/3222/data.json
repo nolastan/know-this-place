@@ -1,0 +1,115 @@
+{
+  "address": "3222 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3222/",
+  "apn": "3570011",
+  "block": "3570",
+  "lot": "011",
+  "eas_baseid": "360129",
+  "coordinates": {
+    "lat": 37.763749,
+    "lng": -122.417969
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 2456,
+    "building_area_sqft": 4916,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3222 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 591176,
+    "assessed_improvement_value": 394115,
+    "last_sale_date": "2005-09-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508120159",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-08-12",
+      "status_date": "2006-05-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "temporay shoring and underpining.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303058810",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-05",
+      "status_date": "2003-12-23",
+      "estimated_cost": 8750,
+      "revised_cost": 8750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210280016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-28",
+      "status_date": "2003-01-09",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair siding, 138 ft. replacement window kice back 15 w . siding & womdow not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012825",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-06-28",
+      "status_date": "1991-12-10",
+      "estimated_cost": 12000,
+      "description": "remove bathroom floor, change counter top in kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3222",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3570011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3570&lot=011",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3570011",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

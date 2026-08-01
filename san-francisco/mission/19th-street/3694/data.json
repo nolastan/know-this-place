@@ -1,0 +1,129 @@
+{
+  "address": "3694–3696 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3694/",
+  "apn": "3587028",
+  "block": "3587",
+  "lot": "028",
+  "eas_baseid": "361025",
+  "coordinates": {
+    "lat": 37.760089,
+    "lng": -122.42536
+  },
+  "address_range": "3694–3696",
+  "street_numbers_on_parcel": [
+    "3694",
+    "3696"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3014,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3696 3694 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 351822,
+    "assessed_improvement_value": 591706,
+    "last_sale_date": "1989-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201801128591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-12",
+      "status_date": "2018-03-09",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M415687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-09",
+      "status_date": "2013-08-09",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36194",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-31",
+      "status_date": "2006-01-31",
+      "revised_cost": 0,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509213447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-21",
+      "status_date": "2006-09-21",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel (e) kitchen. add (toilet & sink), 1/2 bathroom. work on 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813073",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-10",
+      "status_date": "1999-03-01",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3694",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=028",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587028",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

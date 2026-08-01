@@ -1,0 +1,164 @@
+{
+  "address": "49 Hill Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hill-street/49/",
+  "apn": "3617040",
+  "block": "3617",
+  "lot": "040",
+  "eas_baseid": "362879",
+  "coordinates": {
+    "lat": 37.755792,
+    "lng": -122.42213
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2735,
+    "building_area_sqft": 3000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0049 HILL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2242048,
+    "assessed_improvement_value": 960872,
+    "last_sale_date": "2010-09-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202603117370",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-03-11",
+      "status_date": "2026-03-11",
+      "estimated_cost": 72000,
+      "revised_cost": 117000,
+      "description": "renovation of an (e) 4 bedroom & 3.5 baths single family house. renovate primary bath & closet on 2nd level. no increase in conditioned floor area. #a3.1 rear of house - change - east elevation - change - add 1 window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509175519",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-17",
+      "status_date": "2025-09-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing (no hotworks)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M124325",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-30",
+      "status_date": "2008-06-30",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205156594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-15",
+      "status_date": "2002-05-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2001/08/30/7197 & 2000/08/25/8858 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108307197",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-30",
+      "status_date": "2002-05-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2000/08/25/8858 (job is still under construction).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008258858",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-08-25",
+      "status_date": "2002-05-16",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "rev to permit 9927026 s1 revision include changes to fndtn design/addition of 231 sf of basemt sp be",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9927026S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-12-27",
+      "status_date": "2002-05-16",
+      "estimated_cost": 75000,
+      "revised_cost": 150000,
+      "description": "replace extg brick foundations with reinforced concrete fndt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HILL&street_type=ST&address_number=49",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&lot=040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3617040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42213044388716%2037.75579177838247)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

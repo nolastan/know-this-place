@@ -1,0 +1,102 @@
+{
+  "address": "1062 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/1062/",
+  "apn": "4148009",
+  "block": "4148",
+  "lot": "009",
+  "eas_baseid": "369450",
+  "coordinates": {
+    "lat": 37.754892,
+    "lng": -122.411451
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 1472,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1062 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 965699,
+    "assessed_improvement_value": 413871
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607155084",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-15",
+      "status_date": "2026-07-15",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "remove existing bathtub and tile surround. install new 66\"x30\" shower base. install acrylic wall surround. install new pressure balanced shower valve.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506279656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-27",
+      "status_date": "2025-07-30",
+      "estimated_cost": 19800,
+      "revised_cost": 19800,
+      "description": "remove the (e) roof. reroof by using new certainteed membrane. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-05-19",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2059,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1062",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4148009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4148&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4148009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

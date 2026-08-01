@@ -1,0 +1,130 @@
+{
+  "address": "21–23 Oakwood Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/oakwood-street/21/",
+  "apn": "3587079",
+  "block": "3587",
+  "lot": "079",
+  "eas_baseid": "361068",
+  "coordinates": {
+    "lat": 37.761083,
+    "lng": -122.424778
+  },
+  "address_range": "21–23",
+  "street_numbers_on_parcel": [
+    "21",
+    "23"
+  ],
+  "parcel": {
+    "year_built": 1978,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 2877,
+    "building_area_sqft": 2326,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0023 0021 OAKWOOD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 623938,
+    "last_sale_date": "1998-08-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412053130",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-05",
+      "status_date": "2015-02-18",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "remove kitchen wall, remodel kitchen & bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608038547",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2006-08-03",
+      "status_date": "2006-09-08",
+      "estimated_cost": 10000,
+      "description": "temporary shoring as a result of excavation proposed @ 29 oakwood st bpn#200309094197s.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305295759",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-29",
+      "status_date": "2003-07-02",
+      "estimated_cost": 16388,
+      "revised_cost": 16388,
+      "description": "repair dryrot as per letter dates 05/11/01 replace plywood at southwalls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211201905",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-20",
+      "status_date": "2002-11-20",
+      "estimated_cost": 3632,
+      "revised_cost": 3632,
+      "description": "window replacement,9 windows,1 ea in 2 bdrms,3 stairs,2 bath,2 kit.visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-29",
+      "status_date": "2000-03-01",
+      "estimated_cost": 2300,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKWOOD&street_type=ST&address_number=21",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&lot=079",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3587079",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

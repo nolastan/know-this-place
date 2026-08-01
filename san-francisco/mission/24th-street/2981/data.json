@@ -1,0 +1,135 @@
+{
+  "address": "2981–2985 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2981/",
+  "apn": "4270034",
+  "block": "4270",
+  "lot": "034",
+  "eas_baseid": "370827",
+  "coordinates": {
+    "lat": 37.752424,
+    "lng": -122.411514
+  },
+  "address_range": "2981–2985",
+  "street_numbers_on_parcel": [
+    "2981",
+    "2983",
+    "2985"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2917,
+    "building_area_sqft": 4644,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2985 2981 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 397582,
+    "last_sale_date": "1998-06-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M1046707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-05",
+      "status_date": "2019-03-05",
+      "revised_cost": 1,
+      "description": "street space and mta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M125645",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-10",
+      "status_date": "2008-07-10",
+      "revised_cost": 1,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202260010",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-26",
+      "status_date": "2002-04-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "(e) non accessible toilet is being converted to an accessible one, rev to app 200110221317-",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110221317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-22",
+      "status_date": "2002-04-23",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "existing bathroom to be made handicap accessible one partitoin is to be relocated to allow for 60\" t",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2981",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4270034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4270&lot=034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4270034",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41151441608783%2037.75242350813361)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

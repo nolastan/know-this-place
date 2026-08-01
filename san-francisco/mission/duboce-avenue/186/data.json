@@ -1,0 +1,109 @@
+{
+  "address": "186–188 Duboce Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/duboce-avenue/186/",
+  "apn": "3502029",
+  "block": "3502",
+  "lot": "029",
+  "eas_baseid": "357639",
+  "coordinates": {
+    "lat": 37.769969,
+    "lng": -122.42423
+  },
+  "address_range": "186–188",
+  "street_numbers_on_parcel": [
+    "186",
+    "188"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2710,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0188 0186 DUBOCE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244292,
+    "assessed_improvement_value": 362376,
+    "last_sale_date": "1996-09-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1922",
+    "survey_name": "186 Duboce Ave",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201812178543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-17",
+      "status_date": "2019-01-28",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M896009",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-02",
+      "status_date": "2018-03-02",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107431",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-30",
+      "status_date": "1991-08-31",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBOCE&street_type=AVE&address_number=186",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3502029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3502&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3502029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

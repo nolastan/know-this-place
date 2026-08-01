@@ -1,0 +1,152 @@
+{
+  "address": "2751–2753 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/2751/",
+  "apn": "4210001",
+  "block": "4210",
+  "lot": "001",
+  "eas_baseid": "370196",
+  "coordinates": {
+    "lat": 37.754397,
+    "lng": -122.407557
+  },
+  "address_range": "2751–2753",
+  "street_numbers_on_parcel": [
+    "2751",
+    "2753"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2343,
+    "building_area_sqft": 2886,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2753 2751 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1207455,
+    "assessed_improvement_value": 804965,
+    "last_sale_date": "2016-01-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504245189",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-24",
+      "status_date": "2025-07-25",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replacement of subsidewalk basement roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108257126",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-25",
+      "status_date": "2021-08-25",
+      "estimated_cost": 9900,
+      "revised_cost": 9900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901311784",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-01-31",
+      "status_date": "2019-01-31",
+      "revised_cost": 2000,
+      "description": "sand wood floors 2 re-epoxy. paint walls. replace front door/window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806283278",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-06-28",
+      "status_date": "2026-01-09",
+      "estimated_cost": 28000,
+      "revised_cost": 0,
+      "description": "install spiral staircase from 2nd fl to roof, install retracable skylight and install roof decking and guardrail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702139317",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-02-13",
+      "status_date": "2026-01-09",
+      "estimated_cost": 95000,
+      "revised_cost": 0,
+      "description": "structural improvements at basement and 1st story. no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604013793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-01",
+      "status_date": "2016-04-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "this document and correct the 3r report to describe the legal use and occupancy of this bldg as a 2 story bldg with commercial use on the ground floor with one residential dwelling unit on the 2nd floor. the property also has 2 garage in the rear, they are attached to the main bldg. this determinati",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219753",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-12",
+      "status_date": "1993-07-07",
+      "estimated_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2751",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4210001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4210&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4210001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

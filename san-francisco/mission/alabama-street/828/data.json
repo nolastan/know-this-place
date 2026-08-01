@@ -1,0 +1,117 @@
+{
+  "address": "828 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/828/",
+  "apn": "4084008",
+  "block": "4084",
+  "lot": "008",
+  "eas_baseid": "368250",
+  "coordinates": {
+    "lat": 37.758231,
+    "lng": -122.411772
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 945,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0828 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1024100,
+    "assessed_improvement_value": 438900,
+    "last_sale_date": "2024-11-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201211073730",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-07",
+      "status_date": "2012-12-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110146763",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-14",
+      "status_date": "2011-10-14",
+      "estimated_cost": 1400,
+      "revised_cost": 1400,
+      "description": "install 3 vinyl windows in kind into existing frames. no change in size or location. windows do not face street. if applicable, bedroom windows will comply with section cbc1026 for rescue. all windows will be double pane and have a u-factor of .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912213589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-12-21",
+      "status_date": "2010-01-22",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "termite report # 12882. items 2a, 2b in fox structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904146229",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-14",
+      "status_date": "2009-04-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace dry rot @ left corner building @ south corner front building 15 sq. ft. total. replace in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=828",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4084008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4084&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4084008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

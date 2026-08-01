@@ -1,0 +1,129 @@
+{
+  "address": "69 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/69/",
+  "apn": "3635012",
+  "block": "3635",
+  "lot": "012",
+  "eas_baseid": "275045",
+  "coordinates": {
+    "lat": 37.754212,
+    "lng": -122.421356
+  },
+  "also_addressed": [
+    "1168 VALENCIA ST"
+  ],
+  "parcel": {
+    "year_built": 1964,
+    "units": 7,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 7,
+    "bedrooms": 7,
+    "lot_area_sqft": 2965.1,
+    "building_area_sqft": 3942,
+    "lot_depth_ft": 7.47,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1168 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159290,
+    "assessed_improvement_value": 458018
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1044427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-02-27",
+      "status_date": "2019-02-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709117560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-11",
+      "status_date": "2019-06-05",
+      "estimated_cost": 40000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfebc chapter 4d per engineering criteria 2016 cebc appendix a-4. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704244667",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-24",
+      "status_date": "2017-05-18",
+      "estimated_cost": 15500,
+      "revised_cost": 15500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807247466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-24",
+      "status_date": "2008-08-20",
+      "estimated_cost": 9450,
+      "revised_cost": 9450,
+      "description": "install 16 vinyl windows in kind into exist frames. no change in size or location. window do face the street. if applicable, bedroom windows will comply with sec 310.4 for rescue. all windows will be double pane and have a u-factor of .30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712126",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-01",
+      "status_date": "1998-04-14",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=69",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3635012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3635&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3635012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

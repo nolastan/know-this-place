@@ -1,0 +1,133 @@
+{
+  "address": "763–765 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/763/",
+  "apn": "3637018A",
+  "block": "3637",
+  "lot": "018A",
+  "eas_baseid": "363836",
+  "coordinates": {
+    "lat": 37.754136,
+    "lng": -122.417256
+  },
+  "address_range": "763–765",
+  "street_numbers_on_parcel": [
+    "763",
+    "765"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2400,
+    "building_area_sqft": 3500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0765 0763 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111008,
+    "assessed_improvement_value": 142092
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Von Schroeder-Welsh Block Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1889–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201408123624",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-12",
+      "status_date": "2014-12-09",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "repair steps in kind less than 50% @ front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M457468",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-15",
+      "status_date": "2014-01-15",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305298079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-29",
+      "status_date": "2014-07-01",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "comply to nov #201383102. fire damage repair in kind. replace rear roof area, 25 ft by 40 ft. replace rear wall 3rd floor to roof. replace gyp bd wall and ceiling, 3rd floor and rear of 2nd floor. replace bathroom and kitchen fixture. install insulation replace 41 windows. front window to be wooden.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9417890",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-28",
+      "status_date": "1995-02-28",
+      "estimated_cost": 4200,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=763",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3637018A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3637&lot=018A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3637018A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41725570665733%2037.75413606443171)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

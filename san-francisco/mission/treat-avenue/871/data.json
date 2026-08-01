@@ -1,0 +1,138 @@
+{
+  "address": "871 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/871/",
+  "apn": "3613049",
+  "block": "3613",
+  "lot": "049",
+  "eas_baseid": "362691",
+  "coordinates": {
+    "lat": 37.756256,
+    "lng": -122.413024
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3675,
+    "building_area_sqft": 2241,
+    "basement_area_sqft": 587,
+    "lot_depth_ft": 22.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0871 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1175369,
+    "assessed_improvement_value": 1410668,
+    "last_sale_date": "2018-03-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1098567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-20",
+      "status_date": "2019-06-20",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1051287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-13",
+      "status_date": "2019-03-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807063901",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-06",
+      "status_date": "2019-08-12",
+      "estimated_cost": 400000,
+      "revised_cost": 520000,
+      "description": "interior remodel of sfd - expansion below (e) living space at rear, 3 new dormers, new garden shed at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903113828",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-03-11",
+      "status_date": "2009-04-07",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel of extg kitchen and bathroom. new exterior window and a door to replace extg at 2nd floor at rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111193536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-19",
+      "status_date": "2002-05-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace deteriorated front stairs, all framing lumber pressure treated, stair treads v.g.d.f. risers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023339",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-09",
+      "status_date": "1990-11-29",
+      "estimated_cost": 6475,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=871",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613049",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

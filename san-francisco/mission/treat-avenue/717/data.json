@@ -1,0 +1,131 @@
+{
+  "address": "717–719 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/717/",
+  "apn": "3612068",
+  "block": "3612",
+  "lot": "068",
+  "eas_baseid": "362626",
+  "coordinates": {
+    "lat": 37.758599,
+    "lng": -122.413248
+  },
+  "address_range": "717–719",
+  "street_numbers_on_parcel": [
+    "717",
+    "719"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 2328,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0719 0717 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166113,
+    "assessed_improvement_value": 99659
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310179623",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-17",
+      "status_date": "2014-02-13",
+      "estimated_cost": 3800,
+      "revised_cost": 4000,
+      "description": "install electric heaters. repairs dryrot around bathroom walls (non bearing)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306109058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-10",
+      "status_date": "2014-02-13",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "increase scope of work on approved 201305207405; to include kitchen & bathrm remodel remove (e) sheetrock as needed to insulate walls at interior, scope of work in 719a (grnd flr apartment)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305207405",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-20",
+      "status_date": "2014-02-13",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace front entry door, replace stairs (4 steps) to front door of ground floor apartment, 719 a treat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212035351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-03",
+      "status_date": "2013-01-25",
+      "estimated_cost": 2000,
+      "revised_cost": 4000,
+      "description": "revision to pa#2012-04-27-9327. replace front stairway in kind. abate nov#201230161.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204279327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-27",
+      "status_date": "2013-01-25",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "making repairs to stairs - less than 50%.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=717",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=068",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612068",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

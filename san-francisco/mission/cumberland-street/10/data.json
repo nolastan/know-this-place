@@ -1,0 +1,142 @@
+{
+  "address": "10 Cumberland Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/cumberland-street/10/",
+  "apn": "3598046",
+  "block": "3598",
+  "lot": "046",
+  "eas_baseid": "361648",
+  "coordinates": {
+    "lat": 37.759351,
+    "lng": -122.424002
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2002.5,
+    "building_area_sqft": 1474,
+    "lot_depth_ft": 89,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0010 CUMBERLAND          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1048142,
+    "assessed_improvement_value": 487118,
+    "last_sale_date": "2009-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Mission Boulevards and Alleys Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201409045421",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-04",
+      "status_date": "2014-10-14",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "replace 17 windows in kind. windows facing the street to be aluminium wood clad windows and shall keep their existing grid pattern.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212276896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-27",
+      "status_date": "2013-02-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa#2011-0610-7922. new decking material to be used is trex trancends 5/4x6. new parapet wall detail. new railing design to be used is trex designer series. new deck frame to be construction heart 2x8 redwood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M351488",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-04",
+      "status_date": "2012-10-04",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106107922",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-06-10",
+      "status_date": "2013-02-11",
+      "estimated_cost": 48000,
+      "revised_cost": 48000,
+      "description": "creation of a new firewall resulted of fill-in (e) lightwell on 1st and 2nd floors. extend (e)opening btw kitch and lv rm, (n) spiral stair to connect to (n) roof deck, (n) roof deck access and a new 492 sqft roof deck, and 1hr parapet wall at property line.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23540",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-28",
+      "status_date": "2003-04-28",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CUMBERLAND&street_type=ST&address_number=10",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3598046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3598&lot=046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3598046",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42400177599882%2037.75935142924782)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

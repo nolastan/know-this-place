@@ -1,0 +1,153 @@
+{
+  "address": "2813–2815 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2813/",
+  "apn": "4267032",
+  "block": "4267",
+  "lot": "032",
+  "eas_baseid": "370744",
+  "coordinates": {
+    "lat": 37.752636,
+    "lng": -122.408518
+  },
+  "address_range": "2813–2815",
+  "street_numbers_on_parcel": [
+    "2813",
+    "2815"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1598,
+    "building_area_sqft": 3480,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "24MISS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2815 2813 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139756,
+    "assessed_improvement_value": 419298,
+    "last_sale_date": "2000-01-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607215311",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-07-21",
+      "status_date": "2026-07-21",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "to comply with nov 202654668- to legalize (2) previously constructured (n) interior nonbearing partition walls, (1) previously installed (n) sink, (1) previously installed (n) hot water heater with (n) gfci receptacle and bring to code floor drain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211141367",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-11-14",
+      "status_date": "2004-04-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove extg storefront and install new automatic teller machine",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103164520",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-16",
+      "status_date": "2001-12-11",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "interior remodel to upper 2 floors revused plan show study room with furnace closet 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011024700",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-02",
+      "status_date": "2001-05-02",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009251455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-25",
+      "status_date": "2001-03-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to p#2000/02/18/2322. repair dry rot damage framing at rear left corner, fill-in(f) light w",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002182322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-18",
+      "status_date": "2001-03-28",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "interior remodel to upper flrs &kitchen/bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-09-04",
+      "status_date": "1985-10-28",
+      "estimated_cost": 4010,
+      "description": "install alumininum in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2813",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

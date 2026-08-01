@@ -1,0 +1,147 @@
+{
+  "address": "2766 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/2766/",
+  "apn": "4086012",
+  "block": "4086",
+  "lot": "012",
+  "eas_baseid": "368327",
+  "coordinates": {
+    "lat": 37.757778,
+    "lng": -122.410143
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2321,
+    "building_area_sqft": 1080,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2766 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 749700,
+    "assessed_improvement_value": 321300,
+    "last_sale_date": "2023-09-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410183264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-18",
+      "status_date": "2024-11-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310178795",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-17",
+      "status_date": "2024-05-20",
+      "estimated_cost": 30000,
+      "revised_cost": 163081,
+      "description": "interior renovation for 2nd fl - reconfigure interior layout from 2 bedrooms/2bath to 4 bedrooms/2 baths; infill 4 windows at west side of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809140195",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-14",
+      "status_date": "2018-11-15",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply with nov #201484311 & 200563294. remove unpermitted rear deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801310083",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2018-01-31",
+      "status_date": "2018-02-02",
+      "estimated_cost": 200,
+      "revised_cost": 500,
+      "description": "to comply with nov 201484311. replacing with insulated window in rear. same size same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801299749",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2018-01-29",
+      "status_date": "2019-05-21",
+      "estimated_cost": 3000,
+      "description": "erect ada ramp from existing second floor to ground elevation 7'6 down. ramp slope 7\" over 12' comply with nov 2005632294, 201484311.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601303316",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2006-01-30",
+      "status_date": "2007-10-01",
+      "estimated_cost": 500,
+      "description": "comply with notice of violation #200563294 - rear yard deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-06",
+      "status_date": "1996-03-11",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=2766",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4086012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4086&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4086012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "address": "655–665 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/655/",
+  "apn": "4025008",
+  "block": "4025",
+  "lot": "008",
+  "eas_baseid": "367415",
+  "coordinates": {
+    "lat": 37.76112,
+    "lng": -122.407802
+  },
+  "address_range": "655–665",
+  "street_numbers_on_parcel": [
+    "655",
+    "657",
+    "659",
+    "661",
+    "663",
+    "665"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 3847,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0665 0655 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191394,
+    "assessed_improvement_value": 459375,
+    "last_sale_date": "1987-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907317490",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-31",
+      "status_date": "2019-07-31",
+      "estimated_cost": 9400,
+      "revised_cost": 9500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903155398",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-15",
+      "status_date": "2019-09-16",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel kitchen & bathroom. replce finishes & fixtures in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009019987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-01",
+      "status_date": "2010-10-26",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904247052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-24",
+      "status_date": "2009-06-05",
+      "estimated_cost": 4500,
+      "revised_cost": 6000,
+      "description": "backfill swimming pool. (3) 4x4 holes cut in bottom, sides removed 2' from top edge. backfilled and compacted w/non contaminated fill material. compacted every 6\".",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311039193",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-03",
+      "status_date": "2003-11-24",
+      "estimated_cost": 2470,
+      "revised_cost": 2470,
+      "description": "remove/replace single stringer of stairs, install guard railing on 1 side of stairs, remove/replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-20",
+      "status_date": "1990-12-31",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-01-11",
+      "status_date": "1988-01-26",
+      "estimated_cost": 4500,
+      "description": "replace dry rot to rear deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=655",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4025008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4025&lot=008",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4025008",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

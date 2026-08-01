@@ -1,0 +1,142 @@
+{
+  "address": "188–190 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/188/",
+  "apn": "3534013",
+  "block": "3534",
+  "lot": "013",
+  "eas_baseid": "358425",
+  "coordinates": {
+    "lat": 37.768231,
+    "lng": -122.424711
+  },
+  "address_range": "188–190",
+  "street_numbers_on_parcel": [
+    "188",
+    "190"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 1707,
+    "building_area_sqft": 3108,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0190 0188 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 784812,
+    "assessed_improvement_value": 523200,
+    "last_sale_date": "2004-05-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505055814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-05",
+      "status_date": "2025-08-11",
+      "estimated_cost": 2125,
+      "revised_cost": 20000,
+      "description": "bathroom remodel. replace bathroom tub with shower stall. move toilet to adjacent wall where tub is. replace vanity. more electrical, (light switches) to improve functionality",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M975428",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-07",
+      "status_date": "2018-09-07",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902041367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-04",
+      "status_date": "2009-02-27",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to comply with complaint# 200885175, item# 2. repair rear wooden stairs / deck. approx 10%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710296702",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-29",
+      "status_date": "2007-12-04",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "kitchen & bath remodel permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408242393",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-24",
+      "status_date": "2004-09-07",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "perform work to clear nov for his inspection se4rvces report complaint no. 200451582-repair rear dec",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406116228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-11",
+      "status_date": "2004-08-05",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel kitchen 1 both in kind. install new cabs, counters tile -no tructural work- all work in top",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=188",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3534013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3534&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3534013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

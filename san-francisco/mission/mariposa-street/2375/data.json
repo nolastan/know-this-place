@@ -1,0 +1,111 @@
+{
+  "address": "2375 Mariposa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mariposa-street/2375/",
+  "apn": "4013025",
+  "block": "4013",
+  "lot": "025",
+  "eas_baseid": "367320",
+  "coordinates": {
+    "lat": 37.763032,
+    "lng": -122.407075
+  },
+  "parcel": {
+    "year_built": 1991,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 1837.5,
+    "building_area_sqft": 3981,
+    "lot_depth_ft": 73.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2375 MARIPOSA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 89612,
+    "assessed_improvement_value": 705628
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1991",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9016810",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-08-23",
+      "status_date": "1991-05-20",
+      "estimated_cost": 4000,
+      "description": "install fire sprinkler system in new bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812728",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-08-29",
+      "status_date": "1992-09-17",
+      "estimated_cost": 322000,
+      "description": "erect a two story two unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611383",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1986-09-15",
+      "status_date": "1988-08-29",
+      "estimated_cost": 266000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501646",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1985-02-15",
+      "status_date": "1986-08-08",
+      "estimated_cost": 253000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARIPOSA&street_type=ST&address_number=2375",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4013025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4013&lot=025",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4013025",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

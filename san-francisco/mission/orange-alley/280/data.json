@@ -1,0 +1,107 @@
+{
+  "address": "280 Orange Alley, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/orange-alley/280/",
+  "apn": "6530013A",
+  "block": "6530",
+  "lot": "013A",
+  "eas_baseid": "401357",
+  "coordinates": {
+    "lat": 37.749235,
+    "lng": -122.419913
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1131.25,
+    "building_area_sqft": 1021,
+    "lot_depth_ft": 45.25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0280 ORANGE              AL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 448484,
+    "assessed_improvement_value": 298979,
+    "last_sale_date": "2002-04-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503041537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-04",
+      "status_date": "2025-03-11",
+      "estimated_cost": 13680,
+      "revised_cost": 13680,
+      "description": "reroofing. no hot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204222778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-22",
+      "status_date": "2022-07-15",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "to comply with nov# 202180971. restoring rooms at ground fl to storage & workshop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111152356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-15",
+      "status_date": "2022-09-26",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace windows in-kind/2 front of house facing alley",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ORANGE&street_type=ALY&address_number=280",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6530013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6530&lot=013A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6530013A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

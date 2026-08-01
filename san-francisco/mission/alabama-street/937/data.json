@@ -1,0 +1,103 @@
+{
+  "address": "937 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/937/",
+  "apn": "4146030",
+  "block": "4146",
+  "lot": "030",
+  "eas_baseid": "369402",
+  "coordinates": {
+    "lat": 37.756872,
+    "lng": -122.411088
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 960,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0937 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 220948,
+    "assessed_improvement_value": 125759,
+    "last_sale_date": "1993-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201006285396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-28",
+      "status_date": "2011-06-03",
+      "estimated_cost": 23000,
+      "revised_cost": 50000,
+      "description": "replace & upgrade existing foundation and upgrade shear walls. partial seismic strengthening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M167086",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-05",
+      "status_date": "2009-06-05",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413538",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-08-30",
+      "status_date": "1995-09-26",
+      "estimated_cost": 30000,
+      "description": "remodel existing second unit, foundation system and deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=937",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4146030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4146&lot=030",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4146030",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

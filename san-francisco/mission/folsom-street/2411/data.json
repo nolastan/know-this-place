@@ -1,0 +1,149 @@
+{
+  "address": "2411–2415 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2411/",
+  "apn": "3612041",
+  "block": "3612",
+  "lot": "041",
+  "eas_baseid": "362602",
+  "coordinates": {
+    "lat": 37.758628,
+    "lng": -122.414357
+  },
+  "address_range": "2411–2415",
+  "street_numbers_on_parcel": [
+    "2411",
+    "2413",
+    "2415"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "bedrooms": 8,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 4275,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2415 2411 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 131982,
+    "assessed_improvement_value": 214252
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1105147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-05",
+      "status_date": "2019-07-05",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1089107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-03",
+      "status_date": "2019-06-03",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M20065",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-03",
+      "status_date": "2002-09-03",
+      "revised_cost": 0,
+      "description": "sidewalk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909630",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-17",
+      "status_date": "2000-02-11",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902720",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-11",
+      "status_date": "2000-02-14",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303844",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-09",
+      "status_date": "1993-09-03",
+      "estimated_cost": 9500,
+      "description": "replace old back stair/new dr & window/new rain leader & gut",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8311185",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-02",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1760,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2411",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3612041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3612&lot=041",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3612041",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

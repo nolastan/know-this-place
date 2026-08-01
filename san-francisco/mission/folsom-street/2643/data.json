@@ -1,0 +1,155 @@
+{
+  "address": "2643–2645 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2643/",
+  "apn": "3639009",
+  "block": "3639",
+  "lot": "009",
+  "eas_baseid": "363928",
+  "coordinates": {
+    "lat": 37.755013,
+    "lng": -122.41396
+  },
+  "address_range": "2643–2645",
+  "street_numbers_on_parcel": [
+    "2643",
+    "2645"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2752,
+    "building_area_sqft": 1994,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2645 2643 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1204744,
+    "assessed_improvement_value": 803162,
+    "last_sale_date": "2014-08-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201703081030",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-08",
+      "status_date": "2017-11-28",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "interior repairs, repair window, current window has cracked glass; replace one wood window in-kind. all work done on the storage structure in back yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102099901",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-09",
+      "status_date": "2012-03-20",
+      "estimated_cost": 11709,
+      "revised_cost": 11709,
+      "description": "retro fitting 7 windows same size & location w/ a portable wood composite. visible from street. u factor.4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101188512",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-18",
+      "status_date": "2014-07-02",
+      "estimated_cost": 1,
+      "revised_cost": 4500,
+      "description": "revision to bpa #2010-0114-4758. eliminate proposed deck expansion, revise scope at existing bathrooms per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010142997",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-14",
+      "status_date": "2010-12-13",
+      "estimated_cost": 4000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001144758",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-14",
+      "status_date": "2010-01-14",
+      "estimated_cost": 22000,
+      "revised_cost": 116000,
+      "description": "renovation of existing 2 story residence. relocation of doorways, removal of walls, relocation of bathroom, extension of deck at side yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319600",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-11-16",
+      "status_date": "1996-02-02",
+      "estimated_cost": 1,
+      "revised_cost": 250,
+      "description": "convert living space back to stroage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922702",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-11-21",
+      "status_date": "1991-04-12",
+      "estimated_cost": 7500,
+      "revised_cost": 0,
+      "description": "ewo-ns",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2643",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639009",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

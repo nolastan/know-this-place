@@ -1,0 +1,130 @@
+{
+  "address": "334 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/334/",
+  "apn": "3609050",
+  "block": "3609",
+  "lot": "050",
+  "eas_baseid": "362395",
+  "coordinates": {
+    "lat": 37.757941,
+    "lng": -122.420633
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1611,
+    "building_area_sqft": 1339,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0334 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 26537,
+    "assessed_improvement_value": 20301
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201008319905",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-31",
+      "status_date": "2010-08-31",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810154252",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-15",
+      "status_date": "2008-10-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "rear 9'0\" screening wood fence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206078538",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-06-07",
+      "status_date": "2002-12-03",
+      "estimated_cost": 6000,
+      "revised_cost": 10000,
+      "description": "replace an extg deteriorated shed style laundry and bth with anew structure in sme location at bck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808740",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-05-14",
+      "status_date": "1999-03-02",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "curb cut",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=334",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=050",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609050",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42063292430964%2037.75794138885042)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

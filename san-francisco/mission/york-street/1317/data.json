@@ -1,0 +1,160 @@
+{
+  "address": "1317 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1317/",
+  "apn": "4275023",
+  "block": "4275",
+  "lot": "023",
+  "eas_baseid": "371009",
+  "coordinates": {
+    "lat": 37.750905,
+    "lng": -122.407726
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1988,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1317 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1429750,
+    "assessed_improvement_value": 612750,
+    "last_sale_date": "2024-10-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209152481",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-15",
+      "status_date": "2022-10-24",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair rot on exterior stairs 50% or less in kind. (not street facing )",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501203663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-20",
+      "status_date": "2005-03-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa#200308212751 &200408192025. remove from plans (2) fire rated walls +decks @ prop.line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408192025",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-19",
+      "status_date": "2005-03-21",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "rev. to pa#2003/08/21/2751-correct (e) roof level on elevations to 21'-6\" (from 21'-o\")",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406257353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-25",
+      "status_date": "2005-03-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 200406176707 (revsion of 2003082127851-revised footing detail 8-d.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406176707",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-06-17",
+      "status_date": "2007-01-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "rev:200308212751 strengthen existing footing detali (8/d.1)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308212751",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-08-21",
+      "status_date": "2005-03-21",
+      "estimated_cost": 80000,
+      "revised_cost": 110500,
+      "description": "vertical and horizontal additions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-10",
+      "status_date": "1994-08-22",
+      "estimated_cost": 2000,
+      "description": "completion of pest report #1201-94 by wellinton termite cont",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818715",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-28",
+      "status_date": "1989-04-26",
+      "estimated_cost": 3780,
+      "revised_cost": 0,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1317",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4275023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4275&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4275023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

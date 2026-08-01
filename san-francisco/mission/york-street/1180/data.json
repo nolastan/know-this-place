@@ -1,0 +1,137 @@
+{
+  "address": "1180 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1180/",
+  "apn": "4209013",
+  "block": "4209",
+  "lot": "013",
+  "eas_baseid": "370176",
+  "coordinates": {
+    "lat": 37.75318,
+    "lng": -122.408412
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 1200,
+    "building_area_sqft": 1292,
+    "lot_depth_ft": 50,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1180 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 612922,
+    "assessed_improvement_value": 377554,
+    "last_sale_date": "2013-09-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201502138289",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-13",
+      "status_date": "2015-02-13",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501216315",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-21",
+      "status_date": "2015-02-23",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "perform repairs as per termite report #62649 item 1a & 5c, replace rear bedroom windows with new vinyl windows, replace lower rear door with a new vilyl sliding door at existing opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305217461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-21",
+      "status_date": "2013-07-25",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remove extg non-conforming lower unit including kitchen and bathroom/non structural walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-24",
+      "status_date": "1989-06-08",
+      "estimated_cost": 20000,
+      "description": "dry rot replaced stucco and repair foundation repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902932",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-02-22",
+      "status_date": "1989-06-09",
+      "estimated_cost": 12000,
+      "description": "kitchen and bathroom remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819156",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-05",
+      "status_date": "1989-06-06",
+      "estimated_cost": 900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1180",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=013",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209013",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

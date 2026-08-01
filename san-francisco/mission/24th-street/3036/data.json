@@ -1,0 +1,159 @@
+{
+  "address": "3036 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3036/",
+  "apn": "3640070",
+  "block": "3640",
+  "lot": "070",
+  "eas_baseid": "423541",
+  "coordinates": {
+    "lat": 37.752814,
+    "lng": -122.412687
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2814,
+    "building_area_sqft": 4120,
+    "lot_depth_ft": 4,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NCT1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3038 3036 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 455315,
+    "assessed_improvement_value": 455315,
+    "last_sale_date": "2011-08-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502210856",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-21",
+      "status_date": "2025-04-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201903296642. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001272829",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-01-27",
+      "status_date": "2026-01-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "voluntary accesibility imrpvements/barrier removal at (e) ground floor retail tenant suite, interior work only no structural work, mep under sperate permit (deffered) sumbittal) as required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903296642",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-29",
+      "status_date": "2019-06-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply w/ accessible business entrance program per ordinance 51-16",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821907",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-10-26",
+      "status_date": "2000-04-19",
+      "estimated_cost": 10500,
+      "revised_cost": 15000,
+      "description": "build produce market & handicapp toilet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810092",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-06-03",
+      "status_date": "2000-04-19",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722290",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-04",
+      "status_date": "2003-08-28",
+      "estimated_cost": 500,
+      "description": "repair deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-31",
+      "status_date": "1996-08-26",
+      "estimated_cost": 3300,
+      "description": "reinforce exist drop ceiling cables (add wires)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603385",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-01",
+      "status_date": "1996-06-17",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3640070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3640&lot=070",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3640070",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

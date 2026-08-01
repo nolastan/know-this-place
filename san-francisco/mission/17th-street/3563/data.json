@@ -1,0 +1,142 @@
+{
+  "address": "3563–3565 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3563/",
+  "apn": "3578068",
+  "block": "3578",
+  "lot": "068",
+  "eas_baseid": "360479",
+  "coordinates": {
+    "lat": 37.762857,
+    "lng": -122.425265
+  },
+  "address_range": "3563–3565",
+  "street_numbers_on_parcel": [
+    "3563",
+    "3565"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3070,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3565 3563 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162856,
+    "assessed_improvement_value": 496745,
+    "last_sale_date": "1997-05-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909232382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-23",
+      "status_date": "2020-10-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace existing windows on front facade with new double hung wood sash windows in existing frame. replace windows on rear elevation with vinyl windows. repair siding on rear elevation in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501135596",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-13",
+      "status_date": "2015-06-10",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "remove (e) cabinet-kitchen, remove (e) sink & dishwasher, remove bath vanity & sink reinstall kitchen cabinets & sink, bath vanity & sink, 5 electrical circuits, approx. 10 lf cabinet, 1-2\" vanity (small apartment). no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408252530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-25",
+      "status_date": "2004-11-30",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair dry rot on back stairs per his m. green in like kind. per his complaint no. 200451790-dated 7",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202219659",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-21",
+      "status_date": "2002-08-21",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace (e) kitchen cabinets/install new sink, subpanel/new circuits in kitchen & living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709072",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-19",
+      "status_date": "1997-07-03",
+      "estimated_cost": 3000,
+      "description": "change kitchen cabinet and counter tops",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512366",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-11-01",
+      "status_date": "1990-05-24",
+      "estimated_cost": 5,
+      "description": "bring bldg. into full compliance with provisions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3563",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3578068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3578&lot=068",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3578068",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

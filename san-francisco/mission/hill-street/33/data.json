@@ -1,0 +1,130 @@
+{
+  "address": "33 Hill Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hill-street/33/",
+  "apn": "3617081",
+  "block": "3617",
+  "lot": "081",
+  "eas_baseid": "362913",
+  "coordinates": {
+    "lat": 37.755813,
+    "lng": -122.421773
+  },
+  "parcel": {
+    "year_built": 1989,
+    "units": 3,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 3077,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0033 HILL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40741,
+    "assessed_improvement_value": 375311
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1989",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202506239220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-23",
+      "status_date": "2025-11-17",
+      "estimated_cost": 10000,
+      "revised_cost": 26208,
+      "description": "install hardie siding overlay at east wall of 3 unit building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610311511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-31",
+      "status_date": "2016-11-23",
+      "estimated_cost": 18800,
+      "revised_cost": 18800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717474",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-12-09",
+      "status_date": "1988-07-13",
+      "estimated_cost": 2100,
+      "description": "install fire sprinkler system & isoretric dwgs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706858",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1987-05-21",
+      "status_date": "1988-07-11",
+      "estimated_cost": 240000,
+      "description": "two story three unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HILL&street_type=ST&address_number=33",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&lot=081",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3617081",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42177345588141%2037.755813269021786)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

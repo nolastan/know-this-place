@@ -1,0 +1,103 @@
+{
+  "address": "864 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/864/",
+  "apn": "3613044",
+  "block": "3613",
+  "lot": "044",
+  "eas_baseid": "362686",
+  "coordinates": {
+    "lat": 37.756298,
+    "lng": -122.413662
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 7,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 5,
+    "bedrooms": 8,
+    "lot_area_sqft": 3675,
+    "building_area_sqft": 2648,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0864 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 781978,
+    "assessed_improvement_value": 426531
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9700559",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-10",
+      "status_date": "1997-06-11",
+      "estimated_cost": 500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-03-11",
+      "status_date": "1993-03-24",
+      "estimated_cost": 1,
+      "description": "renew expired application #9105463",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105463S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-04-07",
+      "status_date": "1993-02-04",
+      "estimated_cost": 15000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=864",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3613044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3613&lot=044",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3613044",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

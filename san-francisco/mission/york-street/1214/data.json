@@ -1,0 +1,115 @@
+{
+  "address": "1214 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1214/",
+  "apn": "4267004",
+  "block": "4267",
+  "lot": "004",
+  "eas_baseid": "370714",
+  "coordinates": {
+    "lat": 37.75236,
+    "lng": -122.408421
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1440,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1214 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1442026,
+    "assessed_improvement_value": 618009,
+    "last_sale_date": "2017-04-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506189019",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-18",
+      "status_date": "2025-06-23",
+      "estimated_cost": 61000,
+      "revised_cost": 95742,
+      "description": "remodel & addition to sfd: excavate 1st fl slab @ garden rm; central lightwell & exterior patio; add (n) slab & finishes; add (n) habitable structure below (e) overhanging 2nd fl structure, to be (n) sauna & (n) toilet room - rebuild (n) rear deck, rebuild (e) exterior stair in (n) location; add (n)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310319902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-31",
+      "status_date": "2023-12-01",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M86564",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-09-14",
+      "status_date": "2007-09-14",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512624",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-10",
+      "status_date": "1996-03-22",
+      "estimated_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1214",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4267004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4267&lot=004",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4267004",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

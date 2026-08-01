@@ -1,0 +1,132 @@
+{
+  "address": "35–37 Alvarado Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alvarado-street/35/",
+  "apn": "3634023",
+  "block": "3634",
+  "lot": "023",
+  "eas_baseid": "363753",
+  "coordinates": {
+    "lat": 37.754184,
+    "lng": -122.42212
+  },
+  "address_range": "35–37",
+  "street_numbers_on_parcel": [
+    "35",
+    "37"
+  ],
+  "parcel": {
+    "year_built": 1880,
+    "units": 2,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 3155,
+    "lot_depth_ft": 14,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0035 ALVARADO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 832241,
+    "assessed_improvement_value": 1184643,
+    "last_sale_date": "2005-09-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M54147",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-01-16",
+      "status_date": "2007-01-16",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405254801",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-25",
+      "status_date": "2004-05-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "renew expired permit 200309265929.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403259686",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-03-25",
+      "status_date": "2007-02-01",
+      "estimated_cost": 98000,
+      "revised_cost": 313000,
+      "description": "interior remodel & rear addition to (e) structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309265929",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-26",
+      "status_date": "2003-09-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (e) footing with (n) reinforced concrete footing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901286",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-21",
+      "status_date": "2000-09-22",
+      "estimated_cost": 2000,
+      "description": "alter ground floor to create work space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALVARADO&street_type=ST&address_number=35",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3634023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3634&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3634023",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

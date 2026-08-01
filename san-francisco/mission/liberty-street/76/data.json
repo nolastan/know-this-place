@@ -1,0 +1,131 @@
+{
+  "address": "76 Liberty Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/liberty-street/76/",
+  "apn": "3608049",
+  "block": "3608",
+  "lot": "049",
+  "eas_baseid": "362335",
+  "coordinates": {
+    "lat": 37.75785,
+    "lng": -122.422818
+  },
+  "parcel": {
+    "year_built": 1880,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 2875,
+    "building_area_sqft": 2100,
+    "lot_depth_ft": 15,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0076 LIBERTY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2723910,
+    "assessed_improvement_value": 1167390,
+    "last_sale_date": "2024-04-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1880",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Liberty Street Historic District",
+      "california_register_status": "Listed",
+      "national_register_status": "Listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1867–1911",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202512242620",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-01-19",
+      "status_date": "2026-01-19",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "raise (e) building 18in. insert (n) garage below grade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901134",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-23",
+      "status_date": "1989-03-24",
+      "estimated_cost": 980,
+      "description": "repalce dryrot sash, glass & glazed, no change window size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900983",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-19",
+      "status_date": "1990-04-06",
+      "estimated_cost": 29000,
+      "description": "remodel kitchen, remodel bathroom, add one bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LIBERTY&street_type=ST&address_number=76",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&lot=049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608049",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4228183532373%2037.75784976095119)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "address": "1719–1721 Folsom Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/folsom-street/1719/",
+  "apn": "3529031",
+  "block": "3529",
+  "lot": "031",
+  "eas_baseid": "358239",
+  "coordinates": {
+    "lat": 37.769377,
+    "lng": -122.415439
+  },
+  "address_range": "1719–1721",
+  "street_numbers_on_parcel": [
+    "1719",
+    "1721"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2252,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1721 1719 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 837030,
+    "assessed_improvement_value": 257534,
+    "last_sale_date": "2009-02-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201205311649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-31",
+      "status_date": "2012-08-09",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "new retaining wall at rear side of building & new fence on top of new retaining wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-19",
+      "status_date": "1992-05-28",
+      "estimated_cost": 700,
+      "description": "repl exist fence 8 ft tall 1x6 & 4x6 redwood posts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203235",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-03-03",
+      "status_date": "1992-05-19",
+      "estimated_cost": 86000,
+      "revised_cost": 110000,
+      "description": "repair fire-damaged roof, framing, kitchen, baths, siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203093",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-02-28",
+      "status_date": "1992-06-02",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-09",
+      "status_date": "1990-06-13",
+      "estimated_cost": 12000,
+      "description": "termite & dry rot repair. bndtn bolts. replace posts at back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=1719",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3529031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3529&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3529031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "address": "743–745 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/743/",
+  "apn": "3637052",
+  "block": "3637",
+  "lot": "052",
+  "eas_baseid": "363860",
+  "coordinates": {
+    "lat": 37.754481,
+    "lng": -122.417243
+  },
+  "address_range": "743–745",
+  "street_numbers_on_parcel": [
+    "743",
+    "745"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 7,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 5043,
+    "basement_area_sqft": 1760,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0745 0743 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1067598,
+    "assessed_improvement_value": 397795
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Von Schroeder-Welsh Block Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1889–1895",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202112063817",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-12-06",
+      "status_date": "2021-12-15",
+      "estimated_cost": 2000,
+      "revised_cost": 8000,
+      "description": "in kind replacement of street windows using original specifications and materials (wood) (5) windows total u < 0.30 (upper story -3rd floor). original stained glass will be re-used; in a new frame w/ integrated ogees.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208194386",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-19",
+      "status_date": "2003-03-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "ref complaint 200228137. replace req rear egress stair & repair dry rotted landings in like kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309759",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-28",
+      "status_date": "1986-03-04",
+      "estimated_cost": 990,
+      "description": "bring bldg into full compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=743",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3637052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3637&lot=052",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3637052",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41724290918046%2037.754481111840526)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "address": "3373 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3373/",
+  "apn": "3633023",
+  "block": "3633",
+  "lot": "023",
+  "eas_baseid": "363718",
+  "coordinates": {
+    "lat": 37.754964,
+    "lng": -122.422542
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 3000,
+    "basement_area_sqft": 890,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3373 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2879584,
+    "assessed_improvement_value": 1234106,
+    "last_sale_date": "2016-02-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201206213182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-21",
+      "status_date": "2013-04-25",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remodeling of master suite and bathroom include. removal of non bearing partition wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104053494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-05",
+      "status_date": "2011-04-21",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M105545",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-01",
+      "status_date": "2008-02-01",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M88766",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-01",
+      "status_date": "2007-10-01",
+      "revised_cost": 1,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706083452",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-06-08",
+      "status_date": "2008-05-07",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "relocate washer and dryer, add wall heater, add double doors, delete shower and add closet, extend extension wall. see attached. revision to pa# 200603156701.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603156701",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-03-15",
+      "status_date": "2008-05-08",
+      "estimated_cost": 378000,
+      "revised_cost": 278000,
+      "description": "vertical and horizontal atleration/addition creating a total of 2 housing units, while maintaining the look and feel of existing structure. (fully sprinkled)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3373",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3633023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3633&lot=023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3633023",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4225419265763%2037.75496362544916)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

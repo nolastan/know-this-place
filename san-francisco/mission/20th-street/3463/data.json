@@ -1,0 +1,110 @@
+{
+  "address": "3463–3465 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3463/",
+  "apn": "3610031",
+  "block": "3610",
+  "lot": "031",
+  "eas_baseid": "362487",
+  "coordinates": {
+    "lat": 37.758497,
+    "lng": -122.418349
+  },
+  "address_range": "3463–3465",
+  "street_numbers_on_parcel": [
+    "3463",
+    "3465"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1459,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3465 3463 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 780300,
+    "assessed_improvement_value": 137700,
+    "last_sale_date": "2023-09-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604099143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-09",
+      "status_date": "2026-04-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803073118",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-07",
+      "status_date": "2018-07-13",
+      "estimated_cost": 123933,
+      "revised_cost": 123933,
+      "description": "project consists of interior alterations to the lower dwelling unit in an (e) 2 unit residential bldg including remodeled kitchen & bathroom. new finishes, heating system & lighting. work also include new appliances, water heater & furnace in garage. no exterior work. mep to be submitted as separate",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110197182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-19",
+      "status_date": "2012-05-14",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "comply with nov 201133541, fire repair minimal damage to roof, replace partial siding down on south elevation, replace ceiling plaster throughout, partial wall plaster (smoke and water damage) new kitchen. lighting per cec 150 (k)8, bath lighting per cec 150 (k) 10",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=3463",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3610031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3610&lot=031",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3610031",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

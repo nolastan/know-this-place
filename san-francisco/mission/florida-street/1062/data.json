@@ -1,0 +1,132 @@
+{
+  "address": "1062–1066 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/1062/",
+  "apn": "4149010",
+  "block": "4149",
+  "lot": "010",
+  "eas_baseid": "369489",
+  "coordinates": {
+    "lat": 37.754946,
+    "lng": -122.410557
+  },
+  "address_range": "1062–1066",
+  "street_numbers_on_parcel": [
+    "1062",
+    "1064",
+    "1066"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2575,
+    "building_area_sqft": 3525,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1066 1062 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 842004,
+    "assessed_improvement_value": 428946,
+    "last_sale_date": "2003-08-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804119469",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-11",
+      "status_date": "2008-04-11",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair & maintance per nov#200847971. repair windows walls, ceilings, light & plumbing fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404282535",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-28",
+      "status_date": "2004-04-28",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel bathroom(replace fix.repair damaged floor,walls & ceiling),replace/update elec.remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312051676",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-12-05",
+      "status_date": "2003-12-05",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair & paint walls, refinish floors in office",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311079666",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-07",
+      "status_date": "2003-11-07",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove carpet,refinish wood floors,paint throughout,remove kitchen cabinets/bathrm tile,patch wall,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821483",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-20",
+      "status_date": "1999-01-22",
+      "estimated_cost": 3800,
+      "description": "raise foundation 12 inches on one wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1062",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

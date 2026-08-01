@@ -1,0 +1,94 @@
+# Lexington Street
+
+Every residential parcel on Lexington Street that the city's address, assessor and permit records describe.
+
+## Documented so far
+
+- [9–11](9/) — A 1910 4-unit apartment building in the Sycamore Street Reconstruction Historic District, with reroofing permitted in 2024.
+- [12–14](12/) — A 1938 two-flat, with a kitchen and bathroom remodel permitted in 2011.
+- [15–17](15/) — A 1906 two-flat, with a bathroom remodel permitted in 2008.
+- [16–20](16/) — A 1907 4-unit apartment building, with window replacement permitted in 2013.
+- [22](22/) — A 1908 single-family house, with permit records from 1993 to 2024.
+- [23–25](23/) — A 1908 two-flat, with fire repair permitted in 2008.
+- [26–28](26/) — A 1907 two-flat, with reroofing permitted in 1997.
+- [27](27/) — A 1924 4-unit apartment building, with garage work permitted in 2010.
+- [33–37](33/) — A 1909 3-unit apartment building, with an addition permitted in 2012.
+- [34–36](34/) — A 1907 two-flat, with garage work permitted in 2012.
+- [39](39/) — A 1907 single-family house, with garage work permitted in 2005.
+- [116](116/) — A 1906 single-family house.
+- [117](117/) — A 1908 6-unit apartment building, with stair work permitted in 1989.
+- [120](120/) — A 1907 single-family house, with reroofing permitted in 2008.
+- [123](123/) — A 1907 two-flat, with reroofing permitted in 1987.
+- [126–128](126/) — A 1907 two-flat, with reroofing permitted in 2011.
+- [129](129/) — A 1962 4-unit apartment building, with window replacement permitted in 2005.
+- [130–132](130/) — A 1915 4-unit tic building, with a kitchen and bathroom remodel permitted in 2006.
+- [134–136](134/) — A 1907 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [135](135/) — A 1906 3-unit apartment building.
+- [138](138/) — A 1907 single-family house, with foundation work permitted in 2007.
+- [141–143](141/) — A 1910 4-unit apartment building, with an accessory dwelling unit permitted in 2018.
+- [144](144/) — A 1947 single-family house, with a kitchen remodel permitted in 2022.
+- [147–151](147/) — A 1909 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [156–158](156/) — A 1900 4-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with stair work permitted in 2003.
+- [160](160/) — A 1906 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with foundation work permitted in 2012.
+- [161–165](161/) — A 1907 4-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with fire repair permitted in 2007.
+- [164–166](164/) — A 1907 4-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with stair work permitted in 2016.
+- [167–169](167/) — A 1908 three-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with a seismic retrofit permitted in 2007.
+- [168](168/) — A 1906 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with reroofing permitted in 2024.
+- [174](174/) — A 1908 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with stair work permitted in 2025.
+- [177–179](177/) — A 1906 4-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with dry-rot repair permitted in 2009.
+- [180–182](180/) — A 1908 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with reroofing permitted in 1994.
+- [183–185](183/) — A 1906 4-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with stair work permitted in 2001.
+- [195](195/) — A 1915 9-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with a seismic retrofit permitted in 2018.
+- [208–212](208/) — A 1907 6-unit tic building in the Lexington and San Carlos Streets Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2022.
+- [214–216](214/) — A 1911 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with a kitchen remodel permitted in 2012.
+- [217–219](217/) — A 1906 4-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with reroofing permitted in 1998.
+- [218–222](218/) — A 1911 3-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2023.
+- [221–223](221/) — A 1990 3-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with a vertical addition permitted in 1988.
+- [229](229/) — A 1906 single-family house in the Lexington and San Carlos Streets Reconstruction Historic District, with garage work permitted in 2009.
+- [230–238](230/) — A 1907 9-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with fire repair permitted in 1997.
+- [233–235](233/) — A 1909 three-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with garage work permitted in 1992.
+- [243–245](243/) — A 1912 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with reroofing permitted in 1993.
+- [244](244/) — A 1935 single-family house in the Lexington and San Carlos Streets Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2012.
+- [249–251](249/) — A 1909 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with reroofing permitted in 2016.
+- [253–255](253/) — A 1907 three-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with a bathroom remodel permitted in 2014.
+- [261–263](261/) — A 1910 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with an addition permitted in 2013.
+- [262–264](262/) — A 1909 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with an addition permitted in 2020.
+- [272–274](272/) — A 1907 4-unit tic building, with facade work permitted in 2008.
+- [273–275](273/) — A 1906 4-unit tic building in the Lexington and San Carlos Streets Reconstruction Historic District, with stair work permitted in 2000.
+- [276](276/) — A 1962 4-unit apartment building, with window replacement permitted in 1985.
+- [277](277/) — A 1978 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District, with reroofing permitted in 1995.
+- [278–280](278/) — A 1907 two-flat, with foundation work permitted in 2013.
+- [283](283/) — A 1907 two-flat in the Lexington and San Carlos Streets Reconstruction Historic District.
+- [310](310/) — A 1989 two-flat in the Liberty Hill Historic District, with reroofing permitted in 2013.
+- [317](317/) — An 1880 two-flat in the Liberty Hill Historic District, with foundation work permitted in 2022.
+- [321–323](321/) — A 1900 two-flat in the Liberty Hill Historic District, with a bathroom remodel permitted in 2014.
+- [325–327](325/) — An 1880 two-flat in the Liberty Hill Historic District, with stair work permitted in 2022.
+- [326–328](326/) — A 1907 two-flat in the Liberty Hill Historic District, with a bathroom remodel permitted in 2023.
+- [329](329/) — An 1880 single-family house in the Liberty Hill Historic District, with stair work permitted in 1992.
+- [330](330/) — An 1876 two-flat in the Liberty Hill Historic District, with reroofing permitted in 2019.
+- [333–335](333/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 1998.
+- [334](334/) — A 1900 single-family house in the Liberty Hill Historic District, with reroofing permitted in 2010.
+- [337–339](337/) — A 1900 two-flat in the Liberty Hill Historic District, with window replacement permitted in 2019.
+- [338](338/) — A 1900 single-family house in the Liberty Hill Historic District, with a kitchen remodel permitted in 2010.
+- [341–343](341/) — A 1900 4-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 2014.
+- [342](342/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2010.
+- [346–348](346/) — An 1880 two-flat in the Liberty Hill Historic District, with window replacement permitted in 2022.
+- [347–349](347/) — A 1900 three-flat in the Liberty Hill Historic District, with deck work permitted in 2007.
+- [350](350/) — A 1900 single-family house in the Liberty Hill Historic District, with foundation work permitted in 2014.
+- [351](351/) — An 1880 single-family house in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2000.
+- [352–354](352/) — A 1900 two-flat in the Liberty Hill Historic District, with foundation work permitted in 2014.
+- [353–355](353/) — A 1900 two-flat in the Liberty Hill Historic District, with garage work permitted in 2002.
+- [356](356/) — A 1900 two-flat in the Liberty Hill Historic District, with a rear addition permitted in 1998.
+- [359–361](359/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2025.
+- [362](362/) — An 1880 two-flat in the Liberty Hill Historic District, with reroofing permitted in 1999.
+- [363–365](363/) — An 1880 two-flat in the Liberty Hill Historic District, with stair work permitted in 2008.
+- [366](366/) — A 1900 two-flat in the Liberty Hill Historic District, with a kitchen remodel permitted in 2020.
+- [367](367/) — A 1900 single-family house in the Liberty Hill Historic District, with deck work permitted in 2005.
+- [370](370/) — A 1900 single-family house in the Liberty Hill Historic District, with a rear addition permitted in 2026.
+- [371](371/) — A 1900 two-flat in the Liberty Hill Historic District, with reroofing permitted in 2025.
+- [375](375/) — A 1900 single-family house in the Liberty Hill Historic District, with foundation work permitted in 2010.
+- [376](376/) — An 1880 single-family house in the Liberty Hill Historic District, with garage work permitted in 2021.
+- [380–382](380/) — An 1880 two-flat in the Liberty Hill Historic District, with foundation work permitted in 2016.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

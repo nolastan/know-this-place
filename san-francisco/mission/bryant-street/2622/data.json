@@ -1,0 +1,149 @@
+{
+  "address": "2622–2624 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2622/",
+  "apn": "4268002",
+  "block": "4268",
+  "lot": "002",
+  "eas_baseid": "370749",
+  "coordinates": {
+    "lat": 37.752299,
+    "lng": -122.409398
+  },
+  "address_range": "2622–2624",
+  "street_numbers_on_parcel": [
+    "2622",
+    "2624"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 3200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2624 2622 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 250823,
+    "last_sale_date": "1998-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402286760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-28",
+      "status_date": "2024-04-26",
+      "estimated_cost": 23850,
+      "revised_cost": 23850,
+      "description": "re-roofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510079075",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-07",
+      "status_date": "2016-10-07",
+      "estimated_cost": 15500,
+      "revised_cost": 15500,
+      "description": "replace 3 french doors in-kind alum wood clad and 1 vinyl window on back of house. no structural changes, max u-factors 0.32.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M154145",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-03-05",
+      "status_date": "2009-03-05",
+      "revised_cost": 1,
+      "description": "street space permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M89507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-04",
+      "status_date": "2007-10-04",
+      "revised_cost": 1,
+      "description": "street space & sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901894",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-29",
+      "status_date": "2000-04-06",
+      "estimated_cost": 4600,
+      "description": "demo bathroom, replace fixtures, replace subfloor, repipe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-30",
+      "status_date": "1998-12-23",
+      "estimated_cost": 2000,
+      "description": "furnace replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519908",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-27",
+      "status_date": "1996-06-11",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2622",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4268002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4268&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4268002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

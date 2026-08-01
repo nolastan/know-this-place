@@ -1,0 +1,108 @@
+{
+  "address": "958–962 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/958/",
+  "apn": "4143010",
+  "block": "4143",
+  "lot": "010",
+  "eas_baseid": "369257",
+  "coordinates": {
+    "lat": 37.756751,
+    "lng": -122.407942
+  },
+  "address_range": "958–962",
+  "street_numbers_on_parcel": [
+    "958",
+    "960",
+    "962"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4170,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0962 0958 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 545084,
+    "assessed_improvement_value": 363375,
+    "last_sale_date": "2001-10-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912300879",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-30",
+      "status_date": "2019-12-30",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704741",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-04-10",
+      "status_date": "1988-02-11",
+      "estimated_cost": 5890,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501918",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-26",
+      "status_date": "1986-04-15",
+      "estimated_cost": 1800,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=958",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4143010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4143&lot=010",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4143010",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

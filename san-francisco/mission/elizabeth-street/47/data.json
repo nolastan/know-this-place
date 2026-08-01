@@ -1,0 +1,103 @@
+{
+  "address": "47 Elizabeth Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/elizabeth-street/47/",
+  "apn": "3645029",
+  "block": "3645",
+  "lot": "029",
+  "eas_baseid": "364225",
+  "coordinates": {
+    "lat": 37.752594,
+    "lng": -122.422336
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2356,
+    "building_area_sqft": 1536,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0049 0047 ELIZABETH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61189,
+    "assessed_improvement_value": 72976
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410243674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-24",
+      "status_date": "2024-12-04",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace dryrot and handrails at front steps. less than 40%. replace backwall siding w/ hardiplank.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410112784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-11",
+      "status_date": "2025-10-03",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "re-roofing. torchdown.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-20",
+      "status_date": "1989-01-30",
+      "estimated_cost": 4095,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELIZABETH&street_type=ST&address_number=47",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=029",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645029",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

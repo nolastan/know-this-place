@@ -1,0 +1,149 @@
+{
+  "address": "63 Linda Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/linda-street/63/",
+  "apn": "3588049G",
+  "block": "3588",
+  "lot": "049G",
+  "eas_baseid": "361122",
+  "coordinates": {
+    "lat": 37.760786,
+    "lng": -122.422782
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1745.32,
+    "building_area_sqft": 1737,
+    "lot_depth_ft": 62.33,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0063 LINDA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 901930,
+    "assessed_improvement_value": 805948,
+    "last_sale_date": "2006-05-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201609299143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-29",
+      "status_date": "2017-07-21",
+      "estimated_cost": 2125,
+      "revised_cost": 2125,
+      "description": "change (2) exterior facade window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608306333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-30",
+      "status_date": "2017-07-21",
+      "estimated_cost": 80421,
+      "revised_cost": 80421,
+      "description": "new family room, (n) sitting room, add bath on 1/f, add 1/2 bath on 1/f. remove 2nd stairway, add roof enclose over stair, remodel (e) bath, kitchen, replace windows in kind & new window @ rear, no change to facade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608256048",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2016-08-25",
+      "status_date": "2016-08-30",
+      "estimated_cost": 83725,
+      "revised_cost": 0,
+      "description": "add bedroom on 1st floor, add bath on 1st floor; add 1/2 bath on 1st floor. remove 2nd stairway, add roof enclosure over stair; remodel (e) bath and kitchen, replace windows in kind at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309154805",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-09-15",
+      "status_date": "2003-09-15",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008117645",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-11",
+      "status_date": "2001-03-09",
+      "estimated_cost": 2400,
+      "revised_cost": 2400,
+      "description": "install 7 vinyl windows not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-28",
+      "status_date": "1998-11-24",
+      "estimated_cost": 438,
+      "description": "repair fungus damage to right front corner of structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502642",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-02-23",
+      "status_date": "1995-12-18",
+      "estimated_cost": 10000,
+      "description": "kitchen remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDA&street_type=ST&address_number=63",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3588049G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3588&lot=049G",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3588049G",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

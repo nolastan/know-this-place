@@ -1,0 +1,115 @@
+{
+  "address": "2677 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2677/",
+  "apn": "4152040",
+  "block": "4152",
+  "lot": "040",
+  "eas_baseid": "369630",
+  "coordinates": {
+    "lat": 37.755855,
+    "lng": -122.408064
+  },
+  "parcel": {
+    "year_built": 1955,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2242,
+    "building_area_sqft": 1603,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2677 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 203576,
+    "assessed_improvement_value": 108518,
+    "last_sale_date": "1997-02-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009023227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-02",
+      "status_date": "2020-09-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715929",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-19",
+      "status_date": "1997-12-12",
+      "estimated_cost": 500,
+      "description": "hall modified to allow direct access to (e)rear door(back)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713180",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-07-17",
+      "status_date": "1997-12-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412205",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-08-01",
+      "status_date": "1995-03-08",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove illegal 2nd unit from garage level",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2677",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4152040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4152&lot=040",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4152040",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

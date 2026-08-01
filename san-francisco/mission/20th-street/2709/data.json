@@ -1,0 +1,130 @@
+{
+  "address": "2709–2711 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/2709/",
+  "apn": "4088039",
+  "block": "4088",
+  "lot": "039",
+  "eas_baseid": "368427",
+  "coordinates": {
+    "lat": 37.759184,
+    "lng": -122.40819
+  },
+  "address_range": "2709–2711",
+  "street_numbers_on_parcel": [
+    "2709",
+    "2711"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2548,
+    "building_area_sqft": 3030,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2711 2709 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 227739,
+    "assessed_improvement_value": 198605,
+    "last_sale_date": "1987-06-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200903305168",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-03-30",
+      "status_date": "2009-03-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200504049098. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606224727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-06-22",
+      "status_date": "2006-06-22",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "renew pa# 2005/04/04/9098.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504049098",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-04-04",
+      "status_date": "2005-04-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair stairs, window sash frame, damaged ceiling and tile around tub. to comply w/nov 200558208.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-28",
+      "status_date": "1990-07-13",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-08-23",
+      "status_date": "1984-09-25",
+      "estimated_cost": 1500,
+      "description": "repair base of basement wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=2709",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4088039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4088&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4088039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "address": "2374 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2374/",
+  "apn": "4145015",
+  "block": "4145",
+  "lot": "015",
+  "eas_baseid": "369344",
+  "coordinates": {
+    "lat": 37.75644,
+    "lng": -122.409796
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1725,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2374 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 82133,
+    "assessed_improvement_value": 87712
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202007170367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-17",
+      "status_date": "2020-07-17",
+      "estimated_cost": 3033,
+      "revised_cost": 3033,
+      "description": "replace garage door and opener",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M184967",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-24",
+      "status_date": "2009-11-24",
+      "revised_cost": 1,
+      "description": "street space permit and sidewalk permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511147954",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-11-14",
+      "status_date": "2007-02-07",
+      "estimated_cost": 16695,
+      "revised_cost": 16695,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301175452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-17",
+      "status_date": "2003-05-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel kitchen. repair ceiling & wall crack & paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920847",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-01",
+      "status_date": "2001-01-29",
+      "estimated_cost": 15000,
+      "description": "replace brick foundation in garage w/new runfecnced concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216275",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-09-21",
+      "status_date": "1993-03-21",
+      "estimated_cost": 11000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018900",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-17",
+      "status_date": "1990-10-15",
+      "estimated_cost": 2500,
+      "description": "remove dry rot & termite damage on south wall (approx.25 lf)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309981",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-10-05",
+      "status_date": "1984-05-10",
+      "estimated_cost": 6000,
+      "description": "bake foundation & repair dry-pot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2374",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4145015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4145&lot=015",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4145015",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

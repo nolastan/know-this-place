@@ -1,0 +1,118 @@
+{
+  "address": "2969–2971 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2969/",
+  "apn": "4270036",
+  "block": "4270",
+  "lot": "036",
+  "eas_baseid": "370829",
+  "coordinates": {
+    "lat": 37.752434,
+    "lng": -122.411347
+  },
+  "address_range": "2969–2971",
+  "street_numbers_on_parcel": [
+    "2969",
+    "2971"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 2596,
+    "building_area_sqft": 4570,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NCT1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2973 2969 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1071812,
+    "assessed_improvement_value": 321528,
+    "last_sale_date": "2006-09-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M73364",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-06-15",
+      "status_date": "2007-06-15",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304162424",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2003-04-16",
+      "status_date": "2003-06-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "interior remodel of existing ofspace for resturant. change of use @ grd fl. mechanical & lighting wo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708307",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-08",
+      "status_date": "1999-09-01",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519934",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-27",
+      "status_date": "1996-06-10",
+      "estimated_cost": 1600,
+      "description": "repairs-windows, painting, flooring, iron gate, door, lock,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=2969",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4270036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4270&lot=036",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4270036",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

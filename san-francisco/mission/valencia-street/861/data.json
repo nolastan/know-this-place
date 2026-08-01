@@ -1,0 +1,93 @@
+{
+  "address": "861 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/861/",
+  "apn": "3596090",
+  "block": "3596",
+  "lot": "090",
+  "eas_baseid": "361528",
+  "coordinates": {
+    "lat": 37.759147,
+    "lng": -122.421052
+  },
+  "parcel": {
+    "year_built": 1979,
+    "units": 4,
+    "stories": 3,
+    "bathrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 4480,
+    "basement_area_sqft": 625,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0861 VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58884,
+    "assessed_improvement_value": 351069
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200006273781",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-27",
+      "status_date": "2000-10-27",
+      "estimated_cost": 2750,
+      "revised_cost": 2750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913730",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-07-31",
+      "status_date": "1991-01-11",
+      "estimated_cost": 1000,
+      "description": "remove interior walls, wooden floor and plumbing and electri",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=861",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=090",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596090",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

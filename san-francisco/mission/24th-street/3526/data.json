@@ -1,0 +1,125 @@
+{
+  "address": "3526–3528 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3526/",
+  "apn": "3645009",
+  "block": "3645",
+  "lot": "009",
+  "eas_baseid": "364209",
+  "coordinates": {
+    "lat": 37.752282,
+    "lng": -122.422126
+  },
+  "address_range": "3526–3528",
+  "street_numbers_on_parcel": [
+    "3526",
+    "3528"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3162,
+    "building_area_sqft": 2132,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3528 3526 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1545555,
+    "assessed_improvement_value": 662380,
+    "last_sale_date": "2019-05-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Horner's Addition East Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202212138152",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-12-13",
+      "status_date": "2025-07-09",
+      "estimated_cost": 330000,
+      "revised_cost": 406095,
+      "description": "building addition of 799 sf at rear. basement level - add bedrm, bathrm & family rm; 1st level - remodel kitcheh, add 1 bathrm & new living rm; 2nd level - add 1 bathrm & 1 bedrm; new rear stairs to yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010136396",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2020-10-13",
+      "status_date": "2022-12-29",
+      "estimated_cost": 200000,
+      "revised_cost": 220000,
+      "description": "excavate basement 14\" to create additional living space for one unit (3526 24th st). add an interior stair to connect 1st floor and basement. build a new utility closet at the rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1051327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-13",
+      "status_date": "2019-03-13",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3526",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3645009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3645&lot=009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3645009",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42212559108711%2037.7522824226164)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

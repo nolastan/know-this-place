@@ -1,0 +1,150 @@
+{
+  "address": "14–16 Juri Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/juri-street/14/",
+  "apn": "6532032A",
+  "block": "6532",
+  "lot": "032A",
+  "eas_baseid": "401443",
+  "coordinates": {
+    "lat": 37.750027,
+    "lng": -122.42207
+  },
+  "address_range": "14–16",
+  "street_numbers_on_parcel": [
+    "14",
+    "16"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1454,
+    "building_area_sqft": 2020,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0016 0014 JURI                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 25382,
+    "assessed_improvement_value": 29084
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603046959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-04",
+      "status_date": "2026-04-06",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411054418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-05",
+      "status_date": "2025-01-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove and dispose of (7) existing single pane aluminum windows and replace with (7) aluminum windows glazed with dual-pane clear over low-e empered glass, in the same configuration as the (e) windows (fixed transom over slider (street facing)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503130812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-13",
+      "status_date": "2015-05-26",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair back stairs and landings. in-kind, less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202259978",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-25",
+      "status_date": "2003-04-30",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-19",
+      "status_date": "1991-03-28",
+      "estimated_cost": 1000,
+      "description": "new footing below existing porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-11",
+      "status_date": "1991-04-09",
+      "estimated_cost": 3000,
+      "description": "repair dry rot (rear porches)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600918",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-01-24",
+      "status_date": "1986-04-09",
+      "estimated_cost": 3500,
+      "description": "change front window to aluminum",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JURI&street_type=ST&address_number=14",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532032A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=032A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532032A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

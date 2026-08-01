@@ -1,0 +1,130 @@
+{
+  "address": "3220–3222 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3220/",
+  "apn": "3574019",
+  "block": "3574",
+  "lot": "019",
+  "eas_baseid": "360207",
+  "coordinates": {
+    "lat": 37.762289,
+    "lng": -122.415545
+  },
+  "address_range": "3220–3222",
+  "street_numbers_on_parcel": [
+    "3220",
+    "3222"
+  ],
+  "parcel": {
+    "year_built": 1876,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 3300,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3222 3220 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1028899,
+    "assessed_improvement_value": 489319,
+    "last_sale_date": "2015-03-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1876",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503051573",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-03-05",
+      "status_date": "2025-03-05",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing over layed, new shingle 30 yrs, no hot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603071310",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-07",
+      "status_date": "2016-09-16",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodel two bathrooms & kitchen, replace drywall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503181203",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-18",
+      "status_date": "2015-08-24",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel kitchen and bathrom at unit at 3222a. no wall to be removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501806",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-02-08",
+      "status_date": "1995-08-15",
+      "estimated_cost": 1500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503799",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-04-15",
+      "status_date": "1985-09-24",
+      "estimated_cost": 1000,
+      "description": "repair foundation & replace dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3220",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3574019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3574&lot=019",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3574019",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

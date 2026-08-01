@@ -1,0 +1,141 @@
+{
+  "address": "2547–2549 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2547/",
+  "apn": "4209027",
+  "block": "4209",
+  "lot": "027",
+  "eas_baseid": "370186",
+  "coordinates": {
+    "lat": 37.753657,
+    "lng": -122.408892
+  },
+  "address_range": "2547–2549",
+  "street_numbers_on_parcel": [
+    "2547",
+    "2549"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 3070,
+    "building_area_sqft": 2376,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2549 2547 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 321951,
+    "assessed_improvement_value": 347228,
+    "last_sale_date": "1990-01-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M105005",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-01-29",
+      "status_date": "2008-01-29",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801082057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-08",
+      "status_date": "2008-05-15",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "interior remodel and addition of a bathroom. the remodel will affect (e) kitchen and (e) bathroom. (n) bathroom will be located between (e) kitchen and rear bedroom. no exterior work of the structure will be affected.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M36215",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-01",
+      "status_date": "2006-02-01",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510216265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-21",
+      "status_date": "2006-04-25",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "renew permit application-200405264921- work not started",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405264921",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-05-26",
+      "status_date": "2006-03-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to install an internal stairs & alter rooms on grnd flr w/new concrete slab per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900744",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-01-12",
+      "status_date": "1999-06-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "comply with n.o.v. #199816531",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2547",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4209027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4209&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4209027",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

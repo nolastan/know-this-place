@@ -1,0 +1,154 @@
+{
+  "address": "7–9 Balmy Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/balmy-street/7/",
+  "apn": "6522043",
+  "block": "6522",
+  "lot": "043",
+  "eas_baseid": "401131",
+  "coordinates": {
+    "lat": 37.752278,
+    "lng": -122.412324
+  },
+  "address_range": "7–9",
+  "street_numbers_on_parcel": [
+    "7",
+    "9"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1149,
+    "building_area_sqft": 1500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0009 0007 BALMY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 150081,
+    "last_sale_date": "1998-05-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Mission Avenues and Alleys Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202503142244",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-14",
+      "status_date": "2025-03-25",
+      "estimated_cost": 18300,
+      "revised_cost": 18300,
+      "description": "re-roofing no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306167222",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-16",
+      "status_date": "2003-08-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "redoing whole bathrm @2nd fl. , cabinets, walls, tile, bath, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809710",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-29",
+      "status_date": "1999-03-11",
+      "estimated_cost": 1500,
+      "description": "std boltdown-penetration into fndtn stemwell & epoxy",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121405",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-08",
+      "status_date": "1992-08-10",
+      "estimated_cost": 8000,
+      "description": "make present work legal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-27",
+      "status_date": "1990-07-10",
+      "estimated_cost": 1900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "0413429",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1974-01-28",
+      "status_date": "1974-06-01",
+      "estimated_cost": 2500,
+      "description": "created during job card conversion on: 04/19/84",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALMY&street_type=ST&address_number=7",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6522043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6522&lot=043",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6522043",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4123244197582%2037.75227840833286)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

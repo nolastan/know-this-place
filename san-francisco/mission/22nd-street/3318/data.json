@@ -1,0 +1,130 @@
+{
+  "address": "3318–3320 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/3318/",
+  "apn": "3617012",
+  "block": "3617",
+  "lot": "012",
+  "eas_baseid": "362851",
+  "coordinates": {
+    "lat": 37.755514,
+    "lng": -122.421532
+  },
+  "address_range": "3318–3320",
+  "street_numbers_on_parcel": [
+    "3318",
+    "3320"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 6,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 6,
+    "lot_area_sqft": 2561,
+    "building_area_sqft": 4445,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3320 3318 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 956592,
+    "assessed_improvement_value": 478288,
+    "last_sale_date": "2005-08-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201809129801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-12",
+      "status_date": "2020-06-24",
+      "estimated_cost": 42000,
+      "revised_cost": 45000,
+      "description": "soft story retrofit to comply with sfebc 2016 ch 4d per 2016 cebc app a4 criteria. ref commercial pa #201809129802",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809129802",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-12",
+      "status_date": "2020-06-24",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "soft story retrofit for commercial. accessibility upgrades related to structural work. ref residential pa #201809129801",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509021997",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-02",
+      "status_date": "2005-09-02",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "new kitchen cabinets one unit, new bathroom toilet one unit, rebuild closet, refinish floor, 1 kithcen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910079",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-21",
+      "status_date": "1999-09-21",
+      "estimated_cost": 4850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715475",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-10-27",
+      "status_date": "1988-01-27",
+      "estimated_cost": 500,
+      "description": "repair smoke damage & repaint security on doors corrected.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3318",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&lot=012",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3617012",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

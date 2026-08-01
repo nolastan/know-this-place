@@ -1,0 +1,118 @@
+{
+  "address": "707 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/707/",
+  "apn": "4079027",
+  "block": "4079",
+  "lot": "027",
+  "eas_baseid": "368211",
+  "coordinates": {
+    "lat": 37.760188,
+    "lng": -122.408686
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1030,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0707 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87057,
+    "assessed_improvement_value": 108834
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Gottlieb Knopf Block Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1889–1892, 1920–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201002045896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-04",
+      "status_date": "2010-03-19",
+      "estimated_cost": 1509,
+      "revised_cost": 1509,
+      "description": "replace garage door in kind. no structural changes, visible from the street. no structural changes. ventilation vents 200 sq. in min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611956",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-03",
+      "status_date": "1996-11-03",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9514277",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-01",
+      "status_date": "1996-03-18",
+      "estimated_cost": 1200,
+      "description": "install 1 replacement window in front living room.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=707",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4079027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4079&lot=027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4079027",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40868602619084%2037.76018787035962)%27)",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

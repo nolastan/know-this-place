@@ -1,0 +1,99 @@
+{
+  "address": "67–73 Brosnan Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/brosnan-street/67/",
+  "apn": "3533032",
+  "block": "3533",
+  "lot": "032",
+  "eas_baseid": "358365",
+  "coordinates": {
+    "lat": 37.768505,
+    "lng": -122.423724
+  },
+  "address_range": "67–73",
+  "street_numbers_on_parcel": [
+    "67",
+    "69",
+    "71",
+    "73"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 5,
+    "rooms": 17,
+    "bathrooms": 5,
+    "lot_area_sqft": 4987,
+    "building_area_sqft": 4060,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0073 0067 BROSNAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55584,
+    "assessed_improvement_value": 84945
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201809139998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-13",
+      "status_date": "2020-03-02",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "comply with san francisco wood-frame seismic retrofit program (soft story), sfbc chapter 4d, per 2016 cebc appendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803197482",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-19",
+      "status_date": "2008-04-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "to comply w/ov 200847850, item #2, repair rear exterior stairs, less than 50%.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROSNAN&street_type=ST&address_number=67",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&lot=032",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3533032",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

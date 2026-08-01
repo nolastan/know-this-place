@@ -1,0 +1,133 @@
+{
+  "address": "3477–3479 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3477/",
+  "apn": "3577067",
+  "block": "3577",
+  "lot": "067",
+  "eas_baseid": "360426",
+  "coordinates": {
+    "lat": 37.762913,
+    "lng": -122.423442
+  },
+  "address_range": "3477–3479",
+  "street_numbers_on_parcel": [
+    "3477",
+    "3479"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 3423,
+    "building_area_sqft": 3804,
+    "basement_area_sqft": 1200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3479 3477 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1545311,
+    "assessed_improvement_value": 585926,
+    "last_sale_date": "2008-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201207205327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-20",
+      "status_date": "2012-07-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "repair or replace real stairway of damage parts less than 50%. maintain use of repaired egress (back street) to maintain egress during repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808149164",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-14",
+      "status_date": "2008-09-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "dryrot repair - exterior rear stairs landings - less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807096339",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-09",
+      "status_date": "2008-09-16",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "1st floor: bath: new sink & tub. kitchen: new cabinets, sink. 2nd floor: bath: new sink, tub. kitchen: new cabinets, sink. 3rd floor: bath: new sink, tub. kitchen: new cabinets, sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M40266",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-08-30",
+      "status_date": "2006-08-30",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409234997",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-23",
+      "status_date": "2004-10-21",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair dryrot in stairs (rear)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=3477",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3577067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3577&lot=067",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3577067",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

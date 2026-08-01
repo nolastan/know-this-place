@@ -1,0 +1,101 @@
+{
+  "address": "876 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/876/",
+  "apn": "3595008A",
+  "block": "3595",
+  "lot": "008A",
+  "eas_baseid": "361412",
+  "coordinates": {
+    "lat": 37.759147,
+    "lng": -122.417265
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 3440,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0878 0876 SOUTH VAN NESS      AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93808,
+    "assessed_improvement_value": 183122
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M49691",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-11-30",
+      "status_date": "2006-11-30",
+      "revised_cost": 0,
+      "description": "street space & sidewalk permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612607",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-09",
+      "status_date": "1987-04-01",
+      "estimated_cost": 5000,
+      "description": "replacement of existing concrete & terrazzo steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605639",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-05-14",
+      "status_date": "1986-09-30",
+      "estimated_cost": 10000,
+      "description": "replace of existing concrete steps, new garage door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20VAN%20NESS&street_type=AVE&address_number=876",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3595008A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3595&lot=008A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3595008A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

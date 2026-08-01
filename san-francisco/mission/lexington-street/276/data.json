@@ -1,0 +1,93 @@
+{
+  "address": "276 Lexington Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/lexington-street/276/",
+  "apn": "3596087",
+  "block": "3596",
+  "lot": "087",
+  "eas_baseid": "361524",
+  "coordinates": {
+    "lat": 37.758959,
+    "lng": -122.420755
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2500,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0276 LEXINGTON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 496722,
+    "assessed_improvement_value": 305921
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607318078",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-31",
+      "status_date": "2006-07-31",
+      "estimated_cost": 1164,
+      "revised_cost": 1164,
+      "description": "install 1 vinyl window in kind into (e) frames. no change in size or location. window does not face the street. if applicable, bedroom windows will comply withs section 310.4 for rescue. all windows will be double pane & have a u-factor of 0.30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-06",
+      "status_date": "1985-12-04",
+      "estimated_cost": 1600,
+      "description": "install aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEXINGTON&street_type=ST&address_number=276",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596087&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=087",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596087",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

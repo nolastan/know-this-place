@@ -1,0 +1,156 @@
+{
+  "address": "15 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/15/",
+  "apn": "3502039",
+  "block": "3502",
+  "lot": "039",
+  "eas_baseid": "357647",
+  "coordinates": {
+    "lat": 37.77058,
+    "lng": -122.424382
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 7,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 7,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 5231,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0015 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31425,
+    "assessed_improvement_value": 125241
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "survey_name": "15 Guerrero Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102094302",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-09",
+      "status_date": "2021-02-09",
+      "estimated_cost": 18000,
+      "revised_cost": 20000,
+      "description": "one unit: remodel kitdchen and one bathroom. no change to layout of walls and openings. maintain 1 hr separation between units at area of work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808086803",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-08",
+      "status_date": "2018-08-08",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "installation of wireless f/a system to replace (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M932667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-31",
+      "status_date": "2018-05-31",
+      "revised_cost": 0,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801249459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-24",
+      "status_date": "2018-02-01",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "replacing 8 to 9 common area windows, replace less than 50% of back stairs due to dry rot. to comply with nov#200343379,item 2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710040383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-04",
+      "status_date": "2018-12-14",
+      "estimated_cost": 53000,
+      "revised_cost": 53000,
+      "description": "soft story retrofit per sfebc chapter 4d per engineering criteria 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M133725",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-09",
+      "status_date": "2008-09-09",
+      "revised_cost": 1,
+      "description": "street space only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415222",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-20",
+      "status_date": "1995-02-24",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306812",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-07-19",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1200,
+      "description": "correct code violations",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=15",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3502039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3502&lot=039",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3502039",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

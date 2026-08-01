@@ -1,0 +1,134 @@
+{
+  "address": "2341 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2341/",
+  "apn": "3593014",
+  "block": "3593",
+  "lot": "014",
+  "eas_baseid": "361348",
+  "coordinates": {
+    "lat": 37.759851,
+    "lng": -122.414425
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 4210,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2341 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55425,
+    "assessed_improvement_value": 79247
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1178707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-27",
+      "status_date": "2019-12-27",
+      "revised_cost": 1,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910219495",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-21",
+      "status_date": "2009-10-22",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "automatic fire suppressio system upgrade over existing kitchen hood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801162644",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-16",
+      "status_date": "2008-03-06",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "minor repair from car hit bldg -stucco damage (20 sq ft) remove & reinstall window, re-stucco & paint. all at exterior ground floor. no structural. to comply with d.a. checklist. add hardware to front door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601041466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-04",
+      "status_date": "2006-03-02",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-13",
+      "status_date": "1999-10-29",
+      "estimated_cost": 1,
+      "description": "renewal of permit inspection pa 9709320",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709320",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-05-22",
+      "status_date": "1999-03-02",
+      "estimated_cost": 40000,
+      "description": "make sep entry to ea unit,toilet access to handicap per nov",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2341",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3593014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3593&lot=014",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3593014",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

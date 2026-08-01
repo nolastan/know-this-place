@@ -1,0 +1,102 @@
+{
+  "address": "562 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/shotwell-street/562/",
+  "apn": "3594039A",
+  "block": "3594",
+  "lot": "039A",
+  "eas_baseid": "361394",
+  "coordinates": {
+    "lat": 37.75937,
+    "lng": -122.416147
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 4164,
+    "building_area_sqft": 1225,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0562 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33785,
+    "assessed_improvement_value": 19264
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302152044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-15",
+      "status_date": "2023-11-17",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "revert light well to original configuration @ south side of building, response to complaint #202179088 skylight only, remove window @ property line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702995",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-19",
+      "status_date": "1997-03-04",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9602189",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602189",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-02-09",
+      "status_date": "1997-03-04",
+      "estimated_cost": 2700,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=562",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3594039A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3594&lot=039A",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3594039A",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

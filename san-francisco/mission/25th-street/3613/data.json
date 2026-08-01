@@ -1,0 +1,132 @@
+{
+  "address": "3613–3619 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3613/",
+  "apn": "6532001",
+  "block": "6532",
+  "lot": "001",
+  "eas_baseid": "422998",
+  "coordinates": {
+    "lat": 37.750299,
+    "lng": -122.421673
+  },
+  "address_range": "3613–3619",
+  "street_numbers_on_parcel": [
+    "3613",
+    "3615",
+    "3617",
+    "3619"
+  ],
+  "parcel": {
+    "year_built": 1948,
+    "units": 4,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 4,
+    "lot_area_sqft": 3079,
+    "building_area_sqft": 4455,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3619 3615 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 950626,
+    "assessed_improvement_value": 407409,
+    "last_sale_date": "2010-09-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201110267615",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-26",
+      "status_date": "2011-12-21",
+      "estimated_cost": 12880,
+      "revised_cost": 12880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110056149",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-05",
+      "status_date": "2012-02-16",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remodel bathroom and kitchen . install drywall using 58/8 \" type x gypsum board, kitchen cabinets, bathroom tiles, vinyl ffoor and paint. replace 10 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904156351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-15",
+      "status_date": "2009-04-27",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "replace 4\"x4\" post at the rear stairs. approxmateylly 14 ' flong as original use p.t. d. f. lumber. comply with nov#200994024#2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-01",
+      "status_date": "1995-08-23",
+      "estimated_cost": 8250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-28",
+      "status_date": "1995-08-24",
+      "estimated_cost": 29047,
+      "description": "vinyl siding front & right sides",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=3613",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6532001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532&lot=001",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532001",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}

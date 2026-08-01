@@ -1,0 +1,107 @@
+{
+  "address": "2822–2824 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/2822/",
+  "apn": "4336002",
+  "block": "4336",
+  "lot": "002",
+  "eas_baseid": "371353",
+  "coordinates": {
+    "lat": 37.74915,
+    "lng": -122.409102
+  },
+  "address_range": "2822–2824",
+  "street_numbers_on_parcel": [
+    "2822",
+    "2824"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3338,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2824 2822 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1098668,
+    "assessed_improvement_value": 470857
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M46964",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-31",
+      "status_date": "2006-10-31",
+      "revised_cost": 0,
+      "description": "street space permit only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-24",
+      "status_date": "1989-11-23",
+      "estimated_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715739",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1987-11-02",
+      "status_date": "1987-12-10",
+      "estimated_cost": 5,
+      "revised_cost": 1400,
+      "description": "bring building into compliance required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2822",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4336002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4336&lot=002",
+      "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4336002",
+      "retrieved": "2026-07-31"
+    }
+  ]
+}
