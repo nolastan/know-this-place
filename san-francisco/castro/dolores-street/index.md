@@ -1,6 +1,6 @@
 # Dolores Street
 
-Every residential parcel on Dolores Street that the city's address, assessor and permit records describe.
+Every residential parcel on Dolores Street that the city's address, assessor and permit records describe, plus the mission church parcel at the corner of 16th Street.
 
 ## Documented so far
 
@@ -22,6 +22,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [254](254/) — A 1925 6-unit apartment building in the Alert Alley Early Residential Historic District, with a seismic retrofit permitted in 2017.
 - [260–264](260/) — A 1900 three-flat in the Alert Alley Early Residential Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [266–270](266/) — A 1903 6-unit apartment building in the Alert Alley Early Residential Historic District, with a seismic retrofit permitted in 2015.
+- [310](310/) — The mission church of San Francisco de Asís, founded on this site in 1776 and an Article 10 city landmark.
 - [344](344/) — A 1900 6-unit apartment building in the Chula-Abbey Early Residential District, with reroofing permitted in 1996.
 - [348–352](348/) — A 1905 3-unit tic building in the Chula-Abbey Early Residential District, with an accessory dwelling unit permitted in 2018.
 - [366](366/) — A 1925 6-unit apartment building in the Chula-Abbey Early Residential District, with a seismic retrofit permitted in 2015.
