@@ -1,0 +1,160 @@
+{
+  "address": "420 Montgomery Street, San Francisco, CA 94104",
+  "path": "/san-francisco/financial-district/montgomery-street/420/",
+  "hook": "A 1959 office tower on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.",
+  "apn": "0239026",
+  "block": "0239",
+  "lot": "026",
+  "eas_baseid": "454050",
+  "coordinates": {
+    "lat": 37.793316,
+    "lng": -122.402750
+  },
+  "building_type": "commercial",
+  "address_note": "The assessor's roll and SF Planning both file this parcel under 464 California Street; 420 Montgomery Street is the Montgomery frontage of the same parcel and is the address the 1878 source names.",
+  "parcel": {
+    "year_built": 1959,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "units": 2,
+    "stories": 12,
+    "rooms": 220,
+    "bathrooms": 59,
+    "construction_type_code": "A",
+    "lot_area_sqft": 30775,
+    "building_area_sqft": 409013,
+    "zoning": "C-3-O",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "assessor_property_location": "464 CALIFORNIA ST",
+    "note": "Business addresses are usually deferred on this site; this page exists because the address was named in the prompting source."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56438400,
+    "assessed_improvement_value": 73792728,
+    "last_sale_date": null
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "planning_year_built": 1959,
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": null,
+    "note": "A spatial query against the historic-district boundaries returns no district for this parcel.",
+    "source": "sf-historic-districts"
+  },
+  "site_history": [
+    {
+      "date": "1853",
+      "claim": "Brannan buildings",
+      "detail": "Samuel Brannan erected buildings at 400 and 420 Montgomery Street out of the profits of real-estate investments; they were then considered ornaments of the city and evidence of confidence in its future.",
+      "source": "hittell-1878"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202306291147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-29",
+      "estimated_cost": 350000,
+      "description": "roof removed and replaced to meet cool-roof requirements",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805048292",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-05-04",
+      "estimated_cost": 8000000,
+      "description": "whole-building electrical service replacement and distribution repair, with the architectural, plumbing and HVAC work needed to accommodate it",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608154963",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-08-15",
+      "estimated_cost": 560000,
+      "description": "voluntary one-for-one replacement of the fire-alarm system, with no associated construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207164904",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-07-16",
+      "estimated_cost": 1855000,
+      "description": "new exterior maintenance and window-washing system, with new and modified code-compliant guardrails",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502115321",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-02-11",
+      "estimated_cost": 139470,
+      "description": "fire sprinklers installed on the sixth and ninth floors, the penthouse and mechanical penthouse and part of the ground floor, under the high-rise retrofit ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104053",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-03-15",
+      "estimated_cost": 20000,
+      "description": "seismic bracing of the entry-lobby mezzanine",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_note": "Six of the 268 filings on this address are shown; the rest are office tenant improvements floor by floor and the mechanical, electrical and fire-alarm permits that accompany them.",
+  "narrative": {
+    "lead": "Samuel Brannan put up the second of a pair of Montgomery Street buildings on this site in 1853; the building standing here replaced it."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?$where=address_number=420%20AND%20street_name='MONTGOMERY'",
+      "retrieved": "2026-08-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0239026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=420&street_name=Montgomery",
+      "retrieved": "2026-08-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0239026",
+      "retrieved": "2026-08-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.40274969929462%2037.79331562606278)')",
+      "retrieved": "2026-08-04"
+    },
+    {
+      "id": "hittell-1878",
+      "name": "John S. Hittell, A History of the City of San Francisco and Incidentally of the State of California (San Francisco: A. L. Bancroft & Company, 1878), section 231",
+      "query": "https://www.loc.gov/item/rc01000675/",
+      "retrieved": "2026-08-04"
+    }
+  ]
+}
