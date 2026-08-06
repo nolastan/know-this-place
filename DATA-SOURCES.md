@@ -372,6 +372,65 @@ a street number, which is the whole constraint:
   Brannan, 1853; §12–14, 24 and 27 cover the founding and secularization of
   Mission San Francisco de Asís)
 
+## argonaut-sfhs — *The Argonaut*, journal of the San Francisco Historical Society (secondary)
+
+- **What:** The San Francisco Historical Society's journal. Researched local
+  history built on period newspapers, city directories, transit-company records
+  and family papers, plus transcriptions of primary documents (letters,
+  diaries) with an editor's introduction. Articles name buildings by street
+  number often enough to be worth mining.
+- **Publisher:** San Francisco Historical Society, P.O. Box 420470, San
+  Francisco, CA 94142-0470. Print; no public full-text archive is known, so
+  there is no URL to link — cite the article, volume, issue, season and pages.
+- **Use for:** what stood on a site before the present building, and dated
+  events at a building still standing. Facts go in `historical_record` with the
+  article's source id; every structured fact about the present parcel still
+  comes from the city datasets.
+- **Citation label:** "AUTHOR, 'ARTICLE TITLE,' *The Argonaut: Journal of the
+  San Francisco Historical Society*, vol. N, no. N (Season YEAR), pp. A–B."
+  Source ids take the form `argonaut-vol<N>-no<N>-<season><year>-<author>`, one
+  per **article** — an issue carries several unrelated articles, and they are
+  not interchangeable citations.
+- **Cautions:**
+  - **Most of what these articles locate is not an address.** A transit
+    history places a car barn at "Filbert and Gough," a resort "north of
+    Jefferson and west of Baker," a factory on "the site of today's Marina
+    Safeway." The directory contract needs an EAS street number, so those facts
+    have nowhere to live and no number may be inferred for them. Only the
+    numbered addresses are page candidates, and each still has to resolve in
+    EAS.
+  - **Addresses outside San Francisco are out of scope.** The 1906 articles
+    follow people across the bay; an Alameda or Oakland address gets no page
+    here, however well documented.
+  - **A building named in a 1906 account is usually gone.** Record the claim
+    under `historical_record` with `"kind": "site history"` and let the
+    assessor's `year_property_built` show that the structure described is not
+    the one standing — never reconcile the two (same rule as `hittell-1878`).
+  - **A reader's transcription is not the article.** Address data arriving
+    through a GitHub issue is someone's summary: the wording is theirs and the
+    quoted phrases are unchecked against the printed page. Take the facts,
+    write our own sentences, and don't put a quotation on a page without the
+    original in hand.
+  - **These articles are family history as often as building history.**
+    Published historical figures — Henry Casebolt, Rudolph Herman — may be
+    named with citations. Relatives, household members and occupants who are
+    simply present in a letter stay off the page, per the root AGENTS.md.
+- **Coverage so far:** nothing from this journal is on a page yet. Issue #17
+  carries a reader's transcription of the address-level facts in **vol. 29
+  no. 2 (Winter 2018)**, whose three articles are:
+  - `argonaut-vol29-no2-winter2018-bardell` — Robert Bardell, "The Presidio &
+    Ferries Railroad," pp. 6–33.
+  - `argonaut-vol29-no2-winter2018-cherny` — Robert Cherny, "A New Eyewitness
+    Account of the 1906 Earthquake," pp. 34–43.
+  - `argonaut-vol29-no2-winter2018-hindshaw` — Ken Sproul, "Letter by William
+    Hindshaw," pp. 44–55.
+
+  Five San Francisco street numbers appear across them — 847 Valencia, 616
+  Filbert, 440 Jackson, 2727 Pierce, 2460 Union — and none of the five has a
+  page. Eleven further locations in the same issue give no street number.
+- **Verified:** — (data.sfgov.org was unreachable from the session that added
+  this entry, so none of those five numbers has been checked against EAS)
+
 ## local-news — Neighborhood news (secondary)
 
 - **What:** Context and stories: Hoodline Castro archives, Bay Area Reporter
