@@ -272,7 +272,7 @@ into the feedback link:
 ```html
 <div class="unknowns"><span class="ic ic-help"></span>
   <p>Not yet documented: the architect and builder, the early residents.
-  <a href="FEEDBACK_URL">Know any of it? Tell us — just describe it in plain words.</a></p>
+  <a href="FEEDBACK_URL">Submit an update</a></p>
 </div>
 ```
 

@@ -1069,8 +1069,7 @@ def unknowns_html(rec: dict) -> str:
     return ('  <div class="unknowns">\n'
             '    <span class="ic ic-help"></span>\n'
             f'    <p>Not yet documented: {listing}.{note}\n'
-            f'    <a href="{url}">Know\n'
-            '    any of it? Tell us — just describe it in plain words.</a></p>\n'
+            f'    <a href="{url}">Submit an update</a></p>\n'
             '  </div>\n')
 
 
@@ -1199,8 +1198,7 @@ def render_html(rec: dict) -> str:
     </ul>
   </section>
   <p class="feedback-cta">
-    Know something about this place?
-    <a href="{feedback_url(title, rec['path'])}">Tell us — just describe it in plain words.</a>
+    <a href="{feedback_url(title, rec['path'])}">Request an edit</a>
   </p>
   <p class="colophon">Part of <a href="/">Know This Place</a>, a community
   encyclopedia of the built environment. Facts are cited; pages are reviewed
