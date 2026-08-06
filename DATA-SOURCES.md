@@ -356,9 +356,10 @@ a street number, which is the whole constraint:
     which is the end of the matter under the directory contract. Where a number
     does resolve, say on the page that the correspondence is unverified.
   - **The buildings are usually gone.** He is describing a city that burned in
-    1906. Treat his claim as *site* history — record it under `site_history`
-    with the source, and let the assessor's `year_property_built` show that the
-    structure he saw is not the one standing.
+    1906. Treat his claim as *site* history — record it under
+    `historical_record` with `"kind": "site history"` and the source, and let
+    the assessor's `year_property_built` show that the structure he saw is not
+    the one standing.
   - **He editorializes, and he speculates.** He flags his own guesses ("presump-
     tively the same structure"), and elsewhere he does not. Take dates, names
     and events; leave the judgements, and never carry his characterizations of
