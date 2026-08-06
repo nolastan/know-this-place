@@ -314,6 +314,12 @@ pattern, and always include `address` and non-empty `sources`:
     { "number": "...", "filed": "1998-04-02", "status": "complete",
       "description": "...", "source": "sf-building-permits" }
   ],
+  "historical_record": [
+    { "date": "1901-04-06", "kind": "building contract",
+      "summary": "Optional short label, only when the entry needs one.",
+      "description": "One dated, sourced fact from a historical source.",
+      "source": "loc-sf-call-1901-04-06" }
+  ],
   "narrative": {
     "lead": "One or two sentences carrying only what no component carries.\nOmit the field entirely when the components already say everything.",
     "sections": [
@@ -336,6 +342,25 @@ here, not in the hub's HTML, so a hub can be rebuilt without losing it. It is
 optional: when a page has no `hook`, the hub derives a plain one from the
 building's data. Write one whenever you can say something better than
 "a 1901 two-flat" — it then survives every rebuild.
+
+**`historical_record`** is the one key for **dated facts that come from a
+historical source rather than a city dataset** — a pre-DBI building contract, a
+fire, a period advertisement, what stood on the site before. One entry per
+fact: `date` (ISO where known, a bare year or a phrase where not), `kind`
+(`building contract`, `fire`, `advertisement`, `sale`, `site history`, …),
+`description`, and `source` matching an id in `sources`. `summary` is an
+optional short label; entries may carry extra keys for what the record itself
+stated (`cost`, `lot_as_recorded`, `cross_streets`). It renders as an "Earlier
+record" `.vtl`, never as prose.
+
+- It replaced `site_history`, which said the same thing under a second name.
+  **Don't reintroduce a third:** a dated historical fact goes here.
+- It is *not* `building_history` (the Corbett Heights pages). That key is a
+  richer per-building object carrying scalars the flat list can't hold —
+  `architect`, `contractor`, `first_owner`, `build_cost_usd`, `relocated`,
+  `conflict` — alongside its own `events`. Leave it alone; if you find yourself
+  wanting those scalars on a `historical_record` page, that is a schema
+  decision for a human, not a new key.
 
 **The `narrative` field** is where all of a page's prose lives — it replaces
 the old `index.md`. `lead` is one or two sentences, and is omitted when the
