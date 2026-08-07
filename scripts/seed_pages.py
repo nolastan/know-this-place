@@ -407,7 +407,9 @@ def building_type(pclass: str, units: int | None) -> str:
         return f"{u}-unit TIC building" if u else "TIC building"
     if "apartment" in c or "apt" in c:
         return f"{u}-unit apartment building" if u else "Apartment building"
-    return f"{u}-unit building" if u > 1 else "Residential building"
+    # Unrecognized class code — say only what the unit count supports, since a
+    # parcel here may be commercial as easily as residential.
+    return f"{u}-unit building" if u > 1 else "Building"
 
 
 ZONING = {"RH1": "RH-1", "RH2": "RH-2", "RH3": "RH-3", "RH4": "RH-4",
@@ -1212,9 +1214,6 @@ def render_html(rec: dict) -> str:
 # --------------------------------------------------------------------------
 # Inventory
 # --------------------------------------------------------------------------
-RESIDENTIAL_USES = {"Single Family Residential", "Multi-Family Residential"}
-
-
 def build_inventory(data: dict) -> list:
     """One row per parcel: its addresses, its roll record, and a verdict."""
     roll_by_parcel = {r["parcel_number"]: r for r in data["roll"] if r.get("parcel_number")}
@@ -1319,8 +1318,6 @@ def classify(row: dict) -> str:
     # buildings. AGENTS.md says skip them and flag for a human.
     if roll.get("property_class_code_definition") == "Condominium":
         return "condo-unit"
-    if roll.get("use_definition") not in RESIDENTIAL_USES:
-        return "non-residential"
     return "seedable"
 
 
@@ -1424,7 +1421,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
     if in_district:
         tiles.append(("ic-plan", f"{in_district:,}", "In a historic district"))
 
-    lead = hub_lead(street_dir, f"Every residential parcel on {disp} that the city's "
+    lead = hub_lead(street_dir, f"Every parcel on {disp} that the city's "
                                 f"address, assessor and permit records describe.")
 
     # What this street has that isn't a page, and why — replaces the hand-kept
@@ -1433,7 +1430,6 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
         "condo-unit": "condominium parcels, which are individual units rather than "
                       "buildings and are held back until the building each belongs to "
                       "can be established",
-        "non-residential": "non-residential parcels",
         "no-roll-record": "parcels with no record in the assessor's roll",
     }
     uncovered = []
@@ -1476,7 +1472,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
                   f'        <p>Also on this street: {esc("; ".join(uncovered))}.</p>\n'
                   f'      </section>\n')
     desc = (f"Building-by-building pages for {disp} in {city_name}: {len(recs):,} "
-            f"residential parcels with permits, assessments and historic status, "
+            f"parcels with permits, assessments and historic status, "
             f"fully cited.")
     cols_open, cols_close = "", ""
     if aside:

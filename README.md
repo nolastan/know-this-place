@@ -24,7 +24,7 @@ There is deliberately **no CMS, no database, no build framework**:
   [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
 - **A page is seeded once, then edited by hand forever after.**
   [scripts/seed_pages.py](scripts/seed_pages.py) joins the DataSF datasets and
-  writes the first `data.json` + `index.html` for every residential parcel that
+  writes the first `data.json` + `index.html` for every parcel that
   has no page yet. It never returns to a page it has written — a second run
   creates nothing. Everything after that first draft (corrections, research, a
   building's story, reader feedback) is a person or an agent editing the page

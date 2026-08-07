@@ -29,18 +29,16 @@ datasets, `nhood` / `analysis_neighborhood` **`Castro/Upper Market`**. That is
 the value the seeder is run with, and it is what decides membership; the
 paragraph above is orientation, not the test.
 
-**Residential addresses first** (root rule). Castro Street's commercial core
-(roughly 400–600 Castro) and Market Street storefronts are mostly business
-addresses — the seeder skips them automatically, because the assessor's
-`use_definition` is what classifies a parcel, not its street.
-
 ## Seeding this neighborhood
 
-The neighborhood has already been seeded: every residential parcel the city's
-records describe has a page. Those pages are now edited by hand like any other
-— see "Page lifecycle" in the root `AGENTS.md`.
+The neighborhood was seeded before commercial parcels were in scope, so the
+pages that exist cover its residential parcels. Castro Street's commercial core
+(roughly 400–600 Castro) and the Market Street storefronts are largely business
+addresses and are still unwritten; a re-run now picks them up. Existing pages
+are edited by hand like any other — see "Page lifecycle" in the root
+`AGENTS.md`.
 
-Re-run the seeder only to pick up parcels that have newly appeared:
+Re-run the seeder to pick up those parcels and any that have newly appeared:
 
 ```
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
@@ -49,8 +47,7 @@ python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
 
 It creates pages that don't exist and touches nothing that does, so running it
 again is safe. The run skips condominium parcels (individual units with their
-own APNs, not buildings), non-residential parcels, and parcels with no assessor
-record.
+own APNs, not buildings) and parcels with no assessor record.
 
 **Corbett Heights is inside this city boundary but filed separately**, as
 `san-francisco/corbett-heights/AGENTS.md` explains. Its streets — Corbett,
