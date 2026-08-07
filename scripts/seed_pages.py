@@ -17,6 +17,7 @@ Usage:
   python3 scripts/seed_pages.py plan  --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py seed  --neighborhood "Castro/Upper Market" \
                                       --city san-francisco --area castro
+  python3 scripts/seed_pages.py seed-list --manifest data/popos-art.json
   python3 scripts/seed_pages.py names --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py hubs  --city san-francisco --area castro
 """
@@ -405,11 +406,65 @@ def building_type(pclass: str, units: int | None) -> str:
             f"{u}-unit flats building" if u else "Flats building")
     if "tic" in c:
         return f"{u}-unit TIC building" if u else "TIC building"
+    if "apartment" in c and "store" in c:
+        return f"{u}-unit apartment building with a ground-floor store" if u else \
+            "Apartment building with a ground-floor store"
     if "apartment" in c or "apt" in c:
         return f"{u}-unit apartment building" if u else "Apartment building"
+    commercial = commercial_type(c)
+    if commercial:
+        return commercial
     # Unrecognized class code — say only what the unit count supports, since a
     # parcel here may be commercial as easily as residential.
     return f"{u}-unit building" if u > 1 else "Building"
+
+
+def commercial_type(c: str) -> str | None:
+    """The same phrase for the non-residential classes on the assessor's roll.
+
+    Downtown parcels are offices, hotels, garages and department stores, and the
+    residential ladder above has nothing to say about them — without this every
+    office tower would be tagged "Residential building".
+    """
+    if "office" in c and "retail" in c:
+        return "Office building with ground-floor retail"
+    if "office" in c and "condominium" in c:
+        return "Office condominium"
+    if "office" in c:
+        return "Office building"
+    if "hotel" in c or "motel" in c:
+        return "Hotel"
+    if "shopping center" in c:
+        return "Shopping center"
+    if "department store" in c:
+        return "Department store"
+    if "bank" in c:
+        return "Bank building"
+    if "school" in c:
+        return "School building"
+    if "church" in c:
+        return "Church"
+    if "theater" in c or "theatre" in c:
+        return "Theater"
+    if "restaurant" in c:
+        return "Restaurant building"
+    if "warehouse" in c:
+        return "Warehouse"
+    if "garage" in c:
+        return "Garage"
+    # Say whose word this is. The roll classes a parcel carrying a park rather
+    # than a building as a vacant lot — Redwood Park and Empire Park both read
+    # that way — and an unqualified "Vacant lot" tag would tell a reader the
+    # site is empty, which is the opposite of true.
+    if "parking lot" in c:
+        return "Assessor class: parking lot"
+    if "vacant lot" in c:
+        return "Assessor class: vacant lot"
+    if "store" in c:
+        return "Store building"
+    if "industrial" in c or "light indust" in c:
+        return "Industrial building"
+    return None
 
 
 ZONING = {"RH1": "RH-1", "RH2": "RH-2", "RH3": "RH-3", "RH4": "RH-4",
@@ -659,6 +714,69 @@ def work_phrase(permits: list) -> tuple[str, str] | None:
 # --------------------------------------------------------------------------
 # Building data.json
 # --------------------------------------------------------------------------
+PERMIT_TIMELINE_MAX = 24
+
+
+def _permit_cost(p: dict) -> float:
+    return max(float(p.get("estimated_cost") or 0), float(p.get("revised_cost") or 0))
+
+
+def trim_permits(permits: list) -> tuple:
+    """Reduce a parcel's permit record to a timeline a person can read.
+
+    A house files a permit every few years; a downtown office tower files one
+    per tenant per floor, and DBI holds 3,102 of them for 1 Market Street. Every
+    one is a real record, but a 3,102-item timeline is not a page — and the
+    figures a reader wants (what was built, what it cost) are drowned by fit-out
+    after fit-out. So the page carries the largest filings by stated cost plus
+    the earliest on file, and `permit_summary` states how many exist and by what
+    rule these were chosen. The DBI query in `sources` returns all of them.
+
+    Nominal $1 street-space and sidewalk-occupancy permits are counted here
+    rather than shown, which is what the hand-authored pages do.
+    """
+    nominal, rest = [], []
+    for p in permits:
+        desc = (p.get("description") or "").lower()
+        (nominal if _permit_cost(p) <= 1 and re.search(r"street space|sidewalk", desc)
+         else rest).append(p)
+    filed = sorted(x["filed"][:4] for x in permits if x.get("filed"))
+    span = (f"{filed[0]}–{filed[-1]}" if filed and filed[0] != filed[-1]
+            else (filed[0] if filed else None))
+
+    if len(rest) <= PERMIT_TIMELINE_MAX:
+        if not nominal:
+            return rest, None
+        word = "permit is" if len(nominal) == 1 else "permits are"
+        return rest, {k: v for k, v in {
+            "count_on_file": len(permits), "range": span,
+            "shown_on_page": len(rest),
+            "note": (f"{len(nominal)} nominal $1 street-space or sidewalk "
+                     f"{word} omitted from the timeline."),
+        }.items() if v is not None}
+
+    ranked = sorted(rest, key=_permit_cost, reverse=True)[:PERMIT_TIMELINE_MAX]
+    keep = {p["number"] for p in ranked}
+    oldest = min((p for p in rest if p.get("filed")),
+                 key=lambda p: p["filed"], default=None)
+    if oldest and oldest["number"] not in keep:
+        ranked.append(oldest)
+        keep.add(oldest["number"])
+    ranked.sort(key=lambda x: (x.get("filed") or ""), reverse=True)
+    note = (f"DBI holds {len(permits):,} permits for this parcel, most of them "
+            f"tenant improvements on individual floors. The timeline shows the "
+            f"{PERMIT_TIMELINE_MAX} largest by stated cost"
+            + (", plus the earliest on file" if oldest and oldest in ranked else "")
+            + f"; the DBI query in the sources below returns all {len(permits):,}.")
+    if nominal:
+        note += (f" {len(nominal):,} of them are nominal $1 street-space or "
+                 f"sidewalk permits.")
+    return ranked, {k: v for k, v in {
+        "count_on_file": len(permits), "range": span,
+        "shown_on_page": len(ranked), "note": note,
+    }.items() if v is not None}
+
+
 def build_record(parcel: dict, ctx: dict) -> dict:
     """Assemble one page's data.json from the joined dataset rows."""
     roll = parcel["roll"]
@@ -772,7 +890,9 @@ def build_record(parcel: dict, ctx: dict) -> dict:
         }
         permits.append({k: v for k, v in entry.items() if v not in (None, "")})
     permits.sort(key=lambda x: (x.get("filed") or ""), reverse=True)
-    rec["permits"] = permits
+    rec["permits"], summary = trim_permits(permits)
+    if summary:
+        rec["permit_summary"] = summary
 
     q = urllib.parse.quote
     rec["sources"] = [
@@ -866,6 +986,10 @@ def tags_html(rec: dict) -> str:
         out.append(("ic-plan", f"Zoned {p['zoning']}"))
     if p.get("supervisor_district"):
         out.append(("ic-pin", f"District {p['supervisor_district']}"))
+    if rec.get("public_open_space"):
+        n = len(rec["public_open_space"])
+        out.append(("ic-pin", "Privately owned public open space"
+                    + (f" ×{n}" if n > 1 else "")))
     hs = rec.get("historic_status") or {}
     label = CEQA_LABEL.get((hs.get("ceqa_status_code") or "").strip())
     if label:
@@ -904,11 +1028,14 @@ def stats_html(rec: dict) -> str:
 
 def timeline_html(rec: dict, indent: str) -> str:
     permits = rec.get("permits", [])
+    # Pages written before `permit_summary` existed still carry their nominal
+    # $1 street-space filings in `permits`; drop those here as before.
+    note = (rec.get("permit_summary") or {}).get("note")
     shown, omitted = [], 0
     for p in permits:
         cost = p.get("estimated_cost") or p.get("revised_cost") or 0
         desc = (p.get("description") or "").lower()
-        if cost <= 1 and re.search(r"street space|sidewalk", desc):
+        if not note and cost <= 1 and re.search(r"street space|sidewalk", desc):
             omitted += 1
             continue
         shown.append(p)
@@ -944,7 +1071,9 @@ def timeline_html(rec: dict, indent: str) -> str:
     out = (f'{indent}<div class="section-head"><span class="ic ic-clock"></span>'
            f'<h2>Permit history</h2></div>\n'
            f'{indent}<ol class="vtl">\n' + "\n".join(items) + f"\n{indent}</ol>\n")
-    if omitted:
+    if note:
+        out += f'{indent}<p class="prose"><small>{esc(note)}</small></p>\n'
+    elif omitted:
         word = "permit is" if omitted == 1 else "permits are"
         out += (f'{indent}<p class="prose"><small>{omitted} nominal $1 street-space '
                 f'{word} omitted.</small></p>\n')
@@ -983,10 +1112,123 @@ def value_panel_html(rec: dict, indent: str) -> str:
         f'{indent}</section>\n')
 
 
+def narrative_html(rec: dict, indent: str) -> tuple:
+    """(lead, sections) — the page's prose, rendered verbatim from `narrative`.
+
+    Returned as two pieces because they belong in different places: the lead sits
+    under the hero, the sections after the timeline.
+    """
+    n = rec.get("narrative") or {}
+    lead = ""
+    if n.get("lead"):
+        paras = "\n".join(f'  <p class="lead">{esc(p)}</p>'
+                          for p in n["lead"].split("\n") if p.strip())
+        lead = paras + "\n"
+    out = []
+    for s in n.get("sections") or []:
+        body = "\n".join(f'{indent}<p class="prose">{esc(p)}</p>'
+                         for p in (s.get("body") or "").split("\n") if p.strip())
+        out.append(f'{indent}<div class="section-head"><span class="ic ic-link"></span>'
+                   f'<h2>{esc(s["heading"])}</h2></div>\n{body}\n')
+    if n.get("community_note"):
+        out.append(f'{indent}<div class="community-note">'
+                   f'<p>{esc(n["community_note"])}</p></div>\n')
+    return lead, "\n".join(out)
+
+
+def open_space_panel_html(rec: dict, indent: str) -> str:
+    """The city's privately-owned-public-open-space record, as a sidebar panel.
+
+    Each space is its own panel: 345 California has three, and a reader needs to
+    know that the plaza is open at all times while the snippets are not.
+    """
+    out = []
+    for s in rec.get("public_open_space") or []:
+        rows = []
+        for icon, key, val in (
+                ("ic-home", "Type", s.get("type")),
+                ("ic-clock", "Hours", s.get("hours")),
+                ("ic-pin", "Where", s.get("location")),
+                ("ic-home", "Seating", s.get("seating")),
+                ("ic-value", "Food service", s.get("food_service")),
+                ("ic-help", "Restrooms", s.get("restrooms")),
+                ("ic-ruler", "Step-free access", s.get("accessibility")),
+                ("ic-plan", "Landscaping", s.get("landscaping")),
+                ("ic-check", "Signage", s.get("signage")),
+                ("ic-link", "Amenities", s.get("amenities")),
+                ("ic-ruler", "Designer", s.get("designer")),
+                ("ic-calendar", "Required from", s.get("established"))):
+            if val not in (None, ""):
+                rows.append((icon, key, val))
+        if not rows:
+            continue
+        body = "\n".join(
+            f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+            f'<span class="spec-k">{esc(k)}</span>'
+            f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
+        heading = s.get("name") or "Public open space"
+        out.append(f'{indent}<section class="panel">\n'
+                   f'{indent}  <h3>{esc(heading)}</h3>\n'
+                   f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
+                   f'{indent}</section>\n')
+    return "".join(out)
+
+
+def public_art_html(rec: dict, indent: str) -> str:
+    """The works the 1% art requirement put on this parcel, one list item each."""
+    works = rec.get("public_art") or []
+    if not works:
+        return ""
+    items = []
+    for w in works:
+        title = w.get("title") or f"Untitled {(w.get('type') or 'work').lower()}"
+        label = f"{title} — {w['artist']}" if w.get("artist") else title
+        link = w.get("artist_link")
+        head = (f'<a href="{esca(link)}">{esc(label)}</a>' if link else esc(label))
+        # The inventory's own phrasing, joined; a trailing "p.m." already ends
+        # the sentence, so don't add a second full stop after it.
+        bits = [b for b in (w.get("medium"), w.get("location"), w.get("access")) if b]
+        hook = "; ".join(b.rstrip() for b in bits)
+        if hook:
+            hook = hook[0].upper() + hook[1:] + ("" if hook.endswith(".") else ".")
+        # A researched installation date and description go on their own line —
+        # the inventory's spec line and the work's own story read as two things.
+        second = " ".join(x for x in (
+            f"Installed {w['installed']}." if w.get("installed") else "",
+            w.get("detail") or "",
+            # Where a source and the city's inventory disagree about a title or
+            # a credit, say so — don't quietly pick one.
+            w.get("title_note") or "", w.get("artist_note") or "") if x).strip()
+        tail = (f'<br>\n{indent}    <span class="hook">{esc(second)}</span>'
+                if second else "")
+        items.append(f'{indent}  <li>{head}<br>\n'
+                     f'{indent}    <span class="hook">{esc(hook)}</span>{tail}</li>')
+    return (f'{indent}<div class="section-head"><span class="ic ic-plan"></span>'
+            f'<h2>Public art</h2></div>\n'
+            f'{indent}<ul class="place-list">\n' + "\n".join(items)
+            + f'\n{indent}</ul>\n')
+
+
 def glance_panel_html(rec: dict, indent: str) -> str:
     p = rec.get("parcel", {})
     a = rec.get("assessment", {})
+    b = rec.get("building") or {}
     rows = []
+    # Researched identity: the name the building goes by, who designed it, who
+    # built it. Single facts, so spec rows — never a paragraph each.
+    # A published completion year that matches the assessor's is the same fact
+    # twice — the "Built 1988" tag already carries it. Show the row only when
+    # the two disagree, and `unknowns` says so alongside.
+    completed = b.get("completed")
+    if completed and str(completed) == str(p.get("year_built")):
+        completed = None
+    for icon, key, val in (("ic-home", "Known as", b.get("name")),
+                           ("ic-home", "Formerly", b.get("former_name")),
+                           ("ic-ruler", "Architect", b.get("architect")),
+                           ("ic-plan", "Developer", b.get("developer")),
+                           ("ic-calendar", "Completed", completed)):
+        if val:
+            rows.append((icon, key, val))
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
         rows.append(("ic-plan", "Construction", ctype))
@@ -1055,7 +1297,21 @@ def district_panel_html(rec: dict, indent: str) -> str:
 def unknowns_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     a = rec.get("assessment", {})
-    missing = ["the architect and builder", "the early residents"]
+    # "The early residents" is only a gap on a building that has residents, and
+    # the architect is only a gap while the page doesn't name one.
+    residential = (p.get("use") or "") in (
+        "Single Family Residential", "Multi-Family Residential")
+    b = rec.get("building") or {}
+    missing = []
+    if not b.get("architect"):
+        missing.append("the architect and builder")
+    elif not b.get("developer"):
+        missing.append("the developer")
+    missing.append("the early residents" if residential else "the early tenants")
+    if any(not w.get("installed") for w in rec.get("public_art") or []):
+        missing.append("when each artwork was installed")
+    if any(not s.get("designer") for s in rec.get("public_open_space") or []):
+        missing.append("who designed the open space")
     if not a.get("last_sale_date"):
         missing.append("the date of the last recorded sale")
     if not p.get("year_built"):
@@ -1067,6 +1323,12 @@ def unknowns_html(rec: dict) -> str:
     if hy and ry and str(hy) != str(ry):
         note = (f" The assessor dates the building to {ry}; Planning's historic "
                 f"resource survey records {hy}.")
+    if "vacant lot" in (p.get("property_class") or "").lower() and ry:
+        note += (f" The roll classes this parcel as a vacant lot and also gives "
+                 f"it a build year of {ry}.")
+    conflict = (rec.get("building") or {}).get("completed_conflict")
+    if conflict:
+        note += f" {conflict}"
     url = feedback_url(page_title(rec), rec["path"])
     return ('  <div class="unknowns">\n'
             '    <span class="ic ic-help"></span>\n'
@@ -1115,21 +1377,24 @@ def render_html(rec: dict) -> str:
     # record runs full width, so a short page looks short rather than like a wide
     # page with an empty column.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
-                      or district_panel_html(rec, ""))
-    use_cols = n_shown >= 4 and has_panels
+                      or district_panel_html(rec, "") or open_space_panel_html(rec, ""))
+    use_cols = (n_shown >= 4 or rec.get("public_art")) and has_panels
     ind = "      " if use_cols else "  "
-    panels = (value_panel_html(rec, ind) + glance_panel_html(rec, ind)
-              + district_panel_html(rec, ind))
+    panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
+              + glance_panel_html(rec, ind) + district_panel_html(rec, ind))
+    art = public_art_html(rec, ind)
     timeline = timeline_html(rec, ind)
+    lead_html, sections = narrative_html(rec, ind)
+    main_col = "\n".join(x for x in (art, timeline, sections) if x)
 
     if use_cols:
         body = ('  <div class="cols">\n    <div class="main">\n'
-                + timeline
+                + main_col
                 + '    </div>\n\n    <aside class="aside">\n'
                 + panels
                 + '    </aside>\n  </div>\n')
     else:
-        body = timeline + ("\n" if timeline and panels else "") + panels
+        body = main_col + ("\n" if main_col and panels else "") + panels
 
     ld = {
         "@context": "https://schema.org",
@@ -1188,7 +1453,7 @@ def render_html(rec: dict) -> str:
     </ktp-streetview>
   </section>
 
-{stats_html(rec)}
+{lead_html}{stats_html(rec)}
 {body}
 {unknowns_html(rec)}</main>
 
@@ -1352,6 +1617,11 @@ def hub_lead(street_dir, fallback: str) -> str:
             if para:
                 break
             continue
+        # A hub written in an older format opens with its list and no lead
+        # paragraph. Reading the first list item as the lead splices the whole
+        # list into one line and leaves a duplicate list below it.
+        if stripped.startswith(("- ", "* ", "1. ")):
+            break
         if not stripped:
             if para:
                 break
@@ -1405,7 +1675,10 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
     in_district = sum(1 for r in recs if district_of(r).get("name"))
     districts = collections.Counter(district_of(r)["name"]
                                     for r in recs if district_of(r).get("name"))
-    n_permits = sum(len(r.get("permits", [])) for r in recs)
+    # What DBI holds, not what each page shows — a tower's page carries the
+    # largest filings and states the full count in its `permit_summary`.
+    n_permits = sum((r.get("permit_summary") or {}).get("count_on_file")
+                    or len(r.get("permits", [])) for r in recs)
 
     entries = []
     for r in recs:
@@ -1421,8 +1694,13 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
     if in_district:
         tiles.append(("ic-plan", f"{in_district:,}", "In a historic district"))
 
-    lead = hub_lead(street_dir, f"Every parcel on {disp} that the city's "
-                                f"address, assessor and permit records describe.")
+    # The fallback never claims completeness: a street seeded from a *thematic*
+    # list — the buildings named in a city inventory, say — holds a handful of
+    # its parcels, not all of them, and "every parcel on Howard Street" is then
+    # false. Say what is here instead.
+    lead = hub_lead(street_dir, f"The parcels on {disp} documented here so far, "
+                                f"from the city's address, assessor and permit "
+                                f"records.")
 
     # What this street has that isn't a page, and why — replaces the hand-kept
     # "not yet covered" note with counts straight from the classifier.
@@ -1532,7 +1810,25 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
 NEIGHBORHOOD_SECTION = "Streets documented so far"
 
 
-def street_summary(street_dir: Path) -> tuple:
+def existing_street_hooks(area_dir: Path) -> dict:
+    """slug -> the hook a neighborhood hub already shows for that street.
+
+    A street's line on the neighborhood hub is generated ("3 buildings, built
+    1901–1986"), but a person will often have replaced it with something worth
+    reading ("The Crocker Bank Building of 1908, and two buildings on the block
+    where Samuel Brannan built in 1853"). Rebuilding the list to add one street
+    must not throw the rest of them away — this is the same courtesy `hub_lead`
+    pays a street hub's own intro paragraph.
+    """
+    md = area_dir / "index.md"
+    if not md.exists():
+        return {}
+    return {m.group(1): m.group(2).strip() for m in re.finditer(
+        r"^- \[[^\]]+\]\(([^/)]+)/\)\s+—\s+(.+)$", md.read_text(encoding="utf-8"),
+        re.M)}
+
+
+def street_summary(street_dir: Path, kept: dict = None) -> tuple:
     """(display name, count, hook) for one street, read off its pages."""
     recs = [json.loads((d / "data.json").read_text())
             for d in street_dir.iterdir()
@@ -1551,20 +1847,22 @@ def street_summary(street_dir: Path) -> tuple:
     if districts:
         name, count = districts.most_common(1)[0]
         hook += f"; {count:,} in the {name}"
-    return disp, len(recs), hook + "."
+    return disp, len(recs), (kept or {}).get(street_dir.name) or hook + "."
 
 
 def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
     """Rewrite only the street list on a neighborhood hub.
 
     The rest of the page — the lead, the naming explanation, the closing note —
-    is a human's prose and is left exactly as it is.
+    is a human's prose and is left exactly as it is, and so is any hook a person
+    has written for a street already on the list.
     """
+    kept = existing_street_hooks(area_dir)
     streets = []
     for street_dir in sorted(area_dir.iterdir()):
         if not street_dir.is_dir():
             continue
-        summary = street_summary(street_dir)
+        summary = street_summary(street_dir, kept)
         if summary:
             streets.append((street_dir.name, *summary))
     if not streets:
@@ -1788,6 +2086,103 @@ def cmd_names(args) -> int:
     return 0
 
 
+def cmd_seed_list(args) -> int:
+    """Seed the parcels named in a manifest file, rather than a whole neighborhood.
+
+    `seed` walks an analysis neighborhood and takes the residential parcels in
+    it. That is the right default and the wrong tool for a *thematic* set — the
+    buildings named in the city's public-art and privately-owned-public-open-
+    space inventories are downtown offices, hotels and garages scattered across
+    seven neighborhood directories. It is also the wrong tool for downtown for a
+    second reason: those blocks have been re-parcelized repeatedly, so EAS often
+    still carries a retired APN and the address→parcel join `seed` relies on
+    silently misses. So the manifest states the parcel outright, and this
+    command joins the datasets onto it.
+
+    The manifest is a JSON array; each entry is one page:
+
+        {"apn": "3721120", "city": "san-francisco", "area": "east-cut",
+         "street_slug": "mission-street", "street_name": "MISSION",
+         "street_type": "ST", "street_display": "Mission Street",
+         "numbers": ["555"], "other_street_addresses": [],
+         "lat": 37.7884, "lng": -122.3989, "zip": "94105",
+         "eas_baseid": "…", "supervisor": "6"}
+
+    Everything else about the split holds: a directory that already has a page
+    is left alone, and the draft it writes is edited only by hand afterwards.
+    """
+    entries = json.loads(Path(args.manifest).read_text())
+    roll_year = int(api_get(DS_ROLL, {"$select": "max(closed_roll_year)"})[0]
+                    ["max_closed_roll_year"])
+    apns = sorted({e["apn"] for e in entries})
+    tag = re.sub(r"[^a-z0-9]+", "-", Path(args.manifest).stem.lower()).strip("-")
+    roll = fetch_keyed(f"roll{roll_year}__{tag}.json", DS_ROLL, "parcel_number", apns,
+                       select=ROLL_SELECT, where=f"closed_roll_year={roll_year}",
+                       chunk=100, refresh=args.refresh)
+    historic = fetch_keyed(f"historic__{tag}.json", DS_HISTORIC, "apn", apns,
+                           select=HISTORIC_SELECT, chunk=200, refresh=args.refresh)
+    districts = fetch_paged("districts.json", DS_DISTRICTS, select=DISTRICT_SELECT,
+                            page=25, refresh=args.refresh)
+    roll_by_apn = {r["parcel_number"]: r for r in roll}
+    blocks = sorted({r["block"] for r in roll if r.get("block")})
+    permits = fetch_keyed(f"permits__{tag}.json", DS_PERMITS, "block", blocks,
+                          select=PERMIT_SELECT, chunk=1, page=1500, refresh=args.refresh)
+
+    inv = []
+    for e in entries:
+        r = roll_by_apn.get(e["apn"])
+        if not r:
+            print(f"  no {roll_year} roll row for {e['apn']} "
+                  f"({e['numbers'][0]} {e['street_display']}) — skipped", file=sys.stderr)
+            continue
+        inv.append({**e, "roll": r, "status": "seedable", "permits": []})
+    attach_permits(inv, permits)
+
+    written, skipped, elsewhere = 0, 0, 0
+    touched: dict = collections.defaultdict(set)
+    covered = existing_pages_by_apn()
+    for row in inv:
+        ctx = make_ctx(argparse.Namespace(
+            city=row["city"], area=row["area"], retrieved=args.retrieved),
+            {"roll_year": roll_year, "historic": historic, "districts": districts})
+        rec = build_record(row, ctx)
+        prior = covered.get(row["apn"])
+        if prior and prior != rec["path"]:
+            print(f"  {rec['path']}: parcel {row['apn']} is already documented "
+                  f"at {prior} — skipped", file=sys.stderr)
+            elsewhere += 1
+            continue
+        page_dir = ROOT / rec["path"].strip("/")
+        touched[(row["city"], row["area"])].add(page_dir.parent)
+        if (page_dir / "data.json").exists() or (page_dir / "index.html").exists():
+            skipped += 1          # the page exists; it is a human's to edit
+            continue
+        page_dir.mkdir(parents=True, exist_ok=True)
+        (page_dir / "data.json").write_text(
+            json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        (page_dir / "index.html").write_text(render_html(rec), encoding="utf-8")
+        written += 1
+
+    n_streets = 0
+    for (city, area), street_dirs in sorted(touched.items()):
+        ctx = make_ctx(argparse.Namespace(city=city, area=area, retrieved=args.retrieved),
+                       {"roll_year": roll_year, "historic": historic,
+                        "districts": districts})
+        for street_dir in sorted(street_dirs):
+            write_street_hub(street_dir, ctx)
+            n_streets += 1
+        area_dir = ROOT / city / area
+        if (area_dir / "index.html").exists():
+            write_neighborhood_hub(area_dir, ctx)
+        else:
+            print(f"  {area_dir}: no neighborhood hub yet — write one by hand",
+                  file=sys.stderr)
+    print(f"created {written} new page(s); left {skipped} existing page(s) untouched; "
+          f"skipped {elsewhere} parcel(s) documented elsewhere; "
+          f"rebuilt {n_streets} street hub(s) across {len(touched)} neighborhood(s)")
+    return 0
+
+
 def cmd_hubs(args) -> int:
     ctx = make_ctx(args, {"roll_year": args.roll_year, "historic": [], "districts": []})
     area_dir = ROOT / args.city / args.area
@@ -1832,6 +2227,15 @@ def main() -> int:
                    help="exclude a street slug, e.g. one filed under another "
                         "neighborhood directory (repeatable)")
     p.set_defaults(fn=cmd_seed)
+
+    p = sub.add_parser("seed-list",
+                       help="write pages for the parcels named in a manifest file")
+    p.add_argument("--manifest", required=True,
+                   help="JSON array of parcel entries; see cmd_seed_list")
+    p.add_argument("--retrieved", default=None,
+                   help="retrieval date to record in sources (default: today)")
+    p.add_argument("--refresh", action="store_true")
+    p.set_defaults(fn=cmd_seed_list)
 
     p = sub.add_parser("names", help="list permit descriptions that may name a person or firm")
     common(p)

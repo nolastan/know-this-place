@@ -17,11 +17,19 @@ documented so far:
 - [Western Addition](western-addition/) — a 1974 Patty Hearst address
 - [Excelsior](excelsior/) — Jerry Garcia's first home
 - [Outer Mission](outer-mission/) — Jerry Garcia's home with his grandparents
-- [South Beach](south-beach/) — the site of Jack London's birthplace
-- [Financial District](financial-district/) — the Mechanics' Institute on Post Street, the Crocker Bank Building, and two buildings on the block where Samuel Brannan built in 1853
+- [South Beach](south-beach/) — the waterfront blocks south of Market; the site of Jack London's birthplace and eleven buildings with public open space
+- [Financial District](financial-district/) — the office district north of Market; the Mechanics' Institute on Post Street, the Crocker Bank Building, Redwood Park, Empire Park and the Montgomery Street block where Samuel Brannan built in 1853
+- [East Cut](east-cut/) — the blocks between Market and Folsom; Foundry Square, the Downtown Plan's plazas and the art the 1% program put in them
+- [Union Square](union-square/) — the retail blocks at the top of Market Street
+- [South of Market](south-of-market/) — the wide blocks west of Fourth Street
 - [Chinatown](chinatown/) — the Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District
-- [Tenderloin](tenderloin/) — the Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882
+- [Tenderloin](tenderloin/) — the Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882, and two Mason Street supportive-housing buildings with facade art
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and
 kept separate from the city building record.
+
+Downtown coverage begins with the buildings named in two city inventories — the
+privately owned public open spaces the Downtown Plan requires, and the artworks
+the 1% art program pays for — which is why those pages are offices and hotels
+rather than the residential buildings the rest of the site documents.

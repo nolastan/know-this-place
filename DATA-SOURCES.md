@@ -134,6 +134,108 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 - **Verified:** 2026-07-27 (4,475 Castro parcels fetched by `apn` in chunks of
   400; apn 2752016 = 744 Castro St → ceqacode B)
 
+## sf-parcels — Parcels, active and retired
+
+- **What:** Every parcel the city has mapped, with geometry, its address range,
+  and — the point of it — an `active` flag. **Downtown, this is the only
+  reliable address→parcel join.** EAS's `parcel_number` is the APN as of
+  whenever the address record was written, and downtown blocks have been
+  re-parcelized repeatedly: of 96 parcels EAS gave for the POPOS and public-art
+  addresses, 22 had no row on the current secured roll because the APN had been
+  retired. `acdm-wktn` resolves the same address to the parcel that exists now.
+- **Endpoint:** `https://data.sfgov.org/resource/acdm-wktn.json`
+- **Key fields:** `blklot` / `mapblklot` (the APN), `block_num`, `lot_num`,
+  `from_address_num` / `to_address_num` (**text columns** — cast them,
+  `from_address_num::number <= 600`, or the query 400s), `street_name`,
+  `street_type`, `active`, `in_asr_secured_roll`, `zoning_code`,
+  `analysis_neighborhood`, `centroid_latitude` / `_longitude`, and `shape` for
+  `intersects()`.
+- **Two ways to ask, and you want both:**
+  - by address range, as above; and
+  - spatially, `$where=active=true AND intersects(shape, 'POINT(<lng> <lat>)')`
+    against the address's own EAS coordinates.
+
+  Where they agree, the answer is solid. Where they don't, the assessor's
+  `property_location` settles it.
+- **Cautions:**
+  - **The frontage street is arbitrary on a corner parcel.** 0312031 is "1
+    Kearny" to the POPOS inventory and "1–31 Geary" here; 0266009 is "444
+    Market" and "1 Front". Neither is wrong — title the page on the street the
+    source dataset names, and record the rest as aliases.
+  - **An address range sweeps in the other side of the street.** The range on
+    0236017 is 100–116 California, and EAS returns 100, **101** and 116 — 101
+    California is the tower across the street. Filter to the lead number's
+    parity.
+  - **A point on a condominium block returns dozens of parcels**, one per unit.
+    That is the signal to stop and look for the building's own parcel on the
+    roll (333 Bush → 0288033, an office; 0288032 is only its garage condo), or
+    to defer the address per AGENTS.md when there isn't one.
+- **Citation label:** "SF Parcels (active and retired) via DataSF"
+- **Verified:** 2026-08-06 (83 downtown parcels resolved; `acdm-wktn` agrees
+  with the 2025 roll on all 83, where EAS's `parcel_number` did not on 22)
+
+## sf-popos — Privately Owned Public Open Spaces
+
+- **What:** The city's inventory of the plazas, atriums, sun terraces,
+  "snippets" and indoor parks that downtown developments must provide and keep
+  open to the public — the Downtown Plan's central bargain, in force since 1985
+  and applied retroactively to spaces going back to 1959. One row per *space*,
+  so a building can have several (345 California has three, 55 Second has
+  three), and each has its own hours.
+- **Endpoint:** `https://data.sfgov.org/resource/65ik-7wqd.json`
+- **Key fields:** `name`, `popos_address`, `type` (Plaza / Atrium / Urban
+  Garden / Sun Terrace / Indoor Park / Snippet / Pedestrian Walkway), `hours`,
+  `hours_type`, `year` (the entitlement that required it, **not** an opening
+  date), `location`, `description`, `landscaping`, `seating_no`, `food_service`,
+  `restrooms`, `accessibility`, `signage`, `subject_to_downtown_pln`,
+  `block_num` / `lot_num` / `parcel_num`, `latitude` / `longitude`.
+- **Cautions:**
+  - **`parcel_num` is often stale or wrong** — 1 Post St carries 555
+    California's parcel. Re-resolve through `sf-parcels`.
+  - The free-text columns are a surveyor's field notes, in mixed voice and
+    mixed case ("Security would not disclose hours", "Thayer referenced
+    something that is not part of the open space requirement"). Carry them as
+    the inventory's own description; don't launder them into site prose.
+  - `year` is the year of the requirement. Never present it as the year the
+    space opened.
+- **Citation label:** "SF Planning Department — Privately Owned Public Open
+  Spaces via DataSF"
+- **Verified:** 2026-08-06 (81 spaces; 78 of them on 83 documented parcels)
+
+## sf-public-art — Public Art (1% Art Program)
+
+- **What:** Artworks provided under the 1% art requirement the Downtown Plan
+  places on large downtown developments — sculpture, murals, fountains, facade
+  work — with the medium, where in or on the building it sits, and when the
+  public may see it. One row per *work*: 600 California has four.
+- **Endpoint:** `https://data.sfgov.org/resource/cf6e-9e4j.json`
+- **Key fields:** `name` (the street address, or occasionally a venue name),
+  `title` (title **and** artist, run together), `type`, `medium`, `location`,
+  `accessibil`, `requiredar` (the Planning case that imposed the requirement,
+  wrapped in an HTML anchor), `descriptio` (the *entitlement project*, not the
+  artwork — and **truncated mid-sentence**, so don't quote it), `artistlink`,
+  `the_geom`.
+- **Cautions:**
+  - **`name` is not always an address**: three rows name a venue ("Orchard
+    Garden Hotel", "SF Dtwn Courtyard by Marriott", "San Francisco Conservatory
+    of Music"), and one — "157 Mason" — is a street number the city's own
+    address registry doesn't have. Resolve those on `the_geom` and confirm
+    against the roll: 157 Mason is parcel 0331017, which the assessor calls 149
+    Mason and records as 57 units built 2009, matching the row's own
+    description of the entitlement.
+  - **`title` needs parsing and is quoted inconsistently** — `'""Guardian""' by
+    Bruce Beasley`, `""Riallaro,"" by Frank Stella`, `Bronze Fountain by David
+    Tolerton`. Split on " by ", strip the quotes.
+  - **The artist is sometimes missing** where the work is well known
+    ("Wall Drawing #1012" is Sol LeWitt's), and `type`/`medium` are free text
+    in mixed case.
+  - `the_geom` points are approximate and occasionally plain wrong — the "125
+    Mason" row's point lands near Van Ness. Trust the address, and only fall
+    back to geometry when there is no usable address.
+- **Citation label:** "SF Planning Department — Public Art (from the 1% Art
+  Program) via DataSF"
+- **Verified:** 2026-08-06 (65 works; 58 of them on 83 documented parcels)
+
 ## sf-historic-districts — Historic district boundaries
 
 - **What:** Polygon boundaries and status for each historic district, used to
@@ -382,6 +484,50 @@ a street number, which is the whole constraint:
   Brannan, 1853; §12–14, 24 and 27 cover the founding and secularization of
   Mission San Francisco de Asís)
 
+## spur-popos-guide — SPUR, *Secrets of San Francisco* (secondary)
+
+- **What:** SPUR's field guide to the downtown POPOS, written from site visits.
+  It carries what the city's own inventory doesn't: what a space is actually
+  made of, how you get into it, whether the seating has quietly been annexed by
+  a restaurant, and a plain quality rating (Excellent / Good / Fair / Poor).
+  The best available second opinion on the `sf-popos` rows.
+- **Guide:** <https://www.spur.org/sites/default/files/2013-10/popos-guide.pdf>
+  (SF Planning publishes its own map and guide at
+  <https://sfplanninggis.org/popos/POPOS_and_PublicArt.pdf>, which is the
+  better source for entrances and hours.)
+- **Cautions:**
+  - **Fetch it as a PDF and extract the text** — `WebFetch` returns nothing
+    usable for either file. Agents that have got at it used `pdftotext` or
+    `pypdf`.
+  - **It is dated.** The guide is a 2010s snapshot; hours, furniture and food
+    service have changed, and several spaces have been renovated since.
+    Prefer `sf-popos` for the facts a page states, and use SPUR for design
+    description and for a documented discrepancy.
+  - **Its ratings are judgements, not facts.** Never carry "rated Excellent"
+    onto a page as if it were a property of the space.
+  - It sometimes assigns a space to the wrong address — it places a kinetic
+    ring sculpture at 560 Mission that another source gives to 201 Mission.
+    Check the address against `sf-popos` before using an entry.
+- **Citation label:** "SPUR, *Secrets of San Francisco: A Guide to San
+  Francisco's Privately-Owned Public Open Spaces*"
+- **Verified:** 2026-08-06
+
+## sf-dpr-forms — Historic resource survey forms (primary)
+
+- **What:** The State of California DPR 523 forms behind a parcel's
+  historic-resource status — the survey's own building record, with the
+  architect, the original owner, the construction dates, the style, and the
+  evaluation. Where one exists it beats every secondary source on the page.
+- **Endpoint:** `https://sfplanninggis.org/docs/DPRForms/<apn>.pdf` — the bare
+  APN, no dash (e.g. `3708097.pdf` for 25 Jessie Street). Not every parcel has
+  one; a 404 just means no form was prepared.
+- **Cautions:** the form's own narrative sometimes contradicts the year built
+  it quotes from the assessor (25 Jessie's form lists 1982 and then says the
+  building was "completed in 1983"). Record both.
+- **Citation label:** "State of California DPR 523 form for <address>, via SF
+  Planning"
+- **Verified:** 2026-08-06 (apn 3708097 → 25 Jessie Street / One Ecker Square,
+  Jorge de Quesada, 1982–83)
 ## argonaut-sfhs — *The Argonaut*, journal of the SF Historical Society (secondary)
 
 - **What:** *The Argonaut: Journal of the San Francisco Historical Society*, a
