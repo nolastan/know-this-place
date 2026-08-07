@@ -109,6 +109,25 @@
       "source": "sf-building-permits"
     }
   ],
+  "historical_record": [
+    {
+      "date": "1895-06-30",
+      "kind": "advertisement",
+      "description": "A new lower flat of five rooms and bath, with a yard, offered to let at $13 a month.",
+      "cross_streets": "between Fifteenth and Sixteenth, Noe and Castro",
+      "source": "loc-sf-call-1895-06-30"
+    },
+    {
+      "date": "1895-04-08",
+      "kind": "building contract",
+      "description": "Alterations and additions, contracted to Charles Eriksen, working to his own plans.",
+      "cost": 2000,
+      "source": "loc-sf-call-1895-04-08"
+    }
+  ],
+  "unknowns": {
+    "year_built_conflict": "The assessor and Planning both give 1900, but the building is documented at this address in April 1895 and again that June."
+  },
   "sources": [
     {
       "id": "sf-eas-addresses",
@@ -139,6 +158,18 @@
       "name": "SF Planning Department — Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43389400706253%2037.76477635445652)%27)",
       "retrieved": "2026-07-28"
+    },
+    {
+      "id": "loc-sf-call-1895-04-08",
+      "name": "The San Francisco Call, 8 April 1895, p. 4 — \"Building Contracts\"",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-04-08/ed-1/seq-4/",
+      "retrieved": "2026-08-04"
+    },
+    {
+      "id": "loc-sf-call-1895-06-30",
+      "name": "The San Francisco Call, 30 June 1895, p. 10 — classified advertisement",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-06-30/ed-1/seq-10/",
+      "retrieved": "2026-08-04"
     }
   ]
 }

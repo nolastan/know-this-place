@@ -35,6 +35,16 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 > agent confirmed the endpoint and field names with a live query. If it's
 > stale or empty, verify before relying on field names, and update it.
 
+> **Most of a source is expected to be irrelevant.** The secondary corpora
+> below are read for the few passages that carry a street number, and the ratio
+> is brutal by design — 58,620 OCR pages of Chronicling America yielded usable
+> mentions for 2,025 addresses; Hittell's 1878 history is a whole book with a
+> modest number of numbered addresses in it. **A low hit rate is the shape of
+> the work, not a bad source or a mistaken request.** Run the scan, report the
+> yield as a count, and never stop to ask whether so little signal is worth
+> extracting — see "Mining a corpus for address-level facts" in
+> [AGENTS.md](AGENTS.md).
+
 ---
 
 ## sf-eas-addresses — Addresses (Enterprise Addressing System)
@@ -57,8 +67,8 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 
 - **What:** Per-parcel, per-year: year built, property class / land use,
   number of units, rooms, lot and building area, assessed values.
-  The land-use / property-class code is how we determine **residential vs.
-  business** during seeding.
+  The land-use / property-class code is how a page says what kind of building
+  it describes — house, flats, storefront, mixed use.
 - **Endpoint:** `https://data.sfgov.org/resource/wv5m-vpq2.json`
 - **Query by:** `parcel_number` (block+lot, from EAS) with
   `$order=closed_roll_year DESC&$limit=1` for the latest roll (2025 as of
@@ -345,6 +355,96 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   Street, Ord Street and upper Clayton — see issue #3.
 - **Verified:** 2026-07-22 (page 1 of the archive, Dec 2025 – Jul 2026)
 
+## loc-newspapers — Historic newspapers, Chronicling America (secondary)
+
+- **What:** Full-text OCR of digitized San Francisco dailies from the Library
+  of Congress. A local mirror lives in `sources/loc-newspapers/` (not committed
+  — see `.gitignore`); `state.json` records which batches have been pulled.
+  Two titles are held so far, and their runs abut exactly, because the first
+  was renamed into the second:
+  - `sn94052989` — *The Morning Call* (San Francisco). Local coverage: 1890–1894.
+  - `sn85066387` — *The San Francisco Call*. Local coverage: 1895–1896,
+    1900–1902, 1905–1910.
+- **Citation URL:** `https://chroniclingamerica.loc.gov/lccn/<lccn>/<YYYY-MM-DD>/ed-<n>/seq-<n>/`
+  — one page image; it redirects to the current `loc.gov` viewer. The OCR file
+  path maps to it directly: `sn85066387/1895/04/08-ed-1-seq-004.txt` →
+  `.../sn85066387/1895-04-08/ed-1/seq-4/` (drop the leading zeros on `seq`).
+- **Citation label:** name the paper, the issue date and the page —
+  "*The San Francisco Call*, 8 April 1895, p. 4".
+
+### What is actually usable
+
+Four recurring columns carry address-level facts. Only two of them resolve to
+a street number, which is the whole constraint:
+
+- **"Building Contracts" / "Builders' Contracts"** — owner, contractor,
+  architect, scope of work and cost. This is a **pre-DBI permit record**, and
+  the richest thing in the corpus. But it identifies *new* buildings by
+  metes and bounds ("east line of Folsom street, 85 feet south of Twentieth"),
+  and only gives a street number for **alterations to an existing building**.
+  Those numbered entries are few but excellent.
+- **"Real Estate Transactions"** — near-useless as it stands. Entries are
+  metes-and-bounds, and the recorded consideration is almost always a nominal
+  `$10` or `gift`, not a price. The occasional entry that names a street
+  number *and* a real price ("known as 1311 Alabama street, 40x100 feet, sold
+  … for $2400") is worth having.
+- **"Fire Alarms"** — date, time, alarm box, address, building form
+  ("two-story frame") and the damage. Numbered, dated, and directly usable.
+- **Classified ads** (to let, for sale, business notices) — the bulk of the
+  hits. An ad is dated proof a building **stood at that number**, and often
+  states its room count, form (cottage / flat / house) and cross-streets.
+
+### Cautions
+
+- **Verify the number against the cross-streets — the ads hand you the check.**
+  Most entries say "bet. 19th and 20th" or "near Guerrero." Confirm that
+  against the parcel's own coordinates before trusting the match. Where an
+  entry gives lot dimensions, check them against the assessor's `lot_area`:
+  25x125 against 3,125 sq ft is a parcel identification, not a coincidence.
+- **Mission and Eureka Valley street numbers did *not* move in 1909.** The
+  general warning in `corbett-heights/AGENTS.md` still holds for renamed
+  streets, but every cross-street check run here resolves to today's number
+  (824 Valencia "bet. 19th and 20th"; 3460 16th "between Church and Sanchez";
+  2995 Folsom "corner 26th"). Check, don't assume, and don't extend this to
+  other neighborhoods.
+- **Streets were renamed — and one was renumbered with it.** Lexington Street
+  was Lexington *Avenue*, and Cesar Chavez was **Army Street**; both are pure
+  renames, so the numbers carry over.
+  **South Van Ness is not.** It was Howard Street until 1932, numbered as a
+  continuation of Howard through SoMa, and it was **renumbered** when it was
+  renamed. Measured against the modern block faces in `3psu-pn9h` (94 ads in
+  this corpus that give a Howard number *and* a cross street):
+
+  | at cross street | historical Howard | modern South Van Ness |
+  |---|---|---|
+  | 13th | ~1616–1759 | 193–249 |
+  | 16th | ~1919–2004 | 467–499 |
+  | 20th | ~2400–2424 | 801–899 |
+  | 21st | ~2505–2544 | 901–999 |
+  | 22nd | ~2600s | 1001–1099 |
+  | 24th | ~2752–2867 | 1201–1299 |
+
+  The offset is roughly −1,600 over 17th–24th but only about −1,500 nearer
+  13th–16th, so **subtracting a constant misplaces buildings by up to a whole
+  block.** Convert per block face using the cross streets, or skip the street.
+  A Mission-numbered "Howard street" address is never today's Howard Street
+  (which ends at 13th) — but it is not that number on South Van Ness either.
+- **The OCR is dirty, and it gets worse after 1906.** Expect mangled digits and
+  interleaved column text. Read the surrounding lines before trusting a
+  reading, and never take a number from OCR alone if the page turns on it.
+- **A mention that predates the assessor's `year_property_built` is not proof
+  the assessor is wrong** — the building may have been replaced. Record the
+  dated fact, name the disagreement in `.unknowns`, and don't adjudicate it
+  (the same rule as the Corbett Heights photographs).
+- **People.** These columns are full of names — householders in want-ads,
+  the dead in funeral notices, tenants in fire reports. Per the root
+  `AGENTS.md`, take **contractors, architects and named firms**; leave
+  residents, occupants and owners out, however long dead.
+- **Coverage is partial.** `state.json` lists 10 batches / 43,769 pages of a
+  much larger archive; `batch-index.json` enumerates what has not been pulled.
+- **Verified:** 2026-08-04 (58,620 OCR pages scanned; 8,437 numbered-address
+  mentions on streets that have pages, across 2,025 distinct addresses)
+
 ## hittell-1878 — Hittell's *History of San Francisco* (secondary, period)
 
 - **What:** John S. Hittell, *A History of the City of San Francisco and
@@ -368,9 +468,10 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
     which is the end of the matter under the directory contract. Where a number
     does resolve, say on the page that the correspondence is unverified.
   - **The buildings are usually gone.** He is describing a city that burned in
-    1906. Treat his claim as *site* history — record it under `site_history`
-    with the source, and let the assessor's `year_property_built` show that the
-    structure he saw is not the one standing.
+    1906. Treat his claim as *site* history — record it under
+    `historical_record` with `"kind": "site history"` and the source, and let
+    the assessor's `year_property_built` show that the structure he saw is not
+    the one standing.
   - **He editorializes, and he speculates.** He flags his own guesses ("presump-
     tively the same structure"), and elsewhere he does not. Take dates, names
     and events; leave the judgements, and never carry his characterizations of
@@ -427,6 +528,72 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   Planning"
 - **Verified:** 2026-08-06 (apn 3708097 → 25 Jessie Street / One Ecker Square,
   Jorge de Quesada, 1982–83)
+## argonaut-sfhs — *The Argonaut*, journal of the SF Historical Society (secondary)
+
+- **What:** *The Argonaut: Journal of the San Francisco Historical Society*, a
+  twice-yearly peer-reviewed local-history journal. Articles are researched from
+  the city directories, period newspapers, corporate records and family papers,
+  and they name streets and buildings constantly. Volumes read into the repo so
+  far:
+  - **29 no. 2 (Winter 2018)** — Robert Bardell, "The Presidio & Ferries
+    Railroad" (pp. 6–33); Robert Cherny, "A New Eyewitness Account of the 1906
+    Earthquake" (pp. 34–43); Ken Sproul, ed., "Letter by William Hindshaw"
+    (pp. 44–55).
+  - **30 no. 1 (Summer 2019)**, the Midwinter Fair issue — Taryn Edwards,
+    "Before the Midwinter Fair: The Mechanics' Institute's 'Pacific Rim'
+    Industrial Exhibitions of 1869 and 1871" (pp. 8–23); Lee Bruno, "The Winter
+    of Our Dreams" (pp. 24–33); Lorri Ungaretti, "A Look at the Midwinter Fair"
+    (pp. 34–65); Rodger C. Birt, "A Rare Midwinter Exposition Artifact"
+    (pp. 66–71); Sofia Herron Geller, "Art Activism" (pp. 74–79).
+- **Format:** print journal; no API and no per-article URL. Cite author,
+  article title, volume, issue, season, year and page range. Publisher: San
+  Francisco Historical Society, P.O. Box 420470, San Francisco, CA 94142-0470.
+- **Use for:** what a site was before its present building — a car barn, a
+  factory, a pleasure resort — and for dated events (a house reported nearly
+  completed, a service that ended). Record each as one `historical_record`
+  entry, usually `"kind": "site history"`.
+- **Cautions:**
+  - **Most of what it names has no street number.** These articles locate
+    things by corner ("Union and Laguna," "Fillmore and Bay") or by landmark
+    ("the site of today's Marina Safeway"). Nothing here resolves a corner to a
+    parcel without guessing, so those get no page — the same rule as
+    `hittell-1878`.
+  - **Numbered addresses still have to clear EAS.** 847 Valencia Street and 616
+    Filbert Street, both named in the Winter 2018 volume, have no modern EAS
+    record; under the directory contract that is the end of the matter.
+  - **Its dates will disagree with the assessor.** Bardell dates the Casebolt
+    house to a March 1868 newspaper report; the roll and Planning both say 1865.
+    Record both and name the disagreement in `.unknowns` — never adjudicate.
+  - **A relocated building is a claim about a structure, not a parcel.** Where
+    the journal says a house was moved to an address, say so and leave the
+    roll's year built standing beside it.
+  - **A whole block named by the building on it today is resolvable; a corner
+    is not.** The Summer 2019 volume puts the Mechanics' Institute's exhibition
+    building on "the block that now contains the Bill Graham Civic Auditorium."
+    That block is one parcel (0812001) carrying one EAS address, 99 Grove
+    Street, which SF Planning names `EXPOSITION AUDITORIUM` — no guessing is
+    involved, so it gets a page. "Larkin and Grove," a corner of the same block,
+    still doesn't.
+  - **A volume can contradict itself about a site.** The Summer 2019 volume
+    describes the pavilion of the 1868–71 exhibitions as being at Union Square
+    *and* at Larkin and Grove, which is where the 1882 building went. Record
+    only what a page can support and leave the conflation alone.
+  - **People.** These articles are full of private individuals — earthquake
+    survivors, families, children in an orphanage. Take the businessmen,
+    builders and public figures the historical record already covers; leave
+    everyone else out, per the root `AGENTS.md`.
+- **Citation label:** "Author, 'Article title,' *The Argonaut: Journal of the
+  San Francisco Historical Society*, vol. N, no. N (Season Year), pp. N–N"
+- **Verified:** 2026-08-06 (vol. 29 no. 2, Winter 2018: 17 places named, 3 of
+  which resolve to an EAS address — 440–444 Jackson, 2727 Pierce, 2460 Union.
+  vol. 30 no. 1, Summer 2019: 12 places named, 3 of which resolve — 57–65 Post,
+  1 Montgomery, 99 Grove. The other nine are located by corner, by street
+  segment or by park feature: Montgomery between Post, Sutter and Kearny; Bush
+  Street; 8th Street between Mission and Market; Larkin and Grove; Pier 70 /
+  First and Mission; the Music Concourse; the Administration Building site at
+  its western end; the Fine Arts Building site; and Strawberry Hill)
+- **Coverage:** volumes 29 no. 2 and 30 no. 1 read in full. Volumes 30 no. 2,
+  31 nos. 1–2 and 32 no. 1 are untouched.
 
 ## local-news — Neighborhood news (secondary)
 

@@ -1,6 +1,6 @@
 # Financial District
 
-The office district north of Market Street, in the city's Financial District/South Beach analysis neighborhood. Coverage here begins with addresses named in John S. Hittell's 1878 history of the city; business addresses are otherwise deferred across the site.
+The office district north of Market Street, in the city's Financial District/South Beach analysis neighborhood. Coverage here begins with addresses named in John S. Hittell's 1878 history of the city and in *The Argonaut*.
 
 ## Streets documented so far
 
@@ -9,8 +9,9 @@ The office district north of Market Street, in the city's Financial District/Sou
 - [California Street](california-street/) — 10 buildings, built 1959–2000; 2 in the Front-California Conservation District.
 - [Commercial Street](commercial-street/) — 1 building; 1 in the Chinatown Historic District.
 - [Market Street](market-street/) — 1 building, built 1981.
-- [Montgomery Street](montgomery-street/) — 3 buildings, built 1901–1986.
+- [Montgomery Street](montgomery-street/) — The Crocker Bank Building of 1908, and three buildings on and beside the block where Samuel Brannan built in 1853.
 - [Pine Street](pine-street/) — 2 buildings, built 1971–1991.
+- [Post Street](post-street/) — The Mechanics' Institute, on the lot the Institute bought in 1866.
 - [Sansome Street](sansome-street/) — 2 buildings, built 1983–1991.
 - [Sutter Street](sutter-street/) — 1 building, built 1983.
 - [Washington Street](washington-street/) — 1 building, built 1900.

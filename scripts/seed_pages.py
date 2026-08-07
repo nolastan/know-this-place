@@ -414,7 +414,9 @@ def building_type(pclass: str, units: int | None) -> str:
     commercial = commercial_type(c)
     if commercial:
         return commercial
-    return f"{u}-unit building" if u > 1 else "Residential building"
+    # Unrecognized class code — say only what the unit count supports, since a
+    # parcel here may be commercial as easily as residential.
+    return f"{u}-unit building" if u > 1 else "Building"
 
 
 def commercial_type(c: str) -> str | None:
@@ -1297,7 +1299,8 @@ def unknowns_html(rec: dict) -> str:
     a = rec.get("assessment", {})
     # "The early residents" is only a gap on a building that has residents, and
     # the architect is only a gap while the page doesn't name one.
-    residential = (p.get("use") or "") in RESIDENTIAL_USES
+    residential = (p.get("use") or "") in (
+        "Single Family Residential", "Multi-Family Residential")
     b = rec.get("building") or {}
     missing = []
     if not b.get("architect"):
@@ -1330,8 +1333,7 @@ def unknowns_html(rec: dict) -> str:
     return ('  <div class="unknowns">\n'
             '    <span class="ic ic-help"></span>\n'
             f'    <p>Not yet documented: {listing}.{note}\n'
-            f'    <a href="{url}">Know\n'
-            '    any of it? Tell us — just describe it in plain words.</a></p>\n'
+            f'    <a href="{url}">Submit an update</a></p>\n'
             '  </div>\n')
 
 
@@ -1463,8 +1465,7 @@ def render_html(rec: dict) -> str:
     </ul>
   </section>
   <p class="feedback-cta">
-    Know something about this place?
-    <a href="{feedback_url(title, rec['path'])}">Tell us — just describe it in plain words.</a>
+    <a href="{feedback_url(title, rec['path'])}">Request an edit</a>
   </p>
   <p class="colophon">Part of <a href="/">Know This Place</a>, a community
   encyclopedia of the built environment. Facts are cited; pages are reviewed
@@ -1478,9 +1479,6 @@ def render_html(rec: dict) -> str:
 # --------------------------------------------------------------------------
 # Inventory
 # --------------------------------------------------------------------------
-RESIDENTIAL_USES = {"Single Family Residential", "Multi-Family Residential"}
-
-
 def build_inventory(data: dict) -> list:
     """One row per parcel: its addresses, its roll record, and a verdict."""
     roll_by_parcel = {r["parcel_number"]: r for r in data["roll"] if r.get("parcel_number")}
@@ -1585,8 +1583,6 @@ def classify(row: dict) -> str:
     # buildings. AGENTS.md says skip them and flag for a human.
     if roll.get("property_class_code_definition") == "Condominium":
         return "condo-unit"
-    if roll.get("use_definition") not in RESIDENTIAL_USES:
-        return "non-residential"
     return "seedable"
 
 
@@ -1698,15 +1694,11 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
     if in_district:
         tiles.append(("ic-plan", f"{in_district:,}", "In a historic district"))
 
-    # "Residential" is only true where the pages beneath are; a downtown street
-    # of office towers must not describe itself as a residential street. And the
-    # fallback never claims completeness: a street seeded from a *thematic* list
-    # (the buildings in a city inventory, say) holds a handful of its parcels,
-    # not all of them, and "every parcel on Howard Street" would be false.
-    kind = ("residential parcel" if all(
-        (r.get("parcel", {}).get("use") or "") in RESIDENTIAL_USES for r in recs)
-        else "parcel")
-    lead = hub_lead(street_dir, f"The {kind}s on {disp} documented here so far, "
+    # The fallback never claims completeness: a street seeded from a *thematic*
+    # list — the buildings named in a city inventory, say — holds a handful of
+    # its parcels, not all of them, and "every parcel on Howard Street" is then
+    # false. Say what is here instead.
+    lead = hub_lead(street_dir, f"The parcels on {disp} documented here so far, "
                                 f"from the city's address, assessor and permit "
                                 f"records.")
 
@@ -1716,7 +1708,6 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
         "condo-unit": "condominium parcels, which are individual units rather than "
                       "buildings and are held back until the building each belongs to "
                       "can be established",
-        "non-residential": "non-residential parcels",
         "no-roll-record": "parcels with no record in the assessor's roll",
     }
     uncovered = []
@@ -1759,7 +1750,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
                   f'        <p>Also on this street: {esc("; ".join(uncovered))}.</p>\n'
                   f'      </section>\n')
     desc = (f"Building-by-building pages for {disp} in {city_name}: {len(recs):,} "
-            f"{kind}s with permits, assessments and historic status, fully cited.")
+            f"parcels with permits, assessments and historic status, "
+            f"fully cited.")
     cols_open, cols_close = "", ""
     if aside:
         cols_open = '  <div class="cols">\n    <div class="main">\n'
@@ -1818,7 +1810,25 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
 NEIGHBORHOOD_SECTION = "Streets documented so far"
 
 
-def street_summary(street_dir: Path) -> tuple:
+def existing_street_hooks(area_dir: Path) -> dict:
+    """slug -> the hook a neighborhood hub already shows for that street.
+
+    A street's line on the neighborhood hub is generated ("3 buildings, built
+    1901–1986"), but a person will often have replaced it with something worth
+    reading ("The Crocker Bank Building of 1908, and two buildings on the block
+    where Samuel Brannan built in 1853"). Rebuilding the list to add one street
+    must not throw the rest of them away — this is the same courtesy `hub_lead`
+    pays a street hub's own intro paragraph.
+    """
+    md = area_dir / "index.md"
+    if not md.exists():
+        return {}
+    return {m.group(1): m.group(2).strip() for m in re.finditer(
+        r"^- \[[^\]]+\]\(([^/)]+)/\)\s+—\s+(.+)$", md.read_text(encoding="utf-8"),
+        re.M)}
+
+
+def street_summary(street_dir: Path, kept: dict = None) -> tuple:
     """(display name, count, hook) for one street, read off its pages."""
     recs = [json.loads((d / "data.json").read_text())
             for d in street_dir.iterdir()
@@ -1837,20 +1847,22 @@ def street_summary(street_dir: Path) -> tuple:
     if districts:
         name, count = districts.most_common(1)[0]
         hook += f"; {count:,} in the {name}"
-    return disp, len(recs), hook + "."
+    return disp, len(recs), (kept or {}).get(street_dir.name) or hook + "."
 
 
 def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
     """Rewrite only the street list on a neighborhood hub.
 
     The rest of the page — the lead, the naming explanation, the closing note —
-    is a human's prose and is left exactly as it is.
+    is a human's prose and is left exactly as it is, and so is any hook a person
+    has written for a street already on the list.
     """
+    kept = existing_street_hooks(area_dir)
     streets = []
     for street_dir in sorted(area_dir.iterdir()):
         if not street_dir.is_dir():
             continue
-        summary = street_summary(street_dir)
+        summary = street_summary(street_dir, kept)
         if summary:
             streets.append((street_dir.name, *summary))
     if not streets:

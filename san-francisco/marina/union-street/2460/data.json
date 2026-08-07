@@ -1,0 +1,155 @@
+{
+  "address": "2460 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2460/",
+  "hook": "The address to which Stephen Tilton's house of 1872, built beside the Presidio & Ferries cable terminal, was moved.",
+  "apn": "0536014",
+  "block": "0536",
+  "lot": "014",
+  "eas_baseid": "284602",
+  "coordinates": {
+    "lat": 37.796822,
+    "lng": -122.439845
+  },
+  "building_type": "residential",
+  "parcel": {
+    "year_built": 1900,
+    "year_built_note": "As the 2025 secured roll and SF Planning both record it. Nothing consulted here reconciles that date with the 1872 house reported moved to this address; see historical_record and the page's unknowns.",
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel, 4 units or less",
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "construction_type_code": "D",
+    "lot_area_sqft": 6634,
+    "building_area_sqft": 5056,
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3616445,
+    "assessed_improvement_value": 2540030,
+    "last_sale_date": "2000-11-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historical resource",
+    "reason": "Historic Survey Result",
+    "planning_year_built": 1900,
+    "designated_landmark": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": null,
+    "note": "A spatial query against the historic-district boundaries returns no district for this parcel.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202507221335",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-09-07",
+      "estimated_cost": 85000,
+      "description": "a 304 sq ft pool with a 54 sq ft spa built in the back yard, with a certified safety cover and related equipment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907293713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-07-29",
+      "estimated_cost": 100000,
+      "description": "garage enlarged — excavation and new concrete retaining walls, with no change to the street frontage or the garage door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312162418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-16",
+      "estimated_cost": 130000,
+      "description": "renewal of the 2001 foundation permit for the remaining work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107274674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-27",
+      "estimated_cost": 15900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103023329",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-03-02",
+      "estimated_cost": 150000,
+      "description": "unreinforced masonry foundations replaced with concrete to give an eight-foot basement over the full footprint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403792",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-04-10",
+      "estimated_cost": 16000,
+      "description": "a room added at the rear of the building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_note": "Six of the 32 filings on this address are shown; the rest are street-space permits, $1 renewals made to obtain final inspection on earlier work, and interior kitchen, bathroom and deck permits.",
+  "historical_record": [
+    {
+      "date": "1872",
+      "kind": "site history",
+      "summary": "Tilton house, since moved here",
+      "description": "Stephen Tilton's house of 1872 stood near the centre of his lot at Union and Steiner Streets, beside the Presidio & Ferries cable train terminal, with a four-storey pump house and windmill on the property. It was later moved to 2460 Union Street.",
+      "source": "argonaut-vol29-no2-winter2018-bardell"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?$where=address_number='2460'%20AND%20street_name='UNION'",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0536014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=2460&street_name=Union",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0536014",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.4398454088094%2037.796821617266815)')",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "argonaut-vol29-no2-winter2018-bardell",
+      "name": "Robert Bardell, “The Presidio & Ferries Railroad,” The Argonaut: Journal of the San Francisco Historical Society, vol. 29, no. 2 (Winter 2018), pp. 6–33",
+      "retrieved": "2026-08-06"
+    }
+  ]
+}
