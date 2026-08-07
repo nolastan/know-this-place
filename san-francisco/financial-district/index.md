@@ -1,6 +1,6 @@
 # Financial District
 
-The office district north of Market Street, in the city's Financial District/South Beach analysis neighborhood. Coverage here begins with addresses named in John S. Hittell's 1878 history of the city; business addresses are otherwise deferred across the site.
+The office district north of Market Street, in the city's Financial District/South Beach analysis neighborhood. Coverage here begins with addresses named in John S. Hittell's 1878 history of the city.
 
 ## Streets documented so far
 

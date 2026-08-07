@@ -114,8 +114,6 @@ san-francisco/                        city
   addresses that aren't in it.
 - Hub pages (`index.md`/`index.html` at city, neighborhood, and street level)
   list and link what's beneath them. Keep them current when adding pages.
-- **Residential addresses first.** Business addresses are deferred; skip them
-  during seeding unless a human asks.
 
 ## Page lifecycle
 
@@ -144,8 +142,8 @@ python3 scripts/validate.py
 ```
 
 `seed` joins the five datasets in DATA-SOURCES.md, decides which parcels may
-become pages (skipping condominium units, non-residential parcels and parcels
-with no assessor record), writes `data.json` + `index.html` for each **new** one,
+become pages (skipping condominium units and parcels with no assessor record),
+writes `data.json` + `index.html` for each **new** one,
 and rebuilds the street hub pages beneath the neighborhood. It varies each
 page's composition from the data it actually has — a parcel with four or more
 permits gets the two-column split, a thinner one runs full width — so the pages

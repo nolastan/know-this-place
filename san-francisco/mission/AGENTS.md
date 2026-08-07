@@ -44,10 +44,11 @@ python3 scripts/seed_pages.py seed --neighborhood "Mission" \
 ```
 
 It creates pages that don't exist and touches nothing that does. Of the 7,435
-parcels EAS lists in the boundary, the run wrote pages for 5,003 and passed
-over 1,184 non-residential parcels, 712 with no 2025 assessor record, 530
-condominium units (units, not buildings — see the root `AGENTS.md`) and the
-five parcels below.
+parcels EAS lists in the boundary, that run wrote pages for 5,003 and passed
+over 712 with no 2025 assessor record, 530 condominium units (units, not
+buildings — see the root `AGENTS.md`), the five parcels below, and 1,184
+business parcels that were out of scope at the time. Business parcels are in
+scope now, so a re-run writes those 1,184.
 
 ### Deferred for a human — parcels sharing a street number
 
@@ -84,9 +85,9 @@ sources, not this file.
   that confers Article 10 protection and name the other, and remember that
   California Register "Eligible" is not "Listed" and neither implies local
   landmark protection.
-- Mission Street, Valencia Street and 24th Street are largely commercial; the
-  seeder skips business parcels automatically, because the assessor's
-  `use_definition` classifies a parcel, not its street.
+- Mission Street, Valencia Street and 24th Street are largely commercial, so
+  expect storefronts and mixed-use buildings there rather than flats. The
+  assessor's `use_definition` is what says which a parcel is, not its street.
 - Good deep-context sources: OpenSFHistory (Western Neighborhoods Project),
   Shaping San Francisco / FoundSF, Mission Local, and the SF Planning
   historic-district survey documents.

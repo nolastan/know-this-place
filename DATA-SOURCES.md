@@ -67,8 +67,8 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 
 - **What:** Per-parcel, per-year: year built, property class / land use,
   number of units, rooms, lot and building area, assessed values.
-  The land-use / property-class code is how we determine **residential vs.
-  business** during seeding.
+  The land-use / property-class code is how a page says what kind of building
+  it describes — house, flats, storefront, mixed use.
 - **Endpoint:** `https://data.sfgov.org/resource/wv5m-vpq2.json`
 - **Query by:** `parcel_number` (block+lot, from EAS) with
   `$order=closed_roll_year DESC&$limit=1` for the latest roll (2025 as of
