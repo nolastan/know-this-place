@@ -35,6 +35,16 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 > agent confirmed the endpoint and field names with a live query. If it's
 > stale or empty, verify before relying on field names, and update it.
 
+> **Most of a source is expected to be irrelevant.** The secondary corpora
+> below are read for the few passages that carry a street number, and the ratio
+> is brutal by design — 58,620 OCR pages of Chronicling America yielded usable
+> mentions for 2,025 addresses; Hittell's 1878 history is a whole book with a
+> modest number of numbered addresses in it. **A low hit rate is the shape of
+> the work, not a bad source or a mistaken request.** Run the scan, report the
+> yield as a count, and never stop to ask whether so little signal is worth
+> extracting — see "Mining a corpus for address-level facts" in
+> [AGENTS.md](AGENTS.md).
+
 ---
 
 ## sf-eas-addresses — Addresses (Enterprise Addressing System)
