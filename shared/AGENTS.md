@@ -265,6 +265,40 @@ Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.
 
+### Public art — `.section-head` + `.place-list`
+Works the 1% art requirement put on a parcel. One `<li>` each: the title and
+artist on the first line (linked to the artist's page when `artist_link` has
+one), the medium, where it is, and when it can be seen on the `.hook` line —
+the inventory's own phrasing, joined with semicolons. No new classes: this is
+`.place-list`, the same list a hub uses.
+```html
+<div class="section-head"><span class="ic ic-plan"></span><h2>Public art</h2></div>
+<ul class="place-list">
+  <li><a href="http://kentroberts.com/">Three Bridges — Kent Roberts</a><br>
+    <span class="hook">Steel, concrete, brass; in stairway of California St. open space; open space and artwork are always accessible.</span></li>
+</ul>
+```
+A building with art gets the split layout even on a thin permit record — the
+art belongs in the main column, the open space in the aside.
+
+### Public open space — a `.panel` per space
+The privately-owned public open space a downtown development had to provide.
+**One panel per space, not one per building**: 345 California has three, and a
+reader needs to see that the plaza is open at all times while the snippets are
+not. `<h3>` is the space's own name from the inventory; the rows are a plain
+`.speclist`.
+```html
+<section class="panel">
+  <h3>Foundry Square NW</h3>
+  <dl class="speclist">
+    <div class="spec"><span class="ic ic-home"></span><span class="spec-k">Type</span><span class="spec-v">Plaza</span></div>
+    <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Hours</span><span class="spec-v">Open at all times</span></div>
+  </dl>
+</section>
+```
+The inventory's `year` is the year of the **requirement**, not an opening date —
+label that row "Required from", and never render it as when the space opened.
+
 ### Notes — `.community-note` and `.unknowns`
 `.community-note` wraps clearly-attributed unverified contributions (auto-
 labeled by CSS). `.unknowns` is the "what we don't know yet" block that leads

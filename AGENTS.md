@@ -110,7 +110,12 @@ san-francisco/                        city
 - Hub pages (`index.md`/`index.html` at city, neighborhood, and street level)
   list and link what's beneath them. Keep them current when adding pages.
 - **Residential addresses first.** Business addresses are deferred; skip them
-  during seeding unless a human asks.
+  during seeding unless a human asks. One set has been asked for: the downtown
+  buildings named in the city's privately-owned-public-open-space and 1%-art
+  inventories (`financial-district`, `east-cut`, `union-square`,
+  `south-of-market`, `tenderloin`, and part of `south-beach`). Those pages are
+  offices and hotels on purpose — the open space and the artwork are the
+  subject. Don't read them as licence to seed business addresses generally.
 
 ## Page lifecycle
 
@@ -153,6 +158,15 @@ are not identical documents with the numbers swapped.
 - **A bug found after seeding is fixed by hand, on the affected pages.** Patch
   the script too if it would recur on the next neighborhood, but re-running
   `seed` will not repair anything already on disk — by design.
+- **A thematic set of parcels uses `seed-list`, not `seed`.** `seed` walks one
+  analysis neighborhood and takes the residential parcels in it. When the set is
+  defined by something else — the buildings in a city inventory, say — name the
+  parcels in a manifest under `scripts/manifests/` and run
+  `seed-list --manifest <file>`. It joins the same datasets onto the parcels you
+  give it and honours the same create-only rule. Use it downtown even for a
+  whole neighborhood: those blocks have been re-parcelized so often that EAS's
+  `parcel_number` is frequently a retired APN, and `seed`'s address→parcel join
+  silently drops those parcels (see DATA-SOURCES.md → sf-parcels).
 - **Review a sample before committing.** Read a handful across the range —
   a parcel with no permits, one with dozens, one spanning several street
   numbers, one in a historic district — and check the numbers against the
@@ -310,10 +324,25 @@ pattern, and always include `address` and non-empty `sources`:
   "apn": "0000-000",
   "coordinates": { "lat": 37.0, "lng": -122.0 },
   "parcel": { "year_built": 1904, "land_use": "...", "units": 2 },
+  "public_open_space": [
+    { "name": "555 Mission St", "type": "Plaza", "established": "2008",
+      "hours": "Open at all times", "location": "...", "seating": "...",
+      "source": "sf-popos" }
+  ],
+  "public_art": [
+    { "title": "Moonrise Sculptures", "artist": "Ugo Rondinone",
+      "type": "Sculpture", "medium": "aluminum", "location": "plaza",
+      "access": "...", "art_requirement_case": "2001.798X",
+      "artist_link": "https://...", "source": "sf-public-art" }
+  ],
   "permits": [
     { "number": "...", "filed": "1998-04-02", "status": "complete",
       "description": "...", "source": "sf-building-permits" }
   ],
+  "permit_summary": {
+    "count_on_file": 3102, "range": "1981–2026", "shown_on_page": 25,
+    "note": "Why the timeline shows a subset — rendered below the timeline."
+  },
   "narrative": {
     "lead": "One or two sentences carrying only what no component carries.\nOmit the field entirely when the components already say everything.",
     "sections": [
@@ -330,6 +359,17 @@ pattern, and always include `address` and non-empty `sources`:
   ]
 }
 ```
+
+**`permits` is what the page shows; `permit_summary` says what exists.** For an
+ordinary building they are the same thing and there is no summary. A downtown
+office tower is not ordinary: DBI holds 3,102 permits for 1 Market Street, one
+per tenant per floor, and a 3,102-item timeline is not a page. So the seeder
+keeps the largest filings by stated cost plus the earliest on file, and
+`permit_summary` states the full count and the rule it used — rendered as one
+line *below* the timeline, never above it. The DBI query in `sources` still
+returns all of them, which is what makes the subset honest rather than a
+silent edit. Never write a figure into that note that isn't computed from the
+data you kept.
 
 **`hook`** is the one-line description a hub shows beside the link. It lives
 here, not in the hub's HTML, so a hub can be rebuilt without losing it. It is
