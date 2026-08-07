@@ -1,0 +1,145 @@
+{
+  "address": "2727 Pierce Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/pierce-street/2727/",
+  "hook": "The Casebolt House, an Article 10 individual landmark built for the blacksmith and street car manufacturer Henry Casebolt.",
+  "apn": "0560005",
+  "block": "0560",
+  "lot": "005",
+  "eas_baseid": "285257",
+  "coordinates": {
+    "lat": 37.795214,
+    "lng": -122.438955
+  },
+  "building_type": "residential",
+  "survey_name": "Casebolt House",
+  "parcel": {
+    "year_built": 1865,
+    "year_built_note": "As the 2025 secured roll and SF Planning both record it. The Daily Alta California reported the house nearly completed in March 1868; see historical_record.",
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "units": 1,
+    "stories": 4,
+    "rooms": 12,
+    "bedrooms": 7,
+    "bathrooms": 4,
+    "construction_type_code": "D",
+    "lot_area_sqft": 15000,
+    "building_area_sqft": 5875,
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1593170,
+    "assessed_improvement_value": 436115
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historical resource; Article 10 individual landmark",
+    "reason": "Article 10 Individual Landmark, California Register Historic District, Historic Survey Result",
+    "planning_year_built": 1865,
+    "designated_landmark": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Pacific Heights Historic District",
+    "california_register": "Eligible",
+    "national_register": "No",
+    "article_10": "No",
+    "period_of_significance": "1895–1930",
+    "note": "The district is California Register–eligible, not listed, and is not an Article 10 district; the parcel's local landmark protection comes from its own individual designation.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202002053663",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-05",
+      "estimated_cost": 20000,
+      "revised_cost": 35000,
+      "description": "cabinets and fixtures removed from one kitchen and two bathrooms, in response to a complaint; the structural work had been done under the 2009 permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912173419",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-12-17",
+      "estimated_cost": 13600,
+      "description": "four tiebacks installed as emergency shoring",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910159068",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-10-15",
+      "estimated_cost": 60000,
+      "description": "brick retaining walls on both sides of the property repaired",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503917",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-20",
+      "estimated_cost": 1750,
+      "description": "old shower tiles torn out and new ceramic tiles laid",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_note": "Three $1 street-space permits, a $1 filing made to obtain final inspection on the 2009 retaining-wall work, and a 1996 renewal of the 1995 tiling permit are omitted.",
+  "historical_record": [
+    {
+      "date": "1868-03-11",
+      "kind": "newspaper report",
+      "summary": "House nearly completed",
+      "description": "The Daily Alta California reported Henry Casebolt's house on Pierce Street nearly completed.",
+      "source": "argonaut-vol29-no2-winter2018-bardell"
+    }
+  ],
+  "narrative": {
+    "lead": "Henry Casebolt, a blacksmith who became a carriage and street car manufacturer and later controlled the Sutter Street Railroad, built this house and owned the whole block bounded by Pierce, Vallejo, Scott and Green Streets."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?$where=address_number='2727'%20AND%20street_name='PIERCE'",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0560005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?street_number=2727&street_name=Pierce",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0560005",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.43895521860584%2037.79521439995424)')",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "argonaut-vol29-no2-winter2018-bardell",
+      "name": "Robert Bardell, “The Presidio & Ferries Railroad,” The Argonaut: Journal of the San Francisco Historical Society, vol. 29, no. 2 (Winter 2018), pp. 6–33",
+      "retrieved": "2026-08-06"
+    }
+  ]
+}
