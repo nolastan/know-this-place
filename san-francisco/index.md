@@ -7,18 +7,19 @@ documented so far:
 - [Mission](mission/) — every residential parcel in the city's Mission boundary, 5,004 buildings across 100 streets; Liberty Hill, the Inner Mission alleys and Mel Blanc's childhood home
 - [Corbett Heights](corbett-heights/) — the hillside neighborhood around Corbett Avenue; 19 buildings on Corbett Avenue, Mars Street and Danvers Street
 - [Haight Ashbury](haight-ashbury/) — the counterculture district east of Golden Gate Park; six buildings tied to the Grateful Dead, Janis Joplin, Jimi Hendrix, Charles Manson and others
-- [Pacific Heights](pacific-heights/) — the ridge of mansions north of Japantown; the Spreckels Mansion and two other houses
+- [Pacific Heights](pacific-heights/) — the ridge of mansions north of Japantown; the Spreckels Mansion, the Casebolt House and two other houses
 - [Seacliff](seacliff/) — the bluffs above the Golden Gate; a Robin Williams residence and a house tied to Ansel Adams
 - [Russian Hill](russian-hill/) — the cable-car grades above the waterfront; houses tied to Joe DiMaggio and Nicolas Cage
 - [Bernal Heights](bernal-heights/) — the hill south of the Mission; a Patty Hearst address and Carlos Santana's high-school home
 - [Hayes Valley](hayes-valley/) — the Alamo Square Painted Ladies; Alice Walker's home until 1996
-- [Marina](marina/) — the northern waterfront; Joe DiMaggio's house during his marriage to Marilyn Monroe
+- [Marina](marina/) — the northern waterfront; Joe DiMaggio's house during his marriage to Marilyn Monroe, and a Cow Hollow house moved from beside the Presidio & Ferries cable terminal
 - [Lone Mountain / USF](lone-mountain/) — Jefferson Airplane's house facing Golden Gate Park
 - [Western Addition](western-addition/) — a 1974 Patty Hearst address
 - [Excelsior](excelsior/) — Jerry Garcia's first home
 - [Outer Mission](outer-mission/) — Jerry Garcia's home with his grandparents
 - [South Beach](south-beach/) — the site of Jack London's birthplace
 - [Financial District](financial-district/) — two Montgomery Street buildings on the block where Samuel Brannan built in 1853
+- [Chinatown](chinatown/) — the Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

@@ -372,6 +372,47 @@ a street number, which is the whole constraint:
   Brannan, 1853; §12–14, 24 and 27 cover the founding and secularization of
   Mission San Francisco de Asís)
 
+## argonaut-sfhs — *The Argonaut*, journal of the SF Historical Society (secondary)
+
+- **What:** *The Argonaut: Journal of the San Francisco Historical Society*, a
+  twice-yearly peer-reviewed local-history journal. Articles are researched from
+  the city directories, period newspapers, corporate records and family papers,
+  and they name streets and buildings constantly. Volume 29 no. 2 (Winter 2018)
+  is the first volume read into the repo: Robert Bardell, "The Presidio &
+  Ferries Railroad" (pp. 6–33); Robert Cherny, "A New Eyewitness Account of the
+  1906 Earthquake" (pp. 34–43); Ken Sproul, ed., "Letter by William Hindshaw"
+  (pp. 44–55).
+- **Format:** print journal; no API and no per-article URL. Cite author,
+  article title, volume, issue, season, year and page range. Publisher: San
+  Francisco Historical Society, P.O. Box 420470, San Francisco, CA 94142-0470.
+- **Use for:** what a site was before its present building — a car barn, a
+  factory, a pleasure resort — and for dated events (a house reported nearly
+  completed, a service that ended). Record each as one `historical_record`
+  entry, usually `"kind": "site history"`.
+- **Cautions:**
+  - **Most of what it names has no street number.** These articles locate
+    things by corner ("Union and Laguna," "Fillmore and Bay") or by landmark
+    ("the site of today's Marina Safeway"). Nothing here resolves a corner to a
+    parcel without guessing, so those get no page — the same rule as
+    `hittell-1878`.
+  - **Numbered addresses still have to clear EAS.** 847 Valencia Street and 616
+    Filbert Street, both named in the Winter 2018 volume, have no modern EAS
+    record; under the directory contract that is the end of the matter.
+  - **Its dates will disagree with the assessor.** Bardell dates the Casebolt
+    house to a March 1868 newspaper report; the roll and Planning both say 1865.
+    Record both and name the disagreement in `.unknowns` — never adjudicate.
+  - **A relocated building is a claim about a structure, not a parcel.** Where
+    the journal says a house was moved to an address, say so and leave the
+    roll's year built standing beside it.
+  - **People.** These articles are full of private individuals — earthquake
+    survivors, families, children in an orphanage. Take the businessmen,
+    builders and public figures the historical record already covers; leave
+    everyone else out, per the root `AGENTS.md`.
+- **Citation label:** "Author, 'Article title,' *The Argonaut: Journal of the
+  San Francisco Historical Society*, vol. N, no. N (Season Year), pp. N–N"
+- **Verified:** 2026-08-06 (vol. 29 no. 2, Winter 2018: 17 places named, 3 of
+  which resolve to an EAS address — 440–444 Jackson, 2727 Pierce, 2460 Union)
+
 ## local-news — Neighborhood news (secondary)
 
 - **What:** Context and stories: Hoodline Castro archives, Bay Area Reporter
