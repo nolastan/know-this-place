@@ -387,11 +387,18 @@ a street number, which is the whole constraint:
 - **What:** *The Argonaut: Journal of the San Francisco Historical Society*, a
   twice-yearly peer-reviewed local-history journal. Articles are researched from
   the city directories, period newspapers, corporate records and family papers,
-  and they name streets and buildings constantly. Volume 29 no. 2 (Winter 2018)
-  is the first volume read into the repo: Robert Bardell, "The Presidio &
-  Ferries Railroad" (pp. 6–33); Robert Cherny, "A New Eyewitness Account of the
-  1906 Earthquake" (pp. 34–43); Ken Sproul, ed., "Letter by William Hindshaw"
-  (pp. 44–55).
+  and they name streets and buildings constantly. Volumes read into the repo so
+  far:
+  - **29 no. 2 (Winter 2018)** — Robert Bardell, "The Presidio & Ferries
+    Railroad" (pp. 6–33); Robert Cherny, "A New Eyewitness Account of the 1906
+    Earthquake" (pp. 34–43); Ken Sproul, ed., "Letter by William Hindshaw"
+    (pp. 44–55).
+  - **30 no. 1 (Summer 2019)**, the Midwinter Fair issue — Taryn Edwards,
+    "Before the Midwinter Fair: The Mechanics' Institute's 'Pacific Rim'
+    Industrial Exhibitions of 1869 and 1871" (pp. 8–23); Lee Bruno, "The Winter
+    of Our Dreams" (pp. 24–33); Lorri Ungaretti, "A Look at the Midwinter Fair"
+    (pp. 34–65); Rodger C. Birt, "A Rare Midwinter Exposition Artifact"
+    (pp. 66–71); Sofia Herron Geller, "Art Activism" (pp. 74–79).
 - **Format:** print journal; no API and no per-article URL. Cite author,
   article title, volume, issue, season, year and page range. Publisher: San
   Francisco Historical Society, P.O. Box 420470, San Francisco, CA 94142-0470.
@@ -414,6 +421,17 @@ a street number, which is the whole constraint:
   - **A relocated building is a claim about a structure, not a parcel.** Where
     the journal says a house was moved to an address, say so and leave the
     roll's year built standing beside it.
+  - **A whole block named by the building on it today is resolvable; a corner
+    is not.** The Summer 2019 volume puts the Mechanics' Institute's exhibition
+    building on "the block that now contains the Bill Graham Civic Auditorium."
+    That block is one parcel (0812001) carrying one EAS address, 99 Grove
+    Street, which SF Planning names `EXPOSITION AUDITORIUM` — no guessing is
+    involved, so it gets a page. "Larkin and Grove," a corner of the same block,
+    still doesn't.
+  - **A volume can contradict itself about a site.** The Summer 2019 volume
+    describes the pavilion of the 1868–71 exhibitions as being at Union Square
+    *and* at Larkin and Grove, which is where the 1882 building went. Record
+    only what a page can support and leave the conflation alone.
   - **People.** These articles are full of private individuals — earthquake
     survivors, families, children in an orphanage. Take the businessmen,
     builders and public figures the historical record already covers; leave
@@ -421,7 +439,15 @@ a street number, which is the whole constraint:
 - **Citation label:** "Author, 'Article title,' *The Argonaut: Journal of the
   San Francisco Historical Society*, vol. N, no. N (Season Year), pp. N–N"
 - **Verified:** 2026-08-06 (vol. 29 no. 2, Winter 2018: 17 places named, 3 of
-  which resolve to an EAS address — 440–444 Jackson, 2727 Pierce, 2460 Union)
+  which resolve to an EAS address — 440–444 Jackson, 2727 Pierce, 2460 Union.
+  vol. 30 no. 1, Summer 2019: 12 places named, 3 of which resolve — 57–65 Post,
+  1 Montgomery, 99 Grove. The other nine are located by corner, by street
+  segment or by park feature: Montgomery between Post, Sutter and Kearny; Bush
+  Street; 8th Street between Mission and Market; Larkin and Grove; Pier 70 /
+  First and Mission; the Music Concourse; the Administration Building site at
+  its western end; the Fine Arts Building site; and Strawberry Hill)
+- **Coverage:** volumes 29 no. 2 and 30 no. 1 read in full. Volumes 30 no. 2,
+  31 nos. 1–2 and 32 no. 1 are untouched.
 
 ## local-news — Neighborhood news (secondary)
 

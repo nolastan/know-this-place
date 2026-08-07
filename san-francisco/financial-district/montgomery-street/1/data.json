@@ -1,0 +1,133 @@
+{
+  "address": "1 Montgomery Street, San Francisco, CA 94104",
+  "path": "/san-francisco/financial-district/montgomery-street/1/",
+  "hook": "The Crocker Bank Building of 1908, an Article 10 landmark, at the address where Japanese merchants took a store in 1871.",
+  "apn": "0292002",
+  "block": "0292",
+  "lot": "002",
+  "coordinates": {
+    "lat": 37.78925,
+    "lng": -122.402419
+  },
+  "building_type": "commercial",
+  "survey_name": "Crocker Bank Building",
+  "parcel": {
+    "year_built": 1908,
+    "use": "Commercial Retail",
+    "property_class": "Bank",
+    "stories": 2,
+    "construction_type_code": "A",
+    "lot_area_sqft": 12000,
+    "building_area_sqft": 30470,
+    "zoning": "C-3-O",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "assessor_property_location": "0001 MONTGOMERY ST",
+    "note": "Business addresses are usually deferred on this site; this page exists because the address was named in the prompting source. The parcel carries the two-storey banking hall only — the 38-storey tower behind it on the same block is a separate parcel (0292004, 68–82 Post Street), though DBI files its permits under this address."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35311097,
+    "assessed_improvement_value": 15133326,
+    "last_sale_date": "2025-01-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historical resource; Article 10 individual landmark",
+    "reason": "Article 10 Individual Landmark, Historic Resource Evaluation Response, Historic Survey Result",
+    "planning_year_built": 1908,
+    "designated_landmark": true,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": null,
+    "note": "The parcel's coordinates fall inside no historic district; its protection is the individual Article 10 designation.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202009053588",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-09-05",
+      "estimated_cost": 125000,
+      "description": "revision to the February 2020 permit, to remove the vaults in the basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002073837",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-07",
+      "estimated_cost": 500000,
+      "description": "selective interior demolition of finishes and partitions in the basement and on the second floor, with the structure, the exterior and the historic features to remain",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507141413",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-14",
+      "estimated_cost": 140000,
+      "description": "ground floor and mezzanine — heating and ventilation remodelled with new duct distribution, three fan coil units, two rooftop condensing units and a new mechanical room on the mezzanine, with lighting revisions and structural support for the plant",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permits_note": "Three of the 792 filings under this address and parcel are shown. DBI files work in the neighbouring 38-storey office tower under the same address, so only filings whose description identifies the two-storey banking hall — its basement vaults, its mezzanine, its historic features — are listed here.",
+  "historical_record": [
+    {
+      "date": "1871-09",
+      "kind": "site history",
+      "summary": "Japanese mercantile firm takes a store",
+      "description": "Men who had come with Japan's contribution to the Mechanics' Institute fair of 1871 stayed in San Francisco as permanent residents and set up a mercantile firm, leasing a store in the Masonic Temple at 1 Montgomery Street.",
+      "source": "argonaut-vol30-no1-summer2019-edwards"
+    },
+    {
+      "date": "1871-09",
+      "kind": "newspaper report",
+      "summary": "What the firm would trade in",
+      "description": "The firm would deal in the staple products of Japan — tea, coal, flax and wax — rather than knick-knacks, and had the means to do business on a large scale, the Bulletin reported.",
+      "source": "argonaut-vol30-no1-summer2019-edwards"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?$where=address_number='1'%20AND%20street_name='MONTGOMERY'",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0292002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0292&lot=002",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0292002",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.4024185971232%2037.78924954814738)')",
+      "retrieved": "2026-08-06"
+    },
+    {
+      "id": "argonaut-vol30-no1-summer2019-edwards",
+      "name": "Taryn Edwards, “Before the Midwinter Fair: The Mechanics' Institute's ‘Pacific Rim' Industrial Exhibitions of 1869 and 1871,” The Argonaut: Journal of the San Francisco Historical Society, vol. 30, no. 1 (Summer 2019), pp. 8–23",
+      "retrieved": "2026-08-06"
+    }
+  ]
+}
