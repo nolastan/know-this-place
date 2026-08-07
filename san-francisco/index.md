@@ -18,8 +18,9 @@ documented so far:
 - [Excelsior](excelsior/) — Jerry Garcia's first home
 - [Outer Mission](outer-mission/) — Jerry Garcia's home with his grandparents
 - [South Beach](south-beach/) — the site of Jack London's birthplace
-- [Financial District](financial-district/) — two Montgomery Street buildings on the block where Samuel Brannan built in 1853
+- [Financial District](financial-district/) — the Mechanics' Institute on Post Street, the Crocker Bank Building, and two buildings on the block where Samuel Brannan built in 1853
 - [Chinatown](chinatown/) — the Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District
+- [Tenderloin](tenderloin/) — the Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and
