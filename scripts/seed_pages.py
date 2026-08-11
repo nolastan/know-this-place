@@ -1750,8 +1750,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
                   f'        <p>Also on this street: {esc("; ".join(uncovered))}.</p>\n'
                   f'      </section>\n')
     desc = (f"Building-by-building pages for {disp} in {city_name}: {len(recs):,} "
-            f"parcels with permits, assessments and historic status, "
-            f"fully cited.")
+            f"{'parcel' if len(recs) == 1 else 'parcels'} with permits, "
+            f"assessments and historic status, fully cited.")
     cols_open, cols_close = "", ""
     if aside:
         cols_open = '  <div class="cols">\n    <div class="main">\n'
