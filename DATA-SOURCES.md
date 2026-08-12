@@ -554,6 +554,17 @@ a street number, which is the whole constraint:
     the German-Speaking Community in San Francisco, 1850–1924" (pp. 6–51);
     William R. Huber, "Sutro's San Francisco—What's Left?" (pp. 52–71); Alan
     Ziajka, "World War I and the University of San Francisco" (pp. 72–80).
+  - **31 no. 2 (Winter 2021)**, the Black San Francisco issue — James L.
+    Taylor, "Introduction: A Paradigm for Civil Rights in California"
+    (pp. 6–11); Paul Gutierrez, "Mary Ellen Pleasant's Quest for Equality for
+    All" (pp. 12–27); Lee Bruno, "We Are Brethren: San Francisco's
+    19th-century African American Newspapers' Relentless Pursuit of Liberty and
+    Justice" (pp. 28–41); Hudson Bell, "Exodus: San Francisco's Black Community
+    in the 1850s" (pp. 42–53); Philip M. Montesano, "San Francisco Black
+    Churches in the Early 1860s: Political Pressure Group" (pp. 54–61); Rodger
+    C. Birt and Charles Wong, "The Western Addition District: Documentary
+    Project" (pp. 88–103); Winnie Quock, "Botany and Horticulture: Symbols of
+    Flourishing Against the Odds" (pp. 106–110).
   - **32 no. 1 (Summer 2021)** — Angus Macfarlane, "Putting San Francisco on
     the Map, Part 1: A Riddle Wrapped in a Mystery, Inside an Enigma"
     (pp. 8–29); Gary F. Kurutz, "Woodward's Gardens: Robert B. Woodward's
@@ -581,7 +592,40 @@ a street number, which is the whole constraint:
     Museum's original home in Balboa Park, which it says was demolished for
     freeway construction. EAS has no record of 600 Ocean Avenue today — the
     number itself didn't survive the building — so it gets no page, the same
-    outcome as a corner that never had a number at all.
+    outcome as a corner that never had a number at all. 1661 Octavia Street,
+    Mary Ellen Pleasant's "House of Mystery" in the Winter 2021 volume, goes
+    the same way: no EAS record, and no active parcel range on Octavia covers
+    the number (1650 and 1700 are the nearest).
+  - **A nineteenth-century street number is not a modern one.** The Winter 2021
+    volume gives 273 Washington Street for the Atheneum Institute and locates
+    it on Washington between Stockton and Powell. Today's 273 Washington would
+    be eight blocks east, between Battery and Front, and EAS has no such
+    address in any case. 184 Clay Street "at Kearny" and 119 Merchant Street
+    "between Montgomery and Kearny" fail the same way — EAS's Merchant Street
+    now begins at 408. A number that contradicts its own cross-streets is a
+    pre-renumbering address, not a second building and not a resolvable one.
+  - **A city survey name can resolve a segment the volume leaves open.** The
+    same volume puts Third Baptist's first church on "Dupont (now Grant Avenue)
+    between Greenwich and Filbert," with no number. Planning's `3tsw-4idn`
+    names parcel 0087009 — 1640–1644 Grant Avenue — `SITE OF FIRST COLORED
+    BAPTIST CHURCH; TH`, and SF Planning's landmark designation report for the
+    congregation cites the State DPR registration application for "1642-44
+    Grant Avenue." No guessing is involved, so it gets a page. Query the `name`
+    field on candidate parcels before writing a segment off.
+  - **A congregation's present address resolves what its history doesn't.** The
+    Winter 2021 volume locates the three churches formed in 1852 by corner and
+    segment throughout — Scott Street, Powell between Jackson and Pacific,
+    Stockton between Clay and Sacramento — and then gives each congregation's
+    present-day numbered address. Those three clear EAS and become pages
+    (1399 McAllister, 970 Laguna, 2155–2159 Golden Gate); the nineteenth-century
+    corners behind them do not. The page is about the building at the modern
+    number; the earlier sites are `historical_record` entries on it.
+  - **Golden Gate Park is one parcel.** Parcel 1700001 carries more than sixty
+    EAS addresses, among them the de Young Museum at 50 Hagiwara Tea Garden
+    Drive, the Japanese Tea Garden at 75, and the California Academy of Sciences
+    at 55 Music Concourse Drive. A page on that parcel would describe the park,
+    not any of them, so the Winter 2021 volume's whole Golden Gate Park walking
+    tour lands on no page — the same outcome as the SFSU campus below.
   - **The journal isn't only about San Francisco.** The Summer 2021 volume
     follows General Vallejo to Casa Grande in Sonoma and Robert Woodward to
     Oak Knoll in Napa County. Both are real, dated, numbered-enough facts, and
@@ -694,8 +738,25 @@ a street number, which is the whole constraint:
   Sacramento and Leidesdorff, Mission Street between 13th and 15th, and Laurel
   Hill Cemetery are all located by segment, corner or landmark rather than a
   resolvable number)
-- **Coverage:** volumes 29 no. 2, 30 nos. 1–2, 31 no. 1 and 32 no. 1 read in
-  full. Volume 31 no. 2 is untouched.
+- **Verified:** 2026-08-12 (vol. 31 no. 2, Winter 2021: 17 places named, plus
+  the present-day address the volume gives for each of the three congregations
+  it follows — 20 in all — 4 of which become pages. Three are those present-day
+  addresses: 1399 McAllister Street (Third Baptist Church, Landmark No. 275),
+  970 Laguna Street (Bethel A.M.E. Church) and 2155–2159 Golden Gate Avenue
+  (First A.M.E. Zion Church, landmark designation initiated March 2026). The
+  fourth is 1640–1644 Grant Avenue, reached through Planning's survey name for
+  the parcel. Of the other 16: 1661 Octavia, 273 Washington, 184 Clay and 119
+  Merchant are numbered but have no EAS record, and the last three are
+  pre-renumbering addresses whose own cross-streets place them elsewhere;
+  Jessie and Ecker, Battery and Washington, Post and Kearny, and Jane and
+  Natoma are corners; Sansome between California and Pine, Powell between
+  Jackson and Pacific, Stockton between Clay and Sacramento, and Scott Street
+  are segments; and Golden Gate Park, the de Young Museum, the Japanese Tea
+  Garden and the California Academy of Sciences all sit on parcel 1700001, the
+  park itself. Only Montesano's article yields a page; the Taylor, Gutierrez,
+  Bruno, Bell, Birt/Wong and Quock articles land on none)
+- **Coverage:** volumes 29 no. 2, 30 nos. 1–2, 31 nos. 1–2 and 32 no. 1 read in
+  full.
 
 ## local-news — Neighborhood news (secondary)
 
