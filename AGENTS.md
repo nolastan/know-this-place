@@ -37,7 +37,8 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
    dependencies. The stack is: files, one stylesheet, one dependency-free
    enhancement script (`shared/site.js`, progressive-enhancement web components
    only — see [shared/AGENTS.md](shared/AGENTS.md)), and three stdlib-only
-   Python scripts (`seed_pages.py`, `validate.py`, `build_sitemap.py`). Every
+   Python scripts (`seed_pages.py`, `validate.py`, `build_sitemap.py`,
+   `build_map_index.py`). Every
    page must render completely from its HTML alone.
 7. **Seed pages with the script, not by hand.** Writing a page's HTML by hand
    costs a great deal for a page whose every fact comes from an API. Use
@@ -138,6 +139,7 @@ python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
 python3 scripts/build_sitemap.py
+python3 scripts/build_map_index.py
 python3 scripts/validate.py
 ```
 
@@ -188,7 +190,9 @@ refresh of stale data. The seeder has no part in this:
    in `data.json` — that is where a hub gets it — then rebuild the hubs with
    `python3 scripts/seed_pages.py hubs --city <city> --area <area>`. Rebuilding
    keeps each hub's hand-written intro paragraph; only the list is regenerated.
-6. If pages were added or removed, run `python3 scripts/build_sitemap.py`.
+6. If pages were added or removed, run `python3 scripts/build_sitemap.py`
+   and `python3 scripts/build_map_index.py` (the sitemap and the homepage
+   map are both derived indexes; `validate.py` fails until both are current).
 7. Run `python3 scripts/validate.py` and fix everything it flags.
 
 ### Don't burn effort on these

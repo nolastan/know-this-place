@@ -4,17 +4,91 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Know This Place — an encyclopedia of the built environment</title>
-  <meta name="description" content="A community encyclopedia of the built environment: a rich, cited page for every building, starting in San Francisco's Castro neighborhood.">
+  <meta name="description" content="A map of every building documented so far — 8,473 addresses in San Francisco, each with a cited page of permits, assessments and history.">
   <link rel="canonical" href="https://knowthis.place/">
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
+  <!-- The homepage is a map, and the only page on the site that carries its
+       own script, style and third-party dependency. Content pages stay static
+       and crawlable; see shared/AGENTS.md. -->
+  <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.28.0/mapbox-gl.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.28.0/mapbox-gl.js" defer></script>
+  <style>
+    /* Full-bleed: the map is the first thing on the page and owns the whole
+       viewport. This page has no .site-header — the wordmark rides on the map
+       instead, so nothing crops the city. */
+    .map-shell {
+      position: relative;
+      width: 100%;
+      height: 100svh;
+      min-height: 20rem;
+      background: var(--note-bg);
+      border-bottom: 1px solid var(--rule);
+    }
+    .map-shell #map { position: absolute; inset: 0; }
+    .map-shell .media-empty {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 0.4rem; text-align: center; padding: 1.5rem;
+    }
+
+    /* Overlays. Both wear the popup's chip treatment so they stay legible on
+       either basemap. */
+    .map-brand, .map-cue {
+      position: absolute; z-index: 2;
+      font-family: var(--sans); text-decoration: none; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--rule);
+      border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
+    }
+    .map-brand {
+      top: 1rem; left: 1rem;
+      padding: 0.5rem 0.8rem;
+      font-weight: 700; letter-spacing: 0.01em;
+      pointer-events: none;   /* never eat a click meant for a dot beneath it */
+    }
+    /* The wheel belongs to the map, so this is how the reader gets past it —
+       on a touchscreen it is the only way. Keep it. */
+    .map-cue {
+      left: 50%; bottom: 1.6rem; transform: translateX(-50%);
+      padding: 0.45rem 0.9rem;
+      font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+    }
+    .map-cue:hover { color: var(--accent); }
+    .map-cue span { margin-left: 0.4rem; color: var(--muted); }
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+
+    /* Mapbox's own chrome, wearing the site's tokens. */
+    .mapboxgl-popup-content {
+      background: var(--panel); color: var(--ink);
+      font-family: var(--sans); font-size: 0.85rem; font-weight: 600;
+      padding: 0.35rem 0.6rem; border: 1px solid var(--rule);
+      border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
+    }
+    .mapboxgl-popup-tip { display: none; }
+    .mapboxgl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
+    .mapboxgl-ctrl-group button + button { border-top: 1px solid var(--rule); }
+    .map-note { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.75rem; }
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <a class="wordmark" href="/">Know This Place</a>
-</header>
+<div class="map-shell">
+  <!-- #map stays empty: Mapbox wants sole ownership of its container, so the
+       fallback is a sibling laid over it and removed once tiles are up. -->
+  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco"></div>
+  <div class="media-empty">
+    <span class="ic ic-pin ic-lg"></span>
+    <span>8,473 documented addresses in San Francisco</span>
+    <small>The map appears here once a Mapbox token is configured. Every
+    address is reachable through the links below.</small>
+  </div>
+  <p class="map-brand">Know This Place</p>
+  <a class="map-cue" href="#start">Start here<span aria-hidden="true">↓</span></a>
+</div>
 
-<main>
+<main id="start">
   <h1>Every building has a story.</h1>
   <p class="lead">Know This Place is a community encyclopedia of the built
   environment — one page per building, weaving together public records,
@@ -22,6 +96,8 @@
   and every edit is reviewed by a person.</p>
 
   <div class="section-head"><span class="ic ic-pin"></span><h2>Start here</h2></div>
+  <p class="map-note">Every dot on the map above is one of these pages. Or
+  begin with a street:</p>
   <ul class="place-list">
     <li><a href="/san-francisco/castro/castro-street/">Castro Street, San Francisco</a><br>
       <span class="hook">151 buildings from 20th Street to Market, built between 1885 and 1985 — permits, assessments and historic status for each.</span></li>
@@ -47,5 +123,114 @@
   including how it's made, is public.
   <a href="https://github.com/nolastan/know-this-place">Source</a>.</p>
 </footer>
+
+<script type="module">
+/* The homepage map. Every documented address as one dot, click to open its
+   page. The dots come from shared/addresses.geojson, built by
+   scripts/build_map_index.py from the same data.json files that render the
+   pages themselves.
+
+   If anything here fails — no token, blocked CDN, no WebGL — the placeholder
+   in #map stands and the links below it still reach every page. */
+const shell = document.getElementById("map");
+const placeholder = document.querySelector(".map-shell .media-empty");
+
+const styleFor = (dark) =>
+  dark ? "mapbox://styles/mapbox/dark-v11" : "mapbox://styles/mapbox/light-v11";
+
+/* Dots wear the site's brick hue, read live from site.css so light and dark
+   mode stay in step and no new color enters the system. */
+const cssVar = (name) =>
+  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
+const dotLayer = () => ({
+  id: "addresses",
+  type: "circle",
+  source: "addresses",
+  paint: {
+    "circle-color": cssVar("--warm"),
+    // Small and semi-transparent at city zoom so overlapping dots build up
+    // into shading rather than one flat mass — the Mission and the Castro
+    // should read as denser than the scattered downtown parcels. Grows to a
+    // comfortable click target once you're down at street level.
+    "circle-radius": ["interpolate", ["linear"], ["zoom"],
+      10, 0.8, 12, 1.4, 14, 3, 16, 6, 18, 9],
+    "circle-opacity": ["interpolate", ["linear"], ["zoom"],
+      10, 0.45, 13, 0.7, 15, 0.95],
+    "circle-stroke-color": cssVar("--paper"),
+    "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 15, 0, 17, 1.5],
+  },
+});
+
+/* The index is fetched here rather than handed to Mapbox as a URL so we can
+   set the cache policy. "no-cache" revalidates every load and reuses the
+   cached body on a 304 — costing one conditional request, not another 107 KB.
+   Left to the default policy the browser serves Mapbox a stale copy and the
+   map silently lags the site: newly documented addresses are simply missing,
+   with nothing to indicate it. site.js reads site-config.json the same way,
+   for the same reason. */
+let addresses;
+async function addAddresses(map) {
+  addresses ??= await (await fetch("/shared/addresses.geojson", { cache: "no-cache" })).json();
+  if (!map.getSource("addresses")) {
+    map.addSource("addresses", { type: "geojson", data: addresses });
+  }
+  if (!map.getLayer("addresses")) map.addLayer(dotLayer());
+}
+
+async function init() {
+  const res = await fetch("/shared/site-config.json", { cache: "no-store" });
+  const { mapbox_token: token } = res.ok ? await res.json() : {};
+  if (!token || !window.mapboxgl) return;   // keep the placeholder
+
+  mapboxgl.accessToken = token;
+  const dark = matchMedia("(prefers-color-scheme: dark)");
+
+  const map = new mapboxgl.Map({
+    container: shell,
+    style: styleFor(dark.matches),
+    center: [-122.4194, 37.7749],
+    zoom: 11.5,
+    minZoom: 10,
+    maxBounds: [[-122.60, 37.68], [-122.30, 37.85]],   // San Francisco
+  });
+  map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
+  map.on("style.load", () => addAddresses(map));
+  map.on("load", () => placeholder?.remove());
+
+  /* The wheel zooms the map — no modifier key. That only works because the map
+     hands the wheel back once the reader has scrolled past it: otherwise
+     scrolling back up would zoom instead of returning to the top, and the
+     reader would be stuck in the copy below. */
+  const syncScrollZoom = () =>
+    scrollY < 4 ? map.scrollZoom.enable() : map.scrollZoom.disable();
+  addEventListener("scroll", syncScrollZoom, { passive: true });
+  syncScrollZoom();
+  dark.addEventListener("change", (e) => map.setStyle(styleFor(e.matches)));
+
+  const popup = new mapboxgl.Popup({
+    closeButton: false, closeOnClick: false, offset: 10,
+  });
+
+  map.on("mousemove", "addresses", (e) => {
+    const f = e.features[0];
+    map.getCanvas().style.cursor = "pointer";
+    popup.setLngLat(f.geometry.coordinates)
+         .setText(f.properties.t)
+         .addTo(map);
+  });
+  map.on("mouseleave", "addresses", () => {
+    map.getCanvas().style.cursor = "";
+    popup.remove();
+  });
+  map.on("click", "addresses", (e) => {
+    location.href = e.features[0].properties.p;
+  });
+}
+
+/* mapbox-gl.js is deferred, so it may not have run yet. */
+if (window.mapboxgl) init().catch(() => {});
+else addEventListener("DOMContentLoaded", () => init().catch(() => {}));
+</script>
 </body>
 </html>

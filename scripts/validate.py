@@ -36,13 +36,19 @@ def check_html(html_path: Path, is_address: bool) -> None:
         err(html_path, "missing the shared enhancement script (/shared/site.js)")
     # Enhancement layer only: no page-level or inline scripts beyond the shared
     # module and the JSON-LD data block. Guards the content-stays-in-HTML rule.
-    for m in re.finditer(r"<script\b([^>]*)>", html):
-        attrs = m.group(1)
-        is_shared = 'src="/shared/site.js"' in attrs
-        is_jsonld = 'type="application/ld+json"' in attrs
-        if not (is_shared or is_jsonld):
-            err(html_path, "unexpected <script> — JS lives only in /shared/site.js "
-                           "(content must stay in the HTML)")
+    #
+    # The homepage is the one deliberate exception: it is a map, not a content
+    # page, so it carries Mapbox GL JS and its own init script. Nothing under
+    # san-francisco/ may do this — a page whose facts render only in JS is
+    # invisible to search, which is the whole point of the rule.
+    if rel_dir != "/":
+        for m in re.finditer(r"<script\b([^>]*)>", html):
+            attrs = m.group(1)
+            is_shared = 'src="/shared/site.js"' in attrs
+            is_jsonld = 'type="application/ld+json"' in attrs
+            if not (is_shared or is_jsonld):
+                err(html_path, "unexpected <script> — JS lives only in /shared/site.js "
+                               "(content must stay in the HTML)")
     if f'<link rel="canonical" href="{SITE}{rel_dir}">' not in html:
         err(html_path, f'canonical link missing or wrong (expected {SITE}{rel_dir})')
     if '<meta name="description"' not in html:
@@ -140,6 +146,28 @@ def main() -> int:
                 rel_dir = "/"
             if f"<loc>{SITE}{rel_dir}</loc>" not in sitemap_text:
                 err(html_path, "not in sitemap.xml — run scripts/build_sitemap.py")
+
+    # And every address should be a dot on the homepage map. Same contract as
+    # the sitemap: the index is derived, so a new page just means re-running
+    # the script that builds it.
+    geojson = ROOT / "shared" / "addresses.geojson"
+    if geojson.exists():
+        try:
+            mapped = {
+                f.get("properties", {}).get("p")
+                for f in json.loads(geojson.read_text(encoding="utf-8"))["features"]
+            }
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            err(geojson, f"invalid GeoJSON — run scripts/build_map_index.py ({e})")
+            mapped = None
+        if mapped is not None:
+            for html_path in html_pages:
+                if not ADDRESS_DIR.match(html_path.parent.name):
+                    continue
+                rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
+                if rel_dir not in mapped:
+                    err(html_path, "not in shared/addresses.geojson — "
+                                   "run scripts/build_map_index.py")
 
     if errors:
         print(f"FAIL — {len(errors)} problem(s):")
