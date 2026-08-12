@@ -545,6 +545,11 @@ a street number, which is the whole constraint:
     of Our Dreams" (pp. 24–33); Lorri Ungaretti, "A Look at the Midwinter Fair"
     (pp. 34–65); Rodger C. Birt, "A Rare Midwinter Exposition Artifact"
     (pp. 66–71); Sofia Herron Geller, "Art Activism" (pp. 74–79).
+  - **30 no. 2 (Winter 2020)** — Vincent Ring, "A Second Tunnel for The Sunset"
+    (pp. 6–21); Hudson Bell, "The Last Bastion of San Francisco's Californios:
+    The Mission Dolores Settlement, 1834–1848" (pp. 22–41); Peter M. Field,
+    "A Tenderloin District History: The Pioneers of St. Ann's Valley: 1847–1860"
+    (pp. 42–83).
   - **31 no. 1 (Summer 2020)** — Stefanie E. Williams, "The Rise and Decline of
     the German-Speaking Community in San Francisco, 1850–1924" (pp. 6–51);
     William R. Huber, "Sutro's San Francisco—What's Left?" (pp. 52–71); Alan
@@ -582,6 +587,23 @@ a street number, which is the whole constraint:
     describes the pavilion of the 1868–71 exhibitions as being at Union Square
     *and* at Larkin and Grove, which is where the 1882 building went. Record
     only what a page can support and leave the conflation alone.
+  - **A named present-day building resolves a street segment; two named
+    buildings resolve nothing.** The Winter 2020 volume puts Jonathan
+    Kittredge's 1855 house on "the north side of Ellis Street between Powell and
+    Mason" and adds that the property is now the Hotel Fusion. The hotel gives
+    its own address as 140 Ellis Street — parcel 0326023, on the even-numbered
+    (north) side of that block, which the EAS coordinates confirm — so the
+    segment resolves without guessing and gets a page. The same volume puts an
+    1847 pond at "Powell, Eddy, Market and Fifth" and names **two** present-day
+    buildings for it, the Flood Building and San Francisco Centre. One
+    intersection, two buildings, four corners: that resolves to no parcel, the
+    same as "Larkin and Grove."
+  - **A tunnel, a proposed route and a settlement are not parcels.** Most of the
+    Winter 2020 volume is about things no parcel can hold — the Sunset Tunnel's
+    bore under Buena Vista Park, two portals at Merrit/Danvers and Cole/Alma
+    that were never built, a dedication crowd at an intersection, and the
+    Mission Dolores and Yerba Buena settlements. A whole article can name places
+    constantly and still yield nothing; record the pass and move on.
   - **A street number in the journal can point at the wrong building.** The
     Summer 2020 volume gives the German House as 624 Polk Street. 624 Polk is
     parcel 0741006B, which SF Planning names `MAYFAIR HOTEL` and dates to 1928.
@@ -633,8 +655,19 @@ a street number, which is the whole constraint:
   22nd near Howard, Turk Street, 12th and Folsom, Sutter Street, 2nd between
   Howard and Folsom, Hayes and Shrader, Fulton and Parker — and one, the
   Deutsches Altenheim, is in Oakland)
-- **Coverage:** volumes 29 no. 2, 30 no. 1 and 31 no. 1 read in full. Volumes
-  30 no. 2, 31 no. 2 and 32 no. 1 are untouched.
+- **Verified:** 2026-08-11 (vol. 30 no. 2, Winter 2020: 16 places named, **none
+  of them with a street number**, and 1 of which resolves — 140 Ellis Street,
+  reached through the present-day hotel the volume names on the site. The other
+  15 are corners, street segments, an intersection, a tunnel alignment, two
+  portals that were never built and two settlements: Mason between Eddy and
+  Ellis; Powell/Eddy/Market/Fifth; Ellis between Stockton and Powell; Powell and
+  Ellis; Turk and Polk; Eddy between Market and Mason; Geary and Mason; Market
+  between Fourth and Fifth; O'Farrell between Mason and Taylor; O'Farrell
+  between Taylor and Jones; Taylor and Eddy; the Merrit/Danvers and Cole/Alma
+  portals; the Duboce Avenue tunnel route; 48th and Judah; the Mission Dolores
+  settlement; and Yerba Buena. The Ring and Bell articles land on no page)
+- **Coverage:** volumes 29 no. 2, 30 nos. 1–2 and 31 no. 1 read in full. Volumes
+  31 no. 2 and 32 no. 1 are untouched.
 
 ## local-news — Neighborhood news (secondary)
 
