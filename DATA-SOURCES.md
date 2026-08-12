@@ -554,6 +554,12 @@ a street number, which is the whole constraint:
     the German-Speaking Community in San Francisco, 1850–1924" (pp. 6–51);
     William R. Huber, "Sutro's San Francisco—What's Left?" (pp. 52–71); Alan
     Ziajka, "World War I and the University of San Francisco" (pp. 72–80).
+  - **32 no. 1 (Summer 2021)** — Angus Macfarlane, "Putting San Francisco on
+    the Map, Part 1: A Riddle Wrapped in a Mystery, Inside an Enigma"
+    (pp. 8–29); Gary F. Kurutz, "Woodward's Gardens: Robert B. Woodward's
+    'Central Park of the Pacific'" (pp. 30–63); Lisa Dunseth, "The Junior
+    Recreation Museum in Balboa Park: The Brainchild of Josephine Randall and
+    Bert Walker" (pp. 64–80).
 - **Format:** print journal; no API and no per-article URL. Cite author,
   article title, volume, issue, season, year and page range. Publisher: San
   Francisco Historical Society, P.O. Box 420470, San Francisco, CA 94142-0470.
@@ -570,6 +576,16 @@ a street number, which is the whole constraint:
   - **Numbered addresses still have to clear EAS.** 847 Valencia Street and 616
     Filbert Street, both named in the Winter 2018 volume, have no modern EAS
     record; under the directory contract that is the end of the matter.
+  - **A demolished building can take its number with it.** The Summer 2021
+    volume gives 600 Ocean Avenue as the address of the Junior Recreation
+    Museum's original home in Balboa Park, which it says was demolished for
+    freeway construction. EAS has no record of 600 Ocean Avenue today — the
+    number itself didn't survive the building — so it gets no page, the same
+    outcome as a corner that never had a number at all.
+  - **The journal isn't only about San Francisco.** The Summer 2021 volume
+    follows General Vallejo to Casa Grande in Sonoma and Robert Woodward to
+    Oak Knoll in Napa County. Both are real, dated, numbered-enough facts, and
+    neither gets a page here — this site covers San Francisco only.
   - **Its dates will disagree with the assessor.** Bardell dates the Casebolt
     house to a March 1868 newspaper report; the roll and Planning both say 1865.
     Record both and name the disagreement in `.unknowns` — never adjudicate.
@@ -666,8 +682,20 @@ a street number, which is the whole constraint:
   between Taylor and Jones; Taylor and Eddy; the Merrit/Danvers and Cole/Alma
   portals; the Duboce Avenue tunnel route; 48th and Judah; the Mission Dolores
   settlement; and Yerba Buena. The Ring and Bell articles land on no page)
-- **Coverage:** volumes 29 no. 2, 30 nos. 1–2 and 31 no. 1 read in full. Volumes
-  31 no. 2 and 32 no. 1 are untouched.
+- **Verified:** 2026-08-12 (vol. 32 no. 1, Summer 2021: 10 places named, 2 of
+  which become pages — 678 Mission Street, reached through the California
+  Historical Society building the volume names on the O'Farrell grant site
+  (occupied 1993–2024, since sold), and 199 Museum Way, reached through the
+  Randall Museum the volume names on the Corona Heights site. Of the other
+  eight: Casa Grande (Sonoma) and Oak Knoll (Napa County) are outside San
+  Francisco; 600 Ocean Avenue's building was demolished and the address no
+  longer clears EAS; and the west side of Grant Avenue between Clay and
+  Washington, the site southeast of the Richardson home, the corner of
+  Sacramento and Leidesdorff, Mission Street between 13th and 15th, and Laurel
+  Hill Cemetery are all located by segment, corner or landmark rather than a
+  resolvable number)
+- **Coverage:** volumes 29 no. 2, 30 nos. 1–2, 31 no. 1 and 32 no. 1 read in
+  full. Volume 31 no. 2 is untouched.
 
 ## local-news — Neighborhood news (secondary)
 

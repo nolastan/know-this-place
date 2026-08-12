@@ -17,6 +17,7 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
 - [Corbett Avenue](corbett-avenue/) — 7 buildings documented — from a 1905 flat above the earthquake refugee camp to post-war infill.
 - [Danvers Street](danvers-street/) — 2 buildings documented — survivors of the corner the Market Street extension erased.
 - [Mars Street](mars-street/) — 10 buildings documented — a short, steep street photographed since about 1895 and rebuilt in the 1920s.
+- [Museum Way](museum-way/) — The Corona Heights museum the city dedicated to Josephine Randall in 1951.
 
 ## Sources
 
