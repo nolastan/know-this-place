@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Know This Place — an encyclopedia of the built environment</title>
-  <meta name="description" content="A map of every building documented so far — 8,283 addresses in San Francisco, each with a cited page of permits, assessments and history.">
+  <meta name="description" content="A map of every building documented so far — 8,473 addresses in San Francisco, each with a cited page of permits, assessments and history.">
   <link rel="canonical" href="https://knowthis.place/">
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
@@ -80,7 +80,7 @@
   <div id="map" role="region" aria-label="Map of documented addresses in San Francisco"></div>
   <div class="media-empty">
     <span class="ic ic-pin ic-lg"></span>
-    <span>8,283 documented addresses in San Francisco</span>
+    <span>8,473 documented addresses in San Francisco</span>
     <small>The map appears here once a Mapbox token is configured. Every
     address is reachable through the links below.</small>
   </div>
@@ -162,12 +162,18 @@ const dotLayer = () => ({
   },
 });
 
-function addAddresses(map) {
+/* The index is fetched here rather than handed to Mapbox as a URL so we can
+   set the cache policy. "no-cache" revalidates every load and reuses the
+   cached body on a 304 — costing one conditional request, not another 107 KB.
+   Left to the default policy the browser serves Mapbox a stale copy and the
+   map silently lags the site: newly documented addresses are simply missing,
+   with nothing to indicate it. site.js reads site-config.json the same way,
+   for the same reason. */
+let addresses;
+async function addAddresses(map) {
+  addresses ??= await (await fetch("/shared/addresses.geojson", { cache: "no-cache" })).json();
   if (!map.getSource("addresses")) {
-    map.addSource("addresses", {
-      type: "geojson",
-      data: "/shared/addresses.geojson",
-    });
+    map.addSource("addresses", { type: "geojson", data: addresses });
   }
   if (!map.getLayer("addresses")) map.addLayer(dotLayer());
 }
