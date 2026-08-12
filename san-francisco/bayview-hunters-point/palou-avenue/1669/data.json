@@ -1,0 +1,123 @@
+{
+  "address": "1669 Palou Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/palou-avenue/1669/",
+  "apn": "5327037",
+  "block": "5327",
+  "lot": "037",
+  "eas_baseid": "375736",
+  "coordinates": {
+    "lat": 37.734527,
+    "lng": -122.39241
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1740,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1669 PALOU               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244551,
+    "assessed_improvement_value": 163032,
+    "last_sale_date": "1999-05-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201309166871",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-16",
+      "status_date": "2013-09-16",
+      "estimated_cost": 8820,
+      "revised_cost": 8820,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118732",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-04",
+      "status_date": "1992-03-05",
+      "estimated_cost": 250,
+      "description": "install 2 windows in attic to facilitate ventilation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PALOU&street_type=AVE&address_number=1669",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5327037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5327&lot=037",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5327037",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1669 Palou Avenue",
+        "apn_as_surveyed": "5327037",
+        "description": "Craftsman dwelling",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement"
+  },
+  "historical_record": [
+    {
+      "date": "after 1910",
+      "kind": "site history",
+      "description": "A two-storey Craftsman dwelling of the kind built here once Craftsman detailing took hold after 1910: large angled brackets with chamfered ends, clinker brick foundations and distinctive window configurations.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

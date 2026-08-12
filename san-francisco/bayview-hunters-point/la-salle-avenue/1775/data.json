@@ -1,0 +1,91 @@
+{
+  "address": "1775 La Salle Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/la-salle-avenue/1775/",
+  "apn": "5297029",
+  "block": "5297",
+  "lot": "029",
+  "eas_baseid": "375055",
+  "coordinates": {
+    "lat": 37.738128,
+    "lng": -122.392095
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2420,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1775 LA SALLE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 147164,
+    "assessed_improvement_value": 126774
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LA%20SALLE&street_type=AVE&address_number=1775",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5297029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5297&lot=029",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5297029",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1775 La Salle Avenue",
+        "apn_as_surveyed": "5297029",
+        "description": "Queen Anne cottage",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement"
+  }
+}

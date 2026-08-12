@@ -1,0 +1,98 @@
+{
+  "address": "43 Pomona Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/pomona-street/43/",
+  "apn": "5357036",
+  "block": "5357",
+  "lot": "036",
+  "eas_baseid": "376885",
+  "coordinates": {
+    "lat": 37.731734,
+    "lng": -122.393163
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2799,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0043 POMONA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 758763,
+    "assessed_improvement_value": 408565,
+    "last_sale_date": "2015-02-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201503241671",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-24",
+      "status_date": "2015-03-24",
+      "estimated_cost": 18000,
+      "revised_cost": 30000,
+      "description": "construct new staircase connect between 2/f to attic space. construct 4 domer. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POMONA&street_type=ST&address_number=43",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5357036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5357&lot=036",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5357036",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1968",
+      "kind": "site history",
+      "description": "An Italianate-style dwelling, one of the handful of buildings in the Bayview-Hunters Point district recorded in Here Today, the 1968 San Francisco Junior League survey that was the city's first.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

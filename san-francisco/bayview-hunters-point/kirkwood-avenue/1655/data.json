@@ -1,0 +1,132 @@
+{
+  "address": "1655 Kirkwood Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/kirkwood-avenue/1655/",
+  "apn": "5290036",
+  "block": "5290",
+  "lot": "036",
+  "eas_baseid": "374909",
+  "coordinates": {
+    "lat": 37.738555,
+    "lng": -122.391179
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1750,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1655 KIRKWOOD            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 288054,
+    "assessed_improvement_value": 232200,
+    "last_sale_date": "2001-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201801128492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-12",
+      "status_date": "2018-02-20",
+      "estimated_cost": 700,
+      "revised_cost": 700,
+      "description": "minor framing repair in garage. no structural charges. no siding work. no change of (e) layout allow.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107261051",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2011-07-26",
+      "status_date": "2026-01-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "scope of work limited to the conversion of (e) exterior (interior) court into bedroom & the remodel of (e) kitchen with new cabinets & sink. new interior paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601182422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-18",
+      "status_date": "2006-08-17",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to 200505273660 per gr floor plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505273660",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-05-27",
+      "status_date": "2015-05-04",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "add a bedroom,family room & 1-1/2 bath,laundry room in garage.new deck at rear of 2/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KIRKWOOD&street_type=AVE&address_number=1655",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5290036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5290&lot=036",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5290036",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "construction",
+      "description": "One of a pair at 1655 and 1659 Kirkwood Avenue built in the French Provincial manner that was popular for San Francisco speculative rowhouses through the 1940s.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

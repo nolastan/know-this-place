@@ -1,0 +1,127 @@
+{
+  "address": "1629 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1629/",
+  "apn": "5322033",
+  "block": "5322",
+  "lot": "033",
+  "eas_baseid": "375533",
+  "coordinates": {
+    "lat": 37.734912,
+    "lng": -122.391423
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2190,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1629 OAKDALE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22603,
+    "assessed_improvement_value": 48026
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200309084042",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-08",
+      "status_date": "2004-03-23",
+      "estimated_cost": 9450,
+      "revised_cost": 9450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508495",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-07",
+      "status_date": "1985-11-05",
+      "estimated_cost": 2660,
+      "description": "install aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403158",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-03-26",
+      "status_date": "1984-08-28",
+      "estimated_cost": 1000,
+      "description": "repair repha some parts of the existing stop leading .",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=1629",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5322033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5322&lot=033",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5322033",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1629 Oakdale Avenue",
+        "apn_as_surveyed": "5322033",
+        "description": "Mt. Gilead Church/Italianate dwelling",
+        "cr_status_code": "6Z"
+      }
+    ],
+    "cr_status_code": "6Z",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "carey_and_company_rating": "5"
+    }
+  }
+}

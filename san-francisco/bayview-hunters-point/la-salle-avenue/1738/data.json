@@ -1,0 +1,133 @@
+{
+  "address": "1738 La Salle Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/la-salle-avenue/1738/",
+  "apn": "5290011",
+  "block": "5290",
+  "lot": "011",
+  "eas_baseid": "374890",
+  "coordinates": {
+    "lat": 37.738173,
+    "lng": -122.391099
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1592,
+    "basement_area_sqft": 612,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1738 LA SALLE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 258029,
+    "assessed_improvement_value": 189569,
+    "last_sale_date": "2009-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200906251298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-25",
+      "status_date": "2010-02-11",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "ground floor remodel. add a bedroom, family room, remodel existing bath. restore existing garage door, restore front facade, remove exterior shingle to restore horiontal wood siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905077974",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-05-07",
+      "status_date": "2009-05-07",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace 3 windows in kind , double hung and fiberglass windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902021203",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-02",
+      "status_date": "2009-02-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply w/ nov #200788233, replace existing damaged rear deck & front stairs in kind, existing footing to be remained.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LA%20SALLE&street_type=AVE&address_number=1738",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5290011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5290&lot=011",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5290011",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1738 La Salle Avenue",
+        "apn_as_surveyed": "5290011",
+        "description": "Star of Bethlehem/Italianate dwelling",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "survey_1976_rating": "1",
+      "carey_and_company_rating": "5"
+    }
+  }
+}

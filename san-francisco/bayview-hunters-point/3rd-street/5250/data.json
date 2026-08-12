@@ -1,0 +1,130 @@
+{
+  "address": "5250 Third Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/5250/",
+  "apn": "5411010",
+  "block": "5411",
+  "lot": "010",
+  "eas_baseid": "378226",
+  "coordinates": {
+    "lat": 37.729996,
+    "lng": -122.392769
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3001,
+    "building_area_sqft": 2052,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 5250 03RD                ST0000",
+    "note": "The 2010 survey records an abandoned Craftsman bungalow on this parcel. The assessor now classes it a vacant residential lot, dated 1909."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 595108,
+    "last_sale_date": "2020-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Manual change by Planning staff",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510026570",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-02",
+      "status_date": "2025-12-09",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "voluntary removal of general advertising sign. remove all equipment associated with the sign. repair, patch and make weatherproff all areas where the board was connected/attached. there will be an understanding once the sign is removed, it cannot be put up again",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212097985",
+      "type": "new construction",
+      "status": "filed",
+      "filed": "2022-12-09",
+      "status_date": "2022-12-09",
+      "estimated_cost": 12500000,
+      "revised_cost": 25027124,
+      "description": "erect a 7-story, type 3a over 1a, mixed use building with 100 residential units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301168085",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2013-01-16",
+      "status_date": "2014-04-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "demolish 1 story, type 5, single family dwelling unit building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=5250",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5411010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5411&lot=010",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5411010",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "5250 3rd Street",
+        "apn_as_surveyed": "5411010",
+        "description": "Abandoned Craftsman bungalow",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "carey_and_company_rating": "4"
+    }
+  }
+}
