@@ -13,8 +13,8 @@ documented so far:
 - [Bernal Heights](bernal-heights/) — the hill south of the Mission; a Patty Hearst address and Carlos Santana's high-school home
 - [Hayes Valley](hayes-valley/) — the Alamo Square Painted Ladies; Alice Walker's home until 1996
 - [Marina](marina/) — the northern waterfront; Joe DiMaggio's house during his marriage to Marilyn Monroe, and a Cow Hollow house moved from beside the Presidio & Ferries cable terminal
-- [Lone Mountain / USF](lone-mountain/) — Jefferson Airplane's house facing Golden Gate Park
-- [Western Addition](western-addition/) — a 1974 Patty Hearst address
+- [Lone Mountain / USF](lone-mountain/) — Jefferson Airplane's house facing Golden Gate Park, and the First A.M.E. Zion Church on Golden Gate Avenue
+- [Western Addition](western-addition/) — a 1974 Patty Hearst address; the Third Baptist Church complex on McAllister Street and Bethel A.M.E. Church on Laguna Street
 - [Excelsior](excelsior/) — Jerry Garcia's first home
 - [Outer Mission](outer-mission/) — Jerry Garcia's home with his grandparents
 - [South Beach](south-beach/) — the waterfront blocks south of Market; the site of Jack London's birthplace and eleven buildings with public open space
@@ -23,6 +23,7 @@ documented so far:
 - [Union Square](union-square/) — the retail blocks at the top of Market Street
 - [South of Market](south-of-market/) — the wide blocks west of Fourth Street
 - [Chinatown](chinatown/) — the Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District
+- [North Beach](north-beach/) — the upper reaches of Grant Avenue, formerly Dupont Street, where the First Colored Baptist Church built in 1854
 - [Tenderloin](tenderloin/) — the Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882; California Hall on Polk Street, built in 1912 as the German House; and two Mason Street supportive-housing buildings with facade art
 - [Lakeshore](lakeshore/) — the corner of the city around Lake Merced; the San Francisco State University parcel that housed the Sutro Library from 1982 to 2012
 - [Bayview Hunters Point](bayview-hunters-point/) — the south-eastern quarter, settled as the industrial suburb of South San Francisco; 190 buildings named in the 2010 Area B survey, from the Albion Brewery and the South San Francisco Opera House to the Pelton cottages off Third Street
