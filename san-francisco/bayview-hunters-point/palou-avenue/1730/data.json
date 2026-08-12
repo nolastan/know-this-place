@@ -1,0 +1,117 @@
+{
+  "address": "1730 Palou Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/palou-avenue/1730/",
+  "apn": "5321009",
+  "block": "5321",
+  "lot": "009",
+  "eas_baseid": "375472",
+  "coordinates": {
+    "lat": 37.735589,
+    "lng": -122.393213
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1730 PALOU               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 18680,
+    "assessed_improvement_value": 43403
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200509294284",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-29",
+      "status_date": "2005-10-11",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309306138",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-30",
+      "status_date": "2004-02-24",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "replace 5 (e) single pane windows with new double pane vinyl windows same size and styles (3 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-15",
+      "status_date": "1992-03-06",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PALOU&street_type=AVE&address_number=1730",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5321009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5321&lot=009",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5321009",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1941",
+      "kind": "construction",
+      "description": "A Streamline Moderne “Junior Five” — the compact stucco-finished rowhouse of the war years, with garage, shop and laundry room below and a kitchen, living room, two bedrooms and a bathroom above.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

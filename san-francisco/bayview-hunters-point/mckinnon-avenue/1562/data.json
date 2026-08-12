@@ -1,0 +1,123 @@
+{
+  "address": "1562 Mckinnon Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/mckinnon-avenue/1562/",
+  "apn": "5295031",
+  "block": "5295",
+  "lot": "031",
+  "eas_baseid": "374993",
+  "coordinates": {
+    "lat": 37.735728,
+    "lng": -122.388456
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 2680,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1562 MCKINNON            AV0000",
+    "note": "The assessor dates the building 1900; the 2010 survey dates it 1875. Most pre-1906 buildings in the district carry a default assessor date of 1900, because the city's building records were destroyed in the 1906 earthquake and fire."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1115524,
+    "assessed_improvement_value": 705548,
+    "last_sale_date": "2014-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "QUINN HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507141440",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-14",
+      "status_date": "2015-12-11",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "remove all layers of existing roof covering. install 30lbs base sheet and 30 years composition shingles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412022828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-02",
+      "status_date": "2016-08-17",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "1/f renovation including expanded kitchen, living room, powder room & laundry room. 2/f renovation including master bedroom, bathrooms, stair & remove study room.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2001–2019",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCKINNON&street_type=AVE&address_number=1562",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5295031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5295&lot=031",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5295031",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "hook": "The Quinn House of 1875, one of the district's oldest dwellings.",
+  "city_landmark": {
+    "number": 63,
+    "name": "Quinn House",
+    "source": "bvhp-area-b-context-statement"
+  },
+  "historical_record": [
+    {
+      "date": "1875",
+      "kind": "construction",
+      "description": "The Quinn House was built. It stands among the Victorian-era dwellings that survive here in numbers because the 1906 earthquake and fire did comparatively little damage in South San Francisco, and was one of the handful of buildings in the district recorded in Here Today, the 1968 San Francisco Junior League survey that was the city's first.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

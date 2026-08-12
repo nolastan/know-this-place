@@ -1,0 +1,141 @@
+{
+  "address": "1531 Kirkwood Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/kirkwood-avenue/1531/",
+  "apn": "5291023",
+  "block": "5291",
+  "lot": "023",
+  "eas_baseid": "374945",
+  "coordinates": {
+    "lat": 37.737173,
+    "lng": -122.388818
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 6290,
+    "building_area_sqft": 2120,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1531 KIRKWOOD            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 425758,
+    "assessed_improvement_value": 283833,
+    "last_sale_date": "2003-05-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200412141371",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-14",
+      "status_date": "2005-02-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired appl#200308202633",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308202633",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2003-08-20",
+      "status_date": "2005-02-09",
+      "estimated_cost": 8500,
+      "revised_cost": 12000,
+      "description": "bathroom addition and partition removal, relocate master bedroom window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204033009",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-04-03",
+      "status_date": "2004-01-15",
+      "estimated_cost": 135000,
+      "revised_cost": 135000,
+      "description": "repair fire damage,inspection required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000344",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-05",
+      "status_date": "1990-12-05",
+      "estimated_cost": 3000,
+      "description": "repair sheet rock in 3 rooms & tape texture 3 rooms (main fl",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KIRKWOOD&street_type=AVE&address_number=1531",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5291023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5291&lot=023",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5291023",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1531 Kirkwood Avenue",
+        "apn_as_surveyed": "5291023",
+        "description": "Italianate dwelling",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "survey_1976_rating": "1",
+      "carey_and_company_rating": "4/5"
+    }
+  }
+}

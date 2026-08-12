@@ -1,0 +1,130 @@
+{
+  "address": "1556 Revere Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/revere-avenue/1556/",
+  "apn": "5340006",
+  "block": "5340",
+  "lot": "006",
+  "eas_baseid": "376376",
+  "coordinates": {
+    "lat": 37.731349,
+    "lng": -122.389075
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 5623,
+    "building_area_sqft": 4652,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1556 REVERE              AV0000",
+    "note": "The assessor dates the building 1900; the 2010 survey dates it 1870. Most pre-1906 buildings in the district carry a default assessor date of 1900, because the city's building records were destroyed in the 1906 earthquake and fire."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45275,
+    "assessed_improvement_value": 181180
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "SYLVESTER HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200404131132",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-04-13",
+      "status_date": "2005-04-28",
+      "estimated_cost": 5182,
+      "revised_cost": 5182,
+      "description": "install a grid tied solar pv system consist of collectors attached to the roof and wired to an",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516570",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-10-05",
+      "status_date": "1996-03-14",
+      "estimated_cost": 5000,
+      "description": "foundation repair under front porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110721",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-06-19",
+      "status_date": "1991-07-24",
+      "estimated_cost": 4750,
+      "description": "voluntary upgrade",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1991–2008",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=REVERE&street_type=AVE&address_number=1556",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5340006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5340&lot=006",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5340006",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "hook": "The Sylvester House of 1870, one of the district's oldest dwellings.",
+  "city_landmark": {
+    "number": 61,
+    "name": "Sylvester House",
+    "source": "bvhp-area-b-context-statement"
+  },
+  "historical_record": [
+    {
+      "date": "1870",
+      "kind": "construction",
+      "description": "The Sylvester House was built. It stands among the Victorian-era dwellings that survive here in numbers because the 1906 earthquake and fire did comparatively little damage in South San Francisco, and was one of the handful of buildings in the district recorded in Here Today, the 1968 San Francisco Junior League survey that was the city's first.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

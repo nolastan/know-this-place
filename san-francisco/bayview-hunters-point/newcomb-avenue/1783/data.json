@@ -1,0 +1,87 @@
+{
+  "address": "1783 Newcomb Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/newcomb-avenue/1783/",
+  "apn": "5312029",
+  "block": "5312",
+  "lot": "029",
+  "eas_baseid": "375334",
+  "coordinates": {
+    "lat": 37.737052,
+    "lng": -122.393277
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1385,
+    "basement_area_sqft": 240,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1783 NEWCOMB             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 563476,
+    "assessed_improvement_value": 241485,
+    "last_sale_date": "2015-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NEWCOMB&street_type=AVE&address_number=1783",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5312029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5312&lot=029",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5312029",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "construction",
+      "description": "A two-storey, two-bay rowhouse of the 1920s boom, with a garage and recessed entrance on the first floor and two banks of windows above.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

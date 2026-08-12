@@ -1,0 +1,131 @@
+{
+  "address": "1547 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1547/",
+  "apn": "5323020",
+  "block": "5323",
+  "lot": "020",
+  "eas_baseid": "375576",
+  "coordinates": {
+    "lat": 37.733828,
+    "lng": -122.38952
+  },
+  "parcel": {
+    "year_built": 1890,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 1750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1547 OAKDALE             AV0000",
+    "note": "The assessor dates the building 1890; the 2010 survey dates it about 1865."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 756654,
+    "assessed_improvement_value": 324278,
+    "last_sale_date": "2017-12-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406174583",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-17",
+      "status_date": "2025-01-13",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "add 1 full bath on 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303189976",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-18",
+      "status_date": "2003-04-11",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "10\"cap 30ft of brick foundation.dowel & epoxy#4rebar 16\"on center w/ 5/8 embeded 10\"deep,& #4",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=1547",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5323020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5323&lot=020",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5323020",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "hook": "The Hittell House of about 1865, a Folk Victorian dwelling from the district's first American decade.",
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1547 Oakdale Avenue",
+        "apn_as_surveyed": "5323020",
+        "description": "Hittell Dwelling",
+        "cr_status_code": "3S"
+      }
+    ],
+    "cr_status_code": "3S",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "survey_1976_rating": "5",
+      "carey_and_company_rating": "3"
+    }
+  },
+  "historical_record": [
+    {
+      "date": "circa 1865",
+      "kind": "construction",
+      "description": "Built as a Folk Victorian dwelling — a vernacular wood-frame house set with its long side parallel to the street, under a steeply pitched side-facing gable roof, with a porch running the length of the façade and little decorative trim beyond brackets and window hoods. The type is rare in San Francisco, where most such houses were pulled down for later development or lost in 1906. The house is associated with the Hittell family.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

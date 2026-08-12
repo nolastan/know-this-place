@@ -711,6 +711,66 @@ a street number, which is the whole constraint:
 - **Verified:** 2026-07-23 (26 San Francisco addresses listed; all but one
   resolve in EAS)
 
+## sf-context-statements — SF Planning historic context statements (secondary)
+
+- **What:** The historic context statements SF Planning has adopted for
+  individual neighborhoods and survey areas — consultant reports that set out
+  an area's development history and then inventory its buildings. They are the
+  richest address-level history available for the districts that have one, and
+  they name streets and numbers constantly. The landing page listing the
+  adopted statements is
+  `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
+- **Read into the repo so far:** Kelley & VerPlanck Historical Resources
+  Consulting, *Bayview-Hunters Point Area B Survey: Town Center Activity Node
+  — Historic Context Statement*, prepared for the San Francisco Redevelopment
+  Agency, adopted February 11, 2010 (197 pp.), source id
+  `bvhp-area-b-context-statement`.
+- **Shape of the yield.** Two very different parts, and both are worth the
+  pass:
+  - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
+    APN, an address, a one-line description of the building, ratings from the
+    earlier surveys (Here Today 1968, the 1976 citywide architectural survey,
+    Article 10, the UMB survey, Carey & Company's South Bayshore survey) and a
+    provisional California Register status code. This is structured data; parse
+    it from the PDF's word positions rather than from `pdftotext` lines, or the
+    superscript in "3<sup>rd</sup> Street" lands in the next row's address
+    column.
+  - **The narrative chapters** name maybe forty addresses with a real story
+    attached, scattered through 190 pages of district history that names none.
+    That is the normal ratio; see AGENTS.md → "Mining a corpus."
+- **Cautions:**
+  - **The addresses in the table are the survey's, not the city's.** Follow the
+    APN, not the printed address, and check both against EAS: this one gives
+    1420 Phelps Street for a parcel EAS calls 1450, 1773–75 Newcomb Avenue for
+    a parcel on McKinnon, 5051 Third Street for the parcel EAS numbers 5075,
+    and 1015 Third Street in its recommendations for the 5015 Third Street of
+    its own table. Several APNs have since been retired.
+  - **The status codes are provisional.** The report says so itself: they were
+    assigned on architectural criteria alone. Its own recommendations define
+    what the two "3" codes mean here — the 84 rows coded `3CS` are the
+    properties it found may be eligible for the California Register under
+    Criterion 3, and the rows coded `3S` are the properties it put forward as
+    potential National Register or City Landmark listings. It never defines the
+    Carey & Company or UMB rating scales, so record those without a gloss.
+  - **The report contradicts itself in places** — 4408–42 Third Street is an
+    Italianate commercial block in the table and a 1946 Streamline Moderne
+    building in the text; 1552 Palou Avenue is an Eastlake farmhouse in one and
+    a Queen Anne dwelling in the other. State the disagreement; don't
+    adjudicate it.
+  - Condition notes ("abandoned", "demolished") are as of 2009, and the
+    assessor sometimes disagrees now.
+- **Citation label:** name the consultant, the report and its adoption date,
+  and link the SF Planning listing page.
+- **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
+  numbered-address mentions in the narrative, resolving to 190 parcels with
+  EAS records and a current assessor roll row. Not resolvable, and so not
+  documented: 4417–23 Third Street, rowhouses the survey records as demolished
+  and whose parcels are retired; 894 Innes Avenue; 420 Pacific Street; and the
+  two dozen addresses the report itself marks "no longer extant". Coverage
+  note: this is the only SF Planning context statement read so far — the
+  Central Waterfront, Market & Octavia, Japantown and other adopted statements
+  on the same page are untouched.)
+
 ## Known gaps
 
 - **Sale/transfer history:** San Francisco recorder data has no free public
