@@ -1600,6 +1600,49 @@ def district_of(rec: dict) -> dict:
             or {})
 
 
+def range_label(address_range) -> str:
+    """Render an `address_range` value as hub link text, whatever shape it's in.
+
+    `build_record` always writes a ready-to-use string ("100–102"), but a
+    hand-edited page's data.json may instead carry a {low, high, ...} object
+    (AGENTS.md only says to "record the range... under address_range", not
+    which shape). Without this, a dict's Python repr leaks straight into the
+    rendered Markdown link text.
+    """
+    if isinstance(address_range, dict):
+        low, high = address_range.get("low"), address_range.get("high")
+        if low is not None and high is not None and low != high:
+            return f"{low}–{high}"
+        return str(low if low is not None else address_range)
+    return address_range
+
+
+# Matched case-insensitively against each H2 heading. "documented so far" is
+# a suffix match rather than an exact string because plenty of street hubs
+# predate a wording change in `write_street_hub` and still read "Buildings
+# documented so far" — that's a stale label on an otherwise plain generated
+# list, not hand-written content, and must not block a routine rebuild.
+KNOWN_STREET_HUB_SECTIONS = (re.compile(r"documented so far$", re.I),
+                             re.compile(r"^not yet covered$", re.I))
+
+
+def street_hub_extra_sections(street_dir: Path) -> list:
+    """H2 section headings in an existing street hub that the generator didn't write.
+
+    A hand-edited hub can grow sections a plain lead+list template has no room
+    for — "The street itself", "Sources" — see `AGENTS.md`'s note that an
+    existing page "is only ever edited by hand." `write_street_hub` has no way
+    to merge those back in, so it must detect them and refuse to overwrite
+    rather than silently deleting them.
+    """
+    md = street_dir / "index.md"
+    if not md.exists():
+        return []
+    headings = re.findall(r"^## (.+)$", md.read_text(encoding="utf-8"), re.M)
+    return [h for h in headings
+            if not any(pat.search(h) for pat in KNOWN_STREET_HUB_SECTIONS)]
+
+
 def hub_lead(street_dir, fallback: str) -> str:
     """Reuse the hand-written intro from a street's existing index.md.
 
@@ -1656,15 +1699,26 @@ def hook_for(rec: dict) -> str:
     return f"{head}."
 
 
-def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
-    """Rebuild a street's index.md + index.html from the pages beneath it."""
+def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
+    """Rebuild a street's index.md + index.html from the pages beneath it.
+
+    Returns False (and leaves both files untouched) if the existing index.md
+    has hand-written sections the generator doesn't know how to preserve —
+    see `street_hub_extra_sections`.
+    """
+    extra = street_hub_extra_sections(street_dir)
+    if extra:
+        print(f"  {street_dir}: skipping — hand-written section(s) "
+              f"{', '.join(extra)} beyond the generated template; "
+              f"update the list by hand instead", file=sys.stderr)
+        return False
     recs = []
     for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name)):
         f = d / "data.json"
         if d.is_dir() and f.exists():
             recs.append(json.loads(f.read_text()))
     if not recs:
-        return
+        return True
     slug = street_dir.name
     disp = page_title(recs[0]).split(" ", 1)[1]  # off the address, not the slug
     path = f"/{ctx['city']}/{ctx['area']}/{slug}/"
@@ -1682,7 +1736,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
 
     entries = []
     for r in recs:
-        number = r.get("address_range") or r["path"].strip("/").split("/")[-1]
+        addr_range = r.get("address_range")
+        number = range_label(addr_range) if addr_range else r["path"].strip("/").split("/")[-1]
         entries.append((number, r["path"].strip("/").split("/")[-1], page_title(r), hook_for(r)))
 
     tiles = [("ic-home", f"{len(recs):,}", "Buildings documented")]
@@ -1805,6 +1860,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> None:
 </html>
 """
     (street_dir / "index.html").write_text(html_out, encoding="utf-8")
+    return True
 
 
 NEIGHBORHOOD_SECTION = "Streets documented so far"
@@ -1819,6 +1875,12 @@ def existing_street_hooks(area_dir: Path) -> dict:
     where Samuel Brannan built in 1853"). Rebuilding the list to add one street
     must not throw the rest of them away — this is the same courtesy `hub_lead`
     pays a street hub's own intro paragraph.
+
+    index.md is the source of truth for a hub page's hand-written content —
+    index.html is a rendering of it, never edited independently (see
+    AGENTS.md's "Hub pages" note and `scripts/validate.py`'s
+    `check_hub_sync`, which fails the build if the two disagree). So only
+    index.md is read here.
     """
     md = area_dir / "index.md"
     if not md.exists():
@@ -2035,13 +2097,15 @@ def cmd_seed(args) -> int:
         written += 1
         touched_streets.add(page_dir.parent)
 
-    for street_dir in sorted(touched_streets):
-        write_street_hub(street_dir, ctx, not_covered.get(street_dir.name))
+    rebuilt_hubs = sum(1 for street_dir in sorted(touched_streets)
+                       if write_street_hub(street_dir, ctx, not_covered.get(street_dir.name)))
     n_streets = write_neighborhood_hub(ROOT / args.city / args.area, ctx)
     print(f"neighborhood hub lists {n_streets} street(s)")
     print(f"created {written} new page(s); left {skipped} existing page(s) "
           f"untouched; skipped {elsewhere} parcel(s) already documented under "
-          f"another neighborhood; rebuilt {len(touched_streets)} street hub(s)")
+          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)"
+          + (f"; left {len(touched_streets) - rebuilt_hubs} street hub(s) untouched "
+             f"(hand-written sections)" if rebuilt_hubs < len(touched_streets) else ""))
     if excluded:
         print(f"excluded streets (filed under another neighborhood): "
               f"{', '.join(sorted(excluded))}")
@@ -2169,8 +2233,8 @@ def cmd_seed_list(args) -> int:
                        {"roll_year": roll_year, "historic": historic,
                         "districts": districts})
         for street_dir in sorted(street_dirs):
-            write_street_hub(street_dir, ctx)
-            n_streets += 1
+            if write_street_hub(street_dir, ctx):
+                n_streets += 1
         area_dir = ROOT / city / area
         if (area_dir / "index.html").exists():
             write_neighborhood_hub(area_dir, ctx)
@@ -2186,13 +2250,16 @@ def cmd_seed_list(args) -> int:
 def cmd_hubs(args) -> int:
     ctx = make_ctx(args, {"roll_year": args.roll_year, "historic": [], "districts": []})
     area_dir = ROOT / args.city / args.area
-    n = 0
+    n, n_skipped = 0, 0
     for street_dir in sorted(area_dir.iterdir()):
         if street_dir.is_dir():
-            write_street_hub(street_dir, ctx)
-            n += 1
+            if write_street_hub(street_dir, ctx):
+                n += 1
+            else:
+                n_skipped += 1
     n_streets = write_neighborhood_hub(area_dir, ctx)
-    print(f"rebuilt {n} street hub(s); neighborhood hub lists {n_streets} street(s)")
+    print(f"rebuilt {n} street hub(s); left {n_skipped} untouched (hand-written "
+          f"sections); neighborhood hub lists {n_streets} street(s)")
     return 0
 
 

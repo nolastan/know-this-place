@@ -18,8 +18,8 @@ and most of the buildings around them.
 
 ## Buildings documented so far
 
-- [56–58 Danvers Street](56/) — standing as built since before 1909
-- [60–62 Danvers Street](60/) — 1961, on ground that carried part of Horner's store
+- [56–58 Danvers Street](56/) — Standing as built since before 1909, when it was photographed beside Falcon Street.
+- [60–62 Danvers Street](60/) — A 1961 building on ground that carried part of Horner's grocery and saloon.
 
 ## Sources
 
