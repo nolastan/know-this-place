@@ -545,6 +545,10 @@ a street number, which is the whole constraint:
     of Our Dreams" (pp. 24–33); Lorri Ungaretti, "A Look at the Midwinter Fair"
     (pp. 34–65); Rodger C. Birt, "A Rare Midwinter Exposition Artifact"
     (pp. 66–71); Sofia Herron Geller, "Art Activism" (pp. 74–79).
+  - **31 no. 1 (Summer 2020)** — Stefanie E. Williams, "The Rise and Decline of
+    the German-Speaking Community in San Francisco, 1850–1924" (pp. 6–51);
+    William R. Huber, "Sutro's San Francisco—What's Left?" (pp. 52–71); Alan
+    Ziajka, "World War I and the University of San Francisco" (pp. 72–80).
 - **Format:** print journal; no API and no per-article URL. Cite author,
   article title, volume, issue, season, year and page range. Publisher: San
   Francisco Historical Society, P.O. Box 420470, San Francisco, CA 94142-0470.
@@ -578,6 +582,27 @@ a street number, which is the whole constraint:
     describes the pavilion of the 1868–71 exhibitions as being at Union Square
     *and* at Larkin and Grove, which is where the 1882 building went. Record
     only what a page can support and leave the conflation alone.
+  - **A street number in the journal can point at the wrong building.** The
+    Summer 2020 volume gives the German House as 624 Polk Street. 624 Polk is
+    parcel 0741006B, which SF Planning names `MAYFAIR HOTEL` and dates to 1928.
+    Every other detail in the same entry — the cornerstone ceremony at Polk and
+    Turk, five storeys, completion in 1912, the landmark designation — matches
+    0742002 across the street, which Planning names `CALIFORNIA HALL` and dates
+    to 1912. Check a number against the parcel before taking it: a number that
+    contradicts its own entry is a transcription error, not a second building.
+  - **A campus is one parcel, and a floor of one building on it is not a page.**
+    The volume puts the Sutro Library on the fifth and sixth floors of the
+    J. Paul Leonard Library at 1600 Holloway Avenue. EAS gives 7299005 for that
+    address, a retired APN; the parcel that exists now is 7299006, the whole
+    3.9-million-sq-ft SFSU campus carrying three EAS addresses. A page there
+    would describe the campus, not the library, so it gets none. The library's
+    earlier home at 480 Winston Drive is its own parcel and does.
+  - **An exempt public parcel reads as vacant on the roll.** 7298008 (470–480
+    Winston Drive) is `Vacant Lot Public Use` with no building area, no year
+    built and no assessed value in every roll year from 2007 through 2025 —
+    including the years the Sutro Library was open on it. On land exempt from
+    the secured roll the classification records the exemption, not what stands
+    on the ground. Say that; never report the parcel as empty.
   - **People.** These articles are full of private individuals — earthquake
     survivors, families, children in an orphanage. Take the businessmen,
     builders and public figures the historical record already covers; leave
@@ -592,8 +617,24 @@ a street number, which is the whole constraint:
   Street; 8th Street between Mission and Market; Larkin and Grove; Pier 70 /
   First and Mission; the Music Concourse; the Administration Building site at
   its western end; the Fine Arts Building site; and Strawberry Hill)
-- **Coverage:** volumes 29 no. 2 and 30 no. 1 read in full. Volumes 30 no. 2,
-  31 nos. 1–2 and 32 no. 1 are untouched.
+- **Verified:** 2026-08-11 (vol. 31 no. 1, Summer 2020: 36 places named, 7 of
+  them with a street number, 2 of which become pages — 601–625 Polk, which the
+  volume gives as 624 Polk, and 470–480 Winston Drive. Of the other five
+  numbered addresses, 526 California, 117 Capp and 304 Turk have no EAS record;
+  141 Albion is now five condominium parcels and is held back under the
+  condominium rule in AGENTS.md; and 1600 Holloway is the whole SFSU campus
+  parcel. The remaining 29 are located by corner, by street segment, by park
+  feature or by venue name — Temple Emanu-El on Sutter, Belden Place, Woodward's
+  Gardens, 18th near Valencia, 15th and Mission, 20th and Folsom, Army Street,
+  Golden Gate Avenue, O'Farrell and Gough, Eddy and Gough, Sutter near
+  Divisadero, Third and Market, the Golden Gate Park bandstand, Eighth and
+  Brannan, Sutro Heights, the Cliff House, Sutro Baths, 48th and Point Lobos,
+  the Sutro Depot, the Battery Street warehouse, the Montgomery Street offices,
+  22nd near Howard, Turk Street, 12th and Folsom, Sutter Street, 2nd between
+  Howard and Folsom, Hayes and Shrader, Fulton and Parker — and one, the
+  Deutsches Altenheim, is in Oakland)
+- **Coverage:** volumes 29 no. 2, 30 no. 1 and 31 no. 1 read in full. Volumes
+  30 no. 2, 31 no. 2 and 32 no. 1 are untouched.
 
 ## local-news — Neighborhood news (secondary)
 

@@ -23,7 +23,8 @@ documented so far:
 - [Union Square](union-square/) — the retail blocks at the top of Market Street
 - [South of Market](south-of-market/) — the wide blocks west of Fourth Street
 - [Chinatown](chinatown/) — the Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District
-- [Tenderloin](tenderloin/) — the Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882, and two Mason Street supportive-housing buildings with facade art
+- [Tenderloin](tenderloin/) — the Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882; California Hall on Polk Street, built in 1912 as the German House; and two Mason Street supportive-housing buildings with facade art
+- [Lakeshore](lakeshore/) — the corner of the city around Lake Merced; the San Francisco State University parcel that housed the Sutro Library from 1982 to 2012
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

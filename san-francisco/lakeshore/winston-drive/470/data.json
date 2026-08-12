@@ -1,0 +1,123 @@
+{
+  "address": "470–480 Winston Drive, San Francisco, CA 94132",
+  "address_range": "470–480",
+  "path": "/san-francisco/lakeshore/winston-drive/470/",
+  "hook": "The Sutro Library's home from 1982 to 2012; the assessor's roll records no building on the parcel in any year.",
+  "apn": "7298008",
+  "block": "7298",
+  "lot": "008",
+  "coordinates": {
+    "lat": 37.728550,
+    "lng": -122.480405
+  },
+  "building_type": "institutional",
+  "parcel": {
+    "year_built": null,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "units": 0,
+    "stories": 0,
+    "lot_area_sqft": 280125,
+    "building_area_sqft": 0,
+    "zoning": "P",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Stonestown",
+    "analysis_neighborhood": "Lakeshore",
+    "assessor_property_location": "0480 0470 WINSTON DR",
+    "note": "Institutional addresses are usually deferred on this site; this page exists because the address was named in the prompting source. The parcel carries two EAS addresses, 470 and 480 Winston Drive, and the page is filed under the lower.",
+    "roll_anomaly": "The roll classifies this parcel as a vacant lot with no building area, no year built and no assessed value in every year from 2007 through 2025 — including the years the Sutro Library was open at 480 Winston Drive. On state-owned land exempt from the secured roll, the classification records the exemption rather than what stands on the ground, so the roll cannot say whether a building is there now."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 0,
+    "assessed_improvement_value": 0,
+    "note": "The roll reports no assessed land or improvement value for this parcel, so no split is charted."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "designated_landmark": false,
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": null,
+    "note": "The parcel's coordinates fall inside no historic district.",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2002–2008",
+    "shown_on_page": 0,
+    "note": "The two filings DBI holds for this parcel are street-space permits, one under each street number, and are not shown."
+  },
+  "historical_record": [
+    {
+      "date": "2012",
+      "kind": "site history",
+      "summary": "Collection moves to the main campus",
+      "description": "The Sutro Library's collection moved out to the J. Paul Leonard Library on the university's main campus, which was completed in July 2012.",
+      "source": "argonaut-vol31-no1-summer2020-huber"
+    },
+    {
+      "date": "1982–2012",
+      "kind": "site history",
+      "summary": "Sutro Library tenure",
+      "description": "Inadequate environmental controls in the building caused mold problems in the collection.",
+      "source": "argonaut-vol31-no1-summer2020-huber"
+    },
+    {
+      "date": "1982",
+      "kind": "site history",
+      "summary": "Sutro Library moves here",
+      "description": "The Sutro Library moved to Winston Drive, into two older buildings cobbled together, and was dedicated as its new home.",
+      "source": "argonaut-vol31-no1-summer2020-huber"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?parcel_number=7298008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, and every roll year from 2007)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7298008&$order=closed_roll_year%20DESC",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "query": "https://data.sfgov.org/resource/acdm-wktn.json?blklot=7298008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7298&lot=008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7298008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20'POINT(-122.48066801749181%2037.72840556645014)')",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "argonaut-vol31-no1-summer2020-huber",
+      "name": "William R. Huber, “Sutro's San Francisco—What's Left?,” The Argonaut: Journal of the San Francisco Historical Society, vol. 31, no. 1 (Summer 2020), pp. 52–71",
+      "retrieved": "2026-08-11"
+    }
+  ]
+}
