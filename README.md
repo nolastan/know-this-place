@@ -61,13 +61,17 @@ shared/
   AGENTS.md                   The HTML page contract + design system
   site.css                    The only stylesheet (component library)
   site.js                     Enhancement layer (progressive web components)
-  site-config.json            Site URL, repo URL, Maps embed key
+  site-config.json            Site URL, repo URL, Maps embed key,
+                              Mapbox token
+  addresses.geojson           Derived index of every address + its
+                              coordinates — the homepage map's dots
 scripts/
   seed_pages.py               Writes the first draft of pages that don't
                               exist yet, from the DataSF APIs
   permit_redactions.json      Names stripped from permit text before it's saved
   validate.py                 CI contract checks (stdlib only)
   build_sitemap.py            Regenerates sitemap.xml
+  build_map_index.py          Regenerates shared/addresses.geojson
 .github/
   ISSUE_TEMPLATE/page-feedback.yml
   workflows/{feedback-agent,refresh,validate}.yml
@@ -87,6 +91,9 @@ scripts/
 - [ ] Branch protection on `main`: require PR review (you)
 - [ ] Create a Google Maps **Embed API** key, referrer-locked to `knowthis.place`,
       and put it in `shared/site-config.json`
+- [ ] Create a Mapbox **public token** (`pk.…`) for the homepage map, URL-restricted
+      to `knowthis.place` and `http://localhost:8517`, and put it in
+      `shared/site-config.json` as `mapbox_token`
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
 
@@ -97,6 +104,7 @@ python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
 python3 scripts/build_sitemap.py
+python3 scripts/build_map_index.py
 python3 scripts/validate.py
 ```
 

@@ -62,8 +62,9 @@ jobs:
 
                This adds pages that don't exist and touches nothing that does.
                The Castro is "Castro/Upper Market" / san-francisco / castro.
-            4. Run `python3 scripts/validate.py` and
-               `python3 scripts/build_sitemap.py`.
+            4. Run `python3 scripts/build_sitemap.py`,
+               `python3 scripts/build_map_index.py` and
+               `python3 scripts/validate.py`.
             5. Read `git diff` and confirm each change is real data movement.
             6. If any page changed: create branch refresh/<today's date>,
                commit, push, and open a single PR listing every page updated

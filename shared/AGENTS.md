@@ -48,6 +48,12 @@ or changing a component is a human decision (see "Extending the system").
   all are the Street View iframe (on click) and the analytics script — both
   requested by `site.js`, never written into a page. Don't add a third without
   a human's say-so, and never as a tag in `index.html`.
+- **The site's homepage (`/index.html`) is the one exception to the three rules
+  above**, by explicit human decision: it is a map, not a content page, so it
+  carries its own `<style>`, its own `<script>`, and Mapbox GL JS. `validate.py`
+  skips the stray-script check for that one file. **This is not a precedent.**
+  Nothing under `san-francisco/` may do the same — a page whose facts render
+  only in JS is invisible to search, which is the whole point of the rules.
 - Use the pre-validated data hues as documented — never introduce new colors.
 - **Text never wears a data color.** Bars/segments carry the hue; labels and
   values use normal ink. (Identity comes from the swatch beside the text.)
