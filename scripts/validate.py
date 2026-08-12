@@ -6,6 +6,7 @@ minimal shared contract described in shared/AGENTS.md. Stdlib only.
 
 Run from anywhere: python3 scripts/validate.py
 """
+import html
 import json
 import re
 import sys
@@ -105,6 +106,115 @@ def check_address_dir(page_dir: Path) -> None:
     check_narrative(data_path, data)
 
 
+def hub_md_items(text: str) -> dict:
+    """href -> hook text for each '- [label](href) — hook' bullet in a hub's index.md.
+
+    A bullet's hook may wrap onto indented continuation lines; those are
+    folded back into one string so they compare against index.html's
+    single-line rendering of the same hook.
+    """
+    items: dict = {}
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        m = re.match(r"^- \[[^\]]+\]\(([^)]+)\)\s+—\s+(.+)$", lines[i])
+        if not m:
+            i += 1
+            continue
+        href, hook = m.group(1), [m.group(2).strip()]
+        i += 1
+        while i < len(lines) and lines[i].strip() and not re.match(r"^(#|- )", lines[i]):
+            hook.append(lines[i].strip())
+            i += 1
+        items[href] = " ".join(hook)
+    return items
+
+
+def hub_html_items(text: str) -> dict:
+    """href -> hook text for each hub list <li> in index.html."""
+    return {m.group(1): html.unescape(re.sub(r"\s+", " ", m.group(2))).strip()
+            for m in re.finditer(
+                r'<a href="([^"]+)">[^<]*</a><br>\s*<span class="hook">(.+?)</span>',
+                text, re.S)}
+
+
+def street_hub_hook_overrides(dir_path: Path) -> dict:
+    """slug -> data.json["hook"], for each child address page that has one set by hand.
+
+    Only *explicit* overrides are collected — `hook_for`'s computed default
+    (used when a page has no "hook" key) is deliberately not reproduced here.
+    That default has changed before as `building_type` grew new cases (see its
+    "residential" fallback history) and will again; a hub snapshot made before
+    such a change is expected to read differently from a fresh one — that's
+    the same "fixed by hand on affected pages, not retroactively" rule
+    AGENTS.md states for address pages, applied to hubs. An explicit hook
+    override is different: a human wrote it as this building's one true line,
+    so every rendering of it must agree.
+
+    A directory with at least one data.json child is a street hub; one with
+    none (a neighborhood or city hub, whose children are street/neighborhood
+    dirs with no data.json of their own) is not.
+    """
+    out = {}
+    for d in sorted(dir_path.iterdir()):
+        data_path = d / "data.json"
+        if not (d.is_dir() and data_path.exists()):
+            continue
+        try:
+            rec = json.loads(data_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue  # invalid JSON is reported by the page's own checks
+        if rec.get("hook"):
+            out[d.name] = rec["hook"]
+    return out
+
+
+def check_hub_sync(dir_path: Path) -> None:
+    """A hub page's index.md and index.html must show the same list.
+
+    `write_street_hub` / `write_neighborhood_hub` generate both files from the
+    same data in one pass, so a fresh rebuild always agrees — divergence means
+    a hand edit landed in only one file. index.md is the source of truth
+    (AGENTS.md: a hub's "prose lives in its index.md"); the fix is always to
+    edit index.md and regenerate index.html from it (`seed_pages.py hubs`),
+    never the reverse.
+
+    A street hub's list has one deeper anchor beyond that: AGENTS.md also
+    says the list "is generated from those pages' data.json, each
+    contributing its own hook line", and a hand-written data.json["hook"]
+    "always wins over a generated one" (`seed_pages.hook_for`). So where a
+    child page has an explicit hook override, both files must match *that*,
+    not just each other — see `street_hub_hook_overrides`.
+    """
+    md_path, html_path = dir_path / "index.md", dir_path / "index.html"
+    if not (md_path.exists() and html_path.exists()):
+        return
+    md_items = hub_md_items(md_path.read_text(encoding="utf-8"))
+    html_items = hub_html_items(html_path.read_text(encoding="utf-8"))
+    if not md_items and not html_items:
+        return
+
+    overrides = street_hub_hook_overrides(dir_path)
+    for href in sorted(set(md_items) | set(html_items)):
+        md_hook, html_hook = md_items.get(href), html_items.get(href)
+        override = overrides.get(href.rstrip("/"))
+        if md_hook is None:
+            err(html_path, f"'{href}' appears in index.html but not index.md — "
+                           f"index.md is the source of truth; add it there")
+        elif html_hook is None:
+            err(html_path, f"'{href}' is in index.md but missing from index.html — "
+                           f"regenerate with scripts/seed_pages.py hubs")
+        elif md_hook != html_hook:
+            err(html_path, f"'{href}' hook differs between index.md and index.html "
+                           f"— index.md is the source of truth; fix it there and "
+                           f"regenerate index.html with scripts/seed_pages.py hubs")
+        elif override and md_hook != override:
+            err(md_path, f"'{href}' hook (\"{md_hook}\") doesn't match "
+                         f"{href}data.json's hand-written \"hook\" (\"{override}\") — "
+                         f"that override is the source of truth for this entry; "
+                         f"regenerate with scripts/seed_pages.py hubs")
+
+
 def check_narrative(data_path: Path, data: dict) -> None:
     """Light shape check for the narrative field (all prose lives here)."""
     narrative = data.get("narrative")
@@ -135,6 +245,14 @@ def main() -> int:
         check_html(html_path, is_address)
         if is_address:
             check_address_dir(html_path.parent)
+        elif html_path.parent != content:
+            # The city-level index (san-francisco/index.md) has no generator
+            # counterpart — write_neighborhood_hub/write_street_hub only cover
+            # neighborhood and street hubs — so there is no "regenerate
+            # index.html from index.md" fix to point someone at here. It's
+            # hand-authored prose in both files; keeping them in sync is a
+            # content edit, not a build-contract check.
+            check_hub_sync(html_path.parent)
 
     # Every page should be reachable through the sitemap once one exists.
     sitemap = ROOT / "sitemap.xml"

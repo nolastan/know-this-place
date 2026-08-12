@@ -23,16 +23,16 @@ the street rebuilding of the 1920s.
 
 ## Buildings documented so far
 
-- [4 Mars Street](4/) — 1907, standing intact as built in a photograph of about 1921
-- [11–23 Mars Street](11/) — moved here from Falcon Street
-- [32 Mars Street](32/) — 1925, on a lot open in 1921
-- [33–37 Mars Street](33/) — three units, greatly altered since 1921
-- [41–43 Mars Street](41/) — an assessor date of 1890, in a photograph of about 1921
-- [46–48 Mars Street](46/) — with a rear cottage, in photographs of 1895 and 1906
-- [52 Mars Street](52/) — in photographs of 1895, 1906 and 1912
-- [56 Mars Street](56/) — assessed by Planning as not a historical resource
-- [64 Mars Street](64/) — built between 1906 and 1912
-- [75 Mars Street](75/) — rebuilt from 2010, beside Shiloh's Way
+- [4 Mars Street](4/) — A one-storey house of 1907, recorded as standing intact as built in a photograph of about 1921.
+- [11–23 Mars Street](11/) — Moved here from Falcon Street, a street the Market Street extension erased; its lot is still empty in 1921.
+- [32 Mars Street](32/) — Built in 1925 on a lot photographs show open four years earlier.
+- [33–37 Mars Street](33/) — Three units on one parcel, standing in 1921 and greatly altered since.
+- [41–43 Mars Street](41/) — A two-unit building the assessor dates to 1890, in a photograph of about 1921.
+- [46–48 Mars Street](46/) — A house with a rear cottage, in photographs of 1895 and 1906.
+- [52 Mars Street](52/) — Photographed in 1895, 1906 and 1912, and greatly altered after the street was rebuilt.
+- [56 Mars Street](56/) — In photographs of 1895, 1906 and 1912; assessed by Planning and found not to be a historical resource.
+- [64 Mars Street](64/) — Built between the April 1906 photograph, where it is absent, and the 1912 one, where it appears.
+- [75 Mars Street](75/) — Rebuilt and enlarged from 2010, beside the public stair called Shiloh's Way.
 
 ## Sources
 

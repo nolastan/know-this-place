@@ -190,6 +190,10 @@ refresh of stale data. The seeder has no part in this:
    in `data.json` — that is where a hub gets it — then rebuild the hubs with
    `python3 scripts/seed_pages.py hubs --city <city> --area <area>`. Rebuilding
    keeps each hub's hand-written intro paragraph; only the list is regenerated.
+   A street hub that has grown its own sections beyond that lead+list template
+   (a "Sources" section, a "The street itself" write-up) is left untouched
+   entirely — the command reports it as skipped rather than clobbering it, and
+   its list has to be updated by hand from then on.
 6. If pages were added or removed, run `python3 scripts/build_sitemap.py`
    and `python3 scripts/build_map_index.py` (the sitemap and the homepage
    map are both derived indexes; `validate.py` fails until both are current).
