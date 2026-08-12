@@ -1,0 +1,98 @@
+{
+  "address": "1524 Newcomb Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/newcomb-avenue/1524/",
+  "apn": "5307006",
+  "block": "5307",
+  "lot": "006",
+  "eas_baseid": "375164",
+  "coordinates": {
+    "lat": 37.734599,
+    "lng": -122.388131
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 920,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1524 NEWCOMB             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 116582,
+    "assessed_improvement_value": 49960,
+    "last_sale_date": "2011-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9310920S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-06-29",
+      "status_date": "1994-09-24",
+      "estimated_cost": 12000,
+      "revised_cost": 20900,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NEWCOMB&street_type=AVE&address_number=1524",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5307006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5307&lot=006",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5307006",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "after 1906",
+      "kind": "site history",
+      "description": "Possibly a 1906 earthquake refugee cottage, one of four such candidates in the Town Center. Refugees hauled the temporary Red Cross shacks out to cheap lots in the outlying districts and weatherproofed, enlarged and re-fenestrated them, leaving the footprint and gable-roof profile as the only surface clues; confirming one takes physical investigation, which has not been done here.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

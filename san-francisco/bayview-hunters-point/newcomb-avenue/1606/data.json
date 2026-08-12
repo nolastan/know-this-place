@@ -1,0 +1,126 @@
+{
+  "address": "1606 Newcomb Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/newcomb-avenue/1606/",
+  "apn": "5306002B",
+  "block": "5306",
+  "lot": "002B",
+  "eas_baseid": "375132",
+  "coordinates": {
+    "lat": 37.73555,
+    "lng": -122.389885
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 2050,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1606 NEWCOMB             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 19603,
+    "assessed_improvement_value": 11052
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "ST. PETER MISSIONARY BAPTIST CHURCH",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508059580",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-08-05",
+      "status_date": "2006-12-28",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "shoring required for new construction at 4601-3rd street. appl 200306247810.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816166",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-17",
+      "status_date": "1999-09-30",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NEWCOMB&street_type=AVE&address_number=1606",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5306002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5306&lot=002B",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5306002B",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1606 Newcomb Avenue",
+        "apn_as_surveyed": "5306002B",
+        "description": "St. Peters Missionary Baptist Church",
+        "cr_status_code": "6Z"
+      }
+    ],
+    "cr_status_code": "6Z",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "here_today": "Listed",
+      "carey_and_company_rating": "6"
+    }
+  },
+  "historical_record": [
+    {
+      "date": "1968",
+      "kind": "site history",
+      "description": "Here Today, the 1968 San Francisco Junior League survey, recorded a Baptist Mission at this address, and notes it as demolished. The 2010 survey records St. Peters Missionary Baptist Church here.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

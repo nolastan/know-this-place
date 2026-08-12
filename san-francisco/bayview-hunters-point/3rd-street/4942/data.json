@@ -1,0 +1,138 @@
+{
+  "address": "4942 Third Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/4942/",
+  "apn": "5327008",
+  "block": "5327",
+  "lot": "008",
+  "eas_baseid": "375713",
+  "coordinates": {
+    "lat": 37.733529,
+    "lng": -122.391469
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 2,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2208,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 4942 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 125962,
+    "assessed_improvement_value": 125962
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201510169899",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-16",
+      "status_date": "2016-03-31",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with dbi nov # 201495811 to correct dbi record to reflect ground floor commercial w/one residential on 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410158904",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-15",
+      "status_date": "2014-10-17",
+      "estimated_cost": 9560,
+      "revised_cost": 9560,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517006",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-12",
+      "status_date": "1996-11-01",
+      "estimated_cost": 975,
+      "description": "install fire suppression system into hood & duct",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512057",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-08-01",
+      "status_date": "1996-11-01",
+      "estimated_cost": 3000,
+      "revised_cost": 10000,
+      "description": "ktchn hood system,future tenant work to address handicap acc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=4942",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5327008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5327&lot=008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5327008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "4942 3rd Street",
+        "apn_as_surveyed": "5327008",
+        "description": "1-story commercial building",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "carey_and_company_rating": "4"
+    }
+  }
+}

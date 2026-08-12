@@ -1,0 +1,108 @@
+{
+  "address": "1–15 Latona Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/latona-street/1/",
+  "apn": "5358024",
+  "block": "5358",
+  "lot": "024",
+  "eas_baseid": "376920",
+  "coordinates": {
+    "lat": 37.732264,
+    "lng": -122.392211
+  },
+  "address_range": "1–15",
+  "street_numbers_on_parcel": [
+    "1",
+    "15"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 4996,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0015 0001 LATONA              ST0000",
+    "note": "The assessor dates the building 1900; the 2010 survey dates it 1871. Most pre-1906 buildings in the district carry a default assessor date of 1900, because the city's building records were destroyed in the 1906 earthquake and fire."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 80368,
+    "assessed_improvement_value": 85224
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200406287453",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-06-28",
+      "status_date": "2005-07-28",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2004–2008",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LATONA&street_type=ST&address_number=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5358024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5358&lot=024",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5358024",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "hook": "Built in 1871 as the South San Francisco Methodist Episcopal Church, and a church under several denominations since.",
+  "historical_record": [
+    {
+      "date": "1871",
+      "kind": "construction",
+      "description": "Built by the neighbourhood's Protestants as the South San Francisco Methodist Episcopal Church. The Presbyterians later bought it — it is the “neat edifice in which the Presbyterians worship” of an 1888 Morning Call account of the district — and it has been owned by several denominations since. It stands with minimal alterations, as Pearlgate Tabernacle Church.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "address": "1708 La Salle Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/la-salle-avenue/1708/",
+  "apn": "5290005",
+  "block": "5290",
+  "lot": "005",
+  "eas_baseid": "374884",
+  "coordinates": {
+    "lat": 37.737933,
+    "lng": -122.390676
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 940,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1708 LA SALLE            AV0000",
+    "note": "The assessor dates the building 1900; the 2010 survey dates it about 1885. Most pre-1906 buildings in the district carry a default assessor date of 1900, because the city's building records were destroyed in the 1906 earthquake and fire."
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 17525,
+    "assessed_improvement_value": 10594
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LA%20SALLE&street_type=AVE&address_number=1708",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5290005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5290&lot=005",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5290005",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1708 La Salle Avenue",
+        "apn_as_surveyed": "5290005",
+        "description": "Pelton cottage",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "survey_1976_rating": "1",
+      "carey_and_company_rating": "5"
+    }
+  },
+  "historical_record": [
+    {
+      "date": "circa 1885",
+      "kind": "construction",
+      "description": "Built as a Pelton cottage — the type named for the San Francisco architect who published free plans for cheap dwellings in the San Francisco Bulletin between 1881 and 1883, and built here in numbers by speculators on the west side of Third Street. It is a well-preserved example; the only significant alterations are a partially below-grade garage and aluminium sliders in place of the wood double-hung windows.",
+      "source": "bvhp-area-b-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "address": "5130 Third Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/5130/",
+  "apn": "5358008",
+  "block": "5358",
+  "lot": "008",
+  "eas_baseid": "376905",
+  "coordinates": {
+    "lat": 37.731864,
+    "lng": -122.392031
+  },
+  "parcel": {
+    "year_built": 1947,
+    "stories": 1,
+    "rooms": 3,
+    "lot_area_sqft": 1738,
+    "building_area_sqft": 1950,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "5132 5130 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 186808,
+    "last_sale_date": "1997-12-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311080420",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-11-08",
+      "status_date": "2026-02-20",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "to comply with accessuble business entrance program per ordinance 51-16. automatic door opener. abe# 201906145863.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103111931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-11",
+      "status_date": "2011-08-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "obtain final inspection for work approved under pa# 8802190. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123190",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-06",
+      "status_date": "1992-04-09",
+      "estimated_cost": 600,
+      "description": "replace damaged sheetrock 32 sq. ft. repair stairs to mezz.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105106",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-28",
+      "status_date": "1991-04-18",
+      "estimated_cost": 2500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802190",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-02-23",
+      "status_date": "1988-09-30",
+      "estimated_cost": 12000,
+      "description": "rebuilt pit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=5130",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5358008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5358&lot=008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5358008",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "5130-32 3rd Street",
+        "apn_as_surveyed": "5358008",
+        "description": "1-story commercial building",
+        "cr_status_code": "6L"
+      }
+    ],
+    "cr_status_code": "6L",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement",
+    "prior_surveys": {
+      "carey_and_company_rating": "5"
+    }
+  }
+}

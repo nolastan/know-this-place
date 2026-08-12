@@ -1,0 +1,135 @@
+{
+  "address": "1737 Mckinnon Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/mckinnon-avenue/1737/",
+  "apn": "5305034",
+  "block": "5305",
+  "lot": "034",
+  "eas_baseid": "375115",
+  "coordinates": {
+    "lat": 37.73736,
+    "lng": -122.39241
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1660,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1737 MCKINNON            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 23997,
+    "assessed_improvement_value": 15676
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411124834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-12",
+      "status_date": "2026-06-04",
+      "estimated_cost": 30000,
+      "revised_cost": 129056,
+      "description": "remodel (e) ktichen & bathroom. paint inside. add a new bathroom on 2/f. upgrade electrical panel and wiring. remodel (e) bathroom on first floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101122524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-12",
+      "status_date": "2021-02-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408399",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-06-13",
+      "status_date": "1995-02-06",
+      "estimated_cost": 6300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011657",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-13",
+      "status_date": "1990-08-17",
+      "estimated_cost": 4463,
+      "description": "vinyl siding alside to front and rear gables only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCKINNON&street_type=AVE&address_number=1737",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5305034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5305&lot=034",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5305034",
+      "retrieved": "2026-08-11"
+    },
+    {
+      "id": "bvhp-area-b-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-11"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+    "table": "Appendix A, Table 1",
+    "entries": [
+      {
+        "address_as_surveyed": "1737 Mckinnon Avenue",
+        "apn_as_surveyed": "5305034",
+        "description": "Queen Anne dwelling",
+        "cr_status_code": "3CS"
+      }
+    ],
+    "cr_status_code": "3CS",
+    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+    "source": "bvhp-area-b-context-statement"
+  }
+}
