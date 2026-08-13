@@ -1,0 +1,107 @@
+{
+  "address": "184 Corbett Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/corbett-avenue/184/",
+  "apn": "2652023",
+  "block": "2652",
+  "lot": "023",
+  "eas_baseid": "343375",
+  "coordinates": {
+    "lat": 37.761872,
+    "lng": -122.442403
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1562.5,
+    "building_area_sqft": 945,
+    "lot_depth_ft": 62.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0184 CORBETT             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 158479,
+    "assessed_improvement_value": 126772
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110019654",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-01",
+      "status_date": "2021-11-08",
+      "estimated_cost": 1,
+      "revised_cost": 8000,
+      "description": "revision to pa 202103297461. replace in-kind rear yard retaining walls. reduction in upper retaining wall height from 12'-0\" to 7'-0\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103297461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-29",
+      "status_date": "2021-11-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replacement of retaining walls at north side of lot.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CORBETT&street_type=AVE&address_number=184",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2652023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2652&lot=023",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2652023",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "style": "Streamlined Moderne",
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement"
+  }
+}

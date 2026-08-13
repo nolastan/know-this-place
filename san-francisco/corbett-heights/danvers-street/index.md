@@ -18,8 +18,10 @@ and most of the buildings around them.
 
 ## Buildings documented so far
 
+- [19 Danvers Street](19/) — A 1900 two-flat.
 - [56–58 Danvers Street](56/) — Standing as built since before 1909, when it was photographed beside Falcon Street.
 - [60–62 Danvers Street](60/) — A 1961 building on ground that carried part of Horner's grocery and saloon.
+- [221 Danvers Street](221/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2006.
 
 ## Sources
 

@@ -23,6 +23,7 @@ Every residential parcel on Douglass Street that the city's address, assessor an
 - [70](70/) — A 2009 single-family house, with a rear addition permitted in 2007.
 - [74](74/) — A 1900 two-flat, with a rear addition permitted in 2000.
 - [75–77](75/) — A 1900 two-flat, with reroofing permitted in 1998.
+- [78](78/) — A 1919 building.
 - [80](80/) — A 1910 two-flat, with reroofing permitted in 2001.
 - [109](109/) — An 1895 4-unit apartment building, with reroofing permitted in 2018.
 - [114](114/) — A 1900 single-family house, with stair work permitted in 1998.
@@ -67,11 +68,14 @@ Every residential parcel on Douglass Street that the city's address, assessor an
 - [301–307](301/) — A 1923 4-unit apartment building, with a kitchen remodel permitted in 2021.
 - [311](311/) — A 1918 single-family house, with a kitchen remodel permitted in 2026.
 - [321](321/) — A 1900 single-family house, with reroofing permitted in 2023.
+- [328–330](328/) — A 1913 flats building, with a kitchen and bathroom remodel permitted in 2018.
 - [331–333](331/) — A 1907 2-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
 - [337](337/) — A 1908 single-family house, with an addition permitted in 2019.
 - [341](341/) — A 1904 single-family house, with reroofing permitted in 1995.
 - [353](353/) — A 1908 two-flat, with reroofing permitted in 1994.
+- [354](354/) — A 1913 single-family house, with an addition permitted in 2022.
 - [355](355/) — A 1916 single-family house, with garage work permitted in 2018.
+- [356–358](356/) — A 1915 three-flat, with a kitchen and bathroom remodel permitted in 2014.
 - [359](359/) — A 1906 single-family house, with a rear addition permitted in 2026.
 - [363](363/) — A 1907 single-family house, with a seismic retrofit permitted in 2025.
 - [365](365/) — A 2009 single-family house, with dry-rot repair permitted in 2016.
@@ -79,6 +83,7 @@ Every residential parcel on Douglass Street that the city's address, assessor an
 - [375–379](375/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2020.
 - [381](381/) — A 1914 single-family house, with a rear addition permitted in 1998.
 - [393–395](393/) — A 1957 single-family house, with a vertical addition permitted in 2007.
+- [400–402](400/) — A 1941 two-flat, with reroofing permitted in 1997.
 - [401–409](401/) — A 1947 6-unit apartment building, with reroofing permitted in 2004.
 - [411](411/) — A 1900 single-family house, with a vertical addition permitted in 2018.
 - [413](413/) — A 1900 single-family house, with reroofing permitted in 1995.
@@ -100,10 +105,6 @@ Every residential parcel on Douglass Street that the city's address, assessor an
 - [485](485/) — A 1932 single-family house, with a kitchen and bathroom remodel permitted in 2014.
 - [489](489/) — A 1900 two-flat, with a rear addition permitted in 1997.
 - [495](495/) — A 1958 4-unit apartment building, with facade work permitted in 2003.
-
-## Not yet covered
-
-Also on this street: 17 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels; 8 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

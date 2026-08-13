@@ -1,0 +1,120 @@
+{
+  "address": "31 Ord Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/ord-street/31/",
+  "apn": "2625015A",
+  "block": "2625",
+  "lot": "015A",
+  "eas_baseid": "342599",
+  "coordinates": {
+    "lat": 37.763218,
+    "lng": -122.440029
+  },
+  "parcel": {
+    "year_built": 1902,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 1920,
+    "building_area_sqft": 3181,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0031 ORD                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1409737,
+    "assessed_improvement_value": 1225859,
+    "last_sale_date": "2014-04-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1902",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M36771",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-20",
+      "status_date": "2006-03-20",
+      "revised_cost": 0,
+      "description": "side walk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309503",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-07",
+      "status_date": "1994-06-16",
+      "estimated_cost": 70,
+      "description": "permit inspection renewal #9112354",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112354",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-07-15",
+      "status_date": "1993-07-02",
+      "estimated_cost": 6000,
+      "revised_cost": 8000,
+      "description": "convert living rm., & storage rm. to off street parking.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ORD&street_type=ST&address_number=31",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2625015A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2625&lot=015A",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2625015A",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "style": "gambrel roof",
+    "dcp_1976_survey": "Rated 1 of 5",
+    "apn_as_surveyed": "block 2625, lot 15A",
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement",
+    "address_as_surveyed": "29 Ord Street",
+    "note": "Listed among the properties the statement puts forward as meriting further study; it is a context statement rather than a survey, and says the list is conservative rather than exhaustive. The 1976 city architectural survey rated buildings 0 to 5, 5 highest, and was never adopted as a register of historic resources."
+  }
+}

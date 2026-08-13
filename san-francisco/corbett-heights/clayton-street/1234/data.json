@@ -1,0 +1,91 @@
+{
+  "address": "1234 Clayton Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/clayton-street/1234/",
+  "apn": "2655026",
+  "block": "2655",
+  "lot": "026",
+  "eas_baseid": "485155",
+  "coordinates": {
+    "lat": 37.761154,
+    "lng": -122.446244
+  },
+  "parcel": {
+    "lot_area_sqft": 7810,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 1234 CLAYTON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Auxiliary Water Supply System (Discontiguous)",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1908–1964",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAYTON&street_type=ST&address_number=1234",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2655026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2655&lot=026",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2655026",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44624350675363%2037.76115443485242)%27)",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "style": "AWSS tank & pumphouse",
+    "year_built_as_surveyed": 1912,
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement",
+    "note": "Listed among the properties the statement puts forward as meriting further study; it is a context statement rather than a survey, and says the list is conservative rather than exhaustive."
+  }
+}

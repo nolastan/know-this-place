@@ -28,6 +28,7 @@ documented so far:
 - [Lakeshore](lakeshore/) — the corner of the city around Lake Merced; the San Francisco State University parcel that housed the Sutro Library from 1982 to 2012
 - [Bayview Hunters Point](bayview-hunters-point/) — the south-eastern quarter, settled as the industrial suburb of South San Francisco; 190 buildings named in the 2010 Area B survey, from the Albion Brewery and the South San Francisco Opera House to the Pelton cottages off Third Street
 - [Dogpatch](dogpatch/) — the workers' blocks east of Interstate 280 that grew around the shipyards and iron works of Potrero Point; eight buildings named in the 2001 Central Waterfront survey
+- [Nob Hill](nob-hill/) — the ridge above Union Square; four buildings named in the 2017 Corbett Heights context statement as the work of architects who also built in that neighborhood
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

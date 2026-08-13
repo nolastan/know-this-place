@@ -9,6 +9,7 @@ Every residential parcel on Eagle Street that the city's address, assessor and p
 - [18](18/) — A 1913 single-family house, with a kitchen remodel permitted in 2019.
 - [20](20/) — A 1913 single-family house, with garage work permitted in 2024.
 - [26](26/) — A 1948 single-family house, with stair work permitted in 2021.
+- [32](32/) — A 1900 building, with stair work permitted in 2003.
 - [45](45/) — A 1908 single-family house, with window replacement permitted in 2018.
 - [46](46/) — A 1926 single-family house, with foundation work permitted in 2022.
 - [47](47/) — A 1908 single-family house, with a seismic retrofit permitted in 2001.
@@ -27,10 +28,6 @@ Every residential parcel on Eagle Street that the city's address, assessor and p
 - [140](140/) — A 1958 4-unit apartment building, with reroofing permitted in 1989.
 - [200](200/) — A 1932 single-family house, with a vertical addition permitted in 2008.
 - [210](210/) — A 1908 single-family house, with a kitchen remodel permitted in 1998.
-
-## Not yet covered
-
-Also on this street: 3 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -17,10 +17,7 @@ Every residential parcel on Yukon Street that the city's address, assessor and p
 - [104–106](104/) — A 1941 single-family house, with facade work permitted in 2017.
 - [112](112/) — A 1941 single-family house, with a seismic retrofit permitted in 2016.
 - [154–160](154/) — A 1908 5-unit apartment building, with a bathroom remodel permitted in 2021.
-
-## Not yet covered
-
-Also on this street: 4 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 parcels with no record in the assessor's roll.
+- [169](169/) — A 1910 single-family house, with foundation work permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

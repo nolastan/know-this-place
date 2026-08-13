@@ -154,6 +154,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [4616](4616/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2000.
 - [4631–4633](4631/) — A 1903 two-flat, with a kitchen remodel permitted in 2019.
 - [4632](4632/) — A 1915 4-unit apartment building, with reroofing permitted in 2007.
+- [4635–4637](4635/) — A 1908 1-unit flats building.
 - [4638–4640](4638/) — A 1902 2-unit tic building, with a rear addition permitted in 2009.
 - [4639–4641](4639/) — A 1908 two-flat, with foundation work permitted in 2016.
 - [4642](4642/) — An apartment building.
@@ -169,6 +170,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [4679](4679/) — A 1900 two-flat, with stair work permitted in 2023.
 - [4681](4681/) — A 1909 single-family house, with window replacement permitted in 2018.
 - [4682](4682/) — A 1917 single-family house, with foundation work permitted in 2005.
+- [4686](4686/) — A 1904 store building, with facade work permitted in 2004.
 - [4690–4696](4690/) — A 1910 6-unit building with a ground-floor store, with fire repair permitted in 1995.
 - [4717–4719](4717/) — A 1904 two-flat, with a kitchen and bathroom remodel permitted in 2014.
 - [4723–4725](4723/) — A 1904 flats building, with reroofing permitted in 2007.
@@ -181,10 +183,6 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [4773](4773/) — A 1908 single-family house, with deck work permitted in 2004.
 - [4779–4781](4779/) — A 1910 two-flat, with stair work permitted in 2021.
 - [4791](4791/) — A 1948 two-flat, with a rear addition permitted in 1991.
-
-## Not yet covered
-
-Also on this street: 28 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 19 non-residential parcels; 35 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -2353,7 +2353,19 @@ def cmd_seed_list(args) -> int:
             print(f"  no {roll_year} roll row for {e['apn']} "
                   f"({e['numbers'][0]} {e['street_display']}) — skipped", file=sys.stderr)
             continue
-        inv.append({**e, "roll": r, "status": "seedable", "permits": []})
+        row = {**e, "roll": r, "permits": []}
+        # A manifest states the parcel outright, which is the point of this
+        # command — but stating it is not evidence that it is a building. The
+        # same verdict `seed` applies has to run here too, or a condominium
+        # unit named in a report gets a page of its own, which AGENTS.md
+        # forbids.
+        row["status"] = classify(row)
+        if row["status"] != "seedable":
+            print(f"  {row['status']} for {e['apn']} "
+                  f"({e['numbers'][0]} {e['street_display']}) — skipped",
+                  file=sys.stderr)
+            continue
+        inv.append(row)
     attach_permits(inv, permits)
 
     written, skipped, elsewhere = 0, 0, 0

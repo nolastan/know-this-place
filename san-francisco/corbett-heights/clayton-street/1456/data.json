@@ -1,0 +1,128 @@
+{
+  "address": "1456 Clayton Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/clayton-street/1456/",
+  "apn": "2704046",
+  "block": "2704",
+  "lot": "046",
+  "eas_baseid": "344745",
+  "coordinates": {
+    "lat": 37.758633,
+    "lng": -122.445232
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1646,
+    "building_area_sqft": 1570,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 1456 CLAYTON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48942,
+    "assessed_improvement_value": 38780
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201210222587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-22",
+      "status_date": "2012-11-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa 200504150151; all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607146586",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-14",
+      "status_date": "2006-07-14",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair rotted balcony (less than 50% being replaced). same size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507056786",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-07-05",
+      "status_date": "2007-10-15",
+      "estimated_cost": 12000,
+      "revised_cost": 1,
+      "description": "comply nov 200559469.repair(e) plaster,interior work.install new fixtures&appliances.kitchen&bathrm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504150151",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-04-15",
+      "status_date": "2007-05-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "r/r plaster w/ drywall.dryrot repairr.install fixtures&appl in kitchen&bath.repl rear patio dr......",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAYTON&street_type=ST&address_number=1456",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2704046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2704&lot=046",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2704046",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement",
+    "note": "One of about a dozen surviving residences the statement identifies from the Simons-Fout quarry company's map of about 1911, built or moved here between 1906 and 1911 during the housing shortage that followed the earthquake."
+  }
+}

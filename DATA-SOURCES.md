@@ -832,6 +832,16 @@ a street number, which is the whole constraint:
     `central-waterfront-context-statement`. Listed on the SF Planning page as
     "Central Waterfront Survey and Context Statement (Adopted 2001)". See
     "The Central Waterfront statement" below.
+  - Michael R. Corbett, *Corbett Heights, San Francisco (Western Part of
+    Eureka Valley) Historic Context Statement*, prepared for Corbett Heights
+    Neighbors and funded by the Historic Preservation Fund Committee, adopted
+    by the Historic Preservation Commission 16 August 2017, Motion No. 0314,
+    Case No. 2015-006003SRV (261 pp.), source id
+    `corbett-heights-context-statement`. The PDF is served from
+    `default.sfplanning.org`, not the S3 archive:
+    `http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf`
+    (there is a May 2017 draft alongside it — take the FINAL). See "The
+    Corbett Heights statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -964,6 +974,63 @@ are present only as one-line cover sheets. What is actually in the file:
   - Street renamings are given in passing and are worth keeping: Kentucky
     Street became Third Street, Sierra Street became 22nd Street, and the
     east-west streets were numbered in the first years of the 20th century.
+**The Corbett Heights statement has three inventories and none of them is an
+appendix table of the usual kind.** The document is a narrative history with
+its address-level findings scattered across five places, and they disagree with
+each other often enough that the disagreements are half the yield:
+- **Section VI.B, "Potentially Significant Resources"** (pp. 188–189) — 48
+  addresses with an estimated date and a one-line style. The report says in the
+  same breath that it is *not a survey*, that the list is conservative rather
+  than exhaustive, and that omission from it means nothing. Every page that
+  carries a row from it says so.
+- **Appendix F reprints two earlier surveys.** The 1968 Junior League *Here
+  Today* listing (21 addresses with a one-line identifier) was adopted by the
+  Board of Supervisors under Resolution No. 268-70, so Planning counts those
+  buildings as individual historic resources — that is the one place in this
+  document with real regulatory weight. The 1976 Department of City Planning
+  architectural survey (74 rows) gives a block and lot, an address, and a
+  rating of 0–5 where a second number is a reviewer's revision; it was never
+  adopted. Appendix F also carries the two City Landmarks in the area,
+  No. 79 (Miller-Joost House, 3224 Market) and No. 80 (Nobby Clarke Mansion,
+  250 Douglass), both designated 7 December 1975.
+- **Two "Partial List of Buildings" tables** (pp. 78 and 142) are the best
+  thing in it — 23 buildings of 1860–1906 and 15 of 1906–1945 with a date and
+  a named architect, contractor or builder drawn from *California Architect and
+  Building News*, the historian Gary Goss's files and the 1900 census. **Their
+  owner column is dropped on the way in**, per the privacy rules; the
+  architects and contractors are kept.
+- **The rest is in figure captions.** Roughly forty more dates and styles
+  appear only under photographs, and several of them contradict the tables.
+- **Cautions:**
+  - **The 1976 block and lot are 1976's.** Nineteen of its 96 parcels no longer
+    exist in EAS, and several that do have been re-lotted so the old lot now
+    points at a different building: 2655/22 is printed "1262 Clayton" and
+    resolves to 1272; 2656/27 is printed "3090 Market" and resolves to 3088;
+    2654/8 is printed "48 Mars" and resolves to 52; 2625/18 is printed "2
+    Douglass" and resolves to 7 Ord. Match on the printed address, record the
+    printed block and lot beside it as `apn_as_surveyed`, and let a reader see
+    both.
+  - **It contradicts itself on dates.** 99 Ord Street is 1931 in the text and
+    1932 in the potentially-significant list; 312 Caselli is 1894 in a caption
+    and 1893 in the list; 64–68 Douglass is 1908 in a caption and 1909 in the
+    architects' table; 4789 Nineteenth is 1908 in the table and 1909 in the
+    text. Moody's candy factory is at 4655 Eighteenth in one passage and 4653
+    in another, and the Coffin row on Caselli is seven houses in the text and
+    eight in the builder's own advertisement. All of these are on the pages as
+    stated disagreements.
+  - **Its dates run ahead of the assessor's, and the roll's 1900 is a
+    placeholder.** Where the two disagree the page shows the roll in the
+    `Built …` tag and the report's date as `building.completed`, with the
+    conflict named in `.unknowns`.
+  - **Condominium conversion has eaten a lot of this area.** Fifteen of the
+    parcels the report names are now condominium APNs the roll gives 0 lot
+    area, so AGENTS.md holds them back — including three of the buildings the
+    1968 survey listed.
+  - **It names San Francisco addresses well outside the neighborhood**, as the
+    other work of the architects who built in it (the Chancellor Hotel, the
+    Native Sons Building, the James Lick Baths, the Chateau Tivoli) and as the
+    house of the man who subdivided it. Those are documented as building
+    credits on their own pages, not as anything the statement surveyed.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1020,6 +1087,49 @@ are present only as one-line cover sheets. What is actually in the file:
   VerPlanck's Dogpatch Historic Resource Survey are separate documents and are
   untouched, as are the Market & Octavia, Japantown and other adopted
   statements on the same SF Planning page.)
+- **Verified:** 2026-08-13 (Corbett Heights: read all 261 pages of the adopted
+  final. 226 distinct numbered San Francisco addresses are named — 216 in the
+  study area, across the five inventories and the figure captions, and 10
+  elsewhere in the city as architects' other work or Pioche's own house. 200 of
+  the 216 resolve in EAS, to 193 parcels. 174 pages now cite the document: 80
+  new and 94 edited, across `castro` (101), `corbett-heights` (63),
+  `nob-hill` (4, a new neighborhood directory with a hand-written hub),
+  `mission` (2) and one each in `chinatown`, `south-of-market`, `tenderloin`
+  and `western-addition`. Five of the edited pages are hand-authored HTML and
+  were edited by hand, as was the Danvers Street hub, which carries
+  hand-written sections the hub generator refuses to overwrite.
+  Not documented, and why: **29 are condominium parcels** the roll gives 0 lot
+  area, which AGENTS.md holds back — 4343 and 4378–4380 Seventeenth; 4515,
+  4547, 4569, 4627, 4655, 4658, 4666 and 4683 Eighteenth; 4594 Nineteenth; 18,
+  58, 246 and 248 Caselli; 4 Corwin; 64, 180 and 272 Douglass; 54 Lower
+  Terrace; 2805 and 3393 Market; 68 Saturn; 38 Yukon; 1366 Clayton; 218 and 238
+  Corbett; 25 Hattie; and 32 Eagle. Three of those (58 Caselli, 238 Corbett, 25
+  Hattie) are buildings the adopted 1968 survey listed, so the condominium rule
+  is holding back real historic resources here, not marginal ones. **Thirteen
+  are named at a number EAS has never had**: 100 Ord, 228 Douglass, 360
+  Caselli, 4513 Eighteenth, 201 Corbett, 111–123 Douglass (the California
+  Brewing Company site), 50 Yukon, 98 Levant, 98 Carson, 24 Mars, 4695
+  Eighteenth, 4228 Nineteenth and 1 Eagle. **Five more have an EAS row with no
+  parcel number**: 4502 Eighteenth, 29 Ord, 4547 and 4569 Eighteenth, and 67
+  Hattie. The first two are documented on the parcel their printed range or
+  1976 lot lands on (4500 Eighteenth and 31 Ord); the last three are not.
+  Three addresses printed as the report's own are documented under the number
+  EAS gives the parcel: 4365–4369 Seventeenth on the 166 Corbett Avenue page,
+  3064 Market on 3066 Market, and 4676–4680 Eighteenth on 4678. The addresses
+  the report itself
+  gives as historical — 2 and 103 and 427 Falcon Street, 3084 Merritt Street,
+  1018 Seventeenth Street (where 126–128 Ord stood before 1894) and 110 Ord —
+  are on streets the Market Street extension erased or numbers that no longer
+  exist, and were never candidates; 126 Museum Way, demolished about 2008, is
+  documented as site history on the parcel that carries the address today.
+  Seven rows of the 1860–1906 research table give a cross-street rather than a
+  number ("Hattie between Seventeenth and Eighteenth", "Ord and Seventeenth")
+  and stay unresolved. Coverage note: this document is read in full and nothing
+  in it is outstanding. The Corbett Heights Neighbors newsletter archive it
+  draws on is a separate source (`corbett-heights-neighbors`, pages 2–5 still
+  untouched), and the Eureka Valley, Duboce Triangle, Market & Octavia,
+  Japantown and other adopted statements on the same SF Planning page are
+  untouched.)
 
 ## Known gaps
 

@@ -1,0 +1,117 @@
+{
+  "address": "1412 Clayton Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/clayton-street/1412/",
+  "apn": "2704014",
+  "block": "2704",
+  "lot": "014",
+  "eas_baseid": "344735",
+  "coordinates": {
+    "lat": 37.758899,
+    "lng": -122.445644
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1232,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 1412 CLAYTON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38320,
+    "assessed_improvement_value": 31386
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905231523",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2019-05-23",
+      "status_date": "2019-05-23",
+      "estimated_cost": 200000,
+      "description": "proposed work to correc violations #201877053 & #200679731. (n) addition of 1460 sq ft (incl garage) @ backyard & including a proposed adu per ordinance 162-16",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504083153",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-08",
+      "status_date": "2015-04-16",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "to comply with nov 200679731 - remove wooden scaffold at rear of building - 4 storeys",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401307479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-30",
+      "status_date": "2014-08-21",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing - to comply with nov #201448314.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAYTON&street_type=ST&address_number=1412",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2704014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2704&lot=014",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2704014",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "style": "gabled cottage",
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement",
+    "note": "Listed among the properties the statement puts forward as meriting further study; it is a context statement rather than a survey, and says the list is conservative rather than exhaustive."
+  }
+}

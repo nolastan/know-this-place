@@ -5,6 +5,7 @@ Every residential parcel on Lower Terrace that the city's address, assessor and 
 ## Documented so far
 
 - [42–44](42/) — A 1967 two-flat, with reroofing permitted in 2017.
+- [54](54/) — A 1900 building, with a kitchen and bathroom remodel permitted in 2020.
 - [60](60/) — A 1999 single-family house, with a bathroom remodel permitted in 2017.
 - [101–103](101/) — A 1928 three-flat, with reroofing permitted in 1996.
 - [109–113](109/) — A 1973 3-unit apartment building, with deck work permitted in 2025.
@@ -29,10 +30,6 @@ Every residential parcel on Lower Terrace that the city's address, assessor and 
 - [180](180/) — A 1933 single-family house, with stair work permitted in 2015.
 - [185](185/) — A 1907 single-family house, with foundation work permitted in 2005.
 - [197](197/) — A 1924 single-family house, with a kitchen and bathroom remodel permitted in 2015.
-
-## Not yet covered
-
-Also on this street: 14 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels; 5 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

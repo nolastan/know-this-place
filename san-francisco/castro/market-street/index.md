@@ -121,10 +121,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [3412](3412/) — A 1904 single-family house, with reroofing permitted in 1995.
 - [3420](3420/) — A 1957 13-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
 - [3450](3450/) — A 1974 7-unit apartment building, with a seismic retrofit permitted in 2017.
-
-## Not yet covered
-
-Also on this street: 13 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 49 non-residential parcels; 19 parcels with no record in the assessor's roll.
+- [3565](3565/) — A 1940 single-family house, with a vertical addition permitted in 2001.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
