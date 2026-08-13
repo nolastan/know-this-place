@@ -1,0 +1,179 @@
+{
+  "address": "411 Brannan Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/brannan-street/411/",
+  "apn": "3787049",
+  "block": "3787",
+  "lot": "049",
+  "eas_baseid": "366582",
+  "coordinates": {
+    "lat": 37.779675,
+    "lng": -122.394425
+  },
+  "parcel": {
+    "year_built": 1938,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 4,
+    "lot_area_sqft": 2291,
+    "building_area_sqft": 4302,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0411 BRANNAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 91458,
+    "assessed_improvement_value": 162623
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406188780",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-18",
+      "status_date": "2014-10-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove antennas, cable tray, coax, mounts, and radio equipment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403059941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-05",
+      "status_date": "2014-04-01",
+      "estimated_cost": 52898,
+      "revised_cost": 52898,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407209265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-20",
+      "status_date": "2004-08-17",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "partition on upper floor, to clear nov 200450033",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106282580",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-06-28",
+      "status_date": "2002-03-20",
+      "estimated_cost": 65000,
+      "description": "one-stop:m.tjoe:build a telecom facility to include an equipment room on the 2nd fl & 2 18\"antennas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-09",
+      "status_date": "1998-10-29",
+      "estimated_cost": 2000,
+      "description": "install new awning across entire building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024137",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-11-21",
+      "status_date": "1991-04-05",
+      "estimated_cost": 2500,
+      "description": "minor mainteance patch sheet rock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005561",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-22",
+      "status_date": "1990-09-26",
+      "estimated_cost": 13835,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1990–2014",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRANNAN&street_type=ST&address_number=411",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&lot=049",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3787049",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-context-statement",
+      "name": "San Francisco Planning Department (Jonathan Lammers, project manager), Central SoMa Historic Context Statement & Historic Resource Survey, adopted by the Historic Preservation Commission on March 16, 2016 (Motion No. 0277)",
+      "query": "https://sfplanning.org/project/central-soma-historic-resources-survey",
+      "document": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/central_soma_hrs/HP_CentralSoma_Historic_Context_Statement_Draft.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Context Statement, adopted 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1938",
+      "kind": "site history",
+      "description": "An example of a Mediterranean Revival style commercial building of the 1937–1973 period.",
+      "source": "central-soma-context-statement"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

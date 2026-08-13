@@ -1,0 +1,117 @@
+{
+  "address": "90 Welsh Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/welsh-street/90/",
+  "apn": "3776049",
+  "block": "3776",
+  "lot": "049",
+  "eas_baseid": "366306",
+  "coordinates": {
+    "lat": 37.77951,
+    "lng": -122.397341
+  },
+  "parcel": {
+    "year_built": 1925,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2400,
+    "building_area_sqft": 4800,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0090 WELSH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353259,
+    "assessed_improvement_value": 197804,
+    "last_sale_date": "1990-04-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204122013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-12",
+      "status_date": "2022-05-12",
+      "estimated_cost": 500,
+      "revised_cost": 2500,
+      "description": "to comply with nov #201757402: to remove store front glass with doors installed behind extg roll up garage door. all work has been removed/no change or alterations to garage opening per ces/dbi site visit. no plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908088344",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-08-08",
+      "status_date": "2022-06-13",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "legalize storefront installed without permit to remove violation 201757402. change of use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801269650",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2018-01-26",
+      "status_date": "2019-08-08",
+      "estimated_cost": 6000,
+      "description": "to comply with nov201757402. to document the legalization of a storefront in an (e) commercial space. work was done by a previous tenant.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WELSH&street_type=ST&address_number=90",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&lot=049",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3776049",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "address": "907 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/907/",
+  "apn": "3760108",
+  "block": "3760",
+  "lot": "108",
+  "eas_baseid": "366107",
+  "coordinates": {
+    "lat": 37.778604,
+    "lng": -122.401974
+  },
+  "parcel": {
+    "year_built": 1929,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2625,
+    "lot_depth_ft": 87.5,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0909 0907 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66570,
+    "assessed_improvement_value": 233120
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202005137495",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-13",
+      "status_date": "2021-05-12",
+      "estimated_cost": 29800,
+      "revised_cost": 30000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609192644",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-09-19",
+      "status_date": "2006-09-19",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504497",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-29",
+      "status_date": "1995-10-12",
+      "estimated_cost": 11250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300803",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-01-20",
+      "status_date": "1993-08-19",
+      "estimated_cost": 4044,
+      "description": "seismic reinforcement of existing parapet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714964",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1987-10-19",
+      "status_date": "1988-02-04",
+      "estimated_cost": 2200,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=907",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3760108&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3760&lot=108",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3760108",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

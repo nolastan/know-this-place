@@ -1,0 +1,105 @@
+{
+  "address": "689 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/harrison-street/689/",
+  "apn": "3763093",
+  "block": "3763",
+  "lot": "093",
+  "eas_baseid": "366204",
+  "coordinates": {
+    "lat": 37.782646,
+    "lng": -122.396861
+  },
+  "parcel": {
+    "year_built": 1955,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3020,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0689 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1112145,
+    "assessed_improvement_value": 278035,
+    "last_sale_date": "2017-09-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9601163",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-01-23",
+      "status_date": "1997-06-18",
+      "estimated_cost": 12000,
+      "revised_cost": 30000,
+      "description": "underpinning per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604869",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-29",
+      "status_date": "1986-08-01",
+      "estimated_cost": 4500,
+      "description": "to remove existing windows facing shop area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=689",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=093",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763093",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

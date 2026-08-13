@@ -1,0 +1,182 @@
+{
+  "address": "677 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/harrison-street/677/",
+  "apn": "3763096",
+  "block": "3763",
+  "lot": "096",
+  "eas_baseid": "366207",
+  "coordinates": {
+    "lat": 37.78281,
+    "lng": -122.396653
+  },
+  "parcel": {
+    "year_built": 1945,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 3598,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0677 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63507,
+    "assessed_improvement_value": 65811
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1945",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200801293489",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-29",
+      "status_date": "2008-10-17",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "minor remodel to conference room on 1st floor. replacing north and east conference room walls with new walls. no lighting work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801142446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-14",
+      "status_date": "2008-03-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final inspection 200007276288, 200007256096, 200109057583 and 200011206149.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109057583",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-09-05",
+      "status_date": "2005-05-20",
+      "estimated_cost": 1,
+      "revised_cost": 2000,
+      "description": "ref. appl#200007256096 supplemental root framing details",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011206149",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-11-20",
+      "status_date": "2005-05-20",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "install office partitions & second bathroom re. to #2000077256096",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007276288",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-27",
+      "status_date": "2005-05-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "demolish (e)mezzanine & staircase in vacant space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007256096",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-07-25",
+      "status_date": "2005-05-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "install stair case from mezz to grnd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601165",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-01-23",
+      "status_date": "1997-11-12",
+      "estimated_cost": 12000,
+      "revised_cost": 24000,
+      "description": "underpinning per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-19",
+      "status_date": "1992-11-03",
+      "estimated_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205048S",
+      "type": "new construction",
+      "status": "filing",
+      "filed": "1982-06-22",
+      "status_date": "1982-06-22",
+      "estimated_cost": 4000000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=677",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=096",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763096",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "architect": "B. Joseph"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "umb_survey": true,
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

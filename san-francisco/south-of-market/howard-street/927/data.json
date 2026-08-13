@@ -1,0 +1,144 @@
+{
+  "address": "927 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/howard-street/927/",
+  "apn": "3732103",
+  "block": "3732",
+  "lot": "103",
+  "eas_baseid": "365512",
+  "coordinates": {
+    "lat": 37.780719,
+    "lng": -122.405395
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 5875,
+    "building_area_sqft": 6269,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "MUR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0931 0927 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1948390,
+    "assessed_improvement_value": 487093,
+    "last_sale_date": "2011-10-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107154397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-15",
+      "status_date": "2022-02-04",
+      "estimated_cost": 43000,
+      "revised_cost": 43000,
+      "description": "roofing - to comply with cool roof requirements per 2019 california energy code 141.0(b)2b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610165121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-16",
+      "status_date": "2006-12-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "renew pa# 200602104395.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602104395",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-10",
+      "status_date": "2006-02-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "to comply nov 200564860. install new partition walls and doors. provide new handicap estroom. replace front entrances door with new 3' and 2' fixed glazing window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002112",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-02-01",
+      "status_date": "1991-09-06",
+      "estimated_cost": 12000,
+      "description": "parapet reinforcing, concrete parapets around entire bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900231",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-01-09",
+      "status_date": "1989-07-28",
+      "estimated_cost": 750,
+      "description": "install (n) parking lot at rear of (e) bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1989–2021",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=927",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732103&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&lot=103",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3732103",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "heritage_rating": "C — of contextual importance",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

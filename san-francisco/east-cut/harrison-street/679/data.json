@@ -1,0 +1,121 @@
+{
+  "address": "679–681 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/harrison-street/679/",
+  "apn": "3763095",
+  "block": "3763",
+  "lot": "095",
+  "eas_baseid": "366206",
+  "coordinates": {
+    "lat": 37.782743,
+    "lng": -122.396738
+  },
+  "address_range": "679–681",
+  "street_numbers_on_parcel": [
+    "679",
+    "681"
+  ],
+  "parcel": {
+    "year_built": 1957,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0681 0679 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1112145,
+    "assessed_improvement_value": 278035,
+    "last_sale_date": "2017-09-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607305842",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-07-30",
+      "status_date": "2026-07-30",
+      "estimated_cost": 80000,
+      "revised_cost": 0,
+      "description": "existing office space to be converted into an aroma therapy spa. modify front door entry, to an accessible entry. provide accessible lift, new floor plan layout with partition walls & new accessible toilet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601166",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-01-23",
+      "status_date": "1997-11-12",
+      "estimated_cost": 12000,
+      "description": "underpinning per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213225",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-06",
+      "status_date": "1992-12-08",
+      "estimated_cost": 3000,
+      "revised_cost": 0,
+      "description": "non-struct partition alterations, existing doors relocation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=679",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763095&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=095",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763095",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

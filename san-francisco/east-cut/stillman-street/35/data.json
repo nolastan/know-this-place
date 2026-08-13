@@ -1,0 +1,145 @@
+{
+  "address": "35 Stillman Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/stillman-street/35/",
+  "apn": "3763032",
+  "block": "3763",
+  "lot": "032",
+  "eas_baseid": "366195",
+  "coordinates": {
+    "lat": 37.782745,
+    "lng": -122.394813
+  },
+  "parcel": {
+    "year_built": 1924,
+    "stories": 1,
+    "rooms": 16,
+    "bathrooms": 2,
+    "lot_area_sqft": 3637.5,
+    "building_area_sqft": 4912,
+    "lot_depth_ft": 75,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "B",
+    "zoning": "SSO",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0035 STILLMAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 219012,
+    "assessed_improvement_value": 338505
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411044353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-11-04",
+      "status_date": "2024-11-04",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "remove and replace broken waste waterline, sheetrock, lighting, acoustic tiles and carpeting, due to contaminated waste water.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512144927",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-12-14",
+      "status_date": "2016-01-04",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "remove non bearing sheetrock walls. ab-017. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304243087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-24",
+      "status_date": "2015-12-30",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "bassement columns replacement & slab repair revisison to 200102061477",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102061477",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-02-06",
+      "status_date": "2015-12-30",
+      "estimated_cost": 42000,
+      "revised_cost": 42000,
+      "description": "umb 'special procedure' full compliance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9201420",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-01-28",
+      "status_date": "1992-04-29",
+      "estimated_cost": 5000,
+      "description": "parapet reinforcing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1992–2024",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STILLMAN&street_type=ST&address_number=35",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=032",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763032",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "umb_survey": true,
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

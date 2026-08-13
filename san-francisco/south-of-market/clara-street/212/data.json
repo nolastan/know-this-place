@@ -1,0 +1,117 @@
+{
+  "address": "212 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/212/",
+  "apn": "3753058",
+  "block": "3753",
+  "lot": "058",
+  "eas_baseid": "365830",
+  "coordinates": {
+    "lat": 37.779272,
+    "lng": -122.402893
+  },
+  "parcel": {
+    "year_built": 1928,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3320,
+    "lot_depth_ft": 80,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant land- residential 15+ units",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0360 05TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2654274,
+    "last_sale_date": "2018-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Resource Review, Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810042327",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2018-10-04",
+      "status_date": "2019-04-19",
+      "estimated_cost": 3000,
+      "revised_cost": 22000,
+      "description": "to demolish 2 story office building. ** maher n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307492",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-05-06",
+      "status_date": "1994-08-22",
+      "estimated_cost": 500,
+      "description": "remove plumbing fixtures per puc request ground flooronly",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902211",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-02-09",
+      "status_date": "1989-06-14",
+      "estimated_cost": 3000,
+      "description": "add toilet, shower, lavitory, add 1 utility sink",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARA&street_type=ST&address_number=212",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=058",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753058",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "year_built_as_surveyed": "1924",
+    "note": "The survey dates the building 1924; the assessor's roll gives 1928.",
+    "source": "central-soma-survey"
+  }
+}

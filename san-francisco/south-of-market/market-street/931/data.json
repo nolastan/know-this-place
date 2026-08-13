@@ -1,0 +1,139 @@
+{
+  "address": "931 Market Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/market-street/931/",
+  "apn": "3704074",
+  "block": "3704",
+  "lot": "074",
+  "eas_baseid": "364756",
+  "coordinates": {
+    "lat": 37.783119,
+    "lng": -122.408438
+  },
+  "parcel": {
+    "year_built": 1907,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 10,
+    "lot_area_sqft": 5096,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3R",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0933 0931 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1421790,
+    "assessed_improvement_value": 604252,
+    "last_sale_date": "2003-08-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "survey_name": "NATIONAL DOLLAR STORE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201302140260",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-02-14",
+      "status_date": "2016-11-17",
+      "estimated_cost": 45000,
+      "revised_cost": 660000,
+      "description": "temporary lateral support for excavation for adjacent new constructrion by means of slant drilled beams, jet-grout infill column \"logging\", restrained by tie backs and internal bracing site permit under 945 market-pa#2010-1108-4497s.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818411",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1998-09-15",
+      "status_date": "1999-01-15",
+      "estimated_cost": 5000,
+      "description": "to erect single faced electric sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=931",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3704074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3704&lot=074",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3704074",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-context-statement",
+      "name": "San Francisco Planning Department (Jonathan Lammers, project manager), Central SoMa Historic Context Statement & Historic Resource Survey, adopted by the Historic Preservation Commission on March 16, 2016 (Motion No. 0277)",
+      "query": "https://sfplanning.org/project/central-soma-historic-resources-survey",
+      "document": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/central_soma_hrs/HP_CentralSoma_Historic_Context_Statement_Draft.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Context Statement, adopted 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "site history",
+      "description": "Built to a design by architect Albert Pissis as a two-storey brick masonry commercial building with a saloon and pool hall.",
+      "source": "central-soma-context-statement"
+    },
+    {
+      "date": "1939",
+      "kind": "site history",
+      "description": "Connected internally to 929 Market Street and the two façades unified with Art Deco influences by architect Otto A. Deichmann, for the National Dollar Store. Both buildings keep their brick rear cladding.",
+      "source": "central-soma-context-statement"
+    }
+  ],
+  "building": {
+    "name": "National Dollar Store",
+    "architect": "Albert Pissis"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "6L",
+    "status_code_meaning": "6L — determined ineligible for local listing or designation through local government review; may warrant special consideration in local planning",
+    "current_article11_rating": "V",
+    "style": "Art Deco",
+    "frame": "Brick masonry",
+    "physical_integrity": "Medium",
+    "heritage_rating": "C — of contextual importance",
+    "umb_survey": true,
+    "source": "central-soma-survey"
+  }
+}

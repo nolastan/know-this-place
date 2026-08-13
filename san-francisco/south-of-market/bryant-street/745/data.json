@@ -1,0 +1,137 @@
+{
+  "address": "745 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/bryant-street/745/",
+  "apn": "3778046E",
+  "block": "3778",
+  "lot": "046E",
+  "eas_baseid": "366383",
+  "coordinates": {
+    "lat": 37.776819,
+    "lng": -122.401007
+  },
+  "parcel": {
+    "year_built": 1925,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 4122.3,
+    "building_area_sqft": 4350,
+    "lot_depth_ft": 37.41,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0745 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 202505,
+    "assessed_improvement_value": 268451
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200007205642",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-20",
+      "status_date": "2001-01-20",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005059171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-05",
+      "status_date": "2000-06-21",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to original plans-close off rear loading dock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000112857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-12",
+      "status_date": "2000-05-09",
+      "revised_cost": 45072,
+      "description": "install non-structural partition walls, upgrade toilet, install kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301974",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-05",
+      "status_date": "1993-07-13",
+      "estimated_cost": 2200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213185",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-08-10",
+      "status_date": "1993-01-04",
+      "estimated_cost": 1200,
+      "revised_cost": 1800,
+      "description": "install roof ties to stabilize the r. concrete (parapet)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=745",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3778046E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3778&lot=046E",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3778046E",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

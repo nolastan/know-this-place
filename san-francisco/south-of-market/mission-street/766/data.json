@@ -1,0 +1,91 @@
+{
+  "address": "766 Mission Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/mission-street/766/",
+  "apn": "3706014",
+  "block": "3706",
+  "lot": "014",
+  "eas_baseid": "364784",
+  "coordinates": {
+    "lat": 37.785289,
+    "lng": -122.403483
+  },
+  "parcel": {
+    "year_built": 1939,
+    "stories": 4,
+    "rooms": 25,
+    "bathrooms": 10,
+    "lot_area_sqft": 2400,
+    "building_area_sqft": 9380,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "C",
+    "zoning": "C3R",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0766 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 112252,
+    "assessed_improvement_value": 73431
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=766",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3706014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3706&lot=014",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3706014",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "name": "Saint Patricks Cathedral Rectory"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "3CD",
+    "status_code_meaning": "3CD — appears eligible for the California Register as a contributor to an eligible district, through survey evaluation",
+    "proposed_article11_rating": "St.",
+    "eligible_district": "St. Patrick's Church and Rectory",
+    "style": "Gothic Revival",
+    "frame": "Reinforced concrete",
+    "physical_integrity": "High",
+    "source": "central-soma-survey"
+  }
+}

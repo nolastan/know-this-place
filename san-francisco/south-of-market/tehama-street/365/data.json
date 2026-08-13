@@ -1,0 +1,136 @@
+{
+  "address": "365 Tehama Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/tehama-street/365/",
+  "apn": "3733059",
+  "block": "3733",
+  "lot": "059",
+  "eas_baseid": "365562",
+  "coordinates": {
+    "lat": 37.781593,
+    "lng": -122.403456
+  },
+  "parcel": {
+    "year_built": 1943,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "C3S",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0365 TEHAMA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58884,
+    "assessed_improvement_value": 29309
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1943",
+    "survey_name": "SEE 3733/60",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9811444",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-06-19",
+      "status_date": "1998-11-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "unreasonable hardship application for app #9615260",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615260",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-08-16",
+      "status_date": "1999-01-26",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715976",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-11-05",
+      "status_date": "1989-01-04",
+      "estimated_cost": 2000,
+      "description": "replace roll-up door space w/glass & alum. store front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715977",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-05",
+      "status_date": "1988-12-30",
+      "estimated_cost": 2500,
+      "description": "addition of bathroom, erection of dry wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TEHAMA&street_type=ST&address_number=365",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&lot=059",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3733059",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "name": "National Sales & Service Co"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "6Z",
+    "status_code_meaning": "6Z — found ineligible for the National Register, the California Register or local designation, through survey evaluation",
+    "current_article11_rating": "V",
+    "style": "Industrial",
+    "frame": "Brick masonry",
+    "physical_integrity": "Medium",
+    "heritage_rating": "D — of minor/no importance",
+    "umb_survey": true,
+    "source": "central-soma-survey"
+  }
+}

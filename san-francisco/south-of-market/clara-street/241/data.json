@@ -1,0 +1,116 @@
+{
+  "address": "241 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/241/",
+  "apn": "3753048",
+  "block": "3753",
+  "lot": "048",
+  "eas_baseid": "365826",
+  "coordinates": {
+    "lat": 37.778613,
+    "lng": -122.403168
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1260,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0241 CLARA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 525814,
+    "assessed_improvement_value": 225344,
+    "last_sale_date": "2013-06-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501289228",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-28",
+      "status_date": "2025-01-28",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "roofing repair above sheathing to comply with nov #202432214. replace dry rot on two exterior stairs and repaint exterior. replace drywall for unit#c bedroom & replace with type 5/8\" type \"x\" gypsum board. no street visible",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-24",
+      "status_date": "1989-04-28",
+      "estimated_cost": 200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200548",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-01-25",
+      "status_date": "1983-03-04",
+      "estimated_cost": 25000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARA&street_type=ST&address_number=241",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=048",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753048",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

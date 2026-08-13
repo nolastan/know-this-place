@@ -1,0 +1,174 @@
+{
+  "address": "875 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/875/",
+  "apn": "3752076",
+  "block": "3752",
+  "lot": "076",
+  "eas_baseid": "365773",
+  "coordinates": {
+    "lat": 37.780392,
+    "lng": -122.402617
+  },
+  "parcel": {
+    "year_built": 1921,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 8245,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0875 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 116184,
+    "assessed_improvement_value": 97003,
+    "assessed_fixtures_value": 37977
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "SoMa LGBTQ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca.1950s–ca.1990s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202112033661",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-12-03",
+      "status_date": "2026-01-23",
+      "estimated_cost": 75000,
+      "revised_cost": 0,
+      "description": "repair damaged out of plane anchorage located at 875 folsom the concrete walls along the north na south elevation of the single story will be repaired where damaged is visible and new out of plane anchorage will be installed at the timber trusses spanning between the walls at the roof. the anchorage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801027694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-02",
+      "status_date": "2018-06-11",
+      "estimated_cost": 8000,
+      "revised_cost": 10500,
+      "description": "automatic fire suppression system installation over new painting booth ref 201710020112 maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710020112",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-02",
+      "status_date": "2018-06-11",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "add a pre-fabricated paint spray booth in (e) automotive shop. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919072",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-09-10",
+      "status_date": "2000-05-01",
+      "estimated_cost": 7000,
+      "description": "installation of tie backs for 855 folsom underpenning pier",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-11-10",
+      "status_date": "1994-11-30",
+      "estimated_cost": 300,
+      "description": "comply violation. sheetrock remove existing window & frame",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907453",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-05-02",
+      "status_date": "1989-10-23",
+      "estimated_cost": 58760,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906779",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-25",
+      "status_date": "1990-02-16",
+      "estimated_cost": 1800,
+      "description": "parapet bracing per engineer plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=875",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&lot=076",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3752076",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40261695682406%2037.78039188715761)%27)",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "architect": "Albert W. Burgren"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

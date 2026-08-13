@@ -1,0 +1,153 @@
+{
+  "address": "768 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/768/",
+  "apn": "3751033",
+  "block": "3751",
+  "lot": "033",
+  "eas_baseid": "365733",
+  "coordinates": {
+    "lat": 37.781496,
+    "lng": -122.399105
+  },
+  "parcel": {
+    "year_built": 1930,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 2400,
+    "building_area_sqft": 3090,
+    "basement_area_sqft": 2400,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "WMUG",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0768 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1108279,
+    "last_sale_date": "2013-03-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602038708",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-02-03",
+      "status_date": "2026-01-09",
+      "estimated_cost": 19500,
+      "revised_cost": 0,
+      "description": "remove store front, frame interior/exterior walls. install new awning, install new atm, relocate door. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406269588",
+      "type": "new construction",
+      "status": "approved",
+      "filed": "2014-06-26",
+      "status_date": "2018-11-13",
+      "estimated_cost": 5800000,
+      "revised_cost": 8500000,
+      "description": "to erect 6 stories, no basement, two stories of type 1-a over 4 stories of type iii-a, 11 units residential, office, retail buildng. (r-2,b,m)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606083510",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-06-08",
+      "status_date": "2007-02-02",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "temporary shoring & underpinning along property line adjacent to 766 harrison street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311140231",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2003-11-14",
+      "status_date": "2003-11-14",
+      "revised_cost": 1500,
+      "description": "erect a single faced, non-electric wall sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121569",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-13",
+      "status_date": "1991-12-23",
+      "estimated_cost": 10824,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007231",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-16",
+      "status_date": "1990-06-04",
+      "estimated_cost": 3000,
+      "description": "parapet bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1990–2016",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=768",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3751033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3751&lot=033",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3751033",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

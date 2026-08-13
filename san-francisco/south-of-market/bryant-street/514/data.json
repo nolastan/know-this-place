@@ -1,0 +1,120 @@
+{
+  "address": "514 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/bryant-street/514/",
+  "apn": "3762123",
+  "block": "3762",
+  "lot": "123",
+  "eas_baseid": "366168",
+  "coordinates": {
+    "lat": 37.781132,
+    "lng": -122.396474
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3200,
+    "building_area_sqft": 6400,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0514 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187564,
+    "assessed_improvement_value": 281374
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412022866",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-02",
+      "status_date": "2014-12-04",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "install ac system - split 2 ton. maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007145219",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-14",
+      "status_date": "2000-11-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit # 9908275/87752s to be completed by 8/31/00",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908275",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-28",
+      "status_date": "1999-10-28",
+      "estimated_cost": 14000,
+      "description": "non structural interior demolition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=514",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762123&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=123",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762123",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "architect": "Hugh C. Woods"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

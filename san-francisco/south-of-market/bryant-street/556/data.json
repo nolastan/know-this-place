@@ -1,0 +1,119 @@
+{
+  "address": "556–560 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/bryant-street/556/",
+  "apn": "3762021",
+  "block": "3762",
+  "lot": "021",
+  "eas_baseid": "366139",
+  "coordinates": {
+    "lat": 37.780515,
+    "lng": -122.397446
+  },
+  "address_range": "556–560",
+  "street_numbers_on_parcel": [
+    "556",
+    "558",
+    "560"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 9173,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0560 0556 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 128425,
+    "assessed_improvement_value": 18680
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200710306884",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-30",
+      "status_date": "2007-10-31",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install fire supression system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810279",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-07-25",
+      "status_date": "1989-04-05",
+      "estimated_cost": 2000,
+      "description": "single tenant",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803571",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-03-22",
+      "status_date": "1989-02-28",
+      "estimated_cost": 10000,
+      "description": "install 1 hr wall on adjacent lot lines for b-2 occupancy",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=556",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=021",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762021",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "address": "589 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/bryant-street/589/",
+  "apn": "3776118",
+  "block": "3776",
+  "lot": "118",
+  "eas_baseid": "366323",
+  "coordinates": {
+    "lat": 37.779666,
+    "lng": -122.397537
+  },
+  "parcel": {
+    "units": 1,
+    "stories": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 2400,
+    "building_area_sqft": 2850,
+    "basement_area_sqft": 2400,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "NA",
+    "zoning": "MUO",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0589 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2857620,
+    "last_sale_date": "2020-07-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201103293002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-29",
+      "status_date": "2011-06-17",
+      "estimated_cost": 17330,
+      "revised_cost": 17330,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009301933",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2010-09-30",
+      "status_date": "2011-02-22",
+      "estimated_cost": 42000,
+      "revised_cost": 52000,
+      "description": "voluntary partial improvements for seismic resistance. remodel portion of ground floor for accessibility entry and unisex toilet in compliance with 2007 sfbc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503298660",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-03-29",
+      "status_date": "2007-03-21",
+      "estimated_cost": 48600,
+      "revised_cost": 48600,
+      "description": "remove (e) wood bracing of wood roof trusses & replace it with steel (strap) bracing. repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122021",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-20",
+      "status_date": "1992-06-24",
+      "estimated_cost": 1950,
+      "description": "parapet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=589",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776118&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&lot=118",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3776118",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "architect": "J.G. Little & Co"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "year_built_as_surveyed": "1923",
+    "note": "The survey dates the building 1923; the assessor's roll records no year built.",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "address": "265 Third Street, San Francisco, CA 94103",
+  "path": "/san-francisco/east-cut/3rd-street/265/",
+  "apn": "3735016",
+  "block": "3735",
+  "lot": "016",
+  "eas_baseid": "365585",
+  "coordinates": {
+    "lat": 37.784304,
+    "lng": -122.399185
+  },
+  "parcel": {
+    "lot_area_sqft": 2395,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Comm and Ind",
+    "construction_type_code": "NA",
+    "zoning": "C3S",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0690 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 615709,
+    "last_sale_date": "2012-08-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=265",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3735016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3735&lot=016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3735016",
+      "retrieved": "2026-08-12"
+    }
+  ]
+}

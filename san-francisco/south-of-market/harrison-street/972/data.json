@@ -1,0 +1,154 @@
+{
+  "address": "972–974 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/972/",
+  "apn": "3753025",
+  "block": "3753",
+  "lot": "025",
+  "eas_baseid": "365816",
+  "coordinates": {
+    "lat": 37.777918,
+    "lng": -122.40367
+  },
+  "address_range": "972–974",
+  "street_numbers_on_parcel": [
+    "972",
+    "974"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2334,
+    "building_area_sqft": 3334,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0974 0972 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 773617,
+    "assessed_improvement_value": 515739,
+    "last_sale_date": "2004-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201101188518",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-18",
+      "status_date": "2011-03-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace damaged wood at the guard rails of the rear exit stairs. less than 50%. to comply w/ his nov#201186116",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601122043",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-01-12",
+      "status_date": "2007-09-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew for final only pa#200006092231.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202270246",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-27",
+      "status_date": "2002-06-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006092231",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-09",
+      "status_date": "2000-12-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to comply with work items per notice of violation dated 5/16/2000.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819488",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-25",
+      "status_date": "1999-03-25",
+      "estimated_cost": 6000,
+      "description": "corrective work as per dry rot report #983237i",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015508",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-03",
+      "status_date": "1991-02-03",
+      "estimated_cost": 9360,
+      "description": "change 4-rear doors-existing openings; install 4 alum.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=972",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=025",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753025",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

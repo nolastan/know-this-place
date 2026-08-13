@@ -1,0 +1,132 @@
+{
+  "address": "430 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/natoma-street/430/",
+  "apn": "3725042",
+  "block": "3725",
+  "lot": "042",
+  "eas_baseid": "364986",
+  "coordinates": {
+    "lat": 37.781479,
+    "lng": -122.40631
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3197,
+    "building_area_sqft": 8939,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "B",
+    "zoning": "C3S",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0430 NATOMA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7808631,
+    "assessed_improvement_value": 2454138,
+    "last_sale_date": "2019-03-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905211285",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-21",
+      "status_date": "2021-12-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "tie backs extending under 430 natoma street. documentation for tieback encroachment agreement only. n/a for maher. ref. main permit #2019-0521-1281.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010362",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-05-29",
+      "status_date": "1991-10-11",
+      "estimated_cost": 76000,
+      "description": "construct new pedestrian bridge from natona to 5th st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913232",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-07-25",
+      "status_date": "1990-08-27",
+      "estimated_cost": 21000,
+      "description": "handicap bathrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907524",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-05-04",
+      "status_date": "1992-03-31",
+      "estimated_cost": 62500,
+      "description": "interior improvements to an existing concrete frame.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NATOMA&street_type=ST&address_number=430",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3725042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3725&lot=042",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3725042",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "name": "W M Willett Construction / Camelline Building"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "3CS",
+    "status_code_meaning": "3CS — appears eligible for the California Register as an individual property, through survey evaluation",
+    "style": "Industrial",
+    "frame": "Reinforced concrete",
+    "physical_integrity": "High",
+    "source": "central-soma-survey"
+  }
+}

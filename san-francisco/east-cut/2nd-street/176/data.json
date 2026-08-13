@@ -1,0 +1,103 @@
+{
+  "address": "176 Second Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/2nd-street/176/",
+  "apn": "3722017",
+  "block": "3722",
+  "lot": "017",
+  "eas_baseid": "364943",
+  "coordinates": {
+    "lat": 37.786969,
+    "lng": -122.398721
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 4059,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "D",
+    "zoning": "C3OSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0176 02ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176712,
+    "assessed_improvement_value": 2508
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Conservation District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "New Montgomery-Mission-Second Street Conservation District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 11 conservation district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1906–1929",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Second and Howard Streets Historic District",
+      "california_register_status": "Listed",
+      "national_register_status": "Listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1906–1912",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201907055213",
+      "type": "wall or painted sign",
+      "status": "issued",
+      "filed": "2019-07-05",
+      "status_date": "2019-07-08",
+      "estimated_cost": 75,
+      "revised_cost": 75,
+      "description": "vinyl banner attached to extg fence with zip ties at top right corner of fence. 8 feet above ground level. non-structural sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=02ND&street_type=ST&address_number=176",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&lot=017",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3722017",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39872078720616%2037.78696893302453)%27)",
+      "retrieved": "2026-08-12"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "address": "50 Morris Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/morris-street/50/",
+  "apn": "3760111",
+  "block": "3760",
+  "lot": "111",
+  "eas_baseid": "366108",
+  "coordinates": {
+    "lat": 37.777105,
+    "lng": -122.402519
+  },
+  "parcel": {
+    "lot_area_sqft": 3023,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0050 MORRIS              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1285182,
+    "last_sale_date": "1987-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201609016542",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2016-09-01",
+      "status_date": "2016-09-23",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "the owner of general advertising sign located @ 50 morris st, will perform customary maintenance as shown on plans. orig #748 - panel #1052 (14'x48'). maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003128088",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2010-03-12",
+      "status_date": "2010-04-05",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "legalize an existing general advertising sign located at 50 morris street (vacant lot) as required by sign i.d.# \" orig 748\" per planning n.o.r. dated dec. 23, 2009.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MORRIS&street_type=ST&address_number=50",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3760111&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3760&lot=111",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3760111",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "address": "370 Brannan Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/brannan-street/370/",
+  "apn": "3775020",
+  "block": "3775",
+  "lot": "020",
+  "eas_baseid": "366258",
+  "coordinates": {
+    "lat": 37.780759,
+    "lng": -122.393859
+  },
+  "parcel": {
+    "year_built": 1937,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1760,
+    "building_area_sqft": 3700,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0370 BRANNAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 786327,
+    "assessed_improvement_value": 415305
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201401317576",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-01-31",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1000,
+      "revised_cost": 0,
+      "description": "provide title 24 for the pa#2013-08-15-4421 (per inspector requirement).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312234803",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2013-12-23",
+      "status_date": "2014-01-14",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install 1 non-illuminated channel letter sign.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308154421",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-15",
+      "status_date": "2013-10-08",
+      "estimated_cost": 40000,
+      "revised_cost": 63000,
+      "description": "t.i. on 370 brannan, interior renovations, bathrooms, plumbing and electrical upgrades.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902041378",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-04",
+      "status_date": "2009-05-07",
+      "estimated_cost": 10400,
+      "revised_cost": 10400,
+      "description": "change of occupancy b to m demolition of (e) partition, construction of new partitions, installation of new accessible sink, installation of new lever hardware on doors & grab bars in toilet. no work on the second floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRANNAN&street_type=ST&address_number=370",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&lot=020",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3775020",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

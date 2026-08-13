@@ -1,0 +1,169 @@
+{
+  "address": "17–19 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/17/",
+  "apn": "3775046",
+  "block": "3775",
+  "lot": "046",
+  "eas_baseid": "477708",
+  "coordinates": {
+    "lat": 37.781912,
+    "lng": -122.393007
+  },
+  "address_range": "17–19",
+  "street_numbers_on_parcel": [
+    "17",
+    "19"
+  ],
+  "parcel": {
+    "year_built": 1934,
+    "stories": 1,
+    "rooms": 1,
+    "lot_area_sqft": 2551,
+    "building_area_sqft": 2858,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "SPD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0019 0017 SOUTH PARK            0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 999034,
+    "assessed_improvement_value": 691633,
+    "last_sale_date": "2000-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1934",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1854–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200612210335",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "2006-12-21",
+      "status_date": "2008-12-11",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "erect non-electric wall projecting single faced sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109259160",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-25",
+      "status_date": "2004-03-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change of use from multimedia office to retail sales and services",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109148330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-14",
+      "status_date": "2001-09-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired permit 913639 and 917867 work complete permit for final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109118110",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-11",
+      "status_date": "2002-03-11",
+      "estimated_cost": 10880,
+      "revised_cost": 10880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008046998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-04",
+      "status_date": "2001-09-21",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "revise to app #200006193030 doc (e) ceiling heights new disabled access",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006193030",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-19",
+      "status_date": "2001-09-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "demo existing partition addition of 1 new partition a kitchenett & carry out to correct n.o.v.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20PARK&street_type=&address_number=17",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&lot=046",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3775046",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39300748918939%2037.781911699786214)%27)",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

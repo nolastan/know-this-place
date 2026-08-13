@@ -1,0 +1,118 @@
+{
+  "address": "142–144 Freelon Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/freelon-street/142/",
+  "apn": "3777025",
+  "block": "3777",
+  "lot": "025",
+  "eas_baseid": "366336",
+  "coordinates": {
+    "lat": 37.778364,
+    "lng": -122.397832
+  },
+  "address_range": "142–144",
+  "street_numbers_on_parcel": [
+    "142",
+    "144"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1800,
+    "lot_depth_ft": 80,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0144 0142 FREELON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 19141,
+    "assessed_improvement_value": 16827
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200808260090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-26",
+      "status_date": "2008-12-12",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace & rebuild rear stairs and deck in kind due to dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512921",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-08-15",
+      "status_date": "1997-06-03",
+      "estimated_cost": 1000,
+      "description": "change entry way from 2 doors to 1/new window in (e)dor opng",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1995–2008",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FREELON&street_type=ST&address_number=142",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3777025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3777&lot=025",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3777025",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "dcp_1976_survey": true,
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

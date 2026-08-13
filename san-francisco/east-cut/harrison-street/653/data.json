@@ -1,0 +1,177 @@
+{
+  "address": "653 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/harrison-street/653/",
+  "apn": "3763101",
+  "block": "3763",
+  "lot": "101",
+  "eas_baseid": "366210",
+  "coordinates": {
+    "lat": 37.783117,
+    "lng": -122.396062
+  },
+  "parcel": {
+    "year_built": 1955,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 8000,
+    "building_area_sqft": 7000,
+    "lot_depth_ft": 60,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0653 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 618916,
+    "assessed_improvement_value": 359142,
+    "last_sale_date": "1991-12-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202312223008",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2023-12-22",
+      "status_date": "2023-12-22",
+      "estimated_cost": 143111,
+      "description": "to demolish a 2-story, type-i, f-1 & b occupancy building. (new construction under pa# 201912068933)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610120063",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-10-12",
+      "status_date": "2017-03-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "adminitrative permit for change of use or approx. 4,056 s.f or front portion of building from office/printing to office. n/a for maher ordinance no. 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506017701",
+      "type": "wall or painted sign",
+      "status": "cancelled",
+      "filed": "2015-06-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 500,
+      "description": "painted sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506017704",
+      "type": "wall or painted sign",
+      "status": "cancelled",
+      "filed": "2015-06-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 500,
+      "description": "painted sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405244591",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2004-05-24",
+      "status_date": "2005-02-23",
+      "estimated_cost": 7200,
+      "revised_cost": 7200,
+      "description": "modify (e)sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000120606",
+      "type": "wall or painted sign",
+      "status": "expired",
+      "filed": "2000-01-20",
+      "status_date": "2000-05-25",
+      "estimated_cost": 1950,
+      "revised_cost": 1950,
+      "description": "construct painted wall sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608835",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-21",
+      "status_date": "1997-07-14",
+      "estimated_cost": 28400,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007455",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-19",
+      "status_date": "1991-04-03",
+      "estimated_cost": 6500,
+      "description": "parapet bracing per engineer plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303550",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-04-28",
+      "status_date": "1983-11-14",
+      "estimated_cost": 15000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=653",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763101&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=101",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763101",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}
