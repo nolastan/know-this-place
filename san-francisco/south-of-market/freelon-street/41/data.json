@@ -1,0 +1,138 @@
+{
+  "address": "41 Freelon Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/freelon-street/41/",
+  "apn": "3776077",
+  "block": "3776",
+  "lot": "077",
+  "eas_baseid": "366308",
+  "coordinates": {
+    "lat": 37.779256,
+    "lng": -122.396328
+  },
+  "parcel": {
+    "year_built": 1917,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0041 FREELON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1231423,
+    "assessed_improvement_value": 307852,
+    "last_sale_date": "2012-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308305557",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-30",
+      "status_date": "2023-08-30",
+      "estimated_cost": 24280,
+      "revised_cost": 24280,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005159958",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-05-15",
+      "status_date": "2001-07-25",
+      "estimated_cost": 29500,
+      "revised_cost": 29500,
+      "description": "remove 2nd flr and all partitions built w/out a permit & reinstall original mezzanine",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308266",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-08-22",
+      "status_date": "1993-05-03",
+      "estimated_cost": 12000,
+      "revised_cost": 25000,
+      "description": "building office and storage space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304303",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-05-17",
+      "status_date": "1983-06-06",
+      "estimated_cost": 4000,
+      "description": "demolitian work due to fire",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304304",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-05-17",
+      "status_date": "1985-01-15",
+      "estimated_cost": 18600,
+      "description": "restore building damaged by fire",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FREELON&street_type=ST&address_number=41",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&lot=077",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3776077",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

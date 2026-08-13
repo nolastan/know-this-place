@@ -1,0 +1,112 @@
+{
+  "address": "111 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/111/",
+  "apn": "3752012",
+  "block": "3752",
+  "lot": "012",
+  "eas_baseid": "474654",
+  "coordinates": {
+    "lat": 37.780711,
+    "lng": -122.40068
+  },
+  "also_addressed": [
+    "824 HARRISON ST"
+  ],
+  "parcel": {
+    "lot_area_sqft": 37322,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0824 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2007–2020",
+    "shown_on_page": 0,
+    "note": "8 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARA&street_type=ST&address_number=111",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&lot=012",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3752012",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-context-statement",
+      "name": "San Francisco Planning Department (Jonathan Lammers, project manager), Central SoMa Historic Context Statement & Historic Resource Survey, adopted by the Historic Preservation Commission on March 16, 2016 (Motion No. 0277)",
+      "query": "https://sfplanning.org/project/central-soma-historic-resources-survey",
+      "document": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/central_soma_hrs/HP_CentralSoma_Historic_Context_Statement_Draft.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Context Statement, adopted 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914",
+      "kind": "site history",
+      "description": "The Mission Revival style Lincoln School stood here, the only public school in the Central SoMa study area at the time. It was demolished in the 1960s.",
+      "source": "central-soma-context-statement"
+    },
+    {
+      "date": "1972",
+      "kind": "site history",
+      "description": "The Filipino Education Center, opened on 1 May 1972 at 390 4th Street with contributions from the San Francisco Unified School District and the State of California, moved here. It taught non-English-speaking children from kindergarten through twelfth grade and referred families to educational, health and social services.",
+      "source": "central-soma-context-statement"
+    },
+    {
+      "date": "2004",
+      "kind": "site history",
+      "description": "With the Bessie Carmichael School/Filipino Education Center rebuilt as a K–5 campus at 375 7th Street, this building became home to the school's middle school grades.",
+      "source": "central-soma-context-statement"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "dcp_1976_survey": true,
+    "source": "central-soma-survey"
+  }
+}

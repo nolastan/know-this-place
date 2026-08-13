@@ -1,0 +1,168 @@
+{
+  "address": "536 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/bryant-street/536/",
+  "apn": "3762016",
+  "block": "3762",
+  "lot": "016",
+  "eas_baseid": "366135",
+  "coordinates": {
+    "lat": 37.780844,
+    "lng": -122.39684
+  },
+  "parcel": {
+    "year_built": 1991,
+    "units": 1,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 3,
+    "lot_area_sqft": 2560,
+    "building_area_sqft": 5495,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0536 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2145732,
+    "assessed_improvement_value": 1430486,
+    "last_sale_date": "2019-12-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1991",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001091512",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-09",
+      "status_date": "2020-01-21",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "demo partitions to open space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121480",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-14",
+      "status_date": "1991-12-31",
+      "estimated_cost": 2800,
+      "description": "fire sprinkler tenant improvement cosco job sfd 575",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120475",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1991-10-29",
+      "status_date": "1992-08-31",
+      "estimated_cost": 500,
+      "description": "erect sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118180",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-09-27",
+      "status_date": "1992-06-04",
+      "estimated_cost": 150000,
+      "description": "t/i on 2nd fl, improve 1st fl entry - express plan chk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104431",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-03-20",
+      "status_date": "1991-08-28",
+      "estimated_cost": 12500,
+      "description": "complete fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017070",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1990-08-27",
+      "status_date": "1991-11-14",
+      "estimated_cost": 168000,
+      "description": "erect a two story warehouse structure",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=536",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-context-statement",
+      "name": "San Francisco Planning Department (Jonathan Lammers, project manager), Central SoMa Historic Context Statement & Historic Resource Survey, adopted by the Historic Preservation Commission on March 16, 2016 (Motion No. 0277)",
+      "query": "https://sfplanning.org/project/central-soma-historic-resources-survey",
+      "document": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/central_soma_hrs/HP_CentralSoma_Historic_Context_Statement_Draft.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Context Statement, adopted 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913",
+      "kind": "site history",
+      "description": "The Brotherhood of Teamsters Hall, which the Teamsters occupied through at least 1966; a photograph of July 1934 shows teamsters gathered in front of it during the Waterfront Strike. The façade has been altered and only the ground floor rustication survives.",
+      "source": "central-soma-context-statement"
+    }
+  ],
+  "building": {
+    "name": "Brotherhood of Teamsters Hall"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "year_built_as_surveyed": "1910",
+    "note": "The survey dates the building 1910; the assessor's roll gives 1991. A prior historic survey dated the Teamsters hall to about 1925; this report finds it was built no later than 1913.",
+    "source": "central-soma-survey"
+  }
+}

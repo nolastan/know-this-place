@@ -1,0 +1,161 @@
+{
+  "address": "147 Stillman Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/stillman-street/147/",
+  "apn": "3762048",
+  "block": "3762",
+  "lot": "048",
+  "eas_baseid": "366151",
+  "coordinates": {
+    "lat": 37.780773,
+    "lng": -122.397317
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 9,
+    "bedrooms": 9,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 4121,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0147 STILLMAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1092227,
+    "assessed_improvement_value": 855807,
+    "last_sale_date": "2014-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201608195597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-19",
+      "status_date": "2016-09-21",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace windows at rear bldg in kind. not visible from the street. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608054336",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-05",
+      "status_date": "2017-03-22",
+      "estimated_cost": 75000,
+      "revised_cost": 129000,
+      "description": "revision to pa #201606240855 - increase in scope of work to add additional bathrooms to each unit & non load bearing wall modifications. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606240855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-24",
+      "status_date": "2017-03-22",
+      "estimated_cost": 60000,
+      "revised_cost": 106320,
+      "description": "kitchen and bathroom remodel. no structural work. all 3 units. no changes to walls or addition of walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407292455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-29",
+      "status_date": "2015-06-15",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "revision to pa#201404304631 - replace rotted sidings on sw side of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404304631",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-30",
+      "status_date": "2016-05-18",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace rotted decking and railings on back stairs less than 50%; repair flashing and caulk rear and side windows; paint affected areas.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304105",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1993-03-12",
+      "status_date": "1993-10-29",
+      "estimated_cost": 1000,
+      "description": "comply with code abatement report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211458",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-07-13",
+      "status_date": "1992-12-08",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STILLMAN&street_type=ST&address_number=147",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=048",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762048",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

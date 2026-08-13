@@ -809,11 +809,21 @@ a street number, which is the whole constraint:
   they name streets and numbers constantly. The landing page listing the
   adopted statements is
   `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
-- **Read into the repo so far:** Kelley & VerPlanck Historical Resources
-  Consulting, *Bayview-Hunters Point Area B Survey: Town Center Activity Node
-  — Historic Context Statement*, prepared for the San Francisco Redevelopment
-  Agency, adopted February 11, 2010 (197 pp.), source id
-  `bvhp-area-b-context-statement`.
+- **Read into the repo so far:**
+  - Kelley & VerPlanck Historical Resources Consulting, *Bayview-Hunters Point
+    Area B Survey: Town Center Activity Node — Historic Context Statement*,
+    prepared for the San Francisco Redevelopment Agency, adopted February 11,
+    2010 (197 pp.), source id `bvhp-area-b-context-statement`.
+  - San Francisco Planning Department (Jonathan Lammers, project manager),
+    *Central SoMa Historic Context Statement & Historic Resource Survey*,
+    adopted by the Historic Preservation Commission March 16, 2016, Motion No.
+    0277, Case No. 2011.1356E (115 pp.), source id
+    `central-soma-context-statement`. The survey adopted with it — the
+    property information catalog and the survey results table, which are in
+    the hearing packet rather than the statement — is cited separately as
+    `central-soma-survey`
+    (`https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf`,
+    548 pp.). See "The Central SoMa statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -848,6 +858,50 @@ a street number, which is the whole constraint:
     adjudicate it.
   - Condition notes ("abandoned", "demolished") are as of 2009, and the
     assessor sometimes disagrees now.
+- **The Central SoMa statement is shaped differently, and its inventory is not
+  in it.** The adopted statement is 115 pages of narrative with no property
+  table at all; the survey's per-property records live in the Historic
+  Preservation Commission's adoption packet, which reprints the statement and
+  then adds them. Read the packet, not just the statement.
+  - **Packet pages 126–253 are the property information catalog**: one page per
+    surveyed building, with the APN, the address, the year built, the proposed
+    status code and Article 11 rating, the eligible district, and then the
+    architect, historic name, style, frame, cladding, roofline, windows,
+    ornament, integrity and the 1913 and 1950 Sanborn uses. 75 buildings.
+  - **Packet pages 254–481 are the survey results table**, one row per parcel
+    in the whole plan area — 1,004 of them. It is printed as six column-groups
+    of 38 pages each (254, 292, 330, 368, 406, 444 are the group starts), so
+    the columns for one parcel are spread across six pages. Parse it from word
+    positions: rows are bottom-aligned, a row's band runs from just past the
+    previous MAPBLKLOT anchor's y to its own, the first row of every page puts
+    its wrapped opening line at y≈83.8 (above every anchor, below the y=74
+    header), and the same band on the matching page of each group is the same
+    parcel. Verified against the catalog: architect, historic name, style and
+    frame agree on every property the two share.
+  - **Take the short columns, not the long ones.** The join is exact but the
+    wide free-text columns (ornament, windows, planning notes) overflow their
+    column bounds and come back clipped. The catalog has the same fields laid
+    out cleanly for the 75 buildings it covers; use it there and take only
+    codes, ratings, names, styles and framing from the table.
+  - **It contradicts itself between the two.** 633 Folsom Street is 6Z in the
+    catalog and 3CS in the results table; 12 Mint Plaza is 6L and 6Z; 66 Mint
+    Street is 3CD and 3CB. The catalog also splits a code the table combines
+    (`1S, 3CD` against `3CB`). Record both and say which is which.
+  - **The narrative contradicts itself too**: the Waldorf lodging house that
+    survived 1906 is at 24–26 5th Street in one passage and 44–48 5th Street
+    everywhere else; the California Casket Company building is 943 Mission in
+    one and 959–965 Mission in the rest; the Central Hotel is 566–586 3rd
+    Street twice and 576–586 once; the Southern Police Station is 360 4th
+    Street throughout and 350 in a caption; the A. Carlisle building is 1948 in
+    the text and 1947 in the recommendations.
+  - **Most of the plan area was surveyed before.** For 386 of the parcels the
+    only thing this document adds is which earlier survey covered them, and for
+    33 it records nothing at all — those get no citation, because a page does
+    not cite a source that told it nothing.
+  - **A results-table row can describe a building that is gone.** 942 Mission
+    Street is coded 6Z for a two-storey warehouse demolished in 2012; the
+    assessor dates the hotel there now to 2015. Where the survey's year built
+    and the roll's disagree the page states both.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -856,9 +910,33 @@ a street number, which is the whole constraint:
   documented: 4417–23 Third Street, rowhouses the survey records as demolished
   and whose parcels are retired; 894 Innes Avenue; 420 Pacific Street; and the
   two dozen addresses the report itself marks "no longer extant". Coverage
-  note: this is the only SF Planning context statement read so far — the
-  Central Waterfront, Market & Octavia, Japantown and other adopted statements
-  on the same page are untouched.)
+  note: the Central Waterfront, Market & Octavia, Japantown and other adopted
+  statements on the same page are untouched.)
+- **Verified:** 2026-08-12 (Central SoMa: read all 115 pages of the statement
+  and all 548 of the adoption packet. 108 numbered addresses in the narrative
+  chapters, 75 property records in the catalog and 1,004 rows in the survey
+  results table, naming 995 distinct APNs between them. 755 of those resolve to
+  a parcel with a 2025 assessor roll row and an EAS address and become a page:
+  717 new pages citing this document, 3 pre-existing pages edited by hand, and
+  35 new pages that cite nothing from it because its results table records
+  nothing for them. A fourth pre-existing page, 845 Market Street, was edited
+  by hand although its APN carries no EAS address of its own — the survey names
+  it, and the page was already here. 240 APNs do not resolve: 91 are
+  condominium parcels the roll gives 0 lot area and which AGENTS.md holds back,
+  88 have no 2025 roll row, and 61 have no EAS address record. Of the addresses
+  named only in the narrative, these clear none of that and stay undocumented:
+  95 Jack London Alley, 222–226 Jessie Street, 465 Stevenson Street, 666 Folsom
+  Street, 40 Hawthorne Street, 34 Mint Street, 935 Market Street, 935 Folsom
+  Street, 336 Ritch Street, 83 6th Street and 790 Folsom Street have no EAS
+  record at all; 128 King Street, 271 Clara Street, 365 5th Street, 434 Brannan
+  Street, 633 Folsom Street and 801 Market Street resolve in EAS to a parcel
+  with no current roll row; and 357 Tehama Street and 601 4th Street are
+  condominium parcels. The report's own demolished addresses — 171 Howard
+  Street, 693 Mission Street, 49 4th Street, 239 Minna Street, 820 Howard
+  Street, 740 Harrison Street, 365 3rd Street, 727 Folsom Street and 390 4th
+  Street — are named as gone and were never candidates. Coverage note: the
+  statement and the packet are read in full; nothing in this document set is
+  outstanding.)
 
 ## Known gaps
 

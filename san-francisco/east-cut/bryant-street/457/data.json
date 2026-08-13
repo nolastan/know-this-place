@@ -1,0 +1,169 @@
+{
+  "address": "457 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/bryant-street/457/",
+  "apn": "3775085",
+  "block": "3775",
+  "lot": "085",
+  "eas_baseid": "366274",
+  "coordinates": {
+    "lat": 37.781898,
+    "lng": -122.394708
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 6000,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "MUO",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0457 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4505803,
+    "assessed_improvement_value": 3003868,
+    "last_sale_date": "2018-06-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, Article 11 Individual, Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611082207",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-11-08",
+      "status_date": "2026-01-09",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "install new non-load bearing partitions in baseemnt & 1st level. extend firest level guardrail to ceiling. repair/modify existing data/communicaiton network. repair/replace any damaged sheetrock. refinish/replace any damaged cabinetry. all electrical work under separate permit. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606281083",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-28",
+      "status_date": "2016-07-08",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to appl #201411212194 - raising the guradrail to 42\" glass. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603041255",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-04",
+      "status_date": "2016-05-18",
+      "estimated_cost": 2500,
+      "revised_cost": 3000,
+      "description": "installation of a sprinkler monitoring system. ref app#201411212194 n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510200279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-20",
+      "status_date": "2016-05-18",
+      "estimated_cost": 29000,
+      "revised_cost": 30000,
+      "description": "install new fire sprinkler system per nfpa 13 throughout the bldg included underground fire service total = 54 heads. ref #201411212194. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411212194",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-21",
+      "status_date": "2016-07-08",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remove existing non-ada compliant restrooms & install ada-compliant restrooms.install new 2nd & 1st level ada compliant kitchenette. add ada compliant handrails to all stairs. all electrical /plumbing/mechaical work under separate permit. n/a meher ordinance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2014–2016",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=457",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&lot=085",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3775085",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-context-statement",
+      "name": "San Francisco Planning Department (Jonathan Lammers, project manager), Central SoMa Historic Context Statement & Historic Resource Survey, adopted by the Historic Preservation Commission on March 16, 2016 (Motion No. 0277)",
+      "query": "https://sfplanning.org/project/central-soma-historic-resources-survey",
+      "document": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/central_soma_hrs/HP_CentralSoma_Historic_Context_Statement_Draft.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Context Statement, adopted 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909",
+      "kind": "site history",
+      "description": "Built by the Pile Driver, Bridge and Structural Iron Workers No. 77 as a mixed-use building holding the union's hall. City directories of the 1920s show it also used by the Labor Carpenter's Union No. 22 and the Warehouse and Cereal Workers No. 38. It is among the oldest surviving union halls in San Francisco and is recognized as individually eligible for the California Register.",
+      "source": "central-soma-context-statement"
+    },
+    {
+      "date": "1934",
+      "kind": "site history",
+      "description": "One of at least two labour halls in the Central SoMa area during the 1934 Waterfront Strike.",
+      "source": "central-soma-context-statement"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

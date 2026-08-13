@@ -1,0 +1,170 @@
+{
+  "address": "258 Shipley Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/shipley-street/258/",
+  "apn": "3753115",
+  "block": "3753",
+  "lot": "115",
+  "eas_baseid": "471915",
+  "coordinates": {
+    "lat": 37.778871,
+    "lng": -122.404344
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 1725,
+    "building_area_sqft": 2288,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0258 SHIPLEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1135846,
+    "assessed_improvement_value": 647723,
+    "last_sale_date": "1997-09-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201701247765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-24",
+      "status_date": "2017-01-30",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "repair less than 50% of stairs @ back of property. repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508180707",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-18",
+      "status_date": "2005-11-09",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair/replace termite damage and dryrot (sill plates, studs, posts, walls, etc) where required add",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504079371",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-07",
+      "status_date": "2006-08-30",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-13",
+      "status_date": "1998-09-01",
+      "estimated_cost": 2500,
+      "description": "remove/replace exterior windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009173",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-11",
+      "status_date": "1990-07-30",
+      "estimated_cost": 15000,
+      "description": "add shear walls for seismic damage repair only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-21",
+      "status_date": "1990-02-01",
+      "estimated_cost": 5000,
+      "description": "ewo-s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-26",
+      "status_date": "1988-08-26",
+      "estimated_cost": 2075,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805421",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-26",
+      "status_date": "1988-08-22",
+      "estimated_cost": 1100,
+      "description": "repair termite damaged back stairs & porch, members",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHIPLEY&street_type=ST&address_number=258",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753115&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=115",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753115",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

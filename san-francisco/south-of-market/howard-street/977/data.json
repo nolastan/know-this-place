@@ -1,0 +1,137 @@
+{
+  "address": "977 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/howard-street/977/",
+  "apn": "3732129",
+  "block": "3732",
+  "lot": "129",
+  "eas_baseid": "365530",
+  "coordinates": {
+    "lat": 37.780024,
+    "lng": -122.406396
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 3675,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0977 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73256,
+    "assessed_improvement_value": 186975
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200803076594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-07",
+      "status_date": "2008-03-26",
+      "estimated_cost": 16960,
+      "revised_cost": 16960,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M20466",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-05-30",
+      "status_date": "2002-05-30",
+      "revised_cost": 90000,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112064664",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-12-06",
+      "status_date": "2002-12-02",
+      "estimated_cost": 65000,
+      "revised_cost": 90000,
+      "description": "after 2 (e) restrooms to comply w/ada, (n) entry door & storefront, (n) garage door, (n) stair rails",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-25",
+      "status_date": "1991-04-03",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924626",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-14",
+      "status_date": "1990-09-24",
+      "estimated_cost": 6000,
+      "description": "parapet bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=977",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732129&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&lot=129",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3732129",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "heritage_rating": "C — of contextual importance",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

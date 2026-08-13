@@ -1,0 +1,111 @@
+{
+  "address": "229–231 Shipley Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/shipley-street/229/",
+  "apn": "3753097",
+  "block": "3753",
+  "lot": "097",
+  "eas_baseid": "365851",
+  "coordinates": {
+    "lat": 37.77918,
+    "lng": -122.403387
+  },
+  "address_range": "229–231",
+  "street_numbers_on_parcel": [
+    "229",
+    "231"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1440,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0233 0229 SHIPLEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 64010,
+    "assessed_improvement_value": 24519
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1235447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-28",
+      "status_date": "2025-01-28",
+      "revised_cost": 1091,
+      "description": "per pim record, added back addresses 229, 231, 231a, 233 shipley st to apn 3753/097. there are four single family houses at loa 3753/097.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804025227",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2024-09-29",
+      "status_date": "2024-09-29",
+      "estimated_cost": 130000,
+      "revised_cost": 130000,
+      "description": "1. comply with nov #'s: 201846409, 201895661, and 201794401. 2. restore use and occupancy to r-3 single family residence 3. interior alterations including: remodel existing bathrooms and kitchen. new windows and doors. 4. new roof under separate roofing permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHIPLEY&street_type=ST&address_number=229",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=097",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753097",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

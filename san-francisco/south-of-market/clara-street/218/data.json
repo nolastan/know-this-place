@@ -1,0 +1,107 @@
+{
+  "address": "218 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/218/",
+  "apn": "3753060",
+  "block": "3753",
+  "lot": "060",
+  "eas_baseid": "365832",
+  "coordinates": {
+    "lat": 37.779139,
+    "lng": -122.403062
+  },
+  "parcel": {
+    "year_built": 1922,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0220 0218 CLARA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 995247,
+    "assessed_improvement_value": 599276,
+    "last_sale_date": "2004-05-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808076669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-07",
+      "status_date": "2018-09-20",
+      "estimated_cost": 54380,
+      "revised_cost": 54380,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312244974",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2013-12-24",
+      "status_date": "2013-12-24",
+      "estimated_cost": 87000,
+      "description": "compli.w/ord#155-13 not req'd. excavatn.less than 50 cu yd of soil interior non-structural t/i for an (e)commercial office bldg including two new ada complaint toilet rooms, new kitchen and legalization of minor existing construciton under previous owner. also wheel chair lift.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARA&street_type=ST&address_number=218",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=060",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753060",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "architect": "Herman C. Baumann"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

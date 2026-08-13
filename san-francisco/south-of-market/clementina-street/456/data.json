@@ -1,0 +1,136 @@
+{
+  "address": "456 Clementina Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/clementina-street/456/",
+  "apn": "3732068",
+  "block": "3732",
+  "lot": "068",
+  "eas_baseid": "365489",
+  "coordinates": {
+    "lat": 37.779805,
+    "lng": -122.405334
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 2,
+    "bathrooms": 3,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 4950,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0458 0456 CLEMENTINA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2731379,
+    "assessed_improvement_value": 1983282,
+    "last_sale_date": "2020-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202006249057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-24",
+      "status_date": "2020-12-17",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "first fl: add two offices and conference room, add built-in storage cabinets, add storage room in garage, add electrical outlets and lightings for new offices, conference room and storage room, intall 6 skylights at (e) roof, 2nd fl: remove/relocate two partition walls, relocate door to bathroom #2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907267069",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-07-26",
+      "status_date": "2021-04-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change of use from b (photo studio with accessory office) to b (office). no work to exterior or interior. existing electrical/mechanical/plumbing to remain. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812178702",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-12-17",
+      "status_date": "2010-09-22",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "change occupancy from s-2(warehouse) to b(photo studio with accessory office). demollish /replace part of slab on grade. partial voluntary seismic upgrade accessablle entry, path of travel, restroom. insulate envelope. hvac lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507117255",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2005-07-11",
+      "status_date": "2014-02-27",
+      "description": "to demolish a one-story warehouse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507117258",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2005-07-11",
+      "status_date": "2014-02-27",
+      "estimated_cost": 1000000,
+      "description": "to erect a new 4 story 12 unit residential/commerical building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENTINA&street_type=ST&address_number=456",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&lot=068",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3732068",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

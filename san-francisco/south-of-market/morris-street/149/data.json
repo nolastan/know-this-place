@@ -1,0 +1,94 @@
+{
+  "address": "149 Morris Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/morris-street/149/",
+  "apn": "3778002B",
+  "block": "3778",
+  "lot": "002B",
+  "eas_baseid": "366366",
+  "coordinates": {
+    "lat": 37.776336,
+    "lng": -122.401091
+  },
+  "parcel": {
+    "year_built": 1956,
+    "units": 20,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 18086,
+    "building_area_sqft": 10500,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0149 MORRIS              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 9470379,
+    "assessed_improvement_value": 355136,
+    "last_sale_date": "2015-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MORRIS&street_type=ST&address_number=149",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3778002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3778&lot=002B",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3778002B",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "building": {
+    "name": "San Francisco Flower Mart",
+    "architect": "Mario Ciampi"
+  },
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "3CD",
+    "status_code_meaning": "3CD — appears eligible for the California Register as a contributor to an eligible district, through survey evaluation",
+    "eligible_district": "San Francisco Flower Mart complex",
+    "style": "Modern",
+    "frame": "Reinforced concrete",
+    "physical_integrity": "High",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

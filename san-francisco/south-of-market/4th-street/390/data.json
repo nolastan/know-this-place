@@ -1,0 +1,112 @@
+{
+  "address": "390 Fourth Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/390/",
+  "apn": "3752011A",
+  "block": "3752",
+  "lot": "011A",
+  "eas_baseid": "365753",
+  "coordinates": {
+    "lat": 37.78082,
+    "lng": -122.40005
+  },
+  "parcel": {
+    "year_built": 1924,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 8799,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0390 04TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 161700,
+    "assessed_improvement_value": 294088
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402216248",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-21",
+      "status_date": "2025-02-14",
+      "estimated_cost": 1650,
+      "revised_cost": 1650,
+      "description": "replacement of broken window with the same kind as was there before. to comply with 202315658, front of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403953",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-04-13",
+      "status_date": "1984-11-14",
+      "estimated_cost": 17000,
+      "description": "remove drywall partitions const.new partitions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206982",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-08-24",
+      "status_date": "1983-04-01",
+      "estimated_cost": 25000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=ST&address_number=390",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&lot=011A",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3752011A",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

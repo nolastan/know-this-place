@@ -1,0 +1,161 @@
+{
+  "address": "326 Brannan Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/brannan-street/326/",
+  "apn": "3775012",
+  "block": "3775",
+  "lot": "012",
+  "eas_baseid": "366253",
+  "coordinates": {
+    "lat": 37.781508,
+    "lng": -122.392896
+  },
+  "parcel": {
+    "year_built": 1959,
+    "stories": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 1007,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "NA",
+    "zoning": "SSO",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0326 BRANNAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1183794,
+    "assessed_improvement_value": 503109,
+    "last_sale_date": "2015-09-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South End Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201408113522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-11",
+      "status_date": "2014-10-06",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "barrier removal at (e) sink to (e) restroom can be accessible . alterations incl (n) lavatory/counter, re-install (e) toilet, no other t.i. under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406027264",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "2014-06-02",
+      "status_date": "2024-07-03",
+      "estimated_cost": 200,
+      "description": "to erect front gate sign. non electric, single faced.-maher- compliance with ordinance no. 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401307463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-30",
+      "status_date": "2014-10-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "change of use for outdoor space from existing parking to tasting and retail area. modification of bathroom fixtures to make ada compliant. change of door swing. extension of gas line. maher ord not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312103834",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2013-12-10",
+      "status_date": "2014-01-28",
+      "estimated_cost": 20000,
+      "description": "retail sales. new restrooms, change door swing, interior non structural alterations. change of use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309045959",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2013-09-04",
+      "status_date": "2013-12-09",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "change use of outdoor space from existing parking lot to a wine tasting area/retail sales. existing building not to be open to the public and not to be modified.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717507",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-09",
+      "status_date": "1998-10-23",
+      "estimated_cost": 4340,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRANNAN&street_type=ST&address_number=326",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&lot=012",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3775012",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39289649281623%2037.781507973832916)%27)",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

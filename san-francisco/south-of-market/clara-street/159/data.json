@@ -1,0 +1,124 @@
+{
+  "address": "159 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/159/",
+  "apn": "3752027",
+  "block": "3752",
+  "lot": "027",
+  "eas_baseid": "365763",
+  "coordinates": {
+    "lat": 37.779898,
+    "lng": -122.401552
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 1719,
+    "building_area_sqft": 1945,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0159 CLARA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143538,
+    "assessed_improvement_value": 49607
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409241509",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-09-24",
+      "status_date": "2024-09-24",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "unit a front bldg: replacement of front wooden gate and front stairs railing for unit a (upstairs unit, front building). replace in kind less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409040060",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-09-04",
+      "status_date": "2024-09-04",
+      "estimated_cost": 2600,
+      "revised_cost": 2600,
+      "description": "front bldg/unit a: minor repair of wooden steps for unit a upstair unit in court yard not visible from st. less than 50% repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203222148",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-22",
+      "status_date": "2002-05-08",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair front stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2002–2024",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARA&street_type=ST&address_number=159",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&lot=027",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3752027",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

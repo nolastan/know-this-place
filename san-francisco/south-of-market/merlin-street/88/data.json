@@ -1,0 +1,170 @@
+{
+  "address": "88 Merlin Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/merlin-street/88/",
+  "apn": "3760100",
+  "block": "3760",
+  "lot": "100",
+  "eas_baseid": "366103",
+  "coordinates": {
+    "lat": 37.777564,
+    "lng": -122.401358
+  },
+  "parcel": {
+    "year_built": 1943,
+    "stories": 2,
+    "rooms": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 4000,
+    "building_area_sqft": 4000,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0088 MERLIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1444595,
+    "assessed_improvement_value": 619111,
+    "last_sale_date": "2017-05-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1943",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606082764",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-08",
+      "status_date": "2026-06-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev 202604300396: replace both (e) damaged wooden truss.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202604300396",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-30",
+      "status_date": "2026-05-08",
+      "estimated_cost": 5000,
+      "revised_cost": 45000,
+      "description": "comply with nov 202015176: legalizae as-built restroom layouts and break room counters. replace (e) damaged wooden truss.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102084269",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2021-02-08",
+      "status_date": "2026-05-15",
+      "estimated_cost": 4800,
+      "revised_cost": 0,
+      "description": "to comply with nov# 202015176. remove bathroom & kitchen area that was built without permits. propose for/back to manufacturing/commercial space. upgrade existing electrical 200 amp to 600 amp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002111758",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-02-11",
+      "status_date": "2001-11-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise app #20000115233 to demolish additional wall add hold downs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000115233",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-01-15",
+      "status_date": "2001-01-31",
+      "estimated_cost": 79000,
+      "revised_cost": 79000,
+      "description": "demolish int. n/b walls,insulate & roof install accessible toilets,voluntary seismic upgradepropline",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9417589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-10-25",
+      "status_date": "1995-02-08",
+      "estimated_cost": 12000,
+      "description": "addition new partitions & facing walls w/gyp borad facada",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020915S",
+      "type": "new construction",
+      "status": "cancelled",
+      "filed": "1990-10-12",
+      "status_date": "1992-04-06",
+      "estimated_cost": 120000,
+      "revised_cost": 202000,
+      "description": "erect a two story service garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020917",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1990-10-11",
+      "status_date": "1992-05-07",
+      "description": "demolish storage shed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MERLIN&street_type=ST&address_number=88",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3760100&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3760&lot=100",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3760100",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

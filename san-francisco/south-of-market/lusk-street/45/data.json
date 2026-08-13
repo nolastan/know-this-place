@@ -1,0 +1,118 @@
+{
+  "address": "45 Lusk Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/lusk-street/45/",
+  "apn": "3787019",
+  "block": "3787",
+  "lot": "019",
+  "eas_baseid": "366567",
+  "coordinates": {
+    "lat": 37.77838,
+    "lng": -122.394025
+  },
+  "parcel": {
+    "year_built": 1922,
+    "stories": 1,
+    "rooms": 5,
+    "lot_area_sqft": 4416,
+    "lot_depth_ft": 10.5,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0045 LUSK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 263556,
+    "assessed_improvement_value": 261983
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Clyde and Crooks Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1906–1935",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "South End Historic District Addition",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Eligible (not listed)",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1906–1935",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "9601716",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-02-01",
+      "status_date": "1996-08-01",
+      "estimated_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LUSK&street_type=ST&address_number=45",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&lot=019",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3787019",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39402503457083%2037.77837958178153)%27)",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

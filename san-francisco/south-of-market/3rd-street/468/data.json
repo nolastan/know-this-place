@@ -1,0 +1,153 @@
+{
+  "address": "468–470 Third Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/3rd-street/468/",
+  "apn": "3762007",
+  "block": "3762",
+  "lot": "007",
+  "eas_baseid": "366129",
+  "coordinates": {
+    "lat": 37.781504,
+    "lng": -122.396451
+  },
+  "address_range": "468–470",
+  "street_numbers_on_parcel": [
+    "468",
+    "470"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 3,
+    "lot_area_sqft": 3960,
+    "lot_depth_ft": 72,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0470 0468 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325726,
+    "assessed_improvement_value": 549673,
+    "last_sale_date": "1996-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201601157255",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-15",
+      "status_date": "2016-01-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 2015-1214-4923 per bldg inspector's request, correct story count - this is a 2 story building with no mezzanine. remove non bearing wall @ 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512144923",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-14",
+      "status_date": "2016-01-19",
+      "estimated_cost": 1200,
+      "revised_cost": 5000,
+      "description": "remove non bearing sheet rock walls maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907132455",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-07-13",
+      "status_date": "2009-07-29",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "painting, installation of equipment, partition wall/window (interior) remodel (e) space on the 1st. floor & convert to cafe.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707182",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1997-04-22",
+      "status_date": "1998-06-15",
+      "estimated_cost": 12000,
+      "description": "front upgrade,add concrete structural walls to east side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321171",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-12-02",
+      "status_date": "1994-06-03",
+      "estimated_cost": 8000,
+      "description": "reinforce (e) parapet wall with bent plate at roof level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815432",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-10-13",
+      "status_date": "1989-02-03",
+      "estimated_cost": 21500,
+      "description": "install fire sprinklers",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=468",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=007",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762007",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

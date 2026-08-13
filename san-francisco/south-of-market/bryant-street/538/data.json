@@ -1,0 +1,117 @@
+{
+  "address": "538 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/bryant-street/538/",
+  "apn": "3762017",
+  "block": "3762",
+  "lot": "017",
+  "eas_baseid": "366136",
+  "coordinates": {
+    "lat": 37.780789,
+    "lng": -122.39691
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0538 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1234697,
+    "assessed_improvement_value": 529154,
+    "last_sale_date": "2016-03-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200501123109",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-12",
+      "status_date": "2005-03-08",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "repair spavlled concrete, replace parapet, snfill window opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810429",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-07-26",
+      "status_date": "1988-12-27",
+      "estimated_cost": 3000,
+      "description": "install auto fire system dry chemical in (e) spray booth",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717326",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-12-07",
+      "status_date": "1988-12-27",
+      "estimated_cost": 19000,
+      "description": "install auto spray paint booth",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=538",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=017",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762017",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "address": "89–91 Stillman Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/stillman-street/89/",
+  "apn": "3763025",
+  "block": "3763",
+  "lot": "025",
+  "eas_baseid": "366194",
+  "coordinates": {
+    "lat": 37.781906,
+    "lng": -122.395885
+  },
+  "address_range": "89–91",
+  "street_numbers_on_parcel": [
+    "89",
+    "91"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 2156,
+    "building_area_sqft": 4069,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0091 0089 STILLMAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 789087,
+    "assessed_improvement_value": 526053,
+    "last_sale_date": "2003-08-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STILLMAN&street_type=ST&address_number=89",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=025",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763025",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

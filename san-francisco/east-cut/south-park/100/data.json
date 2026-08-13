@@ -1,0 +1,114 @@
+{
+  "address": "100 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/100/",
+  "apn": "3775103",
+  "block": "3775",
+  "lot": "103",
+  "eas_baseid": "490098",
+  "coordinates": {
+    "lat": 37.781514,
+    "lng": -122.394055
+  },
+  "parcel": {
+    "lot_area_sqft": 36999,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0100 SOUTH PARK            0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "South Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1854–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M705447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-14",
+      "status_date": "2016-07-14",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511162652",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-16",
+      "status_date": "2015-12-23",
+      "estimated_cost": 450000,
+      "revised_cost": 450000,
+      "description": "playground renovation: including demolition of (e) and construction of new children's play area with perimeter seatwalls, synthetic turf safety-surface, pre-fabricated play structure, lighting & accessible path.; maher (?)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M636827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-10",
+      "status_date": "2015-11-13",
+      "revised_cost": 244,
+      "description": "at south park of sf, create new address at block 3775, lot 103 as; 100 south park street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2015–2016",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20PARK&street_type=&address_number=100",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775103&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&lot=103",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3775103",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39405474103313%2037.78151386645474)%27)",
+      "retrieved": "2026-08-12"
+    }
+  ]
+}

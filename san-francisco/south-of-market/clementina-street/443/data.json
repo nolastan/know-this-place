@@ -1,0 +1,98 @@
+{
+  "address": "443 Clementina Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/clementina-street/443/",
+  "apn": "3732044",
+  "block": "3732",
+  "lot": "044",
+  "eas_baseid": "365482",
+  "coordinates": {
+    "lat": 37.779747,
+    "lng": -122.404846
+  },
+  "parcel": {
+    "lot_area_sqft": 2250,
+    "lot_depth_ft": 30,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0443 CLEMENTINA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3098113,
+    "last_sale_date": "2018-06-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9814291",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-07-27",
+      "status_date": "1999-09-07",
+      "estimated_cost": 2000,
+      "description": "curb cut & paint red for access to parking lot-for employees",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-01-29",
+      "status_date": "1997-04-07",
+      "estimated_cost": 2760,
+      "description": "galv fence @p/l w/ slide gate & track",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENTINA&street_type=ST&address_number=443",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&lot=044",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3732044",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

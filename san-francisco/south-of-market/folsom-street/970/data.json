@@ -1,0 +1,139 @@
+{
+  "address": "970 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/970/",
+  "apn": "3732026",
+  "block": "3732",
+  "lot": "026",
+  "eas_baseid": "365473",
+  "coordinates": {
+    "lat": 37.779284,
+    "lng": -122.405034
+  },
+  "parcel": {
+    "year_built": 1927,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 3724,
+    "building_area_sqft": 5400,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "MUR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0970 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 854106,
+    "assessed_improvement_value": 213518,
+    "last_sale_date": "2012-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503071817",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-03-07",
+      "status_date": "2025-03-07",
+      "estimated_cost": 8500,
+      "revised_cost": 0,
+      "description": "renovate existing floor office to co-working space. add 2nd exit. add new urinal, add new mop sink, add new entry platform, and modify existing steps at platform.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406255235",
+      "type": "otc alterations permit",
+      "status": "suspend",
+      "filed": "2024-06-25",
+      "status_date": "2025-04-21",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "change of use from warehouse (f) to office (b). add a new interior ada ramp, add a second exit behind an existing garage door for a new cafe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311140749",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-14",
+      "status_date": "2024-04-12",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "add an approximately 14ft x 21 ft with 10 ft ceiling for an interior storage room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311081569",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2013-11-08",
+      "status_date": "2013-11-27",
+      "estimated_cost": 3482,
+      "revised_cost": 3482,
+      "description": "to erect electrical sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205029666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-02",
+      "status_date": "2012-07-12",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "commercial (manufacturing) remodel, barrier removal, install 2 ada restrooms. space remain vacant.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=970",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&lot=026",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3732026",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

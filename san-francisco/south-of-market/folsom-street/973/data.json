@@ -1,0 +1,120 @@
+{
+  "address": "973–975 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/973/",
+  "apn": "3753131",
+  "block": "3753",
+  "lot": "131",
+  "eas_baseid": "365869",
+  "coordinates": {
+    "lat": 37.77883,
+    "lng": -122.404778
+  },
+  "address_range": "973–975",
+  "street_numbers_on_parcel": [
+    "973",
+    "975"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 2225,
+    "building_area_sqft": 2989,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0975 0973 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1031633,
+    "assessed_improvement_value": 440783,
+    "last_sale_date": "2006-12-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201408204288",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-08-20",
+      "status_date": "2014-08-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace in kind windows and garage door. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025696",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-17",
+      "status_date": "1990-12-21",
+      "estimated_cost": 39800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915534",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-08-28",
+      "status_date": "1989-11-17",
+      "estimated_cost": 1600,
+      "description": "parapet reinforcement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=973",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753131&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=131",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753131",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

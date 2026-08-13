@@ -1,0 +1,145 @@
+{
+  "address": "162 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/162/",
+  "apn": "3752051",
+  "block": "3752",
+  "lot": "051",
+  "eas_baseid": "365768",
+  "coordinates": {
+    "lat": 37.780254,
+    "lng": -122.401651
+  },
+  "parcel": {
+    "year_built": 1991,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "zoning": "MUR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0162 CLARA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 709760,
+    "assessed_improvement_value": 7167
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1991",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607215348",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-21",
+      "status_date": "2026-07-23",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "tenant to remove & reconstruct (e) stair, renovate (e) restroom/adjoining wall. provide new window, drinkling fountain, mop sink & kitchenette. change of use to office.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001712",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-26",
+      "status_date": "1991-01-08",
+      "estimated_cost": 1,
+      "description": "change size of 1 lateralrun of fire sprink distribution sym",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8911036",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-06-27",
+      "status_date": "1989-11-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change location of adoor connecting bldgwith 164a clara st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909515",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-06-05",
+      "status_date": "1991-01-08",
+      "estimated_cost": 2900,
+      "description": "install sprinklers in shop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904620",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-23",
+      "status_date": "1991-01-08",
+      "estimated_cost": 1,
+      "description": "new, slightly deeper footings, re #8812118",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812118",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-08-18",
+      "status_date": "1991-01-08",
+      "estimated_cost": 100000,
+      "description": "erect a one story sheet metal shop",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARA&street_type=ST&address_number=162",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&lot=051",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3752051",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

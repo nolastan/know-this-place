@@ -1,0 +1,144 @@
+{
+  "address": "894 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/894/",
+  "apn": "3733028",
+  "block": "3733",
+  "lot": "028",
+  "eas_baseid": "365557",
+  "coordinates": {
+    "lat": 37.780623,
+    "lng": -122.403329
+  },
+  "parcel": {
+    "year_built": 1925,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2500,
+    "lot_depth_ft": 80,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0894 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 362498,
+    "assessed_improvement_value": 335973,
+    "last_sale_date": "1991-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201007025903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-02",
+      "status_date": "2010-09-16",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "referenced pa# 2006.12.28.0659 ( issued but not completed yet) for commercial space @ ground fl and new residential unit @ 2nd fl. install fire alarm for sprinkler monitoring with central panel. 1 manual pull, 1 smoke detector, 2 horn strobes and 1 flow switch and 2 tampers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001204985",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-20",
+      "status_date": "2010-11-15",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "install auto fire sprinkler system protect the entire bldg includes 2\" fire service underground; 49sprinklers total. ref pa #200612280659.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612280659",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-12-28",
+      "status_date": "2010-12-14",
+      "estimated_cost": 500000,
+      "revised_cost": 600000,
+      "description": "new commerical space on ground level. new 2nd floor residential unit and garage. new roof structure and interiors.new driveway/curbcut/building frontage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9201790",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-02-04",
+      "status_date": "1992-08-19",
+      "estimated_cost": 1800,
+      "description": "j.c.graphics",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112850",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-07-22",
+      "status_date": "1991-09-25",
+      "estimated_cost": 5000,
+      "description": "parapet.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1991–2010",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=894",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&lot=028",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3733028",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

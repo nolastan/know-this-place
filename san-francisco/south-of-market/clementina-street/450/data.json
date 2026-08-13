@@ -1,0 +1,120 @@
+{
+  "address": "450 Clementina Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/clementina-street/450/",
+  "apn": "3732066",
+  "block": "3732",
+  "lot": "066",
+  "eas_baseid": "365487",
+  "coordinates": {
+    "lat": 37.779927,
+    "lng": -122.405181
+  },
+  "parcel": {
+    "year_built": 1927,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0450 CLEMENTINA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 446046,
+    "assessed_improvement_value": 149836,
+    "last_sale_date": "2004-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9620715",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-25",
+      "status_date": "1997-06-24",
+      "estimated_cost": 1,
+      "description": "renew 9521148, 9518002",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9521148",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-12-18",
+      "status_date": "1996-09-26",
+      "estimated_cost": 5000,
+      "description": "remove dryrot damage to brick facade. repl w/stucco facade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518002",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-25",
+      "status_date": "1996-09-26",
+      "estimated_cost": 12000,
+      "description": "new handicaped bathroom new conc. floor finish walls/ceiling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1995–2009",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENTINA&street_type=ST&address_number=450",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&lot=066",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3732066",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "heritage_rating": "C — of contextual importance",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

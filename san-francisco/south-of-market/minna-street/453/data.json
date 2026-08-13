@@ -1,0 +1,121 @@
+{
+  "address": "453 Minna Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/minna-street/453/",
+  "apn": "3725075",
+  "block": "3725",
+  "lot": "075",
+  "eas_baseid": "365003",
+  "coordinates": {
+    "lat": 37.781266,
+    "lng": -122.406956
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 1968,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "C3S",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0453 MINNA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 21681,
+    "assessed_improvement_value": 32317
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9920801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-04",
+      "status_date": "2000-12-26",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1999–2010",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNA&street_type=ST&address_number=453",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3725075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3725&lot=075",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3725075",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-context-statement",
+      "name": "San Francisco Planning Department (Jonathan Lammers, project manager), Central SoMa Historic Context Statement & Historic Resource Survey, adopted by the Historic Preservation Commission on March 16, 2016 (Motion No. 0277)",
+      "query": "https://sfplanning.org/project/central-soma-historic-resources-survey",
+      "document": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/central_soma_hrs/HP_CentralSoma_Historic_Context_Statement_Draft.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Context Statement, adopted 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906",
+      "kind": "site history",
+      "description": "One of the most unusual buildings in the study area: a single-family dwelling on a 20-foot-wide lot, extremely restrained in design, with wood rustic channel siding and a simple cornice. Single-family dwellings are extremely rare in the Central SoMa area.",
+      "source": "central-soma-context-statement"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "5S3",
+    "status_code_meaning": "5S3 — appears to be individually eligible for local listing or designation, through survey evaluation",
+    "style": "Western False-Front",
+    "frame": "Wood",
+    "physical_integrity": "High",
+    "source": "central-soma-survey"
+  }
+}

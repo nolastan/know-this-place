@@ -1,0 +1,171 @@
+{
+  "address": "925 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/925/",
+  "apn": "3760129",
+  "block": "3760",
+  "lot": "129",
+  "eas_baseid": "366119",
+  "coordinates": {
+    "lat": 37.778366,
+    "lng": -122.402245
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 4260,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0925 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 664966,
+    "assessed_improvement_value": 443309,
+    "last_sale_date": "2013-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "SoMa LGBTQ Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca.1950s–ca.1990s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201309247560",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-24",
+      "status_date": "2013-09-24",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309045901",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-04",
+      "status_date": "2013-09-05",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to perform customary sign maintenance as shown on plans by & associates inc. dated 9/3/13. cco sign no. 1209",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306199973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-19",
+      "status_date": "2014-05-07",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "1st & 2nd floors-landlord improvement to include new bathroom on the 1st fl, windows, lighting. windows visible from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305066201",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-05-06",
+      "status_date": "2013-05-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201304305792. submit revised drawing showing the correct direction that the double doors on the ground floor of harrision st open. doors open inward to bldg. not outward.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304305792",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-30",
+      "status_date": "2013-04-30",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "removal of misc personal property, removal of wooden shelves, carpeting some non structural 2x4 walls. removal of trade fixtures, furtinure, acconstic tile/drop ceiling gyp board, tile, plywood floor covering. linoluem floor covering",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-09",
+      "status_date": "1994-03-16",
+      "estimated_cost": 20062,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1993–2013",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=925",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3760129&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3760&lot=129",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3760129",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40224484368864%2037.77836594145793)%27)",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

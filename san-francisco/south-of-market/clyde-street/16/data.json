@@ -1,0 +1,137 @@
+{
+  "address": "16 Clyde Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clyde-street/16/",
+  "apn": "3787016",
+  "block": "3787",
+  "lot": "016",
+  "eas_baseid": "366564",
+  "coordinates": {
+    "lat": 37.778624,
+    "lng": -122.394196
+  },
+  "parcel": {
+    "lot_area_sqft": 2210,
+    "lot_depth_ft": 55.25,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0016 CLYDE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 637840,
+    "last_sale_date": "1999-10-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Clyde and Crooks Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1906–1935",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "South End Historic District Addition",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Eligible (not listed)",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1906–1935",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201911228034",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-11-22",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "rev to pa# 201808107113; existing footing of retaining wall is level w/adjacent basement floor, there is no need to cement grout to (e) soil underneath footing to avoid surcharge on (e) adjacent building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910154529",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-15",
+      "status_date": "2019-10-15",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "commencement of work not startedunder previously7 approved permit application pa#201808107113.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808107113",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-10",
+      "status_date": "2018-08-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace rotted wood wall w/ cmu",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLYDE&street_type=ST&address_number=16",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&lot=016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3787016",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39419620916449%2037.7786243624861)%27)",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

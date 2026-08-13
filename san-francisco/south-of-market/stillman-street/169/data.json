@@ -1,0 +1,115 @@
+{
+  "address": "169 Stillman Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/stillman-street/169/",
+  "apn": "3762041",
+  "block": "3762",
+  "lot": "041",
+  "eas_baseid": "366148",
+  "coordinates": {
+    "lat": 37.780444,
+    "lng": -122.397735
+  },
+  "parcel": {
+    "year_built": 1980,
+    "units": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 3200,
+    "building_area_sqft": 4800,
+    "lot_depth_ft": 80,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0169 STILLMAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 49797,
+    "assessed_improvement_value": 555159
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1980",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201404183579",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2014-04-18",
+      "status_date": "2014-04-18",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "one non-illuminated single faced wall sign. n/a for the maher ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-07",
+      "status_date": "1994-04-29",
+      "estimated_cost": 590,
+      "description": "fill 12 holes w/an appropriate material in int.surface",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-07",
+      "status_date": "1994-04-29",
+      "estimated_cost": 590,
+      "description": "fill 32 holes w/an appropriate material in int.surface",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STILLMAN&street_type=ST&address_number=169",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=041",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762041",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

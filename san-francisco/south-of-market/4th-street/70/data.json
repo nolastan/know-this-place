@@ -1,0 +1,154 @@
+{
+  "address": "70 Fourth Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/4th-street/70/",
+  "apn": "3705005",
+  "block": "3705",
+  "lot": "005",
+  "eas_baseid": "364761",
+  "coordinates": {
+    "lat": 37.784685,
+    "lng": -122.40491
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 3,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 6240,
+    "basement_area_sqft": 3090,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3R",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0074 0070 04TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 940625,
+    "assessed_improvement_value": 141082
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201101138323",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2011-01-13",
+      "status_date": "2026-01-09",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "repair of two existing sidewalk supporting steel beam (all work underneath sidewalk).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702073611",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-07",
+      "status_date": "2007-04-16",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009251425",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-09-25",
+      "status_date": "2001-05-31",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "to comply w/nov 9801417-dad-remove sliding door & threshold in display rm between stairwells to allo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9822558",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-11-03",
+      "status_date": "2000-01-18",
+      "estimated_cost": 500,
+      "description": "comply w/n.o.v.#9801417,remove sliding,threshold,add sheetrk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704778",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-03-17",
+      "status_date": "1998-05-27",
+      "estimated_cost": 5000,
+      "revised_cost": 15000,
+      "description": "replace entrance doors & threshold for accessibility comp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712095",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-08-25",
+      "status_date": "1988-02-22",
+      "estimated_cost": 45000,
+      "description": "install new vct flooring, revise lighting, new restroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=ST&address_number=70",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3705005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3705&lot=005",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3705005",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "proposed_status_code": "6L",
+    "status_code_meaning": "6L — determined ineligible for local listing or designation through local government review; may warrant special consideration in local planning",
+    "style": "Classical Revival",
+    "frame": "Reinforced concrete",
+    "physical_integrity": "Medium",
+    "address_as_surveyed": "70 4th Street",
+    "source": "central-soma-survey"
+  }
+}

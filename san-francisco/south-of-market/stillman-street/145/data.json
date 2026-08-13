@@ -1,0 +1,125 @@
+{
+  "address": "145 Stillman Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/stillman-street/145/",
+  "apn": "3762049",
+  "block": "3762",
+  "lot": "049",
+  "eas_baseid": "366152",
+  "coordinates": {
+    "lat": 37.780834,
+    "lng": -122.39724
+  },
+  "parcel": {
+    "year_built": 1925,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 5891,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0145 STILLMAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 5794942,
+    "last_sale_date": "2009-01-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201004019421",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2010-04-01",
+      "status_date": "2010-05-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "the owner of general advertising sign located at 145 stillman st, shall perform customary sign maintenance voluntarily as shown on structural plans s-0,s-1, and s-2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300259",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-01-08",
+      "status_date": "1993-12-24",
+      "estimated_cost": 4000,
+      "description": "renew expired appl #9115729",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115729",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-08-30",
+      "status_date": "1992-02-03",
+      "estimated_cost": 4000,
+      "description": "anchoring walls per parapet ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716863",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-12-01",
+      "status_date": "1989-04-05",
+      "estimated_cost": 40000,
+      "description": "remove and replace existing roof top sign tower",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STILLMAN&street_type=ST&address_number=145",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3762049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3762&lot=049",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3762049",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "address": "482–486 Bryant Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/bryant-street/482/",
+  "apn": "3763017",
+  "block": "3763",
+  "lot": "017",
+  "eas_baseid": "366186",
+  "coordinates": {
+    "lat": 37.781808,
+    "lng": -122.395622
+  },
+  "address_range": "482–486",
+  "street_numbers_on_parcel": [
+    "482",
+    "486"
+  ],
+  "parcel": {
+    "year_built": 2015,
+    "units": 2,
+    "stories": 2,
+    "bathrooms": 4,
+    "lot_area_sqft": 2299,
+    "building_area_sqft": 5605,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "NA",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0486 0482 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 623904,
+    "assessed_improvement_value": 3314628,
+    "last_sale_date": "2007-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "2015",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108025595",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2021-08-02",
+      "status_date": "2021-08-02",
+      "estimated_cost": 19800,
+      "revised_cost": 19800,
+      "description": "demolition of a type 5 2 story pdr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510190094",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-19",
+      "status_date": "2015-11-16",
+      "estimated_cost": 2100,
+      "revised_cost": 2100,
+      "description": "sprinkler waterflow and supervisory system. new controll unit, smoke det above, pull station near main entrance. install modules to tie in waterflow and tamper switches to new panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504103355",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-10",
+      "status_date": "2015-11-10",
+      "estimated_cost": 23000,
+      "revised_cost": 32000,
+      "description": "mechanical system for ref pa # 2012 1108 3830 maher - not req'd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503029737",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-02",
+      "status_date": "2015-11-05",
+      "estimated_cost": 32500,
+      "revised_cost": 37500,
+      "description": "install new standpipe and new fire sprinkler system per nfpa13 throughout building. include 4\" underground service. total 65 heads pa 2012-1108-3830. maher - not req'd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211083830",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2012-11-08",
+      "status_date": "2015-11-12",
+      "estimated_cost": 800000,
+      "revised_cost": 1080000,
+      "description": "erect 2-story, commercial building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2012–2021",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=482",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3763017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3763&lot=017",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3763017",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

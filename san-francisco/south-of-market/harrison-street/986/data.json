@@ -1,0 +1,116 @@
+{
+  "address": "986 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/986/",
+  "apn": "3753029",
+  "block": "3753",
+  "lot": "029",
+  "eas_baseid": "365820",
+  "coordinates": {
+    "lat": 37.777709,
+    "lng": -122.403923
+  },
+  "parcel": {
+    "year_built": 1926,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 1972.8,
+    "building_area_sqft": 2466,
+    "lot_depth_ft": 80,
+    "use": "Commercial Misc",
+    "property_class": "Garages (Commercial)",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0986 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 154352,
+    "assessed_improvement_value": 231543
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201608154992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-15",
+      "status_date": "2017-08-25",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace front door and transom as existing. barrier removal - new door & threshold (in swinging door). no plans required. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503110578",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "2015-03-11",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1200,
+      "description": "to erect new double faced projecting sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209280838",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-28",
+      "status_date": "2012-09-28",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "tear off roof install class \"a\" built up 4-ply roofing and class \"a\" composition shingles",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=986",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=029",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753029",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

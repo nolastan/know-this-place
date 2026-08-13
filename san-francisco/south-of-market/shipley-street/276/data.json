@@ -1,0 +1,117 @@
+{
+  "address": "276 Shipley Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/shipley-street/276/",
+  "apn": "3753118",
+  "block": "3753",
+  "lot": "118",
+  "eas_baseid": "365862",
+  "coordinates": {
+    "lat": 37.778621,
+    "lng": -122.404638
+  },
+  "parcel": {
+    "year_built": 1925,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 3103,
+    "lot_depth_ft": 75,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "MUR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0276 SHIPLEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 919393,
+    "assessed_improvement_value": 612928,
+    "last_sale_date": "2013-12-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201107291304",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-29",
+      "status_date": "2011-08-30",
+      "estimated_cost": 25650,
+      "revised_cost": 25650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702134045",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-02-13",
+      "status_date": "2007-10-05",
+      "estimated_cost": 84000,
+      "revised_cost": 84000,
+      "description": "interior renovation of existing office space and existing mezzazanine. provide new mezzanine and sanitary facilities.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003463",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-02-22",
+      "status_date": "1991-01-25",
+      "estimated_cost": 15000,
+      "description": "earthquake repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHIPLEY&street_type=ST&address_number=276",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753118&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&lot=118",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3753118",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "address": "362–366 Brannan Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/brannan-street/362/",
+  "apn": "3775018",
+  "block": "3775",
+  "lot": "018",
+  "eas_baseid": "366257",
+  "coordinates": {
+    "lat": 37.780844,
+    "lng": -122.393751
+  },
+  "address_range": "362–366",
+  "street_numbers_on_parcel": [
+    "362",
+    "366"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 5279,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0362 BRANNAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81063,
+    "assessed_improvement_value": 74822
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405206270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-20",
+      "status_date": "2014-08-15",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-25",
+      "status_date": "1993-04-05",
+      "estimated_cost": 2600,
+      "description": "parapet strengthening see pa#9026240",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9026240",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-01-02",
+      "status_date": "1992-04-22",
+      "estimated_cost": 5200,
+      "description": "parapet strengthening",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRANNAN&street_type=ST&address_number=362",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&lot=018",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3775018",
+      "retrieved": "2026-08-12"
+    },
+    {
+      "id": "central-soma-survey",
+      "name": "San Francisco Planning Department, Central SoMa Historic Resources Survey — property information catalog and survey results, in the Historic Preservation Commission packet for Case No. 2011.1356E, March 16, 2016",
+      "query": "https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Central SoMa Historic Resources Survey, 2016",
+      "retrieved": "2026-08-12"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Central SoMa Historic Resources Survey (2016)",
+    "prior_survey": "South of Market",
+    "source": "central-soma-survey"
+  }
+}

@@ -339,22 +339,49 @@ STREET_TYPE_WORD = {
     "CIR": "circle", "PLZ": "plaza", "ROW": "row", "PATH": "path", "STPS": "steps",
 }
 ORDINAL = re.compile(r"^\d+(ST|ND|RD|TH)$", re.I)
+# EAS zero-pads the single-digit numbered streets — "03RD", "05TH" — so they
+# sort as text. The city doesn't: the street is Third Street, and the directory
+# contract wants "3rd-street". Padding survives into a slug and a page title
+# unless it is stripped here, which is how "03rd Street" reached a first draft.
+PADDED_ORDINAL = re.compile(r"^0+(\d(ST|ND|RD|TH))$", re.I)
+# Single-digit numbered streets are spelled out in San Francisco addresses
+# ("601 Third Street"); two-digit ones are not ("1010 14th Street").
+ORDINAL_WORD = {"1ST": "First", "2ND": "Second", "3RD": "Third", "4TH": "Fourth",
+                "5TH": "Fifth", "6TH": "Sixth", "7TH": "Seventh", "8TH": "Eighth",
+                "9TH": "Ninth"}
+
+
+def unpad(token: str) -> str:
+    m = PADDED_ORDINAL.match(token or "")
+    return m.group(1) if m else token
 
 
 def street_slug(name: str, stype: str) -> str | None:
-    word = STREET_TYPE_WORD.get((stype or "").upper())
-    if not word:
+    # A few streets have no type at all — EAS files South Park with an empty
+    # `street_type`, because the street is called South Park and nothing else.
+    # An unrecognized type is still a reason to skip the row; a missing one is
+    # not, and treating them the same drops every address on such a street.
+    word = "" if not (stype or "").strip() else STREET_TYPE_WORD.get(stype.upper())
+    if word is None:
         return None
-    base = re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")
-    return f"{base}-{word}" if base else None
+    name = " ".join(unpad(t) for t in (name or "").split())
+    base = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    if not base:
+        return None
+    return f"{base}-{word}" if word else base
 
 
 def street_display(name: str, stype: str) -> str:
     word = STREET_TYPE_WORD.get((stype or "").upper(), (stype or "").lower())
     parts = []
     for token in (name or "").split():
-        parts.append(token.lower() if ORDINAL.match(token) else token.capitalize())
-    return " ".join(parts) + " " + word.capitalize()
+        token = unpad(token)
+        spelled = ORDINAL_WORD.get(token.upper())
+        if spelled:
+            parts.append(spelled)
+        else:
+            parts.append(token.lower() if ORDINAL.match(token) else token.capitalize())
+    return (" ".join(parts) + " " + word.capitalize()).strip()
 
 
 def num_key(n: str):
@@ -1136,6 +1163,96 @@ def narrative_html(rec: dict, indent: str) -> tuple:
     return lead, "\n".join(out)
 
 
+def historical_record_html(rec: dict, indent: str) -> str:
+    """`historical_record` as the "Earlier record" timeline AGENTS.md describes.
+
+    One dated fact per entry, from a historical source rather than a city
+    dataset. It is a timeline, not prose, so a page that gains three of these
+    gains no paragraphs.
+    """
+    entries = rec.get("historical_record") or []
+    if not entries:
+        return ""
+    # `label` is the short form a timeline entry cites; the full citation is in
+    # the Sources footer, and repeating it under every item would swamp them.
+    labels = {s["id"]: s.get("label") or s.get("name", s["id"])
+              for s in rec.get("sources", [])}
+    items = []
+    for e in entries:
+        meta = labels.get(e.get("source"), e.get("source") or "")
+        summary = (f'{indent}    <p class="vtl-desc"><b>{esc(e["summary"])}</b></p>\n'
+                   if e.get("summary") else "")
+        when = e.get("date", "")
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", when or ""):
+            when = long_date(when)
+        items.append(
+            f'{indent}  <li class="vtl-item">\n'
+            f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
+            f'{summary}'
+            f'{indent}    <p class="vtl-desc">{esc(e.get("description", ""))}</p>\n'
+            + (f'{indent}    <div class="vtl-meta">\n'
+               f'{indent}      <span>{esc(meta)}</span>\n'
+               f'{indent}    </div>\n' if meta else "")
+            + f'{indent}  </li>')
+    return (f'{indent}<div class="section-head"><span class="ic ic-calendar"></span>'
+            f'<h2>Earlier record</h2></div>\n'
+            f'{indent}<ol class="vtl">\n' + "\n".join(items) + f'\n{indent}</ol>\n')
+
+
+def survey_panel_html(rec: dict, indent: str) -> str:
+    """`historic_survey` — what a historic resources survey found here.
+
+    Spec rows, not prose: a status code, a rating, the earlier surveys that
+    looked at the building. Where the survey's own address or APN disagrees
+    with the city's, both are shown and neither is adjudicated.
+    """
+    s = rec.get("historic_survey") or {}
+    if not s:
+        return ""
+    rows = []
+    for icon, key, val in (
+            ("ic-permit", "Status code", s.get("proposed_status_code")),
+            ("ic-permit", "Prior status code", s.get("prior_status_code")),
+            ("ic-plan", "Article 11 rating", s.get("proposed_article11_rating")),
+            ("ic-plan", "Current Article 11 rating", s.get("current_article11_rating")),
+            ("ic-pin", "Eligible district", s.get("eligible_district")),
+            ("ic-pin", "Within district", s.get("existing_district")),
+            ("ic-ruler", "Style", s.get("style")),
+            ("ic-plan", "Construction", s.get("frame")),
+            ("ic-layers", "Integrity", s.get("physical_integrity")),
+            ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
+            ("ic-home", "Address as surveyed", s.get("address_as_surveyed")),
+            ("ic-pin", "Parcel as surveyed", s.get("apn_as_surveyed"))):
+        if val:
+            rows.append((icon, key, str(val)))
+    for key, val in (("Here Today (1968)", s.get("here_today_page")),
+                     ("1976 architectural survey", s.get("dcp_1976_survey")),
+                     ("Unreinforced masonry survey", s.get("umb_survey")),
+                     ("Heritage rating", s.get("heritage_rating")),
+                     ("Earlier survey", s.get("prior_survey"))):
+        if val:
+            rows.append(("ic-check", key, "Listed" if val is True else str(val)))
+    if not rows:
+        return ""
+    body = "\n".join(
+        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+        f'<span class="spec-k">{esc(k)}</span>'
+        f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
+    # A status code is opaque on its own, so the code key the survey prints
+    # alongside its findings is carried under the list.
+    meaning = s.get("status_code_meaning")
+    if meaning and not meaning.endswith("."):
+        meaning += "."
+    footnote = " ".join(x for x in (meaning, s.get("note")) if x)
+    note = (f'{indent}  <p class="prose"><small>{esc(footnote)}</small></p>\n'
+            if footnote else "")
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>{esc(s.get("survey", "Historic resources survey"))}</h3>\n'
+            f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
+            f'{note}'
+            f'{indent}</section>\n')
+
+
 def open_space_panel_html(rec: dict, indent: str) -> str:
     """The city's privately-owned-public-open-space record, as a sidebar panel.
 
@@ -1377,15 +1494,19 @@ def render_html(rec: dict) -> str:
     # record runs full width, so a short page looks short rather than like a wide
     # page with an empty column.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
-                      or district_panel_html(rec, "") or open_space_panel_html(rec, ""))
-    use_cols = (n_shown >= 4 or rec.get("public_art")) and has_panels
+                      or district_panel_html(rec, "") or open_space_panel_html(rec, "")
+                      or survey_panel_html(rec, ""))
+    use_cols = ((n_shown >= 4 or rec.get("public_art")
+                 or rec.get("historical_record")) and has_panels)
     ind = "      " if use_cols else "  "
     panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
-              + glance_panel_html(rec, ind) + district_panel_html(rec, ind))
+              + glance_panel_html(rec, ind) + survey_panel_html(rec, ind)
+              + district_panel_html(rec, ind))
     art = public_art_html(rec, ind)
     timeline = timeline_html(rec, ind)
+    earlier = historical_record_html(rec, ind)
     lead_html, sections = narrative_html(rec, ind)
-    main_col = "\n".join(x for x in (art, timeline, sections) if x)
+    main_col = "\n".join(x for x in (art, earlier, timeline, sections) if x)
 
     if use_cols:
         body = ('  <div class="cols">\n    <div class="main">\n'
