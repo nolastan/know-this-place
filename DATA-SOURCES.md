@@ -806,7 +806,11 @@ a street number, which is the whole constraint:
   individual neighborhoods and survey areas — consultant reports that set out
   an area's development history and then inventory its buildings. They are the
   richest address-level history available for the districts that have one, and
-  they name streets and numbers constantly. The landing page listing the
+  they name streets and numbers constantly — except when they don't. Some are
+  guides written *for* a survey rather than reports of one, and those name no
+  street numbers at all; the Mission District statement below is the worked
+  example, and checking which kind you have is the first thing to do with a new
+  one. The landing page listing the
   adopted statements is
   `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
 - **Read into the repo so far:**
@@ -832,6 +836,13 @@ a street number, which is the whole constraint:
     `central-waterfront-context-statement`. Listed on the SF Planning page as
     "Central Waterfront Survey and Context Statement (Adopted 2001)". See
     "The Central Waterfront statement" below.
+  - San Francisco Planning Department (Matt Weintraub, Citywide Survey Project
+    Manager, author), *City within a City: Historic Context Statement for San
+    Francisco's Mission District*, November 2007, adopted 2007 (95 pp. in 98
+    PDF pages), source id `mission-district-context-statement`. Listed on the
+    SF Planning page as "Mission District (Adopted 2007)". **No page on this
+    site cites it**, because it names no street numbers — see "The Mission
+    District statement" below before spending a pass on it.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -964,6 +975,58 @@ are present only as one-line cover sheets. What is actually in the file:
   - Street renamings are given in passing and are worth keeping: Kentucky
     Street became Third Street, Sierra Street became 22nd Street, and the
     east-west streets were numbered in the first years of the 20th century.
+**The Mission District statement names no street numbers at all — not one, in
+95 pages.** It is the one document in this set that yielded nothing, and the
+reason is structural rather than accidental, so don't re-read it hoping for a
+different answer:
+- **It is a survey *guide*, not a survey.** Its stated job is to give the
+  historic contexts, property types and registration requirements that the
+  Department's own 2007–2008 surveys would then apply to individual buildings.
+  It says so on its second page and again in "Existing Information and
+  Programs": roughly 1,000 southern Mission properties were to be documented
+  during 2008, in a separate product. The per-property records this document
+  points at are therefore somewhere else, and going after them is the useful
+  next move — see "Where the Mission's address-level data actually is" below.
+- **There is no inventory table and no appendix.** Unlike the Central
+  Waterfront statement, which promises eight appendices and delivers three,
+  this one promises none. Its table of contents runs Introduction →
+  Documenting Historic Resources → nine period chapters → Bibliography, ending
+  at printed page 95, and the PDF's 98 pages are exactly that plus three
+  sheets of front matter. Nothing is truncated or missing.
+- **Everything it discusses is located by intersection, block bounds, street
+  segment or district.** Around fifty individually named properties appear in
+  the narrative — Mission Dolores chapel, the Tanforan Cottages, St. Peter's
+  and St. John's, the Victoria, New Mission and El Capitan theaters, the
+  National Guard Armory, the Notre Dame School, the B'nai David Temple, the
+  Girls' Club, Mission High School, Valencia Gardens, the Bernal Dwellings,
+  Dolores Terrace, the Mission Bank, the John Center Water Works, the Valencia
+  Hotel, Recreation Park, Seals Stadium and others — and every one of them is
+  pinned only to something like "Valencia and Fifteenth Streets", "the block
+  bounded by Shotwell, Folsom, Fifteenth and Sixteenth", "on Sixteenth Street"
+  or "just west of the project study area". The only two numerals adjacent to
+  a street name in the whole document are the intersections "Larkin and 9th
+  Streets" and "Valencia and 28th". Resolving any of these would mean picking
+  a corner of an intersection or joining a proper name against a second
+  dataset, which is the "stays unresolved" case in AGENTS.md → "Mining a
+  corpus"; the Central Waterfront pass declined the identical class of hit and
+  this one does too.
+- **A useful non-address fact it does carry** is that the assessor's 1900
+  year-built is a placeholder: San Francisco's building records burned in
+  1906, so "almost all pre-disaster properties were arbitrarily assigned a
+  'place-holder' construction date of 1900 in the Assessor's records"
+  (footnote 9). That is the same 1900 the Central Waterfront statement's dates
+  disagree with, and it is worth knowing before writing a page that leans on
+  the roll's year built for a pre-1906 Mission building.
+- **Where the Mission's address-level data actually is.** The document names
+  its own predecessors and successors, and those are the documents to go after
+  when the Mission is worked again: N. Moses Corrette's *Inner Mission North
+  1853–1943 Context Statement* (2005); the Inner Mission North Survey itself,
+  running since 2001 and about three-quarters complete in 2007, which produced
+  the eight historic districts the Planning data already carries; Roland-Nawi
+  Associates' *Mission Dolores Historic Context Statement* (2007); Page &
+  Turnbull's *Context Statement: Market and Octavia Neighborhood Plan Area*
+  (2007); and the 2007–2008 southern Mission survey this statement was written
+  to guide. None of those is read into the repo.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1020,6 +1083,29 @@ are present only as one-line cover sheets. What is actually in the file:
   VerPlanck's Dogpatch Historic Resource Survey are separate documents and are
   untouched, as are the Market & Octavia, Japantown and other adopted
   statements on the same SF Planning page.)
+- **Verified:** 2026-08-13 (Mission District: read all 98 pages of the archived
+  PDF — 95 printed pages of narrative plus three of front matter, which is the
+  whole document; its table of contents promises no appendix and none is
+  missing. **0 numbered San Francisco street addresses appear in it**, so 0
+  resolved in EAS, 0 pages were created and 0 were edited, and no page cites
+  this document. The count is not an estimate: every numeric token in the
+  extracted text was audited, and all of them are years, page numbers,
+  populations, unit counts, dimensions or footnote and bulletin numbers. Around
+  fifty individually named properties are discussed, each located only by
+  intersection, block bounds, street segment or district — the class of hit the
+  Central Waterfront pass also left undocumented. The three full-page graphics
+  with no extractable text, PDF pages 45, 47 and 70, were rendered and read:
+  they are the 1889, 1899 and 1914 Sanborn thematic maps, labelled with land
+  uses and institution names and carrying no street numbers either. Coverage
+  note: this document is read in full and nothing in it is outstanding, and it
+  needs no second pass. What it points at has not been read — Corrette's *Inner
+  Mission North 1853–1943 Context Statement* (2005), the Inner Mission North
+  Survey, Roland-Nawi's *Mission Dolores Historic Context Statement* (2007),
+  Page & Turnbull's Market & Octavia statement (2007), and the 2007–2008
+  southern Mission survey of about 1,000 properties this statement was written
+  to guide. Those, not this, are where the Mission's per-property records live.
+  The Japantown and other adopted statements on the same SF Planning page
+  remain untouched.)
 
 ## Known gaps
 
