@@ -111,6 +111,7 @@ Every residential parcel on 19th Street that the city's address, assessor and pe
 - [4576](4576/) — A 1918 single-family house, with deck work permitted in 2021.
 - [4582](4582/) — A 1918 single-family house, with a kitchen remodel permitted in 2018.
 - [4586–4588](4586/) — A 1918 single-family house, with a rear addition permitted in 1998.
+- [4594](4594/) — A 1908 building, with an addition permitted in 2000.
 - [4600](4600/) — A 1918 single-family house, with window replacement permitted in 2001.
 - [4606](4606/) — A 1918 single-family house, with window replacement permitted in 2002.
 - [4612](4612/) — A 1923 single-family house, with garage work permitted in 2015.
@@ -143,10 +144,6 @@ Every residential parcel on 19th Street that the city's address, assessor and pe
 - [4799](4799/) — A 1911 single-family house, with reroofing permitted in 2025.
 - [4828](4828/) — A 1907 single-family house, with a kitchen remodel permitted in 2014.
 - [4834](4834/) — A 1913 single-family house, with deck work permitted in 2008.
-
-## Not yet covered
-
-Also on this street: 22 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 13 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -1,0 +1,111 @@
+{
+  "address": "4686 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4686/",
+  "apn": "2658026",
+  "block": "2658",
+  "lot": "026",
+  "eas_baseid": "343576",
+  "coordinates": {
+    "lat": 37.760543,
+    "lng": -122.443141
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 1193,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4686 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39916,
+    "assessed_improvement_value": 5256
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202003035948",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-03-03",
+      "status_date": "2020-03-03",
+      "revised_cost": 1,
+      "description": "document change of use from retail to instructional use; no change in occupant load, remains less than 50, administrivative permit only, no work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410277818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-27",
+      "status_date": "2005-02-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair some structure at framing siding floor and pest damage at bsmnt and grnd floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4686",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2658026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2658&lot=026",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2658026",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement"
+  },
+  "historical_record": [
+    {
+      "kind": "use",
+      "description": "The Fenway Market, a one-story store built between 1906 and 1914; the report notes the assessor's date of 1904 is contradicted by the 1905 Sanborn map.",
+      "source": "corbett-heights-context-statement",
+      "date": "1906–1914"
+    }
+  ]
+}

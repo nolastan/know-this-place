@@ -65,6 +65,7 @@ which local histories treat as its own neighborhood.
 - [Flint Street](flint-street/) — 5 buildings, built 1957–1958.
 - [Ford Street](ford-street/) — 24 buildings, built 1880–1936.
 - [Glendale Street](glendale-street/) — 1 building, built 1962.
+- [Grand View Avenue](grand-view-avenue/) — 3 buildings, built 1936–1953.
 - [Graystone Terrace](graystone-terrace/) — 27 buildings, built 1936–2001.
 - [Hancock Street](hancock-street/) — 44 buildings, built 1885–1977.
 - [Harlow Street](harlow-street/) — 1 building, built 1904.
@@ -87,6 +88,7 @@ which local histories treat as its own neighborhood.
 - [Roosevelt Way](roosevelt-way/) — 89 buildings, built 1895–2018.
 - [Sanchez Street](sanchez-street/) — 131 buildings, built 1885–2008; 27 in the Duboce Triangle Historic District.
 - [Saturn Street](saturn-street/) — 51 buildings, built 1890–1974.
+- [Seward Street](seward-street/) — 1 building, built 1922.
 - [Sharon Street](sharon-street/) — 21 buildings, built 1900–1968.
 - [Short Street](short-street/) — 9 buildings, built 1908–1977.
 - [States Street](states-street/) — 49 buildings, built 1890–2015; 1 in the Duboce Triangle Historic District Extension.

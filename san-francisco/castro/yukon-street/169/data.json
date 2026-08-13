@@ -1,0 +1,120 @@
+{
+  "address": "169 Yukon Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/yukon-street/169/",
+  "apn": "2716009",
+  "block": "2716",
+  "lot": "009",
+  "eas_baseid": "344992",
+  "coordinates": {
+    "lat": 37.757254,
+    "lng": -122.442183
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 1733,
+    "building_area_sqft": 710,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(S)",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Twin Peaks",
+    "property_location_raw": "0000 0169 YUKON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 956556,
+    "assessed_improvement_value": 409951,
+    "last_sale_date": "2018-11-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201211285018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-28",
+      "status_date": "2012-12-17",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "perform repairs as. termite report #60666 item 2a only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104284973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-28",
+      "status_date": "2012-04-24",
+      "estimated_cost": 43000,
+      "revised_cost": 43000,
+      "description": "remove front deck and install gravel for parking. construct 55' of new foundation at rear of bldg. build concrete buttress @ (e) bldg. replace wdws @ 2 sides at rear. remove 2 closets & 2 non bearing wls,replace (e) tub w/clawfoot. move (e) rear dr loc. & install new dr. move laundry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008319957",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-31",
+      "status_date": "2010-08-31",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing (strip roof to sheathing, install new built up roof consisting of one layer of 28 lb base sheet & three layers of type iv fiberglass ply sheet).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YUKON&street_type=ST&address_number=169",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2716009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2716&lot=009",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2716009",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "corbett-heights-context-statement",
+      "name": "Michael R. Corbett, Corbett Heights, San Francisco (Western Part of Eureka Valley) Historic Context Statement, prepared for Corbett Heights Neighbors and funded by the Historic Preservation Fund Committee, adopted by the San Francisco Historic Preservation Commission 16 August 2017 (Motion No. 0314, Case No. 2015-006003SRV)",
+      "query": "http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Corbett Heights Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "style": "Rectangular cottage",
+    "survey": "Corbett Heights Historic Context Statement (2017)",
+    "source": "corbett-heights-context-statement",
+    "note": "The porch decoration is a later alteration."
+  }
+}
