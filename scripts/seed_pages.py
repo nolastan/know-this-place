@@ -384,6 +384,26 @@ def street_display(name: str, stype: str) -> str:
     return (" ".join(parts) + " " + word.capitalize()).strip()
 
 
+def alias_display(addr: str) -> str:
+    """Render one `also_addressed` string the way the page renders its own street.
+
+    EAS stores these whole — "2071 03RD ST" — so titlecasing them yields
+    "2071 03Rd St". Split off the number and hand the rest to `street_display`,
+    which unpads the ordinal and spells it: "2071 Third Street".
+
+    A researcher who added an alias by hand wrote it in display form already
+    ("216 Beale Street"); anything not in EAS's all-caps spelling is left as it
+    stands rather than round-tripped through a parse it was never in.
+    """
+    number, _, rest = (addr or "").strip().partition(" ")
+    if not rest or rest != rest.upper():
+        return addr
+    tokens = rest.split()
+    stype = tokens[-1] if len(tokens) > 1 and tokens[-1] in STREET_TYPE_WORD else ""
+    name = " ".join(tokens[:-1] if stype else tokens)
+    return f"{number} {street_display(name, stype)}".strip()
+
+
 def num_key(n: str):
     m = re.match(r"^(\d+)([A-Za-z]?)$", n or "")
     return (int(m.group(1)), m.group(2)) if m else (10 ** 9, n or "")
@@ -1364,7 +1384,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-home", "Street numbers", ", ".join(rec["street_numbers_on_parcel"])))
     if rec.get("also_addressed"):
         rows.append(("ic-pin", "Also addressed",
-                     ", ".join(a.title() for a in rec["also_addressed"])))
+                     ", ".join(alias_display(x) for x in rec["also_addressed"])))
     # Only when the building-type tag doesn't already carry the count
     # ("12-unit apartment building", "Two-flat") — never state a fact twice.
     units = p.get("units")
