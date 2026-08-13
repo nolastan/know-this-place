@@ -1232,23 +1232,28 @@ def survey_panel_html(rec: dict, indent: str) -> str:
                      ("Earlier survey", s.get("prior_survey"))):
         if val:
             rows.append(("ic-check", key, "Listed" if val is True else str(val)))
-    if not rows:
-        return ""
-    body = "\n".join(
-        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
-        f'<span class="spec-k">{esc(k)}</span>'
-        f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
     # A status code is opaque on its own, so the code key the survey prints
     # alongside its findings is carried under the list.
     meaning = s.get("status_code_meaning")
     if meaning and not meaning.endswith("."):
         meaning += "."
     footnote = " ".join(x for x in (meaning, s.get("note")) if x)
+    # Some surveys record nothing codeable about a building and still say
+    # something worth keeping — that its address was numbered differently when
+    # it went up, or that the report contradicts itself about which building
+    # this is. A note on its own is a finding; dropping the panel loses it.
+    if not (rows or footnote):
+        return ""
+    body = "\n".join(
+        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+        f'<span class="spec-k">{esc(k)}</span>'
+        f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
+    specs = f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n' if rows else ""
     note = (f'{indent}  <p class="prose"><small>{esc(footnote)}</small></p>\n'
             if footnote else "")
     return (f'{indent}<section class="panel">\n'
             f'{indent}  <h3>{esc(s.get("survey", "Historic resources survey"))}</h3>\n'
-            f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
+            f'{specs}'
             f'{note}'
             f'{indent}</section>\n')
 
@@ -1342,6 +1347,10 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     for icon, key, val in (("ic-home", "Known as", b.get("name")),
                            ("ic-home", "Formerly", b.get("former_name")),
                            ("ic-ruler", "Architect", b.get("architect")),
+                           # A named builder with no named architect is the
+                           # normal case for a 19th-century workers' cottage —
+                           # the carpenter who put it up is who the record has.
+                           ("ic-ruler", "Builder", b.get("builder")),
                            ("ic-plan", "Developer", b.get("developer")),
                            ("ic-calendar", "Completed", completed)):
         if val:
@@ -1421,7 +1430,11 @@ def unknowns_html(rec: dict) -> str:
     b = rec.get("building") or {}
     missing = []
     if not b.get("architect"):
-        missing.append("the architect and builder")
+        # "and builder" only while the builder is genuinely undocumented — a
+        # page that names the carpenter who built the house must not go on
+        # listing the builder as a gap.
+        missing.append("the architect" if b.get("builder")
+                       else "the architect and builder")
     elif not b.get("developer"):
         missing.append("the developer")
     missing.append("the early residents" if residential else "the early tenants")
