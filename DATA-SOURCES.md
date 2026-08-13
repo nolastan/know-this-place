@@ -824,6 +824,14 @@ a street number, which is the whole constraint:
     `central-soma-survey`
     (`https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf`,
     548 pp.). See "The Central SoMa statement" below.
+  - San Francisco Planning Department, *Central Waterfront Cultural Resources
+    Survey: Summary Report and Draft Context Statement*, prepared with the
+    Central Waterfront Survey Advisory Committee, San Francisco Architectural
+    Heritage, the Dogpatch Neighborhood Association and Page & Turnbull,
+    Architects, October 2000 – October 2001, adopted 2001 (43 pp.), source id
+    `central-waterfront-context-statement`. Listed on the SF Planning page as
+    "Central Waterfront Survey and Context Statement (Adopted 2001)". See
+    "The Central Waterfront statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -902,6 +910,60 @@ a street number, which is the whole constraint:
     Street is coded 6Z for a two-storey warehouse demolished in 2012; the
     assessor dates the hotel there now to 2015. Where the survey's year built
     and the roll's disagree the page states both.
+**The Central Waterfront statement has no inventory in it at all, and that is
+not a truncated download.** The archived PDF is the 43-page summary report and
+context statement. Its table of contents promises eight appendices; six of them
+are present only as one-line cover sheets. What is actually in the file:
+- **Appendix C** — four maps (survey boundary, street names and the Dogpatch,
+  P.G.&E. and Pier 70 sub-areas, the 1899 Sanborn, and the Bethlehem Steel
+  general plan of 1957 with the Pier 70 building numbers).
+- **Appendix E** — a one-page table of general periods of development.
+- **Appendix F** — the definitions of the National Register status codes the
+  survey used (1S, 2, 3B, 3D, 3S, 4D2, 4D5, 4R, 4S1, 4S2, 4X, 5S3, 5D1, 5N,
+  5B1, 6Z1). Definitions only; no property is assigned one here.
+- **Appendices A, B, D, G and H** — cover sheets. The DPR 523 forms, the NR
+  Status Code Matrix, the Station A forms and Christopher VerPlanck's Dogpatch
+  Historic Resource Survey and its own status-code matrix are all elsewhere.
+  So **no per-property status code can be taken from this document.** The body
+  gives them only by district and only as a majority ("the majority of
+  resources in the Dogpatch neighborhood have been identified as 5D1"), which
+  is not a finding about any one building — don't assign it to one. VerPlanck's
+  Dogpatch survey is listed separately on the same SF Planning page as
+  *Dogpatch Historic Context Statement*; the forms are the thing to go after
+  when that one is read.
+- **The addresses are in the narrative, and there are nine of them.** Two
+  paragraphs on small oil companies and small Art Deco industrial buildings
+  name four Third Street and 18th Street addresses as type examples; two more
+  paragraphs on early dwellings name five. Everything else the report discusses
+  is identified by Pier 70 building number (101, 102, 104, 105, 108, 109, 113,
+  114, 116, 117, 118, 21, 38 — from a 1957 Bethlehem Steel plan, not a street
+  grid) or by intersection: the California Canneries building at Minnesota and
+  18th, the American Barrel Company at Sierra (22nd) and Illinois, the Western
+  Sugar Refinery remnant at the foot of 23rd Street, the du Pont powder
+  magazine at Maryland and Humboldt, the Union Iron Works administration
+  building and Weeks & Day powerhouse at Illinois and 20th. None of those
+  carries a street number and none of them became a page.
+- **Cautions specific to it:**
+  - **A named address can be a site, not a building.** 550 18th Street and
+    2075 Third Street are one parcel (3994044), and the small oil-company
+    buildings the survey pointed at are gone — the roll dates what stands there
+    now to 2008 and Planning codes the parcel C. That address is documented as
+    site history, not as a surveyed building.
+  - **It contradicts itself on 718 22nd Street.** The text describes the
+    dwelling at 718; footnote 32 and the bibliography both cite the DPR 523B
+    form for it as "118 22nd Street". There is no 118 22nd Street in EAS. Both
+    readings are on the page.
+  - **Its dates run 20 to 30 years earlier than the assessor's.** The roll
+    gives 1900 for four of these dwellings; the survey gives 1872, 1876, circa
+    1875 and circa 1884. 1900 is the roll's default for a building it can't
+    date, so the disagreement is worth recording rather than resolving.
+  - **"Outside Dogpatch" means outside the 2001 survey's Dogpatch boundary.**
+    Three of the buildings it files that way — 670–674 Tennessee, 2476–2478
+    and 2636–2638 Third — are inside the Article 10 Dogpatch Historic District
+    today. Don't read the survey's placement as a statement about the district.
+  - Street renamings are given in passing and are worth keeping: Kentucky
+    Street became Third Street, Sierra Street became 22nd Street, and the
+    east-west streets were numbered in the first years of the 20th century.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -937,6 +999,27 @@ a street number, which is the whole constraint:
   Street — are named as gone and were never candidates. Coverage note: the
   statement and the packet are read in full; nothing in this document set is
   outstanding.)
+- **Verified:** 2026-08-13 (Central Waterfront: read all 43 pages, which is the
+  whole archived PDF — the report, its bibliography and image list, and the
+  three appendices that carry content. 11 numbered San Francisco addresses
+  appear in the text. Nine of them name buildings the survey recorded, and all
+  nine resolve in EAS to 8 parcels, every one of them active in `acdm-wktn`
+  with a 2025 roll row: 550 18th Street and 2075 Third Street are the same
+  parcel, 3994044. All 8 became new pages under `san-francisco/dogpatch/`, a
+  new neighborhood directory; no page here already covered any of them, so
+  none were edited. The other two numbered addresses are not documented: 118
+  22nd Street, which the bibliography and footnote 32 give as the DPR form's
+  address for the dwelling the text calls 718 22nd Street, has no EAS record on
+  22nd Street at all; and 536 Clay Street is the Hinton Printing Company's own
+  address in an 1895 bibliographic citation, not a property in the survey area.
+  The parcels: 3994044 (550–560 18th), 4043001 (707 18th), 4108006 (718 22nd),
+  3996004 (670–674 Tennessee), 4044052 (2130 Third), 4108003R (2360–2364
+  Third), 4108003D (2476–2478 Third), 4172020 (2636–2638 Third). Coverage note:
+  this document is read in full and nothing in it is outstanding, but its own
+  appendices are not in it — the DPR 523 forms, the NR Status Code Matrix and
+  VerPlanck's Dogpatch Historic Resource Survey are separate documents and are
+  untouched, as are the Market & Octavia, Japantown and other adopted
+  statements on the same SF Planning page.)
 
 ## Known gaps
 
