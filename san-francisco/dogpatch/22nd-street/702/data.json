@@ -1,0 +1,165 @@
+{
+  "address": "702 22nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/22nd-street/702/",
+  "hook": "A corner store with flats above, and the address the 2001 Dogpatch survey gives for Brady's Liquors.",
+  "apn": "4108004",
+  "block": "4108",
+  "lot": "004",
+  "eas_baseid": "369183",
+  "coordinates": {
+    "lat": 37.75803,
+    "lng": -122.388549
+  },
+  "also_addressed": [
+    "2490 03RD ST"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 5,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3785,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0702 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 407582,
+    "assessed_improvement_value": 282164,
+    "last_sale_date": "1999-02-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1905",
+    "survey_name": "Dogpatch Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201303152323",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-03-15",
+      "status_date": "2013-07-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace & enlarge (e) windows (visible from street). no structural, no mechanical, electrical or plumbing, no interior work. awning under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201302079672",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-02-07",
+      "status_date": "2013-07-18",
+      "estimated_cost": 40000,
+      "revised_cost": 60000,
+      "description": "interior renovations to existing building including demolition and constructon of interior walls, accessibility upgrades to baths, replacement of bar equipment, installation of built in seating. light fixutres, replacement of skylights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902041397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-04",
+      "status_date": "2009-02-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#2005/10/19/5963. all work has been completed. change of use approved under pa32005/10/19/5963.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510195963",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2005-10-19",
+      "status_date": "2009-01-27",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "conversion of (e) barber shop into wine lounge",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-02-11",
+      "status_date": "1991-06-12",
+      "estimated_cost": 3200,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=702",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4108004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4108&lot=004",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4108004",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.38854936672875%2037.75803031444473)%27)",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "dogpatch-context-statement",
+      "name": "Christopher VerPlanck, Dogpatch Historic District Survey (description, context statement, illustrations and survey forms), September 2001, adopted 2001",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Dogpatch Historic Context Statement, adopted 2001",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "building": {
+    "completed": 1912,
+    "completed_conflict": "The assessor's roll gives 1905; the 2001 Dogpatch survey dates the building to 1912."
+  },
+  "historic_survey": {
+    "survey": "Dogpatch Historic District Survey (2001)",
+    "address_as_surveyed": "700 and 700–02 22nd Street",
+    "note": "Named as a good example of Dogpatch's commercial buildings with residences above — typically two stories on a corner lot — and as the address of Brady's Liquors. The city's register carries no 700 22nd Street.",
+    "source": "dogpatch-context-statement"
+  }
+}

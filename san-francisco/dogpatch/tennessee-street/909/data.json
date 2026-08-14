@@ -1,0 +1,111 @@
+{
+  "address": "909 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/909/",
+  "hook": "Fire Station No. 16, a brick firehouse of 1925 by City Architect John Reid, Jr.",
+  "apn": "4108036",
+  "block": "4108",
+  "lot": "036",
+  "eas_baseid": "480765",
+  "coordinates": {
+    "lat": 37.760022,
+    "lng": -122.389134
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 5007,
+    "lot_depth_ft": 0.15,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0909 TENNESSEE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1342667,
+    "assessed_improvement_value": 335663,
+    "last_sale_date": "2011-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "Dogpatch Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TENNESSEE&street_type=ST&address_number=909",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4108036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4108&lot=036",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4108036",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.38913440667395%2037.76002180263277)%27)",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "dogpatch-context-statement",
+      "name": "Christopher VerPlanck, Dogpatch Historic District Survey (description, context statement, illustrations and survey forms), September 2001, adopted 2001",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Dogpatch Historic Context Statement, adopted 2001",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "building": {
+    "name": "Fire Station No. 16",
+    "architect": "John Reid, Jr., City Architect",
+    "completed": 1925,
+    "completed_conflict": "The assessor's roll gives 1900; the 2001 Dogpatch survey dates the firehouse to 1925."
+  },
+  "historical_record": [
+    {
+      "date": "early 1880s",
+      "kind": "site history",
+      "description": "The San Francisco Fire Department's first Dogpatch firehouse, an Eastlake wood-frame Station #16, stood at 1009 Tennessee Street until this building superseded it.",
+      "source": "dogpatch-context-statement"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Dogpatch Historic District Survey (2001)",
+    "note": "One of four public and civic buildings still standing in Dogpatch in 2001, and one of at least five San Francisco firehouses by the same City Architect, who also designed the police station and emergency hospital a block away.",
+    "source": "dogpatch-context-statement"
+  }
+}

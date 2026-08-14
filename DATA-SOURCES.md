@@ -842,6 +842,17 @@ a street number, which is the whole constraint:
     `http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf`
     (there is a May 2017 draft alongside it — take the FINAL). See "The
     Corbett Heights statement" below.
+  - Christopher VerPlanck, *Dogpatch Historic District Survey* (description of
+    the neighborhood, context statement, illustrations and survey forms),
+    September 2001, adopted 2001 (35 pp.), source id
+    `dogpatch-context-statement`. Listed on the SF Planning page as "Dogpatch
+    Historic Context Statement (Adopted 2001)". It is **not** on the S3
+    archive; SF Planning serves it from an M-Files vault, and the
+    `SharedLinks.aspx` URL returns an HTML shell, not the PDF. The file itself
+    is at the REST path that page's script names —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57/content`
+    — while the `SharedLinks.aspx` form is what a page cites. See "The Dogpatch
+    survey" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1031,6 +1042,55 @@ each other often enough that the disagreements are half the yield:
     Native Sons Building, the James Lick Baths, the Chateau Tivoli) and as the
     house of the man who subdivided it. Those are documented as building
     credits on their own pages, not as anything the statement surveyed.
+**The Dogpatch survey is the report the Central Waterfront statement points at,
+and it stops one section short of its own inventory.** Its table of contents
+promises four sections and the PDF carries three: the description of the
+neighborhood, the context statement, and the illustrations. **Section 4,
+"Dogpatch Historic District Survey Forms," is not in the file** — pages 30–35
+are figures and the document ends there. So this one, like the Central
+Waterfront statement, assigns no status code to any single building, and the
+DPR 523B forms it cites in its own footnotes are still elsewhere.
+- **What is in it is narrative, and dense with numbers.** The two prose
+  sections name 90 distinct numbered San Francisco addresses in 28 pages, a far
+  higher rate than the other statements here — the description section alone
+  lists the neighborhood's builders address by address, and its non-contributor
+  and heavily-altered paragraphs are effectively an inventory written as prose.
+- **Cautions specific to it:**
+  - **The survey's dates run 5 to 30 years ahead of the assessor's, and the
+    roll's 1900 is a placeholder.** Of the 60 parcels documented here, 23 carry
+    a dated conflict. Where the two disagree the page shows the roll in the
+    `Built …` tag and the survey's date as `building.completed`, with the
+    conflict named in `.unknowns`.
+  - **Its printed ranges do not always match a parcel.** "800-04 22nd Street"
+    spans two parcels (800–802 and 804–806) and both pages say so; "760-790
+    Tennessee" spans three; "1103-05 Tennessee" and "1105-07 Tennessee" are the
+    same building under two numbers in the same document, and only 1105–1107 is
+    an address the city carries. Match on the printed address, record it as
+    `address_as_surveyed`, and let a reader see both.
+  - **It repeats the Central Waterfront statement's 118 22nd Street error** —
+    the same author's footnote again gives the DPR 523B form for the dwelling
+    at 718 22nd Street as "118 22nd Street", an address EAS has never had.
+  - **It contradicts itself on the vacant lots**, listing "six vacant lots" and
+    then naming seven, and on 740 Tennessee Street, which it says was
+    constructed in 1881 and, four pages later, was moved to the site that year.
+    Both readings are on the page.
+  - **Two of the buildings it calls non-contributors predate the period of
+    significance it gives.** 991 Tennessee (roll: 1933) and 1025 Tennessee
+    (roll: 1937) are grouped with the 14 buildings it says were "constructed
+    after the period of significance," which it defines as 1867–1945.
+  - **Condominium conversion has taken out much of the best of it.** Fourteen
+    of the addresses it names are now condominium APNs the roll gives 0 lot
+    area, so AGENTS.md holds them back — including 920–922 Minnesota, half of
+    the pair it names as a type example, and 1016–18 Tennessee.
+  - **Business proprietors are named throughout** — the grocers, saloon-keepers
+    and butchers of the 1890s to the 1940s, by name and address. Those are
+    owners and occupants, so the pages carry the **firms** (Howley's Liquors,
+    Dugan's Liquors, J. J. Twomey & Son's Market, Graham Fuel & Feed) and not
+    the people. The architects, carpenters and contractors are kept.
+  - Street renamings are given in passing, matching the Central Waterfront
+    statement: Kentucky Street became Third Street, Sierra Street became 22nd
+    Street, Butte Street became 19th, Solano Street became 18th, and Napa
+    Street became 20th.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1130,6 +1190,40 @@ each other often enough that the disagreements are half the yield:
   untouched), and the Eureka Valley, Duboce Triangle, Market & Octavia,
   Japantown and other adopted statements on the same SF Planning page are
   untouched.)
+- **Verified:** 2026-08-13 (Dogpatch: read all 35 pages, which is the whole
+  file — 28 of them carry text and the last six are figures. 90 distinct
+  numbered San Francisco addresses appear in them. 58 resolve in EAS to 60
+  parcels with a 2025 assessor roll row, and all 60 are now pages: 60 new ones
+  under `san-francisco/dogpatch/` (37 Tennessee Street, 12 22nd Street, 9
+  Minnesota Street, 1 Third Street) and `san-francisco/potrero-hill/`, a new
+  neighborhood directory with a hand-written hub holding 1202–1204 19th Street.
+  Three pages that already existed were edited by hand instead: 707 18th Street
+  and 718 22nd Street, both from the Central Waterfront pass, and 132–142
+  Second Street in `east-cut`, which the survey names as 140–42 2nd Street for
+  a second Pelton skyscraper. 63 pages cite the document. 23 of them record a
+  date the survey and the roll disagree on. Not documented, and why:
+  **fourteen are condominium parcels** the roll gives 0 lot area, which
+  AGENTS.md holds back — 900 and 920–22 Minnesota; 724–26, 900, 901, 950, 993,
+  1011, 1016–18, 1108–10, 1159–63 and 1167–69 Tennessee; and 812–14 22nd. Two
+  of those are buildings the survey treats as type examples (920–22 Minnesota,
+  half of a named pair, and 1108–10 Tennessee, one of the four Welch flats), so
+  the condominium rule is holding back contributors here, not intrusions.
+  **Fifteen are named at a number EAS has never had**: 627, 699, 750, 800–50,
+  850, 1005, 1007, 1009, 1185 and 1191 Tennessee; 118, 700 and 807 22nd; 2310
+  Third; and 1532 Kentucky Street, whose street was renamed and renumbered as
+  Third Street. Three of those are on parcels documented under another number —
+  700 22nd on the 702 22nd Street page, 2310 Third on the 2300 Third Street
+  page, and 807 22nd behind 1100 Tennessee — and are recorded there as the
+  survey printed them. **One has an EAS row but no active parcel**: 1095–99
+  Tennessee. **One is a strong match at a number the city does not carry**: the
+  Kentucky Hotel of 1902, printed "2500-03 3rd Street", which is a range across
+  both sides of the street; EAS has 2501 (the Muni yard) and 2502–2504 (an
+  18-unit multi-family building of 1900 on the corner of 22nd). Neither number
+  is the one printed, so it stays undocumented. Coverage note: this document is
+  read in full and nothing in it is outstanding, but Section 4, its own survey
+  forms, is not in the file — the DPR 523 forms are a separate document and are
+  untouched, as are the Eureka Valley, Duboce Triangle, Market & Octavia,
+  Japantown and other adopted statements on the same SF Planning page.)
 
 ## Known gaps
 

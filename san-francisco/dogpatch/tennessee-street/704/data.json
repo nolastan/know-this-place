@@ -1,0 +1,148 @@
+{
+  "address": "704 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/704/",
+  "hook": "A single-family dwelling of 1891, named among the larger houses Dogpatch's more affluent skilled laborers built for themselves.",
+  "apn": "4043002",
+  "block": "4043",
+  "lot": "002",
+  "eas_baseid": "367698",
+  "coordinates": {
+    "lat": 37.762778,
+    "lng": -122.390023
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1498,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0704 TENNESSEE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1124550,
+    "assessed_improvement_value": 481950,
+    "last_sale_date": "2024-06-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "Dogpatch Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202412176992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-17",
+      "status_date": "2025-01-29",
+      "estimated_cost": 17120,
+      "revised_cost": 17120,
+      "description": "reroofing torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411179445",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-11-17",
+      "status_date": "2006-03-09",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "horizontal addition @ rear of house, no change to depth of rear yard. deck addition @ rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519644",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-20",
+      "status_date": "1996-05-21",
+      "estimated_cost": 2650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508948",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-19",
+      "status_date": "1985-11-27",
+      "estimated_cost": 1300,
+      "description": "repair front stairs, siding for painting by others",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TENNESSEE&street_type=ST&address_number=704",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4043002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4043&lot=002",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4043002",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39002259575065%2037.762777903386514)%27)",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "dogpatch-context-statement",
+      "name": "Christopher VerPlanck, Dogpatch Historic District Survey (description, context statement, illustrations and survey forms), September 2001, adopted 2001",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Dogpatch Historic Context Statement, adopted 2001",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "building": {
+    "completed": 1891,
+    "completed_conflict": "The assessor's roll gives 1900; the 2001 Dogpatch survey dates the dwelling to 1891."
+  },
+  "historic_survey": {
+    "survey": "Dogpatch Historic District Survey (2001)",
+    "note": "Named with 700–702 Tennessee Street as an example of the larger single-family dwellings built by more affluent skilled laborers, as against the spec-built cottages rented to laborers.",
+    "source": "dogpatch-context-statement"
+  }
+}
