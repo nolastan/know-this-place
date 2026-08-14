@@ -1,0 +1,128 @@
+{
+  "address": "4200 18th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/18th-street/4200/",
+  "apn": "2648052",
+  "block": "2648",
+  "lot": "052",
+  "eas_baseid": "343253",
+  "coordinates": {
+    "lat": 37.761002,
+    "lng": -122.436322
+  },
+  "parcel": {
+    "year_built": 1967,
+    "units": 5,
+    "stories": 3,
+    "rooms": 59,
+    "bathrooms": 13,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 8035,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "CASTRO",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 4200 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2947527,
+    "assessed_improvement_value": 870851,
+    "last_sale_date": "2006-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201705015252",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-05-01",
+      "status_date": "2024-07-03",
+      "estimated_cost": 180000,
+      "revised_cost": 260000,
+      "description": "3rd flr convert (e) commercial space to (4) dwelling units; (n) roof deck @ 3rd flr roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408012858",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-01",
+      "status_date": "2014-10-10",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "removal of all 4 (of 4) towerstream wi-fi antennas and associated equipment. to comply with planning nov 12219 and building nov 201388582",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010042188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-04",
+      "status_date": "2011-09-30",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008980",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-09",
+      "status_date": "1990-07-23",
+      "estimated_cost": 3000,
+      "description": "3 walls to be removed and 1 wall to be added",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=4200",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2648052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2648&lot=052",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2648052",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "eureka-valley-context-statement",
+      "name": "Elaine B. Stiles, Eureka Valley Historic Context Statement, prepared for the Eureka Valley Neighborhood Association, adopted by the Historic Preservation Commission December 20, 2017",
+      "query": "http://default.sfplanning.org/Preservation/EurekaValleyHCS/hp_eureka_valley_hcs_HCS_FINAL-122017.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Eureka Valley Historic Context Statement, adopted 2017",
+      "retrieved": "2026-08-14"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Eureka Valley Historic Context Statement (2017)",
+    "source": "eureka-valley-context-statement",
+    "note": "Named as one of the study area's two dedicated medical or professional buildings from the study period, opened in 1967 with a podiatrist's, a dentist's, a surgeon's and a general physician's offices."
+  }
+}

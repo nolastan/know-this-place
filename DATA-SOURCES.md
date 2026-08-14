@@ -877,6 +877,17 @@ a street number, which is the whole constraint:
     page carries it under "Duboce Triangle Historic Context Statement (Adopted
     2022)"; there is no non-draft file. Cite it as adopted 2022 and say the file
     is the draft. See "The Duboce Triangle statement" below.
+  - Elaine B. Stiles, *Eureka Valley Historic Context Statement*, prepared for
+    the Eureka Valley Neighborhood Association with the San Francisco Historic
+    Preservation Fund Committee and the Planning Department, adopted by the
+    Historic Preservation Commission December 20, 2017 (260 pp.), source id
+    `eureka-valley-context-statement`. The PDF is served from
+    `default.sfplanning.org`, not the S3 archive:
+    `http://default.sfplanning.org/Preservation/EurekaValleyHCS/hp_eureka_valley_hcs_HCS_FINAL-122017.pdf`
+    (there is an April 2017 review draft alongside it — take the FINAL). **The
+    cover of the FINAL carries the adoption line, but every page header still
+    reads "DRAFT ‐ Eureka Valley Historic Context Statement / May 2017."** Cite
+    it as adopted 2017. See "The Eureka Valley statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1168,6 +1179,83 @@ for the mention.
   - **Business proprietors and building owners are named in passing**, as in the
     Dogpatch survey. Architects, builders and contractors are kept; residents
     and owners are not.
+**The Eureka Valley statement has no appendix inventory either, and its
+address-level findings are spread across four places.** Like Central SoMa and
+Duboce Triangle it is narrative from end to end — 240 pages of neighbourhood
+history, property types and styles, evaluation frameworks and recommendations —
+with no property table and no status code assigned to any building. What it
+carries at address level is:
+- **The builder tables in the Streetcar Suburb chapter** (pp. 51–55), the best
+  thing in it. Fernando Nelson's is a real inventory: ~50 rows of address, date,
+  house form and style. Shorter runs follow for Charles L. Hinkel (5 houses),
+  Louis Landler (11), John Anderson (2 rows covering 19 houses) and John A.
+  Swenson (2).
+- **The figure captions in the property-type and architectural-style chapters**
+  (pp. 135–201), which are effectively a second inventory written as captions:
+  roughly ninety buildings with a date, a form and a style.
+- **The narrative chapters**, which name the churches, halls, banks, garages,
+  schools, the library, the post office, the recreation centre, the breweries
+  and bottling works, and — through long quotations from the 2015 citywide
+  LGBTQ context statement — several dozen bars, shops and organisations.
+- **The evaluation frameworks** (pp. 204–240), which name about twenty-five
+  buildings as worked examples of what might be eligible under each criterion,
+  and the **recommendations** (pp. 241–243), which put forward three potential
+  San Francisco Landmarks — the Fernando Nelson House, the Kirby House and
+  Phoenix Brewery, and the Charles Hinkel House — plus four concentrations of
+  developer housing to study as potential historic districts.
+- **Cautions:**
+  - **It contradicts itself on addresses more often than any statement here,
+    and most often on its own landmarks.** The Castro Theater is 429 Castro
+    Street in the landmark list and the style chapter, 429–431 in a caption, and
+    **479** Castro Street in the recommendations and in an LGBTQ HCS quotation —
+    479 being Cliff's Variety, which the property-type chapter calls **471**.
+    The Twin Peaks Tavern is 401 Castro Street in the landmark list and **410**
+    in an LGBTQ HCS quotation — 410 being the Bank of America branch, printed
+    410, 400 and 400–410 in three places. The Kirby/Phoenix Brewery building is
+    552 Noe Street in a caption and **560** in the industrial-production
+    framework, while the Kirby residence is 560 in the narrative and **550** in
+    a caption. Collingwood Hall is 4144–4150 18th Street throughout and
+    **4144–4150 Collingwood Street** once. The Swedish-American Hall is
+    2168–2173 Market Street in the landmark list and **1274 Market Street**
+    twice; the Women's Building is 3543 18th Street once and **3548** twice.
+    Nelson's Hartford Street row is 20–64 in the builder table and **2–64** in
+    the recommendations. Record both readings and follow EAS.
+  - **It contradicts itself on dates too.** Most Holy Redeemer is 1901 in the
+    narrative and 1900 in the style chapter; the recreation centre is 1954 in a
+    caption and 1956 in the text; 3951–3959 17th Street is 1910 with 28 units in
+    one caption, 1910 with 20 units in the evaluation framework and ca. 1915 in
+    another caption; 546 Liberty Street is 1897 in Nelson's table and ca. 1900 in
+    a caption; 187 Douglass Street is ca. 1900 in one caption and ca. 1870 in
+    another; 2500 Market Street is 1933 in the text and 1920 in a caption; the
+    Hinkel house is 1892 in the builder table and 1891 in the recommendations,
+    and Hinkel dies in 1908 in one passage and "sometime between 1900 and 1910"
+    in another. The Castro group is 740–748 Castro, ca. 1892 in one caption and
+    742–750 Castro, 1895/1898 in another.
+  - **Its dates are reconnaissance-level and the statement says so twice** — it
+    is "an evaluative tool, not a decision-making document," and inclusion or
+    exclusion "does not represent a value judgement." Every page carrying a row
+    from it says so.
+  - **The roll's 1900 is a placeholder here as elsewhere**, so most of the gap
+    between the statement's dates and the assessor's is not a finding. The
+    statement's date goes in `historic_survey.year_built_as_surveyed` and is
+    dropped where it simply matches the roll.
+  - **Condominium conversion and stale APNs take out a tenth of what it names.**
+    Twelve of the parcels are condominium APNs AGENTS.md holds back — including
+    both halves of Nelson's 4141–4143 20th Street and his best house, the
+    towered 4138 20th Street — and twenty more have no 2025 roll row, among them
+    the Most Holy Redeemer neighbours at 150 Eureka Street, the earthquake
+    cottages at 300 Cumberland Street and the Swedish-American Hall.
+  - **Business proprietors, club presidents and bar owners are named
+    throughout.** The firms are kept (Cora Lou Confectioners, Eggers & Company,
+    the Phoenix Brewery, Ruby's Clay, Littleman's, McNaughton & Turner) and the
+    proprietors are not. Architects, builders and contractors are kept, as are
+    the public figures the historical record already covers — Harvey Milk, Bob
+    Ross, Cleve Jones, Bobbi Campbell, Mayor P. H. McCarthy — and the civic-club
+    leaders whose houses the statement names as their significance.
+  - **It names addresses well outside the study area** as landmarks "related to
+    Eureka Valley," as the earlier homes and first houses of its builders, and
+    as citywide style examples. Those are documented as what they are, not as
+    anything this statement surveyed.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1350,6 +1438,61 @@ for the mention.
   and alterations — is not in the file and is untouched, as are the Eureka
   Valley, Market & Octavia, Japantown and other adopted statements on the same
   SF Planning page.)
+- **Verified:** 2026-08-14 (Eureka Valley: read all 260 pages of the adopted
+  final — the seven chronological themes, the property-type and
+  architectural-style chapters, the evaluation frameworks, the recommendations
+  and the bibliography. **325 distinct numbered San Francisco addresses are
+  named**, counting a printed range by each of its numbers: most of them in the
+  study area between 16th and 21st streets, the rest as landmarks "related to
+  Eureka Valley" outside it, as the earlier homes and first houses of its
+  builders, or as citywide style examples. **305 of them resolve in EAS to a
+  parcel; the 302 that also carry a usable fact collapse onto 297 parcels, 262
+  of which may be documented.** 263 pages now cite the
+  document: **36 new and 227 edited**, across `castro` (258) and one each in
+  `mission`, `haight-ashbury`, `tenderloin`, `glen-park` and `noe-valley` — the
+  last two new neighbourhood directories with hand-written hubs. Sixteen of the
+  edited pages carry hand-authored HTML and had the survey panel and source
+  line inserted by hand rather than regenerated.
+  Not documented, and why: **15 are condominium parcels** the roll classes
+  Condominium, which AGENTS.md holds back — and the conversions have taken most
+  of one Fernando Nelson row: 4138, 4140, 4141 and 4143 20th Street, including
+  the towered Queen Anne at 4138 that is the most elaborate house he built on
+  that block. The rest are 39 Hartford Street; 571 and 573 Liberty Street, two
+  of John Anderson's five; 129 Hancock Street; 294 Collingwood Street; 19 Eureka
+  Street; 3918 and 3920 20th Street; 189 Collingwood Street; 356 Collingwood
+  Street; and 336 Cumberland Street.
+  **Twenty more have an EAS parcel with no 2025 roll row**, so the seeder will
+  not make a page for them: 4000, 4036 and 4052 18th Street (three of Nelson's);
+  40 Hartford Street; 750 and 757 Castro Street (one of them Hinkel's); 158 and
+  150 and 201 Eureka Street — 150 being the Bethel/Central Baptist church that
+  became the Metropolitan Community Church; 3936 and 3942 19th Street; 3525 16th
+  Street; 482 Liberty Street; 3943 17th Street; 179 Douglass Street; 617 and 627
+  Castro Street; 72 Collingwood Street, Mayor P. H. McCarthy's house; and 300
+  Cumberland Street, the pair of 1906 earthquake cottages the statement calls the
+  study area's one resource directly associated with the earthquake and fire.
+  One of those twenty is documented anyway: EAS gives the Swedish-American Hall
+  the retired APN 3542017, but the building already has a page under its current
+  parcel 3542062, and that page carries the citation — which is why 263 pages
+  cite the document against 262 documentable parcels.
+  **Fourteen are named at a number EAS has never carried**: 406 and 709 Castro
+  Street, 4062 and 4103–4105 18th Street, 4032 17th Street, 17 and 76
+  Collingwood Street, 4448–4450 Douglass Street, 450 Sanchez Street, 1074
+  Guerrero Street, and two of the report's own misprints — 2 Hartford Street,
+  where the recommendations mean 20, and 4144–4150 Collingwood Street, where
+  they mean 18th. **Six more have an EAS row with no parcel number**: 511 Castro
+  Street, 3897 and 3988 18th Street, 4400 19th Street, and 65 and 234
+  Collingwood Street. 1274 Market
+  Street resolves, but the only thing the statement says about it — that it is
+  the Swedish-American Hall — is a misprint for 2168–2174 Market Street, so it
+  gets no page and the disagreement is recorded on the hall's own. The buildings
+  the statement itself calls no longer extant — 406, 470–476 and 511 Castro
+  Street, 17 and 76 Collingwood Street, the Douglass and Everett and McCreery
+  buildings, the Trinity Methodist Episcopal church and the Twin Peaks Lodge Hall
+  — were never candidates. Coverage note: this document is read in full and
+  nothing in it is outstanding. The 2015 Citywide Historic Context Statement for
+  LGBTQ History in San Francisco, which it quotes at length and defers to, is a
+  separate document and is untouched, as are the Market & Octavia, Japantown and
+  other adopted statements on the same SF Planning page.)
 
 ## Known gaps
 

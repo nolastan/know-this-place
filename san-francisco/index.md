@@ -31,6 +31,8 @@ documented so far:
 - [Potrero Hill](potrero-hill/) — the slopes above Potrero Point; the 19th Street building where an Italian family opened a grocery in 1905
 - [Nob Hill](nob-hill/) — the ridge above Union Square; four buildings named in the 2017 Corbett Heights context statement as the work of architects who also built in that neighborhood
 - [Inner Sunset](inner-sunset/) — the blocks between Golden Gate Park and Mount Sutro; the Henry Doelger Building on Judah Street, named in the 2022 Duboce Triangle context statement as a citywide example of the Streamline Moderne
+- [Glen Park](glen-park/) — the valley around Glen Canyon; the 30th Street house Fernando Nelson built first, in 1880, before the 4,000 that followed
+- [Noe Valley](noe-valley/) — the valley south of the Eureka Valley ridge; a 21st Street house the 2017 Eureka Valley context statement names as an example of the Second Bay Tradition
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

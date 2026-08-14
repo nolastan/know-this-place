@@ -72,6 +72,10 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [325–375](325/) — A 1900 5-unit apartment building in the Duboce Triangle Historic District Extension, with a bathroom remodel permitted in 2006.
 - [328–332](328/) — A 1927 5-unit apartment building in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2024.
 - [360](360/) — A 1954 6-unit apartment building in the Duboce Triangle Historic District Extension, with a seismic retrofit permitted in 2017.
+- [376](376/) — A 1963 building, with garage work permitted in 2013.
+- [400–410](400/) — A 1922 store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2004.
+- [401–419](401/) — A 1901 store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a bathroom remodel permitted in 2025.
+- [429–431](429/) — A 1922 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with an addition permitted in 2024.
 - [430–432](430/) — A 1909 11-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [434–436](434/) — A 1909 11-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1999.
 - [438–440](438/) — A 1906 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2010.
@@ -82,8 +86,11 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [462–464](462/) — A 1906 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with window replacement permitted in 2008.
 - [465–469](465/) — A 1906 three-flat in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a rear addition permitted in 1992.
 - [466–468](466/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with deck work permitted in 2003.
+- [471–483](471/) — A store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a vertical addition permitted in 2001.
 - [480–498](480/) — A 1900 9-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with an addition permitted in 1999.
 - [489–491](489/) — A 1911 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2005.
+- [500–508](500/) — A 1918 office building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2025.
+- [501](501/) — A 1900 bank building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with plumbing work permitted in 2020.
 - [514–520](514/) — A 1906 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a rear addition permitted in 1995.
 - [517](517/) — A 1900 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1999.
 - [521–525](521/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with electrical work permitted in 2019.
@@ -95,8 +102,10 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [544–546](544/) — A 1900 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with stair work permitted in 1993.
 - [549–551](549/) — A 1905 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with window replacement permitted in 2015.
 - [553–555](553/) — A 1910 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with facade work permitted in 2016.
+- [557–561](557/) — A 1900 store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with facade work permitted in 2001.
 - [558–564](558/) — A 1904 10-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a seismic retrofit permitted in 2018.
 - [563–565](563/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2008.
+- [566–570](566/) — A 1922 store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1990.
 - [572–574](572/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a bathroom remodel permitted in 2021.
 - [573–575](573/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 2005.
 - [577–579](577/) — A 1929 15-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a seismic retrofit permitted in 2023.

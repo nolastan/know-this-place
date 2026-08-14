@@ -48,6 +48,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [3527](3527/) — A 1923 10-unit apartment building, with a seismic retrofit permitted in 2019.
 - [3530](3530/) — A 1924 8-unit apartment building, with a seismic retrofit permitted in 2020.
 - [3538](3538/) — A 1924 8-unit apartment building, with a seismic retrofit permitted in 2018.
+- [3541–3543](3541/) — A 1906 2-unit building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 1995.
 - [3548](3548/) — A 1928 8-unit apartment building, with permit records from 2005 to 2023.
 - [3565–3569](3565/) — A 1910 three-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2018.
 - [3568–3570](3568/) — A 1913 three-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2021.
