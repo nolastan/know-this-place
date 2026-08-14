@@ -522,6 +522,46 @@ ZONING = {"RH1": "RH-1", "RH2": "RH-2", "RH3": "RH-3", "RH4": "RH-4",
 CEQA_LABEL = {"A": "historic resource", "A*": "historic resource in a district",
               "B": "unevaluated", "C": "not a historical resource"}
 
+# Planning's `ceqacodereason` is a comma-separated list of findings, and it
+# mixes two different subjects: the district a parcel sits in (which the
+# district panel renders) and designations that attach to the building itself.
+# Only the second kind belongs in the tags, and without it a landmarked
+# building inherits its district's verdict — 573 Castro Street is an Article 10
+# landmark inside a district that is only California Register-eligible, so the
+# page said its local landmark protection was none.
+INDIVIDUAL_DESIGNATION = {
+    "Article 10 Individual Landmark": ("ic-check", "City landmark (Article 10)"),
+    # Not a designation: the work program is the Historic Preservation
+    # Commission's list of candidates. The data says so — a parcel whose only
+    # local finding is the work program stays CEQA "A", never the "A*" that
+    # every actually-designated Article 10 landmark carries — so name the
+    # program rather than promoting it to a landmark.
+    "Article 10 Individual Landmark Work Program":
+        ("ic-clock", "Landmark designation work program (Article 10)"),
+    "National Register Individual": ("ic-check", "Individually listed on the "
+                                                 "National Register"),
+    # "Article 11 Individual" is deliberately absent. It is the fourth
+    # individual token in the field and it is not settled enough to state as a
+    # tag: 78 of the 118 pages carrying it already render a concrete Article 11
+    # rating in their survey panel, and 12 of those ratings are Category V
+    # — unrated — which no wording of "individually rated" survives. Naming the
+    # rating is a survey question, and `historic_survey` already answers it
+    # where a survey has been read onto the page.
+}
+
+
+def individual_designations(rec: dict) -> list:
+    """(icon, label) for each building-level designation in `historic_status`.
+
+    Matched token by token, never as a substring: "Article 10 Individual
+    Landmark Work Program" contains "Article 10 Individual Landmark" and means
+    the opposite of it.
+    """
+    reason = ((rec.get("historic_status") or {}).get("reason") or "")
+    return [INDIVIDUAL_DESIGNATION[t] for t in
+            (x.strip() for x in reason.split(","))
+            if t in INDIVIDUAL_DESIGNATION]
+
 
 def register_status(v: str = None) -> str:
     """State register status precisely — "eligible" is not "listed"."""
@@ -1041,6 +1081,9 @@ def tags_html(rec: dict) -> str:
     label = CEQA_LABEL.get((hs.get("ceqa_status_code") or "").strip())
     if label:
         out.append(("ic-permit", f"Historic status: {label}"))
+    # After the CEQA classification, which is the general finding: a
+    # designation is the specific one, and it is the building's own.
+    out.extend(individual_designations(rec))
     return "\n".join(f'        <li class="tag"><span class="ic {i}"></span>{esc(t)}</li>'
                      for i, t in out)
 
@@ -1423,7 +1466,12 @@ def district_panel_html(rec: dict, indent: str) -> str:
     if d.get("national_register_status"):
         rows.append(("ic-check", "National Register", d["national_register_status"]))
     if d.get("article_10_11_status"):
-        rows.append(("ic-plan", "Local landmark protection",
+        # "District protection", not "Local landmark protection": every value
+        # in this panel describes the district named in its heading, and a
+        # building can be a city landmark inside a district that carries no
+        # local protection of its own. The unqualified label answered a
+        # question the row isn't about, and answered it wrong.
+        rows.append(("ic-plan", "District protection",
                      "None" if d["article_10_11_status"].startswith("No local")
                      else d["article_10_11_status"]))
     if d.get("period_of_significance"):
