@@ -130,9 +130,23 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   parcel's street-number range as Planning holds it — a useful second opinion
   on the assessor's `property_location` when deciding whether a parcel spans
   several numbers.
+- **`ceqacodereason` mixes two subjects, and only one of them is the
+  building.** It is a comma-separated list of findings; most tokens describe
+  the *district* the parcel sits in (`Article 10 Historic District`,
+  `California Register Historic District`) or a survey that looked at it
+  (`Historic Survey Result`), but four are designations on the building
+  itself: `Article 10 Individual Landmark`, `Article 11 Individual`,
+  `National Register Individual`, and `Article 10 Individual Landmark Work
+  Program`. Match them token by token, never as a substring — the work program
+  contains the landmark string and means the opposite of it. It is the Historic
+  Preservation Commission's list of *candidates*, and the data says so: a
+  parcel whose only local finding is the work program stays `ceqacodea10a11`
+  = A, while all 58 parcels here carrying `Article 10 Individual Landmark`
+  and all 118 carrying `Article 11 Individual` are A*.
 - **Citation label:** "SF Planning Department"
 - **Verified:** 2026-07-27 (4,475 Castro parcels fetched by `apn` in chunks of
-  400; apn 2752016 = 744 Castro St → ceqacode B)
+  400; apn 2752016 = 744 Castro St → ceqacode B). `ceqacodereason` tokens
+  tallied across the 9,380 pages holding a `historic_status` on 2026-08-14.
 
 ## sf-parcels — Parcels, active and retired
 
