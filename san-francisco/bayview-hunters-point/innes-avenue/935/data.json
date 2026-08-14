@@ -1,0 +1,134 @@
+{
+  "address": "935 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/935/",
+  "apn": "4653017",
+  "block": "4653",
+  "lot": "017",
+  "eas_baseid": "371746",
+  "coordinates": {
+    "lat": 37.732176,
+    "lng": -122.37661
+  },
+  "parcel": {
+    "year_built": 1935,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 1125,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(S)",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0935 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 246282,
+    "assessed_improvement_value": 135449,
+    "last_sale_date": "2012-11-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1935",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606183528",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2026-06-18",
+      "status_date": "2026-06-18",
+      "estimated_cost": 180000,
+      "description": "2nd story addition, new interior stairs to the 2/f & new stairs in the garage. no chagne to landscaping,parking, impervious area or drainage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116368",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-05",
+      "status_date": "1992-12-23",
+      "estimated_cost": 1,
+      "description": "revision only. orig. app #9109042.eliminate one pier-drill",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109042",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-05-23",
+      "status_date": "1992-12-23",
+      "estimated_cost": 45000,
+      "description": "remove existing front stairs & cracked retaining wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A Craftsman house the carpenter Arthur Simpson built for himself, 1934.",
+  "building": {
+    "builder": "Arthur Simpson",
+    "completed": 1934,
+    "completed_conflict": "The survey's building record dates the house to June 1934; its own inventory form and the assessor's roll both give 1935."
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "proposed_status_code": "6L",
+    "finding": "Appears ineligible for the California Register and the National Register — unconnected to the families of the boat-building industry and not architecturally significant — but one of the older dwellings in the neighbourhood, of high integrity, and warranting special consideration in local planning",
+    "style": "Craftsman",
+    "year_built_as_surveyed": "June 1934",
+    "note": "A one-story-over-garage clapboard house set back toward the middle of its lot behind a raised concrete retaining wall, with a shallow side-facing gable and a gable-roofed porch. The survey names no architect."
+  },
+  "historical_record": [
+    {
+      "date": "1934-06",
+      "kind": "building permit",
+      "cost": "$1,500",
+      "description": "The original permit describes a one-story frame building costing $1,500, built by a carpenter as a house for himself and his wife.",
+      "source": "india-basin-context-statement"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=935",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4653017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4653&lot=017",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4653017",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

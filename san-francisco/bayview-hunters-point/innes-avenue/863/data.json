@@ -1,0 +1,114 @@
+{
+  "address": "863 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/863/",
+  "apn": "4654022",
+  "block": "4654",
+  "lot": "022",
+  "eas_baseid": "371754",
+  "coordinates": {
+    "lat": 37.731472,
+    "lng": -122.375196
+  },
+  "parcel": {
+    "lot_area_sqft": 2617,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0863 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 180356,
+    "assessed_improvement_value": 90166
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200309033724",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-03",
+      "status_date": "2003-09-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200210179239 for f inal inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210179239",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-10-17",
+      "status_date": "2003-09-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "upgrade property line wall & parapet to 1-hr rated",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-02-25",
+      "status_date": "1994-08-12",
+      "estimated_cost": 15000,
+      "description": "tearout plaster/lathe. upgrd elec. repl kitch sink & window.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A 1939 house with an Art Moderne stepped parapet, on the south side of Innes Avenue.",
+  "building": {
+    "completed": 1939
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "year_built_as_surveyed": "1939",
+    "apn_as_surveyed": "Block 4654, Lot 022",
+    "note": "A one-story-over-garage stucco dwelling on a 31-foot lot, with a projecting gable-roofed garage, a shed-roofed porch and an Art Moderne stepped parapet. The city's address register still points this number at Lot 014B, a parcel the assessor has retired; the survey's Lot 022 is the parcel that carries the address now. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=863",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4654022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4654&lot=022",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4654022",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

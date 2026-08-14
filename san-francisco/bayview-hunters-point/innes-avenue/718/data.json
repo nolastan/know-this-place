@@ -1,0 +1,102 @@
+{
+  "address": "718 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/718/",
+  "apn": "4644003A",
+  "block": "4644",
+  "lot": "003A",
+  "eas_baseid": "371670",
+  "coordinates": {
+    "lat": 37.730307,
+    "lng": -122.372248
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 560,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0718 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 9669,
+    "assessed_improvement_value": 3431
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "hook": "A rental cottage of 1937 by Leo R. Miller, rebuilt after a fire in 1965.",
+  "building": {
+    "builder": "Leo R. Miller",
+    "completed": 1937,
+    "completed_conflict": "The survey dates the house to June 1937 and the assessor's roll to 1938."
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "proposed_status_code": "6Z",
+    "finding": "Appears ineligible for the National Register and the California Register under every criterion — built as rental housing, unconnected to the boat-building community, and of low integrity",
+    "style": "Utilitarian",
+    "year_built_as_surveyed": "June 1937",
+    "apn_as_surveyed": "Block 4644, Lot 003A",
+    "note": "The form's locational-data field gives Lot 003B, the lot next door; its own identifier field gives Lot 003A. The survey names no architect."
+  },
+  "historical_record": [
+    {
+      "date": "1965",
+      "kind": "fire",
+      "description": "Fire partially destroyed the dwelling. Its builder applied in September of that year for a permit to rebuild it, and the house that stands is that rebuilding.",
+      "source": "india-basin-context-statement"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=718",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4644003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4644&lot=003A",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4644003A",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

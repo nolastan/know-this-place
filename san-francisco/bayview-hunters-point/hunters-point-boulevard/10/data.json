@@ -1,0 +1,96 @@
+{
+  "address": "10 Hunters Point Boulevard, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/hunters-point-boulevard/10/",
+  "apn": "4646021",
+  "block": "4646",
+  "lot": "021",
+  "eas_baseid": "371708",
+  "coordinates": {
+    "lat": 37.732991,
+    "lng": -122.376472
+  },
+  "parcel": {
+    "year_built": 1961,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 7,
+    "lot_area_sqft": 28897,
+    "building_area_sqft": 10712,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0010 HUNTERS POINT       BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 301360,
+    "assessed_improvement_value": 452044
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1961",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200412020587",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-12-02",
+      "status_date": "2005-08-03",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A crane company's yard on filled land, with a warehouse of 1961 and a house behind it.",
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "note": "Recorded as the yard of Skyscraper Crane and Rigging Co.: a large irregular parcel behind a tall steel fence, two-thirds of it asphalt, holding a gable-roofed concrete-block and corrugated-steel warehouse with a frame office wing facing Hunters Point Boulevard, and behind the warehouse a two-story frame dwelling of the 1950s that the survey thought may have been moved to the site, being older than the recorded construction date. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HUNTERS%20POINT&street_type=BLVD&address_number=10",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4646021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4646&lot=021",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4646021",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

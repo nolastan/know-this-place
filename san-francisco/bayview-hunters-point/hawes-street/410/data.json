@@ -1,0 +1,89 @@
+{
+  "address": "410 Hawes Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/hawes-street/410/",
+  "apn": "4647A015",
+  "block": "4647A",
+  "lot": "015",
+  "eas_baseid": "371721",
+  "coordinates": {
+    "lat": 37.733442,
+    "lng": -122.377768
+  },
+  "parcel": {
+    "year_built": 1942,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 13399,
+    "building_area_sqft": 3881,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0410 HAWES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 75981,
+    "assessed_improvement_value": 180180
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "hook": "Our Lady of Lourdes of 1942, a stuccoed church with a Mediterranean Revival belfry.",
+  "building": {
+    "name": "Our Lady of Lourdes",
+    "completed": 1942
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "style": "Mediterranean Revival",
+    "address_as_surveyed": "410 Hawes Street; 955 Innes Avenue",
+    "note": "A one-story-and-mezzanine cruciform wood-frame assembly building with a three-story bell tower, its belfry four arched openings between urn-shaped buttresses under a hipped roof of red clay tile, and a projecting gable-roofed vestibule holding religious statues. The only public assembly or institutional property the survey evaluated, and one it found ineligible for either register because no building of its kind in India Basin predates the 1938 end of the period of significance. The second address the form gives it, 955 Innes Avenue, belongs to a 1956 dwelling on a different parcel across the avenue. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAWES&street_type=ST&address_number=410",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4647A015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4647A&lot=015",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4647A015",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

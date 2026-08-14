@@ -1,0 +1,84 @@
+{
+  "address": "404 Hawes Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/hawes-street/404/",
+  "apn": "4647A001A",
+  "block": "4647A",
+  "lot": "001A",
+  "eas_baseid": "371709",
+  "coordinates": {
+    "lat": 37.733605,
+    "lng": -122.377461
+  },
+  "parcel": {
+    "year_built": 1972,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 5898,
+    "building_area_sqft": 1888,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "S",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0404 HAWES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39240,
+    "assessed_improvement_value": 34387
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1972",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "hook": "A 1972 parish office for Our Lady of Lourdes, next door to the church.",
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "note": "Not inventoried. The survey counts it as one of India Basin's two religious properties: a temporary office building put up for Our Lady of Lourdes in 1972."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAWES&street_type=ST&address_number=404",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4647A001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4647A&lot=001A",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4647A001A",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

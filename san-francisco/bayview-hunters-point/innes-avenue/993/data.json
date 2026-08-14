@@ -1,0 +1,125 @@
+{
+  "address": "993 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/993/",
+  "apn": "4653011",
+  "block": "4653",
+  "lot": "011",
+  "eas_baseid": "371734",
+  "coordinates": {
+    "lat": 37.732825,
+    "lng": -122.37766
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 1411,
+    "building_area_sqft": 960,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(S)",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0993 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111776,
+    "assessed_improvement_value": 95811
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9212482",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-07-30",
+      "status_date": "1992-11-03",
+      "estimated_cost": 11288,
+      "description": "vinyl siding to all sides of home. icbd #3663.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A garage and dwelling of 1937, built as a second unit behind 991 Innes.",
+  "building": {
+    "builder": "Paul Runge",
+    "completed": 1937,
+    "completed_conflict": "The survey's building record dates it to November 1937; its own inventory form and the assessor's roll both give 1938."
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "proposed_status_code": "6Y",
+    "finding": "Appears ineligible for the California Register and the National Register — unconnected to the families of the bay scow building industry and not architecturally significant",
+    "style": "Utilitarian",
+    "year_built_as_surveyed": "November 1937",
+    "note": "The survey names no architect."
+  },
+  "historical_record": [
+    {
+      "date": "1992-07",
+      "kind": "alteration",
+      "description": "Vinyl siding was applied to the outside of the dwelling.",
+      "source": "india-basin-context-statement"
+    },
+    {
+      "date": "1942-04",
+      "kind": "subdivision",
+      "description": "The lot was divided in two and this half sold off as a separate property.",
+      "source": "india-basin-context-statement"
+    },
+    {
+      "date": "1937-11",
+      "kind": "construction",
+      "cost": "$400",
+      "description": "Paul Runge built the one-and-a-half-story frame dwelling and garage as a secondary unit on the 50-by-100-foot lot that held 991 Innes Avenue, at a cost of $400.",
+      "source": "india-basin-context-statement"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=993",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4653011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4653&lot=011",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4653011",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

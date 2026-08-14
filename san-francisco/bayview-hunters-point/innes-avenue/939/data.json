@@ -1,0 +1,116 @@
+{
+  "address": "939 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/939/",
+  "apn": "4653016B",
+  "block": "4653",
+  "lot": "016B",
+  "eas_baseid": "371745",
+  "coordinates": {
+    "lat": 37.732226,
+    "lng": -122.376698
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 960,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(S)",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0939 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58553,
+    "assessed_improvement_value": 126884
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "S20251024258",
+      "status": "issued",
+      "filed": "2025-10-27",
+      "status_date": "2025-11-06",
+      "revised_cost": 16000,
+      "description": "solar permit: installing 6 solar pv modules, 410 watts per module, total no. of rating 2.46 kw. mounted: roof, ballasted: n | roof mount pv, 2.37kw, 6 modules",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409100416",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-10",
+      "status_date": "2025-06-24",
+      "estimated_cost": 30000,
+      "revised_cost": 50000,
+      "description": "remodel 2 bathrooms. no change to footprint. replace electrical and plumbing to new. install insulation, sheetrock, fixtures and tiles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408168824",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-16",
+      "status_date": "2025-06-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "non-structural, dryrot repair around garage door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A 1940 house with a stepped Moderne parapet and stucco speed lines.",
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "note": "A one-story-over-basement stucco dwelling set near the middle of its lot behind a concrete stair and a one-story garage, its front terminating in an Art Moderne-inspired stepped parapet with stucco \"speed lines.\" The report's property-type chapter names it as an example of the simplified Moderne five-room-over-garage dwelling built here after the Navy took over the Hunters Point shipyard in 1939. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=939",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4653016B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4653&lot=016B",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4653016B",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "address": "869 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/869/",
+  "apn": "4654021",
+  "block": "4654",
+  "lot": "021",
+  "eas_baseid": "371753",
+  "coordinates": {
+    "lat": 37.731494,
+    "lng": -122.375273
+  },
+  "parcel": {
+    "lot_area_sqft": 2641,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0869 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79824,
+    "assessed_improvement_value": 462056
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200202259969",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2002-02-25",
+      "status_date": "2004-06-29",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "erect a 2 stories 1 dwelling unit bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202259965",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2002-02-25",
+      "status_date": "2002-11-06",
+      "description": "demolish a 1 story 1 dwelling unit bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "year_built_as_surveyed": "2003",
+    "apn_as_surveyed": "Block 4654, Lot 021",
+    "note": "A two-story-over-garage stucco dwelling with a barrel-vaulted roof and a barrel-vaulted garage bay. The inventory form dates it to 2003 from Department of Building Inspection records; the report's narrative names 869 Innes Avenue as a 1938 survivor of the five-room-over-garage \"junior five\" built here for shipyard workers. The assessor's roll gives no year built at all. The city's address register still points this number at Lot 014A, a parcel the assessor has retired. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=869",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4654021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4654&lot=021",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4654021",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}
