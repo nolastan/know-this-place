@@ -888,6 +888,18 @@ a street number, which is the whole constraint:
     cover of the FINAL carries the adoption line, but every page header still
     reads "DRAFT ‐ Eureka Valley Historic Context Statement / May 2017."** Cite
     it as adopted 2017. See "The Eureka Valley statement" below.
+  - Carey & Co., Inc., *Historic Resources Evaluation: Glen Park Community
+    Plan*, prepared for PBS&J, dated December 21, 2010, adopted 2011 (118 pp.),
+    source id `glen-park-context-statement`. **It is not titled a context
+    statement** — it is the CEQA historic resources evaluation for the Glen
+    Park Community Plan EIR, containing a context statement as one of its four
+    tasks — and SF Planning lists it as "Glen Park Historic Context Statement
+    (Adopted 2011)". SF Planning serves it from the same M-Files vault as the
+    Dogpatch survey, so the `SharedLinks.aspx` URL returns an HTML shell; the
+    file itself is at the REST path
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/e21915779d1b8ac21bb5023f7b6d453afaec3018897014eb32cd699ef9af3fc3/content`
+    while the `SharedLinks.aspx` form is what a page cites. See "The Glen Park
+    evaluation" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1267,6 +1279,85 @@ carries at address level is:
     Eureka Valley," as the earlier homes and first houses of its builders, and
     as citywide style examples. Those are documented as what they are, not as
     anything this statement surveyed.
+**The Glen Park evaluation is a CEQA document, not a survey report, and that
+changes the shape of everything in it.** Carey & Co. wrote it for the Glen Park
+Community Plan EIR: a context statement of the neighborhood, a reconnaissance
+survey of 110 parcels, an intensive survey of eight, a district analysis, an
+impacts analysis and mitigation measures. It is 118 pages, of which roughly 30
+are the context statement and 25 the property evaluations; the rest is
+regulatory framework, prehistory, CEQA impact findings and the project
+description. Where it carries address-level facts:
+- **The "Description and Evaluation of Surveyed Properties" chapter**
+  (pp. 44–60), the best thing in it — a full description, a documented
+  construction date, an architect or builder from the building permits, an
+  eligibility finding and an integrity assessment for each of seven properties
+  on eight parcels: 584 Bosworth Street, 21 Brompton Avenue, 23–25 Brompton
+  Avenue, 2830–2842 and 2852–2862 Diamond Street, the Glen Park BART station
+  and its power station, and the Glen Park Elementary School. Five are found
+  not eligible, the station eligible for the California Register only, and the
+  school eligible for the National Register, the California Register and City
+  Landmark designation.
+- **A five-entry list in the impacts chapter** (p. 67) of the buildings the
+  **San Francisco Planning Department** — not Carey & Co. — found eligible for
+  the California Register in its own survey of the area west of Lippard Avenue
+  and the NC district: 601 Bosworth Street, 657, 683 and 701–703 Chenery
+  Street, and 2784–2786 Diamond Street. That survey, "Glen Park Area Plan HRE:
+  West of Lippard and NCT" (SFPD 2010), holds the DPR forms and is a separate
+  document.
+- **The cultural-context and property-type chapters**, which name about
+  thirty addresses as dated examples of a builder's cottages, a style or a
+  building type, mostly in photograph captions.
+- **Cautions:**
+  - **Appendix C is a cover sheet.** The introduction says every one of the 110
+    surveyed parcels was recorded on a DPR 523A form and the eight evaluated
+    ones on 523B forms, "which are located in Appendix C." The appendix in the
+    archived PDF is one title page and nothing else, so **no per-property DPR
+    record, rating or status code can be taken from this document** — the
+    reconnaissance survey of the other 102 parcels is effectively not in it.
+    Appendices A-1 and A-2 are maps and Appendix B is the project description.
+  - **It assigns no California Historical Resource Status Codes at all.** It
+    lists the seven code headings in its regulatory chapter and then evaluates
+    in prose. Pages carry the finding in `historic_survey.finding`, which is
+    why that key exists; never translate a finding into a code.
+  - **It contradicts itself on addresses, and the archived scan is annotated.**
+    The Planning Department's eligible list prints "2784-2786 Chenery Street"
+    for a Diamond Street parcel, and someone has written DIAMOND above it in
+    ink on the archived copy. A photograph caption gives 701 Chenery Street as
+    "107 Chenery Street"; the Spanish Eclectic commercial building at Chenery
+    and Diamond is 664–670 in the text and 664–676 in both its captions, which
+    is three parcels rather than two; 645 Bosworth Street is "645 Bosworth
+    Avenue" four times and never "Street"; and 23–25 Brompton Avenue is
+    "Brompton Street" twice.
+  - **Its own counts do not always match.** The Craftsman row it prints as
+    "763-791 Chenery Street" is "a row of five Craftsman homes" in the text and
+    six parcels on the roll, all of them built 1921–1922.
+  - **The city has since disagreed with its district finding.** The evaluation
+    examined four concentrations, including the commercial core at Diamond and
+    Chenery, and concluded that no eligible historic district exists in the
+    plan area; Planning now carries seven of these parcels in the California
+    Register-eligible **Glen Park Center Historic District** (period of
+    significance 1897–1929). Planning also gives the BART station as
+    individually listed on the National Register, which this evaluation found
+    it not yet eligible for. Both disagreements are stated on the pages.
+  - **Its dates are from building permits, not estimates**, so where they
+    disagree with the roll the disagreement is real: 657 Chenery Street is 1872
+    against the roll's 1900, 701–703 Chenery is "the early 1890s" against 1904,
+    and 2852–2862 Diamond is 1925 against 1924. It also describes 21 Brompton
+    Avenue as a three-story apartment building where the roll has a two-story
+    single-family dwelling.
+  - **It is dense with residents, and they are the bulk of its property
+    histories.** Each of the five evaluated non-eligible properties gets a
+    paragraph tracing owners and tenants through the census, city directories,
+    voter registrations and the assessor's sales ledgers, by name and
+    occupation, some of them still the owners. All of that is left out under
+    the privacy rules. The **firms** are kept (the Mission Building Company,
+    Van's Barber & Beauty Shop, Kerr's Toggery, the Glen Park Cleaners, Lucas'
+    Hair Designing, the Glen Park Barber Shop, Derian Jewelers, the Enterprise
+    Steam Beer Saloon, the G. H. Umbsden Realty Company), and so are the
+    architects and builders (V. Teslo, Christopher J. Kernan, H. Barker, Lewis
+    P. Hobart, Bliss & Fairweather, J. L. McLaughlin, Leo Epp, DeLuca and Sons,
+    Ernest Born, Corlett & Spackman, Douglas Baylis, William G. Merchant, and
+    the dairyman William Tietz who built his own house).
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1504,6 +1595,51 @@ carries at address level is:
   LGBTQ History in San Francisco, which it quotes at length and defers to, is a
   separate document and is untouched, as are the Market & Octavia, Japantown and
   other adopted statements on the same SF Planning page.)
+- **Verified:** 2026-08-14 (Glen Park: read all 118 pages, which is the whole
+  archived PDF — the introduction and findings, the methodology, the regulatory
+  framework, the cultural context, the property-type overview, the seven
+  property evaluations, the district analysis, the impacts and mitigation
+  chapters, the bibliography, and the four appendices, of which A-1 and A-2 are
+  maps, B is the project description and C is a cover sheet with no DPR forms
+  behind it. **58 distinct numbered San Francisco addresses are named**,
+  counting a printed range by each of its numbers: 17 on Chenery Street, 14 on
+  Diamond, 10 on Brompton, 5 on Bosworth, 4 on Wilder, 2 each on Joost and
+  Lippard, and one each on Arlington, Congo, Monterey and Mission. **52 have an
+  EAS row and 50 of those carry a parcel number** — the two that do not are 2856
+  and 2901 Diamond Street. 44 pages now cite the document:
+  **44 new and 0 edited**, all under `san-francisco/glen-park/`, across ten new
+  street directories — chenery-street (16), brompton-avenue (10), diamond-street
+  (5), bosworth-street (4), wilder-street (3), joost-avenue (2), and one each on
+  arlington-street, congo-street, lippard-avenue and monterey-boulevard. Seven
+  of the eight parcels the evaluation surveyed intensively are documented; the
+  eighth, 23–25 Brompton Avenue, is documented as two pages because its Lot 030
+  has since been split into Lots 033 and 034. Not documented, and why: **45
+  Wilder Street** is now four condominium APNs on mapblklot 6745101, which
+  AGENTS.md holds back. **The Glen Park BART power station** (Block 6745, Lot
+  066) is an active parcel with a 2025 roll row, but the report gives it no
+  street number and EAS carries no address for the parcel at all, so one of the
+  eight evaluated properties has no page. **Six are named at a number EAS has
+  never had**: 107 and 702 Chenery Street, 612 Bosworth Street, 2440 and 2909
+  Diamond Street, and 2862 Diamond Street. 107 Chenery is the report's own
+  caption misprint for 701 and is recorded on that page; 2440 Diamond is a
+  firehouse the report calls no longer extant; 2909 Diamond is where the Glen
+  Park Branch Library stood before BART, recorded on the station's page; 702
+  Chenery is the Enterprise Steam Beer Saloon of 1898–1920 and 612 Bosworth the
+  Mission Building Company's own address, neither of which the city carries;
+  2862 Diamond is the assessor's high number for a parcel EAS tops out at 2860.
+  **Two more resolve but are not documented**: 180 Lippard Avenue, where the
+  only thing the report says is which named individual lived there, which the
+  privacy rules withhold; and 1650 Mission Street, the Planning Department's own
+  office in five footnotes, not a property in the survey. The Glen Park BART
+  station is documented on the APN the report itself gives (6755026) — EAS
+  carries 2901 Diamond Street with no parcel number, and the address point falls
+  inside that parcel. Coverage note: this document is read in full and nothing
+  in it is outstanding, but the DPR 523A and 523B forms its Appendix C promises
+  are not in it, and the Planning Department's companion survey, "Glen Park Area
+  Plan HRE: West of Lippard and NCT" (SFPD 2010) — which holds the DPR forms for
+  the five buildings it found California Register-eligible and for 24 more — is
+  a separate document and is untouched, as are the Market & Octavia, Japantown
+  and other adopted statements on the same SF Planning page.)
 
 ## Known gaps
 

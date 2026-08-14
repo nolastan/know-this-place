@@ -1,0 +1,100 @@
+{
+  "address": "173 Brompton Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/brompton-avenue/173/",
+  "apn": "6756020",
+  "block": "6756",
+  "lot": "020",
+  "eas_baseid": "406746",
+  "coordinates": {
+    "lat": 37.732911,
+    "lng": -122.434981
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1225,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0173 BROMPTON            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 23761,
+    "assessed_improvement_value": 22603
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9816716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-24",
+      "status_date": "1998-12-02",
+      "estimated_cost": 7675,
+      "description": "replace 11 windows no change to opening size visible from st",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1998–2003",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROMPTON&street_type=AVE&address_number=173",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6756020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6756&lot=020",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6756020",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "glen-park-context-statement",
+      "name": "Carey & Co., Inc., Historic Resources Evaluation: Glen Park Community Plan, prepared for PBS&J, December 21, 2010, adopted 2011",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=e21915779d1b8ac21bb5023f7b6d453afaec3018897014eb32cd699ef9af3fc3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Glen Park Historic Context Statement, adopted 2011",
+      "retrieved": "2026-08-14"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Glen Park Historic Resources Evaluation (adopted 2011)",
+    "source": "glen-park-context-statement",
+    "note": "Recorded as an early wood-frame cottage of 1910, later raised to insert a garage at the ground story, with a staircase added to reach the entrance. Recorded in the reconnaissance survey of 110 parcels but not evaluated individually; buildings the evaluation did not evaluate are treated as potential historical resources pending further project-level study."
+  }
+}

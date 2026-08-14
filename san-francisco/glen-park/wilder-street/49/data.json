@@ -1,0 +1,170 @@
+{
+  "address": "49 Wilder Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/wilder-street/49/",
+  "apn": "6745030",
+  "block": "6745",
+  "lot": "030",
+  "eas_baseid": "406534",
+  "coordinates": {
+    "lat": 37.733917,
+    "lng": -122.433321
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1558,
+    "basement_area_sqft": 433,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0049 WILDER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 795828,
+    "assessed_improvement_value": 536669,
+    "last_sale_date": "2006-10-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201504274691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-27",
+      "status_date": "2015-07-10",
+      "estimated_cost": 8129,
+      "revised_cost": 8129,
+      "description": "replace 3 street facing windows with aluminium wood clad windows and 1 rear facing window with fibrex window. u factor 0.32 max, visable",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201302079671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-02-07",
+      "status_date": "2013-07-16",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "knocking out 4 walls to extend rooms, making handicap bathroom that is already there, making den/playroom. storage area bigger, moving washer & dryer. adding door where existing windows is at now.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611097293",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-11-09",
+      "status_date": "2007-07-26",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "see attached termite report #06957, items #1 & 2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606144003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-14",
+      "status_date": "2006-09-14",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "install bedroom, den, bathroom, laundry room & storage room at garage level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511289004",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-28",
+      "status_date": "2005-11-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "alteration to 200507268681. replace 3 psc beams. add footings and shorten length of span w/ regular 1 x 12s and 1/2 \" rod bolted 16\" on center staggered",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507268681",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-26",
+      "status_date": "2006-02-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel existing kitchen & enclose interior patio, to add space to kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9924971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-24",
+      "status_date": "1999-12-16",
+      "estimated_cost": 8950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1999–2015",
+    "shown_on_page": 7,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WILDER&street_type=ST&address_number=49",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6745030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6745&lot=030",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6745030",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "glen-park-context-statement",
+      "name": "Carey & Co., Inc., Historic Resources Evaluation: Glen Park Community Plan, prepared for PBS&J, December 21, 2010, adopted 2011",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=e21915779d1b8ac21bb5023f7b6d453afaec3018897014eb32cd699ef9af3fc3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Glen Park Historic Context Statement, adopted 2011",
+      "retrieved": "2026-08-14"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Glen Park Historic Resources Evaluation (adopted 2011)",
+    "source": "glen-park-context-statement",
+    "style": "Spanish Eclectic",
+    "note": "Pictured in the architectural-style chapter among the plan area's period revival buildings of the 1920s and 1930s. Recorded in the reconnaissance survey of 110 parcels but not evaluated individually; buildings the evaluation did not evaluate are treated as potential historical resources pending further project-level study."
+  }
+}

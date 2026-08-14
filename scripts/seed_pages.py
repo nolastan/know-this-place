@@ -1274,6 +1274,11 @@ def survey_panel_html(rec: dict, indent: str) -> str:
         return ""
     rows = []
     for icon, key, val in (
+            # Not every survey assigns a status code. A CEQA-era evaluation
+            # states an eligibility finding in words instead, and that finding
+            # is the point of the page's citation — it belongs in a row, not
+            # buried in the note under it.
+            ("ic-permit", "Survey finding", s.get("finding")),
             ("ic-permit", "Status code", s.get("proposed_status_code")),
             ("ic-permit", "Prior status code", s.get("prior_status_code")),
             ("ic-plan", "Article 11 rating", s.get("proposed_article11_rating")),
