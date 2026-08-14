@@ -50,6 +50,7 @@ Every residential parcel on Noe Street that the city's address, assessor and per
 - [270](270/) — A 1900 two-flat in the Duboce Triangle Historic District Extension.
 - [276–278](276/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with reroofing permitted in 2003.
 - [280–284](280/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with facade work permitted in 1989.
+- [286–288](286/) — A 1937 mixed-use building on the first block of Noe Street; home to La Méditerranée.
 - [313–315](313/) — A 1902 three-flat, with foundation work permitted in 2011.
 - [323–325](323/) — A 1950 3-unit building with a ground-floor store, with reroofing permitted in 2004.
 - [327–329](327/) — A 1900 two-flat, with window replacement permitted in 1994.
@@ -148,10 +149,6 @@ Every residential parcel on Noe Street that the city's address, assessor and per
 - [770–772](770/) — A 1905 two-flat, with a kitchen remodel permitted in 1997.
 - [775](775/) — A 1905 single-family house, with a rear addition permitted in 1998.
 - [776](776/) — A 1916 single-family house, with reroofing permitted in 2007.
-
-## Not yet covered
-
-Also on this street: 45 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 3 non-residential parcels; 15 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

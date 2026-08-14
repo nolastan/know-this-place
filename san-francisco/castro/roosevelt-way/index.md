@@ -94,9 +94,5 @@ Every residential parcel on Roosevelt Way that the city's address, assessor and 
 - [560–562](560/) — A 2-unit apartment building, with garage work permitted in 2017.
 - [575](575/) — A 1936 single-family house, with window replacement permitted in 1993.
 
-## Not yet covered
-
-Also on this street: 31 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 18 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

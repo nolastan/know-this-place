@@ -17,9 +17,5 @@ Every residential parcel on Dorland Street that the city's address, assessor and
 - [258](258/) — A 1900 12-unit apartment building, with dry-rot repair permitted in 1985.
 - [267–271](267/) — A 1900 7-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
 
-## Not yet covered
-
-Also on this street: 9 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 3 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

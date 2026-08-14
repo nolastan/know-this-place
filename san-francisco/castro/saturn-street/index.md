@@ -56,9 +56,5 @@ Every residential parcel on Saturn Street that the city's address, assessor and 
 - [177–179](177/) — A 1908 two-flat, with stair work permitted in 1993.
 - [181–185](181/) — A 1907 three-flat, with reroofing permitted in 2003.
 
-## Not yet covered
-
-Also on this street: 12 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels; 7 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

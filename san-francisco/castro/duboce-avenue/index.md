@@ -22,6 +22,7 @@ Every residential parcel on Duboce Avenue that the city's address, assessor and 
 - [569](569/) — A 1900 single-family house in the Duboce Triangle Historic District, with foundation work permitted in 2021.
 - [573–575](573/) — A 1900 three-flat in the Duboce Triangle Historic District, with a seismic retrofit permitted in 2006.
 - [577–581](577/) — A 1904 three-flat in the Duboce Triangle Historic District, with window replacement permitted in 2021.
+- [583–585](583/) — First Christian Church, 1906 — the best Mission Revival building in Duboce Triangle.
 - [711](711/) — A 1900 4-unit apartment building, with a kitchen remodel permitted in 1990.
 - [715](715/) — A 1905 single-family house, with garage work permitted in 2008.
 - [721](721/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 2007.
@@ -30,10 +31,6 @@ Every residential parcel on Duboce Avenue that the city's address, assessor and 
 - [815](815/) — A 1907 3-unit apartment building, with stair work permitted in 2018.
 - [821](821/) — A 1907 single-family house, with one permit record from 2024.
 - [827](827/) — A 1907 single-family house, with garage work permitted in 2022.
-
-## Not yet covered
-
-Also on this street: 2 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 3 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

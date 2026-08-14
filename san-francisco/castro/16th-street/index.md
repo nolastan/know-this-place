@@ -13,7 +13,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3356–3360](3356/) — A 1905 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [3362–3368](3362/) — A 1905 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [3370–3374](3370/) — A 1904 three-flat, with a kitchen and bathroom remodel permitted in 2021.
-- [3376](3376/) — A 1904 residential building, with a bathroom remodel permitted in 1994.
+- [3376](3376/) — A 1904 building, with a bathroom remodel permitted in 1994.
 - [3386–3388](3386/) — A 1906 three-flat, with fire repair permitted in 1996.
 - [3400](3400/) — A 1992 18-unit apartment building, with reroofing permitted in 1992.
 - [3421](3421/) — A 1904 single-family house, with reroofing permitted in 1994.
@@ -70,10 +70,6 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3794–3796](3794/) — A 1906 two-flat, with deck work permitted in 2007.
 - [3806](3806/) — A 1986 two-flat, with facade work permitted in 2017.
 - [3809–3811](3809/) — A 1922 single-family house, with a kitchen and bathroom remodel permitted in 2019.
-
-## Not yet covered
-
-Also on this street: 24 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 9 non-residential parcels; 15 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

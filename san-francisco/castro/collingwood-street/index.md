@@ -63,9 +63,5 @@ Collingwood runs parallel to Castro, one block west, from 18th Street south to A
 - [378](378/) — A 1940 house with a permit record running 1996–2026.
 - [395](395/) — A 1925 house excavated for a new basement level under a $563,898 permit in 2018.
 
-## Not yet covered
-
-Also on this street: 23 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 17 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

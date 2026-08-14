@@ -10,9 +10,5 @@ Every residential parcel on Flint Street that the city's address, assessor and p
 - [26](26/) — A 1958 single-family house, with a kitchen and bathroom remodel permitted in 2018.
 - [50](50/) — A 1958 4-unit apartment building, with reroofing permitted in 2014.
 
-## Not yet covered
-
-Also on this street: 1 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

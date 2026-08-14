@@ -9,9 +9,5 @@ Every residential parcel on Twin Peaks Boulevard that the city's address, assess
 - [345](345/) — A 1955 single-family house, with a vertical addition permitted in 1998.
 - [401](401/) — A 1980 single-family house, with a rear addition permitted in 2015.
 
-## Not yet covered
-
-Also on this street: 2 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

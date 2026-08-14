@@ -14,9 +14,5 @@ Every residential parcel on Short Street that the city's address, assessor and p
 - [34](34/) — A 1941 single-family house, with reroofing permitted in 2015.
 - [50](50/) — A 1941 single-family house, with reroofing permitted in 1988.
 
-## Not yet covered
-
-Also on this street: 2 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

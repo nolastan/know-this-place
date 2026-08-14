@@ -5,7 +5,6 @@ Every residential parcel on Lower Terrace that the city's address, assessor and 
 ## Documented so far
 
 - [42–44](42/) — A 1967 two-flat, with reroofing permitted in 2017.
-- [54](54/) — A 1900 building, with a kitchen and bathroom remodel permitted in 2020.
 - [60](60/) — A 1999 single-family house, with a bathroom remodel permitted in 2017.
 - [101–103](101/) — A 1928 three-flat, with reroofing permitted in 1996.
 - [109–113](109/) — A 1973 3-unit apartment building, with deck work permitted in 2025.

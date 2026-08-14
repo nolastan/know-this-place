@@ -15,6 +15,7 @@ Every residential parcel on 14th Street that the city's address, assessor and pe
 - [698](698/) — A 1904 40-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
 - [702–706](702/) — A 1906 3-unit building with a ground-floor store in the Duboce Triangle Historic District, with reroofing permitted in 2018.
 - [714–718](714/) — An 1890 5-unit apartment building in the Duboce Triangle Historic District, with electrical work permitted in 2017.
+- [719](719/) — A 1911 “taxpayer block,” built as a placeholder and still standing.
 - [725–735](725/) — A 1911 6-unit apartment building, with a seismic retrofit permitted in 2014.
 - [726–732](726/) — A 1906 7-unit apartment building in the Duboce Triangle Historic District, with a seismic retrofit permitted in 2015.
 - [736–740](736/) — A 1900 6-unit building with a ground-floor store in the Duboce Triangle Historic District, with reroofing permitted in 2016.
@@ -70,10 +71,6 @@ Every residential parcel on 14th Street that the city's address, assessor and pe
 - [1069–1071](1069/) — A 1912 3-unit apartment building, with an accessory dwelling unit permitted in 2021.
 - [1080–1082](1080/) — A 1924 two-flat, with foundation work permitted in 2002.
 - [1087](1087/) — A 1906 two-flat, with deck work permitted in 2024.
-
-## Not yet covered
-
-Also on this street: 27 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 7 non-residential parcels; 14 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

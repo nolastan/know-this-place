@@ -111,7 +111,6 @@ Every residential parcel on 19th Street that the city's address, assessor and pe
 - [4576](4576/) — A 1918 single-family house, with deck work permitted in 2021.
 - [4582](4582/) — A 1918 single-family house, with a kitchen remodel permitted in 2018.
 - [4586–4588](4586/) — A 1918 single-family house, with a rear addition permitted in 1998.
-- [4594](4594/) — A 1908 building, with an addition permitted in 2000.
 - [4600](4600/) — A 1918 single-family house, with window replacement permitted in 2001.
 - [4606](4606/) — A 1918 single-family house, with window replacement permitted in 2002.
 - [4612](4612/) — A 1923 single-family house, with garage work permitted in 2015.

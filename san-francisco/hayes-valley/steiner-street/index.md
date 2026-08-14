@@ -1,5 +1,10 @@
 # Steiner Street
 
-## Buildings documented so far
+The parcels on Steiner Street documented here so far, from the city's address, assessor and permit records.
 
-- [720 Steiner Street](720/) — One of the Alamo Square Painted Ladies of Postcard Row, in an Article 10 district; Alice Walker's home until 1996.
+## Documented so far
+
+- [720](720/) — One of the Alamo Square Painted Ladies of Postcard Row, in an Article 10 district; Alice Walker's home until 1996.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

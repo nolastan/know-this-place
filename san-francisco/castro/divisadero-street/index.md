@@ -26,9 +26,5 @@ Every residential parcel on Divisadero Street that the city's address, assessor 
 - [90](90/) — A 1911 7-unit apartment building, with reroofing permitted in 2006.
 - [99](99/) — A 1907 single-family house, with a rear addition permitted in 1989.
 
-## Not yet covered
-
-Also on this street: 11 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 6 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

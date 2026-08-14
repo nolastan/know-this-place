@@ -49,9 +49,5 @@ Every residential parcel on Hancock Street that the city's address, assessor and
 - [178](178/) — A 1900 single-family house, with window replacement permitted in 2021.
 - [183–185](183/) — A two-flat, with deck work permitted in 2014.
 
-## Not yet covered
-
-Also on this street: 24 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 8 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

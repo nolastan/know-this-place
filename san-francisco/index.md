@@ -30,6 +30,7 @@ documented so far:
 - [Dogpatch](dogpatch/) — the workers' blocks east of Interstate 280 that grew around the shipyards and iron works of Potrero Point; sixty-seven buildings named in the two surveys of 2001, from the row of Pelton cottages to the Irving M. Scott School
 - [Potrero Hill](potrero-hill/) — the slopes above Potrero Point; the 19th Street building where an Italian family opened a grocery in 1905
 - [Nob Hill](nob-hill/) — the ridge above Union Square; four buildings named in the 2017 Corbett Heights context statement as the work of architects who also built in that neighborhood
+- [Inner Sunset](inner-sunset/) — the blocks between Golden Gate Park and Mount Sutro; the Henry Doelger Building on Judah Street, named in the 2022 Duboce Triangle context statement as a citywide example of the Streamline Moderne
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

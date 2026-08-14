@@ -4,13 +4,16 @@ Every residential parcel on Market Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [2000–2020](2000/) — The Safeway of 1953, on the block that held a Japanese nursery and, in 1943, the nation's first municipal farmers' market.
 - [2041](2041/) — A 1922 three-flat, with a rear addition permitted in 1997.
 - [2073–2083](2073/) — A 1914 apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2016.
+- [2100–2112](2100/) — A 1955 building in the Upper Market Street Commercial Historic District, with a kitchen remodel permitted in 1997.
 - [2124–2126](2124/) — A 1908 5-unit apartment building in the Upper Market Street Commercial Historic District, with facade work permitted in 2009.
 - [2128–2130](2128/) — A 1938 13-unit apartment building in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [2134–2140](2134/) — A 1900 three-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1992.
 - [2148–2150](2148/) — A 1907 three-flat in the Upper Market Street Commercial Historic District, with electrical work permitted in 2008.
 - [2156–2158](2156/) — A 1907 7-unit apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2017.
+- [2168–2174](2168/) — Swedish American Hall, City Landmark No. 267 — built by Swedish contractors in 1907 and still the Swedish Society's.
 - [2213–2241](2213/) — A 1909 32-unit apartment building in the Upper Market Street Commercial Historic District, with plumbing work permitted in 2016.
 - [2243–2247](2243/) — A 1905 two-flat in the Upper Market Street Commercial Historic District, with a rear addition permitted in 1991.
 - [2251](2251/) — An 1894 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with stair work permitted in 1997.
@@ -30,6 +33,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2342–2348](2342/) — A 1907 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with a seismic retrofit permitted in 2008.
 - [2347–2349](2347/) — A 1904 5-unit apartment building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2012.
 - [2350](2350/) — An 1880 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with a kitchen and bathroom remodel permitted in 2016.
+- [2362](2362/) — The José Theater, City Landmark No. 241, later the Names Project Building.
 - [2378–2380](2378/) — A 1900 10-unit apartment building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2010.
 - [2416–2420](2416/) — A 1924 6-unit apartment building, with reroofing permitted in 2019.
 - [2430](2430/) — A 1925 two-flat, with reroofing permitted in 2019.

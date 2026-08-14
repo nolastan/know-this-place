@@ -28,9 +28,5 @@ Every residential parcel on Uranus Terrace that the city's address, assessor and
 - [94](94/) — A 1969 two-flat, with a kitchen and bathroom remodel permitted in 2022.
 - [99](99/) — A 1931 single-family house, with garage work permitted in 2023.
 
-## Not yet covered
-
-Also on this street: 4 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

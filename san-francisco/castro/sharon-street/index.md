@@ -26,9 +26,5 @@ Every residential parcel on Sharon Street that the city's address, assessor and 
 - [74–78](74/) — A 1900 3-unit apartment building, with fire repair permitted in 1986.
 - [79](79/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2016.
 
-## Not yet covered
-
-Also on this street: 7 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 4 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -853,6 +853,16 @@ a street number, which is the whole constraint:
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57/content`
     — while the `SharedLinks.aspx` form is what a page cites. See "The Dogpatch
     survey" below.
+  - Christopher VerPlanck (VerPlanck Historic Preservation Consulting), *Duboce
+    Triangle Historic Context Statement*, prepared for the Duboce Triangle
+    Neighborhood Association, dated August 26, 2022, adopted 2022 (181 pp.),
+    source id `duboce-triangle-context-statement`. The PDF is on the S3 archive
+    at
+    `https://sfplanning.s3.amazonaws.com/default/files/Preservation/DuboceTriangleHCS/preserv_duboce_triangleHCS-draft.pdf`.
+    The cover and every page header read **DRAFT**, and the SF Planning listing
+    page carries it under "Duboce Triangle Historic Context Statement (Adopted
+    2022)"; there is no non-draft file. Cite it as adopted 2022 and say the file
+    is the draft. See "The Duboce Triangle statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1091,6 +1101,59 @@ DPR 523B forms it cites in its own footnotes are still elsewhere.
     statement: Kentucky Street became Third Street, Sierra Street became 22nd
     Street, Butte Street became 19th, Solano Street became 18th, and Napa
     Street became 20th.
+**The Duboce Triangle statement has no inventory table at all.** Like Central
+SoMa, it is narrative from end to end: 130 pages of neighborhood history, a
+chapter on property types and architectural styles, and a recommendations
+chapter. The accompanying survey inventoried 552 properties and its
+spreadsheet is not in the file, so the statement assigns no status code, rating
+or per-property record to anything. What it does carry, and what the pages here
+take, is a list of potential city landmark candidates, five proposed local
+landmark districts with their member addresses printed out, and several dozen
+buildings named in the narrative with a style, an estimated date and a reason
+for the mention.
+- **Cautions specific to it:**
+  - **The candidate list is 38 entries and the text calls it 37.** "Presented
+    below is a list of 37 potential city landmark candidates," the
+    recommendations chapter says, and "Photographs of all 37 properties follow";
+    the introduction says 38 twice. The bullets number 38. Every page that
+    carries the candidacy says so.
+  - **It contradicts itself on addresses more than most.** The Charles Strothoff
+    House is 2274 15th Street in the narrative, 2272–2276 15th Street in the
+    candidate list and 2272–2276 **16th** Street in the styles chapter; the
+    apartment building at 221 Noe Street is 211 Noe in its figure caption; the
+    1937 mixed-use building at 286–288 Noe Street is 266–268 Noe in its figure
+    caption; 282 Castro Street is 282 **Church** Street in its figure caption;
+    2168 15th Street is 2168 **18th** Street in its figure caption; the
+    Norwegian-Danish Methodist church is 750 14th Street in the Scandinavian
+    institution list and 754 14th Street in the narrative, and EAS has only 750.
+    Follow EAS, record the printed form as `address_as_surveyed`, and name the
+    disagreement.
+  - **It contradicts itself on dates and on the Born tract's builder.** 963 14th
+    Street is Ca. 1885 and Ca. 1880; 245 Castro Street is Ca. 1870 and Ca. 1875;
+    101–111 Noe Street is Ca. 1890 and Ca. 1895; 106–112 Noe Street is 1924
+    and 1922; 178–180 Church Street is a 1937 building and a 1911 building
+    remodelled Ca. 1935; 3633–3635 16th Street is a 1940s building and a
+    Victorian remodelled Ca. 1935; the St. Ansgar/Gethsemane merger is 1964 and
+    1965; the Castro Street tract is Stephen A. Born's and William S. Born's.
+    Both readings go on the page.
+  - **Its "Ca." dates are estimates and the roll's 1900 is a placeholder**, so
+    most of the disagreement between them is not a finding. The estimated date
+    goes in `historic_survey.year_built_as_surveyed`, never in
+    `building.completed`, which is reserved here for the dates the statement
+    documents outright.
+  - **Condominium conversion has taken out a quarter of what it names.**
+    Twenty-eight of the parcels are now condominium APNs, which AGENTS.md holds
+    back — including nine of the 38 landmark candidates. Ten of those
+    twenty-eight are conversions since the last roll year their old APN appears
+    in, so the APN EAS still carries has no 2025 roll row and the successor is a
+    condominium.
+  - **The Market Street frontage is deliberately outside its survey** — it was
+    covered by the 2006–09 Market & Octavia survey — but the statement
+    discusses those buildings anyway, so the Swedish American Hall, the José
+    Theater and Safeway are all named without being inventoried.
+  - **Business proprietors and building owners are named in passing**, as in the
+    Dogpatch survey. Architects, builders and contractors are kept; residents
+    and owners are not.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1224,6 +1287,55 @@ DPR 523B forms it cites in its own footnotes are still elsewhere.
   forms, is not in the file — the DPR 523 forms are a separate document and are
   untouched, as are the Eureka Valley, Duboce Triangle, Market & Octavia,
   Japantown and other adopted statements on the same SF Planning page.)
+- **Verified:** 2026-08-13 (Duboce Triangle: read all 181 pages of the adopted
+  draft — the ten chronological chapters, the property-type and
+  architectural-style chapters, the recommendations and the bibliography. **186
+  distinct numbered San Francisco addresses are named**, counting a printed
+  range by its low number: most of them in Duboce Triangle itself, the rest as
+  the Scandinavian and Finnish institutions of the wider Upper Market area, as
+  citywide examples of a style, or as the site of the Ham and Eggs Fire. **172
+  have an EAS row and 171 of those carry a parcel number.** 138 pages now cite
+  the document: **24 new and 114 edited**, across `castro` (130), `mission` (5),
+  and one each in `hayes-valley`, `financial-district` and `inner-sunset` (a new
+  neighborhood directory with a hand-written hub, for the Henry Doelger Building
+  at 320 Judah Street). Of the 38 entries in the statement's landmark-candidate
+  list, **29 are documented and 9 are held back as condominium parcels**.
+  Not documented, and why: **28 are condominium parcels** the roll classes
+  `Condominium`, which AGENTS.md holds back — 951–955 Fourteenth; 2150,
+  2179–2183, 2229–2231, 2253–2255 and 2263–2265 Fifteenth; 45–49 and
+  56–58 Beaver; 45–49 Belcher; 74–76, 84–86, 164–166, 210–212,
+  214–216, 222–224 and 301–303 Castro; 200 Dolores; 19–23 Henry; 47,
+  201–203, 207–209, 229–231, 233, 247–251 and 255–259 Noe; and 43–45,
+  71 and 151–153 Sanchez. Nine of those are candidates on the statement's own
+  landmark list, so the condominium rule is holding back the buildings it most
+  wanted protected. Ten of the 28 converted after the roll year their old APN
+  last appears in, so EAS still carries an APN with no 2025 roll row while the
+  live successor is a condominium; 229–231 Noe has an EAS row with no parcel
+  number at all. **Fourteen are named at a number EAS has never had**: 754
+  Fourteenth, 2272 Sixteenth, 3276 Sixteenth, 3555 Sixteenth, 3744 Seventeenth,
+  4032 Seventeenth, 2168 Eighteenth, 32 Beaver, 431 Duboce, 211 Noe, 250 Noe,
+  479 Market, 725 O'Farrell and 320 Sansome. Four of those are the statement's
+  own misprints and are documented under the number the city carries — 754
+  Fourteenth on the 80 Belcher Street page, 2272 Sixteenth and 2168 Eighteenth
+  on 2272–2276 and 2168 Fifteenth, and 211 Noe on 221 Noe — with the printed
+  form recorded as `address_as_surveyed`. Six are buildings the statement itself
+  records as demolished (the Swedish Athletic Club, the Swedish Home for Girls,
+  Finnila's Finnish Baths, the Norwegian Singing Society hall, the villa at 32
+  Beaver Street, and the apartment building at 250–258 Noe Street that burned
+  in 1963 and is now the Noe-Beaver Mini Park). 3555 Sixteenth is the old
+  Eureka Valley branch library, which the statement itself renumbers to 1 José
+  Sarria Court; 479 Market is Cliff's Variety, which is on Castro Street, not
+  Market; and 725 O'Farrell and 320 Sansome are a 1905 florist's shop and an
+  1859 society's rooms, both long gone. Two addresses stand on parcels the roll
+  has renumbered since EAS was last refreshed and are documented on the live
+  APN: 300 Castro Street (2622002, not the 2622088 EAS gives) and 2168–2174
+  Market Street (3542062, not 3542017). Coverage note: this document is read in
+  full and nothing in it is outstanding, but the reconnaissance survey adopted
+  alongside it — the GIS field application and the spreadsheet of all 552
+  properties, with their estimated dates, methods of construction, uses, styles
+  and alterations — is not in the file and is untouched, as are the Eureka
+  Valley, Market & Octavia, Japantown and other adopted statements on the same
+  SF Planning page.)
 
 ## Known gaps
 

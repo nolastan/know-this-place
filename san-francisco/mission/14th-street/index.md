@@ -5,7 +5,7 @@ Every residential parcel on 14th Street that the city's address, assessor and pe
 ## Documented so far
 
 - [64–66](64/) — A 1907 2-unit building with a ground-floor store, with a bathroom remodel permitted in 2009.
-- [74–76](74/) — A 1919 residential building, with garage work permitted in 2017.
+- [74–76](74/) — A 1919 building, with garage work permitted in 2017.
 - [85](85/) — A 1914 6-unit apartment building, with fire repair permitted in 1984.
 - [155](155/) — A 1975 building with a ground-floor store, with window replacement permitted in 2005.
 - [177](177/) — A 1907 4-unit apartment building, with deck work permitted in 2013.
@@ -14,7 +14,7 @@ Every residential parcel on 14th Street that the city's address, assessor and pe
 - [221–225](221/) — A 1908 three-flat, with stair work permitted in 2006.
 - [233–237](233/) — A 1907 4-unit apartment building, with a kitchen remodel permitted in 2016.
 - [257–261](257/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2016.
-- [266–270](266/) — A 1924 residential building, with a kitchen and bathroom remodel permitted in 2006.
+- [266–270](266/) — A 1924 building, with a kitchen and bathroom remodel permitted in 2006.
 - [277–285](277/) — A 1907 22-unit apartment building, with reroofing permitted in 2003.
 - [290–292](290/) — A 1907 9-unit apartment building, with a bathroom remodel permitted in 2011.
 - [320–326](320/) — A 1908 17-unit apartment building in the Woodward St. Romeo Flats Reconstruction Historic District, with an accessory dwelling unit permitted in 2026.

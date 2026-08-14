@@ -53,11 +53,7 @@ Every residential parcel on Cumberland Street that the city's address, assessor 
 - [380](380/) — A 1906 single-family house, with a kitchen remodel permitted in 2012.
 - [385](385/) — A 1968 single-family house, with a bathroom remodel permitted in 2018.
 - [391–393](391/) — A 1966 single-family house, with deck work permitted in 2002.
-- [396](396/) — A 1900 residential building, with reroofing permitted in 2017.
-
-## Not yet covered
-
-Also on this street: 6 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 7 parcels with no record in the assessor's roll.
+- [396](396/) — A 1900 building, with reroofing permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

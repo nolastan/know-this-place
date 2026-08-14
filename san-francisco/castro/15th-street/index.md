@@ -31,6 +31,7 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 - [2047–2049](2047/) — A 1905 4-unit apartment building, with a seismic retrofit permitted in 2020.
 - [2057–2079](2057/) — A 1907 12-unit tic building, with a seismic retrofit permitted in 2017.
 - [2081–2083](2081/) — A 1900 two-flat, with deck work permitted in 2023.
+- [2112](2112/) — A 1938 store building, with plumbing work permitted in 2008.
 - [2118](2118/) — A 1900 single-family house, with permit records from 1987 to 1988.
 - [2124–2126](2124/) — A 1900 two-flat, with reroofing permitted in 2015.
 - [2136](2136/) — A 1902 single-family house, with facade work permitted in 1991.
@@ -87,8 +88,8 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 - [2416](2416/) — A 1917 single-family house, with a rear addition permitted in 2020.
 - [2425](2425/) — A 1928 single-family house, with deck work permitted in 2025.
 - [2429](2429/) — A 1927 single-family house, with reroofing permitted in 2008.
-- [2434](2434/) — A 1907 residential building, with a kitchen remodel permitted in 1994.
-- [2436](2436/) — A 1907 residential building, with a kitchen remodel permitted in 2020.
+- [2434](2434/) — A 1907 building, with a kitchen remodel permitted in 1994.
+- [2436](2436/) — A 1907 building, with a kitchen remodel permitted in 2020.
 - [2448–2454](2448/) — A 1907 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
 - [2470](2470/) — A 1968 4-unit apartment building, with a kitchen remodel permitted in 2017.
 - [2480](2480/) — A 1968 4-unit apartment building, with a kitchen remodel permitted in 2022.
@@ -104,10 +105,6 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 - [2537](2537/) — A 1944 single-family house, with a kitchen remodel permitted in 2018.
 - [2547](2547/) — A 1925 single-family house, with facade work permitted in 1995.
 - [2555](2555/) — A 1948 single-family house, with a vertical addition permitted in 1990.
-
-## Not yet covered
-
-Also on this street: 33 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 31 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

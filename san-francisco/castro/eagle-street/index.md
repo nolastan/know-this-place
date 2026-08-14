@@ -9,7 +9,6 @@ Every residential parcel on Eagle Street that the city's address, assessor and p
 - [18](18/) — A 1913 single-family house, with a kitchen remodel permitted in 2019.
 - [20](20/) — A 1913 single-family house, with garage work permitted in 2024.
 - [26](26/) — A 1948 single-family house, with stair work permitted in 2021.
-- [32](32/) — A 1900 building, with stair work permitted in 2003.
 - [45](45/) — A 1908 single-family house, with window replacement permitted in 2018.
 - [46](46/) — A 1926 single-family house, with foundation work permitted in 2022.
 - [47](47/) — A 1908 single-family house, with a seismic retrofit permitted in 2001.

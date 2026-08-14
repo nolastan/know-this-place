@@ -32,9 +32,5 @@ Every residential parcel on Graystone Terrace that the city's address, assessor 
 - [301](301/) — A 1952 7-unit apartment building, with a seismic retrofit permitted in 2014.
 - [311](311/) — A 1960 10-unit apartment building, with a seismic retrofit permitted in 2016.
 
-## Not yet covered
-
-Also on this street: 4 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 6 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

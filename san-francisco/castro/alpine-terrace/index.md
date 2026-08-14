@@ -40,9 +40,5 @@ Every residential parcel on Alpine Terrace that the city's address, assessor and
 - [189–191](189/) — A 1909 two-flat.
 - [193](193/) — A 1909 two-flat, with reroofing permitted in 1990.
 
-## Not yet covered
-
-Also on this street: 9 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

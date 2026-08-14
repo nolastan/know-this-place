@@ -23,9 +23,5 @@ Every residential parcel on Buena Vista Avenue that the city's address, assessor
 - [491](491/) — A 2000 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [499](499/) — A 1924 single-family house, with one permit record from 2000.
 
-## Not yet covered
-
-Also on this street: 8 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 4 non-residential parcels; 1 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

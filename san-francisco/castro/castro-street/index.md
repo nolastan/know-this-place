@@ -9,6 +9,7 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [22](22/) — A 1906 single-family house, with a kitchen remodel permitted in 1997.
 - [34](34/) — A 1906 two-flat, with a kitchen and bathroom remodel permitted in 1990.
 - [42](42/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [45](45/) — Davies Medical Center, on the block the German Hospital took in 1878.
 - [48](48/) — A 1906 3-unit apartment building, with deck work permitted in 2005.
 - [52](52/) — A 1905 single-family house, with reroofing permitted in 1993.
 - [56](56/) — A 1906 single-family house, with a bathroom remodel permitted in 1990.
@@ -132,7 +133,7 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [707](707/) — A 1980 three-unit building standing inside the historic district.
 - [708](708/) — A 1900 three-flat, with garage work permitted in 2020.
 - [710](710/) — A 1900 single-family house, with foundation work permitted in 2001.
-- [{'low': 711, 'high': 715, 'canonical': 711, 'note': 'One parcel and one building spanning three street numbers (711, 713, 715). Permits are filed under all three numbers; the DBI records are the same.'}](711/) — A 1900 three-unit building on one parcel spanning three street numbers, with a permit record dominated by dry rot.
+- [711–715](711/) — A 1900 three-unit building on one parcel spanning three street numbers, with a permit record dominated by dry rot.
 - [712](712/) — An 1888 single-family house, with deck work permitted in 2011.
 - [714](714/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2016.
 - [720](720/) — A 1901 house sold in December 2024.
@@ -155,10 +156,6 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [785](785/) — A 1904 single-family house, with reroofing permitted in 1999.
 - [787](787/) — A 1900 single-family house, with a kitchen remodel permitted in 2001.
 - [789–791](789/) — A 1905 single-family house, with deck work permitted in 2000.
-
-## Not yet covered
-
-Also on this street: 32 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 24 non-residential parcels; 21 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

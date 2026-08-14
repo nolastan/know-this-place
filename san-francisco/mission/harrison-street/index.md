@@ -9,7 +9,7 @@ Every residential parcel on Harrison Street that the city's address, assessor an
 - [2402](2402/) — A 1906 two-flat, with stair work permitted in 2003.
 - [2404](2404/) — A 1906 two-flat, with a seismic retrofit permitted in 2015.
 - [2406](2406/) — A 1900 three-flat, with dry-rot repair permitted in 2012.
-- [2407](2407/) — A 2002 residential building, with deck work permitted in 2023.
+- [2407](2407/) — A 2002 building, with deck work permitted in 2023.
 - [2415](2415/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2017.
 - [2445–2449](2445/) — A 1907 6-unit apartment building, with reroofing permitted in 1998.
 - [2461](2461/) — A 1900 1-unit flats building, with reroofing permitted in 1998.

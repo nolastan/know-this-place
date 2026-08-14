@@ -4,7 +4,6 @@ Every residential parcel on Caselli Avenue that the city's address, assessor and
 
 ## Documented so far
 
-- [18](18/) — A 1912 building, with a seismic retrofit permitted in 2024.
 - [22](22/) — A 1916 single-family house, with a kitchen and bathroom remodel permitted in 1987.
 - [25](25/) — A 1929 single-family house, with a bathroom remodel permitted in 2013.
 - [27–29](27/) — A 1913 three-flat, with stair work permitted in 2019.
@@ -75,8 +74,6 @@ Every residential parcel on Caselli Avenue that the city's address, assessor and
 - [239](239/) — A 1910 single-family house, with garage work permitted in 2001.
 - [240](240/) — A 1906 single-family house, with foundation work permitted in 2012.
 - [243](243/) — A 2001 single-family house, with reroofing permitted in 2024.
-- [246](246/) — A 1904 building, with foundation work permitted in 2000.
-- [248](248/) — A 1904 building, with stair work permitted in 2010.
 - [254](254/) — A 1900 single-family house, with stair work permitted in 2009.
 - [258](258/) — A single-family house, with foundation work permitted in 2018.
 - [300](300/) — An 1895 single-family house, with a bathroom remodel permitted in 2018.

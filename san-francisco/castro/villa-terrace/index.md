@@ -16,9 +16,5 @@ Every residential parcel on Villa Terrace that the city's address, assessor and 
 - [183](183/) — A 1976 two-flat, with a kitchen and bathroom remodel permitted in 2016.
 - [195](195/) — A 1937 single-family house.
 
-## Not yet covered
-
-Also on this street: 1 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

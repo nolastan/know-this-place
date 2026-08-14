@@ -105,9 +105,5 @@ Every residential parcel on Eureka Street that the city's address, assessor and 
 - [395](395/) — A 1922 single-family house, with window replacement permitted in 2000.
 - [398](398/) — A 2001 single-family house, with a kitchen and bathroom remodel permitted in 2010.
 
-## Not yet covered
-
-Also on this street: 16 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 19 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

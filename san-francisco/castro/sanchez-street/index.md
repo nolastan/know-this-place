@@ -32,6 +32,7 @@ Every residential parcel on Sanchez Street that the city's address, assessor and
 - [125](125/) — A 1929 12-unit apartment building, with reroofing permitted in 2023.
 - [126](126/) — A 1900 two-flat in the Duboce Triangle Historic District, with dry-rot repair permitted in 1996.
 - [130–132](130/) — A 1900 two-flat in the Duboce Triangle Historic District, with a kitchen and bathroom remodel permitted in 2022.
+- [135](135/) — SFFD Station No. 6, built 1948 — the first fire station in Duboce Triangle.
 - [145–147](145/) — A 1940 two-flat, with facade work permitted in 2008.
 - [150–154](150/) — A 1904 6-unit apartment building in the Duboce Triangle Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [156–160](156/) — A 1901 5-unit apartment building in the Duboce Triangle Historic District, with a seismic retrofit permitted in 2016.
@@ -135,10 +136,6 @@ Every residential parcel on Sanchez Street that the city's address, assessor and
 - [765](765/) — A 1959 single-family house, with deck work permitted in 2009.
 - [775–777](775/) — A 1913 single-family house, with a vertical addition permitted in 2016.
 - [798](798/) — A 1906 single-family house, with deck work permitted in 2005.
-
-## Not yet covered
-
-Also on this street: 36 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 6 non-residential parcels; 25 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -7,9 +7,5 @@ Every residential parcel on Rayburn Street that the city's address, assessor and
 - [1](1/) — A 1900 single-family house, with reroofing permitted in 2023.
 - [2](2/) — A 1941 two-flat, with a seismic retrofit permitted in 2019.
 
-## Not yet covered
-
-Also on this street: 1 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
