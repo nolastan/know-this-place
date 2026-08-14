@@ -14,6 +14,7 @@ Collingwood runs parallel to Castro, one block west, from 18th Street south to A
 - [54](54/) — A 1900 single-family house, with a rear addition permitted in 2018.
 - [59](59/) — A 1938 five-unit apartment building, three of its units remodelled together in 2014.
 - [73–77](73/) — A 1909 parcel carrying two structures — a six-unit building at the street and a cottage at the rear.
+- [100–130](100/) — An assessor class: vacant lot, with permit records from 1994 to 2004.
 - [119](119/) — A 1907 single-family house, with deck work permitted in 2014.
 - [123–127](123/) — A 1900 three-flat, with garage work permitted in 2019.
 - [133–135](133/) — A 1900 3-unit apartment building, with a rear addition permitted in 2004.

@@ -23,6 +23,9 @@ Every residential parcel on Diamond Street that the city's address, assessor and
 - [80](80/) — A 1900 single-family house, with a rear addition permitted in 1992.
 - [85](85/) — A 1930 two-flat, with reroofing permitted in 1995.
 - [100](100/) — The Church of the Most Holy Redeemer, whose parish took in Duboce Triangle.
+- [110](110/) — A 1900 church.
+- [115](115/) — A 1925 church, with a rear addition permitted in 1987.
+- [117](117/) — A 1925 school building, with a seismic retrofit permitted in 2020.
 - [156](156/) — A 1900 two-flat, with dry-rot repair permitted in 1997.
 - [170](170/) — A 1904 single-family house, with reroofing permitted in 2002.
 - [176](176/) — A 1904 single-family house, with deck work permitted in 2019.

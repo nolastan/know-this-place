@@ -77,6 +77,7 @@ Every residential parcel on 19th Street that the city's address, assessor and pe
 - [4135–4137](4135/) — A 1900 two-flat, with a rear addition permitted in 2025.
 - [4139–4143](4139/) — A 1900 three-flat, with a kitchen remodel permitted in 2006.
 - [4145–4147](4145/) — A 1900 2-unit building with a ground-floor store, with stair work permitted in 1984.
+- [4235](4235/) — A 1938 school building.
 - [4302](4302/) — A 1990 single-family house, with a bathroom remodel permitted in 2016.
 - [4304](4304/) — A 1990 single-family house.
 - [4306–4308](4306/) — An 1887 two-flat, with a rear addition permitted in 1997.

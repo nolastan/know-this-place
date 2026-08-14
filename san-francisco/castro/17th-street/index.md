@@ -46,6 +46,7 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [3836](3836/) — A 1965 6-unit apartment building, with reroofing permitted in 1997.
 - [3837](3837/) — A 1900 2-unit apartment building, with plumbing work permitted in 1990.
 - [3839–3841](3839/) — A 1900 two-flat, with deck work permitted in 2010.
+- [3850](3850/) — A 1966 office building, with a seismic retrofit permitted in 2019.
 - [3851](3851/) — A 1925 4-unit apartment building, with reroofing permitted in 1999.
 - [3855](3855/) — A 1900 single-family house, with foundation work permitted in 2015.
 - [3859](3859/) — A 1900 3-unit apartment building, with reroofing permitted in 1999.

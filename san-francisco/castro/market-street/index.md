@@ -8,6 +8,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2041](2041/) — A 1922 three-flat, with a rear addition permitted in 1997.
 - [2073–2083](2073/) — A 1914 apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2016.
 - [2100–2112](2100/) — A 1955 building in the Upper Market Street Commercial Historic District, with a kitchen remodel permitted in 1997.
+- [2121–2123](2121/) — A 1905 store building in the Upper Market Street Commercial Historic District, with stair work permitted in 2021.
 - [2124–2126](2124/) — A 1908 5-unit apartment building in the Upper Market Street Commercial Historic District, with facade work permitted in 2009.
 - [2128–2130](2128/) — A 1938 13-unit apartment building in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [2134–2140](2134/) — A 1900 three-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1992.
@@ -23,8 +24,10 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2261–2265](2261/) — A 1900 6-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with foundation work permitted in 2007.
 - [2264–2268](2264/) — A 1905 9-unit apartment building in the Upper Market Street Commercial Historic District, with fire repair permitted in 1991.
 - [2270–2272](2270/) — A 1900 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [2276–2288](2276/) — A 1987 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2013.
 - [2279](2279/) — A 1900 two-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1995.
 - [2300–2312](2300/) — A 1904 37-unit apartment building in the Upper Market Street Commercial Historic District Extension, with facade work permitted in 2001.
+- [2301](2301/) — A 1963 store building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 1989.
 - [2317–2335](2317/) — A 1910 10-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2012.
 - [2324](2324/) — A 1972 8-unit apartment building in the Upper Market Street Commercial Historic District Extension, with electrical work permitted in 2024.
 - [2330](2330/) — A 1907 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2009.
@@ -33,12 +36,16 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2342–2348](2342/) — A 1907 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with a seismic retrofit permitted in 2008.
 - [2347–2349](2347/) — A 1904 5-unit apartment building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2012.
 - [2350](2350/) — An 1880 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with a kitchen and bathroom remodel permitted in 2016.
+- [2355](2355/) — A 1915 industrial building in the Upper Market Street Commercial Historic District Extension, with window replacement permitted in 2006.
 - [2362](2362/) — The José Theater, City Landmark No. 241, later the Names Project Building.
+- [2367–2375](2367/) — A 1922 store building in the Upper Market Street Commercial Historic District Extension, with stair work permitted in 2008.
 - [2378–2380](2378/) — A 1900 10-unit apartment building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2010.
+- [2395–2399](2395/) — A 1958 building, with permit records from 1983 to 2008.
 - [2416–2420](2416/) — A 1924 6-unit apartment building, with reroofing permitted in 2019.
 - [2430](2430/) — A 1925 two-flat, with reroofing permitted in 2019.
 - [2440](2440/) — A 1925 12-unit apartment building, with reroofing permitted in 2012.
 - [2450](2450/) — A 1960 18-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2500](2500/) — A 1920 store building, with reroofing permitted in 1994.
 - [2502](2502/) — A 1910 two-flat, with foundation work permitted in 2008.
 - [2555](2555/) — A 1928 15-unit apartment building, with a seismic retrofit permitted in 2016.
 - [2605–2609](2605/) — A 1960 8-unit apartment building, with a seismic retrofit permitted in 2017.
