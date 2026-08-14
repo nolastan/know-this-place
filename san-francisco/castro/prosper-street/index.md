@@ -27,9 +27,5 @@ Every residential parcel on Prosper Street that the city's address, assessor and
 - [76–78](76/) — A 1900 2-unit tic building, with a kitchen and bathroom remodel permitted in 2021.
 - [79](79/) — A 1922 two-flat, with a kitchen remodel permitted in 1994.
 
-## Not yet covered
-
-Also on this street: 3 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

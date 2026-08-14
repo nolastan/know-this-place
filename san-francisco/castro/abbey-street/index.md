@@ -15,9 +15,5 @@ Every residential parcel on Abbey Street that the city's address, assessor and p
 - [41–43](41/) — A 1911 two-flat in the Chula-Abbey Early Residential District, with a kitchen remodel permitted in 2022.
 - [44](44/) — A 1909 single-family house in the Chula-Abbey Early Residential District, with a bathroom remodel permitted in 1989.
 
-## Not yet covered
-
-Also on this street: 1 non-residential parcels; 4 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

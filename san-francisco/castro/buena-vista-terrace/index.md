@@ -52,9 +52,5 @@ Every residential parcel on Buena Vista Terrace that the city's address, assesso
 - [160–162](160/) — A 1955 two-flat, with deck work permitted in 2020.
 - [169](169/) — A 1963 23-unit apartment building, with a seismic retrofit permitted in 2015.
 
-## Not yet covered
-
-Also on this street: 5 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 5 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

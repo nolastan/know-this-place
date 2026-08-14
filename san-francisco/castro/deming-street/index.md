@@ -21,9 +21,5 @@ Every residential parcel on Deming Street that the city's address, assessor and 
 - [76](76/) — A 1906 6-unit apartment building, with reroofing permitted in 1993.
 - [83](83/) — A 1937 single-family house, with reroofing permitted in 2006.
 
-## Not yet covered
-
-Also on this street: 2 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

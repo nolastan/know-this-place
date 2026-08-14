@@ -16,9 +16,5 @@ Every residential parcel on Park Hill Avenue that the city's address, assessor a
 - [85](85/) — A 1941 single-family house, with dry-rot repair permitted in 2021.
 - [97–99](97/) — A 1942 two-flat, with garage work permitted in 2012.
 
-## Not yet covered
-
-Also on this street: 3 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

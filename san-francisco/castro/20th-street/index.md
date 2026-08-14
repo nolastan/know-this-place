@@ -148,9 +148,5 @@ Every residential parcel on 20th Street that the city's address, assessor and pe
 - [4545–4547](4545/) — A 1908 single-family house, with reroofing permitted in 2007.
 - [4549](4549/) — A 1987 two-flat, with reroofing permitted in 2007.
 
-## Not yet covered
-
-Also on this street: 17 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 2 non-residential parcels; 12 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

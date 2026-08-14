@@ -81,9 +81,5 @@ Every residential parcel on 21st Street that the city's address, assessor and pe
 - [4238–4240](4238/) — A 1955 two-flat, with a kitchen remodel permitted in 2023.
 - [4250–4252](4250/) — A 1908 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2019.
 
-## Not yet covered
-
-Also on this street: 3 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels; 4 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

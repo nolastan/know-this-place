@@ -22,9 +22,5 @@ Every residential parcel on Clifford Terrace that the city's address, assessor a
 - [70](70/) — A 1912 single-family house, with a kitchen and bathroom remodel permitted in 2021.
 - [75](75/) — A 1925 single-family house, with garage work permitted in 2010.
 
-## Not yet covered
-
-Also on this street: 2 non-residential parcels.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

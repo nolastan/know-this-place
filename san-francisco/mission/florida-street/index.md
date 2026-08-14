@@ -9,7 +9,7 @@ Every residential parcel on Florida Street that the city's address, assessor and
 - [691–693](691/) — A 1900 three-flat, with window replacement permitted in 2023.
 - [715](715/) — A 1980 single-family house, with an addition permitted in 2014.
 - [719](719/) — A 1900 single-family house, with reroofing permitted in 2006.
-- [725](725/) — A 2000 residential building, with deck work permitted in 2012.
+- [725](725/) — A 2000 building, with deck work permitted in 2012.
 - [801](801/) — A 1954 single-family house, with reroofing permitted in 1996.
 - [809](809/) — A 1954 single-family house, with garage work permitted in 2012.
 - [815](815/) — A 1954 single-family house, with reroofing permitted in 2005.
@@ -29,7 +29,7 @@ Every residential parcel on Florida Street that the city's address, assessor and
 - [851](851/) — A 1931 single-family house, with reroofing permitted in 2001.
 - [854](854/) — A 1900 single-family house, with one permit record from 2008.
 - [858–860](858/) — A 1900 2-unit apartment building, with plumbing work permitted in 2013.
-- [861](861/) — A 1907 residential building, with a vertical addition permitted in 1991.
+- [861](861/) — A 1907 building, with a vertical addition permitted in 1991.
 - [863](863/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 2001.
 - [864](864/) — A 1920 single-family house, with deck work permitted in 2013.
 - [870](870/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2001.

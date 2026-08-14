@@ -171,9 +171,5 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [4495](4495/) — A 1904 single-family house, with deck work permitted in 2015.
 - [4538](4538/) — A 1900 single-family house, with facade work permitted in 2009.
 
-## Not yet covered
-
-Also on this street: 36 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 5 non-residential parcels; 32 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

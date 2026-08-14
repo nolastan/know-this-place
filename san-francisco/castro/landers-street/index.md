@@ -37,9 +37,5 @@ Every residential parcel on Landers Street that the city's address, assessor and
 - [181–183](181/) — A 1900 three-flat, with reroofing permitted in 2005.
 - [187–191](187/) — A 1900 three-flat, with reroofing permitted in 2017.
 
-## Not yet covered
-
-Also on this street: 8 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 5 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

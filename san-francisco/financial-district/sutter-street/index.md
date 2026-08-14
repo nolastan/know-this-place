@@ -5,6 +5,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [165](165/) — Crocker Galleria, whose barrel-vaulted arcade answers Milan's Galleria Vittorio Emanuele II.
+- [450–464](450/) — Timothy Pflueger's Medical-Dental Building of 1929.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

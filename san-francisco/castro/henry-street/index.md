@@ -60,9 +60,5 @@ Every residential parcel on Henry Street that the city's address, assessor and p
 - [281](281/) — A 1924 single-family house, with a kitchen and bathroom remodel permitted in 2013.
 - [285](285/) — A 1906 single-family house, with a kitchen remodel permitted in 2014.
 
-## Not yet covered
-
-Also on this street: 25 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels; 9 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

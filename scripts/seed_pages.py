@@ -1464,7 +1464,11 @@ def unknowns_html(rec: dict) -> str:
         missing.append("who designed the open space")
     if not a.get("last_sale_date"):
         missing.append("the date of the last recorded sale")
-    if not p.get("year_built"):
+    # The roll leaves `year_built` empty on city-owned and exempt parcels. That
+    # is a gap only while nothing else on the page dates the building — once a
+    # source gives a completion year, listing it as undocumented contradicts the
+    # "Completed" row two blocks up.
+    if not p.get("year_built") and not b.get("completed"):
         missing.insert(0, "the year the building went up")
     listing = ", ".join(missing[:-1]) + f" and {missing[-1]}"
     note = ""

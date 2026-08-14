@@ -15,9 +15,5 @@ Every residential parcel on Vulcan Stairway that the city's address, assessor an
 - [68](68/) — A 1900 flats building, with a dormer permitted in 2010.
 - [74](74/) — A 1900 single-family house, with a rear addition permitted in 1998.
 
-## Not yet covered
-
-Also on this street: 3 non-residential parcels; 1 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

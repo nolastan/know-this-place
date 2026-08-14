@@ -76,9 +76,5 @@ A single block running between 17th and 18th Streets, one block east of Castro. 
 - [277](277/) — A 1905 single-family house, with a bathroom remodel permitted in 2014.
 - [280](280/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 1993.
 
-## Not yet covered
-
-Also on this street: 20 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 6 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

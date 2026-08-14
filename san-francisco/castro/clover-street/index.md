@@ -10,9 +10,5 @@ Every residential parcel on Clover Street that the city's address, assessor and 
 - [37–39](37/) — A 1905 two-flat, with an accessory dwelling unit permitted in 2021.
 - [40](40/) — A 1937 two-flat, with reroofing permitted in 2011.
 
-## Not yet covered
-
-Also on this street: 1 parcels with no record in the assessor's roll.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

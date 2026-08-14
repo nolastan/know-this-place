@@ -4,10 +4,14 @@ Every residential parcel on Church Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [100](100/) — The 1925 contractors' loft that anchors Duboce Triangle's small business district.
 - [118](118/) — A 1968 6-unit apartment building, with a seismic retrofit permitted in 2016.
 - [120–122](120/) — A 1900 3-unit apartment building, with a rear addition permitted in 2018.
 - [124–130](124/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2025.
 - [132–142](132/) — A 1900 6-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2026.
+- [152](152/) — Saint Francis Lutheran Church, City Landmark No. 39; begun in 1905 for San Francisco's Danish community and used by the Red Cross as a field hospital after the earthquake.
+- [158](158/) — Built in 1973 as a Bank of America branch, and for many years Blockbuster Video.
+- [172](172/) — Built in 1965 for Brown's Furniture Store, on the site of a three-storey rooming house.
 - [178–180](178/) — A 1938 5-unit apartment building, with fire repair permitted in 2024.
 - [210–228](210/) — A 1920 24-unit apartment building in the Upper Market Street Commercial Historic District, with plumbing work permitted in 2019.
 - [215–219](215/) — A 1905 3-unit building with a ground-floor store, with an addition permitted in 2001.
@@ -78,10 +82,6 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [862–864](862/) — A 1940 two-flat, with a kitchen and bathroom remodel permitted in 2007.
 - [869–871](869/) — A 1908 two-flat, with a bathroom remodel permitted in 2014.
 - [875](875/) — A 1900 single-family house, with a rear addition permitted in 1990.
-
-## Not yet covered
-
-Also on this street: 40 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 12 non-residential parcels; 9 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

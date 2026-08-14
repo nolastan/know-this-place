@@ -12,6 +12,7 @@ Every residential parcel on Beaver Street that the city's address, assessor and 
 - [19](19/) — A 1900 three-flat in the Duboce Triangle Historic District Extension, with a kitchen remodel permitted in 2005.
 - [20](20/) — A 1991 two dwellings on one parcel in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2017.
 - [21](21/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with a rear addition permitted in 2011.
+- [22](22/) — The Benedict-Gieling House, City Landmark No. 284 — the last Duboce Triangle villa left with its garden.
 - [23](23/) — A 1900 single-family house in the Duboce Triangle Historic District Extension, with foundation work permitted in 2010.
 - [46–48](46/) — A 1926 two-flat in the Duboce Triangle Historic District Extension, with plumbing work permitted in 2012.
 - [51](51/) — A 1902 single-family house in the Duboce Triangle Historic District Extension, with an addition permitted in 2014.
@@ -47,10 +48,6 @@ Every residential parcel on Beaver Street that the city's address, assessor and 
 - [181–183](181/) — A 1968 two-flat, with reroofing permitted in 2005.
 - [185](185/) — A 1936 single-family house, with a kitchen remodel permitted in 2021.
 - [187](187/) — A 1923 two-flat, with reroofing permitted in 2021.
-
-## Not yet covered
-
-Also on this street: 7 condominium parcels, which are individual units rather than buildings and are held back until the building each belongs to can be established; 1 non-residential parcels; 11 parcels with no record in the assessor's roll.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
