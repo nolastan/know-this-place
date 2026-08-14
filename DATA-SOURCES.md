@@ -1204,22 +1204,33 @@ carries at address level is:
   Phoenix Brewery, and the Charles Hinkel House — plus four concentrations of
   developer housing to study as potential historic districts.
 - **Cautions:**
-  - **It contradicts itself on addresses more often than any statement here,
-    and most often on its own landmarks.** The Castro Theater is 429 Castro
-    Street in the landmark list and the style chapter, 429–431 in a caption, and
-    **479** Castro Street in the recommendations and in an LGBTQ HCS quotation —
-    479 being Cliff's Variety, which the property-type chapter calls **471**.
-    The Twin Peaks Tavern is 401 Castro Street in the landmark list and **410**
-    in an LGBTQ HCS quotation — 410 being the Bank of America branch, printed
-    410, 400 and 400–410 in three places. The Kirby/Phoenix Brewery building is
-    552 Noe Street in a caption and **560** in the industrial-production
-    framework, while the Kirby residence is 560 in the narrative and **550** in
-    a caption. Collingwood Hall is 4144–4150 18th Street throughout and
-    **4144–4150 Collingwood Street** once. The Swedish-American Hall is
-    2168–2173 Market Street in the landmark list and **1274 Market Street**
-    twice; the Women's Building is 3543 18th Street once and **3548** twice.
-    Nelson's Hartford Street row is 20–64 in the builder table and **2–64** in
-    the recommendations. Record both readings and follow EAS.
+  - **Check a printed disagreement against the parcel before recording it as
+    one.** This statement names buildings by whichever of a parcel's street
+    numbers is to hand, and several apparent contradictions are nothing of the
+    kind: Cliff's Variety is 471 Castro Street in the property-type chapter and
+    479 in a footnote, and EAS puts 471, 479 and 483 on one parcel; the bank at
+    Castro and Market is 410 in most passages, 400 and 400–410 in two captions,
+    and 400 and 410 are one parcel. Collingwood Hall's 4144 and 4150 18th
+    Street, and the Elephant Walk's 500 and 506 Castro Street, are the same
+    again. Resolve both numbers before writing the disagreement down.
+  - **The disagreements that survive that test cluster on its own landmarks.**
+    The Castro Theater is 429 Castro Street in the landmark list and the style
+    chapter and 429–431 in a caption, but the recommendations and an LGBTQ HCS
+    quotation attach **Landmark #100 to 479 Castro Street** — a different parcel,
+    and the one the statement itself identifies as the site of the Nasser
+    Brothers' theatre of 1910, this theatre's predecessor, so the slip is
+    between the two theatre sites rather than random. The Twin Peaks Tavern is
+    401 Castro Street in the landmark list and **410** in an LGBTQ HCS
+    quotation, 410 being the bank across the intersection. The Kirby/Phoenix
+    Brewery building is 552 Noe Street in a caption and **560** in the
+    industrial-production framework — two parcels — while the Kirby residence is
+    560 in the narrative and **550** in a caption, a number EAS has never
+    carried. Collingwood Hall is on 18th Street throughout and on **Collingwood
+    Street** once. The Swedish-American Hall is 2168–2173 Market Street in the
+    landmark list and **1274 Market Street** twice; the Women's Building is 3543
+    18th Street once and **3548** twice, a different block. Nelson's Hartford
+    Street row is 20–64 in the builder table and **2–64** in the
+    recommendations. Record both readings and follow EAS.
   - **It contradicts itself on dates too.** Most Holy Redeemer is 1901 in the
     narrative and 1900 in the style chapter; the recreation centre is 1954 in a
     caption and 1956 in the text; 3951–3959 17th Street is 1910 with 28 units in
