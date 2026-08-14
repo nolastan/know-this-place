@@ -147,9 +147,10 @@ python3 scripts/validate.py
 become pages (skipping condominium units and parcels with no assessor record),
 writes `data.json` + `index.html` for each **new** one,
 and rebuilds the street hub pages beneath the neighborhood. It varies each
-page's composition from the data it actually has — a parcel with four or more
-permits gets the two-column split, a thinner one runs full width — so the pages
-are not identical documents with the numbers swapped.
+page's composition from the data it actually has — a parcel with a permit
+record, an earlier record or prose gets the two-column split, its panels in the
+aside; a parcel with nothing but panels runs them full width — so the pages are
+not identical documents with the numbers swapped.
 
 - **The output is a first draft, not a finished page.** It carries no
   `narrative`, because the script won't invent prose, and per "Writing pages" a
