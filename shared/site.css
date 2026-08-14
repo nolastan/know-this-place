@@ -159,6 +159,9 @@ img, iframe { max-width: 100%; }
   padding: 1.1rem 1.2rem;
 }
 .panel > h3 { margin: 0 0 0.8rem; font-family: var(--sans); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; }
+/* panels stacked full width have no grid gap to separate them, so without this
+   two of them meet on a shared hairline and read as one box */
+main > .panel + .panel { margin-top: 1.25rem; }
 
 /* ============================================================= hero */
 .hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2rem; align-items: start; margin: 1.25rem 0 0.5rem; }

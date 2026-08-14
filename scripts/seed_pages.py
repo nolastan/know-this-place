@@ -1568,21 +1568,18 @@ def render_html(rec: dict) -> str:
     street_name = title.split(" ", 1)[1]
     sub_line = AREA_SUB.get((city_slug, area_slug), area_name)
     crumb_number = rec.get("address_range") or number
-    permits = rec.get("permits", [])
-    n_shown = len([p for p in permits
-                   if not ((p.get("estimated_cost") or p.get("revised_cost") or 0) <= 1
-                           and re.search(r"street space|sidewalk",
-                                         (p.get("description") or "").lower()))])
     street_addr_plain = title.replace("–", "-")
 
-    # Enough of a permit record to fill a column? Then split the region. A short
-    # record runs full width, so a short page looks short rather than like a wide
-    # page with an empty column.
+    # Panels belong beside the main column whenever there is a main column for
+    # them to sit beside — the empty column a split risks is the left one, and a
+    # page with any permit, art, earlier record or prose at all has something to
+    # put there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, ""))
-    use_cols = ((n_shown >= 4 or rec.get("public_art")
-                 or rec.get("historical_record")) and has_panels)
+    has_main = bool(public_art_html(rec, "") or historical_record_html(rec, "")
+                    or timeline_html(rec, "") or narrative_html(rec, "")[1])
+    use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
     panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
               + glance_panel_html(rec, ind) + survey_panel_html(rec, ind)
