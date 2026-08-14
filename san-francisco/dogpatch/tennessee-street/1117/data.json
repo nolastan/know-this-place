@@ -1,0 +1,152 @@
+{
+  "address": "1117 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/1117/",
+  "hook": "A 1989 house the 2001 Dogpatch survey counted a non-contributor to the proposed historic district.",
+  "apn": "4172032",
+  "block": "4172",
+  "lot": "032",
+  "eas_baseid": "370036",
+  "coordinates": {
+    "lat": 37.757507,
+    "lng": -122.388901
+  },
+  "parcel": {
+    "year_built": 1989,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1835,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1117 TENNESSEE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 331146,
+    "assessed_improvement_value": 553765,
+    "last_sale_date": "1990-01-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1989",
+    "survey_name": "Dogpatch Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201501095318",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2015-01-09",
+      "status_date": "2015-01-09",
+      "estimated_cost": 28710,
+      "revised_cost": 28710,
+      "description": "replace 12 street-facing windows with aluminum woodclad windows, replace 9 rear facing windows with fiberglass replacement windows. u-factor .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409045473",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-04",
+      "status_date": "2014-09-04",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "replace flat roof with new modified bitumen roofing system to match. no other exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917746",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-22",
+      "status_date": "1989-11-06",
+      "estimated_cost": 1,
+      "description": "revision to appl. #8808441 delete 1\" combination m to 2\" et",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808441",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-06-23",
+      "status_date": "1989-11-06",
+      "estimated_cost": 280000,
+      "description": "three stories, three family dwelling units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1988–2018",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TENNESSEE&street_type=ST&address_number=1117",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4172032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4172&lot=032",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4172032",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.3889010428669%2037.75750684053857)%27)",
+      "retrieved": "2026-08-13"
+    },
+    {
+      "id": "dogpatch-context-statement",
+      "name": "Christopher VerPlanck, Dogpatch Historic District Survey (description, context statement, illustrations and survey forms), September 2001, adopted 2001",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Dogpatch Historic Context Statement, adopted 2001",
+      "retrieved": "2026-08-13"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Dogpatch Historic District Survey (2001)",
+    "address_as_surveyed": "1117–19 Tennessee Street",
+    "note": "Listed as a non-contributor to the proposed Dogpatch Historic District, among 14 buildings the survey dated after the 1867–1945 period of significance, and described as a 1980s-era residence.",
+    "source": "dogpatch-context-statement"
+  }
+}
