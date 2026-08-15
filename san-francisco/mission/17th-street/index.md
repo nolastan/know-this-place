@@ -19,6 +19,7 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [3233](3233/) — A 1909 single-family house, with an addition permitted in 2013.
 - [3238–3240](3238/) — A 1913 two-flat, with foundation work permitted in 2007.
 - [3239–3241](3239/) — A 1900 3-unit apartment building, with an addition permitted in 2012.
+- [3250](3250/) — A 1906 industrial building, with window replacement permitted in 2025.
 - [3258](3258/) — A building with a ground-floor store, with reroofing permitted in 2020.
 - [3264](3264/) — A 1918 two-flat, with reroofing permitted in 1987.
 - [3312–3316](3312/) — A 1924 9-unit apartment building, with an addition permitted in 2015.

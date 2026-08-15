@@ -25,6 +25,7 @@ Every residential parcel on Guerrero Street that the city's address, assessor an
 - [136](136/) — A 1906 12-unit apartment building, with a seismic retrofit permitted in 2015.
 - [142–146](142/) — A 1907 three-flat, with a rear addition permitted in 1997.
 - [145](145/) — A 1980 110-unit apartment building, with a seismic retrofit permitted in 2015.
+- [165–169](165/) — A 1906 2-unit building, with stair work permitted in 2004.
 - [171](171/) — A 1925 5-unit apartment building, with a seismic retrofit permitted in 2010.
 - [174](174/) — A 1924 4-unit apartment building, with reroofing permitted in 2001.
 - [180–182](180/) — A 1907 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2012.
@@ -34,6 +35,7 @@ Every residential parcel on Guerrero Street that the city's address, assessor an
 - [197](197/) — A 1908 single-family house, with stair work permitted in 2004.
 - [200](200/) — A 1962 44-unit apartment building, with an accessory dwelling unit permitted in 2016.
 - [215](215/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [226](226/) — A 1906 office building, with foundation work permitted in 1990.
 - [228](228/) — A 1916 two-flat, with a vertical addition permitted in 1989.
 - [240–244](240/) — A 1907 four-flat, with a kitchen and bathroom remodel permitted in 2015.
 - [248](248/) — A 1968 6-unit apartment building, with a seismic retrofit permitted in 2017.
@@ -62,6 +64,7 @@ Every residential parcel on Guerrero Street that the city's address, assessor an
 - [371](371/) — A 1939 4-unit apartment building, with dry-rot repair permitted in 2007.
 - [375](375/) — A 1936 4-unit apartment building, with facade work permitted in 2015.
 - [377–383](377/) — A 1910 three-flat in the 16th and Valencia Streets Post-Fire Historic District, with fire repair permitted in 1989.
+- [389](389/) — A 1926 10-unit apartment building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen and bathroom remodel permitted in 2014.
 - [417–427](417/) — A 1907 35-unit building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with reroofing permitted in 1998.
 - [426–428](426/) — A flats building in the 16th and Valencia Streets Post-Fire Historic District, with window replacement permitted in 2005.
 - [429–431](429/) — An apartment building in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen and bathroom remodel permitted in 2017.

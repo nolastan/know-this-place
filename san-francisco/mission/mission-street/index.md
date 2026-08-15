@@ -7,28 +7,45 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [1551–1559](1551/) — A 1909 27-unit apartment building in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 2018.
 - [1714–1718](1714/) — A 1910 4-unit apartment building, with foundation work permitted in 2007.
 - [1720–1724](1720/) — A 1909 5-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1726](1726/) — A 1923 store building, with garage work permitted in 2017.
 - [1738–1744](1738/) — A 1907 5-unit building, with reroofing permitted in 1989.
 - [1746–1748](1746/) — A 1907 5-unit building, with reroofing permitted in 1989.
 - [1750](1750/) — A 1912 27-unit apartment building, with fire repair permitted in 2025.
 - [1754–1760](1754/) — A 1906 9-unit building with a ground-floor store, with a seismic retrofit permitted in 2018.
 - [1764–1766](1764/) — A 1906 2-unit building with a ground-floor store, with garage work permitted in 2010.
+- [1774](1774/) — A 1919 garage, with a seismic retrofit permitted in 1994.
 - [1776–1780](1776/) — A 1915 16-unit apartment building, with a seismic retrofit permitted in 1997.
+- [1800](1800/) — A 1914 building, with a seismic retrofit permitted in 2018.
 - [1801](1801/) — A 2020 19-unit apartment building, with permit records from 1985 to 2024.
 - [1815–1825](1815/) — A 1949 126-unit apartment building, with reroofing permitted in 2013.
 - [1845](1845/) — A 1916 12-unit apartment building, with a seismic retrofit permitted in 2017.
 - [1863–1867](1863/) — A 2023 39-unit apartment building in the SoMa LGBTQ Historic District, with permit records from 2000 to 2023.
+- [1885](1885/) — A 1925 office building, with a kitchen and bathroom remodel permitted in 2015.
+- [1906–1910](1906/) — A 1906 hotel, with a bathroom remodel permitted in 2013.
 - [1912–1922](1912/) — A 1907 7-unit apartment building, with a seismic retrofit permitted in 2015.
 - [1933](1933/) — A 1991 14-unit apartment building, with electrical work permitted in 2009.
+- [1939–1943](1939/) — A 1908 hotel, with plumbing work permitted in 2023.
 - [1945–1947](1945/) — A 1900 3-unit building with a ground-floor store, with fire repair permitted in 1996.
 - [1950–1954](1950/) — An apartment building, with a bathroom remodel permitted in 2015.
+- [1979](1979/) — A 1909 20-unit building, with facade work permitted in 2011.
 - [2023–2045](2023/) — A 1981 132-unit apartment building, with facade work permitted in 2016.
+- [2026–2030](2026/) — A 1907 hotel in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2016.
+- [2032–2034](2032/) — A 1906 hotel in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2019.
+- [2044–2046](2044/) — A 1912 hotel in the Mission Miracle Mile at 17th Street Historic District, with electrical work permitted in 2016.
+- [2048–2050](2048/) — A 1906 store building in the Mission Miracle Mile at 17th Street Historic District, with reroofing permitted in 1995.
+- [2052–2054](2052/) — A 1912 store building in the Mission Miracle Mile at 17th Street Historic District, with a vertical addition permitted in 1990.
+- [2056–2058](2056/) — A 1915 hotel in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2017.
 - [2059–2065](2059/) — A 1914 36-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with an accessory dwelling unit permitted in 2026.
 - [2060–2062](2060/) — A 1915 three-flat in the Mission Miracle Mile at 17th Street Historic District, with facade work permitted in 2022.
 - [2069–2071](2069/) — A 1909 three-flat in the Mission Miracle Mile at 17th Street Historic District, with a kitchen and bathroom remodel permitted in 2016.
+- [2072–2074](2072/) — A 1915 hotel in the Mission Miracle Mile at 17th Street Historic District, with plumbing work permitted in 2016.
+- [2073–2075](2073/) — A 1918 store building in the Mission Miracle Mile at 17th Street Historic District, with permit records from 1989 to 2022.
+- [2080–2086](2080/) — A 1906 hotel in the Mission Miracle Mile at 17th Street Historic District, with fire repair permitted in 1999.
 - [2081–2097](2081/) — A 1922 16-unit building with a ground-floor store in the Mission Miracle Mile at 17th Street Historic District, with dry-rot repair permitted in 2024.
 - [2088–2092](2088/) — A 1914 10-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2017.
 - [2094–2098](2094/) — A 1906 3-unit building with a ground-floor store in the Mission Miracle Mile at 17th Street Historic District, with a kitchen and bathroom remodel permitted in 2014.
 - [2114–2118](2114/) — A 1912 15-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with an addition permitted in 1987.
+- [2135–2137](2135/) — A 1900 hotel in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2016.
 - [2155](2155/) — A 1991 48-unit apartment building, with reroofing permitted in 2011.
 - [2211](2211/) — A 1900 building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1998.
 - [2217–2221](2217/) — A 1904 9-unit building with a ground-floor store, with facade work permitted in 1997.
@@ -48,17 +65,22 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2326–2330](2326/) — A 1911 2-unit building with a ground-floor store in the Mission Miracle Mile 19th to 20th Streets Historic District, with a bathroom remodel permitted in 2023.
 - [2327–2329](2327/) — A 1911 17-unit apartment building, with a seismic retrofit permitted in 1998.
 - [2334–2336](2334/) — A 1912 13-unit apartment building in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1994.
+- [2351](2351/) — A 1912 hotel in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with reroofing permitted in 1993.
 - [2360–2366](2360/) — A 1926 15-unit apartment building in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1993.
 - [2386–2388](2386/) — A 1907 two-flat in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1989.
 - [2391–2393](2391/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2024.
 - [2397–2399](2397/) — A 7-unit building with a ground-floor store, with foundation work permitted in 2019.
 - [2419–2429](2419/) — A 1904 12-unit building with a ground-floor store, with reroofing permitted in 2022.
 - [2422–2426](2422/) — A 1904 10-unit apartment building, with a seismic retrofit permitted in 2013.
+- [2465](2465/) — A 1911 theater, with facade work permitted in 2017.
 - [2471](2471/) — An 1885 4-unit building with a ground-floor store, with electrical work permitted in 2007.
 - [2475](2475/) — A 1900 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2001.
+- [2550](2550/) — A 1907 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a kitchen remodel permitted in 2013.
+- [2555–2557](2555/) — A 1912 theater, with a bathroom remodel permitted in 2023.
 - [2619–2629](2619/) — A 1904 38-unit apartment building, with stair work permitted in 2022.
 - [2637–2645](2637/) — A 1904 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [2647–2653](2647/) — A 1900 24-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2663–2665](2663/) — A 1940 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with plumbing work permitted in 2009.
 - [2687–2689](2687/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2006.
 - [2728–2738](2728/) — A 1904 6-unit building with a ground-floor store, with reroofing permitted in 2005.
 - [2745–2747](2745/) — A 1912 20-unit apartment building, with a seismic retrofit permitted in 2018.
@@ -81,6 +103,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3001–3019](3001/) — A 1916 33-unit apartment building, with electrical work permitted in 2024.
 - [3006–3010](3006/) — A 1900 2-unit building with a ground-floor store, with a kitchen remodel permitted in 1983.
 - [3018–3024](3018/) — A 1925 30-unit apartment building, with a seismic retrofit permitted in 2018.
+- [4631](4631/) — A 1922 store building, with plumbing work permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

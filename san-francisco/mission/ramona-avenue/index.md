@@ -24,6 +24,7 @@ Every residential parcel on Ramona Avenue that the city's address, assessor and 
 - [80](80/) — A 1912 two-flat in the Ramona Street Historic District, with reroofing permitted in 1998.
 - [84–86](84/) — A 1912 two-flat in the Ramona Street Historic District, with one permit record from 2014.
 - [85](85/) — A 1919 6-unit apartment building in the Ramona Street Historic District, with permit records from 1997 to 2013.
+- [87–89](87/) — A 1911 two-flat in the Ramona Street Historic District, with fire repair permitted in 1994.
 - [88–90](88/) — A 1912 two-flat in the Ramona Street Historic District, with reroofing permitted in 2019.
 
 Pages are generated from the DataSF datasets listed in each page's

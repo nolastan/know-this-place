@@ -8,6 +8,7 @@ Every residential parcel on Woodward Street that the city's address, assessor an
 - [19–23](19/) — A 1907 3-unit tic building in the Woodward St. Romeo Flats Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2004.
 - [22–24](22/) — A 1912 two-flat in the Woodward St. Romeo Flats Reconstruction Historic District.
 - [25–29](25/) — A 1907 3-unit tic building in the Woodward St. Romeo Flats Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2004.
+- [35–37](35/) — A 1907 hotel in the Woodward St. Romeo Flats Reconstruction Historic District, with a kitchen remodel permitted in 2009.
 - [39–41](39/) — A 1987 two-flat in the Woodward St. Romeo Flats Reconstruction Historic District, with reroofing permitted in 2017.
 - [43–47](43/) — A 1906 three-flat in the Woodward St. Romeo Flats Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [44](44/) — A 2018 3-unit apartment building in the Woodward St. Romeo Flats Reconstruction Historic District, with garage work permitted in 2014.

@@ -910,6 +910,18 @@ a street number, which is the whole constraint:
     Same consultants as the Bayview-Hunters Point Area B statement two years
     later, and the two overlap on the three India Basin buildings that already
     had pages here. See "The India Basin survey" below.
+  - San Francisco Planning Department, *Inner Mission North 1853-1943 Context
+    Statement* (62 pp., dated on its own title page "October 2001 – September
+    2005"; SF Planning's listing page files it as adopted 2004), source id
+    `inner-mission-north-context-statement`. Prepared under a series of
+    Certified Local Government grants documenting the northern Mission in
+    three successive survey areas (2001–02, 2003–04, 2005–06). Served from the
+    same M-Files vault as the Dogpatch survey and the Glen Park evaluation, so
+    the `SharedLinks.aspx` URL again returns an HTML shell; unlike those two,
+    the REST content URL's hash *is* the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup rather than
+    assumed. See "The Inner Mission North statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1459,6 +1471,78 @@ address-level facts are:
     Hudson was 8th Avenue South and Banama; Galvez was Trinidad; Griffith was
     'G' Street, Hawes 'H' Street, Lane 'L' Street; Evans was 5th Avenue South;
     Ingalls Street became Middle Point Road. The present names date from 1910.
+**The Inner Mission North statement is short — 62 pages against the 118–261 of
+the others read so far — and names far more addresses per page than any of
+them, because its yield is almost entirely contributor lists rather than
+individual write-ups.** There is no appendix inventory table of the usual
+kind; instead Part 5, "Survey Findings," carries five proposed historic
+districts and locally significant areas, each with its own contributory and
+non-contributory building list printed as a comma-separated run of street
+numbers, plus a short "properties of individual significance" list and a
+"designated resources" list of buildings already landmarked. **453 distinct
+numbered addresses are named**, counting a printed range by its low number:
+the Guerrero Street Fire Line and Ramona Street National Register eligible
+districts; the Hidalgo Terrace and South Van Ness Avenue–Shotwell–Folsom
+Streets (SVN-S-F) California Register eligible districts; the Mission
+Reconstruction District and Inner Mission Commercial Corridor (formerly the
+"16th Street Commercial Corridor") locally significant areas; sixteen
+properties of individual significance; eight designated resources (Tanforan
+Cottages, the Mission Armory, the Sheet Metal Workers Hall, the Victoria
+Theater, the Levi Strauss & Co. factory, the San Francisco Labor Temple, and
+the Liberty Street Historic District); and the "Mission Historic
+Entertainment theme," a short list of 16th Street and Mission Street theaters.
+- **Cautions:**
+  - **The document's own cover reads 2005; SF Planning's listing page reads
+    2004.** The title page dates the survey "October 2001 – September 2005"
+    and the PDF's own metadata title is "IMN Context 2005.doc," but the
+    listing page files it as "Inner Mission North Historic Context Statement
+    (2004)." Cited here as adopted 2004, per the listing page, with the
+    cover's 2005 recorded alongside it.
+  - **It is served from the same M-Files vault as the Dogpatch survey and the
+    Glen Park evaluation, and the `SharedLinks.aspx` URL again returns an HTML
+    shell.** Unlike those two, this document's REST content hash *is* its own
+    `accesskey` — `…/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274/content`
+    — which is not something to assume from the other two documents' pattern;
+    it was confirmed by fetching the `SharedLinks.aspx` page and reading the
+    link its own markup embeds.
+  - **The district lists are the survey's own boundary calls, not the city's
+    Article 10/11 districts.** None of the five is currently a designated
+    historic district; the survey proposes them as eligible or locally
+    significant. Planning's own historic-resource-status data (`sf-planning`)
+    independently flags many of the same parcels; where it does, the two
+    agree without exception in what's been checked.
+  - **An APN off the 2025 roll is usually a condominium conversion in
+    progress, not a dead end.** Of the 43 addresses named here whose EAS
+    parcel has no 2025 secured-roll row, 41 resolve to a live successor parcel
+    via `sf-parcels` (`acdm-wktn`) rather than nothing at all, and 38 of those
+    41 successors are themselves condominium or commercial-condo units —
+    including 330 South Van Ness Avenue, whose retired APN last appears on the
+    2021 roll as a tenancy-in-common building. Following the retired APN
+    forward is what tells a genuine re-lotting (a live building parcel under a
+    new number, as at 245 14th Street, 1834 15th Street, 80 Julian Avenue and
+    87-89 Ramona Avenue, all four seeded here) apart from a condominium
+    conversion, rather than treating "off the 2025 roll" as the end of the
+    inquiry either way. AGENTS.md holds condominium unit parcels back the same
+    as any other neighborhood's.
+  - **The printed ranges are not always one parcel.** Twenty-one of the
+    contributor-list entries print a range that spans more than one parcel on
+    the block face (same-parity numbers only) — "3200-3214 17th St," for
+    example, covers two. Each is documented on the parcel of its printed low
+    number; the entry is not split into a page per parcel it happens to touch.
+  - **376 Shotwell Street is 376-382 Shotwell Street four pages later.** The
+    historical note on St. Charles School gives the single number; the
+    individual-significance list gives the range. Both readings are on the
+    page.
+  - **The Louis Roesch Company plant the report names at 1886-1898 Mission
+    Street, "to be demolished 2006," is gone.** EAS still carries the address
+    on parcel 3547003, but no roll row exists for it on the 2025 secured roll
+    at all — not even a condominium one — consistent with the report's own
+    prediction and not documented here.
+  - **Business proprietors are not named in this statement**, unlike the
+    Dogpatch and India Basin surveys; nothing had to be withheld for that
+    reason. The Thompson sisters who deeded Hidalgo Terrace to the city in
+    1916 are named as subdividers of the land, not as residents or owners of
+    any building documented here.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1789,6 +1873,34 @@ address-level facts are:
   street address. Coverage note: this document is read in full and nothing in it
   is outstanding. The Market & Octavia, Japantown and other adopted statements
   on the same SF Planning page are untouched.)
+- **Verified:** 2026-08-15 (Inner Mission North: read all 62 pages, the whole
+  file — the introduction and methodology, the historical synthesis, the
+  property-type overview, the goals and priorities chapter, the survey
+  findings (five district/area contributor lists, the individual-significance
+  list and the designated-resources list), the recommendations and the
+  bibliography. **453 distinct numbered San Francisco addresses are named**,
+  counting a printed range by its low number. **449 resolve to a parcel with
+  an EAS address record.** Of those, **392 resolve to a parcel with a 2025
+  assessor roll row that is not a condominium unit**, and 391 pages now cite
+  the document (two of the addresses, 3165-3197 16th Street and 417-427
+  Guerrero Street, name the same parcel): **84 new pages and 307 edited**, all
+  under `san-francisco/mission/` except six parcels a neighboring Castro pass
+  already gave pages under `san-francisco/castro/` (15th Street 1906 and 1912,
+  16th Street 3310, 3314 and 3336, and Dolores Street 114). Not documented, and why: **57 resolve
+  to a parcel that is not on the current roll**, of which 56 are condominium
+  or commercial-condo unit parcels — 54 the roll classes `Condominium` (one of
+  them, 330 South Van Ness Avenue, only after following its own retired,
+  since-converted APN forward) and two `Commercial Store Condo`, at 1875
+  Mission Street and 2931 16th Street — which AGENTS.md holds back, and one,
+  1886-1898 Mission Street, is the Louis Roesch Company plant the
+  report itself calls "to be demolished 2006," now off the secured roll
+  entirely with no successor parcel of any kind. **Four have no EAS address
+  record at all**: 565 14th Street, 390-398 Guerrero Street, 72-74 Ramona
+  Avenue, and 1538 Valencia Street — the last is where CHL plaque No. 791
+  places the 1881 site of the Bancroft Library, moved to Berkeley in 1906.
+  Coverage note: this document is read in full and nothing in it is
+  outstanding. The Market & Octavia, Japantown and other adopted statements on
+  the same SF Planning page are untouched.)
 
 ## Known gaps
 

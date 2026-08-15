@@ -1,0 +1,182 @@
+{
+  "address": "1672 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/15th-street/1672/",
+  "apn": "3547008",
+  "block": "3547",
+  "lot": "008",
+  "eas_baseid": "359055",
+  "coordinates": {
+    "lat": 37.766793,
+    "lng": -122.421483
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 3500,
+    "basement_area_sqft": 2375,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "VALEN",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1672 15TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1838542,
+    "assessed_improvement_value": 787946,
+    "last_sale_date": "2021-11-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407086005",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "2024-07-08",
+      "status_date": "2025-01-15",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "tiebacks at the subject property associated with improvements and shoring at 80 julian (202212098043-priority permit)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107305505",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-07-30",
+      "status_date": "2026-01-23",
+      "estimated_cost": 60000,
+      "revised_cost": 0,
+      "description": "minor interior t.i. of (e) g/f space. work to include addition of non-load bearing partitions; minor electrical & upgrade (e) restroom to ada complaint single occupancy restroom; relocate (e) cabinets & sink to breakroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104239223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-23",
+      "status_date": "2021-11-04",
+      "estimated_cost": 12500,
+      "revised_cost": 23000,
+      "description": "to comply with complaint #202175324. kitchen and bath remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104239244",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-23",
+      "status_date": "2021-11-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "to comply with comlaint #202175324. in-kind garage door replacement, facing street. no rough opening changes. no habitable space at garage floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709188869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-18",
+      "status_date": "2017-11-03",
+      "estimated_cost": 8200,
+      "revised_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-04",
+      "status_date": "1999-04-23",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200584",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-01-13",
+      "status_date": "1992-03-17",
+      "estimated_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304948",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-06-01",
+      "status_date": "1983-06-14",
+      "estimated_cost": 1,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203659",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-05-11",
+      "status_date": "1983-03-08",
+      "estimated_cost": 3000,
+      "description": "bldg use: studios",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=ST&address_number=1672",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3547008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3547&lot=008",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3547008",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-mission-north-context-statement",
+      "name": "San Francisco Planning Department, Inner Mission North 1853-1943 Context Statement, dated on its cover 2005, adopted 2004",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Mission North Context Statement, adopted 2004",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Inner Mission North Context Statement, adopted 2004",
+    "source": "inner-mission-north-context-statement",
+    "district": "Inner Mission Commercial Corridor",
+    "status": "Non-contributor",
+    "note": "Non-contributor to the Inner Mission Commercial Corridor locally significant area (1672 15th St). Formerly called the 16th Street Commercial Corridor. Criterion C: San Francisco's largest concentration of residential-over-commercial and small-scale commercial buildings, spanning both pre-1906 and post-disaster construction, dated c. 1870s–1931."
+  }
+}

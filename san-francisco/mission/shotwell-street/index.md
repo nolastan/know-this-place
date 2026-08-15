@@ -35,6 +35,7 @@ Every residential parcel on Shotwell Street that the city's address, assessor an
 - [348](348/) — A 1996 two-flat, with stair work permitted in 2004.
 - [358](358/) — A 1992 three-flat, with deck work permitted in 2014.
 - [370–374](370/) — A 1908 3-unit tic building, with a kitchen and bathroom remodel permitted in 2020.
+- [376](376/) — A 1900 school building, with permit records from 2019 to 2025.
 - [379–381](379/) — A 1900 4-unit apartment building, with reroofing permitted in 1992.
 - [385](385/) — A 1900 three-flat, with stair work permitted in 1997.
 - [502–504](502/) — A 1909 4-unit apartment building, with reroofing permitted in 1989.

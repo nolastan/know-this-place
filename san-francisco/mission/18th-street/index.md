@@ -28,6 +28,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [3360](3360/) — A 1961 5-unit building with a ground-floor store, with window replacement permitted in 2013.
 - [3374–3376](3374/) — A 1920 2-unit building with a ground-floor store, with plumbing work permitted in 2019.
 - [3378](3378/) — A 1947 3-unit apartment building, with reroofing permitted in 2019.
+- [3382–3390](3382/) — A 1914 hotel, with a bathroom remodel permitted in 2007.
 - [3412–3416](3412/) — A 1907 three-flat, with a kitchen and bathroom remodel permitted in 2014.
 - [3420](3420/) — A 2018 16-unit apartment building, with a kitchen remodel permitted in 2018.
 - [3435](3435/) — A 1923 12-unit apartment building, with a seismic retrofit permitted in 2017.

@@ -26,6 +26,7 @@ Every residential parcel on Albion Street that the city's address, assessor and 
 - [76](76/) — A 1906 three-flat, with reroofing permitted in 2015.
 - [81](81/) — A 1990 three-flat, with reroofing permitted in 2012.
 - [85](85/) — A 1990 three-flat, with fire repair permitted in 1995.
+- [106](106/) — A 1907 hotel in the 16th and Valencia Streets Post-Fire Historic District, with a seismic retrofit permitted in 2014.
 - [108–118](108/) — A 1906 6-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with a seismic retrofit permitted in 2020.
 - [120](120/) — A 1909 6-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with a seismic retrofit permitted in 2017.
 - [122–130](122/) — A 1912 6-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with a seismic retrofit permitted in 2017.
