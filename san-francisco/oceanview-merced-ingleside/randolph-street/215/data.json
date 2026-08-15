@@ -1,0 +1,142 @@
+{
+  "address": "215 Randolph Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/randolph-street/215/",
+  "apn": "7117046",
+  "block": "7117",
+  "lot": "046",
+  "eas_baseid": "416536",
+  "coordinates": {
+    "lat": 37.714073,
+    "lng": -122.464718
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1975,
+    "building_area_sqft": 782,
+    "lot_depth_ft": 79,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0215 RANDOLPH            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 281469,
+    "assessed_improvement_value": 121960,
+    "last_sale_date": "1988-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8501031",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-01-30",
+      "status_date": "1986-03-17",
+      "estimated_cost": 75000,
+      "description": "remodeling of existing 1st floor into family room two bed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-10-23",
+      "status_date": "1985-10-31",
+      "estimated_cost": 15000,
+      "description": "cabinet replacement in kitchen &bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410766",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-04",
+      "status_date": "1984-12-04",
+      "estimated_cost": 3750,
+      "description": "raise foundation to above grade requirements",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313098",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-12-27",
+      "status_date": "1984-07-05",
+      "estimated_cost": 7000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8108651",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-10-02",
+      "status_date": "1983-03-04",
+      "estimated_cost": 27000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RANDOLPH&street_type=ST&address_number=215",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7117046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7117&lot=046",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7117046",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "omi-context-statement",
+      "name": "Richard Brandi and Woody LaBounty (Western Neighborhoods Project), San Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods, 1862-1959: A Historical Context Statement, prepared for the San Francisco Historic Preservation Fund Committee, adopted January 2010",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "OMI Neighborhoods Historical Context Statement, adopted 2010",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "hook": "A Stick-style house, built circa 1878, from Ocean View's Homestead Association years.",
+  "historical_record": [
+    {
+      "date": "1878",
+      "kind": "building contract",
+      "description": "Built circa 1878 in the Stick style, per the OMI Historic Context Statement (2010), which records it as an example of Ocean View's pre-1906 residential stock.",
+      "source": "omi-context-statement"
+    }
+  ],
+  "building": {
+    "completed": "1878",
+    "completed_conflict": "The assessor dates the building to 1907; the OMI Historic Context Statement (2010) describes it as a Stick-style house built circa 1878, an example of Ocean View's pre-1906 residential stock."
+  }
+}

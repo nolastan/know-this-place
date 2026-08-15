@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** mining
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 13 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 14 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -128,6 +128,17 @@
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da/content`
     — confirmed from the `SharedLinks.aspx` page's own markup. See "The Inner
     Sunset statement" below.
+  - Richard Brandi and Woody LaBounty (Western Neighborhoods Project), *San
+    Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods,
+    1862-1959: A Historical Context Statement*, prepared for the San Francisco
+    Historic Preservation Fund Committee, adopted January 2010 (64 pp.),
+    source id `omi-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park, Inner Mission North and Inner Sunset, so the
+    `SharedLinks.aspx` URL again returns an HTML shell; the REST content hash
+    is once more the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. See "The OMI
+    statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -786,8 +797,66 @@ moves, and later use.
     statement names one as a building's architect *and* its first occupant
     (Charles J. Colley at 1329–1331 Ninth Avenue); only the architect role is
     kept.
-- **Citation label:** name the consultant, the report and its adoption date,
-  and link the SF Planning listing page.
+**The OMI statement is short — 64 pages, no appendix inventory table, and a
+narrative built around four distinct sub-neighborhoods (Ocean View, Ingleside,
+Ingleside Terraces, Merced Heights) rather than one continuous history.**
+Its addresses come almost entirely from figure captions illustrating each
+neighborhood's property types — "Ocean View residential: 222 Plymouth Avenue,
+built 1904" — plus a handful of addresses named in the narrative text
+(the Ingleside Racetrack land sale, the Geneva car barn, earthquake-cottage
+examples). This is the low end of the density range for the series: about
+0.6 addresses per page, against the Inner Sunset's ~1.5.
+- **Cautions:**
+  - **The four sub-neighborhoods split across two different DataSF analysis
+    neighborhoods, and Ingleside Terraces is its own EAS category.** Ocean
+    View, Ingleside and Merced Heights addresses all resolve to
+    `nhood='Oceanview/Merced/Ingleside'`; Ingleside Terraces addresses
+    (Cedro, Moncada, Borica, Cerritos, Victoria, and the upper 1500–1900
+    block of Ocean Avenue) resolve to `nhood='West of Twin Peaks'` instead,
+    a category shared with several unrelated neighborhoods. Following the
+    root AGENTS.md precedent that split Corbett Heights out of Castro/Upper
+    Market, Ingleside Terraces got its own neighborhood directory
+    (`san-francisco/ingleside-terraces/`) rather than folding into a future
+    catch-all `west-of-twin-peaks/` directory; the rest filed under a new
+    `san-francisco/oceanview-merced-ingleside/`, matching the EAS category
+    name.
+  - **A photo caption's street name doesn't always match EAS's.** "302 Jules
+    Street" (a figure caption) is EAS's Jules *Avenue*; the parcel spans
+    300–302, and is documented at 300 with the printed form kept as
+    `address_as_surveyed`.
+  - **Two dates for the same building, in the same document.** 1345 Ocean
+    Avenue (Ingleside Presbyterian Church) is dated 1921 in the narrative
+    text and 1923 in a photo caption of the same building; the assessor
+    separately dates it 1909. All three readings are recorded rather than
+    picking one. 215 Randolph Street is dated "circa 1878" here against the
+    assessor's 1907, and 301 De Montfort Avenue (St. Emydius Catholic
+    Church) is dated 1928 here against the assessor's 1939 — both are
+    recorded as disagreements, not resolved.
+  - **One printed address has no EAS record at all**: 5 Plymouth Avenue, a
+    mixed-use building at the corner of Sagamore Street and San Jose Avenue.
+    EAS carries only 1 and 3 Plymouth Avenue nearby, neither with a parcel
+    number, and no record at 5. Stays undocumented.
+  - **One parcel's governing APN is retired.** 501–505 Faxon Avenue (the
+    Robinson Apartments) resolves in EAS to block/lot 6934009, which was
+    dropped from the assessor's map in 2002; the current roll carries the
+    same building, still addressed 501/505 Faxon, under 6934029 — the
+    parcel `sf-parcels` returns for that point, fronting 202–206 De Montfort
+    Avenue on the block's other side. Documented under 6934029 at 501 Faxon,
+    per DATA-SOURCES.md's guidance to follow the assessor's own
+    `property_location` when a retired APN and a spatial join disagree.
+  - **One address named in the document is not in the OMI district at all.**
+    A footnote locates Jose de Jesus Noe's ranch house — a building that
+    predates and has nothing to do with the OMI subject area — at "today's
+    55 Woodward Street," a Noe Valley/Mission-area address well outside the
+    Subject Area's boundaries. Left as a candidate for whichever
+    neighborhood's pass covers Woodward Street, not this one.
+  - **Only architects, developers and named firms are recorded** — no
+    residents, owners or occupants, per AGENTS.md's privacy rules. This
+    includes the two African-American families named in the demographic
+    chapters as early Merced Heights homeowners; neither is named on any
+    page.
+- **Citation label:** name the consultant(s), the report and its adoption
+  date, and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
   numbered-address mentions in the narrative, resolving to 190 parcels with
   EAS records and a current assessor roll row. Not resolvable, and so not
@@ -1184,3 +1253,32 @@ moves, and later use.
   companion "Evaluative Framework" and the related Sunset District Residential
   Builders statement, both linked from the same SF Planning project page, are
   untouched.)
+- **Verified:** 2026-08-15 (OMI: read all 64 pages, the whole file — the
+  introduction and methodology, the historical synthesis for each of the
+  four sub-neighborhoods (natural history through the 1970s), the property
+  types addendum with its per-neighborhood building-type captions, the
+  resource-registration significance findings, the goals and priorities, and
+  the bibliography. There is no appendix inventory table. **40 distinct
+  numbered addresses are named**, counting a printed range by its low number;
+  one of them (55 Woodward Street, the site of Jose de Jesus Noe's ranch
+  house) is outside the Subject Area entirely and was not pursued. Of the
+  **39 addresses within the OMI district, 38 resolve to a parcel with an EAS
+  address record and a current, non-condominium assessor roll row** (one,
+  501–505 Faxon Avenue, only after following its retired APN 6934009 forward
+  to its current 6934029). All 38 are new pages: 23 under a new
+  `san-francisco/oceanview-merced-ingleside/` (Ocean View, Ingleside and
+  Merced Heights streets, matching the EAS analysis-neighborhood name), 13
+  under a new `san-francisco/ingleside-terraces/` (the Ingleside Terraces
+  streets, which resolve to the separate `West of Twin Peaks` EAS category —
+  split out on the Corbett Heights/Castro precedent rather than filed under a
+  future catch-all), and 2 under the existing `san-francisco/outer-mission/`
+  (2301 San Jose Avenue and 1 Sergeant John V Young Street). Not documented,
+  and why: **5 Plymouth Avenue has no EAS address record at all** — EAS
+  carries only 1 and 3 Plymouth Avenue at that corner, neither with a parcel
+  number. Three genuine date conflicts between this document and the
+  assessor roll are recorded on their pages rather than resolved: 1345 Ocean
+  Avenue (1921 in the narrative, 1923 in a caption, 1909 on the roll), 215
+  Randolph Street (circa 1878 here, 1907 on the roll), and 301 De Montfort
+  Avenue (1928 here, 1939 on the roll). Coverage note: this document is read
+  in full and nothing in it is outstanding. The Market & Octavia, Japantown
+  and other adopted statements on the same SF Planning page are untouched.)

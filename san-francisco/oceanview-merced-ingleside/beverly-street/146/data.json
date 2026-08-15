@@ -1,0 +1,99 @@
+{
+  "address": "146 Beverly Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/beverly-street/146/",
+  "apn": "7001033",
+  "block": "7001",
+  "lot": "033",
+  "eas_baseid": "411387",
+  "coordinates": {
+    "lat": 37.718735,
+    "lng": -122.471368
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 896,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0146 BEVERLY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 14751,
+    "assessed_improvement_value": 13600
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510167487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-16",
+      "status_date": "2025-10-31",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing: 1500 sq ft, tear off, install 1 base 30lbs. install compsition shingles. no hot works.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEVERLY&street_type=ST&address_number=146",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7001033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7001&lot=033",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7001033",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "omi-context-statement",
+      "name": "Richard Brandi and Woody LaBounty (Western Neighborhoods Project), San Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods, 1862-1959: A Historical Context Statement, prepared for the San Francisco Historic Preservation Fund Committee, adopted January 2010",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "OMI Neighborhoods Historical Context Statement, adopted 2010",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "hook": "Built in 1914, on a block otherwise filled in with houses from the 1940s.",
+  "historical_record": [
+    {
+      "date": "1914",
+      "kind": "site history",
+      "description": "Built 1914, surrounded by houses built in the 1940s, per the OMI Historic Context Statement (2010).",
+      "source": "omi-context-statement"
+    }
+  ]
+}

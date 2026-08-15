@@ -1,0 +1,130 @@
+{
+  "address": "300–302 Jules Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/jules-avenue/300/",
+  "apn": "6934011",
+  "block": "6934",
+  "lot": "011",
+  "eas_baseid": "408923",
+  "coordinates": {
+    "lat": 37.723761,
+    "lng": -122.46096
+  },
+  "address_range": "300–302",
+  "street_numbers_on_parcel": [
+    "300",
+    "302"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "stories": 1,
+    "rooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1755,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0302 0300 JULES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 477885,
+    "assessed_improvement_value": 204807,
+    "last_sale_date": "2018-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211096228",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-11-09",
+      "status_date": "2026-01-23",
+      "estimated_cost": 16720,
+      "revised_cost": 16720,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023616",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-11-15",
+      "status_date": "1992-04-27",
+      "estimated_cost": 24000,
+      "description": "tear out old kitchen & install new cabinet sink range",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-07",
+      "status_date": "1989-12-28",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1989–2022",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JULES&street_type=AVE&address_number=300",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6934011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6934&lot=011",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6934011",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "omi-context-statement",
+      "name": "Richard Brandi and Woody LaBounty (Western Neighborhoods Project), San Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods, 1862-1959: A Historical Context Statement, prepared for the San Francisco Historic Preservation Fund Committee, adopted January 2010",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "OMI Neighborhoods Historical Context Statement, adopted 2010",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "hook": "A neighborhood church built 1927, printed by the survey as 302 Jules Street.",
+  "historical_record": [
+    {
+      "date": "1927",
+      "kind": "building contract",
+      "description": "Built 1927 as a neighborhood church, captioned in the OMI Historic Context Statement (2010) as \"302 Jules Street\" — the parcel EAS addresses as 300–302 Jules Avenue.",
+      "address_as_surveyed": "302 Jules Street",
+      "source": "omi-context-statement"
+    }
+  ]
+}

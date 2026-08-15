@@ -1,0 +1,115 @@
+{
+  "address": "117 Broad Street, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/broad-street/117/",
+  "apn": "7113041",
+  "block": "7113",
+  "lot": "041",
+  "eas_baseid": "416333",
+  "coordinates": {
+    "lat": 37.712905,
+    "lng": -122.456751
+  },
+  "parcel": {
+    "year_built": 1896,
+    "units": 1,
+    "stories": 2,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 5000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Oceanview",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0117 BROAD               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 784716,
+    "assessed_improvement_value": 336302,
+    "last_sale_date": "2010-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1896",
+    "survey_name": "ENGINE CO. #33 FIREHOUSE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201207245594",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-07-24",
+      "status_date": "2013-09-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace (e) water damaged tower to match (e). replace (e) 3 windows on facade, to match (e). no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017234",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-28",
+      "status_date": "1991-06-07",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROAD&street_type=ST&address_number=117",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7113041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7113&lot=041",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7113041",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "omi-context-statement",
+      "name": "Richard Brandi and Woody LaBounty (Western Neighborhoods Project), San Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods, 1862-1959: A Historical Context Statement, prepared for the San Francisco Historic Preservation Fund Committee, adopted January 2010",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "OMI Neighborhoods Historical Context Statement, adopted 2010",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "hook": "Engine Co. #33 firehouse, built 1896, Charles R. Wilson architect.",
+  "historical_record": [
+    {
+      "date": "1896",
+      "kind": "building contract",
+      "description": "Built 1896 as the Engine Co. #33 firehouse. Architect: Charles R. Wilson.",
+      "source": "omi-context-statement"
+    }
+  ],
+  "building": {
+    "architect": "Charles R. Wilson",
+    "completed": "1896"
+  }
+}

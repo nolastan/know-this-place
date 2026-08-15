@@ -16,7 +16,9 @@ documented so far:
 - [Lone Mountain / USF](lone-mountain/) — Jefferson Airplane's house facing Golden Gate Park, and the First A.M.E. Zion Church on Golden Gate Avenue
 - [Western Addition](western-addition/) — a 1974 Patty Hearst address; the Third Baptist Church complex on McAllister Street and Bethel A.M.E. Church on Laguna Street
 - [Excelsior](excelsior/) — Jerry Garcia's first home
-- [Outer Mission](outer-mission/) — Jerry Garcia's home with his grandparents
+- [Outer Mission](outer-mission/) — Jerry Garcia's home with his grandparents; the 1901 streetcar car barn on San Jose Avenue and the 1910 Ingleside police station
+- [Oceanview / Merced / Ingleside](oceanview-merced-ingleside/) — 23 buildings across 16 streets named in the 2010 OMI Historic Context Statement, from the Engine Co. #33 firehouse to St. Emydius Catholic Church
+- [Ingleside Terraces](ingleside-terraces/) — the 1912 residence park on the former Ingleside Racetrack; developer Joseph Leonard's own house on Cedro Avenue and the Westwood Park storefronts on Ocean Avenue
 - [South Beach](south-beach/) — the waterfront blocks south of Market; the site of Jack London's birthplace and eleven buildings with public open space
 - [Financial District](financial-district/) — the office district north of Market; the Mechanics' Institute on Post Street, the Crocker Bank Building, Redwood Park, Empire Park and the Montgomery Street block where Samuel Brannan built in 1853
 - [East Cut](east-cut/) — the blocks between Market and Folsom; Foundry Square, the Downtown Plan's plazas and the art the 1% program put in them
