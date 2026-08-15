@@ -10,14 +10,26 @@ A theme, a neighborhood, a gap ("we have almost nothing on the Sunset before
 
 ## Output
 
-For each source worth pursuing:
+Prospecting has two gears, and picking the wrong one wastes a session.
+
+**Triage** — when there are several unverified leads and you don't yet know
+which deserve the effort. Per lead: the four judgements below, one sampled
+example proving it carries numbered addresses with dates, and a `hold` /
+`promote` / retire verdict written into the **Leads** table's `triaged` column
+with its evidence in [../SOURCES.md](../SOURCES.md) → Triage notes. No dossier,
+no issue. Thirteen dossiers written before knowing which three are worth mining
+is thirteen sessions spent to learn what three would have told you.
+
+**Promotion** — when one lead has already survived triage, or arrives obviously
+strong. Then:
 
 1. A dossier at `../sources/<id>.md`, from
    [../templates/source-dossier.md](../templates/source-dossier.md).
-2. A row in [../SOURCES.md](../SOURCES.md) with status `lead` or `acquiring`.
+2. A row in [../SOURCES.md](../SOURCES.md) with status `lead` or `acquiring`,
+   and the lead's triage note deleted.
 3. A `research:acquire` issue, per [../templates/issues.md](../templates/issues.md).
 
-For everything rejected: a line in the **Leads** table of `SOURCES.md`, struck
+For everything rejected in either gear: the row in the **Leads** table, struck
 through with the reason. A rejected lead is worth recording so nobody spends a
 session rediscovering it.
 
@@ -59,6 +71,11 @@ good source. See "Mining a corpus" in [../AGENTS.md](../AGENTS.md).
 
 ## Done when
 
-The register has a row, the dossier exists with a real sampled example, and an
-issue names the next concrete step. Then run
-`python3 research/tools/check.py`.
+**Triage:** every lead in scope carries a dated verdict in the `triaged` column,
+each `hold` has a triage note with a real sampled example, and each rejection is
+struck through with its reason.
+
+**Promotion:** the register has a row, the dossier exists with a real sampled
+example, and an issue names the next concrete step.
+
+Either way, run `python3 research/tools/check.py`.
