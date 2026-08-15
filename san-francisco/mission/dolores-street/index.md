@@ -29,7 +29,9 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [201](201/) — A 1917 20-unit apartment building, with an addition permitted in 2017.
 - [207–209](207/) — A 1900 two-flat, with reroofing permitted in 1989.
 - [211](211/) — A single-family house, with window replacement permitted in 2024.
+- [214](214/) — An 1849 hotel, with permit records from 2000 to 2002.
 - [219–221](219/) — A 1909 5-unit apartment building, with reroofing permitted in 2005.
+- [220](220/) — An 1851 building, with a rear addition permitted in 1993.
 - [223](223/) — A 1-unit flats building, with a seismic retrofit permitted in 2015.
 - [225](225/) — A 1907 single-family house, with an addition permitted in 2016.
 - [233](233/) — A 1916 9-unit apartment building, with a seismic retrofit permitted in 2017.

@@ -32,6 +32,7 @@ Every residential parcel on South Van Ness Avenue that the city's address, asses
 - [465](465/) — A 1908 2-unit building with a ground-floor store, with reroofing permitted in 1997.
 - [469–473](469/) — A 1900 3-unit tic building, with a kitchen and bathroom remodel permitted in 2007.
 - [490](490/) — A 2021 81-unit apartment building, with garage work permitted in 2010.
+- [510–524](510/) — A 1907 hotel, with a bathroom remodel permitted in 2025.
 - [573](573/) — A 1900 5-unit apartment building, with reroofing permitted in 2010.
 - [590–592](590/) — A 1909 three-flat, with a kitchen remodel permitted in 2021.
 - [600](600/) — A 2017 30-unit apartment building, with a kitchen remodel permitted in 2018.

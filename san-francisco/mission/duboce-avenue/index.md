@@ -36,7 +36,9 @@ Every residential parcel on Duboce Avenue that the city's address, assessor and 
 - [214](214/) — A 1900 two-flat in the Guerrero Street Fire Line Historic District, with reroofing permitted in 2001.
 - [225](225/) — A 1958 9-unit apartment building in the Guerrero Street Fire Line Historic District, with a seismic retrofit permitted in 2020.
 - [239–241](239/) — A 1900 4-unit apartment building in the Guerrero Street Fire Line Historic District, with foundation work permitted in 2025.
+- [243](243/) — A 1900 church in the Guerrero Street Fire Line Historic District, with facade work permitted in 2004.
 - [249–253](249/) — A 1907 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [291–293](291/) — A 1980 office building, with reroofing permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
