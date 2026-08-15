@@ -278,11 +278,19 @@ fact that isn't already on the page, so nothing is lost when it doesn't load.
 facts shown elsewhere like the parcel number. Neither image needs an
 attribution caption: Google and Mapbox each render their own into the picture.)
 
-**Never test or preview either image.** Both keys are restricted to the
-production domain, so they fail from localhost, from any preview host, and
-from `curl` — by design, not by fault. There is no local check that can pass,
-so attempting one only burns effort. Write the placeholders, confirm
-`location="LAT,LNG"` equals `coordinates` in `data.json`, and stop there.
+**Never test or preview the Street View image.** `maps_embed_key` is
+restricted to the production domain, so it fails from localhost, from any
+preview host, and from `curl` — by design, not by fault. There is no local
+check that can pass, so attempting one only burns effort. Write the
+placeholder, confirm `location="LAT,LNG"` equals `coordinates` in `data.json`,
+and stop there.
+
+**The map is the one exception**, and only from one place: `mapbox_token` is
+URL-restricted to `knowthis.place` *and* `http://localhost:8517` (README,
+setup checklist), so the locator map does render for a human previewing the
+site with `python3 -m http.server 8517`. That is a person's check, on that
+exact port — any other port, any other host, and `curl` (which sends no
+`Referer`) all fail the restriction and prove nothing.
 Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.
