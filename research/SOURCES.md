@@ -15,6 +15,7 @@ the coverage log. Sources are cited on pages by the `id` in the first column;
 | [`argonaut-sfhs`](sources/argonaut-sfhs.md) | *The Argonaut*, journal of the SF Historical Society | journal | high | mining | 7 volumes read in full |
 | [`celebrity-residence-guides`](sources/celebrity-residence-guides.md) | Notable-resident guides | web guides | low | mined | 26 addresses, 25 resolved |
 | [`corbett-heights-neighbors`](sources/corbett-heights-neighbors.md) | Corbett Heights Neighbors newsletter | newsletter | high | mining | page 1 of 5 (10 of 48 issues) |
+| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | acquiring | 4,500 of ~97,000 records harvested |
 | [`hittell-1878`](sources/hittell-1878.md) | Hittell, *A History of the City of San Francisco* (1878) | book | medium | mining | §12–14, 24, 27, 231 |
 | [`loc-newspapers`](sources/loc-newspapers.md) | Chronicling America OCR — *Morning Call*, *SF Call* | newspaper OCR | high | mining | 58,620 pages → 8,437 mentions, 2,025 addresses |
 | [`local-news`](sources/local-news.md) | Hoodline, Bay Area Reporter, SF Chronicle | news | low | reference | browsed per address, no corpus pass |
@@ -79,10 +80,9 @@ line up.
 |---|---|---|---|
 | National Register nomination forms | Per-building PDFs with construction dates, architects and a full narrative. Densely addressed, almost never indexed per address. | NPS map service for the index, `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text` for the PDF | 2026-08-15 hold |
 | SF neighborhood newspapers, 1956–2026 | Fifteen-plus papers covering neighborhoods this project has almost nothing on. Block-level reporting, businesses and institutions at numbered addresses. | Internet Archive collection `sanfrancisconewspapers` — one issue per item, OCR text included | 2026-08-15 hold |
-| DigitalSF (SF Public Library) | ~97,000 digitized items across nine collections, searchable **by street number**, and invisible to a plain address search. | digitalsf.org — photographs, city archives, branch archives, digitized books, government documents | 2026-08-15 hold |
 | HABS/HAER documentation | Measured drawings and a historian's report per building. | LoC collection `historic-american-buildings-landscapes-and-engineering-records`; data pages are text-layer PDFs on `tile.loc.gov` | 2026-08-15 hold |
 | Article 10 landmark designation reports (SF Planning) | One report per city landmark, address-specific, PDF-only — and the index hands over the APN. | DataSF `97yj-54sx` for the index (address + APN + document URL), then the PDF | 2026-08-15 hold |
-| SF Redevelopment Agency property summaries | A survey form **per parcel** — block, lot, dimensions, improvements, assessed value, condition, and the recommendation to retain, move or demolish. Nothing else on the internet says this about a Western Addition or Yerba Buena address. | Internet Archive collection `sanfranciscoredevelopmentagencyrecords`, 106 items, public domain | 2026-08-15 hold |
+| SF Redevelopment Agency property summaries | A survey form **per parcel** — block, lot, dimensions, improvements, assessed value, condition, and the recommendation to retain, move or demolish. Nothing else on the internet says this about a Western Addition or Yerba Buena address. **Overlaps [`digitalsf`](sources/digitalsf.md)**: same SFH 371 archive, digitized twice — paper forms here, catalogued photographs there. | Internet Archive collection `sanfranciscoredevelopmentagencyrecords`, 106 items, public domain | 2026-08-15 hold |
 | *Architect and Engineer of California* and period trade journals | Building contracts, architects, costs — the pre-DBI permit record. | Internet Archive: `usmodernist-AECA-*` (214 issues) and `buildingengineer*` (35 volumes of *Building & Engineering News*), OCR text included | 2026-08-15 hold |
 | Bay Area Reporter archive | The Castro and the LGBTQ record at address level, digitized and OCR'd. | Internet Archive collection `bayareareporter`, identifiers `BAR_YYYYMMDD` | 2026-08-15 hold |
 | Crocker-Langley San Francisco city directories | What occupied a numbered address, year by year, pre-1930. Businesses are fair game where residents are not. | Internet Archive full-text scans, 41 volumes | 2026-08-15 hold |
@@ -140,23 +140,6 @@ not ours to redistribute), and these papers are thick with residents, obituaries
 and donors — the privacy limits bite harder here than anywhere else in the
 register. Marina Times and Westside Observer, both named in the original lead,
 are **not** in this collection.
-
-**DigitalSF.** San Francisco Public Library's own digitization platform, and the
-largest thing found in either sweep: roughly 97,000 items across nine
-collections — San Francisco Historical Photographs (57,407), Government
-Documents (9,151), San Francisco History Center (7,987), Archives of the City
-and County of San Francisco (6,867), SFPL Neighborhood Branch Libraries (6,351),
-Digitized Books and Serials (4,557), Hormel LGBTQIA Center (2,727), Shades of
-San Francisco (2,041). **It is searchable by street number, and it is
-invisible.** A quoted search for `"1050 Wisconsin"` returns exactly one record —
-Potrero Hill Health Center, pre-1980, from the Potrero Branch Archives — while a
-plain web search for the same address does not surface digitalsf.org anywhere in
-the first eight results. `"Valencia Street"` returns 613. Records are a mix of
-photographs and scanned PDFs. The weakness is datedness: item dates run to
-"undated" and "pre-1980" as often as to a year, and the evidence bar wants a
-year. The open question an acquire pass must answer first is the **batch unit** —
-97,000 items is not a queue, so the work is deciding what a session's worth of
-this looks like (one branch archive? one street? one collection?).
 
 **SF Redevelopment Agency property summaries.** 106 items on the Internet
 Archive under `sanfranciscoredevelopmentagencyrecords`, from SFPL's SFH 371,
