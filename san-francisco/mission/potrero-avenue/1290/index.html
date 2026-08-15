@@ -55,15 +55,26 @@
         <li class="tag"><span class="ic ic-pin"></span>District 9</li>
       </ul>
     </div>
-    <ktp-streetview location="37.751874,-122.406569" label="1290 Potrero Avenue">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>37.7519, −122.4066</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+    <div class="media-stack">
+      <ktp-streetview location="37.751874,-122.406569" label="1290 Potrero Avenue">
+        <figure class="media">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7519, −122.4066</span>
+            <small>Street View appears here once a Google Maps embed key is configured.</small>
+          </div>
+        </figure>
+      </ktp-streetview>
+      <ktp-map location="37.751874,-122.406569" label="1290 Potrero Avenue">
+        <figure class="media media-map">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7519, −122.4066</span>
+            <small>A locator map appears here once a Mapbox token is configured.</small>
+          </div>
+        </figure>
+      </ktp-map>
+    </div>
   </section>
 
   <div class="stats">

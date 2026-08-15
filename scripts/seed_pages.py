@@ -1650,15 +1650,26 @@ def render_html(rec: dict) -> str:
 {tags_html(rec)}
       </ul>
     </div>
-    <ktp-streetview location="{lat},{lng}" label="{esca(title)}">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+    <div class="media-stack">
+      <ktp-streetview location="{lat},{lng}" label="{esca(title)}">
+        <figure class="media">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
+            <small>Street View appears here once a Google Maps embed key is configured.</small>
+          </div>
+        </figure>
+      </ktp-streetview>
+      <ktp-map location="{lat},{lng}" label="{esca(title)}">
+        <figure class="media media-map">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
+            <small>A locator map appears here once a Mapbox token is configured.</small>
+          </div>
+        </figure>
+      </ktp-map>
+    </div>
   </section>
 
 {lead_html}{stats_html(rec)}

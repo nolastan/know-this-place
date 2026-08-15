@@ -56,15 +56,26 @@
         <li class="tag"><span class="ic ic-permit"></span>Historic status: unevaluated</li>
       </ul>
     </div>
-    <ktp-streetview location="37.770185,-122.424068" label="72–78 Pearl Street">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>37.7702, −122.4241</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+    <div class="media-stack">
+      <ktp-streetview location="37.770185,-122.424068" label="72–78 Pearl Street">
+        <figure class="media">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7702, −122.4241</span>
+            <small>Street View appears here once a Google Maps embed key is configured.</small>
+          </div>
+        </figure>
+      </ktp-streetview>
+      <ktp-map location="37.770185,-122.424068" label="72–78 Pearl Street">
+        <figure class="media media-map">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7702, −122.4241</span>
+            <small>A locator map appears here once a Mapbox token is configured.</small>
+          </div>
+        </figure>
+      </ktp-map>
+    </div>
   </section>
 
   <div class="stats">

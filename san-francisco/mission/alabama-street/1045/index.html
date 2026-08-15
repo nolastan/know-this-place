@@ -56,15 +56,26 @@
         <li class="tag"><span class="ic ic-permit"></span>Historic status: historic resource</li>
       </ul>
     </div>
-    <ktp-streetview location="37.755139,-122.410923" label="1045–1047 Alabama Street">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>37.7551, −122.4109</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+    <div class="media-stack">
+      <ktp-streetview location="37.755139,-122.410923" label="1045–1047 Alabama Street">
+        <figure class="media">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7551, −122.4109</span>
+            <small>Street View appears here once a Google Maps embed key is configured.</small>
+          </div>
+        </figure>
+      </ktp-streetview>
+      <ktp-map location="37.755139,-122.410923" label="1045–1047 Alabama Street">
+        <figure class="media media-map">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7551, −122.4109</span>
+            <small>A locator map appears here once a Mapbox token is configured.</small>
+          </div>
+        </figure>
+      </ktp-map>
+    </div>
   </section>
 
   <div class="stats">

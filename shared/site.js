@@ -93,6 +93,76 @@ customElements.define(
   },
 );
 
+/* Read a design-system color at render time. The static map's pin is drawn by
+   Mapbox, not by CSS, so its hue has to be passed to the server as a hex
+   string — reading it from site.css keeps it the same brick the rest of the
+   site uses, in both light and dark mode, and keeps every color in one file. */
+const cssVar = (name) =>
+  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
+/* <ktp-map location="LAT,LNG" label="123 Example St">
+     <figure class="media media-map"> …placeholder or fallback… </figure>
+   </ktp-map>
+
+   The locator map: where this building sits, as one flat image from the
+   Mapbox Static Images API. Same shape and same law as <ktp-streetview> —
+   the light-DOM .media-empty placeholder is the whole content of the block
+   with no JS, and the image only replaces it once `mapbox_token` is set in
+   site-config.json. Nothing a reader needs to know lives in the picture: the
+   coordinates are in the placeholder, the address is in the <h1>, and the
+   homepage map is where the site's geography is browsable.
+
+   A static image rather than Mapbox GL JS deliberately — an address page
+   loads no third-party script, and an <img> costs one request instead of a
+   map engine. Mapbox bakes its own and OpenStreetMap's attribution into the
+   returned image, so the credit travels with the picture and no page has to
+   carry a second one.
+
+   The basemap follows the reader's color scheme (the same two styles the
+   homepage map uses) and re-renders if they switch mid-visit. */
+const MAP_ZOOM = 16; // a block or so around the parcel — context, not a plan
+
+customElements.define(
+  "ktp-map",
+  class extends HTMLElement {
+    async connectedCallback() {
+      const empty = this.querySelector(".media-empty");
+      const location = this.getAttribute("location");
+      if (!empty || !location) return; // leave the fallback untouched
+
+      const [lat, lng] = location.split(",").map((n) => Number(n.trim()));
+      if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+
+      const { mapbox_token: token } = await siteConfig();
+      if (!token) return; // no token yet → keep the placeholder as-is
+
+      const label = this.getAttribute("label") || "this address";
+      const dark = matchMedia("(prefers-color-scheme: dark)");
+      const src = () =>
+        "https://api.mapbox.com/styles/v1/mapbox/" +
+        (dark.matches ? "dark-v11" : "light-v11") +
+        "/static/pin-s+" +
+        cssVar("--warm").replace("#", "") +
+        `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/640x360@2x` +
+        "?access_token=" +
+        encodeURIComponent(token);
+
+      const img = document.createElement("img");
+      img.src = src();
+      // No width/height attributes: the .media-map frame sets the box in CSS,
+      // and a height attribute would win over that aspect ratio.
+      img.alt = "Map showing the location of " + label;
+      img.loading = "lazy";
+      img.decoding = "async";
+      empty.replaceWith(img);
+
+      // --warm resolves to the dark-mode brick on its own, so re-reading it
+      // here is all the swap needs.
+      dark.addEventListener("change", () => (img.src = src()));
+    }
+  },
+);
+
 /* <ktp-figure> … a chart whose marks carry data-tip="…" … </ktp-figure>
 
    Adds the hover/focus tooltip layer to any chart. Marks that carry a

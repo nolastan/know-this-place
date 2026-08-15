@@ -56,15 +56,26 @@
         <li class="tag"><span class="ic ic-permit"></span>Historic status: unevaluated</li>
       </ul>
     </div>
-    <ktp-streetview location="37.777338,-122.398847" label="590–598 Brannan Street">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>37.7773, −122.3988</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+    <div class="media-stack">
+      <ktp-streetview location="37.777338,-122.398847" label="590–598 Brannan Street">
+        <figure class="media">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7773, −122.3988</span>
+            <small>Street View appears here once a Google Maps embed key is configured.</small>
+          </div>
+        </figure>
+      </ktp-streetview>
+      <ktp-map location="37.777338,-122.398847" label="590–598 Brannan Street">
+        <figure class="media media-map">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7773, −122.3988</span>
+            <small>A locator map appears here once a Mapbox token is configured.</small>
+          </div>
+        </figure>
+      </ktp-map>
+    </div>
   </section>
 
   <div class="stats">

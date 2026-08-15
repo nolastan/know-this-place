@@ -44,10 +44,10 @@ or changing a component is a human decision (see "Extending the system").
   markup. This is not stylistic: static, crawlable pages are the whole SEO
   strategy. If JS would be the only way something renders, it doesn't belong.
   (`validate.py` rejects stray scripts.)
-- **No external resources in a page's markup.** The only two the site loads at
-  all are the Street View iframe (on click) and the analytics script — both
-  requested by `site.js`, never written into a page. Don't add a third without
-  a human's say-so, and never as a tag in `index.html`.
+- **No external resources in a page's markup.** The only three the site loads
+  at all are the Street View image, the Mapbox static map, and the analytics
+  script — all three requested by `site.js`, never written into a page. Don't
+  add a fourth without a human's say-so, and never as a tag in `index.html`.
 - **The site's homepage (`/index.html`) is the one exception to the three rules
   above**, by explicit human decision: it is a map, not a content page, so it
   carries its own `<style>`, its own `<script>`, and Mapbox GL JS. `validate.py`
@@ -244,29 +244,45 @@ Secondary facts that don't merit a stat tile: icon · key · right-aligned value
 </dl>
 ```
 
-### Media / Street View — `<ktp-streetview>` wrapping `.media`
-Always author the **placeholder** below — never a raw iframe. The
-`<ktp-streetview>` enhancement handles the rest: when `maps_embed_key` is set
-in `site-config.json` it swaps the placeholder for a click-to-load facade and
-only contacts Google after a click; when there's no key (or no JS), the
-placeholder stands. This means imagery turns on across the whole site the day
-the key is set — with no page regeneration.
+### Media — the hero's `.media-stack`
+The hero's media slot is a **column of frames**: the facade above, the locator
+map below. Both are `<ktp-*>` wrappers around a `.media` placeholder — always
+author the **placeholder**, never a raw `<img>` or iframe pointing at Google
+or Mapbox. Each enhancement swaps its own placeholder for an image once the
+matching key is in `site-config.json` (`maps_embed_key` for Street View,
+`mapbox_token` for the map), and leaves it standing when there's no key and
+when there's no JS. So imagery turns on across the whole site the day a key is
+set — with no page regeneration. Both wrappers take the same `location` and
+`label`, and `location` must equal `coordinates` in `data.json`.
 ```html
-<ktp-streetview location="LAT,LNG" label="ADDRESS">
-  <figure class="media">
-    <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
-      <small>Street View appears here once a Google Maps embed key is configured.</small></div>
-  </figure>
-</ktp-streetview>
+<div class="media-stack">
+  <ktp-streetview location="LAT,LNG" label="ADDRESS">
+    <figure class="media">
+      <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
+        <small>Street View appears here once a Google Maps embed key is configured.</small></div>
+    </figure>
+  </ktp-streetview>
+  <ktp-map location="LAT,LNG" label="ADDRESS">
+    <figure class="media media-map">
+      <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
+        <small>A locator map appears here once a Mapbox token is configured.</small></div>
+    </figure>
+  </ktp-map>
+</div>
 ```
+`.media-map` is the wider 16:9 frame the map wears — a facade is 4:3, and two
+4:3 frames stacked out-run the identity column beside them. The map is a
+**locator**, not a data layer: it carries no parcel outline, no label, and no
+fact that isn't already on the page, so nothing is lost when it doesn't load.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
-facts shown elsewhere like the parcel number.)
+facts shown elsewhere like the parcel number. Neither image needs an
+attribution caption: Google and Mapbox each render their own into the picture.)
 
-**Never test or preview the embed.** The key is restricted to the production
-domain, so it fails from localhost, from any preview host, and from `curl` —
-by design, not by fault. There is no local check that can pass, so attempting
-one only burns effort. Write the placeholder, confirm `location="LAT,LNG"`
-equals `coordinates` in `data.json`, and stop there.
+**Never test or preview either image.** Both keys are restricted to the
+production domain, so they fail from localhost, from any preview host, and
+from `curl` — by design, not by fault. There is no local check that can pass,
+so attempting one only burns effort. Write the placeholders, confirm
+`location="LAT,LNG"` equals `coordinates` in `data.json`, and stop there.
 Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.
@@ -356,8 +372,15 @@ search, which is the opposite of this project's goal.)
 Available elements:
 
 - **`<ktp-streetview location="LAT,LNG" label="ADDRESS">`** — wraps the
-  `.media` placeholder; see "Media / Street View" above. Click-to-load, keyed
-  off `site-config.json`. Fallback = the placeholder you wrote.
+  `.media` placeholder; see "Media" above. Swaps in a Street View still, keyed
+  off `maps_embed_key` in `site-config.json`. Fallback = the placeholder you
+  wrote.
+- **`<ktp-map location="LAT,LNG" label="ADDRESS">`** — the same contract for
+  the locator map, keyed off `mapbox_token`: it swaps the placeholder for one
+  flat image from the Mapbox Static Images API, in the basemap that matches
+  the reader's color scheme. A static image, not Mapbox GL JS — an address
+  page loads no third-party script, and the map is scenery, not a way to read
+  the page. Fallback = the placeholder you wrote.
 - **`<ktp-figure>`** — wraps a chart. Any descendant carrying a `data-tip="…"`
   becomes keyboard-focusable and shows that text as a tooltip on hover/focus.
   Use it for marks whose value isn't already printed beside them (stacked-bar

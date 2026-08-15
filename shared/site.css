@@ -250,7 +250,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* ============================================================= enhancement layer
    Custom elements (see shared/site.js) are progressive-enhancement wrappers.
    They must render as blocks even before/without their script. */
-ktp-streetview, ktp-figure { display: block; }
+ktp-streetview, ktp-figure, ktp-map { display: block; }
 ktp-figure { position: relative; }
 
 /* chart tooltip */
@@ -267,11 +267,17 @@ ktp-figure { position: relative; }
 
 /* ============================================================= media */
 .media { border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; background: var(--panel); }
+/* the hero's media slot when it carries more than one frame — the facade
+   above, the locator map below */
+.media-stack { display: grid; gap: 0.75rem; align-content: start; }
 .media iframe, .media img { display: block; width: 100%; aspect-ratio: 4 / 3; border: 0; object-fit: cover; }
 .media figcaption { padding: 0.5rem 0.75rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
 .media-empty { aspect-ratio: 4 / 3; display: grid; place-content: center; justify-items: center; gap: 0.4rem; text-align: center; padding: 1rem; color: var(--muted); }
 .media-empty .ic { font-size: 1.6rem; color: var(--accent); }
 .media-empty small { font-size: 0.78rem; font-family: var(--sans); max-width: 16rem; }
+/* the locator map is wider than it is tall: it carries surroundings, not a
+   facade, and two 4:3 frames stacked would out-run the identity column */
+.media-map img, .media-map .media-empty { aspect-ratio: 16 / 9; }
 
 /* ============================================================= notes */
 .community-note { background: var(--note-bg); border-left: 3px solid var(--accent); padding: 0.75rem 1rem; margin: 1.5rem 0; font-size: 0.97rem; max-width: var(--measure); }

@@ -51,15 +51,26 @@
         <li class="tag"><span class="ic ic-permit"></span>Historic status: surveyed, unevaluated</li>
       </ul>
     </div>
-    <ktp-streetview location="37.760506,-122.444173" label="301–303 Corbett Avenue">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>37.7605, −122.4442</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+    <div class="media-stack">
+      <ktp-streetview location="37.760506,-122.444173" label="301–303 Corbett Avenue">
+        <figure class="media">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7605, −122.4442</span>
+            <small>Street View appears here once a Google Maps embed key is configured.</small>
+          </div>
+        </figure>
+      </ktp-streetview>
+      <ktp-map location="37.760506,-122.444173" label="301–303 Corbett Avenue">
+        <figure class="media media-map">
+          <div class="media-empty">
+            <span class="ic ic-pin"></span>
+            <span>37.7605, −122.4442</span>
+            <small>A locator map appears here once a Mapbox token is configured.</small>
+          </div>
+        </figure>
+      </ktp-map>
+    </div>
   </section>
 
   <p class="lead">The open ground below the house, filled by a refugee camp

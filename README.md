@@ -17,9 +17,10 @@ There is deliberately **no CMS, no database, no build framework**:
   Pages are composed from a shared **design system** — a CSS component library
   ([shared/site.css](shared/site.css)) of stat tiles, a visual timeline, charts,
   and icons, plus a tiny progressive-enhancement layer
-  ([shared/site.js](shared/site.js): web components for click-to-load Street
-  View and chart tooltips). The JS only *enhances* — every page renders
-  completely from its HTML alone, so pages stay static and crawlable.
+  ([shared/site.js](shared/site.js): web components for the Street View still,
+  the Mapbox locator map, and chart tooltips). The JS only *enhances* — every
+  page renders completely from its HTML alone, so pages stay static and
+  crawlable.
   Consistency is enforced by a small contract checked in CI — see
   [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
 - **A page is seeded once, then edited by hand forever after.**
@@ -91,9 +92,11 @@ scripts/
 - [ ] Branch protection on `main`: require PR review (you)
 - [ ] Create a Google Maps **Embed API** key, referrer-locked to `knowthis.place`,
       and put it in `shared/site-config.json`
-- [ ] Create a Mapbox **public token** (`pk.…`) for the homepage map, URL-restricted
-      to `knowthis.place` and `http://localhost:8517`, and put it in
-      `shared/site-config.json` as `mapbox_token`
+- [ ] Create a Mapbox **public token** (`pk.…`) for the homepage map and the
+      per-page locator maps, URL-restricted to `knowthis.place` and
+      `http://localhost:8517`, and put it in `shared/site-config.json` as
+      `mapbox_token`. Address pages request one Static Images call per view, so
+      watch the account's monthly request count as coverage grows
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
 
