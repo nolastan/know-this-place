@@ -1,0 +1,178 @@
+{
+  "address": "1256 Fourth Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/4th-avenue/1256/",
+  "apn": "1752021",
+  "block": "1752",
+  "lot": "021",
+  "eas_baseid": "316207",
+  "coordinates": {
+    "lat": 37.765009,
+    "lng": -122.460723
+  },
+  "parcel": {
+    "year_built": 1904,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2535,
+    "basement_area_sqft": 334,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1256 04TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1077209,
+    "assessed_improvement_value": 705768,
+    "last_sale_date": "2008-11-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405242903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-24",
+      "status_date": "2024-06-27",
+      "estimated_cost": 30900,
+      "revised_cost": 30900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907072078",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-07-07",
+      "status_date": "2010-05-24",
+      "estimated_cost": 140000,
+      "revised_cost": 199671,
+      "description": "remove (e) 1 story @ rear & excavate ground floor, build new 3 story addition in footprint of existing building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809292877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-29",
+      "status_date": "2008-10-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2003/01/30/6323 to obtain final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809292879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-29",
+      "status_date": "2008-10-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2004/09/14/4093 to obtain final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809292880",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2008-09-29",
+      "status_date": "2008-10-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2004/11/03/8483 to obtain final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411038483",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-03",
+      "status_date": "2005-06-08",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "horizontal additrepair & rebuild front landing & stairs. trim & paint exterior front of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409144093",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-14",
+      "status_date": "2006-02-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "expand an existing deck and stairs in rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301306323",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-30",
+      "status_date": "2008-10-09",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel existing kitchen. relocate existing bathrm to new location at existing pantry. add plywood t",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=AVE&address_number=1256",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1752021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1752&lot=021",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1752021",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1905",
+      "kind": "building contract",
+      "description": "Built 1905. Builder: Stillman E. Brown. Style: late Queen Anne with Classical details. Brown's first known Inner Sunset house.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1905 late Queen Anne with Classical details, built by Stillman E. Brown."
+}

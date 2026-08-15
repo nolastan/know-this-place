@@ -1,0 +1,165 @@
+{
+  "address": "1267 12th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/12th-avenue/1267/",
+  "apn": "1738014",
+  "block": "1738",
+  "lot": "014",
+  "eas_baseid": "315738",
+  "coordinates": {
+    "lat": 37.764439,
+    "lng": -122.46989
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1870,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1267 12TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 344523,
+    "assessed_improvement_value": 315817,
+    "last_sale_date": "1987-10-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804035389",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-03",
+      "status_date": "2018-11-15",
+      "estimated_cost": 7000,
+      "revised_cost": 8000,
+      "description": "replace existing front stairway and landing, in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105125866",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2011-05-12",
+      "status_date": "2018-04-03",
+      "estimated_cost": 3800,
+      "revised_cost": 0,
+      "description": "replace existing entry stair and landing in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307280500",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-28",
+      "status_date": "2003-07-28",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "provide framing details for sistering of rotten joist under (e)appl#2001111092953 & 200304172513",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304172513",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-17",
+      "status_date": "2003-04-17",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "renew expired appn. 200111092953 & 200102254541",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111092953",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-11-09",
+      "status_date": "2002-04-14",
+      "estimated_cost": 1000,
+      "description": "additional structural work to repair wet rot on appl#200107254541",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107254541",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-25",
+      "status_date": "2002-01-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "rebuilding of rotted deck & replacement of rear windows-replace (e) deck in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719529",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-04",
+      "status_date": "1998-04-04",
+      "estimated_cost": 12870,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=AVE&address_number=1267",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1738014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1738&lot=014",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1738014",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "building contract",
+      "description": "Built 1907. Builder: Eugene B. Hallett. Style: Classical Revival. One of a row of eighteen.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1907 Classical Revival, built by Eugene B. Hallett."
+}

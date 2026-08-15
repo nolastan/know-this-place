@@ -1,0 +1,107 @@
+{
+  "address": "1512 Sixth Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/6th-avenue/1512/",
+  "apn": "1851012",
+  "block": "1851",
+  "lot": "012",
+  "eas_baseid": "320532",
+  "coordinates": {
+    "lat": 37.760246,
+    "lng": -122.462683
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 2340,
+    "lot_depth_ft": 95,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1512 06TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 174147,
+    "assessed_improvement_value": 179681
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201610130254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-13",
+      "status_date": "2017-10-23",
+      "estimated_cost": 45000,
+      "revised_cost": 52000,
+      "description": "in kind deck replacement, bathroom rehabilitation, replace all rear windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2016–2017",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=06TH&street_type=AVE&address_number=1512",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1851012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1851&lot=012",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1851012",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-1915",
+      "kind": "building contract",
+      "description": "Built 1914-1915. Architect: Theodore W. Lenzen. Builder: for Stillman E. Brown. Style: Craftsman.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1914-1915 Craftsman, designed by Theodore W. Lenzen."
+}

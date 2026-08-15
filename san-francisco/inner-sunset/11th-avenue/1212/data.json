@@ -1,0 +1,137 @@
+{
+  "address": "1212 11th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/11th-avenue/1212/",
+  "apn": "1740044",
+  "block": "1740",
+  "lot": "044",
+  "eas_baseid": "315866",
+  "coordinates": {
+    "lat": 37.765574,
+    "lng": -122.468388
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 12,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 12,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 8250,
+    "lot_depth_ft": 32.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1212 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 423174,
+    "assessed_improvement_value": 613880
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206015367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-01",
+      "status_date": "2023-11-07",
+      "estimated_cost": 19800,
+      "revised_cost": 19800,
+      "description": "voluntary upgrade of extg fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509258138",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-25",
+      "status_date": "2015-12-03",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "one unit: replace kitchen cabinet, tile & bath tile, one shower faucet and one light in bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920316",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-10-25",
+      "status_date": "1990-12-17",
+      "estimated_cost": 25000,
+      "description": "e.w.o.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920317",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-10-25",
+      "status_date": "1990-12-17",
+      "estimated_cost": 2500,
+      "description": "e.w.o.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1989–2022",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=1212",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1740044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1740&lot=044",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1740044",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "building contract",
+      "description": "Built 1925. Architect: C. O. Clausen.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1925 building, designed by C. O. Clausen."
+}

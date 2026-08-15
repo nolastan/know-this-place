@@ -1,0 +1,119 @@
+{
+  "address": "1620 Eighth Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/8th-avenue/1620/",
+  "apn": "1936033",
+  "block": "1936",
+  "lot": "033",
+  "eas_baseid": "324471",
+  "coordinates": {
+    "lat": 37.758037,
+    "lng": -122.464511
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3009,
+    "building_area_sqft": 1750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1620 08TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40138,
+    "assessed_improvement_value": 54250
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200403128489",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-12",
+      "status_date": "2004-04-22",
+      "estimated_cost": 5850,
+      "revised_cost": 5850,
+      "description": "garage remodel, re-frame etnry to accomodate 2 new 9'6 x 7'0. roll up doors. replace existing side d",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112310",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-12",
+      "status_date": "1992-02-04",
+      "estimated_cost": 2500,
+      "description": "repair/replace as needed roof, sheathing, siding, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510075",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-09-16",
+      "status_date": "1985-10-18",
+      "estimated_cost": 4640,
+      "description": "install 21 aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=08TH&street_type=AVE&address_number=1620",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1936033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1936&lot=033",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1936033",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "building contract",
+      "description": "Built 1925. Builder: Arvid Peterson. Windsor Terrace subdivision.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1925 building, built by Arvid Peterson."
+}
