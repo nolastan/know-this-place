@@ -79,17 +79,25 @@ line up.
 |---|---|---|---|
 | National Register nomination forms | Per-building PDFs with construction dates, architects and a full narrative. Densely addressed, almost never indexed per address. | NPS map service for the index, `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text` for the PDF | 2026-08-15 hold |
 | SF neighborhood newspapers, 1956–2026 | Fifteen-plus papers covering neighborhoods this project has almost nothing on. Block-level reporting, businesses and institutions at numbered addresses. | Internet Archive collection `sanfrancisconewspapers` — one issue per item, OCR text included | 2026-08-15 hold |
+| DigitalSF (SF Public Library) | ~97,000 digitized items across nine collections, searchable **by street number**, and invisible to a plain address search. | digitalsf.org — photographs, city archives, branch archives, digitized books, government documents | 2026-08-15 hold |
 | HABS/HAER documentation | Measured drawings and a historian's report per building. | LoC collection `historic-american-buildings-landscapes-and-engineering-records`; data pages are text-layer PDFs on `tile.loc.gov` | 2026-08-15 hold |
 | Article 10 landmark designation reports (SF Planning) | One report per city landmark, address-specific, PDF-only — and the index hands over the APN. | DataSF `97yj-54sx` for the index (address + APN + document URL), then the PDF | 2026-08-15 hold |
-| *Architect and Engineer of California* and period trade journals | Building contracts, architects, costs — the pre-DBI permit record. | Internet Archive, `usmodernist-AECA-*`, OCR text included | 2026-08-15 hold |
+| SF Redevelopment Agency property summaries | A survey form **per parcel** — block, lot, dimensions, improvements, assessed value, condition, and the recommendation to retain, move or demolish. Nothing else on the internet says this about a Western Addition or Yerba Buena address. | Internet Archive collection `sanfranciscoredevelopmentagencyrecords`, 106 items, public domain | 2026-08-15 hold |
+| *Architect and Engineer of California* and period trade journals | Building contracts, architects, costs — the pre-DBI permit record. | Internet Archive: `usmodernist-AECA-*` (214 issues) and `buildingengineer*` (35 volumes of *Building & Engineering News*), OCR text included | 2026-08-15 hold |
 | Bay Area Reporter archive | The Castro and the LGBTQ record at address level, digitized and OCR'd. | Internet Archive collection `bayareareporter`, identifiers `BAR_YYYYMMDD` | 2026-08-15 hold |
 | Crocker-Langley San Francisco city directories | What occupied a numbered address, year by year, pre-1930. Businesses are fair game where residents are not. | Internet Archive full-text scans, 41 volumes | 2026-08-15 hold |
 | SF Municipal Reports (19th c.) | City construction, schools, firehouses, by address. | Internet Archive, 68 volumes, FY1859–60 through FY1913–14 | 2026-08-15 hold |
 | Western Neighborhoods Project *Outside Lands* magazine | The west side, per building, by local researchers. | outsidelands.org/publications/ — 36 PDFs; plain fetches are refused, a browser-context fetch works | 2026-08-15 hold |
 | OpenSFHistory photo captions | Captions frequently name a street number and a date. Link/cite only — see `historical-imagery` in DATA-SOURCES.md. | opensfhistory.org; credit line `OpenSFHistory/<file number>` | 2026-08-15 hold |
+| SFMTA Photo Archive | Muni photography 1903–1978, 95% digitized, captioned with location and date. | sfmta.photoshelter.com — copies free on request for non-commercial use; not bulk-accessible | 2026-08-15 hold |
+| San Francisco block books (1894–1909) | Block and lot geometry with lot dimensions — a **resolver aid** for pre-1906 addresses, not a source of facts. | Internet Archive, 12 volumes. Map plates: the OCR is noise, and owner names are barred by the privacy limits | 2026-08-15 hold |
 | Sanborn fire insurance maps | Building footprint, material, use and street number, by block, across decades. Not text-searchable anywhere. | LoC Sanborn collection, 40 SF volumes 1886–1950s. Images only — no OCR to mine | 2026-08-15 hold |
+| Pacific Coast Architecture Database (PCAD) | Per-building records: address, construction and demolition dates, architect, contractor, sourced narrative. | pcad.lib.washington.edu — but see the note: it ranks **first** for address queries, so it is a cross-check, not a target | 2026-08-15 hold |
 | California Digital Newspaper Collection (CDNC) | Holds *Daily Alta California* 1849–1891, filling the whole pre-1890 gap `loc-newspapers` leaves. | **Blocked** — the search endpoint sits behind a Cloudflare challenge | 2026-08-15 hold |
+| ~~Calisphere~~ | ~~Statewide aggregator over 20+ institutions holding SF material.~~ | **Retired as a target, keep as a prospecting tool** — its metadata is item-level and carries no street numbers; four numbered-address queries returned zero hits each. Use it to find which institution holds what, then go there. | 2026-08-15 retire |
+| ~~Online Archive of California~~ | ~~Finding aids to SF archival collections.~~ | **Retired as a target, keep as a prospecting tool** — finding aids describe collections by the box and the cubic foot, not by address. Useful for locating a physical collection; acting on one is a library visit, so `needs-human`. | 2026-08-15 retire |
 | ~~Institutional centennial histories (churches, schools, clubs, unions)~~ | ~~One building, deeply documented, usually a single scanned booklet.~~ | **Retired as a lead** — this is a category, not a source, and nothing about it can be checked until a specific booklet exists. Register individual titles as they turn up. | 2026-08-15 retire |
+| ~~University theses on SF neighborhoods~~ | ~~Deep research on one district, often with building-level detail.~~ | **Retired for the same reason** — a category, not a source. eScholarship and the USF repository are real and open, but a thesis becomes a lead when a specific one is found to carry numbered addresses, not before. | 2026-08-15 retire |
 | ~~California Register nomination forms~~ | ~~Per-building PDFs, state-level.~~ | **Folded into the National Register row** — OHP's Built Environment Resource Directory is a status index, not a document archive; the nomination text it points at is the federal one. | 2026-08-15 retire |
 
 When you add a lead, say what you'd expect to *get* from it, not just that it
@@ -133,6 +141,45 @@ and donors — the privacy limits bite harder here than anywhere else in the
 register. Marina Times and Westside Observer, both named in the original lead,
 are **not** in this collection.
 
+**DigitalSF.** San Francisco Public Library's own digitization platform, and the
+largest thing found in either sweep: roughly 97,000 items across nine
+collections — San Francisco Historical Photographs (57,407), Government
+Documents (9,151), San Francisco History Center (7,987), Archives of the City
+and County of San Francisco (6,867), SFPL Neighborhood Branch Libraries (6,351),
+Digitized Books and Serials (4,557), Hormel LGBTQIA Center (2,727), Shades of
+San Francisco (2,041). **It is searchable by street number, and it is
+invisible.** A quoted search for `"1050 Wisconsin"` returns exactly one record —
+Potrero Hill Health Center, pre-1980, from the Potrero Branch Archives — while a
+plain web search for the same address does not surface digitalsf.org anywhere in
+the first eight results. `"Valencia Street"` returns 613. Records are a mix of
+photographs and scanned PDFs. The weakness is datedness: item dates run to
+"undated" and "pre-1980" as often as to a year, and the evidence bar wants a
+year. The open question an acquire pass must answer first is the **batch unit** —
+97,000 items is not a queue, so the work is deciding what a session's worth of
+this looks like (one branch archive? one street? one collection?).
+
+**SF Redevelopment Agency property summaries.** 106 items on the Internet
+Archive under `sanfranciscoredevelopmentagencyrecords`, from SFPL's SFH 371,
+covering Western Addition A-1 and A-2 and Yerba Buena. **Public domain, CC0
+marked**, with a requested credit line: "From the San Francisco History Center,
+San Francisco Public Library." The payload is a per-parcel SFRA survey form
+(FORM P-10, dated 8/10/62) carrying block and lot, parcel dimensions, number and
+type of improvements, assessed land and improvement value, zoning, an exterior
+and interior condition survey with dates, and a **recommendation for disposition
+— retain, rehabilitate, move, or demolish**. For the neighborhoods the
+redevelopment program erased, this is the record of what stood there, and it is
+keyed to block and lot, which is the resolver's answer handed over directly.
+**Sampled:** item `SFH371-5054_0`, "Western Addition Property Summary", blocks
+1126 to 1130. **Two hard cautions.** The forms are handwritten on printed
+stock and the OCR of them is close to unusable — dimensions come through as
+`25! x [Ob` — so extraction here means a vision pass over page images, not a
+text scan. And the collection includes items titled "Western Addition.
+Community: Identified People" and "Identified people relocated" — files about
+displaced residents by name. Those are exactly what the root
+[AGENTS.md](../AGENTS.md) privacy limits forbid, the displacement makes them
+more sensitive rather than less, and no amount of public-domain status changes
+it. Take the buildings. Leave the people.
+
 **HABS/HAER documentation.** 384 San Francisco items, 104 with a street number
 in the title. 126 are military installations (Presidio, Treasure Island,
 Alcatraz, Fort Mason), whose addresses will mostly not exist in EAS, and the
@@ -156,15 +203,27 @@ documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
 LM11 and LM200 are image-only and would need OCR. Same publisher as
 `sf-context-statements` but an entirely separate corpus.
 
-***Architect and Engineer of California*.** 214 issues on the Internet Archive
-under `usmodernist-AECA-*`, full OCR text, free. Dense with architects,
-contractors, costs and dates. **The catch is the same one `loc-newspapers`
-already documents:** the editorial contract notices identify buildings by
-corner, not by number — a sampled 1912 item awards the Sharon building contract
-to a named firm "on the northeast corner of New Montgomery and Jessie streets"
-with a $375,000 price and the architect named, but no street number. Many of the
-numbered addresses that do appear are advertisers' own offices, which are not
-building facts. Expect a low resolve rate and a resolver-heavy pass.
+**Period trade journals.** Two runs, mined identically, so they are one lead.
+***Architect and Engineer of California***: 214 issues on the Internet Archive
+under `usmodernist-AECA-*`. ***Building & Engineering News***: 35 volumes under
+`buildingengineer*`, digitized with SFPL funding, roughly 9 MB of OCR text per
+volume. Both are dense with architects, contractors, costs and dates, and both
+carry the weekly contract-award column — a sampled 1928 entry gives a
+three-storey 69-room apartment building, $80,000, with the owner, the heating
+contractor and the architect's firm all named and addressed.
+
+**The catch is the same one `loc-newspapers` already documents, twice over.**
+First, the contract notices identify buildings by corner, not by number: the
+1912 *Architect and Engineer* award for the Sharon building places it "on the
+northeast corner of New Montgomery and Jessie streets" with a $375,000 price and
+the architect named, and no street number anywhere. Second, the numbered
+addresses that *are* dense in the text are mostly advertisers' and architects'
+own offices — in one *Building & Engineering News* volume the 5,427 numbered
+street tokens are topped by 354 Hobart (125 times) and 251 Kearny (102), which
+are firms' addresses, not building facts. The usable material is in the long
+tail. Expect a low resolve rate and a resolver-heavy pass, and note that a
+sampled volume ran heavily to Oakland and the wider Bay Area, so a filtering
+step for San Francisco comes before anything else.
 
 **Bay Area Reporter archive.** 1,529 issues on the Internet Archive under
 collection `bayareareporter`, contributed by the GLBT Historical Society,
@@ -182,7 +241,10 @@ of it off-limits under the root AGENTS.md. What survives is the business entry
 sitting in the same alphabetical run: a contractors-and-builders firm at 667
 Market, a laboratory director's office at 803 Sutter. An extractor here must
 filter on the `r.` marker and keep only firms, which is a narrow slice of a
-13 MB text file. OCR is also poor — words are space-broken mid-token.
+13 MB text file. OCR is also poor — words are space-broken mid-token. The lead
+said "pre-1930"; the successor Polk's Crocker-Langley volumes are on the
+Internet Archive too (`polkscrockerlang194849dire` and siblings), so the run
+extends at least to 1949 if the business slice proves worth mining.
 
 **SF Municipal Reports.** 68 volumes on the Internet Archive covering FY1859–60
 through FY1913–14, plus a separate index volume to the appendices 1859–1901.
@@ -206,6 +268,39 @@ to everything in the collection, and the requested credit line is
 back to opensfhistory.org. That is the citation label a page would print. Facts
 in a caption are free regardless. **Sampled:** a caption dating a single-family
 residence at 1354 32nd Avenue, between Irving and Judah, to 1950.
+
+**SFMTA Photo Archive.** Muni photography from 1903 to 1978, of which the
+agency says over 95% is digitized, browsable on PhotoShelter. Copies up to 1,200
+pixels are free on request for non-commercial use; they are not to be sold or
+used in advertising, and there is no bulk download — every image is a request.
+That request gate, plus the likelihood that transit photography is captioned to
+the intersection rather than the street number, puts this well down the list.
+Worth a pass only once the cheaper sources are exhausted, or when a specific
+address needs a photograph and nothing else has one.
+
+**San Francisco block books, 1894–1909.** Twelve volumes on the Internet
+Archive (`handyblockbookof1894hick`, `sanfranciscobloc1901hick`,
+`merysblockbookof1909bloc`, the 1906 volumes and others), digitized with SFPL
+funding. **This is not a page source and should not be treated as one.** The
+volumes are map plates: block outlines with lot lines, lot dimensions and owner
+names lettered onto the drawing. The `_djvu.txt` is consequently noise — a
+sampled page of the 1901 volume yields scattered surnames and fragments like
+`S7-` where dimensions should be. Owner names are people and barred regardless.
+What survives is genuinely useful but narrow: **pre-1906 lot geometry**, which
+the resolver already uses as a corroborating check (see the cautions in
+[sources/loc-newspapers.md](sources/loc-newspapers.md) on matching 25x125 against
+a parcel's `lot_area`). Register it, if at all, as a resolver aid.
+
+**Pacific Coast Architecture Database.** Per-building records of real quality —
+the Crocker Building entry gives 600 Market Street, constructed 1890–1891,
+demolished 1968, ten storeys, the architect, the building contractors, latitude
+and longitude, and a narrative with its sources named. **And that is the
+problem.** A plain web search for "600 Market Street San Francisco Crocker
+Building history" returns the PCAD record as the **first result**. By the
+standard set at the top of [AGENTS.md](AGENTS.md), a source already ranking for
+address queries adds little to why this site exists. Keep it where `local-news`
+sits — a cross-check for a fact found elsewhere, and a way to catch an
+architect attribution that contradicts ours. Not a mining target.
 
 **Sanborn fire insurance maps.** 40 San Francisco volumes at the Library of
 Congress, 1886 onward, explicitly public domain and free to reuse. **But the
