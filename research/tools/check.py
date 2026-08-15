@@ -17,6 +17,8 @@ rather than restating it, so the two can't drift. It implements the subset of
 JSON Schema the schema file actually uses: type, required, properties,
 additionalProperties, items, enum, pattern, and local $ref.
 """
+from __future__ import annotations
+
 import argparse
 import json
 import re
