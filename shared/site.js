@@ -104,8 +104,9 @@ const cssVar = (name) =>
      <figure class="media media-map"> …placeholder or fallback… </figure>
    </ktp-map>
 
-   The locator map: where this building sits, as one flat image from the
-   Mapbox Static Images API. Same shape and same law as <ktp-streetview> —
+   The locator band: where this building sits, as one flat image from the
+   Mapbox Static Images API, run across the top of the page above the address.
+   Same shape and same law as <ktp-streetview> —
    the light-DOM .media-empty placeholder is the whole content of the block
    with no JS, and the image only replaces it once `mapbox_token` is set in
    site-config.json. Nothing a reader needs to know lives in the picture: the
@@ -120,7 +121,15 @@ const cssVar = (name) =>
 
    The basemap follows the reader's color scheme (the same two styles the
    homepage map uses) and re-renders if they switch mid-visit. */
-const MAP_ZOOM = 16; // a block or so around the parcel — context, not a plan
+/* The band is ~1000 CSS px wide on a full-width page, so the image is asked
+   for at 1200x400 and @2x: `@2x` both doubles the pixels and draws labels and
+   roads at twice the size, so the picture is sharp on a hidpi screen and
+   correctly proportioned on an ordinary one. Zoom 17 rather than 16 because a
+   band this wide at 16 covers most of a mile — the parcel's own block has to
+   be the thing you see. On phones the same image is cropped to 16:9 by
+   `object-fit`, so one request serves both layouts. */
+const MAP_ZOOM = 17;
+const MAP_SIZE = "1200x400@2x";
 
 customElements.define(
   "ktp-map",
@@ -143,16 +152,17 @@ customElements.define(
         (dark.matches ? "dark-v11" : "light-v11") +
         "/static/pin-s+" +
         cssVar("--warm").replace("#", "") +
-        `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/640x360@2x` +
+        `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/${MAP_SIZE}` +
         "?access_token=" +
         encodeURIComponent(token);
 
       const img = document.createElement("img");
       img.src = src();
       // No width/height attributes: the .media-map frame sets the box in CSS,
-      // and a height attribute would win over that aspect ratio.
+      // and a height attribute would win over that aspect ratio. Not lazy
+      // either — the band is the first thing on the page, so it is never the
+      // image a reader has to scroll to.
       img.alt = "Map showing the location of " + label;
-      img.loading = "lazy";
       img.decoding = "async";
       empty.replaceWith(img);
 

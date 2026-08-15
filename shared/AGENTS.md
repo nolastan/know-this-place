@@ -98,15 +98,17 @@ Not a template — reorder, drop, or repeat blocks to fit the building. A
 history-rich place might open with prose and photos; a plain one leans on the
 stat band and timeline. A workable default spine:
 
-1. `.hero` — `<h1>`, `.sub` locality line, `.tags`, and a `.media` slot.
-2. `.lead` — one or two sentences, and only for what no block below can
+1. `<ktp-map>` — the locator band, above everything else (see "Media").
+2. `.hero` — `<h1>`, `.sub` locality line, `.tags`, and the facade card that
+   rides over the band.
+3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Drop it entirely** when the blocks already say everything.
-3. `.stats` — the numbers every building has, as tiles (not sentences).
-4. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
+4. `.stats` — the numbers every building has, as tiles (not sentences).
+5. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
    The `.vtl` follows its `.section-head` directly: **no `.prose` between
    them.**
-5. Prose sections (`.section-head` + `.prose`) only where there's a real story.
-6. `.unknowns` — what's missing, feeding the feedback link.
+6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
+7. `.unknowns` — what's missing, feeding the feedback link.
 
 ---
 
@@ -116,7 +118,9 @@ Copy these patterns; fill in real values. All classes are defined in
 `site.css`.
 
 ### Hero — `.hero`
-Two columns (identity | media), stacks on mobile.
+Two columns (identity | facade card), stacks on mobile. It follows the locator
+band, and its media slot holds the `.media-lift` card that overlaps it — see
+"Media".
 ```html
 <section class="hero">
   <div>
@@ -244,34 +248,45 @@ Secondary facts that don't merit a stat tile: icon · key · right-aligned value
 </dl>
 ```
 
-### Media — the hero's `.media-stack`
-The hero's media slot is a **column of frames**: the facade above, the locator
-map below. Both are `<ktp-*>` wrappers around a `.media` placeholder — always
-author the **placeholder**, never a raw `<img>` or iframe pointing at Google
-or Mapbox. Each enhancement swaps its own placeholder for an image once the
-matching key is in `site-config.json` (`maps_embed_key` for Street View,
-`mapbox_token` for the map), and leaves it standing when there's no key and
-when there's no JS. So imagery turns on across the whole site the day a key is
-set — with no page regeneration. Both wrappers take the same `location` and
-`label`, and `location` must equal `coordinates` in `data.json`.
+### Media — the locator band and the facade card
+An address page **opens with the map**: `<ktp-map>` is the first child of
+`<main>`, a band running the full width of the page frame *above* the `<h1>`.
+The facade then sits in the hero's media slot and **rides over the band's
+lower edge** — `.media-lift` pulls it up and gives it a shadow, so the card
+reads as pinned to the map behind it. Under 720px neither happens: the band
+crops to an ordinary frame and everything stacks.
+
+Both are `<ktp-*>` wrappers around a `.media` placeholder — always author the
+**placeholder**, never a raw `<img>` or iframe pointing at Google or Mapbox.
+Each enhancement swaps its own placeholder for an image once the matching key
+is in `site-config.json` (`maps_embed_key` for Street View, `mapbox_token` for
+the map), and leaves it standing when there's no key and when there's no JS.
+So imagery turns on across the whole site the day a key is set — with no page
+regeneration. Both wrappers take the same `location` and `label`, and
+`location` must equal `coordinates` in `data.json`.
 ```html
-<div class="media-stack">
-  <ktp-streetview location="LAT,LNG" label="ADDRESS">
-    <figure class="media">
-      <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
-        <small>Street View appears here once a Google Maps embed key is configured.</small></div>
-    </figure>
-  </ktp-streetview>
+<main>
   <ktp-map location="LAT,LNG" label="ADDRESS">
     <figure class="media media-map">
       <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
         <small>A locator map appears here once a Mapbox token is configured.</small></div>
     </figure>
   </ktp-map>
-</div>
+
+  <section class="hero">
+    <div> … h1, .sub, .tags … </div>
+    <ktp-streetview location="LAT,LNG" label="ADDRESS">
+      <figure class="media media-lift">
+        <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
+          <small>Street View appears here once a Google Maps embed key is configured.</small></div>
+      </figure>
+    </ktp-streetview>
+  </section>
 ```
-`.media-map` is the wider 16:9 frame the map wears — a facade is 4:3, and two
-4:3 frames stacked out-run the identity column beside them. The map is a
+`.media-map` is the 3:1 band frame; `.media-lift` is the 4:3 card that overlaps
+it. Both also zero the browser's `<figure>` margin, which is why they reach
+the edges of their slots — a plain `.media` figure (a committed photo) stays
+inset, and that is the existing behaviour, left alone. The map is a
 **locator**, not a data layer: it carries no parcel outline, no label, and no
 fact that isn't already on the page, so nothing is lost when it doesn't load.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
@@ -384,11 +399,13 @@ Available elements:
   off `maps_embed_key` in `site-config.json`. Fallback = the placeholder you
   wrote.
 - **`<ktp-map location="LAT,LNG" label="ADDRESS">`** — the same contract for
-  the locator map, keyed off `mapbox_token`: it swaps the placeholder for one
+  the locator band, keyed off `mapbox_token`: it swaps the placeholder for one
   flat image from the Mapbox Static Images API, in the basemap that matches
   the reader's color scheme. A static image, not Mapbox GL JS — an address
   page loads no third-party script, and the map is scenery, not a way to read
-  the page. Fallback = the placeholder you wrote.
+  the page. The image is asked for once at band proportions and cropped by CSS
+  on phones, so the layout change costs no extra request. Fallback = the
+  placeholder you wrote.
 - **`<ktp-figure>`** — wraps a chart. Any descendant carrying a `data-tip="…"`
   becomes keyboard-focusable and shows that text as a tooltip on hover/focus.
   Use it for marks whose value isn't already printed beside them (stacked-bar
