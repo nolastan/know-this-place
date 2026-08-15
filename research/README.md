@@ -75,11 +75,3 @@ python3 research/tools/check.py --stats  # yield so far, by source and stage
 Site-side commands a publisher may need (`seed_pages.py seed-list`,
 `build_sitemap.py`, `build_map_index.py`, `validate.py`) are documented in the
 root [README.md](../README.md) and [AGENTS.md](../AGENTS.md).
-
-## Setup checklist
-
-- [ ] Create the issue labels this module files against: `research`,
-      `research:lead`, `research:acquire`, `research:extract`,
-      `research:resolve`, `research:publish`, `research:audit`. GitHub silently
-      drops labels an issue references but that don't exist in the repo.
-- [ ] Nothing else — the module is files and stdlib Python, by design.
