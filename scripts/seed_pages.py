@@ -17,7 +17,7 @@ Usage:
   python3 scripts/seed_pages.py plan  --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py seed  --neighborhood "Castro/Upper Market" \
                                       --city san-francisco --area castro
-  python3 scripts/seed_pages.py seed-list --manifest data/popos-art.json
+  python3 scripts/seed_pages.py seed-list --manifest research/manifests/popos-public-art.json
   python3 scripts/seed_pages.py names --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py hubs  --city san-francisco --area castro
 """

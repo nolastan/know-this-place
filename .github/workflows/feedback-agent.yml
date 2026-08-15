@@ -57,10 +57,17 @@ jobs:
             2. The "Page" field identifies the page. If it's missing or the
                directory doesn't exist, comment on the issue asking the
                reporter to include the page URL, then stop.
-            3. Evaluate the feedback. Verify claims against the sources in
-               DATA-SOURCES.md wherever possible. Unverifiable-but-plausible
+            3. Evaluate the feedback. Verify claims against the city APIs in
+               DATA-SOURCES.md wherever possible. Archives, books, newspapers
+               and newsletters are cataloged in research/SOURCES.md, with a
+               dossier per source under research/sources/ — use those for the
+               citation label and the cautions. Unverifiable-but-plausible
                local knowledge may be added as a clearly labeled community
                note per AGENTS.md.
+               If the feedback points at a source we don't hold yet, don't
+               start a research project inside this job: add it to the leads
+               table in research/SOURCES.md and file a `research`/
+               `research:lead` issue, per research/AGENTS.md.
             4. Apply the change to data.json (facts, narrative prose) and
                assets, then edit index.html by hand to match, per
                shared/AGENTS.md. Every page on this site is hand-edited once it

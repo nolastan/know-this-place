@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowthis.place/research/schema/finding.schema.json",
+  "title": "Findings file",
+  "description": "One batch of address-level facts mined from one source. Written by an extractor, completed by a resolver, consumed by a publisher. See research/findings/README.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "batch", "stage", "coverage", "findings"],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Registered id from research/SOURCES.md. Also the id a page cites."
+    },
+    "batch": {
+      "type": "string",
+      "description": "The unit read: a year of a paper, a volume, one report, a block range."
+    },
+    "stage": {
+      "enum": ["extracted", "resolved", "published"],
+      "description": "Furthest stage any entry in this file has reached."
+    },
+    "read_on": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date the extraction pass ran."
+    },
+    "notes": { "type": "string" },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit", "examined"],
+      "description": "What was read, counted. A zero-finding pass still fills this in.",
+      "properties": {
+        "unit": { "type": "string", "description": "pages, issues, rows, sections, volumes" },
+        "examined": { "type": "integer", "description": "How many units were read in this batch." },
+        "mentions": { "type": "integer", "description": "Candidate numbered-address mentions seen." },
+        "remaining": { "type": "string", "description": "What this batch did NOT cover, named precisely enough to resume." },
+        "note": { "type": "string" }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/finding" }
+    }
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "date", "kind", "address_as_written", "description", "citation", "resolution"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Unique within the file. Convention: <batch>-<nnnn>."
+        },
+        "date": {
+          "type": "string",
+          "description": "ISO date where known; a bare year or a phrase where not. Never invented."
+        },
+        "date_precision": { "enum": ["day", "month", "year", "circa", "unknown"] },
+        "kind": {
+          "type": "string",
+          "description": "What sort of fact: building contract, fire, advertisement, sale, site history, alteration, occupancy, designation, photograph."
+        },
+        "address_as_written": {
+          "type": "string",
+          "description": "The source's own words. Never corrected, never normalized."
+        },
+        "street_number": { "type": "string" },
+        "street_name": { "type": "string", "description": "UPPERCASE, as EAS holds it." },
+        "street_type": { "type": "string", "description": "EAS abbreviation: ST, AVE, BLVD." },
+        "description": {
+          "type": "string",
+          "description": "The fact, re-expressed in our own words. Never the source's sentence."
+        },
+        "extra": {
+          "type": "object",
+          "description": "What the record itself stated: cost, lot dimensions, cross streets, architect, contractor, form, rooms. Free-form."
+        },
+        "citation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["label"],
+          "properties": {
+            "label": { "type": "string", "description": "What a page's Sources footer prints." },
+            "url": { "type": "string", "description": "Stable public URL for the exact item, where one exists." },
+            "corpus_path": { "type": "string", "description": "Path under research/corpora/ the text came from." },
+            "locator": { "type": "string", "description": "Page, section, issue or seq — precise enough to re-find." }
+          }
+        },
+        "raw": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Evidence for the resolver and auditor. Never reaches a page.",
+          "properties": {
+            "text": { "type": "string", "description": "Shortest span that justifies the extraction." },
+            "ocr_uncertain": { "type": "boolean" }
+          }
+        },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "conflict": {
+          "type": "string",
+          "description": "Set when this contradicts the assessor or another source. Recorded, never adjudicated."
+        },
+        "resolution": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": { "enum": ["unresolved", "resolved", "rejected"] },
+            "apn": { "type": "string" },
+            "path": { "type": "string", "description": "Site path the fact belongs on, e.g. /san-francisco/mission/alabama-street/1311/" },
+            "eas_address": { "type": "string" },
+            "method": { "type": "string", "description": "What was checked. The audit trail: cross streets, lot area, EAS join." },
+            "checked_on": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+            "note": { "type": "string", "description": "Required in spirit for unresolved/rejected: why." }
+          }
+        },
+        "publish": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": { "enum": ["pending", "published", "declined"] },
+            "pr": { "type": "string" },
+            "note": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -79,7 +79,10 @@ sources, not this file.
 
 Good deep-context sources for this neighborhood: OpenSFHistory (Western
 Neighborhoods Project), the GLBT Historical Society, Bay Area Reporter
-archives, Hoodline's Castro coverage.
+archives, Hoodline's Castro coverage. Before mining any of them, check
+[research/SOURCES.md](../../research/SOURCES.md) — some are already registered
+with coverage notes, and the rest belong in its leads table rather than in a
+one-off pass.
 
 ## Street slugs
 
