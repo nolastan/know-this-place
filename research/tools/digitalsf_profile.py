@@ -108,17 +108,24 @@ def main(argv):
         return
 
     if "--candidates" in argv:
-        print("id\tyear\tfuzzy\taddress\trights\tperson\ttitle")
-        n = 0
+        print("id\tyear\tfuzzy\taddress\trights\tperson\tsuspect\ttitle")
+        n = suspect = 0
         for r in rows:
             addr = address_of(r)
             y = YEAR.search(r["date"] or "")
             if not (addr and y):
                 continue
             n += 1
+            # "Drive" is both a street suffix and a fundraising campaign, so
+            # "1944 War Fund Drive" parses as an address. Those read as a year
+            # because they are one — flag rather than drop, since "1977 Bush
+            # Street" trips the same test and is a real address.
+            flag = "check-not-an-address" if addr.split()[0] == y.group(1) else ""
+            suspect += bool(flag)
             print(f"{r['id']}\t{y.group(1)}\t{'fuzzy' if r['fuzzy'] else 'firm'}\t{addr}\t"
-                  f"{r['rights']}\t{'named-person' if r['person'] else ''}\t{r['title'][:110]}")
-        print(f"\n# {n} candidates of {len(rows)} records", file=sys.stderr)
+                  f"{r['rights']}\t{'named-person' if r['person'] else ''}\t{flag}\t{r['title'][:110]}")
+        print(f"\n# {n} candidates of {len(rows)} records; {suspect} flagged for a human look",
+              file=sys.stderr)
         return
 
     dated = [r for r in rows if YEAR.search(r["date"] or "")]
