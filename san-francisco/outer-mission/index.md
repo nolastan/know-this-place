@@ -5,3 +5,5 @@ A residential district south of the Mission proper, built up in the first decade
 ## Streets documented so far
 
 - [Harrington Street](harrington-street/) — A 1908 house recorded as Jerry Garcia's home with his grandparents after 1947.
+- [San Jose Avenue](san-jose-avenue/) — The San Francisco and San Mateo Railway's 1901 Geneva car barn, a San Francisco landmark since 1985.
+- [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.

@@ -1,0 +1,130 @@
+{
+  "address": "454 Faxon Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/faxon-avenue/454/",
+  "apn": "6938036",
+  "block": "6938",
+  "lot": "036",
+  "eas_baseid": "409061",
+  "coordinates": {
+    "lat": 37.722846,
+    "lng": -122.459912
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2815,
+    "building_area_sqft": 1375,
+    "lot_depth_ft": 12.6,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0454 FAXON               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 156171,
+    "assessed_improvement_value": 146410
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304286754",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-28",
+      "status_date": "2023-09-01",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "roof repair, replace tiles. partial tiles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305129",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-31",
+      "status_date": "1994-06-03",
+      "estimated_cost": 650,
+      "description": "add 1hr fire resist wall to separate (e) playrm/laundry/stor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304182",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-12",
+      "status_date": "1993-07-12",
+      "estimated_cost": 3200,
+      "description": "termit repair and stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-01-15",
+      "status_date": "1987-05-12",
+      "estimated_cost": 600,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAXON&street_type=AVE&address_number=454",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6938036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6938&lot=036",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6938036",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "omi-context-statement",
+      "name": "Richard Brandi and Woody LaBounty (Western Neighborhoods Project), San Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods, 1862-1959: A Historical Context Statement, prepared for the San Francisco Historic Preservation Fund Committee, adopted January 2010",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "OMI Neighborhoods Historical Context Statement, adopted 2010",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "hook": "A 1930 building in the style of a Sunset District row house, with a more prominent garage presence.",
+  "historical_record": [
+    {
+      "date": "1930",
+      "kind": "site history",
+      "description": "Recorded in the OMI Historic Context Statement (2010) as a 1930 building in the style of a Sunset District row house, with a more prominent garage presence than earlier examples.",
+      "source": "omi-context-statement"
+    }
+  ]
+}

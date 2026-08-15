@@ -1,0 +1,124 @@
+{
+  "address": "744 Victoria Street, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/victoria-street/744/",
+  "apn": "6922017",
+  "block": "6922",
+  "lot": "017",
+  "eas_baseid": "408653",
+  "coordinates": {
+    "lat": 37.724045,
+    "lng": -122.463948
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 5998,
+    "building_area_sqft": 1975,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0744 VICTORIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 44791,
+    "assessed_improvement_value": 36705
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202104299523",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-29",
+      "status_date": "2021-04-29",
+      "estimated_cost": 18400,
+      "revised_cost": 18400,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708066",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-05",
+      "status_date": "1997-11-05",
+      "estimated_cost": 7000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VICTORIA&street_type=ST&address_number=744",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6922017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6922&lot=017",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6922017",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.463948230473%2037.72404467585979)%27)",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "omi-context-statement",
+      "name": "Richard Brandi and Woody LaBounty (Western Neighborhoods Project), San Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods, 1862-1959: A Historical Context Statement, prepared for the San Francisco Historic Preservation Fund Committee, adopted January 2010",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "OMI Neighborhoods Historical Context Statement, adopted 2010",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "hook": "Built 1912, one of three 1912 houses on this block of Victoria Street.",
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "site history",
+      "description": "Built 1912, per the OMI Historic Context Statement (2010), which records three houses on this block of Victoria Street (710, 730 and 744) dating from 1912 and two (720 and 740) from 1927.",
+      "source": "omi-context-statement"
+    }
+  ]
+}
