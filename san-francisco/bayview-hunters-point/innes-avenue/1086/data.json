@@ -1,0 +1,122 @@
+{
+  "address": "1086 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/1086/",
+  "apn": "4647A009",
+  "block": "4647A",
+  "lot": "009",
+  "eas_baseid": "371715",
+  "coordinates": {
+    "lat": 37.734178,
+    "lng": -122.379065
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 860,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1086 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 331835,
+    "assessed_improvement_value": 221220,
+    "last_sale_date": "2004-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200908255490",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2009-08-25",
+      "status_date": "2026-01-27",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remove & replace foundation all around @ ground floor. (n) storage/laundry rm. behind garage. structural strenghten @ ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303079145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-07",
+      "status_date": "2003-12-04",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "renew expired building appl#200105098791",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105098791",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-09",
+      "status_date": "2001-11-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "comply with n.o.v./repairs under house/repairs to deck/kchn & bth remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "building": {
+    "builder": "George M. Moore",
+    "completed": 1939
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "note": "A one-story-over-garage hipped-roof dwelling set well back from the street, which the survey reads as part of a row with 1080 and 1092 Innes Avenue. The survey's record for 1064 Innes Avenue attributes five dwellings on the north side of the 1000 block — 1064, 1068, 1080, 1086 and 1092 — to the speculative builder George M. Moore, who bought the lots in March 1938 shortly after the block was graded from Hawes Street to Ingalls Street. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=1086",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4647A009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4647A&lot=009",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4647A009",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

@@ -900,6 +900,16 @@ a street number, which is the whole constraint:
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/e21915779d1b8ac21bb5023f7b6d453afaec3018897014eb32cd699ef9af3fc3/content`
     while the `SharedLinks.aspx` form is what a page cites. See "The Glen Park
     evaluation" below.
+  - Kelley & VerPlanck Historical Resources Consulting (Tim Kelley and
+    Christopher VerPlanck), *India Basin Survey, San Francisco, California —
+    Final Report*, prepared for the Bayview Historical Society, dated May 1,
+    2008, adopted 2008 (120 pp.), source id `india-basin-context-statement`.
+    Listed on the SF Planning page as "India Basin Survey and Context Statement
+    (Adopted 2008)". It is on the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf`.
+    Same consultants as the Bayview-Hunters Point Area B statement two years
+    later, and the two overlap on the three India Basin buildings that already
+    had pages here. See "The India Basin survey" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1358,6 +1368,97 @@ description. Where it carries address-level facts:
     P. Hobart, Bliss & Fairweather, J. L. McLaughlin, Leo Epp, DeLuca and Sons,
     Ernest Born, Corlett & Spackman, Douglas Baylis, William G. Merchant, and
     the dairyman William Tietz who built his own house).
+**The India Basin survey is the one document in this set whose own DPR 523
+forms are in it**, and they are most of its value. It is 120 pages: 51 of
+narrative, bibliography and recommendations, and the rest an appendix holding
+38 Primary Records (523A), 13 Building, Structure and Object Records (523B) and
+one District Record (523D) for a proposed boat-yard district. Where its
+address-level facts are:
+- **The 38 Primary Records** cover every building in the survey area built in
+  or before 1962 — an APN, a street address, a construction date from the
+  Department of Building Inspection, a resource-attribute code and a paragraph
+  of physical description apiece. A Primary Record carries no status code and
+  no eligibility finding, so most of these become a survey panel with a note
+  and nothing else.
+- **The 13 Building, Structure and Object Records** are the evaluated ones:
+  a National Register status code (3S, 3CS, 6L, 6Y, 6Z), an architectural
+  style, a builder, a construction history and a written eligibility finding.
+  Four properties are found eligible — the Albion Brewery (881 Innes, National
+  Register), and 900 Innes, 911 Innes, 967 Innes and 702 Earl Street for the
+  California Register — and the rest are found ineligible, two of them with a
+  note that they nevertheless warrant special consideration in local planning.
+- **The District Record** proposes an India Basin Boat Yards district of eight
+  parcels centred on Hudson Avenue and Griffith Street, eligible for the
+  California Register under Criteria 1 and 3, period of significance 1893–1935.
+  It describes each parcel's docks, ways, shops and sheds by APN, and it is the
+  only place the report dates the boat-yard buildings.
+- **The narrative chapters** name about a dozen more addresses — the school,
+  the co-operative store, Anderson's own house and shop, the war-worker
+  "junior fives" — of which most are numbers the city no longer carries.
+- **Cautions:**
+  - **The locational-data field (P2e) on a Primary Record is often the
+    previous form's APN, copied down a run of adjacent properties.** 714, 718
+    and 724 Innes all print Lot 003B; 939, 943 and 947 all print Lot 016B;
+    1064 and 1068 both print Lot 007A. The form's own identifier field (P1) is
+    the correct one in every case checked, and it is what the assessor's
+    `property_location` agrees with. Take P1, not P2e.
+  - **Two forms print the wrong block.** 951 and 955 Innes are given as Block
+    3653; both are Block 4653.
+  - **Its own counts do not match the appendix.** The methodology chapter says
+    it prepared 523B forms "for twelve individual properties built before
+    1939"; the appendix holds thirteen, all of them pre-1939. The report also
+    gives the Hunters Point Restaurant a 1976 summary rating of 1 at 850 Innes
+    while filing the restaurant's Primary Record under 840 Innes.
+  - **EAS is the stale side here, not the survey.** 863 and 869 Innes Avenue
+    resolve in EAS to Lots 014B and 014A, parcels the assessor has retired and
+    the parcel dataset marks inactive; the survey's Lots 022 and 021 are the
+    live ones and carry those addresses on the current roll. 714 Innes has an
+    EAS row with no parcel number at all, and the survey's Lot 003 is what the
+    roll puts the address on.
+  - **It contradicts itself on the Hunters Point Restaurant, and on two
+    dates.** The restaurant is 840 Innes Avenue in the property-type chapter
+    and on its own form, and 850 Innes Avenue — Pop Anderson's house — in the
+    1976-survey list and the condition chapter. 869 Innes is 2003 on its form
+    and a 1938 "junior five" in the narrative; 967 Innes is 1917 on its form
+    and in its building record and 1920 in the narrative; 963 Innes is the
+    Wilmer and Hilda Wilson Residence on its form and "the Jorgensen cottage"
+    in the narrative. Two of the building records date a house a year before
+    its own Primary Record does (935 Innes: June 1934 against 1935; 993 Innes:
+    November 1937 against 1938).
+  - **Its addresses for the church do not agree either.** Our Lady of Lourdes
+    at 410 Hawes Street is also identified as 955 Innes Avenue, which is a 1956
+    dwelling on a different parcel across the avenue.
+  - **The eight-parcel district it proposed is not the district the city now
+    carries.** Planning maps the India Basin Scow Schooner Boatyard Vernacular
+    Cultural Landscape over these parcels, California Register-eligible with a
+    period of significance of 1875–1936, against the survey's 1893–1935. Both
+    are on the pages.
+  - **A large block of the waterfront has left the secured roll.** 702 Earl
+    Street and 840 Innes Avenue, and four of the eight boat-yard parcels
+    (4630/006, 4645/010, 010A and 011), are active parcels with EAS addresses
+    whose APNs last appear on the 2023 roll, so the seeder makes no page for
+    them — including the Heerdt boat yard at 702 Earl, one of the four
+    properties the survey found individually eligible.
+  - **The Building, Structure and Object Records are chains of title.** Each
+    one traces owners and tenants by name through deeds, city directories and
+    the census, often to the present owner, and the Primary Records print the
+    current owner's name and address outright. All of that is left out under
+    the privacy rules. The **builders** are kept (William J. Heerdt, Leo R.
+    Miller, Konrad W. Richter, Arthur Simpson, Wilmer W. and Hilda A. Wilson,
+    Ingeborg Jorgenson, Paul Runge, George M. Moore, James F. Gibbs and
+    Katherine Stauffer), as are the shipwrights the repo already names —
+    Johnson J. Dircks, William I. Stone, Henry P. "Pop" Anderson, Charles J.
+    Jorgenson, Fred Siemer — the architects of the brewery's 1938
+    reconstruction (Bakewell & Weihe), and the **firms** (Anderson &
+    Cristofani, Allemand Brothers, Siemer & Bruer & Co., Wm. J. Heerdt Boat
+    Building, Surfside Liquors, Nueva Castilla Iron Works, the Mountain Springs
+    Water Company, R. F. J. Meiswinkel Co., Skyscraper Crane and Rigging Co.,
+    Market Fellowship, the Hunters Point Co-operative Society).
+  - Street renamings are given throughout and are worth keeping: Innes Avenue
+    was 9th Avenue South and, for a decade from about 1880, Corea Avenue;
+    Hudson was 8th Avenue South and Banama; Galvez was Trinidad; Griffith was
+    'G' Street, Hawes 'H' Street, Lane 'L' Street; Evans was 5th Avenue South;
+    Ingalls Street became Middle Point Road. The present names date from 1910.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1640,6 +1741,54 @@ description. Where it carries address-level facts:
   the five buildings it found California Register-eligible and for 24 more — is
   a separate document and is untouched, as are the Market & Octavia, Japantown
   and other adopted statements on the same SF Planning page.)
+- **Verified:** 2026-08-14 (India Basin: read all 120 pages, which is the whole
+  archived PDF — the seven chronological context chapters, the property-type
+  and recommendations chapters, the bibliography, Appendix A (three scanned
+  Sanborn sheets of 1899–1900, 1913–15 and 1948–50, pp. 56–58, images with no
+  text) and Appendix B, which holds 38 DPR 523A Primary Records, 13 523B
+  Building, Structure and Object Records and one nine-page 523D District
+  Record. **50 distinct numbered San Francisco addresses are named**, counting a
+  printed range by the number the survey files it under: 39 on Innes Avenue, 3
+  on Middle Point Road, 2 each on Earl and Hawes streets, and one each on
+  Hunters Point Boulevard, Galvez Avenue, Jerrold Avenue and Revere Avenue. The
+  ten owner and consultant addresses the Primary Records print — including 4000
+  Third Street and 671 Illinois Street — are withheld under the privacy rules
+  and are not counted. **41 of the 50 resolve to a parcel with an EAS address
+  and a 2025 assessor roll row.** 43 pages now cite the document: **40 new and 3
+  edited**, all under `san-francisco/bayview-hunters-point/` — innes-avenue
+  (32), hudson-avenue (3), middle-point-road (3), hawes-street (2), and one each
+  on earl-street, griffith-street and hunters-point-boulevard, six of those
+  seven being new street directories. The three edited pages — 881, 900 and 911
+  Innes Avenue, from the Area B pass — carry hand-authored HTML and had the
+  survey panel, the new spec rows and the source line inserted by hand rather
+  than regenerated. Of the eight parcels in the boat-yard district the survey
+  proposed, four are documented (4629A/010 as 900 Hudson Avenue, 4630/002 as
+  890 Hudson, 4646/001 as 901 Hudson, and 4646/002 as 404 Griffith Street, the
+  parcel the district record addresses as 900A Innes Avenue). Not documented,
+  and why: **six parcels are active, addressed and off the current roll** —
+  their APNs last appear on the 2023 roll, so the seeder makes no page — namely
+  702 Earl Street (the Heerdt boat yard of 1935, one of the four properties the
+  survey found individually eligible), 840 Innes Avenue (the Hunters Point
+  Restaurant), and the four remaining district parcels 4630/006, 4645/010,
+  4645/010A and 4645/011, which hold the Allemand Brothers yard and its office
+  of about 1930. **Five are named at a number EAS has never had**: 850 Innes
+  Avenue (Pop Anderson's own house, and the address the 1976-survey list and
+  the condition chapter give the Hunters Point Restaurant), 892 Innes (his
+  boat-building shop and planing mill on the 1913–15 Sanborn, gone), 901 Innes
+  (the Hunters Point School of 1911–1930, removed), 615 Galvez Avenue and 690
+  Jerrold Avenue (the Hunters Point Co-operative Society's store of 1939 and
+  the house it started in). Three more of the report's own numbers are
+  documented under the number the city carries: 5 Earl Street and 700 Innes
+  Avenue on the 740 Earl Street page, and 904½ Innes Avenue on 904 Innes, each
+  with the printed form recorded as `address_as_surveyed`; 700A Innes Avenue is
+  the report's own earlier number for 702 Earl Street, which has no page. 1109
+  Revere Avenue is a grocer's shop named only as an owner's business and is
+  withheld under the privacy rules. Two vacant lots the survey folds into the
+  930 Innes Avenue record, 934 and 936 Innes, are documented within that page
+  rather than as pages of their own, and so is 4646/005A, which carries no
+  street address. Coverage note: this document is read in full and nothing in it
+  is outstanding. The Market & Octavia, Japantown and other adopted statements
+  on the same SF Planning page are untouched.)
 
 ## Known gaps
 

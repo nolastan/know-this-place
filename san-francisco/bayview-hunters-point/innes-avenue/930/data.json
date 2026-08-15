@@ -1,0 +1,96 @@
+{
+  "address": "930 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/930/",
+  "apn": "4646005",
+  "block": "4646",
+  "lot": "005",
+  "eas_baseid": "371699",
+  "coordinates": {
+    "lat": 37.732528,
+    "lng": -122.376159
+  },
+  "parcel": {
+    "year_built": 1946,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 2400,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0930 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 24454,
+    "assessed_improvement_value": 14751,
+    "assessed_fixtures_value": 135800
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8300860",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-01-31",
+      "status_date": "1983-04-11",
+      "estimated_cost": 6000,
+      "description": "fire damage (repair)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A contractor's warehouse put up in two campaigns, 1946 and 1947.",
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "apn_as_surveyed": "Block 4646, Lots 005, 005A, 006 and 006A",
+    "note": "The survey records one property of four parcels, 125 by 100 feet, holding a warehouse built in two campaigns in 1946 and 1947 — two one-story wood-frame utilitarian buildings that read as one from the street, with two large vehicular openings filled by overhead steel doors. Its occupant when the survey was made was the drywall and plaster contractor R. F. J. Meiswinkel Co., Inc. Only Lot 005 carries a street address; Lots 006 and 006A are 934 and 936 Innes Avenue on the current roll and are vacant. The survey recorded every building in its area built in or before 1962 on a Primary Record, and evaluated the pre-1939 ones on Building, Structure and Object Records; a Primary Record carries no status code and no eligibility finding."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=930",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4646005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4646&lot=005",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4646005",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}

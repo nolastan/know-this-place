@@ -1,0 +1,117 @@
+{
+  "address": "963 Innes Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/innes-avenue/963/",
+  "apn": "4653013A",
+  "block": "4653",
+  "lot": "013A",
+  "eas_baseid": "371740",
+  "coordinates": {
+    "lat": 37.732466,
+    "lng": -122.37712
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 724,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(S)",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0963 INNES               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 193647,
+    "assessed_improvement_value": 129095,
+    "last_sale_date": "2000-04-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9617278",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-12",
+      "status_date": "1997-05-06",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "hook": "A 1914 cottage standing above a high retaining wall on the south side of Innes.",
+  "building": {
+    "builder": "Wilmer W. and Hilda A. Wilson",
+    "completed": 1914
+  },
+  "historic_survey": {
+    "survey": "India Basin Survey (adopted 2008)",
+    "source": "india-basin-context-statement",
+    "proposed_status_code": "6L",
+    "finding": "Appears ineligible for the California Register and the National Register — not closely connected to the families of the boat-building industry and not architecturally significant — but one of the oldest dwellings in the neighbourhood and warranting special consideration in local planning",
+    "style": "Vernacular",
+    "note": "Recorded as the Wilmer and Hilda Wilson Residence and built by day labour; the report's narrative instead calls it the Jorgensen cottage. A one-story hipped-roof cottage clad in California novelty siding, standing on a high scored concrete retaining wall with a stair up from the pavement. The survey names no architect."
+  },
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "alteration",
+      "description": "The front of the cottage was reconfigured.",
+      "source": "india-basin-context-statement"
+    },
+    {
+      "date": "1932",
+      "kind": "alteration",
+      "description": "A sun porch was added.",
+      "source": "india-basin-context-statement"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INNES&street_type=AVE&address_number=963",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4653013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4653&lot=013A",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4653013A",
+      "retrieved": "2026-08-14"
+    },
+    {
+      "id": "india-basin-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, India Basin Survey, San Francisco, California — Final Report, prepared for the Bayview Historical Society, May 1, 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "India Basin Survey and Context Statement, adopted 2008",
+      "retrieved": "2026-08-14"
+    }
+  ]
+}
