@@ -29,11 +29,25 @@ def save(st):
     STATE.write_text(json.dumps(st, indent=2, sort_keys=True))
 
 
-def fetch(params):
+def fetch(params, attempts=5):
+    """GET one OAI page, backing off on transient failure.
+
+    The endpoint returns a sporadic 503. Giving up on the first one truncates a
+    557-page harvest an hour in, so back off and retry rather than abort — while
+    still surrendering after `attempts` so a genuine outage doesn't hammer them.
+    """
     url = BASE + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return r.read().decode("utf-8", "replace")
+    for i in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:
+            if i == attempts - 1:
+                raise
+            wait = DELAY * 2 ** i
+            print(f"    {type(e).__name__}: {e} — retry {i + 1}/{attempts - 1} in {wait}s")
+            time.sleep(wait)
 
 
 def main(setspec, max_pages):
