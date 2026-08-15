@@ -922,6 +922,17 @@ a street number, which is the whole constraint:
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274/content`
     — confirmed from the `SharedLinks.aspx` page's own markup rather than
     assumed. See "The Inner Mission North statement" below.
+  - William Kostura, *The Inner Sunset: A Historic Context Statement*,
+    prepared for the San Francisco Office of Economic and Workforce
+    Development, the Historic Preservation Fund Committee, and Inner Sunset
+    Park Neighbors, adopted 2024 (238 pp.), source id
+    `inner-sunset-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park and Inner Mission North, so the `SharedLinks.aspx`
+    URL again returns an HTML shell; the REST content hash is once more the
+    page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. See "The Inner
+    Sunset statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1543,6 +1554,43 @@ Entertainment theme," a short list of 16th Street and Mission Street theaters.
     reason. The Thompson sisters who deeded Hidalgo Terrace to the city in
     1916 are named as subdividers of the land, not as residents or owners of
     any building documented here.
+**The Inner Sunset statement has no appendix inventory table at all — the
+narrative chapters are the whole of it, and they name addresses far more
+densely than any other statement read so far.** Its "Architecture and
+building types" chapter (pages 116–224 of 238) profiles builders and
+architects one at a time and illustrates each with several of their houses,
+so a single builder's profile can name a dozen addresses in a page or two.
+Many entries are figure captions in a consistent shorthand — "1049 Irving
+Street. Year built: 1894. Contractor: Henry Behrens." — which read directly
+into a `historical_record` entry; the surrounding prose fills in style,
+moves, and later use.
+- **Cautions:**
+  - **The rural-years chapters (pages 12–72) name very few street numbers.**
+    Addressing hadn't reached the Inner Sunset yet for most of the period they
+    cover; land is identified by cross streets and tract names, not numbers,
+    and the few numbered addresses that do appear (early roadhouses,
+    landowners' final home sites) mostly predate the buildings that stand on
+    those parcels today. This chapter was read in full; its low yield is the
+    expected shape, not a sign anything was skipped.
+  - **A number sometimes gets two different construction dates from the same
+    document.** 1225 Eighth Avenue is dated 1900 in the "surviving nineteenth
+    century houses" chapter and 1903 in builder Alphonso Harrington's own
+    profile. Both readings are recorded, per AGENTS.md.
+  - **A printed range can span two EAS parcels that are genuinely two
+    buildings, not a clerical range.** 320–326 Judah Street is one landmark
+    building (Article 10, "DOELGER BUILDING") split across parcels 1763020
+    and 1763021 with identical assessor figures; documented once, at 320,
+    the parcel that already had a page. 1352–1360 Irving Street is different:
+    the statement's own text ties both halves to one 1926 building by
+    architect Samuel Heiman flanking the since-demolished Irving Theater, and
+    EAS confirms two live parcels (1340/1342/1360 and 1352/1356, the latter
+    sharing frontage with 1288 Fifteenth Avenue) — both are documented, since
+    both are real, standing buildings.
+  - **Only architects, builders, contractors and named firms are recorded
+    here** — no first owners, residents or occupants, including where the
+    statement names one as a building's architect *and* its first occupant
+    (Charles J. Colley at 1329–1331 Ninth Avenue); only the architect role is
+    kept.
 - **Citation label:** name the consultant, the report and its adoption date,
   and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1901,6 +1949,46 @@ Entertainment theme," a short list of 16th Street and Mission Street theaters.
   Coverage note: this document is read in full and nothing in it is
   outstanding. The Market & Octavia, Japantown and other adopted statements on
   the same SF Planning page are untouched.)
+- **Verified:** 2026-08-15 (Inner Sunset: read all 238 pages, the whole file —
+  the general introduction, the rural years (1850s–1887), the suburban years
+  (1887–1902) including its "surviving nineteenth century houses" catalog and
+  1900 census analysis, the urban years (1903–1960s) including Windsor
+  Terrace, the N-Judah and its 1910 census analysis, the architecture and
+  building types chapter (builders and architects, residential styles,
+  commercial buildings, apartment buildings, churches, institutional and
+  civic buildings, and buildings of the 1950s–60s), and the bibliography.
+  **349 distinct numbered addresses are named**, counting a printed range by
+  its low number except where the range itself spans two live parcels (see
+  "Cautions" above). **329 resolve to a parcel with an EAS address record**,
+  to 314 distinct parcels. Of those, **302 resolve to a parcel with a 2025
+  assessor roll row that is not a condominium unit**, and 302 pages now cite
+  the document: **301 new pages and 1 edited** (320 Judah Street, already
+  documented from the 2022 Duboce Triangle statement), all under
+  `san-francisco/inner-sunset/`. Not documented, and why: **12 resolve to a
+  parcel not on the current roll or not a building** — 3 are condominium
+  units (1209 and 1211 Second Avenue, 5 Hugo Street), and 9 have no 2025
+  secured-roll row at all (504 Hugo Street; 1285 and 1307 Fifth Avenue; 1285
+  Fourth Avenue; 1314 Sixteenth Avenue; 1455 Irving Street, the Kleinclaus
+  service station the statement itself says was "demolished in 2018"; 1491
+  Eighteenth Avenue; 1738 Ninth Avenue; and 430 Judah Street). **20 named
+  addresses have no EAS record at all**: most are early Ninth Avenue and
+  Irving Street commercial buildings the statement itself says were
+  demolished, moved, or completely rebuilt (620, 811, 826 and 830 Irving
+  Street; 1261, 1301 Ninth Avenue; 1332 Irving Street; 1350 Tenth Avenue; 235
+  Kirkham Street; 1305 Seventh Avenue, an 1889 house the statement says was
+  moved to 627-633 Irving Street in 1913; and 1343 Seventh Avenue, another
+  19th-century house; 1328 Fourteenth Avenue), five are outside the Inner Sunset
+  altogether and cited only as an architect's or builder's other work (1151
+  Post Street; 21-23 Beulah Street; 225 Moncada Way; 1719 and 1739 Waller
+  Street), one is a pre-addressing street name the statement doesn't resolve
+  itself (545 K Street), and the statement never gives a street number for
+  either the second St. Anne of the Sunset church building or the surviving
+  1908–1909 Laguna Honda School building (now Independence High School) — both
+  stay unresolved rather than guessed. Coverage note: this document is read
+  in full and nothing in it is outstanding. The Inner Sunset Park Neighbors'
+  companion "Evaluative Framework" and the related Sunset District Residential
+  Builders statement, both linked from the same SF Planning project page, are
+  untouched.)
 
 ## Known gaps
 

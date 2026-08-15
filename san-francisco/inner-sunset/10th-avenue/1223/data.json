@@ -1,0 +1,183 @@
+{
+  "address": "1223 10th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/10th-avenue/1223/",
+  "apn": "1740004",
+  "block": "1740",
+  "lot": "004",
+  "eas_baseid": "315828",
+  "coordinates": {
+    "lat": 37.765288,
+    "lng": -122.467802
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2704,
+    "basement_area_sqft": 659,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1223 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1792072,
+    "assessed_improvement_value": 895974,
+    "last_sale_date": "2018-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201906274602",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-27",
+      "status_date": "2019-06-27",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair bathroom in kind on level 3. remove tile as needed to acess plumbing & repair to match (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902223603",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-22",
+      "status_date": "2020-09-10",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "foundation replace (e) brick at portions of garage & storage area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901241074",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-24",
+      "status_date": "2020-05-08",
+      "estimated_cost": 20000,
+      "revised_cost": 70000,
+      "description": "level 3: new bath, washer, dryer. grade level: new bedroom, 1/2 bath, washer, dryer.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808167586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-16",
+      "status_date": "2020-09-10",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "voluntary seismic, plywood at garage level, add anchor bolt to (e) foundation. grade problem to north foundation - cap foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007015849",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-01",
+      "status_date": "2010-09-24",
+      "estimated_cost": 9700,
+      "revised_cost": 9700,
+      "description": "remove 7 existing windows, install 5 double hung window, 1 custom arch top window, 1 fix sash window on front of bldg in existing openings, replacement windows are marvin clad window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607267662",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2006-07-26",
+      "status_date": "2018-02-15",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair front entry steps & paint. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507278717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-27",
+      "status_date": "2005-08-15",
+      "estimated_cost": 11600,
+      "revised_cost": 11600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613021",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-18",
+      "status_date": "1997-01-02",
+      "estimated_cost": 22000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 12,
+    "range": "1996–2020",
+    "shown_on_page": 8,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=1223",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1740004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1740&lot=004",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1740004",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1902",
+      "kind": "building contract",
+      "description": "Built 1902. Builder: Alphonso Harrington.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1902 building, built by Alphonso Harrington."
+}

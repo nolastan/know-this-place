@@ -1,0 +1,180 @@
+{
+  "address": "1231 Seventh Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/7th-avenue/1231/",
+  "apn": "1743006",
+  "block": "1743",
+  "lot": "006",
+  "eas_baseid": "315954",
+  "coordinates": {
+    "lat": 37.765291,
+    "lng": -122.464583
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3272,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "1233 1231 07TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 352674,
+    "last_sale_date": "1993-10-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509195739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-19",
+      "status_date": "2026-08-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa 202207198841 and 202312192790. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202312192790",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2023-12-19",
+      "status_date": "2026-08-05",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "rev to pa# 2022-0719-8841; install new foundation cap per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207198841",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2022-07-19",
+      "status_date": "2026-08-05",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "in kind fungus dry rot and beetle damaged wall framing repairs at left front side of bldg. no exterior changes. item 1a of termite reprot #213305",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101138372",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-01-13",
+      "status_date": "2011-01-13",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100545",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-01-16",
+      "status_date": "1991-07-22",
+      "estimated_cost": 2000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025081",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-12-07",
+      "status_date": "1991-03-20",
+      "estimated_cost": 5000,
+      "description": "repair interior stairs at re gyp play room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024250",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-26",
+      "status_date": "1991-03-20",
+      "estimated_cost": 5000,
+      "description": "remodel 2 kitchens/dry rot repair/remodel 1 bathroom/etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925450",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-12-28",
+      "status_date": "1990-07-09",
+      "estimated_cost": 5000,
+      "description": "ewo-s",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1989–2025",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=AVE&address_number=1231",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1743006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1743&lot=006",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1743006",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "inner-sunset-context-statement",
+      "name": "William Kostura, Inner Sunset Historic Context Statement, prepared for the San Francisco Office of Economic and Workforce Development, the Historic Preservation Fund Committee, and Inner Sunset Park Neighbors, adopted 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Inner Sunset Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-1913",
+      "kind": "building contract",
+      "description": "Built 1909-1913. Builder: Eugene B. Hallett. Style: closest to Arts and Crafts. Part of the row of eighteen at 1215-1283 Seventh Avenue.",
+      "source": "inner-sunset-context-statement"
+    }
+  ],
+  "hook": "A 1909-1913 closest to Arts and Crafts, built by Eugene B. Hallett."
+}
