@@ -90,7 +90,11 @@ sources, not this file.
   assessor's `use_definition` is what says which a parcel is, not its street.
 - Good deep-context sources: OpenSFHistory (Western Neighborhoods Project),
   Shaping San Francisco / FoundSF, Mission Local, and the SF Planning
-  historic-district survey documents.
+  historic-district survey documents. Mining any of them is research module
+  work — see [research/SOURCES.md](../../research/SOURCES.md). The Howard
+  Street → South Van Ness renumbering table, which every pre-1932 address on
+  that street depends on, is in
+  [research/sources/loc-newspapers.md](../../research/sources/loc-newspapers.md).
 
 ## Hub pages
 

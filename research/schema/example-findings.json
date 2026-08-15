@@ -1,0 +1,69 @@
+{
+  "source_id": "loc-newspapers",
+  "batch": "example",
+  "stage": "resolved",
+  "read_on": "2026-08-15",
+  "notes": "Illustrative only — the entries below are shaped to show the schema, not to be published. Real files live in research/findings/<source-id>/.",
+  "coverage": {
+    "unit": "OCR pages",
+    "examined": 1200,
+    "mentions": 3,
+    "remaining": "sn85066387 1895-05 onward untouched.",
+    "note": "One month of one title. Two of three mentions resolved; the third has no street number."
+  },
+  "findings": [
+    {
+      "id": "example-0001",
+      "date": "1895-04-08",
+      "date_precision": "day",
+      "kind": "advertisement",
+      "address_as_written": "1311 Alabama street",
+      "street_number": "1311",
+      "street_name": "ALABAMA",
+      "street_type": "ST",
+      "description": "A five-room cottage on a 40x100 lot was advertised to let.",
+      "extra": { "lot_as_recorded": "40x100", "rooms": 5, "form": "cottage" },
+      "citation": {
+        "label": "The San Francisco Call, 8 April 1895, p. 4",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-04-08/ed-1/seq-4/",
+        "corpus_path": "research/corpora/loc-newspapers/sn85066387/1895/04/08-ed-1-seq-004.txt",
+        "locator": "p. 4, col. 5, To Let — Houses"
+      },
+      "raw": { "text": "1311 Alabama st, 5-room cottage, lot 40x100" },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0000000",
+        "path": "/san-francisco/mission/alabama-street/1311/",
+        "eas_address": "1311 ALABAMA ST",
+        "method": "EAS exact match; the ad's 40x100 lot matches the assessor's 4,000 sq ft lot_area for the parcel.",
+        "checked_on": "2026-08-15"
+      },
+      "publish": { "status": "pending" }
+    },
+    {
+      "id": "example-0002",
+      "date": "1895-04-19",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "east line of Folsom street, 85 feet south of Twentieth",
+      "description": "A two-story frame building was contracted for at a stated cost of $3,200.",
+      "extra": { "cost": "$3,200", "cross_streets": "Folsom and 20th", "form": "two-story frame" },
+      "citation": {
+        "label": "The San Francisco Call, 19 April 1895, p. 12",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-04-19/ed-1/seq-12/",
+        "corpus_path": "research/corpora/loc-newspapers/sn85066387/1895/04/19-ed-1-seq-012.txt",
+        "locator": "p. 12, Building Contracts"
+      },
+      "raw": { "text": "e line Folsom st, 85 ft s of Twentieth, 2-story frame bldg, $3200" },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "Metes and bounds only; no street number stated.",
+        "checked_on": "2026-08-15",
+        "note": "Locatable to a block face but not to a parcel. Stays here until a numbered source corroborates it."
+      },
+      "publish": { "status": "pending" }
+    }
+  ]
+}

@@ -77,6 +77,12 @@ jobs:
             Never "verify" the Street View embed — its API key is restricted to
             the production domain and always fails elsewhere. See
             DATA-SOURCES.md.
+
+            This job refreshes city data only. Do not start a research pass,
+            mine a corpus, or edit anything under research/ — that work is
+            queued as `research` issues and run separately (research/AGENTS.md).
+            A stale `retrieved` date on a secondary source is not something this
+            job fixes.
           claude_args: |
             --max-turns 100
             --allowedTools "Read,Glob,Grep,Edit,Write,WebFetch(domain:data.sfgov.org),Bash(python3:*),Bash(git:*),Bash(gh pr create:*)"

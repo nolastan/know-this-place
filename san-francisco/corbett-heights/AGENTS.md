@@ -23,8 +23,16 @@ streets don't overlap the Castro tree.
 
 ## Presenting history from newsletters and context statements
 
-Local history writing (the Corbett Heights Neighbors newsletter, the 2017
-Context Statement) is a rich source, but it is prose written by someone else.
+The sources themselves — the Corbett Heights Neighbors newsletter archive and
+the 2017 Context Statement — are cataloged in the research module:
+[corbett-heights-neighbors](../../research/sources/corbett-heights-neighbors.md)
+and
+[sf-context-statements](../../research/sources/sf-context-statements.md). Go
+there for access notes, coverage and the cautions learned so far; what follows
+is how to put what they say onto a page.
+
+Local history writing is a rich source, but it is prose written by someone
+else.
 Two hard rules when using it:
 
 - **Extract facts; never paraphrase the source's prose.** A dated event

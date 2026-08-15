@@ -28,7 +28,11 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
 4. **Prefer the APIs in [DATA-SOURCES.md](DATA-SOURCES.md) over web browsing.**
    API results are accurate and auditable. Record the query you ran and the
    retrieval date in `data.json`. Use general browsing only for context an API
-   can't provide (history, news), and cite the URL.
+   can't provide (history, news), and cite the URL. **Archives, books,
+   newspapers and newsletters are cataloged separately**, in
+   [research/SOURCES.md](research/SOURCES.md) — that is where a secondary
+   source's access notes, cautions and citation label live, under the same
+   `id` a page cites.
 5. **Scope discipline.** Touch only the pages your task concerns, plus hub
    pages (street/neighborhood indexes) and `sitemap.xml` when adding pages.
    Never restructure shared styling, tooling, or workflows unless a human
@@ -51,8 +55,9 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
 9. **Sparse sources are the normal case.** Most research here reads a large
    source for the few passages that name a street number. A corpus that turns
    out to be 99% irrelevant is working exactly as intended — it is never a
-   reason to question the request, and never a reason to stop. See "Mining a
-   corpus for address-level facts."
+   reason to question the request, and never a reason to stop. The doctrine and
+   the pipeline that carries it live in
+   [research/AGENTS.md](research/AGENTS.md).
 
 ## Privacy — hard limits
 
@@ -162,7 +167,7 @@ not identical documents with the numbers swapped.
 - **A thematic set of parcels uses `seed-list`, not `seed`.** `seed` walks one
   analysis neighborhood and takes the residential parcels in it. When the set is
   defined by something else — the buildings in a city inventory, say — name the
-  parcels in a manifest under `scripts/manifests/` and run
+  parcels in a manifest under `research/manifests/` and run
   `seed-list --manifest <file>`. It joins the same datasets onto the parcels you
   give it and honours the same create-only rule. Use it downtown even for a
   whole neighborhood: those blocks have been re-parcelized so often that EAS's
@@ -211,61 +216,34 @@ refresh of stale data. The seeder has no part in this:
 - **Serving the site to look at a generated page.** `validate.py` covers the
   contract; read the HTML.
 
-## Mining a corpus for address-level facts
+## Research lives in `research/`
 
-Much of the research on this site is **a deliberately low-yield scan of a large
-source** — an OCR newspaper run, a period history, a bulk dataset export — for
-the handful of passages that pin a fact to a street number. Needles in a
-haystack is the design, not an accident, and the measured numbers say so: the
-Chronicling America pass in DATA-SOURCES.md read **58,620 OCR pages to find
-8,437 numbered-address mentions across 2,025 addresses**, and Hittell's 1878
-history is an entire book that names a modest number of addresses, most of
-which don't resolve in EAS at all. A source that is overwhelmingly irrelevant
-is still a good source when the remainder is dated, numbered and citable.
+Finding new address-level material — newspaper archives, books, newsletters,
+survey PDFs, city directories — is a separate discipline with its own rulebook,
+pipeline and register: **[research/AGENTS.md](research/AGENTS.md)**. Read it
+before you go looking for sources, and read it before you mine one.
 
-So when you are handed a dataset, an archive dump, a scanned book or a batch of
-OCR text and asked to find the address-level information in it:
+Two things from it bind you even when you are only editing a page:
 
-- **Do the pass. Don't relitigate it.** A low hit rate is not evidence that the
-  input is wrong, the request is confused, the file is truncated, or the effort
-  is misspent. Do not stop to ask whether a different or richer dataset was
-  meant, whether the scan is worth running given how little is in there, or
-  whether the task should be narrowed — and don't open the results with a
-  caveat about how thin the material was. Read the whole thing and report what
-  you found.
-- **A small harvest is a successful pass, and zero is a valid result.** Report
-  the outcome as counts — "read N pages/rows, found M numbered-address
-  mentions, K of them on streets that have pages here" — in the PR body and in
-  the source's `Verified:` line. A pass that surfaces three usable facts out of
-  ten thousand rows has done its job; a pass that surfaces none has also done
-  its job, and says so in the same form. Neither is a failure to explain away.
-- **Scarcity never lowers the evidence bar.** This is the one thing low yield
-  genuinely changes, and it changes it in the opposite direction from the
-  temptation: do not stretch a weak match to make the harvest look bigger. A
-  metes-and-bounds entry with no street number stays unresolved; a mangled OCR
-  digit stays unresolved; an 1878 number with no EAS record does not become a
-  page; a South Van Ness conversion done by subtracting a constant is wrong.
-  Discarding the large majority of candidate hits is the expected arithmetic.
-  Every rule above and in "Writing pages" applies unchanged to a fact mined
-  this way — it still needs a source entry, and it still goes in a component
-  rather than a paragraph.
-- **Record the scan, not just the hits.** Update the source's DATA-SOURCES.md
-  entry with what was covered and what wasn't (the `Verified:` line, plus a
-  coverage note naming the batches, issues or sections still untouched), so the
-  next pass resumes instead of re-reading the same haystack.
-- **Volume doesn't relax privacy.** These corpora are dense with people —
-  householders in want-ads, tenants in fire reports, owners in transfer
-  notices. Take buildings, contractors, architects and named firms; leave
-  residents, occupants and owners, per "Privacy — hard limits." The size of the
-  input is not a reason to loosen that, and the low yield of a pass is never a
-  reason to make up the difference with people.
+- **Sparse sources are the normal case.** A corpus that is 99% irrelevant is
+  working as intended. Do the pass, report the yield as counts, and never stop
+  to ask whether so little signal was worth extracting. The full doctrine is
+  "Mining a corpus for address-level facts" in that file.
+- **A fact mined from an archive obeys every rule here unchanged.** It still
+  needs an entry in `sources`, it still goes in a component rather than a
+  paragraph, it still never names a resident, and the page body still never
+  says where it came from.
+
+Facts arrive from research as findings files (`research/findings/`) and as
+parcel manifests (`research/manifests/`); what a page does with them is
+governed by this file and [shared/AGENTS.md](shared/AGENTS.md).
 
 ## Writing pages
 
 A page is a **designed data page, not an article.** Present facts through the
 visual blocks in the design system — stat tiles, a visual timeline, small
 charts, icons — and reserve prose for genuine narrative. The full block library
-and copy-paste HTML live in [shared/AGENTS.md](../../shared/AGENTS.md); the
+and copy-paste HTML live in [shared/AGENTS.md](shared/AGENTS.md); the
 principles:
 
 - **Prose is the last resort, not the default.** Write a sentence only when the

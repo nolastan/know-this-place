@@ -31,7 +31,13 @@ There is deliberately **no CMS, no database, no build framework**:
   building's story, reader feedback) is a person or an agent editing the page
   directly.
 - **Agents do the work a CMS would.** Rules live in `AGENTS.md` files through
-  the tree; available data APIs are cataloged in [DATA-SOURCES.md](DATA-SOURCES.md).
+  the tree; the live city APIs are cataloged in
+  [DATA-SOURCES.md](DATA-SOURCES.md).
+- **Finding things to say is a separate job from saying them.** Newspaper
+  archives, books, newsletters and survey PDFs — the sources that make a page
+  worth landing on — are mined in the [research module](research/README.md),
+  which hands the site verified, sourced facts. Building the site and
+  researching it are deliberately kept apart.
 
 ## The editing loop
 
@@ -52,7 +58,7 @@ There is deliberately **no CMS, no database, no build framework**:
 
 ```
 AGENTS.md                     Agent constitution: rules for all edits
-DATA-SOURCES.md               Catalog of APIs agents draw from
+DATA-SOURCES.md               Catalog of live city APIs agents draw from
 index.html                    Site homepage
 san-francisco/
   castro/
@@ -66,6 +72,16 @@ shared/
                               Mapbox token
   addresses.geojson           Derived index of every address + its
                               coordinates — the homepage map's dots
+research/
+  AGENTS.md                   Research rulebook: the pipeline and its rules
+  SOURCES.md                  Register of every source mined, and leads
+  sources/<id>.md             One dossier per source: access, cautions,
+                              coverage log
+  roles/                      A playbook per specialized job, prospect → audit
+  findings/                   Structured handoffs between research stages
+  schema/                     The findings JSON schema + a worked example
+  manifests/                  Parcel lists produced here, seeded by the script
+  tools/check.py              Research consistency checks (stdlib only)
 scripts/
   seed_pages.py               Writes the first draft of pages that don't
                               exist yet, from the DataSF APIs
@@ -99,6 +115,10 @@ scripts/
       watch the account's monthly request count as coverage grows
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
+- [ ] Create the research labels the module files issues against: `research`,
+      `research:lead`, `research:acquire`, `research:extract`,
+      `research:resolve`, `research:publish`, `research:audit` (same trap as
+      `page-feedback` — GitHub drops labels that don't exist)
 
 ## Seeding a neighborhood
 
@@ -118,6 +138,22 @@ unless new parcels have appeared. Raw dataset rows are cached in
 `.cache/` (gitignored) and each fetch resumes where it left off, so an
 interrupted run is cheap to restart. `--neighborhood` takes the SF Planning
 analysis-neighborhood name as it appears in the datasets.
+
+## Researching
+
+```bash
+python3 research/tools/check.py --stats
+```
+
+The [research module](research/README.md) is where sources are found, mined and
+turned into citable facts. It runs on files rather than conversations — a
+register, a dossier per source, structured findings, and GitHub issues — so a
+scan that takes six sessions across three agents doesn't lose its place. Start
+at [research/AGENTS.md](research/AGENTS.md).
+
+The bias is toward sources search engines can't see: newspaper OCR, out-of-print
+books, neighborhood newsletters, PDF survey reports. A pass that reads a whole
+book and yields four citable facts is a good pass.
 
 ## Running the agent locally
 

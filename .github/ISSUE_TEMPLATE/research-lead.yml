@@ -1,0 +1,50 @@
+name: Research lead
+description: Suggest a source of address-level information worth mining
+title: "research(new): "
+labels: ["research", "research:lead"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Know This Place is built from sources that search engines can't see —
+        newspaper archives, out-of-print books, neighborhood newsletters,
+        survey PDFs, city directories. If you know of one that names San
+        Francisco street numbers, tell us about it here.
+
+        A source that only mentions a few addresses is still worth having.
+  - type: input
+    id: source
+    attributes:
+      label: What is it?
+      description: Title, publisher, and the years it covers.
+      placeholder: e.g. The Potrero View, neighborhood monthly, 1970–present
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where can it be found?
+      description: A link, or where it lives physically (a library, an archive, a shelf).
+    validations:
+      required: true
+  - type: textarea
+    id: payload
+    attributes:
+      label: What would it tell us about specific buildings?
+      description: >-
+        What sort of facts does it carry, and does it name street numbers?
+        An example passage helps more than anything else.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else? (optional)
+      description: >-
+        Access restrictions, licensing, whether it's been digitized, who to ask.
+  - type: markdown
+    attributes:
+      value: |
+        A research agent evaluates leads against `research/AGENTS.md` and either
+        registers the source in `research/SOURCES.md` or records why it didn't
+        pan out.
