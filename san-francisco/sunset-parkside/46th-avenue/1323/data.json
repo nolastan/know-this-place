@@ -1,0 +1,115 @@
+{
+  "address": "1323–1329 46th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/46th-avenue/1323/",
+  "apn": "1801003",
+  "block": "1801",
+  "lot": "003",
+  "eas_baseid": "318210",
+  "coordinates": {
+    "lat": 37.761718,
+    "lng": -122.506348
+  },
+  "address_range": "1323–1329",
+  "street_numbers_on_parcel": [
+    "1323",
+    "1325",
+    "1327",
+    "1329"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2324,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1329 1323 46TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1025124,
+    "assessed_improvement_value": 683413
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "survey_name": "1323 -1329 46TH AVE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200301034497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-03",
+      "status_date": "2003-07-18",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "roofing repair, roofing framing repair, plaster, electrical, painting. floor covering",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410846",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-10-09",
+      "status_date": "1984-11-26",
+      "estimated_cost": 1000,
+      "description": "repairs & general maintemance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=46TH&street_type=AVE&address_number=1323",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1801003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1801&lot=003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1801003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54390",
+      "name": "1329 46th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54390",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54390"
+    }
+  ]
+}

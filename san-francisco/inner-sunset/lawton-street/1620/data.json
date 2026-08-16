@@ -1,0 +1,116 @@
+{
+  "address": "1620 Lawton Street, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/lawton-street/1620/",
+  "apn": "1868018A",
+  "block": "1868",
+  "lot": "018A",
+  "eas_baseid": "321287",
+  "coordinates": {
+    "lat": 37.758052,
+    "lng": -122.48042
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1806,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1620 LAWTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1322107,
+    "assessed_improvement_value": 566616,
+    "last_sale_date": "2019-09-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205315238",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-05-31",
+      "status_date": "2022-05-31",
+      "estimated_cost": 50000,
+      "revised_cost": 52000,
+      "description": "one kitchen: upgrade 160 sqft kitchen in-kind, no structural, new cabinets, new appliances, new fixtures, new garbage disposal. (3) bathrooms: install new toilet, new shower drain, new shower faucet. all bathrooms in-kind replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711097794",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-11-09",
+      "status_date": "2007-11-09",
+      "estimated_cost": 11107,
+      "revised_cost": 11107,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2006–2022",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAWTON&street_type=ST&address_number=1620",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1868018A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1868&lot=018A",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1868018A",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54306",
+      "name": "1620 Lawton St, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54306",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54306"
+    }
+  ]
+}

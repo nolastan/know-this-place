@@ -1,0 +1,181 @@
+{
+  "address": "55–57 Grattan Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/grattan-street/55/",
+  "apn": "1280026",
+  "block": "1280",
+  "lot": "026",
+  "eas_baseid": "299757",
+  "coordinates": {
+    "lat": 37.763881,
+    "lng": -122.449151
+  },
+  "address_range": "55–57",
+  "street_numbers_on_parcel": [
+    "55",
+    "57"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2160,
+    "building_area_sqft": 2660,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0057 0055 GRATTAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1124856,
+    "assessed_improvement_value": 749904,
+    "last_sale_date": "2023-10-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202410233525",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-23",
+      "status_date": "2024-10-24",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove and repair rear deck with 2 (n) decks and spiral stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408148605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-14",
+      "status_date": "2024-11-12",
+      "estimated_cost": 41000,
+      "revised_cost": 41000,
+      "description": "install 2100 sf of james hardie fiber cement lap siding over existing wood siding. work is in the rear of the building, on the east, south, and west elevations. not street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405021221",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-02",
+      "status_date": "2025-03-31",
+      "estimated_cost": 1,
+      "revised_cost": 5000,
+      "description": "revision to bpa# 202311090495: modify interior layout and remove skylights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311090495",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-09",
+      "status_date": "2025-03-31",
+      "estimated_cost": 225000,
+      "revised_cost": 225000,
+      "description": "remodel kitchen & bath at 1st fl; remodel kitchen & bath @ 2nd fl; provide stair to existing attic and convert to habitalbe space. modify interior layout to 1st and 2nd floor.add (n) skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201172332",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2012-01-17",
+      "status_date": "2012-01-17",
+      "estimated_cost": 10000,
+      "description": "replace rear yard deck & stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917032S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-08-17",
+      "status_date": "2000-07-19",
+      "estimated_cost": 65000,
+      "description": "remove existing rooms at lower level provide new garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719526",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-04",
+      "status_date": "1999-01-11",
+      "estimated_cost": 16500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRATTAN&street_type=ST&address_number=55",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1280026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1280&lot=026",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1280026",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44915086134341%2037.76388083216388)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55213",
+      "name": "55 Grattan Street, 1956. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55213",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1956-11-16",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55213"
+    }
+  ]
+}

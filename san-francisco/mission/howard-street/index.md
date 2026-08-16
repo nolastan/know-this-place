@@ -4,6 +4,7 @@ Every residential parcel on Howard Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [1208](1208/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2023.
 - [1500–1510](1500/) — A 1930 store building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2005.
 - [1521–1523](1521/) — A 1913 two-flat in the Western SOMA Light Industrial and Residential Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [1522](1522/) — A 1916 7-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with an accessory dwelling unit permitted in 2020.

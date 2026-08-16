@@ -8,6 +8,7 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Church Street](church-street/) — 1 building, built 1905.
 - [Fell Street](fell-street/) — 2 buildings, built 1910–1929.
 - [Franklin Street](franklin-street/) — 3 buildings, built 1909–1912; 1 in the Market Street Masonry Historic District.
+- [Fulton Street](fulton-street/) — 1 building, built 1924; 1 in the Alamo Square Historic District.
 - [Germania Street](germania-street/) — 1 building, built 1900.
 - [Gough Street](gough-street/) — 1 building, built 1917.
 - [Haight Street](haight-street/) — 1 building, built 1952.

@@ -34,6 +34,7 @@ The parcels on Howard Street documented here so far, from the city's address, as
 - [985](985/) — A 1907 industrial building, with reroofing permitted in 1991.
 - [989](989/) — A 1939 industrial building, with reroofing permitted in 2013.
 - [991–993](991/) — A 1908 industrial building, with reroofing permitted in 2002.
+- [1144](1144/) — A 1921 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1982 to 2019.
 - [1330](1330/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with deck work permitted in 2019.
 - [1350](1350/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with electrical work permitted in 2021.
 - [1380](1380/) — A 1928 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 2008.

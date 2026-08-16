@@ -1,0 +1,133 @@
+{
+  "address": "1754 Great Highway, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/great-highway/1754/",
+  "apn": "2001032",
+  "block": "2001",
+  "lot": "032",
+  "eas_baseid": "324512",
+  "coordinates": {
+    "lat": 37.753672,
+    "lng": -122.508252
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2543,
+    "building_area_sqft": 1540,
+    "basement_area_sqft": 231,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1754 GREAT               HW0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167135,
+    "assessed_improvement_value": 678655,
+    "last_sale_date": "2000-01-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "survey_name": "1754 GREAT HWY",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200304081694",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-04-08",
+      "status_date": "2005-03-17",
+      "estimated_cost": 70000,
+      "revised_cost": 121300,
+      "description": "+460 sq ft addition with rear deck, roof deck and interior remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104307944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-30",
+      "status_date": "2001-10-29",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "change of use of garage level used as workshop to secure library, files, psychological test lists",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000118282",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-18",
+      "status_date": "2000-06-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-25",
+      "status_date": "1992-09-30",
+      "estimated_cost": 3197,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREAT&street_type=HWY&address_number=1754",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2001032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2001&lot=032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2001032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54509",
+      "name": "1754 Great Highway, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54509",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54509"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "address": "1510 35th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/35th-avenue/1510/",
+  "apn": "1880043",
+  "block": "1880",
+  "lot": "043",
+  "eas_baseid": "321912",
+  "coordinates": {
+    "lat": 37.758797,
+    "lng": -122.493659
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3276,
+    "building_area_sqft": 1960,
+    "basement_area_sqft": 400,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1510 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 128041,
+    "assessed_improvement_value": 227418
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201401216736",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-21",
+      "status_date": "2014-12-30",
+      "estimated_cost": 32564,
+      "revised_cost": 32564,
+      "description": "kitchen remodel. remove old cabinets & counter tops & install new cabinets & counter top w/sink. new light fixt in kitchen. bathrm remodel. remove (e) shower stall & construct shower pan & new tile. new shower valve & head in same location. install new fan & light fixts. bath remodel on 2nd fl only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-21",
+      "status_date": "1990-01-18",
+      "estimated_cost": 6950,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206724",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-08-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2990,
+      "description": "bldg use: dwg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203633",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-10",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1995,
+      "description": "bldg use: dwg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=1510",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1880043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1880&lot=043",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1880043",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.493659307273%2037.758797229565545)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54882",
+      "name": "1510 35th Avenue, between 1946 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54882",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54882"
+    }
+  ]
+}

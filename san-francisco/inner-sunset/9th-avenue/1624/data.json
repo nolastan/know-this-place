@@ -1,0 +1,119 @@
+{
+  "address": "1624 Ninth Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/9th-avenue/1624/",
+  "apn": "1935038",
+  "block": "1935",
+  "lot": "038",
+  "eas_baseid": "324422",
+  "coordinates": {
+    "lat": 37.757921,
+    "lng": -122.465576
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3079,
+    "building_area_sqft": 2237,
+    "basement_area_sqft": 837,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1624 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 344819,
+    "assessed_improvement_value": 353664,
+    "last_sale_date": "1992-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406245060",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-06-24",
+      "status_date": "2024-06-24",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909652",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-06-05",
+      "status_date": "1989-12-26",
+      "estimated_cost": 12000,
+      "description": "kitchen remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505517",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-05-29",
+      "status_date": "1985-06-27",
+      "estimated_cost": 1256,
+      "description": "window installation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=1624",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1935038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1935&lot=038",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1935038",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54796",
+      "name": "1624 9th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54796",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54796"
+    }
+  ]
+}

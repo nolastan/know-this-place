@@ -1,0 +1,122 @@
+{
+  "address": "1765 Sutter Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/sutter-street/1765/",
+  "apn": "0686053",
+  "block": "0686",
+  "lot": "053",
+  "eas_baseid": "287709",
+  "coordinates": {
+    "lat": 37.786354,
+    "lng": -122.429286
+  },
+  "parcel": {
+    "year_built": 1975,
+    "units": 1,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 4,
+    "lot_area_sqft": 3462,
+    "building_area_sqft": 7234,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "RM3NC2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Japantown",
+    "property_location_raw": "0000 1765 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81762,
+    "assessed_improvement_value": 556559,
+    "assessed_fixtures_value": 109794
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark Work Program",
+    "yearbuilt": "1975",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200910229598",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-22",
+      "status_date": "2009-10-23",
+      "estimated_cost": 6200,
+      "revised_cost": 6200,
+      "description": "1st floor replace old panel w/new fire control panel at the same location. replace two (e) horn/strobes w/new at the same location.install new devices & connect (e) water flow & tamper to new panel. nfpa 72 contral system manitoring.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212032620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-03",
+      "status_date": "2003-03-13",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9409107",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-06-17",
+      "status_date": "1995-05-23",
+      "estimated_cost": 40000,
+      "description": "remodel 2 exist toilets to handicap accessible,intercom work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=1765",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0686053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0686&lot=053",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0686053",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54969",
+      "name": "1763-1765 Sutter Street, 1962. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54969",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1962-03-15",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54969"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1975, after this photograph was taken."
+  }
+}

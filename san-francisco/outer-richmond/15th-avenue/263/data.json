@@ -1,0 +1,121 @@
+{
+  "address": "263 15th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/15th-avenue/263/",
+  "apn": "1418013",
+  "block": "1418",
+  "lot": "013",
+  "eas_baseid": "303086",
+  "coordinates": {
+    "lat": 37.783199,
+    "lng": -122.474491
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2130,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0263 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 874837,
+    "assessed_improvement_value": 374928,
+    "last_sale_date": "2011-09-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409050109",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-05",
+      "status_date": "2025-10-07",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111038165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-03",
+      "status_date": "2012-03-05",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "re-partition 3rd floor bedroom area, window replacement & infill opening, remove existing ellegal shed on roof of 2nd floor, re-wire electrical, smoke detector. rewire electrical. smoke detector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110146883",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-14",
+      "status_date": "2011-10-14",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "replace single pane non-tempred galss windows @ front of house (living rooom; master bedroom) with double pane tempred glass windows. total window count is six. windows same size and location. (e) bedrooms to have egress windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=263",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1418013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1418&lot=013",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1418013",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54505",
+      "name": "263 15th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54505",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54505"
+    }
+  ]
+}

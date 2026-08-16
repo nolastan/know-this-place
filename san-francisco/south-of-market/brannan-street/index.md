@@ -28,6 +28,7 @@ The parcels on Brannan Street documented here so far, from the city's address, a
 - [630–686](630/) — A 1956 store building, with reroofing permitted in 2012.
 - [635](635/) — A 1989 store building, with foundation work permitted in 1989.
 - [651](651/) — A 1911 office building, with stair work permitted in 2015.
+- [750](750/) — A 1963 industrial building, with plumbing work permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

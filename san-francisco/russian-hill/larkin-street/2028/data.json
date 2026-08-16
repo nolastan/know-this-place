@@ -1,0 +1,116 @@
+{
+  "address": "2028–2030 Larkin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/larkin-street/2028/",
+  "apn": "0153024",
+  "block": "0153",
+  "lot": "024",
+  "eas_baseid": "278785",
+  "coordinates": {
+    "lat": 37.796665,
+    "lng": -122.419864
+  },
+  "address_range": "2028–2030",
+  "street_numbers_on_parcel": [
+    "2028",
+    "2030"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 3500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "2030 2028 LARKIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1290788,
+    "assessed_improvement_value": 780916
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201106097792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-09",
+      "status_date": "2012-03-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel work, replace 153\" cabinets, counter top, dishwasher, stove, work at 3rd floor. kitchen remodel work including sink, cabinets, coutner top, dw, etc. all work at 2nd floor. min 50% of kitchen lighting watts shall be of high efficiency fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309154747",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-09-15",
+      "status_date": "2007-10-01",
+      "estimated_cost": 9100,
+      "revised_cost": 9100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LARKIN&street_type=ST&address_number=2028",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0153024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0153&lot=024",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0153024",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54970",
+      "name": "2030 Larkin Street, between 1946 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54970",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54970"
+    }
+  ],
+  "unknowns": {
+    "digitalsf-54970-conflict": "The photograph is filed under assessor block 25; the address it carries is on another block."
+  }
+}

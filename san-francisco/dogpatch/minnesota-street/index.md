@@ -4,6 +4,8 @@ The parcels on Minnesota Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [601](601/) — A 1937 store building, with stair work permitted in 1986.
+- [602](602/) — An apartment building, with permit records from 1992 to 2026.
 - [914](914/) — A corner building of 1906 that the 2001 Dogpatch survey records as the home of Dugan's Liquors.
 - [917–919](917/) — A two-flat by the contractor Rees O. Davis, who also built the row of Pelton cottages a block away.
 - [923](923/) — A two-flat the 2001 Dogpatch survey credits to the builder John Keneally.

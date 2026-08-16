@@ -1,0 +1,148 @@
+{
+  "address": "1560 36th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/36th-avenue/1560/",
+  "apn": "1881033",
+  "block": "1881",
+  "lot": "033",
+  "eas_baseid": "321947",
+  "coordinates": {
+    "lat": 37.75791,
+    "lng": -122.494673
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2526,
+    "basement_area_sqft": 851,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1560 36TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152377,
+    "assessed_improvement_value": 359015
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201705045729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-04",
+      "status_date": "2017-06-02",
+      "estimated_cost": 180000,
+      "revised_cost": 180000,
+      "description": "rev to pa#201505287455 to increase the estimated cost of job & revise scope of work. additional scope of work: remove & replace all insulation & drywall on 2 levels due to smoke & water damage. replace all bathroom fixtures ((2) full & (1)-1/2 baths).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505287455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-28",
+      "status_date": "2017-06-02",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "fire damage repair. new kitchen. roof and damaged ceiling. water and smoke damaged walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504059208",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-05",
+      "status_date": "2005-09-06",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "fix dryrod (damage) at front of house . add non barring wall in garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315359",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-09-08",
+      "status_date": "1996-01-05",
+      "estimated_cost": 1000,
+      "revised_cost": 2100,
+      "description": "strg rm-cl drs-open 1 dr-raise floor-close off dr to bkyard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=36TH&street_type=AVE&address_number=1560",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1881033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1881&lot=033",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1881033",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4946729288351%2037.75791047024181)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54928",
+      "name": "1560 36th Avenue, between 1946 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54928",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54928"
+    }
+  ]
+}

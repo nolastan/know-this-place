@@ -1,0 +1,145 @@
+{
+  "address": "35 27th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/27th-avenue/35/",
+  "apn": "1308003",
+  "block": "1308",
+  "lot": "003",
+  "eas_baseid": "300269",
+  "coordinates": {
+    "lat": 37.78828,
+    "lng": -122.488315
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 5675,
+    "building_area_sqft": 2673,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0035 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 226460,
+    "assessed_improvement_value": 387602
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202308255230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-25",
+      "status_date": "2024-10-28",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "full covering (e) court yard to enlarge (e) kitchen, remodel (e) kitchen. new sliding door. half-bathroom remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304235250",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-23",
+      "status_date": "2013-07-18",
+      "estimated_cost": 30000,
+      "revised_cost": 25000,
+      "description": "partial renovation of an existing two story sfd. remodel of 2 existing restrooms, w/o increase in quantity of fixtures. remodel of entrance to master bedroom; add skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206078475",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-06-07",
+      "status_date": "2002-06-07",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remodel one full bathroom in the ground level with new tile toilet and tub unitremodel the half bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9521275",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-12-20",
+      "status_date": "1996-04-20",
+      "estimated_cost": 2900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=35",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1308003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1308&lot=003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1308003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48831477612836%2037.788279922763124)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54444",
+      "name": "35 27th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54444",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54444"
+    }
+  ]
+}

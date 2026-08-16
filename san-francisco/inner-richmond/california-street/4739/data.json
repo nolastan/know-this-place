@@ -1,0 +1,118 @@
+{
+  "address": "4739 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/california-street/4739/",
+  "apn": "1424037",
+  "block": "1424",
+  "lot": "037",
+  "eas_baseid": "303336",
+  "coordinates": {
+    "lat": 37.784376,
+    "lng": -122.468459
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 4345,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 4739 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117803,
+    "assessed_improvement_value": 228466
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501158386",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-15",
+      "status_date": "2025-12-23",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909192072",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-19",
+      "status_date": "2019-11-22",
+      "estimated_cost": 3394,
+      "revised_cost": 3394,
+      "description": "one unit - windows replacement, like for like. 5 windows total. non street facing. all windows in back of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M294408",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-03",
+      "status_date": "2012-01-03",
+      "revised_cost": 1,
+      "description": "streeet space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=4739",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1424037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1424&lot=037",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1424037",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54503",
+      "name": "4739 California Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54503",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54503"
+    }
+  ]
+}

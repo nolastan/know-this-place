@@ -13,12 +13,15 @@ Diamond and Chenery and evaluated eight of them in detail.
 
 - [30th Street](30th-street/) — 1 building, built 1880.
 - [Arlington Street](arlington-street/) — 1 building, built 1938.
+- [Baden Street](baden-street/) — 1 building, built 1939.
 - [Bosworth Street](bosworth-street/) — 4 buildings, built 1910–1937.
 - [Brompton Avenue](brompton-avenue/) — 10 buildings, built 1908–1963.
 - [Chenery Street](chenery-street/) — 16 buildings, built 1900–1951; 5 in the Glen Park Center Historic District.
 - [Congo Street](congo-street/) — 1 building, built 1917.
 - [Diamond Street](diamond-street/) — 5 buildings, built 1916–1951; 2 in the Glen Park Center Historic District.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
+- [Laidley Street](laidley-street/) — 1 building, built 1900.
 - [Lippard Avenue](lippard-avenue/) — 1 building.
+- [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.

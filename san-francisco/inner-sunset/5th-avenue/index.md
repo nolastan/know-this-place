@@ -10,6 +10,7 @@ The parcels on Fifth Avenue documented here so far, from the city's address, ass
 - [1248](1248/) — A 1904 Classical Revival, designed by Salfield and Kohlberg.
 - [1251](1251/) — A 1905 Classical Revival, designed by William Koenig.
 - [1262–1264](1262/) — A 1908 Classical Revival, built by Dempniak Brothers.
+- [1269–1271](1269/) — A 1906 two-flat, with a bathroom remodel permitted in 2018.
 - [1280–1290](1280/) — A 1919 building, designed by Ward and Blohme.
 - [1354](1354/) — A 1912 Mission Revival parapet, built by Alphonso Harrington.
 - [1360](1360/) — A 1913 Craftsman/Mission blend, built by Charles A. Hall.

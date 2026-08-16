@@ -19,6 +19,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [24th Street](24th-street/) — 139 buildings, built 1860–2020; 13 in the Horner's Addition East Historic District.
 - [25th Street](25th-street/) — 122 buildings, built 1890–1987; 7 in the Shotwell Street Historic District.
 - [26th Street](26th-street/) — 84 buildings, built 1868–1989.
+- [27th Street](27th-street/) — 1 building, built 1916.
 - [Adair Street](adair-street/) — 5 buildings, built 1902–1911.
 - [Alabama Street](alabama-street/) — 141 buildings, built 1900–2009; 15 in the Alabama Street Pioneers Historic District.
 - [Albion Street](albion-street/) — 40 buildings, built 1906–1990; 9 in the 16th and Valencia Streets Post-Fire Historic District.
@@ -26,6 +27,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Ames Street](ames-street/) — 1 building, built 1902.
 - [Balmy Street](balmy-street/) — 4 buildings, built 1900–1950; 3 in the South Mission Avenues and Alleys Historic District.
 - [Bartlett Street](bartlett-street/) — 73 buildings, built 1880–1986.
+- [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1948.
 - [Bernice Street](bernice-street/) — 3 buildings, built 1907–1997; 2 in the Western SOMA Light Industrial and Residential Historic District.
 - [Bird Street](bird-street/) — 4 buildings, built 1900–1966.
 - [Brady Street](brady-street/) — 3 buildings, built 1906–1912; 1 in the Market Street Masonry Historic District.
@@ -46,6 +48,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Dolores Terrace](dolores-terrace/) — 9 buildings, built 1906–1997.
 - [Dorland Street](dorland-street/) — 16 buildings, built 1906–1939.
 - [Duboce Avenue](duboce-avenue/) — 33 buildings, built 1900–1958; 3 in the Guerrero Street Fire Line Historic District.
+- [Edinburgh Street](edinburgh-street/) — 1 building, built 1908.
 - [Elgin Park](elgin-park/) — 16 buildings, built 1906–1963; 12 in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [Elizabeth Street](elizabeth-street/) — 11 buildings, built 1885–1958; 4 in the Horner's Addition East Historic District.
 - [Enterprise Street](enterprise-street/) — 1 building, built 1900.
@@ -62,6 +65,8 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Horace Street](horace-street/) — 2 buildings, built 1900–1937; 1 in the Shotwell Street Historic District.
 - [Howard Street](howard-street/) — 10 buildings, built 1906–2019; 8 in the Western SOMA Light Industrial and Residential Historic District.
 - [Isis Street](isis-street/) — 4 buildings, built 1906–1914; 4 in the Western SOMA Light Industrial and Residential Historic District.
+- [Jerrold Avenue](jerrold-avenue/) — 1 building, built 1900.
+- [Jersey Street](jersey-street/) — 3 buildings, built 1900–1909.
 - [Jessie Street](jessie-street/) — 3 buildings, built 1906–1907; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Julian Avenue](julian-avenue/) — 17 buildings, built 1900–1951.
 - [Juri Street](juri-street/) — 8 buildings, built 1898–1918; 7 in the Juri Street Historic District.
@@ -78,6 +83,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Mccoppin Street](mccoppin-street/) — 4 buildings, built 1907–1996; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Minna Street](minna-street/) — 17 buildings, built 1906–1938; 6 in the Western SOMA Light Industrial and Residential Historic District.
 - [Mission Street](mission-street/) — 77 buildings, built 1885–2023; 7 in the Mission Miracle Mile at 17th Street Historic District.
+- [Missouri Street](missouri-street/) — 1 building, built 1922.
 - [Natoma Street](natoma-street/) — 25 buildings, built 1906–1990; 7 in the Western SOMA Light Industrial and Residential Historic District.
 - [Oakwood Street](oakwood-street/) — 20 buildings, built 1900–1988; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
 - [Orange Alley](orange-alley/) — 1 building, built 1900.
@@ -86,6 +92,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Pink Alley](pink-alley/) — 1 building, built 1907; 1 in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [Potrero Avenue](potrero-avenue/) — 118 buildings, built 1890–2016.
 - [Ramona Avenue](ramona-avenue/) — 21 buildings, built 1875–1923; 21 in the Ramona Street Historic District.
+- [Rhode Island Street](rhode-island-street/) — 2 buildings, built 1912–1948; 1 in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District.
 - [Rondel Place](rondel-place/) — 12 buildings, built 1904–1925.
 - [Rosemont Place](rosemont-place/) — 5 buildings, built 1906–1976.
 - [San Bruno Avenue](san-bruno-avenue/) — 55 buildings, built 1895–1938.

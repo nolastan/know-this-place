@@ -4,6 +4,9 @@ Every residential parcel on Bryant Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [1600](1600/) — A 1929 office building, with permit records from 1984 to 1996.
+- [1634](1634/) — A 1957 industrial building, with reroofing permitted in 2022.
+- [1686](1686/) — A 1907 store building, with electrical work permitted in 1994.
 - [1712–1716](1712/) — A 1905 3-unit tic building, with a kitchen and bathroom remodel permitted in 2021.
 - [1718–1722](1718/) — A 1900 4-unit apartment building, with a kitchen remodel permitted in 1983.
 - [1724–1726](1724/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 1991.
@@ -20,9 +23,11 @@ Every residential parcel on Bryant Street that the city's address, assessor and 
 - [2108–2110](2108/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2003.
 - [2116–2118](2116/) — A 1900 two-flat, with a bathroom remodel permitted in 2008.
 - [2120](2120/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2003.
+- [2122](2122/) — A 1950 industrial building, with reroofing permitted in 2006.
 - [2132](2132/) — A 1915 2-unit building with a ground-floor store, with an addition permitted in 2005.
 - [2154–2156](2154/) — A 1900 two-flat, with reroofing permitted in 2026.
 - [2158–2160](2158/) — A 1900 two-flat, with facade work permitted in 2023.
+- [2170–2182](2170/) — A 1917 industrial building in the SoMa LGBTQ Historic District, with a kitchen and bathroom remodel permitted in 2020.
 - [2200–2202](2200/) — A 1908 4-unit building with a ground-floor store, with reroofing permitted in 2008.
 - [2204–2206](2204/) — A 1909 2-unit building with a ground-floor store, with a rear addition permitted in 1987.
 - [2210](2210/) — A 1907 single-family house.

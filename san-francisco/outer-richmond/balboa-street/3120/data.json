@@ -1,0 +1,116 @@
+{
+  "address": "3120 Balboa Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/balboa-street/3120/",
+  "apn": "1575037",
+  "block": "1575",
+  "lot": "037",
+  "eas_baseid": "308971",
+  "coordinates": {
+    "lat": 37.776185,
+    "lng": -122.492426
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2494,
+    "basement_area_sqft": 144,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 3120 BALBOA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 259976,
+    "assessed_improvement_value": 279056,
+    "last_sale_date": "1993-04-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604074209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-07",
+      "status_date": "2016-05-16",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace outside of the bldg wood siding 6'x40' replace in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208094",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-05-19",
+      "status_date": "1992-08-06",
+      "estimated_cost": 10000,
+      "description": "termite chemical work repair studs & mudsill",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1992–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALBOA&street_type=ST&address_number=3120",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1575037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1575&lot=037",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1575037",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55011",
+      "name": "3120 Balboa Street, after 1947. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55011",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "after 1947",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55011"
+    }
+  ]
+}

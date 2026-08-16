@@ -1,0 +1,109 @@
+{
+  "address": "351 Hill Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/hill-street/351/",
+  "apn": "3620031",
+  "block": "3620",
+  "lot": "031",
+  "eas_baseid": "363096",
+  "coordinates": {
+    "lat": 37.755379,
+    "lng": -122.428945
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2953,
+    "building_area_sqft": 1145,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0351 HILL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1288770,
+    "assessed_improvement_value": 552330,
+    "last_sale_date": "2024-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508193334",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-09-09",
+      "status_date": "2026-02-23",
+      "estimated_cost": 900000,
+      "revised_cost": 1082860,
+      "description": "single family residence remodel + addition of adu unit at ground level. vertical addition to add 3rd level. (n) roof, improvements: floor reconfiguration, (n) windows, (n) facade, (n) rear decks",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103000",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-02-25",
+      "status_date": "1993-11-02",
+      "estimated_cost": 1778,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HILL&street_type=ST&address_number=351",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3620031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3620&lot=031",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3620031",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55245",
+      "name": "351 Hill Street, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55245",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55245"
+    }
+  ]
+}

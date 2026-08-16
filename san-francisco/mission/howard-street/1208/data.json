@@ -1,0 +1,169 @@
+{
+  "address": "1208 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/howard-street/1208/",
+  "apn": "3728009",
+  "block": "3728",
+  "lot": "009",
+  "eas_baseid": "365200",
+  "coordinates": {
+    "lat": 37.776162,
+    "lng": -122.412104
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4499,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 1208 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1403432,
+    "assessed_improvement_value": 529601,
+    "last_sale_date": "2001-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202307132041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-13",
+      "status_date": "2023-08-04",
+      "estimated_cost": 63000,
+      "revised_cost": 63000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901260814",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-26",
+      "status_date": "2009-01-26",
+      "estimated_cost": 6100,
+      "revised_cost": 6100,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621348",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-04",
+      "status_date": "1997-05-30",
+      "estimated_cost": 14950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419017",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-17",
+      "status_date": "1995-07-13",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307769",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-05-10",
+      "status_date": "1994-06-21",
+      "estimated_cost": 10000,
+      "revised_cost": 13000,
+      "description": "shoring and underpinning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918479",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-10-02",
+      "status_date": "1990-02-27",
+      "estimated_cost": 2500,
+      "description": "parapet corrective work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1989–2023",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=1208",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3728009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3728&lot=009",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3728009",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41210422575001%2037.776161957569144)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54704",
+      "name": "1208 Howard Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54704",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-05-17",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54704"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "address": "1410 43rd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/43rd-avenue/1410/",
+  "apn": "1811042A",
+  "block": "1811",
+  "lot": "042A",
+  "eas_baseid": "318696",
+  "coordinates": {
+    "lat": 37.760295,
+    "lng": -122.502473
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1437,
+    "building_area_sqft": 1025,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1410 43RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29084,
+    "assessed_improvement_value": 42706
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200409235000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-23",
+      "status_date": "2004-11-10",
+      "estimated_cost": 4400,
+      "revised_cost": 4400,
+      "description": "install 9 replacement windows. 2 are visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-07",
+      "status_date": "1999-11-08",
+      "estimated_cost": 4000,
+      "description": "one-stop, reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=43RD&street_type=AVE&address_number=1410",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1811042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1811&lot=042A",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1811042A",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54422",
+      "name": "1410 43rd Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54422",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54422"
+    }
+  ]
+}

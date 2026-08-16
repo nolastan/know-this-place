@@ -1,0 +1,163 @@
+{
+  "address": "2005 17th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/17th-street/2005/",
+  "apn": "3977001J",
+  "block": "3977",
+  "lot": "001J",
+  "eas_baseid": "366897",
+  "coordinates": {
+    "lat": 37.764491,
+    "lng": -122.403777
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2308,
+    "building_area_sqft": 1065,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2005 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1262836,
+    "assessed_improvement_value": 541216,
+    "last_sale_date": "2021-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "survey_name": "2005 17th St.",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408309829",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-30",
+      "status_date": "2025-09-03",
+      "estimated_cost": 10000,
+      "revised_cost": 18000,
+      "description": "new open 1 window on east side. enlarge patio door. enlarge 2 windows on west side. remodel scope at (e) rear office only. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310027824",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-02",
+      "status_date": "2025-10-28",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair dryrot damage in 1 bedroom. bring the room wires & plumbing up to code (discovered after removal of drywall). new tpo on the bedroom roof. no work visible from street. no changes to architectural and structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309207023",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-20",
+      "status_date": "2025-10-28",
+      "estimated_cost": 41000,
+      "revised_cost": 41000,
+      "description": "8 windows replacement new construction, in-kind. 4 winidows to be visible from street. 4 window not visible. uf<0.3. dcp approval rqd. replace with wood aluminum cloud.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103015538",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-01",
+      "status_date": "2021-05-13",
+      "estimated_cost": 600,
+      "revised_cost": 1000,
+      "description": "remove illegal unit on 1st floor per approved conditional use application hearing (2018-009387 cuavar). to abate planning compliant 2018-00650enf and dbi complaint 201845662.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906244259",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-06-24",
+      "status_date": "2021-07-27",
+      "estimated_cost": 5000,
+      "revised_cost": 18200,
+      "description": "issue permit & inspect rear deck originally constructed in 2006. construct (n) firewall @ property line between deck stairs and 2001 17th st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806252877",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2018-06-25",
+      "status_date": "2021-02-25",
+      "estimated_cost": 30000,
+      "description": "legalize illegal unit at garage level per ordinance 43-14. legalize rear deck and install firewall at property line for egress. to correct bid complaints #2018251472 & 201858102 and electrical complaint #201858111.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508212",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-01",
+      "status_date": "1995-10-17",
+      "estimated_cost": 18480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=2005",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3977001J&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3977&lot=001J",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3977001J",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54632",
+      "name": "2005 17th Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54632",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-04-05",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54632"
+    }
+  ]
+}

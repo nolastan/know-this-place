@@ -1,0 +1,169 @@
+{
+  "address": "116 10th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/10th-avenue/116/",
+  "apn": "1369034",
+  "block": "1369",
+  "lot": "034",
+  "eas_baseid": "301399",
+  "coordinates": {
+    "lat": 37.786076,
+    "lng": -122.468616
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3450,
+    "basement_area_sqft": 436,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0116 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2230143,
+    "assessed_improvement_value": 1346202,
+    "last_sale_date": "2018-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201811307095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-30",
+      "status_date": "2019-03-06",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "voluntary seismic stregthening to address soft story condition at ground flr garage opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809049084",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-04",
+      "status_date": "2019-03-06",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "horizontal extension of rear yard deck(not to exceed (10'-0\" in height) 4 roof dormers. add bedroom at ground at ground floor and minor interior alterations at 2nd, 3rd, 4th floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807053826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-05",
+      "status_date": "2019-03-06",
+      "estimated_cost": 55000,
+      "revised_cost": 100000,
+      "description": "partial removal of interior wall between garage and entry stair, and new shear wall at garage level removal of walls seperating dining rooms at 2nd fl. and bedrooms at 3rd fl. new bathroom at 3rd fl. remove ground flr toilet room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806293433",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2018-06-29",
+      "status_date": "2018-07-06",
+      "estimated_cost": 40000,
+      "revised_cost": 0,
+      "description": "partial removal of interior wall along entry stair and new shear wall at garage level. removal of walls separating dining rooms & kitchen at 2nd fl. new bathroom at 3rd fl. horizontal extention on rear yard deck (under 10'-0' in height)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804126181",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2018-04-12",
+      "status_date": "2018-04-12",
+      "estimated_cost": 225000,
+      "description": "seismic upgrade. renovation of attic, renovation of (e) kitchen & (e) bathrooms, addition of interior stairs, 2 shed dormers, new windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601126840",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2016-01-12",
+      "status_date": "2017-12-11",
+      "estimated_cost": 500000,
+      "description": "horizontal & vertical addition at rear of blding, foundation upgrade, new bath on 1st,2nd & 3rd fl & attic, remodel kitch, 3 new bedrm on 2nd fl, 2 new bedrm on attic level, new staircase, replace facade wood windows in kind. remove & replace rotted wood at facade in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705957",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-02",
+      "status_date": "1998-12-16",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1997–2018",
+    "shown_on_page": 7,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=116",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1369034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1369&lot=034",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1369034",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54398",
+      "name": "116 10th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54398",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54398"
+    }
+  ]
+}

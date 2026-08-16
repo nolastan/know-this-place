@@ -1,0 +1,120 @@
+{
+  "address": "3201 Judah Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/judah-street/3201/",
+  "apn": "1816001",
+  "block": "1816",
+  "lot": "001",
+  "eas_baseid": "318917",
+  "coordinates": {
+    "lat": 37.760696,
+    "lng": -122.496515
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 2420,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "3203 3201 JUDAH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119682,
+    "assessed_improvement_value": 213888
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201802141273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-14",
+      "status_date": "2018-03-22",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109128213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-12",
+      "status_date": "2001-11-15",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace dryrot & re-stucco at front & right side of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003235166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-23",
+      "status_date": "2000-12-11",
+      "revised_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JUDAH&street_type=ST&address_number=3201",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1816001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1816&lot=001",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1816001",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54337",
+      "name": "3201-3203 Judah Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54337",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54337"
+    }
+  ]
+}

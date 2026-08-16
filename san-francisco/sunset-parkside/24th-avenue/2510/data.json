@@ -1,0 +1,120 @@
+{
+  "address": "2510 24th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/24th-avenue/2510/",
+  "apn": "2424042",
+  "block": "2424",
+  "lot": "042",
+  "eas_baseid": "338507",
+  "coordinates": {
+    "lat": 37.740651,
+    "lng": -122.480569
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 1250,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2510 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1099425,
+    "assessed_improvement_value": 471181,
+    "last_sale_date": "2021-03-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104017686",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-01",
+      "status_date": "2021-04-01",
+      "estimated_cost": 9028,
+      "revised_cost": 9028,
+      "description": "remove & replace 2 windows 2 street facing same size loction aluminum windows for wood windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207195230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-19",
+      "status_date": "2012-07-31",
+      "estimated_cost": 11800,
+      "revised_cost": 11800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605105",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-05-01",
+      "status_date": "1986-05-07",
+      "estimated_cost": 435,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=2510",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2424042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2424&lot=042",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2424042",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54334",
+      "name": "2510 24th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54334",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54334"
+    }
+  ]
+}

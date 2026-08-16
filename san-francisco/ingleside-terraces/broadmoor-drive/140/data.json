@@ -1,0 +1,163 @@
+{
+  "address": "140 Broadmoor Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/broadmoor-drive/140/",
+  "apn": "7235001D",
+  "block": "7235",
+  "lot": "001D",
+  "eas_baseid": "418590",
+  "coordinates": {
+    "lat": 37.726166,
+    "lng": -122.473557
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 4878,
+    "building_area_sqft": 2307,
+    "basement_area_sqft": 309,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Lakeside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0140 BROADMOOR           DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1303551,
+    "assessed_improvement_value": 733084,
+    "last_sale_date": "2014-03-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509266207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-09-26",
+      "status_date": "2025-10-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to pa #202505297511. revise bathroom at garage level: resize vanity, relocate linen closet, enlarge shower. revise stairs to storage area. extend excavation 3' to east and 5' to the north to increase size of storage area. center window at shower.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505297511",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-05-29",
+      "status_date": "2025-07-10",
+      "estimated_cost": 60000,
+      "revised_cost": 80000,
+      "description": "no expansion of below grade footing. new windows cannot be seen from street. remodel basement and (e) bathrooms @ garage level to include remodeled bathroom & new bedroom & mudroom. remodel (e) storage & crawl space to (n) storage w/ 8'high ceiling. excavation less than 32 cub yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107204765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-20",
+      "status_date": "2023-01-20",
+      "estimated_cost": 15000,
+      "revised_cost": 26000,
+      "description": "revision to app#202103166687. 1) relocate new powder room to different location in 1st floor. 2) remodel extg bath in 1st foor. 3)change framing plan to reflect extg framing conditions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103166687",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-16",
+      "status_date": "2023-01-20",
+      "estimated_cost": 45000,
+      "revised_cost": 50000,
+      "description": "1)at 1st floor: kitchen remodel. 2) at 1st floor: new half bath. 3)remove bay window at north side yard. 4)new window at side yard. 5)remodel 2nd level bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003174656",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-17",
+      "status_date": "2000-09-17",
+      "revised_cost": 6000,
+      "description": "replace kitchen cabs, sections of old drywall ,add 2 lights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-06",
+      "status_date": "1995-02-15",
+      "estimated_cost": 3000,
+      "description": "voluntary strengthening of lower level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116344",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-05",
+      "status_date": "1992-07-13",
+      "estimated_cost": 6790,
+      "description": "termite waork",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROADMOOR&street_type=DR&address_number=140",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7235001D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7235&lot=001D",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7235001D",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55186",
+      "name": "140 Broadmoor Drive, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55186",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55186"
+    }
+  ]
+}

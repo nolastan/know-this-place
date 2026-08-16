@@ -1,0 +1,11 @@
+# Bush Street
+
+The parcels on Bush Street documented here so far, from the city's address, assessor and permit records.
+
+## Documented so far
+
+- [1475](1475/) — A 1916 industrial building, with a seismic retrofit permitted in 2003.
+- [2056](2056/) — A 1900 5-unit apartment building, with reroofing permitted in 2019.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

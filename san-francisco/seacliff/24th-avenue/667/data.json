@@ -1,0 +1,109 @@
+{
+  "address": "667 24th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/24th-avenue/667/",
+  "apn": "1567009",
+  "block": "1567",
+  "lot": "009",
+  "eas_baseid": "308636",
+  "coordinates": {
+    "lat": 37.77693,
+    "lng": -122.483761
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3229,
+    "basement_area_sqft": 530,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0667 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 312370,
+    "assessed_improvement_value": 312742
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9719047",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-26",
+      "status_date": "1998-01-26",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804129",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-03-31",
+      "status_date": "1990-06-27",
+      "estimated_cost": 61000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=667",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1567009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1567&lot=009",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1567009",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54752",
+      "name": "667 24th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54752",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-05-04",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54752"
+    }
+  ]
+}

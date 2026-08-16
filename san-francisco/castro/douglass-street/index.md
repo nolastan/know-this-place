@@ -105,6 +105,7 @@ Every residential parcel on Douglass Street that the city's address, assessor an
 - [485](485/) — A 1932 single-family house, with a kitchen and bathroom remodel permitted in 2014.
 - [489](489/) — A 1900 two-flat, with a rear addition permitted in 1997.
 - [495](495/) — A 1958 4-unit apartment building, with facade work permitted in 2003.
+- [920](920/) — A 1950 single-family house, with an addition permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

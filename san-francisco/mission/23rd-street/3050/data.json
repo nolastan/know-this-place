@@ -1,0 +1,124 @@
+{
+  "address": "3050 23rd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/23rd-street/3050/",
+  "apn": "3639004B",
+  "block": "3639",
+  "lot": "004B",
+  "eas_baseid": "363923",
+  "coordinates": {
+    "lat": 37.754476,
+    "lng": -122.412855
+  },
+  "parcel": {
+    "lot_area_sqft": 18373,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "NA",
+    "zoning": "UMU",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3050 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7655521,
+    "assessed_improvement_value": 546820,
+    "last_sale_date": "2019-08-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201603212620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-21",
+      "status_date": "2016-04-27",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove all towerstream wifi antennas and associated equipment. compliance ordinance no 155-13.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511037289",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-11-03",
+      "status_date": "2007-03-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app no 200410136717",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410136717",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-13",
+      "status_date": "2004-10-13",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "to in fill (e) wall opening (6\" thick x12' wide x14' high).on the eastern property line near north-",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304283293",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-28",
+      "status_date": "2003-06-12",
+      "estimated_cost": 59100,
+      "revised_cost": 59100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=3050",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3639004B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3639&lot=004B",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3639004B",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55143",
+      "name": "3050 23rd Street, 1956. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55143",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1956-07-02",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55143"
+    }
+  ]
+}

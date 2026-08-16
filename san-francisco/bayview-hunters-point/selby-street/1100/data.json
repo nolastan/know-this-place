@@ -1,0 +1,106 @@
+{
+  "address": "1100 Selby Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/selby-street/1100/",
+  "apn": "5590A016",
+  "block": "5590A",
+  "lot": "016",
+  "eas_baseid": "380391",
+  "coordinates": {
+    "lat": 37.740535,
+    "lng": -122.399612
+  },
+  "parcel": {
+    "year_built": 1951,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 3,
+    "lot_area_sqft": 15921,
+    "building_area_sqft": 18665,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1100 SELBY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 185033,
+    "assessed_improvement_value": 328743
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200403168712",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-03-16",
+      "status_date": "2005-08-08",
+      "estimated_cost": 19800,
+      "revised_cost": 19800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917269",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-20",
+      "status_date": "2001-02-27",
+      "estimated_cost": 35900,
+      "description": "one-stop; reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SELBY&street_type=ST&address_number=1100",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5590A016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5590A&lot=016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5590A016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54551",
+      "name": "1100 Selby Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54551",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-03-28",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54551"
+    }
+  ]
+}

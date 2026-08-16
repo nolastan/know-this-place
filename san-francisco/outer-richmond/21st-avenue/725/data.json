@@ -1,0 +1,119 @@
+{
+  "address": "725 21st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/21st-avenue/725/",
+  "apn": "1664003",
+  "block": "1664",
+  "lot": "003",
+  "eas_baseid": "312788",
+  "coordinates": {
+    "lat": 37.774124,
+    "lng": -122.480332
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 3676,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0725 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587887,
+    "assessed_improvement_value": 325290,
+    "last_sale_date": "1998-07-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200208295252",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-08-29",
+      "status_date": "2003-07-09",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "apply vinyl siding to back wall, light well, back side wall,not seen from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714027",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-30",
+      "status_date": "1987-10-30",
+      "estimated_cost": 1025,
+      "description": "isntall aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613602",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-29",
+      "status_date": "1986-12-23",
+      "estimated_cost": 1260,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=725",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1664003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1664&lot=003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1664003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54293",
+      "name": "725 21st Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54293",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54293"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "address": "1706 46th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/46th-avenue/1706/",
+  "apn": "2004048",
+  "block": "2004",
+  "lot": "048",
+  "eas_baseid": "324681",
+  "coordinates": {
+    "lat": 37.754629,
+    "lng": -122.505287
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1624,
+    "building_area_sqft": 688,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1706 46TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29084,
+    "assessed_improvement_value": 22144
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9514853",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-12",
+      "status_date": "1996-03-12",
+      "estimated_cost": 6650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103743",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-07",
+      "status_date": "1991-05-21",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-30",
+      "status_date": "1989-04-26",
+      "estimated_cost": 5000,
+      "description": "remodel bathroom. install fixtures, insulate, drywall, tile",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=46TH&street_type=AVE&address_number=1706",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2004048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2004&lot=048",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2004048",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54486",
+      "name": "1706 46th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54486",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54486"
+    }
+  ]
+}

@@ -4,12 +4,14 @@ The parcels on 10th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [718](718/) — A 1912 single-family house in the Inner Richmond Nelson Historic District, with reroofing permitted in 1999.
 - [1215](1215/) — A 1902 Queen Anne/Classical blend, built by Alphonso Harrington.
 - [1223](1223/) — A 1902 building, built by Alphonso Harrington.
 - [1230](1230/) — A 1897 Shingle/Dutch Colonial Revival/Classical Revival blend, designed by William H. Lillie.
 - [1234](1234/) — A 1965 building, designed by Jun R. Hatoyama.
 - [1254](1254/) — A building with no recorded construction year.
 - [1258](1258/) — A 1897 building.
+- [1261](1261/) — A 1973 6-unit apartment building, with reroofing permitted in 1990.
 - [1262](1262/) — A 1897 building.
 - [1276](1276/) — A 1897 building, built by William Bell.
 - [1278](1278/) — A 1901-1902 Shingle, built by William Bell.

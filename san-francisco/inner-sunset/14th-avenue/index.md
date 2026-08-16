@@ -11,6 +11,7 @@ The parcels on 14th Avenue documented here so far, from the city's address, asse
 - [1358](1358/) — A 1913 Craftsman, designed by Theodore W. Lenzen.
 - [1407](1407/) — A 1935 Moorish window with classical quoins, built by Jesse Horn, developer.
 - [1411](1411/) — A 1935 Spanish Colonial, built by Jesse Horn, developer.
+- [1446–1448](1446/) — A 1950 4-unit apartment building, with reroofing permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

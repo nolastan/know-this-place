@@ -1,0 +1,99 @@
+{
+  "address": "1617–1651 Harrison Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/harrison-street/1617/",
+  "apn": "3523008",
+  "block": "3523",
+  "lot": "008",
+  "eas_baseid": "358172",
+  "coordinates": {
+    "lat": 37.769759,
+    "lng": -122.412829
+  },
+  "address_range": "1617–1651",
+  "street_numbers_on_parcel": [
+    "1617",
+    "1651"
+  ],
+  "parcel": {
+    "year_built": 1950,
+    "units": 2,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 9748,
+    "building_area_sqft": 4747,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1651 1617 HARRISON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 225285
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200407098442",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2004-07-09",
+      "status_date": "2007-06-14",
+      "description": "demolishing auto repair and plumbing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRISON&street_type=ST&address_number=1617",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3523008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3523&lot=008",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3523008",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54707",
+      "name": "1617 Harrison Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54707",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-05-14",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54707"
+    }
+  ]
+}
