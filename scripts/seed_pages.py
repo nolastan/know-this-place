@@ -1303,9 +1303,15 @@ def historical_items(rec: dict, indent: str) -> list:
     # the Sources footer, and repeating it under every item would swamp them.
     labels = {s["id"]: s.get("label") or s.get("name", s["id"])
               for s in rec.get("sources", [])}
+    # A photograph is an item the reader can go and look at, so its meta links
+    # to the record the way a permit's links to the permit. Other historical
+    # entries cite a document *about* the building; that is attribution, and
+    # attribution lives in the Sources footer.
+    urls = {s["id"]: s["query"] for s in rec.get("sources", []) if s.get("query")}
     items = []
     for e in entries:
         meta = labels.get(e.get("source"), e.get("source") or "")
+        href = urls.get(e.get("source")) if e.get("kind") == "photograph" else None
         summary = (f'{indent}    <p class="vtl-desc"><b>{esc(e["summary"])}</b></p>\n'
                    if e.get("summary") else "")
         when = e.get("date", "")
@@ -1318,8 +1324,9 @@ def historical_items(rec: dict, indent: str) -> list:
             f'{summary}'
             f'{indent}    <p class="vtl-desc">{esc(e.get("description", ""))}</p>\n'
             + (f'{indent}    <div class="vtl-meta">\n'
-               f'{indent}      <span>{esc(meta)}</span>\n'
-               f'{indent}    </div>\n' if meta else "")
+               + (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
+                  else f'{indent}      <span>{esc(meta)}</span>\n')
+               + f'{indent}    </div>\n' if meta else "")
             + f'{indent}  </li>'))
     return items
 

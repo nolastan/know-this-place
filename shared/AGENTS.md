@@ -206,7 +206,12 @@ it drops the `.section-head` and carries the name for screen readers instead:
 ```
 Not every entry has a meta row: a historical one cites its source there
 (`<span>The Argonaut, Winter 2018</span>`) and one taken from an undated
-photograph has none at all. Dates are whatever the record knew — `Aug 2005`,
+photograph has none at all. A **photograph** entry links that citation instead
+of stating it (`<a href="https://digitalsf.org/record/54747">Assessor-Recorder
+Photographs (SFP 23), San Francisco Public Library</a>`), the way a permit links
+to the permit: the reader can go and look at the item, so the entry says where.
+Entries citing a document *about* the building don't — that is attribution, and
+attribution lives in the Sources footer. Dates are whatever the record knew — `Aug 2005`,
 `April 18, 1906`, `1912`, `circa 1885`, `1930s`, `pre-1906`; a vaguer date sorts
 before a precise one in the same year, and a `pre-`/`before` hedge before that.
 
