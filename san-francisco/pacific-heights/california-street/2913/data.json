@@ -1,0 +1,130 @@
+{
+  "address": "2913 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2913/",
+  "apn": "1029032",
+  "block": "1029",
+  "lot": "032",
+  "eas_baseid": "293249",
+  "coordinates": {
+    "lat": 37.787472,
+    "lng": -122.442682
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3781.25,
+    "building_area_sqft": 1355,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2913 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66280,
+    "assessed_improvement_value": 29084
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402166024",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-16",
+      "status_date": "2024-04-10",
+      "estimated_cost": 9792,
+      "revised_cost": 9792,
+      "description": "replace (2) front windows street visible, (e) aluminum , (n) wood comp, no size change <,30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912230422",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-12-23",
+      "status_date": "2026-01-09",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "voluntary seismic upgrade of soft story; type v (wood frame) building per iebc a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605177569",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2016-05-17",
+      "status_date": "2025-02-11",
+      "estimated_cost": 200000,
+      "description": "vertical & horizontal addtion to a 1 story, single family dwelling to become 3 story, 2 units residental, raise up building to obtain clearance for one story at (e) crawl space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206122394",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-06-12",
+      "status_date": "2012-06-12",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2913",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1029032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1029&lot=032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1029032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54683",
+      "name": "2913 California Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54683",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-04-03",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54683"
+    }
+  ]
+}

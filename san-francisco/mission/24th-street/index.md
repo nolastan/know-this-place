@@ -19,6 +19,7 @@ Every residential parcel on 24th Street that the city's address, assessor and pe
 - [2437–2441](2437/) — A 1907 three-flat, with a bathroom remodel permitted in 2007.
 - [2443–2447](2443/) — A 1905 4-unit building with a ground-floor store, with window replacement permitted in 2008.
 - [2501–2503](2501/) — A 1900 2-unit building with a ground-floor store, with permit records from 1988 to 2010.
+- [2511–2517](2511/) — A 1905 store building, with stair work permitted in 1989.
 - [2525–2529](2525/) — A 1925 3-unit building with a ground-floor store, with stair work permitted in 2015.
 - [2537–2541](2537/) — A 1900 2-unit building with a ground-floor store, with a bathroom remodel permitted in 2012.
 - [2543–2545](2543/) — A 1900 2-unit building with a ground-floor store, with stair work permitted in 2013.
@@ -50,6 +51,7 @@ Every residential parcel on 24th Street that the city's address, assessor and pe
 - [2893–2899](2893/) — A 1900 6-unit tic building, with a bathroom remodel permitted in 2006.
 - [2900–2904](2900/) — A 1900 3-unit building with a ground-floor store, with fire repair permitted in 1996.
 - [2912–2916](2912/) — A 1900 three-flat, with an addition permitted in 1984.
+- [2913](2913/) — A 1924 store building, with permit records from 2002 to 2022.
 - [2918–2920](2918/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 2024.
 - [2929–2931](2929/) — A 1900 three-flat, with a bathroom remodel permitted in 2015.
 - [2933–2937](2933/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2019.

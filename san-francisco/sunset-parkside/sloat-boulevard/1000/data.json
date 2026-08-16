@@ -1,0 +1,119 @@
+{
+  "address": "1000 Sloat Boulevard, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/sloat-boulevard/1000/",
+  "apn": "2526B007",
+  "block": "2526B",
+  "lot": "007",
+  "eas_baseid": "341695",
+  "coordinates": {
+    "lat": 37.734643,
+    "lng": -122.482612
+  },
+  "parcel": {
+    "year_built": 1947,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 4199,
+    "building_area_sqft": 2369,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Pine Lake Park",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1000 SLOAT               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162856,
+    "assessed_improvement_value": 571983,
+    "last_sale_date": "1997-05-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406269593",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-06-26",
+      "status_date": "2015-04-20",
+      "estimated_cost": 138500,
+      "revised_cost": 138500,
+      "description": "legalize (e) atrium, remove(e) bathrm adj to (e) fam rm w/(n) bathrm. remove interior wall of atrium & provide (n) struct frame. add (n) partition at (e) fam rm for (n) bedrm & closet. remove (e) partition at (e) dining rm & replace (e) kitchen w/(n) kitchen.(n) windows2(n) front and 2(n) rear windw",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402269414",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2014-02-26",
+      "status_date": "2024-11-06",
+      "estimated_cost": 270000,
+      "description": "vertical addition to (e) atrium. new partial 2nd floor addition to (e) 1 story single family dwelling. minor alterations to (e) 1st floor. (n) bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8911213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-06-27",
+      "status_date": "1989-10-25",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SLOAT&street_type=BLVD&address_number=1000",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2526B007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2526B&lot=007",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2526B007",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54202",
+      "name": "1000 Sloat Blvd, between 1946 and 1952. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54202",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1952",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54202"
+    }
+  ]
+}

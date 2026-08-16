@@ -83,6 +83,8 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [862–864](862/) — A 1940 two-flat, with a kitchen and bathroom remodel permitted in 2007.
 - [869–871](869/) — A 1908 two-flat, with a bathroom remodel permitted in 2014.
 - [875](875/) — A 1900 single-family house, with a rear addition permitted in 1990.
+- [971–973](971/) — A 1924 three-flat, with a kitchen remodel permitted in 2016.
+- [985](985/) — A 1928 7-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

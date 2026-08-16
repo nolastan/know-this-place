@@ -14,6 +14,7 @@ The parcels on California Street documented here so far, from the city's address
 - [555](555/) — The 1969 Bank of America tower; its plaza sculpture is the one called the Banker's Heart.
 - [600–628](600/) — Where a set of Lee Lawrie's 1930s bronze lift doors, from Harrisburg, ended up on Sacramento Street.
 - [636–650](636/) — A 1963 office building, with stair work permitted in 2017.
+- [1021](1021/) — A 1911 single-family house, with reroofing permitted in 1998.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

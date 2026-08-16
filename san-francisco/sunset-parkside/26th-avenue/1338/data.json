@@ -1,0 +1,130 @@
+{
+  "address": "1338 26th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/1338/",
+  "apn": "1780037",
+  "block": "1780",
+  "lot": "037",
+  "eas_baseid": "317246",
+  "coordinates": {
+    "lat": 37.762487,
+    "lng": -122.484245
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2645,
+    "basement_area_sqft": 785,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1338 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 603946,
+    "assessed_improvement_value": 467249,
+    "last_sale_date": "2003-02-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200311120032",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-12",
+      "status_date": "2003-11-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace (12) single pane windows with vinyl dual pane. same as both -no change in openings. no viola",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302278474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-27",
+      "status_date": "2003-05-21",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "remodel grd fl- add a bedroom, 2 bathrooms. add a bathroom on 3rd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101407",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-01-30",
+      "status_date": "1991-12-23",
+      "estimated_cost": 1,
+      "description": "replace paneling removed to repair dry rot in wall #9101300",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-01-28",
+      "status_date": "1991-04-11",
+      "estimated_cost": 2500,
+      "description": "rear stairway & dry rot at bottom af wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=1338",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1780037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1780&lot=037",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1780037",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54516",
+      "name": "1338 26th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54516",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54516"
+    }
+  ]
+}

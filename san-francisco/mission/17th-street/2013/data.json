@@ -1,0 +1,130 @@
+{
+  "address": "2013 17th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/17th-street/2013/",
+  "apn": "3977001D",
+  "block": "3977",
+  "lot": "001D",
+  "eas_baseid": "366894",
+  "coordinates": {
+    "lat": 37.764481,
+    "lng": -122.40395
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 2308,
+    "building_area_sqft": 990,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2013 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1099410,
+    "assessed_improvement_value": 471174,
+    "last_sale_date": "2021-10-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "survey_name": "2013 17th St.",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507151520",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-15",
+      "status_date": "2015-07-15",
+      "estimated_cost": 16000,
+      "revised_cost": 26000,
+      "description": "upgrade panel, kitchen & bath electrical, new cabinets, new tile, to add a wall, remove a small wall, fix sheetrock, paint, tile, install sinks & toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823238",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-12",
+      "status_date": "1999-09-16",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823210",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-11-10",
+      "status_date": "1999-01-07",
+      "estimated_cost": 4500,
+      "description": "repair dry rot, stairs replacing bannester 1st two treads/ri",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318802",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-10-25",
+      "status_date": "1994-05-12",
+      "estimated_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=2013",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3977001D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3977&lot=001D",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3977001D",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54643",
+      "name": "2013 17th Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54643",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-04-05",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54643"
+    }
+  ]
+}

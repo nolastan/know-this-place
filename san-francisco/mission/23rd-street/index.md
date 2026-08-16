@@ -75,6 +75,7 @@ Every residential parcel on 23rd Street that the city's address, assessor and pe
 - [3031](3031/) — A 1904 single-family house.
 - [3035](3035/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [3043–3047](3043/) — A 1900 three-flat, with deck work permitted in 2013.
+- [3050](3050/) — An office building, with reroofing permitted in 2003.
 - [3065–3067](3065/) — A 1900 single-family house, with a vertical addition permitted in 2023.
 - [3069](3069/) — A 1900 two-flat, with a vertical addition permitted in 2023.
 - [3116](3116/) — A 1900 4-unit apartment building, with stair work permitted in 1986.
@@ -135,6 +136,8 @@ Every residential parcel on 23rd Street that the city's address, assessor and pe
 - [3643](3643/) — A 1906 two-flat.
 - [3669–3673](3669/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2014.
 - [3679–3685](3679/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2011.
+- [4019](4019/) — A 1900 two-flat in the Noe & Alvarado Streets Historic District, with a seismic retrofit permitted in 1990.
+- [4020](4020/) — A 1900 single-family house in the Noe & Alvarado Streets Historic District, with a vertical addition permitted in 1989.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

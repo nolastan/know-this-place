@@ -1,0 +1,131 @@
+{
+  "address": "2814 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/2814/",
+  "apn": "4022018",
+  "block": "4022",
+  "lot": "018",
+  "eas_baseid": "493990",
+  "coordinates": {
+    "lat": 37.760576,
+    "lng": -122.410318
+  },
+  "parcel": {
+    "year_built": 2000,
+    "stories": 1,
+    "building_area_sqft": 921,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Store Condo",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2814 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81390,
+    "assessed_improvement_value": 97674
+  },
+  "permits": [
+    {
+      "number": "202308154449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-15",
+      "status_date": "2025-01-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "to comply with accessible business entrance program, abe# 202403289956. remodel of existing facade, front door to be moved south. related permit #221e-00334 for sidewalk improvement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209303527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-30",
+      "status_date": "2023-11-16",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "accessiblity upgrades, remodel of single user restroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910641",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-05-28",
+      "status_date": "1999-08-11",
+      "estimated_cost": 1000,
+      "description": "corrective work per report of phys inspec-no.-3r-2915",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318692",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-22",
+      "status_date": "1994-03-18",
+      "estimated_cost": 1,
+      "description": "renewal of application 9303376",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309419",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-06-07",
+      "status_date": "1993-10-22",
+      "estimated_cost": 1100,
+      "description": "installation of ansul hood & duct system (fire suppression)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303376",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-03-03",
+      "status_date": "1993-10-14",
+      "estimated_cost": 20000,
+      "description": "replacement lower half storefrt w/steel sash windows/new woo",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=2814",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4022018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4022&lot=018",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54713",
+      "name": "2814 19th Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54713",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-04-26",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54713"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 2000, after this photograph was taken."
+  }
+}

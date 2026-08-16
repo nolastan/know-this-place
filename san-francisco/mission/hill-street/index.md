@@ -32,6 +32,9 @@ Every residential parcel on Hill Street that the city's address, assessor and pe
 - [87](87/) — A 1900 two-flat in the Liberty Hill Historic District, with one permit record from 1983.
 - [91–93](91/) — A 1900 two-flat in the Liberty Hill Historic District, with a bathroom remodel permitted in 2008.
 - [97–99](97/) — A 1900 3-unit apartment building in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2021.
+- [351](351/) — A 1906 single-family house, with a vertical addition permitted in 2025.
+- [376](376/) — A 1907 two dwellings on one parcel, with an accessory dwelling unit permitted in 2021.
+- [382](382/) — A 1909 single-family house, with facade work permitted in 1999.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

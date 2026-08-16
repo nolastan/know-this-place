@@ -12,6 +12,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Clara Street](clara-street/) — 29 buildings, built 1906–1991.
 - [Clementina Street](clementina-street/) — 16 buildings, built 1909–2008.
 - [Clyde Street](clyde-street/) — 4 buildings, built 1923; 4 in the Clyde and Crooks Historic District.
+- [Dore Street](dore-street/) — 1 building, built 1924; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Falmouth Street](falmouth-street/) — 2 buildings, built 1912–1990; 1 in the SoMa LGBTQ Historic District.
 - [Fifth Street](5th-street/) — 29 buildings, built 1900–1998; 3 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Folsom Street](folsom-street/) — 35 buildings, built 1906–1988; 4 in the SoMa LGBTQ Historic District.

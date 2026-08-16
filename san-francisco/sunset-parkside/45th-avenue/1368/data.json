@@ -1,0 +1,109 @@
+{
+  "address": "1368 45th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/45th-avenue/1368/",
+  "apn": "1799026",
+  "block": "1799",
+  "lot": "026",
+  "eas_baseid": "318140",
+  "coordinates": {
+    "lat": 37.761083,
+    "lng": -122.504571
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1225,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1368 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 870856,
+    "assessed_improvement_value": 194263,
+    "last_sale_date": "2007-04-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201106037344",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-06-03",
+      "status_date": "2011-06-03",
+      "estimated_cost": 10518,
+      "revised_cost": 10518,
+      "description": "replace 7 windows, 2 visible from street to be woodclad frames, no structural changes, max u factor .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907023",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-13",
+      "status_date": "1999-10-13",
+      "estimated_cost": 7050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=1368",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1799026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1799&lot=026",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1799026",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54477",
+      "name": "1368 45th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54477",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54477"
+    }
+  ]
+}

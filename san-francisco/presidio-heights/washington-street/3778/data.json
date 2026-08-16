@@ -1,0 +1,175 @@
+{
+  "address": "3778 Washington Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/washington-street/3778/",
+  "apn": "0988016",
+  "block": "0988",
+  "lot": "016",
+  "eas_baseid": "292085",
+  "coordinates": {
+    "lat": 37.789036,
+    "lng": -122.455331
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 6,
+    "bedrooms": 7,
+    "lot_area_sqft": 13629,
+    "building_area_sqft": 15623,
+    "lot_depth_ft": 36.29,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3778 WASHINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 590291,
+    "assessed_improvement_value": 835666
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark Work Program, California Register Historic District",
+    "yearbuilt": "1950",
+    "survey_name": "RUSSELL HOUSE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201912260715",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-26",
+      "status_date": "2019-12-26",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "remove a 17' x 23' stucco from ceiling in carpet area. we need to remove stucco in order to detect the water leak that has been leaking from the carport ceiling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809059173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-05",
+      "status_date": "2018-09-25",
+      "estimated_cost": 37000,
+      "revised_cost": 37000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406166577",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-06-16",
+      "status_date": "2005-06-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove & replace tile @ roof deck due to roof replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405264886",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-26",
+      "status_date": "2004-05-26",
+      "estimated_cost": 30275,
+      "revised_cost": 30275,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405254767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-25",
+      "status_date": "2004-06-08",
+      "estimated_cost": 53163,
+      "revised_cost": 53163,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707787",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-04-30",
+      "status_date": "1997-12-31",
+      "estimated_cost": 3500,
+      "description": "install bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1997–2019",
+    "shown_on_page": 6,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WASHINGTON&street_type=ST&address_number=3778",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0988016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0988&lot=016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0988016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45533145829056%2037.789036180247344)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54698",
+      "name": "3778 Washington Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54698",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-04-27",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54698"
+    }
+  ]
+}

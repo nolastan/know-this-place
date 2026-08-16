@@ -1,0 +1,175 @@
+{
+  "address": "170 Seacliff Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/seacliff-avenue/170/",
+  "apn": "1306016",
+  "block": "1306",
+  "lot": "016",
+  "eas_baseid": "300241",
+  "coordinates": {
+    "lat": 37.789043,
+    "lng": -122.487764
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 7801,
+    "building_area_sqft": 4652,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0170 SEACLIFF            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8589495,
+    "assessed_improvement_value": 3681210,
+    "last_sale_date": "2019-05-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Evaluation Response",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202210174467",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2022-10-17",
+      "status_date": "2022-10-17",
+      "estimated_cost": 25000,
+      "revised_cost": 250000,
+      "description": "demolish a 3-story, type v-b, single family building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210174473",
+      "type": "new construction wood frame",
+      "status": "approved",
+      "filed": "2022-10-17",
+      "status_date": "2025-12-02",
+      "estimated_cost": 2400000,
+      "revised_cost": 3640607,
+      "description": "erect a 3-story, type v-b, single family building with an adu and one basement level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-23",
+      "status_date": "1997-02-04",
+      "estimated_cost": 12000,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-03",
+      "status_date": "1995-05-02",
+      "estimated_cost": 6500,
+      "description": "remove plaster/new shtrock/retile/instal new cab/remodel bat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123952",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-19",
+      "status_date": "1992-07-20",
+      "estimated_cost": 9675,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-17",
+      "status_date": "1990-03-15",
+      "estimated_cost": 7500,
+      "description": "cosmetic changes in master bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-13",
+      "status_date": "1989-01-06",
+      "estimated_cost": 10400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SEACLIFF&street_type=AVE&address_number=170",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1306016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1306&lot=016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1306016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48776384502379%2037.789043251798894)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54992",
+      "name": "170 Sea Cliff Avenue, 1975. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54992",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-10-28",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54992"
+    }
+  ]
+}

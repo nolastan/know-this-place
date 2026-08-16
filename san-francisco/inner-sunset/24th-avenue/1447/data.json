@@ -1,0 +1,122 @@
+{
+  "address": "1447 24th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/24th-avenue/1447/",
+  "apn": "1829009",
+  "block": "1829",
+  "lot": "009",
+  "eas_baseid": "319555",
+  "coordinates": {
+    "lat": 37.760552,
+    "lng": -122.482617
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1725,
+    "basement_area_sqft": 450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1447 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 871298,
+    "assessed_improvement_value": 356260,
+    "last_sale_date": "2009-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200802215228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-21",
+      "status_date": "2008-05-02",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel ground floor: two bedrooms, full bath and storage/laundry room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802084356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-08",
+      "status_date": "2008-05-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair stucco on front of house 5' x 5' and paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801293488",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-29",
+      "status_date": "2008-02-05",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove illegal stove from garage area to comply with nov 200730839",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=1447",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1829009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1829&lot=009",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1829009",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54279",
+      "name": "1447 24th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54279",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54279"
+    }
+  ]
+}

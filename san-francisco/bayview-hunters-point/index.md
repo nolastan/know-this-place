@@ -5,11 +5,13 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 ## Streets documented so far
 
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1927.
+- [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Earl Street](earl-street/) — 1 building, built 1947.
 - [Griffith Street](griffith-street/) — 1 building, built 1930; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Hawes Street](hawes-street/) — 2 buildings, built 1942–1972.
 - [Hudson Avenue](hudson-avenue/) — 3 buildings, built 1930–1943; 3 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Hunters Point Boulevard](hunters-point-boulevard/) — 1 building, built 1961.
+- [Ingalls Street](ingalls-street/) — 4 buildings, built 1920–1932.
 - [Innes Avenue](innes-avenue/) — 3 buildings, built 1890–1920; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Kirkwood Avenue](kirkwood-avenue/) — 7 buildings, built 1900–1941.
 - [La Salle Avenue](la-salle-avenue/) — 15 buildings, built 1900–1994.
@@ -27,6 +29,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Pomona Street](pomona-street/) — 1 building, built 1910.
 - [Quesada Avenue](quesada-avenue/) — 5 buildings, built 1900–1922.
 - [Revere Avenue](revere-avenue/) — 1 building, built 1900.
+- [Selby Street](selby-street/) — 1 building, built 1951.
 - [Shafter Avenue](shafter-avenue/) — 1 building, built 1900.
 - [Third Street](3rd-street/) — 54 buildings, built 1872–2013.
 - [Thomas Avenue](thomas-avenue/) — 2 buildings, built 1900–1907.

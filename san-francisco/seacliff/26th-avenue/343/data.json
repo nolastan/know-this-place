@@ -1,0 +1,151 @@
+{
+  "address": "343 26th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/26th-avenue/343/",
+  "apn": "1407008",
+  "block": "1407",
+  "lot": "008",
+  "eas_baseid": "302595",
+  "coordinates": {
+    "lat": 37.782972,
+    "lng": -122.486347
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 6,
+    "stories": 2,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 4542,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0343 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117568,
+    "assessed_improvement_value": 160541
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505086086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-08",
+      "status_date": "2025-06-05",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "re-roofing (no hot works)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302011170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-01",
+      "status_date": "2023-03-17",
+      "estimated_cost": 16200,
+      "revised_cost": 19633,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603141875",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-14",
+      "status_date": "2016-05-10",
+      "estimated_cost": 21990,
+      "revised_cost": 21990,
+      "description": "replace vinyl siding on right and left sides. no visable from street. no structural changes. 2765sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504143524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-14",
+      "status_date": "2015-10-16",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "install 3 steel moment frames at 1st floor garage for soft storey seismic retrofit in accordance with sf mandatory soft storey program per sfbc chapter 34b; 2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005142437",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-14",
+      "status_date": "2010-07-14",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace 22 windows into existing openings, visible from the street, no structural changes max u factor .40 vinyl framed windows, not affect egress",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2010–2025",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=343",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1407008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1407&lot=008",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1407008",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54504",
+      "name": "343 26th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54504",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54504"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1964, after this photograph was taken."
+  }
+}

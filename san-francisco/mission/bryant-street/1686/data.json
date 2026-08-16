@@ -1,0 +1,130 @@
+{
+  "address": "1686 Bryant Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/bryant-street/1686/",
+  "apn": "3928014",
+  "block": "3928",
+  "lot": "014",
+  "eas_baseid": "490418",
+  "coordinates": {
+    "lat": 37.765808,
+    "lng": -122.410734
+  },
+  "also_addressed": [
+    "2402 16TH ST"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "stories": 2,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 3340,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1690 1686 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 217543,
+    "assessed_improvement_value": 228424
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206236952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-23",
+      "status_date": "2022-07-15",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603297833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-29",
+      "status_date": "2006-06-05",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "proposed curb out @ s.w. corner.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402527",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-02-17",
+      "status_date": "1995-06-02",
+      "estimated_cost": 25000,
+      "revised_cost": 41800,
+      "description": "demolit const of new walls new flooring new electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=1686",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3928014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3928&lot=014",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3928014",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54223",
+      "name": "1686 Bryant Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54223",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15",
+      "title": "1686 Bryant Street"
+    },
+    {
+      "id": "digitalsf-54227",
+      "name": "1698 Bryant Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54227",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15",
+      "title": "1698 Bryant Street"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-03-14",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment. Transfer Quick Lunch was at the address.",
+      "source": [
+        "digitalsf-54223",
+        "digitalsf-54227"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "address": "1144 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/howard-street/1144/",
+  "apn": "3727019",
+  "block": "3727",
+  "lot": "019",
+  "eas_baseid": "365122",
+  "coordinates": {
+    "lat": 37.777291,
+    "lng": -122.410676
+  },
+  "parcel": {
+    "year_built": 1921,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 4499,
+    "building_area_sqft": 7784,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 1144 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2273106,
+    "assessed_improvement_value": 974188,
+    "last_sale_date": "1997-09-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201906274575",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2019-06-27",
+      "status_date": "2022-11-15",
+      "estimated_cost": 250000,
+      "description": "convert (e) warehouse to community dance center. city dance is a reg. ca non profit. interior t.i. no exterior change.**maher n/a**",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9622592",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-11-21",
+      "status_date": "1997-04-18",
+      "estimated_cost": 2500,
+      "description": "revision to pa #s9606896/9621216",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-01",
+      "status_date": "1997-03-14",
+      "estimated_cost": 500,
+      "description": "renew expired appl #9606896",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606896",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-22",
+      "status_date": "1996-10-31",
+      "estimated_cost": 4500,
+      "description": "soft demo(nonstruct)to remove dwelling units/install 1 handi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518042S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-10-26",
+      "status_date": "1997-02-13",
+      "estimated_cost": 1000,
+      "description": "convert warehouse to apartments,ordero of abatment 1358-a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505060",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-05-15",
+      "status_date": "1985-07-11",
+      "estimated_cost": 2500,
+      "description": "construction of wall to divide space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205698",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-07-13",
+      "status_date": "1982-12-08",
+      "estimated_cost": 2300,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=1144",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3727019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3727&lot=019",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3727019",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41067644648086%2037.77729105742631)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55255",
+      "name": "1144 Howard Street, 1950. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55255",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1950-02-23",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment. American Printing and Lithographing Co was at the address.",
+      "source": "digitalsf-55255"
+    }
+  ]
+}

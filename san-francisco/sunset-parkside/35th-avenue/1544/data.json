@@ -1,0 +1,176 @@
+{
+  "address": "1544 35th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/35th-avenue/1544/",
+  "apn": "1880036",
+  "block": "1880",
+  "lot": "036",
+  "eas_baseid": "321905",
+  "coordinates": {
+    "lat": 37.758272,
+    "lng": -122.493622
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3267,
+    "building_area_sqft": 1740,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1544 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325712,
+    "assessed_improvement_value": 227990,
+    "last_sale_date": "1997-05-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202404160034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-16",
+      "status_date": "2024-06-17",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410148726",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-14",
+      "status_date": "2014-10-14",
+      "estimated_cost": 2500,
+      "revised_cost": 9000,
+      "description": "replacing the old bathtub, the old toilet, the bath cabinets and floor tiles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804250610",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-25",
+      "status_date": "2008-04-25",
+      "estimated_cost": 8171,
+      "revised_cost": 8171,
+      "description": "replace cabinets, replace counter top, & replace flooring in kitchen. no new lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201086475",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-08",
+      "status_date": "2002-05-08",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove existing shower and replace with a toilet. new wall between half bath & full bath, closing ex",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-23",
+      "status_date": "1997-10-21",
+      "estimated_cost": 1,
+      "description": "revision to app #9710091. relocate water heater & furnace .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-06-04",
+      "status_date": "1997-10-21",
+      "estimated_cost": 4000,
+      "description": "addition on ground flr,fam room,bedrm,bath,laundry,storage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709876",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-30",
+      "status_date": "1998-01-21",
+      "estimated_cost": 4950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=1544",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1880036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1880&lot=036",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1880036",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49362241522702%2037.75827152387337)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54895",
+      "name": "1544 35th Avenue, between 1946 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54895",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54895"
+    }
+  ]
+}

@@ -23,12 +23,15 @@ The parcels on 11th Avenue documented here so far, from the city's address, asse
 - [1530](1530/) — A 1909-1910 building, built by Lincoln U. Grant.
 - [1534](1534/) — A 1909-1910 building, built by Lincoln U. Grant.
 - [1542](1542/) — A 1909-1910 building, built by Lincoln U. Grant.
+- [1553–1555](1553/) — A 1924 single-family house, with a rear addition permitted in 2017.
 - [1567](1567/) — A 1906 building.
 - [1579–1581](1579/) — A 1909 building.
 - [1599](1599/) — A 1936 building, built by Michael McDonough.
 - [1635](1635/) — A 1909 Craftsman, built by Oscar Heyman and Brother.
 - [1642](1642/) — A 1897 Queen Anne, built by John M. Winter.
+- [1705](1705/) — A 1938 single-family house, with a bathroom remodel permitted in 2021.
 - [1743](1743/) — A 1890s building.
+- [1754](1754/) — A 1948 single-family house, with facade work permitted in 2022.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

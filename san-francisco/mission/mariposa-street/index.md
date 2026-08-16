@@ -4,6 +4,7 @@ Every residential parcel on Mariposa Street that the city's address, assessor an
 
 ## Documented so far
 
+- [1218](1218/) — A 2006 single-family house, with foundation work permitted in 1984.
 - [2200](2200/) — A 1926 single-family house, with an addition permitted in 2010.
 - [2201–2215](2201/) — A 1910 1-unit apartment building, with reroofing permitted in 2012.
 - [2208](2208/) — A 1951 single-family house, with an addition permitted in 2016.
@@ -15,6 +16,7 @@ Every residential parcel on Mariposa Street that the city's address, assessor an
 - [2345](2345/) — A 1991 2-unit apartment building, with permit records from 1985 to 1992.
 - [2365](2365/) — A 1991 2-unit apartment building, with reroofing permitted in 2022.
 - [2375](2375/) — A 1991 2-unit apartment building, with permit records from 1985 to 1990.
+- [2424](2424/) — A 1936 building, with stair work permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

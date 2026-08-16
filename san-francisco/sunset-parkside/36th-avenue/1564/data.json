@@ -1,0 +1,169 @@
+{
+  "address": "1564 36th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/36th-avenue/1564/",
+  "apn": "1881032",
+  "block": "1881",
+  "lot": "032",
+  "eas_baseid": "321946",
+  "coordinates": {
+    "lat": 37.757842,
+    "lng": -122.494668
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2125,
+    "basement_area_sqft": 450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1564 36TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1128340,
+    "assessed_improvement_value": 844250,
+    "last_sale_date": "2017-04-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201712055502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-05",
+      "status_date": "2018-01-22",
+      "estimated_cost": 29500,
+      "revised_cost": 29500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707051036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-05",
+      "status_date": "2018-03-27",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "replace (e) damaged brick fireplace with (n) fire box (non wood burning) ceramic log lighter",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706209894",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-20",
+      "status_date": "2018-03-27",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel (e) bathroom w/ new tile & fixtures in same location. no structural change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706068620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-06",
+      "status_date": "2018-03-27",
+      "estimated_cost": 30000,
+      "revised_cost": 35000,
+      "description": "cosmetic remodel of kitchen & bathroom with new tile & fixtures to same location. no structural wall changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505216928",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-21",
+      "status_date": "2015-06-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "smoke damage caused by neighbor. replacing 200sf of drywall and paint. replacing 80sf of ductwork. 5/8in type \"x\" to be installed at p walls - call district inspector for electrical work - inquiry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013282",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-06",
+      "status_date": "1990-08-07",
+      "estimated_cost": 12600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=36TH&street_type=AVE&address_number=1564",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1881032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1881&lot=032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1881032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49466811424614%2037.75784191808614)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54929",
+      "name": "1564 36th Avenue, between 1946 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54929",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54929"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "address": "1501 34th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/34th-avenue/1501/",
+  "apn": "1880001",
+  "block": "1880",
+  "lot": "001",
+  "eas_baseid": "321870",
+  "coordinates": {
+    "lat": 37.758966,
+    "lng": -122.493212
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2609,
+    "building_area_sqft": 2860,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1501 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 620458,
+    "assessed_improvement_value": 510880,
+    "last_sale_date": "2001-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201708104514",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-10",
+      "status_date": "2018-09-07",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "2nd fl( e) bath remodel and add new bath 2nd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904287178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-28",
+      "status_date": "2010-02-26",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "remodel existing space on 1st floor: entertainment room, bathroom, laundry area & 2 bedrooms. midlevel combine existing bedroom & bath to become a study room, 2nd floor: widen & remodel kitchen by relocating a wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304222807",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-22",
+      "status_date": "2003-04-22",
+      "estimated_cost": 3553,
+      "revised_cost": 3553,
+      "description": "install 8 vinyl windows in kind.no chg in size or location.visible from street.no structural chg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-07",
+      "status_date": "1990-01-24",
+      "estimated_cost": 13850,
+      "description": "cut out and replace damaged wood and install concrete",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=1501",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1880001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1880&lot=001",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1880001",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49321214767602%2037.75896631900529)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54873",
+      "name": "1501 34th Avenue, 1959. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54873",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "digitalsf-54896",
+      "name": "1501 34th Avenue, 1959. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54896",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1959",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54873"
+    },
+    {
+      "date": "1959-01-23",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54896"
+    }
+  ]
+}

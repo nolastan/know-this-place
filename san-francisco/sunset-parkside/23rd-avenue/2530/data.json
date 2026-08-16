@@ -1,0 +1,128 @@
+{
+  "address": "2530 23rd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/2530/",
+  "apn": "2423034",
+  "block": "2423",
+  "lot": "034",
+  "eas_baseid": "338462",
+  "coordinates": {
+    "lat": 37.740364,
+    "lng": -122.479473
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 1440,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2530 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139375,
+    "assessed_improvement_value": 185185
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9303730",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-08",
+      "status_date": "1993-05-12",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "install (legalize) cabinets in exercise rm/remove sink/cab",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-21",
+      "status_date": "1990-06-04",
+      "estimated_cost": 3800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613093",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-17",
+      "status_date": "1987-04-01",
+      "estimated_cost": 6000,
+      "description": "remodeling existing basement add exercise room & library",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-08-30",
+      "status_date": "1985-10-02",
+      "estimated_cost": 300,
+      "description": "termite damage repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=2530",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2423034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2423&lot=034",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2423034",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54273",
+      "name": "2530 23rd Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54273",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54273"
+    }
+  ]
+}

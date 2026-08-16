@@ -1,0 +1,120 @@
+{
+  "address": "3434 Rivera Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/rivera-street/3434/",
+  "apn": "2173027",
+  "block": "2173",
+  "lot": "027",
+  "eas_baseid": "331673",
+  "coordinates": {
+    "lat": 37.745818,
+    "lng": -122.503381
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1516,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 3434 RIVERA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1173695,
+    "assessed_improvement_value": 503011,
+    "last_sale_date": "2021-12-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511129466",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-11-12",
+      "status_date": "2025-11-13",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "repair stucco 2x2 approx. remove and relocate main shut off valve. replace laundry tray foucet. replace the (e) panel box located outside of the house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607182575",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-18",
+      "status_date": "2016-07-18",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-17",
+      "status_date": "1995-04-25",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RIVERA&street_type=ST&address_number=3434",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2173027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2173&lot=027",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2173027",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55037",
+      "name": "3434 Rivera Street, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55037",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55037"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "address": "247 19th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/19th-avenue/247/",
+  "apn": "1414008",
+  "block": "1414",
+  "lot": "008",
+  "eas_baseid": "302906",
+  "coordinates": {
+    "lat": 37.783262,
+    "lng": -122.478842
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 6,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 4270,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0247 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 868994,
+    "assessed_improvement_value": 608292,
+    "last_sale_date": "2002-11-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507090446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-09",
+      "status_date": "2025-08-06",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace siding of the front facade of building in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810112972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-11",
+      "status_date": "2019-04-25",
+      "estimated_cost": 65000,
+      "revised_cost": 64000,
+      "description": "voluntary seismic retrofit on 1st fl.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2017–2025",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=247",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1414008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1414&lot=008",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1414008",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54470",
+      "name": "247 19th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54470",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54470"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1964, after this photograph was taken."
+  }
+}

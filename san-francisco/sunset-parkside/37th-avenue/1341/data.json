@@ -1,0 +1,130 @@
+{
+  "address": "1341 37th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/37th-avenue/1341/",
+  "apn": "1792002F",
+  "block": "1792",
+  "lot": "002F",
+  "eas_baseid": "317783",
+  "coordinates": {
+    "lat": 37.761867,
+    "lng": -122.496684
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1715,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1341 37TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 306247,
+    "assessed_improvement_value": 176075,
+    "last_sale_date": "1987-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510308605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-30",
+      "status_date": "2025-11-07",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110120625",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-12",
+      "status_date": "2002-04-12",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "repair concrete spalling of chimney stack. bond of new concrete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9124281",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-12-31",
+      "status_date": "1995-09-13",
+      "estimated_cost": 4500,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-04",
+      "status_date": "1990-03-19",
+      "estimated_cost": 1000,
+      "description": "add expansion bolts to existing foundation, add bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=37TH&street_type=AVE&address_number=1341",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1792002F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1792&lot=002F",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1792002F",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55203",
+      "name": "1341 37th Avenue, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55203",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55203"
+    }
+  ]
+}

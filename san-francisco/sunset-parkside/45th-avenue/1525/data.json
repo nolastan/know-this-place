@@ -1,0 +1,128 @@
+{
+  "address": "1525 45th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/45th-avenue/1525/",
+  "apn": "1891003",
+  "block": "1891",
+  "lot": "003",
+  "eas_baseid": "322333",
+  "coordinates": {
+    "lat": 37.758039,
+    "lng": -122.505015
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1279,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1525 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 195954
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200005261123",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-26",
+      "status_date": "2000-10-23",
+      "estimated_cost": 2250,
+      "revised_cost": 2250,
+      "description": "install 3 replacement windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505927",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-06-07",
+      "status_date": "1985-10-01",
+      "estimated_cost": 5000,
+      "description": "lay two retaining walls ,two sets of stairs,two concrete pad",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505774",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-06-05",
+      "status_date": "1985-08-15",
+      "estimated_cost": 2600,
+      "description": "recap retainer wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413155",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-12-13",
+      "status_date": "1985-10-30",
+      "estimated_cost": 2800,
+      "description": "wood deck 24\" x76\" off second floor in rear of house.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=1525",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1891003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1891&lot=003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1891003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54454",
+      "name": "1525 45th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54454",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54454"
+    }
+  ]
+}

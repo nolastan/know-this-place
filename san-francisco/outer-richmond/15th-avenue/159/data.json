@@ -1,0 +1,137 @@
+{
+  "address": "159 15th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/15th-avenue/159/",
+  "apn": "1375014",
+  "block": "1375",
+  "lot": "014",
+  "eas_baseid": "301629",
+  "coordinates": {
+    "lat": 37.785115,
+    "lng": -122.474662
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 3113,
+    "basement_area_sqft": 634,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "WOO",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0159 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48719,
+    "assessed_improvement_value": 316927,
+    "last_sale_date": "2006-03-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fernando Nelson Mission Revival Rowhouse Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201908290245",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-29",
+      "status_date": "2020-03-30",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remove existing stucco, paper and wire, replace damage sheething (water) with new constructional humbor. doubel paper, lath and stucco smooth finish. front of bldg, facing street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104154210",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-04-15",
+      "status_date": "2012-10-31",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "2 story horizontal additon @ rear of property, upgrade existing kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307028607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-02",
+      "status_date": "2003-08-08",
+      "estimated_cost": 16081,
+      "revised_cost": 16081,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=159",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1375014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1375&lot=014",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1375014",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.47466177006466%2037.785114725913324)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54464",
+      "name": "159 15th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54464",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54464"
+    }
+  ]
+}

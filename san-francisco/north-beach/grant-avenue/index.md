@@ -4,6 +4,8 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [700–720](700/) — A 1906 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1996.
+- [1546–1550](1546/) — A 1905 5-unit apartment building in the Upper Grant Avenue Historic District, with a bathroom remodel permitted in 2007.
 - [1640–1644](1640/) — Three flats of 1907 on the Dupont Street site where the First Colored Baptist Church built its first church in 1854.
 
 Pages are generated from the DataSF datasets listed in each page's
