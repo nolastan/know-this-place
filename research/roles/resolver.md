@@ -21,6 +21,28 @@ The same file, each entry's `resolution` filled in:
 Then a `research:publish` issue for the resolved ones, and a dossier note on
 anything the batch taught you about the source's addressing.
 
+## Doing the mechanical half with a tool
+
+[`../tools/resolve_eas.py`](../tools/resolve_eas.py) does the joins below over a
+whole findings file — EAS lookup, parcel confirmation against `sf-parcels` and
+the roll, the lowest-number rule, the comparison between a record's two
+addresses — and writes a `resolution` for every entry with the reason in
+`method`:
+
+```bash
+python3 research/tools/resolve_eas.py fetch  research/findings/<id>/<batch>.json
+python3 research/tools/resolve_eas.py report research/findings/<id>/<batch>.json
+python3 research/tools/resolve_eas.py apply  research/findings/<id>/<batch>.json
+```
+
+It declines rather than guesses: no EAS record, a range now split across
+parcels, a condominium's worth of parcels on one point, or two recorded
+addresses that are both real all come back `unresolved`. **`report` before
+`apply`, and read every conflict it prints** — the tool's job is the lookups,
+not the judgement. A street the source spells its own way is mapped onto EAS's
+spelling where squashing punctuation finds it, and otherwise needs an explicit
+`--alias RECORDED=EAS`, which it states in the method.
+
 ## Procedure
 
 1. **Check EAS first.** `sf-eas-addresses` in

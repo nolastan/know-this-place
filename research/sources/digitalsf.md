@@ -5,7 +5,7 @@
 >
 > - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** mining
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** harvested in full — 59,601 unique records. One of 44 collections extracted: **SFP 23, read whole — 1,165 records, 1,122 findings**.
+> - **Coverage:** harvested in full — 59,601 unique records. One of 44 collections extracted and resolved: **SFP 23, read whole — 1,165 records, 1,122 findings, 923 resolved to a parcel**.
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -155,10 +155,15 @@ by decade.
 
 ### Cautions
 
-- **Resolution runs about 69%, and the failures are the valuable part.** On a
-  random sample of 140 candidates checked against `sf-eas-addresses`, 97
-  resolved to an APN and 43 did not. The 31% that miss fall into three classes,
-  and only one of them is an error:
+- **Resolution runs 69–82%, and the failures are the valuable part.** A random
+  sample of 140 candidates checked against `sf-eas-addresses` resolved 97 and
+  missed 43. Resolving SFP 23 whole did better — **923 of 1,122, or 82%** — and
+  the difference is method, not luck: mapping the source's street spellings onto
+  EAS's, and going back to `sf-parcels` for the parcel that exists now where
+  EAS's `parcel_number` is retired, together recovered about 60 findings that a
+  plain EAS join reports as demolished. Read "Resolving an address from this
+  source" below before quoting a miss rate. The misses that remain fall into
+  three classes, and only one of them is an error:
   - **Demolished.** A cluster of 1964 records — 682 Guerrero, 1056 Geary, 329
     Divisadero, 1832 Fillmore, 1057 Powell, 1109 Golden Gate, 888 Eddy, and
     770 Turk twice — are Western Addition addresses that no longer exist in EAS
@@ -207,6 +212,45 @@ by decade.
   Internet Archive has the OCR'd paper forms. Neither supersedes the other, but
   a fact found in both is one fact, not two.
 
+### Resolving an address from this source
+
+Measured on SFP 23, resolved whole on 2026-08-15 with
+[`../tools/resolve_eas.py`](../tools/resolve_eas.py). Four things cost findings
+if they are skipped, and each one is a query, not a judgement call:
+
+- **Map the source's street spellings onto EAS's before concluding an address
+  is gone.** The archivist writes Bayshore Boulevard, O'Farrell, Sea Cliff and
+  Embarcadero; EAS holds `BAY SHORE`, `OFARRELL`, `SEACLIFF` and
+  `THE EMBARCADERO`. Squashing punctuation and spaces catches those four and any
+  like them; Douglas for `DOUGLASS` does not squash and needs an explicit alias
+  (`--alias DOUGLAS=DOUGLASS`), stated in the resolution method so it stays
+  auditable. Fifteen findings in SFP 23 turn on this, and unmapped every one of
+  them reads as a demolished building.
+- **EAS's `parcel_number` is stale or missing often enough to matter.** 49 SFP 23
+  findings — 5% — resolved only after the address's own coordinates went through
+  `sf-parcels` for the active parcel containing them. Query the point at full
+  precision: EAS address points sit centimetres from their parcel boundary, and
+  rounding the coordinates to six decimals moves enough of them across it to
+  lose the parcel.
+- **A point that returns several active parcels is a condominium**, one parcel
+  per unit — 18 SFP 23 addresses. Unless exactly one of them carries the number
+  in its own address range, none of them is the building, and the directory
+  contract in the root [AGENTS.md](../../AGENTS.md) defers it. A further 25 are
+  classed `Condominium` on the roll outright.
+- **The archivist's `500$a` assessor block is a check, not just a lead.** Of the
+  166 SFP 23 findings carrying one, 156 reached a parcel and 153 agreed with it
+  — including a block written without the letter of the lettered sub-block the
+  parcel is in (2526 for 2526B), which is agreement, not a conflict. The three
+  that genuinely disagree are recorded as conflicts on the finding.
+
+Two shapes of address in this collection resolve to nothing and should not be
+made to: a **range whose numbers now sit on several parcels** (39 in SFP 23 —
+one page cannot hold a photograph of what is now three buildings), and the
+**title-versus-note conflicts where both addresses are real today** (11). Where
+only one of the two survives in EAS the catalogue title wins, because it is the
+archive's own identification and EAS corroborates it — but say so in
+`resolution.method` and leave the `conflict` on the finding.
+
 ### People
 
 **32.9% of records name a person** in `600` or `700` — 19,598 of them. But
@@ -249,16 +293,30 @@ more sensitive rather than less.
   `Photographs` 57,647 · `sfhistory` 7,987 · `city` 6,867 · `lgbtq` 2,727 ·
   `basc` 10, before deduplication.
 
-  **One collection of 44 has been extracted.** SFP 23 (San Francisco Office of
-  Assessor-Recorder Photographs) was read whole — 1,165 records, 1,122 findings
-  over 1,083 distinct addresses, in
+  **One collection of 44 has been extracted, and it is now resolved.** SFP 23
+  (San Francisco Office of Assessor-Recorder Photographs) was read whole — 1,165
+  records, 1,122 findings over 1,083 distinct addresses, in
   [`../findings/digitalsf/sfp-23.json`](../findings/digitalsf/sfp-23.json).
-  None of them is resolved. The other 43 collections are untouched; by candidate
+  **923 of the 1,122 are resolved** to 886 parcels and 889 page paths, 165 of
+  which are pages that already exist; the other 199 are unresolved with a stated
+  reason, 74 of them because the address no longer exists in EAS. Nothing is
+  published yet. The other 43 collections are untouched; by candidate
   count the next are SFP 162 (852), SFH 371 (210) and SFP 130 (151). Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
 
-- **Verified:** 2026-08-15 (extracted SFP 23 in full: read all 1,165 catalogue
+- **Verified:** 2026-08-15 (resolved SFP 23 in full against `sf-eas-addresses`,
+  `sf-parcels` and the 2025 secured roll: 923 of 1,122 findings placed on a
+  parcel, 199 left unresolved with a reason. Established the four addressing
+  facts under "Resolving an address from this source" above — the source's own
+  street spellings, EAS's stale `parcel_number`, the condominium signal in the
+  parcel map, and the archivist's assessor block agreeing with the parcel on 153
+  of 156 checks. Wrote three conflicts the resolver found rather than inherited,
+  where the recorded block and the resolved parcel disagree. Added
+  [`../tools/resolve_eas.py`](../tools/resolve_eas.py), which does the join,
+  the parcel confirmation and the conflict comparison for any findings file.)
+
+  Earlier, 2026-08-15: extracted SFP 23 in full: read all 1,165 catalogue
   records in the collection, wrote 1,122 findings, none resolved. Established
   three things the earlier pass had wrong — that `500$a` carries a second,
   structured address and an assessor block, so the title-only candidate count
@@ -268,7 +326,7 @@ more sensitive rather than less.
   rights and personal-name profile can differ completely from the repository's —
   SFP 23 is 100% public domain and holds no personal names in `600`/`700` at
   all. Added [`../tools/digitalsf_extract.py`](../tools/digitalsf_extract.py) to
-  make the next collection a shorter job.)
+  make the next collection a shorter job.
 
   Earlier, 2026-08-15: harvested the repository in full: 59,601 unique records,
   read 2,273 numbered-and-dated candidates out of them, resolved 97 of a random
