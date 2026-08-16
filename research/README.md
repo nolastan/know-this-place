@@ -37,6 +37,8 @@ research/
   manifests/         Parcel lists produced here, consumed by seed_pages.py
   templates/         Dossier skeleton and GitHub issue bodies
   tools/check.py     Consistency + schema checks (stdlib only)
+  tools/resolve_eas.py  Addresses → parcels: the EAS/parcel/roll joins a
+                     resolver makes, with the reason for each decision
   corpora/           Raw downloaded material — gitignored, never committed
 ```
 
