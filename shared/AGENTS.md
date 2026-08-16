@@ -105,7 +105,8 @@ stat band and timeline. A workable default spine:
    carry. **Drop it entirely** when the blocks already say everything.
 4. `.stats` — the numbers every building has, as tiles (not sentences).
 5. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
-   The `.vtl` follows its `.section-head` directly: **no `.prose` between
+   **One `.vtl` per page**, holding every dated entry. Where it keeps a
+   `.section-head`, the `.vtl` follows it directly: **no `.prose` between
    them.**
 6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
 7. `.unknowns` — what's missing, feeding the feedback link.
@@ -175,11 +176,22 @@ uppercase kicker.
 
 ### Visual timeline — `.vtl`
 A rail with dots; each item has a date, description, and a meta row (status
-pill, a link to the record, a cost tier). Order reverse-chronological
-(newest first) unless another order tells the story better. Add `is-muted` to
-an item for expired/withdrawn records.
+pill, a link to the record, a cost tier). Add `is-muted` to an item for
+expired/withdrawn records.
+
+**One timeline per page, oldest entry first.** Everything dated shares the one
+rail — permits, a fire, a building contract, a photograph — interleaved in date
+order, because to a reader they are one sequence: things that happened here. Two
+rails made the reader restart the clock halfway down the page. `validate.py`
+fails a page carrying more than one `.vtl`.
+
+**A heading only when the rail is nothing but permits.** Then it keeps
+`<div class="section-head"><span class="ic ic-clock"></span><h2>Permit
+history</h2></div>`, which describes all of it. A rail holding anything else has
+no accurate heading to give it and needs none — its layout says what it is — so
+it drops the `.section-head` and carries the name for screen readers instead:
 ```html
-<ol class="vtl">
+<ol class="vtl" aria-label="Timeline">
   <li class="vtl-item">
     <div class="vtl-date">Aug 2005</div>
     <p class="vtl-desc">Kitchen remodel — cabinets, counter, five windows.</p>
@@ -192,8 +204,14 @@ an item for expired/withdrawn records.
   </li>
 </ol>
 ```
-The `.vtl` follows its `.section-head` immediately — **never introduce it with
-a paragraph.** Counts, totals, date spans and statuses are all in the items;
+Not every entry has a meta row: a historical one cites its source there
+(`<span>The Argonaut, Winter 2018</span>`) and one taken from an undated
+photograph has none at all. Dates are whatever the record knew — `Aug 2005`,
+`April 18, 1906`, `1912`, `circa 1885`, `1930s`, `pre-1906`; a vaguer date sorts
+before a precise one in the same year, and a `pre-`/`before` hedge before that.
+
+Where the rail does keep a `.section-head`, it follows it immediately —
+**never introduce it with a paragraph.** Counts, totals, date spans and statuses are all in the items;
 a lead-in restates them and adds commentary. If some filings are deliberately
 excluded (street-space permits at a nominal $1, or the duplicates DBI files
 under each street number of a shared parcel), disclose that *after* the rail,
@@ -441,10 +459,11 @@ lead; a "7 · Rooms" tile deletes "seven-room"; the Sources footer deletes "a
 published guide to notable residences records…". Pages that end up with no
 `.lead` at all are correct, not unfinished.
 
-**No `.prose` above a `.vtl`.** The timeline is the permit history; a paragraph
-counting or summarizing the permits ("Twelve permits on file, five of them
-substantive") restates the items below it and is the most common form of this
-drift. `.section-head` → `.vtl`, with nothing in between.
+**No `.prose` above a `.vtl`.** The timeline *is* the record of what happened
+here; a paragraph counting or summarizing the permits ("Twelve permits on file,
+five of them substantive") restates the items below it and is the most common
+form of this drift. The rail opens the main column, or follows its
+`.section-head` with nothing in between.
 
 **State sourced facts as fact.** The Sources footer carries attribution, so the
 prose doesn't: write "Janis Joplin lived here, June 1967 – April 1968," not

@@ -152,10 +152,10 @@ python3 scripts/validate.py
 become pages (skipping condominium units and parcels with no assessor record),
 writes `data.json` + `index.html` for each **new** one,
 and rebuilds the street hub pages beneath the neighborhood. It varies each
-page's composition from the data it actually has — a parcel with a permit
-record, an earlier record or prose gets the two-column split, its panels in the
-aside; a parcel with nothing but panels runs them full width — so the pages are
-not identical documents with the numbers swapped.
+page's composition from the data it actually has — a parcel with a timeline,
+public art or prose gets the two-column split, its panels in the aside; a parcel
+with nothing but panels runs them full width — so the pages are not identical
+documents with the numbers swapped.
 
 - **The output is a first draft, not a finished page.** It carries no
   `narrative`, because the script won't invent prose, and per "Writing pages" a
@@ -254,9 +254,16 @@ principles:
   page whose whole story fits in its components is finished with no prose at
   all, and that is a good page, not a thin one.
 - **Show data, don't narrate it.** Numbers every building has (year built,
-  units, area, assessed value) go in stat tiles; permits go in the visual
-  timeline; a value split goes in a chart — not into sentences. If a paragraph
-  is just reciting figures, it should be a component instead.
+  units, area, assessed value) go in stat tiles; anything with a date goes in
+  the visual timeline; a value split goes in a chart — not into sentences. If a
+  paragraph is just reciting figures, it should be a component instead.
+- **One timeline per page, oldest entry first.** A page has a single `.vtl`, and
+  everything dated goes on it in date order — permits alongside a fire, a
+  building contract, a photograph. They are one sequence to a reader: things
+  that happened here. Never open a second rail for a different *kind* of dated
+  fact; that made the reader restart the clock partway down the page, and
+  `validate.py` now fails a page with more than one. See
+  [shared/AGENTS.md](shared/AGENTS.md) for when the rail keeps a heading.
 - **Prose lives in `data.json`.** All prose is authored in the `narrative`
   field (`lead`, optional `sections`), never typed straight into the HTML. Keep
   the lead to one or two sentences carrying only what no component carries, and
@@ -291,7 +298,8 @@ principles:
   source undercutting its own claim. Then describe the disagreement plainly and
   don't adjudicate it. Sourcing doubt that is merely *general* is not a
   contradiction and earns no words.
-- **No permit-history introduction.** The timeline *is* the permit history:
+- **No permit-history introduction.** The timeline *is* the record of what
+  happened here:
   never precede it with a paragraph that counts the permits, sums their costs,
   groups them into episodes, or characterizes the record ("Six permits on file,
   four of them substantive and all complete"). Every one of those figures is
@@ -424,8 +432,9 @@ fact: `date` (ISO where known, a bare year or a phrase where not), `kind`
 (`building contract`, `fire`, `advertisement`, `sale`, `site history`, …),
 `description`, and `source` matching an id in `sources`. `summary` is an
 optional short label; entries may carry extra keys for what the record itself
-stated (`cost`, `lot_as_recorded`, `cross_streets`). It renders as an "Earlier
-record" `.vtl`, never as prose.
+stated (`cost`, `lot_as_recorded`, `cross_streets`). Its entries render as
+items on the page's one `.vtl`, in date order among the permits — never as
+prose, and never as a second rail of their own.
 
 - It replaced `site_history`, which said the same thing under a second name.
   **Don't reintroduce a third:** a dated historical fact goes here.

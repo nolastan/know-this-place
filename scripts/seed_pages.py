@@ -607,6 +607,39 @@ def long_date(iso: str | None) -> str:
     return f"{MONTHS_LONG[m - 1]} {d}, {y}"
 
 
+MONTH_NUM = {m.lower(): i + 1 for i, m in enumerate(MONTHS)}
+MONTH_NUM.update({m.lower(): i + 1 for i, m in enumerate(MONTHS_LONG)})
+
+
+def date_key(when: str | None) -> tuple:
+    """Sort key for one timeline date, oldest first.
+
+    A page's single timeline mixes city records, which carry an ISO date, with
+    historical ones, which carry whatever the source knew: a bare year, a
+    decade ("1930s"), a span ("1890–1900"), a hedge ("circa 1885", "pre-1906").
+    So this reads a year, then a month and day if they're there, and orders on
+    what it found: within a year, the vaguer entry comes first ("1906" before
+    "Apr 1906"), and a "pre-"/"before" hedge comes before that. Anything with
+    no year at all sorts last rather than silently landing in antiquity.
+    """
+    s = (when or "").strip()
+    if not s:
+        return (9999, 99, 99)
+    m = re.match(r"(\d{4})-(\d{2})(?:-(\d{2}))?$", s)
+    if m:
+        return (int(m[1]), int(m[2]), int(m[3] or 0))
+    year = re.search(r"\b(1[6-9]\d{2}|20\d{2})", s)
+    if not year:
+        return (9999, 99, 99)
+    if re.search(r"\bpre-|\bbefore\b", s, re.I):
+        return (int(year[1]), -1, -1)
+    month = next((MONTH_NUM[w.lower()] for w in re.findall(r"[A-Za-z]{3,9}", s)
+                  if w.lower() in MONTH_NUM), 0)
+    day = re.search(r"\b(\d{1,2})(?:st|nd|rd|th)?,", s) or (
+        month and re.search(r"\b(\d{1,2})\s+[A-Za-z]{3,9}", s))
+    return (int(year[1]), month, int(day[1]) if day else 0)
+
+
 def cost_tier(amount: float) -> int:
     return 1 if amount < 5000 else (2 if amount <= 25000 else 3)
 
@@ -1116,7 +1149,13 @@ def stats_html(rec: dict) -> str:
     return f'  <div class="stats">\n{body}\n  </div>\n'
 
 
-def timeline_html(rec: dict, indent: str) -> str:
+def permit_items(rec: dict, indent: str) -> tuple:
+    """(items, disclosure) — the permit half of the timeline.
+
+    Each item is a `(date_key, html)` pair so it can be interleaved with the
+    historical entries; `disclosure` is the line about filings deliberately
+    left out, which belongs under the finished rail.
+    """
     permits = rec.get("permits", [])
     # Pages written before `permit_summary` existed still carry their nominal
     # $1 street-space filings in `permits`; drop those here as before.
@@ -1129,8 +1168,15 @@ def timeline_html(rec: dict, indent: str) -> str:
             omitted += 1
             continue
         shown.append(p)
+    disclosure = ""
+    if note:
+        disclosure = f'{indent}<p class="prose"><small>{esc(note)}</small></p>\n'
+    elif omitted:
+        word = "permit is" if omitted == 1 else "permits are"
+        disclosure = (f'{indent}<p class="prose"><small>{omitted} nominal $1 '
+                      f'street-space {word} omitted.</small></p>\n')
     if not shown:
-        return ""
+        return [], ""
     items = []
     for p in shown:
         css, icon, word, muted = PILL.get(p.get("status", ""),
@@ -1151,23 +1197,39 @@ def timeline_html(rec: dict, indent: str) -> str:
             meta.append(f'{indent}      <span class="cost" data-tier="{tier}" '
                         f'aria-label="{TIER_LABEL[tier]}"><b>$</b><b>$</b><b>$</b></span>')
             meta.append(f'{indent}      <span class="cost-amt">${int(float(cost)):,}</span>')
-        items.append(
+        items.append((date_key(p.get("filed")),
             f'{indent}  <li class="vtl-item{" is-muted" if muted else ""}">\n'
             f'{indent}    <div class="vtl-date">{month_year(p.get("filed"))}</div>\n'
             f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
             f'{indent}    <div class="vtl-meta">\n' + "\n".join(meta) + "\n"
             f'{indent}    </div>\n'
-            f'{indent}  </li>')
-    out = (f'{indent}<div class="section-head"><span class="ic ic-clock"></span>'
-           f'<h2>Permit history</h2></div>\n'
-           f'{indent}<ol class="vtl">\n' + "\n".join(items) + f"\n{indent}</ol>\n")
-    if note:
-        out += f'{indent}<p class="prose"><small>{esc(note)}</small></p>\n'
-    elif omitted:
-        word = "permit is" if omitted == 1 else "permits are"
-        out += (f'{indent}<p class="prose"><small>{omitted} nominal $1 street-space '
-                f'{word} omitted.</small></p>\n')
-    return out
+            f'{indent}  </li>'))
+    return items, disclosure
+
+
+def timeline_html(rec: dict, indent: str) -> str:
+    """The page's one timeline: every dated entry on a single rail, oldest first.
+
+    Permits and historical records are the same kind of thing to a reader —
+    something that happened here on a date — so they share one `.vtl` and
+    interleave by date rather than sitting in two rails that each restart the
+    clock. The rail is only introduced by a heading when it holds nothing but
+    permits and "Permit history" therefore describes all of it; a mixed
+    timeline needs no heading (its layout says what it is) and carries the
+    label for screen readers instead.
+    """
+    permits, disclosure = permit_items(rec, indent)
+    earlier = historical_items(rec, indent)
+    if not (permits or earlier):
+        return ""
+    items = [html for _, html in sorted(permits + earlier, key=lambda e: e[0])]
+    head = ""
+    if not earlier:
+        head = (f'{indent}<div class="section-head"><span class="ic ic-clock"></span>'
+                f'<h2>Permit history</h2></div>\n')
+    rail = ('<ol class="vtl">' if head else '<ol class="vtl" aria-label="Timeline">')
+    return (head + f'{indent}{rail}\n' + "\n".join(items)
+            + f"\n{indent}</ol>\n" + disclosure)
 
 
 def value_panel_html(rec: dict, indent: str) -> str:
@@ -1226,16 +1288,17 @@ def narrative_html(rec: dict, indent: str) -> tuple:
     return lead, "\n".join(out)
 
 
-def historical_record_html(rec: dict, indent: str) -> str:
-    """`historical_record` as the "Earlier record" timeline AGENTS.md describes.
+def historical_items(rec: dict, indent: str) -> list:
+    """`historical_record` as `(date_key, html)` items for the page's timeline.
 
     One dated fact per entry, from a historical source rather than a city
-    dataset. It is a timeline, not prose, so a page that gains three of these
-    gains no paragraphs.
+    dataset. It is a timeline entry, not prose, so a page that gains three of
+    these gains no paragraphs — and no second rail either: they take their
+    place among the permits in date order.
     """
     entries = rec.get("historical_record") or []
     if not entries:
-        return ""
+        return []
     # `label` is the short form a timeline entry cites; the full citation is in
     # the Sources footer, and repeating it under every item would swamp them.
     labels = {s["id"]: s.get("label") or s.get("name", s["id"])
@@ -1246,9 +1309,10 @@ def historical_record_html(rec: dict, indent: str) -> str:
         summary = (f'{indent}    <p class="vtl-desc"><b>{esc(e["summary"])}</b></p>\n'
                    if e.get("summary") else "")
         when = e.get("date", "")
+        key = date_key(when)
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", when or ""):
             when = long_date(when)
-        items.append(
+        items.append((key,
             f'{indent}  <li class="vtl-item">\n'
             f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
             f'{summary}'
@@ -1256,10 +1320,8 @@ def historical_record_html(rec: dict, indent: str) -> str:
             + (f'{indent}    <div class="vtl-meta">\n'
                f'{indent}      <span>{esc(meta)}</span>\n'
                f'{indent}    </div>\n' if meta else "")
-            + f'{indent}  </li>')
-    return (f'{indent}<div class="section-head"><span class="ic ic-calendar"></span>'
-            f'<h2>Earlier record</h2></div>\n'
-            f'{indent}<ol class="vtl">\n' + "\n".join(items) + f'\n{indent}</ol>\n')
+            + f'{indent}  </li>'))
+    return items
 
 
 def survey_panel_html(rec: dict, indent: str) -> str:
@@ -1577,13 +1639,13 @@ def render_html(rec: dict) -> str:
 
     # Panels belong beside the main column whenever there is a main column for
     # them to sit beside — the empty column a split risks is the left one, and a
-    # page with any permit, art, earlier record or prose at all has something to
-    # put there. Only a page that is nothing but panels stacks them full width.
+    # page with any timeline entry, art or prose at all has something to put
+    # there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, ""))
-    has_main = bool(public_art_html(rec, "") or historical_record_html(rec, "")
-                    or timeline_html(rec, "") or narrative_html(rec, "")[1])
+    has_main = bool(public_art_html(rec, "") or timeline_html(rec, "")
+                    or narrative_html(rec, "")[1])
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
     panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
@@ -1591,9 +1653,8 @@ def render_html(rec: dict) -> str:
               + district_panel_html(rec, ind))
     art = public_art_html(rec, ind)
     timeline = timeline_html(rec, ind)
-    earlier = historical_record_html(rec, ind)
     lead_html, sections = narrative_html(rec, ind)
-    main_col = "\n".join(x for x in (art, earlier, timeline, sections) if x)
+    main_col = "\n".join(x for x in (art, timeline, sections) if x)
 
     if use_cols:
         body = ('  <div class="cols">\n    <div class="main">\n'
