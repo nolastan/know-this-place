@@ -1295,6 +1295,13 @@ def historical_items(rec: dict, indent: str) -> list:
     dataset. It is a timeline entry, not prose, so a page that gains three of
     these gains no paragraphs — and no second rail either: they take their
     place among the permits in date order.
+
+    An entry's `source` may be a list where one dated event left several
+    records — the assessor shot four negatives of a corner parcel on the same
+    afternoon, one per street number. That is one thing that happened here, so
+    it is one item; the records are cited side by side on it, each labelled
+    with the address it was filed under. Never one item per record: a reader
+    scanning the rail should not meet the same date twice.
     """
     entries = rec.get("historical_record") or []
     if not entries:
@@ -1308,10 +1315,27 @@ def historical_items(rec: dict, indent: str) -> list:
     # entries cite a document *about* the building; that is attribution, and
     # attribution lives in the Sources footer.
     urls = {s["id"]: s["query"] for s in rec.get("sources", []) if s.get("query")}
+    # `title` distinguishes co-dated records of one event — the street number
+    # each negative was filed under.
+    titles = {s["id"]: s["title"] for s in rec.get("sources", []) if s.get("title")}
     items = []
     for e in entries:
-        meta = labels.get(e.get("source"), e.get("source") or "")
-        href = urls.get(e.get("source")) if e.get("kind") == "photograph" else None
+        cited = e.get("source")
+        cited = [s for s in (cited if isinstance(cited, list) else [cited]) if s]
+        meta = labels.get(cited[0], cited[0]) if cited else ""
+        photo = e.get("kind") == "photograph"
+        if len(cited) > 1:
+            # Shared label once, then one link per record — the shape a permit
+            # item already uses, a span of context followed by its links.
+            links = "".join(
+                f'{indent}      <a href="{esca(urls[s])}">'
+                f'{esc(titles.get(s) or labels.get(s, s))}</a>\n'
+                for s in cited if s in urls)
+            row = f'{indent}      <span>{esc(meta)}</span>\n' + links
+        else:
+            href = urls.get(cited[0]) if (photo and cited) else None
+            row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
+                   else f'{indent}      <span>{esc(meta)}</span>\n')
         summary = (f'{indent}    <p class="vtl-desc"><b>{esc(e["summary"])}</b></p>\n'
                    if e.get("summary") else "")
         when = e.get("date", "")
@@ -1323,9 +1347,7 @@ def historical_items(rec: dict, indent: str) -> list:
             f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
             f'{summary}'
             f'{indent}    <p class="vtl-desc">{esc(e.get("description", ""))}</p>\n'
-            + (f'{indent}    <div class="vtl-meta">\n'
-               + (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
-                  else f'{indent}      <span>{esc(meta)}</span>\n')
+            + (f'{indent}    <div class="vtl-meta">\n' + row
                + f'{indent}    </div>\n' if meta else "")
             + f'{indent}  </li>'))
     return items

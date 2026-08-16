@@ -436,6 +436,13 @@ stated (`cost`, `lot_as_recorded`, `cross_streets`). Its entries render as
 items on the page's one `.vtl`, in date order among the permits — never as
 prose, and never as a second rail of their own.
 
+- **One entry per dated event, not per record.** Where a single event left
+  several records — the assessor photographing a corner parcel once per street
+  number on the same day — `source` is a **list** of their ids and the entry is
+  one item on the rail. Two items with the same date make a reader think the
+  clock stuttered. Give each of those sources a `title` (the address it was
+  filed under) so the links on the merged item can be told apart.
+
 - It replaced `site_history`, which said the same thing under a second name.
   **Don't reintroduce a third:** a dated historical fact goes here.
 - It is *not* `building_history` (the Corbett Heights pages). That key is a

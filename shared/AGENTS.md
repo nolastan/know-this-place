@@ -211,7 +211,23 @@ of stating it (`<a href="https://digitalsf.org/record/54747">Assessor-Recorder
 Photographs (SFP 23), San Francisco Public Library</a>`), the way a permit links
 to the permit: the reader can go and look at the item, so the entry says where.
 Entries citing a document *about* the building don't — that is attribution, and
-attribution lives in the Sources footer. Dates are whatever the record knew — `Aug 2005`,
+attribution lives in the Sources footer.
+
+**One dated event is one item, however many records it left.** The assessor shot
+four negatives of a corner parcel in an afternoon, one per street number; a
+reader scanning the rail must not meet the same date twice. The entry's `source`
+is then a list, and the meta row carries the shared label once followed by one
+link per record, each labelled with the address it was filed under (the source's
+`title`) — the same shape as a permit item, a span of context and then its
+links:
+```html
+<div class="vtl-meta">
+  <span>Assessor-Recorder Photographs (SFP 23), San Francisco Public Library</span>
+  <a href="https://digitalsf.org/record/54172">110 The Embarcadero</a>
+  <a href="https://digitalsf.org/record/54173">115 Steuart Street</a>
+</div>
+```
+Dates are whatever the record knew — `Aug 2005`,
 `April 18, 1906`, `1912`, `circa 1885`, `1930s`, `pre-1906`; a vaguer date sorts
 before a precise one in the same year, and a `pre-`/`before` hedge before that.
 
