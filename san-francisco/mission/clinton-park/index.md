@@ -4,6 +4,7 @@ Every residential parcel on Clinton Park that the city's address, assessor and p
 
 ## Documented so far
 
+- [2](2/) — A 1928 industrial building, with reroofing permitted in 1990.
 - [108–112](108/) — A 1908 6-unit apartment building, with a bathroom remodel permitted in 2009.
 - [116–118](116/) — A 1958 two-flat, with window replacement permitted in 1999.
 - [126–130](126/) — A 1909 6-unit apartment building.

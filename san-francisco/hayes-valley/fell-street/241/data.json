@@ -1,0 +1,122 @@
+{
+  "address": "241 Fell Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/fell-street/241/",
+  "apn": "0833019",
+  "block": "0833",
+  "lot": "019",
+  "eas_baseid": "289139",
+  "coordinates": {
+    "lat": 37.775946,
+    "lng": -122.421874
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 4,
+    "lot_area_sqft": 10497,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "HAYES",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0259 0241 FELL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 170477,
+    "assessed_improvement_value": 176948
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505126046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-12",
+      "status_date": "2015-07-28",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bathroom remodel, replace 3 base board heater, shower unit & tile,new hardwood floors, 3rd flr residence (private) pastor & family only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310097007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-09",
+      "status_date": "2003-11-24",
+      "estimated_cost": 6780,
+      "revised_cost": 6780,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2003–2015",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELL&street_type=ST&address_number=241",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0833019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0833&lot=019",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0833019",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "market-octavia-context-statement",
+      "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Market & Octavia Historic Context Statement, adopted 2007",
+      "retrieved": "2026-08-16"
+    }
+  ],
+  "building": {
+    "name": "Church of the Advent"
+  },
+  "historic_survey": {
+    "survey": "Market & Octavia Historic Context Statement (2007)",
+    "source": "market-octavia-context-statement",
+    "address_as_surveyed": "241-59 Fell Street"
+  },
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "occupancy",
+      "description": "The Church of the Advent, one of the old-stock American Protestant congregations the 1913–15 Sanborn maps show in a Western Addition that had become much more ethnically various.",
+      "source": "market-octavia-context-statement"
+    }
+  ]
+}

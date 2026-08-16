@@ -4,10 +4,19 @@ Every residential parcel on Mission Street that the city's address, assessor and
 
 ## Documented so far
 
+- [1513](1513/) — A 1930 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen and bathroom remodel permitted in 2015.
+- [1517](1517/) — A 1927 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1989 to 1995.
+- [1519–1535](1519/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 1990.
+- [1543](1543/) — A 1927 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1990.
 - [1551–1559](1551/) — A 1909 27-unit apartment building in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 2018.
+- [1563](1563/) — A 1917 office building, with a seismic retrofit permitted in 2015.
+- [1661](1661/) — A 1935 industrial building, with plumbing work permitted in 2019.
+- [1663–1667](1663/) — A 1925 building, with electrical work permitted in 2017.
+- [1695](1695/) — A 1951 industrial building, with reroofing permitted in 2011.
 - [1714–1718](1714/) — A 1910 4-unit apartment building, with foundation work permitted in 2007.
 - [1720–1724](1720/) — A 1909 5-unit apartment building, with a seismic retrofit permitted in 2018.
 - [1726](1726/) — A 1923 store building, with garage work permitted in 2017.
+- [1730–1732](1730/) — A 1991 industrial building, with garage work permitted in 2017.
 - [1738–1744](1738/) — A 1907 5-unit building, with reroofing permitted in 1989.
 - [1746–1748](1746/) — A 1907 5-unit building, with reroofing permitted in 1989.
 - [1750](1750/) — A 1912 27-unit apartment building, with fire repair permitted in 2025.

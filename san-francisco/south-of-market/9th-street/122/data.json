@@ -1,0 +1,145 @@
+{
+  "address": "122 9Th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/9th-street/122/",
+  "apn": "3509003",
+  "block": "3509",
+  "lot": "003",
+  "eas_baseid": "357760",
+  "coordinates": {
+    "lat": 37.775722,
+    "lng": -122.414555
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2833.25,
+    "building_area_sqft": 2447,
+    "lot_depth_ft": 13.33,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0122 09TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1060782,
+    "assessed_improvement_value": 454621,
+    "last_sale_date": "2020-12-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9624483",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-12-20",
+      "status_date": "1997-01-29",
+      "estimated_cost": 4210,
+      "description": "addd three rooms for photo process",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312315",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-07-21",
+      "status_date": "1995-05-05",
+      "estimated_cost": 17000,
+      "revised_cost": 25000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020461",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-05",
+      "status_date": "1990-11-16",
+      "estimated_cost": 1,
+      "description": "refer to #8912852 parapet strengthening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912852",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1989-07-20",
+      "status_date": "1990-01-29",
+      "estimated_cost": 5800,
+      "description": "parapet bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=ST&address_number=122",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3509003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3509&lot=003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3509003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41455539562251%2037.775722352487094)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "market-octavia-context-statement",
+      "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Market & Octavia Historic Context Statement, adopted 2007",
+      "retrieved": "2026-08-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1953",
+      "kind": "occupancy",
+      "description": "The Leader newspaper and book printers, one of the small job shops among at least eighteen printing businesses in the Industrial Employment Study Area.",
+      "source": "market-octavia-context-statement"
+    }
+  ]
+}

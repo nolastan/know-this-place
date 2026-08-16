@@ -13,6 +13,8 @@ The parcels on Minna Street documented here so far, from the city's address, ass
 - [475](475/) — A building, with an addition permitted in 1983.
 - [476](476/) — A 1918 store building, with electrical work permitted in 2017.
 - [481](481/) — A 1912 hotel, with a seismic retrofit permitted in 1995.
+- [909–911](909/) — A 1909 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1992.
+- [973](973/) — A 1938 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

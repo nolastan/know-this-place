@@ -12,6 +12,8 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2124–2126](2124/) — A 1908 5-unit apartment building in the Upper Market Street Commercial Historic District, with facade work permitted in 2009.
 - [2128–2130](2128/) — A 1938 13-unit apartment building in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [2134–2140](2134/) — A 1900 three-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1992.
+- [2141](2141/) — A 1923 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2025.
+- [2145](2145/) — A 1949 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2025.
 - [2148–2150](2148/) — A 1907 three-flat in the Upper Market Street Commercial Historic District, with electrical work permitted in 2008.
 - [2156–2158](2156/) — A 1907 7-unit apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2017.
 - [2168–2174](2168/) — Swedish American Hall, City Landmark No. 267 — built by Swedish contractors in 1907 and still the Swedish Society's.
@@ -26,6 +28,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2270–2272](2270/) — A 1900 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2013.
 - [2276–2288](2276/) — A 1987 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2013.
 - [2279](2279/) — A 1900 two-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1995.
+- [2283–2297](2283/) — A 1907 office building in the Upper Market Street Commercial Historic District, with a kitchen remodel permitted in 2012.
 - [2300–2312](2300/) — A 1904 37-unit apartment building in the Upper Market Street Commercial Historic District Extension, with facade work permitted in 2001.
 - [2301](2301/) — A 1963 store building in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 1989.
 - [2317–2335](2317/) — A 1910 10-unit building with a ground-floor store in the Upper Market Street Commercial Historic District Extension, with reroofing permitted in 2012.

@@ -1,0 +1,139 @@
+{
+  "address": "240 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/240/",
+  "apn": "0839032",
+  "block": "0839",
+  "lot": "032",
+  "eas_baseid": "289230",
+  "coordinates": {
+    "lat": 37.773978,
+    "lng": -122.424725
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 4,
+    "lot_area_sqft": 3968,
+    "building_area_sqft": 5495,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0240 PAGE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1550569,
+    "assessed_improvement_value": 1550569,
+    "last_sale_date": "2019-05-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1909",
+    "survey_name": "ST. PAUL'S GERMAN METHODIST CHURCH",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309217143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-21",
+      "status_date": "2024-02-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "modification to widen existing initerior stair. remove and reconstruct existing 1st fl stairway within 2-story building. infill doorway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906204008",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "2019-06-20",
+      "status_date": "2021-12-27",
+      "estimated_cost": 1100000,
+      "revised_cost": 1100000,
+      "description": "interior renovation, repair remodel voluntary seismic upgrade, repair renovation of stained glass windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817274",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "1988-11-03",
+      "status_date": "1993-05-05",
+      "estimated_cost": 900,
+      "description": "electric sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=240",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0839032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0839&lot=032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0839032",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42472466927414%2037.77397823744586)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "market-octavia-context-statement",
+      "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Market & Octavia Historic Context Statement, adopted 2007",
+      "retrieved": "2026-08-16"
+    }
+  ],
+  "building": {
+    "name": "St. Paul's German Methodist Church"
+  },
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "occupancy",
+      "description": "St. Paul's German Methodist church, one of the ethnic congregations the 1913–15 Sanborn maps record in Hayes Valley.",
+      "source": "market-octavia-context-statement"
+    }
+  ]
+}
