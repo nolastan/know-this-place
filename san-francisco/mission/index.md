@@ -81,6 +81,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Natoma Street](natoma-street/) — 25 buildings, built 1906–1990; 7 in the Western SOMA Light Industrial and Residential Historic District.
 - [Oakwood Street](oakwood-street/) — 20 buildings, built 1900–1988; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
 - [Orange Alley](orange-alley/) — 1 building, built 1900.
+- [Otis Street](otis-street/) — 6 buildings, built 1909–1926; 1 in the SoMa LGBTQ Historic District.
 - [Pearl Street](pearl-street/) — 17 buildings, built 1906–1926; 15 in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [Pink Alley](pink-alley/) — 1 building, built 1907; 1 in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [Potrero Avenue](potrero-avenue/) — 118 buildings, built 1890–2016.

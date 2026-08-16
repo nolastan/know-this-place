@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** mining
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 14 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 15 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -139,6 +139,19 @@
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c/content`
     — confirmed from the `SharedLinks.aspx` page's own markup. See "The OMI
     statement" below.
+  - Page & Turnbull, Inc., *Historic Context Statement: Market and Octavia
+    Neighborhood Plan Area, San Francisco, California*, endorsed by the
+    Landmarks Preservation Advisory Board 19 December 2007 (136 pp.), source id
+    `market-octavia-context-statement`. On the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf`.
+    Every page footer reads "Draft Endorsed by Landmarks Preservation Advisory
+    Board on December 19, 2007"; the SF Planning listing page carries it as
+    "Market Octavia Plan Area Historic Context Statement (Adopted 2007)" and
+    there is no non-draft file. Cite it as adopted 2007. Its Industrial
+    Employment sub-context is separately authored — the PDF's own metadata
+    names Timothy Kelley of Workplace History Organization — and the two
+    appendices that matter come from it. See "The Market & Octavia statement"
+    below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -855,6 +868,96 @@ examples). This is the low end of the density range for the series: about
     includes the two African-American families named in the demographic
     chapters as early Merced Heights homeowners; neither is named on any
     page.
+**The Market & Octavia statement is the first in this set whose best yield is a
+pair of appendix tables built from city directories, and the first whose
+appendix build years are not its own research.** It is 136 pages: an
+introduction defining a plan area that crosses nine neighbourhoods, a chapter on
+the surveys that came before, a 60-page chronological history, a property-type
+chapter, a bibliography, and five appendices. There is no per-property survey
+table of the usual kind — the Market & Octavia Historic Resources Survey, some
+1,500 DPR 523 forms, is a separate document this statement was written to
+accompany and is not in the file. Where its address-level facts are:
+- **Appendix A** lists the 98 residential buildings standing in the Industrial
+  Employment Study Area from the reconstruction of 1906–1909: block, lot, street
+  number, street, year built.
+- **Appendix D** lists all 148 industrial buildings standing in that study area,
+  with block, lot, address, year built, and — the real find — the occupant of
+  each in the **1936 telephone directory** and the **1953 city directory**.
+  Appendices B, C and E are period subsets of D and add nothing but a few
+  disagreeing years.
+- **The narrative chapters** name about 90 numbered addresses with a date, an
+  architect, a designation or a use: the landmarks and the previously surveyed
+  buildings in chapter III, the Gilded Age builders' work, the Scandinavian and
+  union halls, the post-quake institutions, and the property-type chapter, whose
+  figure captions are effectively a small illustrated inventory.
+- **Table 2** (p. 92) is a directory of the unions and labour agencies in the
+  study area in 1953, by address — eleven more addresses, and the only place the
+  Building Trades Temple's seventeen tenant locals are listed.
+- **Cautions:**
+  - **The appendices' build years are the Assessor's Office data the survey
+    worked from in 2006–07, not dates it researched** — its own footnotes say
+    so. Where they agree with the current roll they add nothing, and where they
+    differ the difference is a revision by the same office, not a second
+    opinion. Pages carry the appendix year as `year_built_as_surveyed` only when
+    it differs from the 2025 roll, with a note saying where it came from.
+  - **The report contradicts itself about which building is where.** 54 Waller
+    Street is Fire Department Engine House No. 19 on p. 63 and the First Baptist
+    Church in the caption on p. 111; the Swedish-American Hall is 2174 Market
+    Street on p. 46 and 2168 Market Street on p. 64; the Building Trades Temple
+    is at 200 Guerrero Street, at Fourteenth and Guerrero, and at Fourteenth and
+    Valencia in three passages; the Recorder Building is 1935 in the text and
+    1934 in a caption; Carpenters Hall is 112 Valencia Street in Table 2 and
+    "the former site of Carpenter's Hall" at 100 Valencia Street in Appendix D.
+    Its own appendices disagree on five buildings' years (1450 Howard, 3384 16th,
+    165 Grove, 30 Otis, 1340 Mission), and the narrative disagrees with the
+    appendix on four more (the Lick Baths, the Levi Strauss factory, the
+    Coca-Cola warehouse and the Bekins Warehouse). All of these are on the
+    pages as stated disagreements.
+  - **Follow the appendix's block and lot, not its printed address.** Nine
+    findings resolve only that way: 3 Pearl Street is the parcel the assessor
+    addresses 1815–1819 Market, 74 Otis is 86 Otis, 145 10th is 147 10th, 40
+    Lafayette is 99 South Van Ness, 1760 Mission is 1764 Mission, 1661 Market is
+    1663 Market, 40 Woodward is 44 Woodward, and 67 Haight has an EAS row with
+    no parcel number at all. **The printed address can also lead to the wrong
+    building**: EAS carries 224 Guerrero Street with no parcel number and its
+    coordinates fall in the parcel next door, a 1916 building Planning codes C;
+    the Sheet Metal Workers' Hall is the parcel beside it, which the assessor
+    addresses 224 Guerrero, the roll dates 1906 and Planning flags as an Article
+    10 landmark.
+  - **Condominium conversion has taken out most of the Mission Dolores blocks it
+    inventories.** 31 of the addresses are condominium parcels AGENTS.md holds
+    back — the whole Pearl Street and Elgin Park run, seven of the Clinton Park
+    contributors, and the Church, Dolores and 16th Street rows the statement
+    counted as post-quake reconstruction.
+  - **The directory columns name proprietors as well as firms**, in the usual
+    "Surname Initials trade" form. The firms are kept and the proprietors are
+    not: Murasky W. F., E. Percival Wetzel, Barney H. Barnard, H. Hartzell,
+    George Katz, H. L. Auger, Henry E. Lapkin, Lawrence DeLong, E. A. Bailing,
+    Norbert I. Epping, John H. Shaw and E. P. Fisher are all in the source and
+    on no page. The architects, builders and contractors are kept — including
+    Leonard Mosias, an architect listed at 1488 Howard Street in 1953, and
+    Alfred S. Gough, a contractor and builder at 10 Washburn Street in 1936.
+  - **The columns also carry the compiler's own annotations**, which are not
+    occupants: `nl` (not listed), cross-references to a neighbouring number
+    ("#165-67", "(155-57)", "(1445= Wuelker Infra Red Ltg"), and one "yrblt
+    1971". Those are dropped; "vacant" and "residence" are kept, because they
+    are what the directory found.
+  - **A page can already belong to another survey.** 25 of the parcels here were
+    documented from the Inner Mission North statement, whose panel occupies the
+    one `historic_survey` slot the page contract gives; on those, this survey's
+    identity findings ride the timeline as a 2007 entry instead. Those pages
+    also had their `district`/`status` keys renamed to the renderer's
+    `eligible_district`/`finding`, which is what the earlier pass meant and what
+    keeps `data.json` and `index.html` round-tripping.
+  - **The James Lick Baths is filed under another street.** The statement, the
+    assessor and Planning all address City Landmark No. 246 as 165 Tenth Street;
+    EAS puts more addresses for that parcel on Grace Street, so the page the
+    site already had for it is 66 Grace Street, with 165 10th Street as an
+    alias.
+  - **Its bibliography cites Page & Turnbull's other reports by address** — 361-65
+    Brannan, 425 and 650 First, 869 Folsom, 333 and 350 Fremont, 178 and 388
+    Townsend, 35 Stanford, 465 Tenth, 100 First Plaza. None is a property in the
+    plan area and none was pursued.
 - **Citation label:** name the consultant(s), the report and its adoption
   date, and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1282,3 +1385,46 @@ examples). This is the low end of the density range for the series: about
   Avenue (1928 here, 1939 on the roll). Coverage note: this document is read
   in full and nothing in it is outstanding. The Market & Octavia, Japantown
   and other adopted statements on the same SF Planning page are untouched.)
+- **Verified:** 2026-08-16 (Market & Octavia: read all 136 pages, the whole file
+  — the introduction and definition of the plan area, the methods and
+  previous-surveys chapters, the eight chronological context chapters, the
+  Industrial Employment context with its union directory, the property-type
+  chapter, the bibliography, and Appendices A through E. **322 distinct numbered
+  San Francisco addresses are named**, counting a printed range by its low
+  number: 98 in Appendix A, 148 in Appendix D (of which none overlap Appendix A),
+  and about 90 in the narrative chapters and Table 2. **264 of them resolve to a
+  parcel that may be documented**, collapsing onto 260 parcels — nine of those 264
+  only by following the appendix's own block and lot rather than its printed
+  address, and one by rejecting the parcel the printed address's coordinates fall
+  in (224 Guerrero Street; see "Cautions" above). 260 pages now cite the
+  document: **158 new and 102 edited**, across `mission` (139),
+  `south-of-market` (46), `castro` (38), `hayes-valley` (32), `tenderloin` (3),
+  `haight-ashbury` (2) and `western-addition` (1); no new neighbourhood or street
+  directory was needed. One further page was seeded and cites nothing from the
+  document — 1659 Market Street, whose parcel the appendix's printed address
+  pointed at before the block and lot moved the finding next door to 1663.
+  Not documented, and why: **31 are condominium parcels** the roll classes
+  Condominium, which AGENTS.md holds back — 54, 61 and 65 Pearl Street; 73 and 84
+  Elgin Park; 176, 251, 255, 267 and 281 Clinton Park; 19 Rosemont Place; 440
+  14th Street; 1918 and 1983 15th Street; 3330 and 3394 16th Street; 321 and 349
+  Church Street; 25 and 272 Dolores Street; 256 and 260 Guerrero Street; 14, 30
+  and 42 Otis Street; 74 and 90 12th Street; 375 Grove Street; 555 Fulton Street;
+  41 Van Ness Avenue; and 1500 Mission Street, the Coca-Cola bottling warehouse
+  that Splendid Survivors recorded. **28 are named at a number EAS has never
+  carried**: 1 Van Ness Avenue; 100 Page Street; 100 South Van Ness Avenue; 101,
+  106, 108, 112, 154 and 227 Valencia Street; 1022 and 751 Golden Gate Avenue;
+  125 12th Street; 1360 and 1582 Market Street; 1400 Howard Street; 155 10th
+  Street; 155 Grove Street; 1536 Mission Street; 1841 and 2091 15th Street; 1927
+  Market Street; 208 Dolores Street; 2698 16th Street; 271 Hayes Street; 30 Otis
+  Street; 316 14th Street; 54 Waller Street; and 69 9th Street. Eleven of those
+  are the union halls and labour offices of Table 2, on the Valencia Street and
+  Tenth Street block faces the Central Freeway took; the rest are buildings the
+  report itself calls no longer extant, or numbers the city has since retired.
+  **One is a second appendix row on a parcel that cannot have a page**: the
+  appendix lists 134 10th Street twice, once per parcel, and block 3510 lot 007
+  has an active parcel and a 2025 roll row but no EAS address at all. Coverage
+  note: this document is read in full and nothing in it is outstanding. The
+  Market & Octavia Historic Resources Survey it was written to accompany — the
+  DPR 523 forms for some 1,500 properties built before 1961 — is a separate
+  document and is untouched, as are the Japantown and other adopted statements
+  on the same SF Planning page.)

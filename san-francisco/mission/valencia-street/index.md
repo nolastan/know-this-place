@@ -4,6 +4,9 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 
 ## Documented so far
 
+- [100](100/) — A 1964 store building, with permit records from 1983 to 2013.
+- [150](150/) — A store building, with a seismic retrofit permitted in 2001.
+- [177](177/) — A 1959 industrial building, with reroofing permitted in 1992.
 - [204–206](204/) — A 1908 7-unit apartment building, with a kitchen remodel permitted in 2015.
 - [207–215](207/) — A 1924 11-unit apartment building, with a rear addition permitted in 2012.
 - [212–214](212/) — A 1906 5-unit apartment building, with stair work permitted in 2002.

@@ -4,6 +4,8 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 
 ## Streets documented so far
 
+- [10Th Street](10th-street/) — 9 buildings, built 1923–1929; 8 in the Western SOMA Light Industrial and Residential Historic District.
+- [11Th Street](11th-street/) — 3 buildings, built 1919–1930; 3 in the Western SOMA Light Industrial and Residential Historic District.
 - [Bluxome Street](bluxome-street/) — 10 buildings, built 1916–2016; 3 in the Bluxome Townsend Historic District.
 - [Brannan Street](brannan-street/) — 24 buildings, built 1905–1989; 3 in the Clyde and Crooks Historic District.
 - [Bryant Street](bryant-street/) — 56 buildings, built 1905–2005; 1 in the SoMa LGBTQ Historic District.
@@ -42,5 +44,6 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Tehama Street](tehama-street/) — 21 buildings, built 1906–2002.
 - [Third Street](3rd-street/) — 16 buildings, built 1905–1990; 1 in the Clyde and Crooks Historic District.
 - [Townsend Street](townsend-street/) — 13 buildings, built 1906–1987; 4 in the Bluxome Townsend Historic District.
+- [Washburn Street](washburn-street/) — 2 buildings, built 1906–1924; 2 in the Western SOMA Light Industrial and Residential Historic District.
 - [Welsh Street](welsh-street/) — 5 buildings, built 1906–1986.
 - [Zoe Street](zoe-street/) — 4 buildings, built 1907–2024.
