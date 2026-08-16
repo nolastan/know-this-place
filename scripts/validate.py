@@ -62,6 +62,13 @@ def check_html(html_path: Path, is_address: bool) -> None:
         err(html_path, "missing site footer")
 
     if is_address:
+        # One page, one timeline. Splitting the permits off from the historical
+        # record gave a reader two rails that each restarted the clock; they are
+        # one sequence of things that happened here, so they share one `.vtl`.
+        rails = len(re.findall(r'<ol class="vtl"', html))
+        if rails > 1:
+            err(html_path, f"{rails} timelines — an address page has one `.vtl` "
+                           "holding every dated entry, oldest first (AGENTS.md)")
         if "application/ld+json" not in html:
             err(html_path, "address page missing JSON-LD structured data")
         if f"{REPO}/issues/new" not in html or "page=" not in html:

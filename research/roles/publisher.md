@@ -19,7 +19,8 @@ A findings file with entries at `resolution.status: "resolved"` and
   the page's `sources` array with the citation label from the dossier.
 - Regenerate `index.html` from `data.json` in the same commit. Facts render as
   a timeline item, a spec row, a tag or a tile — **never as a new paragraph**,
-  and never as a sentence about where the fact came from.
+  and never as a sentence about where the fact came from. A dated fact joins
+  the page's one timeline in date order; it never opens a second rail.
 - A conflict flagged by the resolver goes in `.unknowns`, stated plainly and
   left unadjudicated.
 
@@ -54,7 +55,7 @@ A findings file with entries at `resolution.status: "resolved"` and
 - **Privacy is not negotiable at publication time either.** Buildings,
   contractors, architects, firms, and historical figures already published with
   dates. Not residents, occupants or owners.
-- **Don't restate what a component already shows**, and never open a permit
+- **Don't restate what a component already shows**, and never open the
   timeline with prose.
 
 ## Close the loop
