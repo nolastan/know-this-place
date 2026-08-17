@@ -41,6 +41,8 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [261–265](261/) — A 1910 two dwellings on one parcel, with a vertical addition permitted in 2002.
 - [273–275](273/) — A 1911 two-flat, with an accessory dwelling unit permitted in 2026.
 - [279–283](279/) — A 1911 three-flat, with a bathroom remodel permitted in 1983.
+- [299](299/) — The Holy Family Day Home, on the corner where Willis Polk's children's day home of 1911 stood.
+- [333](333/) — A 1924 school building, listed in the Junior League of San Francisco's Here Today survey of 1968.
 - [347](347/) — A 1907 66-unit apartment building, with reroofing permitted in 2020.
 - [381](381/) — A 1908 single-family house.
 - [383–387](383/) — A 1922 4-unit apartment building, with reroofing permitted in 2020.

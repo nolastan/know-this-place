@@ -54,6 +54,7 @@ Every residential parcel on Sanchez Street that the city's address, assessor and
 - [295](295/) — A 1917 single-family house, with a rear addition permitted in 2013.
 - [310–312](310/) — A 1900 single-family house, with a vertical addition permitted in 2005.
 - [320](320/) — A 1905 two-flat, with one permit record from 2011.
+- [325](325/) — Everett Middle School, built in the 1920s to John Reid, Jr.'s eclectic Spanish Revival design.
 - [328–332](328/) — A 1905 5-unit apartment building, with a seismic retrofit permitted in 2013.
 - [334](334/) — A 1900 two-flat, with a bathroom remodel permitted in 2015.
 - [342–344](342/) — A 1900 two-flat, with a kitchen remodel permitted in 2014.

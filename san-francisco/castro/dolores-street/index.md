@@ -22,7 +22,9 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [254](254/) — A 1925 6-unit apartment building in the Alert Alley Early Residential Historic District, with a seismic retrofit permitted in 2017.
 - [260–264](260/) — A 1900 three-flat in the Alert Alley Early Residential Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [266–270](266/) — A 1903 6-unit apartment building in the Alert Alley Early Residential Historic District, with a seismic retrofit permitted in 2015.
+- [290](290/) — Home of Congregation Sha'ar Zahav since 1998, in a 1917 Craftsman building that was a funeral home.
 - [310](310/) — The mission church of San Francisco de Asís, founded on this site in 1776 and an Article 10 city landmark.
+- [320](320/) — The Mission Dolores cemetery, the second of the two lots that carry City Landmark No. 1.
 - [344](344/) — A 1900 6-unit apartment building in the Chula-Abbey Early Residential District, with reroofing permitted in 1996.
 - [348–352](348/) — A 1905 3-unit tic building in the Chula-Abbey Early Residential District, with an accessory dwelling unit permitted in 2018.
 - [366](366/) — A 1925 6-unit apartment building in the Chula-Abbey Early Residential District, with a seismic retrofit permitted in 2015.
@@ -31,6 +33,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [392–398](392/) — A 1907 8-unit apartment building in the Chula-Abbey Early Residential District, with a kitchen and bathroom remodel permitted in 2024.
 - [400](400/) — A 1925 12-unit apartment building, with reroofing permitted in 1998.
 - [416](416/) — A 1915 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [440](440/) — Mission High School, John Reid, Jr.'s Spanish Baroque replacement of 1925–1927 for the city's first public high school.
 - [714–718](714/) — A 1910 7-unit apartment building, with reroofing permitted in 2016.
 - [730](730/) — A 1907 single-family house, with stair work permitted in 2015.
 - [742](742/) — A 1900 single-family house, with a kitchen remodel permitted in 2009.
