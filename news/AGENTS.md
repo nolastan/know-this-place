@@ -38,10 +38,11 @@ last two are the research module's, reused unchanged.
 
 ```
 poll ──▶ read ──▶ extract ──▶ resolve ──▶ publish
-cursors   which    what the     which      headline,
-+ screen  stories  story says   parcel?    outlet and
-          say an   about the               date onto
-          address  building                the timeline
+cursors   which    what the     which      seed the page
++ screen  stories  story says   parcel?    if there isn't
+          say an   about the               one; headline,
+          address  building                outlet and date
+                                           onto the timeline
 ```
 
 | Stage | Who | Reads | Writes |
@@ -50,7 +51,7 @@ cursors   which    what the     which      headline,
 | 2 read | an agent, with `tools/read.py` | the queued articles | nothing yet |
 | 3 extract | an agent | what it read | `items/<feed-id>/<batch>.json` |
 | 4 resolve | `research/tools/resolve_eas.py` | the items file | `resolution` in the same file |
-| 5 publish | an agent | resolved items | `san-francisco/**` pages, a PR |
+| 5 publish | an agent, with `scripts/seed_pages.py` | resolved items | `research/manifests/news-<batch>.json`, `san-francisco/**` pages, a PR |
 
 Stages 3–5 use the research module's own findings schema and resolver. That is
 deliberate: a fact from Mission Local and a fact from an 1895 newspaper are the
@@ -58,9 +59,10 @@ same kind of object, and they go through the same gate.
 
 ```bash
 python3 news/tools/poll.py poll             # fetch, screen, queue, advance cursors
-python3 news/tools/read.py news/queue/<date>.json --only-pages
+python3 news/tools/read.py news/queue/<date>.json
 python3 news/tools/check.py                 # feeds ↔ cursors ↔ items ↔ schema
 python3 research/tools/resolve_eas.py apply news/items/<feed>/<batch>.json
+python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<batch>.json
 ```
 
 ## Cursors: what "already considered" means
@@ -169,6 +171,14 @@ copy.**
 - **An address is not a fact.** "The mayor spoke at 1 Dr Carlton B Goodlett
   Place" names an address and says nothing about the building. Apply the
   ten-year test above.
+- **A building with no page counts exactly as much as one with a page.**
+  `read.py` says which addresses already have pages, and that is a convenience,
+  not a ranking: 10,828 pages is a small slice of the city, so ranking by it
+  would confine the module to the slice of San Francisco that happens to be
+  documented already. The story decides, and the page is created to receive it —
+  see "No page yet? Seed it" below. `--only-pages` narrows a read when you are
+  triaging a long backlog by hand; it is not the default and it is not the
+  order to work in.
 - **A paywall that cuts off after the lede is not a source you can extract
   from.** Record what you could read and mark the item unpublished with the
   reason. The Registry and the Chronicle both do this.
@@ -267,17 +277,43 @@ Rules that catch people out:
   what the story actually said and why it earned an entry — evidence for the
   auditor, the thing a reviewer checks the headline against. It simply never
   reaches a page now.
-- **No page yet? Don't seed one on your own initiative.** Most news addresses
-  are in this state and that is fine: the fact waits in the items file with
-  `resolution.path` recorded. Seeding a parcel publishes a new page to the
-  site, so it is a decision to put to a human, not a step in this pipeline.
-  When one says yes, the route is a manifest under `research/manifests/`
-  followed by `seed_pages.py seed-list`, and **the manifest's numbers must be
-  derived the way the resolver derives them** — `resolve_eas.py` unions the
-  addresses reached through a parcel's retired APNs, so a manifest built from
-  the active APN alone can name the page at a different street number than the
-  finding resolved to. `research/manifests/news-2026-08-16.json` is a worked
-  example: 350 Bay Street resolves to a page at 300 Bay Street.
+- **No page yet? Seed it.** Most news addresses are in this state, and a fact
+  parked in an items file waiting for a page nobody creates is a fact nobody
+  reads. Seeding is a stage of this pipeline, not a question to put to a human:
+  name the parcels in a manifest under `research/manifests/news-<batch>.json`,
+  seed them, and put the entries on the pages in the same PR that extracted
+  them.
+
+  ```bash
+  python3 research/tools/resolve_eas.py apply news/items/<feed>/<batch>.json
+  python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<batch>.json
+  python3 scripts/build_sitemap.py
+  python3 scripts/build_map_index.py
+  python3 scripts/validate.py
+  ```
+
+  Everything the seeder does elsewhere holds here — root
+  [AGENTS.md](../AGENTS.md) → "Page lifecycle" is unchanged. It creates only
+  pages that don't exist, it leaves every existing page alone, it rebuilds the
+  street hubs it touched, and what it writes is a first draft whose every fact
+  came from a DataSF API. Read a sample of the drafts before committing them,
+  the same as any other seed.
+- **The manifest's numbers must be derived the way the resolver derives them.**
+  `resolve_eas.py` unions the addresses reached through a parcel's retired APNs,
+  so a manifest built from the active APN alone can name the page at a different
+  street number than the finding resolved to. The numbers and the lead are in
+  the resolution's own `method` — "EAS puts 300, 330, 350, 360 BAY ST on that
+  parcel, so … the lowest, 300" — so take them from there rather than from the
+  number the story printed, and check the manifest's `apn`, `area` and
+  `street_slug` against `resolution.apn` and `resolution.path`.
+  `research/manifests/news-2026-08-16.json` is the worked example: 350 Bay
+  Street resolves to a page at 300 Bay Street.
+- **A parcel the seeder refuses is not a page to force.** It skips condominium
+  units and parcels with no row on the current roll, and prints the reason for
+  each. That is the site's rule about what may be a page, and it outranks the
+  story: leave the finding at `publish.status: "pending"` with the seeder's
+  reason in the note, and it stays in the items file as a fact with nowhere
+  legitimate to go.
 - **A seeded page's own data may contradict the story that prompted it.** The
   roll described 2740 McAllister as a one-storey house built 1900 five years
   after it was demolished. That is an `.unknowns` line, not something to
@@ -316,9 +352,12 @@ resolver, same rule that an entry is never deleted once written:
   title and an archivist's note that has no meaning here. A story that
   disagrees with itself about a building's size or its acreage records that in
   `extra`, not in `conflict`.
-- An item whose address has no page keeps `resolution.status` from the
-  resolver and waits. An item that names no usable address is still written,
-  `rejected`, with the reason — that is what stops it being read again.
+- An item whose address has no page is a page to seed, not an item to shelve;
+  the resolver's "the parcel is the publisher's to seed" note is addressed to
+  this pipeline. Record the seeding in `publish.note`, naming the manifest, so
+  the page's origin is auditable from the finding. An item that names no usable
+  address is still written, `rejected`, with the reason — that is what stops it
+  being read again.
 
 Validate with `python3 news/tools/check.py`.
 
@@ -348,3 +387,11 @@ commit message, and leave the module easier to use than you found it.
 Two things need a human: **adding or un-blocking a feed** (it is a relationship
 with a publisher, and `access: needs-human` exists for that), and **anything
 that changes what a page looks like** — that is the root AGENTS.md's territory.
+
+**Seeding a parcel is not one of them.** It was, and the rule cost the module
+its whole point: nearly every address in the news has no page, so a pipeline
+that could only edit existing pages spent its days filing facts where nobody
+would read them. The guards that make this safe are the ones already in place —
+the seeder creates only pages that don't exist, refuses parcels the site may not
+document, and writes nothing but city data — and every run still arrives as one
+PR a human merges.

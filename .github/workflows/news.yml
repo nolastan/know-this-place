@@ -107,10 +107,13 @@ jobs:
             A queue file from an earlier run that is still present is work that
             run did not finish — read it before today's.
 
-            1. `python3 news/tools/read.py news/queue/<today>.json --only-pages`
-               to see which queued stories name an address the site already has
-               a page for. Then read the rest of the queue's stories with
-               judgement: most will name no address, and that is normal.
+            1. `python3 news/tools/read.py news/queue/<today>.json` to see the
+               addresses in the queued stories. Whether an address already has
+               a page is information, not a priority order — most will not, and
+               a story about a building with no page is worth exactly as much
+               as one about a building with a page. Read the queue with
+               judgement: most stories will name no address, and that is
+               normal.
             2. Apply the ten-year test in news/AGENTS.md. A story that merely
                mentions an address in passing gives a page nothing. Be strict:
                a thin day is a good day if the timeline stays honest.
@@ -125,24 +128,39 @@ jobs:
                your way past the privacy limits in the root AGENTS.md.
             4. Resolve it:
                `python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json`
-            5. For any finding that resolved to a page that EXISTS, add the
-               timeline entry to that page's data.json — `historical_record`
-               with date, kind, headline, outlet, url and source — and bring
-               index.html into step with it, per news/AGENTS.md → "Putting it
-               on the page". The entry is the headline in italics and the
-               outlet as the link, and NOTHING ELSE: no sentence of your own
-               summarizing the story, and never an edited headline. A finding
-               whose page does not exist yet stays in the items file — do NOT
-               seed pages here.
-            6. `python3 news/tools/check.py` and `python3 scripts/validate.py`
+            5. For any finding that resolved to a parcel with NO page, seed the
+               page — per news/AGENTS.md → "No page yet? Seed it". Write the
+               parcels into research/manifests/news-<today's date>.json, taking
+               the numbers and the lead street number from each finding's
+               `resolution.method` (the resolver unions the addresses reached
+               through retired APNs, so the story's own number is not always
+               the page's), then:
+                 python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date>.json
+                 python3 scripts/build_sitemap.py
+                 python3 scripts/build_map_index.py
+               The seeder creates only pages that don't exist and never touches
+               one that does. If it refuses a parcel — a condominium unit, no
+               row on the current roll — leave that finding pending with the
+               reason; do not hand-write the page.
+            6. Add the timeline entry to each page's data.json —
+               `historical_record` with date, kind, headline, outlet, url and
+               source — and bring index.html into step with it, per
+               news/AGENTS.md → "Putting it on the page". The entry is the
+               headline in italics and the outlet as the link, and NOTHING
+               ELSE: no sentence of your own summarizing the story, and never
+               an edited headline. Record in each finding's `publish.note`
+               whether the page was seeded in this run, and from which
+               manifest.
+            7. `python3 news/tools/check.py` and `python3 scripts/validate.py`
                must both pass. Read `git diff` and confirm every change is a
-               real fact about a building.
-            7. If any page changed, or any items file was written: create
-               branch news/<today's date>, commit, push, and open one PR
-               listing every page touched, every story used, and the run's
-               counts (considered / queued / read / found / published). If
-               nothing survived, commit the queue and cursors alone with a
-               one-line message, and open no PR.
+               real fact about a building, and read a sample of any pages you
+               seeded before committing them.
+            8. If any page changed or was created, or any items file was
+               written: create branch news/<today's date>, commit, push, and
+               open one PR listing every page touched, every page seeded, every
+               story used, and the run's counts (considered / queued / read /
+               found / seeded / published). If nothing survived, commit the
+               queue and cursors alone with a one-line message, and open no PR.
 
             Budget: this job has limited turns. Prefer three well-judged
             entries over twenty hasty ones. You do not have to finish the
