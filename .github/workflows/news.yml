@@ -52,17 +52,25 @@ jobs:
                mentions an address in passing gives a page nothing. Be strict:
                a thin day is a good day if the timeline stays honest.
             3. Write what survives into news/items/<feed-id>/<date>.json — the
-               research findings schema, kind "news", one entry per fact, the
-               article's headline and URL in the citation. Never reproduce a
-               source's sentence; never name a resident, tenant or owner.
+               research findings schema, one entry per fact, `kind` describing
+               what happened (sale, construction, occupancy, fire), and the
+               article's headline and URL in the citation. The `description`
+               there is a note for the next reader of that file; it never
+               reaches a page.
+               Decline any story whose HEADLINE names a private individual:
+               the headline is published verbatim, so there is no rewriting
+               your way past the privacy limits in the root AGENTS.md.
             4. Resolve it:
                `python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json`
             5. For any finding that resolved to a page that EXISTS, add the
-               timeline entry to that page's data.json (`historical_record`
-               with headline + url) and bring index.html into step with it, per
-               news/AGENTS.md → "Putting it on the page". A finding whose page
-               does not exist yet stays in the items file — do NOT seed pages
-               here.
+               timeline entry to that page's data.json — `historical_record`
+               with date, kind, headline, outlet, url and source — and bring
+               index.html into step with it, per news/AGENTS.md → "Putting it
+               on the page". The entry is the headline in italics and the
+               outlet as the link, and NOTHING ELSE: no sentence of your own
+               summarizing the story, and never an edited headline. A finding
+               whose page does not exist yet stays in the items file — do NOT
+               seed pages here.
             6. `python3 news/tools/check.py` and `python3 scripts/validate.py`
                must both pass. Read `git diff` and confirm every change is a
                real fact about a building.

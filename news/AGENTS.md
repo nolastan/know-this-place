@@ -38,10 +38,10 @@ last two are the research module's, reused unchanged.
 
 ```
 poll ──▶ read ──▶ extract ──▶ resolve ──▶ publish
-cursors   which    the fact,    which      onto the
-+ screen  stories  in our       parcel?    page's
-          say an   own words               timeline
-          address
+cursors   which    what the     which      headline,
++ screen  stories  story says   parcel?    outlet and
+          say an   about the               date onto
+          address  building                the timeline
 ```
 
 | Stage | Who | Reads | Writes |
@@ -142,11 +142,12 @@ measures what they cost; do that when you change the screen.
 address in it with the page it belongs to. What it prints is **evidence, not
 copy.**
 
-- **The fact goes in our own words, always.** Facts aren't copyrightable,
-  expression is, and these outlets are alive and paying reporters. Never
-  reproduce a sentence, a headline's phrasing, or a paragraph's structure. The
-  headline is quoted in exactly one place — the link — because that is a
-  citation, not a copy.
+- **The headline is the only text of theirs we publish.** These outlets are
+  alive and paying reporters, and a headline carried verbatim with the outlet
+  named and linked is a citation. A summary of the article is not: never
+  reproduce a sentence, a paragraph's structure, or the shape of the reporting,
+  and never write our own precis of it onto a page. What you write in the items
+  file is a note for the next reader of that file, not copy.
 - **An address is not a fact.** "The mayor spoke at 1 Dr Carlton B Goodlett
   Place" names an address and says nothing about the building. Apply the
   ten-year test above.
@@ -182,16 +183,22 @@ because a news story is a story about people almost by definition.
 
 ## Putting it on the page
 
-A news fact reaches a page as an entry in `historical_record` — the same key a
-newspaper fact from 1901 uses — and renders as one item on the page's single
-timeline, in date order among the permits. Nothing about the page's design
-changes because a fact came from the news.
+A news entry is **the article's headline, the outlet, and the date** — and
+nothing else. It reaches a page as an entry in `historical_record`, the same key
+a newspaper fact from 1901 uses, and renders as one item on the page's single
+timeline, in date order among the permits.
+
+**The page does not restate the story in its own words.** An earlier version of
+this module wrote a sentence of fact under each headline; it read as commentary,
+it duplicated what the headline already said, and it put us in the business of
+summarizing other people's reporting. The headline is the entry. A reader who
+wants the story follows the link, which is the whole point of carrying it.
 
 ```json
 { "date": "2026-08-14",
   "kind": "construction",
-  "description": "Foundation work began on a six-storey, 75-unit building on the site of a former laundromat, a decade after the first application.",
-  "headline": "Mission laundromat site finally rises as apartments",
+  "headline": "Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments",
+  "outlet": "Hoodline",
   "url": "https://hoodline.com/2026/08/…",
   "source": "hoodline-2026-08-14" }
 ```
@@ -200,35 +207,48 @@ with the matching citation in `sources`:
 
 ```json
 { "id": "hoodline-2026-08-14",
-  "name": "Hoodline, “Mission laundromat site finally rises as apartments,” 14 August 2026",
+  "name": "Hoodline, “Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments,” 14 August 2026",
   "query": "https://hoodline.com/2026/08/…",
   "retrieved": "2026-08-16" }
 ```
 
-and, in `index.html`, one `.vtl-item` whose meta row carries the linked headline
-and the outlet:
+and, in `index.html`, one `.vtl-item` — the headline in italics, the outlet as
+the link, no meta row:
 
 ```html
 <li class="vtl-item">
   <div class="vtl-date">Aug 14, 2026</div>
-  <p class="vtl-desc">Foundation work began on a six-storey, 75-unit building on the site of a former laundromat, a decade after the first application.</p>
-  <div class="vtl-meta">
-    <a href="https://hoodline.com/2026/08/…">“Mission laundromat site finally rises as apartments”</a>
-    <span>Hoodline</span>
-  </div>
+  <p class="vtl-desc"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em> — <a href="https://hoodline.com/2026/08/…">Hoodline</a></p>
 </li>
 ```
 
 Rules that catch people out:
 
+- **The headline goes up verbatim, so read it as something we are publishing.**
+  It is the outlet's wording, quoted as a citation, which is what makes it fair
+  to reproduce — but it is now the only text on the page from this story, and
+  every rule below applies to it rather than to a sentence we wrote.
+- **A headline that names a private individual cannot go on a page.** Eviction,
+  arrest, crime and death stories routinely name people in the headline, and
+  the root [AGENTS.md](../AGENTS.md) forbids naming residents, tenants, owners
+  and occupants. There is no rewriting your way out of it, because we no longer
+  write the entry: if the headline names someone who is not an architect,
+  builder, developer or firm, decline the story. `publish.status: declined`
+  with the reason.
+- **Never edit a headline** — not to trim it, not to fix its capitalization, not
+  to drop the outlet's brand from the end. A quoted headline that has been
+  altered is no longer a citation. If a headline is unusable, the entry is
+  unusable; decline it.
 - **One source id per article**, `<feed-id>-<YYYY-MM-DD>`, following the
   newspaper convention already on the site (`loc-sf-call-1901-04-06`). Two
   stories from one outlet on one page are two ids, suffixed `-2`.
-- **The date is the article's publication date**, and the description says what
-  happened, not what was reported. Never "Hoodline reported that…" — the root
-  AGENTS.md forbids narrating sourcing, and the link is the attribution.
-- **The description is a fact, in our words, with no editorializing** and no
-  restating of anything a component on the page already shows.
+- **The date is the event's date where the story gives one**, and the article's
+  publication date otherwise. A store that opened on the Thursday is dated the
+  Thursday, not the Friday it was written up.
+- **The `description` in the items file stays.** It is the extractor's record of
+  what the story actually said and why it earned an entry — evidence for the
+  auditor, the thing a reviewer checks the headline against. It simply never
+  reaches a page now.
 - **No page yet? Don't seed one on your own initiative.** Most news addresses
   are in this state and that is fine: the fact waits in the items file with
   `resolution.path` recorded. Seeding a parcel publishes a new page to the
@@ -243,7 +263,8 @@ Rules that catch people out:
 - **A seeded page's own data may contradict the story that prompted it.** The
   roll described 2740 McAllister as a one-storey house built 1900 five years
   after it was demolished. That is an `.unknowns` line, not something to
-  quietly drop from either side.
+  quietly drop from either side. Keep such a note only while the page still
+  shows the claim it contradicts — usually in the headline itself.
 - `python3 scripts/validate.py` must pass, and `index.html` must match
   `data.json` — the site's contract, unchanged.
 
@@ -291,8 +312,10 @@ Validate with `python3 news/tools/check.py`.
   polled.** [feeds.json](feeds.json) records `access: needs-human` for
   `sf-business-times` for exactly that reason: its host's robots.txt ends with
   a blanket disallow. Changing that flag is a human's call, not an agent's.
-- **We link back, always.** Every fact on a page carries the article's link in
-  its timeline meta row and its citation in the footer. That is the deal.
+- **We link back, always.** Every entry on a page names the outlet, links the
+  article, and cites it in the footer — the outlet's name *is* the link. Taking
+  a headline and burying where it came from is the one thing that would make
+  this module a bad citizen. That is the deal.
 - **Never commit the article text.** The queue file keeps titles, links and
   reasons; the syndicated body stays in memory.
 

@@ -280,10 +280,12 @@ the same resolver.
 
 Two things from it bind you even when you are only editing a page:
 
-- **A news fact is a `historical_record` entry like any other**, rendering as
-  one item on the page's single timeline — with the linked headline and the
-  outlet in its meta row. No new component, no second rail, no "in the news"
-  section.
+- **A news entry is the article's headline, the outlet and the date — and
+  nothing else.** It is a `historical_record` entry like any other, rendering as
+  one item on the page's single timeline: the headline in italics, the outlet as
+  the link. The page never restates the story in its own words, because that
+  reads as commentary and duplicates what the headline already says. No new
+  component, no second rail, no "in the news" section.
 - **Privacy is under more pressure here than anywhere else in this repo**,
   because a news story is about people almost by definition. Take the building;
   leave the tenant, the owner, the victim and the accused. The full doctrine is
@@ -487,6 +489,12 @@ optional short label; entries may carry extra keys for what the record itself
 stated (`cost`, `lot_as_recorded`, `cross_streets`). Its entries render as
 items on the page's one `.vtl`, in date order among the permits — never as
 prose, and never as a second rail of their own.
+
+- **An entry from the [news module](news/AGENTS.md) is the exception to
+  `description`.** It carries `headline`, `outlet` and `url` instead, and
+  renders as the headline in italics followed by the outlet as a link. We do
+  not summarize a live outlet's reporting in our own words; the headline is the
+  entry and the link is where the story is.
 
 - **One entry per dated event, not per record.** Where a single event left
   several records — the assessor photographing a corner parcel once per street
