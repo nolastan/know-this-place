@@ -1,0 +1,84 @@
+# Scheduled sweep of the news feeds for stories that name an address.
+# Opens at most one PR per run; human review still gates the merge.
+name: news
+
+on:
+  schedule:
+    - cron: "0 15 * * *" # daily, ~8am Pacific — after the morning news cycle
+  workflow_dispatch:
+    inputs:
+      feed:
+        description: "Poll only this feed id (empty = every open feed)."
+        required: false
+        default: ""
+
+concurrency:
+  group: news
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Poll the feeds
+        run: |
+          python3 news/tools/poll.py poll ${{ inputs.feed && format('--feed {0}', inputs.feed) || '' }}
+          python3 news/tools/poll.py status
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are the news agent for knowthis.place. Read news/AGENTS.md
+            first — it is the rulebook — then the root AGENTS.md (privacy) and
+            shared/AGENTS.md (the HTML contract).
+
+            The poll has already run and written today's queue to
+            news/queue/<date>.json, advancing the cursors. Your job is the
+            reading and extracting stages, and publishing only what earns it.
+
+            1. `python3 news/tools/read.py news/queue/<today>.json --only-pages`
+               to see which queued stories name an address the site already has
+               a page for. Then read the rest of the queue's stories with
+               judgement: most will name no address, and that is normal.
+            2. Apply the ten-year test in news/AGENTS.md. A story that merely
+               mentions an address in passing gives a page nothing. Be strict:
+               a thin day is a good day if the timeline stays honest.
+            3. Write what survives into news/items/<feed-id>/<date>.json — the
+               research findings schema, kind "news", one entry per fact, the
+               article's headline and URL in the citation. Never reproduce a
+               source's sentence; never name a resident, tenant or owner.
+            4. Resolve it:
+               `python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json`
+            5. For any finding that resolved to a page that EXISTS, add the
+               timeline entry to that page's data.json (`historical_record`
+               with headline + url) and bring index.html into step with it, per
+               news/AGENTS.md → "Putting it on the page". A finding whose page
+               does not exist yet stays in the items file — do NOT seed pages
+               here.
+            6. `python3 news/tools/check.py` and `python3 scripts/validate.py`
+               must both pass. Read `git diff` and confirm every change is a
+               real fact about a building.
+            7. If any page changed, or any items file was written: create
+               branch news/<today's date>, commit, push, and open one PR
+               listing every page touched, every story used, and the run's
+               counts (considered / queued / read / found / published). If
+               nothing survived, commit the queue and cursors alone with a
+               one-line message, and open no PR.
+
+            Budget: this job has limited turns. Prefer three well-judged
+            entries over twenty hasty ones. You do not have to finish the
+            queue: a queue file is the durable worklist, so delete it only when
+            it is drained, and leave it in place — committed — when it is not.
+            The next run picks it up. Say in the PR body how much of it you
+            read.
+
+            Never "verify" the Street View embed — its API key is restricted to
+            the production domain and always fails elsewhere.

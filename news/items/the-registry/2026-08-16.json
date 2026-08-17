@@ -1,0 +1,82 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-08-16",
+  "stage": "resolved",
+  "read_on": "2026-08-16",
+  "notes": "The Registry paywalls its articles after the first sentence. Both entries here were extracted from the headline and the lede, which is all that is readable; nothing was inferred from the rest.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "Nothing from this batch.",
+    "note": "Two of the ten items in the feed were queued by the screen; the other eight are Alameda, Emeryville, Pleasanton, Redwood City and San Jose deals."
+  },
+  "findings": [
+    {
+      "id": "2026-08-16-0001",
+      "date": "2026-08-14",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "520 Geary Street",
+      "street_number": "520",
+      "street_name": "GEARY",
+      "street_type": "ST",
+      "description": "The 91-unit apartment building sold for $18.475 million, about half what it fetched in 2018.",
+      "extra": {
+        "units": 91,
+        "price_usd": 18475000,
+        "seller": "an entity tied to Fortress Investment Group"
+      },
+      "citation": {
+        "label": "The Registry, “Fortress-Tied Owner Sells 91-Unit 520 Geary Apartments in San Francisco for $18.475MM, Roughly Half Its 2018 Price,” 14 August 2026",
+        "url": "https://news.theregistrysf.com/fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price/",
+        "locator": "headline and lede; the rest is behind a subscription wall"
+      },
+      "raw": {
+        "text": "An entity tied to Fortress Investment Group has sold the 91-unit apartment building at 520 Geary Str[eet]"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0305007",
+        "path": "/san-francisco/union-square/geary-street/516/",
+        "eas_address": "516 GEARY ST",
+        "method": "EAS exact match on 520 GEARY ST → parcel 0305007; sf-parcels has blklot 0305007 active, 516–528 GEARY; the 2025 roll records it as multi-family residential, built 1923. EAS puts 516, 518, 520, 524, 528 GEARY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 516.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "The parcel was seeded from research/manifests/news-2026-08-16.json and the entry is on the page's timeline in the working tree. Flip to published with the PR number once the branch is opened."
+      }
+    },
+    {
+      "id": "2026-08-16-0002",
+      "date": "2026-08-14",
+      "date_precision": "day",
+      "kind": "obituary",
+      "address_as_written": "101 California Street",
+      "street_number": "101",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "An obituary of the broker who brought Hines the deal that became this tower. Nothing about the building is stated beyond the paywall.",
+      "citation": {
+        "label": "The Registry, “Norman Spencer, Hines Executive Behind 101 California Street, Dies at 83,” 14 August 2026",
+        "url": "https://news.theregistrysf.com/norman-spencer-hines-executive-behind-101-california-street-dies-at-83/",
+        "locator": "headline and lede; the rest is behind a subscription wall"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0263011",
+        "path": "/san-francisco/financial-district/california-street/101/",
+        "eas_address": "101 CALIFORNIA ST",
+        "method": "EAS exact match on 101 CALIFORNIA ST → parcel 0263011; sf-parcels has blklot 0263011 active, 101–101 CALIFORNIA; the 2025 roll records it as commercial office, built 1983.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "A story about a person that mentions a building is not a building story: the ten-year test in news/AGENTS.md fails, and an obituary tells a reader nothing about the tower. Recorded rather than dropped because this is the one address in the batch whose page already exists — the decision not to publish onto it should be auditable. The single building fact the article carries (who brokered the deal that became the tower) is not dated by this article and is paywalled beyond the lede; a source that states it properly could still record it."
+      }
+    }
+  ]
+}

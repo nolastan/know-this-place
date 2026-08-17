@@ -238,6 +238,28 @@ Facts arrive from research as findings files (`research/findings/`) and as
 parcel manifests (`research/manifests/`); what a page does with them is
 governed by this file and [shared/AGENTS.md](shared/AGENTS.md).
 
+## The news lives in `news/`
+
+Research mines what search engines can't see; the [news
+module](news/AGENTS.md) watches what they index every day, for the one thing
+they don't do — joining a story to the street number it happened at. It polls
+the city's newsrooms, keeps a cursor per feed so a story is considered once,
+and turns the stories that name a building into dated entries on that
+building's timeline. It writes the same findings files research does and uses
+the same resolver.
+
+Two things from it bind you even when you are only editing a page:
+
+- **A news fact is a `historical_record` entry like any other**, rendering as
+  one item on the page's single timeline — with the linked headline and the
+  outlet in its meta row. No new component, no second rail, no "in the news"
+  section.
+- **Privacy is under more pressure here than anywhere else in this repo**,
+  because a news story is about people almost by definition. Take the building;
+  leave the tenant, the owner, the victim and the accused. The full doctrine is
+  "Privacy — the hardest rule here" in that file, and it is this file's own
+  privacy limits applied to a harder case.
+
 ## Writing pages
 
 A page is a **designed data page, not an article.** Present facts through the
