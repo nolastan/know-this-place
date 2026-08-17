@@ -1,5 +1,13 @@
 # Scheduled sweep of the news feeds for stories that name an address.
-# Opens at most one PR per run; human review still gates the merge.
+#
+# Nothing here ever reaches main without a human merging it. That makes the
+# branch, not main, the place where "what have we already considered?" is
+# recorded — so a run first looks for the open PR a previous run left behind
+# and continues on its branch. Without that, an unmerged PR would leave main's
+# cursors stale, and the next run would re-fetch, re-screen and (expensively)
+# re-read the same stories; worse, the feeds only carry one to five days, so
+# stories in a PR left sitting would age out of the feeds and be lost rather
+# than merely repeated.
 name: news
 
 on:
@@ -26,6 +34,55 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Continue a previous run's PR if one is still open, so the cursors and
+      # the queue it left behind are the ones this run starts from.
+      - name: Find the open news PR, or start a branch
+        id: branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          pr=$(gh pr list --state open --base main --limit 50 \
+                 --json number,headRefName \
+                 --jq '[.[] | select(.headRefName | startswith("news/"))][0] // empty')
+
+          if [ -n "$pr" ]; then
+            number=$(echo "$pr" | python3 -c 'import json,sys; print(json.load(sys.stdin)["number"])')
+            branch=$(echo "$pr" | python3 -c 'import json,sys; print(json.load(sys.stdin)["headRefName"])')
+            echo "continuing PR #$number on $branch"
+            git fetch origin main "$branch"
+            git checkout -B "$branch" "origin/$branch"
+            # Stay current with main so the branch does not drift into a pile of
+            # conflicts. A conflict here is the agent's to resolve, not a reason
+            # to skip the poll, so record it and carry on.
+            if git merge --no-edit origin/main; then
+              echo "merge_conflict=" >> "$GITHUB_OUTPUT"
+            else
+              git merge --abort
+              echo "merge_conflict=1" >> "$GITHUB_OUTPUT"
+            fi
+            echo "pr=$number" >> "$GITHUB_OUTPUT"
+          else
+            git fetch origin main
+            branch="news/$(date -u +%F)"
+            # A branch from a cycle that was closed unmerged can still be
+            # sitting on the remote under today's name; pushing to it would be
+            # rejected as a non-fast-forward.
+            if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+              branch="$branch-$GITHUB_RUN_NUMBER"
+            fi
+            echo "no open news PR; starting $branch"
+            git checkout -B "$branch" origin/main
+            echo "pr=" >> "$GITHUB_OUTPUT"
+            echo "merge_conflict=" >> "$GITHUB_OUTPUT"
+          fi
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
 
       - name: Poll the feeds
         run: |
@@ -40,9 +97,15 @@ jobs:
             first — it is the rulebook — then the root AGENTS.md (privacy) and
             shared/AGENTS.md (the HTML contract).
 
+            You are on branch ${{ steps.branch.outputs.branch }}, already
+            checked out. ${{ steps.branch.outputs.pr && format('It belongs to OPEN PR #{0}, left by an earlier run — its cursors, queue files and items files are the ones you are continuing, and pushing to this branch updates that PR rather than opening a second one.', steps.branch.outputs.pr) || 'No news PR was open, so this branch is new off main and you will open the PR at the end.' }}
+            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. Generated files (sitemap.xml, shared/addresses.geojson, hub index.html/index.md) are rebuilt, never hand-merged: take main side and re-run the build scripts.' || '' }}
+
             The poll has already run and written today's queue to
             news/queue/<date>.json, advancing the cursors. Your job is the
             reading and extracting stages, and publishing only what earns it.
+            A queue file from an earlier run that is still present is work that
+            run did not finish — read it before today's.
 
             1. `python3 news/tools/read.py news/queue/<today>.json --only-pages`
                to see which queued stories name an address the site already has
@@ -85,8 +148,8 @@ jobs:
             entries over twenty hasty ones. You do not have to finish the
             queue: a queue file is the durable worklist, so delete it only when
             it is drained, and leave it in place — committed — when it is not.
-            The next run picks it up. Say in the PR body how much of it you
-            read.
+            The next run continues on this same branch and picks it up. Say in
+            the PR body or your comment how much of it you read.
 
             Never "verify" the Street View embed — its API key is restricted to
             the production domain and always fails elsewhere.
