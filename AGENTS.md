@@ -203,17 +203,23 @@ refresh of stale data. The seeder has no part in this:
 6. If pages were added or removed, run `python3 scripts/build_sitemap.py`
    and `python3 scripts/build_map_index.py` (the sitemap and the homepage
    map are both derived indexes; `validate.py` fails until both are current).
-7. **Ask whether the page belongs in the homepage's featured addresses.** The
-   `.place-cards` grid in the root `index.html` holds six addresses, picked on
-   two things: **a timeline reaching far back** (the earliest `date` across
+7. **Put the page on the homepage if it is interesting.** The `.place-cards`
+   grid in the root `index.html` holds six featured addresses. A page qualifies
+   on two things: **a timeline reaching far back** (the earliest `date` across
    `historical_record` and `permits`) and **sources beyond the standard SF gov
    datasets** (any `sources` entry whose `id` is not `sf-*`, not
    `*-context-statement`, and not `central-soma-survey` — a newspaper, a book,
-   a journal, an archive, a neighborhood newsletter). If a page you wrote or
-   updated now beats one of the six on both counts, swap it in and drop the
-   weakest — six cards, no more, so a new one always displaces an old one.
-   That list is hand-maintained: it is not generated, nothing rebuilds it, and
-   it goes stale silently. A card is a link, a `<ktp-streetview>` whose
+   a journal, an archive, a neighborhood newsletter).
+   **Judge the page on its own.** Do not audit the six that are there, do not
+   rank the corpus, and do not go looking for something to displace: if the
+   page you just wrote or updated clears both bars, drop the card you like
+   least and put it in. The bar is qualifying, not winning. This list is meant
+   to turn over often — six cards is a sample of what the site holds, not a
+   leaderboard, and wiping all six for six better ones in a single pass is a
+   good outcome, not an overstep. Six is the only hard rule; a stale list is
+   the failure mode, not a churning one — and nothing generates or rebuilds
+   this one, so it only ever changes because you changed it.
+   A card is a link, a `<ktp-streetview>` whose
    `location` matches the page's `coordinates`, and the street address —
    **never a description.** The cards carry no commentary; the page they open
    is where the story is told.
