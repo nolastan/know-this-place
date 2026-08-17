@@ -71,6 +71,10 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
   <title>ADDRESS — Know This Place</title>
   <meta name="description" content="PAGE-SPECIFIC ONE- OR TWO-SENTENCE SUMMARY">
   <link rel="canonical" href="SITE_URL + PATH">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">                    <!-- verbatim, all four -->
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/shared/site.webmanifest">
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>   <!-- enhancement layer -->
   <script type="application/ld+json"> { … "@type":"Place" … } </script>  <!-- see below -->
@@ -90,7 +94,14 @@ JSON-LD (`Place` with `PostalAddress` + `GeoCoordinates`), the `<footer>`
 sources/feedback/colophon, and the **FEEDBACK_URL** are unchanged — copy them
 from any existing address page (e.g. `castro-street/744/index.html`).
 `validate.py` enforces canonical, description, breadcrumb, footer, JSON-LD,
-and the prefilled feedback link; run it.
+the four icon links, and the prefilled feedback link; run it.
+
+The icon links are shared chrome — copy them verbatim, exactly as the stylesheet
+link is copied. The mark itself is one file, `shared/icon.svg` (a `#1F1F1F` tile
+with a `#C2694A` dot); `favicon.ico`, `apple-touch-icon.png` and the two
+`icon-*.png` sizes are rasterized from it, so changing the mark means
+regenerating all five. The `.ico` and the apple touch icon sit at the repo root
+because browsers and iOS fetch those two paths on their own.
 
 ## Composing `<main>`: a typical order
 
