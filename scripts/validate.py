@@ -18,6 +18,17 @@ SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
 
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a
+
+# Site icons, on every page for the same reason the stylesheet is: they are
+# shared chrome, not page content. `shared/icon.svg` is the source of truth for
+# the mark; favicon.ico and apple-touch-icon.png are derived from it.
+ICON_LINKS = (
+    '<link rel="icon" href="/favicon.ico" sizes="32x32">',
+    '<link rel="icon" href="/shared/icon.svg" type="image/svg+xml">',
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+    '<link rel="manifest" href="/shared/site.webmanifest">',
+)
+
 errors: list[str] = []
 
 
@@ -33,6 +44,9 @@ def check_html(html_path: Path, is_address: bool) -> None:
 
     if '<link rel="stylesheet" href="/shared/site.css">' not in html:
         err(html_path, "missing the shared stylesheet link")
+    for link in ICON_LINKS:
+        if link not in html:
+            err(html_path, f"missing a shared icon link: {link}")
     if '<script type="module" src="/shared/site.js"></script>' not in html:
         err(html_path, "missing the shared enhancement script (/shared/site.js)")
     # Enhancement layer only: no page-level or inline scripts beyond the shared
@@ -260,6 +274,13 @@ def main() -> int:
             # hand-authored prose in both files; keeping them in sync is a
             # content edit, not a build-contract check.
             check_hub_sync(html_path.parent)
+
+    # The icon links every page carries have to resolve to something.
+    for icon in ("favicon.ico", "apple-touch-icon.png", "shared/icon.svg",
+                 "shared/icon-192.png", "shared/icon-512.png",
+                 "shared/site.webmanifest"):
+        if not (ROOT / icon).exists():
+            err(ROOT / icon, "site icon missing — every page links to it")
 
     # Every page should be reachable through the sitemap once one exists.
     sitemap = ROOT / "sitemap.xml"

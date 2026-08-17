@@ -42,6 +42,14 @@ REPO = CONFIG["repo_url"].rstrip("/")
 CACHE = ROOT / ".cache"
 UA = {"User-Agent": "know-this-place-seeder/1.0"}
 
+# Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
+# files are derived from it. Every page carries these, the way it carries the
+# shared stylesheet — `validate.py` enforces it.
+ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/shared/site.webmanifest">"""
+
 # The `.sub` locality line, per neighborhood. The Castro's parenthetical is
 # required by san-francisco/castro/AGENTS.md — it is what tells a reader that
 # "Castro" and "Eureka Valley" name the same place.
@@ -1714,6 +1722,7 @@ def render_html(rec: dict) -> str:
   <title>{esc(title)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
+{ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
   <script type="application/ld+json">
@@ -2128,6 +2137,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
   <title>{esc(disp)}, {esc(city_name)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{path}">
+{ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
 </head>
