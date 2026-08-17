@@ -3,7 +3,7 @@
 
     python3 news/tools/read.py news/queue/2026-08-16.json   # every queued item
     python3 news/tools/read.py https://example.com/story    # one article
-    python3 news/tools/read.py <queue> --only-pages         # only hits with a page
+    python3 news/tools/read.py <queue> --only-pages         # narrow a backlog
 
 Stdlib only. This is the mechanical half of the reading stage: it fetches the
 article, strips it to text, finds every street address in it, and says which of
@@ -11,6 +11,10 @@ them the site already has a page for. What it prints is **evidence for a
 reader**, not copy for a page — the sentence around a hit is there so the next
 step can judge what the story actually says about the building, in our own
 words. See [../AGENTS.md](../AGENTS.md) → "Reading an article".
+
+Whether a page exists is reported, not ranked on: an address with no page is a
+page the publishing stage seeds. `--only-pages` is for narrowing a backlog by
+hand, and it is not how a pass is meant to be worked.
 
 It does not decide anything: an address in an article is not yet a fact about a
 building, and the module's evidence bar is met by a person reading the story.
@@ -182,33 +186,35 @@ def article_text(url: str, feed: str) -> tuple[str, str]:
 
 
 def report(url: str, title: str, feed: str, streets: set[str], pages: dict,
-           only_pages: bool) -> int:
+           only_pages: bool) -> tuple[int, int]:
+    """(addresses found, of which already have a page)."""
     text, how = article_text(url, feed)
     if not text:
         print(f"\n[{feed}] {title}\n  {url}\n  {how}")
-        return 0
+        return 0, 0
     hits = addresses_in(text, streets, pages)
     with_pages = [h for h in hits if h["page"]]
     if only_pages and not with_pages:
-        return 0
+        return 0, 0
     print(f"\n[{feed}] {title}")
     print(f"  {url}")
     if not hits:
         print("  no street address in the article text")
-        return 0
+        return 0, 0
     for h in hits:
         where = h["page"] or ("(no page; on a street the site covers)"
                               if h["on_a_site_street"] else "(no page)")
         print(f"  • {h['as_written']:<28} {where}   @{h['at']}% in")
         print(f"      {h['evidence'][:200]}")
-    return len(with_pages)
+    return len(hits), len(with_pages)
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("target", help="a queue file, or one article URL")
     ap.add_argument("--only-pages", action="store_true",
-                    help="report only articles naming an address that has a page")
+                    help="narrow a long backlog to articles naming an address that "
+                         "already has a page; not the default, and not a ranking")
     ap.add_argument("--feed", action="append", default=[], help="only this feed id")
     ap.add_argument("--limit", type=int, default=0, help="stop after N articles")
     ap.add_argument("--skipped", action="store_true",
@@ -228,14 +234,18 @@ def main() -> int:
              if not args.feed or i["feed"] in args.feed]
     if args.limit:
         items = items[:args.limit]
-    landed = 0
+    found, landed = 0, 0
     for i, item in enumerate(items, 1):
-        landed += report(item["url"], item["title"], item["feed"], streets, pages,
-                         args.only_pages)
+        n, on_pages = report(item["url"], item["title"], item["feed"], streets, pages,
+                             args.only_pages)
+        found += n
+        landed += on_pages
         if i < len(items):
             time.sleep(1)  # be a polite client
-    print(f"\n{len(items)} article(s) read; {landed} address hit(s) on pages "
-          f"that already exist.")
+    # Both halves are work: the ones with pages are edits, the rest are parcels
+    # to seed. AGENTS.md → "No page yet? Seed it".
+    print(f"\n{len(items)} article(s) read; {found} address hit(s), "
+          f"{landed} on a page that already exists.")
     return 0
 
 

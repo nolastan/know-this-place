@@ -173,7 +173,7 @@ book and yields four citable facts is a good pass.
 ```bash
 python3 news/tools/poll.py poll                 # every open feed
 python3 news/tools/poll.py status               # where the cursors stand
-python3 news/tools/read.py news/queue/<date>.json --only-pages
+python3 news/tools/read.py news/queue/<date>.json
 ```
 
 The [news module](news/README.md) runs daily in CI
@@ -181,9 +181,10 @@ The [news module](news/README.md) runs daily in CI
 question from research: not *what has never been written about this address*,
 but *what was written about it this week*. Nine feeds, a cursor apiece, a cheap
 screen that throws out the Oakland stories and the ones that could not be about
-a building, and a reader's judgement on the rest. Most days it finds nothing
-that lands on a page this site already has, which is the expected arithmetic
-against 9,944 pages. Start at [news/AGENTS.md](news/AGENTS.md).
+a building, and a reader's judgement on the rest. A handful of buildings a day
+survive that, and most of them have no page yet — 10,828 pages is a small slice
+of the city — so the module seeds the parcel and puts the story on the page it
+just made. Start at [news/AGENTS.md](news/AGENTS.md).
 
 ## Running the agent locally
 

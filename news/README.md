@@ -1,7 +1,7 @@
 # News
 
-Watching the city's newsrooms for the day something happens at an address we
-have a page for.
+Watching the city's newsrooms for the day something happens at a San Francisco
+address — and giving that address a page if it hasn't got one.
 
 The [research module](../research/) mines sources search engines cannot see.
 This one does the opposite thing for the opposite reason: these outlets are
@@ -39,18 +39,26 @@ them.
 ```bash
 python3 news/tools/poll.py poll                          # every open feed
 python3 news/tools/poll.py status                        # where the cursors stand
-python3 news/tools/read.py news/queue/2026-08-16.json --only-pages
+python3 news/tools/read.py news/queue/2026-08-16.json
 python3 news/tools/check.py --stats                      # yield so far
 ```
 
 Then, for anything worth keeping: write it into `news/items/<feed>/<date>.json`,
-resolve it with the research module's resolver, and publish it as a timeline
-entry per [AGENTS.md](AGENTS.md) → "Putting it on the page".
+resolve it with the research module's resolver, seed the parcel if it has no
+page yet, and publish it as a timeline entry per [AGENTS.md](AGENTS.md) →
+"Putting it on the page".
 
 ```bash
 python3 research/tools/resolve_eas.py apply news/items/hoodline/2026-08-16.json
+python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-2026-08-16.json
+python3 scripts/build_sitemap.py
+python3 scripts/build_map_index.py
 python3 scripts/validate.py
 ```
+
+`read.py` marks which addresses already have pages. That is information, not a
+work order: an address with no page is a page to create, and `--only-pages`
+exists to narrow a long backlog by hand, not to decide which stories matter.
 
 ## What a good day looks like
 
@@ -65,14 +73,18 @@ Low yield is the design, exactly as in research. The first full pass, on
 | Skipped by the screen, with a reason | 116 |
 | Facts extracted and resolved to a parcel | 5 |
 | Read, resolved, and declined with a reason | 2 |
-| Facts published to a page | 0 — none of the five parcels has a page yet |
+| Parcels seeded because the story had nowhere to go | 5 |
+| Facts published to a page | 5 |
 
 Five buildings in a day's news across nine newsrooms: 2918 Mission Street,
 2740 McAllister Street, 400 Divisadero, 350 Bay Street and 520 Geary Street.
-All five resolved cleanly to active parcels and to the page path each one
-*would* have. None of those pages exists — 9,944 pages is a small slice of the
-city — so the facts wait in `items/` with their parcels recorded, which is what
-the module is for on the day someone seeds them.
+All five resolved cleanly to active parcels — and none of the five had a page,
+which is the ordinary case rather than the exception: 10,828 pages is a small
+slice of the city. So the pass seeded them from
+[research/manifests/news-2026-08-16.json](../research/manifests/news-2026-08-16.json)
+and put the headlines on the pages it had just created. A day's news is a list
+of buildings the city is talking about, and that is as good a reason to
+document one as any survey's inventory.
 
 The two declines are the more instructive half. An obituary of the broker
 behind 101 California Street is the only story all day whose address *does*
@@ -83,8 +95,9 @@ headline to that number would have been a guess. Both are recorded in full —
 `publish.status: declined` with the reason — because a decision nobody can
 audit is indistinguishable from an oversight.
 
-That is the expected arithmetic, not a fault to explain away. The module earns
-its keep on the days a building the site already documents makes the news.
+That is the expected arithmetic, not a fault to explain away. Five facts and
+two audited refusals is a good day, whether or not the site had heard of the
+buildings that morning.
 
 **The screen was audited the same day.** All 116 skipped stories were re-read
 in full (`read.py <queue> --skipped`): 28 of them named an address, and every
