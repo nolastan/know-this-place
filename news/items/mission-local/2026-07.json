@@ -1,0 +1,344 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-07",
+  "stage": "published",
+  "read_on": "2026-08-16",
+  "notes": "First backfill batch: July 2026, reached by search rather than by the feed, which only spans five days. The candidate stories were surfaced by an assisting model with web access; every URL, headline, publication date and quoted span below was re-fetched and checked against the live article before it was written here, and four findings the assisting pass missed inside an article it had already opened were added by that check.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 8,
+    "mentions": 10,
+    "note": "Eight Mission Local articles published between 1 and 31 July 2026 were opened and read in full. The assisting pass reported opening 18 but named only these 8, so the count records what can be audited rather than what was claimed. Ten distinct numbered San Francisco addresses appear across them; nine carry a fact about the building. One article — the 10 July 'Mission Buzz' column — accounts for seven of the nine.",
+    "remaining": "July is not exhausted. The pass reached the address-shaped stories that searches surfaced, not the roughly 180 stories Mission Local published in the month; 25–31 July is especially thin. The Buzz column runs regularly and is the densest address source in the paper, so the remaining Buzz columns for July are the first thing to read next."
+  },
+  "findings": [
+    {
+      "id": "2026-07-0001",
+      "date": "2026-07-31",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "560 Valencia St.",
+      "street_number": "560",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "A cannabis cafe is proposed for the storefront, ten years after the first application for a cannabis use there; construction could begin in September 2026 if the permits are secured.",
+      "citation": {
+        "label": "Mission Local, “Amsterdam-style cannabis café could come to Valencia next summer,” 31 July 2026",
+        "url": "https://missionlocal.org/2026/07/an-amsterdam-style-cannabis-cafe-may-open-on-valencia-street/"
+      },
+      "raw": {
+        "text": "His quest to open a cannabis storefront at 560 Valencia St. had stretched out almost 10 years."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3568009",
+        "path": "/san-francisco/mission/valencia-street/560/",
+        "eas_address": "560 VALENCIA ST",
+        "method": "EAS exact match on 560 VALENCIA ST → parcel 3568009; sf-parcels has blklot 3568009 active, 560–560 VALENCIA; the 2025 roll records it as commercial retail, built 1948.",
+        "checked_on": "2026-08-16",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "extra": {
+        "headline": "Amsterdam-style cannabis café could come to Valencia next summer",
+        "date_note": "The story gives no event date — it reports a proposal — so this is the publication date. A permit application for a limited restaurant at the storefront was filed in November 2025 per the same article."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "No page at the resolved path yet. The fact waits here with its parcel recorded; seeding a page is a decision for a human, per news/AGENTS.md."
+      }
+    },
+    {
+      "id": "2026-07-0002",
+      "date": "2026-05-31",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "315 Valencia St.",
+      "street_number": "315",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "A skate and vintage clothing shop closed at this storefront after a rent increase; the business is looking for another space.",
+      "citation": {
+        "label": "Mission Local, “Woman-owned skate shop Double Down looks for a new home,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/woman-owned-skate-shop-double-down-looks-for-a-new-home/"
+      },
+      "raw": {
+        "text": "Double Down, which sold skating gear and vintage clothing at 315 Valencia St., near 14th Street, closed its doors on May 31."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3547018A",
+        "path": "/san-francisco/mission/valencia-street/301/",
+        "eas_address": "301 VALENCIA ST",
+        "method": "EAS exact match on 315 VALENCIA ST → parcel 3547018A; sf-parcels has blklot 3547018A active, 301–319 VALENCIA; the 2025 roll records it as multi-family residential, built 1926. EAS puts 301, 303, 305, 307, 309, 311, 313, 315, 317, 319 VALENCIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 301.",
+        "checked_on": "2026-08-16"
+      },
+      "extra": {
+        "headline": "Woman-owned skate shop Double Down looks for a new home",
+        "date_note": "The closing date is the story's own; the year is the publication year."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "issue #122 — first Mission Local backfill batch",
+        "note": "Published to /san-francisco/mission/valencia-street/301/ — the parcel page for 301–319 Valencia, which is where 315 Valencia's facts belong per the directory contract. A story of its own, headline names no private individual, and a storefront tenant leaving after a rent increase is a fact about the building."
+      }
+    },
+    {
+      "id": "2026-07-0003",
+      "date": "2026-07-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2243 Mission St.",
+      "street_number": "2243",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A nightclub is to open later in 2026 in the storefront that housed a long-running Senegalese restaurant, backed by a city storefront grant of $100,000.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "Downtime, the nightclub by the creators of Bar Part-Time that’s set to open later this year at the former home of Bissap Baobab at 2243 Mission St. near 19th Street, received $100,000."
+      },
+      "conflict": "The article states two street numbers for the same storefront: the body says 2243 Mission St. and a photo caption in the same piece says “Former Bissap Baobab at 2235 Mission, near 19th Street, will now house Downtime.” Both numbers exist on the block; the article does not reconcile them.",
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3590115",
+        "path": "/san-francisco/mission/mission-street/2243/",
+        "eas_address": "2243 MISSION ST",
+        "method": "Catalogue title and archivist's note disagree — \"2243 Mission St.\" against \"None\". Both were checked: the title resolves in sf-eas-addresses and the note states a street number sf-eas-addresses does not have, so the title won. EAS match on 2243 MISSION ST → parcel 3590115; sf-parcels has blklot 3590115 active, 2243–2247 MISSION; the 2025 roll records it as commercial retail, built 1900. EAS puts 2243, 2245 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2243. EAS files the address under parcel 3590030, which sf-parcels reports retired; the active parcel its coordinates fall in is 3590115.",
+        "checked_on": "2026-08-16",
+        "note": "No page at this path yet; the parcel is the publisher's to seed. The conflict stays on the finding for the page's unknowns; the note was not silently corrected."
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The opening is future and undated in the story, so this is the publication date."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "No page at the resolved path yet. The fact waits here with its parcel recorded; seeding a page is a decision for a human, per news/AGENTS.md."
+      }
+    },
+    {
+      "id": "2026-07-0004",
+      "date": "2025-11",
+      "date_precision": "month",
+      "kind": "occupancy",
+      "address_as_written": "2240 Mission St",
+      "street_number": "2240",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A Southern-style restaurant opened in the storefront that housed a burger shop, and later received a city storefront grant of $100,000.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "Fried Chicken Palace, the Southern-style restaurant by Michelin-starred chef Seth Stowaway, which opened in November at the former home of Wes Burgers at 2240 Mission St, near 19th St., also received $100,000."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3589007",
+        "path": "/san-francisco/mission/mission-street/2240/",
+        "eas_address": "2240 MISSION ST",
+        "method": "EAS exact match on 2240 MISSION ST → parcel 3589007; sf-parcels has blklot 3589007 active, 2240–2242 MISSION; the 2025 roll records it as commercial retail, built 1928. EAS puts 2240, 2242 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2240.",
+        "checked_on": "2026-08-16",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The article says “opened in November” without a year. November 2025 is the reading a July 2026 story supports, but the year is inferred and not stated — treat the month as the claim and the year as the inference."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "No page at the resolved path yet. The fact waits here with its parcel recorded; seeding a page is a decision for a human, per news/AGENTS.md."
+      }
+    },
+    {
+      "id": "2026-07-0005",
+      "date": "2026-07",
+      "date_precision": "month",
+      "kind": "occupancy",
+      "address_as_written": "150 Valencia St.",
+      "street_number": "150",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "A flea market and trading post closed after a quarter of a year in the storefront, which had previously housed a vintage and modern furnishings dealer.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "A quarter of a year. That’s how long Fog City Flea Trading Post lasted after moving into the old location of Stuff at 150 Valencia St."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3502141",
+        "path": "/san-francisco/mission/valencia-street/150/",
+        "eas_address": "150 VALENCIA ST",
+        "method": "EAS exact match on 150 VALENCIA ST → parcel 3502141; sf-parcels has blklot 3502141 active, 150–150 VALENCIA; the 2025 roll records it as commercial retail. EAS files the address under parcel 3502010, which sf-parcels reports retired; the active parcel its coordinates fall in is 3502141.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "This is the one address in the batch that has a page (/san-francisco/mission/valencia-street/150/), and the entry it would produce is unusable. A news entry is the headline verbatim, and this headline — “Mission Buzz: A handful of Mission businesses receive an economic boost from the city” — is a roundup about city grants, not about this building; the closure recorded here is a different item in the same column. Attaching that headline to 150 Valencia Street would tell a reader something untrue about what the story is. Same decision, and the same reason, as the 50 Powell Street roundup declined in the first pass. If Mission Local covers this closure in a story of its own, the fact becomes publishable."
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The column says the closing was reported “last week”, so the month is the claim; no day is given."
+      }
+    },
+    {
+      "id": "2026-07-0006",
+      "date": "2026-07-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1917 Mission St.",
+      "street_number": "1917",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A furniture and home decor store relocating from SoMa is to take over this storefront in September 2026, backed by a city storefront grant of $50,000.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "Formr is moving from SoMa to 1917 Mission St., near 15th Street sometime in September."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3553025",
+        "path": "/san-francisco/mission/mission-street/1917/",
+        "eas_address": "1917 MISSION ST",
+        "method": "EAS exact match on 1917 MISSION ST → parcel 3553025; sf-parcels has blklot 3553025 active, 1919–1919 MISSION; the 2025 roll records it as commercial misc, built 1900. EAS puts 1917, 1919 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1917.",
+        "checked_on": "2026-08-16",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The move is future and given only as “sometime in September”, so this is the publication date.",
+        "found_by": "the verification pass, not the assisting model"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "No page at the resolved path yet. The fact waits here with its parcel recorded; seeding a page is a decision for a human, per news/AGENTS.md."
+      }
+    },
+    {
+      "id": "2026-07-0007",
+      "date": "2026-08-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "303 Valencia St.",
+      "street_number": "303",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "A leather goods storefront is closing after four years in the space; the last day of trading is 15 August 2026.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "Ian James, which offered handmade leather creations by its owner, Ian James, will close next month after four years at 303 Valencia St., near 14th Street."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3547018A",
+        "path": "/san-francisco/mission/valencia-street/301/",
+        "eas_address": "301 VALENCIA ST",
+        "method": "EAS exact match on 303 VALENCIA ST → parcel 3547018A; sf-parcels has blklot 3547018A active, 301–319 VALENCIA; the 2025 roll records it as multi-family residential, built 1926. EAS puts 301, 303, 305, 307, 309, 311, 313, 315, 317, 319 VALENCIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 301.",
+        "checked_on": "2026-08-16"
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The closing date is the column's own: a caption gives the last day at the storefront as Aug. 15.",
+        "privacy_note": "The business carries its owner's name, so the description names neither: a storefront closing is a fact about the building, and the proprietor is not the page's business.",
+        "found_by": "the verification pass, not the assisting model"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The address resolves to a page that exists, but the entry it would produce is unusable. A news entry is the headline verbatim, and this headline — “Mission Buzz: A handful of Mission businesses receive an economic boost from the city” — is a roundup about city grants, not about this building; the fact recorded here is one item among eight in the column. Attaching that headline to this address would tell a reader something untrue about what the story is. Same decision, and the same reason, as the 50 Powell Street roundup declined in the first pass. If Mission Local covers this storefront in a story of its own, the fact becomes publishable."
+      }
+    },
+    {
+      "id": "2026-07-0008",
+      "date": "2026-07-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2035 Mission St.",
+      "street_number": "2035",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A perfume shop is taking over this storefront, which housed a clothing store for 37 years until its closure in late 2025.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "Yemex Perfumes will take over 2035 Mission St. near 16th Street, the storefront that housed Mona’s Apparel for 37 years until its closure late last year."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3570049",
+        "path": "/san-francisco/mission/mission-street/2023/",
+        "eas_address": "2023 MISSION ST",
+        "method": "EAS exact match on 2035 MISSION ST → parcel 3570049; sf-parcels has blklot 3570049 active, 120–120 CAPP; the 2025 roll records it as multi-family residential, built 1981. EAS puts 2023, 2027, 2029, 2031, 2035, 2041, 2043, 2045 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2023.",
+        "checked_on": "2026-08-16"
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The opening is given only as “in about two weeks”, so this is the publication date. The 37-year tenancy that ended “late last year” is the more durable fact about the storefront.",
+        "found_by": "the verification pass, not the assisting model"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The address resolves to a page that exists, but the entry it would produce is unusable. A news entry is the headline verbatim, and this headline — “Mission Buzz: A handful of Mission businesses receive an economic boost from the city” — is a roundup about city grants, not about this building; the fact recorded here is one item among eight in the column. Attaching that headline to this address would tell a reader something untrue about what the story is. Same decision, and the same reason, as the 50 Powell Street roundup declined in the first pass. If Mission Local covers this storefront in a story of its own, the fact becomes publishable."
+      }
+    },
+    {
+      "id": "2026-07-0009",
+      "date": "2026-07-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2022 Mission St.",
+      "street_number": "2022",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "The restaurant at this storefront appears to have closed; its gate had been locked for several days and a notice was posted on the door.",
+      "citation": {
+        "label": "Mission Local, “Mission Buzz: A handful of Mission businesses receive an economic boost from the city,” 10 July 2026",
+        "url": "https://missionlocal.org/2026/07/mission-businesses-receive-an-economic-boost-from-the-city/"
+      },
+      "raw": {
+        "text": "Across the street from Yemex Perfumes, El Capricho Restaurant at 2022 Mission St., near 16th Street, appears to have closed."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3569086",
+        "path": "/san-francisco/mission/mission-street/2010/",
+        "eas_address": "2010 MISSION ST",
+        "method": "EAS exact match on 2022 MISSION ST → parcel 3569086; sf-parcels has blklot 3569086 active, 2010–2022 MISSION; the 2025 roll records it as commercial retail, built 1907. EAS puts 2010, 2020, 2022 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2010.",
+        "checked_on": "2026-08-16",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "extra": {
+        "headline": "Mission Buzz: A handful of Mission businesses receive an economic boost from the city",
+        "date_note": "The column reports the closure as apparent rather than confirmed, and gives no date, so this is the publication date.",
+        "privacy_note": "The column states what the posted notice said about rent owed. That is a fact about a tenant, not about the building, and it is left out.",
+        "found_by": "the verification pass, not the assisting model"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "No page at the resolved path yet. The fact waits here with its parcel recorded; seeding a page is a decision for a human, per news/AGENTS.md."
+      }
+    }
+  ]
+}
