@@ -20,6 +20,7 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 - [1967](1967/) — A 1923 two-flat, with reroofing permitted in 1997.
 - [1977–1979](1977/) — A 1950 two-flat, with facade work permitted in 1991.
 - [1982–1986](1982/) — A 1905 three-flat, with reroofing permitted in 2010.
+- [2005](2005/) — St. Nicholas Cathedral, built in 1904 as a German Lutheran church and Russian Orthodox since 1960.
 - [2010–2012](2010/) — A 1904 two-flat, with a bathroom remodel permitted in 1996.
 - [2015](2015/) — A 1900 single-family house, with reroofing permitted in 2024.
 - [2019–2025](2019/) — An apartment building, with window replacement permitted in 2012.

@@ -17,6 +17,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [215–219](215/) — A 1905 3-unit building with a ground-floor store, with an addition permitted in 2001.
 - [221–225](221/) — A 1906 3-unit building with a ground-floor store, with dry-rot repair permitted in 2012.
 - [233–241](233/) — A 1925 10-unit apartment building, with a seismic retrofit permitted in 2016.
+- [245](245/) — The one commercial building put up anywhere in the Mission Dolores survey area during the 1930s.
 - [251–253](251/) — A 1905 3-unit building with a ground-floor store, with a rear addition permitted in 1986.
 - [252–258](252/) — A 1908 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
 - [257–261](257/) — A 1905 4-unit apartment building, with garage work permitted in 2007.
@@ -39,6 +40,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [367–371](367/) — A 1907 6-unit tic building, with a seismic retrofit permitted in 2017.
 - [375](375/) — A 1903 two-flat, with deck work permitted in 2022.
 - [385–389](385/) — A 1951 industrial building, with reroofing permitted in 2001.
+- [401](401/) — The elementary school attached to the Mission Dolores Basilica, built in 1932.
 - [455](455/) — A 1956 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2009.
 - [465](465/) — A 1952 5-unit apartment building, with a seismic retrofit permitted in 2015.
 - [469–471](469/) — A 1900 two-flat, with a rear addition permitted in 1992.

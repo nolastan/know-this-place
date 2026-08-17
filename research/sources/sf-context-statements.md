@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** mining
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 15 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 16 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -152,6 +152,18 @@
     names Timothy Kelley of Workplace History Organization — and the two
     appendices that matter come from it. See "The Market & Octavia statement"
     below.
+  - San Francisco Planning Department, with Roland-Nawi Associates (2007),
+    Carey & Company (2009) and consultants Katherine Petrin and Shayne E.
+    Watson (2014–16), *Mission Dolores Neighborhood Historic Context
+    Statement*, prepared for the Mission Dolores Neighborhood Association,
+    adopted July 20, 2022 (104 pp.), source id
+    `mission-dolores-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park, Inner Mission North, Inner Sunset and OMI, so the
+    `SharedLinks.aspx` URL again returns an HTML shell; the REST content hash
+    is once more the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/e312738442fad29bcb74b96538b857ca1a6e1bedd359bbfc0de2d4a255a1b7ae/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. See "The Mission
+    Dolores statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -958,6 +970,106 @@ accompany and is not in the file. Where its address-level facts are:
     Brannan, 425 and 650 First, 869 Folsom, 333 and 350 Fremont, 178 and 388
     Townsend, 35 Stanford, 465 Tenth, 100 First Plaza. None is a property in the
     plan area and none was pursued.
+**The Mission Dolores statement is the shortest in this set and the one whose
+address-level yield is most concentrated in a single chapter.** It is 104 pages
+— methodology, an 80-page history running from Ohlone ethnography to Mission
+Action Plan 2020, a property-type chapter, and Part IV, "Survey Findings". It
+has no appendix inventory table. What it carries at address level is:
+- **Part IV's four lists** (p. 82): 31 addresses reprinted from the 1968 Junior
+  League *Here Today* survey; 7 properties listed in or formally determined
+  eligible for the National Register and the California Register; 8 San
+  Francisco landmarks with their numbers; and the names of six existing
+  historic districts in the neighbourhood.
+- **The Department's own eligibility finding** (p. 89): 18 properties found
+  individually eligible for the National Register and the California Register
+  under Criterion C/3 (Architecture), possibly also under Criterion A/1 for
+  their association with post-1906 reconstruction.
+- **Three sites put forward for further landmark evaluation** (pp. 94–95):
+  St. Nicholas Cathedral (2005 15th Street), St. Matthew's Church (3281 16th
+  Street) and Congregation Sha'ar Zahav (290 Dolores Street), each with a
+  character-defining-features paragraph drawn from a Planning DPR Primary
+  Record of 2002, 2003 or 2007.
+- **The property-type chapter's figure captions** (pp. 75–81), a small
+  illustrated inventory of type examples — single-family residences, flats,
+  Romeo flats, apartment buildings, mixed-use and single-story commercial
+  buildings, schools and churches.
+- **The narrative chapters**, which name the churches, the schools, the Levi
+  Strauss factory, the buildings that survived 1906 west of Dolores Street, and
+  the one commercial building, one apartment building, one 1942 duplex and one
+  1940–41 apartment building it counts as the whole of the survey area's new
+  construction in those years.
+- **Cautions:**
+  - **Two of the *Here Today* rows print a 15th Street number the street has
+    never reached.** "3639-3641 15th Street" and "3650-3652 15th Street" sit
+    between 2047 15th Street and 3656 17th Street in a list otherwise sorted by
+    street then number; EAS carries no 15th Street address above 3500, and both
+    numbers exist on several of the neighbourhood's other numbered streets.
+    Neither was resolved, and guessing which street was meant is exactly the
+    stretch AGENTS.md forbids.
+  - **It contradicts itself on four buildings.** St. Matthew's Church is 3281
+    16th Street in the recommendations and 3321 16th Street in a figure caption
+    — two parcels a block apart, and the second is on the Mission Dolores
+    block. The Holy Family Day Home is 229 Dolores Street in the survey
+    findings and 299 Dolores Street in the bibliography — two parcels on the
+    same block, and only 299 is the one Planning names. St. Nicholas Cathedral
+    is constructed in 1904 in the recommendations and in 1919 in the chapter on
+    modern development. Mission High School is a two-phased construction of
+    1925 and 1927 in one passage and 1926 in another. All are on the pages as
+    stated disagreements.
+  - **A printed disagreement is often two numbers on one parcel.** The Second
+    Church of Christ, Scientist is 651 Dolores Street in the recommendations and
+    655 in a caption; the Women's Building is 3543 18th Street in the National
+    Register list and 3541-3543 in the landmark list. Both pairs are single
+    parcels, so neither is a finding. Resolve both numbers before writing a
+    disagreement down.
+  - **Four buildings are named on a street other than the one their parcel is
+    addressed on.** 3703 and 3697 17th Street are 500–512 and 505–507 Church
+    Street to the assessor; 3750 18th Street is 440 Dolores Street; 450 Church
+    Street is 325 Sanchez Street; 3250 18th Street is 376–382 Shotwell Street;
+    3689 19th Street is 601 Dolores Street. Each page is titled on the
+    assessor's street and records the statement's number as
+    `address_as_surveyed`.
+  - **The district summaries and map are not in the adopted file.** Part IV
+    defines two eligible districts — Chula-Abbey Early Residential and Alert
+    Alley Early Residential — and says "a map and district summaries are
+    attached". Pages 83 and 91 are blank and carry no image, and Appendix I,
+    the archeological zones the property-type chapter says is attached, is
+    absent too. So **the statement names no district contributors.** Planning's
+    own boundary dataset (`sf-historic-districts`) does carry both districts,
+    plus a third — Chula-Dolores-17th Fire Survivors and Reconstruction — that
+    the adopted statement never names, and the Chula-Abbey district is now
+    listed under Article 10. District membership on a page comes from that
+    dataset, not from this document.
+  - **Its survey materials are drafts and the state declined them.** The DPR
+    forms Carey & Co. prepared were never accepted by the California Office of
+    Historic Preservation, which in 2013 decided not to enter the 2010 survey
+    findings in the State Historic Resources Inventory. The 2022 eligibility
+    findings are the Planning Department's own, made on review of those
+    materials. Every page carrying the eligibility finding says so.
+  - **Condominium conversion takes out a sixth of what it names**, and the
+    conversions are recent enough that the parcel EAS still carries is often the
+    retired one: 154 Dolores Street, 200 Dolores Street, 718 Church Street, 93
+    Cumberland Street (with 651–655 Dolores) and 48 Landers Street all resolve
+    to a retired APN whose live successors are condominium units. 216 Dorland
+    Street, 96 Cumberland Street, 83–85 and 38–44 Sharon Street, 574–576 Church
+    Street, 3663–3665 17th Street and 229 Dolores Street are condominium units
+    outright. Between them they take out five of the 18 individually eligible
+    properties and the Second Church of Christ, Scientist.
+  - **The 1968 rows can describe a building that is gone.** 542–546 Church
+    Street is in the *Here Today* list; the assessor dates the 21-unit apartment
+    building on that parcel to 1975.
+  - **It is dense with people and most of them are not the building's.** The
+    history chapters read census returns and voter registers block by block and
+    describe households by occupation, and the Latino, LGBTQ and labour chapters
+    name residents and congregants. The **firms and institutions** are kept
+    (Levi Strauss, the Leonard Lumber Company, Mission Marble Works, the Dairy
+    Delivery Company, the Columbia Park Boys Club, Congregation Sha'ar Zahav,
+    the Mission Turn Verein), as are the **architects and builders** (John Reid,
+    Jr., Charles I. Havens, Theodore Lenzen, Willis Polk, Frank T. Shea, John O.
+    Loftquist, Harry S. Weiss, William H. Crim, Francis W. Reid), the patron
+    Virginia Fair Vanderbilt, and the public figures the historical record
+    already covers — Alexander Berkman, whose year at 569 Dolores Street the
+    statement documents outright.
 - **Citation label:** name the consultant(s), the report and its adoption
   date, and link the SF Planning listing page.
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
@@ -1428,3 +1540,37 @@ accompany and is not in the file. Where its address-level facts are:
   DPR 523 forms for some 1,500 properties built before 1961 — is a separate
   document and is untouched, as are the Japantown and other adopted statements
   on the same SF Planning page.)
+- **Verified:** 2026-08-17 (Mission Dolores: read all 104 pages, the whole file
+  — the introduction and project history, the field, research and evaluation
+  methodology, the eleven chronological context chapters from Ohlone
+  ethnography to Mission Action Plan 2020, the property-type chapter, Part IV's
+  survey findings, the evaluative framework, the individually eligible
+  properties, the eligible districts, the recommendations and the bibliography.
+  **83 distinct printed address forms are named**, counting a printed range by
+  its low number, resolving to **74 distinct parcels**. **66 of the forms
+  resolve to a parcel that may be documented**, collapsing onto **62 parcels
+  and 62 pages: 10 new and 52 edited**, 44 under `san-francisco/castro/` and 18
+  under `san-francisco/mission/`; no new neighbourhood or street directory was
+  needed. Five of the 66 resolve only by following the assessor's own address
+  rather than the statement's printed one — 3703 and 3697 17th Street, 3750
+  18th Street, 450 Church Street and 3250 18th Street, which the roll numbers on
+  Church, Dolores, Sanchez and Shotwell. Not documented, and why: **14 forms, on
+  12 parcels, are condominium units or parcels whose live successors are**,
+  which AGENTS.md holds back — 154 Dolores Street, 200 Dolores Street, 718
+  Church Street, 93 Cumberland Street (with 651 and 655 Dolores Street) and 48
+  Landers Street resolve to a retired APN whose successors are condominium
+  units, and 96 Cumberland Street, 216 Dorland Street, 229 Dolores Street,
+  38–44 and 83–85 Sharon Street, 574–576 Church Street and 3663–3665 17th
+  Street are condominium units outright; between them they take out five of the
+  18 individually eligible properties and the Second Church of Christ,
+  Scientist. **3 name a number EAS has never carried**: 208 Dolores Street,
+  cited only in the bibliography, and the two *Here Today* rows printed as
+  3639-3641 and 3650-3652 15th Street, a street that stops well below 3500 —
+  both numbers exist on several of the neighbourhood's other numbered streets
+  and the statement gives nothing to choose between them. Coverage note: this
+  document is read in full and nothing in it is outstanding. Its own missing
+  parts are separate documents: the district summaries and map Part IV says are
+  attached, Appendix I's archeological zones, and Carey & Co.'s *Revised
+  Mission Dolores Neighborhood Survey* of 2009 with the DPR 523A/523B forms
+  behind it. The Japantown and other adopted statements on the same SF Planning
+  page are untouched.)

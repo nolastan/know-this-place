@@ -6,6 +6,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 
 - [3310–3312](3310/) — A 1906 6-unit apartment building in the Alert Alley Early Residential Historic District, with fire repair permitted in 1984.
 - [3314–3320](3314/) — A 1907 6-unit apartment building in the Alert Alley Early Residential Historic District, with deck work permitted in 2006.
+- [3321](3321/) — A 1913 church building on the Mission Dolores block, captioned as St. Matthew's Lutheran Church in the neighbourhood's context statement.
 - [3336–3338](3336/) — A 1906 6-unit apartment building in the Alert Alley Early Residential Historic District, with a seismic retrofit permitted in 2006.
 - [3340–3342](3340/) — A 1906 three-flat in the Alert Alley Early Residential Historic District, with reroofing permitted in 1998.
 - [3344–3348](3344/) — A 1906 three-flat in the Alert Alley Early Residential Historic District, with facade work permitted in 2001.
