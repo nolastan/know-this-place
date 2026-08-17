@@ -1,0 +1,96 @@
+{
+  "$comment": "The news module's register. news/tools/poll.py reads this file; news/AGENTS.md explains the fields. An id here is also the prefix of the source id a page cites.",
+  "feeds": [
+    {
+      "id": "hoodline",
+      "outlet": "Hoodline",
+      "url": "https://hoodline.com/news/san-francisco/rss/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "open",
+      "note": "The 'san-francisco' feed carries the whole Bay Area; the item's <category> tags are the real filter — one item is tagged San Jose, Oakland, Bay Area and San Francisco at once."
+    },
+    {
+      "id": "mission-local",
+      "outlet": "Mission Local",
+      "url": "https://missionlocal.org/feed/",
+      "kind": "rss",
+      "scope": "sf",
+      "access": "open",
+      "note": "Mission-district focused, and the densest address source of the set: street numbers reach the headline often."
+    },
+    {
+      "id": "whatnow-sf",
+      "outlet": "What Now San Francisco",
+      "url": "https://whatnow.com/san-francisco/feed/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "open",
+      "note": "Openings and closings — address-rich, but the 'san-francisco' edition files stories from Guerneville, Oakland and the Peninsula under the same feed. Trailing slash matters: without it the request 301s."
+    },
+    {
+      "id": "sf-business-times",
+      "outlet": "San Francisco Business Times",
+      "url": "https://rss.bizjournals.com/feed/20a0675968b750ac45bcbd33839a15ded0740ca5/15444?market=sanfrancisco&selectortype=channel&selectorvalue=2,13,11,12",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "needs-human",
+      "note": "NOT POLLED. rss.bizjournals.com/robots.txt ends with a blanket 'User-agent: * / Disallow: /' after the Cloudflare-managed group that allows it, and names ClaudeBot among the crawlers it disallows. research/AGENTS.md says a source that forbids automated access is a needs-human question, not a workaround. Left registered so the decision is visible; set access to 'open' to poll it."
+    },
+    {
+      "id": "sf-chronicle",
+      "outlet": "San Francisco Chronicle",
+      "url": "https://bsky.app/profile/did:plc:niws4datih6dforyd7y22km4/rss",
+      "kind": "bluesky",
+      "scope": "bay-area",
+      "access": "open",
+      "note": "Posts, not articles: no <title> at all, the headline has to come out of the post text, and the article URL is the last link in it — often a bit.ly. The account posts national and Hawaii weather stories too."
+    },
+    {
+      "id": "sf-examiner-social",
+      "outlet": "San Francisco Examiner",
+      "url": "https://bsky.app/profile/did:plc:udsgf5phpl7wdansozxqalcv/rss",
+      "kind": "bluesky",
+      "scope": "sf",
+      "access": "open",
+      "note": "Same shape as the Chronicle account. Its links are sfexaminer.com articles with utm_ parameters — strip them before citing. Overlaps sf-examiner; the cursor pair keeps one article from being read twice."
+    },
+    {
+      "id": "the-registry",
+      "outlet": "The Registry",
+      "url": "https://news.theregistrysf.com/feed/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "open",
+      "note": "Commercial real estate across Northern California — sales, leases and development, so a high address rate on the items that are actually in the city. Its <category> tags name the county or city."
+    },
+    {
+      "id": "sfist",
+      "outlet": "SFist",
+      "url": "https://sfist.com/rss/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "open",
+      "note": "Covers Oakland and the wider region under the same feed."
+    },
+    {
+      "id": "sf-standard",
+      "outlet": "The San Francisco Standard",
+      "url": "https://sfstandard.com/feed/",
+      "kind": "rss",
+      "scope": "sf",
+      "access": "open",
+      "note": "robots.txt allows '*' and blocks named AI crawlers (ClaudeBot, GPTBot). We poll the feed it publishes for readers, identify ourselves, and link back."
+    },
+    {
+      "id": "sf-examiner",
+      "outlet": "San Francisco Examiner",
+      "url": "https://www.sfexaminer.com/news/",
+      "kind": "html",
+      "scope": "sf",
+      "access": "open",
+      "link_pattern": "^/news/[a-z0-9-]+/[a-z0-9-]+/article_[a-f0-9-]+\\.html$",
+      "note": "A section page, not a feed: no dates and no summaries, so the cursor is the set of article URLs seen. robots.txt allows '*' on /news/ and disallows named AI crawlers by name."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "source_id": "sfist",
+  "batch": "2026-08-16",
+  "stage": "published",
+  "read_on": "2026-08-16",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "201 Halleck Street (the Presidio Tunnel Tops food hall) was named but not extracted: the Presidio is federal land, the building is not on the assessor's roll, and there is no page or parcel for it to resolve against.",
+    "note": "Three of the fifteen items in the feed were queued by the screen."
+  },
+  "findings": [
+    {
+      "id": "2026-08-16-0001",
+      "date": "2026-08-13",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "350 Bay Street",
+      "street_number": "350",
+      "street_name": "BAY",
+      "street_type": "ST",
+      "description": "A 30,000 square foot Grocery Outlet opened here, filling the space a Safeway left vacant when it closed in 2023.",
+      "extra": {
+        "area_sqft": 30000,
+        "previous_tenant": "Safeway, closed 2023",
+        "opened": "2026-08-13"
+      },
+      "citation": {
+        "label": "SFist, “Grocery Outlet Opens In North Beach at Former Safeway Site as Chain Celebrates 80 Years,” 14 August 2026",
+        "url": "https://sfist.com/2026/08/14/grocery-outlet-opens-in-north-beach-at-former-safeway-site-as-chain-celebrates-80-years/",
+        "locator": "paragraphs 1–4"
+      },
+      "raw": {
+        "text": "the official opening of the new Grocery Outlet at 350 Bay Street… The new 30,000-square-foot Grocery Outlet fills the long-vacant space left behind when Safeway closed in 2023"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0031080",
+        "path": "/san-francisco/russian-hill/bay-street/300/",
+        "eas_address": "300 BAY ST",
+        "method": "EAS exact match on 350 BAY ST → parcel 0031080; sf-parcels has blklot 0031080 active, 350–350 BAY; the 2025 roll records it as multi-family residential. The assessor files the parcel as 2351 POWELL ST. EAS puts 300, 330, 350, 360 BAY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 300. EAS files the address under parcel 0031003, which sf-parcels reports retired; the active parcel its coordinates fall in is 0031080.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/121",
+        "note": "The parcel was seeded from research/manifests/news-2026-08-16.json in the same PR."
+      }
+    }
+  ]
+}

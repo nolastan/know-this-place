@@ -103,6 +103,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2875–2877](2875/) — A 1900 3-unit apartment building, with reroofing permitted in 2015.
 - [2881–2883](2881/) — A 1981 6-unit building with a ground-floor store, with deck work permitted in 2012.
 - [2901–2903](2901/) — An 1885 7-unit building with a ground-floor store, with deck work permitted in 2006.
+- [2918–2920](2918/) — A building, with permit records from 1989 to 2026.
 - [2943–2945](2943/) — A 1906 4-unit apartment building, with reroofing permitted in 1997.
 - [2955](2955/) — A 1900 2-unit building with a ground-floor store, with one permit record from 2021.
 - [2960](2960/) — A 1963 11-unit apartment building, with reroofing permitted in 2023.

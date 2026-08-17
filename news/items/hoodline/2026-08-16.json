@@ -1,0 +1,141 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-08-16",
+  "stage": "published",
+  "read_on": "2026-08-16",
+  "notes": "First pass of the news module. Hoodline's article pages answer this fetcher with 403; every article here was read from the full text the feed syndicates. Named owners and project sponsors in the source text are deliberately absent — the root AGENTS.md privacy limits keep owners off pages — while the firms (Cresleigh Homes, Greystar, 4Terra Investments, the architects) are the historical record of how the building got there.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 7,
+    "mentions": 3,
+    "remaining": "The six items the screen skipped from this feed on 2026-08-16 were re-read as an audit and named no San Francisco building address.",
+    "note": "Seven of the thirteen items in the feed were queued by the screen; three named a street address in the city."
+  },
+  "findings": [
+    {
+      "id": "2026-08-16-0001",
+      "date": "2026-08-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "2918 Mission Street",
+      "street_number": "2918",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Site preparation and foundation work began for an eight-storey, 75-unit rental building on the site of a former laundromat. Cresleigh Homes, which bought the entitled site in April 2019 for $13.5 million, expects vertical construction to start in 2027.",
+      "extra": {
+        "developer": "Cresleigh Homes",
+        "units": 75,
+        "storeys": 8,
+        "entitled": "2018",
+        "sale_price_2019_usd": 13500000
+      },
+      "citation": {
+        "label": "Hoodline, “Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments,” 14 August 2026",
+        "url": "https://hoodline.com/2026/08/mission-laundromat-site-that-fueled-s-f-housing-wars-finally-rises-as-apartments/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Foundation work is finally underway at 2918 Mission Street, the site of a former laundromat… Cresleigh Homes has started site preparation and foundation work for what will become a 75-unit, eight-story rental complex"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6529051",
+        "path": "/san-francisco/mission/mission-street/2918/",
+        "eas_address": "2918 MISSION ST",
+        "method": "EAS exact match on 2918 MISSION ST → parcel 6529051; sf-parcels has blklot 6529051 active, 2918–2922 MISSION; the 2025 roll records it as miscellaneous/mixed-use. EAS puts 2918, 2920 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2918. EAS files the address under parcel 6529002, which sf-parcels reports retired; the active parcel its coordinates fall in is 6529051.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/121",
+        "note": "The parcel was seeded from research/manifests/news-2026-08-16.json in the same PR."
+      }
+    },
+    {
+      "id": "2026-08-16-0002",
+      "date": "2026-08-15",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2740 McAllister Street",
+      "street_number": "2740",
+      "street_name": "MCALLISTER",
+      "street_type": "ST",
+      "description": "Permits were resubmitted for a four-storey building of three rental units, 39 feet tall and about 5,300 square feet, on a lot vacant since the single-family house on it was demolished in late 2020. The application replaces an earlier design by Stanley Saitowitz | Natoma Architects with one by Innovative Consulting Engineer.",
+      "extra": {
+        "units": 3,
+        "storeys": 4,
+        "height_ft": 39,
+        "area_sqft": 5300,
+        "architect_superseded": "Stanley Saitowitz | Natoma Architects",
+        "designer": "Innovative Consulting Engineer",
+        "house_demolished": "2020"
+      },
+      "citation": {
+        "label": "Hoodline, “Lone Mountain Lot Vacant Since 2014 Finally Set for Three New Apartments,” 15 August 2026",
+        "url": "https://hoodline.com/2026/08/lone-mountain-lot-vacant-since-2014-finally-set-for-three-new-apartments/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "A vacant lot at 2740 McAllister Street… is one step closer to redevelopment after new permits were resubmitted for a four-story building with three rental apartments."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1167010",
+        "path": "/san-francisco/lone-mountain/mcallister-street/2740/",
+        "eas_address": "2740 MCALLISTER ST",
+        "method": "EAS exact match on 2740 MCALLISTER ST → parcel 1167010; sf-parcels has blklot 1167010 active, 2740–2740 MCALLISTER; the 2025 roll records it as single family residential, built 1900.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/121",
+        "note": "The parcel was seeded from research/manifests/news-2026-08-16.json in the same PR."
+      }
+    },
+    {
+      "id": "2026-08-16-0003",
+      "date": "2026-08-15",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "400 Divisadero",
+      "street_number": "400",
+      "street_name": "DIVISADERO",
+      "street_type": "ST",
+      "description": "Greystar took over development of the eight-storey, 85-foot project on the five merged lots at the northeast corner of Divisadero and Oak, taking the site on from 4Terra Investments. Public Works issued street and sidewalk closure permits with an October 19 start date; the design is by BDE Architecture. The corner held the Touchless Car Wash from 1958 until it closed in 2019.",
+      "extra": {
+        "developer": "Greystar",
+        "developer_superseded": "4Terra Investments",
+        "architect": "BDE Architecture",
+        "storeys": 8,
+        "height_ft": 85,
+        "lots_merged": 5,
+        "cross_streets": "northeast corner of Divisadero and Oak",
+        "site_acres_reported": "0.93 acres per Planning; 0.79 acres in another account — recorded, not reconciled"
+      },
+      "citation": {
+        "label": "Hoodline, “Greystar Takes Over Stalled 400 Divisadero Site, 203 Units Finally Break Ground,” 15 August 2026",
+        "url": "https://hoodline.com/2026/08/greystar-takes-over-stalled-400-divisadero-site-203-units-finally-break-ground/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "The long-vacant corner of Divisadero and Oak streets, once home to San Francisco's first automated car wash… Greystar… has stepped in to take over development responsibility from 4Terra Investments"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1216017",
+        "path": "/san-francisco/haight-ashbury/divisadero-street/400/",
+        "eas_address": "400 DIVISADERO ST",
+        "method": "EAS exact match on 400 DIVISADERO ST → parcel 1216017; sf-parcels has blklot 1216017 active, 400–400 DIVISADERO; the 2025 roll records it as commercial misc, built 1958.",
+        "checked_on": "2026-08-16"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/121",
+        "note": "The parcel was seeded from research/manifests/news-2026-08-16.json in the same PR."
+      }
+    }
+  ]
+}

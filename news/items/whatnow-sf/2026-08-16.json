@@ -1,0 +1,45 @@
+{
+  "source_id": "whatnow-sf",
+  "batch": "2026-08-16",
+  "stage": "resolved",
+  "read_on": "2026-08-16",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 1,
+    "remaining": "Nothing from this batch.",
+    "note": "Four of the ten items in the feed were queued and read. Two name no street number at all (a Third Street oyster bar, a third Pasta Supply Co. location), one is San Jose, and one names an address only in a roundup paragraph."
+  },
+  "findings": [
+    {
+      "id": "2026-08-16-0001",
+      "date": "2026-08-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "50 Powell Street",
+      "street_number": "50",
+      "street_name": "POWELL",
+      "street_type": "ST",
+      "description": "Not extracted. The address appears in a closing paragraph listing recent Union Square retail activity, not as the location of the store the story is about.",
+      "citation": {
+        "label": "What Now San Francisco, “Lids To Return To San Francisco's Union Square,” 15 August 2026",
+        "url": "https://whatnow.com/san-francisco/retail/lids-to-return-to-san-franciscos-union-square/",
+        "locator": "closing roundup paragraph"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0329005",
+        "path": "/san-francisco/nob-hill/powell-street/30/",
+        "eas_address": "30 POWELL ST",
+        "method": "EAS exact match on 50 POWELL ST → parcel 0329005; sf-parcels has blklot 0329005 active, 870–898 MARKET; the 2025 roll records it as commercial office, built 1907. The assessor files the parcel as 870–890 MARKET ST. EAS puts 30, 50, 80 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 30.",
+        "checked_on": "2026-08-16",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The story never states the returning store's own address; 50 Powell Street is named in a closing list of nearby openings. Attaching the headline's fact to that number would be a guess, and the evidence bar does not allow one. The address resolves — that is all it does."
+      }
+    }
+  ]
+}

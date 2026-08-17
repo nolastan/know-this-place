@@ -38,6 +38,11 @@ There is deliberately **no CMS, no database, no build framework**:
   worth landing on — are mined in the [research module](research/README.md),
   which hands the site verified, sourced facts. Building the site and
   researching it are deliberately kept apart.
+- **What happens at an address today is watched by the
+  [news module](news/README.md).** It polls the city's newsrooms, keeps a
+  cursor per feed, and puts the stories that name a building onto that
+  building's timeline — the one thing an indexed news archive doesn't do for
+  itself.
 
 ## The editing loop
 
@@ -82,6 +87,14 @@ research/
   schema/                     The findings JSON schema + a worked example
   manifests/                  Parcel lists produced here, seeded by the script
   tools/check.py              Research consistency checks (stdlib only)
+news/
+  AGENTS.md                   News rulebook: cursors, the screen, privacy
+  feeds.json                  Register of every feed, and how each misbehaves
+  state/cursors.json          What each feed has been considered up to
+  queue/<date>.json           One poll run: what to read, what was skipped, why
+  items/<feed>/*.json         Findings files — research schema, research resolver
+  tools/poll.py               Fetch, screen, queue, advance the cursors
+  tools/read.py               Read queued articles; report the addresses in them
 scripts/
   seed_pages.py               Writes the first draft of pages that don't
                               exist yet, from the DataSF APIs
@@ -154,6 +167,23 @@ at [research/AGENTS.md](research/AGENTS.md).
 The bias is toward sources search engines can't see: newspaper OCR, out-of-print
 books, neighborhood newsletters, PDF survey reports. A pass that reads a whole
 book and yields four citable facts is a good pass.
+
+## Watching the news
+
+```bash
+python3 news/tools/poll.py poll                 # every open feed
+python3 news/tools/poll.py status               # where the cursors stand
+python3 news/tools/read.py news/queue/<date>.json --only-pages
+```
+
+The [news module](news/README.md) runs daily in CI
+([.github/workflows/news.yml](.github/workflows/news.yml)) and asks a different
+question from research: not *what has never been written about this address*,
+but *what was written about it this week*. Nine feeds, a cursor apiece, a cheap
+screen that throws out the Oakland stories and the ones that could not be about
+a building, and a reader's judgement on the rest. Most days it finds nothing
+that lands on a page this site already has, which is the expected arithmetic
+against 9,944 pages. Start at [news/AGENTS.md](news/AGENTS.md).
 
 ## Running the agent locally
 
