@@ -67,7 +67,16 @@ loadAnalytics();
    .media-empty placeholder) is what shows with no JS or no configured key.
    When a Maps key IS configured, this swaps the placeholder for a static
    Street View image (Street View Static API). Imagery turns on site-wide the
-   day the key is set, with no page regeneration. */
+   day the key is set, with no page regeneration.
+
+   `source=outdoor` restricts the pick to Google's outdoor collections. The API
+   otherwise returns the panorama *nearest* the coordinates, and on a dense
+   downtown parcel that is regularly a business's indoor photosphere — a lobby,
+   a stairwell, a shop counter — so the picture of the building turned out to
+   be a picture of someone's foyer. Where a parcel has no outdoor panorama the
+   API returns the generic grey "no imagery" tile instead of an interior; that
+   is the better failure, since a page showing nothing is honest and a page
+   showing the wrong room is not. */
 customElements.define(
   "ktp-streetview",
   class extends HTMLElement {
@@ -82,7 +91,7 @@ customElements.define(
       const label = this.getAttribute("label") || "this address";
       const img = document.createElement("img");
       img.src =
-        "https://maps.googleapis.com/maps/api/streetview?size=640x480&scale=2&location=" +
+        "https://maps.googleapis.com/maps/api/streetview?size=640x480&scale=2&source=outdoor&location=" +
         encodeURIComponent(location) +
         "&key=" +
         encodeURIComponent(key);
