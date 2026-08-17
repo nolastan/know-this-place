@@ -31,6 +31,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [541](541/) — A 1948 store building in the 16th and Valencia Streets Post-Fire Historic District, with reroofing permitted in 2002.
 - [544–546](544/) — A 1906 3-unit apartment building, with window replacement permitted in 2004.
 - [553–563](553/) — A 1907 hotel in the 16th and Valencia Streets Post-Fire Historic District, with window replacement permitted in 2017.
+- [560](560/) — A 1948 store building, with facade work permitted in 2025.
 - [567–575](567/) — A 1907 9-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with a seismic retrofit permitted in 2018.
 - [572–576](572/) — A 1923 9-unit apartment building, with a seismic retrofit permitted in 2018.
 - [577–581](577/) — A 1907 6-unit apartment building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen and bathroom remodel permitted in 2011.
