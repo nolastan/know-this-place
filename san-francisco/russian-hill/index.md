@@ -4,5 +4,6 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 
 ## Streets documented so far
 
-- [Taylor Street](taylor-street/) — Three flats of 1907 recorded as where Joe DiMaggio grew up.
+- [Bay Street](bay-street/) — 1 building.
 - [Francisco Street](francisco-street/) — A 1914 corner house beside the Powell–Hyde cable car line; tied to Nicolas Cage.
+- [Taylor Street](taylor-street/) — Three flats of 1907 recorded as where Joe DiMaggio grew up.
