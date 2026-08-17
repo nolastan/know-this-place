@@ -91,6 +91,24 @@ alone when it hasn't. An unfinished queue is picked up by the next pass;
 `poll.py status` lists every queue file still waiting. This is the one place
 where deleting a file is the right way to record that work is done.
 
+**A cursor is only true on the branch it was advanced on.** Nothing this module
+produces reaches `main` without a human merging it, which means the cursors,
+the queue and the items files live on a branch until then — and a run that
+started from `main` while a previous run's PR sat unmerged would re-fetch,
+re-screen and re-read everything that PR had already considered. So the daily
+workflow looks for an open PR whose branch begins `news/` and **continues on
+that branch**, merging `main` in to stay current. One PR accumulates until a
+human merges it; only then does the next run start fresh.
+
+That is why the workflow commits *every* run, including a run that found
+nothing publishable. An empty-handed run still advanced the cursors, and if it
+pushes nothing, the next run does its work again.
+
+The cost of the alternative is worth knowing, because it is not just wasted
+tokens: the feeds carry between one and five days. A PR left unmerged for a
+week, with the cursors stranded on it, would let the stories it had queued age
+out of the feeds entirely — lost rather than merely repeated.
+
 ## The screen
 
 `poll.py` gives every new item a verdict from its headline, summary and tags
