@@ -1,0 +1,192 @@
+{
+  "address": "126 Texas Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/texas-street/126/",
+  "apn": "3985005",
+  "block": "3985",
+  "lot": "005",
+  "eas_baseid": "477675",
+  "coordinates": {
+    "lat": 37.764563,
+    "lng": -122.396056
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 912,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0126ATEXAS               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 208023,
+    "assessed_improvement_value": 17317
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200502034720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-03",
+      "status_date": "2005-08-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200408030439 & 200310218059 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412141427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-14",
+      "status_date": "2005-03-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (e) front entry stairs in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408030439",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-08-03",
+      "status_date": "2005-01-19",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "add 1 flat skylight, ref. prev.appl#200310218059",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M28590",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-02",
+      "status_date": "2004-08-02",
+      "revised_cost": 0,
+      "description": "address assignment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310218059",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-21",
+      "status_date": "2005-01-19",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "repair partial foundation, repair dry rot studs, new roof, repair windows, remodel kitchen/bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308081625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-08",
+      "status_date": "2003-12-02",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "soft demo all interior wall finishes,for inspection at rear cottage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204012815",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-01",
+      "status_date": "2002-05-14",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "#1/2 rear cottage-replace section of foundation, replace wood to concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517965",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-25",
+      "status_date": "1996-04-25",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513813",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-25",
+      "status_date": "1996-02-21",
+      "estimated_cost": 1000,
+      "description": "renewal of application 9504887",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504887",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-04-05",
+      "status_date": "1995-08-05",
+      "estimated_cost": 5000,
+      "description": "new cabinets,stove,oven,sink &dishwasher,new finish floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TEXAS&street_type=ST&address_number=126",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3985005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3985&lot=005",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3985005",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54184",
+      "name": "126 Texas Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54184",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-01-25",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54184"
+    }
+  ]
+}

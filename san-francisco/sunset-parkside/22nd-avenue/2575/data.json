@@ -1,0 +1,164 @@
+{
+  "address": "2575 22nd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/2575/",
+  "apn": "2423016",
+  "block": "2423",
+  "lot": "016",
+  "eas_baseid": "338446",
+  "coordinates": {
+    "lat": 37.739642,
+    "lng": -122.479005
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2093,
+    "basement_area_sqft": 756,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2575 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 318291,
+    "assessed_improvement_value": 360215,
+    "last_sale_date": "1992-08-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204081853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-08",
+      "status_date": "2022-05-04",
+      "estimated_cost": 1,
+      "revised_cost": 400,
+      "description": "revision to pa# 202111102178. add 1 closet to (n) bedroom, add 1 gas bbq pipestub at exterior deck. add (n) bollard in (e) garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111102178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-10",
+      "status_date": "2022-05-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to bpa#2020/0714/0157, from 1 bedroom & 1 storage to 1 bedroom with 1 bath & 1 1/2 bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202007140157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-14",
+      "status_date": "2022-05-04",
+      "estimated_cost": 35000,
+      "revised_cost": 82000,
+      "description": "renovate (e) rooms on 1st fl. behind (e) garage, move (e) bath, (e) hwh, (e) furnace and (e) laundry, add 1-hr rated walls and ceiling separations between the garage, entryway and habitable rooms both floors from garage, extend (e) deck w/in the buildable area 205 sf added 1 hr. rated walls at prop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310189676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-18",
+      "status_date": "2014-01-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel. change new cabinets, countertop, plumbing fixtures & faucet, new floor, no wall work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212163613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-16",
+      "status_date": "2003-01-14",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "remodel bathroom, change fix. & faucets, floor tile, painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213290",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-08-07",
+      "status_date": "1992-09-28",
+      "estimated_cost": 5830,
+      "description": "misc-full bath 2nd flsr. skyltes. sheetrk & door garage. +++",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-25",
+      "status_date": "1985-12-11",
+      "estimated_cost": 615,
+      "description": "install four aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=2575",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2423016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2423&lot=016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2423016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54439",
+      "name": "2575 22nd Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54439",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54439"
+    }
+  ]
+}

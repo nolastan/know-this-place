@@ -14,6 +14,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3362–3368](3362/) — A 1905 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [3370–3374](3370/) — A 1904 three-flat, with a kitchen and bathroom remodel permitted in 2021.
 - [3376](3376/) — A 1904 building, with a bathroom remodel permitted in 1994.
+- [3384](3384/) — A 1900 industrial building, with reroofing permitted in 2007.
 - [3386–3388](3386/) — A 1906 three-flat, with fire repair permitted in 1996.
 - [3400](3400/) — A 1992 18-unit apartment building, with reroofing permitted in 1992.
 - [3421](3421/) — A 1904 single-family house, with reroofing permitted in 1994.
@@ -27,7 +28,9 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3476–3480](3476/) — A 1912 three-flat, with window replacement permitted in 2010.
 - [3489–3493](3489/) — An 1885 3-unit building with a ground-floor store, with plumbing work permitted in 2017.
 - [3502–3508](3502/) — A 1900 10-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2013.
+- [3512](3512/) — A 1915 store building, with an addition permitted in 2019.
 - [3515–3519](3515/) — A 1908 three-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [3516](3516/) — A 1906 industrial building.
 - [3518](3518/) — A 1900 6-unit apartment building, with reroofing permitted in 2005.
 - [3521–3523](3521/) — A 1938 two-flat, with facade work permitted in 2008.
 - [3571](3571/) — A 1963 12-unit apartment building, with a seismic retrofit permitted in 2012.

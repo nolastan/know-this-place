@@ -1,0 +1,113 @@
+{
+  "address": "1831 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/anza-street/1831/",
+  "apn": "1552044",
+  "block": "1552",
+  "lot": "044",
+  "eas_baseid": "307960",
+  "coordinates": {
+    "lat": 37.778677,
+    "lng": -122.467911
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1375,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 1831 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 483668,
+    "assessed_improvement_value": 322438,
+    "last_sale_date": "2001-05-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Richmond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1911",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201310240172",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-24",
+      "status_date": "2013-11-05",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=1831",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1552044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1552&lot=044",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1552044",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46791098222144%2037.778676658251065)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54472",
+      "name": "1831 Anza Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54472",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54472"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 
 ## Documented so far
 
+- [200](200/) — A 1928 industrial building, with reroofing permitted in 2006.
 - [309–315](309/) — A 1906 5-unit building with a ground-floor store, with deck work permitted in 2013.
 - [333–335](333/) — A 1905 two-flat, with a vertical addition permitted in 2017.
 - [425](425/) — A 1911 3-unit apartment building, with window replacement permitted in 1984.
@@ -116,6 +117,7 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 - [1285–1287](1285/) — A 1923 two-flat, with reroofing permitted in 1994.
 - [1290](1290/) — A 1924 apartment building, with deck work permitted in 2026.
 - [1294](1294/) — A 1910 apartment building, with deck work permitted in 2026.
+- [1298](1298/) — A 1947 store building, with window replacement permitted in 2025.
 - [1334](1334/) — A 1931 single-family house, with a bathroom remodel permitted in 2005.
 - [1340](1340/) — A 1915 single-family house, with a kitchen remodel permitted in 2024.
 - [1344](1344/) — A 1915 single-family house.

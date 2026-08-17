@@ -1,0 +1,129 @@
+{
+  "address": "1347 37th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/37th-avenue/1347/",
+  "apn": "1792002G",
+  "block": "1792",
+  "lot": "002G",
+  "eas_baseid": "317784",
+  "coordinates": {
+    "lat": 37.761799,
+    "lng": -122.496679
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1347 37TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 273748,
+    "assessed_improvement_value": 204834
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402025165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-02",
+      "status_date": "2024-03-07",
+      "estimated_cost": 2000,
+      "revised_cost": 6240,
+      "description": "work located on rear exterior north and west sides of house. replace horizontal lap siding with new to match existing. -480 sf, replaced due to detrioration. no structural changes to existing frame.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309287576",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-28",
+      "status_date": "2024-09-03",
+      "estimated_cost": 15500,
+      "revised_cost": 15500,
+      "description": "work located on rear exterior west/south sides of house. approx 480 sq ft. replace horizontal siding with new to match extg, paint and install 4 new windows in extg frames & locations. no structural changes to extg frame. all windows 24 inches above fl. u=.30 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101188474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-18",
+      "status_date": "2011-05-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair dryrot on front steps less than 35%. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101188489",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2011-01-18",
+      "status_date": "2011-01-18",
+      "description": "repair dryrot on front steps less than 35%. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=37TH&street_type=AVE&address_number=1347",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1792002G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1792&lot=002G",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1792002G",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55204",
+      "name": "1347 37th Avenue, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55204",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55204"
+    }
+  ]
+}

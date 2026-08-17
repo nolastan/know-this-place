@@ -1,0 +1,132 @@
+{
+  "address": "4019 23rd Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/23rd-street/4019/",
+  "apn": "3655045",
+  "block": "3655",
+  "lot": "045",
+  "eas_baseid": "364600",
+  "coordinates": {
+    "lat": 37.75275,
+    "lng": -122.432529
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2888,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "4021 4019 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39704,
+    "assessed_improvement_value": 67661
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Noe & Alvarado Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201508194721",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-08-19",
+      "status_date": "2015-08-19",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "5 window replacement in the back of the property. same sizr, same location. max ufactor 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-22",
+      "status_date": "1991-04-09",
+      "estimated_cost": 800,
+      "description": "repair dry rot in parapet at nec of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023964",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-11-20",
+      "status_date": "1991-03-13",
+      "estimated_cost": 12000,
+      "description": "seismic strengthing of basement & 1/f shear walls for 1/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=4019",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3655045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3655&lot=045",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3655045",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43252865232046%2037.75274954410022)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55136",
+      "name": "4019 23rd Street, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55136",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55136"
+    }
+  ]
+}

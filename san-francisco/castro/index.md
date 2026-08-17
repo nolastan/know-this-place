@@ -47,6 +47,7 @@ which local histories treat as its own neighborhood.
 - [Chula Lane](chula-lane/) — 8 buildings, built 1880–1912; 6 in the Chula-Abbey Early Residential District.
 - [Church Street](church-street/) — 74 buildings, built 1893–1987; 1 in the Upper Market Street Commercial Historic District.
 - [Clifford Terrace](clifford-terrace/) — 17 buildings, built 1906–1959.
+- [Clipper Street](clipper-street/) — 1 building, built 1916.
 - [Clover Street](clover-street/) — 5 buildings, built 1905–2002.
 - [Collingwood Street](collingwood-street/) — 58 buildings, built 1878–1981.
 - [Crown Terrace](crown-terrace/) — 3 buildings, built 1935–1999.
@@ -66,6 +67,7 @@ which local histories treat as its own neighborhood.
 - [Ford Street](ford-street/) — 24 buildings, built 1880–1936.
 - [Glendale Street](glendale-street/) — 1 building, built 1962.
 - [Grand View Avenue](grand-view-avenue/) — 3 buildings, built 1936–1953.
+- [Grattan Street](grattan-street/) — 1 building, built 1900; 1 in the Cole Valley Historic District.
 - [Graystone Terrace](graystone-terrace/) — 27 buildings, built 1936–2001.
 - [Hancock Street](hancock-street/) — 44 buildings, built 1885–1977.
 - [Harlow Street](harlow-street/) — 1 building, built 1904.
@@ -91,6 +93,7 @@ which local histories treat as its own neighborhood.
 - [Seward Street](seward-street/) — 1 building, built 1922.
 - [Sharon Street](sharon-street/) — 21 buildings, built 1900–1968.
 - [Short Street](short-street/) — 9 buildings, built 1908–1977.
+- [Shrader Street](shrader-street/) — 2 buildings, built 1910–1913.
 - [States Street](states-street/) — 49 buildings, built 1890–2015; 1 in the Duboce Triangle Historic District Extension.
 - [Storrie Street](storrie-street/) — 1 building, built 1902.
 - [Temple Street](temple-street/) — 4 buildings, built 1910–1929.
@@ -99,6 +102,7 @@ which local histories treat as its own neighborhood.
 - [Uranus Terrace](uranus-terrace/) — 23 buildings, built 1900–2000.
 - [Villa Terrace](villa-terrace/) — 11 buildings, built 1933–1976.
 - [Vulcan Stairway](vulcan-stairway/) — 10 buildings, built 1900–1928.
+- [Waller Street](waller-street/) — 2 buildings, built 1900; 1 in the Duboce Park Historic District.
 - [Walter Street](walter-street/) — 24 buildings, built 1885–1925; 24 in the Duboce Triangle Historic District.
 - [Yukon Street](yukon-street/) — 13 buildings, built 1890–1949.
 

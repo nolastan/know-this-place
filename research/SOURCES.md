@@ -15,11 +15,11 @@ the coverage log. Sources are cited on pages by the `id` in the first column;
 | [`argonaut-sfhs`](sources/argonaut-sfhs.md) | *The Argonaut*, journal of the SF Historical Society | journal | high | mining | 7 volumes read in full |
 | [`celebrity-residence-guides`](sources/celebrity-residence-guides.md) | Notable-resident guides | web guides | low | mined | 26 addresses, 25 resolved |
 | [`corbett-heights-neighbors`](sources/corbett-heights-neighbors.md) | Corbett Heights Neighbors newsletter | newsletter | high | mining | page 1 of 5 (10 of 48 issues) |
-| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | mining | harvested in full: 59,601 records; SFP 23 read whole and resolved (1,165 records → 1,122 findings → 923 on a parcel), 43 collections to go |
+| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | mining | harvested in full: 59,601 records; SFP 23 read whole, resolved and published (1,165 records → 1,122 findings → 923 on a parcel → 919 on 882 pages), 43 collections to go |
 | [`hittell-1878`](sources/hittell-1878.md) | Hittell, *A History of the City of San Francisco* (1878) | book | medium | mining | §12–14, 24, 27, 231 |
 | [`loc-newspapers`](sources/loc-newspapers.md) | Chronicling America OCR — *Morning Call*, *SF Call* | newspaper OCR | high | mining | 58,620 pages → 8,437 mentions, 2,025 addresses |
 | [`local-news`](sources/local-news.md) | Hoodline, Bay Area Reporter, SF Chronicle | news | low | reference | browsed per address, no corpus pass |
-| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | mining | 14 statements read; ~36 remain (one issue each) |
+| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | mining | 15 statements read; ~35 remain (one issue each) |
 | [`spur-popos-guide`](sources/spur-popos-guide.md) | SPUR, *Secrets of San Francisco* | PDF guide | medium | mined | read in full |
 
 City APIs and bulk datasets are **not** registered here — they are in

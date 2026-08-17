@@ -1,0 +1,143 @@
+{
+  "address": "293 Union Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/union-street/293/",
+  "apn": "0113021",
+  "block": "0113",
+  "lot": "021",
+  "eas_baseid": "277656",
+  "coordinates": {
+    "lat": 37.800886,
+    "lng": -122.404087
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1546,
+    "building_area_sqft": 840,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0293 UNION               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 892331,
+    "assessed_improvement_value": 526772,
+    "last_sale_date": "2010-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201103232633",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-03-23",
+      "status_date": "2012-08-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel kitchen & bath, add 1 full bath, replace furnace & water heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906816",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-04-09",
+      "status_date": "2000-08-04",
+      "estimated_cost": 100000,
+      "description": "garage to be constructed under residence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807746",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-01",
+      "status_date": "1998-06-29",
+      "estimated_cost": 8915,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716145",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-10",
+      "status_date": "1989-02-27",
+      "estimated_cost": 29000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=293",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0113021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0113&lot=021",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0113021",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40408710294321%2037.8008862368725)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55031",
+      "name": "293 Union Street, 1958. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55031",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1958-11-05",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55031"
+    }
+  ]
+}

@@ -4,9 +4,19 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 
 ## Documented so far
 
+- [1231–1233](1231/) — A 1911 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2003.
+- [1401–1423](1401/) — A 1907 three-flat, with reroofing permitted in 2011.
+- [1425–1433](1425/) — A 1906 industrial building, with reroofing permitted in 1996.
+- [2001](2001/) — A 1907 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2023.
+- [2005](2005/) — A 1906 single-family house, with window replacement permitted in 2023.
+- [2009](2009/) — A 1907 single-family house, with garage work permitted in 2011.
+- [2013](2013/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2015.
+- [2015–2019](2015/) — A 1900 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2022.
+- [2021–2023](2021/) — A 1908 2-unit building with a ground-floor store, with reroofing permitted in 2022.
 - [2201](2201/) — A 1914 single-family house, with reroofing permitted in 2017.
 - [2330–2346](2330/) — A 1922 8-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2712](2712/) — A 1900 two-flat, with reroofing permitted in 2016.
+- [2720](2720/) — A 1938 industrial building, with a kitchen remodel permitted in 1988.
 - [3084](3084/) — A 1933 2-unit building with a ground-floor store, with permit records from 2007 to 2010.
 - [3178](3178/) — A 1900 flats building, with facade work permitted in 2021.
 - [3200–3212](3200/) — A 1908 4-unit apartment building, with reroofing permitted in 1998.

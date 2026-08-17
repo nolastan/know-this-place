@@ -22,6 +22,7 @@ Every residential parcel on Capp Street that the city's address, assessor and pe
 - [242–244](242/) — A 1909 three-flat, with window replacement permitted in 2000.
 - [249](249/) — A 1900 single-family house.
 - [252–254](252/) — A 1909 three-flat, with foundation work permitted in 1986.
+- [255–275](255/) — A 1910 industrial building, with facade work permitted in 2008.
 - [307](307/) — A 1908 12-unit apartment building, with a seismic retrofit permitted in 2015.
 - [308–310](308/) — A 1908 two-flat, with an addition permitted in 1986.
 - [314–316](314/) — A 1906 two-flat, with stair work permitted in 2002.

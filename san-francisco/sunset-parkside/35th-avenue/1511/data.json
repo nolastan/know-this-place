@@ -1,0 +1,156 @@
+{
+  "address": "1511 35th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/35th-avenue/1511/",
+  "apn": "1881003",
+  "block": "1881",
+  "lot": "003",
+  "eas_baseid": "321918",
+  "coordinates": {
+    "lat": 37.758771,
+    "lng": -122.494273
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2587,
+    "building_area_sqft": 1851,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1511 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 624891,
+    "assessed_improvement_value": 416591,
+    "last_sale_date": "2002-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201909050782",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-05",
+      "status_date": "2019-09-05",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703075691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-07",
+      "status_date": "2008-05-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "revision, no work to extend out into center patio, relocate skylight, raise ceiling height.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703025273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-02",
+      "status_date": "2008-05-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "to renew expired pa# 2005/09/20/3353 to complete work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509203353",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-09-20",
+      "status_date": "2010-01-21",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "remodel (e) kitchen & bath on 2nd fl. reduce (e) center patio ~ 30 sf for expansion of kitchen. add",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818922",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-21",
+      "status_date": "1999-03-21",
+      "estimated_cost": 6500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=1511",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1881003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1881&lot=003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1881003",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49427291536263%2037.758771308555595)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54900",
+      "name": "1511 35th Avenue, between 1946 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54900",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1946 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54900"
+    }
+  ]
+}

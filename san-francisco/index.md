@@ -35,6 +35,13 @@ documented so far:
 - [Inner Sunset](inner-sunset/) — the blocks between Golden Gate Park and Mount Sutro; the Henry Doelger Building on Judah Street, named in the 2022 Duboce Triangle context statement as a citywide example of the Streamline Moderne
 - [Glen Park](glen-park/) — the valley around Glen Canyon; the 30th Street house Fernando Nelson built first, in 1880, before the 4,000 that followed
 - [Noe Valley](noe-valley/) — the valley south of the Eureka Valley ridge; a 21st Street house the 2017 Eureka Valley context statement names as an example of the Second Bay Tradition
+- [Sunset / Parkside](sunset-parkside/) — the avenues across the dunes between Golden Gate Park and Sloat Boulevard; 170 buildings the Office of the Assessor-Recorder photographed for tax assessment between 1946 and 1959
+- [Outer Richmond](outer-richmond/) — the blocks running west from Park Presidio Boulevard to Ocean Beach; 61 buildings photographed for tax assessment between 1947 and 1975
+- [Inner Richmond](inner-richmond/) — between Golden Gate Park and the Presidio; 42 buildings photographed for tax assessment between 1946 and 1964
+- [Presidio Heights](presidio-heights/) — the ridge between the Presidio and Pacific Heights; 28 buildings photographed for tax assessment between 1945 and 1991
+- [West of Twin Peaks](west-of-twin-peaks/) — the residence parks and tracts on the western slopes above Portola Drive; 11 buildings photographed for tax assessment between 1946 and 1951
+- [Japantown](japantown/) — the blocks around Post and Buchanan Streets; two parcels photographed for tax assessment in 1961 and 1962
+- [Visitacion Valley](visitacion-valley/) — the south-eastern corner of the city between McLaren Park and the county line; two buildings on Bay Shore Boulevard
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

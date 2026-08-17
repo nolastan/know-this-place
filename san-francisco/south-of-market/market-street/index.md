@@ -24,6 +24,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [973](973/) — A 1904 69-unit apartment building, with an addition permitted in 2005.
 - [979–989](979/) — A 1907 office building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1990.
 - [993](993/) — A 1908 store building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1996.
+- [1301–1375](1301/) — A 1937 office building, with plumbing work permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

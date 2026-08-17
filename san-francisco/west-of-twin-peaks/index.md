@@ -1,0 +1,14 @@
+# West of Twin Peaks
+
+The city's West of Twin Peaks analysis neighborhood, the residence parks and tracts on the western slopes above Portola Drive. Coverage begins with the parcels the Office of the Assessor-Recorder photographed for tax assessment between 1946 and 1951.
+
+## Streets documented so far
+
+- [16th Avenue](16th-avenue/) — 1 building, built 1947.
+- [17th Avenue](17th-avenue/) — 2 buildings, built 1950–2020.
+- [19th Avenue](19th-avenue/) — 1 building, built 1913.
+- [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
+- [Lenox Way](lenox-way/) — 1 building, built 1926.
+- [Taraval Street](taraval-street/) — 3 buildings, built 1950.
+- [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
+- [Ulloa Street](ulloa-street/) — 1 building, built 1938.

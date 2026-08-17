@@ -42,6 +42,14 @@ REPO = CONFIG["repo_url"].rstrip("/")
 CACHE = ROOT / ".cache"
 UA = {"User-Agent": "know-this-place-seeder/1.0"}
 
+# Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
+# files are derived from it. Every page carries these, the way it carries the
+# shared stylesheet — `validate.py` enforces it.
+ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/shared/site.webmanifest">"""
+
 # The `.sub` locality line, per neighborhood. The Castro's parenthetical is
 # required by san-francisco/castro/AGENTS.md — it is what tells a reader that
 # "Castro" and "Eureka Valley" name the same place.
@@ -1295,6 +1303,13 @@ def historical_items(rec: dict, indent: str) -> list:
     dataset. It is a timeline entry, not prose, so a page that gains three of
     these gains no paragraphs — and no second rail either: they take their
     place among the permits in date order.
+
+    An entry's `source` may be a list where one dated event left several
+    records — the assessor shot four negatives of a corner parcel on the same
+    afternoon, one per street number. That is one thing that happened here, so
+    it is one item; the records are cited side by side on it, each labelled
+    with the address it was filed under. Never one item per record: a reader
+    scanning the rail should not meet the same date twice.
     """
     entries = rec.get("historical_record") or []
     if not entries:
@@ -1303,9 +1318,32 @@ def historical_items(rec: dict, indent: str) -> list:
     # the Sources footer, and repeating it under every item would swamp them.
     labels = {s["id"]: s.get("label") or s.get("name", s["id"])
               for s in rec.get("sources", [])}
+    # A photograph is an item the reader can go and look at, so its meta links
+    # to the record the way a permit's links to the permit. Other historical
+    # entries cite a document *about* the building; that is attribution, and
+    # attribution lives in the Sources footer.
+    urls = {s["id"]: s["query"] for s in rec.get("sources", []) if s.get("query")}
+    # `title` distinguishes co-dated records of one event — the street number
+    # each negative was filed under.
+    titles = {s["id"]: s["title"] for s in rec.get("sources", []) if s.get("title")}
     items = []
     for e in entries:
-        meta = labels.get(e.get("source"), e.get("source") or "")
+        cited = e.get("source")
+        cited = [s for s in (cited if isinstance(cited, list) else [cited]) if s]
+        meta = labels.get(cited[0], cited[0]) if cited else ""
+        photo = e.get("kind") == "photograph"
+        if len(cited) > 1:
+            # Shared label once, then one link per record — the shape a permit
+            # item already uses, a span of context followed by its links.
+            links = "".join(
+                f'{indent}      <a href="{esca(urls[s])}">'
+                f'{esc(titles.get(s) or labels.get(s, s))}</a>\n'
+                for s in cited if s in urls)
+            row = f'{indent}      <span>{esc(meta)}</span>\n' + links
+        else:
+            href = urls.get(cited[0]) if (photo and cited) else None
+            row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
+                   else f'{indent}      <span>{esc(meta)}</span>\n')
         summary = (f'{indent}    <p class="vtl-desc"><b>{esc(e["summary"])}</b></p>\n'
                    if e.get("summary") else "")
         when = e.get("date", "")
@@ -1317,9 +1355,8 @@ def historical_items(rec: dict, indent: str) -> list:
             f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
             f'{summary}'
             f'{indent}    <p class="vtl-desc">{esc(e.get("description", ""))}</p>\n'
-            + (f'{indent}    <div class="vtl-meta">\n'
-               f'{indent}      <span>{esc(meta)}</span>\n'
-               f'{indent}    </div>\n' if meta else "")
+            + (f'{indent}    <div class="vtl-meta">\n' + row
+               + f'{indent}    </div>\n' if meta else "")
             + f'{indent}  </li>'))
     return items
 
@@ -1685,6 +1722,7 @@ def render_html(rec: dict) -> str:
   <title>{esc(title)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
+{ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
   <script type="application/ld+json">
@@ -2099,6 +2137,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
   <title>{esc(disp)}, {esc(city_name)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{path}">
+{ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
 </head>

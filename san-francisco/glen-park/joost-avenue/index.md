@@ -6,6 +6,7 @@ The parcels on Joost Avenue documented here so far, from the city's address, ass
 
 - [18–20](18/) — A 1910 single-family house, with window replacement permitted in 2024.
 - [33](33/) — A 1926 single-family house, with facade work permitted in 2023.
+- [216](216/) — A 1912 single-family house, with window replacement permitted in 1988.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

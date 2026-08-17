@@ -56,6 +56,7 @@ Every residential parcel on 22nd Street that the city's address, assessor and pe
 - [2851](2851/) — A 1906 two-flat, with reroofing permitted in 2012.
 - [2852–2856](2852/) — A 1900 4-unit apartment building, with a kitchen remodel permitted in 2023.
 - [2858](2858/) — A 1900 single-family house, with garage work permitted in 2022.
+- [2859](2859/) — A 1916 church, with a vertical addition permitted in 2020.
 - [2860–2864](2860/) — A 1900 three-flat, with an addition permitted in 2017.
 - [2867–2869](2867/) — A 1900 four-flat, with a kitchen and bathroom remodel permitted in 2017.
 - [2870–2872](2870/) — A 1900 three-flat, with fire repair permitted in 2006.
@@ -136,6 +137,7 @@ Every residential parcel on 22nd Street that the city's address, assessor and pe
 - [3482–3484](3482/) — An 1890 flat and apartment building on one parcel, with reroofing permitted in 1993.
 - [3488](3488/) — A 1924 6-unit apartment building, with a seismic retrofit permitted in 2014.
 - [3492–3496](3492/) — A 1900 5-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2002.
+- [3550–3552](3550/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 2022.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -19,13 +19,24 @@ Every residential parcel on 21st Street that the city's address, assessor and pe
 - [3590](3590/) — A 1971 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
 - [3600](3600/) — A 1963 30-unit apartment building, with reroofing permitted in 2022.
 - [3616](3616/) — A 1968 single-family house, with reroofing permitted in 2024.
+- [3619](3619/) — A 1937 single-family house, with a kitchen remodel permitted in 1992.
+- [3625](3625/) — A 1937 single-family house, with a rear addition permitted in 2006.
+- [3627](3627/) — A 1931 single-family house, with garage work permitted in 2014.
+- [3631](3631/) — A 1900 single-family house, with garage work permitted in 1984.
 - [3632](3632/) — A 1983 two-flat, with reroofing permitted in 2023.
 - [3636](3636/) — A 1905 single-family house, with a seismic retrofit permitted in 2015.
+- [3637](3637/) — A 1900 single-family house, with window replacement permitted in 2024.
+- [3639](3639/) — A 1909 single-family house, with a dormer permitted in 2015.
 - [3640](3640/) — A 1900 single-family house, with electrical work permitted in 2022.
+- [3649–3651](3649/) — A 1996 single-family house, with an addition permitted in 2000.
 - [3650](3650/) — A 1900 single-family house, with reroofing permitted in 2014.
+- [3655](3655/) — A 1910 single-family house, with garage work permitted in 2004.
 - [3660](3660/) — A 1923 single-family house, with an addition permitted in 2013.
+- [3663](3663/) — A 1908 single-family house, with one permit record from 1985.
 - [3666](3666/) — A 1927 single-family house, with a rear addition permitted in 1987.
+- [3669](3669/) — A 1900 single-family house, with garage work permitted in 2019.
 - [3676](3676/) — A 1939 single-family house, with a vertical addition permitted in 1988.
+- [3677–3681](3677/) — A 1900 three-flat, with foundation work permitted in 2007.
 - [3680](3680/) — A 1939 single-family house, with a vertical addition permitted in 1988.
 - [3690](3690/) — A 1930 single-family house, with reroofing permitted in 2009.
 - [3718–3720](3718/) — A 1900 1-unit apartment building, with an addition permitted in 2000.
@@ -51,9 +62,13 @@ Every residential parcel on 21st Street that the city's address, assessor and pe
 - [3832](3832/) — A 1905 two-flat in the Castro & Liberty Streets Historic District, with deck work permitted in 2015.
 - [3836](3836/) — A 1900 single-family house in the Castro & Liberty Streets Historic District, with one permit record from 1995.
 - [3844](3844/) — A 1905 single-family house in the Castro & Liberty Streets Historic District, with deck work permitted in 2019.
+- [3847](3847/) — A 1900 single-family house, with an addition permitted in 2025.
 - [3848](3848/) — A 1905 single-family house in the Castro & Liberty Streets Historic District, with a rear addition permitted in 2006.
+- [3851](3851/) — A 1900 single-family house, with reroofing permitted in 1993.
 - [3852](3852/) — A 1905 single-family house in the Castro & Liberty Streets Historic District, with window replacement permitted in 2018.
+- [3855](3855/) — A 1900 three-flat, with an addition permitted in 2009.
 - [3856](3856/) — A 1905 single-family house, with a kitchen and bathroom remodel permitted in 2018.
+- [3859](3859/) — An 1890 single-family house, with garage work permitted in 2001.
 - [3860](3860/) — A 1905 single-family house, with a rear addition permitted in 2010.
 - [3878–3880](3878/) — A 1909 3-unit apartment building, with deck work permitted in 2014.
 - [3900–3922](3900/) — A 1910 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.

@@ -8,6 +8,7 @@ The parcels on Folsom Street documented here so far, from the city's address, as
 - [765–795](765/) — A 1979 office building, with an addition permitted in 2016.
 - [795](795/) — A 1979 office building, with an addition permitted in 2016.
 - [812–816](812/) — A 1923 assessor class: vacant lot, with a rear addition permitted in 1992.
+- [829–831](829/) — An assessor class: parking lot, with reroofing permitted in 2021.
 - [832](832/) — A 1986 office building, with a kitchen remodel permitted in 1988.
 - [840–842](840/) — A 1923 building, with deck work permitted in 2001.
 - [844–846](844/) — A 1923 industrial building, with reroofing permitted in 2025.

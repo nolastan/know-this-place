@@ -1,0 +1,114 @@
+{
+  "address": "445 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/hampshire-street/445/",
+  "apn": "3973002D",
+  "block": "3973",
+  "lot": "002D",
+  "eas_baseid": "366834",
+  "coordinates": {
+    "lat": 37.763731,
+    "lng": -122.408047
+  },
+  "parcel": {
+    "year_built": 1924,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 4,
+    "lot_area_sqft": 14997,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0445 HAMPSHIRE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 147139,
+    "assessed_improvement_value": 110404
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9320361",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-11-19",
+      "status_date": "1993-12-09",
+      "estimated_cost": 9177,
+      "description": "earthquake bracing of work parapet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110298",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-06-12",
+      "status_date": "1991-07-17",
+      "estimated_cost": 1,
+      "description": "minor revison to hd. details.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104472",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-03-20",
+      "status_date": "1991-07-17",
+      "estimated_cost": 15000,
+      "description": "remove (e concrete wall & replace w/concrete block wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=445",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3973002D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3973&lot=002D",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3973002D",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54611",
+      "name": "445 Hampshire Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54611",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-03-19",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment. Knapster Furniture Mfg. Co was at the address.",
+      "source": "digitalsf-54611"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "address": "270 Precita Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/precita-avenue/270/",
+  "apn": "5517090",
+  "block": "5517",
+  "lot": "090",
+  "eas_baseid": "379260",
+  "coordinates": {
+    "lat": 37.747107,
+    "lng": -122.414402
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1572,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0270 PRECITA             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1464570,
+    "assessed_improvement_value": 627672,
+    "last_sale_date": "2023-06-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9521516",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-26",
+      "status_date": "1996-07-31",
+      "estimated_cost": 4700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309819",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-06-11",
+      "status_date": "1994-06-27",
+      "estimated_cost": 35000,
+      "description": "fire repair/replace damaged wall studs/blind wall/elect/shtr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PRECITA&street_type=AVE&address_number=270",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5517090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5517&lot=090",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5517090",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55226",
+      "name": "270 Precita Avenue, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55226",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55226"
+    }
+  ]
+}

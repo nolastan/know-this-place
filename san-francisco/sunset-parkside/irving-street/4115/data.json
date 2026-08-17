@@ -1,0 +1,109 @@
+{
+  "address": "4115 Irving Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/irving-street/4115/",
+  "apn": "1797035",
+  "block": "1797",
+  "lot": "035",
+  "eas_baseid": "318058",
+  "coordinates": {
+    "lat": 37.762214,
+    "lng": -122.502119
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1675,
+    "basement_area_sqft": 525,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 4115 IRVING              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292820,
+    "assessed_improvement_value": 179578,
+    "last_sale_date": "1987-03-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202601304935",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-30",
+      "status_date": "2026-01-30",
+      "estimated_cost": 30000,
+      "revised_cost": 43472,
+      "description": "renovate (e) kitchen w/new cabinets & sink/faucet (in same location). add low voltage lighting, update electrical and or plumbing for range, ref, dw, bev cooler; remove non-load bearing wall; update electrical wiring & gfci's, add switches, new light fixtures and convenience outlet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721489",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-24",
+      "status_date": "1998-02-24",
+      "estimated_cost": 3920,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IRVING&street_type=ST&address_number=4115",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1797035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1797&lot=035",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1797035",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54368",
+      "name": "4115 Irving Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54368",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54368"
+    }
+  ]
+}

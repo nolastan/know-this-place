@@ -102,6 +102,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [965–969](965/) — A 1906 three-flat, with a kitchen and bathroom remodel permitted in 2011.
 - [971–975](971/) — A 1912 three-flat, with reroofing permitted in 2017.
 - [977](977/) — A 1908 three-flat, with foundation work permitted in 2012.
+- [1000–1004](1000/) — A 1900 6-unit apartment building, with a bathroom remodel permitted in 2021.
 - [1001–1003](1001/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 2002.
 - [1007–1011](1007/) — A 1914 three-flat, with reroofing permitted in 1994.
 - [1017](1017/) — A 1933 single-family house, with window replacement permitted in 2014.

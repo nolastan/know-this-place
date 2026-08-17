@@ -9,6 +9,7 @@ Every residential parcel on Gough Street that the city's address, assessor and p
 - [22–26](22/) — A 1906 three-flat, with reroofing permitted in 2016.
 - [28](28/) — A 1947 single-family house, with reroofing permitted in 2000.
 - [32–34](32/) — A 1906 two-flat, with foundation work permitted in 2026.
+- [33](33/) — A 1949 school building, with plumbing work permitted in 2021.
 - [36–38](36/) — A 1907 two-flat, with facade work permitted in 1987.
 
 Pages are generated from the DataSF datasets listed in each page's

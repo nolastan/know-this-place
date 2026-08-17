@@ -4,10 +4,19 @@ Every residential parcel on Mission Street that the city's address, assessor and
 
 ## Documented so far
 
+- [1513](1513/) — A 1930 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen and bathroom remodel permitted in 2015.
+- [1517](1517/) — A 1927 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1989 to 1995.
+- [1519–1535](1519/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 1990.
+- [1543](1543/) — A 1927 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1990.
 - [1551–1559](1551/) — A 1909 27-unit apartment building in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 2018.
+- [1563](1563/) — A 1917 office building, with a seismic retrofit permitted in 2015.
+- [1661](1661/) — A 1935 industrial building, with plumbing work permitted in 2019.
+- [1663–1667](1663/) — A 1925 building, with electrical work permitted in 2017.
+- [1695](1695/) — A 1951 industrial building, with reroofing permitted in 2011.
 - [1714–1718](1714/) — A 1910 4-unit apartment building, with foundation work permitted in 2007.
 - [1720–1724](1720/) — A 1909 5-unit apartment building, with a seismic retrofit permitted in 2018.
 - [1726](1726/) — A 1923 store building, with garage work permitted in 2017.
+- [1730–1732](1730/) — A 1991 industrial building, with garage work permitted in 2017.
 - [1738–1744](1738/) — A 1907 5-unit building, with reroofing permitted in 1989.
 - [1746–1748](1746/) — A 1907 5-unit building, with reroofing permitted in 1989.
 - [1750](1750/) — A 1912 27-unit apartment building, with fire repair permitted in 2025.
@@ -77,6 +86,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2475](2475/) — A 1900 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2001.
 - [2550](2550/) — A 1907 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a kitchen remodel permitted in 2013.
 - [2555–2557](2555/) — A 1912 theater, with a bathroom remodel permitted in 2023.
+- [2589–2595](2589/) — A 1926 store building, with facade work permitted in 2009.
 - [2619–2629](2619/) — A 1904 38-unit apartment building, with stair work permitted in 2022.
 - [2637–2645](2637/) — A 1904 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [2647–2653](2647/) — A 1900 24-unit apartment building, with a seismic retrofit permitted in 2017.
@@ -84,6 +94,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2687–2689](2687/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2006.
 - [2728–2738](2728/) — A 1904 6-unit building with a ground-floor store, with reroofing permitted in 2005.
 - [2745–2747](2745/) — A 1912 20-unit apartment building, with a seismic retrofit permitted in 2018.
+- [2800](2800/) — A 1906 store building, with one permit record from 2003.
 - [2840–2844](2840/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 1993.
 - [2843–2849](2843/) — A 1904 6-unit apartment building, with dry-rot repair permitted in 2011.
 - [2852–2854](2852/) — A 1916 6-unit apartment building, with a vertical addition permitted in 2017.
@@ -104,7 +115,11 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3001–3019](3001/) — A 1916 33-unit apartment building, with electrical work permitted in 2024.
 - [3006–3010](3006/) — A 1900 2-unit building with a ground-floor store, with a kitchen remodel permitted in 1983.
 - [3018–3024](3018/) — A 1925 30-unit apartment building, with a seismic retrofit permitted in 2018.
+- [3232–3234](3232/) — A 1900 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2016.
+- [3250](3250/) — A 1961 bank building, with reroofing permitted in 2012.
+- [3333](3333/) — A 1988 store building, with electrical work permitted in 2001.
 - [4631](4631/) — A 1922 store building, with plumbing work permitted in 2006.
+- [5150](5150/) — A 1950 bank building, with reroofing permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

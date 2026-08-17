@@ -1,0 +1,129 @@
+{
+  "address": "1475 Bush Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/bush-street/1475/",
+  "apn": "0670018",
+  "block": "0670",
+  "lot": "018",
+  "eas_baseid": "287469",
+  "coordinates": {
+    "lat": 37.788408,
+    "lng": -122.421464
+  },
+  "parcel": {
+    "year_built": 1916,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 771,
+    "building_area_sqft": 1550,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Van Ness/ Civic Center",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1475 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487861,
+    "assessed_improvement_value": 209078,
+    "last_sale_date": "2005-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200606143984",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-06-14",
+      "status_date": "2006-06-14",
+      "estimated_cost": 5100,
+      "revised_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512291257",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-29",
+      "status_date": "2006-07-11",
+      "estimated_cost": 25100,
+      "revised_cost": 25100,
+      "description": "to renew app #2003121927 to complete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312192745",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-12-19",
+      "status_date": "2006-07-11",
+      "estimated_cost": 16500,
+      "revised_cost": 20000,
+      "description": "seismic retrofit of unreinforced masonry bldg as per special procedure of sfbc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923054",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-29",
+      "status_date": "1990-07-18",
+      "estimated_cost": 2000,
+      "description": "parapet reinforcement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=1475",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0670018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0670&lot=018",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0670018",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55079",
+      "name": "1475 Bush Street, after 1947. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55079",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "after 1947",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55079"
+    }
+  ]
+}

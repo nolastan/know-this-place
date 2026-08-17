@@ -71,6 +71,10 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
   <title>ADDRESS — Know This Place</title>
   <meta name="description" content="PAGE-SPECIFIC ONE- OR TWO-SENTENCE SUMMARY">
   <link rel="canonical" href="SITE_URL + PATH">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">                    <!-- verbatim, all four -->
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/shared/site.webmanifest">
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>   <!-- enhancement layer -->
   <script type="application/ld+json"> { … "@type":"Place" … } </script>  <!-- see below -->
@@ -90,7 +94,14 @@ JSON-LD (`Place` with `PostalAddress` + `GeoCoordinates`), the `<footer>`
 sources/feedback/colophon, and the **FEEDBACK_URL** are unchanged — copy them
 from any existing address page (e.g. `castro-street/744/index.html`).
 `validate.py` enforces canonical, description, breadcrumb, footer, JSON-LD,
-and the prefilled feedback link; run it.
+the four icon links, and the prefilled feedback link; run it.
+
+The icon links are shared chrome — copy them verbatim, exactly as the stylesheet
+link is copied. The mark itself is one file, `shared/icon.svg` (a `#1F1F1F` tile
+with a `#C2694A` dot); `favicon.ico`, `apple-touch-icon.png` and the two
+`icon-*.png` sizes are rasterized from it, so changing the mark means
+regenerating all five. The `.ico` and the apple touch icon sit at the repo root
+because browsers and iOS fetch those two paths on their own.
 
 ## Composing `<main>`: a typical order
 
@@ -206,7 +217,28 @@ it drops the `.section-head` and carries the name for screen readers instead:
 ```
 Not every entry has a meta row: a historical one cites its source there
 (`<span>The Argonaut, Winter 2018</span>`) and one taken from an undated
-photograph has none at all. Dates are whatever the record knew — `Aug 2005`,
+photograph has none at all. A **photograph** entry links that citation instead
+of stating it (`<a href="https://digitalsf.org/record/54747">Assessor-Recorder
+Photographs (SFP 23), San Francisco Public Library</a>`), the way a permit links
+to the permit: the reader can go and look at the item, so the entry says where.
+Entries citing a document *about* the building don't — that is attribution, and
+attribution lives in the Sources footer.
+
+**One dated event is one item, however many records it left.** The assessor shot
+four negatives of a corner parcel in an afternoon, one per street number; a
+reader scanning the rail must not meet the same date twice. The entry's `source`
+is then a list, and the meta row carries the shared label once followed by one
+link per record, each labelled with the address it was filed under (the source's
+`title`) — the same shape as a permit item, a span of context and then its
+links:
+```html
+<div class="vtl-meta">
+  <span>Assessor-Recorder Photographs (SFP 23), San Francisco Public Library</span>
+  <a href="https://digitalsf.org/record/54172">110 The Embarcadero</a>
+  <a href="https://digitalsf.org/record/54173">115 Steuart Street</a>
+</div>
+```
+Dates are whatever the record knew — `Aug 2005`,
 `April 18, 1906`, `1912`, `circa 1885`, `1930s`, `pre-1906`; a vaguer date sorts
 before a precise one in the same year, and a `pre-`/`before` hedge before that.
 

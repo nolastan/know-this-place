@@ -1,0 +1,120 @@
+{
+  "address": "1700 46th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/46th-avenue/1700/",
+  "apn": "2004049",
+  "block": "2004",
+  "lot": "049",
+  "eas_baseid": "324682",
+  "coordinates": {
+    "lat": 37.754698,
+    "lng": -122.505291
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1624,
+    "building_area_sqft": 1187,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1700 46TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 847000,
+    "assessed_improvement_value": 363000,
+    "last_sale_date": "2024-07-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200705030424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-03",
+      "status_date": "2007-05-14",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012016988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-12-01",
+      "status_date": "2001-02-21",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "add rms at g/fl., change use of 2 storage to bedrm & computer rm. change laundry rm. to full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-09-22",
+      "status_date": "1983-12-22",
+      "estimated_cost": 350,
+      "description": "installation of 1 aluminum window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=46TH&street_type=AVE&address_number=1700",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2004049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2004&lot=049",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2004049",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54475",
+      "name": "1700 46th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54475",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54475"
+    }
+  ]
+}

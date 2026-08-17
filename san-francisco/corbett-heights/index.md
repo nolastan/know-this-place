@@ -23,6 +23,7 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
 - [Museum Way](museum-way/) — The Corona Heights museum the city dedicated to Josephine Randall in 1951.
 - [Ord Street](ord-street/) — 9 buildings, built 1880–1932.
 - [Romain Street](romain-street/) — 5 buildings, built 1935–1936.
+- [Shrader Street](shrader-street/) — 1 building, built 1907.
 
 ## Sources
 

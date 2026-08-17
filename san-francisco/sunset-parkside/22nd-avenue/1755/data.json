@@ -1,0 +1,117 @@
+{
+  "address": "1755 22nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/1755/",
+  "apn": "2027007",
+  "block": "2027",
+  "lot": "007",
+  "eas_baseid": "325737",
+  "coordinates": {
+    "lat": 37.754919,
+    "lng": -122.480074
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2828,
+    "basement_area_sqft": 1003,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1755 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 83146,
+    "assessed_improvement_value": 254183
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200311109865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-10",
+      "status_date": "2004-03-25",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "remodel & add rooms at ground floor- 2 bedrooms, computer room, 1& 1/2 baths and storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202048347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-04",
+      "status_date": "2002-07-24",
+      "estimated_cost": 5680,
+      "revised_cost": 5680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2002–2011",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=1755",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2027007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2027&lot=007",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2027007",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54436",
+      "name": "1755 22nd Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54436",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54436"
+    }
+  ]
+}

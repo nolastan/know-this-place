@@ -1,0 +1,132 @@
+{
+  "address": "2510 27th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/2510/",
+  "apn": "2427031",
+  "block": "2427",
+  "lot": "031",
+  "eas_baseid": "338630",
+  "coordinates": {
+    "lat": 37.740545,
+    "lng": -122.483786
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2414,
+    "basement_area_sqft": 587,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2510 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 302634,
+    "assessed_improvement_value": 353401
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201902203358",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-02-20",
+      "status_date": "2019-02-20",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace four front windows. milgard fiberglass - 32 u factor. match existing size and configuration.visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8616120",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1986-12-24",
+      "status_date": "1987-04-27",
+      "description": "demolish residential",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8616119",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1986-12-19",
+      "status_date": "1987-11-13",
+      "estimated_cost": 174000,
+      "description": "erect single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602246",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-02-27",
+      "status_date": "1986-11-28",
+      "estimated_cost": 78452,
+      "description": "new foundation, framing, electrical, plumbing, sheedrock",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=2510",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2427031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2427&lot=031",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2427031",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54449",
+      "name": "2510 27th Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54449",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54449"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1988, after this photograph was taken."
+  }
+}

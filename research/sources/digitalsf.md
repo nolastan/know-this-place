@@ -299,13 +299,33 @@ more sensitive rather than less.
   [`../findings/digitalsf/sfp-23.json`](../findings/digitalsf/sfp-23.json).
   **923 of the 1,122 are resolved** to 886 parcels and 889 page paths, 165 of
   which are pages that already exist; the other 199 are unresolved with a stated
-  reason, 74 of them because the address no longer exists in EAS. Nothing is
-  published yet. The other 43 collections are untouched; by candidate
+  reason, 74 of them because the address no longer exists in EAS. **919 of the
+  923 are published** on 882 pages in #117, 720 of those pages seeded for it; 4
+  are declined with a reason. The other 43 collections are untouched; by candidate
   count the next are SFP 162 (852), SFH 371 (210) and SFP 130 (151). Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
 
-- **Verified:** 2026-08-15 (resolved SFP 23 in full against `sf-eas-addresses`,
+- **Verified:** 2026-08-16 (published SFP 23: 919 of the 923 resolved findings
+  onto 882 pages in #117, 720 of them seeded from
+  [`../manifests/digitalsf-sfp-23.json`](../manifests/digitalsf-sfp-23.json),
+  and seven new neighborhood directories with them. Each fact is one
+  `historical_record` entry on the page's single timeline, cited to the record's
+  own `524$a`; the circa dates publish the archivist's phrase and the 14
+  conflicts went into `.unknowns` unadjudicated. Learned two things worth
+  carrying to the next collection. **EAS's stale `parcel_number` bites the
+  publisher as well as the resolver** — 15 of the 723 parcels are filed in EAS
+  under a retired APN, so a manifest built by looking EAS up on the active
+  blklot silently loses them; go via the retired number EAS actually carries,
+  and take the street from EAS rather than sf-parcels, which addresses 0067041
+  as 841 Chestnut while every EAS address on it is on Lombard. **The roll dates
+  the building later than the photograph on 45 pages** — the parcel was rebuilt
+  between the assessor's camera and today, so a page needs to say so or a "Built
+  1988" tag sits unexplained beside a 1951 photograph. Declined 4: one parcel
+  disagreement a page already contradicts, and three parcels with no row on the
+  secured roll, which the seeder will not give a page.)
+
+  Earlier, 2026-08-15: resolved SFP 23 in full against `sf-eas-addresses`,
   `sf-parcels` and the 2025 secured roll: 923 of 1,122 findings placed on a
   parcel, 199 left unresolved with a reason. Established the four addressing
   facts under "Resolving an address from this source" above — the source's own

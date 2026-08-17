@@ -8,6 +8,7 @@ The parcels on Bosworth Street documented here so far, from the city's address, 
 - [601](601/) — A 1912 Classical Revival building with a corner storefront and flats above, at the Bosworth–Diamond turn.
 - [615–617](615/) — A 1910 two-flat, with a kitchen and bathroom remodel permitted in 2018.
 - [645–647](645/) — A 1911 2-unit building with a ground-floor store, with deck work permitted in 2020.
+- [1167](1167/) — A 1914 single-family house, with deck work permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

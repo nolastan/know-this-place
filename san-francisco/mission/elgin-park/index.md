@@ -17,6 +17,7 @@ Every residential parcel on Elgin Park that the city's address, assessor and per
 - [64–66](64/) — A 1906 single-family house in the Elgin Park-Pearl Street Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2006.
 - [68](68/) — A 1908 two-flat in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [72–74](72/) — A 1906 two-flat in the Elgin Park-Pearl Street Reconstruction Historic District, with stair work permitted in 2025.
+- [79](79/) — A flats building in the Elgin Park-Pearl Street Reconstruction Historic District, with a kitchen remodel permitted in 2019.
 - [80](80/) — A 1912 13-unit apartment building in the Elgin Park-Pearl Street Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2018.
 - [87](87/) — A 1906 3-unit apartment building, with fire repair permitted in 1992.
 - [88](88/) — A 1915 6-unit apartment building, with reroofing permitted in 1994.

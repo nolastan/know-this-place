@@ -1,0 +1,174 @@
+{
+  "address": "148–150 Mallorca Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/mallorca-way/148/",
+  "apn": "0467A043",
+  "block": "0467A",
+  "lot": "043",
+  "eas_baseid": "282829",
+  "coordinates": {
+    "lat": 37.802296,
+    "lng": -122.437349
+  },
+  "address_range": "148–150",
+  "street_numbers_on_parcel": [
+    "148",
+    "150"
+  ],
+  "parcel": {
+    "year_built": 1950,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 5,
+    "lot_area_sqft": 3720,
+    "building_area_sqft": 3348,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0150 0148 MALLORCA            WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117723,
+    "assessed_improvement_value": 348775
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M247827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-03-15",
+      "status_date": "2011-03-15",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102099953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-09",
+      "status_date": "2011-02-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final 200610195472",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012237308",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-23",
+      "status_date": "2011-01-12",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "front elevation, dry rot repair, replace window headers with steel beam on 3 floor, replace garage header with steel beam on gr floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610195472",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-10-19",
+      "status_date": "2007-06-18",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "replacement of dry rot @ front wall only & windows. repair work at front of building. replace font building stucco & total 9 windows at front to replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308007",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-08-16",
+      "status_date": "1984-07-16",
+      "estimated_cost": 3500,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201866",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-03-11",
+      "status_date": "1984-07-16",
+      "estimated_cost": 90000,
+      "description": "bldg use: apts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1982–2011",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MALLORCA&street_type=WAY&address_number=148",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0467A043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0467A&lot=043",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0467A043",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43734921000593%2037.80229581446595)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54688",
+      "name": "148 Mallorca Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54688",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-04-24",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54688"
+    }
+  ]
+}

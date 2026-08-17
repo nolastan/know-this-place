@@ -1,0 +1,127 @@
+{
+  "address": "1274 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/1274/",
+  "apn": "6553002",
+  "block": "6553",
+  "lot": "002",
+  "eas_baseid": "402178",
+  "coordinates": {
+    "lat": 37.748708,
+    "lng": -122.429659
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2008,
+    "building_area_sqft": 1100,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1274 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1207124,
+    "assessed_improvement_value": 817338,
+    "last_sale_date": "2021-10-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204152312",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-04-15",
+      "status_date": "2025-11-18",
+      "estimated_cost": 275000,
+      "revised_cost": 500000,
+      "description": "interior alteration of the basement and first floor. partial horizontal addition at the north side yard. vertical addition of a (n) second floor above the (e) first floor. exterior facade alterations. (n) roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209250574",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-25",
+      "status_date": "2012-12-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207114531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-11",
+      "status_date": "2012-09-19",
+      "estimated_cost": 18400,
+      "revised_cost": 18400,
+      "description": "replace & re-construct (e) stairs at entry",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2012–2022",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=1274",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6553002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6553&lot=002",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6553002",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54988",
+      "name": "1274 Sanchez Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54988",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-03-08",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54988"
+    }
+  ]
+}

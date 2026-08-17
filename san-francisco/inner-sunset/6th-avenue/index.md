@@ -9,6 +9,7 @@ The parcels on Sixth Avenue documented here so far, from the city's address, ass
 - [1247–1249](1247/) — A 1903 Classical Revival, designed by William Koenig.
 - [1264](1264/) — A 1903-1904 Dutch Colonial Revival/Classical/Shingle blend, built by Alphonso Harrington.
 - [1289](1289/) — A 1903-1904 Mission Revival, built by S. A. Born.
+- [1307–1309](1307/) — A 1907 three-flat, with a kitchen and bathroom remodel permitted in 2020.
 - [1350](1350/) — A 1914 building, built by Michael C. Rench.
 - [1354](1354/) — A 1911 Mission Revival/Craftsman blend, built by Edward E. Manseau.
 - [1371](1371/) — A 1909-1910 building, built by Cox Brothers.

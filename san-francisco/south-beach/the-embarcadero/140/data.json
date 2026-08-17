@@ -1,0 +1,97 @@
+{
+  "address": "140 The Embarcadero, San Francisco, CA 94111",
+  "path": "/san-francisco/south-beach/the-embarcadero/140/",
+  "apn": "9900274",
+  "block": "9900",
+  "lot": "274",
+  "eas_baseid": "506455",
+  "coordinates": {
+    "lat": 37.795387,
+    "lng": -122.393681
+  },
+  "parcel": {
+    "year_built": 1896,
+    "stories": 3,
+    "lot_area_sqft": 74415,
+    "building_area_sqft": 268018,
+    "use": "Industrial",
+    "property_class": "Industrial Gov Mixed/Other Use",
+    "construction_type_code": "B",
+    "zoning": "C2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0000 THE EMBARCADERO       0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "last_sale_date": "2018-10-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, National Register Individual, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1896",
+    "survey_name": "FERRY BUILDING",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Port of San Francisco Embarcadero Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1946; 1898–1903; 1912–1938; 1934",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=THE%20EMBARCADERO&street_type=&address_number=140",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=9900274&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=9900&lot=274",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=9900274",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.3936814534213%2037.795386615590886)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54729",
+      "name": "136-144 Embarcadero Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54729",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-06-06",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment. Embarcadero Cafe, Vic's Naval Uniforms, Sea Cliff Cafe, Emerson Drug Company and Harbor Hotel were at the address.",
+      "source": "digitalsf-54729"
+    }
+  ]
+}

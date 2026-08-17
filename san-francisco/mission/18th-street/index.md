@@ -6,6 +6,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 
 - [2405](2405/) — A 1900 single-family house, with fire repair permitted in 1985.
 - [2409](2409/) — A 1900 single-family house.
+- [2412–2420](2412/) — A 1921 two-flat, with an addition permitted in 2020.
 - [2415–2417](2415/) — A 1900 single-family house, with stair work permitted in 2003.
 - [2419](2419/) — A 1912 single-family house, with a bathroom remodel permitted in 2014.
 - [2421](2421/) — A 1912 single-family house, with a kitchen and bathroom remodel permitted in 2005.

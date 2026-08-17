@@ -1,0 +1,125 @@
+{
+  "address": "3157 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/jackson-street/3157/",
+  "apn": "0983016",
+  "block": "0983",
+  "lot": "016",
+  "eas_baseid": "291972",
+  "coordinates": {
+    "lat": 37.79062,
+    "lng": -122.446941
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3319.68,
+    "building_area_sqft": 1928,
+    "lot_depth_ft": 27.68,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3157 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1911550,
+    "assessed_improvement_value": 819234,
+    "last_sale_date": "2017-09-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202102275530",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2021-02-27",
+      "status_date": "2021-02-27",
+      "estimated_cost": 375000,
+      "revised_cost": 1730663,
+      "description": "vertical/horizontal addition to e home to a 4 story o/basement bldg. insertion of wood garage door into retaining wall, rehab and struct strenghening of e cobblestone wall as needed, n wood shingle cladding, e front entry stairs, gate, funicular to remain, new doors and windows, nfpa 13,upgrade mep",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613407",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-24",
+      "status_date": "1996-09-12",
+      "estimated_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3157",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0983016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0983&lot=016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0983016",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44694075213678%2037.79061999426677)%27)",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55108",
+      "name": "3157 Jackson Street, between 1947 and 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55108",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1947 and 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55108"
+    }
+  ]
+}

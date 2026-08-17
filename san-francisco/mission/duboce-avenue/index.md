@@ -4,7 +4,12 @@ Every residential parcel on Duboce Avenue that the city's address, assessor and 
 
 ## Documented so far
 
+- [15](15/) — A 1920 industrial building, with permit records from 2007 to 2023.
 - [27–31](27/) — A 1911 12-unit apartment building in the Woodward St. Romeo Flats Reconstruction Historic District, with reroofing permitted in 2007.
+- [45](45/) — A 1906 store building, with reroofing permitted in 2025.
+- [49–51](49/) — A 1907 industrial building, with reroofing permitted in 1990.
+- [69–75](69/) — A 1927 industrial building, with a kitchen remodel permitted in 1990.
+- [80](80/) — A 1925 industrial building, with reroofing permitted in 2024.
 - [94](94/) — A 1906 8-unit apartment building, with foundation work permitted in 2010.
 - [101–113](101/) — A 1911 8-unit apartment building, with a seismic retrofit permitted in 2012.
 - [115–119](115/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2016.
@@ -33,6 +38,7 @@ Every residential parcel on Duboce Avenue that the city's address, assessor and 
 - [191](191/) — A 1929 9-unit apartment building, with a seismic retrofit permitted in 2020.
 - [195](195/) — A 1907 single-family house, with a kitchen remodel permitted in 2009.
 - [197–199](197/) — A 1907 three-flat, with permit records from 1987 to 2020.
+- [200](200/) — A 1970 store building, with a rear addition permitted in 2026.
 - [214](214/) — A 1900 two-flat in the Guerrero Street Fire Line Historic District, with reroofing permitted in 2001.
 - [225](225/) — A 1958 9-unit apartment building in the Guerrero Street Fire Line Historic District, with a seismic retrofit permitted in 2020.
 - [239–241](239/) — A 1900 4-unit apartment building in the Guerrero Street Fire Line Historic District, with foundation work permitted in 2025.

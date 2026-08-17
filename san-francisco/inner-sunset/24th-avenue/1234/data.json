@@ -1,0 +1,141 @@
+{
+  "address": "1234 24th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/24th-avenue/1234/",
+  "apn": "1727038",
+  "block": "1727",
+  "lot": "038",
+  "eas_baseid": "315316",
+  "coordinates": {
+    "lat": 37.764515,
+    "lng": -122.482237
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1234 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45690,
+    "assessed_improvement_value": 55164
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202311070352",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-11-07",
+      "status_date": "2023-11-07",
+      "estimated_cost": 22940,
+      "revised_cost": 22940,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109098104",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-09-09",
+      "status_date": "2021-09-14",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "commencement of work not started under previously approved permit# 200405103397.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403059951",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-03-05",
+      "status_date": "2019-06-04",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "to comply with correction notice #201310310769, for administrative purpose, change the valuation from $1 to $7500 and to complete remainder of work for pa# 200405103397",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310310769",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-10-31",
+      "status_date": "2014-03-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app#200405103397. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405103397",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-05-10",
+      "status_date": "2014-02-20",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace (e) stairs with same as before but with widers stringers and heavier railing with tighter",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=1234",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1727038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1727&lot=038",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1727038",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-115452",
+      "name": "1234 24th Avenue, 1947 to 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/115452",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1947 to 1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-115452"
+    }
+  ]
+}

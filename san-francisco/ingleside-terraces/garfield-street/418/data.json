@@ -1,0 +1,99 @@
+{
+  "address": "418 Garfield Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/garfield-street/418/",
+  "apn": "6993023",
+  "block": "6993",
+  "lot": "023",
+  "eas_baseid": "411060",
+  "coordinates": {
+    "lat": 37.719895,
+    "lng": -122.466663
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1175,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0418 GARFIELD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 674941,
+    "assessed_improvement_value": 322308,
+    "last_sale_date": "1988-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401264729",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-01-26",
+      "status_date": "2024-01-26",
+      "estimated_cost": 100000,
+      "revised_cost": 200000,
+      "description": "remodel of (e) single story residence including gypsum wall and ceiling board. removal of some non load bearing partitions and replacement of kitchen cabinets and appliances. replacement of bathroom fixtures and finishes in kind. rewiring and insulation of exterior walls and ceiling.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GARFIELD&street_type=ST&address_number=418",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6993023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6993&lot=023",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6993023",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-55068",
+      "name": "418 Garfield Street, 1975. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55068",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-03-04",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55068"
+    }
+  ]
+}

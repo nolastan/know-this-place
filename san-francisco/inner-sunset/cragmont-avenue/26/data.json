@@ -1,0 +1,118 @@
+{
+  "address": "26 Cragmont Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/cragmont-avenue/26/",
+  "apn": "2123B001E",
+  "block": "2123B",
+  "lot": "001E",
+  "eas_baseid": "329859",
+  "coordinates": {
+    "lat": 37.751117,
+    "lng": -122.467923
+  },
+  "parcel": {
+    "year_built": 1934,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3977,
+    "building_area_sqft": 1316,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0026 CRAGMONT            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42248,
+    "assessed_improvement_value": 147007
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1934",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308104123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-10",
+      "status_date": "2023-09-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904127831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-12",
+      "status_date": "2019-10-15",
+      "estimated_cost": 35000,
+      "revised_cost": 40766,
+      "description": "remodel like for like of kitchen 10'x12' and bathroom 8'x10'. remove drywall and add insulation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208953",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-02",
+      "status_date": "1993-05-06",
+      "estimated_cost": 5350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CRAGMONT&street_type=AVE&address_number=26",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2123B001E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2123B&lot=001E",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2123B001E",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54252",
+      "name": "26 Cragmont Avenue, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54252",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54252"
+    }
+  ]
+}

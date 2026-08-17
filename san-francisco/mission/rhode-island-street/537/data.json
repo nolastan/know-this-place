@@ -1,0 +1,129 @@
+{
+  "address": "537 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission/rhode-island-street/537/",
+  "apn": "4008002G",
+  "block": "4008",
+  "lot": "002G",
+  "eas_baseid": "367189",
+  "coordinates": {
+    "lat": 37.762989,
+    "lng": -122.402088
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1341,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0537 RHODE ISLAND        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274079,
+    "assessed_improvement_value": 362498,
+    "last_sale_date": "1991-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201803022750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-02",
+      "status_date": "2019-01-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "install temporary shoring along property to allow excavation for new development at 540 de haro street. tieback encroachment only on this permit. construction cost under 540 de haro street (permit appllication #2015-0210-7867).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505216873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-21",
+      "status_date": "2015-06-29",
+      "estimated_cost": 15125,
+      "revised_cost": 15125,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906478",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-05",
+      "status_date": "2000-03-24",
+      "estimated_cost": 950,
+      "description": "replace 2 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516716",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-10",
+      "status_date": "1996-02-10",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RHODE%20ISLAND&street_type=ST&address_number=537",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4008002G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4008&lot=002G",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4008002G",
+      "retrieved": "2026-08-16"
+    },
+    {
+      "id": "digitalsf-54572",
+      "name": "537 Rhode Island Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/54572",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1951-07-05",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-54572"
+    }
+  ]
+}

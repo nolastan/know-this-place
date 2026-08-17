@@ -13,7 +13,12 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [17th Avenue](17th-avenue/) — 4 buildings, built 1924–1931.
 - [18th Avenue](18th-avenue/) — 5 buildings, built 1907–1963.
 - [19th Avenue](19th-avenue/) — 2 buildings, built 1912–1963.
+- [20th Avenue](20th-avenue/) — 4 buildings, built 1927–1950.
+- [21st Avenue](21st-avenue/) — 1 building, built 1929.
+- [23rd Avenue](23rd-avenue/) — 2 buildings, built 1924–1950.
+- [24th Avenue](24th-avenue/) — 4 buildings, built 1911–1950.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
+- [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
 - [Eighth Avenue](8th-avenue/) — 22 buildings, built 1900–1937.
 - [Fifth Avenue](5th-avenue/) — 17 buildings, built 1900–1954.
 - [Fourth Avenue](4th-avenue/) — 5 buildings, built 1904–1910.
@@ -28,6 +33,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Ninth Avenue](9th-avenue/) — 39 buildings, built 1900–1990.
 - [Noriega Street](noriega-street/) — 1 building, built 1911.
 - [Ortega Street](ortega-street/) — 1 building, built 1914.
+- [Pacheco Street](pacheco-street/) — 1 building, built 1958.
 - [Parnassus Avenue](parnassus-avenue/) — 2 buildings, built 1912–1925.
 - [Second Avenue](2nd-avenue/) — 4 buildings, built 1908–1923.
 - [Seventh Avenue](7th-avenue/) — 13 buildings, built 1900–1925.

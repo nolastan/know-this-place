@@ -10,6 +10,7 @@ Every residential parcel on Utah Street that the city's address, assessor and pe
 - [326–358](326/) — A 1906 two-flat, with a kitchen and bathroom remodel permitted in 2000.
 - [330](330/) — A 1908 single-family house, with reroofing permitted in 1999.
 - [360–364](360/) — A 1908 three-flat, with reroofing permitted in 2022.
+- [390](390/) — A 1930 industrial building, with facade work permitted in 1986.
 - [400](400/) — An 1890 two-flat, with permit records from 1989 to 2016.
 - [401–415](401/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2019.
 - [404–406](404/) — An 1890 two-flat, with garage work permitted in 1988.
@@ -58,6 +59,7 @@ Every residential parcel on Utah Street that the city's address, assessor and pe
 - [1248](1248/) — A 1915 single-family house, with garage work permitted in 2014.
 - [1254](1254/) — A 1915 single-family house, with an addition permitted in 1989.
 - [1260](1260/) — A 1915 single-family house, with window replacement permitted in 2005.
+- [1300–1314](1300/) — A 1911 hotel, with electrical work permitted in 2019.
 - [1305](1305/) — A 1965 3-unit apartment building, with reroofing permitted in 2011.
 - [1307–1309](1307/) — A 1900 two-flat, with reroofing permitted in 2024.
 - [1315](1315/) — A 1900 single-family house, with stair work permitted in 2012.

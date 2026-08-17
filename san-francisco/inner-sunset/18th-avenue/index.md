@@ -9,6 +9,7 @@ The parcels on 18th Avenue documented here so far, from the city's address, asse
 - [1259](1259/) — A 1924-1925 Spanish Colonial Revival, built by Soracco Brothers.
 - [1262](1262/) — A 1907 Shingle, built by William F. Barttrum.
 - [1490–1492](1490/) — A 1926-1927 Mediterranean Revival.
+- [1700](1700/) — A 1950 single-family house, with a bathroom remodel permitted in 2021.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

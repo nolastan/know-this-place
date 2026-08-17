@@ -32,6 +32,7 @@ The spine of Corbett Heights, climbing from Market Street toward Twin Peaks. The
 - [390–392](390/) — A 1906 2-unit tic building, with plumbing work permitted in 2012.
 - [401–421](401/) — A 1954 10-unit apartment building, with reroofing permitted in 2014.
 - [423–427](423/) — A 1900 5-unit apartment building, with a vertical addition permitted in 2005.
+- [619](619/) — A 1963 single-family house, with deck work permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

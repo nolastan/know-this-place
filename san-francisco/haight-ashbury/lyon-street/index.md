@@ -1,6 +1,11 @@
 # Lyon Street
 
-## Buildings documented so far
+The parcels on Lyon Street documented here so far, from the city's address, assessor and permit records.
 
-- [122 Lyon Street](122/) — A five-apartment 1900 building facing the Panhandle; the best-supported of three Joplin addresses.
-- [112 Lyon Street](112/) — An 1900 house, the guide's alternative Joplin address, with a rear addition tried three times.
+## Documented so far
+
+- [112](112/) — An 1900 house, the guide's alternative Joplin address, with a rear addition tried three times.
+- [122](122/) — A five-apartment 1900 building facing the Panhandle; the best-supported of three Joplin addresses.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

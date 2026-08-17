@@ -38,6 +38,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [363–365](363/) — A 1904 two-flat, with window replacement permitted in 2008.
 - [367–371](367/) — A 1907 6-unit tic building, with a seismic retrofit permitted in 2017.
 - [375](375/) — A 1903 two-flat, with deck work permitted in 2022.
+- [385–389](385/) — A 1951 industrial building, with reroofing permitted in 2001.
 - [455](455/) — A 1956 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2009.
 - [465](465/) — A 1952 5-unit apartment building, with a seismic retrofit permitted in 2015.
 - [469–471](469/) — A 1900 two-flat, with a rear addition permitted in 1992.
@@ -82,6 +83,8 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [862–864](862/) — A 1940 two-flat, with a kitchen and bathroom remodel permitted in 2007.
 - [869–871](869/) — A 1908 two-flat, with a bathroom remodel permitted in 2014.
 - [875](875/) — A 1900 single-family house, with a rear addition permitted in 1990.
+- [971–973](971/) — A 1924 three-flat, with a kitchen remodel permitted in 2016.
+- [985](985/) — A 1928 7-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
