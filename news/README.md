@@ -45,8 +45,11 @@ python3 news/tools/check.py --stats                      # yield so far
 
 Then, for anything worth keeping: write it into `news/items/<feed>/<date>.json`,
 resolve it with the research module's resolver, seed the parcel if it has no
-page yet, and publish it as a timeline entry per [AGENTS.md](AGENTS.md) →
-"Putting it on the page".
+page yet, publish it as a timeline entry per [AGENTS.md](AGENTS.md) → "Putting
+it on the page", and put its card on the homepage's **In the news** grid per
+[AGENTS.md](AGENTS.md) → "The homepage carries the newest six". The grid holds
+the six newest entries on the site, and a story filed on a page nobody has a
+reason to open yet is a story nobody reads.
 
 ```bash
 python3 research/tools/resolve_eas.py apply news/items/hoodline/2026-08-16.json

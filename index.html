@@ -96,6 +96,34 @@
     .place-cards a:hover .card-label { color: var(--accent); }
     .place-cards a:hover .media { border-color: var(--accent); }
 
+    /* In the news. The same card as the one below — same picture, same address
+       in the same place — with the headline and its outlet hung underneath, so
+       the card still answers "which building?" first and the grids read as one
+       family. The headline is italic rather than bold because it is a quotation
+       of somebody else's words. */
+    .news-cards .card-news {
+      margin: 0.2rem 0 0; font-size: 0.95rem; line-height: 1.4;
+    }
+    .news-cards .card-news a:hover { color: var(--accent); }
+    /* The one link on this page that leaves the site says so. Muted and a size
+       down: an affordance at the end of the headline, not a mark on it.
+       An inline-block is a break opportunity all by itself, so a headline that
+       filled its last line left the icon stranded alone on the next one — a
+       non-breaking space does not stop that. .card-ext holds the space and the
+       icon in a nowrap box with no whitespace before it, which leaves the
+       browser nowhere to break but ahead of the last word, so the word and its
+       icon travel together. */
+    .news-cards .card-news .card-ext { white-space: nowrap; }
+    .news-cards .card-news .ic { font-size: 0.85em; color: var(--muted); }
+    .news-cards .card-news a:hover .ic { color: var(--accent); }
+    .news-cards .card-outlet {
+      display: block; margin-top: 0.15rem;
+      font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
+    }
+    /* The address is its own link here, not a span inside one, so the hover
+       rule above it can't reach it. */
+    .news-cards .card-label:hover { color: var(--accent); }
+
     /* Street hubs. One line each now that they carry no description, so the
        chevron between neighborhood and street recedes and the two links read
        as the pair they are. */
@@ -123,6 +151,93 @@
   environment — one page per building, weaving together public records,
   permits, imagery, history, and neighborhood knowledge. Every fact is
   cited.</p>
+
+  <div class="section-head"><span class="ic ic-permit"></span><h2>In the news</h2></div>
+  <!-- Fed by the news module, newest first. Every time a story lands on an
+       address page, its card goes on the top of this list and the oldest card
+       comes off — six, the same as the grid below; see news/AGENTS.md. The
+       headline is quoted verbatim and the outlet is named, which is what makes
+       carrying it a citation rather than a lift. -->
+  <ul class="place-cards news-cards">
+    <li>
+      <a href="/san-francisco/haight-ashbury/divisadero-street/400/">
+        <ktp-streetview location="37.773437,-122.437121" label="400 Divisadero Street">
+          <figure class="media">
+            <div class="media-empty">
+              <span class="ic ic-pin"></span>
+              <span>37.7734, −122.4371</span>
+            </div>
+          </figure>
+        </ktp-streetview>
+      </a>
+      <a class="card-label" href="/san-francisco/haight-ashbury/divisadero-street/400/">400 Divisadero Street</a>
+      <p class="card-news"><a href="https://hoodline.com/2026/08/greystar-takes-over-stalled-400-divisadero-site-203-units-finally-break-ground/"><em>Greystar Takes Over Stalled 400 Divisadero Site, 203 Units Finally Break Ground</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
+    <li>
+      <a href="/san-francisco/lone-mountain/mcallister-street/2740/">
+        <ktp-streetview location="37.775678,-122.457193" label="2740 McAllister Street">
+          <figure class="media">
+            <div class="media-empty">
+              <span class="ic ic-pin"></span>
+              <span>37.7757, −122.4572</span>
+            </div>
+          </figure>
+        </ktp-streetview>
+      </a>
+      <a class="card-label" href="/san-francisco/lone-mountain/mcallister-street/2740/">2740 McAllister Street</a>
+      <p class="card-news"><a href="https://hoodline.com/2026/08/lone-mountain-lot-vacant-since-2014-finally-set-for-three-new-apartments/"><em>Lone Mountain Lot Vacant Since 2014 Finally Set for Three New Apartments</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
+    <li>
+      <a href="/san-francisco/union-square/geary-street/516/">
+        <ktp-streetview location="37.787161,-122.412041" label="516–528 Geary Street">
+          <figure class="media">
+            <div class="media-empty">
+              <span class="ic ic-pin"></span>
+              <span>37.7872, −122.4120</span>
+            </div>
+          </figure>
+        </ktp-streetview>
+      </a>
+      <a class="card-label" href="/san-francisco/union-square/geary-street/516/">516–528 Geary Street</a>
+      <p class="card-news"><a href="https://news.theregistrysf.com/fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price/"><em>Fortress-Tied Owner Sells 91-Unit 520 Geary Apartments in San Francisco for $18.475MM, Roughly Half Its 2018 Price</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">The Registry</span></p></li>
+    <li>
+      <a href="/san-francisco/mission/mission-street/2918/">
+        <ktp-streetview location="37.750313,-122.418539" label="2918–2920 Mission Street">
+          <figure class="media">
+            <div class="media-empty">
+              <span class="ic ic-pin"></span>
+              <span>37.7503, −122.4185</span>
+            </div>
+          </figure>
+        </ktp-streetview>
+      </a>
+      <a class="card-label" href="/san-francisco/mission/mission-street/2918/">2918–2920 Mission Street</a>
+      <p class="card-news"><a href="https://hoodline.com/2026/08/mission-laundromat-site-that-fueled-s-f-housing-wars-finally-rises-as-apartments/"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
+    <li>
+      <a href="/san-francisco/russian-hill/bay-street/300/">
+        <ktp-streetview location="37.805984,-122.412211" label="300–360 Bay Street">
+          <figure class="media">
+            <div class="media-empty">
+              <span class="ic ic-pin"></span>
+              <span>37.8060, −122.4122</span>
+            </div>
+          </figure>
+        </ktp-streetview>
+      </a>
+      <a class="card-label" href="/san-francisco/russian-hill/bay-street/300/">300–360 Bay Street</a>
+      <p class="card-news"><a href="https://sfist.com/2026/08/14/grocery-outlet-opens-in-north-beach-at-former-safeway-site-as-chain-celebrates-80-years/"><em>Grocery Outlet Opens In North Beach at Former Safeway Site as Chain Celebrates 80 Years</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">SFist</span></p></li>
+    <li>
+      <a href="/san-francisco/south-of-market/market-street/934/">
+        <ktp-streetview location="37.783851,-122.408689" label="934–936 Market Street">
+          <figure class="media">
+            <div class="media-empty">
+              <span class="ic ic-pin"></span>
+              <span>37.7839, −122.4087</span>
+            </div>
+          </figure>
+        </ktp-streetview>
+      </a>
+      <a class="card-label" href="/san-francisco/south-of-market/market-street/934/">934–936 Market Street</a>
+      <p class="card-news"><a href="https://missionlocal.org/2026/07/sf-jollibee-returns-market-street/"><em>The line for Jollibee’s re-opening in S.F. started at 7:45 p.m. yesterday</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Mission Local</span></p></li>
+  </ul>
 
   <div class="section-head"><span class="ic ic-pin"></span><h2>Start here</h2></div>
   <p class="map-note">Every dot on the map above is one of these pages. These
@@ -211,6 +326,7 @@
     <li><a href="/san-francisco/mission/">Mission</a> <span aria-hidden="true">›</span> <a href="/san-francisco/mission/mission-street/">Mission Street</a></li>
     <li><a href="/san-francisco/">All neighborhoods</a></li>
   </ul>
+
 </main>
 
 <footer class="site-footer">
