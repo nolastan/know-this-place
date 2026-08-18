@@ -298,6 +298,63 @@ Secondary facts that don't merit a stat tile: icon · key · right-aligned value
 </dl>
 ```
 
+### Historic district — `.panel-district` and `.standing`
+The one panel whose subject is the **district**, not the building. It is the
+only panel that breaks the `.panel > h3` label convention, and deliberately:
+the most interesting thing it has to say is that this address stands inside a
+named historic district, and that fact does not belong in 11px muted caps.
+
+```html
+<section class="panel panel-district">
+  <p class="district-kind">Article 10 city landmark district</p>
+  <h3>Duboce Park</h3>
+  <p class="district-dateline">Significant 1896–1913</p>
+  <ul class="standing">
+    <li><span class="ic ic-check"></span>Listed on the California Register</li>
+    <li class="is-none"><span class="ic ic-none"></span>Not on the National Register</li>
+  </ul>
+  <p class="district-also">Also within Hayes Valley Commercial Historic District</p>
+</section>
+```
+
+**The name is the headline; its type is the eyebrow.** `split_district_name()`
+lifts the trailing type phrase out of the district's name — "Panhandle Historic
+District" becomes `Panhandle` under a `HISTORIC DISTRICT` eyebrow. Trailing
+qualifiers ("Extension", "(Discontiguous)") ride up with the type. Three of the
+113 district names in the data have no type phrase to lift; they keep their
+whole name and take the generic eyebrow.
+
+**A designation outranks the name's own type in the eyebrow.** Being a city
+landmark district is identity, not consequence, so it sits beside the name
+rather than in the list. The eyebrow stays **muted in every state** — it is a
+label, and a label that changes colour competes with the headline directly
+beneath it; the designation is already carried by what the eyebrow *says*. The
+panel spends **no accent colour at all**. The article number rides in line with
+the label: it is a citation and means nothing to a reader on its own.
+
+**The list carries standing only, on a three-step scale.** The icon is the
+step, never the subject — `ic-check` listed, `ic-eligible` eligible-but-not,
+`ic-none` neither — because the sentence already says which register it is.
+Two registers at the same standing merge into one line. Negatives take
+`.is-none`: muted, and one repeated mark, so shape variation stays where it
+earns attention. No rule or extra gap divides the halves; colour and repetition
+do it.
+
+**What belongs in the list, and what does not.** A register is something the
+district is *on or off* — standing. A period of significance is *when the
+district mattered* — it qualifies the name, so it reads as a dateline beneath
+it, never as a row. The survey records a literal `N/A` for undated districts;
+render no dateline rather than "Significant N/A".
+
+**Never say "no local landmark protection" unqualified here.** The row is about
+the district. A building can be an Article 10 landmark in its own right inside
+a district that holds nothing — 573 Castro Street is exactly that — so the
+negative reads `Not a city landmark district`, scoped to the panel's subject.
+
+`also_in_districts` has no home in this layout yet: a second district wants a
+second headline. It trails the panel as `.district-also` until the design has
+an answer.
+
 ### Media — the locator band and the facade card
 An address page **opens with the map**: `<ktp-map>` is the first child of
 `<main>`, a band running the full width of the page frame *above* the `<h1>`.

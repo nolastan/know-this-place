@@ -100,6 +100,8 @@ body {
 .ic-help     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E"); }
 .ic-link     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 3h6v6M10 14 21 3'/%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3C/svg%3E"); }
 .ic-check    { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E"); }
+.ic-eligible { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9' stroke-dasharray='3.53 3.53'/%3E%3C/svg%3E"); }
+.ic-none     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M5.64 5.64 18.36 18.36'/%3E%3C/svg%3E"); }
 .ic-ruler    { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 12 12 2.5 21.5 12 12 21.5z'/%3E%3Cpath d='m7 7.5 2 2M10 5l1.5 1.5M14.5 9.5l2 2M12 12l1.5 1.5'/%3E%3C/svg%3E"); }
 
 /* ============================================================= chrome */
@@ -252,6 +254,72 @@ main > .panel + .panel { margin-top: 1.25rem; }
 .spec .ic { color: var(--muted); font-size: 0.95rem; align-self: center; }
 .spec-k { color: var(--muted); }
 .spec-v { margin-left: auto; text-align: right; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* ============================================================= historic district
+   The one panel whose subject is the district rather than the building, and
+   whose most interesting fact is the plainest: this address stands inside a
+   named historic district. That fact used to be set in label type — small,
+   uppercase, muted — above four undifferentiated rows of paperwork. Here the
+   district's name is the headline; its type, and any local designation, ride
+   above as an eyebrow; the period of significance reads as a dateline beneath
+   it; and the list below carries standing alone. The test for what belongs in
+   the list: a register is something the district is on or off, so it is
+   standing; a period of significance is when the district mattered, so it
+   qualifies the name and sits with it. */
+.panel-district > .district-kind {
+  margin: 0 0 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  /* Muted in every state, designated or not. The eyebrow is a label, and a
+     label that changes weight competes with the headline directly beneath it —
+     the designation is already carried by what the eyebrow says. */
+  color: var(--muted);
+}
+.panel-district > h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.56rem;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  font-weight: 650;
+  text-transform: none;
+  color: var(--ink);
+}
+.panel-district > .district-dateline {
+  margin: 0.3rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  color: var(--muted);
+}
+
+/* Standing — one question, a three-step answer. The icon carries the step
+   (listed / eligible / neither), never the subject, because the label already
+   says which register it is. */
+.standing {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1.35rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+.standing li { display: flex; align-items: flex-start; gap: 0.62rem; color: var(--ink); }
+.standing .ic { flex: 0 0 auto; font-size: 1.05rem; margin-top: 0.2rem; }
+/* Absence is the quiet half of the scale: muted, and one repeated mark rather
+   than a glyph per subject, so shape variation stays where it earns attention.
+   No rule or gap separates the halves — the colour and the repetition do it. */
+.standing .is-none { color: var(--muted); }
+.panel-district > .district-also {
+  margin: 0.9rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
 
 /* ============================================================= enhancement layer
    Custom elements (see shared/site.js) are progressive-enhancement wrappers.
