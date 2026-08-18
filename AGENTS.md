@@ -204,7 +204,10 @@ refresh of stale data. The seeder has no part in this:
    and `python3 scripts/build_map_index.py` (the sitemap and the homepage
    map are both derived indexes; `validate.py` fails until both are current).
 7. **Put the page on the homepage if it is interesting.** The `.place-cards`
-   grid in the root `index.html` holds six featured addresses. A page qualifies
+   grid in the root `index.html` holds six featured addresses. (The grid
+   above it, `.place-cards.news-cards`, is a different list on a different rule
+   — the six newest news entries on the site, maintained by the news module; see
+   [news/AGENTS.md](news/AGENTS.md). Nothing moves between the two.) A page qualifies
    on two things: **a timeline reaching far back** (the earliest `date` across
    `historical_record` and `permits`) and **sources beyond the standard SF gov
    datasets** (any `sources` entry whose `id` is not `sf-*`, not

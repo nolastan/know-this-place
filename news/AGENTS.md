@@ -42,7 +42,9 @@ cursors   which    what the     which      seed the page
 + screen  stories  story says   parcel?    if there isn't
           say an   about the               one; headline,
           address  building                outlet and date
-                                           onto the timeline
+                                           onto the timeline,
+                                           and a card onto
+                                           the homepage
 ```
 
 | Stage | Who | Reads | Writes |
@@ -51,7 +53,7 @@ cursors   which    what the     which      seed the page
 | 2 read | an agent, with `tools/read.py` | the queued articles | nothing yet |
 | 3 extract | an agent | what it read | `items/<feed-id>/<batch>.json` |
 | 4 resolve | `research/tools/resolve_eas.py` | the items file | `resolution` in the same file |
-| 5 publish | an agent, with `scripts/seed_pages.py` | resolved items | `research/manifests/news-<batch>.json`, `san-francisco/**` pages, a PR |
+| 5 publish | an agent, with `scripts/seed_pages.py` | resolved items | `research/manifests/news-<batch>.json`, `san-francisco/**` pages, the homepage's news grid, a PR |
 
 Stages 3–5 use the research module's own findings schema and resolver. That is
 deliberate: a fact from Mission Local and a fact from an 1895 newspaper are the
@@ -319,8 +321,80 @@ Rules that catch people out:
   after it was demolished. That is an `.unknowns` line, not something to
   quietly drop from either side. Keep such a note only while the page still
   shows the claim it contradicts — usually in the headline itself.
+- **The page is only half of it.** The same headline goes on the homepage's
+  news grid in the same PR — see "The homepage carries the newest six" below.
 - `python3 scripts/validate.py` must pass, and `index.html` must match
   `data.json` — the site's contract, unchanged.
+
+## The homepage carries the newest six
+
+A story that reaches a page reaches the homepage too. The root
+[index.html](../index.html) opens on an **In the news** grid — the first
+section under the map, above "Start here" — `.place-cards.news-cards`, holding
+the six most recent news entries on the site, newest first.
+
+**An entry is not published until its card is in.** The pages this module writes
+are mostly pages nobody has a reason to visit yet, on streets the site had never
+heard of that morning; the homepage is the only thing that puts a day's news
+where a reader will actually meet it. A fact filed on a page nobody opens is the
+failure this module exists to avoid, and it does not stop being that failure
+because the fact is on a page rather than in an items file.
+
+The card is the "Start here" card — picture, then address — with two lines hung
+underneath it: the headline, verbatim, linking to the article, and the outlet
+beneath that. The building is still what the card names first; the news is what
+it says about it.
+
+```html
+<li>
+  <a href="/san-francisco/mission/mission-street/2918/">
+    <ktp-streetview location="37.750313,-122.418539" label="2918–2920 Mission Street">
+      <figure class="media">
+        <div class="media-empty">
+          <span class="ic ic-pin"></span>
+          <span>37.7503, −122.4185</span>
+        </div>
+      </figure>
+    </ktp-streetview>
+  </a>
+  <a class="card-label" href="/san-francisco/mission/mission-street/2918/">2918–2920 Mission Street</a>
+  <p class="card-news"><a href="https://hoodline.com/2026/08/…"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
+```
+
+**Copy that `card-ext` wrapper exactly.** The `ic-link` glyph marks the headline
+as the one link on the homepage that leaves the site, and an inline-block is a
+line-break opportunity in its own right — a bare `&nbsp;` does not stop the
+browser stranding the icon alone on a line of its own. The nowrap wrapper, with
+no whitespace ahead of it, is what keeps the icon on the last word.
+
+- **Six, and the newest are the six.** The new card goes on the top and the
+  oldest comes off the bottom. Nothing generates this list — like the featured
+  cards below it, it changes only because an agent changed it, and a run that
+  published an entry and left the grid alone left the job half done.
+- **Order by the entry's date** — the same date that put it on the timeline,
+  which is the event's date and not the date of the run.
+- **One card per page.** A second story on a building that already holds a card
+  replaces that card; it does not earn the building a second one.
+- **The address is the page's, the headline is the outlet's.** `location` is
+  `coordinates` from `data.json` verbatim, the label is the page's address up to
+  the comma (`2918–2920 Mission Street`), and the placeholder coordinates are
+  four decimals with a real minus sign (−), matching the cards below.
+- **Every rule in "Putting it on the page" applies here unchanged.** The
+  headline is quoted verbatim and never edited, the outlet is named, and a
+  headline that names a private individual is declined. A headline that cannot
+  go on a page cannot go on the homepage — there is no lighter bar here because
+  the homepage is the more public of the two.
+- **The `.place-cards` grid below is not this module's.** Featured addresses are
+  chosen on the root [AGENTS.md](../AGENTS.md)'s criteria — an early timeline,
+  sources beyond the city's own — and turn over by hand. Two grids, two rules;
+  never move a card between them, and never drop a featured card to make room
+  for a news one.
+- **A declined or pending item has no card**, the same as it has no entry. The
+  grid is a view of what is on the pages, so anything in it can be checked
+  against the page it names.
+
+`python3 scripts/validate.py` covers the homepage like any other page, so run it
+after editing the grid.
 
 ## Items files
 
@@ -387,6 +461,11 @@ commit message, and leave the module easier to use than you found it.
 Two things need a human: **adding or un-blocking a feed** (it is a relationship
 with a publisher, and `access: needs-human` exists for that), and **anything
 that changes what a page looks like** — that is the root AGENTS.md's territory.
+
+**Keeping the homepage's news grid current is not one of them** — the card's
+shape is settled above, and a run that publishes an entry maintains the grid
+without asking. Changing what that card *is* still needs a human, like any other
+change to how a page looks.
 
 **Seeding a parcel is not one of them.** It was, and the rule cost the module
 its whole point: nearly every address in the news has no page, so a pipeline
