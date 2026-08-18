@@ -1560,36 +1560,171 @@ def glance_panel_html(rec: dict, indent: str) -> str:
             f'{indent}</section>\n')
 
 
-def district_panel_html(rec: dict, indent: str) -> str:
+# The district panel is the one block whose subject is the district and not the
+# building. Its most interesting fact is the plainest — this address stands
+# inside a named historic district — and the old layout set that fact in label
+# type above four undifferentiated rows. These helpers put the name in the
+# headline and reduce the rows to standing: what the district is on, and what
+# it is not.
+
+DISTRICT_KIND = re.compile(
+    r"\s+(Historic|Conservation|Early Residential|Neighborhood Commercial|"
+    r"Industrial|Cultural Landscape)\s+District"
+    r"(\s+Extension|\s+Addition|\s+\(Discontiguous\))?$")
+
+
+def split_district_name(name: str) -> tuple:
+    """("Panhandle Historic District") -> ("Panhandle", "Historic district").
+
+    The type moves to the panel's eyebrow so the headline can be the district
+    itself. 110 of the 113 district names in the data end in a type phrase;
+    the three that don't — "Auxiliary Water Supply System (Discontiguous)" and
+    its like — keep their whole name and take the generic eyebrow, which is
+    what the fallback is for. Trailing qualifiers ("Extension",
+    "(Discontiguous)") ride up with the type rather than dangling off a
+    headline that no longer says what they qualify.
+    """
+    m = DISTRICT_KIND.search(name)
+    if not m:
+        return name, "Historic district"
+    kind = f"{m.group(1)} district{m.group(2) or ''}".strip()
+    return name[:m.start()].strip(), kind.capitalize()
+
+
+def district_eyebrow(d: dict, kind: str) -> str:
+    """The panel's eyebrow label.
+
+    A designation outranks the name's own type, because being a city landmark
+    district is the strongest thing the panel has to say and it is identity,
+    not consequence — so it belongs beside the name rather than in the list
+    below. The article number rides in line with the label: it is a citation,
+    and it means nothing to a reader on its own.
+    """
+    a = (d.get("article_10_11_status") or "")
+    if a.startswith("Article 10"):
+        return "Article 10 city landmark district"
+    if a.startswith("Article 11"):
+        return "Article 11 conservation district"
+    return kind
+
+
+# listed > eligible > neither. The icon carries the step, never the subject:
+# the label already says which register it is, so a glyph per register would
+# distinguish rows their own words distinguish.
+STANDING_ICON = {"listed": "ic-check", "eligible": "ic-eligible", "none": "ic-none"}
+STANDING_RANK = {"listed": 0, "eligible": 1, "none": 2}
+STANDING_PHRASE = {"listed": "Listed on the {}",
+                   "eligible": "Eligible for the {}",
+                   "none": "Not on the {}"}
+
+
+def standing_tier(status: str) -> str:
+    s = (status or "").strip().lower()
+    if s == "listed":
+        return "listed"
+    if s.startswith("eligible"):
+        return "eligible"
+    return "none"
+
+
+def standing_rows(d: dict) -> list:
+    """(tier, sentence) per line, affirmative first."""
+    rows = []
+    ca, nr = d.get("california_register_status"), d.get("national_register_status")
+    ca_t = standing_tier(ca) if ca else None
+    nr_t = standing_tier(nr) if nr else None
+    # Two registers at the same standing are one fact, not two rows.
+    if ca_t and ca_t == nr_t:
+        rows.append((ca_t, STANDING_PHRASE[ca_t].format(
+            "California and National Registers")))
+    else:
+        if ca_t:
+            rows.append((ca_t, STANDING_PHRASE[ca_t].format("California Register")))
+        if nr_t:
+            rows.append((nr_t, STANDING_PHRASE[nr_t].format("National Register")))
+    # Local designation appears here only in the negative: when the district
+    # carries it, the eyebrow has already said so. "Not a city landmark
+    # district" and not "no local landmark protection" — the row is about the
+    # district, and a building can be an Article 10 landmark in its own right
+    # inside a district that holds nothing (573 Castro Street is exactly that),
+    # so an unqualified line would contradict the tag beside it.
+    a = d.get("article_10_11_status") or ""
+    if a and not a.startswith(("Article 10", "Article 11")):
+        rows.append(("none", "Not a city landmark district"))
+    rows.sort(key=lambda r: STANDING_RANK[r[0]])
+    return rows
+
+
+LEGACY_REGISTER = {"listed": "Listed", "eligible": "Eligible (not listed)",
+                   "no": "Not listed", "not listed": "Not listed"}
+
+
+def district_record(rec: dict) -> dict:
+    """The district in the shape the panel renders, whichever shape it is stored in.
+
+    Pages seeded from DataSF carry `california_register_status` and
+    `article_10_11_status`. Sixteen pages written by hand before the seeder
+    existed carry `california_register: "Eligible"` and `article_10: "Listed"`
+    instead. Normalising here keeps one renderer for both rather than two
+    renderers that will drift.
+
+    Returns {} when the record names no district: eight parcels carry a
+    `historic_district` block whose only job is to record that a spatial query
+    found nothing, and those pages must render no panel at all.
+    """
     d = district_of(rec)
+    if not d or not d.get("name"):
+        return {}
+    if d.get("california_register_status") or d.get("national_register_status"):
+        return d
+    out = dict(d)
+    for legacy, key in (("california_register", "california_register_status"),
+                        ("national_register", "national_register_status")):
+        raw = str(d.get(legacy) or "").strip()
+        if raw:
+            out[key] = LEGACY_REGISTER.get(raw.lower(), raw)
+    if str(d.get("article_10") or "").strip().lower() == "listed":
+        out["article_10_11_status"] = "Article 10 historic district"
+    elif str(d.get("article_11") or "").strip().lower() == "listed":
+        out["article_10_11_status"] = "Article 11 conservation district"
+    elif ("article_10" in d or "article_11" in d
+          or "article_10_local_landmark_district" in d):
+        # Only claim the absence where the record actually speaks to it.
+        out["article_10_11_status"] = "No local landmark protection"
+    return out
+
+
+def district_panel_html(rec: dict, indent: str) -> str:
+    d = district_record(rec)
     if not d:
         return ""
-    rows = []
-    if d.get("california_register_status"):
-        rows.append(("ic-permit", "California Register", d["california_register_status"]))
-    if d.get("national_register_status"):
-        rows.append(("ic-check", "National Register", d["national_register_status"]))
-    if d.get("article_10_11_status"):
-        # "District protection", not "Local landmark protection": every value
-        # in this panel describes the district named in its heading, and a
-        # building can be a city landmark inside a district that carries no
-        # local protection of its own. The unqualified label answered a
-        # question the row isn't about, and answered it wrong.
-        rows.append(("ic-plan", "District protection",
-                     "None" if d["article_10_11_status"].startswith("No local")
-                     else d["article_10_11_status"]))
-    if d.get("period_of_significance"):
-        rows.append(("ic-calendar", "Period of significance", d["period_of_significance"]))
+    name, kind = split_district_name(d["name"])
+    out = [f'{indent}<section class="panel panel-district">',
+           f'{indent}  <p class="district-kind">'
+           f'{esc(district_eyebrow(d, kind))}</p>',
+           f'{indent}  <h3>{esc(name)}</h3>']
+    # The survey records a literal "N/A" for districts it never dated. A
+    # dateline reading "Significant N/A" is worse than no dateline.
+    pos = (d.get("period_of_significance") or "").strip()
+    if pos and pos.upper() != "N/A":
+        out.append(f'{indent}  <p class="district-dateline">'
+                   f'Significant {esc(pos)}</p>')
+    rows = standing_rows(d)
+    if rows:
+        out.append(f'{indent}  <ul class="standing">')
+        for tier, sentence in rows:
+            cls = ' class="is-none"' if tier == "none" else ""
+            out.append(f'{indent}    <li{cls}><span class="ic '
+                       f'{STANDING_ICON[tier]}"></span>{esc(sentence)}</li>')
+        out.append(f'{indent}  </ul>')
+    # Overlapping districts have no home in the headline — a second district
+    # would want a second name at the same size. They trail the panel as a
+    # note until the layout has an answer for them.
     for other in rec.get("also_in_districts", []):
-        rows.append(("ic-pin", "Also within", other["name"]))
-    body = "\n".join(
-        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
-        f'<span class="spec-k">{esc(k)}</span>'
-        f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
-    return (f'{indent}<section class="panel">\n'
-            f'{indent}  <h3>{esc(d["name"])}</h3>\n'
-            f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
-            f'{indent}</section>\n')
+        out.append(f'{indent}  <p class="district-also">Also within '
+                   f'{esc(other["name"])}</p>')
+    out.append(f'{indent}</section>')
+    return "\n".join(out) + "\n"
 
 
 def unknowns_html(rec: dict) -> str:
