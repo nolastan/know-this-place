@@ -400,10 +400,20 @@ async function init() {
   const map = new mapboxgl.Map({
     container: shell,
     style: styleFor(dark.matches),
-    center: [-122.4194, 37.7749],
-    zoom: 11.5,
+    /* Centered north and west of the city's centroid. North because at this
+       zoom a centroid framing crops the waterfront, and Fisherman's Wharf is
+       the landmark that tells a stranger which city they're looking at; west
+       so the frame still reaches the Great Highway and the Outer Sunset
+       avenues. The north bound sits out in the bay so that framing isn't
+       clamped back down. Both offsets are pushed no further than they have to
+       be: every notch north drops another slice of the Bayview dots below the
+       fold, and each notch west trades the Bayview's eastern edge for beach.
+       The zoom is capped by the same tension — past ~13 the frame can hold the
+       Outer Sunset or the Mission's dot cluster, but not both. */
+    center: [-122.4520, 37.7820],
+    zoom: 12.75,
     minZoom: 10,
-    maxBounds: [[-122.60, 37.68], [-122.30, 37.85]],   // San Francisco
+    maxBounds: [[-122.60, 37.68], [-122.30, 37.88]],   // San Francisco
   });
   map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
   map.on("style.load", () => addAddresses(map));
