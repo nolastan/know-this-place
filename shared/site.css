@@ -178,7 +178,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
 
 /* tag chips */
 .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
-.tag { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.28rem 0.65rem; border: 1px solid var(--rule); border-radius: 999px; font-family: var(--sans); font-size: 0.82rem; color: var(--ink); background: var(--panel); }
+.tag { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0 0.25rem 0 0; font-family: var(--sans); font-size: 0.82rem; color: var(--ink); }
 .tag .ic { color: var(--accent); font-size: 0.95rem; }
 
 /* ============================================================= stat band */
@@ -356,7 +356,7 @@ ktp-figure { position: relative; }
    paints above the map (an unpositioned box's shadow would fall behind the
    map's image), and shadowed so it reads as a card set on top of it. Same
    margin reset, so the card fills its hero column. */
-.media-lift { position: relative; z-index: 1; margin: -6rem 0 0; box-shadow: var(--lift); }
+.media-lift { position: relative; z-index: 1; margin: -6rem 0.6rem 0 0; box-shadow: var(--lift); }
 @media (max-width: 720px) {
   /* Stacked: nothing overlaps, and the band crops to an ordinary frame —
      `object-fit: cover` keeps the pin centred, so the same image serves both. */
