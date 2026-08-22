@@ -49,9 +49,10 @@ there, things you *read* live here.
 
 ## Leads — candidates, not yet verified
 
-Starting points for a prospecting run ([RUNBOOK.md](RUNBOOK.md#a-prospecting-run)). Availability,
-licensing, format and whether a lead carries street numbers at all are exactly
-what a prospecting pass is for.
+Starting points for a prospecting run — see
+[RUNBOOK.md](RUNBOOK.md#a-prospecting-run). Availability, licensing, format and
+whether a lead carries street numbers at all are exactly what a prospecting run
+is for.
 
 The **triaged** column says where a lead stands, in three states:
 
