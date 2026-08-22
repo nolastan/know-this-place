@@ -1574,3 +1574,21 @@ has no appendix inventory table. What it carries at address level is:
   Mission Dolores Neighborhood Survey* of 2009 with the DPR 523A/523B forms
   behind it. The Japantown and other adopted statements on the same SF Planning
   page are untouched.)
+- **Verified:** 2026-08-21 (Market & Octavia, publish loop closed — bookkeeping
+  only, no page edited. PR #114 put the batch on the pages but left
+  `findings/sf-context-statements/market-octavia-hcs.json` at `stage: resolved`
+  with no `publish` block on any of its 496 entries, so the next publisher would
+  have re-published all 425 resolved findings onto the 260 pages that already
+  carry them. Every resolved finding was re-checked against its page's
+  `data.json` before being marked, and **425 of 425 are on the page**: 213 match
+  their record text outright, 77 are carried by the Appendix A line in
+  `historic_survey` and 135 by the Appendix D line — the reworded ones are the
+  publisher re-expressing the fact, which is the contract, not a miss. The file
+  is now `stage: published`: **425 `published`** against PR #114 and **71
+  `declined`** — 39 findings on the condominium parcels listed above, 31 at
+  numbers EAS has never carried, and 1 the second 134 10th Street appendix row
+  on block 3510 lot 007. Nothing in the document is outstanding. **The lesson
+  for the next publisher: mark the findings file in the same PR that edits the
+  pages.** `check.py --stats` is where this shows up — a `resolved` column above
+  the `published` column is either work to do or a loop someone forgot to
+  close, and telling the two apart costs a full verification pass.)
