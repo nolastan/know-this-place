@@ -6,9 +6,9 @@ Parcel lists produced by research, consumed by the website's seeder:
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<file>.json
 ```
 
-A manifest is what a [publisher](../roles/publisher.md) writes when a source
-names a lot of buildings that have no pages yet — an inventory in a context
-statement, a survey's list of contributors to a district. The seeder joins the
+A manifest is what a run writes at [publish time](../RUNBOOK.md#4-publish-it)
+when a source names a lot of buildings that have no pages yet — an inventory in
+a context statement, a survey's list of contributors to a district. The seeder joins the
 city datasets onto the parcels named here and writes each page's first draft;
 the facts *from the source* are then hand-added to those pages, because the
 seeder never invents prose and knows nothing about the source.

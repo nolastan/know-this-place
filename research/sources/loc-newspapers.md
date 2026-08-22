@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `loc-newspapers`.
 >
-> - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** mining
+> - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** 10 batches / 58,620 pages scanned of a much larger archive.
 > - **Local corpus:** `research/corpora/loc-newspapers/` (`state.json` records batches pulled)

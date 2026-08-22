@@ -252,9 +252,10 @@ refresh of stale data. The seeder has no part in this:
 ## Research lives in `research/`
 
 Finding new address-level material — newspaper archives, books, newsletters,
-survey PDFs, city directories — is a separate discipline with its own rulebook,
-pipeline and register: **[research/AGENTS.md](research/AGENTS.md)**. Read it
-before you go looking for sources, and read it before you mine one.
+survey PDFs, city directories — is a separate discipline with its own rulebook
+and register: **[research/AGENTS.md](research/AGENTS.md)**, with the procedure
+in [research/RUNBOOK.md](research/RUNBOOK.md). Read them before you go looking
+for sources, and before you mine one.
 
 Two things from it bind you even when you are only editing a page:
 

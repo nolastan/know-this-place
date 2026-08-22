@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `<source-id>`.
 >
-> - **Kind:** <newspaper OCR | book | journal | newsletter | PDF report | directory | photo archive> · **Tier:** <secondary> · **Status:** <lead|acquiring|mining|mined|blocked|retired>
+> - **Kind:** <newspaper OCR | book | journal | newsletter | PDF report | directory | photo archive> · **Tier:** <secondary> · **Status:** <open|done|blocked|reference>
 > - **Search-invisibility:** <high|medium|low> — see the register for what that rates.
 > - **Coverage:** <one honest phrase, in counts>
 > - **Local corpus:** `research/corpora/<source-id>/`
@@ -32,5 +32,6 @@
   worked example.
 - **Coverage:** What has been read, in counts, and what has not — named
   precisely enough that the next pass resumes instead of restarting.
-- **Verified:** YYYY-MM-DD (what was checked, and the yield: read N, found M,
-  resolved K)
+- **Verified:** YYYY-MM-DD (what was checked, the yield — read N, found M,
+  resolved K, published J — and **what the run learned**. A trap you hit and
+  didn't write down gets paid for again by the next run.)

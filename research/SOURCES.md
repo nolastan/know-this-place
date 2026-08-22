@@ -12,15 +12,15 @@ the coverage log. Sources are cited on pages by the `id` in the first column;
 
 | id | what | kind | search-invisibility | status | coverage so far |
 |---|---|---|---|---|---|
-| [`argonaut-sfhs`](sources/argonaut-sfhs.md) | *The Argonaut*, journal of the SF Historical Society | journal | high | mining | 7 volumes read in full |
-| [`celebrity-residence-guides`](sources/celebrity-residence-guides.md) | Notable-resident guides | web guides | low | mined | 26 addresses, 25 resolved |
-| [`corbett-heights-neighbors`](sources/corbett-heights-neighbors.md) | Corbett Heights Neighbors newsletter | newsletter | high | mining | page 1 of 5 (10 of 48 issues) |
-| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | mining | harvested in full: 59,601 records; SFP 23 read whole, resolved and published (1,165 records → 1,122 findings → 923 on a parcel → 919 on 882 pages), 43 collections to go |
-| [`hittell-1878`](sources/hittell-1878.md) | Hittell, *A History of the City of San Francisco* (1878) | book | medium | mining | §12–14, 24, 27, 231 |
-| [`loc-newspapers`](sources/loc-newspapers.md) | Chronicling America OCR — *Morning Call*, *SF Call* | newspaper OCR | high | mining | 58,620 pages → 8,437 mentions, 2,025 addresses |
+| [`argonaut-sfhs`](sources/argonaut-sfhs.md) | *The Argonaut*, journal of the SF Historical Society | journal | high | open | 7 volumes read in full |
+| [`celebrity-residence-guides`](sources/celebrity-residence-guides.md) | Notable-resident guides | web guides | low | done | 26 addresses, 25 resolved |
+| [`corbett-heights-neighbors`](sources/corbett-heights-neighbors.md) | Corbett Heights Neighbors newsletter | newsletter | high | open | page 1 of 5 (10 of 48 issues) |
+| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | open | harvested in full: 59,601 records; SFP 23 read whole, resolved and published (1,165 records → 1,122 findings → 923 on a parcel → 919 on 882 pages), 43 collections to go |
+| [`hittell-1878`](sources/hittell-1878.md) | Hittell, *A History of the City of San Francisco* (1878) | book | medium | open | §12–14, 24, 27, 231 |
+| [`loc-newspapers`](sources/loc-newspapers.md) | Chronicling America OCR — *Morning Call*, *SF Call* | newspaper OCR | high | open | 58,620 pages → 8,437 mentions, 2,025 addresses |
 | [`local-news`](sources/local-news.md) | Hoodline, Bay Area Reporter, SF Chronicle | news | low | reference | browsed per address, no corpus pass |
-| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | mining | 16 statements read; ~34 remain (one issue each). The two with findings files are closed out: market-octavia-hcs 425 of 496 published, mission-dolores-hcs 66 of 83 |
-| [`spur-popos-guide`](sources/spur-popos-guide.md) | SPUR, *Secrets of San Francisco* | PDF guide | medium | mined | read in full |
+| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | open | 16 statements read; ~34 remain (one issue each). The two with findings files are closed out: market-octavia-hcs 425 of 496 published, mission-dolores-hcs 66 of 83 |
+| [`spur-popos-guide`](sources/spur-popos-guide.md) | SPUR, *Secrets of San Francisco* | PDF guide | medium | done | read in full |
 
 City APIs and bulk datasets are **not** registered here — they are in
 [../DATA-SOURCES.md](../DATA-SOURCES.md). The split: things you *query* live
@@ -38,29 +38,35 @@ there, things you *read* live here.
     not per-address; a reader would have to know it exists.
   - **low** — already ranking for address queries. Use for verification and
     context; it adds little to the site's reason for existing.
-- **status** — `lead` (not yet acquired) · `acquiring` · `mining` (partly
-  read, more to go) · `mined` (exhausted for now) · `blocked` (needs a human)
-  · `retired` (won't pursue; the dossier says why).
+- **status** — four values, and no more: `open` (being mined, material
+  remains — the dossier's coverage note says what's left) · `done` (exhausted
+  for now) · `blocked` (needs a person; the dossier says what would unblock
+  it) · `reference` (consulted per address for cross-checking, never mined as
+  a corpus). A source that won't be pursued at all is struck through with the
+  reason on the row.
 - **coverage so far** — one honest phrase. Counts, not adjectives. The dossier
   carries the detail.
 
 ## Leads — candidates, not yet verified
 
-Starting points for a [prospector](roles/prospector.md). Availability,
-licensing, format and whether a lead carries street numbers at all are exactly
-what a prospecting pass is for.
+Starting points for a prospecting run — see
+[RUNBOOK.md](RUNBOOK.md#a-prospecting-run). Availability, licensing, format and
+whether a lead carries street numbers at all are exactly what a prospecting run
+is for.
 
-A lead moves through three states, and the **triaged** column says which:
+The **triaged** column says where a lead stands, in three states:
 
 - **blank** — nobody has looked. Everything starts here.
-- **`YYYY-MM-DD hold`** — checked and real: it exists, it names street numbers
-  with dates, and there is a lawful way in. Not yet worth a dossier. The
-  sampled evidence is in [Triage notes](#triage-notes) below.
-- **`YYYY-MM-DD promote`** — moved to the register above with a dossier, a
-  confirmed access path and a `research:acquire` issue. Delete its triage note
-  when you do; the dossier supersedes it.
+- **a date** — checked and real on that date: it exists, it names street
+  numbers with dates, and there is a lawful way in. The sampled evidence is in
+  [Triage notes](#triage-notes) below. Not yet worth a dossier.
 - **struck through** — didn't pan out. Retire it in place with the reason on
   the row, so nobody rediscovers it.
+
+A lead that gets **promoted** stops being a lead: it moves to the register
+above with a dossier and a confirmed access path, and its row and triage note
+are deleted here. Promotion and the first mining batch is a well-sized run —
+see [RUNBOOK.md](RUNBOOK.md#a-prospecting-run).
 
 **Triage is not a dossier.** A triage pass answers four questions — is it real,
 does it give numbers with dates, can we get it lawfully, does it break into
@@ -69,8 +75,7 @@ dossiers before knowing which three are worth mining is the failure this state
 exists to prevent.
 
 Ranked by expected value — search-invisibility × address density × datedness ×
-access, and then by a fifth thing the [prospector](roles/prospector.md)
-playbook's four axes don't capture: **whether the source breaks into finishable
+access, and then by a fifth thing the runbook's four axes don't capture: **whether the source breaks into finishable
 batches.** `sf-context-statements` works as a queue because one statement is one
 issue is one session. A source with no natural batch boundary can be excellent
 and still be unstartable, and the top of this list is where those two things
@@ -78,35 +83,35 @@ line up.
 
 | lead | why it could be good | how to get at it | triaged |
 |---|---|---|---|
-| San Francisco environmental review documents (EIRs, initial studies, negative declarations) | One document per project, most titled by street address, and it hands over the **assessor's block and lot outright** — plus what stood on the site, when it was built and when it came down. The record of what was demolished, which nothing else on this list covers. | Internet Archive collection `sanfranciscopubliclibrary` — 823 items, 1973–2013, published by the SF Planning Dept., open PDFs each with a `_djvu.txt` text layer | 2026-08-21 hold |
-| National Register nomination forms | Per-building PDFs with construction dates, architects and a full narrative. Densely addressed, almost never indexed per address. | NPS map service for the index, `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text` for the PDF | 2026-08-15 hold |
-| SF neighborhood newspapers, 1956–2026 | Fifteen-plus papers covering neighborhoods this project has almost nothing on. Block-level reporting, businesses and institutions at numbered addresses. | Internet Archive collection `sanfrancisconewspapers` — one issue per item, OCR text included | 2026-08-15 hold |
-| HABS/HAER documentation | Measured drawings and a historian's report per building. | LoC collection `historic-american-buildings-landscapes-and-engineering-records`; data pages are text-layer PDFs on `tile.loc.gov` | 2026-08-15 hold |
-| Article 10 landmark designation reports (SF Planning) | One report per city landmark, address-specific, PDF-only — and the index hands over the APN. | DataSF `97yj-54sx` for the index (address + APN + document URL), then the PDF | 2026-08-15 hold |
-| San Francisco City Planning Commission minutes | Every conditional use, variance and discretionary review case, by address, by date, with the decision — and the cross-street bearing ("north line, 112.5 to 137.5 feet north of Haight") that resolves an address the number alone won't. | Internet Archive collection `sanfranciscopubliclibrary`, 109 volumes 1946–1984, `_djvu.txt` on each | 2026-08-21 hold |
-| SF Redevelopment Agency property summaries | A survey form **per parcel** — block, lot, dimensions, improvements, assessed value, condition, and the recommendation to retain, move or demolish. Nothing else on the internet says this about a Western Addition or Yerba Buena address. **Overlaps [`digitalsf`](sources/digitalsf.md)**: same SFH 371 archive, digitized twice — paper forms here, catalogued photographs there. | Internet Archive collection `sanfranciscoredevelopmentagencyrecords`, 106 items, public domain | 2026-08-15 hold |
-| *Architect and Engineer of California* and period trade journals | Building contracts, architects, costs — the pre-DBI permit record. | Internet Archive: `usmodernist-AECA-*` (214 issues) and `buildingengineer*` (35 volumes of *Building & Engineering News*), OCR text included | 2026-08-15 hold |
-| Bay Area Reporter archive | The Castro and the LGBTQ record at address level, digitized and OCR'd. | Internet Archive collection `bayareareporter`, identifiers `BAR_YYYYMMDD` | 2026-08-15 hold |
-| *East/West: The Chinese-American Journal* | Chinatown and the Chinese-American city at address level across 22 years, in a paper no address query will ever surface. | Internet Archive collection `eastwestnews` — 1,125 issues, 1967–1989, OCR text on each | 2026-08-21 hold |
-| Crocker-Langley San Francisco city directories | What occupied a numbered address, year by year, pre-1930. Businesses are fair game where residents are not. | Internet Archive full-text scans, 41 volumes | 2026-08-15 hold |
-| SF Municipal Reports (19th c.) | City construction, schools, firehouses, by address. | Internet Archive, 68 volumes, FY1859–60 through FY1913–14 | 2026-08-15 hold |
-| *Here Today* (1968, rev. 1978) and *Splendid Survivors* (1979) | The two standard building-by-building surveys of San Francisco architecture — the ones the city's own EIRs cite as authority. One entry per address, with dates and architects. | Internet Archive `heretodaysanfran00olms`, `heretodaysanfran0000olms`, `splendidsurvivor00corb` — **lending-restricted, `needs-human`** | 2026-08-21 hold |
-| Journal of Proceedings, Board of Supervisors | Street name changes and acceptances, and assessment-appeal lines that put a **named firm** at a numbered address on a dated day. | Internet Archive collection `sanfranciscopubliclibrary`, 157 volumes 1906–1999 | 2026-08-21 hold |
-| Western Neighborhoods Project *Outside Lands* magazine | The west side, per building, by local researchers. | outsidelands.org/publications/ — 36 PDFs; plain fetches are refused, a browser-context fetch works | 2026-08-15 hold |
-| OpenSFHistory photo captions | Captions frequently name a street number and a date. Link/cite only — see `historical-imagery` in DATA-SOURCES.md. | opensfhistory.org; credit line `OpenSFHistory/<file number>` | 2026-08-15 hold |
-| SFMTA Photo Archive | Muni photography 1903–1978, 95% digitized, captioned with location and date. | sfmta.photoshelter.com — copies free on request for non-commercial use; not bulk-accessible | 2026-08-15 hold |
-| San Francisco block books (1894–1909) | Block and lot geometry with lot dimensions — a **resolver aid** for pre-1906 addresses, not a source of facts. | Internet Archive, 12 volumes. Map plates: the OCR is noise, and owner names are barred by the privacy limits | 2026-08-15 hold |
-| Sanborn fire insurance maps | Building footprint, material, use and street number, by block, across decades. Not text-searchable anywhere. | LoC Sanborn collection, 40 SF volumes 1886–1950s. Images only — no OCR to mine | 2026-08-15 hold |
-| Pacific Coast Architecture Database (PCAD) | Per-building records: address, construction and demolition dates, architect, contractor, sourced narrative. | pcad.lib.washington.edu — but see the note: it ranks **first** for address queries, so it is a cross-check, not a target | 2026-08-15 hold |
-| California Digital Newspaper Collection (CDNC) | Holds *Daily Alta California* 1849–1891, filling the whole pre-1890 gap `loc-newspapers` leaves. | **Blocked** — the search endpoint sits behind a Cloudflare challenge | 2026-08-15 hold |
-| ~~McCord's Edwards Abstract from Records (1900–1931)~~ | ~~Abstracts of recorded property transfers, parcel by parcel.~~ | **Retired** — the entries are metes-and-bounds with no street number (`N Haight 131-6 W Gough W 27-6 x N 20`), the parties are individuals and barred by the privacy limits, and the OCR of the tabular pages is unusable. The only numbered addresses in a sampled 9 MB volume are the abstract company's own offices at 318 Pine and 210 Montgomery. | 2026-08-21 retire |
-| ~~*Tenant Times* (SF Tenants Union, 1979–1996)~~ | ~~Buildings named in eviction and rent-control coverage.~~ | **Retired** — 40 issues on the Internet Archive (`tenanttimes`); a sampled 1981 issue carries **no numbered street address at all**, and what the paper is about is the people in the buildings, which the privacy limits bar. | 2026-08-21 retire |
-| ~~SF Weekly archive~~ | ~~Alt-weekly coverage and listings at venue addresses.~~ | **Retired** — 451 issues on the Internet Archive (`sfweeklyarchive`), but the run starts in 2013 and SF Weekly is fully indexed on the open web. Low search-invisibility over a period the site can source elsewhere. | 2026-08-21 retire |
-| ~~Calisphere~~ | ~~Statewide aggregator over 20+ institutions holding SF material.~~ | **Retired as a target, keep as a prospecting tool** — its metadata is item-level and carries no street numbers; four numbered-address queries returned zero hits each. Use it to find which institution holds what, then go there. | 2026-08-15 retire |
-| ~~Online Archive of California~~ | ~~Finding aids to SF archival collections.~~ | **Retired as a target, keep as a prospecting tool** — finding aids describe collections by the box and the cubic foot, not by address. Useful for locating a physical collection; acting on one is a library visit, so `needs-human`. | 2026-08-15 retire |
-| ~~Institutional centennial histories (churches, schools, clubs, unions)~~ | ~~One building, deeply documented, usually a single scanned booklet.~~ | **Retired as a lead** — this is a category, not a source, and nothing about it can be checked until a specific booklet exists. Register individual titles as they turn up. | 2026-08-15 retire |
-| ~~University theses on SF neighborhoods~~ | ~~Deep research on one district, often with building-level detail.~~ | **Retired for the same reason** — a category, not a source. eScholarship and the USF repository are real and open, but a thesis becomes a lead when a specific one is found to carry numbered addresses, not before. | 2026-08-15 retire |
-| ~~California Register nomination forms~~ | ~~Per-building PDFs, state-level.~~ | **Folded into the National Register row** — OHP's Built Environment Resource Directory is a status index, not a document archive; the nomination text it points at is the federal one. | 2026-08-15 retire |
+| San Francisco environmental review documents (EIRs, initial studies, negative declarations) | One document per project, most titled by street address, and it hands over the **assessor's block and lot outright** — plus what stood on the site, when it was built and when it came down. The record of what was demolished, which nothing else on this list covers. | Internet Archive collection `sanfranciscopubliclibrary` — 823 items, 1973–2013, published by the SF Planning Dept., open PDFs each with a `_djvu.txt` text layer | 2026-08-21 |
+| National Register nomination forms | Per-building PDFs with construction dates, architects and a full narrative. Densely addressed, almost never indexed per address. | NPS map service for the index, `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text` for the PDF | 2026-08-15 |
+| SF neighborhood newspapers, 1956–2026 | Fifteen-plus papers covering neighborhoods this project has almost nothing on. Block-level reporting, businesses and institutions at numbered addresses. | Internet Archive collection `sanfrancisconewspapers` — one issue per item, OCR text included | 2026-08-15 |
+| HABS/HAER documentation | Measured drawings and a historian's report per building. | LoC collection `historic-american-buildings-landscapes-and-engineering-records`; data pages are text-layer PDFs on `tile.loc.gov` | 2026-08-15 |
+| Article 10 landmark designation reports (SF Planning) | One report per city landmark, address-specific, PDF-only — and the index hands over the APN. | DataSF `97yj-54sx` for the index (address + APN + document URL), then the PDF | 2026-08-15 |
+| San Francisco City Planning Commission minutes | Every conditional use, variance and discretionary review case, by address, by date, with the decision — and the cross-street bearing ("north line, 112.5 to 137.5 feet north of Haight") that resolves an address the number alone won't. | Internet Archive collection `sanfranciscopubliclibrary`, 109 volumes 1946–1984, `_djvu.txt` on each | 2026-08-21 |
+| SF Redevelopment Agency property summaries | A survey form **per parcel** — block, lot, dimensions, improvements, assessed value, condition, and the recommendation to retain, move or demolish. Nothing else on the internet says this about a Western Addition or Yerba Buena address. **Overlaps [`digitalsf`](sources/digitalsf.md)**: same SFH 371 archive, digitized twice — paper forms here, catalogued photographs there. | Internet Archive collection `sanfranciscoredevelopmentagencyrecords`, 106 items, public domain | 2026-08-15 |
+| *Architect and Engineer of California* and period trade journals | Building contracts, architects, costs — the pre-DBI permit record. | Internet Archive: `usmodernist-AECA-*` (214 issues) and `buildingengineer*` (35 volumes of *Building & Engineering News*), OCR text included | 2026-08-15 |
+| Bay Area Reporter archive | The Castro and the LGBTQ record at address level, digitized and OCR'd. | Internet Archive collection `bayareareporter`, identifiers `BAR_YYYYMMDD` | 2026-08-15 |
+| *East/West: The Chinese-American Journal* | Chinatown and the Chinese-American city at address level across 22 years, in a paper no address query will ever surface. | Internet Archive collection `eastwestnews` — 1,125 issues, 1967–1989, OCR text on each | 2026-08-21 |
+| Crocker-Langley San Francisco city directories | What occupied a numbered address, year by year, pre-1930. Businesses are fair game where residents are not. | Internet Archive full-text scans, 41 volumes | 2026-08-15 |
+| SF Municipal Reports (19th c.) | City construction, schools, firehouses, by address. | Internet Archive, 68 volumes, FY1859–60 through FY1913–14 | 2026-08-15 |
+| *Here Today* (1968, rev. 1978) and *Splendid Survivors* (1979) | The two standard building-by-building surveys of San Francisco architecture — the ones the city's own EIRs cite as authority. One entry per address, with dates and architects. | Internet Archive `heretodaysanfran00olms`, `heretodaysanfran0000olms`, `splendidsurvivor00corb` — **lending-restricted, `needs-human`** | 2026-08-21 |
+| Journal of Proceedings, Board of Supervisors | Street name changes and acceptances, and assessment-appeal lines that put a **named firm** at a numbered address on a dated day. | Internet Archive collection `sanfranciscopubliclibrary`, 157 volumes 1906–1999 | 2026-08-21 |
+| Western Neighborhoods Project *Outside Lands* magazine | The west side, per building, by local researchers. | outsidelands.org/publications/ — 36 PDFs; plain fetches are refused, a browser-context fetch works | 2026-08-15 |
+| OpenSFHistory photo captions | Captions frequently name a street number and a date. Link/cite only — see `historical-imagery` in DATA-SOURCES.md. | opensfhistory.org; credit line `OpenSFHistory/<file number>` | 2026-08-15 |
+| SFMTA Photo Archive | Muni photography 1903–1978, 95% digitized, captioned with location and date. | sfmta.photoshelter.com — copies free on request for non-commercial use; not bulk-accessible | 2026-08-15 |
+| San Francisco block books (1894–1909) | Block and lot geometry with lot dimensions — a **resolver aid** for pre-1906 addresses, not a source of facts. | Internet Archive, 12 volumes. Map plates: the OCR is noise, and owner names are barred by the privacy limits | 2026-08-15 |
+| Sanborn fire insurance maps | Building footprint, material, use and street number, by block, across decades. Not text-searchable anywhere. | LoC Sanborn collection, 40 SF volumes 1886–1950s. Images only — no OCR to mine | 2026-08-15 |
+| Pacific Coast Architecture Database (PCAD) | Per-building records: address, construction and demolition dates, architect, contractor, sourced narrative. | pcad.lib.washington.edu — but see the note: it ranks **first** for address queries, so it is a cross-check, not a target | 2026-08-15 |
+| California Digital Newspaper Collection (CDNC) | Holds *Daily Alta California* 1849–1891, filling the whole pre-1890 gap `loc-newspapers` leaves. | **Blocked** — the search endpoint sits behind a Cloudflare challenge | 2026-08-15 |
+| ~~McCord's Edwards Abstract from Records (1900–1931)~~ | ~~Abstracts of recorded property transfers, parcel by parcel.~~ | **Retired** — the entries are metes-and-bounds with no street number (`N Haight 131-6 W Gough W 27-6 x N 20`), the parties are individuals and barred by the privacy limits, and the OCR of the tabular pages is unusable. The only numbered addresses in a sampled 9 MB volume are the abstract company's own offices at 318 Pine and 210 Montgomery. | ~~2026-08-21~~ |
+| ~~*Tenant Times* (SF Tenants Union, 1979–1996)~~ | ~~Buildings named in eviction and rent-control coverage.~~ | **Retired** — 40 issues on the Internet Archive (`tenanttimes`); a sampled 1981 issue carries **no numbered street address at all**, and what the paper is about is the people in the buildings, which the privacy limits bar. | ~~2026-08-21~~ |
+| ~~SF Weekly archive~~ | ~~Alt-weekly coverage and listings at venue addresses.~~ | **Retired** — 451 issues on the Internet Archive (`sfweeklyarchive`), but the run starts in 2013 and SF Weekly is fully indexed on the open web. Low search-invisibility over a period the site can source elsewhere. | ~~2026-08-21~~ |
+| ~~Calisphere~~ | ~~Statewide aggregator over 20+ institutions holding SF material.~~ | **Retired as a target, keep as a prospecting tool** — its metadata is item-level and carries no street numbers; four numbered-address queries returned zero hits each. Use it to find which institution holds what, then go there. | ~~2026-08-15~~ |
+| ~~Online Archive of California~~ | ~~Finding aids to SF archival collections.~~ | **Retired as a target, keep as a prospecting tool** — finding aids describe collections by the box and the cubic foot, not by address. Useful for locating a physical collection; acting on one is a library visit, so `needs-human`. | ~~2026-08-15~~ |
+| ~~Institutional centennial histories (churches, schools, clubs, unions)~~ | ~~One building, deeply documented, usually a single scanned booklet.~~ | **Retired as a lead** — this is a category, not a source, and nothing about it can be checked until a specific booklet exists. Register individual titles as they turn up. | ~~2026-08-15~~ |
+| ~~University theses on SF neighborhoods~~ | ~~Deep research on one district, often with building-level detail.~~ | **Retired for the same reason** — a category, not a source. eScholarship and the USF repository are real and open, but a thesis becomes a lead when a specific one is found to carry numbered addresses, not before. | ~~2026-08-15~~ |
+| ~~California Register nomination forms~~ | ~~Per-building PDFs, state-level.~~ | **Folded into the National Register row** — OHP's Built Environment Resource Directory is a status index, not a document archive; the nomination text it points at is the federal one. | ~~2026-08-15~~ |
 
 When you add a lead, say what you'd expect to *get* from it, not just that it
 exists. A lead with no plausible address-level payload is noise.
@@ -432,7 +437,8 @@ the people in the buildings. *SF Weekly archive* (451 issues, `sfweeklyarchive`)
 
 ## Adding a source
 
-See [AGENTS.md](AGENTS.md) → "Handoff artifacts" and the
-[prospector](roles/prospector.md) playbook. In short: copy
-[templates/source-dossier.md](templates/source-dossier.md) to
-`sources/<id>.md`, add the row above, and file a `research:acquire` issue.
+See [RUNBOOK.md → A prospecting run](RUNBOOK.md#a-prospecting-run). In short:
+copy [templates/source-dossier.md](templates/source-dossier.md) to
+`sources/<id>.md`, add the row above with status `open`, delete the lead's row
+and triage note — and then keep going and mine the first batch, rather than
+filing an issue and stopping.

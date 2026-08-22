@@ -3,13 +3,49 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-context-statements`.
 >
-> - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** mining
+> - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** 16 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
+
+## Where this source stands
+
+This dossier is long because the source is 50 documents, each with its own
+shape. Read the front matter, this board, and then only the section for the
+document you are about to mine.
+
+| | |
+|---|---|
+| **Read in full** | 16 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 2: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined) and [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published). Both loops closed. |
+| **Remaining** | ~34 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
+| **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
+
+## Traps that apply to every statement
+
+- **The inventory is often not in the statement.** Central SoMa, Central
+  Waterfront, Corbett Heights, Duboce Triangle, Eureka Valley, Inner Sunset,
+  OMI and Mission Dolores all have no appendix inventory table; the addresses
+  are in adoption packets, reprinted earlier surveys, builder tables, figure
+  captions or the narrative. Check what shape the document is *before* planning
+  the read.
+- **The addresses in a table are the survey's, not the city's.** Follow the
+  APN, check both against EAS, and expect retired APNs.
+- **A statement contradicts itself often enough to plan for it.** State the
+  disagreement on the page's `.unknowns`; never adjudicate.
+- **Condominium parcels take out a large slice of any Mission-area
+  inventory** — 31 of the Market & Octavia addresses and 5 of the 18
+  individually eligible Mission Dolores properties.
+- **Drafts and finals coexist and the final can still say DRAFT.** Take the
+  file the adopting body listed.
+- **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
+  REST content URL is built from the page's own `accesskey`. Worked examples
+  throughout the per-document notes below.
+
 
 - **What:** The historic context statements SF Planning has adopted for
   individual neighborhoods and survey areas — consultant reports that set out
@@ -1072,6 +1108,13 @@ has no appendix inventory table. What it carries at address level is:
     statement documents outright.
 - **Citation label:** name the consultant(s), the report and its adoption
   date, and link the SF Planning listing page.
+
+## Verification log
+
+One entry per pass, oldest first. Each says what was read, what it yielded in
+counts, and what it taught — the last of those is the part that matters to the
+next run.
+
 - **Verified:** 2026-08-11 (read all 197 pages; 159 inventory rows plus ~60
   numbered-address mentions in the narrative, resolving to 190 parcels with
   EAS records and a current assessor roll row. Not resolvable, and so not

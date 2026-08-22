@@ -801,7 +801,6 @@ def main(argv: list[str]) -> int:
     out.write_text(json.dumps({
         "source_id": "digitalsf",
         "batch": batch,
-        "stage": "extracted",
         "read_on": read_on,
         "notes": existing.get("notes", ""),
         "coverage": coverage,

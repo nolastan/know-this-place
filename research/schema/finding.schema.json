@@ -2,10 +2,10 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://knowthis.place/research/schema/finding.schema.json",
   "title": "Findings file",
-  "description": "One batch of address-level facts mined from one source. Written by an extractor, completed by a resolver, consumed by a publisher. See research/findings/README.md.",
+  "description": "One batch of address-level facts mined from one source, and the chain of custody for each: where it came from, which parcel it names, and which PR put it on a page. See research/findings/README.md.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["source_id", "batch", "stage", "coverage", "findings"],
+  "required": ["source_id", "batch", "coverage", "findings"],
   "properties": {
     "source_id": {
       "type": "string",
@@ -15,10 +15,6 @@
     "batch": {
       "type": "string",
       "description": "The unit read: a year of a paper, a volume, one report, a block range."
-    },
-    "stage": {
-      "enum": ["extracted", "resolved", "published"],
-      "description": "Furthest stage any entry in this file has reached."
     },
     "read_on": {
       "type": "string",

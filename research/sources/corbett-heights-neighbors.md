@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `corbett-heights-neighbors`.
 >
-> - **Kind:** newsletter archive · **Tier:** secondary · **Status:** mining
+> - **Kind:** newsletter archive · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** Page 1 of 5 combed; pages 2–5 (38 issues) untouched.
 > - **Local corpus:** `research/corpora/corbett-heights-neighbors/`

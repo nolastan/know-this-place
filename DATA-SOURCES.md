@@ -361,6 +361,7 @@ page by the same `id` it always was. The ids already on pages:
 | `argonaut-sfhs` | *The Argonaut*, journal of the SF Historical Society | [research/sources/argonaut-sfhs.md](research/sources/argonaut-sfhs.md) |
 | `celebrity-residence-guides` | Notable-resident guides (tertiary) | [research/sources/celebrity-residence-guides.md](research/sources/celebrity-residence-guides.md) |
 | `corbett-heights-neighbors` | Corbett Heights Neighbors newsletter | [research/sources/corbett-heights-neighbors.md](research/sources/corbett-heights-neighbors.md) |
+| `digitalsf` | DigitalSF, San Francisco Public Library's catalogued digital archive | [research/sources/digitalsf.md](research/sources/digitalsf.md) |
 | `hittell-1878` | Hittell, *History of San Francisco* (1878) | [research/sources/hittell-1878.md](research/sources/hittell-1878.md) |
 | `loc-newspapers` | Chronicling America OCR (Morning Call / SF Call) | [research/sources/loc-newspapers.md](research/sources/loc-newspapers.md) |
 | `local-news` | Neighborhood news outlets | [research/sources/local-news.md](research/sources/local-news.md) |
@@ -391,5 +392,4 @@ open data, properly licensed, or plainly citable public web pages.
 **Anything read rather than queried** — an archive, a book, a run of a
 newspaper, a newsletter, a PDF report — is a research source. Don't add it
 here: register it in [research/SOURCES.md](research/SOURCES.md) and write its
-dossier, per [research/AGENTS.md](research/AGENTS.md) → "Registering a
-source."
+dossier, per [research/RUNBOOK.md](research/RUNBOOK.md) → "A prospecting run."

@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `celebrity-residence-guides`.
 >
-> - **Kind:** web guides · **Tier:** tertiary · **Status:** mined
+> - **Kind:** web guides · **Tier:** tertiary · **Status:** done
 > - **Search-invisibility:** low — see the register for what that rates.
 > - **Coverage:** The one guide used is exhausted; treat new ones as leads, not finds.
 > - **Local corpus:** —
