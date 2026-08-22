@@ -1770,10 +1770,19 @@ def unknowns_html(rec: dict) -> str:
     conflict = (rec.get("building") or {}).get("completed_conflict")
     if conflict:
         note += f" {conflict}"
+    # `unknowns` is where a run records a disagreement it must not adjudicate —
+    # a source against the assessor, or a source against itself. It is written
+    # into data.json, so it has to render from there; a note that lives only in
+    # the JSON is a fact the page does not state. Both shapes in the repo are
+    # read: a list of sentences, and a dict keyed by a slug.
+    stated = rec.get("unknowns") or []
+    if isinstance(stated, dict):
+        stated = list(stated.values())
+    said = " ".join(str(s).strip() for s in stated if str(s).strip())
     url = feedback_url(page_title(rec), rec["path"])
     return ('  <div class="unknowns">\n'
             '    <span class="ic ic-help"></span>\n'
-            f'    <p>Not yet documented: {listing}.{note}\n'
+            f'    <p>{said + " " if said else ""}Not yet documented: {listing}.{note}\n'
             f'    <a href="{url}">Submit an update</a></p>\n'
             '  </div>\n')
 

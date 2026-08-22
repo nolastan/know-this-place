@@ -151,7 +151,7 @@ python3 research/tools/resolve_eas.py apply  research/findings/<id>/<batch>.json
 ```
 
 It declines rather than guesses: no EAS record, a range now split across
-parcels, a condominium's worth of parcels on one point, or two recorded
+parcels the record does not choose between, a condominium's worth of parcels on one point, or two recorded
 addresses that are both real all come back `unresolved`. **`report` before
 `apply`, and read every conflict it prints** — the tool does the lookups, you do
 the judgement. A street the source spells its own way is mapped onto EAS's
@@ -231,6 +231,13 @@ python3 scripts/validate.py
 The seeder only creates pages that don't exist, and it knows nothing about the
 source — the facts still have to be added to those pages by hand. Seeding is the
 scaffold, not the research.
+
+**Check the neighborhood directory the resolver chose before you seed.** It
+files a new page under the area of the nearest published page, which is right
+where the site has settled a street and wrong where it hasn't: Van Ness Avenue
+had three pages in the whole city, and one corridor came back split across five
+directories. On a street that thin, file on the analysis neighborhood the
+assessor and EAS give the parcel and say so in `resolution.method`.
 
 ### Rules that catch publishers out
 

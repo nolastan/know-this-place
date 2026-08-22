@@ -21,7 +21,9 @@ What it will not do:
 
   * resolve an address with no EAS record (that is the evidence bar in
     research/AGENTS.md, and the miss is the finding);
-  * pick one of several parcels a recorded address range spans today;
+  * pick one of several parcels a recorded address range spans today — unless
+    the record names its own assessor block *and* lot, in which case it takes
+    the parcel the record itself states and says so in the method;
   * touch `date`, `description`, `extra` or anything else the extractor wrote.
 """
 from __future__ import annotations
@@ -708,6 +710,30 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
     return res
 
 
+def recorded_parcels(f: dict) -> list:
+    """The APNs a record names outright, from its own assessor block and lot.
+
+    A survey that prints "647/13, 14" has identified the parcel itself; that is
+    stronger evidence than a street number, and it is the one thing that can
+    choose between the parcels a recorded range spans today without the tool
+    doing any adjudicating of its own. Returns [] when the record names no lot.
+    """
+    extra = f.get("extra") or {}
+    block, lots = extra.get("assessor_block_as_recorded"), extra.get("assessor_lot_as_recorded")
+    if not block or not lots:
+        return []
+    m = re.fullmatch(r"(\d{1,4})([A-Z]?)", str(block).strip().upper())
+    if not m:
+        return []
+    blk = m.group(1).zfill(4) + m.group(2)
+    out = []
+    for lot in re.split(r"[,\s]+", str(lots).strip().upper()):
+        m = re.fullmatch(r"(\d{1,3})([A-Z]?)", lot)
+        if m:
+            out.append(blk + m.group(1).zfill(3) + m.group(2))
+    return out
+
+
 def block_check(city: City, f: dict, parcel: str) -> tuple:
     """(clause, agrees) — the archivist's assessor block against the parcel's."""
     recorded = (f.get("extra") or {}).get("assessor_block_as_recorded")
@@ -746,14 +772,14 @@ def decide(city: City, f: dict, today: str) -> dict:
         bits = []
         if extra.get("assessor_block_as_recorded"):
             bits.append(f"assessor block {extra['assessor_block_as_recorded']}, which places the "
-                        f"photograph on a city block but not on a parcel")
+                        f"record on a city block but not on a parcel")
         if name:
             bits.append(f"the street ({name} {stype or ''})".strip())
         what = f.get("address_as_written")
         return {"status": "unresolved", "checked_on": today,
                 "method": "No street number in the catalogue title or the archivist's address "
                           "note, so there is nothing to look up in sf-eas-addresses.",
-                "note": (f"The record locates the photograph only as \"{what}\""
+                "note": (f"The record locates it only as \"{what}\""
                          + (f" — {'; '.join(bits)}" if bits else "")
                          + ". Kept so the record is not read again; per the evidence bar in "
                            "research/AGENTS.md it cannot become a page.")}
@@ -779,7 +805,11 @@ def decide(city: City, f: dict, today: str) -> dict:
                         "or an archivist's spelling this pass could not match."}
 
     # ---- what the title says ----------------------------------------------- #
-    if number:
+    # A record that states a range states every number in it. Where it also
+    # carries the low number on its own, the range is still what was recorded —
+    # looking up only the low end loses a building whose low number has since
+    # been retired but whose high numbers survive.
+    if number and not recorded_range:
         title_numbers, title_kind = [number], "number"
     else:
         m = re.fullmatch(r"(\d+)([A-Za-z]?)-(\d+)([A-Za-z]?)", recorded_range.strip())
@@ -875,7 +905,7 @@ def decide(city: City, f: dict, today: str) -> dict:
                  f"{', '.join(near[:6])}." if near else
                  " EAS has no address near it on this street either.")
         block = extra.get("assessor_block_as_recorded")
-        blk = (f" The record's assessor block {block} still places the photograph on that "
+        blk = (f" The record's assessor block {block} still places it on that "
                f"city block." if block else "")
         if title["unparcelled"]:
             # The address is in EAS but cannot be joined to one parcel — either
@@ -888,7 +918,7 @@ def decide(city: City, f: dict, today: str) -> dict:
                                "parcel." + "".join(title["notes"]) + spelling),
                     "note": (("The address is a condominium today, and the directory contract in "
                               "the root AGENTS.md defers those: each unit has its own parcel and "
-                              "none of them is the building the photograph shows."
+                              "none of them is the building the record names."
                               if condo else
                               "The address exists but cannot be joined to a parcel, so there is no "
                               "page to put it on. EAS leaves addresses unparcelled for rear units, "
@@ -902,7 +932,7 @@ def decide(city: City, f: dict, today: str) -> dict:
                 "note": ("The address does not exist today, so there is no page it can go on."
                          + where + blk +
                          " Per \"The evidence bar\" in research/AGENTS.md this is a street-hub "
-                         "fact: a dated photograph of a building at a number the city no longer has.")}
+                         "fact: a dated record of a building at a number the city no longer has.")}
 
     if not stype and len(title["types"]) > 1:
         return {"status": "unresolved", "checked_on": today,
@@ -911,14 +941,27 @@ def decide(city: City, f: dict, today: str) -> dict:
                            f"and the record says nothing that chooses between them." + spelling),
                 "note": "Ambiguous street type; a cross street or the assessor block would settle it."}
 
+    named = ""
     if len(title["parcels"]) > 1:
         listed = ", ".join(f"{p} ({', '.join(ns)})" for p, ns in sorted(title["parcels"].items()))
-        return {"status": "unresolved", "checked_on": today,
-                "method": (f"{label} spans more than one parcel in sf-eas-addresses today: "
-                           f"{listed}." + spelling),
-                "note": ("The numbers the record gives are on different parcels now, so the "
-                         "photograph cannot be placed on one page without deciding which — "
-                         "which the record does not say.")}
+        # The record's own assessor lot is allowed to choose here — following the
+        # parcel a survey states is reading the record, not adjudicating it.
+        own = [p for p in recorded_parcels(f) if p in title["parcels"]]
+        if len(set(own)) == 1:
+            keep = own[0]
+            named = (f" The recorded numbers span {len(title['parcels'])} parcels today "
+                     f"({listed}); the record names assessor block "
+                     f"{f['extra']['assessor_block_as_recorded']} lot "
+                     f"{f['extra']['assessor_lot_as_recorded']} itself, which is {keep}, so that "
+                     f"is the parcel taken.")
+            title["parcels"] = {keep: title["parcels"][keep]}
+        else:
+            return {"status": "unresolved", "checked_on": today,
+                    "method": (f"{label} spans more than one parcel in sf-eas-addresses today: "
+                               f"{listed}." + spelling),
+                    "note": ("The numbers the record gives are on different parcels now, so the "
+                             "record cannot be placed on one page without deciding which — "
+                             "which the record does not say.")}
 
     parcel, matched = next(iter(title["parcels"].items()))
     if title_kind == "range":
@@ -933,7 +976,7 @@ def decide(city: City, f: dict, today: str) -> dict:
                      " (neither the record nor EAS gives this street a type)")
     res = place(city, parcel, name, stype, matched, head, today,
                 title["keys"].get(parcel))
-    res["method"] += "".join(title["notes"])
+    res["method"] += named + "".join(title["notes"])
     if title_kind == "range" and (title["misses"] or title["unparcelled"]):
         gone = ", ".join(title["misses"][:6])
         loose = ", ".join(title["unparcelled"][:6])
@@ -951,7 +994,7 @@ def decide(city: City, f: dict, today: str) -> dict:
         res["note"] = ((res.get("note", "") + " ") if res.get("note") else "") + \
             "The record's assessor block contradicts the parcel; both claims are kept."
         res["_set_conflict"] = (
-            f"The catalogue record files this photograph under assessor block "
+            f"The record is filed under assessor block "
             f"{f['extra']['assessor_block_as_recorded']}, but the address it states resolves in "
             f"sf-eas-addresses to parcel {parcel}, on another block. Recorded, not reconciled.")
     return res
@@ -1012,13 +1055,15 @@ def recorded_addresses(f: dict, city: City = None) -> list:
         eas_name, eas_type, _ = city.normalize(name, stype)
         name, stype = eas_name or name, eas_type
     if name:
-        if f.get("street_number"):
-            out.append((name, stype, [f["street_number"]]))
-        elif extra.get("address_range_as_recorded"):
+        # Same precedence as decide(): a recorded range is the whole range, even
+        # when the finding also carries its low number.
+        if extra.get("address_range_as_recorded"):
             m = re.fullmatch(r"(\d+)([A-Za-z]?)-(\d+)([A-Za-z]?)",
                              extra["address_range_as_recorded"].strip())
             if m:
                 out.append((name, stype, expand_range(m.group(1), m.group(3))))
+        elif f.get("street_number"):
+            out.append((name, stype, [f["street_number"]]))
     parsed = parse_address(extra.get("address_note_as_recorded"))
     if parsed:
         numbers = parsed["numbers"]

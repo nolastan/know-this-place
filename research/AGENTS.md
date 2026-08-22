@@ -231,6 +231,32 @@ rather than just accumulate.
   top numbered address in a trade journal is a firm's own office; in Planning
   Commission minutes it is the Commission's own address. The usable material is
   in the long tail.
+- **A recorded range is the whole range.** `resolve_eas.py` used to look up only
+  a finding's `street_number` whenever it had one, ignoring the
+  `address_range_as_recorded` beside it. Every building whose low number has
+  since been retired came back "no EAS record" — 550–590 and 731–799 Van Ness
+  Avenue among them, both extant and both surveyed. The tool now expands the
+  range whenever one is recorded. *If a record states a range, look up every
+  number in it.*
+- **A record that names its own parcel has already done the placing.** Where a
+  range spans several parcels today, the tool declined — correctly, because
+  choosing would be adjudicating. But a survey that prints `647/13, 14` has
+  identified the parcel itself, and following that is reading the record, not
+  deciding for it. `resolve_eas.py` now takes the parcel a finding's
+  `extra.assessor_block_as_recorded` **and** `assessor_lot_as_recorded` name
+  when it is one of the candidates, and says so in the method.
+- **The nearest published page cannot pick the neighbourhood directory on a
+  street that has no pages.** The resolver files a new page under the area of
+  the nearest existing page; on Van Ness Avenue, which had three pages in the
+  whole city, that scattered one corridor across five directories and put 1765
+  California Street in `financial-district`. Where a street is that thin, file
+  on the **analysis neighbourhood** the assessor and EAS give the parcel, and
+  put the reason in `resolution.method`.
+- **A note that only exists in `data.json` is not on the page.** Findings runs
+  have been writing conflicts into an `unknowns` key since Market & Octavia, and
+  `seed_pages.py`'s renderer never read it — the disagreements reached the repo
+  and stopped there. The renderer now states them above the "Not yet
+  documented" line. *When you invent a key, check that something renders it.*
 
 ## Filing work
 

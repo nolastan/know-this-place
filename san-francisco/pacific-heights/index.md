@@ -24,4 +24,5 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Steiner Street](steiner-street/) — The house known as the exterior of the film Mrs. Doubtfire.
 - [Sutter Street](sutter-street/) — 3 buildings, built 1900.
 - [Vallejo Street](vallejo-street/) — 4 buildings, built 1905–1950; 2 in the Pacific Heights Historic District.
+- [Van Ness Avenue](van-ness-avenue/) — 6 buildings, built 1917–1988.
 - [Washington Street](washington-street/) — The Spreckels Mansion, an Article 10 individual landmark.

@@ -108,6 +108,7 @@ Every residential parcel on Fair Oaks Street that the city's address, assessor a
 - [447](447/) — A 1900 single-family house, with deck work permitted in 2011.
 - [451](451/) — A 1900 single-family house, with a bathroom remodel permitted in 2017.
 - [452–454](452/) — A 1900 two-flat, with a rear addition permitted in 2025.
+- [455](455/) — A 1904 church, with a rear addition permitted in 2016.
 - [460–462](460/) — A 1900 three-flat, with deck work permitted in 2025.
 - [463](463/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 1990.
 - [464](464/) — A 1900 single-family house, with reroofing permitted in 1996.
