@@ -78,12 +78,12 @@ shared/
   addresses.geojson           Derived index of every address + its
                               coordinates — the homepage map's dots
 research/
-  AGENTS.md                   Research rulebook: the pipeline and its rules
+  AGENTS.md                   Research rulebook: the run and its rules
+  RUNBOOK.md                  The procedure for a run, step by step
   SOURCES.md                  Register of every source mined, and leads
   sources/<id>.md             One dossier per source: access, cautions,
                               coverage log
-  roles/                      A playbook per specialized job, prospect → audit
-  findings/                   Structured handoffs between research stages
+  findings/                   The chain of custody, one file per batch
   schema/                     The findings JSON schema + a worked example
   manifests/                  Parcel lists produced here, seeded by the script
   tools/check.py              Research consistency checks (stdlib only)
@@ -128,10 +128,11 @@ scripts/
       watch the account's monthly request count as coverage grows
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
-- [ ] Create the research labels the module files issues against: `research`,
-      `research:lead`, `research:acquire`, `research:extract`,
-      `research:resolve`, `research:publish`, `research:audit` (same trap as
-      `page-feedback` — GitHub drops labels that don't exist)
+- [ ] Create the two labels the research module files issues against:
+      `research` and `needs-human` (same trap as `page-feedback` — GitHub
+      silently drops labels that don't exist). Older issues also carry
+      per-stage labels (`research:extract` and friends) from when a stage was
+      the unit of work; the module no longer files them.
 
 ## Seeding a neighborhood
 

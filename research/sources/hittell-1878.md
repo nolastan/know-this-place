@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `hittell-1878`.
 >
-> - **Kind:** book (period history) · **Tier:** secondary · **Status:** mining
+> - **Kind:** book (period history) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** medium — see the register for what that rates.
 > - **Coverage:** Sections consulted are listed below; the book is not fully scanned.
 > - **Local corpus:** `research/corpora/hittell-1878/`

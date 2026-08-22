@@ -9,7 +9,7 @@ Stdlib only. `fetch` fills a resumable cache under `.cache/resolve-eas/` (three
 DataSF datasets, see DATA-SOURCES.md); `report` prints what each finding would
 become and why; `apply` writes the decisions into the findings file.
 
-This is the mechanical half of [roles/resolver.md](../roles/resolver.md) — the
+This is the mechanical half of RUNBOOK.md step 3, "Place it" — the
 EAS join, the parcel confirmation, the lowest-number rule for a parcel that
 spans several street numbers, and the conflict comparison. **It never adjudicates
 a conflict**: where a finding's two recorded addresses land on different parcels
@@ -945,7 +945,7 @@ def decide(city: City, f: dict, today: str) -> dict:
     res["method"] += clause + spelling
     if not agrees and res["status"] == "resolved" and not f.get("conflict"):
         # An address EAS matches exactly, against a block number that says
-        # somewhere else. Per roles/resolver.md a contradiction like this is not
+        # somewhere else. Per RUNBOOK.md a contradiction like this is not
         # a resolution problem: resolve the address, keep both claims, and hand
         # the disagreement to the publisher as a conflict.
         res["note"] = ((res.get("note", "") + " ") if res.get("note") else "") + \
@@ -1115,7 +1115,7 @@ def main() -> int:
         res = decide(city, f, args.on)
         # A contradiction the resolver found rather than inherited — the block
         # the archivist filed the photograph under against the parcel the
-        # address resolves to. roles/resolver.md says record it on the finding.
+        # address resolves to. RUNBOOK.md says record it on the finding.
         if "_set_conflict" in res:
             conflicts[f["id"]] = res.pop("_set_conflict")
         decisions[f["id"]] = res
@@ -1151,8 +1151,6 @@ def main() -> int:
             f["resolution"] = decisions[f["id"]]
             if f["id"] in conflicts and not f.get("conflict"):
                 f["conflict"] = conflicts[f["id"]]
-        if tally["resolved"]:
-            data["stage"] = "resolved"
         args.findings.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                                  encoding="utf-8")
         print(f"wrote {args.findings}")

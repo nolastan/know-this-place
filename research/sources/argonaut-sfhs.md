@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `argonaut-sfhs`.
 >
-> - **Kind:** journal (print, per-article PDFs) · **Tier:** secondary · **Status:** mining
+> - **Kind:** journal (print, per-article PDFs) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** Volumes read are listed below; the run continues.
 > - **Local corpus:** `research/corpora/argonaut-sfhs/`

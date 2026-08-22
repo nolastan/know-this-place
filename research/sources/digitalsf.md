@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `digitalsf`.
 >
-> - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** mining
+> - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** harvested in full — 59,601 unique records. One of 44 collections extracted and resolved: **SFP 23, read whole — 1,165 records, 1,122 findings, 923 resolved to a parcel**.
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
@@ -204,8 +204,10 @@ by decade.
 - **`fuzzy date` means what it says.** A record flagged in `907` is an
   archivist's estimate. Carry the flag through to the finding rather than
   silently promoting it to a firm year.
-- **This overlaps [`sfra-property-summaries`](../SOURCES.md) — check before
-  extracting.** DigitalSF holds 866 San Francisco Redevelopment Agency Records
+- **This overlaps the *SF Redevelopment Agency property summaries* lead — check
+  before extracting.** That lead is in the leads table of
+  [../SOURCES.md](../SOURCES.md); it has no source id yet because it has not
+  been promoted. DigitalSF holds 866 San Francisco Redevelopment Agency Records
   (SFH 371) records in the sample alone, and the same SFH 371 collection is on
   the Internet Archive as `sanfranciscoredevelopmentagencyrecords`. They are two
   digitizations of one archive: DigitalSF has the catalogued photographs, the

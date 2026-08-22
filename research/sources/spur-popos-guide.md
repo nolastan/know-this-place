@@ -3,7 +3,7 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `spur-popos-guide`.
 >
-> - **Kind:** PDF field guide · **Tier:** secondary · **Status:** mined
+> - **Kind:** PDF field guide · **Tier:** secondary · **Status:** done
 > - **Search-invisibility:** medium — see the register for what that rates.
 > - **Coverage:** Read in full for the downtown POPOS pages.
 > - **Local corpus:** `research/corpora/spur-popos-guide/`

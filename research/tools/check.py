@@ -10,7 +10,14 @@ What it checks:
   * every findings file sits under a registered source id and validates against
     research/schema/finding.schema.json;
   * the cross-field rules the schema can't express (a resolved finding needs a
-    parcel and a method; a published one needs to be resolved first).
+    parcel and a method; a published one needs to be resolved first);
+  * the publish loop: once anything in a file is published, every resolved
+    finding in it must carry a publish decision. PR #114 published 425 findings
+    and marked none of them, and nobody could then tell finished work from
+    unstarted work without re-checking all 425 against the pages.
+
+--stats is the module's dashboard. Its `open` column counts resolved findings
+with no publish decision — work already paid for and not yet on a page.
 
 The schema file is the single source of truth for shape — this script reads it
 rather than restating it, so the two can't drift. It implements the subset of
@@ -160,13 +167,11 @@ def check_findings_file(path: Path, schema: dict, ids: set[str]) -> dict | None:
     return data if isinstance(data, dict) else None
 
 
-RANK = {"extracted": 0, "resolved": 1, "published": 2}
-
-
 def check_rules(rel: Path, data: dict) -> None:
     """Cross-field rules the schema can't state."""
     seen: set[str] = set()
-    reached = 0
+    any_published = False
+    unmarked: list[str] = []
     for f in data.get("findings", []):
         if not isinstance(f, dict):
             continue
@@ -181,7 +186,8 @@ def check_rules(rel: Path, data: dict) -> None:
         pub_status = pub.get("status", "pending")
 
         if status == "resolved":
-            reached = max(reached, 1)
+            if not pub.get("status"):
+                unmarked.append(str(fid))
             for key in ("apn", "path", "method"):
                 if not res.get(key):
                     err(str(rel), f"{fid}: resolved findings need resolution.{key}")
@@ -189,16 +195,22 @@ def check_rules(rel: Path, data: dict) -> None:
             err(str(rel), f"{fid}: {status} findings must say why (resolution.note or .method)")
 
         if pub_status == "published":
-            reached = 2
+            any_published = True
             if status != "resolved":
                 err(str(rel), f"{fid}: published but resolution.status is {status!r}")
             if not pub.get("pr"):
                 err(str(rel), f"{fid}: published findings need publish.pr")
 
-    stage = data.get("stage")
-    if stage in RANK and RANK[stage] < reached:
-        err(str(rel), f"stage is {stage!r} but the file contains "
-                      f"{'published' if reached == 2 else 'resolved'} findings")
+    # The publish loop. A file with published entries has been through a
+    # publishing run, so every resolved entry in it owes a decision — published
+    # with its PR, or declined with a reason. Silence here is indistinguishable
+    # from "not done yet", and telling the two apart costs a full re-check.
+    if any_published and unmarked:
+        shown = ", ".join(unmarked[:5]) + (" ..." if len(unmarked) > 5 else "")
+        err(str(rel), f"{len(unmarked)} resolved finding(s) carry no publish "
+                      f"decision in a file that has published entries — mark "
+                      f"each published (with its PR) or declined (with a "
+                      f"reason) in the same commit that edits the pages: {shown}")
 
 
 # --------------------------------------------------------------------------- #
@@ -212,25 +224,41 @@ def stats(files: list[Path]) -> None:
             continue
         s = per.setdefault(data.get("source_id", "?"), dict(
             batches=0, examined=0, found=0, resolved=0, unresolved=0,
-            rejected=0, published=0))
+            rejected=0, published=0, declined=0, open=0))
         s["batches"] += 1
         s["examined"] += (data.get("coverage") or {}).get("examined") or 0
         for f in data.get("findings", []):
             s["found"] += 1
             st = (f.get("resolution") or {}).get("status", "unresolved")
             s[st if st in s else "unresolved"] += 1
-            if (f.get("publish") or {}).get("status") == "published":
+            pub = (f.get("publish") or {}).get("status")
+            if pub == "published":
                 s["published"] += 1
+            elif pub == "declined":
+                s["declined"] += 1
+            elif st == "resolved":
+                s["open"] += 1
 
     if not per:
         print("No findings files yet. research/findings/README.md says how to add one.")
         return
-    head = f"{'source':<30}{'batches':>8}{'read':>10}{'found':>8}{'resolved':>10}{'published':>10}"
+    head = (f"{'source':<30}{'batches':>8}{'read':>10}{'found':>8}"
+            f"{'resolved':>10}{'published':>10}{'open':>7}")
     print(head)
     print("-" * len(head))
     for sid, s in sorted(per.items()):
         print(f"{sid:<30}{s['batches']:>8}{s['examined']:>10}{s['found']:>8}"
-              f"{s['resolved']:>10}{s['published']:>10}")
+              f"{s['resolved']:>10}{s['published']:>10}{s['open']:>7}")
+
+    still_open = sum(s["open"] for s in per.values())
+    print()
+    if still_open:
+        print(f"{still_open} resolved finding(s) are not on a page and not declined.")
+        print("That is the module's to-do list — a publishing run, per "
+              "research/RUNBOOK.md.")
+    else:
+        print("No open publish loops: every resolved finding is published or "
+              "declined.")
 
 
 def main() -> int:
