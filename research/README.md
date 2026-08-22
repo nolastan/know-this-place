@@ -74,6 +74,12 @@ python3 research/tools/check.py          # register ↔ dossiers, findings ↔ s
 python3 research/tools/check.py --stats  # yield so far, by source and stage
 ```
 
+Agents working in Claude Code have a `/research` skill
+([../.claude/skills/research/SKILL.md](../.claude/skills/research/SKILL.md)):
+`/research` on its own picks up the most valuable open work in the module,
+`/research <request>` routes a request to the right stage. It is a door into
+the documents above, not a substitute for them.
+
 Site-side commands a publisher may need (`seed_pages.py seed-list`,
 `build_sitemap.py`, `build_map_index.py`, `validate.py`) are documented in the
 root [README.md](../README.md) and [AGENTS.md](../AGENTS.md).
