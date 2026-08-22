@@ -78,15 +78,20 @@ line up.
 
 | lead | why it could be good | how to get at it | triaged |
 |---|---|---|---|
+| San Francisco environmental review documents (EIRs, initial studies, negative declarations) | One document per project, most titled by street address, and it hands over the **assessor's block and lot outright** — plus what stood on the site, when it was built and when it came down. The record of what was demolished, which nothing else on this list covers. | Internet Archive collection `sanfranciscopubliclibrary` — 823 items, 1973–2013, published by the SF Planning Dept., open PDFs each with a `_djvu.txt` text layer | 2026-08-21 hold |
 | National Register nomination forms | Per-building PDFs with construction dates, architects and a full narrative. Densely addressed, almost never indexed per address. | NPS map service for the index, `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text` for the PDF | 2026-08-15 hold |
 | SF neighborhood newspapers, 1956–2026 | Fifteen-plus papers covering neighborhoods this project has almost nothing on. Block-level reporting, businesses and institutions at numbered addresses. | Internet Archive collection `sanfrancisconewspapers` — one issue per item, OCR text included | 2026-08-15 hold |
 | HABS/HAER documentation | Measured drawings and a historian's report per building. | LoC collection `historic-american-buildings-landscapes-and-engineering-records`; data pages are text-layer PDFs on `tile.loc.gov` | 2026-08-15 hold |
 | Article 10 landmark designation reports (SF Planning) | One report per city landmark, address-specific, PDF-only — and the index hands over the APN. | DataSF `97yj-54sx` for the index (address + APN + document URL), then the PDF | 2026-08-15 hold |
+| San Francisco City Planning Commission minutes | Every conditional use, variance and discretionary review case, by address, by date, with the decision — and the cross-street bearing ("north line, 112.5 to 137.5 feet north of Haight") that resolves an address the number alone won't. | Internet Archive collection `sanfranciscopubliclibrary`, 109 volumes 1946–1984, `_djvu.txt` on each | 2026-08-21 hold |
 | SF Redevelopment Agency property summaries | A survey form **per parcel** — block, lot, dimensions, improvements, assessed value, condition, and the recommendation to retain, move or demolish. Nothing else on the internet says this about a Western Addition or Yerba Buena address. **Overlaps [`digitalsf`](sources/digitalsf.md)**: same SFH 371 archive, digitized twice — paper forms here, catalogued photographs there. | Internet Archive collection `sanfranciscoredevelopmentagencyrecords`, 106 items, public domain | 2026-08-15 hold |
 | *Architect and Engineer of California* and period trade journals | Building contracts, architects, costs — the pre-DBI permit record. | Internet Archive: `usmodernist-AECA-*` (214 issues) and `buildingengineer*` (35 volumes of *Building & Engineering News*), OCR text included | 2026-08-15 hold |
 | Bay Area Reporter archive | The Castro and the LGBTQ record at address level, digitized and OCR'd. | Internet Archive collection `bayareareporter`, identifiers `BAR_YYYYMMDD` | 2026-08-15 hold |
+| *East/West: The Chinese-American Journal* | Chinatown and the Chinese-American city at address level across 22 years, in a paper no address query will ever surface. | Internet Archive collection `eastwestnews` — 1,125 issues, 1967–1989, OCR text on each | 2026-08-21 hold |
 | Crocker-Langley San Francisco city directories | What occupied a numbered address, year by year, pre-1930. Businesses are fair game where residents are not. | Internet Archive full-text scans, 41 volumes | 2026-08-15 hold |
 | SF Municipal Reports (19th c.) | City construction, schools, firehouses, by address. | Internet Archive, 68 volumes, FY1859–60 through FY1913–14 | 2026-08-15 hold |
+| *Here Today* (1968, rev. 1978) and *Splendid Survivors* (1979) | The two standard building-by-building surveys of San Francisco architecture — the ones the city's own EIRs cite as authority. One entry per address, with dates and architects. | Internet Archive `heretodaysanfran00olms`, `heretodaysanfran0000olms`, `splendidsurvivor00corb` — **lending-restricted, `needs-human`** | 2026-08-21 hold |
+| Journal of Proceedings, Board of Supervisors | Street name changes and acceptances, and assessment-appeal lines that put a **named firm** at a numbered address on a dated day. | Internet Archive collection `sanfranciscopubliclibrary`, 157 volumes 1906–1999 | 2026-08-21 hold |
 | Western Neighborhoods Project *Outside Lands* magazine | The west side, per building, by local researchers. | outsidelands.org/publications/ — 36 PDFs; plain fetches are refused, a browser-context fetch works | 2026-08-15 hold |
 | OpenSFHistory photo captions | Captions frequently name a street number and a date. Link/cite only — see `historical-imagery` in DATA-SOURCES.md. | opensfhistory.org; credit line `OpenSFHistory/<file number>` | 2026-08-15 hold |
 | SFMTA Photo Archive | Muni photography 1903–1978, 95% digitized, captioned with location and date. | sfmta.photoshelter.com — copies free on request for non-commercial use; not bulk-accessible | 2026-08-15 hold |
@@ -94,6 +99,9 @@ line up.
 | Sanborn fire insurance maps | Building footprint, material, use and street number, by block, across decades. Not text-searchable anywhere. | LoC Sanborn collection, 40 SF volumes 1886–1950s. Images only — no OCR to mine | 2026-08-15 hold |
 | Pacific Coast Architecture Database (PCAD) | Per-building records: address, construction and demolition dates, architect, contractor, sourced narrative. | pcad.lib.washington.edu — but see the note: it ranks **first** for address queries, so it is a cross-check, not a target | 2026-08-15 hold |
 | California Digital Newspaper Collection (CDNC) | Holds *Daily Alta California* 1849–1891, filling the whole pre-1890 gap `loc-newspapers` leaves. | **Blocked** — the search endpoint sits behind a Cloudflare challenge | 2026-08-15 hold |
+| ~~McCord's Edwards Abstract from Records (1900–1931)~~ | ~~Abstracts of recorded property transfers, parcel by parcel.~~ | **Retired** — the entries are metes-and-bounds with no street number (`N Haight 131-6 W Gough W 27-6 x N 20`), the parties are individuals and barred by the privacy limits, and the OCR of the tabular pages is unusable. The only numbered addresses in a sampled 9 MB volume are the abstract company's own offices at 318 Pine and 210 Montgomery. | 2026-08-21 retire |
+| ~~*Tenant Times* (SF Tenants Union, 1979–1996)~~ | ~~Buildings named in eviction and rent-control coverage.~~ | **Retired** — 40 issues on the Internet Archive (`tenanttimes`); a sampled 1981 issue carries **no numbered street address at all**, and what the paper is about is the people in the buildings, which the privacy limits bar. | 2026-08-21 retire |
+| ~~SF Weekly archive~~ | ~~Alt-weekly coverage and listings at venue addresses.~~ | **Retired** — 451 issues on the Internet Archive (`sfweeklyarchive`), but the run starts in 2013 and SF Weekly is fully indexed on the open web. Low search-invisibility over a period the site can source elsewhere. | 2026-08-21 retire |
 | ~~Calisphere~~ | ~~Statewide aggregator over 20+ institutions holding SF material.~~ | **Retired as a target, keep as a prospecting tool** — its metadata is item-level and carries no street numbers; four numbered-address queries returned zero hits each. Use it to find which institution holds what, then go there. | 2026-08-15 retire |
 | ~~Online Archive of California~~ | ~~Finding aids to SF archival collections.~~ | **Retired as a target, keep as a prospecting tool** — finding aids describe collections by the box and the cubic foot, not by address. Useful for locating a physical collection; acting on one is a library visit, so `needs-human`. | 2026-08-15 retire |
 | ~~Institutional centennial histories (churches, schools, clubs, unions)~~ | ~~One building, deeply documented, usually a single scanned booklet.~~ | **Retired as a lead** — this is a category, not a source, and nothing about it can be checked until a specific booklet exists. Register individual titles as they turn up. | 2026-08-15 retire |
@@ -103,11 +111,53 @@ line up.
 When you add a lead, say what you'd expect to *get* from it, not just that it
 exists. A lead with no plausible address-level payload is noise.
 
+**Where to prospect next.** Five of the leads above came out of one sweep of a
+single Internet Archive collection — `sanfranciscopubliclibrary`, **14,664
+digitized texts** contributed by SFPL, almost all of it municipal and
+periodical material with open text layers. Scraping its metadata
+(`https://archive.org/services/search/v1/scrape?q=collection:sanfranciscopubliclibrary`)
+and grouping the titles is a cheap way to find the next seam: environmental
+review documents, Planning Commission minutes, Board of Supervisors journals
+and *East/West* were all found that way, and 2,666 items titled `Minutes` or
+`Agenda` and 566 titled `Plan` are still unexamined. Internet Archive's
+collection search (`mediatype:collection AND title:"San Francisco"`) returns
+738 more collections and is the same trick one level up.
+
 ### Triage notes
 
 One entry per lead marked `hold` above — what the triage pass actually found,
 with the sampled example that proves it carries numbered addresses with dates.
 Delete an entry when its lead is promoted; the dossier takes over from there.
+
+**San Francisco environmental review documents.** The San Francisco Public
+Library's Internet Archive collection (`sanfranciscopubliclibrary`, 14,664
+items) holds **823 environmental review documents** published by the SF
+Planning Department between **1973 and 2013** — draft and final EIRs, initial
+studies, negative declarations and supplements. **172 of them are titled by
+street address** ("101 California Street : [draft] environmental impact
+report"); the rest are area plans and project names. Ten sampled at random were
+**all** open — no `access-restricted-item`, a `_djvu.txt` text layer on every
+one — and all name the SF Dept. of City Planning as publisher, so this is
+municipal work product, not a lending-library book. One document is one batch,
+which makes it as startable as the National Register row.
+
+**What it gives that nothing else here does.** An EIR describes the site
+*before* the project, so it is the record of buildings that no longer exist —
+and it states the parcel outright. **Sampled:** `280divisaderostr5200sanf`
+puts 280 Divisadero Street at "Assessor's Block 1238, Lot 23", a 6,875 sq ft
+double lot, identifies it as City Landmark No. 190, the Charles L. Hinkel House
+and carriage house, and dates the carriage house's second residential unit to
+before 1964 and its abandonment to around 1981. A second, `101californiastr1819sanf`
+(1979), records that the 49,000 sq ft building formerly at 101 California
+Street "was demolished in 1974 after a destructive fire". Both give a date, a
+street number and a page-level citation.
+
+**Cautions.** Downtown is heavily over-represented — the 1970s–80s highrise
+boom is most of the run — so neighborhood coverage is thin and clustered.
+Project descriptions are proposals, not outcomes: an EIR says what was
+*intended*, and whether it was built is a separate check against the assessor.
+And these documents name project sponsors and property owners, which the
+privacy limits bar; take the buildings.
 
 **National Register nomination forms.** 166 San Francisco listings, 135 of them
 with a numbered street address. The NPS map service
@@ -186,6 +236,22 @@ documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
 LM11 and LM200 are image-only and would need OCR. Same publisher as
 `sf-context-statements` but an entirely separate corpus.
 
+**San Francisco City Planning Commission minutes.** 109 volumes in the same
+SFPL collection, **1946–1984**, each with a `_djvu.txt`. The payload is the
+case calendar: a case number, the address, the zoning, the request, the date
+and the Commission's decision. **The address line carries a survey bearing**,
+which is exactly what the resolver needs where a street number alone is
+ambiguous. **Sampled:** `10minutesofsanfran1969san` — "CU67.13 960 Haight
+Street, north line, east of Broderick Street; and Broderick Street, east line,
+between 112.5 feet and 137.5 feet north of Haight Street. Request for 100-bed
+convalescent hospital for long-term psychiatric care on property zoned R-3 and
+R-4", carried over from the meeting of 7 August 1969. The same volume names 801
+and 731 Grove, 751 and 725 Webster, 1280 Ellis and 6021 Geary. **Caution:** 100
+Larkin Street is the top numbered token in every volume and it is the library's
+and the Commission's own address, not a case — the same advertiser-address trap
+the trade-journals note describes. Volumes are undated in the IA metadata; the
+year is in the text.
+
 **Period trade journals.** Two runs, mined identically, so they are one lead.
 ***Architect and Engineer of California***: 214 issues on the Internet Archive
 under `usmodernist-AECA-*`. ***Building & Engineering News***: 35 volumes under
@@ -217,6 +283,22 @@ under the evidence bar, the text does not get committed or reproduced. Note the
 register already lists Bay Area Reporter under `local-news` as a browse-only
 reference; mining the archive is a different activity and wants its own id.
 
+***East/West: The Chinese-American Journal.*** 1,125 issues on the Internet
+Archive under collection `eastwestnews`, **1967–1989**, contributed through
+SFPL, with OCR text on each. Chinatown, the Richmond and the Sunset in a
+weekly that no address query will ever return. **Density is thin and it is
+mostly commercial:** five issues sampled across the run (1967, 1972, 1978,
+1984, 1989) carried roughly 5–15 numbered addresses each — 758 Commercial
+Street, 900 and 857 Grant Avenue, 724 Pacific Avenue, 777 Stockton Street, 1119
+Clement Street, 1127 Market Street. Over 1,125 issues that is a few thousand
+mentions, which is a real harvest at this module's usual rate. **Three
+cautions.** The OCR is mixed Chinese and English and the Latin text is mangled
+(commas render as `，`, and `838 Grant Avenue` recurs across years as an
+advertiser, not a fact). The masthead address (863 Stockton Street) will top
+any frequency count. And the issues carry an explicit "Copyright 1967 by
+EAST/WEST Publishing Company" — facts extract freely, the text does not get
+committed.
+
 **Crocker-Langley city directories.** 41 volumes on the Internet Archive with
 full OCR. **The privacy limit removes most of the book.** A sampled slice of the
 1900 volume is almost entirely residents, marked with `r.` for residence — all
@@ -233,6 +315,36 @@ extends at least to 1949 if the business slice proves worth mining.
 through FY1913–14, plus a separate index volume to the appendices 1859–1901.
 Not yet sampled for address density — that is the first thing an acquire pass
 should measure.
+
+***Here Today* and *Splendid Survivors*.** The two standard building-by-building
+surveys of San Francisco's architecture, and the ones the city's own
+environmental documents cite as authority — the 101 California EIR sampled
+above refers to "the 1968 catalogue and description of architecturally
+outstanding buildings built before 1920 (Olmsted, Roger, and T.H. Watkin, 1968,
+*Here Today*)". All three editions are on the Internet Archive
+(`heretodaysanfran00olms` 1968, `heretodaysanfran0000olms` 1978,
+`splendidsurvivor00corb` 1979, the downtown survey). **All three are
+lending-restricted**: `access-restricted-item: true`, collection `inlibrary`,
+and a direct fetch of the `_djvu.txt` returns **401**. Per "Corpora on disk" in
+[AGENTS.md](AGENTS.md) that makes this `needs-human`, not something to route
+around — a person borrows the scan or reads the copy at SFPL. Worth the ask:
+these are per-address entries with dates and architects, in books that have
+been out of print for decades. Not yet sampled for content, because sampling it
+is the thing that needs a person.
+
+**Journal of Proceedings, Board of Supervisors.** 157 volumes in the SFPL
+collection, **1906–1999**, roughly 4 MB of OCR each. **Sampled:**
+`journalofproceed34sanfrich` (1939) — the assessment-appeal schedules put named
+firms at numbered addresses on dated days: "Barron & Rossi, 998 Folsom St.
+Assessment erroneous, excessive, reassessed. Tax paid to Assessor, Aug. 11,
+1938"; the same run gives Crosley Radio Corporation, Lewittes & Sons and
+Stakmore Co. all at 1355 Market St. That is a dated occupancy record for a
+business at a street number, which is usable. **But it ranks low, for two
+reasons.** The appeal schedules interleave firms with individuals — "Anna
+Crljenko, 930 Fillmore St." on the next line — so an extractor needs the same
+person-name filter the city-directories note describes, and most of a volume is
+not about buildings at all. Street name changes and street acceptances are the
+other seam here and have not been sampled.
 
 **Western Neighborhoods Project *Outside Lands* magazine.** 36 issue PDFs listed
 at outsidelands.org/publications/. **Access caution:** a plain `curl` for the
@@ -305,6 +417,18 @@ route around. Two things a person could do, in order: check whether Chronicling
 America itself holds *Daily Alta California* — if it does, the existing
 `loc-newspapers` tooling mines it with no wall to negotiate — and, failing that,
 ask UCR whether they will grant API or bulk access.
+
+**Rejected in the 2026-08-21 pass, with what was actually checked.**
+*McCord's Edwards Abstract from Records* (37 volumes, 1900–1931, collection
+`sfpl_mccords-edwards-abstract-from-records`) is the metes-and-bounds trap in
+its purest form: a sampled 9 MB volume gives transfers as `N Haight 131-6 W
+Gough W 27-6 x N 20` with no street number anywhere, the grantors and grantees
+are individuals and barred, and the only numbered addresses in the whole file
+are the abstract company's own offices at 318 Pine (126 times) and 210
+Montgomery (54). *Tenant Times* (40 issues, `tenanttimes`) — a sampled 1981
+issue contains no numbered street address at all, and the paper's subject is
+the people in the buildings. *SF Weekly archive* (451 issues, `sfweeklyarchive`)
+— the run starts in 2013 and the paper is fully indexed on the open web.
 
 ## Adding a source
 
