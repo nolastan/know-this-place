@@ -1249,9 +1249,12 @@ def value_panel_html(rec: dict, indent: str) -> str:
     total = land + improv
     lp = round(land / total * 100, 1)
     ip = round(100 - lp, 1)
+    # No panel chrome and no heading: the legend already names land,
+    # improvements and the total, and the Sources footer names the roll, so a
+    # "Assessed value · 2025 roll" heading above them says nothing the figure
+    # doesn't. The bare section reads better than a boxed one.
     return (
-        f'{indent}<section class="panel">\n'
-        f'{indent}  <h3>Assessed value · {a["roll_year"]} roll</h3>\n'
+        f'{indent}<section>\n'
         f'{indent}  <ktp-figure>\n'
         f'{indent}    <div class="stack" role="group" aria-label="Assessed value breakdown">\n'
         f'{indent}      <div class="stack-seg seg-cool" style="width:{lp}%" tabindex="0" '
