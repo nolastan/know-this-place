@@ -95,6 +95,14 @@ news/
   items/<feed>/*.json         Findings files — research schema, research resolver
   tools/poll.py               Fetch, screen, queue, advance the cursors
   tools/read.py               Read queued articles; report the addresses in them
+design/
+  AGENTS.md                   Design module entry: direction of truth, layers
+  PRINCIPLES.md               Portable design judgement
+  CONVENTIONS.md              How design work is done in this repo
+  PAPER.md                    paper.design tool quirks
+  IMPLEMENTATION.md           Tokens, type, rem→px, metrics, icons
+  RULES-OF-THUMB.md           Generated: the distilled corpus
+  META.md / GAPS.md           Learning notes; cases /ui had to guess at
 scripts/
   seed_pages.py               Writes the first draft of pages that don't
                               exist yet, from the DataSF APIs
