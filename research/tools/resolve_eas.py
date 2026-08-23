@@ -285,9 +285,18 @@ def num_key(n: str):
 class City:
     """EAS, parcels and roll, indexed for the joins a resolver makes."""
 
-    def __init__(self, eas: list, pages: list, streets: "StreetIndex" = None):
+    def __init__(self, eas: list, pages: list, streets: "StreetIndex" = None,
+                 area_from_nhood: bool = False):
         self.eas = eas
         self.streets = streets or StreetIndex([])
+        # When the site has not settled a street, the nearest published page is
+        # the wrong authority for the directory — see area_for.
+        self.area_from_nhood = area_from_nhood
+        # The directories the site actually uses. An analysis neighborhood does
+        # not always slug to one of them: the site splits "Financial District/
+        # South Beach" into two and joins "Oceanview/Merced Heights/Ingleside"
+        # into one, and no dataset records either choice.
+        self.areas = {p["area"] for p in pages if p.get("area")}
         self.parcels: dict = {}
         self.roll: dict = {}
         self.spatial: dict = {}
@@ -444,6 +453,11 @@ class City:
         them: the nearest page on the same street, then the nearest page at all,
         then the neighborhood's usual directory.
         """
+        if self.area_from_nhood:
+            # Asked for explicitly, because the site has not settled these
+            # streets: the analysis neighborhood the assessor and EAS give the
+            # parcel decides, and the nearest published page does not get a say.
+            return area_slug(nhood) if nhood else None
         if lat is not None and lng is not None:
             for pool, radius in ((self.by_street.get(slug, []), 1.2), (self.located, 0.6)):
                 best, dist = None, radius
@@ -484,7 +498,11 @@ class City:
         area = self.area_for(slug, nhood, lat, lng)
         if not area:
             return None, "no analysis neighborhood for the parcel"
-        return f"/san-francisco/{area}/{slug}/{number.lower()}/", "no page yet"
+        why = "no page yet"
+        if self.area_from_nhood:
+            why = ("no page yet, area from nhood, new directory"
+                   if area not in self.areas else "no page yet, area from nhood")
+        return f"/san-francisco/{area}/{slug}/{number.lower()}/", why
 
 
 # --------------------------------------------------------------------------- #
@@ -702,10 +720,18 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
     if not path:
         return {"status": "unresolved", "checked_on": today, "method": method,
                 "note": f"Parcel identified but no page path could be formed: {why}."}
+    if why.startswith("no page yet, area from nhood"):
+        method += (" The neighborhood directory is the analysis neighborhood the assessor and "
+                   "EAS give the parcel, not the area of the nearest published page: the site "
+                   "has too few pages on these streets for proximity to say where the line falls.")
+        if why.endswith("new directory"):
+            method += (" No page on the site is filed under that directory yet, so the analysis "
+                       "neighborhood's own name is used and the publisher should confirm it "
+                       "against the directory contract before seeding.")
     res = {"status": "resolved", "apn": parcel, "path": path,
            "eas_address": eas_label(name, stype, lead), "method": method,
            "checked_on": today}
-    if why == "no page yet":
+    if why.startswith("no page yet"):
         res["note"] = "No page at this path yet; the parcel is the publisher's to seed."
     return res
 
@@ -822,8 +848,13 @@ def decide(city: City, f: dict, today: str) -> dict:
     title = resolve_numbers(city, name, stype, title_numbers)
 
     # ---- the archivist's second address, where the two disagree ------------ #
+    # A `conflict` is only this branch's business when the record states a
+    # second address to compare. Findings whose conflict is a date or a name —
+    # a survey that dates the same building twice — resolve normally; the
+    # disagreement is the page's `.unknowns` to carry, not the resolver's.
+    address_conflict = bool(f.get("conflict")) and note_addr is not None
     note_hit = None
-    if f.get("conflict") and note_addr:
+    if address_conflict:
         n_name, n_type, _ = city.normalize(note_addr["street_name"], note_addr["street_type"])
         n_numbers = note_addr["numbers"]
         if len(n_numbers) == 2 and all(x.isdigit() for x in n_numbers):
@@ -834,7 +865,7 @@ def decide(city: City, f: dict, today: str) -> dict:
     label = (f"the recorded range {recorded_range} on {name} {stype or ''}".strip()
              if title_kind == "range" else eas_label(name, stype, number))
 
-    if f.get("conflict"):
+    if address_conflict:
         t_parcels = set(title["parcels"])
         n_parcels = set(note_hit["parcels"]) if note_hit else set()
         same_number = bool(note_addr) and set(note_addr["numbers"]) & set(title_numbers)
@@ -1077,7 +1108,81 @@ def recorded_addresses(f: dict, city: City = None) -> list:
     return out
 
 
-def load_city(findings: dict, refresh: bool = False, aliases: dict = None) -> City:
+
+# --------------------------------------------------------------------------- #
+# The manifest the seeder consumes
+# --------------------------------------------------------------------------- #
+
+CODE_WORD = {code: word for word, code in ORDINAL_WORD.items()
+             if "-" not in word and len(code) == 4}
+
+
+def street_display(name: str, stype: str) -> str:
+    """"GRANT", "AVE" -> "Grant Avenue". Matches scripts/seed_pages.py."""
+    word = STREET_TYPE_WORD.get((stype or "").upper(), (stype or "").lower())
+    parts = []
+    for token in (name or "").split():
+        token = unpad(token)
+        if re.fullmatch(r"\d+(ST|ND|RD|TH)", token.upper()):
+            parts.append(token.lower())
+        elif token.lower() == "the":
+            parts.append("The")
+        else:
+            parts.append(token.capitalize())
+    return (" ".join(parts) + " " + word.capitalize()).strip()
+
+
+def build_manifest(city: City, data: dict) -> list:
+    """The resolved parcels that have no page yet, in the seeder's entry shape.
+
+    Every run that publishes in bulk needs this list and every run used to build
+    it by hand from the report. The resolutions already name the parcel, the
+    path and the street; EAS supplies the rest.
+    """
+    by_parcel: dict = {}
+    for f in data["findings"]:
+        res = f.get("resolution") or {}
+        if res.get("status") != "resolved" or not res.get("apn"):
+            continue
+        if not (res.get("note") or "").startswith("No page at this path yet"):
+            continue                       # the page exists; the seeder skips it anyway
+        m = re.match(r"^/([a-z\-]+)/([a-z\-]+)/([a-z0-9\-]+)/([^/]+)/$", res["path"] or "")
+        if not m:
+            continue
+        city_slug, area, slug, number = m.groups()
+        apn = res["apn"]
+        if apn in by_parcel:
+            continue
+        name = f.get("street_name") or ""
+        eas_name, stype, _ = city.normalize(name, f.get("street_type"))
+        eas_name = eas_name or name
+        rows = [r for r in city.by_parcel.get(apn, []) + city.by_effective.get(apn, [])]
+        same = [r for r in rows if (r.get("street_name") or "") == eas_name]
+        stype = stype or next((r.get("street_type") for r in same), "") or ""
+        numbers = sorted({(r.get("address_number") or "").upper() for r in same
+                          if r.get("address_number")}, key=num_key) or [number.upper()]
+        others = sorted({eas_label(r.get("street_name") or "", r.get("street_type"),
+                                   (r.get("address_number") or "").upper())
+                         for r in rows if (r.get("street_name") or "") != eas_name})
+        pick = next((r for r in same if r.get("latitude")), None) or (same[0] if same else None)
+        entry = {"apn": apn, "city": city_slug, "area": area, "street_slug": slug,
+                 "street_name": eas_name, "street_type": stype,
+                 "street_display": street_display(eas_name, stype),
+                 "numbers": numbers, "other_street_addresses": others}
+        if pick:
+            if pick.get("latitude"):
+                entry["lat"] = float(pick["latitude"])
+                entry["lng"] = float(pick["longitude"])
+            if pick.get("zip_code"):
+                entry["zip"] = str(pick["zip_code"])
+            if pick.get("eas_baseid"):
+                entry["eas_baseid"] = str(pick["eas_baseid"])
+        by_parcel[apn] = entry
+    return [by_parcel[k] for k in sorted(by_parcel)]
+
+
+def load_city(findings: dict, refresh: bool = False, aliases: dict = None,
+              area_from_nhood: bool = False) -> City:
     streets = StreetIndex(street_names(refresh=refresh), aliases)
     recorded = {f["street_name"] for f in findings["findings"] if f.get("street_name")}
     for f in findings["findings"]:
@@ -1092,7 +1197,7 @@ def load_city(findings: dict, refresh: bool = False, aliases: dict = None) -> Ci
         print(f"  no EAS street for: {', '.join(unknown)}", file=sys.stderr, flush=True)
     eas = fetch_keyed("eas", EAS, "street_name", sorted(names), EAS_SELECT,
                       chunk=12, refresh=refresh)
-    city = City(eas, page_index(), streets)
+    city = City(eas, page_index(), streets, area_from_nhood=area_from_nhood)
     apns = candidate_parcels(city, findings)
     print(f"  {len(apns)} candidate parcels", file=sys.stderr, flush=True)
     parcels = fetch_keyed("parcels", PARCELS, "blklot", apns, PARCEL_SELECT,
@@ -1137,10 +1242,20 @@ def load_city(findings: dict, refresh: bool = False, aliases: dict = None) -> Ci
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("command", choices=("fetch", "report", "apply"))
+    ap.add_argument("command", choices=("fetch", "report", "apply", "manifest"))
     ap.add_argument("findings", type=Path)
     ap.add_argument("--refresh", action="store_true", help="ignore the cache and re-fetch")
     ap.add_argument("--on", default=date.today().isoformat(), help="checked_on date")
+    ap.add_argument("--out", type=Path,
+                    help="manifest: where to write the parcel list "
+                         "(default research/manifests/<batch>.json)")
+    ap.add_argument("--area-from-nhood", action="store_true",
+                    help="file new pages under the analysis neighborhood the assessor and EAS "
+                         "give the parcel, instead of the area of the nearest published page. "
+                         "Use it where the site has too few pages on a street for proximity to "
+                         "mean anything — a whole corridor otherwise scatters across the "
+                         "directories of whichever handful of pages happen to exist. Every "
+                         "resolution says which rule chose its directory.")
     ap.add_argument("--alias", action="append", default=[], metavar="RECORDED=EAS",
                     help="map a street name the source spells its own way onto EAS's "
                          "(e.g. --alias DOUGLAS=DOUGLASS). Every use is stated in the "
@@ -1149,10 +1264,22 @@ def main() -> int:
 
     aliases = dict(a.split("=", 1) for a in args.alias)
     data = json.loads(args.findings.read_text(encoding="utf-8"))
-    city = load_city(data, refresh=args.refresh, aliases=aliases)
+    city = load_city(data, refresh=args.refresh, aliases=aliases,
+                     area_from_nhood=args.area_from_nhood)
     if args.command == "fetch":
         print(f"{len(city.eas)} EAS addresses, {len(city.parcels)} parcels, "
               f"{len(city.roll)} roll rows, {len(city.pages)} pages cached.")
+        return 0
+
+    if args.command == "manifest":
+        entries = build_manifest(city, data)
+        out = args.out or (REPO / "research" / "manifests" / f"{data['batch']}.json")
+        out.write_text(json.dumps(entries, indent=1, ensure_ascii=False) + "\n",
+                       encoding="utf-8")
+        areas = Counter(e["area"] for e in entries)
+        print(f"{len(entries)} parcels with no page yet → {out.relative_to(REPO)}")
+        for area, n in areas.most_common():
+            print(f"  {area}: {n}")
         return 0
 
     tally, decisions, conflicts = Counter(), {}, {}

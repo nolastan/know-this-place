@@ -4,6 +4,7 @@ The parcels on Pfeiffer Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [152–158](152/) — A 1907 4-unit apartment building, with permit records from 1985 to 2024.
 - [175–177](175/) — A 1956 12-unit apartment building, with a seismic retrofit permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -1,0 +1,122 @@
+{
+  "address": "600 Front Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/front-street/600/",
+  "apn": "0172010",
+  "block": "0172",
+  "lot": "010",
+  "eas_baseid": "279183",
+  "coordinates": {
+    "lat": 37.797397,
+    "lng": -122.399465
+  },
+  "also_addressed": [
+    "150 JACKSON ST"
+  ],
+  "parcel": {
+    "lot_area_sqft": 72531,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0600 FRONT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602129484",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "2016-02-12",
+      "status_date": "2018-11-26",
+      "estimated_cost": 32000,
+      "description": "install new atm machine/electrical line with canopy. remove door. build wall around atm. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602129488",
+      "type": "wall or painted sign",
+      "status": "disapproved",
+      "filed": "2016-02-12",
+      "status_date": "2018-11-26",
+      "estimated_cost": 1000,
+      "description": "sign on canopy. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101099459",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-09",
+      "status_date": "2001-05-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "demo existing kiosk and remove . conc pad from sidewalk area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15252",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-03",
+      "status_date": "2001-07-03",
+      "revised_cost": 9000,
+      "description": "street space & sidewalk repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRONT&street_type=ST&address_number=600",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0172010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0172&lot=010",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0172010",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1959",
+      "kind": "occupancy",
+      "description": "The Front operated here between 1959 and 1961, one of the North Beach bars and restaurants the city's survey identifies as significant in San Francisco's LGBTQ history.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

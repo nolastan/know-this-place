@@ -1,0 +1,131 @@
+{
+  "address": "1922–1924 Stockton Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/stockton-street/1922/",
+  "apn": "0062017D",
+  "block": "0062",
+  "lot": "017D",
+  "eas_baseid": "276386",
+  "coordinates": {
+    "lat": 37.803625,
+    "lng": -122.409549
+  },
+  "address_range": "1922–1924",
+  "street_numbers_on_parcel": [
+    "1922",
+    "1924"
+  ],
+  "parcel": {
+    "year_built": 1940,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2474,
+    "building_area_sqft": 2666,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "1924 1922 STOCKTON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 310768,
+    "assessed_improvement_value": 341846
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904047102",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-04",
+      "status_date": "2019-06-20",
+      "estimated_cost": 30267,
+      "revised_cost": 30267,
+      "description": "10 windows street facing: 6 double hung windows, 4 picture windows. series 1 anderson fibrex windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912032497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-12-03",
+      "status_date": "2009-12-09",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "existing bathroom; dry-rot repair only @ shower area to repair leak.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612189994",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-12-18",
+      "status_date": "2010-09-20",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2019",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STOCKTON&street_type=ST&address_number=1922",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0062017D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0062&lot=017D",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0062017D",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "construction",
+      "description": "Built as flats to the design of Herman C. Baumann, one of the modern architects the city's survey identifies as working in North Beach.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "address": "1526 Powell Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/powell-street/1526/",
+  "apn": "0130025",
+  "block": "0130",
+  "lot": "025",
+  "eas_baseid": "278276",
+  "coordinates": {
+    "lat": 37.798938,
+    "lng": -122.410203
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 5257,
+    "building_area_sqft": 2924,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "NBEACH",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 1526 POWELL              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2769752,
+    "assessed_improvement_value": 307750,
+    "last_sale_date": "2022-04-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "survey_name": "DELUCCHI SHEET METAL",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211216921",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2022-11-21",
+      "status_date": "2022-11-21",
+      "estimated_cost": 4500000,
+      "revised_cost": 8690782,
+      "description": "the project proposes partial demolition of an existing historic resource (delucchi sheet metal works), a two-story with basement 9,892-square-foot industrial building, to allow construction of a vertical and horizontal addition resulting in a six-story residential building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512306193",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2015-12-30",
+      "status_date": "2022-12-06",
+      "estimated_cost": 10000,
+      "description": "seeking conditional use to convert part of(e) 9,939 sf metal shop to a new 3,999 max full service restaurant (change of use)convert (e) mezz to (n) 2nd floor, no additional story added to bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103286",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-03-05",
+      "status_date": "1991-09-26",
+      "estimated_cost": 4000,
+      "description": "replace old deck at back of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101354",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-01-29",
+      "status_date": "1991-08-14",
+      "estimated_cost": 13570,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POWELL&street_type=ST&address_number=1526",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0130025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0130&lot=025",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0130025",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921",
+      "kind": "construction",
+      "description": "A small industrial building with a pressed metal facade, built for the John J. Delucchi Sheet Metal Works.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as an individually listed resource.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "2019",
+      "kind": "survey",
+      "description": "Identified by the 2019 updated North Beach survey as appearing eligible for local landmark or California Register / National Register status — recorded as De Lucchi Sheet Metal.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

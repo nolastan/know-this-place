@@ -1,0 +1,136 @@
+{
+  "address": "539–543 Union Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/union-street/539/",
+  "apn": "0116043",
+  "block": "0116",
+  "lot": "043",
+  "eas_baseid": "434541",
+  "coordinates": {
+    "lat": 37.800451,
+    "lng": -122.408263
+  },
+  "address_range": "539–543",
+  "street_numbers_on_parcel": [
+    "539",
+    "541",
+    "543"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "bedrooms": 12,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 5748,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0543 0539 UNION               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115472,
+    "assessed_improvement_value": 315674
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Grant Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1925",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9918381",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-02",
+      "status_date": "2000-08-28",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301254",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-01-27",
+      "status_date": "1993-04-28",
+      "estimated_cost": 2700,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1993–2011",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=539",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0116043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0116&lot=043",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0116043",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40826348914322%2037.80045064656787)%27)",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

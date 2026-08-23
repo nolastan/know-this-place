@@ -1,0 +1,108 @@
+{
+  "address": "1625 Powell Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/powell-street/1625/",
+  "apn": "0118005",
+  "block": "0118",
+  "lot": "005",
+  "eas_baseid": "277844",
+  "coordinates": {
+    "lat": 37.799675,
+    "lng": -122.411103
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 7784,
+    "building_area_sqft": 8518,
+    "use": "Commercial Misc",
+    "property_class": "Garages (Commercial)",
+    "construction_type_code": "B",
+    "zoning": "NBEACH",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 1625 POWELL              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2421421,
+    "assessed_improvement_value": 269041,
+    "last_sale_date": "2011-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807265606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-26",
+      "status_date": "2019-04-17",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remove existing overhead garage door, infill opening for 3'x7' door, add new 33 ' overhead garage door in place of removed door. replace overhead door motor for new door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8710632",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1987-07-30",
+      "status_date": "1987-10-09",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POWELL&street_type=ST&address_number=1625",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0118005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0118&lot=005",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0118005",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1948",
+      "kind": "construction",
+      "description": "A commercial garage.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "address": "281 Telegraph Hill Boulevard, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/telegraph-hill-boulevard/281/",
+  "apn": "0078001B",
+  "block": "0078",
+  "lot": "001B",
+  "eas_baseid": "276811",
+  "coordinates": {
+    "lat": 37.803386,
+    "lng": -122.406767
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 6,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 4766,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0283 0281 TELEGRAPH HILL      BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339746,
+    "assessed_improvement_value": 849411
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Gardner Dailey/Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1936–1959",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201310230033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-23",
+      "status_date": "2013-12-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace tiles for deck in common area; & waterproofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206138938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-13",
+      "status_date": "2002-12-04",
+      "estimated_cost": 9945,
+      "revised_cost": 9945,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102968",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-02-27",
+      "status_date": "1991-11-14",
+      "estimated_cost": 15000,
+      "description": "add an enclosed stair to the roof,parapets extended",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615609",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-12-09",
+      "status_date": "1987-12-11",
+      "estimated_cost": 10000,
+      "description": "remodel of roof deck.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1986–2013",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TELEGRAPH%20HILL&street_type=BLVD&address_number=281",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078001B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&lot=001B",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0078001B",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40676658012896%2037.80338643189564)%27)",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1936",
+      "kind": "construction",
+      "description": "Built as flats to the design of Gardner Dailey, one of the modern architects the city's survey identifies as working in North Beach.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

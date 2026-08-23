@@ -1,0 +1,130 @@
+{
+  "address": "273 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/273/",
+  "apn": "0061039",
+  "block": "0061",
+  "lot": "039",
+  "eas_baseid": "276362",
+  "coordinates": {
+    "lat": 37.804216,
+    "lng": -122.407827
+  },
+  "parcel": {
+    "year_built": 1904,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 4970,
+    "building_area_sqft": 2240,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0273 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1986580,
+    "assessed_improvement_value": 1833767
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201004140256",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-14",
+      "status_date": "2010-05-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise pa#200807176921: change handrail from metal to timber. no special inspection for welds, stair and railing system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807176921",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-07-17",
+      "status_date": "2010-05-20",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "addition of guardrail at extg roof edge with new roof deck, replace wndw in exg third story cupola with a new door to provide access to roof. new door will not be visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407148789",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-14",
+      "status_date": "2004-10-05",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "voluntary upgrade seismic reinforcement, installation of bolted steel frames at sill per engineer's",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406257396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-25",
+      "status_date": "2004-07-06",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "voluntary upgrade for siesmic/plywood add to wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=273",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0061039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0061&lot=039",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0061039",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1968",
+      "kind": "designation",
+      "description": "Listed in the 1968 citywide survey of San Francisco's architectural heritage as house.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

@@ -145,10 +145,25 @@ roll, the lowest-number rule, the comparison between a record's two addresses �
 and writes a `resolution` for every entry with the reason in `method`:
 
 ```bash
-python3 research/tools/resolve_eas.py fetch  research/findings/<id>/<batch>.json
-python3 research/tools/resolve_eas.py report research/findings/<id>/<batch>.json
-python3 research/tools/resolve_eas.py apply  research/findings/<id>/<batch>.json
+python3 research/tools/resolve_eas.py fetch    research/findings/<id>/<batch>.json
+python3 research/tools/resolve_eas.py report   research/findings/<id>/<batch>.json
+python3 research/tools/resolve_eas.py apply    research/findings/<id>/<batch>.json
+python3 research/tools/resolve_eas.py manifest research/findings/<id>/<batch>.json
 ```
+
+`manifest` writes `research/manifests/<batch>.json` — the resolved parcels that
+have no page yet, in the shape `seed_pages.py seed-list` reads. Run it after
+`apply`; step 4 seeds from it.
+
+Add **`--area-from-nhood`** to `report`, `apply` and `manifest` together when
+the site has few or no pages on the streets in the batch. Without it the
+resolver files each new page under the area of the *nearest published page*,
+which is right where the site has settled a street and scatters a whole
+corridor where it hasn't — North Beach came back split across six directories
+on the strength of three pre-existing pages. With it, the analysis neighborhood
+the assessor and EAS give the parcel decides, every method says which rule
+chose the directory, and a directory the site does not use yet is flagged in
+the method for the publisher to confirm.
 
 It declines rather than guesses: no EAS record, a range now split across
 parcels the record does not choose between, a condominium's worth of parcels on one point, or two recorded
@@ -218,8 +233,8 @@ array with the citation label from the dossier. Regenerate `index.html` from
 `data.json` **in the same commit**. A conflict from step 3 goes in `.unknowns`,
 stated plainly and left unadjudicated.
 
-**Route B — the source names many buildings with no pages.** Write
-`manifests/<source-id>.json` (shape: any existing file there), then:
+**Route B — the source names many buildings with no pages.** Generate
+`manifests/<batch>.json` with `resolve_eas.py manifest` (above), then:
 
 ```bash
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<file>.json
@@ -229,8 +244,19 @@ python3 scripts/validate.py
 ```
 
 The seeder only creates pages that don't exist, and it knows nothing about the
-source — the facts still have to be added to those pages by hand. Seeding is the
-scaffold, not the research.
+source — the facts still have to be added to those pages afterwards. Seeding is
+the scaffold, not the research.
+
+Two things bite when adding those facts in bulk:
+
+- **The parcel decides the page, not the path.** A corner building the source
+  addresses on both its streets resolves to two paths and has one page; the
+  resolver says so in its note. Key the write on the APN and fix the finding's
+  `path` to the page the parcel actually has.
+- **Render before you write.** Some pages are hand-authored and
+  `seed_pages.render_html` will not reproduce them. Writing `data.json` and
+  failing to regenerate `index.html` leaves the two disagreeing. Render first;
+  write both files or neither, and edit the rest by hand.
 
 **Check the neighborhood directory the resolver chose before you seed.** It
 files a new page under the area of the nearest published page, which is right

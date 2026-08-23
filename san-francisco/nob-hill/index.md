@@ -7,6 +7,7 @@ that neighborhood.
 
 ## Streets documented so far
 
+- [Broadway](broadway/) — 1 building, built 1907.
 - [Bush Street](bush-street/) — 8 buildings, built 1900–1985.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.

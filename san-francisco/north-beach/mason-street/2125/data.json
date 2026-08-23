@@ -1,0 +1,132 @@
+{
+  "address": "2125 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/mason-street/2125/",
+  "apn": "0065006",
+  "block": "0065",
+  "lot": "006",
+  "eas_baseid": "276480",
+  "coordinates": {
+    "lat": 37.8032,
+    "lng": -122.413247
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 2327.5,
+    "building_area_sqft": 3204,
+    "lot_depth_ft": 22.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 2125 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 569429,
+    "assessed_improvement_value": 539125
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210244996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-24",
+      "status_date": "2022-11-30",
+      "estimated_cost": 1,
+      "revised_cost": 100,
+      "description": "to comply with #9: #20281970: per notice of violaton # 20281970 provide handrail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604058304",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-05",
+      "status_date": "2006-04-05",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel, cabinets & appliances, dry rot, carpets, paint. no structural work. replace kitchen window in kind. .67 u factor min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412302346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-30",
+      "status_date": "2005-01-24",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "renew expired permit 200401063399 to comply with his nov remaining work is stair repair <50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401063399",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-06",
+      "status_date": "2005-01-24",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "repair stairs less than 50%, smoke detectors, water heater vent, door buzzer, window cord",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=2125",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0065006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0065&lot=006",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0065006",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2019",
+      "kind": "survey",
+      "description": "The 2019 updated survey found this building a non-contributor: nondescript, of low integrity, and with no apparent style, age or construction date.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

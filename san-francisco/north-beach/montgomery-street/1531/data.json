@@ -1,0 +1,114 @@
+{
+  "address": "1531 Montgomery Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/montgomery-street/1531/",
+  "apn": "0079004",
+  "block": "0079",
+  "lot": "004",
+  "eas_baseid": "490776",
+  "coordinates": {
+    "lat": 37.803102,
+    "lng": -122.405034
+  },
+  "parcel": {
+    "lot_area_sqft": 1215,
+    "lot_depth_ft": 40.5,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 1531 MONTGOMERY          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1004839,
+    "last_sale_date": "2012-04-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark",
+    "survey_name": "JULIUS CASTLE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201601227812",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-01-22",
+      "status_date": "2019-05-08",
+      "estimated_cost": 80000,
+      "revised_cost": 70000,
+      "description": "to comply w/nov 200679034:correct un permitted changes to building. see accompanying motion & cert of apropriateness #0213. repair & reprint, etc. ext work only; minor reduction of overall bld envelope as a result of correcting unpermitted work. no doors moved, no impact to overall occ/use.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601227818",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-01-22",
+      "status_date": "2018-04-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair/replacement of parapet wall destroyed by fire.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505890",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-04-24",
+      "status_date": "1995-09-15",
+      "estimated_cost": 275,
+      "description": "connection of auto fire system to exhaust hoods",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTGOMERY&street_type=ST&address_number=1531",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0079004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0079&lot=004",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0079004",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1932",
+      "kind": "construction",
+      "description": "Built to the design of Louis Mastropasqua, whose North Beach work the city's survey documents.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}
