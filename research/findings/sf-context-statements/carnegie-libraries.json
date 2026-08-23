@@ -1,0 +1,86 @@
+{
+  "source_id": "sf-context-statements",
+  "batch": "carnegie-libraries",
+  "read_on": "2026-08-22",
+  "notes": "The whole 43-page PDF, read end to end: the Carnegie grant programme, the evolving architecture of branch libraries, the institutional origins of San Francisco's public libraries, the politics of the city's Carnegie grant, the pre-Carnegie branches, the seven Carnegie branches, the architects, the property types and defining features, the photographs and the bibliography, plus the appendix reprinting Bertram's \"Notes on the Erection of Library Buildings\". **It prints no street address for any of the seven branch libraries it is about.** They are named by neighbourhood, dated, and credited to their architects — Richmond 1914 (Bliss & Faville), Mission 1915-16, Sunset 1918, North Beach/Chinatown 1921 and Presidio 1921 (all G. Albert Lansburgh), Noe Valley 1916 (John Reid, Jr.) and Golden Gate Valley 1918 (Ernest Coxhead) — and located only by street name in the figure captions (Green and Octavia for Golden Gate Valley, Powell for Chinatown) or by cross street (the pre-Carnegie Park branch on Page near Cole). Under the evidence bar that is not an address, so none of the seven can be resolved from this document. The two numbered addresses it does give are both buildings named as other work by one of the architects.",
+  "coverage": {
+    "unit": "pages",
+    "examined": 43,
+    "mentions": 2,
+    "remaining": "Nothing in this document. The DPR 523 forms for the seven branches, and the landmark designation reports adopted from this nomination, are separate documents and are untouched.",
+    "note": "2 numbered San Francisco addresses in 43 pages, both architects' other work rather than branch libraries. The seven Carnegie branches the statement is about carry no street number anywhere in it."
+  },
+  "findings": [
+    {
+      "id": "carnegie-libraries-0001",
+      "date": "1908",
+      "date_precision": "year",
+      "kind": "construction",
+      "address_as_written": "333 Grant Avenue",
+      "street_number": "333",
+      "street_name": "GRANT",
+      "street_type": "AVE",
+      "description": "Built as the Home Telephone Building, to designs by Ernest Coxhead. Classically inspired but marked by the outsized elements that characterise his work, it is San Francisco Landmark No. 141.",
+      "extra": {
+        "architect_as_recorded": "Ernest Coxhead",
+        "landmark_as_recorded": "San Francisco Landmark #141"
+      },
+      "citation": {
+        "label": "Tim Kelley, Origins of the Seven San Francisco Carnegie Branch Libraries 1901-1921 — context statement for the landmark nomination of the Carnegie branch libraries, San Francisco Planning Department, January 2001",
+        "url": "https://sfplanning.s3.amazonaws.com/archives/documents/774-Carnegie.pdf",
+        "corpus_path": "research/corpora/sf-context-statements/carnegie-libraries.pdf",
+        "locator": "p. 15"
+      },
+      "raw": {
+        "text": "his 1908 Home Telephone Building at 333 Grant Avenue (San Francisco Landmark #141) often featured surprising outsized elements"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-08-22",
+        "method": "sf-eas-addresses has 333 GRANT AVE but it does not join to one parcel. 333 GRANT AVE's coordinates fall in 20 active parcels (0286060, 0286036, 0286030, 0286043…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the address resolves to condominium unit parcels, which the root AGENTS.md directory contract holds back until the building's own parcel is established."
+      }
+    },
+    {
+      "id": "carnegie-libraries-0002",
+      "date": "1890",
+      "date_precision": "year",
+      "kind": "construction",
+      "address_as_written": "455 Fair Oaks",
+      "street_number": "455",
+      "street_name": "FAIR OAKS",
+      "street_type": "ST",
+      "description": "Built as the Church of the Holy Innocents, to designs by Ernest Coxhead — the only one of his early Episcopal churches in the city still standing.",
+      "extra": {
+        "architect_as_recorded": "Ernest Coxhead"
+      },
+      "citation": {
+        "label": "Tim Kelley, Origins of the Seven San Francisco Carnegie Branch Libraries 1901-1921 — context statement for the landmark nomination of the Carnegie branch libraries, San Francisco Planning Department, January 2001",
+        "url": "https://sfplanning.s3.amazonaws.com/archives/documents/774-Carnegie.pdf",
+        "corpus_path": "research/corpora/sf-context-statements/carnegie-libraries.pdf",
+        "locator": "p. 15"
+      },
+      "raw": {
+        "text": "Of these, only the Church of the Holy Innocents at 455 Fair Oaks (1890) survives."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "6533027",
+        "path": "/san-francisco/mission/fair-oaks-street/455/",
+        "eas_address": "455 FAIR OAKS ST",
+        "method": "EAS exact match on 455 FAIR OAKS ST → parcel 6533027; sf-parcels has blklot 6533027 active, 455–455 FAIR OAKS; the 2025 roll records it as commercial misc, built 1904.",
+        "checked_on": "2026-08-22",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "conflict": "The landmark nomination dates the church to 1890; the assessor's 2025 roll gives the parcel a year built of 1904. Recorded, not reconciled.",
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/141"
+      }
+    }
+  ]
+}

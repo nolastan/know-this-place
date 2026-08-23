@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 16 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 18 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 16 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 2: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined) and [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published). Both loops closed. |
-| **Remaining** | ~34 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 18 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 4: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined) and [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined). All four loops closed. |
+| **Remaining** | ~32 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -200,6 +200,22 @@ document you are about to mine.
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/e312738442fad29bcb74b96538b857ca1a6e1bedd359bbfc0de2d4a255a1b7ae/content`
     — confirmed from the `SharedLinks.aspx` page's own markup. See "The Mission
     Dolores statement" below.
+  - William Kostura, *Van Ness Auto Row Support Structures: A Survey of
+    Automobile-Related Buildings along the Van Ness Avenue Corridor*, prepared
+    for the San Francisco Department of City Planning, adopted 2010 (73 pp.),
+    source id `van-ness-auto-row-context-statement`. SF Planning lists it as
+    "Van Ness Auto Row Support Structures (Adopted 2010)" and serves it from
+    its own site, not the S3 archive or the M-Files vault, at
+    `https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/Van%20Ness%20Auto%20Row%20Context%20revised%20June%202010.pdf`
+    — a plain fetch, no shell. Same author as the Inner Sunset statement. See
+    "The Van Ness Auto Row survey" below.
+  - Tim Kelley, *Origins of the Seven San Francisco Carnegie Branch Libraries
+    1901-1921*, the context statement inside the January 2001 landmark
+    nomination of the Carnegie branch libraries (43 pp.), source id
+    `carnegie-libraries-context-statement`. On the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/774-Carnegie.pdf`.
+    SF Planning lists it as "Carnegie Branch Libraries of San Francisco
+    (Adopted 2001)". See "The Carnegie branch libraries nomination" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1109,6 +1125,86 @@ has no appendix inventory table. What it carries at address level is:
 - **Citation label:** name the consultant(s), the report and its adoption
   date, and link the SF Planning listing page.
 
+**The Van Ness Auto Row survey is the most densely addressed document in this
+set**, and the only one so far that hands over an assessor block *and lot* for
+every building it evaluates.
+
+- **Shape of the yield.** Three parts, all of them usable:
+  - **Section IV, pp. 67–70** — the evaluation tables: **112 buildings**, each
+    with a printed address, a block/lot, a date built, a property type and a
+    California Register status code, grouped by the code (`1S`+`3CS`, `3CS`+
+    `5D3`, `3CB`, `3CD`, `3CS`, `6Z`, `7`). The status code is in the group
+    heading, not the row, so a row parsed on its own loses it.
+  - **Section V, p. 71** — 44 more auto-related buildings identified but not
+    evaluated, with year built, architect or builder, and a terse reason.
+  - **Sections II–III, pp. 11–66** — the narrative, which is where the
+    architects, first tenants, garage capacities, building names and the
+    demolished buildings are. Roughly 90 numbered addresses beyond the tables.
+- **Cautions:**
+  - **`pdftotext -layout` gets 97 of the 112 evaluation rows on a two-space
+    column split.** The other 15 print the address and the block/lot separated
+    by one space (`1350 Van Ness/1465 Bush 670/16, 19`); match on the block/lot
+    pattern instead. Four rows of Section V run the architect column into the
+    notes the same way and need transcribing by hand.
+  - **A row's address is sometimes two frontages** (`730 Polk St./771 Ellis`).
+    Put the second in `extra.address_note_as_recorded` and let the resolver
+    compare them.
+  - **The survey abbreviates the high end of a range** — `1523-25 Franklin`,
+    `1243-5 Van Ness`. Spell it out before handing it to the resolver, or the
+    range expands downwards.
+  - **The report disagrees with itself on three addresses**, all recorded as
+    conflicts rather than reconciled: the Hub Garage is 1663–1667 Market Street
+    in the table and 1661–1667 in the text; the Marine View Garage is
+    2020–2034 Van Ness Avenue in the table and 2020 in the text; and the
+    narrative puts an electrical servicing company at 930–980 Van Ness Avenue,
+    a number the avenue does not carry, where the tables have 928 and 950.
+  - **Fourteen of its build dates disagree with the assessor's roll**, most of
+    them because the block was redeveloped after 2010 — 1000 Van Ness Avenue
+    (survey 1920–21, roll 1998), 550–590 Van Ness (1908–09 / 1999), 1335 Larkin
+    (1913–14 / 2022), 500 Turk (1935 / 2022) and so on. The survey calls these
+    buildings extant; it was written in 2010. Record both, adjudicate neither.
+  - **Its assessor blocks are right except one:** 1725 Sacramento Street is
+    printed `641/1A` and resolves to parcel 0643001A.
+  - **People.** The survey is built on city directories and is thick with
+    proprietors — the machinists and repairmen who opened shops, the dealers
+    whose names are on the showrooms. Kept: the **firms** (Chanslor and Lyon,
+    Goodyear, Firestone, Michelin, the Electric Storage Battery Company, Kahn
+    and Keville, the Middleton Motor Car Company, the Pioneer and National
+    Automobile Companies), the **architects and builders** (Bernard Maybeck,
+    Willis Polk and Company, John Galen Howard, Weeks and Day, Ernest Coxhead,
+    Sylvain Schnaittacher, the O'Brien Brothers, MacDonald and Applegarth,
+    MacDonald and Kahn, George Applegarth, Frederick H. Meyer, Herman Barth,
+    Cunningham and Politeo, John E. Dinwiddie, T. Paterson Ross, Arthur S.
+    Bugbee, A. Lacy Worswick, William Knowles, James R. Miller, Ward and
+    Blohme, John H. Powers, W. L. Schmolle, S. Heiman, Hladik and Thayer, and
+    the builders Joseph Pasqualetti and William Helbing), and the two dealers
+    the city's own landmarks are named for. Dropped: every individual
+    proprietor of a repair shop, machine shop or specialty trade.
+- **Citation label:** `William Kostura, Van Ness Auto Row Support Structures: A
+  Survey of Automobile-Related Buildings along the Van Ness Avenue Corridor,
+  prepared for the San Francisco Department of City Planning, adopted 2010`.
+
+**The Carnegie branch libraries nomination is the clearest case in this set of
+a document about buildings that never names their addresses.** Forty-three
+pages on the seven San Francisco Carnegie branches: the grant programme, the
+politics, the architecture, the architects, the property type, the defining
+features, a photographic appendix and a reprint of Bertram's "Notes on the
+Erection of Library Buildings". The branches are named by neighbourhood, dated
+and credited — Richmond 1914 (Bliss & Faville), Mission 1915–16, Sunset 1918,
+North Beach/Chinatown 1921 and Presidio 1921 (all G. Albert Lansburgh), Noe
+Valley 1916 (John Reid, Jr.), Golden Gate Valley 1918 (Ernest Coxhead) — and
+located only by street name in figure captions or by cross street. **Not one
+street number for any of the seven.** The two numbered addresses in the whole
+document are other work by one of its architects. Anyone tempted to fill the
+gap from outside should read "The evidence bar" first; the branch addresses are
+resolvable from the Article 10 landmark index (DataSF `97yj-54sx`), which is a
+different source and should be registered as one.
+
+- **Citation label:** `Tim Kelley, Origins of the Seven San Francisco Carnegie
+  Branch Libraries 1901-1921 — context statement for the landmark nomination of
+  the Carnegie branch libraries, San Francisco Planning Department, January
+  2001`.
+
 ## Verification log
 
 One entry per pass, oldest first. Each says what was read, what it yielded in
@@ -1635,3 +1731,42 @@ next run.
   pages.** `check.py --stats` is where this shows up — a `resolved` column above
   the `published` column is either work to do or a loop someone forgot to
   close, and telling the two apart costs a full verification pass.)
+- **Verified:** 2026-08-22 (Van Ness Auto Row: read all 73 pages of the adopted
+  survey. **195 distinct printed address forms**, yielding **453 findings** —
+  one per fact, not per passage: a construction record and a survey evaluation
+  for each of the 112 buildings evaluated on DPR 523 forms, the same pair for
+  the 44 identified but not evaluated, and 118 narrative facts (architects and
+  builders, first tenants, garage capacities, building names, and the buildings
+  the survey records as gone). **352 resolve to a parcel that may be
+  documented, on 133 pages: 122 new and 11 edited**, across `tenderloin` (46),
+  `nob-hill` (24), `western-addition` (18), `russian-hill` (15), `hayes-valley`
+  (13), `mission` (8), `pacific-heights` (7), `presidio-heights` (1) and
+  `haight-ashbury` (1). Not documented, and why: **82 findings name a number
+  sf-eas-addresses has never carried** — 1644, 1650 and 1670 Pine Street among
+  them, all three extant buildings the survey evaluated, whose numbers the city
+  has since dropped; **30 have an EAS row that joins to no parcel**; **4 are
+  condominium parcels**, which AGENTS.md holds back; and **1 names City Hall
+  Avenue**, a street taken for the Civic Center that EAS no longer holds.
+  **18 conflicts are stated on pages and reconciled on none.** Coverage note:
+  this document is read in full and nothing in it is outstanding. Its own
+  appendices are separate documents and are untouched: the DPR 523 forms for
+  the 112 buildings, the Pine Street district record, and the map of the
+  corridor. **What the run learned, beyond the cautions above:** the resolver
+  looked up only the low end of a recorded range whenever a finding also
+  carried that number on its own, which lost every building whose low number
+  has been retired — 550–590 and 731–799 Van Ness Avenue among them — and it
+  now expands the range; and a survey that prints its own assessor block *and*
+  lot can choose between the parcels a range spans today, which is reading the
+  record rather than adjudicating it.)
+- **Verified:** 2026-08-22 (Carnegie branch libraries: read all 43 pages of the
+  January 2001 nomination. **2 numbered San Francisco addresses in the whole
+  document**, both other work by one of its architects: 333 Grant Avenue, the
+  Home Telephone Building of 1908, and 455 Fair Oaks Street, the Church of the
+  Holy Innocents of 1890, both by Ernest Coxhead. **1 resolves and is
+  published** — 455 Fair Oaks Street, a new page, carrying the one conflict the
+  batch produced (the nomination dates the church to 1890, the 2025 roll dates
+  the parcel to 1904). 333 Grant Avenue is a condominium today and is declined.
+  **The seven Carnegie branches the document is about carry no street number
+  anywhere in it**, so none of them can be resolved from this source; that is
+  the finding, not a shortfall in the pass. Coverage note: this document is
+  read in full and nothing in it is outstanding.)

@@ -11,6 +11,7 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Fulton Street](fulton-street/) — 1 building, built 1924; 1 in the Alamo Square Historic District.
 - [Germania Street](germania-street/) — 1 building, built 1900.
 - [Gough Street](gough-street/) — 1 building, built 1917.
+- [Grove Street](grove-street/) — 1 building, built 1920.
 - [Haight Street](haight-street/) — 1 building, built 1952.
 - [Hayes Street](hayes-street/) — 1 building, built 1911; 1 in the Hayes Valley Residential Historic District.
 - [Hermann Street](hermann-street/) — 1 building, built 1900.
