@@ -9,6 +9,13 @@ skill as it works, and are expected to be better after every session.
 [`/ui`](../.claude/skills/ui/SKILL.md) is the fast path — it reads two of them
 and writes to none.
 
+`/design` **deliberately shadows the built-in skill of the same name** (Claude
+Design's canvas editor). In this repo, designing a module means the Paper loop
+and this corpus, not a one-off canvas. Renaming
+`.claude/skills/design/` is the only way to get the built-in back — a project
+skill wins on name, and nothing can address the shadowed one while both are
+called `design`.
+
 ## Direction of truth is one-way: code → design
 
 [`shared/site.css`](../shared/site.css) is the canonical design system. A Paper

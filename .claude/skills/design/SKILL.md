@@ -14,6 +14,13 @@ writes back into the module.
 The module's own files are the authority; start at
 [design/AGENTS.md](../../../design/AGENTS.md).
 
+**This skill deliberately shadows the built-in `design` skill** (Claude Design's
+canvas editor), which shares the name. Inside this repo, `/design` means this
+loop and nothing else. That is the intent: design here is the Paper loop with a
+knowledge module behind it, not a one-off canvas. To reach the canvas editor
+again, rename this skill's directory — a project skill wins on name, so there is
+no way to address the shadowed one while both are called `design`.
+
 ## The loop
 
 ### 1. Open the session
