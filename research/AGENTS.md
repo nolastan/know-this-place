@@ -252,6 +252,28 @@ rather than just accumulate.
   California Street in `financial-district`. Where a street is that thin, file
   on the **analysis neighbourhood** the assessor and EAS give the parcel, and
   put the reason in `resolution.method`.
+- **A lesson nobody can act on gets paid for twice.** The Van Ness run wrote
+  down that the nearest published page cannot pick the neighbourhood directory
+  on a street the site hasn't settled — and then left `resolve_eas.py` doing
+  exactly that, so North Beach came back scattered across six directories and
+  the paths would have been hand-patched a second time. *When a run discovers a
+  rule, give the tool the switch that applies it.* `--area-from-nhood` and the
+  `manifest` subcommand both exist because the knowledge was already in the
+  module and only the tooling was missing.
+- **A `conflict` is not always a conflict about the address.** `resolve_eas.py`
+  read every `conflict` as a disagreement between two recorded addresses and
+  printed `"290 Lombard Street" against "None"` into eighteen resolution
+  methods. Most conflicts are a source disagreeing with itself about a *date*
+  or a *name*; those resolve normally and the disagreement is the page's
+  `.unknowns` to carry. The branch now runs only when a second address is
+  actually recorded.
+- **A page the generator will not render is a hand-authored page.** Publishing
+  in bulk means calling `seed_pages.render_html` over pages the run did not
+  create, and some of them predate it — a source with no `query`, a field the
+  renderer expects as a string. Writing `data.json` and letting the render blow
+  up leaves the two files disagreeing, which the root AGENTS.md forbids
+  outright. *Render first, write both files or neither, and list what has to be
+  edited by hand.*
 - **A note that only exists in `data.json` is not on the page.** Findings runs
   have been writing conflicts into an `unknowns` key since Market & Octavia, and
   `seed_pages.py`'s renderer never read it — the disagreements reached the repo

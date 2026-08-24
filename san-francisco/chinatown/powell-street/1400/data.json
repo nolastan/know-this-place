@@ -1,0 +1,130 @@
+{
+  "address": "1400 Powell Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/powell-street/1400/",
+  "apn": "0147012",
+  "block": "0147",
+  "lot": "012",
+  "eas_baseid": "278571",
+  "coordinates": {
+    "lat": 37.797663,
+    "lng": -122.410091
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 6,
+    "stories": 2,
+    "rooms": 23,
+    "bathrooms": 6,
+    "lot_area_sqft": 4469.76,
+    "building_area_sqft": 7796,
+    "lot_depth_ft": 57.6,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "CCB",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 1400 POWELL              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 439913,
+    "assessed_improvement_value": 277086
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201609268807",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2016-09-26",
+      "status_date": "2025-02-10",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "of the geneal advertising sign structure at 1400 powell will perform customary sign maintenance as shown on the plans. (panel #1080 / orig 17). n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807237407",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-23",
+      "status_date": "2008-10-23",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "repair/repl damaged facade from car accident-install new post, hardware, reframe window display. replace (e) windows (which has been damaged) in kind, replace front door in kind, replace (e) tile at entry & wall, patch stucco and paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502489",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-02-22",
+      "status_date": "1996-08-05",
+      "estimated_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700140",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-01-06",
+      "status_date": "1987-06-01",
+      "estimated_cost": 1000,
+      "description": "remove & replace appox 30 sq. ft. of damaged stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POWELL&street_type=ST&address_number=1400",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0147012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0147&lot=012",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0147012",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913",
+      "kind": "occupancy",
+      "description": "The 1913 Sanborn map shows club rooms on the upper floors of this building.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

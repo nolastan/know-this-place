@@ -1,0 +1,144 @@
+{
+  "address": "1736 Stockton Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/stockton-street/1736/",
+  "apn": "0088020",
+  "block": "0088",
+  "lot": "020",
+  "eas_baseid": "276971",
+  "coordinates": {
+    "lat": 37.801964,
+    "lng": -122.4092
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 11,
+    "stories": 3,
+    "rooms": 35,
+    "bathrooms": 8,
+    "lot_area_sqft": 6875,
+    "building_area_sqft": 11196,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "NBEACH",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 1736 STOCKTON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244856,
+    "assessed_improvement_value": 496690
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "survey_name": "TELEGRAPH HILL NEIGHBORHOOD ASSOC.",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201504073005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-07",
+      "status_date": "2015-07-01",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "repair and ancchorage of north west corner of rear wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208264926",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-08-26",
+      "status_date": "2002-08-26",
+      "estimated_cost": 3900,
+      "revised_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802600",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-03-02",
+      "status_date": "1988-04-05",
+      "estimated_cost": 675,
+      "description": "install 1/2 plywood over existing open at front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1988–2015",
+    "shown_on_page": 3,
+    "note": "6 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STOCKTON&street_type=ST&address_number=1736",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0088020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0088&lot=020",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0088020",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "construction",
+      "description": "A new Neighborhood House designed by Bernard Maybeck was completed here for the settlement organisation displaced in 1906; it held homemaking classes and a health clinic and housed the Telegraph Hill Neighborhood Association until 1954.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "1968",
+      "kind": "designation",
+      "description": "Listed in the 1968 citywide survey of San Francisco's architectural heritage as Telegraph Hill Neighborhood Association.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as an individually listed resource.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "2019",
+      "kind": "survey",
+      "description": "Identified by the 2019 updated North Beach survey as appearing eligible for local landmark or California Register / National Register status — recorded as the Telegraph Hill Neighborhood Center, the Maybeck Building.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

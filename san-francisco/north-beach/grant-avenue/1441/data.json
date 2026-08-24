@@ -1,0 +1,179 @@
+{
+  "address": "1441–1443 Grant Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/grant-avenue/1441/",
+  "apn": "0116005",
+  "block": "0116",
+  "lot": "005",
+  "eas_baseid": "447887",
+  "coordinates": {
+    "lat": 37.80018,
+    "lng": -122.407679
+  },
+  "address_range": "1441–1443",
+  "street_numbers_on_parcel": [
+    "1441",
+    "1443"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 1885,
+    "building_area_sqft": 3184,
+    "lot_depth_ft": 29,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NBEACH",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "1443 1441 GRANT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1522831,
+    "assessed_improvement_value": 652641,
+    "last_sale_date": "2022-06-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Grant Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1925",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200612210353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-21",
+      "status_date": "2007-01-30",
+      "estimated_cost": 8000,
+      "revised_cost": 1,
+      "description": "renew 200506215570 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M33875",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-16",
+      "status_date": "2005-08-16",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506215570",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-06-21",
+      "status_date": "2007-01-30",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "change out kitchen cabinets & countertops. open non-bearing wall between kitchen & living room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306308412",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-30",
+      "status_date": "2003-08-01",
+      "estimated_cost": 1300,
+      "revised_cost": 1300,
+      "description": "apply semi-gloss paint to walls and ceiling in food preparation area; repl broken sections of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212052893",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-12-05",
+      "status_date": "2002-12-05",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "repair broken clay tile in main entrance & paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902703",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-11",
+      "status_date": "2000-02-02",
+      "estimated_cost": 6280,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1999–2006",
+    "shown_on_page": 6,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRANT&street_type=AVE&address_number=1441",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0116005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0116&lot=005",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0116005",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40767941381503%2037.80018002673436)%27)",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "address": "43–47 Jasper Place, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/jasper-place/43/",
+  "apn": "0116035",
+  "block": "0116",
+  "lot": "035",
+  "eas_baseid": "435097",
+  "coordinates": {
+    "lat": 37.800147,
+    "lng": -122.40842
+  },
+  "address_range": "43–47",
+  "street_numbers_on_parcel": [
+    "43",
+    "45",
+    "47"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 1241,
+    "building_area_sqft": 3360,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0047 0043 JASPER              PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1072624,
+    "assessed_improvement_value": 459692,
+    "last_sale_date": "2014-04-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Grant Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1925",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201904158022",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-15",
+      "status_date": "2019-09-26",
+      "estimated_cost": 48000,
+      "revised_cost": 48000,
+      "description": "voluntary strengthening of the lowest level, incl the replacement of approx 54' of foundation, 800 sqft of concrete slab, 81' of (n) ply shear wall, 15' of (n) grade beam, and various shear clips,anchor bolts & holdowns",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612225775",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-12-22",
+      "status_date": "2026-01-09",
+      "estimated_cost": 25000,
+      "revised_cost": 0,
+      "description": "per pre-application minutes proposal to upgrade 3rd floor landing, add roof deck, upgrade rear stairs, add laundry @ basement with upgarded 1-hour construction of (n) exit passageway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501024865",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2015-01-02",
+      "status_date": "2019-04-15",
+      "estimated_cost": 48000,
+      "revised_cost": 148000,
+      "description": "voluntary strengthening of the lowest level, incl the replacement of approx 54' of foundation, 800 sqft of concrete slab, 81' of (n) ply shear wall, 15' of (n) grade beam, and various shear clips,anchor bolts & holdowns",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722344",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-05",
+      "status_date": "1997-11-26",
+      "estimated_cost": 4850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714929",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-08",
+      "status_date": "1997-09-03",
+      "estimated_cost": 2500,
+      "description": "repair rear stairway in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619308",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-08",
+      "status_date": "1997-11-04",
+      "estimated_cost": 4850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1996–2019",
+    "shown_on_page": 6,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JASPER&street_type=PL&address_number=43",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0116035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0116&lot=035",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0116035",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40841967704783%2037.80014680633773)%27)",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "construction",
+      "description": "Built to the design of Paul J. DeMartini, whose North Beach work the city's survey documents.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

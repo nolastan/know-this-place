@@ -1,0 +1,121 @@
+{
+  "address": "407 Vallejo Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/vallejo-street/407/",
+  "apn": "0144032",
+  "block": "0144",
+  "lot": "032",
+  "eas_baseid": "278503",
+  "coordinates": {
+    "lat": 37.798976,
+    "lng": -122.404354
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1023.75,
+    "building_area_sqft": 1188,
+    "lot_depth_ft": 45.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0407 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 356923,
+    "assessed_improvement_value": 203945,
+    "last_sale_date": "1993-08-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912190026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-19",
+      "status_date": "2020-03-24",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remove water damaged staircase in backyard, seal off door. repair and replace (e) deck in kind on grade, add handrail. porch (un-conditioned) replace in kind windows (double glazed) voluntary insulation, repair/level floor, new outlets/lights new floor covering",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406168476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-16",
+      "status_date": "2014-09-18",
+      "estimated_cost": 37000,
+      "revised_cost": 37000,
+      "description": "kitchen: relocate pantry door and heat register, new elec outlets, new floor covering incl sunroom, replace in kind windows dbl glazed not visible from street, voluntary insulation, repair/level floor, new outlets, lights, relocate sink, new he water heater",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9812535",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-02",
+      "status_date": "1999-05-10",
+      "estimated_cost": 10173,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=407",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0144032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0144&lot=032",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0144032",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910",
+      "kind": "construction",
+      "description": "Built to the design of Joseph Devincenzi, whose North Beach work the city's survey documents.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

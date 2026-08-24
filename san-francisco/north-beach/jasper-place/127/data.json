@@ -1,0 +1,163 @@
+{
+  "address": "127–129 Jasper Place, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/jasper-place/127/",
+  "apn": "0103027",
+  "block": "0103",
+  "lot": "027",
+  "eas_baseid": "277474",
+  "coordinates": {
+    "lat": 37.80091,
+    "lng": -122.408574
+  },
+  "address_range": "127–129",
+  "street_numbers_on_parcel": [
+    "127",
+    "129"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1197,
+    "building_area_sqft": 1344,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0129 0127 JASPER              PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487486,
+    "assessed_improvement_value": 324982,
+    "last_sale_date": "2002-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Grant Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1925",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200504119642",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-11",
+      "status_date": "2005-06-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "renew appl#200311240925 to complete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311240925",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2003-11-24",
+      "status_date": "2004-04-02",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "move #127 into (e)1/f,combine upper 2 fl.into #129,create a roof deck & stair penthouse on top level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305295748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-29",
+      "status_date": "2003-06-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew expired permit applic. #2002/04/22/4577 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204224577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-22",
+      "status_date": "2002-11-05",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove lath & plaster, rewire, provide plywood, insulation & gwb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203292711",
+      "type": "additions alterations or repairs",
+      "status": "reinstated",
+      "filed": "2002-03-29",
+      "status_date": "2002-11-21",
+      "estimated_cost": 150,
+      "revised_cost": 5000,
+      "description": "remove stove/cap gas. remove illegal dwelling unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JASPER&street_type=PL&address_number=127",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0103027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0103&lot=027",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0103027",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40857394142684%2037.8009097284285)%27)",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

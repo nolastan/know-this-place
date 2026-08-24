@@ -1,0 +1,131 @@
+{
+  "address": "760–766 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/green-street/760/",
+  "apn": "0118021",
+  "block": "0118",
+  "lot": "021",
+  "eas_baseid": "435102",
+  "coordinates": {
+    "lat": 37.799392,
+    "lng": -122.411722
+  },
+  "address_range": "760–766",
+  "street_numbers_on_parcel": [
+    "760",
+    "762",
+    "764",
+    "766"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 3458,
+    "building_area_sqft": 3636,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0766 0760 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1415700,
+    "assessed_improvement_value": 623192
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200506013848",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-01",
+      "status_date": "2005-06-21",
+      "estimated_cost": 4640,
+      "revised_cost": 4640,
+      "description": "correct nov 200559689 on 5/5/05. replace rotted stairs,risers,handrails. replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915763",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-02",
+      "status_date": "1999-08-20",
+      "estimated_cost": 600,
+      "description": "repair rear stairs on 3rd floor/stringers on east stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220112",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-17",
+      "status_date": "1993-02-23",
+      "estimated_cost": 9195,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1992–2010",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=760",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0118021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0118&lot=021",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0118021",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "construction",
+      "description": "Built to the design of Charles Fantoni, whose North Beach work the city's survey documents.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

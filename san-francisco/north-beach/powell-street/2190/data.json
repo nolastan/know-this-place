@@ -1,0 +1,86 @@
+{
+  "address": "2190 Powell Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/powell-street/2190/",
+  "apn": "0053001",
+  "block": "0053",
+  "lot": "001",
+  "eas_baseid": "447307",
+  "coordinates": {
+    "lat": 37.804695,
+    "lng": -122.411592
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 89803,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 2190 POWELL              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "survey_name": "FRANCISCO MIDDLE SCHOOL",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "2000–2013",
+    "shown_on_page": 0,
+    "note": "9 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POWELL&street_type=ST&address_number=2190",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0053001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0053&lot=001",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0053001",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2019",
+      "kind": "survey",
+      "description": "Identified by the 2019 updated North Beach survey as appearing eligible for local landmark or California Register / National Register status — recorded as Francisco Middle School.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

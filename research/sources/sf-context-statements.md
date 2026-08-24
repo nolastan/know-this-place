@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 18 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 19 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 18 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 4: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined) and [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined). All four loops closed. |
-| **Remaining** | ~32 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 19 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 5: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined) and [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved). All five loops closed. |
+| **Remaining** | ~31 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -216,6 +216,17 @@ document you are about to mine.
     `https://sfplanning.s3.amazonaws.com/archives/documents/774-Carnegie.pdf`.
     SF Planning lists it as "Carnegie Branch Libraries of San Francisco
     (Adopted 2001)". See "The Carnegie branch libraries nomination" below.
+  - Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine
+    T. Petrin and Shayne E. Watson, *North Beach, San Francisco Historic
+    Context Statement*, prepared for the Northeast San Francisco Conservancy,
+    dated 31 January 2018 with revisions as of 8 October 2020, adopted 2022
+    (269 pp.), source id `north-beach-context-statement`. SF Planning serves it
+    from the S3 archive as a plain fetch, no vault shell:
+    `https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf`.
+    It updates and supplements the 1982 North Beach Survey (Bloomfield, Kortum
+    and Olmsted), which the Board of Supervisors adopted in 1999 and whose 212
+    listed resources it reprints as Appendix B. See "The North Beach statement"
+    below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1205,6 +1216,92 @@ different source and should be registered as one.
   the Carnegie branch libraries, San Francisco Planning Department, January
   2001`.
 
+**The North Beach statement is the densest document in this set after Central
+SoMa**, and the only one whose yield is split about evenly between a reprinted
+inventory, three architect appendices and a narrative that dates buildings in
+its figure captions.
+
+- **Where the addresses are.** Five places, and a run that reads only the
+  narrative gets about a fifth of them:
+  - **Appendix B, printed pp. B1–B7** — the 1982 North Beach Survey's listed
+    resources: **210 rows**, each an address, an assessor block and lot, and a
+    district or individual listing. This is the structured core. Seven of the
+    rows are objects in Washington Square rather than buildings.
+  - **Appendix A, printed pp. A1–A33** — twelve reconstruction-era architects,
+    almost all Italian or Swiss-Italian, each sketch ending in a list of
+    buildings **with construction years**. About 90 dated attributions.
+  - **Appendix C, printed pp. C1–C2** — a clean table of modern architects,
+    address, year and property type. 39 rows.
+  - **Chapter X, printed pp. 188–190** — the landmark, National Register,
+    California landmark, *Here Today* (1968) and Legacy Business lists, all
+    address-keyed, several with founding years for the businesses.
+  - **Chapter XI, printed pp. 191–192** — the 2019 updated survey's 44
+    individually eligible resources, with what each is.
+  - **The narrative, pp. 6–186** — construction dates and architects in figure
+    captions, the 1913 and 1949 Sanborn readings (stables, photography studios,
+    club rooms, theatres), the speakeasies, and the schools and churches.
+- **Cautions:**
+  - **`pdftotext -layout` handles Appendix B on a two-space column split**, but
+    four rows wrap: `700 Filbert St./1811-21 Powell St./700 Columbus Ave./4-12
+    Via Bufano` and `651-73 Union St./1656 Powell St./585 Columbus` continue on
+    the next line, and two designation cells do the same. Transcribe those four
+    by hand.
+  - **The survey abbreviates the high end of a range** — `530-50 Chestnut`,
+    `1453-59 Grant`, `465-67 Broadway`. Spell it out before the resolver, or
+    the range expands downwards.
+  - **`ptn` after a lot means the resource is a portion of that lot.** It still
+    identifies the parcel, so keep it in `assessor_lot_as_recorded`; a
+    hyphenated run of lots (`0088/049-051`, `0115/066-069`) does not, and those
+    are the rows whose ranges have since been split across parcels.
+  - **Streets with no type in EAS.** Broadway and Via Bufano carry no
+    `street_type`, which is what `scripts/seed_pages.py`'s `build_inventory`
+    crashed on until this pass. `Bob Kaufman Place` is `BOB KAUFMAN ALY`,
+    `Medau St.`/`Medau Place` is `MEDAU PL`, `Cadell Alley` is `CADELL PL`,
+    `Nobles Alley` is `NOBLES ALY`, and `Adler Place`/`William Saroyan Place`
+    is **`SAROYAN PL`**, which has exactly one address record in EAS.
+  - **The document disagrees with itself constantly** — 18 conflicts recorded,
+    not one of them reconciled. The pattern is a figure caption against the
+    body: 555 Francisco is 1923 in Appendix A and 1928 in the caption and the
+    property-type chapter; the Dante Building and the Italian Athletic Club
+    have their captions apparently swapped (1927/1935 against 1935/1927, with
+    the halls chapter giving 1936); St Francis of Assisi is 610 Vallejo in the
+    landmark list and 620 in the property-type chapter; the Francisco school is
+    2170 Powell in one chapter, 2190 in another, and 330 Francisco Street dated
+    1931 in one and 1939 in the other; Saints Peter and Paul is credited to
+    Fantoni in one appendix and Porporato in another.
+  - **The city's analysis neighborhood splits the survey area.** North Beach as
+    this document draws it runs across four of the city's own neighborhoods:
+    251 of the pages this pass wrote are `north-beach`, 68 `chinatown`
+    (everything around Grant, Stockton and lower Columbus, including City
+    Lights, Fugazi Hall and the Bank of Italy building), 25 `russian-hill`, and
+    one each in `nob-hill`, `marina` and `financial-district`. That is the
+    city's boundary, not this project's judgement, and `resolve_eas.py
+    --area-from-nhood` — added in this pass — is what files them that way.
+  - **People.** The architect sketches are biographies: they give each man's
+    own house, his family's addresses and his office. **Kept:** the design
+    attributions, the contractors and building companies (DeMartini Building
+    Company, Devincenzi Brothers & Company, Cuneo and Costa, C.N.P. Ahlgren,
+    Kidd & Anderson), the firms a building was put up for, and the historical
+    figures the city's own survey names as the reason a building is
+    significant — John F. Fugazi commissioning Fugazi Hall, Abe Ruef
+    commissioning the Hildebrand Stables, A. P. Giannini and Andrea Sbarboro at
+    the two bank buildings, Ferlinghetti and Peter D. Martin founding City
+    Lights, the artists whose studio 521–23 Francisco was built as. **Dropped:**
+    every residence, including the architects' own homes, Allen Ginsberg's
+    apartment at 1010 Montgomery, Lawrence Ferlinghetti's flat at 333–43
+    Chestnut, the labour leader's cottage at 115 Telegraph Boulevard, and the
+    home address of the man shot in 1932. Where the *only* stated significance
+    of a building is that someone lived there, the finding records the
+    building's eligibility and leaves the residency out.
+- **Citation label:** `Michael R. Corbett, with a 2019 updated survey and
+  evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San
+  Francisco Historic Context Statement, prepared for the Northeast San
+  Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted
+  2022`. Page source id `north-beach-context-statement`; the PDF is a plain
+  fetch from
+  `https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf`.
+
+
 ## Verification log
 
 One entry per pass, oldest first. Each says what was read, what it yielded in
@@ -1770,3 +1867,29 @@ next run.
   anywhere in it**, so none of them can be resolved from this source; that is
   the finding, not a shortfall in the pass. Coverage note: this document is
   read in full and nothing in it is outstanding.)
+- **Verified:** 2026-08-22 (North Beach: read all 269 pages of the adopted PDF
+  — the eleven narrative chapters, the regulatory and recommendation lists and
+  all four appendices. 1,225 numbered-address mentions; 630 findings; 547
+  resolve to a parcel with an EAS address and an active 2025 roll row, 546 of
+  them now on **349 pages** — 339 new and 10 edited — across `north-beach`
+  (251), `chinatown` (68), `russian-hill` (25) and one each in `nob-hill`,
+  `marina` and `financial-district`. One resolved finding is declined: the
+  California State Landmark number for the Third Baptist Church site, because
+  1640 Grant Avenue is a hand-authored page that already documents the site
+  from the State's own registration application and this source gives no
+  designation year, so a dated timeline entry would have invented one.
+  **83 unresolved**, in four groups: 35 where the recorded range has since been
+  split across parcels and the record names no single lot (the Romeo flats rows
+  are most of these — 19–33 Medau Place is eight parcels today); 34 with no EAS
+  record at all, which is where most of the narrative's lost buildings sit (620
+  Vallejo, 638 Union, 599 Jackson, 631 Green, 649 Broadway, 14–18 Osgood, 683
+  Green); 7 condominium parcels the directory contract holds back; 3 EAS rows
+  that carry no parcel number; and Washington Square itself, which has no street
+  number. What the pass taught, beyond the cautions above: **a `conflict` on a
+  finding is not always an address conflict** — `resolve_eas.py` treated every
+  one as a disagreement with a second recorded address and printed `"290
+  Lombard Street" against "None"` into eighteen methods before it was fixed;
+  and **the resolver had no way to act on the lesson the module already
+  wrote down** after Van Ness about thin streets, so `--area-from-nhood` and a
+  `manifest` subcommand were added here rather than the paths being
+  hand-patched again.)

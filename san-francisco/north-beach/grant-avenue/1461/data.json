@@ -1,0 +1,143 @@
+{
+  "address": "1461–1465 Grant Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/grant-avenue/1461/",
+  "apn": "0116002",
+  "block": "0116",
+  "lot": "002",
+  "eas_baseid": "447883",
+  "coordinates": {
+    "lat": 37.800404,
+    "lng": -122.407725
+  },
+  "address_range": "1461–1465",
+  "street_numbers_on_parcel": [
+    "1461",
+    "1463",
+    "1465"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 4,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 1625,
+    "building_area_sqft": 3690,
+    "lot_depth_ft": 25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NBEACH",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "1465 1461 GRANT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1158838,
+    "assessed_improvement_value": 1069697
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Grant Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1925",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200307179704",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-07-17",
+      "status_date": "2003-07-17",
+      "estimated_cost": 370,
+      "revised_cost": 370,
+      "description": "install 1 vinyl window in kind into exntg frame. no change in size or location. no structural change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520575",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-12-06",
+      "status_date": "1996-05-10",
+      "estimated_cost": 2000,
+      "revised_cost": 6000,
+      "description": "shut down bsmt dwelling unit/use bsmt for storage purpose",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1995–2007",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRANT&street_type=AVE&address_number=1461",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0116002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0116&lot=002",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0116002",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40772458005026%2037.80040444257925)%27)",
+      "retrieved": "2026-08-22"
+    },
+    {
+      "id": "north-beach-context-statement",
+      "name": "Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine T. Petrin and Shayne E. Watson, North Beach, San Francisco Historic Context Statement, prepared for the Northeast San Francisco Conservancy, 31 January 2018 (revised 8 October 2020), adopted 2022",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "North Beach Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1959",
+      "kind": "occupancy",
+      "description": "S & S Grocery traces its business here to 1959; the city's survey lists it among North Beach's legacy bars, restaurants and businesses, a concentration it records as the highest in the city.",
+      "source": "north-beach-context-statement"
+    },
+    {
+      "date": "1982",
+      "kind": "survey",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District.",
+      "source": "north-beach-context-statement"
+    }
+  ]
+}

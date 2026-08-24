@@ -1963,9 +1963,11 @@ def build_inventory(data: dict) -> list:
         # A corner parcel carries addresses on two streets. File it under the
         # street holding the most of them, and range only within that street —
         # otherwise "700–3999" would span two different roads.
+        # A few streets have no type at all in EAS — Broadway, The Embarcadero,
+        # Via Bufano — so the key has to tolerate a missing one.
         by_street: dict = collections.defaultdict(list)
         for a in addrs:
-            by_street[(a["street_name"], a["street_type"])].append(a)
+            by_street[(a["street_name"], a.get("street_type", ""))].append(a)
         (sname, stype), on_street = max(
             by_street.items(),
             key=lambda kv: (len(kv[1]), -num_key(kv[1][0].get("address_number", ""))[0]))
@@ -1979,9 +1981,11 @@ def build_inventory(data: dict) -> list:
             # EAS can hold more than one row for the same street number on a
             # parcel; dedupe or the range comes out as "3656–3656".
             "numbers": sorted({a.get("address_number", "") for a in on_street}, key=num_key),
-            "other_street_addresses": [f"{a['address_number']} {a['street_name']} "
-                                       f"{a['street_type']}" for a in addrs
-                                       if (a["street_name"], a["street_type"]) != (sname, stype)],
+            "other_street_addresses": [
+                " ".join(x for x in (a["address_number"], a["street_name"],
+                                     a.get("street_type", "")) if x)
+                for a in addrs
+                if (a["street_name"], a.get("street_type", "")) != (sname, stype)],
             "lat": float(lead["latitude"]),
             "lng": float(lead["longitude"]),
             "zip": lead.get("zip_code"),
