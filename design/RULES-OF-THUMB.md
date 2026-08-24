@@ -46,8 +46,10 @@ PRINCIPLES, CONVENTIONS, PAPER, IMPLEMENTATION.*
     `--panel`, `--ink`, `--muted`, `--rule`, `--note-bg`, `--accent`. → [I](IMPLEMENTATION.md#tokens)
 15. New classes are scoped to the module; `.spec` / `.speclist` are shared with
     three other panels. → [C](CONVENTIONS.md#porting-a-design-back-into-the-site)
-16. `index.html` is regenerated from `data.json`, never hand-edited; migrations
-    are scratchpad scripts. → [C](CONVENTIONS.md#porting-a-design-back-into-the-site)
+16. `index.html` is regenerated from `data.json` with `seed_pages.py render`,
+    never hand-edited; a migration is a change to the renderer, and
+    `validate.py` fails if any page disagrees with
+    it. → [C](CONVENTIONS.md#porting-a-design-back-into-the-site)
 17. Verify with `getComputedStyle`, not screenshots, and hard-reload first. → [C](CONVENTIONS.md#porting-a-design-back-into-the-site)
 
 ## In Paper

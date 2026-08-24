@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
-"""Seed new address pages from the DataSF APIs. Stdlib only.
+"""Seed and re-render address pages from the DataSF APIs. Stdlib only.
 
-This writes the **first draft of a page that doesn't exist yet** — nothing more.
-Every fact on a fresh address page comes from an API, so producing that draft is
-a data job, not a writing one.
+Two commands write address pages, and what separates them is the page that
+already exists:
 
-**It never touches a page that already exists.** Once a page is on disk it
-belongs to whoever edits it next, by hand, per shared/AGENTS.md. There is no
-re-render and no refresh path: a directory that already holds a `data.json` is
-skipped, whether the page was seeded a minute ago or written by a person last
-year. That is the whole rule, and it is why pages need no marker distinguishing
-"generated" from "hand-authored" — the only question is whether the page exists.
+- **`seed` creates, and only creates.** It writes the first draft of a page
+  that doesn't exist yet — nothing more. Every fact on a fresh address page
+  comes from an API, so producing that draft is a data job, not a writing one.
+  A directory that already holds a `data.json` is skipped, whether the page was
+  seeded a minute ago or written by a person last year.
+- **`render` re-renders, and only re-renders.** `data.json` is the source of
+  truth for an address page and `index.html` is its build artifact, so `render`
+  rewrites the artifact from the source in place: change a fact in `data.json`,
+  run `render` on the path, and never open the HTML. It is idempotent — a
+  second run over the same path changes nothing — and it reads nothing but the
+  `data.json` files it is pointed at, so it needs no network and no cache.
+
+A page whose HTML a person genuinely maintains by hand sets `"rendered": false`
+in its `data.json`. `render` skips it and `validate.py` skips its parity check,
+which also means it stops picking up site-wide design changes and goes stale
+silently. That is a real cost, so `validate.py` prints how many pages have
+taken the opt-out on every run.
+
+`render` does not touch hub pages: a page's `hook` reaches its street hub
+through `hubs`, which is a separate command for the separate reason that hubs
+are assembled from many pages at once.
 
 Usage:
   python3 scripts/seed_pages.py fetch --neighborhood "Castro/Upper Market"
@@ -18,6 +32,8 @@ Usage:
   python3 scripts/seed_pages.py seed  --neighborhood "Castro/Upper Market" \
                                       --city san-francisco --area castro
   python3 scripts/seed_pages.py seed-list --manifest research/manifests/popos-public-art.json
+  python3 scripts/seed_pages.py render san-francisco/castro/castro-street/744
+  python3 scripts/seed_pages.py render san-francisco          # the whole city
   python3 scripts/seed_pages.py names --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py hubs  --city san-francisco --area castro
 """
@@ -41,6 +57,12 @@ SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
 CACHE = ROOT / ".cache"
 UA = {"User-Agent": "know-this-place-seeder/1.0"}
+
+# An address page's directory is its bare street number: `4127`, `4127a`. Hub
+# directories (city, neighborhood, street) never match, which is what makes
+# "walk this path and render the address pages under it" unambiguous.
+# `validate.py` imports this rather than keeping a second copy.
+ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")
 
 # Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
 # files are derived from it. Every page carries these, the way it carries the
@@ -2586,6 +2608,104 @@ def cmd_seed(args) -> int:
     return 0
 
 
+# --------------------------------------------------------------------------
+# Render
+#
+# `seed` creates; `render` re-renders. The two never overlap: `seed` refuses to
+# write into a directory that has a page, and `render` refuses to invent one
+# where there is no `data.json`.
+# --------------------------------------------------------------------------
+def renders(rec: dict) -> bool:
+    """Whether this page's `index.html` is generated from its `data.json`.
+
+    Every page is, unless its `data.json` says `"rendered": false`. The opt-out
+    exists for a page whose HTML a person genuinely maintains by hand, and it
+    is deliberately narrow, because it is not free: an opted-out page no longer
+    tracks site-wide design changes, so the next time the stylesheet or a block
+    changes it quietly falls behind. `validate.py` prints the opt-out count on
+    every run for exactly that reason.
+
+    Only an explicit `false` opts out. A missing key — the normal case, and
+    what `seed` writes — means the page renders.
+    """
+    return rec.get("rendered") is not False
+
+
+def page_dirs(paths) -> list:
+    """Every address page directory under the given paths, sorted, deduplicated.
+
+    A path may name one page, a street, a neighborhood, or the whole city; the
+    walk is the same either way, which is what lets one command serve a
+    one-line fix and a corpus-wide re-render. A `data.json` file is accepted in
+    place of the directory holding it.
+    """
+    out = set()
+    for raw in paths:
+        p = Path(raw)
+        if not p.is_absolute():
+            p = Path.cwd() / p
+        p = p.resolve()
+        if p.is_file() and p.name == "data.json":
+            p = p.parent
+        if not p.exists():
+            raise SystemExit(f"render: no such path: {raw}")
+        if p != ROOT and ROOT not in p.parents:
+            raise SystemExit(f"render: {raw} is outside the repo")
+        if (p / "data.json").is_file():
+            out.add(p)
+        else:
+            out.update(f.parent for f in p.rglob("data.json")
+                       if ADDRESS_DIR.match(f.parent.name))
+    return sorted(out)
+
+
+def cmd_render(args) -> int:
+    """Rewrite `index.html` from `data.json` for every page under a path."""
+    dirs = page_dirs(args.path)
+    if not dirs:
+        print(f"no address pages under {', '.join(args.path)}", file=sys.stderr)
+        return 1
+
+    rewritten, current, opted_out, failed = 0, 0, 0, 0
+    for page_dir in dirs:
+        rel = page_dir.relative_to(ROOT).as_posix()
+        try:
+            rec = json.loads((page_dir / "data.json").read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            print(f"  {rel}: invalid JSON: {e}", file=sys.stderr)
+            failed += 1
+            continue
+        if not renders(rec):
+            opted_out += 1
+            continue
+        try:
+            out = render_html(rec)
+        except Exception as e:
+            # One page the renderer can't produce must not abandon the rest of
+            # the sweep. Report it, keep going, and fail the run at the end.
+            print(f"  {rel}: {type(e).__name__}: {e}", file=sys.stderr)
+            failed += 1
+            continue
+        html_path = page_dir / "index.html"
+        if html_path.exists() and html_path.read_text(encoding="utf-8") == out:
+            current += 1
+            continue
+        if args.dry_run:
+            print(f"  {rel}")
+        else:
+            html_path.write_text(out, encoding="utf-8")
+        rewritten += 1
+
+    verb = "would rewrite" if args.dry_run else "rewrote"
+    print(f"{len(dirs)} page(s): {verb} {rewritten}, left {current} already "
+          f"current, skipped {opted_out} opted out of rendering"
+          + (f", FAILED on {failed}" if failed else ""))
+    if opted_out:
+        print(f'{opted_out} page(s) carry "rendered": false and no longer track '
+              f"site-wide design changes")
+    return 1 if failed else 0
+
+
 # Deliberately over-broad: it is cheap to review a false positive and costly to
 # publish a real name, so this catches role labels, firm suffixes and titles and
 # leaves the judgement to a reviewer.
@@ -2784,6 +2904,15 @@ def main() -> int:
                    help="retrieval date to record in sources (default: today)")
     p.add_argument("--refresh", action="store_true")
     p.set_defaults(fn=cmd_seed_list)
+
+    p = sub.add_parser("render",
+                       help="re-render index.html from data.json, in place")
+    p.add_argument("path", nargs="+",
+                   help="a page, a street, a neighborhood, or the whole city — "
+                        "every address page beneath it is re-rendered")
+    p.add_argument("--dry-run", action="store_true",
+                   help="list the pages that would change without writing them")
+    p.set_defaults(fn=cmd_render)
 
     p = sub.add_parser("names", help="list permit descriptions that may name a person or firm")
     common(p)

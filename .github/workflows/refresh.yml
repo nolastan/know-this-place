@@ -38,20 +38,22 @@ jobs:
             Scope: "${{ inputs.scope }}" (empty means the whole content tree
             under san-francisco/).
 
-            Existing pages are refreshed BY HAND, one at a time. The seeder
-            only ever writes pages that do not exist yet and never returns to
-            one, so it is not a refresh tool — do not reach for it here except
-            in step 3.
+            Refreshing a page means editing its data.json and re-rendering.
+            `seed_pages.py seed` only writes pages that do not exist yet, so it
+            is not a refresh tool — do not reach for it except in step 3.
+            `seed_pages.py render` is: it rewrites index.html from data.json in
+            place, and is what step 2 uses.
 
             1. Find address pages in scope whose data.json sources have
                `retrieved` dates older than 30 days. Work through them in
                batches, newest data first.
             2. For each, re-run the recorded queries against the sources in
                DATA-SOURCES.md. Where something material changed (a new permit,
-               a changed status, a new assessment), update data.json and edit
-               index.html to match, per shared/AGENTS.md. If nothing changed,
-               leave the page entirely alone — do NOT bump retrieved dates on a
-               no-change page, it makes noise commits.
+               a changed status, a new assessment), update data.json and run
+               `python3 scripts/seed_pages.py render <path>` — never open
+               index.html. If nothing changed, leave the page entirely alone —
+               do NOT bump retrieved dates on a no-change page, it makes noise
+               commits.
             3. Optionally, pick up parcels that have newly become seedable
                (a new building, or one that has just appeared on the assessor's
                roll):

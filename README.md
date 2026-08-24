@@ -23,13 +23,16 @@ There is deliberately **no CMS, no database, no build framework**:
   crawlable.
   Consistency is enforced by a small contract checked in CI — see
   [shared/AGENTS.md](shared/AGENTS.md) and [scripts/validate.py](scripts/validate.py).
-- **A page is seeded once, then edited by hand forever after.**
+- **A page is seeded once, then its `data.json` is edited forever after.**
   [scripts/seed_pages.py](scripts/seed_pages.py) joins the DataSF datasets and
-  writes the first `data.json` + `index.html` for every parcel that
-  has no page yet. It never returns to a page it has written — a second run
-  creates nothing. Everything after that first draft (corrections, research, a
-  building's story, reader feedback) is a person or an agent editing the page
-  directly.
+  writes the first `data.json` + `index.html` for every parcel that has no page
+  yet; `seed` never returns to a page it has written, so a second run creates
+  nothing. Everything after that first draft (corrections, research, a
+  building's story, reader feedback) is a person or an agent editing
+  `data.json` and re-running `seed_pages.py render <path>`, which rewrites the
+  HTML from the data in place. Nobody edits `index.html`: `validate.py` fails
+  if a page's HTML is not exactly what the renderer produces from its
+  `data.json`, which is what keeps the two from drifting.
 - **Agents do the work a CMS would.** Rules live in `AGENTS.md` files through
   the tree; the live city APIs are cataloged in
   [DATA-SOURCES.md](DATA-SOURCES.md).
@@ -52,7 +55,7 @@ There is deliberately **no CMS, no database, no build framework**:
 2. The issue triggers **Claude Code in GitHub Actions**
    ([.github/workflows/feedback-agent.yml](.github/workflows/feedback-agent.yml)),
    which verifies the claim against sources, updates `data.json` / `assets/`,
-   edits `index.html` to match, and opens a **pull request** that closes the
+   re-renders `index.html` from it, and opens a **pull request** that closes the
    issue.
 3. A human reviews and merges through normal GitHub PR review. Merging to
    `main` **is** the deploy — GitHub Pages serves the branch as-is.

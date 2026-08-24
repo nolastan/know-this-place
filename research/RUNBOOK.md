@@ -226,12 +226,19 @@ Here you are a **site agent**: the root [AGENTS.md](../AGENTS.md) and
 [shared/AGENTS.md](../shared/AGENTS.md) govern exactly. This section only says
 how research feeds them.
 
-**Route A — the page exists, or should and it's a handful.** Edit by hand. Add
-each fact to `data.json`, normally as a `historical_record` entry (`date`,
-`kind`, `description`, `source`), and add the source to the page's `sources`
-array with the citation label from the dossier. Regenerate `index.html` from
-`data.json` **in the same commit**. A conflict from step 3 goes in `.unknowns`,
-stated plainly and left unadjudicated.
+**Route A — the page exists, or should and it's a handful.** Add each fact to
+`data.json` by hand, normally as a `historical_record` entry (`date`, `kind`,
+`description`, `source`), and add the source to the page's `sources` array with
+the citation label from the dossier. Then regenerate the HTML **in the same
+commit**:
+
+```bash
+python3 scripts/seed_pages.py render <path to the page, street or area>
+```
+
+`data.json` is the only file you write; `validate.py` fails if `index.html` is
+not exactly what the renderer produces from it. A conflict from step 3 goes in
+`.unknowns`, stated plainly and left unadjudicated.
 
 **Route B — the source names many buildings with no pages.** Generate
 `manifests/<batch>.json` with `resolve_eas.py manifest` (above), then:
@@ -253,10 +260,12 @@ Two things bite when adding those facts in bulk:
   addresses on both its streets resolves to two paths and has one page; the
   resolver says so in its note. Key the write on the APN and fix the finding's
   `path` to the page the parcel actually has.
-- **Render before you write.** Some pages are hand-authored and
-  `seed_pages.render_html` will not reproduce them. Writing `data.json` and
-  failing to regenerate `index.html` leaves the two disagreeing. Render first;
-  write both files or neither, and edit the rest by hand.
+- **Render every page you write, and read what `render` reports.** A page it
+  counts as *opted out* (`"rendered": false`) took your `data.json` edit and
+  will not show it — that page's HTML is hand-maintained, so the fact has to be
+  put there by whoever maintains it. A page it counts as *failed* did not get
+  the fact either. Neither is silent: `render` prints both, and `validate.py`
+  prints the opt-out count on every run.
 
 **Check the neighborhood directory the resolver chose before you seed.** It
 files a new page under the area of the nearest published page, which is right
