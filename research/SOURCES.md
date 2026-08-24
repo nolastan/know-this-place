@@ -19,7 +19,7 @@ the coverage log. Sources are cited on pages by the `id` in the first column;
 | [`hittell-1878`](sources/hittell-1878.md) | Hittell, *A History of the City of San Francisco* (1878) | book | medium | open | §12–14, 24, 27, 231 |
 | [`loc-newspapers`](sources/loc-newspapers.md) | Chronicling America OCR — *Morning Call*, *SF Call* | newspaper OCR | high | open | 58,620 pages → 8,437 mentions, 2,025 addresses |
 | [`local-news`](sources/local-news.md) | Hoodline, Bay Area Reporter, SF Chronicle | news | low | reference | browsed per address, no corpus pass |
-| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | open | 20 statements read; ~30 remain (one issue each). All six with findings files are closed out: market-octavia-hcs 425 of 496 published, mission-dolores-hcs 66 of 83, van-ness-auto-row 352 of 453 on 133 pages, carnegie-libraries 1 of 2, north-beach-hcs 546 of 630 on 349 pages, japantown-hcs 83 of 125 on 53 pages |
+| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | open | 20 statements read; ~30 remain (one issue each). All six with findings files are closed out: market-octavia-hcs 425 of 496 published, mission-dolores-hcs 66 of 83, van-ness-auto-row 352 of 453 on 133 pages, carnegie-libraries 1 of 2, north-beach-hcs 553 of 630 on 352 pages, japantown-hcs 83 of 125 on 53 pages |
 | [`spur-popos-guide`](sources/spur-popos-guide.md) | SPUR, *Secrets of San Francisco* | PDF guide | medium | done | read in full |
 
 City APIs and bulk datasets are **not** registered here — they are in
