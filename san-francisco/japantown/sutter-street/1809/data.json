@@ -1,0 +1,103 @@
+{
+  "address": "1809 Sutter Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/sutter-street/1809/",
+  "apn": "0685036",
+  "block": "0685",
+  "lot": "036",
+  "eas_baseid": "287675",
+  "coordinates": {
+    "lat": 37.786226,
+    "lng": -122.430394
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2337.5,
+    "building_area_sqft": 2558,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Japantown",
+    "property_location_raw": "0000 1809 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56570,
+    "assessed_improvement_value": 47564
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9806579",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-04-16",
+      "status_date": "2000-01-24",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1998–2018",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=1809",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0685036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0685&lot=036",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0685036",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "japantown-context-statement",
+      "name": "Donna Graves and Page & Turnbull, Inc., San Francisco Japantown Historic Context Statement, prepared for the San Francisco Planning Department as part of the Japantown Better Neighborhood Plan, May 2009 final draft; SF Planning lists it as revised 2011",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=cdea4663bca8a535d9838ce5da267e475c7aab3aa11603092015f6c92a81de15&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Japantown Historic Context Statement, May 2009",
+      "retrieved": "2026-08-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930s",
+      "kind": "occupancy",
+      "description": "The Iloilo Circle, a Filipino provincial association known for organising celebrations for the whole Pinoy community from the 1930s to the 1950s, is at this address — the last of the neighborhood's Filipino associations still housed in Japantown.",
+      "source": "japantown-context-statement"
+    }
+  ]
+}

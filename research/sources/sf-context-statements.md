@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 19 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 5: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined) and [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved). All five loops closed. |
-| **Remaining** | ~31 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 20 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 6: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved) and [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected). All six loops closed. |
+| **Remaining** | ~30 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -227,6 +227,22 @@ document you are about to mine.
     and Olmsted), which the Board of Supervisors adopted in 1999 and whose 212
     listed resources it reprints as Appendix B. See "The North Beach statement"
     below.
+  - Donna Graves and Page & Turnbull, Inc., *San Francisco Japantown Historic
+    Context Statement*, prepared for the San Francisco Planning Department as
+    part of the Japantown Better Neighborhood Plan, May 2009 (112 pp.), source
+    id `japantown-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park, Inner Mission North, Inner Sunset, OMI and Mission
+    Dolores, and the REST content hash is once more the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/cdea4663bca8a535d9838ce5da267e475c7aab3aa11603092015f6c92a81de15/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. **SF Planning
+    lists it as "Japantown Historic Context Statement (Revised 2011)" and serves
+    the May 2009 file under that label**; the PDF's own metadata reads
+    `Japantown Context Statement_FINAL 5-09.doc` and every page header reads
+    "Final Draft". A separate, earlier "Japantown Draft Historic Context
+    Statement" (April 2008) sits on the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/1862-San%20Francisco%20Japantown%20Better%20Neighborhood%20Plan%20Historic%20Context%204.11.08.pdf`
+    and is **not** what the adopted listing points at. See "The Japantown
+    statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1315,6 +1331,79 @@ its figure captions.
   fetch from
   `https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf`.
 
+**The Japantown statement is the clearest case in this set of a document whose
+whole yield is in its prose and its picture captions.** 112 pages, no appendix
+inventory: the appendix is nine pages of Ben Pease's copyrighted Japantown maps
+(PDF pages 95–103), images with no text layer and not ours to redistribute.
+
+- **Where the addresses are.** Three places, and a run that reads only the
+  history chapters gets about two-thirds of them:
+  - **The narrative chapters, printed pp. 10–70** — the Western Addition's
+    Victorian development, the Jewish congregations, the African American and
+    Filipino communities, Nihonmachi's commercial and institutional life,
+    internment, resettlement, and the A-1 and A-2 redevelopment areas. Churches,
+    schools, halls, hostels, shops, hotels, associations and newspapers, each
+    normally with a year.
+  - **The Property Types chapter, printed pp. 71–92** — every figure caption
+    names a street number *and* a style ("An Italianate style single-family
+    house at 1807 Octavia Street"), and each property-type section ends by
+    listing what in the survey area is designated or has been found eligible.
+    This is the closest thing the document has to an inventory, and it is
+    entirely in captions.
+  - **The footnotes** — three addresses appear nowhere else: the Knights of
+    Dimas-Alang at 1717 Sutter Street, the Japantown Art & Media Workshop's
+    first home at 1852 Sutter Street, and the Hokubei Mainichi building's 2008
+    demolition at 1746 Post Street.
+- **It contradicts itself four times, and every one is about an address.** State
+  them; do not pick. Congregation Ohabai Shalom's synagogue is 1831 Bush Street
+  from the 1890s Sanborn maps and the 1895 temple is 1881 Bush Street. The
+  national JACL headquarters is 1765 Sutter Street in one chapter and the site
+  of 1761–65 Post Street in another. The Japanese Cultural and Community Center
+  of Northern California is secured at 1840 Sutter Street, sited at 1858 Sutter
+  Street and footnoted at 1852 Sutter Street. And the Fillmore Auditorium
+  building is 1912 in the property-type chapter and 1910 — as Majestic Hall — in
+  the history. A fifth, in a footnote, is a plain slip: the Kokoro Assisted
+  Living data sheet is cited as "1881 Post Street" for the building the text
+  puts at 1881 Bush Street.
+- **Half the addresses it names no longer exist**, which is the substance of the
+  document rather than a defect in it: the A-1 and A-2 clearances and the Geary
+  Expressway took the numbers with the buildings. 1500, 1516, 1609, 1661, 1690,
+  1705 and 1760 Post Street, 1617 Gough Street, 1623 Webster Street, 1698, 1717,
+  1823, 1826, 1858 and 1898 Sutter Street, 1433 Divisadero Street, 1540 Ellis
+  Street, 1440 and 1620 O'Farrell Street, 1534 and 1669 Geary, 1612 and 1859
+  Fillmore Street and 1901, 1905 and 1919 Bush Street have no EAS record at all.
+  Expect a run on this statement to leave a third of its findings unresolved and
+  to be right to.
+- **Two addresses appear only as households** — 1812 Bush Street and 1628 Post
+  Street — and one landmark report names the family who lived at 2066 Pine
+  Street. None were extracted. The privacy limits bite here as hard as anywhere
+  in the register: this is a document about a community, and most of its people
+  are residents.
+- **A footnote number welds itself to the next caption.** `pdftotext -layout`
+  renders "…reestablish the California Cleaners.<sup>136</sup> *Pine Street
+  Laundry, 1946.*" as "California Cleaners.136 Pine Street Laundry, 1946", which
+  scans as an address at "136 Pine Street". There is no such finding. Check any
+  hit whose number is far outside the block range around it.
+- **The consultants' own office is on the title page** — 724 Pine Street, Page &
+  Turnbull. The advertiser trap in AGENTS.md, in its simplest form.
+- **The neighborhood directory needs `--area-from-nhood`.** The site had two
+  pages under `japantown/` when this run started, so proximity scattered the
+  corridor into `tenderloin` and `presidio-heights` — 1975 Post Street came back
+  as Presidio Heights. With the flag the city's own analysis neighborhoods
+  decide: 34 pages Pacific Heights, 12 Japantown, 4 Western Addition, 1 Presidio
+  Heights. Note that the Japantown analysis neighborhood is much smaller than the
+  statement's study area, so most of the yield files under `pacific-heights/`.
+- **Eight construction dates disagree with the assessor**, all recorded and none
+  adjudicated: 2006 and 2031 Bush, 1848 and 1881 Pine, 1530 Buchanan, 1691
+  Laguna, 1801 Octavia and 1940–1946 Fillmore. Five of the eight are the roll's
+  1900 placeholder against a real year in the document.
+- **Citation label:** `Donna Graves and Page & Turnbull, Inc., San Francisco
+  Japantown Historic Context Statement, prepared for the San Francisco Planning
+  Department as part of the Japantown Better Neighborhood Plan, May 2009 final
+  draft; SF Planning lists it as revised 2011`. Page source id
+  `japantown-context-statement`; cite the `SharedLinks.aspx` URL and fetch the
+  REST content path.
+
 
 ## Verification log
 
@@ -1907,6 +1996,40 @@ next run.
   wrote down** after Van Ness about thin streets, so `--area-from-nhood` and a
   `manifest` subcommand were added here rather than the paths being
   hand-patched again.)
+- **Verified:** 2026-08-23 (Japantown: read all 112 pages of the file SF
+  Planning serves as the adopted "Japantown Historic Context Statement (Revised
+  2011)", which is the May 2009 final draft. 130 candidate numbered-address
+  mentions over 94 distinct printed addresses; 91 are San Francisco properties
+  the statement documents and 3 are rejected — the consultants' own office at
+  724 Pine Street, a Berkeley address at 1538 Parker Street, and "136 Pine
+  Street", which is the footnote number 136 run onto the caption "Pine Street
+  Laundry, 1946". 125 findings: 83 resolved onto 53 parcels and published (51
+  new pages, 2 existing edited), 39 unresolved, 3 rejected. The unresolved are
+  what redevelopment did to the neighborhood: 26 addresses have no EAS record at
+  all — 1500, 1516, 1609, 1661, 1690, 1705 and 1760 Post; 1698, 1717, 1823,
+  1826, 1858 and 1898 Sutter; 1901, 1905, 1919 and 1831 Bush; 1623 Webster; 1617
+  Gough; 1661 Octavia; 1612 and 1859 Fillmore; 1534 and 1669 Geary; 1540 Ellis;
+  1433 Divisadero; 1440 and 1620 O'Farrell — three are printed ranges that
+  genuinely span several parcels today (2115–2125 and 2226–2232 Bush, a row of
+  six houses and a pair of lots; 1717–1719 Webster, one duplex on two lots), two
+  are condominium parcels the roll gives zero lot area (1409 Sutter, 2255 Bush,
+  2130–2140 Bush), and 1808A Sutter Street has no EAS row for its lettered
+  number. Two addresses named only as households (1812 Bush, 1628 Post) were not
+  extracted. Coverage note: this document is read in full and nothing in it is
+  outstanding; its appendix maps are images with no text layer, and the Japantown
+  Better Neighborhood Plan's own historic property survey, the April 2008
+  Japantown draft context statement on the S3 archive and the Japantown Task
+  Force data sheets it cites are separate documents and are untouched.
+  **What it taught, beyond the per-document notes above:** a printed range whose
+  high end is abbreviated ("1843-47") was expanded literally by
+  `resolve_eas.py` into 47–1843 and came back spanning eighty parcels, and a
+  number whose EAS row carries no parcel of its own was placed by its point onto
+  a neighbouring lot and outvoted three numbers that stated a parcel, declining
+  the extant National Register building at 1940–1946 Fillmore Street. Both are
+  fixed in the tool. And `seed_pages.py names` missed two real personal names
+  because DBI writes them behind a "one-stop:" prefix with no role label
+  anywhere near them; that is fixed too, and the names are on the redaction
+  list.)
 - **Verified:** 2026-08-24 (North Beach, Van Ness Auto Row, Market & Octavia,
   Mission Dolores and `digitalsf/sfp-23`, re-run in `report` mode against a
   `resolve_eas.py` that no longer lets a point-placed parcel outvote the ones

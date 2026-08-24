@@ -2710,7 +2710,11 @@ def cmd_render(args) -> int:
 # publish a real name, so this catches role labels, firm suffixes and titles and
 # leaves the judgement to a reviewer.
 NAME_HINT = re.compile(
-    r"\b(owner|owners|attn|attention|applicant|contact|c/o|architect|architects|"
+    # DBI's intake prefixes name a person with no role label anywhere near them
+    # — "one-stop:peter burns:" carries none of the words below, so the Japantown
+    # run seeded two pages with a name on them before this line existed.
+    r"\b(one-?stop|onestop)\b\s*[:.]?\s*[a-z]"
+    r"|\b(owner|owners|attn|attention|applicant|contact|c/o|architect|architects|"
     r"engineer|engineering|contractor|contracting|tenant|landlord|purchaser|"
     r"mr|mrs|ms|dr)\b[.:]?\s+\S"
     r"|\b(inc|llc|l\.l\.c|corp|corporation|company|associates|assoc|builders|"
