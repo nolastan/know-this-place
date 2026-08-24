@@ -1,0 +1,170 @@
+{
+  "address": "1802 Laguna Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/laguna-street/1802/",
+  "apn": "0663014",
+  "block": "0663",
+  "lot": "014",
+  "eas_baseid": "287323",
+  "coordinates": {
+    "lat": 37.78787,
+    "lng": -122.428303
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1890,
+    "building_area_sqft": 2000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1802 LAGUNA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 464519,
+    "assessed_improvement_value": 358851
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Japantown Community & Cultural Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201401146229",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-14",
+      "status_date": "2014-01-14",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace front landing (dryrot) and waterpoof, replace in-kind and re-brick.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001215078",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-21",
+      "status_date": "2010-02-05",
+      "estimated_cost": 17600,
+      "revised_cost": 17600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9800861",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-01-20",
+      "status_date": "2000-04-04",
+      "estimated_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800661",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-22",
+      "status_date": "1988-03-28",
+      "estimated_cost": 50000,
+      "description": "excavate for new foundation work & create double garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510481",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-24",
+      "status_date": "1986-12-22",
+      "estimated_cost": 38000,
+      "description": "remove store room and install new foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510044",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-09-12",
+      "status_date": "1986-10-24",
+      "estimated_cost": 2000,
+      "description": "to open up area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1985–2014",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAGUNA&street_type=ST&address_number=1802",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0663014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0663&lot=014",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0663014",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42830337088357%2037.78787007833245)%27)",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "japantown-context-statement",
+      "name": "Donna Graves and Page & Turnbull, Inc., San Francisco Japantown Historic Context Statement, prepared for the San Francisco Planning Department as part of the Japantown Better Neighborhood Plan, May 2009 final draft; SF Planning lists it as revised 2011",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=cdea4663bca8a535d9838ce5da267e475c7aab3aa11603092015f6c92a81de15&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Japantown Historic Context Statement, May 2009",
+      "retrieved": "2026-08-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "after 1945",
+      "kind": "occupancy",
+      "description": "The Suzuki Apartments, a pre-war establishment, were revived at this address after the war.",
+      "source": "japantown-context-statement"
+    }
+  ]
+}

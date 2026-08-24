@@ -6,6 +6,7 @@ An affluent district on the ridge north of Japantown, known for large houses and
 
 - [Broadway](broadway/) — 6 buildings, built 1900–1940; 2 in the Pacific Heights Historic District.
 - [Broderick Street](broderick-street/) — 1 building, built 1900.
+- [Buchanan Street](buchanan-street/) — 2 buildings, built 1900–1912; 2 in the Japantown Community & Cultural Historic District.
 - [Bush Street](bush-street/) — 2 buildings, built 1900–1916.
 - [California Street](california-street/) — 2 buildings, built 1900.
 - [Clay Street](clay-street/) — 1 building, built 1900.
@@ -14,6 +15,8 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Gough Street](gough-street/) — 1 building, built 1917.
 - [Green Street](green-street/) — 1 building, built 1924.
 - [Jackson Street](jackson-street/) — 2 buildings, built 1906–1925.
+- [Laguna Street](laguna-street/) — 1 building, built 1900; 1 in the Japantown Community & Cultural Historic District.
+- [Octavia Street](octavia-street/) — 2 buildings, built 1900; 2 in the Japantown Community & Cultural Historic District.
 - [Pacific Avenue](pacific-avenue/) — 2 buildings, built 1912–1929; 2 in the Pacific Heights Historic District.
 - [Pierce Street](pierce-street/) — The Casebolt House, an Article 10 individual landmark built for the blacksmith and street car manufacturer Henry Casebolt.
 - [Pine Street](pine-street/) — 4 buildings, built 1900–1937; 1 in the Japantown Community & Cultural Historic District.

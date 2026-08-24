@@ -274,6 +274,29 @@ rather than just accumulate.
   up leaves the two files disagreeing, which the root AGENTS.md forbids
   outright. *Render first, write both files or neither, and list what has to be
   edited by hand.*
+- **An abbreviated range is not a range.** Surveys print "1843-47" and
+  "1761-65" for 1843–1847 and 1761–1765, dropping the digits that don't change.
+  `resolve_eas.py` read the pair literally, expanded 47→1843, and reported the
+  Japantown statement's Art Deco building at 1843-47 Fillmore Street as spanning
+  eighty parcels. The tool now fills a short high end in from the low end.
+  *A recorded range needs its high end spelled out before it is expanded.*
+- **A parcel found by point can outvote three that were stated.** EAS leaves
+  some address rows without a `parcel_number`, and the resolver places those by
+  the point their coordinates fall in — which DATA-SOURCES.md already warns sits
+  centimetres from a boundary. Inside a recorded range that turned one lot into
+  two: 1944 Fillmore Street landed on the neighbour and declined 1940–1946
+  Fillmore Street, an extant National Register building whose other three
+  numbers all state the same parcel. The tool now takes the stated parcel and
+  says so. *Weigh what the record states above what a coordinate implies.*
+- **A permit name with no role label near it walks straight onto a page.**
+  `seed_pages.py names` flags role words, firm suffixes and titles, so it never
+  saw DBI's intake prefix: "one-stop:peter burns:revision to pa …" carries none
+  of them. Two names were seeded onto a Japantown page, and a third had been
+  sitting on a Mission page since whenever it was seeded. `NAME_HINT` now catches
+  the prefix and all three names are on the redaction list. *A privacy filter
+  built from role words misses every name that isn't introduced by one — test it
+  against the raw text of the pages you just wrote, not only against its own
+  flags.*
 - **A note that only exists in `data.json` is not on the page.** Findings runs
   have been writing conflicts into an `unknowns` key since Market & Octavia, and
   `seed_pages.py`'s renderer never read it — the disagreements reached the repo

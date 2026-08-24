@@ -4,5 +4,9 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 
 ## Streets documented so far
 
+- [Buchanan Street](buchanan-street/) — 1 building, built 1959.
+- [Fillmore Street](fillmore-street/) — 1 building, built 1880.
+- [Geary Boulevard](geary-boulevard/) — 1 building, built 1969.
 - [Laguna Street](laguna-street/) — 1 building, built 1960.
+- [Post Street](post-street/) — 5 buildings, built 1967–2009.
 - [Sutter Street](sutter-street/) — 1 building, built 1975.

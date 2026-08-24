@@ -1,0 +1,159 @@
+{
+  "address": "1932 Buchanan Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/buchanan-street/1932/",
+  "apn": "0662024",
+  "block": "0662",
+  "lot": "024",
+  "eas_baseid": "287289",
+  "coordinates": {
+    "lat": 37.787905,
+    "lng": -122.430002
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1393,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1932 BUCHANAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1780600,
+    "assessed_improvement_value": 763114,
+    "last_sale_date": "2020-12-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Japantown Community & Cultural Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9402044",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-02-14",
+      "status_date": "1994-03-21",
+      "estimated_cost": 15000,
+      "description": "reinforce north rear yard retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308131",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-14",
+      "status_date": "1994-01-28",
+      "estimated_cost": 4000,
+      "description": "repl existing fence at south & east sides of rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218959",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-11-02",
+      "status_date": "1993-05-25",
+      "estimated_cost": 8000,
+      "description": "install masonry firepl & metal flue system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208813",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-29",
+      "status_date": "1992-10-01",
+      "estimated_cost": 500,
+      "description": "demo plaster to expose framing at arch directiion-no structu",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204520",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-03-23",
+      "status_date": "1993-09-21",
+      "estimated_cost": 150000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1992–2017",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUCHANAN&street_type=ST&address_number=1932",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0662024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0662&lot=024",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0662024",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43000204649933%2037.7879053753466)%27)",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "japantown-context-statement",
+      "name": "Donna Graves and Page & Turnbull, Inc., San Francisco Japantown Historic Context Statement, prepared for the San Francisco Planning Department as part of the Japantown Better Neighborhood Plan, May 2009 final draft; SF Planning lists it as revised 2011",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=cdea4663bca8a535d9838ce5da267e475c7aab3aa11603092015f6c92a81de15&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Japantown Historic Context Statement, May 2009",
+      "retrieved": "2026-08-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "after 1945",
+      "kind": "occupancy",
+      "description": "The Ota Sewing Machine Co., a pre-war business, was revived at this address after the war.",
+      "source": "japantown-context-statement"
+    }
+  ]
+}
