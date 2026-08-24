@@ -5,19 +5,36 @@ truth for an address page — structured facts *and* prose (in its `narrative`
 field); there is no `index.md`. Every fact and sentence in the HTML must trace
 back to `data.json`, so the page can be regenerated from that file alone.
 
-There is no template engine and no build step: **you author the HTML directly
-from `data.json`**, and the committed `index.html` is the whole page.
+There is no template engine and no request-time rendering: the committed
+`index.html` is the whole page, byte for byte what a reader gets. But it is a
+**build artifact, and you never author it.** `scripts/seed_pages.py` composes
+the blocks below from `data.json`, and
 
-**A page's first draft may have been machine-written; every edit after that is
-yours.** `scripts/seed_pages.py` writes the initial `data.json` + `index.html`
-for a parcel that has no page yet, composing the blocks below from the city's
-data. It never returns to a page it has written. So when you change a fact,
-change the HTML to match by hand — there is nothing to re-run, and nothing that
-will overwrite you.
+```
+python3 scripts/seed_pages.py render <a page, street, neighborhood, or city>
+```
 
-Seeded drafts follow this contract exactly, which is what makes them safe to
-edit: the blocks, classes and structure below are the ones you will find on the
-page in front of you.
+rewrites the HTML from the data, in place, idempotently. Change a fact, run
+that, don't open the file. `validate.py` asserts every page's `index.html` is
+exactly what the renderer produces, so a hand edit fails the build.
+
+**This document is therefore a reference, not a set of instructions to follow
+by hand.** It describes the contract the renderer implements — the blocks,
+classes and structure you will find on the page in front of you, and what each
+`data.json` key turns into. Read it to understand a page, to decide which key
+your new fact belongs under, or to change the renderer. Don't read it as a
+transcription guide.
+
+Two consequences worth stating outright:
+
+- **A block that exists here but not in the renderer is a renderer gap**, and
+  the fix is a change to `seed_pages.py` so every page with that data gets the
+  block — not hand-written HTML on the one page that noticed.
+- **A page whose HTML a person genuinely maintains sets `"rendered": false`**
+  in its `data.json`, which exempts it from both `render` and the parity check.
+  It is close to never the right answer: an opted-out page stops picking up
+  every site-wide design change made after it, silently. `validate.py` prints
+  the opt-out count on every run so the cost stays visible.
 
 The goal is a **designed data page, not an article.** A good page looks like a
 purpose-built dashboard for one building — stat tiles, a visual timeline,
@@ -91,13 +108,15 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
 ```
 
 JSON-LD (`Place` with `PostalAddress` + `GeoCoordinates`), the `<footer>`
-sources/feedback/colophon, and the **FEEDBACK_URL** are unchanged — copy them
-from any existing address page (e.g. `castro-street/744/index.html`).
-`validate.py` enforces canonical, description, breadcrumb, footer, JSON-LD,
-the four icon links, and the prefilled feedback link; run it.
+sources/feedback/colophon, and the **FEEDBACK_URL** are identical on every page
+— `render_html` writes them from `data.json` and `shared/site-config.json`, so
+there is nothing to copy. `validate.py` enforces canonical, description,
+breadcrumb, footer, JSON-LD, the four icon links, and the prefilled feedback
+link independently of the parity check, so the contract still holds for a page
+that has opted out of rendering.
 
-The icon links are shared chrome — copy them verbatim, exactly as the stylesheet
-link is copied. The mark itself is one file, `shared/icon.svg` (a `#1F1F1F` tile
+The icon links are shared chrome, on every page for the same reason the
+stylesheet is. The mark itself is one file, `shared/icon.svg` (a `#1F1F1F` tile
 with a `#C2694A` dot); `favicon.ico`, `apple-touch-icon.png` and the two
 `icon-*.png` sizes are rasterized from it, so changing the mark means
 regenerating all five. The `.ico` and the apple touch icon sit at the repo root

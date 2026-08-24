@@ -76,16 +76,30 @@ dragging three others with it.
 
 **`index.html` is regenerated, never hand-edited.** The page contract holds
 during a redesign too — change the generator in `scripts/seed_pages.py` first,
-then re-render the affected block on every existing page from its `data.json`.
+then re-render every affected page from its `data.json`:
 
-**Migrations are one-off scripts, not repo tooling.** Ground rule 6 caps the
-repo at its stdlib scripts. Write the migration in the scratchpad, run it, and
-commit only the HTML it produced.
+```
+python3 scripts/seed_pages.py render san-francisco
+```
+
+`validate.py` asserts the two agree, so a redesign that skips the re-render
+fails CI rather than shipping half-applied — which is how 358 pages ended up
+still carrying markup a hand sweep was supposed to strip.
+
+**A migration is a change to the renderer, not a script that rewrites HTML.**
+Ground rule 6 caps the repo at its stdlib scripts, and there is nothing left
+for a migration script to do: the block moves because `seed_pages.py` renders
+it differently, and `render` carries that to every page. A one-off scratchpad
+script is for reshaping `data.json` — the source — never for editing the
+artifact.
 
 **Expect a tail of pages the migration cannot touch, and report it.** The
 district migration rewrote 2,471 pages and left 8, all hand-authored pages whose
-district facts are mixed into a differently-shaped panel. Report the tail; do
-not force a regex onto markup a person wrote.
+district facts are mixed into a differently-shaped panel. Rendering shrinks that
+tail to two named sets — the pages that carry `"rendered": false`, and whatever
+is left in `scripts/render-backlog.txt` — and both are counted on every
+`validate.py` run. Report the tail; the fix is never a regex over markup a
+person wrote.
 
 **Verify with computed styles, not screenshots.** The Browser pane returned
 blank frames for these pages; `getComputedStyle` on the real page confirmed the

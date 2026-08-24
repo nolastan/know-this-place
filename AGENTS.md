@@ -10,9 +10,11 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
    `index.html` is a generated artifact.** There is no `index.md` on address
    pages — every fact and every piece of prose lives in `data.json` (prose in
    its `narrative` field) and nowhere else, so the two files can never drift
-   into conflict. Never edit `index.html` directly except by regenerating it
-   from `data.json`; any change to `data.json` requires regenerating
-   `index.html` in the same commit. (Hub pages — city/neighborhood/street
+   into conflict. Never edit `index.html` directly; regenerate it from
+   `data.json` with `python3 scripts/seed_pages.py render <path>`, in the same
+   commit as the `data.json` change. `validate.py` enforces this — it fails if
+   any page's HTML is not exactly what the renderer produces. (Hub pages —
+   city/neighborhood/street
    indexes — have no `data.json`. Their prose lives in their `index.md`; the
    list of places beneath them is generated from those pages' `data.json`,
    each contributing its own `hook` line.)
@@ -126,13 +128,38 @@ san-francisco/                        city
 The split is **new page vs. existing page**, and nothing else:
 
 - A page that **doesn't exist yet** is created by the seeder, in bulk.
-- A page that **already exists** is only ever edited by hand, by you.
+- A page that **already exists** has its `data.json` edited by hand, by you —
+  and its `index.html` re-rendered from that file by the script.
 
-`scripts/seed_pages.py` enforces that split on its own. It writes into a
-directory only when the directory is empty of a page, so a second run creates
-nothing and changes nothing. Pages carry no marker saying who wrote them,
-because there is nothing to decide: if the page is there, it is yours to edit,
-not the script's to replace.
+`scripts/seed_pages.py` enforces that split on its own, with one command each
+way. `seed` writes into a directory only when the directory is empty of a page,
+so a second run creates nothing. `render` does the opposite and only the
+opposite: it rewrites `index.html` from the `data.json` already on disk and
+never invents a page. Pages carry no marker saying who wrote them, because
+there is nothing to decide — the facts are yours to edit either way, and the
+HTML is never yours to edit at all.
+
+**`index.html` is a build artifact. You do not write it, ever.** Change
+`data.json`, run `render` on the path, and don't open the HTML:
+
+```
+python3 scripts/seed_pages.py render san-francisco/castro/castro-street/744
+python3 scripts/seed_pages.py render san-francisco/castro     # a whole neighborhood
+```
+
+`render` is idempotent — running it twice changes nothing the second time — so
+it is always safe to run on a wider path than you touched. `validate.py`
+asserts that every page's `index.html` is exactly what the renderer produces,
+so a hand edit to the HTML fails CI rather than quietly becoming a second
+source of truth.
+
+A page whose HTML genuinely has to be maintained by hand sets `"rendered":
+false` in its `data.json`; `render` then skips it and `validate.py` skips its
+parity check. **Treat that as close to never.** An opted-out page stops picking
+up site-wide design changes and goes stale silently — `validate.py` prints the
+opt-out count on every run for that reason. Before reaching for it, ask whether
+the renderer should learn the block instead; it usually should, and that is a
+change to `seed_pages.py`, which is a human's call under ground rule 6.
 
 ### A. Creating pages that don't exist yet — use the seeder
 
@@ -161,9 +188,10 @@ documents with the numbers swapped.
   `narrative`, because the script won't invent prose, and per "Writing pages" a
   page whose components carry everything is finished with no prose at all.
   Everything after the draft is hand work.
-- **A bug found after seeding is fixed by hand, on the affected pages.** Patch
-  the script too if it would recur on the next neighborhood, but re-running
-  `seed` will not repair anything already on disk — by design.
+- **A bug found after seeding is fixed in `data.json`, on the affected pages,
+  then re-rendered.** `seed` will not repair anything already on disk — by
+  design; that is `render`'s job. If the bug is in the rendering rather than in
+  the data, patch `seed_pages.py` and re-render the pages it affects.
 - **A thematic set of parcels uses `seed-list`, not `seed`.** `seed` walks one
   analysis neighborhood and takes the residential parcels in it. When the set is
   defined by something else — the buildings in a city inventory, say — name the
@@ -178,10 +206,11 @@ documents with the numbers swapped.
   numbers, one in a historic district — and check the numbers against the
   cited queries.
 
-### B. Editing a page that exists — by hand, always
+### B. Editing a page that exists — edit `data.json`, then re-render
 
 Feedback issues, local-history research, notable residents, a correction, a
-refresh of stale data. The seeder has no part in this:
+refresh of stale data. Everything you write goes into `data.json`; the HTML
+follows from it:
 
 1. Read this file, the neighborhood `AGENTS.md`, and
    [shared/AGENTS.md](shared/AGENTS.md) (the HTML contract).
@@ -189,9 +218,12 @@ refresh of stale data. The seeder has no part in this:
    the `sources` array with query URLs and retrieval dates.
 3. Write any genuine narrative into `data.json`'s `narrative` field — see
    "Writing pages" below. There is no separate prose file.
-4. Bring `index.html` back in step with `data.json` yourself, per
-   `shared/AGENTS.md`. Change only what the fact changed; leave the rest of the
-   page as it stands.
+4. Re-render the page:
+   `python3 scripts/seed_pages.py render <path to the page, street or area>`.
+   Don't open `index.html` — reading it costs more than the render and editing
+   it fails `validate.py`. If the rendered page is missing something that is in
+   `data.json`, the renderer has a gap: fix `seed_pages.py` so every page with
+   that data gets it, rather than patching this one page's HTML.
 5. If the page's one-line hub description should change, edit its `hook` field
    in `data.json` — that is where a hub gets it — then rebuild the hubs with
    `python3 scripts/seed_pages.py hubs --city <city> --area <area>`. Rebuilding

@@ -242,8 +242,10 @@ with the matching citation in `sources`:
   "retrieved": "2026-08-16" }
 ```
 
-and, in `index.html`, one `.vtl-item` — the headline in italics, the outlet as
-the link, no meta row:
+`python3 scripts/seed_pages.py render <path to the page>` then regenerates
+`index.html`, where the entry becomes one `.vtl-item` — the headline in
+italics, the outlet as the link, no meta row. You write the JSON above and
+nothing else; the markup here is what to expect, not what to type:
 
 ```html
 <li class="vtl-item">
@@ -323,8 +325,8 @@ Rules that catch people out:
   shows the claim it contradicts — usually in the headline itself.
 - **The page is only half of it.** The same headline goes on the homepage's
   news grid in the same PR — see "The homepage carries the newest six" below.
-- `python3 scripts/validate.py` must pass, and `index.html` must match
-  `data.json` — the site's contract, unchanged.
+- `python3 scripts/validate.py` must pass — it asserts `index.html` is exactly
+  what the renderer produces from `data.json`, so re-render before you commit.
 
 ## The homepage carries the newest six
 

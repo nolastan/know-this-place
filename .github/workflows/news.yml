@@ -144,8 +144,9 @@ jobs:
                reason; do not hand-write the page.
             6. Add the timeline entry to each page's data.json —
                `historical_record` with date, kind, headline, outlet, url and
-               source — and bring index.html into step with it, per
-               news/AGENTS.md → "Putting it on the page". The entry is the
+               source — then `python3 scripts/seed_pages.py render <path>` to
+               regenerate index.html from it, per news/AGENTS.md → "Putting it
+               on the page". Never edit index.html. The entry is the
                headline in italics and the outlet as the link, and NOTHING
                ELSE: no sentence of your own summarizing the story, and never
                an edited headline. Record in each finding's `publish.note`

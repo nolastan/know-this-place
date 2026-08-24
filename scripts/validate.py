@@ -4,7 +4,16 @@
 Bespoke page bodies are the point of this site; this script only enforces the
 minimal shared contract described in shared/AGENTS.md. Stdlib only.
 
+The one check with teeth beyond that contract is **render parity**: an address
+page's `index.html` must be exactly what `seed_pages.render_html` produces from
+its `data.json`. `data.json` is the single source of truth and `index.html` is
+its build artifact, so a hand edit to the HTML is a second source of truth by
+definition — this check is what makes that impossible rather than something the
+repo periodically discovers. A page opts out with `"rendered": false`, which is
+counted and printed on every run.
+
 Run from anywhere: python3 scripts/validate.py
+                   python3 scripts/validate.py --prune-render-backlog
 """
 import html
 import json
@@ -12,12 +21,23 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+# The renderer *is* the contract for an address page's index.html, so the
+# checker has to be able to run it. Both scripts are stdlib-only siblings and
+# seed_pages does no network on import. `scripts/__pycache__/` is tracked in
+# git for now, so importing it would otherwise leave a modified file behind on
+# every run.
+sys.dont_write_bytecode = True
+import seed_pages  # noqa: E402
+from seed_pages import ADDRESS_DIR  # noqa: E402  — an address dir: 123, 123a
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "shared" / "site-config.json").read_text())
 SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
 
-ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a
+# See the file's own header for what it is and why it can only shrink.
+BACKLOG_PATH = ROOT / "scripts" / "render-backlog.txt"
 
 # Site icons, on every page for the same reason the stylesheet is: they are
 # shared chrome, not page content. `shared/icon.svg` is the source of truth for
@@ -31,13 +51,30 @@ ICON_LINKS = (
 
 errors: list[str] = []
 
+# Counted, not errors. `opted_out` is pages whose data.json says
+# `"rendered": false`; `backlogged` is pages the renderer can't yet reproduce
+# that render-backlog.txt grandfathers; `backlog_stale` is entries in that file
+# that no longer need to be there.
+opted_out: list[str] = []
+backlogged: list[str] = []
+backlog_stale: list[str] = []
+
 
 def err(path: Path, msg: str) -> None:
     errors.append(f"{path.relative_to(ROOT)}: {msg}")
 
 
-def check_html(html_path: Path, is_address: bool) -> None:
-    html = html_path.read_text(encoding="utf-8")
+def load_backlog() -> set:
+    if not BACKLOG_PATH.exists():
+        return set()
+    return {ln.strip() for ln in BACKLOG_PATH.read_text(encoding="utf-8").splitlines()
+            if ln.strip() and not ln.lstrip().startswith("#")}
+
+
+BACKLOG = load_backlog()
+
+
+def check_html(html_path: Path, html: str, is_address: bool) -> None:
     rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
     if html_path.parent == ROOT:
         rel_dir = "/"
@@ -91,7 +128,62 @@ def check_html(html_path: Path, is_address: bool) -> None:
             err(html_path, "street view iframe has an empty API key")
 
 
-def check_address_dir(page_dir: Path) -> None:
+def check_render_parity(page_dir: Path, data: dict, on_disk: str) -> None:
+    """`index.html` must be exactly what the renderer produces from `data.json`.
+
+    This is the check that makes the two files structurally incapable of
+    drifting. `data.json` is the single source of truth (AGENTS.md ground rule
+    1) and `index.html` is its build artifact, so there is exactly one correct
+    HTML for a given `data.json` and `seed_pages.py render` writes it. A page
+    edited by hand fails here, and the fix is always the same: put the change
+    in `data.json` and re-render.
+
+    Two pages are exempt, for two different reasons:
+
+    - `"rendered": false` — a deliberate, permanent opt-out for a page whose
+      HTML a person maintains. Counted and reported on every run, because an
+      opted-out page silently stops tracking site-wide design changes.
+    - a page listed in `render-backlog.txt` — drift that predates this check,
+      grandfathered until the sweep reaches it. That list only shrinks.
+    """
+    rel = page_dir.relative_to(ROOT).as_posix()
+    rendered = data.get("rendered")
+    if rendered is not None and not isinstance(rendered, bool):
+        err(page_dir / "data.json",
+            '"rendered" must be a boolean — only `false` opts a page out of '
+            "rendering; leave the key out otherwise")
+        return
+    if not seed_pages.renders(data):
+        opted_out.append(rel)
+        if rel in BACKLOG:
+            backlog_stale.append(rel)
+        return
+
+    try:
+        expected = seed_pages.render_html(data)
+    except Exception as e:
+        if rel in BACKLOG:
+            backlogged.append(rel)
+            return
+        err(page_dir / "data.json",
+            f"the renderer cannot produce this page ({type(e).__name__}: {e}) "
+            f"— fix seed_pages.py, or the data it chokes on")
+        return
+
+    if on_disk == expected:
+        if rel in BACKLOG:
+            backlog_stale.append(rel)
+        return
+    if rel in BACKLOG:
+        backlogged.append(rel)
+        return
+    err(page_dir / "index.html",
+        "does not match what the renderer produces from data.json — index.html "
+        "is a build artifact, not a source file. Put the change in data.json "
+        f"and run: python3 scripts/seed_pages.py render {rel}")
+
+
+def check_address_dir(page_dir: Path, on_disk: str) -> None:
     for required in ("index.html", "data.json"):
         if not (page_dir / required).exists():
             err(page_dir / required, "required file missing")
@@ -125,6 +217,7 @@ def check_address_dir(page_dir: Path) -> None:
                     err(data_path, f'sources[{i}] missing "{key}"')
 
     check_narrative(data_path, data)
+    check_render_parity(page_dir, data, on_disk)
 
 
 def hub_md_items(text: str) -> dict:
@@ -262,10 +355,11 @@ def main() -> int:
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 
     for html_path in html_pages:
+        text = html_path.read_text(encoding="utf-8")
         is_address = bool(ADDRESS_DIR.match(html_path.parent.name))
-        check_html(html_path, is_address)
+        check_html(html_path, text, is_address)
         if is_address:
-            check_address_dir(html_path.parent)
+            check_address_dir(html_path.parent, text)
         elif html_path.parent != content:
             # The city-level index (san-francisco/index.md) has no generator
             # counterpart — write_neighborhood_hub/write_street_hub only cover
@@ -315,14 +409,80 @@ def main() -> int:
                     err(html_path, "not in shared/addresses.geojson — "
                                    "run scripts/build_map_index.py")
 
+    # Entries in the backlog that no longer belong there. Reported as one
+    # error, not one per page: the file is 1,010 lines long today and the sweep
+    # that empties it would otherwise print a thousand identical complaints.
+    if backlog_stale:
+        err(BACKLOG_PATH,
+            f"{len(backlog_stale)} listed page(s) no longer need grandfathering "
+            f"— they render cleanly now, or have opted out. Drop them: "
+            f"python3 scripts/validate.py --prune-render-backlog")
+
     if errors:
         print(f"FAIL — {len(errors)} problem(s):")
         for e in errors:
             print(f"  - {e}")
-        return 1
-    print(f"OK — {len(html_pages)} page(s) pass the contract")
+    else:
+        print(f"OK — {len(html_pages)} page(s) pass the contract")
+
+    # Always, pass or fail. An opt-out is a page that has stopped tracking
+    # site-wide design changes, and a backlogged page is one whose HTML nothing
+    # is checking; both are invisible unless something says them out loud.
+    print(f'     {len(opted_out)} page(s) opted out of rendering ("rendered": false)')
+    if backlogged:
+        print(f"     {len(backlogged)} page(s) awaiting the render sweep "
+              f"(scripts/render-backlog.txt)")
+    return 1 if errors else 0
+
+
+def prune_backlog() -> int:
+    """Drop the entries in render-backlog.txt that no longer need to be there.
+
+    Removal only, never addition — that is what keeps the file a ratchet. A
+    page that starts failing the parity check cannot be silenced by running
+    this; it has to be re-rendered.
+    """
+    if not BACKLOG_PATH.exists():
+        print("no scripts/render-backlog.txt — nothing to prune")
+        return 0
+    lines = BACKLOG_PATH.read_text(encoding="utf-8").splitlines()
+    still: set = set()
+    for rel in sorted(BACKLOG):
+        page_dir = ROOT / rel
+        data_path = page_dir / "data.json"
+        html_path = page_dir / "index.html"
+        if not (data_path.exists() and html_path.exists()):
+            continue
+        try:
+            data = json.loads(data_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            still.add(rel)   # the page's own checks will report the bad JSON
+            continue
+        if not seed_pages.renders(data):
+            continue
+        try:
+            expected = seed_pages.render_html(data)
+        except Exception:
+            still.add(rel)
+            continue
+        if html_path.read_text(encoding="utf-8") != expected:
+            still.add(rel)
+
+    kept = [ln for ln in lines
+            if not ln.strip() or ln.lstrip().startswith("#") or ln.strip() in still]
+    if len(kept) == len(lines):
+        print(f"scripts/render-backlog.txt: {len(still)} entr(ies), nothing to prune")
+        return 0
+    if still:
+        BACKLOG_PATH.write_text("\n".join(kept) + "\n", encoding="utf-8")
+    else:
+        BACKLOG_PATH.unlink()   # the sweep is done; the file has no reason to exist
+    print(f"scripts/render-backlog.txt: dropped {len(BACKLOG) - len(still)} entr(ies), "
+          + (f"{len(still)} left" if still else "backlog empty — file removed"))
     return 0
 
 
 if __name__ == "__main__":
+    if "--prune-render-backlog" in sys.argv[1:]:
+        sys.exit(prune_backlog())
     sys.exit(main())
