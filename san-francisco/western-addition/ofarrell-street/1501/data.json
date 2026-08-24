@@ -1,0 +1,91 @@
+{
+  "address": "1501 Ofarrell Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/ofarrell-street/1501/",
+  "apn": "0723042",
+  "block": "0723",
+  "lot": "042",
+  "eas_baseid": "466344",
+  "coordinates": {
+    "lat": 37.783009,
+    "lng": -122.429504
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 141326,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1501 O'FARRELL           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2003–2018",
+    "shown_on_page": 0,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OFARRELL&street_type=ST&address_number=1501",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0723042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0723&lot=042",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0723042",
+      "retrieved": "2026-08-23"
+    },
+    {
+      "id": "japantown-context-statement",
+      "name": "Donna Graves and Page & Turnbull, Inc., San Francisco Japantown Historic Context Statement, prepared for the San Francisco Planning Department as part of the Japantown Better Neighborhood Plan, May 2009 final draft; SF Planning lists it as revised 2011",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=cdea4663bca8a535d9838ce5da267e475c7aab3aa11603092015f6c92a81de15&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Japantown Historic Context Statement, May 2009",
+      "retrieved": "2026-08-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1942",
+      "kind": "occupancy",
+      "description": "The Raphael Weill School, which with Pacific Heights Elementary served most of the children of the Japantown area, and whose multi-ethnic intake led Dorothea Lange to call this 'the so-called international district'. It is now Rosa Parks Elementary.",
+      "source": "japantown-context-statement"
+    },
+    {
+      "date": "1942",
+      "kind": "site history",
+      "description": "One of the places the city's Japanese community was ordered to report to in 1942, and the point from which the last busloads of Japanese Americans left San Francisco. Dorothea Lange photographed the school's Japanese American pupils days before their families were removed.",
+      "source": "japantown-context-statement"
+    }
+  ]
+}
