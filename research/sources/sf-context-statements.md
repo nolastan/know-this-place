@@ -1249,10 +1249,24 @@ its figure captions.
   - **The survey abbreviates the high end of a range** — `530-50 Chestnut`,
     `1453-59 Grant`, `465-67 Broadway`. Spell it out before the resolver, or
     the range expands downwards.
-  - **`ptn` after a lot means the resource is a portion of that lot.** It still
-    identifies the parcel, so keep it in `assessor_lot_as_recorded`; a
-    hyphenated run of lots (`0088/049-051`, `0115/066-069`) does not, and those
-    are the rows whose ranges have since been split across parcels.
+  - **An abbreviated range usually has one number EAS never gave a parcel.**
+    `545-55 Green`, `1628-30 Grant`, `1445-49 Grant`, `1859-67 Powell`, `55-59
+    Osgood` and `843-845 Filbert` all read as split across two parcels, and in
+    every one of them the odd number out carries no `parcel_number` in EAS and
+    was placed by its coordinate point onto the lot next door. Where the numbers
+    that *state* a parcel agree, the record is on one lot and the split is the
+    point-placement caution firing. The assessor's `property_location` is the
+    tie-breaker: it reads `1630 1628 GRANT AV`, `1449 1445 GRANT AV` and `0845
+    0843 FILBERT ST` — the recorded range, on one parcel.
+  - **`ptn` after a lot means the resource is a portion of that lot** — and
+    since 1982 that portion has often become a lot of its own with a *different*
+    number, so `ptn` names the 1982 lot, not today's parcel. `545-55 Green St.,
+    0131/019 ptn` is the worked example: lot 0131019 today is 460-468 Columbus
+    Avenue, an office building of 1936, while the Green Street frontage is
+    0131020, of 1908. Keep the value in `assessor_lot_as_recorded`, but treat it
+    as a check on the *block*, not as the parcel. A hyphenated run of lots
+    (`0088/049-051`, `0115/066-069`) names no single parcel at all, and those are
+    the rows whose ranges really have been split across parcels.
   - **Streets with no type in EAS.** Broadway and Via Bufano carry no
     `street_type`, which is what `scripts/seed_pages.py`'s `build_inventory`
     crashed on until this pass. `Bob Kaufman Place` is `BOB KAUFMAN ALY`,
@@ -1893,3 +1907,27 @@ next run.
   wrote down** after Van Ness about thin streets, so `--area-from-nhood` and a
   `manifest` subcommand were added here rather than the paths being
   hand-patched again.)
+- **Verified:** 2026-08-24 (North Beach, Van Ness Auto Row, Market & Octavia,
+  Mission Dolores and `digitalsf/sfp-23`, re-run in `report` mode against a
+  `resolve_eas.py` that no longer lets a point-placed parcel outvote the ones
+  EAS states. **80 entries were candidates** — `unresolved` with a method saying
+  the range spans more than one parcel — and **21 now resolve**: 7 in North
+  Beach, 1 in Van Ness Auto Row, 13 in SFP 23. Market & Octavia and Mission
+  Dolores have no candidates and were unchanged. The 7 North Beach entries are
+  the ones this pass published, because they were the only newly-resolvable
+  candidates carrying no publish decision; the other 14 were already `declined`
+  under the old behaviour and were left for a human to reopen, since their
+  decline note now states something the tool no longer believes. **6 pages** —
+  545 Green Street, 1630 Grant Avenue and 843 Filbert Street new; 1445 Grant
+  Avenue, 1859 Powell Street and 55 Osgood Place edited. Every one of the seven
+  was checked against the assessor's `property_location` before publishing, and
+  three of them are recorded there as the survey's full range on one parcel.
+  What the pass taught, beyond the cautions above: **a closed findings file is
+  not a settled one** — `report` over the five closed files also showed 93
+  entries whose resolution has drifted since it was written for reasons that
+  have nothing to do with this fix, every one of them already `published` (77)
+  or `declined` (16), so a blanket `apply` over any of these files would
+  silently overwrite hand judgement. Mission Dolores is the
+  worst of them: a fresh `apply` would drop all 14 of its `rejected` entries and
+  take it from 66 resolved to 44. *Scope a re-run to the entries you mean to
+  change, and diff before you write.*)

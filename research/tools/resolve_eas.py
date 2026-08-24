@@ -577,6 +577,7 @@ def resolve_numbers(city: City, name: str, stype: str | None,
     """Join a set of recorded street numbers to parcels. Pure lookup, no judgement."""
     hits, misses, types, unparcelled, notes = {}, [], set(), [], []
     keys: dict = {}
+    stated: dict = {}          # parcels an EAS row names itself, not ones found by point
     for n in numbers:
         rows = city.rows_for(name, stype, n)
         if not rows:
@@ -591,11 +592,29 @@ def resolve_numbers(city: City, name: str, stype: str | None,
             if apn:
                 hits.setdefault(apn, []).append(n)
                 keys.setdefault(apn, key)
+                if r.get("parcel_number"):
+                    stated.setdefault(apn, []).append(n)
                 placed = True
         if not placed:
             unparcelled.append(n)
     return {"parcels": hits, "misses": misses, "types": types,
-            "unparcelled": unparcelled, "keys": keys, "notes": notes}
+            "unparcelled": unparcelled, "keys": keys, "notes": notes, "stated": stated}
+
+
+def complete_high(low: str, high: str) -> str:
+    """The high end of a printed range, spelled out from the low end.
+
+    Surveys print "1843-47" and "1761-65" for 1843-1847 and 1761-1765 — the high
+    end carries only the digits that changed. Taken literally the pair reads as
+    47-1843, which is the whole street: the Japantown statement's "1843-47
+    Fillmore Street" came back spanning eighty parcels. Where the high end is
+    shorter than the low, fill it in from the low end's leading digits and use it
+    only if it really is higher.
+    """
+    if len(high) >= len(low):
+        return high
+    filled = low[:len(low) - len(high)] + high
+    return filled if int(filled) >= int(low) else high
 
 
 def expand_range(low: str, high: str) -> list:
@@ -604,7 +623,7 @@ def expand_range(low: str, high: str) -> list:
     A street-number range on one building runs up one side of the street, so the
     numbers between the ends share the ends' parity when the ends do.
     """
-    a, b = int(low), int(high)
+    a, b = int(low), int(complete_high(low, high))
     if a > b:
         a, b = b, a
     step = 2 if a % 2 == b % 2 else 1
@@ -985,6 +1004,23 @@ def decide(city: City, f: dict, today: str) -> dict:
                      f"{f['extra']['assessor_block_as_recorded']} lot "
                      f"{f['extra']['assessor_lot_as_recorded']} itself, which is {keep}, so that "
                      f"is the parcel taken.")
+            title["parcels"] = {keep: title["parcels"][keep]}
+        elif len(title.get("stated") or {}) == 1:
+            # The odd parcel out here came from a number whose EAS row carries no
+            # parcel of its own, so it was placed by the point its coordinates
+            # fall in — and DATA-SOURCES.md's caution is that those points sit
+            # centimetres from a parcel boundary. Where every number that states
+            # a parcel agrees on one, the point-placed neighbour is that caution
+            # firing, not a second parcel. 1940-1946 Fillmore Street, an extant
+            # National Register building on one lot, declined on 1944 alone.
+            keep = next(iter(title["stated"]))
+            by_point = ", ".join(n for p, ns in sorted(title["parcels"].items())
+                                 for n in ns if p != keep)
+            named = (f" The recorded numbers span {len(title['parcels'])} parcels today "
+                     f"({listed}), but only {keep} is a parcel EAS states: {by_point} carries no "
+                     f"parcel number of its own and was placed by the point its coordinates fall "
+                     f"in, which sf-parcels puts on a neighbouring lot. The stated parcel is "
+                     f"taken.")
             title["parcels"] = {keep: title["parcels"][keep]}
         else:
             return {"status": "unresolved", "checked_on": today,

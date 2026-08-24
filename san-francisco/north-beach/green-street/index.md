@@ -17,6 +17,7 @@ The parcels on Green Street documented here so far, from the city's address, ass
 - [535–555](535/) — A 1948 store building in the Upper Grant Avenue Historic District, with permit records from 1991 to 2019.
 - [538–542](538/) — A 1913 3-unit building with a ground-floor store in the Upper Grant Avenue Historic District, with a seismic retrofit permitted in 2015.
 - [544–548](544/) — A 1907 7-unit apartment building in the Upper Grant Avenue Historic District, with reroofing permitted in 2012.
+- [545](545/) — A 1908 6-unit apartment building in the Upper Grant Avenue Historic District, with one permit record from 2020.
 - [558–562](558/) — A 1907 3-unit building with a ground-floor store, with window replacement permitted in 2012.
 - [570–576](570/) — A 1925 store building, with a seismic retrofit permitted in 1997.
 - [580](580/) — A 1963 bank building, with window replacement permitted in 2022.
