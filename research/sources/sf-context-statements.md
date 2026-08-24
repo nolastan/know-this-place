@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 22 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 23 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 22 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 8: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved). All eight loops closed. |
-| **Remaining** | ~28 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 23 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 9: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) and [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved). All nine loops closed. |
+| **Remaining** | ~27 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -268,6 +268,22 @@ document you are about to mine.
     returns the PDF, and it is born-digital InDesign, so `pdftotext -layout`
     gives clean text with no OCR damage anywhere. See "The Parkside statement"
     below.
+  - William Kostura, architectural historian, with Kelley & VerPlanck LLC,
+    *Historic Context Statement of the Oceanside: A Neighborhood of the Sunset
+    District, San Francisco*, commissioned by SPEAK (Sunset Parkside Education
+    and Action Committee) and funded by the Wallace Alexander Gerbode
+    Foundation, the Historic Preservation Fund Committee and San Francisco
+    Beautiful, May 2007, updated March 2010 (28 pp.), source id
+    `oceanside-context-statement`. SF Planning lists it as "Historic Context
+    Statement of the Oceanside: A Neighborhood of the Sunset District, San
+    Francisco (Adopted 2012)". Served from the same M-Files vault as Dogpatch,
+    Glen Park, Inner Mission North, Inner Sunset, OMI, Mission Dolores,
+    Japantown and Russian Hill, and the REST content hash is again the page's
+    own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/b36ba92f20d231a0ee387f5dd551d1f2837730f658bd0a0888d5eb7b6842e9c8/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. Same author as
+    the Inner Sunset statement, the Van Ness Auto Row survey and the Russian
+    Hill statement. See "The Oceanside statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1570,6 +1586,56 @@ in three plain lists on a single page.
   Workforce Development, March 2008, adopted 2008`. Page source id
   `parkside-context-statement`; the S3 URL is both the citation and the fetch.
 
+**The Oceanside statement is 28 pages, two columns, and its endnotes are the
+best part of it.** A Kostura statement, so it behaves like the Inner Sunset and
+Russian Hill ones: narrative history, no appendix inventory, and the addresses
+scattered through the prose rather than tabulated.
+
+- **`pdftotext -layout` interleaves the two columns line by line** and makes the
+  file unreadable and un-greppable — "the Nels Hagerup Residence at 1218-24 46th
+  out during the middle of the 19th century, the Avenue." Extract each page one
+  column at a time (`-x 0 -W 308` then `-x 300 -W 312` on a 612pt page) before
+  reading. Five of the document's addresses are invisible to a regex over the
+  interleaved text, including two of its best.
+- **Four of the findings come from the endnotes**, which is a higher share than
+  any other statement in this set: the Stick-Eastlake cottage moved onto 1575
+  48th Avenue in 1924, the two restored Harrington houses at 1231 and 1255 42nd
+  Avenue, and the Oceanside Riding Club at 1370 48th Avenue that gives the
+  neighbourhood's name its last recorded use. *Read the notes section of a
+  Kostura statement as material, not as apparatus.*
+- **Note 45 contradicts the sentence it is attached to.** The text calls the
+  Lodge at 1300-1304 La Playa demolished; its own footnote says the building was
+  converted to apartments, doubled in size before 1929, and still stands. Stated
+  on the page's `.unknowns`, unadjudicated.
+- **Half the buildings this report calls extant have numbers EAS no longer
+  carries.** 1315 48th Avenue ("extant—converted to a dwelling"), 4131 Kirkham
+  ("extant but heavily remodeled") and 1534 Great Highway ("extant but heavily
+  remodeled") all come back with no EAS record, and in each case the neighbouring
+  numbers are one or two off. Conversion and rebuilding along the Great Highway
+  and the outer avenues has renumbered these lots; the report's number is the
+  historical one. *Do not reach for the neighbour.*
+- **The block-face rows are real facts with no address.** The fifteen Craftsman
+  houses Alonzo Harrington built on the 1200 block of 42nd Avenue in 1911-13,
+  Lincoln U. Grant's eighteen on the 1200 block of 37th Avenue in 1912-13, the
+  row of six on the 1200 block of 41st Avenue and the row of five on the 1600
+  block of the Great Highway are each given as a block, never as numbers. Kept
+  as unresolved findings rather than dropped, because a later run with a Sanborn
+  or a permit run could place them.
+- **The survey this statement accompanies is not in this file.** Kelley &
+  VerPlanck produced 511 DPR 523 A forms, 60 B forms and 5 district forms for
+  the Oceanside between 2008 and 2010. None of them are here. That is a separate
+  corpus and a good lead.
+- **The lettered street names are historical**, exactly as in the Parkside
+  statement: H Street is Lincoln Way, I is Irving, J Judah, K Kirkham, L Lawton,
+  M Moraga, N Noriega, O Ortega, P Pacheco. The 1909 renaming is described in
+  the document itself at p. 11.
+- **Citation label:** `William Kostura, with Kelley & VerPlanck, Historic
+  Context Statement of the Oceanside: A Neighborhood of the Sunset District, San
+  Francisco, commissioned by SPEAK (Sunset Parkside Education and Action
+  Committee), May 2007, updated March 2010; SF Planning lists it as adopted
+  2012`. Page source id `oceanside-context-statement`; cite the
+  `SharedLinks.aspx` URL and fetch the REST content path.
+
 
 ## Verification log
 
@@ -2319,4 +2385,43 @@ next run.
   this document is read in full and nothing in it is outstanding. The Oceanside
   and Sunset District Residential Builders statements, both on the same SF
   Planning page and both covering neighbouring parts of the Sunset, are
+  untouched.)
+- **Verified:** 2026-08-24 (Oceanside: read all 28 pages of the adopted PDF,
+  the whole file — the historical context, the synthesis for the Sunset District
+  and then the Oceanside itself (the early community, Carville and its streetcar
+  houses, the 1906 refugee shacks, the neighbourhood name, the 1909 street
+  renaming, well water and piped water, the improvement clubs, the schools and
+  churches), Part III's property types and architectural styles, SPEAK's goals
+  and priorities, both parts of the methodology, the bibliography and all 51
+  endnotes. Pages 12 and 13 are full-page maps and carry no text. There is no
+  appendix inventory. **32 address-level facts were found, 28 of them carrying a
+  street number across 27 distinct number-and-street pairs**, all in the outer
+  Sunset west of 37th Avenue. **20 resolve to a parcel**, on 19 distinct parcels,
+  and **all 20 are published on 19 new pages**, every one under
+  `san-francisco/sunset-parkside/`. **One conflict is stated** in a page's
+  `.unknowns` — the Lodge at 1300-1304 La Playa, which the text calls demolished
+  and its own footnote says still stands — and **three construction dates
+  disagree with the assessor**, in `building.completed_conflict`, unadjudicated.
+  **Twelve findings stay unresolved**: five have no EAS record (1315 48th Avenue,
+  4131 Kirkham Street, 2200 and 1534 and 1938 Great Highway — and three of those
+  five are buildings the report itself calls extant, which is the caution above),
+  two are printed ranges now split across parcels the record does not choose
+  between (4329-4331 Kirkham Street, 1343-1353 48th Avenue), one is a
+  condominium (1351 42nd Avenue, the Francis Scott Key School Annex), and four
+  are the block-face rows the statement gives no numbers for. Never candidates,
+  and so not recorded: eleven buildings located only by cross street, one cover
+  photograph, and one address appearing only as a named person's home. What the
+  pass taught, beyond the cautions above: **the natural way to write up an
+  inventory-list finding is the one thing the design contract forbids.** "Picked
+  out by a 2007 walking survey as a house predating…" is the `a survey records…`
+  pattern the root AGENTS.md rules out, and it was written onto 129 pages across
+  both this batch and the Parkside one before an audit caught it. A listing or
+  designation *event* may be stated as an event — the North Beach pages already
+  do — but an ordinary fact about a building must be stated as a fact, with the
+  attribution left to the Sources footer. *Grep the descriptions you are about to
+  publish for "survey", "statement" and "report" before rendering.* Coverage
+  note: this document is read in full and nothing in it is outstanding. The
+  Kelley & VerPlanck survey it accompanies — 511 DPR 523 A forms, 60 B forms and
+  5 district forms — is a separate corpus and is not held here. The Sunset
+  District Residential Builders statement on the same SF Planning page is
   untouched.)

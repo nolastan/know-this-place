@@ -21,6 +21,7 @@ The parcels on Taraval Street documented here so far, from the city's address, a
 - [2120](2120/) — A 1928 store building, with a seismic retrofit permitted in 2003.
 - [2124–2126](2124/) — A 1919 store building, with fire repair permitted in 1989.
 - [2201](2201/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2018.
+- [2331–2333](2331/) — A 1938 2-unit building with a ground-floor store, with reroofing permitted in 1991.
 - [2417–2419](2417/) — A 1921 1-unit building with a ground-floor store, with a rear addition permitted in 1993.
 
 Pages are generated from the DataSF datasets listed in each page's
