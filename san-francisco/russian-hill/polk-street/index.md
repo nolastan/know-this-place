@@ -4,6 +4,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [2354–2360](2354/) — A 1910 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
 - [2355](2355/) — A 1924 38-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
 
 Pages are generated from the DataSF datasets listed in each page's

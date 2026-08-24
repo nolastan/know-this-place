@@ -6,6 +6,7 @@ The parcels on Ellis Street documented here so far, from the city's address, ass
 
 - [140](140/) — The site of Jonathan Kittredge's Carpenter Gothic house of 1855, under a hotel of 1908.
 - [369](369/) — A 1924 building in the Uptown Tenderloin Historic District, with reroofing permitted in 1989.
+- [684](684/) — A 1913 84-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2007.
 - [730](730/) — A 1920 garage, with permit records from 1989 to 1999.
 - [751](751/) — A 1920 garage in the Uptown Tenderloin Historic District, with reroofing permitted in 1997.
 - [819](819/) — A 1906 garage, with a seismic retrofit permitted in 2001.

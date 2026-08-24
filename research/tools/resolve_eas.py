@@ -67,6 +67,46 @@ STREET_TYPE_WORD = {
 PADDED_ORDINAL = re.compile(r"^0+(\d(ST|ND|RD|TH))$", re.I)
 NUMBER = re.compile(r"^(\d+)([A-Za-z]?)$")
 
+# Sources write "Second Street" and "Twenty-fourth Avenue"; EAS holds the
+# numbered streets and avenues as zero-padded ordinals — 02ND, 24TH. Without
+# this the lookup fails at the street, not the number, and the finding dies
+# with "no such street" when the street is one of the busiest in the city.
+_ONES = ["", "FIRST", "SECOND", "THIRD", "FOURTH", "FIFTH", "SIXTH", "SEVENTH",
+         "EIGHTH", "NINTH", "TENTH", "ELEVENTH", "TWELFTH", "THIRTEENTH",
+         "FOURTEENTH", "FIFTEENTH", "SIXTEENTH", "SEVENTEENTH", "EIGHTEENTH",
+         "NINETEENTH"]
+_TENS = {20: "TWENTY", 30: "THIRTY", 40: "FORTY", 50: "FIFTY"}
+_CARDINAL = {1: "ONE", 2: "TWO", 3: "THREE", 4: "FOUR", 5: "FIVE", 6: "SIX",
+             7: "SEVEN", 8: "EIGHT", 9: "NINE"}
+
+
+def _ordinal_suffix(n: int) -> str:
+    if 10 <= n % 100 <= 20:
+        return "TH"
+    return {1: "ST", 2: "ND", 3: "RD"}.get(n % 10, "TH")
+
+
+def _ordinal_words() -> dict:
+    """Squashed spelled-out ordinal -> EAS's padded form ("SECOND" -> "02ND")."""
+    out = {}
+    for n in range(1, 60):
+        if n < 20:
+            word = _ONES[n]
+        else:
+            tens, unit = (n // 10) * 10, n % 10
+            if unit == 0:
+                word = _TENS[tens][:-1] + "IETH" if _TENS[tens].endswith("Y") else _TENS[tens] + "TH"
+            else:
+                word = _TENS[tens] + _ONES[unit]
+        eas = f"{n:02d}{_ordinal_suffix(n)}"
+        out[word] = eas
+        if n >= 20 and n % 10:
+            out[_TENS[(n // 10) * 10] + _CARDINAL[n % 10]] = eas  # "TWENTYFOUR" typos
+    return out
+
+
+ORDINAL_WORDS = _ordinal_words()
+
 
 # --------------------------------------------------------------------------- #
 # Fetching
@@ -236,6 +276,9 @@ class StreetIndex:
             hit = self.squashed.get(candidate)
             if hit:
                 return hit, "spelling"
+        padded = ORDINAL_WORDS.get(key)
+        if padded and padded in self.types:
+            return padded, "ordinal"
         return None, ""
 
     def eas_type(self, name: str, stype: str | None) -> tuple:
@@ -408,6 +451,9 @@ class City:
         clause = ""
         if how == "spelling" or (how == "alias" and eas_name != name):
             clause = f" The record spells the street {name}; EAS holds it as {eas_name}."
+        if how == "ordinal":
+            clause = (f" The record spells the street out as {name}; EAS holds the numbered "
+                      f"streets as zero-padded ordinals, so this is {eas_name}.")
         if retyped:
             clause += (f" EAS files this street as {eas_name} "
                        f"{eas_type or 'with no street type'}, not {stype}.")
