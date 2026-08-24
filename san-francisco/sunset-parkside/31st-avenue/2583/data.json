@@ -1,0 +1,121 @@
+{
+  "address": "2583 31st Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/31st-avenue/2583/",
+  "apn": "2432010",
+  "block": "2432",
+  "lot": "010",
+  "eas_baseid": "338868",
+  "coordinates": {
+    "lat": 37.739087,
+    "lng": -122.488639
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1613,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2583 31ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 862322,
+    "assessed_improvement_value": 369563,
+    "last_sale_date": "2015-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502200729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-20",
+      "status_date": "2025-06-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace existing rear deck beam, strengthen existing framing, less than 50% replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303304748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-30",
+      "status_date": "2023-04-25",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216235",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-21",
+      "status_date": "1993-02-02",
+      "estimated_cost": 1500,
+      "description": "stucco repair left & right side",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=31ST&street_type=AVE&address_number=2583",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2432010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2432&lot=010",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2432010",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908",
+      "kind": "construction",
+      "description": "Built by the Parkside Realty Company as one of 62 near-identical cottages put up across seven blocks to bring the first residents into the new district — about 800 square feet on one storey, two bedrooms and a bath, sold with a choice of six façade treatments over a single plan. A 2007 walking survey found all but one of the group still standing, almost all of them since raised over a basement garage.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

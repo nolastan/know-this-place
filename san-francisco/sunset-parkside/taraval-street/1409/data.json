@@ -1,0 +1,120 @@
+{
+  "address": "1409 Taraval Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/taraval-street/1409/",
+  "apn": "2401043",
+  "block": "2401",
+  "lot": "043",
+  "eas_baseid": "337576",
+  "coordinates": {
+    "lat": 37.742555,
+    "lng": -122.481309
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1400,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1409 TARAVAL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 49643,
+    "assessed_improvement_value": 37163
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504184807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-18",
+      "status_date": "2025-04-25",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "revision to permit 202409090331 - replace windows, (6) aluminum clad wood and street facing, (4) not street visible. all same size and location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409090331",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-09",
+      "status_date": "2025-04-24",
+      "estimated_cost": 298000,
+      "revised_cost": 298000,
+      "description": "convert (e) commericial space to residential. install (n) kitchen, full bathroom, & 2 bedroom at 2/f. convert (e) work room to bedroom, office, media room, & install wet bar on 3/f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111193463",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-19",
+      "status_date": "2002-03-19",
+      "estimated_cost": 2900,
+      "revised_cost": 2900,
+      "description": "app vinyl siding to backwall of home.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TARAVAL&street_type=ST&address_number=1409",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2401043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2401&lot=043",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2401043",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "Picked out by a 2007 walking survey of the Parkside as a house predating the stucco “Sunset” row house that filled the district from the 1920s. Most houses on that list are larger Craftsman-style buildings put up by the Parkside Realty Company before 1925; the survey was informal and its authors called it incomplete.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

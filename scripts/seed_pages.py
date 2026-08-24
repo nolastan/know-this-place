@@ -234,7 +234,10 @@ def fetch_keyed(name: str, dataset: str, field: str, keys, select: str = None,
               f"— {len(rows)} rows total", file=sys.stderr, flush=True)
         time.sleep(3)  # be a polite client; the API throttles hard when pushed
     path.write_text(json.dumps(rows))
-    part.unlink()
+    # `keys` can be empty — a neighborhood name that matches no EAS row, say —
+    # in which case no batch ran and no `.partial` was ever written. Cleaning up
+    # a file that was never created is not an error.
+    part.unlink(missing_ok=True)
     return rows
 
 

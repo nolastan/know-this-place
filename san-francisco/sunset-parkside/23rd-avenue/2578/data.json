@@ -1,0 +1,142 @@
+{
+  "address": "2578 23rd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/2578/",
+  "apn": "2423024",
+  "block": "2423",
+  "lot": "024",
+  "eas_baseid": "338452",
+  "coordinates": {
+    "lat": 37.739541,
+    "lng": -122.479416
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 1350,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2578 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602274,
+    "assessed_improvement_value": 343361,
+    "last_sale_date": "2012-01-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201706230257",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-23",
+      "status_date": "2017-06-28",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "kitchen flooring, cabinets works, range(oven) relocation. counter top (new tile)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109154728",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-15",
+      "status_date": "2011-11-02",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace tile in the shower stall, replace tile on the floor, replace toilet, replace bathtub, replace door to shower.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920598",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-09-29",
+      "status_date": "1999-10-08",
+      "estimated_cost": 7420,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924274",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-11",
+      "status_date": "1990-01-22",
+      "estimated_cost": 4000,
+      "description": "raise foundation, termite damage dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-02-17",
+      "status_date": "1987-03-19",
+      "estimated_cost": 4000,
+      "description": "remove plaster from walls and ceiling bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=2578",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2423024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2423&lot=024",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2423024",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "Picked out by a 2007 walking survey of the Parkside as a house predating the stucco “Sunset” row house that filled the district from the 1920s. Most houses on that list are larger Craftsman-style buildings put up by the Parkside Realty Company before 1925; the survey was informal and its authors called it incomplete.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

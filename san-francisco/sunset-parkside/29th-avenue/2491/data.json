@@ -1,0 +1,131 @@
+{
+  "address": "2491 29th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/29th-avenue/2491/",
+  "apn": "2396013A",
+  "block": "2396",
+  "lot": "013A",
+  "eas_baseid": "337304",
+  "coordinates": {
+    "lat": 37.7409,
+    "lng": -122.486434
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2021.2,
+    "building_area_sqft": 2265,
+    "lot_depth_ft": 62,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2491 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 447083,
+    "assessed_improvement_value": 296984,
+    "last_sale_date": "1998-02-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200409224900",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-22",
+      "status_date": "2004-10-18",
+      "estimated_cost": 2406,
+      "revised_cost": 2406,
+      "description": "replace the garage door/same size and same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607040",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-24",
+      "status_date": "1996-05-31",
+      "estimated_cost": 10350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002664",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-02-08",
+      "status_date": "1990-06-08",
+      "estimated_cost": 750,
+      "description": "install 4x4 post at existing beam on west side of chimney,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919138",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-10",
+      "status_date": "1989-11-16",
+      "estimated_cost": 1985,
+      "description": "termite report damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=2491",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2396013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2396&lot=013A",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2396013A",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "Picked out by a 2007 walking survey of the Parkside as a house predating the stucco “Sunset” row house that filled the district from the 1920s. Most houses on that list are larger Craftsman-style buildings put up by the Parkside Realty Company before 1925; the survey was informal and its authors called it incomplete.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

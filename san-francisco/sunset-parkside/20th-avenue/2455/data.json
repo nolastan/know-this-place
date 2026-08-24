@@ -1,0 +1,120 @@
+{
+  "address": "2455 20th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/20th-avenue/2455/",
+  "apn": "2405010",
+  "block": "2405",
+  "lot": "010",
+  "eas_baseid": "337718",
+  "coordinates": {
+    "lat": 37.74201,
+    "lng": -122.477021
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 2410,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2455 20TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 89383,
+    "assessed_improvement_value": 538627
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707101394",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-07-10",
+      "status_date": "2020-10-30",
+      "estimated_cost": 145000,
+      "revised_cost": 145000,
+      "description": "add 2-story horizontal rear addition to (e) home to allow (2) (n) bedrooms, (2) full bathrooms & a family room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308293459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-29",
+      "status_date": "2003-11-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel kitchen & bath,sheetrock,tile,new cabinets,counter top,floor & windows,2 bath window,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811517",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-22",
+      "status_date": "1998-10-22",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=AVE&address_number=2455",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2405010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2405&lot=010",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2405010",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "Picked out by a 2007 walking survey of the Parkside as a house predating the stucco “Sunset” row house that filled the district from the 1920s. Most houses on that list are larger Craftsman-style buildings put up by the Parkside Realty Company before 1925; the survey was informal and its authors called it incomplete.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

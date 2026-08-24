@@ -4,6 +4,7 @@ The parcels on 24th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [2345](2345/) — A 1900 building, with a rear addition permitted in 1992.
 - [2510](2510/) — A 1917 single-family house, with reroofing permitted in 2012.
 - [2580](2580/) — A 1925 single-family house, with reroofing permitted in 1997.
 

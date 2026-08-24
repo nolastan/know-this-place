@@ -1,0 +1,182 @@
+{
+  "address": "2514 27th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/2514/",
+  "apn": "2427030",
+  "block": "2427",
+  "lot": "030",
+  "eas_baseid": "338629",
+  "coordinates": {
+    "lat": 37.740477,
+    "lng": -122.483781
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1383,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2514 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 354057,
+    "assessed_improvement_value": 200277,
+    "last_sale_date": "1998-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905130481",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-13",
+      "status_date": "2019-06-24",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309267798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-26",
+      "status_date": "2013-11-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "kitchen remdodeling change existing cabinets and appliances. no flooring, no ceiling work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808280300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-28",
+      "status_date": "2008-09-04",
+      "estimated_cost": 7725,
+      "revised_cost": 7725,
+      "description": "perform repairs as. termite report # 51387 item # 2a. & report # 51387 - s1, item 2a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605232194",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-23",
+      "status_date": "2006-07-03",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace 10 windows in kind white vinyl. not visable from the street. no structural changes. trim detail to remain as is. min u factor 0.67",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821304",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-10-19",
+      "status_date": "1999-05-06",
+      "estimated_cost": 1085,
+      "description": "replace 1 window size for size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209221",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-06-05",
+      "status_date": "1992-06-18",
+      "estimated_cost": 4425,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200523",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-01-13",
+      "status_date": "1992-03-23",
+      "estimated_cost": 4000,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106560",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1991-04-22",
+      "status_date": "1992-10-30",
+      "estimated_cost": 950,
+      "description": "work completed under 9200523",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1991–2019",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=2514",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2427030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2427&lot=030",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2427030",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908",
+      "kind": "construction",
+      "description": "Built by the Parkside Realty Company as one of 62 near-identical cottages put up across seven blocks to bring the first residents into the new district — about 800 square feet on one storey, two bedrooms and a bath, sold with a choice of six façade treatments over a single plan. A 2007 walking survey found all but one of the group still standing, almost all of them since raised over a basement garage.",
+      "source": "parkside-context-statement"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The Parkside context statement dates the building here to 1908; the assessor dates the building on this parcel to 1900."
+  }
+}

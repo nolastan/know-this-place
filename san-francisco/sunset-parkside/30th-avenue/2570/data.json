@@ -1,0 +1,143 @@
+{
+  "address": "2570 30th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/30th-avenue/2570/",
+  "apn": "2430020",
+  "block": "2430",
+  "lot": "020",
+  "eas_baseid": "338769",
+  "coordinates": {
+    "lat": 37.73937,
+    "lng": -122.486924
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2455,
+    "basement_area_sqft": 1001,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2570 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215950,
+    "assessed_improvement_value": 293367,
+    "last_sale_date": "1995-08-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201105166064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-16",
+      "status_date": "2011-09-22",
+      "estimated_cost": 34000,
+      "revised_cost": 58000,
+      "description": "add 2 bedrooms, 2 bathrooms & 2 storage rooms, laundry and family room at ground floor. no work at 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710105036",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-10",
+      "status_date": "2007-10-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair wood sidings on both sides of the building. replaced total 8 windows. install new roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305154645",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-05-15",
+      "status_date": "2009-03-31",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace windows in back- not shown on street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304011127",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-01",
+      "status_date": "2003-05-08",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace defective floor joists under (e) rear bedroom, dry rot per nov#200338660",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2003–2011",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=2570",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2430020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2430&lot=020",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2430020",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908",
+      "kind": "construction",
+      "description": "Built by the Parkside Realty Company as one of 62 near-identical cottages put up across seven blocks to bring the first residents into the new district — about 800 square feet on one storey, two bedrooms and a bath, sold with a choice of six façade treatments over a single plan. A 2007 walking survey found all but one of the group still standing, almost all of them since raised over a basement garage.",
+      "source": "parkside-context-statement"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The Parkside context statement dates the building here to 1908; the assessor dates the building on this parcel to 1906."
+  }
+}
