@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 19 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 21 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 20 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 6: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved) and [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected). All six loops closed. |
-| **Remaining** | ~30 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 21 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 7: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected) and [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected). All seven loops closed. |
+| **Remaining** | ~29 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -243,6 +243,20 @@ document you are about to mine.
     `https://sfplanning.s3.amazonaws.com/archives/documents/1862-San%20Francisco%20Japantown%20Better%20Neighborhood%20Plan%20Historic%20Context%204.11.08.pdf`
     and is **not** what the adopted listing points at. See "The Japantown
     statement" below.
+  - William Kostura, *The West Slope of Russian Hill: A Historical Context and
+    Inventory of Historic Resources for Residential Buildings around Lombard and
+    Larkin Streets*, prepared for the Russian Hill Historic Resources Inventory
+    Committee of the Northeast San Francisco Conservancy and funded by the David
+    L. Klein, Jr. Foundation, 2006, revised 2009 (60 pp.), source id
+    `russian-hill-context-statement`. SF Planning lists it as "Russian Hill
+    Historic Context Statement (Adopted 2009)". Served from the same M-Files
+    vault as Dogpatch, Glen Park, Inner Mission North, Inner Sunset, OMI,
+    Mission Dolores and Japantown, and the REST content hash is once more the
+    page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/9512011f20332fb5a06a66154d79cd3439701dbf664afb9f6e58f39ad205d0f4/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. Same author as
+    the Inner Sunset statement and the Van Ness Auto Row survey. See "The
+    Russian Hill statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1404,6 +1418,76 @@ inventory: the appendix is nine pages of Ben Pease's copyrighted Japantown maps
   `japantown-context-statement`; cite the `SharedLinks.aspx` URL and fetch the
   REST content path.
 
+**The Russian Hill statement is the smallest study area in this set and one of
+the densest.** 60 pages covering the block bounded by Greenwich, Lombard, Larkin
+and Polk plus three buildings at the northwest corner of Lombard and Larkin — 30
+properties, 35 buildings. There is no appendix inventory table; the facts are in
+the narrative, the figure captions, the footnotes, the architect biographies and
+a twenty-one-page appendix of resident biographies.
+
+- **Its Larkin Street numbers were changed, and the report prints both.** This
+  is the only statement read so far that carries a renumbering inside its own
+  study area, and it is the trap that would cost a run the most. The appendix
+  heads each profile with the historical number and adds "site of today's
+  #N" — 2507 → 2525, 2509 → 2525, 2513 → 2537-2539, 2517 → 2555, 2519 → 2555
+  and 2565, 2612 Polk → 2650, 2614 Polk → 2652. **Every one of those historical
+  numbers is a live address in EAS today, on a different parcel**, so the
+  resolver placed six of them on a neighbour's page until they were repointed at
+  the number the report itself gives. The give-away was 2509 Larkin landing on
+  the parcel of the extant 1888 house next door. Read the appendix's "site of"
+  parentheses before running the tool, not after.
+- **The same printed number can be two buildings.** 2515 Larkin Street is the
+  1888 Stick-Eastlake house that still stands *and*, before the renumbering, the
+  1882 cottage on the site of today's 2543-2545. The report prints the second as
+  "2515 Lombard" once and "2515 Larkin" twice.
+- **The OCR is the worst in this set.** "Hil" for Hill, "Kostua" for Kostura,
+  "l2l2 Lombard" for 1212, "100 I Front Street" for 1001, "1205 Filbert2061
+  Hyde" for two addresses run together, "80s and Quandt" and "Dos and Quandt"
+  for Boss and Quandt. A mechanical scan of the text misses several addresses
+  entirely for that reason. Take a number only where it reads cleanly or a
+  second mention confirms it.
+- **It contradicts itself on addresses five times**, all recorded on the pages'
+  `.unknowns` and none adjudicated: the 1926 house is 2505-2507 Larkin twice and
+  2507 Larkin three times; the 1904-1905 flats are 1257-1259 Lombard three times
+  and 1257-1261 twice, and 1261 is the separate 1876 house behind them; the 1908
+  flats are 1263-1267 Lombard three times and 1263-1267 *Larkin* once, and the
+  appendix numbers them 1257-1259 as well; 1208 Lombard is "1208 Larkin" in
+  footnote 11; and the buyer of the 2614 Polk house is at 1233 Lombard on p. 18
+  and 1271-1275 Lombard everywhere else.
+- **The second seam is the architect biographies, pp. 33-38.** Seven architects,
+  and their profiles name about thirty numbered buildings elsewhere in the city
+  with a date apiece — Meussdorffer's Pacific Heights apartment houses, Ross's
+  Islam Temple and West Side Christian Church, Righetti's hotels, Young's
+  Francesca Club and Hotel Californian. That seam yielded 37 findings against 52
+  from the study area itself, and it is the reason this run touched eight
+  neighborhood directories rather than one. **Expect the same shape from the
+  other Kostura statements.**
+- **Appendix I is entirely residents** and is why the yield is not larger. It
+  carries real building facts — construction dates, alterations, demolitions,
+  the "site of today's" mapping — and they were taken; the biographies were not.
+  Two exceptions were published under the root AGENTS.md's allowance for notable
+  past residents already covered by published sources: Gelett Burgess at
+  1210-1212 Lombard Street and Alice Eastwood at 1241 Lombard Street.
+- **Ten resolved findings could not become pages**, and eight of them are the
+  same thing: the parcel carries no row on the assessor's secured roll at all,
+  which the seeder requires. They are the large apartment houses — 945 and 947
+  Green, 2555 Larkin, 2500 Steiner, 2000 and 2006 Washington, 1925 Gough — and
+  the report says why: several are the 1910s-1920s "cooperative" apartment
+  buildings, whose parcel is not assessed as one property. The ninth and tenth
+  are 2652 Polk Street, whose own parcel is retired and whose EAS point falls in
+  the parcel next door.
+- **Nineteen construction dates disagree with the assessor**, all recorded in
+  `building.completed_conflict` and none adjudicated. Most are the roll's 1900
+  placeholder against a real year in the document.
+- **Citation label:** `William Kostura, The West Slope of Russian Hill: A
+  Historical Context and Inventory of Historic Resources for Residential
+  Buildings around Lombard and Larkin Streets, prepared for the Russian Hill
+  Historic Resources Inventory Committee of the Northeast San Francisco
+  Conservancy, 2006, revised 2009; SF Planning lists it as the Russian Hill
+  Historic Context Statement, adopted 2009`. Page source id
+  `russian-hill-context-statement`; cite the `SharedLinks.aspx` URL and fetch
+  the REST content path.
+
 
 ## Verification log
 
@@ -2053,4 +2137,51 @@ next run.
   silently overwrite hand judgement. Mission Dolores is the
   worst of them: a fresh `apply` would drop all 14 of its `rejected` entries and
   take it from 66 resolved to 44. *Scope a re-run to the entries you mean to
-  change, and diff before you write.*)
+  change, and diff before you write.*)- **Verified:** 2026-08-24 (Russian Hill: read all 60 pages of the M-Files copy
+  — the historical context, the architecture and architects chapters, the figure
+  captions, the footnotes, the bibliography and the twenty-one-page Appendix I.
+  298 numbered-address mentions by a mechanical scan of the OCR, plus several
+  the OCR hides in run-ons. **109 findings over 104 distinct addresses: 67
+  resolved, 41 unresolved, 1 rejected; 57 published on 48 pages, 10 declined.**
+  The 48 pages are 44 new and 4 edited, across `russian-hill` (26),
+  `nob-hill` (5), `tenderloin` (5), `financial-district` (4), `pacific-heights`
+  (4), `western-addition` (2), `south-of-market` (1) and `marina` (1) — the
+  spread comes from the architect biographies, not the study area. Ten
+  findings carry a conflict; the six on published findings are stated on their
+  pages' `.unknowns`, and nineteen construction dates disagree with the assessor
+  in `building.completed_conflict`. None adjudicated.
+  Not documented, and why: **the historical Larkin and Polk numbers** the report
+  prints for demolished buildings are historical and were repointed at the
+  current number the report itself gives, except 2519 Larkin, whose site the
+  report spreads over two of today's parcels; **eight resolved parcels carry no
+  row on the assessor's secured roll**, so the seeder makes no page for them —
+  945 and 947 Green, 2555 Larkin, 2500 Steiner, 2000 and 2006 Washington and
+  1925 Gough, several of them the 1920s co-operative apartment houses the report
+  itself describes; **2652 Polk Street's own parcel is retired** and its EAS
+  point falls in the 1299 Lombard parcel next door, so both its findings were
+  declined rather than published onto a building the report describes
+  differently; **nine printed ranges now span two
+  parcels apiece** — 1249-1251 and 1271-1275 Lombard, 1326-1328, 1330-1332 and
+  1342-1344 Greenwich, 1376-1392 and 1351-1361 McAllister, and 870-874 and
+  2240-2268 Chestnut — and the report names no parcel, so none was placed;
+  **five parcels are condominiums** the directory contract holds back
+  (1268-1270 and 1269 Lombard, 1324 and 1330 Greenwich, 1167-1169 Green);
+  **1205 Filbert Street and 2061 Hyde Street, which the OCR runs together as one
+  address, are two parcels today**, so choosing between them would be
+  adjudicating; and **twenty-six addresses have no EAS record at all**, among
+  them 2501, 2503 and 2513 Larkin, 2601, 2615 and 2650 Polk, 532 Clay, 632
+  Montgomery, 318 Post, 236 Stockton, 134 Sutter, 321 Davis, 1234 Union,
+  205-209 California, 285 Second and 1940 and 1960 Pacific — the last two being
+  Boss and Quandt apartment towers the report documents. Ten printed addresses were never candidates: five appear solely as
+  somebody's home, one is in Alameda, and four are given by cross street with no
+  number.
+  What the pass taught, beyond the cautions above: **a source that prints both a
+  historical and a current address will silently resolve on the wrong one**, because
+  the historical number is usually still a live address somewhere on the same
+  block — see the renumbering caution above; and **`resolve_eas.py` could not
+  look up a street a source spells out**, because EAS holds the numbered streets
+  as zero-padded ordinals (`02ND`, `24TH`). That killed 285 Second Street at the
+  street, not the number. The tool now maps spelled-out ordinals to EAS's form
+  and says so in the method. The Parkside statement (issue #56) was fetched to
+  `research/corpora/sf-context-statements/parkside-hcs.pdf` in the same session
+  and **not read** — this batch was much larger than one block suggested.)

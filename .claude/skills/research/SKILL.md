@@ -101,6 +101,7 @@ second deliverable of every run, alongside the facts. See
 
 ```bash
 python3 research/tools/check.py [--stats]           # run before every commit
+python3 research/tools/check.py --report <findings-file>   # the PR body's table
 python3 research/tools/resolve_eas.py fetch|report|apply <findings-file>
 python3 scripts/validate.py                         # any run that touched a page
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
@@ -118,6 +119,19 @@ the pages**), the dossier's coverage note and `Verified:` line say what was read
 and what was learned, the register says the truth in counts, `check.py` and
 `validate.py` are clean, and the PR body carries the run's counts: read N, found
 M, resolved K, published J.
+
+**The PR body opens with the per-neighborhood table**, which
+`check.py --report <findings-file>` prints ready to paste:
+
+```bash
+python3 research/tools/check.py --report research/findings/<id>/<batch>.json
+```
+
+Pages created and edited per neighborhood is what a reader wants first, and it
+is what a 150-file diff hides. Only findings that reached a parcel can be in it
+— the neighborhood belongs to the parcel, not the street — so unresolved
+findings are counted in one line below it rather than guessed into a row. See
+[The PR body](../../../research/RUNBOOK.md#the-pr-body).
 
 Report what you did the same way: counts, plainly. Zero findings, reported
 honestly with its coverage recorded, is a completed run — it tells the next

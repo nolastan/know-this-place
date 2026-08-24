@@ -354,6 +354,40 @@ python3 scripts/validate.py        # if a page was touched
 Report the run the same way: **read N, found M, resolved K, published J.** Zero
 findings, reported honestly with its coverage recorded, is a completed run.
 
+### The PR body
+
+The one-line counts say how much a run found. They do not say **where it
+landed**, which is the first thing a reader of the diff wants and the thing a
+150-file diff hides. So a PR body opens with the headline counts and then a
+table, one row per neighborhood directory:
+
+```bash
+python3 research/tools/check.py --report research/findings/<id>/<batch>.json
+```
+
+That prints the table ready to paste. Its columns:
+
+| column | what it counts |
+|---|---|
+| **Pages created** | pages this batch's own commits added |
+| **Pages edited** | pages that already existed and gained a fact |
+| **Facts published** | findings that reached a page; more than one can land on the same page |
+| **Conflicts stated** | sentences written to a page's `.unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
+| **Dates disputed** | pages where the source's construction year disagrees with the assessor's, in `building.completed_conflict` |
+| **Resolved, no page** | resolved to a parcel that cannot carry a page — a condominium, a retired parcel, a parcel off the secured roll |
+
+**Only findings that reached a parcel can be in it**, because the neighborhood
+is a property of the parcel and nothing else. Unresolved and rejected findings
+have no row and no column; the tool counts them in one line underneath, which is
+the honest shape. Do not invent a neighborhood for them from the street name —
+a street runs through several, which is the same mistake `--area-from-nhood`
+exists to prevent.
+
+Below the table, say what did *not* resolve and why, grouped by reason. A reader
+who sees "26 no EAS record, 9 ranges now split across parcels, 5 condominiums"
+learns what the source is like; a reader who sees "41 unresolved" learns
+nothing.
+
 ---
 
 # A prospecting run

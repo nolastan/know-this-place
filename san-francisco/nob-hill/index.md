@@ -9,6 +9,7 @@ that neighborhood.
 
 - [Broadway](broadway/) — 1 building, built 1907.
 - [Bush Street](bush-street/) — 8 buildings, built 1900–1985.
+- [California Street](california-street/) — 1 building, built 1910.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.
 - [Hyde Street](hyde-street/) — 1 building, built 1911.
@@ -17,6 +18,7 @@ that neighborhood.
 - [Leavenworth Street](leavenworth-street/) — 1 building, built 1907.
 - [Mason Street](mason-street/) — 1 building.
 - [Pine Street](pine-street/) — 4 buildings, built 1920–1922.
+- [Polk Street](polk-street/) — 1 building, built 1909.
 - [Powell Street](powell-street/) — 1 building.
 - [Sacramento Street](sacramento-street/) — 1 building.
 - [Sutter Street](sutter-street/) — 1 building.

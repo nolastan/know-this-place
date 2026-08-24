@@ -297,6 +297,35 @@ rather than just accumulate.
   built from role words misses every name that isn't introduced by one — test it
   against the raw text of the pages you just wrote, not only against its own
   flags.*
+- **When a source prints both the historical and the current address, looking
+  up the historical one resolves silently onto a neighbour.** The Russian Hill
+  statement heads each demolished building with its pre-renumbering number and
+  adds "site of today's #N". Every one of those old numbers — 2507, 2509, 2513,
+  2517, 2519 Larkin, 2612 and 2614 Polk — is still a live EAS address on the
+  same block, so `resolve_eas.py` placed six 1870s cottages on the parcels of
+  buildings that are standing today, with a confident method sentence each. It
+  showed up only because 2509 Larkin landed on the parcel of the extant 1888
+  house next door. *A renumbering trap does not always look like a miss; the
+  dangerous ones look like clean matches. When a record gives today's address
+  for a site, place on that and say so.*
+- **EAS holds the numbered streets as zero-padded ordinals**, so a source that
+  spells one out — "285 Second Street" — failed at the *street*, not the number,
+  and came back "not a street in the city's address registry" for one of the
+  busiest streets downtown. `resolve_eas.py` now maps spelled-out ordinals to
+  EAS's form (`SECOND` → `02ND`) and states the mapping in the method. *A
+  lookup that fails on the street name rather than the number is a spelling
+  problem, not a finding.*
+- **A parcel with no row on the assessor's secured roll cannot become a page,
+  and on an architectural corpus that selects for exactly the best buildings.**
+  Eight resolved Russian Hill parcels have `in_asr_secured_roll: false` and no
+  roll row in any year, so `seed_pages.py` skipped them: 945 and 947 Green, 2555
+  Larkin, 2500 Steiner, 2000 and 2006 Washington, 1925 Gough. They are the
+  1910s–1920s apartment houses, several of them the "cooperative" buildings the
+  report itself describes — the parcel is not assessed as one property. This is
+  the condominium rule's cousin and it bites the same way: *the rule that keeps
+  the site honest about parcels also holds back the most-documented buildings,
+  so say which ones in the dossier rather than letting them vanish into a
+  count.*
 - **A note that only exists in `data.json` is not on the page.** Findings runs
   have been writing conflicts into an `unknowns` key since Market & Octavia, and
   `seed_pages.py`'s renderer never read it — the disagreements reached the repo

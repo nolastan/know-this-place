@@ -5,6 +5,7 @@ The parcels on California Street documented here so far, from the city's address
 ## Documented so far
 
 - [1](1/) — A 1969 office building, with plumbing work permitted in 2018.
+- [20–26](20/) — A 1908 office building, with a seismic retrofit permitted in 1988.
 - [50–52](50/) — A 1971 office building, with electrical work permitted in 2015.
 - [100–116](100/) — Built 1958–59 for Bethlehem Steel, with its columns outside the walls.
 - [101](101/) — The tower whose 34th floor was the site of the 1993 Pettit & Martin shooting.
