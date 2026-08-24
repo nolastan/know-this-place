@@ -119,6 +119,19 @@ and what was learned, the register says the truth in counts, `check.py` and
 `validate.py` are clean, and the PR body carries the run's counts: read N, found
 M, resolved K, published J.
 
+**The PR body opens with the per-neighborhood table**, which
+`check.py --report <findings-file>` prints ready to paste:
+
+```bash
+python3 research/tools/check.py --report research/findings/<id>/<batch>.json
+```
+
+Pages created and edited per neighborhood is what a reader wants first, and it
+is what a 150-file diff hides. Only findings that reached a parcel can be in it
+— the neighborhood belongs to the parcel, not the street — so unresolved
+findings are counted in one line below it rather than guessed into a row. See
+[The PR body](../../../research/RUNBOOK.md#the-pr-body).
+
 Report what you did the same way: counts, plainly. Zero findings, reported
 honestly with its coverage recorded, is a completed run — it tells the next
 agent the haystack was searched there, and that is worth almost as much as a

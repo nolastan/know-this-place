@@ -3,6 +3,7 @@
 
     python3 research/tools/check.py            # check everything
     python3 research/tools/check.py --stats    # ...and print the yield so far
+    python3 research/tools/check.py --report <findings-file>   # the PR body's table
 
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
@@ -18,6 +19,11 @@ What it checks:
 
 --stats is the module's dashboard. Its `open` column counts resolved findings
 with no publish decision — work already paid for and not yet on a page.
+
+--report prints one batch broken down by neighborhood directory, in the Markdown
+a run's PR body carries (RUNBOOK.md, "Close the books"). Only findings that
+reached a parcel appear in it, because the parcel is what carries a
+neighborhood; the unresolved and rejected ones are counted underneath it.
 
 The schema file is the single source of truth for shape — this script reads it
 rather than restating it, so the two can't drift. It implements the subset of
@@ -261,9 +267,89 @@ def stats(files: list[Path]) -> None:
               "declined.")
 
 
+def report(path: Path) -> None:
+    """One batch by neighborhood directory, in the PR body's Markdown.
+
+    A neighborhood is a property of the *parcel*, so only findings that reached
+    one can be grouped at all. Unresolved and rejected findings have no parcel
+    and therefore no row — they are counted below the table instead, which is
+    the honest shape rather than a "unknown" bucket that invites guessing.
+
+    Pages created versus edited is read from git: a page this batch created is
+    one whose data.json was added by a commit that also touched this findings
+    file — which is the batch's own commits, since a run marks its findings in
+    the same commit that edits the pages. Uncommitted pages count as created,
+    so the table is right when run before the commit as well as after.
+    """
+    import collections
+    import subprocess
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+    site = ROOT.parent / "san-francisco"
+
+    created = collections.Counter(); edited = collections.Counter()
+    facts = collections.Counter(); declined = collections.Counter()
+    conflicts = collections.Counter(); dates = collections.Counter()
+    pages: dict[str, str] = {}
+    unplaced = collections.Counter()
+
+    for f in data.get("findings", []):
+        res = f.get("resolution") or {}
+        pub = (f.get("publish") or {}).get("status")
+        if res.get("status") != "resolved" or not res.get("path"):
+            unplaced[res.get("status", "unresolved")] += 1
+            continue
+        area = res["path"].split("/")[2]
+        if pub == "declined":
+            declined[area] += 1
+        elif pub == "published":
+            facts[area] += 1
+            pages.setdefault(res["path"], area)
+
+    batch_commits = set(subprocess.run(
+        ["git", "log", "--format=%H", "--", str(path)],
+        cwd=ROOT.parent, capture_output=True, text=True).stdout.split())
+    for page_path, area in pages.items():
+        rel = page_path.strip("/") + "/data.json"
+        added = subprocess.run(
+            ["git", "log", "--diff-filter=A", "--format=%H", "--", rel],
+            cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
+        # Not committed yet, or added by one of this batch's own commits.
+        (created if not added or added[-1] in batch_commits else edited)[area] += 1
+        try:
+            page = json.loads((ROOT.parent / rel).read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        conflicts[area] += len(page.get("unknowns") or [])
+        if ((page.get("building") or {}).get("completed_conflict")):
+            dates[area] += 1
+
+    areas = sorted(set(created) | set(edited) | set(facts) | set(declined),
+                   key=lambda a: (-(created[a] + edited[a]), a))
+    cols = ("Pages created", "Pages edited", "Facts published",
+            "Conflicts stated", "Dates disputed", "Resolved, no page")
+    print(f"| Neighborhood | {' | '.join(cols)} |")
+    print("|---" + "|---:" * len(cols) + "|")
+    counters = (created, edited, facts, conflicts, dates, declined)
+    for a in areas:
+        cells = " | ".join(str(c[a]) if c[a] else ("0" if c is not declined else "—")
+                           for c in counters)
+        print(f"| `{a}` | {cells} |")
+    totals = " | ".join(f"**{sum(c.values())}**" for c in counters)
+    print(f"| **Total** | {totals} |")
+
+    if unplaced:
+        rest = ", ".join(f"{n} {s}" for s, n in sorted(unplaced.items()))
+        print()
+        print(f"{sum(unplaced.values())} finding(s) never reached a parcel ({rest}) "
+              f"and cannot be grouped by neighborhood.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--stats", action="store_true", help="print the yield so far")
+    ap.add_argument("--report", type=Path, metavar="FINDINGS",
+                    help="print one batch by neighborhood, as the PR body's table")
     args = ap.parse_args()
 
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
@@ -284,6 +370,10 @@ def main() -> int:
 
     if args.stats:
         stats(files)
+        print()
+
+    if args.report:
+        report(args.report)
         print()
 
     if errors:
