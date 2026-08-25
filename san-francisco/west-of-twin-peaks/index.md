@@ -12,3 +12,4 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Taraval Street](taraval-street/) — 3 buildings, built 1950.
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
+- [West Portal Avenue](west-portal-avenue/) — 1 building, built 1992.

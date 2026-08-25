@@ -1,0 +1,79 @@
+{
+  "source_id": "sfist",
+  "batch": "2026-08-25",
+  "read_on": "2026-08-25",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 2,
+    "remaining": "Nothing from this batch.",
+    "note": "Four items queued, all four read. Two named a numbered address."
+  },
+  "findings": [
+    {
+      "id": "2026-08-25-0001",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1850 Polk Street",
+      "street_number": "1850",
+      "street_name": "POLK",
+      "street_type": "ST",
+      "description": "Freedom Coffee, a new cafe, is planning to take over this space.",
+      "extra": {
+        "tenant": "Freedom Coffee"
+      },
+      "citation": {
+        "label": "SFist, “‘Freedom Coffee’ Tied to Conservative Tech Entrepreneur to Open on Polk Street,” 24 August 2026",
+        "url": "https://sfist.com/2026/08/24/freedom-cafe-tied-to-conservative-tech-entrepreneur-to-open-on-polk-street/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Freedom Coffee is planning to take over"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0597029",
+        "path": "/san-francisco/tenderloin/polk-street/1820/",
+        "eas_address": "1820 POLK ST",
+        "method": "EAS exact match on 1850 POLK ST → parcel 0597029; sf-parcels has blklot 0597029 active, 1591–1591 JACKSON; the 2025 roll records it as commercial retail, built 1986. The assessor files the parcel as 1591 JACKSON ST. EAS puts 1820, 1830, 1840, 1850 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1820.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-08-25-0002",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "kind": "mention",
+      "address_as_written": "315 Montgomery",
+      "street_number": "315",
+      "street_name": "MONTGOMERY",
+      "street_type": "ST",
+      "description": "The address appears in an account of a private company's spending on police surveillance equipment and its unused leased office space. The story is about the funding, not about the building.",
+      "citation": {
+        "label": "SFist, “Activists Host ‘Billionaire Watch Party’ Outside Chris Larsen’s House Over Surveillance Funding,” 24 August 2026",
+        "url": "https://sfist.com/2026/08/24/activists-host-billionaire-watch-party-outside-chris-larsens-house-over-surveillance-funding/",
+        "locator": "middle paragraphs"
+      },
+      "raw": {
+        "text": "the remaining funds covered unused office space leased by"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0259029",
+        "path": "/san-francisco/financial-district/montgomery-street/315/",
+        "eas_address": "315 MONTGOMERY ST",
+        "method": "EAS exact match on 315 MONTGOMERY ST → parcel 0259029; sf-parcels has blklot 0259029 active, 315–315 MONTGOMERY; the 2025 roll records it as commercial office, built 1921.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Declined twice over. The headline names a private individual and their home, which the root AGENTS.md forbids outright and no rewriting can fix, because the headline is published verbatim. The address itself is a line item in a budget, not a fact about the building."
+      }
+    }
+  ]
+}

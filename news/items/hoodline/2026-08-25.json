@@ -1,0 +1,82 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-08-25",
+  "read_on": "2026-08-25",
+  "notes": "Hoodline's article pages still answer this fetcher with 403 and every item here was read from the full text the feed syndicates.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 3,
+    "remaining": "Nothing from this batch.",
+    "note": "Five items queued, all five read. Two named a numbered address. The pilates story also names 1868 Lombard St, the chain's other San Francisco location, in a sentence about the company rather than about that building."
+  },
+  "findings": [
+    {
+      "id": "2026-08-25-0001",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4071 18th Street",
+      "street_number": "4071",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "Jetset Pilates, a Miami-based chain of more than eighty studios, has proposed opening in this ground-floor space, last occupied by an AHF Pharmacy.",
+      "extra": {
+        "proposed_tenant": "Jetset Pilates",
+        "former_tenant": "AHF Pharmacy",
+        "status": "proposed"
+      },
+      "citation": {
+        "label": "Hoodline, “Miami-Based Pilates Studio Jetset Pilates Proposes Opening in Former Castro Pharmacy Space,” 24 August 2026",
+        "url": "https://hoodline.com/2026/08/miami-based-pilates-studio-jetset-pilates-proposes-opening-in-former-castro-pharmacy-space/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Miami-based fitness chain Jetset Pilates has proposed opening in… 4071 18th Street, formerly AHF Pharmacy."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3583118",
+        "path": "/san-francisco/castro/18th-street/4071/",
+        "eas_address": "4071 18TH ST",
+        "method": "EAS exact match on 4071 18TH ST → parcel 3583118; sf-parcels has blklot 3583118 active, 4071–4071 18TH; the 2025 roll records it as commercial retail, built 2005. EAS files the address under parcel 3583075, which sf-parcels reports retired; the active parcel its coordinates fall in is 3583118.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-08-25-0002",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "kind": "mention",
+      "address_as_written": "125 Bayshore Boulevard",
+      "street_number": "125",
+      "street_name": "BAYSHORE",
+      "street_type": "BLVD",
+      "description": "The Bayshore Navigation Center, a city-contracted shelter, is named as the workplace of two people facing criminal charges. Nothing in the story concerns the building. The people named in it are not recorded here.",
+      "citation": {
+        "label": "Hoodline, “SF Shelter Workers Formally Charged With Hiding Man Who Shot Officer,” 24 August 2026",
+        "url": "https://hoodline.com/2026/08/sf-shelter-workers-formally-charged-with-hiding-man-who-shot-officer/",
+        "locator": "middle paragraphs"
+      },
+      "raw": {
+        "text": "Both defendants worked at the Bayshore Navigation Center, a city-co[ntracted shelter]"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5559019",
+        "path": "/san-francisco/mission/bay-shore-boulevard/125/",
+        "eas_address": "125 BAY SHORE BLVD",
+        "method": "EAS exact match on 125 BAY SHORE BLVD → parcel 5559019; sf-parcels has blklot 5559019 active, 125–125 BAY SHORE; the 2025 roll records it as miscellaneous/mixed-use. The record spells the street BAYSHORE; EAS holds it as BAY SHORE.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "A crime story that names a building as a workplace. Nothing happened to the building, so it fails the ten-year test, and news/AGENTS.md is explicit that this module is not a crime blotter."
+      }
+    }
+  ]
+}
