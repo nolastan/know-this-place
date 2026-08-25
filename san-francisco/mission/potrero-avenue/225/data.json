@@ -1,0 +1,177 @@
+{
+  "address": "225 Potrero Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/potrero-avenue/225/",
+  "apn": "3932016",
+  "block": "3932",
+  "lot": "016",
+  "eas_baseid": "366720",
+  "coordinates": {
+    "lat": 37.766611,
+    "lng": -122.407282
+  },
+  "parcel": {
+    "year_built": 1922,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 8950,
+    "building_area_sqft": 5700,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0225 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 216771,
+    "assessed_improvement_value": 107595,
+    "assessed_fixtures_value": 126181
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1893–1929",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202310259409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-25",
+      "status_date": "2024-10-09",
+      "estimated_cost": 126000,
+      "revised_cost": 126000,
+      "description": "remodel existing kitchen @ ground floor, new diabled accessible entrance @ dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307280566",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-28",
+      "status_date": "2003-08-07",
+      "estimated_cost": 23400,
+      "revised_cost": 23400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9409532",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-06-29",
+      "status_date": "1995-02-16",
+      "estimated_cost": 1,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319269",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-11-01",
+      "status_date": "1995-02-16",
+      "estimated_cost": 15000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606228",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-29",
+      "status_date": "1986-09-18",
+      "estimated_cost": 2500,
+      "description": "demolish interior cabinets, drywall, cement & remove roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1986–2023",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=225",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3932016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3932&lot=016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3932016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.407281785804%2037.76661085455758)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1918",
+      "kind": "construction",
+      "description": "Built as the Hart Oil warehouse.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The assessor dates the building to 1922; the city's 2011 survey of Showplace Square and the northeast Mission dates it to 1918."
+  },
+  "unknowns": [
+    "The survey's data table dates the building to 1918; its own note says the warehouse was built before 1918."
+  ],
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "3CD",
+    "eligible_district": "Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory District (proposed)",
+    "style": "Industrial",
+    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+    "year_built_as_surveyed": "1918",
+    "note": "The survey rates the architecture 3 of 5. California Register criteria cited: 3.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

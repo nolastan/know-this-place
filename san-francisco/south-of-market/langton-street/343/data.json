@@ -1,0 +1,109 @@
+{
+  "address": "343 Langton Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/langton-street/343/",
+  "apn": "3780083",
+  "block": "3780",
+  "lot": "083",
+  "eas_baseid": "464455",
+  "coordinates": {
+    "lat": 37.773455,
+    "lng": -122.4045
+  },
+  "parcel": {
+    "year_built": 1975,
+    "lot_area_sqft": 672,
+    "building_area_sqft": 6720,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0343 0301 LANGTON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 627096,
+    "assessed_improvement_value": 426423,
+    "last_sale_date": "1990-04-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1975",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507131264",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-13",
+      "status_date": "2015-07-13",
+      "estimated_cost": 51000,
+      "revised_cost": 51000,
+      "description": "seismic tie down under roof. voluntary. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-10",
+      "status_date": "1999-06-30",
+      "estimated_cost": 7000,
+      "description": "install fire alarm control panel-smoke sensors, pull station",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301324",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-01-28",
+      "status_date": "1994-02-03",
+      "estimated_cost": 27732,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219529",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-11-12",
+      "status_date": "1993-12-09",
+      "estimated_cost": 5000,
+      "description": "repair fire damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LANGTON&street_type=ST&address_number=343",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3780083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3780&lot=083",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3780083",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

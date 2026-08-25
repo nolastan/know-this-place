@@ -1,0 +1,112 @@
+{
+  "address": "470 Alabama Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/alabama-street/470/",
+  "apn": "3968004",
+  "block": "3968",
+  "lot": "004",
+  "eas_baseid": "366823",
+  "coordinates": {
+    "lat": 37.763261,
+    "lng": -122.412559
+  },
+  "also_addressed": [
+    "2125 HARRISON ST"
+  ],
+  "parcel": {
+    "year_built": 1942,
+    "stories": 2,
+    "rooms": 2,
+    "lot_area_sqft": 9820.72,
+    "building_area_sqft": 15570,
+    "lot_depth_ft": 24.25,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0470 ALABAMA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 388316,
+    "assessed_improvement_value": 776656
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8903891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-10",
+      "status_date": "1989-12-14",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-04-14",
+      "status_date": "1987-12-08",
+      "estimated_cost": 6000,
+      "description": "replace existing wood sash with metal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=470",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3968004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3968&lot=004",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3968004",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [],
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6L",
+    "eligible_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
+    "style": "Industrial",
+    "physical_integrity": "5 of 7 aspects retained, on the survey's scale",
+    "note": "The survey rates the architecture 2 of 5. The 2009 context statement gives the status code 3CD; the 2011 survey data table gives 6L.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

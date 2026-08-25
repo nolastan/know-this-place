@@ -1,0 +1,104 @@
+{
+  "address": "2885 Mariposa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mariposa-street/2885/",
+  "apn": "4018006",
+  "block": "4018",
+  "lot": "006",
+  "eas_baseid": "367339",
+  "coordinates": {
+    "lat": 37.762751,
+    "lng": -122.411846
+  },
+  "parcel": {
+    "lot_area_sqft": 6800,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2885 MARIPOSA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199125,
+    "assessed_improvement_value": 4095
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506239211",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-23",
+      "status_date": "2025-12-17",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit- interior tenant improvement of a vacant ground to: change of use of floor building. new work to include: new interior non-structural wall partitions, and interior led lighting, new paint, finishes and new equipment, including sinks, with minor new plumbing, and electrical work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608222",
+      "type": "new construction",
+      "status": "expired",
+      "filed": "1986-07-11",
+      "status_date": "1988-09-14",
+      "estimated_cost": 200000,
+      "description": "erect warehouse",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARIPOSA&street_type=ST&address_number=2885",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4018006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4018&lot=006",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4018006",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1988",
+      "kind": "construction",
+      "description": "Built as an industrial building.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "unknowns": [
+    "The survey's data table dates the building to 1988; the context statement's appendix dates it to Ca. 1963."
+  ]
+}

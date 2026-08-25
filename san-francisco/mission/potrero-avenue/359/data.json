@@ -1,0 +1,128 @@
+{
+  "address": "359 Potrero Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/potrero-avenue/359/",
+  "apn": "3961016",
+  "block": "3961",
+  "lot": "016",
+  "eas_baseid": "366796",
+  "coordinates": {
+    "lat": 37.765148,
+    "lng": -122.40714
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 5000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0359 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67431,
+    "assessed_improvement_value": 57499
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200402277359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-27",
+      "status_date": "2004-04-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "installed 3 illuminated cab signs to wall. only under this permit 200307306743-renewing for final in",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307300743",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "2003-07-30",
+      "status_date": "2004-03-15",
+      "revised_cost": 3000,
+      "description": "to erect single faced electric sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300202",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-01-08",
+      "status_date": "1993-03-22",
+      "estimated_cost": 8900,
+      "revised_cost": 12000,
+      "description": "parapet safety program",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=359",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3961016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3961&lot=016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3961016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924",
+      "kind": "construction",
+      "description": "Built as an industrial building, recorded as occupied by Arden Protected Farms Dairy.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "3CS",
+    "style": "Classical Revival / Industrial",
+    "physical_integrity": "7 of 7 aspects retained, on the survey's scale",
+    "note": "The survey rates the architecture 3 of 5. California Register criteria cited: 3.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

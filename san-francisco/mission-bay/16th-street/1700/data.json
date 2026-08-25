@@ -1,0 +1,114 @@
+{
+  "address": "1700 16th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission-bay/16th-street/1700/",
+  "apn": "3935005",
+  "block": "3935",
+  "lot": "005",
+  "eas_baseid": "366723",
+  "coordinates": {
+    "lat": 37.766217,
+    "lng": -122.403953
+  },
+  "parcel": {
+    "year_built": 1955,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 6446,
+    "building_area_sqft": 3900,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "M2",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 1700 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69526,
+    "assessed_improvement_value": 56784
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103317630",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-03-31",
+      "status_date": "2026-01-23",
+      "estimated_cost": 6000,
+      "revised_cost": 0,
+      "description": "construction of handicap parking and accessible ramp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903234679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-23",
+      "status_date": "2009-04-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200803278202. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803278202",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-03-27",
+      "status_date": "2009-04-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200702093840 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702093840",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-02-09",
+      "status_date": "2007-10-19",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "repair entrance dry rot + restucco. only in the front. replace exterior crown moulding to building some lights + outlets.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=1700",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3935005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3935&lot=005",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3935005",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

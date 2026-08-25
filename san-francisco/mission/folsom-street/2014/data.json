@@ -1,0 +1,125 @@
+{
+  "address": "2014–2030 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2014/",
+  "apn": "3571002",
+  "block": "3571",
+  "lot": "002",
+  "eas_baseid": "448803",
+  "coordinates": {
+    "lat": 37.764735,
+    "lng": -122.4159
+  },
+  "address_range": "2014–2030",
+  "street_numbers_on_parcel": [
+    "2014",
+    "2020",
+    "2030"
+  ],
+  "parcel": {
+    "year_built": 1948,
+    "units": 4,
+    "stories": 2,
+    "rooms": 31,
+    "bathrooms": 9,
+    "lot_area_sqft": 52071,
+    "building_area_sqft": 90045,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2030 2014 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2117318,
+    "assessed_improvement_value": 350156
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8901837",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-02-01",
+      "status_date": "1989-09-01",
+      "estimated_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206415",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1982-08-05",
+      "status_date": "1983-03-24",
+      "estimated_cost": 6000,
+      "description": "bldg use: sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2014",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3571002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3571&lot=002",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3571002",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1948",
+      "kind": "construction",
+      "description": "Built as an industrial building, concrete construction, recorded as occupied by F.W. Woolworth.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6L",
+    "existing_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
+    "style": "International",
+    "frame": "Concrete",
+    "physical_integrity": "7 of 7 aspects retained, on the survey's scale",
+    "address_as_surveyed": "2014 FOLSOM ST",
+    "note": "The survey rates the architecture 3 of 5.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "address": "41 Decatur Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/decatur-street/41/",
+  "apn": "3780007C",
+  "block": "3780",
+  "lot": "007C",
+  "eas_baseid": "366462",
+  "coordinates": {
+    "lat": 37.772386,
+    "lng": -122.405756
+  },
+  "parcel": {
+    "year_built": 1918,
+    "stories": 1,
+    "rooms": 3,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 3850,
+    "lot_depth_ft": 65,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0041 DECATUR             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274427,
+    "assessed_improvement_value": 556515,
+    "last_sale_date": "1995-09-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9809539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-27",
+      "status_date": "1999-02-19",
+      "estimated_cost": 1,
+      "description": "change in the path of travel fr door 9 to 1,rev.to 9801945",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9804605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-18",
+      "status_date": "1999-02-19",
+      "estimated_cost": 1,
+      "description": "revised roof design, #9801945",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801945",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-05",
+      "status_date": "1999-02-19",
+      "estimated_cost": 100000,
+      "description": "interior t/i replace roof new fire escape(renew ap#9604845",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604845",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-03-22",
+      "status_date": "1999-02-19",
+      "estimated_cost": 100000,
+      "description": "int. t.i. repl roof. install new fire escape from 2nd flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309651",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-09-27",
+      "status_date": "1984-05-07",
+      "estimated_cost": 7309,
+      "description": "#8 awaring are to be attached to front of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DECATUR&street_type=ST&address_number=41",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3780007C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3780&lot=007C",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3780007C",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1918",
+      "kind": "construction",
+      "description": "Built as the National Carbon Co. coke warehouse. Engineered by Maurice Couchot.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "builder": "Maurice Couchot"
+  },
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "3CS",
+    "style": "Industrial",
+    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+    "note": "The survey rates the architecture 3 of 5. California Register criteria cited: 1, 3.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

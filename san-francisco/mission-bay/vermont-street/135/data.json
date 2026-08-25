@@ -1,0 +1,153 @@
+{
+  "address": "135 Vermont Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission-bay/vermont-street/135/",
+  "apn": "3916017",
+  "block": "3916",
+  "lot": "017",
+  "eas_baseid": "366679",
+  "coordinates": {
+    "lat": 37.768227,
+    "lng": -122.404543
+  },
+  "parcel": {
+    "year_built": 1998,
+    "units": 1,
+    "stories": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 6863,
+    "building_area_sqft": 4956,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "M2",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 0135 VERMONT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2026557,
+    "assessed_improvement_value": 868520,
+    "last_sale_date": "1997-01-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1998",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9911432",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-09",
+      "status_date": "1999-10-09",
+      "estimated_cost": 1,
+      "description": "renew expired appn. 9704860,9806136,9805921,9816207",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908683",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-04",
+      "status_date": "1999-09-04",
+      "estimated_cost": 1,
+      "description": "revision to approved appn. 9704860(minor changes)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905064",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-16",
+      "status_date": "1999-07-16",
+      "estimated_cost": 600,
+      "description": "monitor sprinkler with monitoring system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-02",
+      "status_date": "1999-06-02",
+      "estimated_cost": 1,
+      "description": "minor changes and clarification to structural plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816207",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-08-17",
+      "status_date": "1998-12-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "minor changes & clarifications to drawings issued-9704860",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811097",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-06-16",
+      "status_date": "1999-08-04",
+      "estimated_cost": 1,
+      "revised_cost": 15000,
+      "description": "elecrical & hvac plans plus energy calculation #9704860",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806136",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-04-09",
+      "status_date": "1998-10-28",
+      "estimated_cost": 10000,
+      "description": "change facade and other changes from app #9704860",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805921",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-04-07",
+      "status_date": "2001-01-03",
+      "estimated_cost": 7500,
+      "description": "install automatic fire sprinkler system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VERMONT&street_type=ST&address_number=135",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3916017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3916&lot=017",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3916017",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

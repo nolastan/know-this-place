@@ -1,0 +1,148 @@
+{
+  "address": "2730 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/2730/",
+  "apn": "3965023",
+  "block": "3965",
+  "lot": "023",
+  "eas_baseid": "366816",
+  "coordinates": {
+    "lat": 37.764516,
+    "lng": -122.411104
+  },
+  "parcel": {
+    "year_built": 1966,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 3097,
+    "building_area_sqft": 1440,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2730 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 30460,
+    "assessed_improvement_value": 24693
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1966",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602065387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-06",
+      "status_date": "2026-04-13",
+      "estimated_cost": 1500,
+      "revised_cost": 1,
+      "description": "voluntary install cellular communicator by the control panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209189987",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-18",
+      "status_date": "2012-09-18",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "fire alarm and notification. 4 sd, 2 pull stations, 2 interior hs (1h 1st), exterior (2 hs). provide ul certification.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209119374",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "2012-09-11",
+      "status_date": "2012-10-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "fire only review for pa# 201204107978 s/s1. orig scope of work was change of use s2 to e occup but not routed to fire. this permit is to give fire an opportunity to review s1 & mech. fire will concur with dbi if no changes are reqd, also ref pa# 201207255736",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207255736",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-25",
+      "status_date": "2012-09-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "mechanical plans filed seperately from permit #201204107978",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206152675",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-15",
+      "status_date": "2012-09-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "interior exploratory demo for plumbing lines, scope of demo to include concrete trenching and removal of interior partitions. vacant building- ti separate permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204107978",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-04-10",
+      "status_date": "2014-01-29",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "change of use 312 site permit submittal. interior remodel of 1 story warehouse to child care. remove 1 non add bathroom. add 2 child size toilets & ada toilet. remove 1 office lobby. add 1 office storage & kitchenette, infill new window & doors @ (e) openings in cmu block walls. voluntary addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202280312",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-28",
+      "status_date": "2002-04-02",
+      "estimated_cost": 12486,
+      "revised_cost": 12486,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=2730",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3965023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3965&lot=023",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3965023",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

@@ -679,6 +679,24 @@ def complete_high(low: str, high: str) -> str:
     return filled if int(filled) >= int(low) else high
 
 
+RANGE = re.compile(r"(\d+)\s*([A-Za-z]?)\s*[-\u2013]\s*(\d+)\s*([A-Za-z]?)"
+                   r"(?:\s+[A-Za-z0-9'. ]+)?")
+
+
+def parse_range(recorded: str) -> tuple | None:
+    """The two street numbers a recorded range states, or None.
+
+    A range is a pair of street numbers. Surveys print them with spaces around
+    the dash ("541 -543") and often repeat the street after them ("541-543 8TH
+    ST"); both say the same thing, and rejecting either loses every ranged
+    building in a batch. One reader, so `fetch` and `decide` cannot disagree
+    about what a range is — when they did, the parcels of every ranged building
+    went unfetched and the findings came back "not an active parcel".
+    """
+    m = RANGE.fullmatch((recorded or "").strip())
+    return (m.group(1), m.group(3)) if m else None
+
+
 def expand_range(low: str, high: str) -> list:
     """Every number a recorded range covers, low end first, parity kept.
 
@@ -916,13 +934,13 @@ def decide(city: City, f: dict, today: str) -> dict:
     if number and not recorded_range:
         title_numbers, title_kind = [number], "number"
     else:
-        m = re.fullmatch(r"(\d+)([A-Za-z]?)-(\d+)([A-Za-z]?)", recorded_range.strip())
-        if not m:
+        pair = parse_range(recorded_range)
+        if not pair:
             return {"status": "unresolved", "checked_on": today,
                     "method": f"Recorded address range {recorded_range!r} is not a pair of "
                               f"street numbers, so it cannot be expanded and looked up.",
                     "note": "Range not machine-readable; a hand check could still place it."}
-        title_numbers, title_kind = expand_range(m.group(1), m.group(3)), "range"
+        title_numbers, title_kind = expand_range(*pair), "range"
     title = resolve_numbers(city, name, stype, title_numbers)
 
     # ---- the archivist's second address, where the two disagree ------------ #
@@ -1183,12 +1201,12 @@ def recorded_addresses(f: dict, city: City = None) -> list:
     if name:
         # Same precedence as decide(): a recorded range is the whole range, even
         # when the finding also carries its low number.
-        if extra.get("address_range_as_recorded"):
-            m = re.fullmatch(r"(\d+)([A-Za-z]?)-(\d+)([A-Za-z]?)",
-                             extra["address_range_as_recorded"].strip())
-            if m:
-                out.append((name, stype, expand_range(m.group(1), m.group(3))))
+        pair = parse_range(extra.get("address_range_as_recorded"))
+        if pair:
+            out.append((name, stype, expand_range(*pair)))
         elif f.get("street_number"):
+            # An unreadable range still has its low number, and dropping the
+            # finding here means `fetch` never asks for its parcel at all.
             out.append((name, stype, [f["street_number"]]))
     parsed = parse_address(extra.get("address_note_as_recorded"))
     if parsed:
