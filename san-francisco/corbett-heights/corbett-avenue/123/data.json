@@ -61,6 +61,104 @@
       }
     ]
   },
+  "permit_summary": {
+    "count_on_file": 11,
+    "range": "2001–2026",
+    "note": "Two of the 11 filings on file carry a nominal valuation and are omitted from the timeline: a street-space permit and an address-verification record."
+  },
+  "permits": [
+    {
+      "number": "202608056087",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-08-05",
+      "estimated_cost": 20000,
+      "description": "Interior improvements to one unit: expand the kitchen into the existing garage, removing one parking space, a closet and an interior wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505196776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-19",
+      "completed": "2025-08-14",
+      "estimated_cost": 15000,
+      "description": "In-kind replacement of a shower stall, fixtures and finishes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405286918",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-28",
+      "completed": "2016-05-20",
+      "estimated_cost": 4500,
+      "description": "Dry rot repair at roof level over about 100 sq ft, and replacement of three damaged skylights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012297591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-29",
+      "completed": "2011-12-07",
+      "estimated_cost": 50000,
+      "revised_cost": 70000,
+      "description": "Interior remodel of 440 sq ft at ground floor as habitable space — bedroom, study, bathroom and hall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911191721",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-11-19",
+      "completed": "2011-12-07",
+      "estimated_cost": 40000,
+      "revised_cost": 50000,
+      "description": "Interior remodel at ground level for use as a utility room and storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707066108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-06",
+      "completed": "2007-12-21",
+      "estimated_cost": 6000,
+      "description": "Bathroom remodel; no structural work, existing light fixtures retained.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601202690",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-01-20",
+      "completed": "2006-11-20",
+      "estimated_cost": 40000,
+      "revised_cost": 54000,
+      "description": "Replace the two-storey deck, renovate the kitchen, replace the garage door and increase the dwelling from one unit to two, under variance 2005.0615V.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501123113",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-12",
+      "completed": "2005-04-21",
+      "estimated_cost": 5000,
+      "description": "Replace 11 windows at the rear, repaint the upper rear elevation and stain the deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104096301",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-09",
+      "estimated_cost": 2000,
+      "description": "Replace kitchen cabinets and the kitchen floor on the second floor.",
+      "source": "sf-building-permits"
+    }
+  ],
   "narrative": {
     "lead": "One of a pair built side by side on the lower slope of Corbett Avenue."
   },
@@ -82,13 +180,19 @@
       "id": "sf-assessor-roll",
       "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2657026&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-08-24"
     },
     {
       "id": "sf-planning",
       "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2657026",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2657&lot=026",
+      "retrieved": "2026-08-24"
     }
   ]
 }
