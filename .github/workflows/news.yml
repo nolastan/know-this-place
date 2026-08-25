@@ -119,10 +119,19 @@ jobs:
                as one about a building with a page. Read the queue with
                judgement: most stories will name no address, and that is
                normal.
-            2. Apply the ten-year test in news/AGENTS.md. A story that merely
+            2. COMMIT AND PUSH NOW, before any publishing:
+               `git add -A && git commit -m "news: queue and cursors for <date>" && git push`
+               This is two turns and it makes the expensive half of the run
+               durable. Polling and reading is what costs time and money here;
+               a run that is cut short after this point loses only judgement,
+               while one cut short before it loses the stories too — and the
+               feeds carry a few days at most, so what is not recorded is
+               gone. Never leave the read uncommitted while you go on to
+               publish.
+            3. Apply the ten-year test in news/AGENTS.md. A story that merely
                mentions an address in passing gives a page nothing. Be strict:
                a thin day is a good day if the timeline stays honest.
-            3. Write what survives into news/items/<feed-id>/<date>.json — the
+            4. Write what survives into news/items/<feed-id>/<date>.json — the
                research findings schema, one entry per fact, `kind` describing
                what happened (sale, construction, occupancy, fire), and the
                article's headline and URL in the citation. The `description`
@@ -131,9 +140,9 @@ jobs:
                Decline any story whose HEADLINE names a private individual:
                the headline is published verbatim, so there is no rewriting
                your way past the privacy limits in the root AGENTS.md.
-            4. Resolve it:
+            5. Resolve it:
                `python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json`
-            5. For any finding that resolved to a parcel with NO page, seed the
+            6. For any finding that resolved to a parcel with NO page, seed the
                page — per news/AGENTS.md → "No page yet? Seed it". Write the
                parcels into research/manifests/news-<today's date>.json, taking
                the numbers and the lead street number from each finding's
@@ -147,7 +156,7 @@ jobs:
                one that does. If it refuses a parcel — a condominium unit, no
                row on the current roll — leave that finding pending with the
                reason; do not hand-write the page.
-            6. Add the timeline entry to each page's data.json —
+            7. Add the timeline entry to each page's data.json —
                `historical_record` with date, kind, headline, outlet, url and
                source — then `python3 scripts/seed_pages.py render <path>` to
                regenerate index.html from it, per news/AGENTS.md → "Putting it
@@ -157,28 +166,37 @@ jobs:
                an edited headline. Record in each finding's `publish.note`
                whether the page was seeded in this run, and from which
                manifest.
-            7. `python3 news/tools/check.py` and `python3 scripts/validate.py`
+            8. `python3 news/tools/check.py` and `python3 scripts/validate.py`
                must both pass. Read `git diff` and confirm every change is a
                real fact about a building, and read a sample of any pages you
                seeded before committing them.
-            8. Commit and push the branch you are already on — do NOT create
-               another branch, step 3 made and checked out this one. If a PR
-               is already open for it, the push updates that PR: add a comment
-               rather than opening a second one. Otherwise open one PR listing
-               every page touched, every page seeded, every story used, and the
-               run's counts (considered / queued / read / found / seeded /
-               published). Commit even when nothing survived the ten-year test:
-               the advanced cursors and the queue file are the record of what
-               this run already considered, and dropping them makes the next
-               run re-fetch and re-read the same stories.
+            9. Commit each page as you finish it — run check.py and
+               validate.py, then `git add -A && git commit && git push` for
+               that page before you start the next one. Do NOT batch the run
+               into one commit at the end: this job has both a turn cap and a
+               45-minute timeout, and either one kills the agent where it
+               stands. Work that is pushed survives that; work that is staged
+               does not.
 
-            Budget: PUBLISH AT MOST 5 PAGES IN ONE RUN. The two halves of
+               Do NOT create another branch — the workflow's "Find the open
+               news PR, or start a branch" step made and checked out the one
+               you are on. If a PR is already open for it, your pushes are
+               already updating it, so add a comment rather than opening a
+               second one. Otherwise open the PR once your first page is
+               pushed, and keep editing its body as you go, so the PR exists
+               even if the run is cut short. It should list every page touched,
+               every page seeded, every story used, and the run's counts
+               (considered / queued / read / found / seeded / published).
+
+            Budget: PUBLISH AT MOST 3 PAGES IN ONE RUN. The two halves of
             this job cost very different amounts. Reading is cheap — one
             `read.py` pass over the whole queue is a single command whose
             output is a few lines per story — and it is the half that drains
             the backlog, so read the queue in full and do not cap it. Seeding,
             editing data.json, rendering and validating is the expensive half,
-            and that is what the cap is on.
+            and that is what the cap is on. Three pages published and pushed
+            beats five started and lost: the first run to get this far spent
+            $5.36, hit the turn cap mid-flight and pushed nothing at all.
 
             A finding past the cap is not discarded. Write EVERY finding that
             survives the ten-year test into the items file, and give the
@@ -192,7 +210,7 @@ jobs:
             Never "verify" the Street View embed — its API key is restricted to
             the production domain and always fails elsewhere.
           claude_args: |
-            --max-turns 60
+            --max-turns 90
             --allowedTools "Read,Glob,Grep,Edit,Write,Bash(python3:*),Bash(git:*),Bash(gh pr:*)"
 
       # The action already writes every SDK message to a file, and the final
