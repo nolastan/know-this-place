@@ -1719,6 +1719,11 @@ tables. Four places carry them, and the citation locator should say which.
   Street, 200 Spear Street, 525 and 676 Howard Street, 666 Folsom Street, 201
   Main Street or 693 Mission Street — the addresses this part of downtown lost
   to the Transbay project, Foundry Square and the towers of the 2010s.
+- **Two parcels here are open questions for a person**, filed as issue #163:
+  the Paramount at 680 Mission Street, whose parcel's lowest EAS number is the
+  page of the parcel next door, and 678 Mission Street, which
+  `scripts/render-backlog.txt` grandfathers because the renderer crashes on it.
+  The survey's facts for that second one are recorded and declined, not lost.
 - **Citation label:** `Kelley & VerPlanck Historical Resources Consulting,
   Transit Center District Survey, San Francisco, California — Final, prepared
   for the San Francisco Planning Department, July 22, 2008, adopted 2012`. Page
