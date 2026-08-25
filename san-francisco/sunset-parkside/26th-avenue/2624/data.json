@@ -1,0 +1,135 @@
+{
+  "address": "2624 26th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/2624/",
+  "apn": "2471035",
+  "block": "2471",
+  "lot": "035",
+  "eas_baseid": "340353",
+  "coordinates": {
+    "lat": 37.738492,
+    "lng": -122.482569
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3358,
+    "building_area_sqft": 1947,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2624 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 74939,
+    "assessed_improvement_value": 106162
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201812117938",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-12-11",
+      "status_date": "2018-12-11",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704244726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-24",
+      "status_date": "2017-06-22",
+      "estimated_cost": 7500,
+      "revised_cost": 750,
+      "description": "remove and replace in kind 3'x5' foot section of dry rot wood shingles on center front wall. remove and replace in kind trim boards and 1'x8' foot section of wood shingles on rear wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312981",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-12-21",
+      "status_date": "1984-11-05",
+      "estimated_cost": 15000,
+      "description": "room addition-at rear behind kitchen consists of g/f extn.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-12-20",
+      "status_date": "1984-10-01",
+      "estimated_cost": 12000,
+      "description": "kitchen remodeling no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1983–2018",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=2624",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2471035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2471&lot=035",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2471035",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "One of the houses in the district that predate the stucco “Sunset” row house which filled the Parkside from the 1920s — mostly larger Craftsman-style buildings put up by the Parkside Realty Company before 1925.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

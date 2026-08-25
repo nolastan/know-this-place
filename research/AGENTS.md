@@ -331,6 +331,32 @@ rather than just accumulate.
   `seed_pages.py`'s renderer never read it — the disagreements reached the repo
   and stopped there. The renderer now states them above the "Not yet
   documented" line. *When you invent a key, check that something renders it.*
+- **The natural way to write up an inventory finding is the one thing the design
+  contract forbids.** A source that says nothing about a building except that it
+  is on a list invites the sentence "Picked out by a 2007 walking survey as a
+  house predating…" — which is exactly the `a survey records…` pattern the root
+  AGENTS.md rules out of a page body. It went onto 129 pages across two batches
+  before an audit caught it, because it reads like content rather than like
+  attribution. The line: a listing or designation **event** may be stated as an
+  event, the way the North Beach pages state a 1982 survey listing; an ordinary
+  fact about a building must be stated as a fact, with the attribution left to
+  the Sources footer. *Grep the descriptions you are about to publish for
+  "survey", "statement", "report" and "according to" before rendering.*
+- **A generic entry published beside a specific one is a duplicate, not a second
+  finding.** Sources that carry both an inventory and a narrative name the same
+  building twice, and the narrative always says more — a firm year, a builder, a
+  style. Publish both and the page's one timeline shows two items at the same
+  date, the second saying less. Four Parkside findings were declined for this.
+  *Before publishing a source with both parts, group the resolved findings by
+  parcel and read every page that gets more than one.*
+- **`seed_pages.py names` goes quiet once the pages exist.** It only inspects
+  parcels still marked seedable, so running it after `seed-list` — which is when
+  the root AGENTS.md's instruction reads most naturally — reports zero
+  descriptions and zero flags, which looks like a clean privacy pass and is not
+  one. It also wants the EAS neighborhood name (`"Sunset/Parkside"`), not the
+  directory slug. *Do the privacy pass by reading the `data.json` files the run
+  just wrote, and test against the raw permit text rather than the tool's own
+  flags.*
 
 ## Filing work
 

@@ -1,0 +1,88 @@
+{
+  "address": "2250 Ulloa Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/ulloa-street/2250/",
+  "apn": "2402017",
+  "block": "2402",
+  "lot": "017",
+  "eas_baseid": "337602",
+  "coordinates": {
+    "lat": 37.741171,
+    "lng": -122.480756
+  },
+  "parcel": {
+    "year_built": 1926,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2435,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2250 ULLOA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 44092,
+    "assessed_improvement_value": 144600
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ULLOA&street_type=ST&address_number=2250",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2402017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2402&lot=017",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2402017",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927",
+      "kind": "construction",
+      "description": "Built as the Parkside Adventist Christian Church and — unlike the brick civic buildings of the same decade — modelled to blend in with the stucco houses around it.",
+      "source": "parkside-context-statement"
+    }
+  ],
+  "building": {
+    "name": "Parkside Adventist Christian Church",
+    "completed_conflict": "The Parkside context statement dates the building here to 1927; the assessor dates the building on this parcel to 1926."
+  }
+}

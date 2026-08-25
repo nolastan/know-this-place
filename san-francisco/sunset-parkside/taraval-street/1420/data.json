@@ -1,0 +1,119 @@
+{
+  "address": "1420 Taraval Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/taraval-street/1420/",
+  "apn": "2353010",
+  "block": "2353",
+  "lot": "010",
+  "eas_baseid": "335314",
+  "coordinates": {
+    "lat": 37.743041,
+    "lng": -122.481517
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1683,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1420 TARAVAL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69254,
+    "assessed_improvement_value": 34602,
+    "last_sale_date": "2005-01-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808086753",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2018-08-08",
+      "status_date": "2018-08-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to demolish 3 stories, single family building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808086754",
+      "type": "new construction wood frame",
+      "status": "filed",
+      "filed": "2018-08-08",
+      "status_date": "2018-08-08",
+      "estimated_cost": 1000000,
+      "revised_cost": 1800000,
+      "description": "to erect 4 stories, no basement, type iii-a, 3 units residential with commercial building. (r-2,b)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203337",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-04-29",
+      "status_date": "1983-03-04",
+      "estimated_cost": 100,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TARAVAL&street_type=ST&address_number=1420",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2353010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2353&lot=010",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2353010",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "One of the houses in the district that predate the stucco “Sunset” row house which filled the Parkside from the 1920s — mostly larger Craftsman-style buildings put up by the Parkside Realty Company before 1925.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

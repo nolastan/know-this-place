@@ -1,0 +1,109 @@
+{
+  "address": "2507 21st Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/21st-avenue/2507/",
+  "apn": "2422002",
+  "block": "2422",
+  "lot": "002",
+  "eas_baseid": "338391",
+  "coordinates": {
+    "lat": 37.740841,
+    "lng": -122.478015
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 1600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2507 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42248,
+    "assessed_improvement_value": 44325
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200910199295",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-19",
+      "status_date": "2009-10-26",
+      "estimated_cost": 17800,
+      "revised_cost": 17800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910199297",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-19",
+      "status_date": "2009-10-19",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "tear off existing roofing, haul away. install new",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=2507",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2422002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2422&lot=002",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2422002",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "One of the houses in the district that predate the stucco “Sunset” row house which filled the Parkside from the 1920s — mostly larger Craftsman-style buildings put up by the Parkside Realty Company before 1925.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}

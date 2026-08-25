@@ -1,0 +1,133 @@
+{
+  "address": "2507 26th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/2507/",
+  "apn": "2427002",
+  "block": "2427",
+  "lot": "002",
+  "eas_baseid": "338584",
+  "coordinates": {
+    "lat": 37.740632,
+    "lng": -122.483376
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1407,
+    "basement_area_sqft": 267,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2507 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 648470,
+    "assessed_improvement_value": 246225,
+    "last_sale_date": "2002-08-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9801738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-02-02",
+      "status_date": "1998-04-10",
+      "estimated_cost": 750,
+      "description": "dry rot repairs -restucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302261",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-10",
+      "status_date": "1993-07-09",
+      "estimated_cost": 2250,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8405973",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-06-06",
+      "status_date": "1984-12-18",
+      "estimated_cost": 1000,
+      "description": "finish work on #8205611",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205611",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-07-09",
+      "status_date": "1983-12-02",
+      "estimated_cost": 5000,
+      "description": "bldg use: resid",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=2507",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2427002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2427&lot=002",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2427002",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908",
+      "kind": "construction",
+      "description": "Built by the Parkside Realty Company as one of 62 near-identical cottages put up across seven blocks to bring the first residents into the new district — about 800 square feet on one storey, two bedrooms and a bath, sold with a choice of six façade treatments over a single plan. All but one of the group was still standing a century later, almost all of them raised over a basement garage in the meantime.",
+      "source": "parkside-context-statement"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The Parkside context statement dates the building here to 1908; the assessor dates the building on this parcel to 1907."
+  }
+}

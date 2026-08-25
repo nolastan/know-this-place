@@ -1,0 +1,120 @@
+{
+  "address": "2632 26th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/2632/",
+  "apn": "2471031",
+  "block": "2471",
+  "lot": "031",
+  "eas_baseid": "340350",
+  "coordinates": {
+    "lat": 37.738213,
+    "lng": -122.482549
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 6000,
+    "building_area_sqft": 1330,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2632 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1411406,
+    "assessed_improvement_value": 604888,
+    "last_sale_date": "2022-03-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8813822",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-16",
+      "status_date": "1988-11-17",
+      "estimated_cost": 1,
+      "description": "all work complete, final inspection only #8614640, 8705649",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705649",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-29",
+      "status_date": "1987-09-09",
+      "estimated_cost": 1,
+      "description": "requested by inspector robert ho, to show smaller garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614640",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-11-18",
+      "status_date": "1988-02-09",
+      "estimated_cost": 14500,
+      "description": "horizontal extension, new garage, windows and door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=2632",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2471031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2471&lot=031",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2471031",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "parkside-context-statement",
+      "name": "Richard Brandi and Woody LaBounty, Western Neighborhoods Project, San Francisco's Parkside District: 1905–1957 — A Historical Context Statement, produced for the Mayor's Office of Economic and Workforce Development, March 2008, adopted 2008",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Parkside District Historic Context Statement, adopted 2008",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "before 1925",
+      "kind": "survey",
+      "description": "One of the houses in the district that predate the stucco “Sunset” row house which filled the Parkside from the 1920s — mostly larger Craftsman-style buildings put up by the Parkside Realty Company before 1925.",
+      "source": "parkside-context-statement"
+    }
+  ]
+}
