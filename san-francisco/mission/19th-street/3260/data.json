@@ -1,0 +1,123 @@
+{
+  "address": "3260 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3260/",
+  "apn": "3591027",
+  "block": "3591",
+  "lot": "027",
+  "eas_baseid": "361338",
+  "coordinates": {
+    "lat": 37.760567,
+    "lng": -122.416365
+  },
+  "parcel": {
+    "year_built": 1986,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2852.27,
+    "building_area_sqft": 8327,
+    "lot_depth_ft": 93.12,
+    "use": "Industrial",
+    "property_class": "Industrial Warehouse",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3260 19TH                ST0000C"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139086,
+    "assessed_improvement_value": 966433
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804277651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-27",
+      "status_date": "2018-06-18",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace exterior siding at west wall like for like, no change to building volume, waterproofing of wall. approx 50'-0:x20'-0: area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509227717",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-22",
+      "status_date": "2015-09-24",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "install auto lifts @ auto shop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613656",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-29",
+      "status_date": "1987-12-01",
+      "estimated_cost": 12000,
+      "description": "horizontal & vertical extension, penthouse on existing roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600659",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1986-01-16",
+      "status_date": "1987-12-01",
+      "estimated_cost": 275000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310691",
+      "type": "new construction",
+      "status": "expired",
+      "filed": "1983-10-21",
+      "status_date": "1984-12-11",
+      "estimated_cost": 267000,
+      "description": "erect",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3260",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3591027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3591&lot=027",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3591027",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

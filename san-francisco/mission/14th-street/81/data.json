@@ -1,0 +1,86 @@
+{
+  "address": "81 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/81/",
+  "apn": "3550009",
+  "block": "3550",
+  "lot": "009",
+  "eas_baseid": "359202",
+  "coordinates": {
+    "lat": 37.768345,
+    "lng": -122.415062
+  },
+  "parcel": {
+    "year_built": 1906,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4992,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0081 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 990387,
+    "assessed_improvement_value": 533279,
+    "last_sale_date": "2007-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=81",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3550009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3550&lot=009",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3550009",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906",
+      "kind": "construction",
+      "description": "Built as an industrial building, recorded as occupied by Coopman Electric.",
+      "source": "showplace-square-survey"
+    }
+  ]
+}

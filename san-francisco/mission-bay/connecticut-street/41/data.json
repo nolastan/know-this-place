@@ -1,0 +1,79 @@
+{
+  "address": "41 Connecticut Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/connecticut-street/41/",
+  "apn": "3951003",
+  "block": "3951",
+  "lot": "003",
+  "eas_baseid": "366746",
+  "coordinates": {
+    "lat": 37.765991,
+    "lng": -122.39767
+  },
+  "also_addressed": [
+    "1099 16TH ST"
+  ],
+  "parcel": {
+    "year_built": 1919,
+    "lot_area_sqft": 6995,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 0041 CONNECTICUT         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93210,
+    "assessed_improvement_value": 508114
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1919",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8106792",
+      "type": "new construction",
+      "status": "complete",
+      "filed": "1981-07-31",
+      "status_date": "1983-03-04",
+      "estimated_cost": 465900,
+      "description": "bldg use: indus/comml",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CONNECTICUT&street_type=ST&address_number=41",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3951003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3951&lot=003",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3951003",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

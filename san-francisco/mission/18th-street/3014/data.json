@@ -1,0 +1,68 @@
+{
+  "address": "3014 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/3014/",
+  "apn": "4019007",
+  "block": "4019",
+  "lot": "007",
+  "eas_baseid": "367347",
+  "coordinates": {
+    "lat": 37.761841,
+    "lng": -122.412553
+  },
+  "parcel": {
+    "year_built": 1965,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "use": "Commercial Misc",
+    "property_class": "Garages (Commercial)",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3014 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79672,
+    "assessed_improvement_value": 97003
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=3014",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4019007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4019&lot=007",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4019007",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

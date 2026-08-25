@@ -1,0 +1,123 @@
+{
+  "address": "1401 Bryant Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/bryant-street/1401/",
+  "apn": "3904001",
+  "block": "3904",
+  "lot": "001",
+  "eas_baseid": "466565",
+  "coordinates": {
+    "lat": 37.768914,
+    "lng": -122.410241
+  },
+  "parcel": {
+    "lot_area_sqft": 12000,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Comm and Ind",
+    "construction_type_code": "NA",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1401 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 636601
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "survey_name": "MUNICIPAL RAILWAY OVERHEAD LINES",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200309054013",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-09-05",
+      "status_date": "2020-10-08",
+      "estimated_cost": 1000000,
+      "description": "this 1 story masonry bldg will be seismically reinforced & plmbg,elec brought up to code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=1401",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3904001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3904&lot=001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3904001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1895",
+      "kind": "alteration",
+      "description": "Enlarged.",
+      "source": "showplace-square-survey"
+    },
+    {
+      "date": "1893",
+      "kind": "construction",
+      "description": "Built by the Market Street Railway as a steam powerhouse, heavy timber framed and brick, generating electricity first from coal and later from oil. The oldest surviving non-residential building in the Showplace Square survey area.",
+      "source": "showplace-square-survey"
+    },
+    {
+      "date": "1907",
+      "kind": "event",
+      "description": "During the 1907 streetcar strike, one of the earliest outbreaks of violence in the district took place outside the powerhouse doors, when armed strikebreakers fired on strikers.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "builder": "the Market Street Railway as a steam powerhouse, heavy timber framed and brick, generating electricity first from coal and later from oil"
+  },
+  "unknowns": [
+    "The statement's narrative gives 1893 in one passage and 1894 in another."
+  ],
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "3S, 3CB",
+    "eligible_district": "Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory District (proposed)",
+    "style": "Commercial / Renaissance Revival",
+    "frame": "Brick",
+    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+    "year_built_as_surveyed": "1893",
+    "apn_as_surveyed": "3904002",
+    "dcp_1976_survey": "3",
+    "heritage_rating": "A",
+    "note": "The survey rates the architecture 5 of 5. The 2009 context statement gives the status code 3CB; the 2011 survey data table gives 3S, 3CB. California Register criteria cited: 1, 3.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

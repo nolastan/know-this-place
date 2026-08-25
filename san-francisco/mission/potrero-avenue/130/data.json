@@ -1,0 +1,119 @@
+{
+  "address": "130 Potrero Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/potrero-avenue/130/",
+  "apn": "3920003",
+  "block": "3920",
+  "lot": "003",
+  "eas_baseid": "366688",
+  "coordinates": {
+    "lat": 37.767831,
+    "lng": -122.408268
+  },
+  "parcel": {
+    "year_built": 1931,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 4,
+    "lot_area_sqft": 13000,
+    "building_area_sqft": 14100,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0130 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 895802,
+    "assessed_improvement_value": 1257580,
+    "last_sale_date": "1988-01-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9303367",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-03",
+      "status_date": "1993-06-30",
+      "estimated_cost": 15000,
+      "description": "concrete parapet bracing & tie wall to wood frame roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022149",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-29",
+      "status_date": "1992-08-26",
+      "estimated_cost": 65000,
+      "description": "provide a connection between (e) building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=130",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3920003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3920&lot=003",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3920003",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931",
+      "kind": "construction",
+      "description": "Built as an industrial building, recorded as occupied by Diamond Electric Mfg. Designed by Louis Johnson.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "architect": "Louis Johnson"
+  },
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6L",
+    "style": "Art Deco Industrial",
+    "physical_integrity": "7 of 7 aspects retained, on the survey's scale",
+    "note": "The survey rates the architecture 3 of 5.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

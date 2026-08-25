@@ -1,0 +1,105 @@
+{
+  "address": "9 Decatur Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/decatur-street/9/",
+  "apn": "3780030",
+  "block": "3780",
+  "lot": "030",
+  "eas_baseid": "366466",
+  "coordinates": {
+    "lat": 37.772598,
+    "lng": -122.406023
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 2175,
+    "building_area_sqft": 2675,
+    "lot_depth_ft": 50,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "UMU",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0009 DECATUR             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 612928,
+    "assessed_improvement_value": 410659,
+    "last_sale_date": "2013-07-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103257258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-25",
+      "status_date": "2021-08-27",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "existing exterior siding replacement on kate street side.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DECATUR&street_type=ST&address_number=9",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3780030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3780&lot=030",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3780030",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "construction",
+      "description": "Built as a warehouse.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The assessor dates the building to 1900; the city's 2011 survey of Showplace Square and the northeast Mission dates it to 1915."
+  },
+  "unknowns": [
+    "The survey's data table dates the building to 1915; its own note says it was built between 1906 and 1918."
+  ]
+}

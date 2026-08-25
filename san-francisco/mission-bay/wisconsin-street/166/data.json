@@ -1,0 +1,113 @@
+{
+  "address": "166 Wisconsin Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission-bay/wisconsin-street/166/",
+  "apn": "3954017",
+  "block": "3954",
+  "lot": "017",
+  "eas_baseid": "366763",
+  "coordinates": {
+    "lat": 37.765434,
+    "lng": -122.400198
+  },
+  "parcel": {
+    "year_built": 1971,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 21400,
+    "building_area_sqft": 20200,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 0166 WISCONSIN           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 170708,
+    "assessed_improvement_value": 367791
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1971",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200704209314",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-04-20",
+      "status_date": "2009-05-29",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "installed automatic fire suppression system to the auto spray booth.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204244829",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-24",
+      "status_date": "2002-10-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "construction phasb changes to work presently undbrway per #2000203222156 add vehicle ramp on wbst el",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203222156",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-03-22",
+      "status_date": "2003-07-24",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "convert e warehouse to auto body repair shop,partial demo of e accessory offices,install paint booth",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504277",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-27",
+      "status_date": "1995-09-27",
+      "estimated_cost": 9156,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WISCONSIN&street_type=ST&address_number=166",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3954017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3954&lot=017",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3954017",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

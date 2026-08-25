@@ -1,0 +1,98 @@
+{
+  "address": "185 Mississippi Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/mississippi-street/185/",
+  "apn": "3987003A",
+  "block": "3987",
+  "lot": "003A",
+  "eas_baseid": "366992",
+  "coordinates": {
+    "lat": 37.764287,
+    "lng": -122.394516
+  },
+  "parcel": {
+    "year_built": 1946,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 2250,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0185 MISSISSIPPI         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 166113,
+    "last_sale_date": "1996-06-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312305219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-30",
+      "status_date": "2014-02-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofi ng",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSISSIPPI&street_type=ST&address_number=185",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3987003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3987&lot=003A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3987003A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1946",
+      "kind": "construction",
+      "description": "Built as an industrial building, recorded as occupied by Chase Auto repair.",
+      "source": "showplace-square-survey"
+    }
+  ]
+}

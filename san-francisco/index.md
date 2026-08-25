@@ -30,6 +30,7 @@ documented so far:
 - [Lakeshore](lakeshore/) — the corner of the city around Lake Merced; the San Francisco State University parcel that housed the Sutro Library from 1982 to 2012
 - [Bayview Hunters Point](bayview-hunters-point/) — the south-eastern quarter, settled as the industrial suburb of South San Francisco; 190 buildings named in the 2010 Area B survey, from the Albion Brewery and the South San Francisco Opera House to the Pelton cottages off Third Street
 - [Dogpatch](dogpatch/) — the workers' blocks east of Interstate 280 that grew around the shipyards and iron works of Potrero Point; sixty-seven buildings named in the two surveys of 2001, from the row of Pelton cottages to the Irving M. Scott School
+- [Mission Bay](mission-bay/) — the warehouse and factory blocks between Division Street and Mariposa, filled land the railroads owned before 1906 and the design showrooms renamed Showplace Square; 69 buildings named in the 2011 Showplace Square / Northeast Mission survey
 - [Potrero Hill](potrero-hill/) — the slopes above Potrero Point; the 19th Street building where an Italian family opened a grocery in 1905
 - [Nob Hill](nob-hill/) — the ridge above Union Square; four buildings named in the 2017 Corbett Heights context statement as the work of architects who also built in that neighborhood
 - [Inner Sunset](inner-sunset/) — the blocks between Golden Gate Park and Mount Sutro; the Henry Doelger Building on Judah Street, named in the 2022 Duboce Triangle context statement as a citywide example of the Streamline Moderne

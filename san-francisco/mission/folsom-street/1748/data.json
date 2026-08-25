@@ -1,0 +1,143 @@
+{
+  "address": "1748 Folsom Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/folsom-street/1748/",
+  "apn": "3530005",
+  "block": "3530",
+  "lot": "005",
+  "eas_baseid": "358246",
+  "coordinates": {
+    "lat": 37.769045,
+    "lng": -122.415805
+  },
+  "parcel": {
+    "year_built": 1945,
+    "stories": 1,
+    "rooms": 1,
+    "lot_area_sqft": 4948,
+    "building_area_sqft": 4836,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1748 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 551930,
+    "assessed_improvement_value": 367944,
+    "last_sale_date": "1989-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1945",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200902182268",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-02-18",
+      "status_date": "2009-05-04",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove 12x15 sign 2961 per nov.9906",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613790",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-07-30",
+      "status_date": "1996-10-16",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "t/i permit to operate auto glass repair shop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610500",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-06-13",
+      "status_date": "1996-09-23",
+      "estimated_cost": 2500,
+      "revised_cost": 5000,
+      "description": "replace handicap bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118595",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-10-02",
+      "status_date": "1992-08-27",
+      "estimated_cost": 42,
+      "description": "final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102066",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-02-08",
+      "status_date": "1991-08-22",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918236",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-09-29",
+      "status_date": "1991-08-22",
+      "estimated_cost": 20000,
+      "description": "convert existing warehouse to light repairs body shop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916054",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-08-30",
+      "status_date": "1990-05-09",
+      "estimated_cost": 2500,
+      "description": "stucco work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=1748",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3530005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3530&lot=005",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3530005",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "address": "375 Vermont Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission-bay/vermont-street/375/",
+  "apn": "3958001A",
+  "block": "3958",
+  "lot": "001A",
+  "eas_baseid": "366771",
+  "coordinates": {
+    "lat": 37.764907,
+    "lng": -122.404293
+  },
+  "parcel": {
+    "year_built": 1970,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 5000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0395 0375 VERMONT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90576,
+    "assessed_improvement_value": 204958
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1970",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201304265590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-26",
+      "status_date": "2013-07-11",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "remove & replace existing steel roof panels. product installed to comply with specifications as certified & tested by recognized agencies.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503982",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-03-21",
+      "status_date": "1995-08-28",
+      "estimated_cost": 4800,
+      "description": "install dry chemical fire system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502530",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-02-22",
+      "status_date": "1995-11-22",
+      "estimated_cost": 17800,
+      "description": "assembly of pre-manufactured spray booth & mixing room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203582",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-07",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3000,
+      "description": "bldg use: coml",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VERMONT&street_type=ST&address_number=375",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3958001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3958&lot=001A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3958001A",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

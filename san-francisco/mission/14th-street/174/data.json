@@ -1,0 +1,120 @@
+{
+  "address": "174 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/174/",
+  "apn": "3530016",
+  "block": "3530",
+  "lot": "016",
+  "eas_baseid": "358251",
+  "coordinates": {
+    "lat": 37.768706,
+    "lng": -122.417184
+  },
+  "parcel": {
+    "year_built": 1927,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 6276,
+    "building_area_sqft": 8742,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0174 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1790994,
+    "assessed_improvement_value": 760185,
+    "last_sale_date": "2005-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001212367",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-01-21",
+      "status_date": "2026-01-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "change of use for cannabis light manufacturing, state license #6, parcel delivery service state license #10 and whole sale use state license #11 for suite b. upgrade space for ada compliance and exiting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508184548",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-08-18",
+      "status_date": "2015-08-18",
+      "estimated_cost": 4000,
+      "revised_cost": 6000,
+      "description": "front street windows to be replaced. replace in-kind, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603086290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-08",
+      "status_date": "2006-04-06",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "correction of violation 200667596 dated 3/4/6 curb at front entry door to be removed e curb approx 3\" above public way sidewalk. restore to orig use at landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=174",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3530016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3530&lot=016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3530016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927",
+      "kind": "construction",
+      "description": "Built as an industrial building, concrete construction, recorded as occupied by SF Cleaning and Dyeing Co.",
+      "source": "showplace-square-survey"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "address": "312 Utah Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/utah-street/312/",
+  "apn": "3961001A",
+  "block": "3961",
+  "lot": "001A",
+  "eas_baseid": "366784",
+  "coordinates": {
+    "lat": 37.765534,
+    "lng": -122.406834
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2305,
+    "building_area_sqft": 1700,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0312 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1233982,
+    "last_sale_date": "2018-03-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012020063",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-02",
+      "status_date": "2021-02-03",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "excavation work to be performed as part of the city's request for archaeology survey in coordination for planning permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911217856",
+      "type": "new construction",
+      "status": "issued",
+      "filed": "2019-11-21",
+      "status_date": "2022-12-06",
+      "estimated_cost": 1500000,
+      "revised_cost": 1800000,
+      "description": "to erect a 4-story, type iii a, 3-unit (condo) residential building w/ 1 basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807205095",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2018-07-20",
+      "status_date": "2018-08-13",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "per demo emergency order #109639-e, demolish type 5 construction two story single family dwelling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203526",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-06",
+      "status_date": "1983-03-04",
+      "estimated_cost": 4400,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UTAH&street_type=ST&address_number=312",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3961001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3961&lot=001A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3961001A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1880",
+      "kind": "construction",
+      "description": "Built as a house.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The assessor dates the building to 1900; the city's 2011 survey of Showplace Square and the northeast Mission dates it to 1880."
+  }
+}

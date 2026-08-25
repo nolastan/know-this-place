@@ -1,0 +1,82 @@
+{
+  "address": "1604 17th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/17th-street/1604/",
+  "apn": "3954006",
+  "block": "3954",
+  "lot": "006",
+  "eas_baseid": "366760",
+  "coordinates": {
+    "lat": 37.765161,
+    "lng": -122.399999
+  },
+  "parcel": {
+    "year_built": 1965,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 4200,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "UMU",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 1604 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1130444,
+    "assessed_improvement_value": 282606,
+    "last_sale_date": "2011-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200010022101",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-02",
+      "status_date": "2001-04-02",
+      "estimated_cost": 17988,
+      "revised_cost": 17988,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=1604",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3954006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3954&lot=006",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3954006",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

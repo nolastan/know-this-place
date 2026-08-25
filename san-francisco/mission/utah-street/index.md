@@ -4,6 +4,10 @@ Every residential parcel on Utah Street that the city's address, assessor and pe
 
 ## Documented so far
 
+- [101](101/) — A 1957 industrial building, with a seismic retrofit permitted in 2019.
+- [198](198/) — A 1933 industrial building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with reroofing permitted in 2020.
+- [208](208/) — A 1911 office building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with an addition permitted in 2025.
+- [312](312/) — A 1900 assessor class: vacant lot, with permit records from 1982 to 2020.
 - [314–316](314/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2023.
 - [318–320](318/) — A 1900 two-flat, with window replacement permitted in 2009.
 - [322–324](322/) — A 1900 two-flat, with a kitchen remodel permitted in 1988.

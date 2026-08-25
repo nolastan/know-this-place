@@ -1,0 +1,121 @@
+{
+  "address": "2530 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2530/",
+  "apn": "4014002A",
+  "block": "4014",
+  "lot": "002A",
+  "eas_baseid": "367325",
+  "coordinates": {
+    "lat": 37.762006,
+    "lng": -122.40789
+  },
+  "parcel": {
+    "year_built": 1924,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 13433,
+    "building_area_sqft": 16550,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "PDR1G",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2530 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 5905687,
+    "assessed_improvement_value": 1749832,
+    "last_sale_date": "2020-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202201105662",
+      "type": "new construction",
+      "status": "approved",
+      "filed": "2022-01-10",
+      "status_date": "2023-08-04",
+      "estimated_cost": 45125341,
+      "revised_cost": 45125341,
+      "description": "priortiy processing: erect new 8-story sprinklered type i-b, 73 one unit% affordaable housing with community rm, common laundry, management offices, hpp program area, lobby, outdoor common space, circulation, & supportive services space. per mayor ed 13-01.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022730",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-02",
+      "status_date": "1991-03-14",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2530",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4014002A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4014&lot=002A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4014002A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924",
+      "kind": "construction",
+      "description": "Built as an ornamental iron and bronze works. Built by the Sartorius Co..",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "builder": "the Sartorius Co."
+  },
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6L",
+    "eligible_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
+    "style": "Industrial Vernacular",
+    "physical_integrity": "5 of 7 aspects retained, on the survey's scale",
+    "note": "The survey rates the architecture 2 of 5. The 2009 context statement gives the status code 3CD; the 2011 survey data table gives 6L.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

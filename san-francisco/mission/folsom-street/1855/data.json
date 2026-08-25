@@ -1,0 +1,126 @@
+{
+  "address": "1855 Folsom Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/folsom-street/1855/",
+  "apn": "3550022",
+  "block": "3550",
+  "lot": "022",
+  "eas_baseid": "359209",
+  "coordinates": {
+    "lat": 37.767442,
+    "lng": -122.413937
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 64900,
+    "use": "Commercial Misc",
+    "property_class": "GARAGE",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1855 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910104178",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-10-10",
+      "status_date": "2020-02-26",
+      "estimated_cost": 1,
+      "revised_cost": 15000,
+      "description": "demolish extg piping for standpipe and install new strandpipe piping 4\" pipe.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 12,
+    "range": "2002–2020",
+    "shown_on_page": 1,
+    "note": "11 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=1855",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3550022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3550&lot=022",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3550022",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927",
+      "kind": "construction",
+      "description": "Built as the Illinois Pacific glass / F.W. Woolworth warehouse. Built by George Wagner. The survey names P. D. Burnett as engineer and George Wagner as builder.",
+      "source": "showplace-square-survey"
+    },
+    {
+      "date": "1938",
+      "kind": "event",
+      "description": "Associated with the 1938 \"Hot Box Car\" incident.",
+      "source": "showplace-square-survey"
+    },
+    {
+      "date": "1938",
+      "kind": "event",
+      "description": "The F. W. Woolworth Company warehouse here was the site the employers' association chose for the confrontation with warehouse Local 6 that became known as the Hot Box Car incident.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "builder": "George Wagner",
+    "completed_conflict": "The assessor dates the building to 1900; the city's 2011 survey of Showplace Square and the northeast Mission dates it to 1927."
+  },
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "3CS",
+    "eligible_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
+    "style": "Chicago",
+    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+    "year_built_as_surveyed": "1927",
+    "apn_as_surveyed": "3550024",
+    "dcp_1976_survey": "3",
+    "note": "The survey rates the architecture 4 of 5. The 2009 context statement gives the status code 3CD; the 2011 survey data table gives 3CS. California Register criteria cited: 1, 3.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "address": "41 14th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/14th-street/41/",
+  "apn": "3550021",
+  "block": "3550",
+  "lot": "021",
+  "eas_baseid": "359208",
+  "coordinates": {
+    "lat": 37.76808,
+    "lng": -122.414488
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 1,
+    "rooms": 19,
+    "bathrooms": 5,
+    "lot_area_sqft": 32042,
+    "building_area_sqft": 17610,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0041 14TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 671818,
+    "assessed_improvement_value": 1175736,
+    "last_sale_date": "1994-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200802013851",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-01",
+      "status_date": "2008-02-01",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=41",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3550021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3550&lot=021",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3550021",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1953",
+      "kind": "construction",
+      "description": "Built as an industrial building, recorded as occupied by David Woerner Cooperage Co.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6Z",
+    "eligible_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
+    "style": "Industrial",
+    "physical_integrity": "5 of 7 aspects retained, on the survey's scale",
+    "note": "The survey rates the architecture 3 of 5. The 2009 context statement gives the status code 3CD; the 2011 survey data table gives 6Z.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "address": "55 Erie Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/erie-street/55/",
+  "apn": "3530032",
+  "block": "3530",
+  "lot": "032",
+  "eas_baseid": "358257",
+  "coordinates": {
+    "lat": 37.769084,
+    "lng": -122.41677
+  },
+  "parcel": {
+    "year_built": 1938,
+    "stories": 1,
+    "rooms": 1,
+    "lot_area_sqft": 9199,
+    "building_area_sqft": 9761,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0055 ERIE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 232443
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1938",
+    "survey_name": "G.W. THOAMS DRAYAGE & RIGGING BUILDING",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505055771",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-05-05",
+      "status_date": "2025-06-16",
+      "estimated_cost": 1,
+      "revised_cost": 60000,
+      "description": "revision to pa #2022-1019-4666 & 2025-0129-9327 update of electrical equipment. relocated guard shack. added lota devices",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202501299327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-29",
+      "status_date": "2025-03-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 202210194666 included: replace 2 abb 184 chargers w/ 2 abba 400 chargers, added utility trench detail. update erosion control notes, added fence & gate detail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210194666",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-10-19",
+      "status_date": "2023-11-17",
+      "estimated_cost": 500000,
+      "revised_cost": 500000,
+      "description": "install 8 ev charges for 16 vehicles convert from vehicle storage lot to fleet charging use.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109289305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-28",
+      "status_date": "2021-12-20",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "repair damaged ashphalt and stripe for vehicle storage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ERIE&street_type=ST&address_number=55",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3530032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3530&lot=032",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3530032",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1938",
+      "kind": "construction",
+      "description": "Built as an industrial building, wood frame construction, recorded as occupied by G. W. Thompas Drayage & Rigging.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "unknowns": [
+    "The survey's data table dates the building to 1938; the context statement's appendix dates it to 1923."
+  ]
+}
