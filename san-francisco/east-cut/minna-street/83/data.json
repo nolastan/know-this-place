@@ -1,0 +1,200 @@
+{
+  "address": "83 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/minna-street/83/",
+  "apn": "3721052",
+  "block": "3721",
+  "lot": "052",
+  "eas_baseid": "364916",
+  "coordinates": {
+    "lat": 37.787745,
+    "lng": -122.398768
+  },
+  "parcel": {
+    "year_built": 1911,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3358,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0083 MINNA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1050809,
+    "assessed_improvement_value": 65669,
+    "last_sale_date": "2007-09-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804179986",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2008-04-17",
+      "status_date": "2026-01-27",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "revision to appl #200712281487 - showing new 4\" underground. hooded to underground by others.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804028548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-02",
+      "status_date": "2008-04-18",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "install a fire system in a kitchen hood. pa# 2007-1129-9165",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712281487",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-12-28",
+      "status_date": "2008-04-18",
+      "estimated_cost": 16200,
+      "revised_cost": 16200,
+      "description": "basement & 1st floor - new nfpa fire sprinkler system 81 heads, basement and 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711299165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-29",
+      "status_date": "2008-04-18",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "convert vacant garage to restaurant. change of occupancy from u-1 to a-3.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503258435",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2005-03-25",
+      "status_date": "2007-06-28",
+      "description": "demolish 1 story storage .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405133869",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2004-05-13",
+      "status_date": "2005-05-13",
+      "estimated_cost": 9000,
+      "description": "provide the backs per plan to shore bldg adjacent to new constr'n under pa#9904253 & 200312162431.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102131974",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-02-13",
+      "status_date": "2007-09-04",
+      "estimated_cost": 63000,
+      "revised_cost": 63000,
+      "description": "seismic retrofit of umb bldg., bldg. already fully comply with ada requirement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823403",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-11-13",
+      "status_date": "2003-06-04",
+      "estimated_cost": 25000,
+      "description": "provide underpinning per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616683",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1996-09-05",
+      "status_date": "1998-07-11",
+      "estimated_cost": 55000,
+      "description": "to comply with umb ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401609",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-14",
+      "status_date": "1986-03-04",
+      "estimated_cost": 8000,
+      "description": "parapet bracing for earthquake standard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNA&street_type=ST&address_number=83",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3721052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3721&lot=052",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3721052",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "building": {
+    "name": "John G. Rapp Machine Shop"
+  },
+  "historical_record": [
+    {
+      "date": "1911",
+      "kind": "construction",
+      "description": "Built as the John G. Rapp Machine Shop.",
+      "source": "transit-center-district-survey"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Transit Center District Survey (2008)",
+    "source": "transit-center-district-survey",
+    "proposed_status_code": "3CD",
+    "eligible_district": "New Montgomery, Mission & Second Historic District (proposed)",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 4 that it may become eligible, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

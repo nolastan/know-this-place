@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 23 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 24 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 23 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 9: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) and [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved). All nine loops closed. |
-| **Remaining** | ~27 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 24 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 10: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) and [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved). All ten loops closed. |
+| **Remaining** | ~26 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -42,6 +42,13 @@ document you are about to mine.
   individually eligible Mission Dolores properties.
 - **Drafts and finals coexist and the final can still say DRAFT.** Take the
   file the adopting body listed.
+- **Two statements can cover the same buildings.** The Transit Center survey
+  area (2008) sits inside the Central SoMa survey area (2016), and 57 of the
+  123 pages the Transit Center pass reached already carried the Central SoMa
+  panel and, on several, the same facts. Before publishing a district
+  statement, check which of its parcels this repo has already documented from a
+  neighbouring survey — the overlap decides where each fact can go, and the
+  renderer holds one `historic_survey` panel per page.
 - **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
   REST content URL is built from the page's own `accesskey`. Worked examples
   throughout the per-document notes below.
@@ -141,6 +148,19 @@ document you are about to mine.
     Same consultants as the Bayview-Hunters Point Area B statement two years
     later, and the two overlap on the three India Basin buildings that already
     had pages here. See "The India Basin survey" below.
+  - Kelley & VerPlanck Historical Resources Consulting, *Transit Center District
+    Survey, San Francisco, California — Final*, prepared for the San Francisco
+    Planning Department, dated July 22, 2008 (95 pp.), source id
+    `transit-center-district-survey`. SF Planning lists it as "Transit Center
+    District Survey (includes HCS) (Adopted 2012)"; the file itself is the July
+    2008 final, so cite it as adopted 2012 and say the report is dated 2008. It
+    is on the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf`.
+    The 74-page context statement is followed by a DPR 523 D district record for
+    the proposed New Montgomery, Mission & Second Historic District and three
+    appendix tables. **Its survey area sits inside the Central SoMa survey area**,
+    which this repo read in 2026-08-12 — expect half its parcels to have pages
+    already. See "The Transit Center District survey" below.
   - San Francisco Planning Department, *Inner Mission North 1853-1943 Context
     Statement* (62 pp., dated on its own title page "October 2001 – September
     2005"; SF Planning's listing page files it as adopted 2004), source id
@@ -1637,6 +1657,80 @@ scattered through the prose rather than tabulated.
   `SharedLinks.aspx` URL and fetch the REST content path.
 
 
+**The Transit Center District survey is 95 pages and its inventory is all in
+the back.** A Kelley & VerPlanck report, so it behaves like the Bayview-Hunters
+Point and India Basin ones: a narrative history, and then the addresses in
+tables. Four places carry them, and the citation locator should say which.
+
+- **The four tables, and what each gives.** Appendix Table 1, *Existing Survey
+  Ratings within Study Area*, is the long one — 170 rows, each with the
+  assessor's block as a row header and the lot per row, the address (often as a
+  **range**: "20-8 2nd Street", "601-5 Market Street"), a building name, and up
+  to six earlier ratings: the 1976 citywide survey, the Heritage *Splendid
+  Survivors* letter, the Article 10 landmark number, the Article 11 category,
+  whether it is listed in the National Register, and a status code. It gives no
+  construction dates. The DPR 523 D district record carries two more —
+  86 contributors and 33 non-contributors — with address, APN, construction
+  date, property type and status codes. Appendix Table 2 lists the 24
+  individually significant properties outside the district in the same shape.
+  The narrative adds architects, alterations and events the tables never
+  mention.
+- **The rating columns can be read by vocabulary, not by position.** The column
+  positions shift from page to page and `pdftotext -layout` will not hold them,
+  but the six rating vocabularies barely overlap: a 1976 rating is a bare digit
+  0-5, a Heritage rating a letter A-D, an Article 10 entry reads "No. 144", an
+  Article 11 category is a Roman numeral, National Register listing is "Y" or
+  "Y-D", and a status code looks like 3S or 6Y2. Classifying each token by which
+  vocabulary it belongs to parsed 170 rows with one token left over.
+- **An asterisk on a 1976 rating** means the building was not in the Planning
+  Department's historic resource database when KVP checked, "most" of them, the
+  report says, through demolition or lot merger. Worth carrying onto the page.
+- **The survey is a redevelopment-area survey, and it says so.** It lists
+  thirteen active projects that would demolish buildings it had just recorded,
+  and several of those projects were built. Check the assessor's year built on
+  every parcel before publishing a construction date: where the roll year is
+  later than 2008, the building the survey described is not the one standing.
+  Three parcels here are in that state (645 Howard Street, 652 Mission Street,
+  350 Mission Street); the honest treatment is to state both years and let the
+  page's `.unknowns` carry the disagreement, never to assert a demolition the
+  report does not record.
+- **It contradicts itself often, and mostly about addresses.** The Marine
+  Electric Company Building is 195-97 Fremont Street in the narrative and
+  342-56 Howard Street in the tables; the Crellin Estate Building is 585 Howard
+  Street in the narrative and 583 in the table; the Aronson Building is 700
+  Mission Street in the narrative and 86 3rd Street in the table; the Rialto is
+  100 New Montgomery Street in the table and 116 in the narrative; the Pacific
+  Telephone & Telegraph Building is 134-40 New Montgomery Street and 1925
+  everywhere except one passage that says 130 and 1924. Its table also marks
+  the Folger Coffee warehouse at 200 Spear Street demolished while its narrative
+  calls it standing, and dates the Veronica Building to 1907 in the table and
+  1947 in one narrative sentence. Every one of these is a `conflict` on the
+  finding, and none of them is ours to settle.
+- **Its survey area overlaps the Central SoMa survey area**, which this repo
+  read in August 2026. 57 of the 123 pages this pass reached already carried the
+  Central SoMa `historic_survey` panel, and a handful already carried the same
+  narrative facts. The renderer holds one survey panel per page, so on those
+  pages this survey's ratings could not be shown at all and only the fact the
+  other survey does not carry — that the building contributes to the proposed
+  New Montgomery, Mission & Second Historic District — went onto the page, as a
+  dated listing entry on the timeline.
+- **Hunt Street has no EAS record**, so the Hemphill Building at 15 Hunt Street
+  cannot become a page. Nor can 83 Stevenson Street, 177 and 183 and 195 Fremont
+  Street, 200 Spear Street, 525 and 676 Howard Street, 666 Folsom Street, 201
+  Main Street or 693 Mission Street — the addresses this part of downtown lost
+  to the Transbay project, Foundry Square and the towers of the 2010s.
+- **Two parcels here are open questions for a person**, filed as issue #163:
+  the Paramount at 680 Mission Street, whose parcel's lowest EAS number is the
+  page of the parcel next door, and 678 Mission Street, which
+  `scripts/render-backlog.txt` grandfathers because the renderer crashes on it.
+  The survey's facts for that second one are recorded and declined, not lost.
+- **Citation label:** `Kelley & VerPlanck Historical Resources Consulting,
+  Transit Center District Survey, San Francisco, California — Final, prepared
+  for the San Francisco Planning Department, July 22, 2008, adopted 2012`. Page
+  source id `transit-center-district-survey`; the S3 URL is both the citation
+  and the fetch.
+
+
 ## Verification log
 
 One entry per pass, oldest first. Each says what was read, what it yielded in
@@ -2425,3 +2519,33 @@ next run.
   5 district forms — is a separate corpus and is not held here. The Sunset
   District Residential Builders statement on the same SF Planning page is
   untouched.)
+- **Verified:** 2026-08-24 (Transit Center District: read all 95 pages — the
+  74-page context statement, the DPR 523 D district record and the three
+  appendix tables. **316 address-level facts across 171 distinct
+  number-and-street combinations**, every one carrying a street number: 143 rows
+  across the three inventory tables, 24 more parcels that appear only in the
+  ratings table, and 52 from the narrative. **261 resolved to a parcel, 211 are
+  on 123 pages** — 58 of them created by this run — and **50 were declined**,
+  the largest group being 26 bare construction years the assessor already
+  gives. **55 stay unresolved**: 35 have no EAS record at all (the addresses
+  this part of downtown lost to the Transbay project and the towers of the
+  2010s), 12 are condominium parcels today, 3 exist in EAS with no parcel to
+  join to, 2 are on Hunt Street, which EAS does not hold, 2 are the Paramount at
+  680 Mission Street, whose parcel's lowest number is the page of the parcel
+  next door, and 1 is the pre-1909 number the report prints for John Parrott's
+  1854 house on Rincon Hill — 620 Folsom Street is a live address on a 1922
+  office building today, so the lookup matches cleanly and means nothing. **17 construction dates disagree with the assessor** and are stated
+  unadjudicated in `building.completed_conflict`; **8 more disagreements the
+  report has with itself** are in the pages' `.unknowns`. Never candidates, and
+  so not recorded: 10 parking-lot and vacant-parcel rows with no building and no
+  date, the 42 rows the ratings table marks "(Demo)", four buildings the
+  narrative gives only by corner, and four given a number but no date. What the
+  pass taught, beyond the cautions above: **a survey of a redevelopment area
+  records buildings that were about to be demolished, and some were** — the
+  assessor's year built is the check, and where it postdates the survey the
+  page must state both years rather than assert a demolition; and **two
+  overlapping surveys do not fit in one page's survey panel**, which is why 57
+  pages here carry this survey's listing on the timeline and its ratings
+  nowhere. Coverage note: this document is read in full and nothing in it is
+  outstanding. The DPR 523 A and B forms the survey produced are a separate
+  corpus and are not held here.)

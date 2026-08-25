@@ -1,0 +1,104 @@
+{
+  "address": "79 Stevenson Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/stevenson-street/79/",
+  "apn": "3708031",
+  "block": "3708",
+  "lot": "031",
+  "eas_baseid": "491894",
+  "coordinates": {
+    "lat": 37.789262,
+    "lng": -122.400095
+  },
+  "parcel": {
+    "year_built": 1920,
+    "stories": 1,
+    "rooms": 1,
+    "lot_area_sqft": 4643,
+    "use": "Commercial Office",
+    "property_class": "Office Gov",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0079 STEVENSON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Individual, Historic Survey Result",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206035542",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-03",
+      "status_date": "2023-10-10",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "replace existing garage door like in kind: no change in opening size: per city planning- non reflective door finish. case# 2021-011807evn",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STEVENSON&street_type=ST&address_number=79",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3708031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3708&lot=031",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3708031",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "building": {
+    "name": "Market St. Railway substation"
+  },
+  "historical_record": [
+    {
+      "date": "1920",
+      "kind": "construction",
+      "description": "Built by the Municipal Railway as an electrical substation.",
+      "source": "transit-center-district-survey"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Transit Center District Survey (2008)",
+    "source": "transit-center-district-survey",
+    "proposed_status_code": "3CS",
+    "heritage_rating": "C — of contextual importance",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 4 that it may become eligible, a 6 that it was found ineligible, and a 7 that it was not evaluated.",
+    "note": "Recorded as an individually significant building. The survey prints this building's address two ways: 79 Stevenson Street in one table and 77 Stevenson Street in another."
+  }
+}

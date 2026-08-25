@@ -1,0 +1,140 @@
+{
+  "address": "571 Howard Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/howard-street/571/",
+  "apn": "3736102",
+  "block": "3736",
+  "lot": "102",
+  "eas_baseid": "365638",
+  "coordinates": {
+    "lat": 37.787152,
+    "lng": -122.397359
+  },
+  "parcel": {
+    "year_built": 1924,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 2625,
+    "lot_depth_ft": 85,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3OSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0571 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 375760,
+    "assessed_improvement_value": 419974,
+    "last_sale_date": "1991-08-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309287584",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-09-28",
+      "status_date": "2023-09-28",
+      "estimated_cost": 50,
+      "revised_cost": 0,
+      "description": "to comply w/ abe program abe# 201902115027 - pg&e manhole cover replace that conrete section by owner.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308235042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-23",
+      "status_date": "2023-09-22",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005426",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-03-22",
+      "status_date": "1990-10-03",
+      "estimated_cost": 8600,
+      "description": "reinforce parapet per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204558",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-06-07",
+      "status_date": "1983-04-14",
+      "estimated_cost": 6000,
+      "description": "bldg use: office",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=571",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3736102&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3736&lot=102",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3736102",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "building": {
+    "name": "E. J. Brooks & Co. Building"
+  },
+  "historical_record": [
+    {
+      "date": "1924",
+      "kind": "construction",
+      "description": "Built as the E. J. Brooks & Co. Building.",
+      "source": "transit-center-district-survey"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Transit Center District Survey (2008)",
+    "source": "transit-center-district-survey",
+    "proposed_status_code": "3CD",
+    "eligible_district": "New Montgomery, Mission & Second Historic District (proposed)",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 4 that it may become eligible, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}
