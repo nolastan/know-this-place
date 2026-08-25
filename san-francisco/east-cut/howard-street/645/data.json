@@ -1,0 +1,138 @@
+{
+  "address": "645 Howard Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/howard-street/645/",
+  "apn": "3735A001",
+  "block": "3735A",
+  "lot": "001",
+  "eas_baseid": "486616",
+  "coordinates": {
+    "lat": 37.785873,
+    "lng": -122.399125
+  },
+  "parcel": {
+    "year_built": 2010,
+    "stories": 1,
+    "building_area_sqft": 2693,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Store Condo",
+    "construction_type_code": "NA",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0001 HAWTHORNE           ST00C1"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1909161,
+    "assessed_improvement_value": 1909161,
+    "last_sale_date": "2016-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Conservation District",
+    "yearbuilt": "2010",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "New Montgomery-Mission-Second Street Conservation District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 11 conservation district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1906–1929",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201404294463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-29",
+      "status_date": "2014-05-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "add t.v. wall niche 6' by 4' by 4\" in non-rated office in space 102 and 112",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209079220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-07",
+      "status_date": "2012-09-17",
+      "estimated_cost": 1500,
+      "revised_cost": 3000,
+      "description": "remodel of one unit. modify fire sprinkler system by relocating sprinklers and changing from semi-recessed to concealed type. total sprinklers remain the same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205080029",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-08",
+      "status_date": "2013-02-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "demolish non structural interior walls per plans. reconfigure walk-in closet. new wood flooring throughout. note:new kitchen and 2 bathrooms remodel under app#201204047557",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204047557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-04",
+      "status_date": "2013-02-19",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "one unit: remove and replace (e) cabinets in kitchen and two bathrooms. remove and replace (e) plumbing fixtures in kitchen and two bathrooms. *min. 50% of kitchen light watts to be high efficacy lights. *provide high efficacy lights or \"manual on\" occupancy sensor in bathrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=645",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3735A001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3735A&lot=001",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3735A001",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39912536603431%2037.785872673615735)%27)",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "building": {
+    "completed": "1922",
+    "completed_conflict": "The 2008 survey of this district dates the building to 1922; the assessor dates the building on this parcel to 2010."
+  }
+}

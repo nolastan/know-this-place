@@ -246,6 +246,9 @@ def street_names(refresh: bool = False) -> list:
     return rows
 
 
+DIGIT_ORDINAL = re.compile(r"^(\d+)(st|nd|rd|th)$", re.I)
+
+
 def squash(name: str) -> str:
     return re.sub(r"[^A-Z0-9]+", "", (name or "").upper())
 
@@ -279,6 +282,16 @@ class StreetIndex:
         padded = ORDINAL_WORDS.get(key)
         if padded and padded in self.types:
             return padded, "ordinal"
+        # "2ND STREET" is the ordinary way a report writes it and the one EAS
+        # will not answer to: the city holds the numbered streets zero-padded to
+        # four characters. Spelling it out ("SECOND") is handled above; this is
+        # the same trap wearing digits, and it fails at the street rather than
+        # the number, so it reads as a missing street rather than a bad address.
+        digits = DIGIT_ORDINAL.match(key)
+        if digits and len(digits.group(1)) == 1:
+            padded = (digits.group(1) + digits.group(2)).upper().rjust(4, "0")
+            if padded in self.types:
+                return padded, "digit-ordinal"
         return None, ""
 
     def eas_type(self, name: str, stype: str | None) -> tuple:
@@ -454,6 +467,9 @@ class City:
         if how == "ordinal":
             clause = (f" The record spells the street out as {name}; EAS holds the numbered "
                       f"streets as zero-padded ordinals, so this is {eas_name}.")
+        if how == "digit-ordinal":
+            clause = (f" The record writes the street {name}; EAS holds the numbered streets "
+                      f"zero-padded to four characters, so this is {eas_name}.")
         if retyped:
             clause += (f" EAS files this street as {eas_name} "
                        f"{eas_type or 'with no street type'}, not {stype}.")
@@ -697,9 +713,6 @@ for _tens, _prefix in ((20, "twenty"), (30, "thirty"), (40, "forty")):
         _n = _tens + _unit
         ORDINAL_WORD[f"{_prefix}-{_word}"] = f"{_n}{ORDINAL_WORD[_word][-2:]}"
         ORDINAL_WORD[f"{_prefix}{_word}"] = f"{_n}{ORDINAL_WORD[_word][-2:]}"
-DIGIT_ORDINAL = re.compile(r"^(\d+)(st|nd|rd|th)$", re.I)
-
-
 def parse_address(text: str) -> dict | None:
     """A recorded address string → numbers, EAS street name, EAS street type.
 
@@ -1241,8 +1254,14 @@ def build_manifest(city: City, data: dict) -> list:
         rows = [r for r in city.by_parcel.get(apn, []) + city.by_effective.get(apn, [])]
         same = [r for r in rows if (r.get("street_name") or "") == eas_name]
         stype = stype or next((r.get("street_type") for r in same), "") or ""
+        # The path already carries the parcel's lowest number, and it is worked
+        # out from a wider set of EAS rows than this one: an address filed under
+        # a since-retired parcel reaches the path through that parcel's key and
+        # would be missed here. Leave it out and the seeder puts the page in a
+        # different directory from the one every resolution points at — one
+        # parcel, two places, and the facts land on neither.
         numbers = sorted({(r.get("address_number") or "").upper() for r in same
-                          if r.get("address_number")}, key=num_key) or [number.upper()]
+                          if r.get("address_number")} | {number.upper()}, key=num_key)
         others = sorted({eas_label(r.get("street_name") or "", r.get("street_type"),
                                    (r.get("address_number") or "").upper())
                          for r in rows if (r.get("street_name") or "") != eas_name})

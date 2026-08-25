@@ -1,0 +1,75 @@
+{
+  "address": "147 Fremont Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/fremont-street/147/",
+  "apn": "3719003",
+  "block": "3719",
+  "lot": "003",
+  "eas_baseid": "364892",
+  "coordinates": {
+    "lat": 37.790186,
+    "lng": -122.395472
+  },
+  "parcel": {
+    "lot_area_sqft": 50516,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0147 FREMONT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FREMONT&street_type=ST&address_number=147",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&lot=003",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3719003",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Transit Center District Survey (2008)",
+    "source": "transit-center-district-survey",
+    "prior_status_code": "6Y2",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 4 that it may become eligible, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

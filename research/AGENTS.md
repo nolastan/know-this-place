@@ -314,7 +314,40 @@ rather than just accumulate.
   busiest streets downtown. `resolve_eas.py` now maps spelled-out ordinals to
   EAS's form (`SECOND` → `02ND`) and states the mapping in the method. *A
   lookup that fails on the street name rather than the number is a spelling
-  problem, not a finding.*
+  problem, not a finding.* **The digits fail the same way and were not
+  covered**: a survey that writes "20 2nd Street", which is how nearly every
+  report writes it, lost 1st, 2nd and 3rd Streets whole — 130 findings in the
+  middle of downtown — until the same mapping was taught to accept `2ND` as
+  well as `SECOND`.
+- **A survey of a redevelopment area is a record of buildings that were about to
+  come down, and some did.** The Transit Center survey lists thirteen active
+  projects that would demolish buildings it had just inventoried; three of its
+  parcels now carry buildings the assessor dates after the survey was written.
+  A construction date published on those pages would describe a building that is
+  gone. *Compare the assessor's year built with the source's on every finding,
+  and where the roll year postdates the source, state both years and let the
+  page's `.unknowns` carry the disagreement — never assert a demolition the
+  source does not record.*
+- **Two surveys of the same buildings do not fit in one page.** The Transit
+  Center survey area sits inside the Central SoMa survey area, which this repo
+  had already published; 57 of the 123 pages the run reached already carried the
+  other survey's `historic_survey` panel, and the renderer holds one. Their
+  ratings could not be shown at all, and only the fact the other survey lacks —
+  district-contributor status — reached those pages, as a timeline entry.
+  *Before planning where a district statement's facts will go, check which of
+  its parcels the repo has already documented from a neighbouring survey.*
+- **A page-level fact still needs its finding marked published.** Writing a
+  surveyed year into `building.completed_conflict` while declining the finding
+  that supplied it left a page stating a disagreement with no entry in its
+  `sources` — an unsourced sentence, which the root AGENTS.md forbids outright.
+  *A finding that reached the page in any component is published, whatever
+  component it reached, and the source entry goes with it.*
+- **The resolver's path and its manifest disagreed about a parcel's lowest
+  number**, because the path reaches EAS rows filed under a since-retired parcel
+  and the manifest did not. The seeder put the page at 657 Mission Street while
+  every resolution pointed at 655: one parcel, two places, and the facts landing
+  on neither. `build_manifest` now carries the path's own number into the list
+  it hands the seeder.
 - **A parcel with no row on the assessor's secured roll cannot become a page,
   and on an architectural corpus that selects for exactly the best buildings.**
   Eight resolved Russian Hill parcels have `in_asr_secured_roll: false` and no

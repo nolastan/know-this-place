@@ -1,0 +1,134 @@
+{
+  "address": "74 Tehama Street, San Francisco, CA 94105",
+  "path": "/san-francisco/south-of-market/tehama-street/74/",
+  "apn": "3736092",
+  "block": "3736",
+  "lot": "092",
+  "eas_baseid": "365628",
+  "coordinates": {
+    "lat": 37.786943,
+    "lng": -122.39722
+  },
+  "parcel": {
+    "year_built": 1906,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 4000,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "C3OSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0074 TEHAMA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 174107,
+    "assessed_improvement_value": 248118
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Individual, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201208036534",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-03",
+      "status_date": "2012-11-26",
+      "estimated_cost": 10000,
+      "revised_cost": 12500,
+      "description": "remodel two rooms at ground floor office to create acoustical recording rooms and partial accessibility upgrade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920860",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2000-02-17",
+      "status_date": "2000-02-17",
+      "estimated_cost": 25000,
+      "description": "t i per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918451",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-09-02",
+      "status_date": "2003-09-23",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remove/replace partitions,power & signal access upgrd &rcp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603981",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-11",
+      "status_date": "1997-06-03",
+      "estimated_cost": 7897,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1996–2012",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TEHAMA&street_type=ST&address_number=74",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3736092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3736&lot=092",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3736092",
+      "retrieved": "2026-08-24"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Transit Center District Survey (2008)",
+    "source": "transit-center-district-survey",
+    "proposed_status_code": "3CD",
+    "eligible_district": "New Montgomery, Mission & Second Historic District (proposed)",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 4 that it may become eligible, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}
