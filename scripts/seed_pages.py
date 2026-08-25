@@ -1372,6 +1372,18 @@ def historical_items(rec: dict, indent: str) -> list:
             href = urls.get(cited[0]) if (photo and cited) else None
             row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
                    else f'{indent}      <span>{esc(meta)}</span>\n')
+        desc = esc(e.get("description", ""))
+        # A news entry is the article's headline, the outlet and the date, and
+        # nothing else: we never restate a living outlet's reporting in our own
+        # words, so it carries `headline`/`outlet`/`url` in place of a
+        # `description`, and the outlet's name is the link. That leaves nothing
+        # for a meta row to say — the citation is already the whole entry — so
+        # the row is dropped rather than repeating the label underneath it.
+        if e.get("headline"):
+            desc = f'<em>{esc(e["headline"])}</em>'
+            if e.get("outlet") and e.get("url"):
+                desc += f' — <a href="{esca(e["url"])}">{esc(e["outlet"])}</a>'
+            meta = ""
         summary = (f'{indent}    <p class="vtl-desc"><b>{esc(e["summary"])}</b></p>\n'
                    if e.get("summary") else "")
         when = e.get("date", "")
@@ -1382,7 +1394,7 @@ def historical_items(rec: dict, indent: str) -> list:
             f'{indent}  <li class="vtl-item">\n'
             f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
             f'{summary}'
-            f'{indent}    <p class="vtl-desc">{esc(e.get("description", ""))}</p>\n'
+            f'{indent}    <p class="vtl-desc">{desc}</p>\n'
             + (f'{indent}    <div class="vtl-meta">\n' + row
                + f'{indent}    </div>\n' if meta else "")
             + f'{indent}  </li>'))
