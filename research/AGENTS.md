@@ -349,6 +349,20 @@ rather than just accumulate.
   date, the second saying less. Four Parkside findings were declined for this.
   *Before publishing a source with both parts, group the resolved findings by
   parcel and read every page that gets more than one.*
+- **A blocked host is a session problem, not a source problem, and it can burn
+  the whole back half of a run if caught late.** The South of Market run read
+  118 pages and wrote 155 well-cited findings, then found at the resolve step
+  that this session's network egress policy blocked `data.sfgov.org`
+  outright — every `sf-eas-addresses`, `sf-parcels` and `sf-assessor-roll`
+  call came back a proxy 403, confirmed as a policy denial rather than a
+  transient failure. Per the agent-proxy README, that is reported, not
+  retried or routed around, and it stops `resolve_eas.py` and `seed_pages.py`
+  cold regardless of the source. Findings still get written and cited in
+  full — reading is unaffected — but every entry stays `unresolved` with the
+  block named in `resolution.note`, and the run closes with an issue for the
+  resolve-and-publish half rather than guessing at a workaround. *A quick
+  reachability check against `data.sfgov.org` before or early in a run costs
+  nothing and would have caught this before the read, not after.*
 - **`seed_pages.py names` goes quiet once the pages exist.** It only inspects
   parcels still marked seedable, so running it after `seed-list` — which is when
   the root AGENTS.md's instruction reads most naturally — reports zero

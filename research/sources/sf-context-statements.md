@@ -5,8 +5,12 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 23 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 24 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
+> - **Verified:** 2026-08-25 — read the South of Market Area statement (118 pp.) end to end,
+>   155 candidate findings, all left `unresolved`: this session's network egress policy blocks
+>   `data.sfgov.org` outright (403 on every retry), so `resolve_eas.py fetch` cannot run. See
+>   "A network block, not a source problem" below before starting the resolve pass.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -19,9 +23,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 23 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 9: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) and [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved). All nine loops closed. |
-| **Remaining** | ~27 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 24 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 10: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved), [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) — those nine loops closed — and [`south-of-market-hcs`](../findings/sf-context-statements/south-of-market-hcs.json) (155 findings, all `unresolved`: the resolve pass could not run this session, see the caution below). |
+| **Remaining** | ~26 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -284,6 +288,19 @@ document you are about to mine.
     — confirmed from the `SharedLinks.aspx` page's own markup. Same author as
     the Inner Sunset statement, the Van Ness Auto Row survey and the Russian
     Hill statement. See "The Oceanside statement" below.
+  - Kelley & VerPlanck Historical Resources Consulting, LLC, prepared for Page
+    & Turnbull, Inc., *South of Market Area Historic Context Statement*,
+    FINAL, June 30, 2009 (118 pp.), source id `south-of-market-hcs`. SF
+    Planning lists it as "South of Market Area Historic Context Statement
+    (Adopted 2011)". On the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/372-SOMA_Historic_Context_Statement_06-30-2009.pdf`
+    — a plain fetch, no vault shell. Carries no appendix inventory table of
+    its own; its per-property DPR 523 A/B/D forms from Page & Turnbull's own
+    "South of Market Area Plan Survey" (1,128 properties surveyed, 165 with
+    523B forms) are referenced throughout as "attached" but are not in this
+    PDF and were not located — a separate acquire pass, the same shape as
+    issue #115 for the Market & Octavia survey, would be a much larger yield.
+    See "The South of Market statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1635,6 +1652,75 @@ scattered through the prose rather than tabulated.
   Committee), May 2007, updated March 2010; SF Planning lists it as adopted
   2012`. Page source id `oceanside-context-statement`; cite the
   `SharedLinks.aspx` URL and fetch the REST content path.
+
+**The South of Market statement carries no appendix inventory at all, and its
+address-level material is denser than any statement in this set except North
+Beach and Central SoMa.** Like Duboce Triangle and Eureka Valley it is
+narrative from end to end — historic context chapters, an architects and
+builders chapter, and a property-types chapter — but unlike those, almost
+every one of its worked examples cites a specific street number, because the
+118 pages cover a district Page & Turnbull surveyed intensively (1,128
+properties) rather than reconnaissance-level. 188 candidate numbered-address
+mentions were found by a regex sweep; 155 became findings after discarding
+intersections with no number, undated mentions with nothing else to check,
+and addresses outside the South of Market Area named only as an architect's
+other work.
+
+- **The real inventory is a separate, uncollected document.** The
+  recommendations chapter says outright that "Industrial properties that
+  appear individually eligible…are identified in the attached DPR 523 B forms
+  prepared by Page & Turnbull as part of the South of Market Area Plan
+  Survey" — three times, for residential, industrial and commercial
+  properties alike. That survey (1,128 DPR 523A primary records, 165 523B
+  forms, 4 523D district forms) is not bound into this PDF and was not found
+  on the SF Planning site during this pass. It is the same shape as issue
+  #115's Market & Octavia survey and would be a substantially larger yield
+  than the statement itself — a good acquire-pass lead, not attempted this
+  run.
+- **The architects-and-builders chapter is the richest single section in this
+  set.** Six architects and builders (Frederick H. Meyer, the O'Brien
+  Brothers, George Wagner, Joseph A. Pasqualetti, James H. Hjul, H.C. Baumann)
+  each get a named-building list with a date apiece — 40-plus addresses from
+  one chapter. Cross-reference against the property-types chapter before
+  treating two mentions as independent: several of these same buildings
+  reappear there as type examples.
+- **The statement contradicts itself on street numbers more than most in this
+  set, and Holy Trinity Greek Orthodox Church is the worst of it.** The same
+  building (built 1903, destroyed 1906, rebuilt and rededicated 1909, now St.
+  Michael's Ukrainian Orthodox Church) is given as "335 7th Street," "345 7th
+  Street" and "735 7th Street" in three different passages. Recorded as one
+  finding under the fullest passage (735, with the rebuilding cost and
+  rededication date), with the other two forms named in `conflict` — treating
+  three descriptions of one dedication as three separate buildings would have
+  been the wrong kind of thoroughness.
+- **George Wagner's own list disagrees with the architects-and-builders
+  narrative on one date.** 1019-1021 Mission Street is "the garage…(1915)" in
+  the 1914-1919 architects section and "1019-1021 Mission Street (1922)" in
+  Wagner's own later list. Both dates are on the finding as a stated
+  `conflict`, not adjudicated.
+- **A person can be named twice for the same building without it being a
+  duplicate.** 938 Howard Street is credited to the O'Brien Brothers as
+  architect in one chapter and to developer Louis R. Lurie in another — both
+  are the same 1922 building, not two facts to publish separately. Merged
+  into one finding with both people in `extra`.
+- **A network block, not a source problem.** This run's session could not
+  reach `data.sfgov.org` at all — every attempt through the proxy came back
+  403 Forbidden, confirmed both by `resolve_eas.py fetch` and a direct `curl`
+  against the proxy's own status endpoint, which logs it as a policy denial
+  rather than a transient failure. Per the agent-proxy README, a 403 from the
+  proxy is reported, not retried or routed around. All 155 findings are
+  therefore `unresolved` with that note; none of the ordinary renumbering or
+  parcel traps in this dossier were reachable this run. **The next session
+  working this batch should confirm `data.sfgov.org` is reachable before
+  spending time on anything else**, then run
+  `resolve_eas.py fetch/report/apply/manifest` on
+  `research/findings/sf-context-statements/south-of-market-hcs.json` and
+  publish from there — the reading and citation work is already done.
+- **Citation label:** `Kelley & VerPlanck Historical Resources Consulting,
+  prepared for Page & Turnbull, Inc., South of Market Area Historic Context
+  Statement, FINAL, June 30, 2009; SF Planning lists it as adopted 2011`. Page
+  source id `south-of-market-hcs`; the S3 URL is both the citation and the
+  fetch — a plain fetch, no vault shell.
 
 
 ## Verification log
