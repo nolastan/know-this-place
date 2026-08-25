@@ -2,9 +2,20 @@
 # Opens a single PR per run; human review still gates the merge.
 name: refresh
 
+# The weekly cron is PAUSED as of 2026-08-24. Cost scales with the number of
+# pages whose `retrieved` dates have gone stale, and the site is now past
+# 12,000 pages: the run went from $0.29 / 8 turns (Jul 27) to $3.31 / 50 turns
+# (Aug 24), a 5x jump in one week, and the 30-day staleness window means the
+# pages seeded over the last month all come due at once. Re-enable only with a
+# way to bound the batch — the `scope` input, or a cap on pages per run.
+#
+# Also disabled at the repository level (`gh workflow disable refresh.yml`),
+# which is what actually stops it: schedules fire from main, so commenting the
+# cron out here has no effect until this merges. To allow manual scoped runs
+# again without the cron, run `gh workflow enable refresh.yml`.
 on:
-  schedule:
-    - cron: "0 14 * * 1" # Mondays ~7am Pacific
+  # schedule:
+  #   - cron: "0 14 * * 1" # Mondays ~7am Pacific
   workflow_dispatch:
     inputs:
       scope:
