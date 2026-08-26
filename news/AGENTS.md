@@ -43,8 +43,10 @@ cursors   which    what the     which      seed the page
           say an   about the               one; headline,
           address  building                outlet and date
                                            onto the timeline,
-                                           and a card onto
-                                           the homepage
+                                           the building's own
+                                           facts into its
+                                           fields, and a card
+                                           onto the homepage
 ```
 
 | Stage | Who | Reads | Writes |
@@ -53,7 +55,7 @@ cursors   which    what the     which      seed the page
 | 2 read | an agent, with `tools/read.py` | the queued articles | nothing yet |
 | 3 extract | an agent | what it read | `items/<feed-id>/<batch>.json` |
 | 4 resolve | `research/tools/resolve_eas.py` | the items file | `resolution` in the same file |
-| 5 publish | an agent, with `scripts/seed_pages.py` | resolved items | `research/manifests/news-<batch>.json`, `san-francisco/**` pages, the homepage's news grid, a PR |
+| 5 publish | an agent, with `scripts/seed_pages.py` | resolved items | `research/manifests/news-<batch>.json`, `san-francisco/**` pages (timeline entry *and* `building` fields), the homepage's news grid, a PR |
 
 Stages 3–5 use the research module's own findings schema and resolver. That is
 deliberate: a fact from Mission Local and a fact from an 1895 newspaper are the
@@ -213,16 +215,60 @@ because a news story is a story about people almost by definition.
 
 ## Putting it on the page
 
-A news entry is **the article's headline, the outlet, and the date** — and
-nothing else. It reaches a page as an entry in `historical_record`, the same key
-a newspaper fact from 1901 uses, and renders as one item on the page's single
-timeline, in date order among the permits.
+A news entry on the timeline is **the article's headline, the outlet, and the
+date** — and nothing else. It reaches a page as an entry in `historical_record`,
+the same key a newspaper fact from 1901 uses, and renders as one item on the
+page's single timeline, in date order among the permits.
 
 **The page does not restate the story in its own words.** An earlier version of
 this module wrote a sentence of fact under each headline; it read as commentary,
 it duplicated what the headline already said, and it put us in the business of
 summarizing other people's reporting. The headline is the entry. A reader who
 wants the story follows the link, which is the whole point of carrying it.
+
+**But the entry is not all a story is worth.** What the article establishes
+about the building goes into the page's own structured fields, where it is
+stated as a fact and attributed from the Sources footer like any other — the
+same shape a fact from an 1895 newspaper takes. A run that files the headline
+and drops the architect has thrown away the part of the story a page is for.
+
+The fields are `building.name`, `building.former_name`, `building.architect`,
+`building.builder`, `building.developer` and `building.completed`; the article's
+citation is already in `sources`, because the entry put it there.
+
+This is not the banned sentence coming back under another name. The difference
+is shape, and it is the whole distinction: a named field holding a name is a
+fact the page states, and a paragraph under a headline is us summarizing
+someone else's reporting.
+
+- **Attribution belongs in the footer, never in the value.** `"architect":
+  "OMA"`, never `"OMA, according to SF YIMBY"`. research/AGENTS.md → "an
+  ordinary fact about a building must be stated as a fact, with the attribution
+  left to the Sources footer".
+- **The `building` block describes the building that stands there.** A story
+  about a *proposal* names the team for a building that does not exist, and
+  writing its architect onto the page tells a reader that a surface parking lot
+  was designed by someone. A proposal or a permit filing leaves its team in the
+  items file's `extra` and puts nothing in `building` — the headline entry is
+  what carries that news. The same goes for a conversion designed but not yet
+  built: the architect of the alteration is not the architect of the building.
+- **Only what the article states plainly, about this building.** Not the
+  neighbouring building it describes on the way past, not what the reporter
+  expects to happen, not a name that appears only in a rendering's caption or
+  the outlet's own tags.
+- **The privacy rule binds hardest here.** Architects, builders, developers and
+  named firms may be named — that is what these fields are for. Owners, buyers,
+  tenants and residents may not, and a private individual who developed their
+  own building is not a `developer` for this purpose.
+- **Never overwrite the assessor with the article.** On a newly finished
+  building the two routinely disagree, because the roll lags by years. Set
+  `building.completed` and record the disagreement in
+  `building.completed_conflict` or `unknowns` — both render into the same note.
+  The roll's own year stays where it is.
+- **Enriching an existing page is editing someone else's work.** Fill a field
+  that is empty; do not revise one a person or another source already filled.
+  An article that contradicts a field already on the page is an `unknowns`
+  line, not an edit.
 
 ```json
 { "date": "2026-08-14",
