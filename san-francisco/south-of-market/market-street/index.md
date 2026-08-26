@@ -11,7 +11,9 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [725–731](725/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1997.
 - [735](735/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 1998.
 - [765–781](765/) — A 1989 hotel, with plumbing work permitted in 2018.
+- [785](785/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2019.
 - [799](799/) — A 1968 office building with ground-floor retail in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1984.
+- [800–830](800/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2008.
 - [825–833](825/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 1994.
 - [845](845/) — The 2006 shopping centre built behind the Emporium's 1896 facade and glass dome.
 - [865–885](865/) — A 1908 shopping center in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2015.
