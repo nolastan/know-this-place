@@ -127,6 +127,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3232–3234](3232/) — A 1900 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2016.
 - [3250](3250/) — A 1961 bank building, with reroofing permitted in 2012.
 - [3333](3333/) — A 1988 store building, with electrical work permitted in 2001.
+- [4494](4494/) — A 1910 store building, with one permit record from 2026.
 - [4631](4631/) — A 1922 store building, with plumbing work permitted in 2006.
 - [5150](5150/) — A 1950 bank building, with reroofing permitted in 2007.
 

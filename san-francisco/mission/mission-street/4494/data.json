@@ -1,0 +1,99 @@
+{
+  "address": "4494 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/4494/",
+  "apn": "6796011",
+  "block": "6796",
+  "lot": "011",
+  "eas_baseid": "407844",
+  "coordinates": {
+    "lat": 37.725981,
+    "lng": -122.434185
+  },
+  "also_addressed": [
+    "10 SANTA ROSA AVE"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 4494 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 345589,
+    "assessed_improvement_value": 303542
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historical_record": [
+    {
+      "date": "June 2026",
+      "kind": "sale",
+      "headline": "The Excelsior’s Central Drug Store building has sold",
+      "outlet": "Mission Local",
+      "url": "https://missionlocal.org/2026/08/central-drug-store-building-purchase/",
+      "source": "mission-local-2026-08-20"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202607014446",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-01",
+      "status_date": "2026-07-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "addressing permit: create the address 10 santa rosa ave. link to apn 6796/011",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4494",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6796011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6796&lot=011",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6796011",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "mission-local-2026-08-20",
+      "name": "Mission Local, “The Excelsior’s Central Drug Store building has sold,” 20 August 2026",
+      "query": "https://missionlocal.org/2026/08/central-drug-store-building-purchase/",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

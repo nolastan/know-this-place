@@ -5,6 +5,7 @@ The parcels on Irving Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [3315](3315/) — A 1944 single-family house, with reroofing permitted in 2010.
+- [3401](3401/) — A 1933 3-unit apartment building with a ground-floor store, with a vertical addition permitted in 1988.
 - [3738–3740](3738/) — A 1925 3-unit building with a ground-floor store, with plumbing work permitted in 2016.
 - [3932–3934](3932/) — A 1947 2-unit building with a ground-floor store, with reroofing permitted in 1988.
 - [4115](4115/) — A 1950 single-family house, with a kitchen remodel permitted in 2026.
