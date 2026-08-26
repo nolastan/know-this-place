@@ -1,0 +1,135 @@
+{
+  "address": "2278 29th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/29th-avenue/2278/",
+  "apn": "2321014",
+  "block": "2321",
+  "lot": "014",
+  "eas_baseid": "334134",
+  "coordinates": {
+    "lat": 37.744878,
+    "lng": -122.486237
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2306,
+    "basement_area_sqft": 1010,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2278 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1742714,
+    "assessed_improvement_value": 746877,
+    "last_sale_date": "2021-04-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010307842",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-30",
+      "status_date": "2021-01-28",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace front stucco in-kind, no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903054374",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-05",
+      "status_date": "2021-01-28",
+      "estimated_cost": 98000,
+      "revised_cost": 98000,
+      "description": "construct 2 bedrooms, 2 full bathrooms & media room @ ground fl; add 2 new bathrooms & re-build (e) interior staircase 2nd fl down to ground floor. construct new deck w/staircase @ rear of bldg (size approx 17'x12')",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901160539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-16",
+      "status_date": "2021-01-28",
+      "estimated_cost": 35000,
+      "revised_cost": 41243,
+      "description": "remodel kitchen (10x12) a full bathroom (5x8) replace new sheetrock 2000 sq ft for bedroom, 1 dining room 1, living room at 2nd floor (all interior wall)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-12-19",
+      "status_date": "1997-08-21",
+      "estimated_cost": 9475,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=2278",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2321014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2321&lot=014",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2321014",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "A. Hallgren"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "French Provincial",
+    "note": "Built as a speculative property for an estimated $3,500, to the standard French Provincial design whose near-identical copies are scattered across the Sunset District."
+  }
+}

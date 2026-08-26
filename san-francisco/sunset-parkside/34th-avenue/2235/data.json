@@ -1,0 +1,113 @@
+{
+  "address": "2235 34th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/34th-avenue/2235/",
+  "apn": "2315006",
+  "block": "2315",
+  "lot": "006",
+  "eas_baseid": "333801",
+  "coordinates": {
+    "lat": 37.745367,
+    "lng": -122.49231
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1809,
+    "basement_area_sqft": 334,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2235 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 395976,
+    "assessed_improvement_value": 294087,
+    "last_sale_date": "1999-05-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200006051790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-05",
+      "status_date": "2000-10-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "convert garagefloor space to study room, bedroom & storage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207142",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-01",
+      "status_date": "1992-05-08",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=2235",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2315006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2315&lot=006",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2315006",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Standard Building Company"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "Minimal Traditional",
+    "note": "An example of the Minimal Traditional house of the wartime and postwar tracts: shallow cross-gabled roof, flush garage opening, scalloped trim at the gable ends, and almost no ornament — the shape mass production left behind."
+  }
+}

@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 25 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 11: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) and [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved). All eleven loops closed. |
-| **Remaining** | ~25 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 26 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 12: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) and [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved). All twelve loops closed. |
+| **Remaining** | ~24 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -49,6 +49,21 @@ document you are about to mine.
   statement, check which of its parcels this repo has already documented from a
   neighbouring survey — the overlap decides where each fact can go, and the
   renderer holds one `historic_survey` panel per page.
+- **A thematic statement with no inventory can still be the densest kind.**
+  The Sunset builders statement has no appendix table, no APNs and no survey
+  results, and yielded 158 address-level facts from 121 pages — because its
+  subject is the builders, so nearly every address it prints carries a builder,
+  a build year or both. Its seams are the photograph captions that illustrate
+  the building typologies and the architectural styles, the builder biographies
+  (offices, sales offices, the builders' own houses), and above all the
+  model-home lists, which give a name, an address and a month each. Read the
+  captions and the lists before judging a themed statement thin.
+- **A page can already carry another statement's survey panel**, and the
+  renderer holds one. Check `historic_survey.source` before writing: overwrite
+  it and the neighbouring statement's finding is silently destroyed. 320 Judah
+  Street was carrying the Duboce Triangle statement's panel when this run
+  arrived. Where a page is already taken, the contribution goes to the spec
+  rows and the timeline instead.
 - **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
   REST content URL is built from the page's own `accesskey`. Worked examples
   throughout the per-document notes below.
@@ -173,6 +188,17 @@ document you are about to mine.
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274/content`
     — confirmed from the `SharedLinks.aspx` page's own markup rather than
     assumed. See "The Inner Mission North statement" below.
+  - San Francisco Planning Department (Mary Brown, Preservation Planner),
+    *Sunset District Residential Builders, 1925–1950 Historic Context
+    Statement*, dated April 3, 2013, adopted 2013 (121 pp.), source id
+    `sunset-builders-context-statement`. Developed to frame the 2012 Sunset
+    District Historic and Cultural Resource Survey of about 2,800 buildings,
+    and funded in part by the California Office of Historic Preservation. The
+    PDF is on `default.sfplanning.org`, not the S3 archive and not the M-Files
+    vault:
+    `https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf`
+    — a plain fetch, and `pdftotext -layout` reads it cleanly. See "The Sunset
+    builders statement" below.
   - William Kostura, *The Inner Sunset: A Historic Context Statement*,
     prepared for the San Francisco Office of Economic and Workforce
     Development, the Historic Preservation Fund Committee, and Inner Sunset
@@ -2671,4 +2697,82 @@ next run.
   the batch came back "not an active parcel" with its parcel never fetched.
   Coverage note: this document is read in full and nothing in it is
   outstanding. The DPR 523 A and B forms the survey produced are a separate
+  corpus and are not held here.)
+
+## The Sunset builders statement
+
+A **thematic statement about builders**, not an area inventory: no appendix
+table, no APNs, no survey results, no status codes. Everything address-level is
+in the narrative and the pictures, in three seams:
+
+- **Photograph captions** — chapter 5's nine building typologies (pp. 35–40)
+  and chapter 8's fourteen architectural styles and design elements (pp. 84–100).
+  Each caption is an address, a year, and usually a builder. This is the single
+  most productive thing in the document and the easiest to skim past.
+- **Builder biographies** (ch. 6, pp. 44–70) — the offices, sales offices and
+  houses of the merchant builders, most of whom lived in the district they
+  built. The builder table on pp. 68–70 gives active years and associated
+  architects for 50 firms but no addresses; it produced no findings and is the
+  key to reading the rest.
+- **Model-home lists** (ch. 7, pp. 71–76) — 39 named model homes with an
+  address and a month each: 20 Doelger, 12 Galli, 6 Rousseau, 1 Standard
+  Building Company. The densest seam in the document.
+
+Cautions specific to it:
+
+- **The PDF text layer drops ordinal suffixes and wraps addresses across
+  lines.** "1500 36 Avenue" and "1667 32nd" are the document's own printed
+  text; "1507 and 1511 33rd Avenue", "2270 and 2274 29th Avenue" and "The
+  Courtland, 1746, 35th Avenue" are single addresses split by a comma or a
+  conjunction. A regex sweep alone misses about a dozen. Read the pages.
+- **No 1909 renumbering anywhere in the district.** The Sunset was platted in
+  1868 and built almost entirely after 1925, so every number in it is today's
+  number. The one exception in this batch is 1321 Mason Street, a pre-1906 Nob
+  Hill address inside the fire line, which cannot refer to a standing building
+  and is not in EAS today.
+- **EAS spells it `SAINT FRANCIS BLVD`**, not `ST FRANCIS`. The resolver needs
+  `--alias "ST FRANCIS=SAINT FRANCIS"`.
+- **A builder attributed by page layout is not attributed.** Several style and
+  typology captions sit inside a builder's biography without naming him. The
+  caption at 1451 31st Avenue was published without a builder for exactly this
+  reason: placement is not a statement, and the builder's own recorded
+  territory in the text did not clearly cover the block.
+- **The statement disagrees with itself once**, on 1746 35th Avenue: 1941 in
+  the model-home table, 1940 in the Colonial Revival caption. Stated on the
+  page's `.unknowns`, unadjudicated.
+- **The builders' own houses are in scope and their buyers are not.** The
+  document names six merchant builders' residences with directory date ranges,
+  which the root AGENTS.md permits as individuals from the historical record.
+  It also names the veterans who bought two Veterans' Welfare Board houses, the
+  owners who commissioned four others, and the households of the 1940 census
+  analysis. Those are private people and none of them reached a page.
+- **The 2012 survey's own product is not in this document.** The survey
+  results, the DPR 523 forms and the "Picturesque Period Revival Tracts"
+  district that many of these pages already carry from `sf-historic-districts`
+  are separate; this is the evaluative framework written ahead of them.
+
+- **Verified:** 2026-08-25 (Sunset builders: read all 121 pages — the eleven
+  chapters, every photograph caption, every footnote, the 50-firm builder table
+  on pp. 68–70 and the bibliography. **158 findings, 143 published on 143
+  pages**, 131 of them created by this run, across `sunset-parkside` (114
+  facts), `west-of-twin-peaks` (11), `inner-sunset` (10) and six other
+  directories with one or two each. 14 never reached a parcel, all of them the
+  same way: the address does not exist in EAS today (5408 Geary, 44 and 1
+  Sloat, 346 Santiago, 2194 30th, 1729 27th, 379 Yerba Buena, 1630 Ocean, 1399
+  21st, 1545 34th, 1590 39th, 2161 Vicente, 1321 Mason), plus 550 Taraval,
+  which EAS holds but cannot join to a parcel. One resolved finding was
+  declined: 320 Judah Street already states its 1940 addition from the Inner
+  Sunset statement's landmark record. **5 conflicts are stated on pages** and
+  one construction date disagrees with the assessor — 320 Judah, dated 1932
+  here and 1940 on the roll, which is the addition year. Four occupancy facts
+  sit on parcels the roll dates after the fact (1500 Judah 1959, 948 Taraval
+  1956, 200 Casitas 1953, 2049 Irving 1950); each says so in `.unknowns` rather
+  than pretending the building is the same one. Never candidates, and so not
+  recorded: about twenty block-level references with no street number, and
+  eight addresses that appear only as a private person's home. What it taught,
+  beyond the cautions above: a page may already hold another statement's
+  `historic_survey` panel, and the renderer keeps one — check the panel's
+  `source` before writing or the neighbouring finding is destroyed silently.
+  Coverage note: this document is read in full and nothing in it is
+  outstanding. The 2012 survey results it was written to frame are a separate
   corpus and are not held here.)

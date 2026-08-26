@@ -4,6 +4,7 @@ The parcels on Judah Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [1500](1500/) — A 1959 15-unit apartment building, with a seismic retrofit permitted in 2015.
 - [2149–2151](2149/) — A 1920 single-family house, with reroofing permitted in 1995.
 - [2215](2215/) — A 1960 store building, with reroofing permitted in 2016.
 - [2535–2575](2535/) — A 2008 store building, with plumbing work permitted in 2009.

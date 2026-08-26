@@ -1,0 +1,105 @@
+{
+  "address": "1550 39th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/39th-avenue/1550/",
+  "apn": "1884039",
+  "block": "1884",
+  "lot": "039",
+  "eas_baseid": "322049",
+  "coordinates": {
+    "lat": 37.75794,
+    "lng": -122.497897
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1410,
+    "basement_area_sqft": 515,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1550 39TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32551,
+    "assessed_improvement_value": 197017,
+    "last_sale_date": "1997-01-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200810023262",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-10-02",
+      "status_date": "2010-02-11",
+      "estimated_cost": 105000,
+      "revised_cost": 120000,
+      "description": "new 2 story rear yard addition. remodel existing bathroom @ 2nd floor, provide new bathroom and study at 1st floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=39TH&street_type=AVE&address_number=1550",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1884039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1884&lot=039",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1884039",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Galli Construction Company"
+  },
+  "historical_record": [
+    {
+      "date": "1940-01",
+      "kind": "advertisement",
+      "description": "Shown as “The Queen Anne”, a furnished model home displayed by Ray Galli.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "address": "300 Gellert Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/gellert-drive/300/",
+  "apn": "7261026",
+  "block": "7261",
+  "lot": "026",
+  "eas_baseid": "419433",
+  "coordinates": {
+    "lat": 37.729508,
+    "lng": -122.491277
+  },
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 6,
+    "lot_area_sqft": 7723,
+    "building_area_sqft": 5263,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Lake Shore",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 0300 GELLERT             DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 910693,
+    "assessed_improvement_value": 735914,
+    "last_sale_date": "1990-06-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201304094143",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-09",
+      "status_date": "2013-04-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9202886",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-02-25",
+      "status_date": "1992-08-25",
+      "estimated_cost": 15000,
+      "description": "remodel kitchen & bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122352",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-25",
+      "status_date": "1992-04-08",
+      "estimated_cost": 1450,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120015",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-22",
+      "status_date": "1992-07-30",
+      "estimated_cost": 2200,
+      "description": "replace sheetrock in existing bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-06",
+      "status_date": "1992-07-30",
+      "estimated_cost": 575,
+      "description": "install sheetrock in garage existing side walls,stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-05",
+      "status_date": "1991-02-26",
+      "estimated_cost": 17000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017773",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-04",
+      "status_date": "1991-04-30",
+      "estimated_cost": 13272,
+      "description": "remodel bath & kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GELLERT&street_type=DR&address_number=300",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7261026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7261&lot=026",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7261026",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1950–1978",
+      "kind": "occupancy",
+      "description": "Home of Fred Gellert of the Standard Building Company.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

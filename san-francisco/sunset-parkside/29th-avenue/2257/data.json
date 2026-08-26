@@ -1,0 +1,128 @@
+{
+  "address": "2257 29th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/29th-avenue/2257/",
+  "apn": "2320003K",
+  "block": "2320",
+  "lot": "003K",
+  "eas_baseid": "334073",
+  "coordinates": {
+    "lat": 37.745227,
+    "lng": -122.486919
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 1945,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2257 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101961,
+    "assessed_improvement_value": 121111
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506168792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-16",
+      "status_date": "2026-05-19",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "(1): repair guard wall ~$4,500, repair cracked stucco in-kind. repair dry rot. replace cracked/rotted siding in-kind(w/ new wood). (2): minor siding and trim repair ~$4,000. replace cracked/split siding and trim with new wood in-kind ~150 sq. ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202501077904",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-07",
+      "status_date": "2025-01-08",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace windows on the second floor. street visible windows replaced in kind with wood. non street visible windows replaced with aluminum clad wood. all double hung.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507222106",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-22",
+      "status_date": "2015-07-22",
+      "estimated_cost": 11050,
+      "revised_cost": 11050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-09",
+      "status_date": "1992-02-27",
+      "estimated_cost": 4472,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=2257",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2320003K&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2320&lot=003K",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2320003K",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "barrel front Mediterranean Revival",
+    "note": "An example of the barrel front Mediterranean Revival house: a bowed bay projecting over the garage under a shaped or crenellated parapet capped with Spanish tile. This was the standard Sunset District house from the mid-1920s until about 1931, and the crash ended it. Significance in this type comes from a whole run of them together rather than from any one house."
+  }
+}

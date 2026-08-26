@@ -1,0 +1,182 @@
+{
+  "address": "235 Murray Street, San Francisco, CA 94112",
+  "path": "/san-francisco/bernal-heights/murray-street/235/",
+  "apn": "5832009",
+  "block": "5832",
+  "lot": "009",
+  "eas_baseid": "384686",
+  "coordinates": {
+    "lat": 37.7339,
+    "lng": -122.423031
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 4874,
+    "building_area_sqft": 1788,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0235 MURRAY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 91385,
+    "assessed_improvement_value": 225244
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202003025850",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-03-02",
+      "status_date": "2020-03-02",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "remove 3 walls of drywall. install new r-13 insulation. new sheetrock and paint. repair in kind in one bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911187586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-18",
+      "status_date": "2019-11-25",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair dry rot in the front of the house underneath the bay windows in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801229156",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-22",
+      "status_date": "2018-01-22",
+      "estimated_cost": 8144,
+      "revised_cost": 8144,
+      "description": "inkind replacement of 6 wood casement windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-15",
+      "status_date": "1993-09-22",
+      "estimated_cost": 1,
+      "description": "revision to appl #9201239",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-08-02",
+      "status_date": "1993-09-22",
+      "estimated_cost": 1,
+      "description": "final inspection for expired app #9201239",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9201239",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-01-24",
+      "status_date": "1993-03-09",
+      "estimated_cost": 25000,
+      "revised_cost": 35000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-04-26",
+      "status_date": "1988-06-13",
+      "estimated_cost": 1685,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-06-18",
+      "status_date": "1987-11-17",
+      "estimated_cost": 460,
+      "description": "install aluminum windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602869",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-03-13",
+      "status_date": "1989-09-24",
+      "estimated_cost": 2500,
+      "description": "install x three aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MURRAY&street_type=ST&address_number=235",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5832009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5832&lot=009",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5832009",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927–1932",
+      "kind": "occupancy",
+      "description": "Home of the builder Ellis Stoneson, inside the St. Mary's Park tract his own firm had built.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

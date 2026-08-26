@@ -1,0 +1,128 @@
+{
+  "address": "1681 31st Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/31st-avenue/1681/",
+  "apn": "1912001Q",
+  "block": "1912",
+  "lot": "001Q",
+  "eas_baseid": "323388",
+  "coordinates": {
+    "lat": 37.755926,
+    "lng": -122.489816
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 1840,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1681 31ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 590340,
+    "assessed_improvement_value": 395650,
+    "last_sale_date": "2012-04-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201208026375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-02",
+      "status_date": "2012-10-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel 1 1/2 bath on main floor, lighting to comply with cec 150 (k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205160620",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-05-16",
+      "status_date": "2012-05-18",
+      "estimated_cost": 7000,
+      "revised_cost": 40000,
+      "description": "remodel & legalize (e) ground floor including two bedrooms, two bathrooms & family room. install new water closet at the 2nd floor bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=31ST&street_type=AVE&address_number=1681",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1912001Q&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1912&lot=001Q",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1912001Q",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48981593024016%2037.75592573190002)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Henry Doelger"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "Storybook",
+    "note": "An example of the Storybook style: exaggerated medieval forms with false stonework applied to suggest age and weathering. The style is exceptionally rare in San Francisco and lasted here only from about 1931 to 1935."
+  }
+}

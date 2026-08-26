@@ -15,6 +15,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [1661](1661/) — A 1935 industrial building, with plumbing work permitted in 2019.
 - [1663–1667](1663/) — A 1925 building, with electrical work permitted in 2017.
 - [1695](1695/) — A 1951 industrial building, with reroofing permitted in 2011.
+- [1711–1743](1711/) — A 1952 store building, with a bathroom remodel permitted in 2006.
 - [1714–1718](1714/) — A 1910 4-unit apartment building, with foundation work permitted in 2007.
 - [1720–1724](1720/) — A 1909 5-unit apartment building, with a seismic retrofit permitted in 2018.
 - [1726](1726/) — A 1923 store building, with garage work permitted in 2017.
@@ -25,7 +26,9 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [1754–1760](1754/) — A 1906 9-unit building with a ground-floor store, with a seismic retrofit permitted in 2018.
 - [1764–1766](1764/) — A 1906 2-unit building with a ground-floor store, with garage work permitted in 2010.
 - [1774](1774/) — A 1919 garage, with a seismic retrofit permitted in 1994.
+- [1775](1775/) — A 1925 industrial building, with fire repair permitted in 1998.
 - [1776–1780](1776/) — A 1915 16-unit apartment building, with a seismic retrofit permitted in 1997.
+- [1789](1789/) — A 1910 industrial building, with a bathroom remodel permitted in 2018.
 - [1800](1800/) — A 1914 building, with a seismic retrofit permitted in 2018.
 - [1801](1801/) — A 2020 19-unit apartment building, with permit records from 1985 to 2024.
 - [1815–1825](1815/) — A 1949 126-unit apartment building, with reroofing permitted in 2013.
@@ -59,6 +62,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2114–2118](2114/) — A 1912 15-unit apartment building in the Mission Miracle Mile at 17th Street Historic District, with an addition permitted in 1987.
 - [2135–2137](2135/) — A 1900 hotel in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2016.
 - [2155](2155/) — A 1991 48-unit apartment building, with reroofing permitted in 2011.
+- [2160](2160/) — A 1906 store building, with foundation work permitted in 2010.
 - [2211](2211/) — A 1900 building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1998.
 - [2217–2221](2217/) — A 1904 9-unit building with a ground-floor store, with facade work permitted in 1997.
 - [2230–2232](2230/) — A 1912 21-unit apartment building, with foundation work permitted in 2025.
