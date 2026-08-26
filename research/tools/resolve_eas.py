@@ -1393,10 +1393,19 @@ def main() -> int:
     if args.command == "manifest":
         entries = build_manifest(city, data)
         out = args.out or (REPO / "research" / "manifests" / f"{data['batch']}.json")
+        # --out is whatever the caller typed, so it may be relative, and a
+        # relative path is not "in the subpath of" REPO — relative_to raises
+        # rather than returning it. Resolve first, and fall back to the path as
+        # given for an --out that genuinely points outside the repo.
+        out = out.resolve()
         out.write_text(json.dumps(entries, indent=1, ensure_ascii=False) + "\n",
                        encoding="utf-8")
         areas = Counter(e["area"] for e in entries)
-        print(f"{len(entries)} parcels with no page yet → {out.relative_to(REPO)}")
+        try:
+            shown = out.relative_to(REPO)
+        except ValueError:
+            shown = out
+        print(f"{len(entries)} parcels with no page yet → {shown}")
         for area, n in areas.most_common():
             print(f"  {area}: {n}")
         return 0
