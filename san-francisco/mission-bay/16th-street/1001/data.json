@@ -1,0 +1,156 @@
+{
+  "address": "1001 16th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/16th-street/1001/",
+  "apn": "3951001",
+  "block": "3951",
+  "lot": "001",
+  "eas_baseid": "366745",
+  "coordinates": {
+    "lat": 37.766021,
+    "lng": -122.39717
+  },
+  "parcel": {
+    "year_built": 1952,
+    "stories": 1,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 19998,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 1001 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 210890,
+    "assessed_improvement_value": 344006
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1952",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209233076",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-09-23",
+      "status_date": "2022-09-23",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "fire sprinkler monitoring installation, install facu, smoke detectors, radio communicator, monitor modules for radio and tamper switch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407252202",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2014-07-25",
+      "status_date": "2020-01-23",
+      "estimated_cost": 30000,
+      "description": "1200 sqft cafe in existing warehouse.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405216404",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-05-21",
+      "status_date": "2026-01-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "12' wide x 8' high. store front entry. n/a for the maher ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806023432",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-02",
+      "status_date": "2008-06-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace new 1/2 cdx plywood in roofing. 1500 sqft nailing to be 8d at 4\" on center edge, 8d @ 12\" field. no codition space in warehouse.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805202479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-20",
+      "status_date": "2008-07-15",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205287507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-28",
+      "status_date": "2002-06-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200111032429 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111032429",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-03",
+      "status_date": "2002-01-29",
+      "estimated_cost": 24500,
+      "revised_cost": 24500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005240873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-24",
+      "status_date": "2002-02-05",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair chain link fence and gate 67 feet long/rpr 7 chain link",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=1001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3951001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3951&lot=001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3951001",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

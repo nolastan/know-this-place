@@ -1,0 +1,143 @@
+{
+  "address": "636 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/636/",
+  "apn": "4025003",
+  "block": "4025",
+  "lot": "003",
+  "eas_baseid": "367407",
+  "coordinates": {
+    "lat": 37.761414,
+    "lng": -122.407483
+  },
+  "parcel": {
+    "year_built": 1930,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 7500,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "PDR1G",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0636 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1205808,
+    "assessed_improvement_value": 803872,
+    "last_sale_date": "2011-10-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201110186995",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-18",
+      "status_date": "2011-10-18",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair of existing hairline crack in the concrete beam (non structural crack) located at mid-section of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409083596",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-08",
+      "status_date": "2006-12-18",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316908",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-29",
+      "status_date": "1994-08-02",
+      "estimated_cost": 50000,
+      "description": "office remodel-expand office area into exist. warehouse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312036",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-07-19",
+      "status_date": "1993-08-30",
+      "estimated_cost": 3000,
+      "revised_cost": 6000,
+      "description": "parapet corrective work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=636",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4025003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4025&lot=003",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4025003",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930",
+      "kind": "construction",
+      "description": "Built as an electrical supply warehouse. Designed by Walter Falch.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "architect": "Walter Falch"
+  },
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6L",
+    "style": "Art Deco Industrial",
+    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+    "address_as_surveyed": "636 Potrero",
+    "note": "The survey rates the architecture 3 of 5.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

@@ -26,6 +26,7 @@ The parcels on 35th Avenue documented here so far, from the city's address, asse
 - [1549](1549/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with garage work permitted in 2006.
 - [1552](1552/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with an addition permitted in 2017.
 - [1556](1556/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 2024.
+- [1557](1557/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 1992.
 - [1562](1562/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with a kitchen and bathroom remodel permitted in 2008.
 - [1566](1566/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [1570](1570/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 2003.
@@ -38,6 +39,10 @@ The parcels on 35th Avenue documented here so far, from the city's address, asse
 - [1590](1590/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with facade work permitted in 2006.
 - [1591](1591/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 1991.
 - [1594](1594/) — A 1933 single-family house in the Picturesque Period Revival Tracts Historic District.
+- [1710](1710/) — A 1940 single-family house, with a kitchen and bathroom remodel permitted in 2006.
+- [1746](1746/) — A 1940 single-family house, with reroofing permitted in 2021.
+- [2218](2218/) — A 1938 single-family house, with reroofing permitted in 2016.
+- [2238](2238/) — A 1937 single-family house.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

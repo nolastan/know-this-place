@@ -60,3 +60,20 @@ separable, because a run that has to stop early stops between them:
 `<batch>-<nnnn>`, zero-padded, in the order found: `sn85066387-1895-0001`.
 Unique within the file; `check.py` enforces it. Ids are referenced from issues
 and PR bodies, so don't renumber a file after it has been handed off.
+
+## `extra` keys the resolver reads
+
+`extra` is free-form — it holds what the record itself stated — but three keys
+are not free-form, because [`tools/resolve_eas.py`](../tools/resolve_eas.py)
+acts on them:
+
+| key | shape | what it does |
+|---|---|---|
+| `address_range_as_recorded` | the two street numbers, `"541-543"` | the record states a range, so every number in it is looked up, not just the finding's `street_number`. The street comes from the finding, not from this string; a trailing street name is tolerated but adds nothing. |
+| `assessor_block_as_recorded` | `"3931A"` | checked against the parcel's block, and allowed to choose when a range spans several parcels today. |
+| `assessor_lot_as_recorded` | `"004C"`, or several separated by commas | with the block above, names the parcel outright. |
+
+A range the tool cannot read is a declined finding, so write these in the shape
+above rather than as the source printed them — `address_as_written` already
+keeps the source's own words.
+

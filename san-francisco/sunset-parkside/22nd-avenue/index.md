@@ -4,6 +4,7 @@ The parcels on 22nd Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1726](1726/) — A 1936 single-family house, with deck work permitted in 2015.
 - [1755](1755/) — A 1950 single-family house, with reroofing permitted in 2002.
 - [1766](1766/) — A 1950 single-family house, with reroofing permitted in 1998.
 - [1778](1778/) — A 1950 single-family house, with window replacement permitted in 1996.

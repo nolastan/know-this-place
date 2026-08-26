@@ -1,0 +1,116 @@
+{
+  "address": "2450 Alameda Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/alameda-street/2450/",
+  "apn": "3905012",
+  "block": "3905",
+  "lot": "012",
+  "eas_baseid": "366656",
+  "coordinates": {
+    "lat": 37.768437,
+    "lng": -122.409068
+  },
+  "parcel": {
+    "year_built": 1956,
+    "units": 2,
+    "stories": 1,
+    "rooms": 2,
+    "lot_area_sqft": 28553,
+    "building_area_sqft": 5460,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2450 ALAMEDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 282997,
+    "assessed_improvement_value": 1078497
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201808026329",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-02",
+      "status_date": "2018-08-03",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "title 24 electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804116068",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-04-11",
+      "status_date": "2018-04-23",
+      "estimated_cost": 65760,
+      "revised_cost": 65760,
+      "description": "interior improvements: adding storage room and new restrooms at level 1. storage amounts undeclared in plans - to be no plastics, no flammable liquids. operational storage permit with sffd hq, sprinklers/alarms under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9124127",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1991-12-23",
+      "status_date": "1993-04-20",
+      "description": "demolish garment shop",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALAMEDA&street_type=ST&address_number=2450",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3905012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3905&lot=012",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3905012",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1956",
+      "kind": "construction",
+      "description": "Built as an industrial building, recorded as occupied by Graybar Electric.",
+      "source": "showplace-square-survey"
+    }
+  ]
+}

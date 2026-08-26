@@ -1,0 +1,134 @@
+{
+  "address": "2627 37th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/37th-avenue/2627/",
+  "apn": "2459007",
+  "block": "2459",
+  "lot": "007",
+  "eas_baseid": "340065",
+  "coordinates": {
+    "lat": 37.7379,
+    "lng": -122.495009
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2705,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2627 37TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 253762,
+    "assessed_improvement_value": 769677
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201710302667",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-30",
+      "status_date": "2017-12-01",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to pa#201402188682. revise one bedroom into 2 seperate bedrooms at 3rd floor. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609198113",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-19",
+      "status_date": "2017-02-27",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402188682",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-02-18",
+      "status_date": "2017-12-01",
+      "estimated_cost": 180000,
+      "revised_cost": 280000,
+      "description": "vertical 3rd stry addition at (e) 2 stry sfr. general int.remodel at (e) 1st&2nd flrs. mstr bth,mstr bdrm,new bdrm and bath at new 3rd flr.new family rm and hall bath at 1st floor. 603 new sf total",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605782",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-05-16",
+      "status_date": "1987-01-06",
+      "estimated_cost": 7000,
+      "description": "repair termite damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=37TH&street_type=AVE&address_number=2627",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2459007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2459&lot=007",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2459007",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Galli Construction Company"
+  },
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "advertisement",
+      "description": "Shown as “The Parkway”, a furnished model home displayed by Ray Galli.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

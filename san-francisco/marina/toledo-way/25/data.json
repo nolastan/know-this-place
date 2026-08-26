@@ -1,0 +1,149 @@
+{
+  "address": "25 Toledo Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/toledo-way/25/",
+  "apn": "0486A046",
+  "block": "0486A",
+  "lot": "046",
+  "eas_baseid": "283199",
+  "coordinates": {
+    "lat": 37.801276,
+    "lng": -122.43788
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3070,
+    "building_area_sqft": 1940,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0025A0025 TOLEDO              WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1393912,
+    "assessed_improvement_value": 929268,
+    "last_sale_date": "2005-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202403147770",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-14",
+      "status_date": "2026-01-07",
+      "estimated_cost": 400000,
+      "revised_cost": 690000,
+      "description": "remodel 3598 sfd. 1st fl convert 771 sf of unconditioned space into conditioned area, 2nd fl addition of 17 sf by infilling lightwell, remodel kitchen and 2 baths. replace rear yard 2nd fl windows. add light monitor over shower at master bath and skylights at hallway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910013196",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2019-10-01",
+      "status_date": "2024-02-21",
+      "estimated_cost": 720000,
+      "revised_cost": 860000,
+      "description": "vertical addition. renovation to an existing 2-story single family residential building. with an addition of 2 stories, which will include 3 new bedrooms and 3 new bathrooms. [to 2 dwelling units]. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611178049",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-17",
+      "status_date": "2007-06-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reconfigure kitchen and dining room wall opening and remodel kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510667",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-07-12",
+      "status_date": "1997-08-20",
+      "estimated_cost": 11500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TOLEDO&street_type=WAY&address_number=25",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0486A046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0486A&lot=046",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0486A046",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43787962462874%2037.80127580261254)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Sbarboro, Detjen & Jorgensen"
+  },
+  "historical_record": [
+    {
+      "date": "1936",
+      "kind": "construction",
+      "description": "A single-family house built in 1936 by Sbarboro, Detjen & Jorgensen, who advertised themselves as the “Pioneer Builders of the Marina District” and had put up a hundred and fifty buildings in it by 1929. No member of the firm was a licensed architect; they designed their own buildings and worked with architects including John Ahnden, Reuben Irvine and Laurence Ebbets.",
+      "source": "ppie-marina-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "address": "2282 34th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/34th-avenue/2282/",
+  "apn": "2316012A",
+  "block": "2316",
+  "lot": "012A",
+  "eas_baseid": "333895",
+  "coordinates": {
+    "lat": 37.744571,
+    "lng": -122.491658
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 1200,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2282 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35060,
+    "assessed_improvement_value": 51238
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501097978",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-09",
+      "status_date": "2025-01-21",
+      "estimated_cost": 19910,
+      "revised_cost": 19910,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120862",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-04",
+      "status_date": "1991-11-15",
+      "estimated_cost": 500,
+      "description": "install dry rot at foundation level of garage foor jamb",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924426",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-13",
+      "status_date": "1990-03-21",
+      "estimated_cost": 4725,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=2282",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2316012A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2316&lot=012A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2316012A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "Minimal Traditional",
+    "note": "An example of the Minimal Traditional house of the wartime and postwar tracts: shallow cross-gabled roof, flush garage opening, scalloped trim at the gable ends, and almost no ornament — the shape mass production left behind."
+  }
+}

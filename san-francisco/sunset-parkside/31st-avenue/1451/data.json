@@ -1,0 +1,120 @@
+{
+  "address": "1451 31st Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/31st-avenue/1451/",
+  "apn": "1822009",
+  "block": "1822",
+  "lot": "009",
+  "eas_baseid": "319192",
+  "coordinates": {
+    "lat": 37.760154,
+    "lng": -122.490113
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2014,
+    "basement_area_sqft": 489,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1451 31ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234266,
+    "assessed_improvement_value": 302923,
+    "last_sale_date": "1987-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200610316524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-31",
+      "status_date": "2007-03-22",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision to approved 200607126370 by removing 1 existing wood post and replace with a steel beam on the 1st floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607126370",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-12",
+      "status_date": "2007-02-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel 1st floor of existing building-2 bathrooms, 2 bedrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-01-13",
+      "status_date": "1997-08-19",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=31ST&street_type=AVE&address_number=1451",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1822009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1822&lot=009",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1822009",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "note": "Reproduced as a photograph in the account of the Sunset District's small-scale builders — the one-off speculative houses and short runs put up alongside the big merchant builders. A review of permits inside the 2012 survey area found at least 60 builders and firms at work."
+  }
+}

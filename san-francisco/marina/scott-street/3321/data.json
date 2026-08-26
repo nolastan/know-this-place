@@ -1,0 +1,180 @@
+{
+  "address": "3321–3323 Scott Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/scott-street/3321/",
+  "apn": "0929008",
+  "block": "0929",
+  "lot": "008",
+  "eas_baseid": "482698",
+  "coordinates": {
+    "lat": 37.800485,
+    "lng": -122.441514
+  },
+  "address_range": "3321–3323",
+  "street_numbers_on_parcel": [
+    "3321",
+    "3323"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2218.75,
+    "building_area_sqft": 3300,
+    "lot_depth_ft": 88.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3323 3321 SCOTT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1642408,
+    "assessed_improvement_value": 1143007,
+    "last_sale_date": "2013-10-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611102490",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-10",
+      "status_date": "2016-12-08",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair dry rot to rear stairs, less than 50%, no structural changes, all work in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503110564",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-11",
+      "status_date": "2015-03-11",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace bathroom tile due to water damage in basement, replace kitchen cabinets & counter top, no structural changes, no lighting change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501226411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-22",
+      "status_date": "2015-02-23",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "no structural changes. install 5/8\" anchor bolts at 4 feet on center.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412022848",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-02",
+      "status_date": "2015-02-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411040712",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-04",
+      "status_date": "2015-02-23",
+      "estimated_cost": 45000,
+      "revised_cost": 46000,
+      "description": "remodel 1-1/2 baths and kitchen, upgrade electrical wiring. replace in-kind wood windows (6) on front facade - no change to grid pattern; replace (13) side and rear windows with vinyl windows. no structural changes. max u-factor 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307222477",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-22",
+      "status_date": "2013-09-18",
+      "estimated_cost": 28000,
+      "revised_cost": 30000,
+      "description": "remodel bathroom and kitchen, upgrade electrical subpanel, replace 5 wood windows to front of bldg. and 7 vinyl to back and side. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013632",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-07-12",
+      "status_date": "1990-09-27",
+      "estimated_cost": 8400,
+      "description": "bolt sills, install hold docons,plywood shear panels",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1990–2016",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SCOTT&street_type=ST&address_number=3321",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0929008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0929&lot=008",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0929008",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Sbarboro, Detjen & Jorgensen",
+    "completed_conflict": "This building is dated 1925 in the historical record; the assessor's roll gives the parcel a build year of 1924."
+  },
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "construction",
+      "description": "One of a row of contiguous flats buildings built in 1925 by Sbarboro, Detjen & Jorgensen, who advertised themselves as the “Pioneer Builders of the Marina District” and had put up a hundred and fifty buildings in it by 1929. No member of the firm was a licensed architect; they designed their own buildings and worked with architects including John Ahnden, Reuben Irvine and Laurence Ebbets.",
+      "source": "ppie-marina-context-statement"
+    }
+  ]
+}

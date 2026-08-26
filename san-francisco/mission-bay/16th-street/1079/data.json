@@ -1,0 +1,131 @@
+{
+  "address": "1079 16th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/16th-street/1079/",
+  "apn": "3951004",
+  "block": "3951",
+  "lot": "004",
+  "eas_baseid": "366747",
+  "coordinates": {
+    "lat": 37.766265,
+    "lng": -122.39748
+  },
+  "also_addressed": [
+    "83 CONNECTICUT ST"
+  ],
+  "parcel": {
+    "year_built": 1990,
+    "units": 1,
+    "stories": 1,
+    "lot_area_sqft": 12998,
+    "building_area_sqft": 22389,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 1079 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 173166,
+    "assessed_improvement_value": 1185652
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9206720",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-04-27",
+      "status_date": "1993-06-08",
+      "estimated_cost": 16000,
+      "description": "repair existing sidewalk & driveway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123740",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-16",
+      "status_date": "1993-12-16",
+      "estimated_cost": 350000,
+      "description": "to complete work - valuation of $350,000 additional cost",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122947",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-03",
+      "status_date": "1993-12-03",
+      "estimated_cost": 350000,
+      "description": "renew expired permit appn #9022174",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022174",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-29",
+      "status_date": "1992-10-01",
+      "estimated_cost": 8000,
+      "description": "correct sidewalk as part of conditions of app #9006004",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717093",
+      "type": "new construction",
+      "status": "expired",
+      "filed": "1987-12-02",
+      "status_date": "1991-09-23",
+      "estimated_cost": 550000,
+      "description": "one story manufacturing bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609216",
+      "type": "new construction",
+      "status": "cancelled",
+      "filed": "1986-07-30",
+      "status_date": "1987-03-13",
+      "estimated_cost": 1075000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=1079",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3951004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3951&lot=004",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3951004",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

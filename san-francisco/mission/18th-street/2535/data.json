@@ -1,0 +1,131 @@
+{
+  "address": "2535 18th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2535/",
+  "apn": "4025001",
+  "block": "4025",
+  "lot": "001",
+  "eas_baseid": "367406",
+  "coordinates": {
+    "lat": 37.761693,
+    "lng": -122.407423
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "S",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2535 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 68581
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201209119373",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-09-11",
+      "status_date": "2014-08-26",
+      "estimated_cost": 950000,
+      "revised_cost": 1150000,
+      "description": "oshpd3 project - new interior improvements for 25 station dialysis clinic with support space. this project will require oshpd3 approval .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208157382",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-08-15",
+      "status_date": "2014-08-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "shell&core improv for future dialysis clinic. landscape on & off site, remove(e)fence & replace w/ new wrought iron fence. repave parking lots. refer blk&lot 4025/002,013,014 -2012-08-15-7378.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208157378",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-08-15",
+      "status_date": "2014-08-26",
+      "estimated_cost": 750000,
+      "revised_cost": 780000,
+      "description": "shell&core improv for future dialysis clinic.landscape,remove(e)fence&replc w/ new wrought iron fence.replace parking lots, demo interior. add elevator tower. replace doors&windows.reroof, add roof screen. new hvac units. (blk&lot 4025/001(2012-08-15-7382) shall be referenced to this permit.)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2535",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4025001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4025&lot=001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4025001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1946",
+      "kind": "construction",
+      "description": "Built as a pest control warehouse and workshop.",
+      "source": "showplace-square-survey"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The assessor dates the building to 1900; the city's 2011 survey of Showplace Square and the northeast Mission dates it to 1946."
+  },
+  "historic_survey": {
+    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+    "source": "showplace-square-survey",
+    "proposed_status_code": "6L",
+    "style": "International",
+    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+    "year_built_as_surveyed": "1946",
+    "apn_as_surveyed": "4025002",
+    "note": "The survey rates the architecture 2 of 5.",
+    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "address": "1631 31st Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/31st-avenue/1631/",
+  "apn": "1912001G",
+  "block": "1912",
+  "lot": "001G",
+  "eas_baseid": "323378",
+  "coordinates": {
+    "lat": 37.756748,
+    "lng": -122.489874
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 1695,
+    "basement_area_sqft": 345,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1631 31ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179210,
+    "assessed_improvement_value": 209206
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201703211975",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-21",
+      "status_date": "2017-03-21",
+      "estimated_cost": 13800,
+      "revised_cost": 13800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610130228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-13",
+      "status_date": "2017-09-27",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "replace 2 vinyl windows to wood clad windows. like for like, not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410239723",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-23",
+      "status_date": "2014-10-23",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405014663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-01",
+      "status_date": "2014-07-09",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "replace 6 windows with aluminium wood clad windows visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903204553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-20",
+      "status_date": "2009-06-18",
+      "estimated_cost": 19780,
+      "revised_cost": 19780,
+      "description": "remodel the existing full bathroom & a existing half bathroom. no wall moveing & no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505263485",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-05-26",
+      "status_date": "2006-01-13",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replace 5 windows, size for size , wood to wood composite, not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512513",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-04",
+      "status_date": "1986-04-17",
+      "estimated_cost": 5000,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=31ST&street_type=AVE&address_number=1631",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1912001G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1912&lot=001G",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1912001G",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48987365130823%2037.756748360359204)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Henry Doelger"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "Spanish Colonial Revival",
+    "note": "An example of the Spanish Colonial Revival style, whose Sunset District peak ran from about 1931 to 1935: the look of thick adobe walls, muscular chimney stacks, arched or chamfered openings with turned wood mullions."
+  }
+}

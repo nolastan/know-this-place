@@ -1,0 +1,127 @@
+{
+  "address": "2307 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2307/",
+  "apn": "3593032",
+  "block": "3593",
+  "lot": "032",
+  "eas_baseid": "361355",
+  "coordinates": {
+    "lat": 37.760293,
+    "lng": -122.414506
+  },
+  "parcel": {
+    "year_built": 1959,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 5000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2311 2307 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63714,
+    "assessed_improvement_value": 90739
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912058707",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-05",
+      "status_date": "2022-01-21",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "per accessible business entrance program, provide barrier removal to existing self-serve laundry. modify existing ada paerking space. provide new concrete ram, level front landing at front entry. modify existing restroom to ada compliance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511107797",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-10",
+      "status_date": "2005-11-29",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-03",
+      "status_date": "1998-02-18",
+      "estimated_cost": 1,
+      "revised_cost": 21,
+      "description": "renew pa#9601798,9401764,9600978 to revert back to legal use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304132",
+      "type": "wall or painted sign",
+      "status": "issued",
+      "filed": "1993-03-12",
+      "status_date": "1993-03-12",
+      "description": "sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217250",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-10-09",
+      "status_date": "1993-03-04",
+      "estimated_cost": 25000,
+      "description": "install interior partition, washer, dryer, h/c restrm, etc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1992–2019",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=2307",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3593032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3593&lot=032",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3593032",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

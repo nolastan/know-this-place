@@ -1,0 +1,120 @@
+{
+  "address": "1176 Alemany Boulevard, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/alemany-boulevard/1176/",
+  "apn": "6786024",
+  "block": "6786",
+  "lot": "024",
+  "eas_baseid": "407621",
+  "coordinates": {
+    "lat": 37.730963,
+    "lng": -122.430774
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2221,
+    "building_area_sqft": 1750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 1176 ALEMANY             BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 563019,
+    "assessed_improvement_value": 375343,
+    "last_sale_date": "2003-08-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200308263115",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-26",
+      "status_date": "2003-11-26",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "add rooms at ground floor, study room. storage area,game room, bedroom and full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307250420",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2003-07-25",
+      "status_date": "2003-08-04",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove (e)illegal grnd flr 2nd unit, encl (e)stair from 1st to 2nd flr and rmve (e)doors at top &",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-12",
+      "status_date": "1990-03-06",
+      "estimated_cost": 3200,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALEMANY&street_type=BLVD&address_number=1176",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6786024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6786&lot=024",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6786024",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1939",
+      "kind": "occupancy",
+      "description": "Boyd C. Lindsay's building firm operated from here. He worked in the same way as his brother Claude — single houses and small clusters — favouring Spanish Colonial and Mediterranean Revival designs with a prominent chimney or tower.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

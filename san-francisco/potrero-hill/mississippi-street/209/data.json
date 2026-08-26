@@ -1,0 +1,112 @@
+{
+  "address": "209 Mississippi Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/mississippi-street/209/",
+  "apn": "4000024",
+  "block": "4000",
+  "lot": "024",
+  "eas_baseid": "367049",
+  "coordinates": {
+    "lat": 37.763693,
+    "lng": -122.394379
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 3,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 15000,
+    "building_area_sqft": 25000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "UMU",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0209 MISSISSIPPI         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3767129,
+    "assessed_improvement_value": 3767129,
+    "last_sale_date": "2000-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9611328",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-24",
+      "status_date": "1997-06-05",
+      "estimated_cost": 16000,
+      "description": "new storefront entry in (e)opening,wheelchair lift & stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606560",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-17",
+      "status_date": "1996-08-17",
+      "estimated_cost": 1,
+      "description": "renewal of pa#9508059",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-26",
+      "status_date": "1996-04-19",
+      "estimated_cost": 7500,
+      "description": "rmove 3 lot line line window/install 3 operable skylites",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508059",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-31",
+      "status_date": "1996-04-19",
+      "estimated_cost": 15000,
+      "description": "fire repair/replace siding & framing to rear elevation/2 brm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSISSIPPI&street_type=ST&address_number=209",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4000024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4000&lot=024",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4000024",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

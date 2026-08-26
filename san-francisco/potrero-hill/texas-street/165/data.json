@@ -1,0 +1,156 @@
+{
+  "address": "165 Texas Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/texas-street/165/",
+  "apn": "3986016",
+  "block": "3986",
+  "lot": "016",
+  "eas_baseid": "445851",
+  "coordinates": {
+    "lat": 37.764391,
+    "lng": -122.395532
+  },
+  "parcel": {
+    "year_built": 1996,
+    "building_area_sqft": 1387,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0165 TEXAS               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81404,
+    "assessed_improvement_value": 40682,
+    "last_sale_date": "1996-12-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1996",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310188938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-18",
+      "status_date": "2023-11-22",
+      "estimated_cost": 58968,
+      "revised_cost": 58968,
+      "description": "siding dryrot repair throghout the building and repair in roof area plus paint throughout the building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709077282",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-09-07",
+      "status_date": "2026-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "add window to office space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623456",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-12-05",
+      "status_date": "1997-06-05",
+      "estimated_cost": 6000,
+      "description": "finish off bathroom under pa 9621308 install new alum doors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-04",
+      "status_date": "1996-11-08",
+      "estimated_cost": 1200,
+      "description": "add trellis to fence,install redwd fence to r.parapet wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-11",
+      "status_date": "1996-11-08",
+      "estimated_cost": 1,
+      "description": "revise to app #9111405/s1/r2 change roof construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605470",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-04-02",
+      "status_date": "1996-11-08",
+      "estimated_cost": 2500,
+      "description": "fire sprinklers in basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-26",
+      "status_date": "1996-11-08",
+      "estimated_cost": 5000,
+      "description": "change depth of foot'g to match bot foot'g @ next door bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111405S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1991-06-28",
+      "status_date": "1996-12-04",
+      "estimated_cost": 1183908,
+      "revised_cost": 400000,
+      "description": "construct 2 family dwg/ parking / storage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1991–2023",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TEXAS&street_type=ST&address_number=165",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3986016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3986&lot=016",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3986016",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

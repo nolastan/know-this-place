@@ -1,0 +1,131 @@
+{
+  "address": "1746 35th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/35th-avenue/1746/",
+  "apn": "2015024B",
+  "block": "2015",
+  "lot": "024B",
+  "eas_baseid": "325172",
+  "coordinates": {
+    "lat": 37.754469,
+    "lng": -122.493358
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1746 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 479156,
+    "assessed_improvement_value": 319426,
+    "last_sale_date": "2001-02-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110080090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-08",
+      "status_date": "2021-10-15",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507242453",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-24",
+      "status_date": "2015-12-22",
+      "estimated_cost": 3000,
+      "revised_cost": 5000,
+      "description": "repair front balcony in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-07",
+      "status_date": "1991-12-17",
+      "estimated_cost": 1550,
+      "description": "pest control repairs per 's report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=1746",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2015024B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2015&lot=024B",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2015024B",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Henry Doelger"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "Colonial Revival"
+  },
+  "historical_record": [
+    {
+      "date": "1941",
+      "kind": "advertisement",
+      "description": "Shown as “The Courtland”, a furnished model home displayed by Henry Doelger.",
+      "source": "sunset-builders-context-statement"
+    }
+  ],
+  "unknowns": [
+    "The 2013 Sunset District builders context statement dates this house twice: the model-home table gives 1941, the Colonial Revival photograph caption on p. 96 gives 1940."
+  ]
+}

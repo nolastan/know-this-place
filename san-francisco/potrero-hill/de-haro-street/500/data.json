@@ -1,0 +1,137 @@
+{
+  "address": "500 De Haro Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/de-haro-street/500/",
+  "apn": "4008001",
+  "block": "4008",
+  "lot": "001",
+  "eas_baseid": "367183",
+  "coordinates": {
+    "lat": 37.763351,
+    "lng": -122.401775
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 7496,
+    "building_area_sqft": 2404,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0500 DE HARO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 361754,
+    "assessed_improvement_value": 195221
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606052639",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-05",
+      "status_date": "2026-06-09",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "revision to pa#202601304970, thicken and raise stem on concrete assembly, see 2/s1 & 3/s3 for more information",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202601304970",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-30",
+      "status_date": "2026-03-17",
+      "estimated_cost": 309000,
+      "revised_cost": 309000,
+      "description": "replace (e) north entry wall/fence and gate; provide (n) court yard garden podium & wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404180254",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-04-26",
+      "status_date": "2025-07-07",
+      "estimated_cost": 3000,
+      "revised_cost": 7318,
+      "description": "installing cell communicator to replace analog phone lines.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808036394",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-03",
+      "status_date": "2018-08-20",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "to comply with complaint #201864777 dated 5/18/2018 & 201869571 dated 5/24/2018; replace damaged studs, plywood & drywall, replace in-kind as required @ property line wall; apply liquid waterproofing south property line wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DE%20HARO&street_type=ST&address_number=500",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4008001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4008&lot=001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4008001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "showplace-square-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995",
+      "kind": "alteration",
+      "description": "Altered alongside new construction on the adjoining site.",
+      "source": "showplace-square-survey"
+    },
+    {
+      "date": "1942",
+      "kind": "construction",
+      "description": "Built as St. Gregory's rectory, the only purpose-built residence of its period in the survey area.",
+      "source": "showplace-square-survey"
+    }
+  ]
+}

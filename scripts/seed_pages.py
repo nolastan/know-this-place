@@ -1425,6 +1425,10 @@ def survey_panel_html(rec: dict, indent: str) -> str:
             ("ic-pin", "Eligible district", s.get("eligible_district")),
             ("ic-pin", "Within district", s.get("existing_district")),
             ("ic-ruler", "Style", s.get("style")),
+            # A survey that attributes the building to a builder is stating a
+            # finding, not repeating `building.builder` — 32 pages carried this
+            # key with nowhere to render it before the row existed.
+            ("ic-ruler", "Builder as surveyed", s.get("builder")),
             ("ic-plan", "Construction", s.get("frame")),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
@@ -2734,6 +2738,13 @@ NAME_HINT = re.compile(
     r"mr|mrs|ms|dr)\b[.:]?\s+\S"
     r"|\b(inc|llc|l\.l\.c|corp|corporation|company|associates|assoc|builders|"
     r"construction|develop(ment|ers)|partners|group|realty|properties)\b"
+    # A name can also arrive with no role label at all, introduced by a bare
+    # preposition — "walk in cooler per jesus zapien" reached a Marina page
+    # because every pattern above looks for a label the sentence never uses.
+    # Two lowercase words after "per"/"by" is noisy ("per field findings") and
+    # that is the right trade: this list is reviewed by a person, and a miss is
+    # a name on a page.
+    r"|\b(per|by)\b\s+[a-z]{2,}\s+[a-z]{2,}\b"
     r"|\b[a-z]{3,}'s\b", re.I)
 
 

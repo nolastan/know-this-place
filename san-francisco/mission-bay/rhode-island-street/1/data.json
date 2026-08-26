@@ -1,0 +1,140 @@
+{
+  "address": "1–45 Rhode Island Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission-bay/rhode-island-street/1/",
+  "apn": "3912001",
+  "block": "3912",
+  "lot": "001",
+  "eas_baseid": "366667",
+  "coordinates": {
+    "lat": 37.769227,
+    "lng": -122.402833
+  },
+  "address_range": "1–45",
+  "street_numbers_on_parcel": [
+    "1",
+    "45"
+  ],
+  "also_addressed": [
+    "66 DE HARO ST"
+  ],
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 3,
+    "lot_area_sqft": 9997,
+    "building_area_sqft": 11800,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "M2",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0000 0045 RHODE ISLAND        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1366579,
+    "assessed_improvement_value": 1216256,
+    "last_sale_date": "2005-11-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606223627",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-22",
+      "status_date": "2026-06-25",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "to comply with nov# 202654939: legalize unpermitted demolition of approximately 1400 sq ft at interior back section of the building. no follow up work required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M225327",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-18",
+      "status_date": "2010-10-18",
+      "revised_cost": 159,
+      "description": "add address for existing commerical space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302187635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-18",
+      "status_date": "2003-03-28",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "addition of 5(n) office spaces w/in existing spaces non rated non load bearing partitions minor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921067",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-03",
+      "status_date": "1990-01-30",
+      "estimated_cost": 1280,
+      "description": "furnish & i8nstall awning over entry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705255",
+      "type": "wall or painted sign",
+      "status": "complete",
+      "filed": "1987-04-23",
+      "status_date": "1992-05-13",
+      "description": "sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110208",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-12-02",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RHODE%20ISLAND&street_type=ST&address_number=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3912001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3912&lot=001",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3912001",
+      "retrieved": "2026-08-25"
+    }
+  ]
+}

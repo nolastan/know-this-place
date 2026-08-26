@@ -1,0 +1,132 @@
+{
+  "address": "76 Middlefield Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/middlefield-drive/76/",
+  "apn": "7251030",
+  "block": "7251",
+  "lot": "030",
+  "eas_baseid": "419164",
+  "coordinates": {
+    "lat": 37.732764,
+    "lng": -122.486041
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1760,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Lake Shore",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 0076 MIDDLEFIELD         DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 575252,
+    "assessed_improvement_value": 383494,
+    "last_sale_date": "2002-10-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200409164344",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-09-16",
+      "status_date": "2005-07-12",
+      "estimated_cost": 5150,
+      "revised_cost": 5150,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314108",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-17",
+      "status_date": "1993-12-17",
+      "estimated_cost": 1,
+      "description": "for renewal of 9217994",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218403",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-22",
+      "status_date": "1992-12-04",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217994",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-10-15",
+      "status_date": "1993-02-15",
+      "estimated_cost": 1000,
+      "description": "kitchen & bath upgrade",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MIDDLEFIELD&street_type=DR&address_number=76",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7251030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7251&lot=030",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7251030",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Standard Building Company"
+  },
+  "historical_record": [
+    {
+      "date": "1942",
+      "kind": "advertisement",
+      "description": "Shown as “Sunstream Security”, a furnished model home displayed by the Standard Building Company. Sunstream was the brand the Gellert brothers launched in 1939 for houses under $6,000 — sun for the Sunset, streamline for the promised streamlined life — promoted from more than 100 billboards around the neighbourhood and a Sunday radio programme.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

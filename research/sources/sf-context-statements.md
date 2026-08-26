@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 24 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 27 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 24 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 10: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) and [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved). All ten loops closed. |
-| **Remaining** | ~26 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 27 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 13: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) and [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved). All thirteen loops closed. |
+| **Remaining** | ~23 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -49,6 +49,35 @@ document you are about to mine.
   statement, check which of its parcels this repo has already documented from a
   neighbouring survey — the overlap decides where each fact can go, and the
   renderer holds one `historic_survey` panel per page.
+- **A thematic statement with no inventory can still be the densest kind.**
+  The Sunset builders statement has no appendix table, no APNs and no survey
+  results, and yielded 158 address-level facts from 121 pages — because its
+  subject is the builders, so nearly every address it prints carries a builder,
+  a build year or both. Its seams are the photograph captions that illustrate
+  the building typologies and the architectural styles, the builder biographies
+  (offices, sales offices, the builders' own houses), and above all the
+  model-home lists, which give a name, an address and a month each. Read the
+  captions and the lists before judging a themed statement thin.
+- **A page can already carry another statement's survey panel**, and the
+  renderer holds one. Check `historic_survey.source` before writing: overwrite
+  it and the neighbouring statement's finding is silently destroyed. 320 Judah
+  Street was carrying the Duboce Triangle statement's panel when this run
+  arrived. Where a page is already taken, the contribution goes to the spec
+  rows and the timeline instead.
+- **A row of buildings is not a range.** Statements print "3253 through 3259
+  Baker Street" and "the bungalows at 14-62 Avila Street" for a row of separate
+  houses, and the resolver's range machinery — built for one building with a
+  two-number address — expands the pair and then declines, because the numbers
+  are on different parcels. Record only the two numbers the source actually
+  prints, one finding each. The buildings between them are real, but their
+  numbers are an inference: the PPIE statement calls 215-287 Avila Street
+  *twelve* bungalows and 2122-2146 Bay Street *five*, spacings no enumeration
+  would have guessed.
+- **A roll build year of 1900 is a floor, not a date.** Civic and institutional
+  parcels come off the assessor's roll as built 1900 — Moscone Park, Marina
+  Middle School and Claire Lilienthal School all do — and the PPIE statement
+  says outright that 1900 on the roll may stand for something earlier. Never
+  publish it as a source-versus-assessor disagreement about a year.
 - **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
   REST content URL is built from the page's own `accesskey`. Worked examples
   throughout the per-document notes below.
@@ -173,6 +202,17 @@ document you are about to mine.
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274/content`
     — confirmed from the `SharedLinks.aspx` page's own markup rather than
     assumed. See "The Inner Mission North statement" below.
+  - San Francisco Planning Department (Mary Brown, Preservation Planner),
+    *Sunset District Residential Builders, 1925–1950 Historic Context
+    Statement*, dated April 3, 2013, adopted 2013 (121 pp.), source id
+    `sunset-builders-context-statement`. Developed to frame the 2012 Sunset
+    District Historic and Cultural Resource Survey of about 2,800 buildings,
+    and funded in part by the California Office of Historic Preservation. The
+    PDF is on `default.sfplanning.org`, not the S3 archive and not the M-Files
+    vault:
+    `https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf`
+    — a plain fetch, and `pdftotext -layout` reads it cleanly. See "The Sunset
+    builders statement" below.
   - William Kostura, *The Inner Sunset: A Historic Context Statement*,
     prepared for the San Francisco Office of Economic and Workforce
     Development, the Historic Preservation Fund Committee, and Inner Sunset
@@ -304,6 +344,38 @@ document you are about to mine.
     — confirmed from the `SharedLinks.aspx` page's own markup. Same author as
     the Inner Sunset statement, the Van Ness Auto Row survey and the Russian
     Hill statement. See "The Oceanside statement" below.
+  - Kelley & VerPlanck Historical Resources Consulting, *Showplace Square
+    Survey, San Francisco, California — Final*, prepared for the San Francisco
+    Planning Department, dated October 22, 2009, and the survey data table SF
+    Planning published with it in May 2011, adopted 2011, source id
+    `showplace-square-survey`. SF Planning lists it as "Showplace Square /
+    Northeast Mission Historic Resource Survey (Adopted 2011)" and serves its
+    six files from `default.sfplanning.org`, not the S3 archive or the M-Files
+    vault: the 130-page context statement is at
+    `http://default.sfplanning.org/Preservation/showplace_survey/Final_Context_10.22.09.pdf`,
+    the 34-page survey data table at
+    `.../Showplace_Sq_survey_data.pdf`, the two DPR 523 D district records at
+    `.../Showplace_Brick.pdf` and `.../DPR523D-ShowplaceIE-area.pdf`, and the
+    ratings key and status-code key at `.../Key-Ratings-CHRSC-CR.pdf` and
+    `.../01_CHRSC_Codes_v3.pdf`. Pages cite the landing page,
+    `https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey`,
+    which links all six. See "The Showplace Square survey" below.
+  - Architectural Resources Group (Stacy A. Farr and Sarah Hahn), *The
+    Panama-Pacific International Exposition and the Development of the Marina
+    District Historic Context Statement*, prepared for the San Francisco
+    Planning Department, 100% Draft December 14, 2022, adopted by the Historic
+    Preservation Commission May 17, 2023 (73 pp.), source id
+    `ppie-marina-context-statement`. SF Planning lists it as "The
+    Panama-Pacific International Exposition and the Development of the Marina
+    District (Adopted 2023)". Served from the same M-Files vault as Dogpatch,
+    Glen Park, Inner Mission North, Inner Sunset, OMI, Mission Dolores,
+    Japantown, Russian Hill and the Oceanside, and the REST content hash is
+    again the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583/content`
+    — while the `SharedLinks.aspx` form is what a page cites. The cover and
+    every page header read **100% Draft**; SF Planning's listing page carries
+    it under the adopted statements, so this is the adopted file. See "The PPIE
+    and Marina district statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -1731,6 +1803,78 @@ tables. Four places carry them, and the citation locator should say which.
   and the fetch.
 
 
+**The Showplace Square survey is two documents, not one, and the second is
+where the yield is.** SF Planning publishes six files under
+`default.sfplanning.org/Preservation/showplace_survey/`: Kelley & VerPlanck's
+130-page context statement of 22 October 2009, a 34-page **survey data table**
+the department itself compiled in May 2011, two DPR 523 D district records, and
+two one-page keys. The statement's own conclusion says KVP surveyed 547
+parcels; the 2011 data table carries **633 rows on 607 parcels**, so it is the
+later and wider record, and it is the one to read first.
+
+- **The data table is an Excel print, and `pdftotext -layout` cannot recover
+  its rows.** Cells are wrapped and staggered across baselines: a row's
+  assessor parcel number often sits on a different visual line from its
+  address, and a note can start a line above its own row. Every layout-text
+  parse tried here mixed adjacent buildings' architects, styles and dates. What
+  works is the PDF **content stream**: each table row begins with a `Td` that
+  returns the pen to the address column's x (52.14 in this file), so splitting
+  on those and assigning each drawn string to a column by the x it lands at
+  reconstructs the table exactly. Two independent parses agreed on 633 rows
+  and the content-stream one was right in all 167 disagreements.
+- **The 2009 statement's five appendix tables are a second inventory**, on
+  pages 116–130, and they carry what the data table does not: prior survey
+  ratings (Table 1, 79 rows — *Here Today*, the 1976 citywide survey, Heritage,
+  Article 10, the UMB survey, National Register status), structural type and
+  architect (Table 2, 28 rows with DPR 523 B forms; Table 5, 158 rows needing
+  further work), and the historic occupant of every district contributor
+  (Table 3, 98 rows) and non-contributor (Table 4, 40 rows). The counts the
+  statement's own conclusion gives — 16 and 82 district contributors, 28
+  B-forms, 158 for further work — match the parse row for row, which is the
+  cheapest check available on a table extraction.
+- **The appendix tables are rotated Word tables and each row is one `BT…ET`
+  block**, so their rows read cleanly in stream order even where their
+  baselines interleave. Reading them by y alone puts one row's occupant on its
+  neighbour.
+- **The two halves disagree, and the disagreement is the page's to carry.**
+  37 parcels get one construction date from the data table and another from the
+  appendix; 19 more are contradicted by the data table's own note. 498 Alabama
+  Street is 1941 in the table, 1910 in the appendix, and the note explains
+  both — a 1910 timber warehouse rebuilt in concrete in 1941. Status codes
+  disagree too: the appendix gives 498 Alabama 3CD, the table 6L.
+- **The note column is the richest field in the table and needs sorting before
+  use.** 349 rows carry a substantive note; about 245 of those name the firm
+  ("Golden Gate Meat co.", "Superior Blanket and curtain Cleaning Works") or
+  the use ("brass foundry", "egg and butter warehouse"), and the rest are the
+  surveyor's judgement ("Intact small-scale industrial building with finely
+  executed brick cornice"), a cross-reference ("See APN 3531013") or an
+  administrative aside. A name filter that only looks for firm suffixes takes
+  all three; the leading word is the tell, and an adjective at the head of the
+  note means it is a description, not a name.
+- **The note also carries dated events nothing else records** — 94 of them:
+  additions, rehabilitations, National Register listings, a demolition. They
+  are separate timeline facts, not part of the construction entry.
+- **Kansas Street north of 16th is Henry Adams Street today**, and the
+  statement writes it both ways ("2 Kansas (Henry Adams) Street", "101 Henry
+  Adams (Kansas) Street"). EAS holds only HENRY ADAMS, so the Kansas form does
+  not resolve — a rename with the numbers carried over, like Lexington and
+  Dupont.
+- **The survey area is the city's Mission Bay analysis neighborhood as much as
+  Potrero Hill.** 69 of its parcels come back Mission Bay from the assessor and
+  EAS, which is a directory this site did not have; Showplace Square is the
+  vernacular name for the same blocks and the neighborhood hub says so.
+- **Two rows share one parcel more often than in other statements** — 17 APNs
+  carry more than one data-table row, and the appendix repeats a parcel across
+  tables. Joining the two inventories on the APN alone attaches one row's
+  architect to its neighbour; join on the street number too, and fall back to
+  the APN only where each side has exactly one row for it.
+- **Citation label:** `Kelley & VerPlanck Historical Resources Consulting and
+  the San Francisco Planning Department, Showplace Square / Northeast Mission
+  Historic Resource Survey, context statement dated October 22, 2009, survey
+  data dated May 2011, adopted 2011`. Page source id `showplace-square-survey`;
+  pages cite the SF Planning landing page, which links all six files, and each
+  finding's locator names the file and page it came from.
+
 ## Verification log
 
 One entry per pass, oldest first. Each says what was read, what it yielded in
@@ -2549,3 +2693,218 @@ next run.
   nowhere. Coverage note: this document is read in full and nothing in it is
   outstanding. The DPR 523 A and B forms the survey produced are a separate
   corpus and are not held here.)
+
+- **Verified:** 2026-08-25 (Showplace Square / Northeast Mission: read all six
+  published files — the 130-page context statement of 22 October 2009 with its
+  five appendix tables, the 34-page survey data table of May 2011, the two DPR
+  523 D district records and the two keys, 226 pages of substance in all. The
+  data table gives 633 rows on 607 parcels; the appendix tables give 403 rows
+  on 230 parcels; the narrative names 61 distinct numbered addresses. **941
+  findings on 510 distinct number-and-street combinations**: 605 construction,
+  251 survey judgements, 56 alterations, 19 occupancies, 4 designations, 4
+  events, 1 demolition and 1 site history. **823 resolved to a parcel and 576
+  were published on 314 pages** — 252 of them created by this run — across
+  `mission` (405 facts), `mission-bay` (76), `south-of-market` (60) and
+  `potrero-hill` (35). 118 never reached a parcel: 47 are condominium
+  addresses, 40 do not exist in EAS today, 18 are parcels the roll classes as
+  condominiums, 9 are recorded ranges now split across parcels the record does
+  not choose between, 2 join to no parcel and 2 are on streets EAS does not
+  hold. 247 resolved findings were declined, almost all of them construction
+  rows whose year merely repeats the assessor's and whose survey row names no
+  occupant, architect or style. **63 conflicts are stated on pages** and 77
+  construction dates disagree with the assessor and sit unadjudicated in
+  `building.completed_conflict`; 5 of those are parcels the roll dates after
+  2011, where the building the survey described is not the one standing.
+  Never candidates, and so not recorded: the 76 rows with no construction date
+  at all, parking lots, vacant lots, highway parcels and railroad rights of
+  way, and the notes that are the surveyor's judgement rather than a fact about
+  the building. This pass created the site's `mission-bay` directory, which the
+  assessor's and EAS's analysis neighborhood gives to 69 of these parcels.
+  What it taught, beyond the cautions above: **an Excel-printed PDF table
+  cannot be read from `pdftotext -layout`** — the row boundaries are only in
+  the content stream — and **`fetch` and `decide` must read a recorded range
+  with the same code**, because when they disagreed every ranged building in
+  the batch came back "not an active parcel" with its parcel never fetched.
+  Coverage note: this document is read in full and nothing in it is
+  outstanding. The DPR 523 A and B forms the survey produced are a separate
+  corpus and are not held here.)
+
+## The Sunset builders statement
+
+A **thematic statement about builders**, not an area inventory: no appendix
+table, no APNs, no survey results, no status codes. Everything address-level is
+in the narrative and the pictures, in three seams:
+
+- **Photograph captions** — chapter 5's nine building typologies (pp. 35–40)
+  and chapter 8's fourteen architectural styles and design elements (pp. 84–100).
+  Each caption is an address, a year, and usually a builder. This is the single
+  most productive thing in the document and the easiest to skim past.
+- **Builder biographies** (ch. 6, pp. 44–70) — the offices, sales offices and
+  houses of the merchant builders, most of whom lived in the district they
+  built. The builder table on pp. 68–70 gives active years and associated
+  architects for 50 firms but no addresses; it produced no findings and is the
+  key to reading the rest.
+- **Model-home lists** (ch. 7, pp. 71–76) — 39 named model homes with an
+  address and a month each: 20 Doelger, 12 Galli, 6 Rousseau, 1 Standard
+  Building Company. The densest seam in the document.
+
+Cautions specific to it:
+
+- **The PDF text layer drops ordinal suffixes and wraps addresses across
+  lines.** "1500 36 Avenue" and "1667 32nd" are the document's own printed
+  text; "1507 and 1511 33rd Avenue", "2270 and 2274 29th Avenue" and "The
+  Courtland, 1746, 35th Avenue" are single addresses split by a comma or a
+  conjunction. A regex sweep alone misses about a dozen. Read the pages.
+- **No 1909 renumbering anywhere in the district.** The Sunset was platted in
+  1868 and built almost entirely after 1925, so every number in it is today's
+  number. The one exception in this batch is 1321 Mason Street, a pre-1906 Nob
+  Hill address inside the fire line, which cannot refer to a standing building
+  and is not in EAS today.
+- **EAS spells it `SAINT FRANCIS BLVD`**, not `ST FRANCIS`. The resolver needs
+  `--alias "ST FRANCIS=SAINT FRANCIS"`.
+- **A builder attributed by page layout is not attributed.** Several style and
+  typology captions sit inside a builder's biography without naming him. The
+  caption at 1451 31st Avenue was published without a builder for exactly this
+  reason: placement is not a statement, and the builder's own recorded
+  territory in the text did not clearly cover the block.
+- **The statement disagrees with itself once**, on 1746 35th Avenue: 1941 in
+  the model-home table, 1940 in the Colonial Revival caption. Stated on the
+  page's `.unknowns`, unadjudicated.
+- **The builders' own houses are in scope and their buyers are not.** The
+  document names six merchant builders' residences with directory date ranges,
+  which the root AGENTS.md permits as individuals from the historical record.
+  It also names the veterans who bought two Veterans' Welfare Board houses, the
+  owners who commissioned four others, and the households of the 1940 census
+  analysis. Those are private people and none of them reached a page.
+- **The 2012 survey's own product is not in this document.** The survey
+  results, the DPR 523 forms and the "Picturesque Period Revival Tracts"
+  district that many of these pages already carry from `sf-historic-districts`
+  are separate; this is the evaluative framework written ahead of them.
+
+- **Verified:** 2026-08-25 (Sunset builders: read all 121 pages — the eleven
+  chapters, every photograph caption, every footnote, the 50-firm builder table
+  on pp. 68–70 and the bibliography. **158 findings, 143 published on 143
+  pages**, 131 of them created by this run, across `sunset-parkside` (114
+  facts), `west-of-twin-peaks` (11), `inner-sunset` (10) and six other
+  directories with one or two each. 14 never reached a parcel, all of them the
+  same way: the address does not exist in EAS today (5408 Geary, 44 and 1
+  Sloat, 346 Santiago, 2194 30th, 1729 27th, 379 Yerba Buena, 1630 Ocean, 1399
+  21st, 1545 34th, 1590 39th, 2161 Vicente, 1321 Mason), plus 550 Taraval,
+  which EAS holds but cannot join to a parcel. One resolved finding was
+  declined: 320 Judah Street already states its 1940 addition from the Inner
+  Sunset statement's landmark record. **5 conflicts are stated on pages** and
+  one construction date disagrees with the assessor — 320 Judah, dated 1932
+  here and 1940 on the roll, which is the addition year. Four occupancy facts
+  sit on parcels the roll dates after the fact (1500 Judah 1959, 948 Taraval
+  1956, 200 Casitas 1953, 2049 Irving 1950); each says so in `.unknowns` rather
+  than pretending the building is the same one. Never candidates, and so not
+  recorded: about twenty block-level references with no street number, and
+  eight addresses that appear only as a private person's home. What it taught,
+  beyond the cautions above: a page may already hold another statement's
+  `historic_survey` panel, and the renderer keeps one — check the panel's
+  `source` before writing or the neighbouring finding is destroyed silently.
+  Coverage note: this document is read in full and nothing in it is
+  outstanding. The 2012 survey results it was written to frame are a separate
+  corpus and are not held here.)
+
+## The PPIE and Marina district statement
+
+A **district statement with no inventory** — no appendix table of properties,
+no APNs, no survey results, no status codes. It has instead an **Appendix A
+table of the people who built the district**, and that table is the densest
+address-level thing in the document: nineteen developers, builders and
+architects, each with a background paragraph and a "Known Examples" column
+giving a year and a street number or a range. Read Appendix A first.
+
+The other three seams, in descending order of yield:
+
+- **Photograph captions**, §4.7 property types (pp. 35–41) and §4.8
+  architectural styles (pp. 44–48). Each names a building or a row and states
+  its type or its style. There are no years in them; the date that pins them is
+  the district's own build-out, which the statement dates 1924–1940 (and
+  1907–1940 for the blocks south of Chestnut Street that lay outside the
+  fairgrounds).
+- **§4.6, the second phase of development** (pp. 28–33) — the two public
+  schools with their architects and years, the Marina Corporation's own
+  principals' houses, the Safeway, and the district's first apartment building.
+- **§1, the preface** (p. 2) — the six properties in the district already
+  designated or already identified by another citywide statement: the Palace of
+  Fine Arts, the Marina Branch Library, the SF Gas Light Company headquarters,
+  the Moscone Recreation Center, the Presidio Theatre, and four post-war
+  buildings from the Modern Architecture statement.
+
+Cautions specific to it:
+
+- **Appendix A is printed twice.** Campbell & Hooper, Hall & Hamill, William
+  Staller and Edward A. Janssen each appear in full a second time on the last
+  two pages of the table, same text, renumbered footnotes. Read past the
+  repeat; it is not new material.
+- **It contradicts itself four times**, all four stated on pages and none
+  adjudicated: the Marina Branch Library is 1953 on p. 41 and 1954 on p. 43;
+  2250 North Point Street is 1928 under Ebbets and 1929 under Irvine; the
+  Sbarboro, Detjen & Jorgensen flats row on Francisco Street is 2225–2255 in
+  the Figure 30 caption and 2229–2269 in Appendix A; and the Marina Safeway is
+  11 Marina Boulevard on p. 2, 15 Marina Boulevard on p. 33 and 3372 Marina
+  Boulevard on p. 40.
+- **The two-column text layer interleaves facing captions.** `pdftotext
+  -layout` splices one caption's street onto the other's numbers, so a regex
+  sweep produces addresses that are not in the document. Read the captions in
+  the layout. One of them is mangled at the source, not by the extraction:
+  Figure 40 prints "1954-1956 through 1560-1562 Jefferson Street", where the
+  high end has lost its leading 9.
+- **The Marina district's civic parcels come off the roll as built 1900**,
+  which is the roll's floor value rather than a construction date — Moscone
+  Park, Marina Middle School and Claire Lilienthal School all carry it, and the
+  statement itself warns on p. 40 that 1900 on the roll may stand for something
+  earlier. Do not publish it as a disagreement about a year; say what is
+  actually true, which is that the roll gives the parcel one year and the
+  parcel holds buildings of several.
+- **No 1909 renumbering anywhere in the district.** The fairground blocks were
+  laid out from 1917 and the streets inside them — Avila, Alhambra, Capra,
+  Casa, Cervantes, Mallorca, Prado, Retiro, Rico, Toledo — did not exist
+  before. Only Chestnut, Lombard, Pierce and the north-south streets running
+  down from them predate the fair, and every number in this batch resolved to
+  today's number.
+- **Condominium conversion takes out an eighth of the batch.** Thirteen of the
+  109 findings land on parcels the roll classes as condominiums with zero lot
+  area — 19, 21, 66 and 285 Mallorca Way, 19 Retiro Way, 14 Avila Street, 3314
+  and 3353 Scott Street, 3515 Pierce Street, 2225 Beach Street, 2269 and 2255
+  Francisco Street, 3256 Octavia Street. The Marina's 1920s flats buildings are
+  exactly what gets converted, so expect this rate on any Marina-area source.
+- **Three of its addresses no longer exist in EAS**: 1601 Bay Street (the
+  Hennessey Field bleachers, which have no addressable point), 73 Rico Way (71
+  and 77 exist, 73 does not) and 1541 Montgomery Street, Julius' Castle, where
+  EAS stops at 1531 — a City Landmark this site cannot give a page to.
+- **Three buildings it names are outside San Francisco**: the Holt Industries
+  Pavilion at 605 Woodmont Avenue in Berkeley, the Central Tea Traders'
+  Teahouse at 815 Belmont Avenue in Belmont, and the Victor Company Pavilion at
+  1800 5th Avenue in San Rafael, all moved off the fairground after the fair.
+- **The architects' biographies name buildings elsewhere in the city** — 414
+  Mason Street, 975 Bush Street, 1755 Van Ness Avenue, 1541 Montgomery Street —
+  and those are real findings on real pages a long way from the Marina.
+
+- **Verified:** 2026-08-25 (PPIE and the Marina district: read all 73 pages —
+  sections 1–7, every figure caption, every footnote, and the Appendix A table
+  of developers, builders and architects, including its duplicated last two
+  pages. **109 findings, 86 published on 86 pages**, 85 of them created by this
+  run, across `marina` (84 facts), `nob-hill` (1) and `pacific-heights` (1). 21
+  never reached a parcel: 13 condominiums, 5 rows whose printed numbers are now
+  on different parcels, and 3 addresses EAS no longer holds. Two resolved
+  findings were declined, both duplicates — 414 Mason Street already carries
+  the Native Sons Building's 1911 date and Righetti & Headman's authorship from
+  the Corbett Heights and Russian Hill statements, and the Francisco Street
+  flats row reaches one parcel twice under the statement's two spellings of its
+  range. **4 conflicts are stated on pages** and 13 construction dates disagree
+  with the assessor, mostly by a year, which is the ordinary gap between a
+  newspaper's contract notice and the roll's completion year. What it taught,
+  beyond the cautions above: **a row is not a range.** A caption that says
+  "3253 through 3259 Baker Street" or "the bungalows at 14-62 Avila Street"
+  describes a row of separate buildings, and the resolver's range machinery —
+  built for one building with a two-number address — expands it and then
+  declines because the numbers are on different parcels. The rule this run
+  settled on is to record only the two numbers the source actually prints, one
+  finding each, because the numbers in between are an inference and this
+  document twice proves the inference wrong: it calls 215-287 Avila Street
+  *twelve* bungalows and 2122-2146 Bay Street *five*, spacings no enumeration
+  would guess. Coverage note: this document is read in full and nothing in it
+  is outstanding.)

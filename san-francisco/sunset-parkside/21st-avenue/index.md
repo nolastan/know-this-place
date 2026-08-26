@@ -4,6 +4,7 @@ The parcels on 21st Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1658](1658/) — A 1928 single-family house, with one permit record from 2006.
 - [2407](2407/) — A 1912 single-family house, with dry-rot repair permitted in 1999.
 - [2418](2418/) — A 1912 single-family house, with a bathroom remodel permitted in 2022.
 - [2434](2434/) — A 1912 single-family house, with a rear addition permitted in 1999.

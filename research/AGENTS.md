@@ -391,6 +391,32 @@ rather than just accumulate.
   just wrote, and test against the raw permit text rather than the tool's own
   flags.*
 
+- **A row of buildings is not a range, and the resolver cannot tell them
+  apart.** `resolve_eas.py` expands a recorded range on the assumption it is
+  one building with a two-number address, which is right for "1940–1946
+  Fillmore Street" and wrong for "3253 through 3259 Baker Street" — a row of
+  four houses on four parcels, which it then declines. The fix is at extraction
+  time, not in the tool: record only the two numbers the source actually
+  prints, one finding each. The buildings between them are real, but their
+  numbers are an inference, and a source will tell you so if you let it — the
+  PPIE statement calls 215-287 Avila Street *twelve* bungalows and 2122-2146
+  Bay Street *five*, spacings that enumerating by parity would have got wrong
+  both times.
+- **A privacy filter built from role words also misses the bare preposition.**
+  The `one-stop:` lesson above widened `NAME_HINT` to catch DBI's intake
+  prefix; it still let "walk in cooler per jesus zapien" onto a Marina page,
+  because "per" introduces a name with no label at all. The pattern now flags
+  two lowercase words after `per` or `by`, which is noisy — "per field
+  findings" flags too — and that is the right trade for a list a person
+  reviews. *Every widening of this filter so far has come from a name that
+  reached a page. Check the pages you just wrote, not the filter's own output.*
+- **A roll build year of 1900 is a floor value, not a construction date.**
+  Civic and institutional parcels come off the assessor's secured roll as built
+  1900, and the PPIE statement says outright that 1900 on the roll may stand
+  for something earlier. Publishing it as a source-versus-assessor
+  disagreement invents a conflict that isn't there. Where the parcel holds
+  several buildings of several dates, say that instead.
+
 ## Filing work
 
 An issue is how a run hands off what it couldn't finish, and how it asks a human
@@ -463,3 +489,30 @@ The mechanics:
   that changes what appears on a page under `san-francisco/**` (that is the root
   `AGENTS.md`'s territory, not this file's).
 - Everything else is yours to change.
+
+- **An Excel-printed PDF table has no rows in its text layer.** The Showplace
+  Square survey data is an `.xlsx` printed to PDF: cells wrap, and a row's
+  parcel number, address and note sit on three different baselines, sometimes
+  above one another's rows. `pdftotext -layout` and every y-clustering parse
+  built on it mixed adjacent buildings' architects, styles and dates. The row
+  boundaries are in the **content stream**, where each row starts with a `Td`
+  that returns the pen to the first column's x; splitting there and taking each
+  drawn string's column from its x rebuilt all 633 rows, and disagreed with the
+  layout parse on 167 fields — correctly, every time. *Where a table's rows
+  matter, read the content stream, not the rendered text; and parse it twice by
+  different means and diff the two before trusting either.*
+- **Two readers of the same field will eventually disagree, and the failure is
+  silent.** `resolve_eas.py` parsed `address_range_as_recorded` in two places —
+  once to decide which parcels to fetch, once to decide a finding — with two
+  copies of the regex. A batch that wrote its ranges in a shape only one copy
+  accepted had every ranged building's parcel left unfetched, and then declined
+  those findings for "not an active parcel in sf-parcels", which is a sentence
+  about the city rather than about the tool. 57 findings. *One reader per
+  field; and when a lookup fails, check that what it looked up was ever
+  fetched.*
+- **A filter built from suffixes takes the sentences too.** The survey's note
+  column names the firm for most buildings and describes the architecture for
+  the rest, and a name-detector keyed on "Co.", "&" and capitalisation read
+  "Intact small-scale industrial building with finely executed brick cornice"
+  as an occupant and put it on a page. The leading word is the tell: an
+  adjective at the head of a note means the surveyor is describing, not naming.

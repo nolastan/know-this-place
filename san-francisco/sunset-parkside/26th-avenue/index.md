@@ -5,6 +5,7 @@ The parcels on 26th Avenue documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1338](1338/) — A 1913 single-family house, with a bathroom remodel permitted in 2003.
+- [1855](1855/) — A 1939 single-family house, with one permit record from 1984.
 - [2431](2431/) — A 1916 single-family house, with a kitchen and bathroom remodel permitted in 2020.
 - [2451](2451/) — A 1916 single-family house, with a vertical addition permitted in 2008.
 - [2462](2462/) — A 1913 single-family house, with a rear addition permitted in 1990.

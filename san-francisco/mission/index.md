@@ -4,8 +4,10 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 
 ## Streets documented so far
 
-- [11Th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
-- [12Th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
+- [10th Street](10th-street/) — 2 buildings, built 1927–1988.
+- [11th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
+- [12th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
+- [13th Street](13th-street/) — 2 buildings, built 1954–1986.
 - [14th Street](14th-street/) — 46 buildings, built 1898–1975; 2 in the Ramona Street Historic District.
 - [15th Street](15th-street/) — 36 buildings, built 1875–2017; 4 in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District.
 - [16th Street](16th-street/) — 29 buildings, built 1905–2021; 5 in the 16th and Valencia Streets Post-Fire Historic District.
@@ -22,6 +24,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [27th Street](27th-street/) — 1 building, built 1916.
 - [Adair Street](adair-street/) — 5 buildings, built 1902–1911.
 - [Alabama Street](alabama-street/) — 141 buildings, built 1900–2009; 15 in the Alabama Street Pioneers Historic District.
+- [Alameda Street](alameda-street/) — 2 buildings, built 1956–2009.
 - [Albion Street](albion-street/) — 40 buildings, built 1906–1990; 9 in the 16th and Valencia Streets Post-Fire Historic District.
 - [Alvarado Street](alvarado-street/) — 17 buildings, built 1880–1983.
 - [Ames Street](ames-street/) — 1 building, built 1902.
@@ -31,6 +34,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Bernice Street](bernice-street/) — 3 buildings, built 1907–1997; 2 in the Western SOMA Light Industrial and Residential Historic District.
 - [Bird Street](bird-street/) — 4 buildings, built 1900–1966.
 - [Brady Street](brady-street/) — 3 buildings, built 1906–1912; 1 in the Market Street Masonry Historic District.
+- [Brannan Street](brannan-street/) — 1 building, built 1917.
 - [Brosnan Street](brosnan-street/) — 8 buildings, built 1900–1936.
 - [Bryant Street](bryant-street/) — 196 buildings, built 1890–2023; 28 in the East Mission Florida-to-Hampshire Streets Historic District.
 - [Caledonia Street](caledonia-street/) — 1 building, built 1908.
@@ -44,6 +48,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Cunningham Place](cunningham-place/) — 3 buildings, built 1901–1910; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
 - [Cypress Street](cypress-street/) — 3 buildings, built 1900–1915.
 - [Dearborn Street](dearborn-street/) — 11 buildings, built 1900–1926.
+- [Division Street](division-street/) — 1 building, built 1952.
 - [Dolores Street](dolores-street/) — 138 buildings, built 1895–2019; 20 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
 - [Dolores Terrace](dolores-terrace/) — 9 buildings, built 1906–1997.
 - [Dorland Street](dorland-street/) — 16 buildings, built 1906–1939.
@@ -52,6 +57,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Elgin Park](elgin-park/) — 16 buildings, built 1906–1963; 12 in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [Elizabeth Street](elizabeth-street/) — 11 buildings, built 1885–1958; 4 in the Horner's Addition East Historic District.
 - [Enterprise Street](enterprise-street/) — 1 building, built 1900.
+- [Erie Street](erie-street/) — 3 buildings, built 1938–1953.
 - [Fair Oaks Street](fair-oaks-street/) — 114 buildings, built 1870–1978; 46 in the Fair Oaks Street Historic District.
 - [Florida Street](florida-street/) — 164 buildings, built 1885–2020; 12 in the East Mission Florida-to-Hampshire Streets Historic District.
 - [Folsom Street](folsom-street/) — 179 buildings, built 1879–2021; 18 in the South Mission Avenues and Alleys Historic District.
