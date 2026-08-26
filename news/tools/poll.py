@@ -3,7 +3,7 @@
 
     python3 news/tools/poll.py poll                  # every open feed
     python3 news/tools/poll.py poll --feed sfist     # one of them
-    python3 news/tools/poll.py poll --dry-run        # screen without moving cursors
+    python3 news/tools/poll.py poll --dry-run        # screen, writing nothing at all
     python3 news/tools/poll.py status                # cursors, at a glance
     python3 news/tools/poll.py screen "a headline"   # why the screen rules the way it does
     python3 news/tools/poll.py find "1234 Valencia Street"   # does this address have a page?
@@ -648,7 +648,18 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
 
     run = {"run": today, "polled": polled, "items": queued, "skipped": [
         {k: s[k] for k in ("feed", "title", "url", "reason") if k in s} for s in skipped]}
-    if queued or skipped:
+    if not (queued or skipped):
+        print("\nNothing new.")
+    elif dry_run:
+        # A dry run writes no queue file. The queue is the durable worklist and
+        # the cursor is not, so one written here would list items screened
+        # against cursors that never moved — work the next real run would do
+        # again, from a file claiming it had already been done. Worse where a
+        # real queue exists: the append path below would mix these items into a
+        # worklist someone is part-way through draining.
+        print(f"\n{len(queued)} to read, {len(run['skipped'])} skipped "
+              f"(--dry-run: no queue file written)")
+    else:
         QUEUE.mkdir(parents=True, exist_ok=True)
         path = QUEUE / f"{today}.json"
         if path.exists():  # a second run the same day appends rather than clobbers
@@ -661,13 +672,11 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
                         encoding="utf-8")
         print(f"\n{len(run['items'])} to read, {len(run['skipped'])} skipped "
               f"→ {path.relative_to(REPO)}")
-    else:
-        print("\nNothing new.")
 
     if not dry_run:
         save_cursors(cursors)
     else:
-        print("(--dry-run: cursors not moved)")
+        print("(--dry-run: cursors not moved, no queue file written)")
     return 0
 
 
@@ -739,7 +748,8 @@ def main() -> int:
     p.add_argument("--feed", action="append", default=[], help="only this feed id")
     p.add_argument("--backfill-days", type=int, default=14,
                    help="on a feed's first run, ignore items older than this (default 14)")
-    p.add_argument("--dry-run", action="store_true", help="screen without moving cursors")
+    p.add_argument("--dry-run", action="store_true",
+                   help="screen without moving cursors or writing a queue file")
     p.add_argument("--all", action="store_true", dest="queue_all",
                    help="queue every new item, screening nothing out")
 
