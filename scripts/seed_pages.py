@@ -43,6 +43,7 @@ import argparse
 import collections
 import html
 import json
+import math
 import re
 import sys
 import time
@@ -121,7 +122,7 @@ HISTORIC_SELECT = ",".join((
 PERMIT_SELECT = ",".join((
     "permit_number", "permit_type_definition", "status", "status_date", "filed_date",
     "permit_creation_date", "estimated_cost", "revised_cost", "description",
-    "block", "lot", "street_number", "street_name", "street_suffix"))
+    "block", "lot", "street_number", "street_name", "street_suffix", "location"))
 DISTRICT_SELECT = "name_1,cr,nr,a10,a11,pos_1,description,the_geom"
 
 
@@ -371,6 +372,18 @@ STREET_TYPE_WORD = {
     "RD": "road", "HWY": "highway", "STWY": "stairway", "WALK": "walk", "PARK": "park",
     "CIR": "circle", "PLZ": "plaza", "ROW": "row", "PATH": "path", "STPS": "steps",
 }
+# DBI abbreviates street types differently from EAS — EAS writes AVE/CIR/TER/WAY,
+# DBI writes Av/Cr/Tr/Wy — so the two can only be compared through a shared
+# token. Mapping DBI's spelling onto the same words `STREET_TYPE_WORD` already
+# uses for EAS gives that token without a second parallel vocabulary to keep in
+# step. Both vocabularies were read off the live datasets; DBI's tail (Sq, Cg,
+# So, No) has no EAS counterpart, and `type_key` leaves those as themselves.
+PERMIT_TYPE_WORD = {
+    "ST": "street", "AV": "avenue", "BL": "boulevard", "DR": "drive", "WY": "way",
+    "TR": "terrace", "CT": "court", "PL": "place", "LN": "lane", "HY": "highway",
+    "RD": "road", "PZ": "plaza", "CR": "circle", "PK": "park", "AL": "alley",
+    "SW": "stairway", "RW": "row", "WK": "walk", "HL": "hill", "PG": "passage",
+}
 ORDINAL = re.compile(r"^\d+(ST|ND|RD|TH)$", re.I)
 # EAS zero-pads the single-digit numbered streets — "03RD", "05TH" — so they
 # sort as text. The city doesn't: the street is Third Street, and the directory
@@ -387,6 +400,21 @@ ORDINAL_WORD = {"1ST": "First", "2ND": "Second", "3RD": "Third", "4TH": "Fourth"
 def unpad(token: str) -> str:
     m = PADDED_ORDINAL.match(token or "")
     return m.group(1) if m else token
+
+
+def type_key(stype: str, permit: bool = False) -> str:
+    """One street type, in a spelling EAS and DBI can be compared in.
+
+    Returns "" for a missing type. `attach_permits` treats that as a wildcard on
+    the permit side — 15,982 DBI rows carry an address with no suffix at all,
+    and a handful of streets (Broadway, The Embarcadero) genuinely have none —
+    so an absent suffix must not be read as evidence of a *different* street.
+    """
+    raw = (stype or "").strip().upper()
+    if not raw:
+        return ""
+    table = PERMIT_TYPE_WORD if permit else STREET_TYPE_WORD
+    return table.get(raw, raw)
 
 
 def street_slug(name: str, stype: str) -> str | None:
@@ -2029,6 +2057,12 @@ def build_inventory(data: dict) -> list:
                 if (a["street_name"], a.get("street_type", "")) != (sname, stype)],
             "lat": float(lead["latitude"]),
             "lng": float(lead["longitude"]),
+            # Every address point on the parcel, not just the lead one, so
+            # `attach_permits` can measure a permit against the parcel's real
+            # extent. Most parcels are one building and these points sit on top
+            # of each other; APN 1300001 is the whole Presidio and has 741 of
+            # them spread over two kilometres.
+            "points": [(float(a["latitude"]), float(a["longitude"])) for a in addrs],
             "zip": lead.get("zip_code"),
             "eas_baseid": lead.get("eas_baseid"),
             "supervisor": lead.get("supervisor"),
@@ -2040,9 +2074,64 @@ def build_inventory(data: dict) -> list:
     return rows
 
 
+# How far a permit's own geocode may sit from the parcel's address points
+# before it is treated as belonging to some other building. Generous on
+# purpose: DBI's point and EAS's point for the same address routinely differ by
+# a hundred metres or so, and the failure this guards against — a permit filed
+# on a *different street of the same name* — misses by kilometres, not by
+# blocks. Measured against block 1300 (the Presidio) the legitimate permits sit
+# at most 107m out while the foreign ones land at 3.3km and 4.0km.
+PERMIT_MAX_DRIFT_M = 250.0
+
+
+def _metres(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    """Flat-earth distance. Fine over the few kilometres that separate two SF parcels."""
+    return math.hypot((lat1 - lat2) * 111320.0,
+                      (lng1 - lng2) * 111320.0 * math.cos(math.radians(lat1)))
+
+
+def permit_near(p: dict, points: list) -> bool:
+    """Is this permit's own geocode consistent with the parcel's address points?
+
+    DBI's block and lot are not trustworthy on their own. San Francisco has
+    several streets of the same name — the Presidio keeps its own Montgomery
+    Street, Lincoln Boulevard and Mason Street alongside the downtown ones, and
+    Treasure Island repeats names too — and DBI resolves an address to a parcel
+    with the same ambiguity this seeder has to avoid. Thirteen permits for 101
+    Montgomery Street in the Financial District are stamped block 1300 lot 001,
+    which is the Presidio; four for 640 Mason Street on Nob Hill are stamped the
+    same way. Nothing in the permit row's block, lot, street name or number
+    separates those from the real thing. Its coordinates do.
+
+    A permit with no point cannot be judged and is kept: 3,286 of DBI's 1.29m
+    rows have no `location`, and dropping an old permit for being old is a worse
+    error than the one this is preventing.
+    """
+    loc = (p.get("location") or {}).get("coordinates")
+    if not loc or not points:
+        return True
+    lng, lat = loc[0], loc[1]
+    return any(_metres(lat, lng, a, b) <= PERMIT_MAX_DRIFT_M for a, b in points)
+
+
 def attach_permits(inv: list, permits: list) -> None:
-    """Join permits onto parcels by block+lot, and by street number for older
-    records that carry an address but no block/lot."""
+    """Join permits onto parcels by block+lot, and by street address as a fallback.
+
+    The fallback is not, as it once claimed, for records that carry an address
+    but no block/lot: every one of DBI's 1.29m permit rows has both, and the
+    corpus is fetched with `block in (...)` anyway, so a block-less row could
+    never reach here. What it actually recovers is a permit filed against a
+    *different* lot for the same street address — a retired lot number from
+    before a block was re-parcelized, or a neighbouring lot in the same
+    development. That is worth keeping, but it has to be matched on the whole
+    street identity: keyed on name and number alone, "101 MONTGOMERY" matches
+    two streets on opposite sides of the city, and Kirkwood Avenue's numbers
+    recur across twenty lots.
+
+    Both joins are then filtered through `permit_near`, because the block+lot
+    join is no safer than the fallback — DBI mis-resolves duplicated street
+    names into the block field itself.
+    """
     by_bl: dict = collections.defaultdict(list)
     by_addr: dict = collections.defaultdict(list)
     for p in permits:
@@ -2054,13 +2143,21 @@ def attach_permits(inv: list, permits: list) -> None:
         if row["status"] != "seedable":
             continue
         roll = row["roll"]
+        points = row.get("points") or [(row["lat"], row["lng"])]
+        want_type = type_key(row.get("street_type"))
         cands = list(by_bl.get((roll.get("block"), (roll.get("lot") or "").lstrip("0")), []))
         for n in row["numbers"]:
-            cands += by_addr.get((row["street_name"].upper(), n.lstrip("0")), [])
+            for p in by_addr.get((row["street_name"].upper(), n.lstrip("0")), []):
+                got = type_key(p.get("street_suffix"), permit=True)
+                # "" is DBI declining to record a suffix, not a claim that the
+                # street has none, so it matches whatever the parcel is on.
+                if got and got != want_type:
+                    continue
+                cands.append(p)
         seen, plist = set(), []
         for p in cands:
             pn = p.get("permit_number")
-            if not pn or pn in seen:
+            if not pn or pn in seen or not permit_near(p, points):
                 continue
             seen.add(pn)
             plist.append(p)
