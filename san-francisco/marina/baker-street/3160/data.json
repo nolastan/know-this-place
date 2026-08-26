@@ -1,0 +1,129 @@
+{
+  "address": "3160 Baker Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/baker-street/3160/",
+  "apn": "0931025A",
+  "block": "0931",
+  "lot": "025A",
+  "eas_baseid": "290708",
+  "coordinates": {
+    "lat": 37.800342,
+    "lng": -122.446074
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1411,
+    "building_area_sqft": 1398,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3160 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1999200,
+    "assessed_improvement_value": 856800,
+    "last_sale_date": "2023-07-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201306240323",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-24",
+      "status_date": "2013-08-09",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair damage dry rot at left front corner; replace stucco in kind approx. 120 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408030523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-03",
+      "status_date": "2005-06-03",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "3/f:(n)master bath/closter,remodel (e)bath,2/f-remodel (e)kitchen/bath,1/f-(n)bath,storage closet,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312703",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-07-28",
+      "status_date": "1994-12-13",
+      "estimated_cost": 15000,
+      "description": "bath & kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-05-03",
+      "status_date": "1993-08-02",
+      "estimated_cost": 3200,
+      "description": "repair existing deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=3160",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0931025A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0931&lot=025A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0931025A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "The PPIE and the Development of the Marina District Historic Context Statement (2023)",
+    "source": "ppie-marina-context-statement",
+    "style": "Mediterranean Revival",
+    "note": "Mediterranean Revival — the commonest style in the Marina district, its stucco walls tinted in pale warm colours under a low red-tiled roof, with arched openings and applied ornament from swags to wrought-iron balconies."
+  }
+}

@@ -4,6 +4,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [975–985](975/) — A 1927 hotel in the Lower Nob Hill Apartment Hotel Historic District, with facade work permitted in 2009.
 - [1267](1267/) — A 1917 garage, with a seismic retrofit permitted in 2003.
 - [1270](1270/) — A 1914 garage, with stair work permitted in 2024.
 - [1348–1380](1348/) — A 1900 store building, with a seismic retrofit permitted in 1991.
