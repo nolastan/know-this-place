@@ -46,6 +46,11 @@
         "method": "EAS exact match on 102 MONTGOMERY ST → parcel 1300001; sf-parcels has blklot 1300001 active, 428–434 AMATURY; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 3550 WEST PACIFIC AV. EAS puts 101, 102, 103, 104, 105, 106 MONTGOMERY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 101.",
         "checked_on": "2026-08-25",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "pending",
+        "pr": "https://github.com/nolastan/know-this-place/pull/166",
+        "note": "Resolved, but the parcel is not a building. APN 1300001 is 154,756 sq ft of the Presidio Main Post carrying 41 EAS addresses across Montgomery Street, Mason Street and Taylor Road; the 2025 roll classes it \"Vacant Lot Public Use\" and files it as 3550 WEST PACIFIC AV, describing none of the 1896 barracks the story is about. A page at /san-francisco/presidio/montgomery-street/101/ was seeded, read and removed unpublished. Two further faults confirmed on that draft: the seeder found no neighborhood hub for `presidio`, and scripts/seed_pages.py `attach_permits` joins permits on street name and number with no street type or block constraint, so the draft carried permits from 101 Montgomery Street downtown — including a fire-alarm permit for the Montgomery BART station, \"aka 598 market st\". San Francisco has two Montgomery Streets. The seeder does not refuse a parcel like this one, so the refusal is recorded here instead."
       }
     }
   ]
