@@ -1801,7 +1801,13 @@ def unknowns_html(rec: dict) -> str:
     # "Completed" row two blocks up.
     if not p.get("year_built") and not b.get("completed"):
         missing.insert(0, "the year the building went up")
-    listing = ", ".join(missing[:-1]) + f" and {missing[-1]}"
+    # One gap left is the normal case on a well-documented page, and the
+    # join above turns it into a dangling "Not yet documented: and the early
+    # tenants." It stayed hidden while every page had at least two gaps —
+    # "the architect and builder" was always one of them — and surfaced the
+    # first time a run filled in both.
+    listing = (missing[0] if len(missing) == 1
+               else ", ".join(missing[:-1]) + f" and {missing[-1]}")
     note = ""
     hs = rec.get("historic_status") or {}
     hy, ry = hs.get("yearbuilt"), p.get("year_built")
