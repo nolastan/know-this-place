@@ -32,6 +32,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -80,6 +81,12 @@ def fetch(url: str, timeout: int = 30, budget: int = 90, tries: int = 3) -> byte
                         break
                     buf.extend(chunk)
             return bytes(buf)
+        except urllib.error.HTTPError as exc:
+            # A 404 is an answer, not a transport failure. Retrying one costs
+            # 25s of sleeps to be told the same thing three times, and the page
+            # walk in fetch_feed() ends on exactly this.
+            if exc.code == 404 or attempt == tries - 1:
+                raise
         except Exception as exc:  # noqa: BLE001 — any transport error is retryable
             if attempt == tries - 1:
                 raise
@@ -277,9 +284,14 @@ def fetch_feed(feed: dict, pages: int) -> list[dict]:
     lists, however large it is set. WordPress serves the rest through `?paged=N`,
     and that is the only way back past the front page.
 
-    **A feed asked for a page past its last does not 404.** It serves its last
-    page again, so walking until the fetch fails would loop forever; the stop is
-    a page that adds no id the previous pages did not already hold.
+    **The end of the archive arrives as a 404**, and both feeds measured serve
+    it as a valid RSS document titled "Page not found" with no items in it. So
+    the walk stops on either signal — the 404, or a page that adds no id the
+    earlier pages did not already hold — and it stops by *returning what it has*
+    rather than raising. Letting the 404 out of here would be a real loss: it
+    reaches poll() as a feed-level failure, which discards every page already
+    walked and leaves the cursor unmoved. Asking for more pages than a feed has
+    is the normal way to backfill one, not an error.
 
     Paging is an RSS affordance. An html feed is a section page whose paging is
     its own, and a Bluesky feed has none, so both stay at one page.
@@ -289,8 +301,13 @@ def fetch_feed(feed: dict, pages: int) -> list[dict]:
     seen: set[str] = set()
     out: list[dict] = []
     for page in range(1, max(1, pages) + 1):
-        items = PARSERS[feed["kind"]](fetch(paged_url(feed["url"], page)), feed)
-        fresh = [i for i in items if i["id"] not in seen]
+        try:
+            body = fetch(paged_url(feed["url"], page))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404 and page > 1:
+                break       # walked off the end of the archive
+            raise           # page 1 is the feed itself; that 404 is a real fault
+        fresh = [i for i in PARSERS[feed["kind"]](body, feed) if i["id"] not in seen]
         if not fresh:
             break
         seen.update(i["id"] for i in fresh)
