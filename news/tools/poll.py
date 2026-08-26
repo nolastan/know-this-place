@@ -4,6 +4,7 @@
     python3 news/tools/poll.py poll                  # every open feed
     python3 news/tools/poll.py poll --feed sfist     # one of them
     python3 news/tools/poll.py poll --dry-run        # screen, writing nothing at all
+    python3 news/tools/poll.py poll --pages 20 --backfill-days 36500   # backfill a new feed
     python3 news/tools/poll.py status                # cursors, at a glance
     python3 news/tools/poll.py screen "a headline"   # why the screen rules the way it does
     python3 news/tools/poll.py find "1234 Valencia Street"   # does this address have a page?
@@ -255,6 +256,48 @@ def parse_html(body: bytes, feed: dict) -> list[dict]:
 PARSERS = {"rss": lambda body, feed: parse_rss(body),
            "bluesky": lambda body, feed: parse_bluesky(body),
            "html": parse_html}
+
+
+def paged_url(url: str, page: int) -> str:
+    """A WordPress feed's page N. Page 1 is the feed's own url, untouched."""
+    if page <= 1:
+        return url
+    parts = urllib.parse.urlsplit(url)
+    query = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query) if k != "paged"]
+    return urllib.parse.urlunsplit(
+        (parts.scheme, parts.netloc, parts.path,
+         urllib.parse.urlencode(query + [("paged", str(page))]), parts.fragment))
+
+
+def fetch_feed(feed: dict, pages: int) -> list[dict]:
+    """Every item the feed serves, walking back `pages` pages.
+
+    A feed shows its newest handful and nothing else — SF YIMBY five items, The
+    Voice ten — so `--backfill-days` cannot reach a story the feed no longer
+    lists, however large it is set. WordPress serves the rest through `?paged=N`,
+    and that is the only way back past the front page.
+
+    **A feed asked for a page past its last does not 404.** It serves its last
+    page again, so walking until the fetch fails would loop forever; the stop is
+    a page that adds no id the previous pages did not already hold.
+
+    Paging is an RSS affordance. An html feed is a section page whose paging is
+    its own, and a Bluesky feed has none, so both stay at one page.
+    """
+    if feed["kind"] != "rss":
+        pages = 1
+    seen: set[str] = set()
+    out: list[dict] = []
+    for page in range(1, max(1, pages) + 1):
+        items = PARSERS[feed["kind"]](fetch(paged_url(feed["url"], page)), feed)
+        fresh = [i for i in items if i["id"] not in seen]
+        if not fresh:
+            break
+        seen.update(i["id"] for i in fresh)
+        out.extend(fresh)
+        if page < pages:
+            time.sleep(2)  # be a polite client
+    return out
 
 
 # --------------------------------------------------------------------------- #
@@ -580,7 +623,7 @@ def is_new(item: dict, cursor: dict, floor: str | None) -> bool:
 # --------------------------------------------------------------------------- #
 
 def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
-         queue_all: bool) -> int:
+         queue_all: bool, pages: int = 1) -> int:
     register = json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]
     cursors = load_cursors()
     pages = page_index()
@@ -606,8 +649,7 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
 
         cursor = cursors.setdefault("feeds", {}).setdefault(feed["id"], {})
         try:
-            body = fetch(feed["url"])
-            items = PARSERS[feed["kind"]](body, feed)
+            items = fetch_feed(feed, pages)
         except Exception as exc:  # noqa: BLE001 — one bad feed must not end the run
             polled.append({"feed": feed["id"], "error": str(exc)})
             print(f"{feed['id']}: FAILED — {exc}", file=sys.stderr, flush=True)
@@ -752,6 +794,10 @@ def main() -> int:
                    help="screen without moving cursors or writing a queue file")
     p.add_argument("--all", action="store_true", dest="queue_all",
                    help="queue every new item, screening nothing out")
+    p.add_argument("--pages", type=int, default=1,
+                   help="walk this many pages back through an rss feed's archive "
+                        "(default 1; the feed's own page). Pair with a large "
+                        "--backfill-days to backfill a newly registered feed.")
 
     sub.add_parser("status", help="what each cursor knows")
 
@@ -763,7 +809,8 @@ def main() -> int:
 
     args = ap.parse_args()
     if args.command == "poll":
-        return poll(args.feed, args.backfill_days, args.dry_run, args.queue_all)
+        return poll(args.feed, args.backfill_days, args.dry_run,
+                    args.queue_all, args.pages)
     if args.command == "status":
         return status()
     if args.command == "screen":
