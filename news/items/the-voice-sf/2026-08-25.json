@@ -1,0 +1,51 @@
+{
+  "source_id": "the-voice-sf",
+  "batch": "2026-08-25",
+  "read_on": "2026-08-25",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 1,
+    "remaining": "Nothing from this batch.",
+    "note": "This feed's first run. Five of ten items queued and all five read; four carry no street address at all — a family-film column, a school-district bond oversight lawsuit, a weekly events listing and an SFMOMA exhibition piece. They queued because the feed syndicates the whole article into <description>, so the screen matched a story shape ('school', 'museum', 'launch') in body text rather than in the headline. The screen's skips on this batch were all correct; this is the cost of its queue-on-doubt asymmetry, not a fault to fix."
+  },
+  "findings": [
+    {
+      "id": "2026-08-25-0001",
+      "date": "2026-08-20",
+      "date_precision": "day",
+      "kind": "vandalism",
+      "address_as_written": "434 Castro Street",
+      "street_number": "434",
+      "street_name": "CASTRO",
+      "street_type": "ST",
+      "description": "A window at the diner occupying 434 Castro Street, an official San Francisco Legacy Business trading since 1974, was broken on the evening of 20 August 2026 and cost about $3,000 to replace. The story reports it as the third window replacement in a few years, and an entrance fire around eighteen months earlier. Read and declined: see publish.note. The people named in the article — the owner, a customer, the arrested suspect — are not recorded here.",
+      "extra": {
+        "legacy_business": true,
+        "trading_since": 1974,
+        "reported_repair_cost_usd": 3000
+      },
+      "citation": {
+        "label": "The Voice of San Francisco, “Legacy small business, The Cove on Castro, suffers another act of vandalism,” 25 August 2026",
+        "url": "https://thevoicesf.org/legacy-small-business-the-cove-on-castro-suffers-another-act-of-vandalism/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "On Thursday, Aug. 20, shortly after closing, The Cove on Castro, an official San Francisco Legacy Business, was again vandalized."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test in news/AGENTS.md. A window broken and replaced for $3,000 changes nothing about the building, and in ten years it tells a reader of 434 Castro Street nothing — it is not a sale, a fire, an opening, a closure, an eviction or a designation. It is also the case the module's privacy rule is built for: the story is about the owner and his family's fifty years in the business, an arrested suspect and a named customer's fundraiser, and the building is only the setting. The page is not a crime blotter. Worth noting for a future pass: that the building holds a Legacy Business is a durable fact, but this story reports it in passing rather than reporting the designation, so it is not this entry's to carry."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "2647004",
+        "path": "/san-francisco/castro/castro-street/434/",
+        "eas_address": "434 CASTRO ST",
+        "method": "EAS exact match on 434 CASTRO ST → parcel 2647004; sf-parcels has blklot 2647004 active, 434–436 CASTRO; the 2025 roll records it as multi-family residential, built 1909. EAS puts 434, 436 CASTRO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 434.",
+        "checked_on": "2026-08-25"
+      }
+    }
+  ]
+}

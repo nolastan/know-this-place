@@ -4,6 +4,7 @@ The parcels on 8th Street documented here so far, from the city's address, asses
 
 ## Documented so far
 
+- [38](38/) — An assessor class: vacant lot, with deck work permitted in 1982.
 - [541–543](541/) — A 1937 industrial building, with a seismic retrofit permitted in 1990.
 - [545–599](545/) — A 1916 store building, with stair work permitted in 2009.
 - [678–690](678/) — A 1960 store building, with permit records from 1995 to 2001.
