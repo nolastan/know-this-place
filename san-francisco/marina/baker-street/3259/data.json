@@ -1,0 +1,160 @@
+{
+  "address": "3259 Baker Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/baker-street/3259/",
+  "apn": "0925004",
+  "block": "0925",
+  "lot": "004",
+  "eas_baseid": "290484",
+  "coordinates": {
+    "lat": 37.801221,
+    "lng": -122.446853
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3575,
+    "building_area_sqft": 2942,
+    "basement_area_sqft": 432,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3259 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142646,
+    "assessed_improvement_value": 392683
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Baker Street Period Revival Bungalows Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1927–1928",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201606089462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-08",
+      "status_date": "2016-07-11",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair dry rot on back stairs, deck and back stairs handrail(existing). replace less than 50% of the structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605127315",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-12",
+      "status_date": "2016-08-16",
+      "estimated_cost": 8734,
+      "revised_cost": 8734,
+      "description": "replace wood sashes on 5 front windows with wood sashes w/ pattern similar to adjacent properties (3 vertical panes on top) and true divided lites; replace 2 french doors on the rear. same size, same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808199500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-19",
+      "status_date": "2008-11-05",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove damage siding on north wall and lowre west wall fix all rotted wood replace new siding 400 sq. ft. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608230262",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-23",
+      "status_date": "2006-11-02",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair dryrot under siding. replace five windows not visible from street. in kind repair. & repair 3' x 10' side deck to rear yard, less than 50% . lightwell & side & upper rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605137",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-03-27",
+      "status_date": "1997-07-22",
+      "estimated_cost": 64000,
+      "revised_cost": 80000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=3259",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0925004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0925&lot=004",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0925004",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44685307045864%2037.801221260585535)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1924 and 1940",
+      "kind": "survey",
+      "description": "One of a row of contiguous single-family houses, two storeys over a street-level garage — the speculative builder's staple in the Marina district, repeated along a block with the façade detail varied from house to house.",
+      "source": "ppie-marina-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "address": "1561 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/1561/",
+  "apn": "0445A024",
+  "block": "0445A",
+  "lot": "024",
+  "eas_baseid": "282550",
+  "coordinates": {
+    "lat": 37.804553,
+    "lng": -122.434714
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 2055,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1561 BEACH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1924563,
+    "assessed_improvement_value": 824811,
+    "last_sale_date": "2021-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1930–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202108236945",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2021-08-23",
+      "status_date": "2023-04-21",
+      "estimated_cost": 722000,
+      "revised_cost": 722000,
+      "description": "vertical & horizontal addition & renovation includes expansion of rear on all floors, addition of a third floor, a new stair with a skylight and roof terrace. total of 5 bedrooms and 4.5 baths.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9826011",
+      "type": "otc alterations permit",
+      "status": "inspection",
+      "filed": "1998-12-21",
+      "status_date": "2000-02-25",
+      "estimated_cost": 10660,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEACH&street_type=ST&address_number=1561",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0445A024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0445A&lot=024",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0445A024",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43471378483325%2037.80455281133632)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "The PPIE and the Development of the Marina District Historic Context Statement (2023)",
+    "source": "ppie-marina-context-statement",
+    "style": "Tudor Revival",
+    "note": "A single-family house in the Tudor Revival style — a steeply pitched gabled roof, rustic stucco with applied half-timbering, prominent chimneys and narrow multi-pane windows."
+  }
+}

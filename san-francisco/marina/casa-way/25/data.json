@@ -1,0 +1,182 @@
+{
+  "address": "25 Casa Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/casa-way/25/",
+  "apn": "0418A012",
+  "block": "0418A",
+  "lot": "012",
+  "eas_baseid": "282105",
+  "coordinates": {
+    "lat": 37.80521,
+    "lng": -122.438681
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2744,
+    "building_area_sqft": 2880,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0025 CASA                WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1798138,
+    "assessed_improvement_value": 1198750,
+    "last_sale_date": "2004-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201409156273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-15",
+      "status_date": "2015-04-30",
+      "estimated_cost": 4000,
+      "revised_cost": 5405,
+      "description": "install shower @ (e) 1/2 bath, (n) floor tile, at 4th floor penthouse; maher n/a. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806255259",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-25",
+      "status_date": "2008-10-30",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel kitchen, change out cabinets and coutertop and install new appliances. add under counter lighting in kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409133953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-13",
+      "status_date": "2004-12-10",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "ocnvert a closet on the 4th fl into a half bath. interior work only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409033379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-03",
+      "status_date": "2004-12-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodeling the other bathroom on 2nd flr, replace 2 walls & ceiling plaster to sheetrock at 4th flr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408111248",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-11",
+      "status_date": "2004-12-10",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel bathroom,remove/replace fixtures,new sheetrock,no window change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213213",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-06",
+      "status_date": "1993-02-19",
+      "estimated_cost": 8140,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001722",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-01-25",
+      "status_date": "1990-08-13",
+      "estimated_cost": 26970,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASA&street_type=WAY&address_number=25",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0418A012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0418A&lot=012",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0418A012",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43868113832536%2037.80521010653557)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "architect": "Sidney Colton",
+    "builder": "Ellis L. Stoneson"
+  },
+  "historical_record": [
+    {
+      "date": "1930",
+      "kind": "construction",
+      "description": "A three-storey single-family house built in 1930 by Ellis L. Stoneson to a design by architect Sidney Colton. Stoneson went on to form the Stoneson Development Company with his brother Henry in 1934 and to build Stonestown.",
+      "source": "ppie-marina-context-statement"
+    }
+  ]
+}

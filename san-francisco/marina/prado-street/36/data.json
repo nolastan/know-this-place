@@ -1,0 +1,134 @@
+{
+  "address": "36 Prado Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/prado-street/36/",
+  "apn": "0417B011A",
+  "block": "0417B",
+  "lot": "011A",
+  "eas_baseid": "282086",
+  "coordinates": {
+    "lat": 37.804787,
+    "lng": -122.441614
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1797,
+    "building_area_sqft": 2252,
+    "basement_area_sqft": 960,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0036 PRADO               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1535100,
+    "assessed_improvement_value": 657900,
+    "last_sale_date": "2023-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606012261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-01",
+      "status_date": "2026-06-03",
+      "estimated_cost": 17880,
+      "revised_cost": 17880,
+      "description": "re-roofing. hot work. to comply with nov 202656545",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619906",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-16",
+      "status_date": "1996-11-22",
+      "estimated_cost": 4600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310684",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-10-21",
+      "status_date": "1984-04-10",
+      "estimated_cost": 28000,
+      "description": "remodeling of 2 bathromms,kitchen,......",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PRADO&street_type=ST&address_number=36",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0417B011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0417B&lot=011A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0417B011A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44161352918354%2037.80478701710846)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "ppie-marina-context-statement",
+      "name": "Architectural Resources Group (Stacy A. Farr and Sarah Hahn), The Panama-Pacific International Exposition and the Development of the Marina District Historic Context Statement, prepared for the San Francisco Planning Department, 100% Draft December 14, 2022, adopted by the Historic Preservation Commission May 17, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=310413eff3ae729205ca8130226e686066db73c3e3b91bf14c9c8acc64e04583&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "The PPIE and the Development of the Marina District Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "The PPIE and the Development of the Marina District Historic Context Statement (2023)",
+    "source": "ppie-marina-context-statement",
+    "style": "Moderne",
+    "note": "A Moderne single-family house — horizontal massing under a flat roof, smooth stucco, banded windows and curved corners, the machine-age answer to the district's Revival styles."
+  }
+}
