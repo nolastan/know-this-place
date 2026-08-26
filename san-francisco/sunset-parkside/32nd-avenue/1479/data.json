@@ -1,0 +1,109 @@
+{
+  "address": "1479 32nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/32nd-avenue/1479/",
+  "apn": "1821014A",
+  "block": "1821",
+  "lot": "014A",
+  "eas_baseid": "319147",
+  "coordinates": {
+    "lat": 37.759627,
+    "lng": -122.491153
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1479 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 811824,
+    "assessed_improvement_value": 541216
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M23703",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-05-19",
+      "status_date": "2003-05-19",
+      "revised_cost": 0,
+      "description": "sidse walk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004056428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-05",
+      "status_date": "2000-08-25",
+      "estimated_cost": 6875,
+      "revised_cost": 6875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=1479",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1821014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1821&lot=014A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1821014A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Harrison"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "note": "The earliest tunnel entry documented anywhere in the 2012 Sunset survey area: a passage running from the street through the ground storey to a lit interior courtyard and the stair up. By 1940 it was the standard Sunset District plan."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "address": "1667 32nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/32nd-avenue/1667/",
+  "apn": "1911003G",
+  "block": "1911",
+  "lot": "003G",
+  "eas_baseid": "323329",
+  "coordinates": {
+    "lat": 37.756105,
+    "lng": -122.490904
+  },
+  "parcel": {
+    "year_built": 1935,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2009,
+    "basement_area_sqft": 384,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1667 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1350891,
+    "assessed_improvement_value": 578953,
+    "last_sale_date": "2019-01-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1935",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912068880",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-06",
+      "status_date": "2020-07-15",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "kitchen dinette remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9803526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-03",
+      "status_date": "1998-05-14",
+      "estimated_cost": 1000,
+      "description": "provide beam at openings,shear reinforce,underpin,#9724007",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724007",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-12-01",
+      "status_date": "1998-05-14",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "built new storagerm/bathrm/laundry in garage/expand bar are",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720295",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-10",
+      "status_date": "1997-12-24",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913450",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-27",
+      "status_date": "1989-11-16",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=1667",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1911003G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1911&lot=003G",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1911003G",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "note": "An example of the side stair with an entry arch, built here from the late 1920s to the mid-1930s: the arch over the foot of the steps half-hides the front door from the street."
+  }
+}

@@ -36,6 +36,7 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [48th Avenue](48th-avenue/) — 6 buildings, built 1907–1950.
 - [Crestlake Drive](crestlake-drive/) — 2 buildings, built 1936–1937.
 - [Cutler Avenue](cutler-avenue/) — 1 building, built 1927.
+- [Gellert Drive](gellert-drive/) — 1 building, built 1951.
 - [Great Highway](great-highway/) — 2 buildings, built 1908–1946.
 - [Irving Street](irving-street/) — 8 buildings, built 1925–1950.
 - [Judah Street](judah-street/) — 12 buildings, built 1920–2008.
@@ -43,8 +44,12 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [La Playa](la-playa/) — 1 building, built 1926.
 - [Lawton Street](lawton-street/) — 2 buildings, built 1932; 2 in the Picturesque Period Revival Tracts Historic District.
 - [Lincoln Way](lincoln-way/) — 1 building, built 1951.
+- [Middlefield Drive](middlefield-drive/) — 1 building, built 1942.
+- [Moraga Street](moraga-street/) — 3 buildings, built 1940.
 - [Noriega Street](noriega-street/) — 3 buildings, built 1932–1949.
+- [Ortega Street](ortega-street/) — 1 building, built 1943.
 - [Rivera Street](rivera-street/) — 1 building, built 1941.
+- [Santiago Street](santiago-street/) — 2 buildings, built 1949.
 - [Sloat Boulevard](sloat-boulevard/) — 1 building, built 1947.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1924–1975.
 - [Ulloa Street](ulloa-street/) — 2 buildings, built 1917–1926.

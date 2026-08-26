@@ -1,0 +1,122 @@
+{
+  "address": "1454 32nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/32nd-avenue/1454/",
+  "apn": "1822021",
+  "block": "1822",
+  "lot": "021",
+  "eas_baseid": "319216",
+  "coordinates": {
+    "lat": 37.760067,
+    "lng": -122.490523
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1630,
+    "basement_area_sqft": 180,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1454 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353664,
+    "assessed_improvement_value": 185663,
+    "last_sale_date": "1992-03-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200609132239",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-09-13",
+      "status_date": "2006-09-13",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314800",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-08-27",
+      "status_date": "1993-10-29",
+      "estimated_cost": 4300,
+      "description": "remove stucco and all damages. reframe w/ new material",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313382",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-12",
+      "status_date": "1995-11-29",
+      "estimated_cost": 8000,
+      "revised_cost": 36895,
+      "description": "expand habitable space in basement.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=1454",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1822021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1822&lot=021",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1822021",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Christian Anderson"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "style": "French Provincial",
+    "note": "An example of the straight side stair, the mid-1920s move of the front door up to the second storey. The open flight of steps set each house slightly apart from its neighbour."
+  }
+}

@@ -27,6 +27,8 @@ The parcels on 36th Avenue documented here so far, from the city's address, asse
 - [1584](1584/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with garage work permitted in 2026.
 - [1588](1588/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District.
 - [1598](1598/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with a bathroom remodel permitted in 2010.
+- [1786](1786/) — A 1940 single-family house, with a kitchen and bathroom remodel permitted in 2026.
+- [2050](2050/) — A 1954 single-family house, with dry-rot repair permitted in 1993.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

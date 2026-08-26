@@ -7,8 +7,13 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [16th Avenue](16th-avenue/) — 1 building, built 1947.
 - [17th Avenue](17th-avenue/) — 2 buildings, built 1950–2020.
 - [19th Avenue](19th-avenue/) — 1 building, built 1913.
+- [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Lenox Way](lenox-way/) — 1 building, built 1926.
+- [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
+- [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
+- [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1950.
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
+- [West Portal Avenue](west-portal-avenue/) — 1 building, built 1935.

@@ -1,0 +1,99 @@
+{
+  "address": "1438 28th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/28th-avenue/1438/",
+  "apn": "1826035",
+  "block": "1826",
+  "lot": "035",
+  "eas_baseid": "319425",
+  "coordinates": {
+    "lat": 37.76053,
+    "lng": -122.486259
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2050,
+    "basement_area_sqft": 660,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1438 28TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 664618,
+    "assessed_improvement_value": 512210,
+    "last_sale_date": "2015-01-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508113934",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-11",
+      "status_date": "2017-02-07",
+      "estimated_cost": 75000,
+      "revised_cost": 140000,
+      "description": "1st flr: (n) family room, (n) 2-bedrooms & (n) full bathroom. 2nd flr: kitchen & bath renovation, (n) bathroom. replace all windows in kind, except the front of the house where its visible from the street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=28TH&street_type=AVE&address_number=1438",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1826035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1826&lot=035",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1826035",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "note": "An example of the straight side stair, the mid-1920s move of the front door up to the second storey. The open flight of steps set each house slightly apart from its neighbour."
+  }
+}

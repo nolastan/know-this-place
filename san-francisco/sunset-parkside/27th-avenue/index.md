@@ -4,7 +4,10 @@ The parcels on 27th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1422](1422/) — A 1928 single-family house, with a kitchen remodel permitted in 2024.
+- [1843](1843/) — A 1939 single-family house, with an addition permitted in 1986.
 - [1870](1870/) — A 1939 single-family house, with reroofing permitted in 2006.
+- [2230](2230/) — A 1933 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [2426](2426/) — A 1913 single-family house, with reroofing permitted in 2014.
 - [2459](2459/) — A 1908 single-family house, with reroofing permitted in 2007.
 - [2461](2461/) — A 1911 single-family house.

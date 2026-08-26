@@ -1,0 +1,182 @@
+{
+  "address": "1507 33rd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/33rd-avenue/1507/",
+  "apn": "1879001A",
+  "block": "1879",
+  "lot": "001A",
+  "eas_baseid": "321819",
+  "coordinates": {
+    "lat": 37.758945,
+    "lng": -122.492137
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2253,
+    "basement_area_sqft": 778,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1507 33RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 677839,
+    "assessed_improvement_value": 523743,
+    "last_sale_date": "2014-08-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201710060663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-06",
+      "status_date": "2017-10-13",
+      "estimated_cost": 8950,
+      "revised_cost": 9050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409297547",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2014-09-29",
+      "status_date": "2015-05-15",
+      "estimated_cost": 1550,
+      "revised_cost": 15000,
+      "description": "legalize kitchen area install upgrade 50 amp for stove 2 gfci outlet and hood vent to exterior",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409186711",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-18",
+      "status_date": "2014-10-20",
+      "estimated_cost": 950,
+      "revised_cost": 950,
+      "description": "revise permit #201409055602 & 201409126206: enlarge room @ 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409186713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-18",
+      "status_date": "2015-07-22",
+      "estimated_cost": 22500,
+      "revised_cost": 28000,
+      "description": "1st flr 2 (n) bathrooms & (n) computer room, office & laundry area. add 3' new wall @ (e) rooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409126206",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-12",
+      "status_date": "2014-09-12",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "rev. pa#201409055602, enlarge bathroom approved under pa#201409055602, remove door & stair at lightwell, new window, double panel at bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409055602",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-09-05",
+      "status_date": "2016-11-15",
+      "estimated_cost": 18200,
+      "revised_cost": 18200,
+      "description": "project on second floor add new bath room, new toilet, new skyklite and open stair railing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301245831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-24",
+      "status_date": "2003-04-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "demolish ex kitchen and breakfast room, remove non bearing partiion wall btwn kitch/brkfst rm. move",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=33RD&street_type=AVE&address_number=1507",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1879001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1879&lot=001A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1879001A",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49213705399418%2037.75894494910991)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Rousseau brothers (Marian Realty Company)"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "note": "Bought by the California Veterans' Welfare Board shortly after it was finished. The board ran state-funded amortized mortgages for World War I veterans a decade before the FHA did the same nationally, and owned 52 houses in the Sunset District in 1937 alone."
+  }
+}

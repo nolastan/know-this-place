@@ -22,6 +22,7 @@ The parcels on Irving Street documented here so far, from the city's address, as
 - [800–802](800/) — A 1962-1963 building, designed by Wurster, Bernardi and Emmons.
 - [834](834/) — A 1907 store building, with plumbing work permitted in 2024.
 - [837–845](837/) — A 1912 building, designed by Sylvain Schnaittacher.
+- [900–902](900/) — A 1908 5-unit building with a ground-floor store, with plumbing work permitted in 2022.
 - [915–917](915/) — A 1913 Classical Revival, designed by Theodore W. Lenzen.
 - [952–954](952/) — A 1908 building, designed by F. D. Boese.
 - [1032–1038](1032/) — A 1899 building, built by William E. Grant.

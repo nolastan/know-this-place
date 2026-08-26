@@ -1,0 +1,122 @@
+{
+  "address": "1554 39th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/39th-avenue/1554/",
+  "apn": "1884038",
+  "block": "1884",
+  "lot": "038",
+  "eas_baseid": "322048",
+  "coordinates": {
+    "lat": 37.757872,
+    "lng": -122.497892
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1554 39TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 76654,
+    "assessed_improvement_value": 97674
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304034878",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-04-03",
+      "status_date": "2023-04-18",
+      "estimated_cost": 112800,
+      "revised_cost": 112800,
+      "description": "develope ground fl. rooms reloctae kitchen, add great room, fulll bath capture some area from (e) garage remove (e) utilty stairs between flrs. relocate furnace and wh remove stove and counter at 2nd level relocate w/d to 2nd fl. rearrange closets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207134838",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-13",
+      "status_date": "2012-07-13",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "remodel kitchen and one bathroom on 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-18",
+      "status_date": "1997-08-12",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=39TH&street_type=AVE&address_number=1554",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1884038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1884&lot=038",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1884038",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Galli Construction Company"
+  },
+  "historical_record": [
+    {
+      "date": "1940-01",
+      "kind": "advertisement",
+      "description": "Shown as “The Carmel”, a furnished model home displayed by Ray Galli.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

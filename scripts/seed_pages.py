@@ -1413,6 +1413,10 @@ def survey_panel_html(rec: dict, indent: str) -> str:
             ("ic-pin", "Eligible district", s.get("eligible_district")),
             ("ic-pin", "Within district", s.get("existing_district")),
             ("ic-ruler", "Style", s.get("style")),
+            # A survey that attributes the building to a builder is stating a
+            # finding, not repeating `building.builder` — 32 pages carried this
+            # key with nowhere to render it before the row existed.
+            ("ic-ruler", "Builder as surveyed", s.get("builder")),
             ("ic-plan", "Construction", s.get("frame")),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),

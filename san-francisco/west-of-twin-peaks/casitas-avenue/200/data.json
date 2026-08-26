@@ -1,0 +1,102 @@
+{
+  "address": "200 Casitas Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/casitas-avenue/200/",
+  "apn": "2973A027",
+  "block": "2973A",
+  "lot": "027",
+  "eas_baseid": "350416",
+  "coordinates": {
+    "lat": 37.737858,
+    "lng": -122.460617
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 7161,
+    "building_area_sqft": 1822,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sherwood Forest",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0200 CASITAS             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 813691,
+    "assessed_improvement_value": 542453,
+    "last_sale_date": "2000-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510157373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-15",
+      "status_date": "2025-10-21",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "spcb report #250928a123 item 1- open stucco at base of the stucco soffit where the deck attaches, inspect for damage and install a strip vent and re-stucco in-kind. not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASITAS&street_type=AVE&address_number=200",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2973A027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2973A&lot=027",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2973A027",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1939",
+      "kind": "occupancy",
+      "description": "A Lang Realty Company branch office. By 1951 it was the firm's only remaining San Francisco office besides one at 19th and Ocean Avenues.",
+      "source": "sunset-builders-context-statement"
+    }
+  ],
+  "unknowns": [
+    "The 2013 Sunset District builders context statement places this at 200 Casitas Avenue in 1939; the assessor dates the building now on this parcel to 1953."
+  ]
+}

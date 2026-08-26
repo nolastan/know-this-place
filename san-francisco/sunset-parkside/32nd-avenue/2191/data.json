@@ -1,0 +1,176 @@
+{
+  "address": "2191 32nd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/32nd-avenue/2191/",
+  "apn": "2185020",
+  "block": "2185",
+  "lot": "020",
+  "eas_baseid": "332160",
+  "coordinates": {
+    "lat": 37.746368,
+    "lng": -122.49018
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 1588,
+    "lot_depth_ft": 95,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2191 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1251831,
+    "assessed_improvement_value": 536498,
+    "last_sale_date": "2023-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Picturesque Period Revival Tracts Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1931–1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202307212681",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-21",
+      "status_date": "2023-11-07",
+      "estimated_cost": 12000,
+      "revised_cost": 40000,
+      "description": "one bathroom and one powder room remodel. non structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610241062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-24",
+      "status_date": "2016-11-08",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313141",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-08-03",
+      "status_date": "1993-08-12",
+      "estimated_cost": 4745,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003018",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-14",
+      "status_date": "1990-04-10",
+      "estimated_cost": 10000,
+      "description": "remodel kitchen area with new sheetrock, cabinets, fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-19",
+      "status_date": "1989-01-19",
+      "estimated_cost": 3455,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805980",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-10",
+      "status_date": "1988-10-17",
+      "estimated_cost": 8000,
+      "description": "renovate existing on stairs bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803443",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-03-18",
+      "status_date": "1988-05-06",
+      "estimated_cost": 3000,
+      "description": "termite damage repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=2191",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2185020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2185&lot=020",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2185020",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49017999670099%2037.746368210250886)%27)",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "building": {
+    "builder": "Golden Gate Investment Company"
+  },
+  "historic_survey": {
+    "survey": "Sunset District Residential Builders Historic Context Statement (2013)",
+    "source": "sunset-builders-context-statement",
+    "note": "Its period revival roof forms and detailing are not commonly found in the Sunset District."
+  }
+}

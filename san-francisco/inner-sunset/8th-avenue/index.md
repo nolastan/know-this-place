@@ -13,6 +13,7 @@ The parcels on Eighth Avenue documented here so far, from the city's address, as
 - [1318](1318/) — A 1893 (probably) Queen Anne, designed by M. J. Welsh.
 - [1384](1384/) — A 1909-1910 Mission Revival, designed by Tennler and Weismann.
 - [1388](1388/) — A 1909-1910 Mission Revival, designed by Tennler and Weismann.
+- [1391](1391/) — A 1923 18-unit apartment building, with a seismic retrofit permitted in 2016.
 - [1431–1433](1431/) — A 1896 Queen Anne, built by D. McLeod.
 - [1501](1501/) — A 1914 Shingle with classical entrance, built by Cox Brothers.
 - [1536](1536/) — A 1937 building, built by Michael Costello.

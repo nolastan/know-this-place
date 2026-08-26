@@ -1,0 +1,130 @@
+{
+  "address": "2222 19th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/19th-avenue/2222/",
+  "apn": "2331019",
+  "block": "2331",
+  "lot": "019",
+  "eas_baseid": "463549",
+  "coordinates": {
+    "lat": 37.746201,
+    "lng": -122.47553
+  },
+  "parcel": {
+    "year_built": 1948,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 4,
+    "lot_area_sqft": 17010,
+    "building_area_sqft": 7888,
+    "lot_depth_ft": 90,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2222 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1245968,
+    "assessed_improvement_value": 415321,
+    "last_sale_date": "1996-05-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200105098796",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-09",
+      "status_date": "2001-09-09",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "one-stop>c.hom;remove canopy to 2' away from property. refer to 200103154376",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103154376",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-15",
+      "status_date": "2001-09-15",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "one-stop: propose a metal canopy 25'x50x2o' @ parking lot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700539",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-01-10",
+      "status_date": "1997-10-03",
+      "estimated_cost": 1,
+      "description": "revise to appln #9616255",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616255",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-30",
+      "status_date": "1997-10-03",
+      "estimated_cost": 95000,
+      "description": "remodel existing office in to a church sect. 104f entir bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=2222",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2331019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2331&lot=019",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2331019",
+      "retrieved": "2026-08-25"
+    },
+    {
+      "id": "sunset-builders-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown, Preservation Planner), Sunset District Residential Builders, 1925–1950 Historic Context Statement, April 3, 2013, adopted 2013",
+      "query": "https://default.sfplanning.org/Preservation/sunset_survey/Adopted_SunsetHCS.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Sunset District Residential Builders Historic Context Statement, adopted 2013",
+      "retrieved": "2026-08-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1946",
+      "kind": "occupancy",
+      "description": "The Standard Building Company moved its headquarters and sales office here — a deliberately prominent Sunset District address for the firm behind the Sunstream brand.",
+      "source": "sunset-builders-context-statement"
+    }
+  ]
+}

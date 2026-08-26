@@ -4,6 +4,9 @@ The parcels on 30th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1722](1722/) — A 1939 single-family house, with window replacement permitted in 1988.
+- [1858](1858/) — A 1939 single-family house, with reroofing permitted in 2000.
+- [1958](1958/) — A 1940 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [2558](2558/) — A 1906 single-family house, with reroofing permitted in 2019.
 - [2562](2562/) — A 1906 single-family house, with garage work permitted in 2022.
 - [2563](2563/) — A 1910 single-family house, with foundation work permitted in 2016.

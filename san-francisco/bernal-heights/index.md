@@ -8,5 +8,6 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Cortland Avenue](cortland-avenue/) — 1 building, built 1910.
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
 - [Mullen Avenue](mullen-avenue/) — A 1,000 sq ft house of 1906, recorded as Carlos Santana's home during high school.
+- [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Precita Avenue](precita-avenue/) — Four units of 1905 at the foot of the hill, a 1974 Patty Hearst address.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
