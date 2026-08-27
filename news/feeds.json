@@ -91,6 +91,24 @@
       "access": "open",
       "link_pattern": "^/news/[a-z0-9-]+/[a-z0-9-]+/article_[a-f0-9-]+\\.html$",
       "note": "A section page, not a feed: no dates and no summaries, so the cursor is the set of article URLs seen. robots.txt allows '*' on /news/ and disallows named AI crawlers by name."
+    },
+    {
+      "id": "sfyimby",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/feed",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "open",
+      "note": "Development only — proposals, permit filings, hearings, site visits — so nearly every item is a building story. Its first <category> is the street address itself ('38 8th Street', '262 7th Street') and the rest name the architect, developer and contractor; that tag is why an item screens as an address even when the headline names only a neighborhood, and the named firms are the ones the root AGENTS.md allows a page to credit. 'The San Francisco metropolitan region' reaches San Jose and Sacramento, but the headline always ends with the city ('…, San Jose'), so the screen skips those on the headline rule. Only five items deep: a run that misses two days loses stories."
+    },
+    {
+      "id": "the-voice-sf",
+      "outlet": "The Voice of San Francisco",
+      "url": "https://thevoicesf.org/feed/",
+      "kind": "rss",
+      "scope": "sf",
+      "access": "open",
+      "note": "A city-only newsroom launched April 2024; its sections run Housing, Business, Neighborhoods and Crime alongside Opinion, A&E, Events and poetry. The feed syndicates the entire article in both <description> and content:encoded, so the screen reads a whole body rather than a summary and some story shape matches almost every item — a family-film column queued on 'school'. It over-queues by design rather than by fault; expect to decline several per run at the read stage. Ten items deep."
     }
   ]
 }

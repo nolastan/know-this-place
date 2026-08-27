@@ -6,9 +6,8 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 
 - [10Th Street](10th-street/) — 9 buildings, built 1923–1929; 8 in the Western SOMA Light Industrial and Residential Historic District.
 - [11Th Street](11th-street/) — 3 buildings, built 1919–1930; 3 in the Western SOMA Light Industrial and Residential Historic District.
-- [7th Street](7th-street/) — 7 buildings, built 1903–2020.
-- [8th Street](8th-street/) — 5 buildings, built 1916–1990.
-- [9Th Street](9th-street/) — 2 buildings, built 2011–2014.
+- [7th Street](7th-street/) — 8 buildings, built 1903–2020; 1 in the Western SOMA Light Industrial and Residential Historic District.
+- [8th Street](8th-street/) — 6 buildings, built 1916–1990.
 - [Bluxome Street](bluxome-street/) — 10 buildings, built 1916–2016; 3 in the Bluxome Townsend Historic District.
 - [Brannan Street](brannan-street/) — 24 buildings, built 1905–1989; 3 in the Clyde and Crooks Historic District.
 - [Bryant Street](bryant-street/) — 56 buildings, built 1905–2005; 1 in the SoMa LGBTQ Historic District.
@@ -39,6 +38,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Mission Street](mission-street/) — 2 buildings, built 2015; 1 in the Mint-Mission Conservation District.
 - [Morris Street](morris-street/) — 4 buildings, built 1955–1956.
 - [Natoma Street](natoma-street/) — 1 building, built 2014.
+- [Ninth Street](9th-street/) — 2 buildings, built 2011–2014.
 - [Oak Grove Street](oak-grove-street/) — 5 buildings, built 1926–1988.
 - [Perry Street](perry-street/) — 1 building.
 - [Ritch Street](ritch-street/) — 8 buildings, built 1902–1955; 5 in the Clyde and Crooks Historic District.

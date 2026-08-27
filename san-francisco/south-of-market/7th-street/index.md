@@ -4,6 +4,7 @@ The parcels on 7th Street documented here so far, from the city's address, asses
 
 ## Documented so far
 
+- [262](262/) — A 1945 industrial building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2006.
 - [500–502](500/) — A 2020 16-unit apartment building, with deck work permitted in 2026.
 - [510](510/) — A 1925 industrial building, with reroofing permitted in 2011.
 - [548](548/) — A 1945 industrial building, with reroofing permitted in 2000.

@@ -1,0 +1,153 @@
+{
+  "source_id": "sfyimby",
+  "batch": "2026-08-25",
+  "read_on": "2026-08-25",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 3,
+    "remaining": "Nothing from this batch.",
+    "note": "This feed's first run. Three San Francisco articles queued and all three carry a street address and a building story; the two the screen skipped were a San Jose meeting notice and a Sacramento church site, both named as such in their headlines. Every item's first <category> is the address itself, so the addresses here were confirmed against the article text rather than found in it."
+  },
+  "findings": [
+    {
+      "id": "2026-08-25-0001",
+      "date": "2026-08-25",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "38 8th Street",
+      "street_number": "38",
+      "street_name": "08TH",
+      "street_type": "ST",
+      "description": "Initial permits filed for a 40-storey, 433-foot mixed-use tower of 288 apartments on what is now a surface parking lot at the corner of 8th and Stevenson, in Mid-Market. Thirty-eight of the units would be affordable, split between low- and moderate-income households, and the application invokes SB 330 and the State Density Bonus law to raise capacity and streamline approval. Manna Capital is the developer and Handel Architects the designer. The property owner is a private family trust and is not recorded here.",
+      "extra": {
+        "storeys": 40,
+        "height_ft": 433,
+        "units": 288,
+        "affordable_units": 38,
+        "gross_sq_ft": 303500,
+        "developer": "Manna Capital",
+        "architect": "Handel Architects",
+        "current_use": "surface parking lot",
+        "cross_street": "Stevenson Street",
+        "stage": "initial permits filed; not approved"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “40-Story Skyscraper Proposed Near Civic Center, San Francisco,” 25 August 2026",
+        "url": "https://sfyimby.com/2026/08/40-story-skyscraper-proposed-near-civic-center-san-francisco.html",
+        "locator": "opening paragraph"
+      },
+      "raw": {
+        "text": "Initial permits have been filed for a potential 40-story mixed-use skyscraper at 38 8th Street in San Francisco's Mid-Market District."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3701005",
+        "path": "/san-francisco/south-of-market/8th-street/38/",
+        "eas_address": "38 08TH ST",
+        "method": "EAS exact match on 38 08TH ST → parcel 3701005; sf-parcels has blklot 3701005 active, 38–38 08TH; the 2025 roll records it as miscellaneous/mixed-use.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/171",
+        "note": "Seeded in this run from research/manifests/news-2026-08-25-sfyimby.json; there was no page at /san-francisco/south-of-market/8th-street/38/ before it. Entry on the page's timeline and a card on the homepage's news grid."
+      }
+    },
+    {
+      "id": "2026-08-25-0002",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "730 Stanyan Street",
+      "street_number": "730",
+      "street_name": "STANYAN",
+      "street_type": "ST",
+      "description": "The affordable housing building at 730 Stanyan Street, on the former Haight Street McDonald's site, is open; all 160 units were leased before it opened and the ground-floor early childcare centre is near completion. OMA led the design with Y.A. Studio as executive architect, GLS on landscape and the Chinatown Community Development Center as sponsor. The facade is modular glass-fibre-reinforced concrete panels with integrated windows and louvres, and the southeast corner is carved back from the lot line to meet the neighbouring Victorian at 1760–1762 Waller Street. The date is the article's; the story says the building is already open and gives no opening date.",
+      "extra": {
+        "units": 160,
+        "architect": "OMA",
+        "executive_architect": "Y.A. Studio",
+        "landscape_architect": "GLS Landscape Architects",
+        "sponsor": "Chinatown Community Development Center",
+        "ground_floor": "early childcare center",
+        "neighbouring_building_noted": "1760–1762 Waller Street",
+        "builder": "Cahill Contractors and Hercules Builders (joint venture)",
+        "co_developer": "Tenderloin Neighborhood Development Corporation",
+        "project_cost_usd": 153000000
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “YIMBY Tours 730 Stanyan Street in Haight-Ashbury, San Francisco,” 24 August 2026",
+        "url": "https://sfyimby.com/2026/08/yimby-tours-730-stanyan-street-in-haight-ashbury-san-francisco.html",
+        "locator": "opening paragraph"
+      },
+      "raw": {
+        "text": "The affordable housing complex is now open at 730 Stanyan Street in San Francisco's Haight-Ashbury neighborhood."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1249024",
+        "path": "/san-francisco/haight-ashbury/stanyan-street/730/",
+        "eas_address": "730 STANYAN ST",
+        "method": "EAS exact match on 730 STANYAN ST → parcel 1249024; sf-parcels has blklot 1249024 active, 1865–1895 HAIGHT; the 2025 roll records it as government, built 1975.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/171",
+        "note": "Seeded in this run from research/manifests/news-2026-08-25-sfyimby.json; there was no page at /san-francisco/haight-ashbury/stanyan-street/730/ before it. Entry on the page's timeline and a card on the homepage's news grid. The 2025 roll still describes the demolished restaurant rather than the building reported here, so the page carries an .unknowns line reconciling the two. Per \"Putting it on the page\" → enrichment, the article's building facts were written into the page's `building` block: architect (OMA with Y.A. Studio), builder (Cahill Contractors and Hercules Builders), developer (CCDC with TNDC) and completed 2026. The other two findings enrich nothing — 38 8th Street is a proposal on a parking lot and 262 7th Street is a conversion not yet built, so neither design team describes a building that stands."
+      }
+    },
+    {
+      "id": "2026-08-25-0003",
+      "date": "2026-08-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "262 7th Street",
+      "street_number": "262",
+      "street_name": "07TH",
+      "street_type": "ST",
+      "description": "Permits filed to convert an existing industrial building on a 0.18-acre lot between Folsom and Howard into a performing arts space: a 133-seat theatre with a double-height ceiling, a gallery at the lobby entrance, a meeting room and a restroom across the ground floor and mezzanine. The exterior is not to be altered and the second floor stays in office use. A partnership of the Asian Pacific Islander Cultural Center and Kularts leads the project, with Pyatok Architects designing; both are contributing institutions to the city's SOMA Pilipinas cultural district. Cost and timeline were not reported.",
+      "extra": {
+        "seats": 133,
+        "architect": "Pyatok Architects",
+        "sponsors": [
+          "Asian Pacific Islander Cultural Center",
+          "Kularts"
+        ],
+        "cultural_district": "SOMA Pilipinas",
+        "lot_acres": 0.18,
+        "exterior": "unaltered",
+        "existing_use": "industrial",
+        "stage": "permits filed"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Permits Filed For Performing Arts Center in SoMa, San Francisco,” 23 August 2026",
+        "url": "https://sfyimby.com/2026/08/permits-filed-for-performing-arts-center-in-soma-san-francisco.html",
+        "locator": "opening paragraph"
+      },
+      "raw": {
+        "text": "Permits have been filed to renovate an existing industrial structure into a performing arts space at 262 7th Street in SoMa, San Francisco."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3730007",
+        "path": "/san-francisco/south-of-market/7th-street/262/",
+        "eas_address": "262 07TH ST",
+        "method": "EAS exact match on 262 07TH ST → parcel 3730007; sf-parcels has blklot 3730007 active, 262–262 07TH; the 2025 roll records it as industrial, built 1945. The assessor files the parcel as 65–67 LANGTON ST.",
+        "checked_on": "2026-08-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/171",
+        "note": "Seeded in this run from research/manifests/news-2026-08-25-sfyimby.json; there was no page at /san-francisco/south-of-market/7th-street/262/ before it. Entry on the page's timeline and a card on the homepage's news grid."
+      }
+    }
+  ]
+}

@@ -3,7 +3,8 @@
 
     python3 news/tools/poll.py poll                  # every open feed
     python3 news/tools/poll.py poll --feed sfist     # one of them
-    python3 news/tools/poll.py poll --dry-run        # screen without moving cursors
+    python3 news/tools/poll.py poll --dry-run        # screen, writing nothing at all
+    python3 news/tools/poll.py poll --pages 20 --backfill-days 36500   # backfill a new feed
     python3 news/tools/poll.py status                # cursors, at a glance
     python3 news/tools/poll.py screen "a headline"   # why the screen rules the way it does
     python3 news/tools/poll.py find "1234 Valencia Street"   # does this address have a page?
@@ -31,6 +32,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -79,6 +81,12 @@ def fetch(url: str, timeout: int = 30, budget: int = 90, tries: int = 3) -> byte
                         break
                     buf.extend(chunk)
             return bytes(buf)
+        except urllib.error.HTTPError as exc:
+            # A 404 is an answer, not a transport failure. Retrying one costs
+            # 25s of sleeps to be told the same thing three times, and the page
+            # walk in fetch_feed() ends on exactly this.
+            if exc.code == 404 or attempt == tries - 1:
+                raise
         except Exception as exc:  # noqa: BLE001 — any transport error is retryable
             if attempt == tries - 1:
                 raise
@@ -255,6 +263,58 @@ def parse_html(body: bytes, feed: dict) -> list[dict]:
 PARSERS = {"rss": lambda body, feed: parse_rss(body),
            "bluesky": lambda body, feed: parse_bluesky(body),
            "html": parse_html}
+
+
+def paged_url(url: str, page: int) -> str:
+    """A WordPress feed's page N. Page 1 is the feed's own url, untouched."""
+    if page <= 1:
+        return url
+    parts = urllib.parse.urlsplit(url)
+    query = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query) if k != "paged"]
+    return urllib.parse.urlunsplit(
+        (parts.scheme, parts.netloc, parts.path,
+         urllib.parse.urlencode(query + [("paged", str(page))]), parts.fragment))
+
+
+def fetch_feed(feed: dict, pages: int) -> list[dict]:
+    """Every item the feed serves, walking back `pages` pages.
+
+    A feed shows its newest handful and nothing else — SF YIMBY five items, The
+    Voice ten — so `--backfill-days` cannot reach a story the feed no longer
+    lists, however large it is set. WordPress serves the rest through `?paged=N`,
+    and that is the only way back past the front page.
+
+    **The end of the archive arrives as a 404**, and both feeds measured serve
+    it as a valid RSS document titled "Page not found" with no items in it. So
+    the walk stops on either signal — the 404, or a page that adds no id the
+    earlier pages did not already hold — and it stops by *returning what it has*
+    rather than raising. Letting the 404 out of here would be a real loss: it
+    reaches poll() as a feed-level failure, which discards every page already
+    walked and leaves the cursor unmoved. Asking for more pages than a feed has
+    is the normal way to backfill one, not an error.
+
+    Paging is an RSS affordance. An html feed is a section page whose paging is
+    its own, and a Bluesky feed has none, so both stay at one page.
+    """
+    if feed["kind"] != "rss":
+        pages = 1
+    seen: set[str] = set()
+    out: list[dict] = []
+    for page in range(1, max(1, pages) + 1):
+        try:
+            body = fetch(paged_url(feed["url"], page))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404 and page > 1:
+                break       # walked off the end of the archive
+            raise           # page 1 is the feed itself; that 404 is a real fault
+        fresh = [i for i in PARSERS[feed["kind"]](body, feed) if i["id"] not in seen]
+        if not fresh:
+            break
+        seen.update(i["id"] for i in fresh)
+        out.extend(fresh)
+        if page < pages:
+            time.sleep(2)  # be a polite client
+    return out
 
 
 # --------------------------------------------------------------------------- #
@@ -580,7 +640,7 @@ def is_new(item: dict, cursor: dict, floor: str | None) -> bool:
 # --------------------------------------------------------------------------- #
 
 def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
-         queue_all: bool) -> int:
+         queue_all: bool, pages: int = 1) -> int:
     register = json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]
     cursors = load_cursors()
     pages = page_index()
@@ -606,8 +666,7 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
 
         cursor = cursors.setdefault("feeds", {}).setdefault(feed["id"], {})
         try:
-            body = fetch(feed["url"])
-            items = PARSERS[feed["kind"]](body, feed)
+            items = fetch_feed(feed, pages)
         except Exception as exc:  # noqa: BLE001 — one bad feed must not end the run
             polled.append({"feed": feed["id"], "error": str(exc)})
             print(f"{feed['id']}: FAILED — {exc}", file=sys.stderr, flush=True)
@@ -648,7 +707,18 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
 
     run = {"run": today, "polled": polled, "items": queued, "skipped": [
         {k: s[k] for k in ("feed", "title", "url", "reason") if k in s} for s in skipped]}
-    if queued or skipped:
+    if not (queued or skipped):
+        print("\nNothing new.")
+    elif dry_run:
+        # A dry run writes no queue file. The queue is the durable worklist and
+        # the cursor is not, so one written here would list items screened
+        # against cursors that never moved — work the next real run would do
+        # again, from a file claiming it had already been done. Worse where a
+        # real queue exists: the append path below would mix these items into a
+        # worklist someone is part-way through draining.
+        print(f"\n{len(queued)} to read, {len(run['skipped'])} skipped "
+              f"(--dry-run: no queue file written)")
+    else:
         QUEUE.mkdir(parents=True, exist_ok=True)
         path = QUEUE / f"{today}.json"
         if path.exists():  # a second run the same day appends rather than clobbers
@@ -661,13 +731,11 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
                         encoding="utf-8")
         print(f"\n{len(run['items'])} to read, {len(run['skipped'])} skipped "
               f"→ {path.relative_to(REPO)}")
-    else:
-        print("\nNothing new.")
 
     if not dry_run:
         save_cursors(cursors)
     else:
-        print("(--dry-run: cursors not moved)")
+        print("(--dry-run: cursors not moved, no queue file written)")
     return 0
 
 
@@ -739,9 +807,14 @@ def main() -> int:
     p.add_argument("--feed", action="append", default=[], help="only this feed id")
     p.add_argument("--backfill-days", type=int, default=14,
                    help="on a feed's first run, ignore items older than this (default 14)")
-    p.add_argument("--dry-run", action="store_true", help="screen without moving cursors")
+    p.add_argument("--dry-run", action="store_true",
+                   help="screen without moving cursors or writing a queue file")
     p.add_argument("--all", action="store_true", dest="queue_all",
                    help="queue every new item, screening nothing out")
+    p.add_argument("--pages", type=int, default=1,
+                   help="walk this many pages back through an rss feed's archive "
+                        "(default 1; the feed's own page). Pair with a large "
+                        "--backfill-days to backfill a newly registered feed.")
 
     sub.add_parser("status", help="what each cursor knows")
 
@@ -753,7 +826,8 @@ def main() -> int:
 
     args = ap.parse_args()
     if args.command == "poll":
-        return poll(args.feed, args.backfill_days, args.dry_run, args.queue_all)
+        return poll(args.feed, args.backfill_days, args.dry_run,
+                    args.queue_all, args.pages)
     if args.command == "status":
         return status()
     if args.command == "screen":

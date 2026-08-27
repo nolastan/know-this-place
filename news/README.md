@@ -10,6 +10,15 @@ happened at.** A story about a building is filed under a neighborhood, a
 reporter and a date, and it is unfindable a year later from the street number.
 Putting it on the building's timeline is the work.
 
+A run carries two things off an article: the **headline**, which becomes the
+dated entry on the timeline, and the **facts about the building** — architect,
+builder, developer, the year it was finished — which fill the page's own fields
+and are attributed from the Sources footer. Filing the headline and dropping
+the architect throws away the half a page is actually for. AGENTS.md →
+"Putting it on the page" has the limits, and the sharpest is that the `building`
+block describes the building that stands there: a proposal's design team does
+not go on the page of the parking lot it would replace.
+
 **Start with [AGENTS.md](AGENTS.md).** It is the rulebook, and its privacy
 section is the part to read twice — a news story is about people, and these
 pages are about buildings.
