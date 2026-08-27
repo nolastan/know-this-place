@@ -74,17 +74,38 @@
     .mapboxgl-popup-tip { display: none; }
     .mapboxgl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
     .mapboxgl-ctrl-group button + button { border-top: 1px solid var(--rule); }
-    .map-note { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.75rem; }
+    /* The hovercard over a news dot. The plain popup is a one-line chip with an
+       address in it; this one carries the story, so it drops the chip's weight
+       and hangs the headline and outlet under the address in the same order the
+       card below uses. */
+    .map-newspop .mapboxgl-popup-content { padding: 0.5rem 0.7rem; font-weight: 400; }
+    .map-newscard strong { font-family: var(--sans); font-weight: 700; }
+    .map-newscard em {
+      display: block; margin-top: 0.25rem;
+      font-family: var(--serif); font-size: 0.95rem; line-height: 1.35;
+    }
+    .map-newscard small { display: block; margin-top: 0.2rem; color: var(--muted); }
+    .map-note { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.25rem; }
 
-    /* Featured addresses, as a tiled grid of Street View cards. Reuses the
+    /* The news is the page's subject now, so its heading is the page's <h1>.
+       It sits in the ordinary .section-head band at h2's size: the rank is
+       structural, for a crawler and a screen reader, and the map above it is
+       what carries the visual weight. */
+    .section-head h1 {
+      flex: 0 0 auto;
+      font-size: 1.3rem; margin: 0; letter-spacing: 0;
+    }
+    main > .section-head:first-child { margin-top: 1.5rem; }
+
+    /* The news, as a tiled grid of Street View cards. Reuses the
        .media / .media-empty pair every address page already uses, so the
        picture arrives the same way here as it does there and no new image
        handling enters the system. */
     .place-cards {
       list-style: none; padding: 0; margin: 0 0 1.75rem;
       display: grid; gap: 1rem;
-      /* 17rem lands the six cards as three across on a full-width page and
-         two on a tablet, rather than four and a stranded pair. */
+      /* 17rem lands the cards three across on a full-width page and two on a
+         tablet, rather than four and a stranded remainder. */
       grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     }
     .place-cards a { display: block; text-decoration: none; color: var(--ink); }
@@ -96,11 +117,10 @@
     .place-cards a:hover .card-label { color: var(--accent); }
     .place-cards a:hover .media { border-color: var(--accent); }
 
-    /* In the news. The same card as the one below — same picture, same address
-       in the same place — with the headline and its outlet hung underneath, so
-       the card still answers "which building?" first and the grids read as one
-       family. The headline is italic rather than bold because it is a quotation
-       of somebody else's words. */
+    /* The card itself: the picture and the address first, with the headline and
+       its outlet hung underneath, so it still answers "which building?" before
+       it says what happened there. The headline is italic rather than bold
+       because it is a quotation of somebody else's words. */
     .news-cards .card-news {
       margin: 0.2rem 0 0; font-size: 0.95rem; line-height: 1.4;
     }
@@ -134,7 +154,7 @@
 <div class="map-shell">
   <!-- #map stays empty: Mapbox wants sole ownership of its container, so the
        fallback is a sibling laid over it and removed once tiles are up. -->
-  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco"></div>
+  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco, with the addresses in the news marked"></div>
   <div class="media-empty">
     <span class="ic ic-pin ic-lg"></span>
     <span>8,473 documented addresses in San Francisco</span>
@@ -142,22 +162,24 @@
     address is reachable through the links below.</small>
   </div>
   <p class="map-brand">Know This Place</p>
-  <a class="map-cue" href="#start">Start here<span aria-hidden="true">↓</span></a>
+  <a class="map-cue" href="#news">In the news<span aria-hidden="true">↓</span></a>
 </div>
 
-<main id="start">
-  <h1>Every building has a story.</h1>
-  <p class="lead">Know This Place is a community encyclopedia of the built
-  environment — one page per building, weaving together public records,
-  permits, imagery, history, and neighborhood knowledge. Every fact is
-  cited.</p>
-
-  <div class="section-head"><span class="ic ic-permit"></span><h2>In the news</h2></div>
+<main id="news">
+  <div class="section-head"><span class="ic ic-permit"></span><h1>In the news</h1></div>
   <!-- Fed by the news module, newest first. Every time a story lands on an
        address page, its card goes on the top of this list and the oldest card
-       comes off — six, the same as the grid below; see news/AGENTS.md. The
-       headline is quoted verbatim and the outlet is named, which is what makes
-       carrying it a citation rather than a lift. -->
+       comes off — twelve of them; see news/AGENTS.md. The headline is quoted
+       verbatim and the outlet is named, which is what makes carrying it a
+       citation rather than a lift.
+
+       This list is also the map's data: the script at the foot of the page
+       reads these cards for the coordinates, the headline and the outlet, and
+       draws each one as a pulsing dot with the story in its hovercard. There
+       is no second file to keep in step — edit the cards and the map follows. -->
+  <p class="map-note">Each of these is one of the pulsing dots on the map above.
+  Hover a dot to read the story; every other dot is an address the site has
+  documented.</p>
   <ul class="place-cards news-cards">
     <li>
       <a href="/san-francisco/dogpatch/3rd-street/2501/">
@@ -239,82 +261,14 @@
       <p class="card-news"><a href="https://sfyimby.com/2026/08/yimby-tours-730-stanyan-street-in-haight-ashbury-san-francisco.html"><em>YIMBY Tours 730 Stanyan Street in Haight-Ashbury, San Francisco</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco YIMBY</span></p></li>
   </ul>
 
-  <div class="section-head"><span class="ic ic-pin"></span><h2>Start here</h2></div>
-  <p class="map-note">Every dot on the map above is one of these pages. These
-  reach furthest back, and draw on more than the city's own records:</p>
-  <!-- Featured addresses. Chosen by the two things that make a page worth
-       opening — a timeline that starts early, and sources beyond the standard
-       SF gov datasets — then spread across the city, one neighborhood each.
-       The card carries the picture and the address and nothing else; the page
-       itself does the talking. Swap these often as pages are written or
-       updated; see AGENTS.md. -->
-  <ul class="place-cards">
-    <li><a href="/san-francisco/castro/dolores-street/310/">
-      <ktp-streetview location="37.764308,-122.426981" label="310 Dolores Street">
-        <figure class="media">
-          <div class="media-empty">
-            <span class="ic ic-pin"></span>
-            <span>37.7643, −122.4270</span>
-          </div>
-        </figure>
-      </ktp-streetview>
-      <span class="card-label">310 Dolores Street</span></a></li>
-    <li><a href="/san-francisco/financial-district/mission-street/678/">
-      <ktp-streetview location="37.786669,-122.401689" label="678 Mission Street">
-        <figure class="media">
-          <div class="media-empty">
-            <span class="ic ic-pin"></span>
-            <span>37.7867, −122.4017</span>
-          </div>
-        </figure>
-      </ktp-streetview>
-      <span class="card-label">678 Mission Street</span></a></li>
-    <li><a href="/san-francisco/north-beach/grant-avenue/1640/">
-      <ktp-streetview location="37.802166,-122.407702" label="1640–1644 Grant Avenue">
-        <figure class="media">
-          <div class="media-empty">
-            <span class="ic ic-pin"></span>
-            <span>37.8022, −122.4077</span>
-          </div>
-        </figure>
-      </ktp-streetview>
-      <span class="card-label">1640–1644 Grant Avenue</span></a></li>
-    <li><a href="/san-francisco/western-addition/mcallister-street/1399/">
-      <ktp-streetview location="37.778018,-122.434797" label="1399 McAllister Street">
-        <figure class="media">
-          <div class="media-empty">
-            <span class="ic ic-pin"></span>
-            <span>37.7780, −122.4348</span>
-          </div>
-        </figure>
-      </ktp-streetview>
-      <span class="card-label">1399 McAllister Street</span></a></li>
-    <li><a href="/san-francisco/pacific-heights/pierce-street/2727/">
-      <ktp-streetview location="37.795214,-122.438955" label="2727 Pierce Street">
-        <figure class="media">
-          <div class="media-empty">
-            <span class="ic ic-pin"></span>
-            <span>37.7952, −122.4390</span>
-          </div>
-        </figure>
-      </ktp-streetview>
-      <span class="card-label">2727 Pierce Street</span></a></li>
-    <li><a href="/san-francisco/mission/san-jose-avenue/200/">
-      <ktp-streetview location="37.751898,-122.421849" label="200 San Jose Avenue">
-        <figure class="media">
-          <div class="media-empty">
-            <span class="ic ic-pin"></span>
-            <span>37.7519, −122.4218</span>
-          </div>
-        </figure>
-      </ktp-streetview>
-      <span class="card-label">200 San Jose Avenue</span></a></li>
-  </ul>
-
-  <p class="map-note">Or begin with a street:</p>
+  <div class="section-head"><span class="ic ic-pin"></span><h2>Browse by street</h2></div>
   <!-- The best-covered streets on the site, each ordered by how many addresses
        it holds. Both halves are links, so the neighborhood hubs stay reachable
-       from here too. No descriptions: the hub says what it is. -->
+       from here too. No descriptions: the hub says what it is.
+
+       This is the whole of the page below the news, and it is what makes the
+       claim in the map's fallback true: with no map, these links are still a
+       way into every page on the site. -->
   <ul class="place-list place-hubs">
     <li><a href="/san-francisco/mission/">Mission</a> <span aria-hidden="true">›</span> <a href="/san-francisco/mission/guerrero-street/">Guerrero Street</a></li>
     <li><a href="/san-francisco/castro/">Castro</a> <span aria-hidden="true">›</span> <a href="/san-francisco/castro/18th-street/">18th Street</a></li>
@@ -338,7 +292,9 @@
 /* The homepage map. Every documented address as one dot, click to open its
    page. The dots come from shared/addresses.geojson, built by
    scripts/build_map_index.py from the same data.json files that render the
-   pages themselves.
+   pages themselves. On top of them sits the news layer — the dozen addresses
+   in the grid below, in the other data hue, pulsing, each holding its story in
+   a hovercard.
 
    If anything here fails — no token, blocked CDN, no WebGL — the placeholder
    in #map stands and the links below it still reach every page. */
@@ -372,6 +328,121 @@ const dotLayer = () => ({
   },
 });
 
+/* The addresses in the news, read out of the grid below rather than from a
+   second data file. The cards are already the list of what the news module
+   published, so taking the map's news layer from the same markup means the two
+   cannot drift: a run that adds a card adds a dot, and one that drops a card
+   drops it. Everything the hovercard shows is text that is already on the page.
+   Coordinates come off <ktp-streetview location="LAT,LNG">, which the card
+   copies verbatim from the page's own data.json. */
+const newsFeatures = () =>
+  [...document.querySelectorAll(".news-cards > li")].flatMap((li) => {
+    const sv = li.querySelector("ktp-streetview");
+    const [lat, lng] = (sv?.getAttribute("location") ?? "").split(",").map(Number);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return [];
+    return [{
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [lng, lat] },
+      properties: {
+        t: sv.getAttribute("label") ?? "",
+        p: li.querySelector("a.card-label")?.getAttribute("href") ?? "",
+        h: li.querySelector(".card-news em")?.textContent ?? "",
+        o: li.querySelector(".card-outlet")?.textContent ?? "",
+      },
+    }];
+  });
+
+const PULSE_MS = 2400;
+const PULSE_MAX = 2.4;
+const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* News dots are the cool half of the site's warm/cool data pair, against the
+   brick of every other address — two hues that are already validated together,
+   rather than a new color invented for the map. They are also drawn a size
+   larger, because color alone would not find a dozen dots in eight thousand at
+   city zoom. */
+const newsRadius = (scale) => ["*", scale,
+  ["interpolate", ["linear"], ["zoom"], 10, 2.6, 12, 3.4, 14, 5, 16, 8, 18, 11]];
+
+const newsLayers = () => [
+  /* The halo. Its radius and opacity are driven frame by frame below; the
+     values here are the resting state, which is also what a reader who has
+     asked for reduced motion sees — a soft ring that never moves. */
+  {
+    id: "news-pulse",
+    type: "circle",
+    source: "news",
+    paint: {
+      "circle-color": cssVar("--cool"),
+      "circle-radius": newsRadius(PULSE_MAX),
+      "circle-opacity": REDUCED_MOTION ? 0.14 : 0,
+    },
+  },
+  {
+    id: "news-dot",
+    type: "circle",
+    source: "news",
+    paint: {
+      "circle-color": cssVar("--cool"),
+      "circle-radius": newsRadius(1),
+      "circle-opacity": 0.95,
+      "circle-stroke-color": cssVar("--paper"),
+      "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 12, 0.6, 16, 1.5],
+    },
+  },
+];
+
+/* Subtle is the whole brief: one slow ring every couple of seconds, fading as
+   it grows. Mapbox has no animated paint, so the halo is repainted per frame —
+   cheap at a dozen features, and parked whenever the map is off-screen or the
+   tab is hidden rather than repainting the city under the fold. */
+function pulse(map) {
+  if (REDUCED_MOTION) return;
+  let running = false, frame = 0;
+  const tick = (now) => {
+    if (!running) return;
+    if (map.getLayer("news-pulse")) {
+      const k = (now % PULSE_MS) / PULSE_MS;          // 0 → 1, once a cycle
+      map.setPaintProperty("news-pulse", "circle-radius",
+        newsRadius(1 + (PULSE_MAX - 1) * k));
+      // Fading faster than it grows, so the ring is nearly gone by the time it
+      // is wide and dissolves rather than snapping back to the dot.
+      map.setPaintProperty("news-pulse", "circle-opacity", 0.3 * (1 - k) ** 1.6);
+    }
+    frame = requestAnimationFrame(tick);
+  };
+  const run = (on) => {
+    if (on === running) return;
+    running = on;
+    if (on) frame = requestAnimationFrame(tick);
+    else {
+      cancelAnimationFrame(frame);
+      if (map.getLayer("news-pulse")) map.setPaintProperty("news-pulse", "circle-opacity", 0);
+    }
+  };
+  let onScreen = true;
+  const sync = () => run(onScreen && !document.hidden);
+  new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; sync(); })
+    .observe(document.querySelector(".map-shell"));
+  document.addEventListener("visibilitychange", sync);
+  sync();
+}
+
+/* The hovercard. Built as nodes from text already in the DOM — never a string
+   of HTML — so a headline with an ampersand or a quote in it stays a headline. */
+const newsCard = ({ t, h, o }) => {
+  const card = document.createElement("div");
+  card.className = "map-newscard";
+  const address = document.createElement("strong");
+  address.textContent = t;
+  const headline = document.createElement("em");
+  headline.textContent = h;
+  const outlet = document.createElement("small");
+  outlet.textContent = o;
+  card.append(address, headline, outlet);
+  return card;
+};
+
 /* The index is fetched here rather than handed to Mapbox as a URL so we can
    set the cache policy. "no-cache" revalidates every load and reuses the
    cached body on a 304 — costing one conditional request, not another 107 KB.
@@ -386,6 +457,19 @@ async function addAddresses(map) {
     map.addSource("addresses", { type: "geojson", data: addresses });
   }
   if (!map.getLayer("addresses")) map.addLayer(dotLayer());
+
+  /* The news goes on last so it sits above the eight thousand. This runs again
+     on every style load — a light/dark switch throws the layers away — which is
+     also how the dots pick up the other scheme's hues. */
+  if (!map.getSource("news")) {
+    map.addSource("news", {
+      type: "geojson",
+      data: { type: "FeatureCollection", features: newsFeatures() },
+    });
+  }
+  for (const layer of newsLayers()) {
+    if (!map.getLayer(layer.id)) map.addLayer(layer);
+  }
 }
 
 async function init() {
@@ -428,11 +512,25 @@ async function init() {
   syncScrollZoom();
   dark.addEventListener("change", (e) => map.setStyle(styleFor(e.matches)));
 
+  pulse(map);
+
   const popup = new mapboxgl.Popup({
     closeButton: false, closeOnClick: false, offset: 10,
   });
+  const newsPopup = new mapboxgl.Popup({
+    closeButton: false, closeOnClick: false, offset: 12,
+    className: "map-newspop", maxWidth: "17rem",
+  });
+
+  /* A news dot sits on top of the plain dot for the same address, so both
+     layers answer a hover there. The news layer wins: it says everything the
+     plain chip does and then the story. */
+  const overNews = (e) =>
+    map.getLayer("news-dot") &&
+    map.queryRenderedFeatures(e.point, { layers: ["news-dot"] }).length > 0;
 
   map.on("mousemove", "addresses", (e) => {
+    if (overNews(e)) return;
     const f = e.features[0];
     map.getCanvas().style.cursor = "pointer";
     popup.setLngLat(f.geometry.coordinates)
@@ -444,6 +542,23 @@ async function init() {
     popup.remove();
   });
   map.on("click", "addresses", (e) => {
+    if (overNews(e)) return;   // the news handler below has this one
+    location.href = e.features[0].properties.p;
+  });
+
+  map.on("mousemove", "news-dot", (e) => {
+    const f = e.features[0];
+    map.getCanvas().style.cursor = "pointer";
+    popup.remove();
+    newsPopup.setLngLat(f.geometry.coordinates)
+             .setDOMContent(newsCard(f.properties))
+             .addTo(map);
+  });
+  map.on("mouseleave", "news-dot", () => {
+    map.getCanvas().style.cursor = "";
+    newsPopup.remove();
+  });
+  map.on("click", "news-dot", (e) => {
     location.href = e.features[0].properties.p;
   });
 }
