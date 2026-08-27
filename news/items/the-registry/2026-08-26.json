@@ -1,0 +1,42 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-08-26",
+  "read_on": "2026-08-26",
+  "notes": "Eight Registry items were queued and four were read. Three are market-wide stories with no address — U-Haul migration data, a rent survey, a hospitality sales figure. The fourth is a genuine occupancy story that this module cannot use: Grocery Outlet opening a 30,000 sq ft store in the former Fisherman's Wharf Safeway, closing a three-year grocery gap in North Beach, with the street number nowhere in the article text. The only address flagged in this batch is a scraper artifact and is recorded below.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 1,
+    "remaining": "Nothing from this batch.",
+    "note": "The single address hit came out of the sharing-links markup at the foot of the page, not out of the story."
+  },
+  "findings": [
+    {
+      "id": "2026-08-26-0001",
+      "date": "2026-08-26",
+      "date_precision": "day",
+      "kind": "none",
+      "address_as_written": "843 Bay",
+      "description": "Not an address in this story. The digits were read out of the URL-encoded sharing links and the \"Previous post\" teaser at the foot of the article, which carry a dollar figure from an unrelated headline; the article itself is about citywide hospitality sales during the World Cup and names no building.",
+      "citation": {
+        "label": "The Registry, “San Francisco Hospitality Scored Double-Digit Sales Growth During the 2026 World Cup,” 26 August 2026",
+        "url": "https://news.theregistrysf.com/san-francisco-hospitality-scored-double-digit-sales-growth-during-the-2026-world-cup/",
+        "locator": "page furniture below the article"
+      },
+      "raw": {
+        "text": "Previous post Vivmark Residential Affiliates Pay $741."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "No usable address, so there is nothing to resolve. Recorded to stop the hit being read again, and because the same page furniture will keep producing it on every Registry article."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-08-26",
+        "method": "No street number in the catalogue title or the archivist's address note, so there is nothing to look up in sf-eas-addresses.",
+        "note": "The record locates it only as \"843 Bay\". Kept so the record is not read again; per the evidence bar in research/AGENTS.md it cannot become a page."
+      }
+    }
+  ]
+}
