@@ -1,0 +1,55 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-08-28b",
+  "read_on": "2026-08-28",
+  "notes": "Second run of 2026-08-28. Four items queued, all four read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 3,
+    "remaining": "One finding is pending on this batch.",
+    "note": "Two items named no street address: the naming of an Embarcadero park after a former mayor, which is a story about a person and a park rather than a building, and a piece on Market Street's rail tracks, which is about a street. A third, a sponsored Sundown Cinema round-up, produced only the false hit \"1000 Amazon\" from a sentence naming Crane Cove Park and the Ferry Building as film venues. The 1155 Market Street story also names 1455 Market Street in a list of related headlines in the page furniture, not in the article."
+  },
+  "findings": [
+    {
+      "id": "2026-08-28b-0001",
+      "date": "2026-08",
+      "date_precision": "month",
+      "kind": "sale",
+      "address_as_written": "1155 Market St.",
+      "street_number": "1155",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "STG Group, a Petaluma company, bought eight floors of this eleven-storey Mid-Market office building in August 2026 for roughly $8 million according to city records — a fraction of the $80 million the space was valued at in 2015. The seller, LightHouse for the Blind and Visually Impaired, had bought the top three floors for its headquarters and a majority stake in the lower eight; city agencies had occupied the lower floors since 1999, including the Treasurer & Tax Collector and the Environment Department, and moved out when their leases came up in 2024. Both parties are organisations; the individuals quoted in the story are not recorded here.",
+      "extra": {
+        "buyer": "STG Group",
+        "seller": "LightHouse for the Blind and Visually Impaired",
+        "floors_sold": 8,
+        "storeys_reported": 11,
+        "price_usd_approx": 8000000,
+        "valuation_2015_usd": 80000000,
+        "former_tenant": "City and County of San Francisco",
+        "former_tenant_years": "1999–2024"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “A Mid-Market building the city abandoned finds a new buyer,” 28 August 2026",
+        "url": "https://sfstandard.com/2026/08/28/lighthouse-building-buyer-mid-market/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Petaluma-based STG Group purchased eight floors of the property this month for roughly $8 million, according to city records."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-08-28",
+        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "The seeder may not make a page here. 1155 Market Street is a commercial condominium: EAS carries it only as #PARCEL A, B, C and D, on four active parcels (3702820-3702823), and the directory contract in the root AGENTS.md defers that case because none of the four parcels is the building. That subdivision is the story — STG bought eight floors and LightHouse kept the top three — so the fact is real and has nowhere legitimate to go today. If the site ever settles how it documents a vertically subdivided building, this is a good first candidate."
+      }
+    }
+  ]
+}
