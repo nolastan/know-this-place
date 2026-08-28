@@ -42,8 +42,7 @@
         "path": "/san-francisco/mission/mission-street/4494/",
         "eas_address": "4494 MISSION ST",
         "method": "EAS exact match on 4494 MISSION ST → parcel 6796011; sf-parcels has blklot 6796011 active, 4494–4494 MISSION; the 2025 roll records it as commercial retail, built 1910.",
-        "checked_on": "2026-08-25",
-        "note": "No page at this path yet; the parcel is the publisher's to seed."
+        "checked_on": "2026-08-28"
       },
       "publish": {
         "status": "published",
@@ -57,13 +56,14 @@
       "date_precision": "month",
       "kind": "occupancy",
       "address_as_written": "658 Clement",
-      "street_number": "658",
+      "street_number": "654",
       "street_name": "CLEMENT",
       "street_type": "ST",
       "description": "Animal Connection, a pet shop moving from the Outer Sunset, is due to open in this storefront in September 2026.",
       "extra": {
         "tenant": "Animal Connection",
-        "moving_from": "3401 Irving St"
+        "moving_from": "3401 Irving St",
+        "address_note": "The story writes 658 Clement, and EAS carries 658 CLEMENT ST with no parcel number, so it joined to nothing on its own. The city's own permits say why: a DBI addressing permit on block 1426 lot 026 reads \"change commercial adress from 658 clement st to 298 8th ave\", so 658 Clement is a retired address for the corner commercial space. Five further permits filed at 658 Clement between 1985 and 2011 — one for an awning wrapping around the corner — all name the same block and lot, the 2025 roll files 1426026 as \"0656 0654 CLEMENT ST\", and EAS puts 654 and 656 CLEMENT ST and 294-298 08TH AVE on it. Resolved on 654, the lowest Clement number on the parcel."
       },
       "citation": {
         "label": "Mission Local, “‘Clean slate’: Pet shop at heart of Sunset political scandal starts over in the Richmond,” 25 August 2026",
@@ -75,15 +75,17 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-08-25",
-        "method": "sf-eas-addresses has 658 CLEMENT ST but it does not join to one parcel.",
-        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+        "status": "resolved",
+        "apn": "1426026",
+        "path": "/san-francisco/inner-richmond/clement-street/654/",
+        "eas_address": "654 CLEMENT ST",
+        "method": "EAS exact match on 654 CLEMENT ST → parcel 1426026; sf-parcels has blklot 1426026 active, 294–298 08TH; the 2025 roll records it as multi-family residential, built 1905. EAS puts 654, 656 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 654.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
-        "status": "pending",
-        "pr": "https://github.com/nolastan/know-this-place/pull/166",
-        "note": "The resolver left this address unparcelled, so there is no page to put it on and none to seed — a page needs a parcel. The fact stays here; a later pass may find EAS has joined 658 CLEMENT ST to a parcel by then. The same story's other address, 3401 Irving Street, was published. Re-checked 2026-08-28: EAS still returns 658 CLEMENT ST (baseid 497185) with no blklot and no parcel_number, so it remains unparcelled and there is still no page to seed."
+        "status": "published",
+        "note": "Cleared from pending on 2026-08-28. The parcel was seeded in this run from research/manifests/news-2026-08-28-2.json; there was no page at /san-francisco/inner-richmond/clement-street/654/ before it. Dated 2026-08-25, the article's date, rather than the September opening the story forecasts: the timeline does not carry entries for events that have not happened, and the sibling entry for the same article on 3401 Irving Street carries the same date. See extra.address_note for how 658 Clement reaches this parcel."
       }
     },
     {
@@ -115,8 +117,7 @@
         "path": "/san-francisco/sunset-parkside/irving-street/3401/",
         "eas_address": "3401 IRVING ST",
         "method": "EAS exact match on 3401 IRVING ST → parcel 1790001; sf-parcels has blklot 1790001 active, 1301–1301 35TH; the 2025 roll records it as commercial misc, built 1933.",
-        "checked_on": "2026-08-25",
-        "note": "No page at this path yet; the parcel is the publisher's to seed."
+        "checked_on": "2026-08-28"
       },
       "publish": {
         "status": "published",
@@ -149,7 +150,7 @@
         "path": "/san-francisco/south-of-market/bryant-street/850/",
         "eas_address": "850 BRYANT ST",
         "method": "EAS exact match on 850 BRYANT ST → parcel 3759042; sf-parcels has blklot 3759042 active, 425–425 07TH; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 425 07TH ST.",
-        "checked_on": "2026-08-25",
+        "checked_on": "2026-08-28",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
@@ -182,7 +183,7 @@
         "path": "/san-francisco/tenderloin/golden-gate-avenue/121/",
         "eas_address": "121 GOLDEN GATE AVE",
         "method": "EAS exact match on 121 GOLDEN GATE AVE → parcel 0349021; sf-parcels has blklot 0349021 active, 121–121 GOLDEN GATE; the 2025 roll records it as commercial retail, built 2014. EAS files the address under parcel 0349001, which sf-parcels reports retired; the active parcel its coordinates fall in is 0349021.",
-        "checked_on": "2026-08-25",
+        "checked_on": "2026-08-28",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
@@ -219,7 +220,7 @@
         "path": "/san-francisco/tenderloin/geary-street/684/",
         "eas_address": "684 GEARY ST",
         "method": "EAS exact match on 688 GEARY ST → parcel 0304011; sf-parcels has blklot 0304011 active, 684–696 GEARY; the 2025 roll records it as multi-family residential, built 1922. The assessor files the parcel as 600–610 LEAVENWORTH ST. EAS puts 684, 688, 692, 696 GEARY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 684.",
-        "checked_on": "2026-08-25",
+        "checked_on": "2026-08-28",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
@@ -255,7 +256,7 @@
         "path": "/san-francisco/tenderloin/post-street/881/",
         "eas_address": "881 POST ST",
         "method": "EAS exact match on 881 POST ST → parcel 0303013B; sf-parcels has blklot 0303013B active, 644–644 HYDE; the 2025 roll records it as multi-family residential, built 1917. EAS puts 881, 891, 895 POST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 881.",
-        "checked_on": "2026-08-25",
+        "checked_on": "2026-08-28",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
@@ -292,7 +293,7 @@
         "path": "/san-francisco/mission/18th-street/3541/",
         "eas_address": "3541 18TH ST",
         "method": "EAS exact match on 3543 18TH ST → parcel 3588082; sf-parcels has blklot 3588082 active, 3541–3543 18TH; the 2025 roll records it as commercial misc, built 1906. EAS puts 3541, 3543 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3541.",
-        "checked_on": "2026-08-25"
+        "checked_on": "2026-08-28"
       },
       "publish": {
         "status": "declined",
