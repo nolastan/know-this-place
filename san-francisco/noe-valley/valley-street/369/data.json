@@ -1,0 +1,123 @@
+{
+  "address": "369 Valley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/valley-street/369/",
+  "apn": "6620033",
+  "block": "6620",
+  "lot": "033",
+  "eas_baseid": "404119",
+  "coordinates": {
+    "lat": 37.744029,
+    "lng": -122.430431
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 482,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0369 VALLEY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 858100,
+    "assessed_improvement_value": 367754,
+    "last_sale_date": "2014-04-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "survey_name": "Refugee Shack",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512232499",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-23",
+      "status_date": "2026-04-10",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "to abate and comply with nov 202546638 and enf 2025010797enj to include temp shoring for sturctural stabilization only . no moving or lifting house under this permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710262309",
+      "type": "additions alterations or repairs",
+      "status": "suspend",
+      "filed": "2017-10-26",
+      "status_date": "2025-11-19",
+      "estimated_cost": 750000,
+      "revised_cost": 828000,
+      "description": "two story over bsement rear addition to existing earthquake cottages over new basement, basement; 2 bedroom, 2 bathroom, laundry, storage sumppump, 1st floor; master suite, media rm, entry, office, 2ndfl, kitchen, living rm, dining, powder, roof deck. un-permitted rear addition to be demoed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEY&street_type=ST&address_number=369",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6620033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6620&lot=033",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6620033",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "earthquake-shacks-theme-document",
+      "name": "San Francisco Planning Department (Melanie Bishop), Earthquake Shacks Theme Document, adopted November 17, 2021",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2fe3a3f72802df35d361d40f98655118df9cad6b56e83c7a9851e6a776647236&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Earthquake Shacks Theme Document, adopted 2021",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "hook": "Two refugee shacks joined into an L-shaped house in 1907, one original casement window still in place.",
+  "building": {
+    "completed": 1907
+  },
+  "unknowns": [
+    "The assessor's roll dates the building to 1900; the two shacks were joined into this house in 1907."
+  ],
+  "historic_survey": {
+    "survey": "Earthquake Shacks Theme Document (2021)",
+    "source": "earthquake-shacks-theme-document",
+    "finding": "Eligible for the National Register and the California Register under Criterion A/1 (Events) and Criterion C/3 (Architecture)"
+  },
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "construction",
+      "description": "Two earthquake relief shacks — one Type B, one Type A — were joined into the L-shaped house that stands here. The Type B shack faces the street, with a boxed bay window under its front gable; the elevations are clad in wood shingles and one original three-by-two divided-light casement window survives on the east side.",
+      "source": "earthquake-shacks-theme-document"
+    }
+  ]
+}

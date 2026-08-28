@@ -9,3 +9,4 @@ that study area, as an example of the Second Bay Tradition.
 ## Streets documented so far
 
 - [21st Street](21st-street/) — 1 building, built 1958.
+- [Valley Street](valley-street/) — 1 building, built 1900.

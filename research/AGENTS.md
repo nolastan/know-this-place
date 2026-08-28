@@ -510,6 +510,35 @@ The mechanics:
   about the city rather than about the tool. 57 findings. *One reader per
   field; and when a lookup fails, check that what it looked up was ever
   fetched.*
+- **In a storefront corpus, the date belongs to whatever the caption describes.** "A
+  ceramic veneer storefront at 2215 Irving Street, constructed in 1936" dates the
+  storefront; the roll dates the building to 1924. Recorded as a construction fact it
+  becomes a `completed_conflict` asserting a disagreement that does not exist, and the
+  resolver cannot catch it because the address is perfectly good. Two findings were
+  corrected after the publication review for this. *Before writing a year into
+  `building.completed` or `.unknowns`, ask what the sentence is dating.*
+- **`--area-from-nhood` is a per-finding judgement, not a per-batch switch.**
+  On a citywide theme the batch lands on six streets in six parts of the city,
+  and the two rules disagree in both directions. The switch was right for
+  Valley Street (Noe Valley, not the Glen Park of the nearest published page)
+  and Peralta Avenue (Bernal Heights, not the Mission) — and wrong for 1227
+  24th Avenue, where the site files the 1200 block under `inner-sunset` while
+  the analysis neighborhood is Sunset/Parkside, so it would have separated the
+  page from 1234 next door. *Run `report` both ways on a scattered batch, and
+  where the site has already settled a block, follow the block.*
+- **A method sentence written for one corpus lies about every other one.**
+  `resolve_eas.py`'s no-street-number branch said "No street number in the
+  catalogue title or the archivist's address note" — true of `digitalsf`, false
+  of a survey PDF, a newspaper or a book, and it went into the audit trail of
+  two findings from a Planning theme document. The tool serves every source;
+  its sentences have to as well.
+- **A privacy filter built from digits misses the letter.**
+  `seed_pages.py`'s `generalize_units` rewrites "unit #4" to "one unit" and
+  leaves "unit a:" alone, because `_UNIT_NUM` requires a digit. 315 permit
+  descriptions across the site carry a lettered designator, one of them on a
+  page seeded by this run. Same shape as the `NAME_HINT` lessons above and the
+  same moral: *every widening of a privacy filter here has come from something
+  that already reached a page — so check the pages you just wrote.*
 - **A filter built from suffixes takes the sentences too.** The survey's note
   column names the firm for most buildings and describes the architecture for
   the rest, and a name-detector keyed on "Co.", "&" and capitalisation read

@@ -4,6 +4,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1400](1400/) — A 1920 store building, with reroofing permitted in 2013.
 - [1410–1412](1410/) — A 1909 4-unit building with a ground-floor store, with stair work permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 27 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 29 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 27 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 13: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) and [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved). All thirteen loops closed. |
-| **Remaining** | ~23 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 29 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 15: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved). All fifteen loops closed. |
+| **Remaining** | ~21 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -376,6 +376,34 @@ document you are about to mine.
     every page header read **100% Draft**; SF Planning's listing page carries
     it under the adopted statements, so this is the adopted file. See "The PPIE
     and Marina district statement" below.
+  - San Francisco Planning Department (Melanie Bishop, Assistant Preservation
+    Planner, with Susan Parks and Marcelle Boudreaux), *Earthquake Shacks Theme
+    Document*, a theme of the Residential Historic Context Statement's
+    Single-Family sub-context, adopted November 17, 2021 (43 pp.), source id
+    `earthquake-shacks-theme-document`. SF Planning lists it as "Earthquake
+    Shacks Theme Document (Adopted 2021)". Served from the same M-Files vault
+    as Dogpatch, Glen Park, Inner Mission North, Inner Sunset, OMI, Mission
+    Dolores, Japantown, Russian Hill, the Oceanside and PPIE, and the REST
+    content hash is again the `accesskey` in the `SharedLinks.aspx` URL the
+    issue carries —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/2fe3a3f72802df35d361d40f98655118df9cad6b56e83c7a9851e6a776647236/content`
+    — while the `SharedLinks.aspx` form is what a page cites. Born-digital
+    Word-to-PDF; `pdftotext -layout` reads it cleanly with no OCR damage. See
+    "The Earthquake Shacks theme document" below.
+  - San Francisco Planning Department (Mary Brown, preservation planner, 2013; Susan Parks,
+    senior preservation planner, 2015; with consultants at ICF and further edits in 2021),
+    *Neighborhood Commercial Buildings, 1865-1965, Historic Context Statement*, submitted
+    9 June 2021, adopted 2 November 2022 (153 pp.), source id
+    `neighborhood-commercial-context-statement`. SF Planning lists it as "Neighborhood
+    Commercial Buildings, 1865-1965, Historic Context Statement (Adopted 2022)". Served
+    from the same M-Files vault as Dogpatch, Glen Park, Inner Mission North, Inner Sunset,
+    OMI, Mission Dolores, Japantown, Russian Hill, the Oceanside, PPIE and the earthquake
+    shacks, and the REST content hash is again the `accesskey` from the `SharedLinks.aspx`
+    URL —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/6e02d03c979da663645a63b156e861fca44d7f96ecca9ad8192c0828493bf7fe/content`
+    — while the `SharedLinks.aspx` form is what a page cites. Born-digital; `pdftotext
+    -layout` reads it cleanly. The document calls itself the "Storefront context
+    statement" throughout. See "The Neighborhood Commercial Buildings statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -2908,3 +2936,145 @@ Cautions specific to it:
   *twelve* bungalows and 2122-2146 Bay Street *five*, spacings no enumeration
   would guess. Coverage note: this document is read in full and nothing in it
   is outstanding.)
+
+**The Earthquake Shacks theme document is a typology guide, not an inventory.**
+It is 43 pages on the 5,610 relief cottages the San Francisco Relief and Red
+Cross Funds Corporation built in the 31 refugee camps of 1906–08, how they were
+designed and costed, how they were sold to their occupants for two dollars a
+month, and how 5,343 of them were dragged onto private lots when the camps
+closed. There is **no appendix table, no APN and no status code anywhere in
+it**, and its address-level yield is the handful of buildings that reached a
+landmark case, a preservation campaign or a Planning eligibility determination
+— nine numbered addresses in 43 pages.
+- **Where the addresses are.** Three of them are the worked examples in the
+  evaluation criteria (pp. 39–42), which are the best material in the document:
+  each gives the shack type, what was altered, and the Department's eligibility
+  finding under Criteria A/1 and C/3. The rest are in the preservation-history
+  chapter (pp. 29–31) — the landmark case, a demolition appeal, and a rescue —
+  plus one Bonus Plan house named in a footnote (p. 22).
+- **Table 1 lists all 31 refugee camps and no camp resolves.** Each row gives
+  the camp number, name, shelter type (tent, shack, barracks, model camp) and
+  the four streets that bounded it — Lobos Square by Chestnut, Bay, Webster and
+  Laguna, Franklin Square by 16th, 17th, Bryant and Hampshire, and so on. That
+  is a boundary, not an address, and the parks it names are not addressed
+  parcels here. If this repo ever documents the squares themselves, the table
+  is where their camp histories are.
+- **The follow-on list is the thing to go after.** The document describes a
+  2016 reconnaissance survey run by SF Planning with Jane Cryan and Curbed.com
+  that **authenticated 45 shack sites** and sorted them into ten altered types.
+  That list is not printed here. Cryan's *Hope Chest*, the manuscript this
+  document rests on, is unpublished and readable only at the SF History Center
+  — a `needs-human` errand.
+- **Its own preservation history is dense with a named advocate.** Jane Cryan
+  founded the Society for the Preservation and Appreciation of San Francisco's
+  1906 Refugee Shacks and is a public figure in the preservation record, but
+  the document introduces her as the *tenant* of the landmarked cottage at 1227
+  24th Avenue. The pages here carry the buildings and the designations and
+  leave the tenancy out.
+- **Planning's own parcel data corroborates it, which is unusual.** Two of the
+  five parcels published from this document carry `survey_name` "REFUGEE SHACK"
+  or "Refugee Shack" in `sf-planning`'s historic resource status, 1227 24th
+  Avenue is an Article 10 Individual Landmark there, and 48 Peralta Avenue is
+  coded C, "not a historical resource", exactly as the document's ineligibility
+  finding says. A permit on 369 Valley Street calls the building "existing
+  earthquake cottages" in its own words.
+- **A citywide theme scatters its findings, and `--area-from-nhood` is not
+  automatically right.** Six streets in six parts of the city, five of which
+  the site had never published on — so the resolver's default of "the area of
+  the nearest published page" is wrong for most of them, and
+  `--area-from-nhood` fixed Valley Street (Noe Valley, not Glen Park) and
+  Peralta Avenue (Bernal Heights, not the Mission). It was wrong for the sixth:
+  the site files the 1200 block of 24th Avenue under `inner-sunset` while the
+  analysis neighborhood is Sunset/Parkside, so 1227 would have been separated
+  from 1234 next door. The switch is a per-finding judgement on a scattered
+  batch, not a per-batch setting.
+- **Verified:** 2026-08-27 (Earthquake Shacks: read all 43 pages — the historic
+  context, Table 1's 31 camps, Table 2's shack types and costs, the typology
+  and survey guide, the evaluation criteria with its three worked examples, and
+  the bibliography. **11 findings, 5 published on 5 pages**, all five created by
+  this run, across `bernal-heights` (2), `inner-sunset` (1), `noe-valley` (1)
+  and `outer-richmond` (1). One resolved finding was declined as a duplicate:
+  357 Union Street already carries its Bonus Plan origin from the North Beach
+  statement, with the architects named, which is more than this document says.
+  Five never reached a parcel: 2 condominiums (4329 and 4331 Kirkham Street,
+  where the four rescued shacks stood — the lots were rebuilt in 2007 and the
+  roll classes both as condominiums), 2 locations given without a street number
+  (the 1300 block of Waller Street, the corner of Bay and Leavenworth) and 1
+  address the city no longer holds (333 Peralta Avenue, where the 48 Peralta
+  house stood until 1948). **1 conflict is stated on a page**: the roll dates
+  369 Valley Street to 1900 and the document dates the joining of its two
+  shacks to 1907. Coverage note: this document is read in full and nothing in
+  it is outstanding; the 2016 survey's 45 authenticated sites are a separate
+  list that is not in it.)
+
+**The Neighborhood Commercial Buildings statement is a citywide thematic statement with no
+inventory, and it is one of the densest of its kind read here.** 153 pages on the shops of
+San Francisco's neighborhood corridors from 1865 to 1965 — how the corridors grew with the
+streetcar lines, what a storefront was made of in each period, what the New Deal's
+Modernization Credit Plan did to Main Street, and how to evaluate what survives. It has no
+appendix table, no APNs and no per-property status codes; **99 numbered addresses in 153
+pages** come out of its figure captions, its worked examples in the integrity sections, and
+its landmark-designation recommendations. Nearly every one carries a build year, an
+architect or builder, a style, or all three.
+- **Where the addresses are.** Three seams, in ascending order of quality. The figure
+  captions are the bulk of it and usually give a date and a style ("Two-story blonde brick
+  building at 3743 Mission Street (1926)"). The **"Examples of Significance and Integrity
+  Evaluations"** pages at the end of each period chapter are the best material — a
+  paragraph per building, with the alteration history and an eligibility finding.
+  The **preservation recommendations** (ch. 9) name the buildings Planning wants
+  landmarked: 1035 Guerrero, 2700 Sutter and 1401 Lyon Street as rare intact pre-1906
+  commercial buildings, 2080 Chestnut and 2756 Mission Street for unusual storefronts, and
+  3231-3239 Balboa for Streamline Moderne and Art Deco.
+- **Read the captions for the firms, not just the buildings.** A page on local suppliers
+  lists six shopfront makers at their 1940s addresses, and the Sherry's liquor-store
+  section gives five branded storefronts with two opening dates. Those are dated
+  occupancies of named firms, which the privacy limits allow and which most statements
+  never give.
+- **Its dates are as often a remodel as a construction.** This is the trap specific to a
+  storefront corpus: "constructed in 1936" in a caption may date the ceramic veneer on the
+  front of a building the roll dates to 1924. Two findings had to be corrected after the
+  publication review for exactly this — 2215 Irving Street and the Graysons store at
+  160-170 West Portal Avenue, where a Gruen & Krummeck shopfront of about 1943 was first
+  recorded as the building's construction. *Ask what the sentence dates before writing a
+  year into `building.completed` or a conflict into `.unknowns`.*
+- **Five of its addresses are on parcels rebuilt since.** The roll dates the buildings at
+  770 McAllister to 1974, 2750 19th Street to 2023, 1306 Fulton to 1989, 2034 Clement to
+  2017 and 5620 Geary to 1994 — so the 1940s shopfront makers and the 1942 Sherry's store
+  are not facts about the buildings those pages document, and all five were declined. The
+  pages themselves were already seeded by then and stand as ordinary assessor-data pages.
+- **It contradicts itself in five places**, all of them stated on the pages: the
+  Streamline Moderne storefront is "2749-2756 Mission Street" in the integrity chapter and
+  2756 Mission Street in the style chapter; a 1966 Safeway on Mission Street is captioned
+  the "Marina Safeway", which is the 1959 store at 11-15 Marina Boulevard; the Wright
+  remodel at 140 Maiden Lane is 1949 in a caption and 1948 in the text; the 3293 Mission
+  Street remodel is 1938 in the text and c. 1935 in the caption above it; and it writes
+  "3522 Geary Avenue" for a street the city calls Geary Boulevard.
+- **Sixteen findings never reached a parcel, and the pattern in them is instructive.** Four
+  are pre-1906 downtown photographs (322-324 Bush, 9 and 168 Montgomery) whose numbers EAS
+  no longer holds — the 1909 renumbering and the fire between them. Six more are addresses
+  the city has since dropped (826 Bush, 1222 Divisadero, 1124 Market, 1660 California, 140
+  Van Ness, 332 Brannan), three are rows printed as ranges across several parcels today
+  (17-55 Osgood Place, 11-15 Marina Boulevard, 230-244 West Portal Avenue), two are
+  condominiums, and one is "2501 Shore Boulevard", a street the city has never had.
+- **`--area-from-nhood` is wrong for this batch**, which is the mirror image of the
+  earthquake shacks run. Its addresses fall on corridors the site has already settled —
+  Mission Street, Fillmore, Chestnut, Geary, Polk — and the analysis neighborhood would
+  have scattered them into directories this repo does not use (`portola`,
+  `lone-mountain-usf`, `financial-district-south-beach`) and split Mission Street between
+  `mission` and `bernal-heights`. Proximity is the right rule where the street is settled.
+- **Verified:** 2026-08-27 (Neighborhood Commercial Buildings: read all 153 pages — the
+  three period chapters with their storefront-component sections and evaluative frameworks,
+  the signage chapter, the 1970s-2000s trends chapter, the recommendations and the
+  bibliography. **99 findings, 76 published on 75 pages**, 62 of them created by this run,
+  across 21 neighborhood directories with `mission` (22 facts), `pacific-heights` (7) and
+  `west-of-twin-peaks` (6) at the head. Seven resolved findings were declined: five for
+  parcels rebuilt since the source, and two as duplicates — 1687 Market Street already
+  carries its 1925 construction from the Market & Octavia statement with the architects
+  named, and 401 Castro Street already carries Landmark No. 264 and the Eureka Valley
+  statement's panel. **8 conflicts are stated on pages and 5 construction dates disagree
+  with the assessor.** What it taught, beyond the cautions above: on a storefront corpus
+  the date in a caption belongs to whatever the caption is describing, which is as often a
+  shopfront as a building, and the resolver cannot tell the difference — that judgement is
+  the extractor's. Coverage note: this document is read in full and nothing in it is
+  outstanding.)
+

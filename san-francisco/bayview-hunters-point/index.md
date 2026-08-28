@@ -29,6 +29,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Pomona Street](pomona-street/) — 1 building, built 1910.
 - [Quesada Avenue](quesada-avenue/) — 5 buildings, built 1900–1922.
 - [Revere Avenue](revere-avenue/) — 1 building, built 1900.
+- [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1906.
 - [Selby Street](selby-street/) — 1 building, built 1951.
 - [Shafter Avenue](shafter-avenue/) — 1 building, built 1900.
 - [Third Street](3rd-street/) — 54 buildings, built 1872–2013.
