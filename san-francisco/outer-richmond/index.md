@@ -20,6 +20,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [31st Avenue](31st-avenue/) — 1 building, built 1950.
 - [32nd Avenue](32nd-avenue/) — 1 building, built 1940.
 - [33rd Avenue](33rd-avenue/) — 2 buildings, built 1939–1949.
+- [34th Avenue](34th-avenue/) — 1 building, built 1900.
 - [35th Avenue](35th-avenue/) — 2 buildings, built 1911–1987.
 - [37th Avenue](37th-avenue/) — 4 buildings, built 1914–1925.
 - [40th Avenue](40th-avenue/) — 1 building, built 1924.
