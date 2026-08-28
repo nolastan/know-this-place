@@ -1,0 +1,126 @@
+{
+  "address": "1400 25th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/1400/",
+  "apn": "1829043A",
+  "block": "1829",
+  "lot": "043A",
+  "eas_baseid": "319593",
+  "coordinates": {
+    "lat": 37.761283,
+    "lng": -122.483193
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1437,
+    "building_area_sqft": 1750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1402 1400 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 441896,
+    "assessed_improvement_value": 135934,
+    "last_sale_date": "1993-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210265213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-26",
+      "status_date": "2023-05-17",
+      "estimated_cost": 2000,
+      "revised_cost": 6000,
+      "description": "to comply w/nov#202294522, emergency repair to front of building, rebuild wall/foundation in foyer on g/f in-kind per plan, new stucco where damaged in-kind to match front elevation. no other work performed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207080867",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-08",
+      "status_date": "2002-07-17",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair stucco next to garage door 2 x 10 area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113641",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-01",
+      "status_date": "1992-02-27",
+      "estimated_cost": 2650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1991–2022",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=1400",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1829043A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1829&lot=043A",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1829043A",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1944",
+      "kind": "construction",
+      "description": "French Provincial reduced to its essentials — the mansard roof and a projecting side bay over the entrance, and little else — in the form the survey calls representative of countless San Francisco flats.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

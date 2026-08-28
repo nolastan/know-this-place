@@ -1,0 +1,134 @@
+{
+  "address": "3533–3535 Scott Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/scott-street/3533/",
+  "apn": "0921006",
+  "block": "0921",
+  "lot": "006",
+  "eas_baseid": "290383",
+  "coordinates": {
+    "lat": 37.802479,
+    "lng": -122.441976
+  },
+  "address_range": "3533–3535",
+  "street_numbers_on_parcel": [
+    "3533",
+    "3535"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2966,
+    "building_area_sqft": 3530,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3533 SCOTT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1465393,
+    "assessed_improvement_value": 628023,
+    "last_sale_date": "2012-11-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310108276",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-10",
+      "status_date": "2024-09-30",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "replace 11 rotted wood sash window in kind at street side of building and rear. 9 at front, 2 at rear u=.30max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204662",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-03-24",
+      "status_date": "1992-08-19",
+      "estimated_cost": 35000,
+      "description": "revision 9024089",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024689",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-12-04",
+      "status_date": "1992-07-31",
+      "estimated_cost": 35000,
+      "description": "revise plans for permit #8922769",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922769",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-11-22",
+      "status_date": "1992-02-12",
+      "estimated_cost": 20000,
+      "description": "ewo (s)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SCOTT&street_type=ST&address_number=3533",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0921006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0921&lot=006",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0921006",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "construction",
+      "description": "One of a pair of Mediterranean Revival flats buildings put up together, in the style that dominated San Francisco residential building through the 1920s and 1930s.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

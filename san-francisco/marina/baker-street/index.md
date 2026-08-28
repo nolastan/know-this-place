@@ -4,6 +4,7 @@ The parcels on Baker Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [3012–3014](3012/) — A 1931 two-flat, with a seismic retrofit permitted in 2009.
 - [3160](3160/) — A 1925 single-family house, with a kitchen and bathroom remodel permitted in 2004.
 - [3166](3166/) — A 1926 single-family house, with a kitchen remodel permitted in 2018.
 - [3253](3253/) — A 1928 single-family house in the Baker Street Period Revival Bungalows Historic District, with window replacement permitted in 2022.

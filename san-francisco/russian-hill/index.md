@@ -11,6 +11,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Columbus Avenue](columbus-avenue/) — 1 building, built 1931.
 - [Filbert Street](filbert-street/) — 1 building, built 1909.
 - [Francisco Street](francisco-street/) — A 1914 corner house beside the Powell–Hyde cable car line; tied to Nicolas Cage.
+- [Green Street](green-street/) — 1 building, built 1950.
 - [Greenwich Street](greenwich-street/) — 1 building, built 1912.
 - [Jackson Street](jackson-street/) — 1 building, built 1914.
 - [Jones Street](jones-street/) — 1 building, built 1908; 1 in the Russian Hill-Macondray Lane Historic District.

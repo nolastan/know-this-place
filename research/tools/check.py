@@ -197,6 +197,16 @@ def check_rules(rel: Path, data: dict) -> None:
             for key in ("apn", "path", "method"):
                 if not res.get(key):
                     err(str(rel), f"{fid}: resolved findings need resolution.{key}")
+            # The resolver files a page on the analysis neighborhood the
+            # assessor and EAS give the parcel, and that vocabulary is not this
+            # site's — "Twin Peaks" is a real analysis neighborhood and not one
+            # of the directories under san-francisco/. Caught here it costs a
+            # line; caught after `seed_pages.py seed-list` it is a directory
+            # full of pages in a place the site does not use.
+            area = (res.get("path") or "").strip("/").split("/")
+            if len(area) >= 2 and not (ROOT.parent / area[0] / area[1]).is_dir():
+                err(str(rel), f"{fid}: resolution.path names {area[0]}/{area[1]}/, "
+                              f"which is not a directory this site has")
         elif status in ("unresolved", "rejected") and not res.get("note") and not res.get("method"):
             err(str(rel), f"{fid}: {status} findings must say why (resolution.note or .method)")
 

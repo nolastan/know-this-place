@@ -416,6 +416,48 @@ rather than just accumulate.
   for something earlier. Publishing it as a source-versus-assessor
   disagreement invents a conflict that isn't there. Where the parcel holds
   several buildings of several dates, say that instead.
+- **A parcel can resolve perfectly and still be unable to carry a page.**
+  `sf-parcels` marks some active parcels `in_asr_secured_roll: false`, and
+  those have no roll row in any year — so `seed_pages.py` has nothing to build
+  a page from and skips them, silently, in a line among its output. This is not
+  the condominium case and the resolver does not catch it: EAS matches, the
+  parcel is active, `resolve_eas.py` says `resolved`. **After seeding, diff the
+  manifest against the pages that now exist** — the gap is this. The findings
+  are `resolved` with `publish: declined`, which is the "Resolved, no page"
+  column of the PR table. Large multi-unit buildings are where it concentrates:
+  the Large Apartment Buildings statement lost 11 parcels this way and 10 more
+  to condominium APNs, 30 of 89 findings between them.
+- **A multi-family theme loses a large, predictable slice to condominium
+  conversion.** Small multiple-unit buildings are exactly the stock the city
+  converted, so on a theme whose subject *is* multi-family housing the
+  condominium rule bites hardest: 13 of 19 unresolved findings in the Flats and
+  Small Apartment Buildings statement, and 49 of 161 across it and its companion
+  volume once the secured-roll cases are counted too. Budget for roughly a
+  quarter of such a batch never reaching a page, say so in the coverage note,
+  and do not report it as a resolution failure — the addresses are right and the
+  buildings are standing.
+- **Check the resolver's neighborhood against the directories the site
+  actually has.** `--area-from-nhood` files on the analysis neighborhood the
+  assessor and EAS give the parcel, and that vocabulary is not this site's:
+  "Twin Peaks" is a real analysis neighborhood and not one of the 40
+  directories under `san-francisco/`. The manifest will name it anyway and the
+  seeder will create it. `ls san-francisco/` before seeding.
+- **Read the target page before writing the fact.** A citywide theme crosses
+  every neighborhood statement this project has already mined, so a good share
+  of its parcels arrive already documented. Nine of 53 pages in the Flats and
+  Small Apartment Buildings run already carried research content, and it cost
+  one declined finding, three rewordings and three stated disagreements to
+  handle them honestly. What a citywide statement usually adds to a page a
+  neighborhood statement reached first is the *type and style*, not the
+  architect — the neighborhood survey nearly always had the architect already.
+  Check `historic_survey.source` too: the renderer holds one survey panel per
+  page, and a second statement's panel cannot go on.
+- **Where a source names its own neighborhoods, they beat both filing rules.**
+  Proximity and `--area-from-nhood` are both guesses about geography; a context
+  statement saying "both located within Noe Valley" is not. On a scattered
+  batch the two rules will disagree on a fifth of the findings and split about
+  evenly on which is right, and the source's own attributions broke every tie
+  correctly in the run that measured it.
 
 ## Filing work
 
