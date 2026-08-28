@@ -899,8 +899,11 @@ def decide(city: City, f: dict, today: str) -> dict:
             bits.append(f"the street ({name} {stype or ''})".strip())
         what = f.get("address_as_written")
         return {"status": "unresolved", "checked_on": today,
-                "method": "No street number in the catalogue title or the archivist's address "
-                          "note, so there is nothing to look up in sf-eas-addresses.",
+                # Source-neutral: this branch runs for every corpus, and a
+                # sentence about catalogue titles and archivists' notes is
+                # false on a survey report, a newspaper or a book.
+                "method": "The record states no street number, so there is nothing to look up "
+                          "in sf-eas-addresses.",
                 "note": (f"The record locates it only as \"{what}\""
                          + (f" — {'; '.join(bits)}" if bits else "")
                          + ". Kept so the record is not read again; per the evidence bar in "
@@ -924,7 +927,7 @@ def decide(city: City, f: dict, today: str) -> dict:
                            f"or any spelling of it, so the address cannot be looked up." + second),
                 "note": "The street the record names is not a street in the city's address "
                         "registry today; the record may name a private way, a renamed street "
-                        "or an archivist's spelling this pass could not match."}
+                        "or a spelling this pass could not match."}
 
     # ---- what the title says ----------------------------------------------- #
     # A record that states a range states every number in it. Where it also
