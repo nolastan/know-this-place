@@ -236,6 +236,26 @@ commit**:
 python3 scripts/seed_pages.py render <path to the page, street or area>
 ```
 
+**`render` takes a repo-relative path, and a finding's `resolution.path` is
+not one.** Findings store the site path — `/san-francisco/nob-hill/...` — and
+`render` treats a leading `/` as an absolute filesystem path, so it exits with
+`render: no such path` on the *first* bad argument and renders nothing after
+it. Strip the slash. To render exactly the pages a batch published:
+
+```bash
+python3 - <<'EOF' > /tmp/pages.txt
+import json, pathlib
+d = json.load(open("research/findings/<id>/<batch>.json"))
+seen = []
+for f in d["findings"]:
+    r = f["resolution"]
+    if r.get("status") == "resolved" and r["path"].strip("/") not in seen:
+        seen.append(r["path"].strip("/"))
+print("\n".join(seen))
+EOF
+cat /tmp/pages.txt | xargs -n 60 python3 scripts/seed_pages.py render
+```
+
 `data.json` is the only file you write; `validate.py` fails if `index.html` is
 not exactly what the renderer produces from it. A conflict from step 3 goes in
 `.unknowns`, stated plainly and left unadjudicated.

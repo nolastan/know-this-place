@@ -6,6 +6,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 
 - [14th Avenue](14th-avenue/) — 1 building, built 1911.
 - [15th Avenue](15th-avenue/) — 8 buildings, built 1906–1921; 1 in the Fernando Nelson Mission Revival Rowhouse Historic District.
+- [16th Avenue](16th-avenue/) — 1 building, built 1930.
 - [17th Avenue](17th-avenue/) — 1 building, built 1918.
 - [19th Avenue](19th-avenue/) — 2 buildings, built 1900–1964.
 - [20th Avenue](20th-avenue/) — 2 buildings, built 1921.

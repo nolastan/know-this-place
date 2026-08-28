@@ -22,4 +22,5 @@ that neighborhood.
 - [Powell Street](powell-street/) — 1 building.
 - [Sacramento Street](sacramento-street/) — 1 building.
 - [Sutter Street](sutter-street/) — 1 building.
+- [Taylor Street](taylor-street/) — 1 building, built 1929.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.

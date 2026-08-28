@@ -13,6 +13,7 @@ The parcels on Clayton Street documented here so far, from the city's address, a
 - [1300](1300/) — A 1941 single-family house, with a kitchen remodel permitted in 1996.
 - [1306](1306/) — A 1941 single-family house, with a kitchen and bathroom remodel permitted in 2009.
 - [1310](1310/) — A 1961 16-unit apartment building, with an accessory dwelling unit permitted in 2022.
+- [1349](1349/) — A 1927 13-unit apartment building, with window replacement permitted in 2007.
 - [1370](1370/) — A 1905 two-flat, with a kitchen and bathroom remodel permitted in 2011.
 - [1400](1400/) — A 1910 single-family house, with reroofing permitted in 2009.
 - [1406](1406/) — A 1910 single-family house, with reroofing permitted in 2014.

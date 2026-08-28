@@ -4,6 +4,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1500](1500/) — A 1913 19-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.
 - [1522](1522/) — A 1916 office building, with facade work permitted in 2019.
 - [1530–1540](1530/) — A 1916 garage, with permit records from 2001 to 2017.
 - [1565](1565/) — A 1923 garage, with stair work permitted in 2011.

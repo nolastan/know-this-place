@@ -416,6 +416,29 @@ rather than just accumulate.
   for something earlier. Publishing it as a source-versus-assessor
   disagreement invents a conflict that isn't there. Where the parcel holds
   several buildings of several dates, say that instead.
+- **A parcel can resolve perfectly and still be unable to carry a page.**
+  `sf-parcels` marks some active parcels `in_asr_secured_roll: false`, and
+  those have no roll row in any year — so `seed_pages.py` has nothing to build
+  a page from and skips them, silently, in a line among its output. This is not
+  the condominium case and the resolver does not catch it: EAS matches, the
+  parcel is active, `resolve_eas.py` says `resolved`. **After seeding, diff the
+  manifest against the pages that now exist** — the gap is this. The findings
+  are `resolved` with `publish: declined`, which is the "Resolved, no page"
+  column of the PR table. Large multi-unit buildings are where it concentrates:
+  the Large Apartment Buildings statement lost 11 parcels this way and 10 more
+  to condominium APNs, 30 of 89 findings between them.
+- **Check the resolver's neighborhood against the directories the site
+  actually has.** `--area-from-nhood` files on the analysis neighborhood the
+  assessor and EAS give the parcel, and that vocabulary is not this site's:
+  "Twin Peaks" is a real analysis neighborhood and not one of the 40
+  directories under `san-francisco/`. The manifest will name it anyway and the
+  seeder will create it. `ls san-francisco/` before seeding.
+- **Where a source names its own neighborhoods, they beat both filing rules.**
+  Proximity and `--area-from-nhood` are both guesses about geography; a context
+  statement saying "both located within Noe Valley" is not. On a scattered
+  batch the two rules will disagree on a fifth of the findings and split about
+  evenly on which is right, and the source's own attributions broke every tie
+  correctly in the run that measured it.
 
 ## Filing work
 

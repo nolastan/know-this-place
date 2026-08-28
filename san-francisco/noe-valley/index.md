@@ -9,4 +9,6 @@ that study area, as an example of the Second Bay Tradition.
 ## Streets documented so far
 
 - [21st Street](21st-street/) — 1 building, built 1958.
+- [Castro Street](castro-street/) — 1 building, built 1973.
+- [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
 - [Valley Street](valley-street/) — 1 building, built 1900.

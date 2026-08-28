@@ -4,6 +4,7 @@ The parcels on California Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [2000](2000/) — A 1924 14-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
 - [2001](2001/) — A 1930 43-unit apartment building, with reroofing permitted in 2013.
 - [2199](2199/) — A 1900 10-unit apartment building, with a kitchen remodel permitted in 2017.
 - [2262–2266](2262/) — A 1904 church, with a seismic retrofit permitted in 2007.
