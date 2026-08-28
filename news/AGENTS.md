@@ -370,16 +370,18 @@ Rules that catch people out:
   quietly drop from either side. Keep such a note only while the page still
   shows the claim it contradicts — usually in the headline itself.
 - **The page is only half of it.** The same headline goes on the homepage's
-  news grid in the same PR — see "The homepage carries the newest six" below.
+  news grid in the same PR — see "The homepage is the news" below.
 - `python3 scripts/validate.py` must pass — it asserts `index.html` is exactly
   what the renderer produces from `data.json`, so re-render before you commit.
 
-## The homepage carries the newest six
+## The homepage is the news
 
 A story that reaches a page reaches the homepage too. The root
-[index.html](../index.html) opens on an **In the news** grid — the first
-section under the map, above "Start here" — `.place-cards.news-cards`, holding
-the six most recent news entries on the site, newest first.
+[index.html](../index.html) is a map and then **In the news** — the grid is the
+page's subject, under the `<h1>`, `.place-cards.news-cards`, holding the
+**twelve** most recent news entries on the site, newest first. Below it there is
+only a list of street hubs. The homepage used to open on a manifesto and a grid
+of featured addresses; both are gone, and this module's grid took the room.
 
 **An entry is not published until its card is in.** The pages this module writes
 are mostly pages nobody has a reason to visit yet, on streets the site had never
@@ -388,10 +390,18 @@ where a reader will actually meet it. A fact filed on a page nobody opens is the
 failure this module exists to avoid, and it does not stop being that failure
 because the fact is on a page rather than in an items file.
 
-The card is the "Start here" card — picture, then address — with two lines hung
-underneath it: the headline, verbatim, linking to the article, and the outlet
-beneath that. The building is still what the card names first; the news is what
-it says about it.
+The card is picture, then address, with two lines hung underneath it: the
+headline, verbatim, linking to the article, and the outlet beneath that. The
+building is what the card names first; the news is what it says about it.
+
+**The grid is also the map's data.** The script at the foot of the homepage
+reads these cards — the `location`, the label, the headline, the outlet — and
+draws each one on the map as a pulsing dot in the cool data hue, against the
+brick of the eight thousand ordinary addresses, with the story in a hovercard.
+There is no second file: a card added is a dot added, a card dropped is a dot
+dropped, and a card with a `location` that does not parse is silently missing
+from the map. That is one more reason `location` is copied from the page's
+`data.json` verbatim and never typed by hand.
 
 ```html
 <li>
@@ -415,10 +425,12 @@ line-break opportunity in its own right — a bare `&nbsp;` does not stop the
 browser stranding the icon alone on a line of its own. The nowrap wrapper, with
 no whitespace ahead of it, is what keeps the icon on the last word.
 
-- **Six, and the newest are the six.** The new card goes on the top and the
-  oldest comes off the bottom. Nothing generates this list — like the featured
-  cards below it, it changes only because an agent changed it, and a run that
-  published an entry and left the grid alone left the job half done.
+- **Twelve, and the newest are the twelve.** The new card goes on the top and
+  the oldest comes off the bottom. Nothing generates this list — it changes only
+  because an agent changed it, and a run that published an entry and left the
+  grid alone left the job half done. The grid is short of twelve until enough
+  runs have filled it; that is expected, and it is filled from the top by
+  ordinary runs, never by digging up old stories to pad it out.
 - **Order by the entry's date** — the same date that put it on the timeline,
   which is the event's date and not the date of the run.
 - **One card per page.** A second story on a building that already holds a card
@@ -426,17 +438,12 @@ no whitespace ahead of it, is what keeps the icon on the last word.
 - **The address is the page's, the headline is the outlet's.** `location` is
   `coordinates` from `data.json` verbatim, the label is the page's address up to
   the comma (`2918–2920 Mission Street`), and the placeholder coordinates are
-  four decimals with a real minus sign (−), matching the cards below.
+  four decimals with a real minus sign (−), matching the other cards.
 - **Every rule in "Putting it on the page" applies here unchanged.** The
   headline is quoted verbatim and never edited, the outlet is named, and a
   headline that names a private individual is declined. A headline that cannot
   go on a page cannot go on the homepage — there is no lighter bar here because
   the homepage is the more public of the two.
-- **The `.place-cards` grid below is not this module's.** Featured addresses are
-  chosen on the root [AGENTS.md](../AGENTS.md)'s criteria — an early timeline,
-  sources beyond the city's own — and turn over by hand. Two grids, two rules;
-  never move a card between them, and never drop a featured card to make room
-  for a news one.
 - **A declined or pending item has no card**, the same as it has no entry. The
   grid is a view of what is on the pages, so anything in it can be checked
   against the page it names.
