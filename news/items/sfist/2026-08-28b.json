@@ -1,0 +1,88 @@
+{
+  "source_id": "sfist",
+  "batch": "2026-08-28b",
+  "read_on": "2026-08-28",
+  "notes": "Second run of 2026-08-28. Two items queued, both read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 3,
+    "remaining": "Nothing from this batch.",
+    "note": "The Sergeant Ma story also names 555 California Street, which is where the restaurant group's other business sits and says nothing about that building; it is covered here rather than as a finding."
+  },
+  "findings": [
+    {
+      "id": "2026-08-28b-0001",
+      "date": "2026-08-28",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "555 Ninth Street",
+      "street_number": "555",
+      "street_name": "09TH",
+      "street_type": "ST",
+      "description": "Sprouts Farmers Market is to take the former Nordstrom Rack space in this South of Market building, opening in 2028 as the grocer's first San Francisco store.",
+      "extra": {
+        "tenant": "Sprouts Farmers Market",
+        "former_tenant": "Nordstrom Rack",
+        "opening_year_reported": 2028
+      },
+      "citation": {
+        "label": "SFist, “Sprouts Market Plans First SF Store at Former Nordstrom Rack Site on Ninth Street,” 28 August 2026",
+        "url": "https://sfist.com/2026/08/28/sprouts-market-plans-first-sf-store-at-former-nordstrom-rack-on-ninth-street/",
+        "locator": "opening paragraph"
+      },
+      "raw": {
+        "text": "Sprouts Farmers Market is moving into the former Nordstrom Rack at 555 Ninth Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry on /san-francisco/south-of-market/9th-street/525/, which already existed. EAS puts 525, 555 and 559 09TH ST on parcel 3781003, so per the directory contract the fact belongs on the page at the lowest number, not the 555 the story prints."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3781003",
+        "path": "/san-francisco/south-of-market/9th-street/525/",
+        "eas_address": "525 09TH ST",
+        "method": "EAS exact match on 555 09TH ST → parcel 3781003; sf-parcels has blklot 3781003 active, 525–559 09TH; the 2025 roll records it as commercial retail, built 1991. EAS puts 525, 555, 559 09TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 525.",
+        "checked_on": "2026-08-28"
+      }
+    },
+    {
+      "id": "2026-08-28b-0002",
+      "date": "2026-09-09",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "185 Berry Street",
+      "street_number": "185",
+      "street_name": "BERRY",
+      "street_type": "ST",
+      "description": "Sergeant Ma, a restaurant, is due to open in this former industrial building across Third Street from Oracle Park in about two weeks. Cass Calder Smith is named as the designer of the interior fit-out.",
+      "extra": {
+        "tenant": "Sergeant Ma",
+        "interior_designer": "Cass Calder Smith"
+      },
+      "citation": {
+        "label": "SFist, “Sergeant Ma, a New China Basin Restaurant With Chinese and Vietnamese Flavors, Opens In Two Weeks,” 27 August 2026",
+        "url": "https://sfist.com/2026/08/27/sergeant-ma-a-new-china-basin-restaurant-with-chinese-and-vietnamese-flavors-opens-in-two-weeks/",
+        "locator": "body"
+      },
+      "raw": {
+        "text": "The space is in a former industrial building across Third Street from Orac[le Park]"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. The same opening is already published on /san-francisco/mission-bay/berry-street/105/ from The San Francisco Standard, in news/items/sf-standard/2026-08-28.json (2026-08-28-0002); that entry carries this story. The interior designer is recorded in extra and goes in no building field — fitting out a restaurant is not designing the building."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3803005",
+        "path": "/san-francisco/mission-bay/berry-street/105/",
+        "eas_address": "105 BERRY ST",
+        "method": "EAS exact match on 185 BERRY ST → parcel 3803005; sf-parcels has blklot 3803005 active, 980–980 03RD; the 2025 roll records it as commercial office, built 1920. EAS puts 105, 185 BERRY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 105.",
+        "checked_on": "2026-08-28"
+      }
+    }
+  ]
+}
