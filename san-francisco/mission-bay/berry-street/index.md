@@ -4,6 +4,7 @@ The parcels on Berry Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [105–185](105/) — A 1920 office building, with a seismic retrofit permitted in 2019.
 - [552](552/) — An assessor class: vacant lot, with foundation work permitted in 1988.
 - [575](575/) — A 1974 industrial building, with permit records from 1999 to 2021.
 

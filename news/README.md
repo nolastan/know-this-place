@@ -72,6 +72,15 @@ python3 scripts/validate.py
 work order: an address with no page is a page to create, and `--only-pages`
 exists to narrow a long backlog by hand, not to decide which stories matter.
 
+Agents working in Claude Code have a `/news` skill
+([../.claude/skills/news/SKILL.md](../.claude/skills/news/SKILL.md)): `/news` on
+its own does a whole run — finding the branch a previous run left, clearing
+what it did not finish, then polling, reading and publishing — and `/news
+<request>` routes a request into the stage it belongs to. It is a door into the
+documents above, not a substitute for them, and it is the local equivalent of
+[../.github/workflows/news.yml](../.github/workflows/news.yml), which runs the
+same pipeline daily against the Anthropic API.
+
 ## What a good day looks like
 
 Low yield is the design, exactly as in research. The first full pass, on
