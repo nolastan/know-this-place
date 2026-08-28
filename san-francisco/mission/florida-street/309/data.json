@@ -1,0 +1,121 @@
+{
+  "address": "309–321 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/309/",
+  "apn": "3965022",
+  "block": "3965",
+  "lot": "022",
+  "eas_baseid": "366815",
+  "coordinates": {
+    "lat": 37.76491,
+    "lng": -122.411081
+  },
+  "address_range": "309–321",
+  "street_numbers_on_parcel": [
+    "309",
+    "321"
+  ],
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "lot_area_sqft": 19998,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant land- residential 15+ units",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0309 FLORIDA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 12493811,
+    "last_sale_date": "2018-12-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111172596",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "2021-11-17",
+      "status_date": "2022-07-21",
+      "estimated_cost": 400000,
+      "revised_cost": 1650000,
+      "description": "temporary lateral support of excavation for new structure by means of soldier beams,tiebacks, lagging, & internal bracing. no shoring or underpinning work on adjacent properties.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010287628",
+      "type": "new construction wood frame",
+      "status": "filed",
+      "filed": "2020-10-28",
+      "status_date": "2020-10-28",
+      "estimated_cost": 42000000,
+      "revised_cost": 48000000,
+      "description": "to erect 9 stories, 1 basement, type i-b, 168 residential units with retail & commercial building. (r-2,m,a-3,s-2)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910184973",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2019-10-18",
+      "status_date": "2019-10-18",
+      "estimated_cost": 1,
+      "description": "administrative permit for planning for change of use from vehicle parking use to auto sales and rentals. no new construction or demo. **maher n/a**",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002151965",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2000-02-15",
+      "status_date": "2000-03-10",
+      "description": "demolition of a one story storage shed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2000–2021",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=309",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3965022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3965&lot=022",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3965022",
+      "retrieved": "2026-08-28"
+    }
+  ]
+}
