@@ -1,0 +1,77 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-08-28",
+  "read_on": "2026-08-28",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 2,
+    "remaining": "Nothing from this batch.",
+    "note": "Six queued articles read. Three named no address: two on the city's $9M settlement over the Alice Griffith housing complex, which is named but never given a street number, and a photo column. A sixth, an arrest story, could not be read — missionlocal.org answered HTTP 429 and read.py has no syndicated copy — and is declined on its headline regardless: a criminal charge against a named individual is a story about a person, and the root AGENTS.md forbids a page from carrying the name. It is not worth a retry. The two addressed stories are declined below."
+  },
+  "findings": [
+    {
+      "id": "2026-08-28-0001",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "kind": "maintenance",
+      "address_as_written": "545 O'Farrell St.",
+      "street_number": "545",
+      "street_name": "OFARRELL",
+      "street_type": "ST",
+      "description": "A citywide feature on broken elevators in San Francisco buildings uses a Tenderloin building at 545 O'Farrell Street, without a working elevator for over three years, as one of its examples, in a photo caption. The residents quoted are private individuals and are not recorded here.",
+      "citation": {
+        "label": "Mission Local, “‘It’s called being in prison:’ San Francisco has a broken-elevator problem,” 27 August 2026",
+        "url": "https://missionlocal.org/2026/08/san-francisco-has-an-elevator-problem/",
+        "locator": "photo caption"
+      },
+      "raw": {
+        "text": "for 545 O'Farrell St., a Tenderloin building that has not had a working elevator in over three years"
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "The subject is the city's elevator problem, not this building; the address appears in a photo caption as one illustration of it. The headline is what a page would carry, and it says nothing about 545 O'Farrell Street — a reader meeting it on that timeline in ten years would learn nothing about the building. read.py surfaced this as a hit on 57 Taylor, an unrelated number elsewhere in the text."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0323023",
+        "path": "/san-francisco/tenderloin/ofarrell-street/545/",
+        "eas_address": "545 OFARRELL ST",
+        "method": "EAS exact match on 545 OFARRELL ST → parcel 0323023; sf-parcels has blklot 0323023 active, 545–545 OFARRELL; the 2025 roll records it as multi-family residential, built 1910.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-08-28-0002",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "kind": "event",
+      "address_as_written": "888 Innes Ave",
+      "street_number": "888",
+      "street_name": "INNES",
+      "street_type": "AVE",
+      "description": "A Bayview neighbourhood roundup listing a block party, a stoop concert series and a restaurant trail; 888 Innes Avenue appears as the location of one weekend's programme.",
+      "citation": {
+        "label": "Mission Local, “Bayview Buzz: ‘Grandfather of block parties’ lives another day, and live music coming to a stoop near you,” 27 August 2026",
+        "url": "https://missionlocal.org/2026/08/bayview-buzz-sunday-streets-stoop-sessions/",
+        "locator": "body, the listing naming the address"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "An events roundup. The address is where a weekend programme happens, which is the venue-of-a-meeting case news/AGENTS.md rules out; nothing happened to the building."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "4645014",
+        "path": "/san-francisco/bayview-hunters-point/innes-avenue/888/",
+        "eas_address": "888 INNES AVE",
+        "method": "EAS exact match on 888 INNES AVE → parcel 4645014; sf-parcels has blklot 4645014 active, 888–888 INNES; no row on the secured roll.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}

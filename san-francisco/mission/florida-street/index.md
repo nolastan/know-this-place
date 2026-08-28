@@ -4,12 +4,19 @@ Every residential parcel on Florida Street that the city's address, assessor and
 
 ## Documented so far
 
+- [220](220/) — A building, with reroofing permitted in 2015.
+- [309–321](309/) — A 1957 building, with foundation work permitted in 2021.
+- [500](500/) — A 1940 industrial building, with reroofing permitted in 2024.
 - [605–617](605/) — A 2020 208-unit apartment building, with a kitchen remodel permitted in 2020.
+- [650](650/) — A 2009 store building, with electrical work permitted in 2010.
 - [680](680/) — A 2009 93-unit apartment building, with permit records from 2008 to 2023.
 - [691–693](691/) — A 1900 three-flat, with window replacement permitted in 2023.
 - [715](715/) — A 1980 single-family house, with an addition permitted in 2014.
 - [719](719/) — A 1900 single-family house, with reroofing permitted in 2006.
 - [725](725/) — A 2000 building, with deck work permitted in 2012.
+- [750](750/) — A 1991 industrial building, with a seismic retrofit permitted in 2022.
+- [770](770/) — A 1991 warehouse, with reroofing permitted in 1995.
+- [780](780/) — A 1991 warehouse, with a seismic retrofit permitted in 2007.
 - [801](801/) — A 1954 single-family house, with reroofing permitted in 1996.
 - [809](809/) — A 1954 single-family house, with garage work permitted in 2012.
 - [815](815/) — A 1954 single-family house, with reroofing permitted in 2005.

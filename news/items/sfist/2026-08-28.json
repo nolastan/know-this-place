@@ -1,0 +1,44 @@
+{
+  "source_id": "sfist",
+  "batch": "2026-08-28",
+  "read_on": "2026-08-28",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 1,
+    "remaining": "Nothing from this batch.",
+    "note": "Three queued articles read. Two named no San Francisco address: the Alice Griffith settlement, which names the complex but no street number, and a Solano County vote on the California Forever proposal, which is not San Francisco. The third is declined below."
+  },
+  "findings": [
+    {
+      "id": "2026-08-28-0001",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "kind": "performance",
+      "address_as_written": "1568 Haight Street",
+      "street_number": "1568",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "A band plays a one-day album-release set on the street outside the pub Mad Dog in the Fog, 1568 Haight Street. The story notes in passing that the pub operated in the Lower Haight for decades before closing in March 2020 and reopened at this address in August 2022.",
+      "citation": {
+        "label": "SFist, “Train to Perform on Haight Street Outside Mad Dog In the Fog For Album Release Party Today,” 27 August 2026",
+        "url": "https://sfist.com/2026/08/27/train-to-perform-on-haight-street-outside-mad-dog-in-the-fog-for-album-release-party/",
+        "locator": "body, the paragraph on the pub's history"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "A one-afternoon promotional concert outside a pub, which is the venue case the ten-year test exists to catch. The building fact buried in it — the pub reopened here in August 2022 — is real but is not what the headline says, and the headline is the only text a page would carry."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1231016",
+        "path": "/san-francisco/haight-ashbury/haight-street/1560/",
+        "eas_address": "1560 HAIGHT ST",
+        "method": "EAS exact match on 1568 HAIGHT ST → parcel 1231016; sf-parcels has blklot 1231016 active, 1560–1564 HAIGHT; the 2025 roll records it as multi-family residential, built 1904. EAS puts 1560, 1562, 1564, 1568 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1560. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 1231016.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}

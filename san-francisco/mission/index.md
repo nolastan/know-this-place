@@ -5,8 +5,8 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 ## Streets documented so far
 
 - [10th Street](10th-street/) — 2 buildings, built 1927–1988.
-- [11th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
-- [12th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
+- [11Th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
+- [12Th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
 - [13th Street](13th-street/) — 2 buildings, built 1954–1986.
 - [14th Street](14th-street/) — 46 buildings, built 1898–1975; 2 in the Ramona Street Historic District.
 - [15th Street](15th-street/) — 36 buildings, built 1875–2017; 4 in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District.

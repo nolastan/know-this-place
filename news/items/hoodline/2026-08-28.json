@@ -1,0 +1,80 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-08-28",
+  "read_on": "2026-08-28",
+  "coverage": {
+    "unit": "articles",
+    "examined": 8,
+    "mentions": 2,
+    "remaining": "Nothing from this batch.",
+    "note": "Eight queued articles read; two named a street address. Six named none: a surrogacy-escrow fraud charge, a Pier 70 event venue opening given only as the pier, a Mission street-conditions story, a free concert series on Fulton Plaza, a student's web game, and a police chase. Both addressed stories are declined below."
+  },
+  "findings": [
+    {
+      "id": "2026-08-28-0001",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1160 Howard",
+      "street_number": "1160",
+      "street_name": "HOWARD",
+      "street_type": "ST",
+      "description": "The same Rize Up Bakery cafe opening at 1160 Howard Street reported by The San Francisco Standard on the same day. Hoodline gives the same facts — a cafe in the bakery's SoMa production warehouse, after a burglary and a flood each costing over $100,000 — and adds that the warehouse runs to 22,000 square feet.",
+      "extra": {
+        "business": "Rize Up Bakery",
+        "warehouse_sq_ft": 22000
+      },
+      "citation": {
+        "label": "Hoodline, “SF's First Black-Owned Sourdough Bakery Rize Up Opens SoMa Cafe After Two Disasters,” 27 August 2026",
+        "url": "https://hoodline.com/2026/08/sf-s-first-black-owned-sourdough-bakery-rize-up-opens-soma-cafe-after-two-disasters/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "…000-square-foot SoMa production warehouse, a milestone that comes after the business survived a burglary and a flood, each costing more than $100,000"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One entry per dated event. The same opening is published on 1160 Howard Street from The San Francisco Standard, whose report carries the address in its own information box; a second headline for one event would make the timeline read as though two things happened."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3727024",
+        "path": "/san-francisco/south-of-market/howard-street/1160/",
+        "eas_address": "1160 HOWARD ST",
+        "method": "EAS exact match on 1160 HOWARD ST → parcel 3727024; sf-parcels has blklot 3727024 active, 1160–1160 HOWARD; the 2025 roll records it as commercial office, built 1924.",
+        "checked_on": "2026-08-28"
+      }
+    },
+    {
+      "id": "2026-08-28-0002",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "kind": "performance",
+      "address_as_written": "445 Geary Street",
+      "street_number": "445",
+      "street_name": "GEARY",
+      "street_type": "ST",
+      "description": "A touring comedian is announced for a show at the Curran Theatre, 445 Geary Street. Nothing in the story is about the building; the address is where a booking will be performed.",
+      "citation": {
+        "label": "Hoodline, “Becky Robinson Brings Her Viral Entitled Housewife to SF's Curran Theatre,” 27 August 2026",
+        "url": "https://hoodline.com/2026/08/becky-robinson-brings-her-viral-entitled-housewife-to-sf-s-curran-theatre/",
+        "locator": "body, the paragraph naming the theatre"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test twice over. A single booking at a theatre is not a fact about the theatre — it is the venue of an event, which news/AGENTS.md names as the classic non-story — and the headline names a private individual who is not an architect, builder, developer or firm, so the headline could not be published even if the story had earned an entry."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0316018A",
+        "path": "/san-francisco/tenderloin/geary-street/445/",
+        "eas_address": "445 GEARY ST",
+        "method": "EAS exact match on 445 GEARY ST → parcel 0316018A; sf-parcels has blklot 0316018A active, 445–445 GEARY; the 2025 roll records it as commercial misc, built 1922.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}

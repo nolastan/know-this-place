@@ -643,8 +643,10 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
          queue_all: bool, pages: int = 1) -> int:
     register = json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]
     cursors = load_cursors()
-    pages = page_index()
-    streets = {s.lower() for s in street_vocabulary(pages)}
+    # Not `pages` — that is the archive depth to walk, and shadowing it here
+    # handed fetch_feed a dict, which failed every rss feed in the register.
+    site_pages = page_index()
+    streets = {s.lower() for s in street_vocabulary(site_pages)}
     today = date.today().isoformat()
     floor_default = (datetime.now(timezone.utc)
                      - timedelta(days=backfill_days)).isoformat()
