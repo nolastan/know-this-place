@@ -7,6 +7,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [College Avenue](college-avenue/) — 1 building, built 1928.
 - [Cortland Avenue](cortland-avenue/) — 1 building, built 1910.
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
+- [Mission Street](mission-street/) — 2 buildings, built 1916–1918.
 - [Mullen Avenue](mullen-avenue/) — A 1,000 sq ft house of 1906, recorded as Carlos Santana's home during high school.
 - [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Peralta Avenue](peralta-avenue/) — 1 building, built 1910.

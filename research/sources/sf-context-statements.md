@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 30 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 31 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 30 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 16: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved). All sixteen loops closed. |
-| **Remaining** | ~20 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 31 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 17: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). All seventeen loops closed. |
+| **Remaining** | ~19 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -416,6 +416,18 @@ document you are about to mine.
     — while the `SharedLinks.aspx` form is what a page cites. Born-digital;
     `pdftotext -layout` reads it cleanly. See "The Large Apartment Buildings
     statement" below.
+  - ICF (Jon Rusch, lead author; Eleanor Cox, technical reviewer), *Flats and Small
+    Apartment Buildings (1915-1978) Citywide Historic Context Statement*, prepared
+    for SF Planning, submitted 10 June 2021 and adopted 18 January 2023 (98 pp.),
+    source id `flats-small-apartments-context-statement`. SF Planning lists it as
+    "Flats and Small Apartment Buildings (1915-1978) Historic Context Statement
+    (Adopted 2023)". Same M-Files vault, and the REST content hash is again the
+    `accesskey` from the `SharedLinks.aspx` URL —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3/content`
+    — while the `SharedLinks.aspx` form is what a page cites. Born-digital;
+    `pdftotext -layout` reads it cleanly. It is the companion volume to the Large
+    Apartment Buildings statement and the two cross-reference each other. See "The
+    Flats and Small Apartment Buildings statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -3194,3 +3206,82 @@ themselves, nearly every one carries an architect, a build year or both.
   Coverage note: this document is read in full and nothing in it is outstanding; it says
   outright that no full survey of large apartment buildings was undertaken and no
   building-specific research was done, so there is no companion inventory to mine.)
+
+
+**The Flats and Small Apartment Buildings statement is the companion volume to Large Apartment
+Buildings, and it is a figure-caption corpus almost entirely.** 98 pages by ICF on the two- and
+three-unit flats and neighbourhood-scaled apartment buildings that are the most common multiple-unit
+dwellings in the city, from the close of reconstruction in 1915 to the 1978 rezoning. No inventory
+table, no APNs, no status codes; **72 numbered addresses in 98 pages**, of which **70 come from the
+55 figure captions** and two from the narrative. Each caption gives a building, a year, and the
+formal or stylistic point it is there to illustrate — which is the fact worth publishing.
+- **Read the List of Figures first.** It runs four pages at the front and reproduces every caption
+  in full, address and year included. It is effectively the document's index of addressed examples,
+  and reading it before the body tells you the size and shape of the harvest in two minutes.
+- **Appendix A is a builders list with no addresses.** Eleven firms — Allen & Co., Campbell &
+  Hooper, Detjen Sbarboro & Jorgensen, Henry Doelger Building Inc., R. F. Galli Builder Inc., Hall &
+  Hamill, Heyman Brothers, Hind Company, Meyer Brothers, Ring Brothers, Rousseau & Company — and
+  nothing to resolve. The evaluation-criteria chapter (Section G) names no buildings either. Both
+  can be read quickly.
+- **This corpus loses more to condominium conversion than any other read here: 13 of its 19
+  unresolved findings are condominium parcels.** Small multiple-unit buildings are exactly the stock
+  the city converted, so the very subject of the statement is the thing the directory contract
+  cannot give a page. Together with the Large Apartment Buildings statement's 10 condominiums and 11
+  parcels off the secured roll, the two companion volumes lost 49 of 161 findings to ownership
+  structure. **Budget for it on any multi-family theme, and do not read it as a resolution
+  failure.**
+- **Its captions describe pairs, and a pair is two findings.** "3764–3766 and 3760 Fillmore
+  Street", "485 and 495 Liberty Street", "1370 and 1360 Washington Street", "354–356 and 358–360
+  Arguello Boulevard": each is two buildings, several of them with a range address of their own.
+  Record each printed number as its own finding and let the resolver take the ranges — the "a row of
+  buildings is not a range" rule applies, and one half of a pair routinely resolves while the other
+  is a condominium or is now split across parcels.
+- **It prints three street names the city does not have.** "485 Warren Street" (the city has Warren
+  Drive and no Warren Street), "2525–2527 Lyon Avenue" (Lyon Street), and "Golden Gave Avenue" for
+  Golden Gate Avenue, twice. All three are unambiguous once checked against EAS, so the findings
+  carry the source's words in `address_as_written` and the city's in `street_name`/`street_type`,
+  with the discrepancy in `conflict`. The street-name slips stayed off the pages: they are facts
+  about the document, not about the buildings.
+- **It disagrees with its neighbours, and one of those disagreements is worth the page.** 2056–2058
+  Jefferson Street is a 1937 Richard Neutra building here (the roll agrees) and "post-war design" in
+  the PPIE and Marina District statement — both readings are now on the page. 3321–3323 Scott Street
+  is 1923 here, 1925 in the PPIE statement and 1924 on the roll, and its `completed_conflict` was
+  rewritten to name all three. And 3563 and 3565 Mission Street carry **the same pair of years the
+  other way round** from the roll — the source says "built 1918 and 1916, respectively", the roll
+  says 1916 and 1918 — which looks like a reversed "respectively" but is not something to
+  adjudicate.
+- **Nine of its 53 resolved parcels already carried another statement's work**, and two findings had
+  to be reworded and one declined outright rather than repeat it: 3665 Scott Street already holds
+  the PPIE statement's Art Deco survey panel with a fuller description, and the renderer holds one
+  survey panel per page. 281–283 Telegraph Hill Boulevard already credited Gardner Dailey, 380–384
+  Chestnut Street already credited Paul F. DeMartini, and 1571 Ninth Avenue already credited Harold
+  C. Dow — in each case this statement's contribution is the style and the type, not the architect.
+  **On a citywide theme that overlaps a dozen neighbourhood statements, read the target page before
+  writing the fact.**
+- **Its best-credited buildings have no street numbers.** Sixteen captions locate a building by
+  block or street instead — Henry Doelger's Seal Rock Drive flats, James J. Coyle's pair on Franklin
+  Street north of Filbert, Rousseau & Company's Turk Street penthouse duplexes, Merrill Jew's Duncan
+  Street duplexes for Elm Associates, the Loyola Terrace and Toledo Way rows. None can become a
+  finding. Two more addresses appear only inside footnotes as the subjects of Planning case files
+  rather than as claims the statement makes — 3768-70 Fillmore Street and 325-329 Lombard Street,
+  the latter placed against the sentence about Gardner Dailey's Telegraph Hill flats but never named
+  as one. **Left alone: footnote adjacency is not an attribution.**
+- **Privacy took real work here.** The document names a Black schoolteacher who was discriminated
+  against by landlords, in a figure caption; it names Gardner Dailey's wife and says the two lived in
+  his Telegraph Hill duplex; and it titles the Neutra building after its two original owners. The
+  architects are published, the tenancy and the owner-derived building name are not.
+- **Verified:** 2026-08-28 (Flats and Small Apartment Buildings: read all 98 pages — the preface,
+  preparers, introduction and methodology with its study-period justification; the three
+  historic-context chapters including the sections on the speculative development model, the
+  penthouse duplex, and racial discrimination and housing access; the architectural characteristics
+  chapter with its six building forms, its building features and its fourteen styles; the evaluation
+  criteria; the bibliography; and Appendix A. **72 findings, 52 published on 52 pages**, 42 of them
+  created by this run, across 18 neighborhood directories with `marina` (10 facts), `inner-sunset`
+  (4), `nob-hill` (4) and `russian-hill` (4) at the head. One resolved finding was declined as a
+  duplicate of the PPIE statement's survey panel on 3665 Scott Street. Nineteen never reached a
+  parcel: 13 condominiums, 3 ranges now split across parcels (1928-1930 Vallejo, 358-360 Arguello,
+  2154-2160 Taylor) and 3 addresses EAS no longer holds (2346 Golden Gate, 431-434 Crestmont, 2883
+  Turk). **1 conflict is stated on a page and 4 construction dates disagree with the assessor.**
+  Coverage note: this document is read in full and nothing in it is outstanding; it states that no
+  in-person field survey was done — the reconnaissance was Google Street View during the COVID-19
+  pandemic — and there is no companion inventory.)

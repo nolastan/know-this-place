@@ -1,0 +1,92 @@
+{
+  "address": "2250–2252 Jones Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/jones-street/2250/",
+  "apn": "0073017E",
+  "block": "0073",
+  "lot": "017E",
+  "eas_baseid": "447501",
+  "coordinates": {
+    "lat": 37.802148,
+    "lng": -122.415996
+  },
+  "address_range": "2250–2252",
+  "street_numbers_on_parcel": [
+    "2250",
+    "2252"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 2850,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "2252 2250 JONES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 541106,
+    "assessed_improvement_value": 418452,
+    "last_sale_date": "1990-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JONES&street_type=ST&address_number=2250",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0073017E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0073&lot=017E",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0073017E",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922",
+      "kind": "construction",
+      "description": "A duplex flat of the standard mid-block kind, its entrance stairs left open to the street as early examples generally were before later designers recessed them behind the front wall.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

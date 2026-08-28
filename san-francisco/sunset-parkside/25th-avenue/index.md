@@ -4,6 +4,7 @@ The parcels on 25th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1400](1400/) — A 1944 two-flat, with reroofing permitted in 1991.
 - [2522](2522/) — A 1913 single-family house, with a vertical addition permitted in 1990.
 
 Pages are generated from the DataSF datasets listed in each page's

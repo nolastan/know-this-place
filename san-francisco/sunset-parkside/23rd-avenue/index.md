@@ -4,6 +4,7 @@ The parcels on 23rd Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [2411](2411/) — A 1958 8-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2435](2435/) — A 1913 single-family house.
 - [2471](2471/) — A 1913 single-family house, with reroofing permitted in 2024.
 - [2501](2501/) — A 1910 single-family house, with a kitchen remodel permitted in 2004.

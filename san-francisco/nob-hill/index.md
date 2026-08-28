@@ -13,6 +13,7 @@ that neighborhood.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.
 - [Hyde Street](hyde-street/) — 1 building, built 1911.
+- [Jackson Street](jackson-street/) — 1 building, built 1916.
 - [Jones Street](jones-street/) — 1 building, built 1915.
 - [Larkin Street](larkin-street/) — 2 buildings, built 1909–2022.
 - [Leavenworth Street](leavenworth-street/) — 1 building, built 1907.
@@ -24,3 +25,4 @@ that neighborhood.
 - [Sutter Street](sutter-street/) — 1 building.
 - [Taylor Street](taylor-street/) — 1 building, built 1929.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
+- [Washington Street](washington-street/) — 2 buildings, built 1915.

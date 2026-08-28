@@ -1,0 +1,120 @@
+{
+  "address": "3112 Balboa Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/balboa-street/3112/",
+  "apn": "1575015",
+  "block": "1575",
+  "lot": "015",
+  "eas_baseid": "308947",
+  "coordinates": {
+    "lat": 37.776189,
+    "lng": -122.49234
+  },
+  "parcel": {
+    "year_built": 1958,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2704,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 3112 BALBOA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 837975,
+    "assessed_improvement_value": 558650,
+    "last_sale_date": "2018-11-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603187864",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-18",
+      "status_date": "2026-05-07",
+      "estimated_cost": 135000,
+      "revised_cost": 135000,
+      "description": "two units: remodel/relocate kitchen and bath. remodel (e) space to 2 new bedrooms and new bathroom. new mini split heat pump. no exterior work. remove washer/dryer and laundry sink at 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306281087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-28",
+      "status_date": "2026-03-16",
+      "estimated_cost": 158900,
+      "revised_cost": 183705,
+      "description": "at 3rd floor, apt#: 3; remodel/relocate (e) kitchen and bathroom. remodel (e) space to one new bedroom, new living room, one new bathroom, one (n) home office. new mini heat pump.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-29",
+      "status_date": "1989-10-16",
+      "estimated_cost": 4200,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALBOA&street_type=ST&address_number=3112",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1575015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1575&lot=015",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1575015",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1958",
+      "kind": "construction",
+      "description": "Cited as a typical “Richmond Special” — the plain Modernist multiple-unit building that went up across the Richmond District and the city at large through the 1950s, 1960s and 1970s, its projecting bays reduced to boxed bays or dropped altogether.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

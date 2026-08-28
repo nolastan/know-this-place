@@ -7,6 +7,7 @@ The parcels on Balboa Street documented here so far, from the city's address, as
 - [1640–1650](1640/) — A 1917 store building, with reroofing permitted in 1996.
 - [1825–1827](1825/) — A 1915 two-flat, with a rear addition permitted in 2014.
 - [2738–2750](2738/) — A 1926 8-unit apartment building, with a seismic retrofit permitted in 2016.
+- [3112](3112/) — A 1958 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
 - [3120](3120/) — A 1915 single-family house, with facade work permitted in 2016.
 - [3140–3150](3140/) — A 1976 15-unit apartment building, with reroofing permitted in 2016.
 - [3239–3247](3239/) — A 1934 store building, with reroofing permitted in 1996.

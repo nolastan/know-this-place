@@ -7,6 +7,7 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [10th Avenue](10th-avenue/) — 4 buildings, built 1908–1913.
 - [11th Avenue](11th-avenue/) — 4 buildings, built 1906–1912; 2 in the Richmond Heights Historic District.
 - [Anza Street](anza-street/) — 3 buildings, built 1900–1911; 1 in the Richmond Heights Historic District.
+- [Arguello Boulevard](arguello-boulevard/) — 3 buildings, built 1917–1918.
 - [Cabrillo Street](cabrillo-street/) — 2 buildings, built 1903–1907.
 - [California Street](california-street/) — 2 buildings, built 1911–1950.
 - [Clement Street](clement-street/) — 1 building, built 1904.

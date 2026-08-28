@@ -22,6 +22,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
 - [Lippard Avenue](lippard-avenue/) — 1 building.
+- [Malta Drive](malta-drive/) — 1 building, built 1974.
 - [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.
