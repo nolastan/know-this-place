@@ -510,6 +510,13 @@ The mechanics:
   about the city rather than about the tool. 57 findings. *One reader per
   field; and when a lookup fails, check that what it looked up was ever
   fetched.*
+- **In a storefront corpus, the date belongs to whatever the caption describes.** "A
+  ceramic veneer storefront at 2215 Irving Street, constructed in 1936" dates the
+  storefront; the roll dates the building to 1924. Recorded as a construction fact it
+  becomes a `completed_conflict` asserting a disagreement that does not exist, and the
+  resolver cannot catch it because the address is perfectly good. Two findings were
+  corrected after the publication review for this. *Before writing a year into
+  `building.completed` or `.unknowns`, ask what the sentence is dating.*
 - **`--area-from-nhood` is a per-finding judgement, not a per-batch switch.**
   On a citywide theme the batch lands on six streets in six parts of the city,
   and the two rules disagree in both directions. The switch was right for

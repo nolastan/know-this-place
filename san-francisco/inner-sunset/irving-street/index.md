@@ -34,9 +34,11 @@ The parcels on Irving Street documented here so far, from the city's address, as
 - [1352–1356](1352/) — A 1926 building, designed by Samuel Heiman.
 - [1635](1635/) — A 1904 building, designed by Theodore W. Lenzen.
 - [1725](1725/) — A 1917 building, designed by G. Albert Lansburgh.
+- [1800–1816](1800/) — A 1926 store building, with a kitchen remodel permitted in 2008.
 - [2001–2007](2001/) — A 1925 store building, with a bathroom remodel permitted in 1996.
 - [2031–2049](2031/) — A 1950 store building, with a kitchen remodel permitted in 2007.
 - [2101](2101/) — A 1936 store building, with stair work permitted in 1992.
+- [2215–2225](2215/) — A 1924 store building, with reroofing permitted in 2023.
 - [2415–2425](2415/) — A 1950 store building, with reroofing permitted in 1998.
 
 Pages are generated from the DataSF datasets listed in each page's

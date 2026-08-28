@@ -14,7 +14,9 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 - [1033–1037](1033/) — A building with a ground-floor store in the Lower Nob Hill Apartment Hotel Historic District - Addition, with garage work permitted in 1998.
 - [1045](1045/) — A 1924 store building in the Lower Nob Hill Apartment Hotel Historic District - Addition, with reroofing permitted in 2012.
 - [1101–1127](1101/) — A 1906 23-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District - Addition, with window replacement permitted in 2019.
+- [1618–1622](1618/) — A 1909 20-unit apartment building, with a seismic retrofit permitted in 2019.
 - [1729–1739](1729/) — A 1907 5-unit building with a ground-floor store, with facade work permitted in 2014.
+- [1750–1760](1750/) — A 1939 store building, with a seismic retrofit permitted in 2013.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

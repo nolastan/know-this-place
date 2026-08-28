@@ -1,0 +1,118 @@
+{
+  "address": "2901 Irving Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/irving-street/2901/",
+  "apn": "1785001",
+  "block": "1785",
+  "lot": "001",
+  "eas_baseid": "317459",
+  "coordinates": {
+    "lat": 37.762788,
+    "lng": -122.489071
+  },
+  "parcel": {
+    "year_built": 1916,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 3250,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2901 IRVING              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 726214,
+    "assessed_improvement_value": 311228,
+    "last_sale_date": "1999-07-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201601227814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-22",
+      "status_date": "2016-02-18",
+      "estimated_cost": 20820,
+      "revised_cost": 20800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510190048",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-19",
+      "status_date": "2015-11-06",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "roofing material replacement. replace a/c unit. replace siding on east wall of building - not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305295808",
+      "type": "wall or painted sign",
+      "status": "issued",
+      "filed": "2003-05-29",
+      "status_date": "2003-05-29",
+      "revised_cost": 1800,
+      "description": "erect a non-electric wall projecting single faced sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IRVING&street_type=ST&address_number=2901",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1785001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1785&lot=001",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1785001",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "neighborhood-commercial-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown and Susan Parks), Neighborhood Commercial Buildings, 1865-1965, Historic Context Statement, adopted November 2, 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=6e02d03c979da663645a63b156e861fca44d7f96ecca9ad8192c0828493bf7fe&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Neighborhood Commercial Buildings Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1945",
+      "kind": "photograph",
+      "description": "The Mayfair corner store here, photographed in 1945 — the one-storey corner shop that replaced the bay-windowed corner store of earlier decades.",
+      "source": "neighborhood-commercial-context-statement"
+    }
+  ]
+}

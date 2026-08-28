@@ -100,6 +100,7 @@ Every residential parcel on 22nd Street that the city's address, assessor and pe
 - [3224–3248](3224/) — An 1885 11-unit building with a ground-floor store, with foundation work permitted in 2016.
 - [3265–3275](3265/) — An 1870 7-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2020.
 - [3277–3279](3277/) — A 1900 building with a ground-floor store, with reroofing permitted in 2009.
+- [3282–3296](3282/) — A 1927 store building, with reroofing permitted in 1999.
 - [3283–3297](3283/) — A 1900 12-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2022.
 - [3314–3316](3314/) — A 1905 2-unit building with a ground-floor store, with reroofing permitted in 2023.
 - [3315–3317](3315/) — A 1900 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2021.
@@ -137,6 +138,7 @@ Every residential parcel on 22nd Street that the city's address, assessor and pe
 - [3482–3484](3482/) — An 1890 flat and apartment building on one parcel, with reroofing permitted in 1993.
 - [3488](3488/) — A 1924 6-unit apartment building, with a seismic retrofit permitted in 2014.
 - [3492–3496](3492/) — A 1900 5-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2002.
+- [3500](3500/) — A 1900 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2020.
 - [3550–3552](3550/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 2022.
 
 Pages are generated from the DataSF datasets listed in each page's

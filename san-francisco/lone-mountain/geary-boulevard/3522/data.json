@@ -1,0 +1,138 @@
+{
+  "address": "3522–3524 Geary Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/geary-boulevard/3522/",
+  "apn": "1062025",
+  "block": "1062",
+  "lot": "025",
+  "eas_baseid": "294053",
+  "coordinates": {
+    "lat": 37.781651,
+    "lng": -122.45715
+  },
+  "address_range": "3522–3524",
+  "street_numbers_on_parcel": [
+    "3522",
+    "3524"
+  ],
+  "parcel": {
+    "year_built": 1955,
+    "units": 6,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3524,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "3524 3522 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606779,
+    "assessed_improvement_value": 693469,
+    "last_sale_date": "1993-05-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200704239407",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2007-04-23",
+      "status_date": "2007-04-23",
+      "revised_cost": 800,
+      "description": "work on one unit only. erect sign for non electric,wall,single face.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704138745",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2007-04-13",
+      "status_date": "2007-04-13",
+      "revised_cost": 600,
+      "description": "suite #4 - erect sign - non-electric, wall, single faced.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2007–2020",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=3522",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1062025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1062&lot=025",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1062025",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4571500676827%2037.78165142485535)%27)",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "neighborhood-commercial-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown and Susan Parks), Neighborhood Commercial Buildings, 1865-1965, Historic Context Statement, adopted November 2, 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=6e02d03c979da663645a63b156e861fca44d7f96ecca9ad8192c0828493bf7fe&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Neighborhood Commercial Buildings Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1955",
+      "kind": "construction",
+      "description": "Built in 1955, its storefront designed without a transom window in the manner of the period.",
+      "source": "neighborhood-commercial-context-statement"
+    }
+  ],
+  "building": {},
+  "unknowns": [
+    "The statement writes the street as \"Geary Avenue\"; the city carries only Geary Boulevard and Geary Street."
+  ]
+}

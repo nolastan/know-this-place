@@ -13,6 +13,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [1840–1844](1840/) — An assessor class: vacant lot, with plumbing work permitted in 2024.
 - [1852](1852/) — A 1987 flats building, with an addition permitted in 1989.
 - [2584–2586](2584/) — A 1900 three-flat, with dry-rot repair permitted in 2011.
+- [2700](2700/) — A 1900 2-unit building with a ground-floor store, with fire repair permitted in 1990.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

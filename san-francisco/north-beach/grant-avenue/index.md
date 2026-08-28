@@ -5,6 +5,7 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 ## Documented so far
 
 - [700–720](700/) — A 1906 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1996.
+- [900–916](900/) — A 1908 hotel in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2018.
 - [1224](1224/) — A 1907 2-unit building with a ground-floor store in the Upper Grant Avenue Historic District, with reroofing permitted in 2003.
 - [1226–1230](1226/) — A 1907 hotel in the Upper Grant Avenue Historic District, with a seismic retrofit permitted in 2018.
 - [1232](1232/) — A 1900 hotel in the Upper Grant Avenue Historic District, with fire repair permitted in 1994.
