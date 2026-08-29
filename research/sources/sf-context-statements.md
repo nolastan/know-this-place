@@ -3331,7 +3331,7 @@ architectural period, so its buildings are scattered from Seacliff to Bayview.
 - **The appendix table, "UMBs and Historic Ratings by Study Area"** (45 PDF
   pages interleaved between the forms, roughly 1,600 rows). Street number,
   street, prototype letter, block, lot, year, and eight columns of rating codes
-  keyed on PDF pages 158–163. **Not read.** That is the next batch.
+  keyed on PDF pages 158–163. **Not read.** That is the next batch, filed as issue #182.
 
 **Cautions this document earned.**
 
