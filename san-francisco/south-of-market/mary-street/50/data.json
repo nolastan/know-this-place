@@ -1,0 +1,119 @@
+{
+ "address": "50 Mary Street, San Francisco, CA 94103",
+ "path": "/san-francisco/south-of-market/mary-street/50/",
+ "apn": "3725127",
+ "block": "3725",
+ "lot": "127",
+ "eas_baseid": "364989",
+ "coordinates": {
+  "lat": 37.781367,
+  "lng": -122.40655
+ },
+ "parcel": {
+  "lot_area_sqft": 15552.02,
+  "use": "Miscellaneous/Mixed-Use",
+  "property_class": "Vacant Street Parcel",
+  "construction_type_code": "NA",
+  "zoning": "C3S",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "South of Market",
+  "analysis_neighborhood": "South of Market",
+  "property_location_raw": "0440 0432 NATOMA              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "last_sale_date": "2022-09-22"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "Historic Survey Result",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202104239282",
+   "type": "additions alterations or repairs",
+   "status": "issued",
+   "filed": "2021-04-23",
+   "status_date": "2021-06-15",
+   "estimated_cost": 1,
+   "revised_cost": 1,
+   "description": "revision to pa#2019-0809-8446.electrical work only.revisions include updates to panel schedule,pg & electrical enclosure, updating circuiting.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201908098446",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2019-08-09",
+   "status_date": "2022-09-08",
+   "estimated_cost": 5000000,
+   "revised_cost": 5000000,
+   "description": "at log 125, 126 & 127. mary court west, public park includes, lawn, rhised terrage, children play area, planters & trees.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9006293",
+   "type": "demolitions",
+   "status": "complete",
+   "filed": "1990-04-02",
+   "status_date": "1991-03-11",
+   "description": "demolish auto repairs",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8607557",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1986-06-26",
+   "status_date": "1986-09-15",
+   "estimated_cost": 9000,
+   "description": "reinforce parapet wall",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARY&street_type=ST&address_number=50",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3725127&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3725&lot=127",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3725127",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "heritage_rating": "C — of contextual importance",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 3 (SoMa Residential).",
+  "source": "umb-survey-1990"
+ }
+}

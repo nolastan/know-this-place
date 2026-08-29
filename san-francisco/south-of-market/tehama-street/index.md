@@ -4,6 +4,11 @@ The parcels on Tehama Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [60](60/) — A 1984 assessor class: vacant lot, with permit records from 1982 to 2000.
+- [72](72/) — A 1906 office building, with a kitchen and bathroom remodel permitted in 2012.
+- [74](74/) — A 1906 industrial building, with reroofing permitted in 1996.
+- [78–80](78/) — A 1908 office building, with facade work permitted in 2017.
+- [90](90/) — A 1928 industrial building, with reroofing permitted in 1991.
 - [365](365/) — A 1943 industrial building, with an addition permitted in 1987.
 - [409–413](409/) — A 1906 three-flat, with a kitchen and bathroom remodel permitted in 2025.
 - [415–417](415/) — A 1906 6-unit apartment building, with facade work permitted in 2024.
@@ -25,6 +30,8 @@ The parcels on Tehama Street documented here so far, from the city's address, as
 - [464](464/) — A 2002 single-family house, with garage work permitted in 2000.
 - [472](472/) — A 1926 industrial building, with garage work permitted in 2018.
 - [481–483](481/) — A 1926 industrial building, with garage work permitted in 2025.
+- [718](718/) — A 1935 industrial building in the Western SOMA Light Industrial and Residential Historic District, with an addition permitted in 2002.
+- [741](741/) — A 1906 single-family house in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 1996.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -44,7 +44,9 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [3312–3316](3312/) — A 1924 9-unit apartment building, with an addition permitted in 2015.
 - [3324](3324/) — Built in 1910 for the Norwegian-Danish Methodist Church, which moved on to Duboce Triangle in 1923.
 - [3332–3334](3332/) — A 1923 three-flat, with reroofing permitted in 1996.
+- [3355](3355/) — A 1927 store building, with a seismic retrofit permitted in 1994.
 - [3365–3369](3365/) — A 1907 three-flat, with facade work permitted in 2026.
+- [3434](3434/) — A 1908 store building, with a bathroom remodel permitted in 2013.
 - [3444–3450](3444/) — A 1922 4-unit apartment building, with a bathroom remodel permitted in 2018.
 - [3454–3458](3454/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [3459](3459/) — The First Swedish Baptist Church.

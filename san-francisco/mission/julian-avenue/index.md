@@ -4,6 +4,7 @@ Every residential parcel on Julian Avenue that the city's address, assessor and 
 
 ## Documented so far
 
+- [56](56/) — A 2005 building, with a bathroom remodel permitted in 1991.
 - [80](80/) — An assessor class: vacant lot, with a kitchen and bathroom remodel permitted in 1987.
 - [100](100/) — A 1900 church, with a bathroom remodel permitted in 2019.
 - [105](105/) — A 1923 8-unit apartment building, with a seismic retrofit permitted in 2016.

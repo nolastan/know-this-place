@@ -1,0 +1,108 @@
+{
+ "address": "2509 Sacramento Street, San Francisco, CA 94115",
+ "path": "/san-francisco/pacific-heights/sacramento-street/2509/",
+ "apn": "0635025",
+ "block": "0635",
+ "lot": "025",
+ "eas_baseid": "286708",
+ "coordinates": {
+  "lat": 37.789485,
+  "lng": -122.434581
+ },
+ "parcel": {
+  "year_built": 1900,
+  "units": 1,
+  "stories": 1,
+  "rooms": 6,
+  "bathrooms": 1,
+  "lot_area_sqft": 3312.5,
+  "building_area_sqft": 1665,
+  "lot_depth_ft": 32.5,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 2,
+  "assessor_neighborhood": "Pacific Heights",
+  "analysis_neighborhood": "Pacific Heights",
+  "property_location_raw": "0000 2509 SACRAMENTO          ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 488089,
+  "assessed_improvement_value": 251840,
+  "last_sale_date": "1987-04-07"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "Historic Survey Result and 45 years or older",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "9612274",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1996-07-09",
+   "status_date": "1997-08-20",
+   "estimated_cost": 11000,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8706869",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1987-05-21",
+   "status_date": "1988-07-18",
+   "estimated_cost": 55000,
+   "description": "add garage, rooms, deck extension",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=2509",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0635025&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0635&lot=025",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0635025",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "apn_as_surveyed": "Block 635, Lot 24",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 11 (Outlying).",
+  "source": "umb-survey-1990"
+ }
+}

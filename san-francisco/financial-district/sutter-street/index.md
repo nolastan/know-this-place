@@ -4,7 +4,19 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [154–180](154/) — A 1987 office building, with a seismic retrofit permitted in 2000.
 - [165](165/) — Crocker Galleria, whose barrel-vaulted arcade answers Milan's Galleria Vittorio Emanuele II.
+- [266–270](266/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with foundation work permitted in 2018.
+- [272](272/) — A 2021 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1998.
+- [301–303](301/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2006.
+- [312–314](312/) — A 1909 office building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 2010.
+- [315–317](315/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2001.
+- [323–333](323/) — A 1909 hotel in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2002.
+- [371–375](371/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2011.
+- [400–414](400/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2005.
+- [418–432](418/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 1991.
+- [431](431/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2008.
+- [441–443](441/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2013.
 - [450–464](450/) — Timothy Pflueger's Medical-Dental Building of 1929.
 
 Pages are generated from the DataSF datasets listed in each page's

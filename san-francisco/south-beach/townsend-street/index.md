@@ -4,6 +4,7 @@ The parcels on Townsend Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [64](64/) — A 1904 store building in the South End Historic District, with a seismic retrofit permitted in 2000.
 - [100](100/) — A 1900 building in the South End Historic District, with reroofing permitted in 2013.
 - [130](130/) — A 1900 office building in the South End Historic District, with a vertical addition permitted in 2021.
 - [136](136/) — A 1902 industrial building in the South End Historic District, with reroofing permitted in 1998.

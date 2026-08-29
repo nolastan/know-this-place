@@ -10,6 +10,7 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 - [22nd Avenue](22nd-avenue/) — 3 buildings, built 1910–1950.
 - [23rd Avenue](23rd-avenue/) — 1 building, built 1908.
 - [24th Avenue](24th-avenue/) — One 1903 house across two lots, tied to Ansel Adams.
+- [25th Avenue](25th-avenue/) — 1 building, built 1924; 1 in the Sea Cliff Historic District.
 - [26th Avenue](26th-avenue/) — 3 buildings, built 1922–1974; 1 in the Sea Cliff Historic District.
 - [27th Avenue](27th-avenue/) — 2 buildings, built 1912–1950; 2 in the Sea Cliff Historic District.
 - [29th Avenue](29th-avenue/) — 1 building, built 1919.

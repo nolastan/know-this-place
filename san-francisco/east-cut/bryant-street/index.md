@@ -4,6 +4,7 @@ The parcels on Bryant Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [327](327/) — A 1916 office building in the South End Historic District, with a seismic retrofit permitted in 2001.
 - [409](409/) — A 1929 industrial building, with a kitchen remodel permitted in 2017.
 - [414–418](414/) — A 1907 three-flat, with a kitchen and bathroom remodel permitted in 1989.
 - [420](420/) — A 1922 office building, with electrical work permitted in 1998.

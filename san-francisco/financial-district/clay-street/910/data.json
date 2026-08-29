@@ -1,0 +1,176 @@
+{
+ "address": "910–914 Clay Street, San Francisco, CA 94108",
+ "path": "/san-francisco/financial-district/clay-street/910/",
+ "apn": "0211005",
+ "block": "0211",
+ "lot": "005",
+ "eas_baseid": "435038",
+ "coordinates": {
+  "lat": 37.794183,
+  "lng": -122.408225
+ },
+ "address_range": "910–914",
+ "street_numbers_on_parcel": [
+  "910",
+  "912",
+  "914"
+ ],
+ "parcel": {
+  "year_built": 1907,
+  "units": 6,
+  "stories": 3,
+  "rooms": 23,
+  "bathrooms": 3,
+  "lot_area_sqft": 1337,
+  "building_area_sqft": 3762,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 5 to 14 Units",
+  "construction_type_code": "C",
+  "zoning": "CRNC",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Nob Hill",
+  "analysis_neighborhood": "Chinatown",
+  "property_location_raw": "0914 0910 CLAY                ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 87763,
+  "assessed_improvement_value": 88691,
+  "assessed_fixtures_value": 31108
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District",
+  "yearbuilt": "1907",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Chinatown Historic District",
+  "california_register_status": "Eligible (not listed)",
+  "national_register_status": "Eligible (not listed)",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1906–1930/1938",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "201805179457",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2018-05-17",
+   "status_date": "2018-06-05",
+   "estimated_cost": 1000,
+   "revised_cost": 1000,
+   "description": "replace leak and old skylight on foot with aluminium skylight",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201108011468",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2011-08-01",
+   "status_date": "2011-09-21",
+   "estimated_cost": 5000,
+   "revised_cost": 5000,
+   "description": "repair fire damage at one unit in kitchen area, no structure damage",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9620451",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1996-10-23",
+   "status_date": "1997-11-04",
+   "estimated_cost": 4900,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9517521",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1995-10-19",
+   "status_date": "1996-05-30",
+   "estimated_cost": 45800,
+   "revised_cost": 60000,
+   "description": "umb seismic retrofit for earthquake hazard reduction",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8913838",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1989-08-02",
+   "status_date": "1989-09-08",
+   "estimated_cost": 3000,
+   "description": "install 8 door closur between hall",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8410801",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1984-10-05",
+   "status_date": "1986-03-04",
+   "estimated_cost": 3000,
+   "description": "comply the parapet safety program",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 7,
+  "range": "1984–2018",
+  "shown_on_page": 6,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=910",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0211005&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0211&lot=005",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0211005",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40822508587706%2037.79418297580542)%27)",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 7 (Chinatown).",
+  "source": "umb-survey-1990"
+ }
+}

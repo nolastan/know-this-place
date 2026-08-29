@@ -13,6 +13,7 @@ The parcels on Greenwich Street documented here so far, from the city's address,
 - [1354](1354/) — A 1900 single-family house, with a rear addition permitted in 1993.
 - [1356](1356/) — A 1907 single-family house, with foundation work permitted in 1998.
 - [2015](2015/) — A 1957 hotel, with window replacement permitted in 2011.
+- [2546](2546/) — A 1993 single-family house, with deck work permitted in 2012.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

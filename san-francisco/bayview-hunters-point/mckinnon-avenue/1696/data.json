@@ -1,106 +1,122 @@
 {
-  "address": "1696 Mckinnon Avenue, San Francisco, CA 94124",
-  "path": "/san-francisco/bayview-hunters-point/mckinnon-avenue/1696/",
-  "apn": "5296032",
-  "block": "5296",
-  "lot": "032",
-  "eas_baseid": "375025",
-  "coordinates": {
-    "lat": 37.737024,
-    "lng": -122.390745
+ "address": "1696 Mckinnon Avenue, San Francisco, CA 94124",
+ "path": "/san-francisco/bayview-hunters-point/mckinnon-avenue/1696/",
+ "apn": "5296032",
+ "block": "5296",
+ "lot": "032",
+ "eas_baseid": "375025",
+ "coordinates": {
+  "lat": 37.737024,
+  "lng": -122.390745
+ },
+ "parcel": {
+  "year_built": 1923,
+  "units": 1,
+  "stories": 1,
+  "rooms": 7,
+  "bathrooms": 1,
+  "lot_area_sqft": 5000,
+  "building_area_sqft": 1890,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 10,
+  "assessor_neighborhood": "Bayview",
+  "analysis_neighborhood": "Bayview Hunters Point",
+  "property_location_raw": "1698 1696 MCKINNON            AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 937138,
+  "assessed_improvement_value": 312379,
+  "last_sale_date": "2023-11-16"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1923",
+  "survey_name": "CASIMER CERVIERES RESIDENCE",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCKINNON&street_type=AVE&address_number=1696",
+   "retrieved": "2026-08-11"
   },
-  "parcel": {
-    "year_built": 1923,
-    "units": 1,
-    "stories": 1,
-    "rooms": 7,
-    "bathrooms": 1,
-    "lot_area_sqft": 5000,
-    "building_area_sqft": 1890,
-    "use": "Single Family Residential",
-    "property_class": "Dwelling",
-    "construction_type_code": "D",
-    "zoning": "RH-2",
-    "supervisor_district": 10,
-    "assessor_neighborhood": "Bayview",
-    "analysis_neighborhood": "Bayview Hunters Point",
-    "property_location_raw": "1698 1696 MCKINNON            AV0000"
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5296032&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-11"
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 937138,
-    "assessed_improvement_value": 312379,
-    "last_sale_date": "2023-11-16"
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5296&lot=032",
+   "retrieved": "2026-08-11"
   },
-  "historic_status": {
-    "ceqa_status_code": "A",
-    "ceqa_status_code_article_10_11": "A",
-    "ceqa_status_label": "Historic resource",
-    "reason": "Historic Survey Result",
-    "yearbuilt": "1923",
-    "survey_name": "CASIMER CERVIERES RESIDENCE",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5296032",
+   "retrieved": "2026-08-11"
   },
-  "permits": [],
-  "sources": [
+  {
+   "id": "bvhp-area-b-context-statement",
+   "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
+   "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-11"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": [
+  {
+   "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
+   "table": "Appendix A, Table 1",
+   "entries": [
     {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCKINNON&street_type=AVE&address_number=1696",
-      "retrieved": "2026-08-11"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5296032&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-11"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5296&lot=032",
-      "retrieved": "2026-08-11"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5296032",
-      "retrieved": "2026-08-11"
-    },
-    {
-      "id": "bvhp-area-b-context-statement",
-      "name": "Kelley & VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node — Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010",
-      "query": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
-      "retrieved": "2026-08-11"
+     "address_as_surveyed": "1698 Mckinnon Avenue",
+     "apn_as_surveyed": "5296032",
+     "description": "Brick Georgian Revival dwelling",
+     "cr_status_code": "3S"
     }
-  ],
-  "historic_survey": {
-    "survey": "Bayview-Hunters Point Area B Survey, Town Center Activity Node",
-    "table": "Appendix A, Table 1",
-    "entries": [
-      {
-        "address_as_surveyed": "1698 Mckinnon Avenue",
-        "apn_as_surveyed": "5296032",
-        "description": "Brick Georgian Revival dwelling",
-        "cr_status_code": "3S"
-      }
-    ],
-    "cr_status_code": "3S",
-    "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
-    "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
-    "source": "bvhp-area-b-context-statement",
-    "prior_surveys": {
-      "umb_survey_rating": "2",
-      "carey_and_company_rating": "4"
-    }
+   ],
+   "cr_status_code": "3S",
+   "cr_status_note": "Assigned on architectural criteria alone; the survey records it as provisional pending further research.",
+   "rating_note": "The survey reports ratings from the 1976 citywide architectural survey on a 0-5 scale, 5 being individual significance of the highest degree. It gives no scale for the Carey & Company or UMB survey ratings, so those are recorded here but not shown on the page.",
+   "source": "bvhp-area-b-context-statement",
+   "prior_surveys": {
+    "umb_survey_rating": "2",
+    "carey_and_company_rating": "4"
+   }
   },
-  "historical_record": [
-    {
-      "date": "1923",
-      "kind": "site history",
-      "description": "An unusual brick Georgian Revival dwelling on the north-east corner of McKinnon Avenue and Newhall Street.",
-      "source": "bvhp-area-b-context-statement"
-    }
-  ]
+  {
+   "survey": "Unreinforced Masonry Building Survey (1990)",
+   "frame": "Unreinforced masonry",
+   "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 11 (Outlying).",
+   "source": "umb-survey-1990"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1923",
+   "kind": "site history",
+   "description": "An unusual brick Georgian Revival dwelling on the north-east corner of McKinnon Avenue and Newhall Street.",
+   "source": "bvhp-area-b-context-statement"
+  }
+ ]
 }

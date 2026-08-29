@@ -17,6 +17,7 @@ The parcels on Bryant Street documented here so far, from the city's address, as
 - [544](544/) — A 1906 industrial building, with a vertical addition permitted in 1988.
 - [546](546/) — A 1948 office building, with plumbing work permitted in 2007.
 - [550–554](550/) — A 1920 office building, with a bathroom remodel permitted in 2014.
+- [555](555/) — An apartment building, with foundation work permitted in 2023.
 - [556–560](556/) — A 1921 industrial building, with permit records from 1988 to 2007.
 - [562](562/) — A 1924 industrial building, with stair work permitted in 2006.
 - [564](564/) — A 1905 industrial building, with a seismic retrofit permitted in 1996.
@@ -61,6 +62,18 @@ The parcels on Bryant Street documented here so far, from the city's address, as
 - [781–785](781/) — A 1922 industrial building, with reroofing permitted in 2001.
 - [790](790/) — A 1939 industrial building, with a seismic retrofit permitted in 1996.
 - [797–799](797/) — A 1928 industrial building, with a seismic retrofit permitted in 2003.
+- [915](915/) — A 1924 industrial building, with permit records from 1982 to 2025.
+- [917](917/) — A 1924 2-unit building with a ground-floor store, with garage work permitted in 1996.
+- [925](925/) — A 1963 warehouse, with garage work permitted in 2022.
+- [945](945/) — A 1964 office building, with electrical work permitted in 2013.
+- [955–975](955/) — A 1928 2-unit building, with window replacement permitted in 2008.
+- [979](979/) — A 1939 garage, with reroofing permitted in 1986.
+- [1011](1011/) — A 2010 store building, with deck work permitted in 2021.
+- [1030](1030/) — A 1919 industrial building, with reroofing permitted in 1991.
+- [1040](1040/) — A 1925 industrial building, with a seismic retrofit permitted in 1996.
+- [1045](1045/) — A 1916 industrial building, with stair work permitted in 2013.
+- [1060](1060/) — A 1924 industrial building, with reroofing permitted in 1995.
+- [1155](1155/) — A 1919 industrial building, with a seismic retrofit permitted in 2014.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

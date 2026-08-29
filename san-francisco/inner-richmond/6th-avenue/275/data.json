@@ -1,0 +1,107 @@
+{
+ "address": "275 6th Avenue, San Francisco, CA 94118",
+ "path": "/san-francisco/inner-richmond/6th-avenue/275/",
+ "apn": "1427012",
+ "block": "1427",
+ "lot": "012",
+ "eas_baseid": "303453",
+ "coordinates": {
+  "lat": 37.783436,
+  "lng": -122.464789
+ },
+ "parcel": {
+  "year_built": 1922,
+  "stories": 1,
+  "rooms": 6,
+  "bathrooms": 2,
+  "lot_area_sqft": 7814,
+  "building_area_sqft": 6550,
+  "use": "Commercial Retail",
+  "property_class": "Commercial Stores",
+  "construction_type_code": "C",
+  "zoning": "INCLEM",
+  "supervisor_district": 1,
+  "assessor_neighborhood": "Inner Richmond",
+  "analysis_neighborhood": "Inner Richmond",
+  "property_location_raw": "0279 0275 06TH                AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 1072901,
+  "assessed_improvement_value": 621134
+ },
+ "historic_status": {
+  "ceqa_status_code": "C",
+  "ceqa_status_code_article_10_11": "C",
+  "ceqa_status_label": "Not a historical resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1922",
+  "survey_name": "STATION M POST OFFICE",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201108263399",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2011-08-26",
+   "status_date": "2011-08-26",
+   "estimated_cost": 53200,
+   "revised_cost": 53200,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9021476S",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1990-10-18",
+   "status_date": "1993-10-01",
+   "estimated_cost": 65000,
+   "revised_cost": 335000,
+   "description": "renovate (e) commercial sapce seismic upgrade",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=06TH&street_type=AVE&address_number=275",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1427012&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1427&lot=012",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1427012",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 11 (Outlying).",
+  "source": "umb-survey-1990"
+ }
+}

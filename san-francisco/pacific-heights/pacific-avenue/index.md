@@ -13,9 +13,14 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 - [2360](2360/) — A 1929 21-unit apartment building, with facade work permitted in 2024.
 - [2398](2398/) — A 1927 40-unit apartment building, with reroofing permitted in 2017.
 - [2400](2400/) — A 1932 62-unit apartment building, with reroofing permitted in 2017.
+- [2418](2418/) — A 1908 single-family house in the Pacific Heights Historic District, with garage work permitted in 1985.
 - [2430](2430/) — A 1917 single-family house in the Pacific Heights Historic District, with facade work permitted in 2025.
 - [2518](2518/) — A 1900 single-family house in the Pacific Heights Historic District, with a bathroom remodel permitted in 2022.
 - [2520](2520/) — A 1905 single-family house in the Pacific Heights Historic District, with window replacement permitted in 2015.
+- [2800](2800/) — A 1908 single-family house in the Pacific Heights Historic District, with a bathroom remodel permitted in 2020.
+- [2810](2810/) — A 1910 single-family house in the Pacific Heights Historic District, with reroofing permitted in 1992.
+- [2830](2830/) — A 1910 single-family house in the Pacific Heights Historic District, with window replacement permitted in 2010.
+- [2974](2974/) — A 1917 single-family house in the Pacific Heights Historic District, with a seismic retrofit permitted in 2016.
 - [3015](3015/) — A 1912 single-family house in the Pacific Heights Historic District, with foundation work permitted in 2025.
 - [3052](3052/) — An assessor class: vacant lot in the Pacific Heights Historic District, with deck work permitted in 2006.
 - [3090](3090/) — A 1929 single-family house in the Pacific Heights Historic District, with a rear addition permitted in 1998.

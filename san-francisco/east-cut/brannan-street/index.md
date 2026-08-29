@@ -4,6 +4,7 @@ The parcels on Brannan Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [230–250](230/) — A 1907 office building in the South End Historic District, with garage work permitted in 2007.
 - [300–310](300/) — A 1912 industrial building in the South End Historic District, with plumbing work permitted in 2022.
 - [326](326/) — A 1959 store building in the South End Historic District, with a bathroom remodel permitted in 2014.
 - [334](334/) — A 1929 industrial building in the South End Historic District, with permit records from 2006 to 2010.

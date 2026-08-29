@@ -11,6 +11,7 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [690](690/) — A 1910 store building, with fire repair permitted in 2011.
 - [700–714](700/) — A garage, with window replacement permitted in 1985.
 - [800](800/) — A 1920 store building, with foundation work permitted in 2006.
+- [840](840/) — A 1910 51-unit apartment building, with a kitchen and bathroom remodel permitted in 1997.
 - [850](850/) — A 1919 store building, with a seismic retrofit permitted in 1991.
 - [928](928/) — A 1920 store building, with reroofing permitted in 2012.
 - [930–950](930/) — A 1919 garage, with garage work permitted in 2020.

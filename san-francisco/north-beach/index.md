@@ -29,9 +29,14 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Pfeiffer Street](pfeiffer-street/) — 1 building, built 1956.
 - [Powell Street](powell-street/) — 1 building, built 1906.
 - [Romolo Place](romolo-place/) — 1 building, built 1912.
+- [Ross Alley](ross-alley/) — 1 building, built 1906; 1 in the Chinatown Historic District.
 - [Sansome Street](sansome-street/) — 2 buildings, built 1922–1983; 2 in the Jackson Square Historic District Extension.
+- [Spofford Street](spofford-street/) — 3 buildings, built 1907–1908; 3 in the Chinatown Historic District.
 - [Stockton Street](stockton-street/) — 13 buildings, built 1900–1958; 4 in the Washington Square Historic District.
 - [Telegraph Hill Boulevard](telegraph-hill-boulevard/) — 3 buildings, built 1936–1940; 3 in the Gardner Dailey/Telegraph Hill Historic District.
 - [Union Street](union-street/) — 1 building, built 1900; 1 in the Telegraph Hill Historic District.
 - [Vallejo Street](vallejo-street/) — 8 buildings, built 1906–1955; 2 in the Upper Grant Avenue Historic District.
 - [Varennes Street](varennes-street/) — 13 buildings, built 1903–1914; 13 in the Upper Grant Avenue Historic District.
+- [Walter U Lum Place](walter-u-lum-place/) — 2 buildings, built 1907–1913; 2 in the Chinatown Historic District.
+- [Waverly Place](waverly-place/) — 16 buildings, built 1906–1911; 16 in the Chinatown Historic District.
+- [Wentworth Place](wentworth-place/) — 3 buildings, built 1907; 3 in the Chinatown Historic District.

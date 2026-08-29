@@ -5,7 +5,10 @@ The parcels on Stevenson Street documented here so far, from the city's address,
 ## Documented so far
 
 - [49](49/) — A 1989 office building, with plumbing work permitted in 2017.
+- [53](53/) — A 1989 office building, with a seismic retrofit permitted in 1993.
+- [55](55/) — A 1910 store building, with a seismic retrofit permitted in 1994.
 - [71](71/) — A 1986 office building, with electrical work permitted in 2015.
+- [79](79/) — A 1920 office building, with garage work permitted in 2022.
 - [107–109](107/) — A 1907 office building in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 1995.
 - [111–125](111/) — A 1921 garage in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 2015.
 

@@ -1,0 +1,148 @@
+{
+ "address": "632 Ellis Street, San Francisco, CA 94109",
+ "path": "/san-francisco/tenderloin/ellis-street/632/",
+ "apn": "0321014",
+ "block": "0321",
+ "lot": "014",
+ "eas_baseid": "281652",
+ "coordinates": {
+  "lat": 37.784648,
+  "lng": -122.41677
+ },
+ "parcel": {
+  "year_built": 1920,
+  "stories": 1,
+  "rooms": 1,
+  "bathrooms": 1,
+  "lot_area_sqft": 4726,
+  "building_area_sqft": 4726,
+  "use": "Commercial Misc",
+  "property_class": "Garages (Commercial)",
+  "construction_type_code": "C",
+  "zoning": "RC-4",
+  "supervisor_district": 5,
+  "assessor_neighborhood": "Tenderloin",
+  "analysis_neighborhood": "Tenderloin",
+  "property_location_raw": "0000 0632 ELLIS               ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 470288,
+  "assessed_improvement_value": 344866,
+  "last_sale_date": "1999-02-04"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1920",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Uptown Tenderloin Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1906–1957",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "200006304181",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2000-06-30",
+   "status_date": "2002-05-06",
+   "estimated_cost": 35000,
+   "revised_cost": 35000,
+   "description": "seismic retrofit",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8904144",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1989-03-15",
+   "status_date": "1989-06-01",
+   "estimated_cost": 1000,
+   "description": "comply w/bbi complaint #bn28372, remove addition @ rear",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8806784",
+   "type": "additions alterations or repairs",
+   "status": "cancelled",
+   "filed": "1988-05-23",
+   "status_date": "1988-12-15",
+   "estimated_cost": 10000,
+   "description": "new perimeter shear walls, parapet to enclose storage area",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8702928",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1987-03-05",
+   "status_date": "1987-04-08",
+   "estimated_cost": 15000,
+   "description": "reinforce brick parapet wall",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 5,
+  "range": "1987–2002",
+  "shown_on_page": 4,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELLIS&street_type=ST&address_number=632",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0321014&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0321&lot=014",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0321014",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41676958925886%2037.78464829015691)%27)",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "heritage_rating": "C — of contextual importance",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 4 (NoMa/Civic Center).",
+  "source": "umb-survey-1990"
+ }
+}

@@ -104,6 +104,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [San Bruno Avenue](san-bruno-avenue/) — 55 buildings, built 1895–1938.
 - [San Carlos Street](san-carlos-street/) — 80 buildings, built 1880–1986; 22 in the Liberty Hill Historic District.
 - [San Jose Avenue](san-jose-avenue/) — 66 buildings, built 1865–2017; 5 in the Horner's Addition East Historic District.
+- [Sheridan Street](sheridan-street/) — 2 buildings, built 2004–2007; 2 in the Western SOMA Light Industrial and Residential Historic District.
 - [Shotwell Street](shotwell-street/) — 182 buildings, built 1875–2017; 91 in the Shotwell Street Historic District.
 - [South Van Ness Avenue](south-van-ness-avenue/) — 195 buildings, built 1863–2021; 16 in the Shotwell Street Historic District.
 - [Spencer Street](spencer-street/) — 1 building, built 1904.

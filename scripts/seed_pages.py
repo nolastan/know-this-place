@@ -1457,15 +1457,27 @@ def historical_items(rec: dict, indent: str) -> list:
 
 
 def survey_panel_html(rec: dict, indent: str) -> str:
-    """`historic_survey` — what a historic resources survey found here.
+    """`historic_survey` — what the historic resources surveys found here.
+
+    One panel per survey, in the order the page lists them, because a heading
+    names one survey and its rows are that survey's findings. Two surveys reach
+    the same building often enough to plan for it — the Transit Center area sits
+    inside Central SoMa, and the 1990 unreinforced-masonry survey crosses nearly
+    all of them — and while this held a single object, the second survey to
+    arrive either overwrote the first or was written into its panel under the
+    first's name. Both lose the fact.
 
     Spec rows, not prose: a status code, a rating, the earlier surveys that
-    looked at the building. Where the survey's own address or APN disagrees
+    looked at the building. Where a survey's own address or APN disagrees
     with the city's, both are shown and neither is adjudicated.
     """
-    s = rec.get("historic_survey") or {}
-    if not s:
-        return ""
+    surveys = rec.get("historic_survey") or []
+    if isinstance(surveys, dict):
+        surveys = [surveys]
+    return "".join(one_survey_panel_html(s, indent) for s in surveys if s)
+
+
+def one_survey_panel_html(s: dict, indent: str) -> str:
     rows = []
     for icon, key, val in (
             # Not every survey assigns a status code. A CEQA-era evaluation
@@ -1898,12 +1910,24 @@ SOURCE_FOOTER_NAME = {
 
 
 def sources_html(rec: dict) -> str:
+    """The footer's source list.
+
+    A source need not have a URL. Two pages cite a printed journal article read
+    off paper, and a citation with nowhere to link is still a citation — it just
+    prints without the link rather than crashing the render.
+    """
     items = []
     for s in rec.get("sources", []):
         name = SOURCE_FOOTER_NAME.get(s["id"], lambda n: n)(s["name"]).replace(" — ", ", ")
-        items.append(f'      <li>{esc(name)} —\n'
-                     f'        <a href="{esca(s["query"])}">'
-                     f'retrieved {s["retrieved"]}</a></li>')
+        retrieved = s.get("retrieved")
+        if s.get("query") and retrieved:
+            tail = (f'\n        <a href="{esca(s["query"])}">'
+                    f'retrieved {retrieved}</a>')
+        elif retrieved:
+            tail = f'\n        <span>read {retrieved}</span>'
+        else:
+            tail = ""
+        items.append(f'      <li>{esc(name)}{" —" if tail else ""}{tail}</li>')
     return "\n".join(items)
 
 

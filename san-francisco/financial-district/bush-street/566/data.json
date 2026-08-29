@@ -1,0 +1,171 @@
+{
+ "address": "566 Bush Street, San Francisco, CA 94108",
+ "path": "/san-francisco/financial-district/bush-street/566/",
+ "apn": "0271024",
+ "block": "0271",
+ "lot": "024",
+ "eas_baseid": "280878",
+ "coordinates": {
+  "lat": 37.790656,
+  "lng": -122.406646
+ },
+ "parcel": {
+  "year_built": 1907,
+  "stories": 4,
+  "rooms": 17,
+  "bathrooms": 4,
+  "lot_area_sqft": 2565,
+  "building_area_sqft": 4642,
+  "use": "Commercial Misc",
+  "property_class": "Churches,Convents,Rectories",
+  "construction_type_code": "C",
+  "zoning": "C3G",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Financial District North",
+  "analysis_neighborhood": "Financial District/South Beach",
+  "property_location_raw": "0000 0566 BUSH                ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 194971,
+  "assessed_improvement_value": 185494
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A*",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Article 10 Individual Landmark, Article 11 Individual, Article 11 Conservation District, Historic Survey Result",
+  "yearbuilt": "1907",
+  "survey_name": "NOTRE DAME DES VICTOIRES CHURCH & RECTOR",
+  "in_article_10_11_historic_district": true,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Kearny-Market-Mason-Sutter Conservation District",
+  "california_register_status": "Not listed",
+  "national_register_status": "Not listed",
+  "article_10_11_status": "Article 11 conservation district",
+  "local_landmark_protection": true,
+  "period_of_significance": "N/A",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "202203240806",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2022-03-24",
+   "status_date": "2022-03-25",
+   "estimated_cost": 800,
+   "revised_cost": 800,
+   "description": "revision to 2020 0819 2089. for gate revision. omit center strike post at rectory gate to maintain clearance for pall bearers carrying caskets into the church. add can bolt on one leaf of rectory gate cane bolt replaces post.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "202109027723",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2021-09-02",
+   "status_date": "2021-09-09",
+   "estimated_cost": 10200,
+   "revised_cost": 10200,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "202008192089",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2020-08-19",
+   "status_date": "2022-06-22",
+   "estimated_cost": 50000,
+   "revised_cost": 69000,
+   "description": "install metal security gate on the south property line, adjacent to the sidewalk.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200003275452",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2000-03-27",
+   "status_date": "2000-07-27",
+   "estimated_cost": 1,
+   "revised_cost": 1,
+   "description": "revision to 9516982 .",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9516982",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1995-10-11",
+   "status_date": "1998-06-19",
+   "estimated_cost": 1700000,
+   "revised_cost": 1700000,
+   "description": "seismic strengthening",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9413101",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1994-08-16",
+   "status_date": "1994-09-12",
+   "estimated_cost": 4000,
+   "description": "apply masonry parge coat to exisst rock wall in open interio",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 7,
+  "range": "1994–2022",
+  "shown_on_page": 6,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=566",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0271024&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0271&lot=024",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0271024",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40664610756497%2037.79065601729684)%27)",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 1 (Downtown).",
+  "source": "umb-survey-1990"
+ }
+}

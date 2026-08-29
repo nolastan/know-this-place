@@ -4,6 +4,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 
 ## Documented so far
 
+- [60](60/) — A 1902 office building in the Northeast Waterfront Historic District, with stair work permitted in 2015.
 - [333](333/) — A 1921 office building in the Jackson Square Historic District Extension, with reroofing permitted in 1992.
 - [350](350/) — A 1914 school building, with one permit record from 2004.
 - [369](369/) — A 1912 hotel in the Jackson Square Historic District Extension, with reroofing permitted in 2008.

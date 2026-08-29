@@ -23,6 +23,7 @@ Every residential parcel on Buena Vista Avenue that the city's address, assessor
 - [491](491/) — A 2000 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [499](499/) — A 1924 single-family house, with one permit record from 2000.
 - [737](737/) — A 1900 single-family house, with reroofing permitted in 2019.
+- [815](815/) — A 1916 building, with a seismic retrofit permitted in 2005.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

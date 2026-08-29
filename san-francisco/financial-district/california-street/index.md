@@ -11,10 +11,14 @@ The parcels on California Street documented here so far, from the city's address
 - [101](101/) — The tower whose 34th floor was the site of the 1993 Pettit & Martin shooting.
 - [150](150/) — A 2000 office building in the Front-California Conservation District, with plumbing work permitted in 2011.
 - [200–210](200/) — A 1988 office building in the Front-California Conservation District, with reroofing permitted in 2014.
+- [212–214](212/) — A 1910 bank building in the Front-California Conservation District, with an addition permitted in 2013.
+- [220–230](220/) — A 1913 office building in the Front-California Conservation District, with window replacement permitted in 2006.
 - [345](345/) — A 1987 office building, with plumbing work permitted in 2023.
 - [555](555/) — The 1969 Bank of America tower; its plaza sculpture is the one called the Banker's Heart.
 - [600–628](600/) — Where a set of Lee Lawrie's 1930s bronze lift doors, from Harrisburg, ended up on Sacramento Street.
 - [636–650](636/) — A 1963 office building, with stair work permitted in 2017.
+- [717–719](717/) — An office building in the Chinatown Historic District, with reroofing permitted in 2025.
+- [718](718/) — A 1907 store building in the Chinatown Historic District, with a kitchen remodel permitted in 2018.
 - [1021](1021/) — A 1911 single-family house, with reroofing permitted in 1998.
 
 Pages are generated from the DataSF datasets listed in each page's

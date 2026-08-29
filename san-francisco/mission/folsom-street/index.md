@@ -4,6 +4,12 @@ Every residential parcel on Folsom Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [1257](1257/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1997.
+- [1346](1346/) — A 2005 98-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2001.
+- [1379](1379/) — A 1921 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
+- [1415](1415/) — A 1913 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2012.
+- [1455](1455/) — A 1919 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2004.
+- [1480](1480/) — A 1916 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1993.
 - [1545](1545/) — A 1906 two-flat in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2010.
 - [1582–1590](1582/) — A 1916 14-unit apartment building in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 1989.
 - [1608–1612](1608/) — A 1914 three-flat in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 1999.
@@ -15,7 +21,19 @@ Every residential parcel on Folsom Street that the city's address, assessor and 
 - [1645](1645/) — A 1909 12-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2006.
 - [1689–1693](1689/) — A 1906 three-flat in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2009.
 - [1719–1721](1719/) — A 1916 4-unit apartment building, with reroofing permitted in 1992.
+- [1740](1740/) — A 1963 industrial building, with a seismic retrofit permitted in 2000.
+- [1745](1745/) — A 1940 store building, with reroofing permitted in 2002.
+- [1748](1748/) — A 1945 industrial building, with reroofing permitted in 1991.
+- [1750](1750/) — A 1963 industrial building, with an addition permitted in 2017.
 - [1769–1777](1769/) — A 1911 4-unit apartment building, with an addition permitted in 2002.
+- [1776](1776/) — A 1939 industrial building, with garage work permitted in 2009.
+- [1779](1779/) — A 1924 industrial building, with reroofing permitted in 1988.
+- [1800](1800/) — A 1986 store building, with facade work permitted in 2008.
+- [1801–1807](1801/) — A 1906 hotel, with reroofing permitted in 1989.
+- [1811](1811/) — A 1946 industrial building.
+- [1825](1825/) — A 1953 industrial building.
+- [1831–1835](1831/) — A 1951 industrial building, with a rear addition permitted in 1987.
+- [1855](1855/) — A 1900 garage, with one permit record from 2019.
 - [1900–1902](1900/) — A 1906 4-unit building with a ground-floor store in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a kitchen remodel permitted in 2015.
 - [1906–1908](1906/) — A 1907 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2026.
 - [1910–1914](1910/) — A 1907 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2017.
@@ -24,13 +42,22 @@ Every residential parcel on Folsom Street that the city's address, assessor and 
 - [1926–1928](1926/) — A 1900 two-flat in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with window replacement permitted in 2015.
 - [1930–1934](1930/) — A 1902 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2018.
 - [1936](1936/) — A 1900 single-family house in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a dormer permitted in 2013.
+- [1960](1960/) — A 1937 industrial building, with plumbing work permitted in 2016.
+- [2011–2013](2011/) — A 1907 hotel, with a seismic retrofit permitted in 2015.
+- [2014–2030](2014/) — A 1948 industrial building, with reroofing permitted in 1989.
+- [2021](2021/) — A 1960 industrial building, with permit records from 1987 to 2015.
 - [2023](2023/) — A 1902 11-unit apartment building, with a seismic retrofit permitted in 2021.
 - [2050–2070](2050/) — A 2021 131-unit apartment building, with plumbing work permitted in 2019.
+- [2055](2055/) — A 1980 office building, with reroofing permitted in 2017.
+- [2075](2075/) — A 1969 industrial building, with reroofing permitted in 2017.
 - [2104](2104/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2106](2106/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2108](2108/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2169](2169/) — A 2001 store building, with a kitchen and bathroom remodel permitted in 2016.
 - [2196–2198](2196/) — A 1900 3-unit apartment building, with facade work permitted in 1990.
+- [2225–2295](2225/) — A 1946 industrial building, with electrical work permitted in 2019.
 - [2301–2305](2301/) — A 1906 5-unit building with a ground-floor store, with reroofing permitted in 2003.
+- [2307](2307/) — A 1959 industrial building, with reroofing permitted in 2005.
 - [2313–2317](2313/) — A 1900 3-unit apartment building, with reroofing permitted in 2015.
 - [2319–2333](2319/) — A 1904 three-flat, with a seismic retrofit permitted in 2005.
 - [2325](2325/) — A 1904 three-flat, with a seismic retrofit permitted in 2005.
