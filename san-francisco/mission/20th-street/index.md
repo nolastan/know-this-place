@@ -29,9 +29,11 @@ Every residential parcel on 20th Street that the city's address, assessor and pe
 - [2841–2847](2841/) — A 1900 5-unit building with a ground-floor store, with reroofing permitted in 2013.
 - [2925](2925/) — A 1907 two-flat, with window replacement permitted in 2014.
 - [2931](2931/) — A 1923 single-family house, with a kitchen and bathroom remodel permitted in 2008.
+- [3000–3030](3000/) — A 1928 industrial building, with a kitchen remodel permitted in 2010.
 - [3001–3005](3001/) — A 1900 3-unit tic building, with a bathroom remodel permitted in 2016.
 - [3007](3007/) — A 1964 3-unit apartment building, with reroofing permitted in 2023.
 - [3017](3017/) — A 1900 three-flat, with foundation work permitted in 2026.
+- [3130](3130/) — A 1949 industrial building, with window replacement permitted in 2013.
 - [3223](3223/) — A 1900 single-family house, with reroofing permitted in 2021.
 - [3225–3227](3225/) — A 1900 two-flat, with garage work permitted in 2016.
 - [3229](3229/) — A two-flat, with fire repair permitted in 1998.
@@ -42,6 +44,7 @@ Every residential parcel on 20th Street that the city's address, assessor and pe
 - [3276–3280](3276/) — A 1909 three-flat, with a kitchen and bathroom remodel permitted in 2025.
 - [3277–3279](3277/) — A 1906 two-flat, with reroofing permitted in 2007.
 - [3305–3321](3305/) — A 1905 9-unit apartment building, with a bathroom remodel permitted in 2013.
+- [3318–3330](3318/) — A 1920 assessor class: vacant lot, with a seismic retrofit permitted in 1998.
 - [3325–3327](3325/) — A 1900 2-unit building with a ground-floor store, with facade work permitted in 2018.
 - [3329–3333](3329/) — A 1900 10-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [3339–3345](3339/) — An 1885 4-unit apartment building in the Shotwell Street Historic District, with a seismic retrofit permitted in 2010.
@@ -69,6 +72,7 @@ Every residential parcel on 20th Street that the city's address, assessor and pe
 - [3572–3576](3572/) — A 1911 5-unit apartment building, with reroofing permitted in 2006.
 - [3573](3573/) — A 1904 6-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 1994.
 - [3578–3582](3578/) — A 1905 three-flat, with fire repair permitted in 1990.
+- [3585](3585/) — A 1914 store building in the Liberty Hill Historic District, with foundation work permitted in 2014.
 - [3616–3618](3616/) — A 1907 two-flat, with window replacement permitted in 2007.
 - [3621](3621/) — A 1962 4-unit apartment building in the Liberty Hill Historic District, with reroofing permitted in 2024.
 - [3624–3626](3624/) — A 1907 two-flat, with a kitchen remodel permitted in 2016.

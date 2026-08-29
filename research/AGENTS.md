@@ -199,6 +199,40 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A scanned fixed-column table is a 2-D object. Read it from the word boxes.**
+  `pdftotext -layout` reconstructs a table by guessing at whitespace, and on a
+  scan it guesses differently on every page — the 1990 UMB survey's appendix
+  lost every Block on one page, every street number on two others, and half of
+  each year on a fourth. Line-based extraction found 1,179 rows; rebuilding rows
+  and columns from `pdftotext -bbox-layout` word coordinates found 1,902 in the
+  same 51 pages. Cluster words into rows by y, assign them to columns by x
+  against the page's own header line, and anchor the column template on whichever
+  header word the scan preserves best. *Sixty per cent more yield for an hour's
+  work, on any table this project will ever read.*
+- **A parser that requires every column throws away good rows.** The same pass
+  demanded a four-digit assessor block and silently dropped 200 rows on pages
+  where that one column had not survived. Accept a row that still identifies a
+  building, record each field's condition, and let the checks downstream decide
+  what each column can be used for.
+- **A street name that no longer exists reads exactly like bad OCR.** ARMY is
+  Cesar Chavez Street and MONROE is Dashiell Hammett Street, and both look like
+  scanner damage until the record's own assessor block is consulted — block 4324
+  carries Cesar Chavez, and the parcel printed against "20 MONROE" is Dashiell
+  Hammett 20–20. **On any pre-1995 source, resolve the street through the block
+  before concluding the scan is at fault.**
+- **A numbered street with no street type resolves to the Avenue.** San
+  Francisco has both a Sixth Street and a Sixth Avenue, forty blocks apart, and
+  a source that prints "665 6TH" has told you neither. The UMB ratings table
+  sent seven South of Market buildings to the Richmond that way. Where the
+  source states an assessor block, take the street type from that block's own
+  parcels before resolving; it is the difference between a right answer and a
+  confident wrong one, and nothing downstream catches it except the block check.
+- **A run that regenerates HTML must check which pages were written by hand.**
+  Re-rendering two bespoke pages in this run would have replaced a hand-written
+  description, a sub-neighbourhood, a building type and two stat tiles with the
+  seeder's defaults. The renderer is the default, not the authority: before a
+  bulk re-render, diff one page of each kind, and hand-patch the ones that have
+  drifted on purpose.
 - **A run that stops at "resolved" leaves the worst possible state.** PR #114
   put 425 `sf-context-statements` findings onto pages and never marked the
   findings file. The next agent could not tell finished work from unstarted

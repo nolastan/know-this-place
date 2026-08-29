@@ -22,6 +22,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [418–422](418/) — A 1908 hotel, with a vertical addition permitted in 1997.
 - [440](440/) — A 1994 59-unit apartment building, with garage work permitted in 1992.
 - [443–447](443/) — A 1906 hotel, with a seismic retrofit permitted in 2017.
+- [461–467](461/) — A 1910 industrial building, with reroofing permitted in 2017.
 - [519–521](519/) — A 1906 3-unit building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with stair work permitted in 2001.
 - [523–525](523/) — A 1906 four-flat in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen remodel permitted in 2025.
 - [529–533](529/) — A 1924 3-unit apartment building in the 16th and Valencia Streets Post-Fire Historic District, with reroofing permitted in 1995.
@@ -37,6 +38,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [572–576](572/) — A 1923 9-unit apartment building, with a seismic retrofit permitted in 2018.
 - [577–581](577/) — A 1907 6-unit apartment building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen and bathroom remodel permitted in 2011.
 - [590–598](590/) — A 1907 24-unit apartment building, with a seismic retrofit permitted in 2015.
+- [601](601/) — A 2003 store building, with reroofing permitted in 1990.
 - [623](623/) — A 1915 store building, with a seismic retrofit permitted in 2002.
 - [656–660](656/) — A 1906 four-flat, with foundation work permitted in 1996.
 - [662](662/) — An apartment building, with one permit record from 1995.
@@ -47,9 +49,11 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [715](715/) — A 1907 2-unit building with a ground-floor store.
 - [720](720/) — A 1909 2-unit building with a ground-floor store, with stair work permitted in 2002.
 - [724](724/) — A 1921 building with a ground-floor store, with reroofing permitted in 2007.
+- [727](727/) — A 1916 store building, with reroofing permitted in 2002.
 - [740–748](740/) — A 1906 store building, with a seismic retrofit permitted in 2011.
 - [756–758](756/) — A 1909 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2016.
 - [760–762](760/) — A 1908 2-unit building with a ground-floor store, with window replacement permitted in 2012.
+- [780](780/) — A 1924 store building, with stair work permitted in 2008.
 - [785–789](785/) — A 1911 3-unit building with a ground-floor store, with window replacement permitted in 2020.
 - [800–820](800/) — A 1978 20-unit apartment building, with a bathroom remodel permitted in 2017.
 - [801–807](801/) — A 1906 23-unit apartment building in the Lexington and San Carlos Streets Reconstruction Historic District, with a seismic retrofit permitted in 2018.
@@ -148,6 +152,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [1492–1494](1492/) — A 1900 6-unit building with a ground-floor store, with a bathroom remodel permitted in 1987.
 - [1497–1499](1497/) — A 1900 two-flat, with plumbing work permitted in 2015.
 - [1500](1500/) — A 1956 store building, with a seismic retrofit permitted in 2005.
+- [1501–1509](1501/) — A 1912 garage, with a seismic retrofit permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

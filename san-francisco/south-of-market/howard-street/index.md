@@ -36,9 +36,13 @@ The parcels on Howard Street documented here so far, from the city's address, as
 - [991–993](991/) — A 1908 industrial building, with reroofing permitted in 2002.
 - [1144](1144/) — A 1921 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1982 to 2019.
 - [1160](1160/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2026.
+- [1173–1175](1173/) — A 1922 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 1995.
+- [1301–1315](1301/) — A 1915 industrial building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2014.
+- [1325–1331](1325/) — A 1919 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 1998.
 - [1330](1330/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with deck work permitted in 2019.
 - [1350](1350/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with electrical work permitted in 2021.
 - [1380](1380/) — A 1928 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 2008.
+- [1401](1401/) — A 1913 office building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2016.
 - [1434–1436](1434/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2006.
 - [1450](1450/) — A 1900 industrial building in the Western SOMA Light Industrial and Residential Historic District, with fire repair permitted in 1991.
 - [1458](1458/) — A 1966 store building in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2015.

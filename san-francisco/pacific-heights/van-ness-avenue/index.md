@@ -8,6 +8,8 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [1625–1645](1625/) — A 1919 office building, with electrical work permitted in 2006.
 - [1699](1699/) — A 1919 store building, with stair work permitted in 1983.
 - [1701](1701/) — A 1917 store building, with reroofing permitted in 1995.
+- [1725](1725/) — A 1928 24-unit apartment building, with an addition permitted in 2022.
+- [1735](1735/) — A 1928 36-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [1745–1765](1745/) — A 1928 50-unit apartment building, with an addition permitted in 2022.
 - [1801](1801/) — A 1920 store building, with electrical work permitted in 2001.
 - [2001](2001/) — A 1920 store building, with facade work permitted in 2022.

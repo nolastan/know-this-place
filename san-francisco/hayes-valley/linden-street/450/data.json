@@ -1,163 +1,172 @@
 {
-  "address": "450 Linden Street, San Francisco, CA 94102",
-  "path": "/san-francisco/hayes-valley/linden-street/450/",
-  "apn": "0818022B",
-  "block": "0818",
-  "lot": "022B",
-  "eas_baseid": "288764",
-  "coordinates": {
-    "lat": 37.776213,
-    "lng": -122.425468
-  },
-  "parcel": {
-    "year_built": 1924,
-    "stories": 1,
-    "rooms": 1,
-    "lot_area_sqft": 1537,
-    "building_area_sqft": 1485,
-    "use": "Industrial",
-    "property_class": "Industrial",
-    "construction_type_code": "B",
-    "zoning": "RH-3",
-    "supervisor_district": 5,
-    "assessor_neighborhood": "Hayes Valley",
-    "analysis_neighborhood": "Hayes Valley",
-    "property_location_raw": "0000 0450 LINDEN              ST0000"
-  },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 461081,
-    "assessed_improvement_value": 147538,
-    "last_sale_date": "1999-11-18"
-  },
-  "historic_status": {
-    "ceqa_status_code": "A",
-    "ceqa_status_code_article_10_11": "A",
-    "ceqa_status_label": "Historic resource",
-    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
-    "yearbuilt": "1924",
-    "survey_name": "450 Linden St AB",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
-  },
-  "historic_district": {
-    "name": "Hayes Valley Residential Historic District",
-    "california_register_status": "Listed",
-    "national_register_status": "Eligible (not listed)",
-    "article_10_11_status": "No local landmark protection",
-    "local_landmark_protection": false,
-    "period_of_significance": "1860–1920",
-    "source": "sf-historic-districts"
-  },
-  "also_in_districts": [
-    {
-      "name": "Hayes Valley Commercial Historic District",
-      "california_register_status": "Eligible (not listed)",
-      "national_register_status": "Not listed",
-      "article_10_11_status": "No local landmark protection",
-      "local_landmark_protection": false,
-      "period_of_significance": "ca 1855–1929",
-      "source": "sf-historic-districts"
-    }
-  ],
-  "permits": [
-    {
-      "number": "200009150682",
-      "type": "otc alterations permit",
-      "status": "expired",
-      "filed": "2000-09-15",
-      "status_date": "2001-03-15",
-      "estimated_cost": 8760,
-      "revised_cost": 8760,
-      "description": "reroofing",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "20000107544",
-      "type": "additions alterations or repairs",
-      "status": "complete",
-      "filed": "2000-01-07",
-      "status_date": "2000-07-14",
-      "estimated_cost": 75000,
-      "revised_cost": 75000,
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "9610635",
-      "type": "additions alterations or repairs",
-      "status": "expired",
-      "filed": "1996-06-14",
-      "status_date": "1997-03-11",
-      "estimated_cost": 18000,
-      "revised_cost": 24000,
-      "description": "seismic upgrade general procedure s.f.b.c.",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "9402569",
-      "type": "additions alterations or repairs",
-      "status": "cancelled",
-      "filed": "1994-02-17",
-      "status_date": "1995-05-04",
-      "estimated_cost": 5000,
-      "description": "comply with prapet ordinance",
-      "source": "sf-building-permits"
-    }
-  ],
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDEN&street_type=ST&address_number=450",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0818022B&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0818&lot=022B",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0818022B",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-historic-districts",
-      "name": "SF Planning Department — Historic Districts via DataSF",
-      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4254676536756%2037.77621290088525)%27)",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "market-octavia-context-statement",
-      "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
-      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
-      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
-      "label": "Market & Octavia Historic Context Statement, adopted 2007",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "umb-survey-1990",
-      "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
-      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
-      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
-      "label": "Unreinforced Masonry Building Survey, 1990",
-      "retrieved": "2026-08-28"
-    }
-  ],
-  "historic_survey": {
-    "survey": "Market & Octavia Historic Context Statement (2007)",
-    "source": "market-octavia-context-statement",
-    "note": "One of the 148 industrial buildings the survey inventoried as standing in its Industrial Employment Study Area, the mixed industrial and residential district between Market, Howard, 16th and 9th streets."
-  },
-  "building": {
-    "completed": 1924
+ "address": "450 Linden Street, San Francisco, CA 94102",
+ "path": "/san-francisco/hayes-valley/linden-street/450/",
+ "apn": "0818022B",
+ "block": "0818",
+ "lot": "022B",
+ "eas_baseid": "288764",
+ "coordinates": {
+  "lat": 37.776213,
+  "lng": -122.425468
+ },
+ "parcel": {
+  "year_built": 1924,
+  "stories": 1,
+  "rooms": 1,
+  "lot_area_sqft": 1537,
+  "building_area_sqft": 1485,
+  "use": "Industrial",
+  "property_class": "Industrial",
+  "construction_type_code": "B",
+  "zoning": "RH-3",
+  "supervisor_district": 5,
+  "assessor_neighborhood": "Hayes Valley",
+  "analysis_neighborhood": "Hayes Valley",
+  "property_location_raw": "0000 0450 LINDEN              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 461081,
+  "assessed_improvement_value": 147538,
+  "last_sale_date": "1999-11-18"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1924",
+  "survey_name": "450 Linden St AB",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Hayes Valley Residential Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Eligible (not listed)",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1860–1920",
+  "source": "sf-historic-districts"
+ },
+ "also_in_districts": [
+  {
+   "name": "Hayes Valley Commercial Historic District",
+   "california_register_status": "Eligible (not listed)",
+   "national_register_status": "Not listed",
+   "article_10_11_status": "No local landmark protection",
+   "local_landmark_protection": false,
+   "period_of_significance": "ca 1855–1929",
+   "source": "sf-historic-districts"
   }
+ ],
+ "permits": [
+  {
+   "number": "200009150682",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2000-09-15",
+   "status_date": "2001-03-15",
+   "estimated_cost": 8760,
+   "revised_cost": 8760,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "20000107544",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2000-01-07",
+   "status_date": "2000-07-14",
+   "estimated_cost": 75000,
+   "revised_cost": 75000,
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9610635",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1996-06-14",
+   "status_date": "1997-03-11",
+   "estimated_cost": 18000,
+   "revised_cost": 24000,
+   "description": "seismic upgrade general procedure s.f.b.c.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9402569",
+   "type": "additions alterations or repairs",
+   "status": "cancelled",
+   "filed": "1994-02-17",
+   "status_date": "1995-05-04",
+   "estimated_cost": 5000,
+   "description": "comply with prapet ordinance",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDEN&street_type=ST&address_number=450",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0818022B&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0818&lot=022B",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0818022B",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4254676536756%2037.77621290088525)%27)",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "market-octavia-context-statement",
+   "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
+   "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Market & Octavia Historic Context Statement, adopted 2007",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-28"
+  }
+ ],
+ "historic_survey": [
+  {
+   "survey": "Market & Octavia Historic Context Statement (2007)",
+   "source": "market-octavia-context-statement",
+   "note": "One of the 148 industrial buildings the survey inventoried as standing in its Industrial Employment Study Area, the mixed industrial and residential district between Market, Howard, 16th and 9th streets."
+  },
+  {
+   "survey": "Unreinforced Masonry Building Survey (1990)",
+   "frame": "Unreinforced masonry",
+   "apn_as_surveyed": "Block 818, Lot 2B",
+   "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 11 (Outlying).",
+   "source": "umb-survey-1990"
+  }
+ ],
+ "building": {
+  "completed": 1924
+ }
 }

@@ -15,12 +15,14 @@ Every residential parcel on Capp Street that the city's address, assessor and pe
 - [65](65/) — A 1906 single-family house, with a kitchen and bathroom remodel permitted in 2014.
 - [77–87](77/) — A 1900 6-unit apartment building, with garage work permitted in 2023.
 - [135](135/) — A 1908 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [165](165/) — A 1922 industrial building, with foundation work permitted in 2005.
 - [177](177/) — A 1908 15-unit apartment building, with facade work permitted in 2024.
 - [200–218](200/) — A 1910 9-unit apartment building, with a seismic retrofit permitted in 2018.
 - [231](231/) — A 1912 two-flat, with a bathroom remodel permitted in 1989.
 - [237–239](237/) — A 1900 three-flat, with a kitchen remodel permitted in 1992.
 - [242–244](242/) — A 1909 three-flat, with window replacement permitted in 2000.
 - [249](249/) — A 1900 single-family house.
+- [251](251/) — A 1989 store building, with a seismic retrofit permitted in 2001.
 - [252–254](252/) — A 1909 three-flat, with foundation work permitted in 1986.
 - [255–275](255/) — A 1910 industrial building, with facade work permitted in 2008.
 - [307](307/) — A 1908 12-unit apartment building, with a seismic retrofit permitted in 2015.

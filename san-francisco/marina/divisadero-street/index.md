@@ -4,6 +4,7 @@ The parcels on Divisadero Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [2663](2663/) — A 1904 single-family house in the Pacific Heights Historic District, with a bathroom remodel permitted in 2008.
 - [2828](2828/) — A 1912 single-family house in the Cow Hollow First Bay Tradition Historic District, with a rear addition permitted in 1998.
 - [3630](3630/) — A 1900 school building, with one permit record from 2020.
 

@@ -1,142 +1,159 @@
 {
-  "address": "2070 Bryant Street, San Francisco, CA 94110",
-  "path": "/san-francisco/mission/bryant-street/2070/",
-  "apn": "4022241",
-  "block": "4022",
-  "lot": "241",
-  "eas_baseid": "367353",
-  "coordinates": {
-    "lat": 37.760877,
-    "lng": -122.410261
+ "address": "2070 Bryant Street, San Francisco, CA 94110",
+ "path": "/san-francisco/mission/bryant-street/2070/",
+ "apn": "4022241",
+ "block": "4022",
+ "lot": "241",
+ "eas_baseid": "367353",
+ "coordinates": {
+  "lat": 37.760877,
+  "lng": -122.410261
+ },
+ "parcel": {
+  "lot_area_sqft": 8189,
+  "use": "Miscellaneous/Mixed-Use",
+  "property_class": "Vacant land- residential 15+ units",
+  "construction_type_code": "NA",
+  "supervisor_district": 9,
+  "assessor_neighborhood": "Inner Mission",
+  "analysis_neighborhood": "Mission",
+  "property_location_raw": "0000 2070 BRYANT              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025
+ },
+ "permits": [
+  {
+   "number": "M1227369",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2022-03-16",
+   "status_date": "2022-03-16",
+   "revised_cost": 244,
+   "description": "per pa #201802211851 lot subdivision, add address to apn 4022/241 as; 2070 bryant st.",
+   "source": "sf-building-permits"
   },
-  "parcel": {
-    "lot_area_sqft": 8189,
-    "use": "Miscellaneous/Mixed-Use",
-    "property_class": "Vacant land- residential 15+ units",
-    "construction_type_code": "NA",
-    "supervisor_district": 9,
-    "assessor_neighborhood": "Inner Mission",
-    "analysis_neighborhood": "Mission",
-    "property_location_raw": "0000 2070 BRYANT              ST0000"
+  {
+   "number": "201406239100",
+   "type": "demolitions",
+   "status": "complete",
+   "filed": "2014-06-23",
+   "status_date": "2017-11-08",
+   "estimated_cost": 200000,
+   "revised_cost": 1790950,
+   "description": "demolish 2-story, manufacturing building. comply maher ord #155-13.",
+   "source": "sf-building-permits"
   },
-  "assessment": {
-    "roll_year": 2025
+  {
+   "number": "201406239109",
+   "type": "new construction",
+   "status": "complete",
+   "filed": "2014-06-23",
+   "status_date": "2020-12-22",
+   "estimated_cost": 50000000,
+   "revised_cost": 50000000,
+   "description": "erect 6-story, no basemeny, type 3a over 1a, 194 dwelling units residential/retail building (r-2, m, b, s-2). comply maher ord #155-13.",
+   "source": "sf-building-permits"
   },
-  "permits": [
-    {
-      "number": "M1227369",
-      "type": "otc alterations permit",
-      "status": "issued",
-      "filed": "2022-03-16",
-      "status_date": "2022-03-16",
-      "revised_cost": 244,
-      "description": "per pa #201802211851 lot subdivision, add address to apn 4022/241 as; 2070 bryant st.",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "201406239100",
-      "type": "demolitions",
-      "status": "complete",
-      "filed": "2014-06-23",
-      "status_date": "2017-11-08",
-      "estimated_cost": 200000,
-      "revised_cost": 1790950,
-      "description": "demolish 2-story, manufacturing building. comply maher ord #155-13.",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "201406239109",
-      "type": "new construction",
-      "status": "complete",
-      "filed": "2014-06-23",
-      "status_date": "2020-12-22",
-      "estimated_cost": 50000000,
-      "revised_cost": 50000000,
-      "description": "erect 6-story, no basemeny, type 3a over 1a, 194 dwelling units residential/retail building (r-2, m, b, s-2). comply maher ord #155-13.",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "200405113547",
-      "type": "otc alterations permit",
-      "status": "complete",
-      "filed": "2004-05-11",
-      "status_date": "2004-09-03",
-      "estimated_cost": 150000,
-      "revised_cost": 150000,
-      "description": "reroofing",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "200005139937",
-      "type": "demolitions",
-      "status": "issued",
-      "filed": "2000-05-13",
-      "status_date": "2000-08-05",
-      "description": "demolish a two story warehouse",
-      "source": "sf-building-permits"
-    }
-  ],
-  "permit_summary": {
-    "count_on_file": 7,
-    "range": "2000–2022",
-    "shown_on_page": 5,
-    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  {
+   "number": "200405113547",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2004-05-11",
+   "status_date": "2004-09-03",
+   "estimated_cost": 150000,
+   "revised_cost": 150000,
+   "description": "reroofing",
+   "source": "sf-building-permits"
   },
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2070",
-      "retrieved": "2026-08-25"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4022241&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-25"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4022&lot=241",
-      "retrieved": "2026-08-25"
-    },
-    {
-      "id": "showplace-square-survey",
-      "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
-      "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
-      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
-      "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
-      "retrieved": "2026-08-25"
-    }
-  ],
-  "historical_record": [
-    {
-      "date": "1918",
-      "kind": "construction",
-      "description": "Built as the Central Iron Works.",
-      "source": "showplace-square-survey"
-    },
-    {
-      "date": "1925",
-      "kind": "alteration",
-      "description": "Additions were built.",
-      "source": "showplace-square-survey"
-    }
-  ],
-  "unknowns": [
-    "The survey's data table dates the building to 1918; the context statement's appendix dates it to Ca. 1925."
-  ],
-  "historic_survey": {
-    "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
-    "source": "showplace-square-survey",
-    "proposed_status_code": "6L",
-    "eligible_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
-    "style": "Industrial",
-    "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
-    "year_built_as_surveyed": "1918",
-    "apn_as_surveyed": "4022021",
-    "note": "The survey rates the architecture 3 of 5. The 2009 context statement gives the status code 3CD; the 2011 survey data table gives 6L.",
-    "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  {
+   "number": "200005139937",
+   "type": "demolitions",
+   "status": "issued",
+   "filed": "2000-05-13",
+   "status_date": "2000-08-05",
+   "description": "demolish a two story warehouse",
+   "source": "sf-building-permits"
   }
+ ],
+ "permit_summary": {
+  "count_on_file": 7,
+  "range": "2000–2022",
+  "shown_on_page": 5,
+  "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=2070",
+   "retrieved": "2026-08-25"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4022241&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-25"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4022&lot=241",
+   "retrieved": "2026-08-25"
+  },
+  {
+   "id": "showplace-square-survey",
+   "name": "Kelley & VerPlanck Historical Resources Consulting and the San Francisco Planning Department, Showplace Square / Northeast Mission Historic Resource Survey, context statement dated October 22, 2009, survey data dated May 2011, adopted 2011",
+   "query": "https://sfplanning.org/showplace-squarenortheast-mission-historic-resource-survey",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Showplace Square / Northeast Mission Historic Resource Survey, adopted 2011",
+   "retrieved": "2026-08-25"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1918",
+   "kind": "construction",
+   "description": "Built as the Central Iron Works.",
+   "source": "showplace-square-survey"
+  },
+  {
+   "date": "1925",
+   "kind": "alteration",
+   "description": "Additions were built.",
+   "source": "showplace-square-survey"
+  }
+ ],
+ "unknowns": [
+  "The survey's data table dates the building to 1918; the context statement's appendix dates it to Ca. 1925."
+ ],
+ "historic_survey": [
+  {
+   "survey": "Showplace Square / Northeast Mission Historic Resource Survey (2011)",
+   "source": "showplace-square-survey",
+   "proposed_status_code": "6L",
+   "eligible_district": "Northeast Mission / Showplace Square Industrial Employment District (proposed)",
+   "style": "Industrial",
+   "physical_integrity": "6 of 7 aspects retained, on the survey's scale",
+   "year_built_as_surveyed": "1918",
+   "apn_as_surveyed": "4022021",
+   "note": "The survey rates the architecture 3 of 5. The 2009 context statement gives the status code 3CD; the 2011 survey data table gives 6L.",
+   "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 5 means locally significant, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+  },
+  {
+   "survey": "Unreinforced Masonry Building Survey (1990)",
+   "frame": "Unreinforced masonry",
+   "apn_as_surveyed": "Block 4022, Lot 3",
+   "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 10 (Mission/Upper Market).",
+   "source": "umb-survey-1990"
+  }
+ ]
 }

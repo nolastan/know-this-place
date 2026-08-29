@@ -14,6 +14,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Clara Street](clara-street/) — 29 buildings, built 1906–1991.
 - [Clementina Street](clementina-street/) — 16 buildings, built 1909–2008.
 - [Clyde Street](clyde-street/) — 4 buildings, built 1923; 4 in the Clyde and Crooks Historic District.
+- [Converse Street](converse-street/) — 1 building, built 1924.
 - [Decatur Street](decatur-street/) — 5 buildings, built 1900–1918.
 - [Division Street](division-street/) — 1 building, built 1924.
 - [Dore Street](dore-street/) — 1 building, built 1924; 1 in the Western SOMA Light Industrial and Residential Historic District.
@@ -24,6 +25,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Freelon Street](freelon-street/) — 13 buildings, built 1907–1988.
 - [Grace Street](grace-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Harrison Street](harrison-street/) — 36 buildings, built 1909–2018; 2 in the SoMa LGBTQ Historic District.
+- [Heron Street](heron-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Howard Street](howard-street/) — 30 buildings, built 1900–2008; 1 in the SoMa LGBTQ Historic District.
 - [Jessie Street](jessie-street/) — 5 buildings, built 1907–1923; 3 in the Mint-Mission Conservation District.
 - [Langton Street](langton-street/) — 2 buildings, built 1928–1975.

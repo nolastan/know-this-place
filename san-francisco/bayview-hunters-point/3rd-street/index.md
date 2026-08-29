@@ -5,6 +5,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [4004–4006](4004/) — A 1900 2-unit building with a ground-floor store, with a rear addition permitted in 1989.
+- [4301](4301/) — A 1927 school building, with facade work permitted in 2011.
 - [4404](4404/) — A 1946 store building, with window replacement permitted in 2017.
 - [4408–4442](4408/) — A 1913 15-unit building with a ground-floor store, with fire repair permitted in 2005.
 - [4500–4502](4500/) — A 1900 2-unit building with a ground-floor store, with window replacement permitted in 2017.
@@ -58,6 +59,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 - [5272](5272/) — A 1940 store building.
 - [5288–5290](5288/) — A 1934 two-flat, with stair work permitted in 2021.
 - [6000](6000/) — The Vermont Marble Co. marble works of 1931, in the old Western Development Co. tract.
+- [6025](6025/) — A 1950 industrial building, with reroofing permitted in 2011.
 - [6190](6190/) — Home of the second Hunters Point Food Cooperative, founded in the 1960s.
 - [6301](6301/) — A 1959 office building, with plumbing work permitted in 2017.
 

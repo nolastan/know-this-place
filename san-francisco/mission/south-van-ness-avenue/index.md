@@ -15,8 +15,14 @@ Every residential parcel on South Van Ness Avenue that the city's address, asses
 - [160](160/) — A 1936 office building, with an addition permitted in 2020.
 - [165](165/) — A 1932 store building, with reroofing permitted in 1999.
 - [170](170/) — A 1936 store building, with plumbing work permitted in 2009.
+- [245](245/) — A 1926 industrial building, with reroofing permitted in 2003.
+- [251](251/) — A 2003 office building, with permit records from 1985 to 2003.
 - [257–261](257/) — A building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2013.
 - [263–267](263/) — A 1909 three-flat, with foundation work permitted in 1990.
+- [269](269/) — A 1969 store building, with dry-rot repair permitted in 2024.
+- [275](275/) — A 1970 industrial building, with stair work permitted in 2022.
+- [280](280/) — A 1951 industrial building, with electrical work permitted in 2024.
+- [285](285/) — A 1951 industrial building, with facade work permitted in 2018.
 - [324–328](324/) — A 1910 6-unit building with a ground-floor store, with a bathroom remodel permitted in 1987.
 - [338–342](338/) — A 1909 3-unit tic building, with deck work permitted in 2009.
 - [344–346](344/) — A 1908 two-flat, with garage work permitted in 2021.
@@ -145,6 +151,7 @@ Every residential parcel on South Van Ness Avenue that the city's address, asses
 - [1185](1185/) — An 1875 three-flat, with a kitchen remodel permitted in 2020.
 - [1186](1186/) — An 1885 6-unit apartment building, with a seismic retrofit permitted in 2018.
 - [1191–1193](1191/) — A 1900 two-flat, with reroofing permitted in 2023.
+- [1198](1198/) — A 1913 store building, with permit records from 1990 to 1994.
 - [1201–1205](1201/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2023.
 - [1207–1211](1207/) — A 1900 three-flat, with a kitchen remodel permitted in 2001.
 - [1215–1217](1215/) — A 1900 two-flat, with window replacement permitted in 2025.

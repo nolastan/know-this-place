@@ -4,6 +4,7 @@ The parcels on Fulton Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1200](1200/) — A 1927 59-unit apartment building in the Alamo Square Historic District, with reroofing permitted in 2005.
 - [1306](1306/) — A 1989 store building in the NOPA Historic District, with permit records from 1986 to 2021.
 - [1377](1377/) — A 1900 6-unit apartment building in the NOPA Historic District, with a seismic retrofit permitted in 2015.
 

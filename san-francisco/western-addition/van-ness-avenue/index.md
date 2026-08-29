@@ -7,6 +7,7 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [799](799/) — A 1917 garage, with facade work permitted in 2026.
 - [901](901/) — A 1926 garage, with reroofing permitted in 2011.
 - [945–999](945/) — A 1937 garage, with reroofing permitted in 2009.
+- [1040–1090](1040/) — A 1909 hotel, with stair work permitted in 2008.
 - [1101](1101/) — A 2019 building, with fire repair permitted in 1983.
 - [1233–1237](1233/) — A 1913 store building, with electrical work permitted in 2006.
 - [1243–1245](1243/) — A 1913 store building, with a seismic retrofit permitted in 1999.

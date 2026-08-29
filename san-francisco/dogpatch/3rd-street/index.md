@@ -5,6 +5,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [2130](2130/) — One of the small Art Deco industrial buildings on the stretch of Third Street widened in the late 1930s.
+- [2225–2265](2225/) — A 2013 202-unit apartment building in the Third Street Industrial District, with plumbing work permitted in 2022.
 - [2300](2300/) — The Potrero Police Station of 1912 and the emergency hospital of 1915, both by City Architect John Reid, Jr.
 - [2301–2495](2301/) — A 1924 industrial building in the Third Street Industrial District, with a seismic retrofit permitted in 1999.
 - [2360–2364](2360/) — Two-story Art Deco industrial building of 1939 on the stretch of Third Street widened in the late 1930s.

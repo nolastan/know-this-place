@@ -1,0 +1,135 @@
+{
+ "address": "1073 Bush Street, San Francisco, CA 94109",
+ "path": "/san-francisco/nob-hill/bush-street/1073/",
+ "apn": "0281014",
+ "block": "0281",
+ "lot": "014",
+ "eas_baseid": "281069",
+ "coordinates": {
+  "lat": 37.789105,
+  "lng": -122.414816
+ },
+ "parcel": {
+  "year_built": 1911,
+  "units": 11,
+  "stories": 2,
+  "rooms": 28,
+  "bathrooms": 13,
+  "lot_area_sqft": 5087.5,
+  "building_area_sqft": 6542,
+  "lot_depth_ft": 37.5,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 5 to 14 Units",
+  "construction_type_code": "C",
+  "zoning": "RC-4",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Downtown",
+  "analysis_neighborhood": "Nob Hill",
+  "property_location_raw": "0000 1073 BUSH                ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 1119160,
+  "assessed_improvement_value": 582985
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1911",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Lower Nob Hill Apartment Hotel Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1906–1940",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "202307111897",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2023-07-11",
+   "status_date": "2025-02-12",
+   "estimated_cost": 18000,
+   "revised_cost": 34047,
+   "description": "replace f/a system, install sounder sleeping, new f/a control panel, wireless radio communicator, (4) smoke, (3) pull station, (3) wall mounted horn, (20) sounder",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200111012235",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2001-11-01",
+   "status_date": "2001-11-09",
+   "estimated_cost": 4100,
+   "revised_cost": 4100,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8810751",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1988-07-29",
+   "status_date": "1988-09-26",
+   "estimated_cost": 12000,
+   "description": "parapet safety program",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=1073",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0281014&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0281&lot=014",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0281014",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41481599769182%2037.789104743528256)%27)",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "heritage_rating": "A — top rating, appears eligible for the National Register",
+  "dcp_1976_survey": "Rated 1 of 5",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 5 (Bush Street Corridor).",
+  "source": "umb-survey-1990"
+ }
+}

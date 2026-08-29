@@ -4,6 +4,8 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 
 ## Documented so far
 
+- [550](550/) — A 1906 office building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with a rear addition permitted in 1989.
+- [720–726](720/) — A 1924 industrial building, with reroofing permitted in 2019.
 - [740](740/) — A 1910 single-family house, with one permit record from 2015.
 - [1405–1415](1405/) — A 1906 6-unit apartment building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a seismic retrofit permitted in 2017.
 - [1417–1419](1417/) — A 1906 industrial building in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District, with a kitchen remodel permitted in 2013.
@@ -30,6 +32,7 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 - [1672](1672/) — A 1915 industrial building, with an addition permitted in 2021.
 - [1684–1688](1684/) — A 1907 52-unit apartment building, with reroofing permitted in 1988.
 - [1710–1794](1710/) — A 2007 260-unit apartment building, with reroofing permitted in 1992.
+- [1731](1731/) — A 1919 hotel, with reroofing permitted in 2010.
 - [1773–1777](1773/) — A 1908 three-flat, with a kitchen and bathroom remodel permitted in 2025.
 - [1779–1781](1779/) — A 1908 three-flat, with a vertical addition permitted in 2020.
 - [1785](1785/) — A 2017 9-unit apartment building, with permit records from 2006 to 2021.

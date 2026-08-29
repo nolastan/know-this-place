@@ -23,6 +23,8 @@ The parcels on Mission Street documented here so far, from the city's address, a
 - [982–984](982/) — A 1924 office building in the Mint-Mission Conservation District, with stair work permitted in 2023.
 - [986](986/) — A 1907 industrial building in the Mint-Mission Conservation District, with stair work permitted in 2000.
 - [987–989](987/) — A 1922 2-unit building, with a seismic retrofit permitted in 2017.
+- [1013](1013/) — A 1916 office building, with a seismic retrofit permitted in 1994.
+- [1018–1024](1018/) — A 1911 hotel in the Sixth Street Lodging House Historic District, with a seismic retrofit permitted in 1999.
 - [1321](1321/) — San Francisco's first micro-unit building; its wind-driven facade sculpture cost $379,860.
 - [1337](1337/) — A 1913 industrial building, with a vertical addition permitted in 2017.
 - [1338](1338/) — A 1923 office building, with a seismic retrofit permitted in 1998.

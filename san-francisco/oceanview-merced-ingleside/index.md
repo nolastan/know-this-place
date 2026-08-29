@@ -18,6 +18,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Jules Avenue](jules-avenue/) — 2 buildings, built 1926–1927.
 - [Lobos Street](lobos-street/) — 1 building, built 1906.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
+- [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.
 - [Ocean Avenue](ocean-avenue/) — 2 buildings, built 1900–1909; 2 in the Ocean Avenue Neighborhood Commercial District.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1904.

@@ -4,6 +4,7 @@ The parcels on Kearny Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1020–1028](1020/) — A 1907 store building in the Jackson Square Historic District, with facade work permitted in 2007.
 - [1030–1034](1030/) — A 1907 hotel in the Jackson Square Historic District Extension, with a seismic retrofit permitted in 2014.
 - [1042–1046](1042/) — A 1907 2-unit building with a ground-floor store in the Jackson Square Historic District Extension, with a seismic retrofit permitted in 2000.
 - [1143–1147](1143/) — A 1907 9-unit apartment building, with reroofing permitted in 2001.

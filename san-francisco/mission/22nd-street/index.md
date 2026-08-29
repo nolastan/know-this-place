@@ -98,6 +98,7 @@ Every residential parcel on 22nd Street that the city's address, assessor and pe
 - [3126](3126/) — A 1900 single-family house, with fire repair permitted in 2025.
 - [3150–3174](3150/) — A 1926 28-unit apartment building, with a seismic retrofit permitted in 1993.
 - [3224–3248](3224/) — An 1885 11-unit building with a ground-floor store, with foundation work permitted in 2016.
+- [3225–3235](3225/) — A 1913 store building, with reroofing permitted in 2004.
 - [3265–3275](3265/) — An 1870 7-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2020.
 - [3277–3279](3277/) — A 1900 building with a ground-floor store, with reroofing permitted in 2009.
 - [3282–3296](3282/) — A 1927 store building, with reroofing permitted in 1999.

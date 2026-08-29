@@ -8,6 +8,7 @@ The parcels on Taraval Street documented here so far, from the city's address, a
 - [925–929](925/) — A 1928 5-unit building with a ground-floor store, with reroofing permitted in 2022.
 - [926](926/) — A 1975 bank building, with an addition permitted in 2013.
 - [948–950](948/) — A 1956 store building, with an accessory dwelling unit permitted in 2023.
+- [1045–1055](1045/) — A 1928 store building, with fire repair permitted in 2014.
 - [1100–1102](1100/) — A 1933 store building, with fire repair permitted in 1994.
 - [1101–1123](1101/) — A 1927 store building, with a kitchen remodel permitted in 2017.
 - [1131–1155](1131/) — A 1924 store building, with a kitchen remodel permitted in 2021.
@@ -17,6 +18,7 @@ The parcels on Taraval Street documented here so far, from the city's address, a
 - [1541](1541/) — A 1928 store building, with a rear addition permitted in 1989.
 - [1745–1757](1745/) — A 1925 5-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2000.
 - [1826–1830](1826/) — A 1926 2-unit building with a ground-floor store, with facade work permitted in 1996.
+- [1840](1840/) — A 1927 garage, with a seismic retrofit permitted in 1994.
 - [2014–2016](2014/) — A 1919 2-unit building with a ground-floor store, with window replacement permitted in 1992.
 - [2020](2020/) — A 1919 2-unit building with a ground-floor store, with reroofing permitted in 2003.
 - [2120](2120/) — A 1928 store building, with a seismic retrofit permitted in 2003.

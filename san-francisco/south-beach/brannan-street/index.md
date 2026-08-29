@@ -4,6 +4,7 @@ The parcels on Brannan Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [275](275/) — A 1906 office building in the South End Historic District, with deck work permitted in 2012.
 - [301](301/) — A 1909 office building in the South End Historic District, with a seismic retrofit permitted in 1989.
 - [329–333](329/) — A 2015 office building, with plumbing work permitted in 2015.
 - [345](345/) — A 2016 office building, with plumbing work permitted in 2015.

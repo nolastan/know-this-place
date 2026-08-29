@@ -5,6 +5,7 @@ A residential district south of the Mission proper, built up in the first decade
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 1938.
+- [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
 - [Harrington Street](harrington-street/) — A 1908 house recorded as Jerry Garcia's home with his grandparents after 1947.
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.
 - [San Jose Avenue](san-jose-avenue/) — The San Francisco and San Mateo Railway's 1901 Geneva car barn, a San Francisco landmark since 1985.

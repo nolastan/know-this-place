@@ -20,7 +20,7 @@ document you are about to mine.
 | | |
 |---|---|
 | **Read in full** | 32 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 17: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved). All eighteen loops closed. |
+| **Findings files** | 19: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved). All nineteen loops closed. |
 | **Remaining** | ~18 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
@@ -47,8 +47,11 @@ document you are about to mine.
   123 pages the Transit Center pass reached already carried the Central SoMa
   panel and, on several, the same facts. Before publishing a district
   statement, check which of its parcels this repo has already documented from a
-  neighbouring survey — the overlap decides where each fact can go, and the
-  renderer holds one `historic_survey` panel per page.
+  neighbouring survey — the overlap decides what each fact adds. **The renderer
+  now holds a list of `historic_survey` panels**, one per survey, so the second
+  survey to reach a building no longer has to overwrite the first or be written
+  into its panel under its name; both of those lose a fact. A page with one
+  survey keeps the plain object.
 - **A thematic statement with no inventory can still be the densest kind.**
   The Sunset builders statement has no appendix table, no APNs and no survey
   results, and yielded 158 address-level facts from 121 pages — because its
@@ -58,9 +61,10 @@ document you are about to mine.
   (offices, sales offices, the builders' own houses), and above all the
   model-home lists, which give a name, an address and a month each. Read the
   captions and the lists before judging a themed statement thin.
-- **A page can already carry another statement's survey panel**, and the
-  renderer holds one. Check `historic_survey.source` before writing: overwrite
-  it and the neighbouring statement's finding is silently destroyed. 320 Judah
+- **A page can already carry another statement's survey panel.** Check
+  `historic_survey.source` before writing: append your own panel to the list,
+  never overwrite theirs and never add your rows to it — a row inside a panel is
+  a claim of that panel's survey, so writing yours there misattributes it. 320 Judah
   Street was carrying the Duboce Triangle statement's panel when this run
   arrived. Where a page is already taken, the contribution goes to the spec
   rows and the timeline instead.
@@ -3328,12 +3332,52 @@ architectural period, so its buildings are scattered from Seacliff to Bayview.
   assessor's parcel outright, a construction date, an architect and often a
   builder, plus a Heritage rating and a National Register status code. Read in
   full by this pass.
-- **The appendix table, "UMBs and Historic Ratings by Study Area"** (45 PDF
-  pages interleaved between the forms, roughly 1,600 rows). Street number,
-  street, prototype letter, block, lot, year, and eight columns of rating codes
-  keyed on PDF pages 158–163. **Not read.** That is the next batch, filed as issue #182.
+- **The appendix table, "UMBs and Historic Ratings by Study Area"** (51 PDF
+  pages interleaved between the forms — not 45 — carrying 1,902 readable rows).
+  Street number, street, prototype letter, block, lot, year, and eight columns
+  of rating codes keyed on PDF pages 159–163. Read in full by the
+  `umb-survey-ratings` batch. The document is now finished.
 
 **Cautions this document earned.**
+
+- **A scanned fixed-column table is a 2-D object; read it from the word
+  boxes, not from lines of text.** `pdftotext -layout` on the appendix dropped
+  740 rows outright and mangled more, because the scan loses a different column
+  on nearly every page — page 221 lost every Block, page 169 lost the street
+  name on a dozen rows, page 273 lost half of every year, pages 367 and 419
+  lost the street numbers. Reconstructing rows and columns from
+  `pdftotext -bbox-layout` word coordinates — cluster by y, assign by x against
+  the page's own header row — took the yield from 1,179 rows to 1,902.
+  **Anchor the column template on YEAR**, whose header survives the scan
+  where `Block` and `Lot` come through as `iloti` and `I .ot`.
+- **Do not require every column to be present.** The first parser demanded a
+  four-digit block and threw away 200 good rows on pages where the Block column
+  simply did not survive. A row that still names a building is a good row; let
+  the per-field checks decide what each column can be used for.
+- **The scan confuses classes of letters, not single letters** — B/H/E/fi,
+  M/H, U/D/O, W/K/i, N/K, 1/I/l — so `BUSE`, `BOSH`, `BDSH` and `6USE` are all
+  Bush, and edit distance against 2,064 EAS street names is not safe on its own.
+  **The printed block is what makes it safe:** the parcels on a block sit on a
+  handful of streets, so the block supplies the candidate set and the damaged
+  letters only choose within it. 1,637 of 1,888 street names were recovered that
+  way; where the name was gone past reading, the block's own address ranges
+  decided (460 on block 0270 can only be Bush). Fourteen rows resisted all of it
+  and six of those got a hand-checked alias with its reason; eight are recorded
+  unresolved.
+- **Two of this table's streets have since been renamed, and the block is what
+  catches them.** ARMY is Cesar Chavez Street (renamed 1995) and MONROE is
+  Dashiell Hammett Street — block 4324 carries Cesar Chavez, and parcel 0272025
+  is Dashiell Hammett 20–20 against a printed "20 MONROE". A renaming looks
+  exactly like an OCR failure until the block is consulted.
+- **An ordinal street with no street type resolves to the Avenue.** The table
+  never prints a street type, and EAS holds both a Sixth Street and a Sixth
+  Avenue; without a type the join put seven SoMa buildings in the Richmond,
+  forty blocks away. **Set `street_type` from the printed block's own parcels**
+  before resolving — it fixed all but four, and those four were decided by hand
+  from the block's neighbourhood. This is the single largest source of silent
+  error in a table of numbered streets.
+- **The scan splits a street number in two.** "430 2 3RD" is 4302 Third Street,
+  not 2 Third Avenue. Leading numeric tokens belong to the number.
 
 - **The appendix table's YEAR column is the assessor's, and the key says so:**
   "the year of construction according to the Assessor's Records. It is not
@@ -3404,7 +3448,29 @@ architectural period, so its buildings are scattered from Seacliff to Bayview.
   is the Hecker Garage in the 2017 Eureka Valley statement and the Meeker Garage
   here, with the design credited to Charles V. Hecker. Both are on the page's
   `.unknowns`; neither was adjudicated.
-- **Verified:** 2026-08-28 (Unreinforced masonry survey: read all 724 pages —
+- **Verified:** 2026-08-29 (Unreinforced masonry survey, appendix table: read all
+  **51 pages** of "UMBs and Historic Ratings by Study Area" — every row of all
+  eleven study areas, from Downtown (347 rows) and NoMa/Civic Center (310) to the
+  Waterfront (33). **1,902 rows extracted, 1,507 resolved to a parcel, 1,452
+  published on 1,435 pages**, 1,019 of them created by this run, across 41
+  neighborhood directories with `tenderloin` (242 pages), `nob-hill` (212),
+  `chinatown` (166), `financial-district` (161) and `south-of-market` (135) at
+  the head. 1,097 rows carry a San Francisco Heritage rating, 325 place the
+  building in a historic district, 295 carry a 1976 citywide survey rating and 37
+  mark a designated City Landmark. **The assessor's YEAR column was recorded as
+  check material on 1,882 rows and published nowhere.** 55 resolved findings were
+  declined: 46 parcels whose 2025 roll year is 1991 or later, so the unreinforced
+  masonry building the survey listed is not the building standing there, and 9
+  whose parcel the seeder would not seed. 395 rows are unresolved — 297 addresses
+  EAS no longer holds, 85 condominium parcels, 8 whose street the scan destroyed
+  or which name a street EAS does not have (Anthony, Tenny), and 5 where the
+  printed parcel and the printed address point at different buildings. The
+  printed block and lot were tested against every resolution: **887 exact, 96
+  re-lotted since 1990, 16 on another block** — eleven of those sixteen a single
+  lost scan digit with the lot matching exactly (five Eddy Street rows all lost
+  the leading 3 of block 33x), two lettered sub-blocks, four genuinely
+  irreconcilable and left unresolved.)
+- **Verified:** 2026-08-28 (Unreinforced masonry survey, inventory forms: read all 724 pages —
   the introduction and its fifteen building prototypes, the eleven study-area
   histories and registration requirements, the goals and applicable-regulations
   chapter, the bibliography, the key to the appendices, and **all 200 Historic

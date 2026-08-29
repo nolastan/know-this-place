@@ -25,9 +25,26 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [934–936](934/) — A 1974 store building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2025.
 - [969](969/) — A 1909 store building, with a kitchen remodel permitted in 2019.
 - [973](973/) — A 1904 69-unit apartment building, with an addition permitted in 2005.
+- [976](976/) — A 1910 theater, with permit records from 1982 to 2014.
 - [979–989](979/) — A 1907 office building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1990.
 - [993](993/) — A 1908 store building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1996.
+- [1007](1007/) — A 1911 store building in the Market Street Theatre and Loft Historic District, with plumbing work permitted in 2026.
+- [1011](1011/) — A 1909 store building in the Market Street Theatre and Loft Historic District, with electrical work permitted in 2019.
+- [1017–1019](1017/) — A 1909 office building in the Market Street Theatre and Loft Historic District, with stair work permitted in 2013.
+- [1059–1061](1059/) — A 1910 office building in the Market Street Theatre and Loft Historic District, with facade work permitted in 2017.
+- [1083–1087](1083/) — A 1912 hotel in the Market Street Theatre and Loft Historic District, with reroofing permitted in 1993.
+- [1100–1112](1100/) — A 1909 hotel in the Market Street Theatre and Loft Historic District, with reroofing permitted in 2013.
+- [1101–1105](1101/) — A 1909 10-unit building in the Market Street Theatre and Loft Historic District, with facade work permitted in 2012.
+- [1133–1139](1133/) — A 1906 hotel, with facade work permitted in 2021.
+- [1200](1200/) — A 1908 store building in the Civic Center Historic District, with a seismic retrofit permitted in 1984.
+- [1210–1218](1210/) — A 1907 store building in the Civic Center Historic District, with facade work permitted in 1995.
 - [1215–1231](1215/) — A 1911 hotel, with a bathroom remodel permitted in 2002.
+- [1220–1232](1220/) — A 1907 store building in the Civic Center Historic District, with a seismic retrofit permitted in 1998.
+- [1240–1242](1240/) — A 1908 office building in the Civic Center Historic District, with reroofing permitted in 2025.
+- [1244–1254](1244/) — A 1906 store building in the Civic Center Historic District, with a seismic retrofit permitted in 2001.
+- [1256–1266](1256/) — A 1908 store building in the Civic Center Historic District, with a seismic retrofit permitted in 2001.
+- [1272–1276](1272/) — A 1907 hotel in the Civic Center Historic District, with an addition permitted in 2016.
+- [1278–1298](1278/) — A 1907 hotel in the Civic Center Historic District, with window replacement permitted in 2015.
 - [1301–1375](1301/) — A 1937 office building, with plumbing work permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's

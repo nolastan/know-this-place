@@ -4,8 +4,35 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [562–574](562/) — A 1909 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2003.
 - [700–720](700/) — A 1906 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1996.
+- [800–804](800/) — A 1906 7-unit building in the Chinatown Historic District, with reroofing permitted in 2024.
+- [808–814](808/) — A 1907 20-unit apartment building in the Chinatown Historic District, with reroofing permitted in 2015.
+- [815–829](815/) — A 1907 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2001.
+- [824–832](824/) — A 1908 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1996.
+- [831–843](831/) — A 1908 store building in the Chinatown Historic District, with a bathroom remodel permitted in 2010.
+- [848](848/) — A 1906 store building in the Chinatown Historic District, with window replacement permitted in 1987.
+- [850](850/) — A 1906 store building in the Chinatown Historic District, with a kitchen remodel permitted in 1999.
+- [854–864](854/) — A 1906 office building in the Chinatown Historic District, with a seismic retrofit permitted in 1994.
+- [857–867](857/) — A 1907 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1995.
 - [900–916](900/) — A 1908 hotel in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2018.
+- [911–915](911/) — A 1919 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2001.
+- [924–932](924/) — A 1906 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
+- [933–939](933/) — A 1907 hotel in the Chinatown Historic District, with stair work permitted in 2009.
+- [941–943](941/) — A 1907 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2000.
+- [942–950](942/) — A 1907 store building in the Chinatown Historic District, with stair work permitted in 2020.
+- [945–947](945/) — A 1908 store building in the Chinatown Historic District, with reroofing permitted in 2010.
+- [949–951](949/) — A 1907 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1993.
+- [952–966](952/) — A 1906 store building in the Chinatown Historic District, with foundation work permitted in 2011.
+- [953–957](953/) — A 1907 7-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1995.
+- [1024–1026](1024/) — A 1908 3-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1994.
+- [1044–1046](1044/) — A 1907 3-unit building with a ground-floor store in the Chinatown Historic District, with reroofing permitted in 2000.
+- [1101–1105](1101/) — A 1906 5-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2000.
+- [1109](1109/) — A 1907 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1999.
+- [1110–1118](1110/) — A 1911 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2004.
+- [1122–1128](1122/) — A 1911 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1998.
+- [1134–1138](1134/) — A 1911 hotel in the Chinatown Historic District, with reroofing permitted in 1998.
+- [1142](1142/) — A 1912 3-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1994.
 - [1224](1224/) — A 1907 2-unit building with a ground-floor store in the Upper Grant Avenue Historic District, with reroofing permitted in 2003.
 - [1226–1230](1226/) — A 1907 hotel in the Upper Grant Avenue Historic District, with a seismic retrofit permitted in 2018.
 - [1232](1232/) — A 1900 hotel in the Upper Grant Avenue Historic District, with fire repair permitted in 1994.

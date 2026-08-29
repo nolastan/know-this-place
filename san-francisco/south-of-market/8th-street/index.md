@@ -5,6 +5,12 @@ The parcels on 8th Street documented here so far, from the city's address, asses
 ## Documented so far
 
 - [38](38/) — An assessor class: vacant lot, with deck work permitted in 1982.
+- [111–117](111/) — A 1900 assessor class: vacant lot in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2001.
+- [120–130](120/) — A 1925 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2013.
+- [135–139](135/) — A 1909 7-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1989.
+- [143](143/) — A 1939 office building in the Western SOMA Light Industrial and Residential Historic District, with deck work permitted in 2012.
+- [230–236](230/) — A 1906 office building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2019.
+- [470–488](470/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1996.
 - [541–543](541/) — A 1937 industrial building, with a seismic retrofit permitted in 1990.
 - [545–599](545/) — A 1916 store building, with stair work permitted in 2009.
 - [678–690](678/) — A 1960 store building, with permit records from 1995 to 2001.

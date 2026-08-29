@@ -1,0 +1,134 @@
+{
+ "address": "956 Sacramento Street, San Francisco, CA 94108",
+ "path": "/san-francisco/nob-hill/sacramento-street/956/",
+ "apn": "0224009",
+ "block": "0224",
+ "lot": "009",
+ "eas_baseid": "280288",
+ "coordinates": {
+  "lat": 37.793203,
+  "lng": -122.408709
+ },
+ "parcel": {
+  "year_built": 1923,
+  "units": 24,
+  "stories": 5,
+  "rooms": 51,
+  "bathrooms": 24,
+  "lot_area_sqft": 3219,
+  "building_area_sqft": 14110,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 15 Units or more",
+  "construction_type_code": "A",
+  "zoning": "RM-4",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Nob Hill",
+  "analysis_neighborhood": "Chinatown",
+  "property_location_raw": "0000 0956 SACRAMENTO          ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 462062,
+  "assessed_improvement_value": 625152
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "Historic Survey Result and 45 years or older",
+  "yearbuilt": "1923",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202406174628",
+   "type": "otc alterations permit",
+   "status": "filed",
+   "filed": "2024-06-17",
+   "status_date": "2024-06-17",
+   "estimated_cost": 1,
+   "revised_cost": 0,
+   "description": "as built rev 202404039237- relocate and remove devices, pull stations, and smoke detectors on 2nd-5th floors and add idnac repeater on first floor",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "202404039237",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2024-04-03",
+   "status_date": "2024-09-26",
+   "estimated_cost": 57600,
+   "revised_cost": 57600,
+   "description": "upgrade (e) fire alarm devices to be replaced to include manual pull stations and smoke detectors. (e) bells to to be replaced with horn/strobes & strobes. units to have 520hz low freq audibles installed. f/a control panel shall be mointored with starlink 24v cell gms-sole path communication.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9820060",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1998-10-02",
+   "status_date": "1999-04-14",
+   "estimated_cost": 15000,
+   "description": "remove (e)bricks & re-install new bricks w/re-inforcing ties",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8205201",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1982-06-25",
+   "status_date": "1983-03-04",
+   "estimated_cost": 17850,
+   "description": "bldg use: apts",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 12,
+  "range": "1982–2024",
+  "shown_on_page": 4,
+  "note": "8 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=956",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0224009&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0224&lot=009",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0224009",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "heritage_rating": "C — of contextual importance",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 7 (Chinatown).",
+  "source": "umb-survey-1990"
+ }
+}

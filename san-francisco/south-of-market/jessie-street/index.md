@@ -9,6 +9,7 @@ The parcels on Jessie Street documented here so far, from the city's address, as
 - [440–444](440/) — A 1924 industrial building in the Mint-Mission Conservation District, with plumbing work permitted in 2014.
 - [460](460/) — An assessor class: vacant lot, with stair work permitted in 1995.
 - [471](471/) — A 1912 industrial building in the Mint-Mission Conservation District, with a seismic retrofit permitted in 1999.
+- [532–534](532/) — A 1911 industrial building, with garage work permitted in 2015.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

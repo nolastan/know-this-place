@@ -4,6 +4,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [1438–1444](1438/) — A 1913 store building, with stair work permitted in 2006.
 - [1525](1525/) — A 1959 office building, with a seismic retrofit permitted in 1989.
 - [1601](1601/) — A 1915 hotel, with one permit record from 2006.
 - [1629](1629/) — A 2024 186-unit apartment building, with reroofing permitted in 2021.

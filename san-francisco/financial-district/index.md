@@ -9,13 +9,19 @@ The office district north of Market Street, in the city's Financial District/Sou
 - [California Street](california-street/) — 10 buildings, built 1959–2000; 2 in the Front-California Conservation District.
 - [Clay Street](clay-street/) — 1 building, built 1906; 1 in the Chinatown Historic District.
 - [Commercial Street](commercial-street/) — 1 building; 1 in the Chinatown Historic District.
+- [Dashiell Hammett Street](dashiell-hammett-street/) — 2 buildings, built 1912; 2 in the Lower Nob Hill Apartment Hotel Historic District.
+- [Davis Street](davis-street/) — 1 building, built 1927; 1 in the Northeast Waterfront Historic District.
+- [Drumm Street](drumm-street/) — 1 building, built 1912.
 - [Front Street](front-street/) — 1 building.
 - [Grant Avenue](grant-avenue/) — 1 building, built 1913; 1 in the Chinatown Historic District.
 - [Market Street](market-street/) — 1 building, built 1981.
+- [Merchant Street](merchant-street/) — 1 building, built 1922; 1 in the Chinatown Historic District.
 - [Mission Street](mission-street/) — 1 building, built 1922; 1 in the New Montgomery-Mission-Second Street Conservation District.
 - [Montgomery Street](montgomery-street/) — The Crocker Bank Building of 1908, and three buildings on and beside the block where Samuel Brannan built in 1853.
 - [Pine Street](pine-street/) — 2 buildings, built 1971–1991.
 - [Post Street](post-street/) — The Mechanics' Institute, on the lot the Institute bought in 1866.
+- [Sacramento Street](sacramento-street/) — 1 building, built 1912.
 - [Sansome Street](sansome-street/) — 2 buildings, built 1983–1991.
 - [Sutter Street](sutter-street/) — 1 building, built 1983.
+- [Vinton Court](vinton-court/) — 1 building, built 1923; 1 in the Chinatown Historic District.
 - [Washington Street](washington-street/) — 1 building, built 1900.

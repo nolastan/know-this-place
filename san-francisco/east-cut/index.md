@@ -4,10 +4,10 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 
 ## Streets documented so far
 
+- [1st Street](1st-street/) — 1 building, built 1988.
 - [Beale Street](beale-street/) — 2 buildings, built 1967.
 - [Brannan Street](brannan-street/) — 9 buildings, built 1908–1959; 4 in the South End Historic District.
 - [Bryant Street](bryant-street/) — 28 buildings, built 1906–2015.
-- [First Street](1st-street/) — 1 building, built 1988.
 - [Folsom Street](folsom-street/) — 1 building.
 - [Fremont Street](fremont-street/) — 3 buildings, built 1928–2018.
 - [Harrison Street](harrison-street/) — 11 buildings, built 1925–1989.
