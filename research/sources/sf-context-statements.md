@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 31 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 32 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 31 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 17: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). All seventeen loops closed. |
-| **Remaining** | ~19 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 32 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 17: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved). All eighteen loops closed. |
+| **Remaining** | ~18 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -78,6 +78,15 @@ document you are about to mine.
   Middle School and Claire Lilienthal School all do — and the PPIE statement
   says outright that 1900 on the roll may stand for something earlier. Never
   publish it as a source-versus-assessor disagreement about a year.
+- **A survey's own year column may be the assessor's, and then it is not
+  evidence.** The 1990 UMB survey's appendix table heads its YEAR column with
+  "the year of construction according to the Assessor's Records. It is not
+  necessarily accurate" — so a `completed_conflict` built from it would state a
+  disagreement between the assessor and the assessor. The same document's
+  inventory forms research the date independently, from city directories, the
+  *Daily Pacific Builder* and permit notices, and those *are* evidence. **Read
+  the key before treating a column as the source's own claim.**
+
 - **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
   REST content URL is built from the page's own `accesskey`. Worked examples
   throughout the per-document notes below.
@@ -91,6 +100,21 @@ document you are about to mine.
   adopted statements is
   `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
 - **Read into the repo so far:**
+  - San Francisco Landmarks Preservation Advisory Board (Vincent Marsh, project
+    manager), *A Context Statement and Architectural/Historical Survey of
+    Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from
+    1850 to 1940*, San Francisco Department of City Planning, November 1990
+    (724 pp.), source id `umb-survey-1990`. Listed on the SF Planning page as
+    "A Context Statement and Survey of Unreinforced Masonry Buildings (UMB)
+    1850-1940 (Adopted 1991)". Served from the same M-Files vault as Dogpatch
+    and the rest, and the REST content hash is once more the page's own
+    `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456/content`.
+    The vault's copy **is the Internet Archive's scan** (its PDF metadata says
+    so), and the same item is open at
+    `https://archive.org/details/contextstatement00sanf` in the
+    `sanfranciscopubliclibrary` collection — the collection the leads table
+    already points at. See "The unreinforced masonry survey" below.
   - Kelley & VerPlanck Historical Resources Consulting, *Bayview-Hunters Point
     Area B Survey: Town Center Activity Node — Historic Context Statement*,
     prepared for the San Francisco Redevelopment Agency, adopted February 11,
@@ -3285,3 +3309,121 @@ formal or stylistic point it is there to illustrate — which is the fact worth 
   Coverage note: this document is read in full and nothing in it is outstanding; it states that no
   in-person field survey was done — the reconnaissance was Google Street View during the COVID-19
   pandemic — and there is no companion inventory.)
+
+### The unreinforced masonry survey
+
+**What it is.** A 724-page citywide survey, the oldest document in this
+register: adopted 1991 for a November 1990 report, prepared by the Landmarks
+Preservation Advisory Board under a National Historic Preservation Fund grant,
+after the Loma Prieta earthquake put the city's brick bearing-wall stock on the
+agenda. It is not one neighbourhood's statement — it covers the whole city in
+eleven study areas, and its subject is a construction technology rather than an
+architectural period, so its buildings are scattered from Seacliff to Bayview.
+
+**It is two documents, and only one of them was read by this pass.**
+
+- **The Historic Resources Inventory forms** (PDF pages 184–717, two pages
+  each, 200 of them). This is the seam. Each is a State of California DPR form
+  giving a historic name, a street address with a cross-corridor bearing, the
+  assessor's parcel outright, a construction date, an architect and often a
+  builder, plus a Heritage rating and a National Register status code. Read in
+  full by this pass.
+- **The appendix table, "UMBs and Historic Ratings by Study Area"** (45 PDF
+  pages interleaved between the forms, roughly 1,600 rows). Street number,
+  street, prototype letter, block, lot, year, and eight columns of rating codes
+  keyed on PDF pages 158–163. **Not read.** That is the next batch.
+
+**Cautions this document earned.**
+
+- **The appendix table's YEAR column is the assessor's, and the key says so:**
+  "the year of construction according to the Assessor's Records. It is not
+  necessarily accurate." Publishing it as a construction date would restate the
+  roll; publishing it as a disagreement would invent one. The **inventory
+  forms' field 16 is different** — its sources line cites Crocker-Langley and
+  Polk directories, the *Daily Pacific Builder*, *Architect and Engineer* and
+  *San Francisco Chronicle* dates — and that is a claim of the survey's own.
+- **The OCR is a 1990 typescript photographed by the Internet Archive, and it
+  eats letters, not digits.** Architect names came through as `Mever` for
+  Meyer, `Collev` for Colley, `Riqhptti` for Righetti, `Hiadik` for Hladik,
+  `Buqbee` for Bugbee, `Lansburoh` for Lansburgh, `Larsgn` for Larsen,
+  `Schnai tt arhpj^` for Schnaittacher. Every one of those is recoverable; a
+  dozen are not, and those were left out of the page and kept in the finding's
+  `extra.architect_as_printed`. **Where a name cannot be read with confidence,
+  the page gets no architect** — a wrong attribution is worse than a missing
+  one.
+- **The check that makes the OCR safe is the printed block and lot.** Every
+  form states the parcel, so the resolution can be tested against it rather
+  than trusted: 147 of the 167 resolved parcels matched the printed block and
+  lot exactly. Of the twenty that did not, sixteen are re-lottings since 1990
+  (same block, different lot) and four are block digits the scan lost — 849–853
+  Valencia printed as block 5996 for 3596 and 3771 Mission as 3719 for 5719,
+  both with the lot matching exactly, both a 3/5 confusion. **On a scanned
+  survey that prints its own parcel, compare the resolution to it and read
+  every disagreement; the ones that are not OCR are re-lottings, and the
+  pattern tells them apart.**
+- **The forms name the 1990 owner in field 11, and 1990 tenants in field 2.**
+  Field 11 was never extracted. Field 2 ("Common or Current Name") was
+  extracted for the record and **not published** — a business that occupied the
+  building 36 years ago is not the building. The builder line also carries an
+  "Owner" label often enough to matter: seven forms name an owner-builder there
+  (D. J. Clancy, McKillop Brothers, J. Sockolov, Richard Rountree, P. A.
+  MacDonald, Franchino Ginotti), and all seven were dropped at extraction.
+- **A historic name is a building fact; a 1990 tenancy is not.** The forms' own
+  field 1 is in name-index order — "Hopkins. Timothy. Warehouses", "Stone.
+  Marie. Apartment Buildng" — and was written to the page in natural order as
+  `building.former_name`, except where field 2 repeats it and the building is
+  still called that (the two Christian Science churches, Sacred Heart Church,
+  Saint Rose Academy, the two St. Paul's schools), where it is
+  `building.name`. Generic entries — "Apartment Building", "Garage",
+  "Warehouse", "Commercial Building" — are property types, not names, and were
+  not published as either.
+- **This survey's buildings are the ones most likely to be gone.** It inventoried
+  a demolition-and-retrofit programme, and seven of its parcels now carry
+  buildings the assessor dates 1992, 2001, 2005, 2008, 2011 and 2022. Those
+  findings resolve cleanly and were **declined at publication**: an architect
+  and an Edwardian date on a 2022 building would be a confident falsehood.
+  *On a seismic-hazard survey, compare the roll year to the surveyed year on
+  every finding, and treat a roll year decades later as a replacement rather
+  than a disagreement.*
+- **A roll year of 1900 is still the floor, not a date** — 2470 California,
+  3700 Geary, 1336 Grove and 1676 Newcomb all come off the roll at 1900 against
+  surveyed years of 1886, 1893, 1894 and 1911. None was written as a conflict.
+- **Two forms describe the same building.** 3400 16th Street, the California Fig
+  Syrup Company building, is inventoried twice (PDF pages 440 and 546) with
+  identical content — the document files it under both Study Area 10 and the
+  outlying areas. Group by parcel before publishing.
+- **Twenty-two of the 159 published pages already carried a neighbouring
+  statement's `historic_survey` panel** and the renderer holds one, so on those
+  the survey's contribution is the At a glance rows only. Its facts corroborated
+  what was already there in five cases and corrected one: 149 Bluxome Street
+  carried `J.R. Torrener, N.Y. Arch. 1914`, this scan's own OCR of an architect
+  the neighbouring 157 Bluxome page prints correctly as J. R. Torrance. **When a
+  second reading of the same source lands on a page, the disagreement between
+  the two is worth more than either.**
+- **It disagrees with a sibling statement about a name.** 557–561 Castro Street
+  is the Hecker Garage in the 2017 Eureka Valley statement and the Meeker Garage
+  here, with the design credited to Charles V. Hecker. Both are on the page's
+  `.unknowns`; neither was adjudicated.
+- **Verified:** 2026-08-28 (Unreinforced masonry survey: read all 724 pages —
+  the introduction and its fifteen building prototypes, the eleven study-area
+  histories and registration requirements, the goals and applicable-regulations
+  chapter, the bibliography, the key to the appendices, and **all 200 Historic
+  Resources Inventory forms**. **200 findings, 159 published on 159 pages**, 98
+  of them created by this run, across 26 neighborhood directories with `mission`
+  (38 facts), `pacific-heights` (34), `nob-hill` (14) and `chinatown` (12) at
+  the head. 133 forms name an architect and 104 of those reached a page; 23 name
+  a builder or contractor; 136 give a historic building name. **4 conflicts are
+  stated on a page and 39 construction dates disagree with the assessor.** Eight
+  resolved findings were declined: seven parcels whose roll year shows the
+  surveyed building has been replaced, and 1901 California Street, whose parcel
+  0649001 has no row on the 2025 secured roll and so cannot become a page — the
+  1919 Show Apartment Building by Andrew H. Knoll is recorded in the findings
+  file and nowhere on the site. Thirty-three never reached a parcel: 15
+  condominiums, 13 addresses EAS no longer holds, 4 ranges now split across
+  parcels, and 815 Buena Vista West, which EAS does not hold as a street at all.
+  Coverage note: **the appendix ratings table is not read** — 45 PDF pages,
+  roughly 1,600 rows of street number, street, block, lot and rating codes
+  across all eleven study areas, with its key on PDF pages 158–163. That is the
+  next batch, and it is the larger half of the document by rows and the smaller
+  half by information: its year column is the assessor's, so what it adds beyond
+  the forms is UMB status and the 1990 rating stack.)

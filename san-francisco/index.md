@@ -42,6 +42,7 @@ documented so far:
 - [Presidio Heights](presidio-heights/) — the ridge between the Presidio and Pacific Heights; 28 buildings photographed for tax assessment between 1945 and 1991
 - [West of Twin Peaks](west-of-twin-peaks/) — the residence parks and tracts on the western slopes above Portola Drive; 11 buildings photographed for tax assessment between 1946 and 1951
 - [Japantown](japantown/) — the blocks around Post and Buchanan Streets; two parcels photographed for tax assessment in 1961 and 1962
+- [Portola](portola/) — the hillside district between McLaren Park and Highway 101, settled around its market gardens and greenhouses; the 1932 University Mound Home and a 1927 Silver Avenue church, both surveyed in 1990 as unreinforced masonry
 - [Visitacion Valley](visitacion-valley/) — the south-eastern corner of the city between McLaren Park and the county line; two buildings on Bay Shore Boulevard
 
 Several of these pages document addresses named in a published guide to notable

@@ -4,6 +4,7 @@ An affluent district on the ridge north of Japantown, known for large houses and
 
 ## Streets documented so far
 
+- [Baker Street](baker-street/) — 1 building, built 1904.
 - [Broadway](broadway/) — 6 buildings, built 1900–1940; 2 in the Pacific Heights Historic District.
 - [Broderick Street](broderick-street/) — 1 building, built 1900.
 - [Buchanan Street](buchanan-street/) — 2 buildings, built 1900–1912; 2 in the Japantown Community & Cultural Historic District.

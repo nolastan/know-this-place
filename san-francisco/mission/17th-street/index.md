@@ -13,11 +13,20 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [2013](2013/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2015.
 - [2015–2019](2015/) — A 1900 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2022.
 - [2021–2023](2021/) — A 1908 2-unit building with a ground-floor store, with reroofing permitted in 2022.
+- [2025](2025/) — A 1906 industrial building, with stair work permitted in 1984.
 - [2201](2201/) — A 1914 single-family house, with reroofing permitted in 2017.
+- [2222](2222/) — A 1961 industrial building, with reroofing permitted in 2003.
 - [2330–2346](2330/) — A 1922 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [2401–2425](2401/) — A 1909 industrial building, with reroofing permitted in 2022.
+- [2450](2450/) — A 1911 church, with electrical work permitted in 1989.
 - [2712](2712/) — A 1900 two-flat, with reroofing permitted in 2016.
 - [2720](2720/) — A 1938 industrial building, with a kitchen remodel permitted in 1988.
+- [2730](2730/) — A 1966 industrial building, with an addition permitted in 2012.
+- [2742](2742/) — A 1907 store building, with a vertical addition permitted in 2000.
+- [3057](3057/) — A 1903 industrial building, with a seismic retrofit permitted in 1990.
+- [3075–3077](3075/) — A 1923 industrial building, with reroofing permitted in 1997.
 - [3084](3084/) — A 1933 2-unit building with a ground-floor store, with permit records from 2007 to 2010.
+- [3151–3157](3151/) — A 1909 store building, with an addition permitted in 2025.
 - [3178](3178/) — A 1900 flats building, with facade work permitted in 2021.
 - [3200–3212](3200/) — A 1908 4-unit apartment building, with reroofing permitted in 1998.
 - [3214–3216](3214/) — A 1908 two-flat, with stair work permitted in 2010.

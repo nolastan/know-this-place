@@ -9,6 +9,8 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [1247–1251](1247/) — A 1909 theater, with an addition permitted in 1985.
 - [1300–1308](1300/) — A 1906 hotel, with a seismic retrofit permitted in 2017.
 - [1301–1317](1301/) — A 1907 office building, with facade work permitted in 2019.
+- [1325–1341](1325/) — A 1911 hotel, with a seismic retrofit permitted in 1993.
+- [1343–1351](1343/) — A 1912 hotel, with an addition permitted in 1991.
 - [1400–1418](1400/) — A 1920 store building, with reroofing permitted in 1993.
 - [1435–1445](1435/) — A 1933 store building, with reroofing permitted in 1999.
 - [1455](1455/) — A 1929 bank building, with an addition permitted in 2025.

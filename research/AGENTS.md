@@ -532,6 +532,37 @@ The mechanics:
   `AGENTS.md`'s territory, not this file's).
 - Everything else is yours to change.
 
+- **A source that prints its own parcel has handed over a test, not just a
+  tiebreak.** `resolve_eas.py` used the recorded assessor block and lot to
+  *choose* among the parcels a range spans, and never to *check* a resolution it
+  had already made — so on a 724-page scan the only guard against an OCR digit
+  was the street number, which is itself OCR. Running the comparison over the
+  whole batch by hand found the shape immediately: 147 of 167 exact, 15
+  re-lottings since 1990, and 5 on another block, of which two were a 3/5
+  confusion in the scan (849–853 Valencia printed as block 5996 for 3596) and
+  three the record's own error. *`report` now prints that comparison, splitting
+  re-lottings from block disagreements; put the printed block and lot on every
+  finding from a scanned source, and read every block disagreement before
+  applying.*
+- **A survey's own column may not be the survey's own claim.** The UMB
+  survey's appendix table heads its YEAR column "the year of construction
+  according to the Assessor's Records. It is not necessarily accurate."
+  Published as a construction date it restates the roll; published as a
+  `completed_conflict` it asserts a disagreement between the assessor and the
+  assessor. The same document's inventory forms date the building from city
+  directories and the trade press, and *those* are evidence. *Read the key
+  before treating a column as something the source is claiming.*
+- **A survey selected on a hazard is a survey of buildings that were about to
+  be replaced.** The Transit Center lesson said to compare the roll year with
+  the source's on every finding; the unreinforced-masonry survey says how to
+  read the answer. A roll year a few years off is a dating disagreement and
+  belongs in `.unknowns`. A roll year *decades* later — 1913 against 2022, 1907
+  against 2001 — is not a disagreement at all: the building the source
+  described is gone, and publishing its architect and date would describe
+  something that does not exist. Seven of that survey's parcels were declined
+  on that rule. *Set a threshold, decline above it, and say so in the publish
+  note.*
+
 - **An Excel-printed PDF table has no rows in its text layer.** The Showplace
   Square survey data is an `.xlsx` printed to PDF: cells wrap, and a row's
   parcel number, address and note sit on three different baselines, sometimes

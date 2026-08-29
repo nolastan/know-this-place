@@ -4,6 +4,8 @@ The parcels on Washington Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [1855](1855/) — A 1927 16-unit apartment building, with reroofing permitted in 1994.
+- [1890](1890/) — A 1923 16-unit apartment building, with a seismic retrofit permitted in 2003.
 - [1960](1960/) — A 1924 garage, with garage work permitted in 1983.
 - [1980](1980/) — A 1923 64-unit apartment building, with reroofing permitted in 1993.
 - [2080](2080/) — The Spreckels Mansion — a 34-room 1911 house and Article 10 individual landmark filling a Pacific Heights block.

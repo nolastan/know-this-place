@@ -10,6 +10,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [204–206](204/) — A 1908 7-unit apartment building, with a kitchen remodel permitted in 2015.
 - [207–215](207/) — A 1924 11-unit apartment building, with a rear addition permitted in 2012.
 - [212–214](212/) — A 1906 5-unit apartment building, with stair work permitted in 2002.
+- [225](225/) — A 1907 store building, with stair work permitted in 1985.
 - [235](235/) — A 1924 building, with reroofing permitted in 2020.
 - [250](250/) — A 1907 school building, with an addition permitted in 2013.
 - [260](260/) — A 1902 3-unit building, with foundation work permitted in 2003.
@@ -36,6 +37,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [572–576](572/) — A 1923 9-unit apartment building, with a seismic retrofit permitted in 2018.
 - [577–581](577/) — A 1907 6-unit apartment building with a ground-floor store in the 16th and Valencia Streets Post-Fire Historic District, with a kitchen and bathroom remodel permitted in 2011.
 - [590–598](590/) — A 1907 24-unit apartment building, with a seismic retrofit permitted in 2015.
+- [623](623/) — A 1915 store building, with a seismic retrofit permitted in 2002.
 - [656–660](656/) — A 1906 four-flat, with foundation work permitted in 1996.
 - [662](662/) — An apartment building, with one permit record from 1995.
 - [666–668](666/) — An apartment building, with permit records from 1985 to 1995.
@@ -45,6 +47,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [715](715/) — A 1907 2-unit building with a ground-floor store.
 - [720](720/) — A 1909 2-unit building with a ground-floor store, with stair work permitted in 2002.
 - [724](724/) — A 1921 building with a ground-floor store, with reroofing permitted in 2007.
+- [740–748](740/) — A 1906 store building, with a seismic retrofit permitted in 2011.
 - [756–758](756/) — A 1909 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2016.
 - [760–762](760/) — A 1908 2-unit building with a ground-floor store, with window replacement permitted in 2012.
 - [785–789](785/) — A 1911 3-unit building with a ground-floor store, with window replacement permitted in 2020.
@@ -53,6 +56,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [824](824/) — A 1908 3-unit apartment building, with window replacement permitted in 1999.
 - [838](838/) — A 1908 4-unit building with a ground-floor store, with reroofing permitted in 1995.
 - [840–842](840/) — A 1924 5-unit building with a ground-floor store, with stair work permitted in 2004.
+- [849–853](849/) — A 1922 store building, with electrical work permitted in 2000.
 - [855–857](855/) — A 1938 5-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2025.
 - [861](861/) — A 1979 4-unit apartment building, with reroofing permitted in 2000.
 - [867–871](867/) — A 1906 3-unit building with a ground-floor store, with reroofing permitted in 1999.
@@ -109,7 +113,9 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [1189–1193](1189/) — An 1880 5-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [1195–1199](1195/) — A 1900 3-unit building with a ground-floor store in the 23rd Street Shops and Rowhouses Historic District, with stair work permitted in 2003.
 - [1200–1210](1200/) — A 1923 21-unit apartment building, with a seismic retrofit permitted in 2012.
+- [1220](1220/) — An 1890 industrial building, with reroofing permitted in 2008.
 - [1228–1234](1228/) — A 1904 8-unit apartment building, with reroofing permitted in 2022.
+- [1240](1240/) — A 1919 office building, with reroofing permitted in 2024.
 - [1245–1247](1245/) — A 1900 two-flat, with reroofing permitted in 1991.
 - [1252](1252/) — A 1900 2-unit apartment building, with facade work permitted in 1998.
 - [1260–1264](1260/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 1986.
@@ -126,6 +132,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [1407–1411](1407/) — A 1900 2-unit building with a ground-floor store, with foundation work permitted in 2011.
 - [1413–1419](1413/) — A 1900 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2008.
 - [1420](1420/) — A 1962 4-unit apartment building, with a kitchen remodel permitted in 2026.
+- [1423](1423/) — A 1920 industrial building in the Orange Alley Stables and Lofts Historic District, with a kitchen remodel permitted in 2015.
 - [1424](1424/) — A 1906 15-unit apartment building, with an accessory dwelling unit permitted in 2018.
 - [1427](1427/) — A 1908 single-family house in the Orange Alley Stables and Lofts Historic District, with foundation work permitted in 2018.
 - [1430–1432](1430/) — A 1916 4-unit building with a ground-floor store, with an addition permitted in 2023.
@@ -140,6 +147,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [1488](1488/) — A 1962 6-unit apartment building, with reroofing permitted in 2023.
 - [1492–1494](1492/) — A 1900 6-unit building with a ground-floor store, with a bathroom remodel permitted in 1987.
 - [1497–1499](1497/) — A 1900 two-flat, with plumbing work permitted in 2015.
+- [1500](1500/) — A 1956 store building, with a seismic retrofit permitted in 2005.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

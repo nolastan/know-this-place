@@ -16,6 +16,7 @@ The parcels on Columbus Avenue documented here so far, from the city's address, 
 - [261–271](261/) — A 1907 store building, with a seismic retrofit permitted in 1999.
 - [277–279](277/) — A 1907 5-unit apartment building with a ground-floor store, with a seismic retrofit permitted in 1996.
 - [301](301/) — A 1907 hotel, with a seismic retrofit permitted in 2020.
+- [331–349](331/) — A 1906 hotel, with reroofing permitted in 2018.
 - [353–355](353/) — A 1910 6-unit apartment building, with reroofing permitted in 2007.
 - [371–373](371/) — A 1910 hotel, with window replacement permitted in 2010.
 - [501–543](501/) — A 1907 32-unit apartment building, with a seismic retrofit permitted in 2018.

@@ -8,6 +8,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Bush Street](bush-street/) — 5 buildings, built 1916–1930.
 - [California Street](california-street/) — 1 building, built 1921.
 - [Fillmore Street](fillmore-street/) — 1 building, built 1911.
+- [Franklin Street](franklin-street/) — 1 building, built 1921.
 - [Fulton Street](fulton-street/) — 1 building, built 1900; 1 in the NOPA Historic District.
 - [Geary Boulevard](geary-boulevard/) — 2 buildings, built 1900.
 - [Golden Gate Avenue](golden-gate-avenue/) — A 1926 apartment building named among the 1974 Patty Hearst addresses.

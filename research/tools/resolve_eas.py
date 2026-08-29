@@ -856,6 +856,34 @@ def recorded_parcels(f: dict) -> list:
     return out
 
 
+def recorded_parcel_check(f: dict, parcel: str) -> str:
+    """How the parcel a record printed compares with the one it resolved to.
+
+    A source that states its own assessor block and lot has handed over a test,
+    not just a tiebreak: run it on every resolved finding and the OCR of a
+    scanned survey stops being taken on trust. Three outcomes matter and they
+    mean different things, which is why they are counted separately —
+
+    * ``match``  — the record's block and lot are the parcel's. Nothing to do.
+    * ``relot``  — same block, different lot: the assessor has re-lotted since
+      the record was written, which is ordinary and expected.
+    * ``block``  — a different block. Usually a digit the scan lost (a 3/5
+      confusion put 849-853 Valencia Street on "5996" for 3596), sometimes a
+      real error in the record. **Read every one of these.**
+
+    Returns "" when the record names no parcel, so it can be counted apart from
+    a check that ran and passed.
+    """
+    recorded = recorded_parcels(f)
+    if not recorded or not parcel:
+        return ""
+    if parcel.upper() in recorded:
+        return "match"
+    blk = re.match(r"^(\d{3,4}[A-Z]?)", parcel.upper())
+    blk = blk.group(1) if blk else ""
+    return "relot" if any(r.startswith(blk) for r in recorded) else "block"
+
+
 def block_check(city: City, f: dict, parcel: str) -> tuple:
     """(clause, agrees) — the archivist's assessor block against the parcel's."""
     recorded = (f.get("extra") or {}).get("assessor_block_as_recorded")
@@ -1445,6 +1473,34 @@ def main() -> int:
             print(f"{f['id']}  {r['status']:<10} {f['address_as_written'][:48]:<50}"
                   f"{r.get('path') or r.get('note', '')[:70]}")
         print()
+        # The record's own parcel against the one it resolved to. This is the
+        # only check in the tool that tests a finished resolution rather than
+        # producing one, and on a scanned source it is the thing that catches
+        # an OCR digit before it reaches a page.
+        checks = Counter()
+        disagree = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved":
+                continue
+            verdict = recorded_parcel_check(f, r.get("apn") or "")
+            checks[verdict or "not stated"] += 1
+            if verdict in ("relot", "block"):
+                e = f.get("extra") or {}
+                disagree.append((verdict, f["id"], f["address_as_written"][:34],
+                                 f"{e.get('assessor_block_as_recorded')}/"
+                                 f"{e.get('assessor_lot_as_recorded')}", r["apn"]))
+        if checks["match"] or disagree:
+            print(f"Recorded parcel vs resolved parcel: {checks['match']} exact, "
+                  f"{checks['relot']} re-lotted since, {checks['block']} on another block, "
+                  f"{checks['not stated']} not stated by the record.")
+            for verdict, fid, addr, printed, apn in disagree:
+                label = "another block" if verdict == "block" else "re-lotted"
+                print(f"  {label:<13} {fid}  {addr:<36} printed {printed:<12} → {apn}")
+            if checks["block"]:
+                print("  Read every 'another block' line before applying: on a scanned "
+                      "source most are a lost digit, and the rest are the record's own error.")
+            print()
     print(f"{sum(tally.values())} findings: " +
           ", ".join(f"{n} {s}" for s, n in tally.most_common())
           + (f"; {len(conflicts)} new conflict(s) recorded" if conflicts else ""))

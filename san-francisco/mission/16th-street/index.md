@@ -4,11 +4,19 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 
 ## Documented so far
 
+- [2000](2000/) — A 1907 warehouse in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with reroofing permitted in 2010.
 - [2001–2009](2001/) — A 1908 two-flat, with reroofing permitted in 2012.
+- [2101](2101/) — A 1996 store building, with facade work permitted in 2016.
+- [2300](2300/) — A 1997 store building, with deck work permitted in 1995.
 - [2401–2425](2401/) — A 1909 3-unit building with a ground-floor store, with deck work permitted in 2025.
 - [2435–2445](2435/) — A 1924 industrial building, with a kitchen and bathroom remodel permitted in 2009.
+- [2500](2500/) — A 1925 4-unit building, with plumbing work permitted in 2014.
+- [2525–2545](2525/) — A 1924 industrial building, with a kitchen remodel permitted in 2020.
+- [2700–2730](2700/) — A 1937 industrial building, with reroofing permitted in 2005.
 - [2741](2741/) — A 1942 industrial building, with reroofing permitted in 2021.
 - [2745](2745/) — A 1942 industrial building, with reroofing permitted in 1996.
+- [2757](2757/) — A 1950 industrial building, with an addition permitted in 1984.
+- [2779](2779/) — A 1926 store building, with garage work permitted in 2015.
 - [2828](2828/) — A 2021 143-unit apartment building, with one permit record from 2020.
 - [2870–2878](2870/) — A 1908 6-unit apartment building, with an accessory dwelling unit permitted in 2020.
 - [2886–2888](2886/) — A 1923 14-unit apartment building, with a seismic retrofit permitted in 2014.
@@ -18,6 +26,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [2943–2947](2943/) — A 1921 10-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2961](2961/) — A 1907 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 1998.
 - [3000](3000/) — A 1910 bank building, with stair work permitted in 2015.
+- [3024–3030](3024/) — A 1909 store building, with stair work permitted in 2000.
 - [3032–3036](3032/) — A 1907 hotel, with fire repair permitted in 2022.
 - [3043](3043/) — A 1986 28-unit apartment building.
 - [3055–3061](3055/) — A 1909 hotel, with a kitchen remodel permitted in 2022.

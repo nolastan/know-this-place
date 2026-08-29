@@ -17,6 +17,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [215–219](215/) — A 1905 3-unit building with a ground-floor store, with an addition permitted in 2001.
 - [221–225](221/) — A 1906 3-unit building with a ground-floor store, with dry-rot repair permitted in 2012.
 - [233–241](233/) — A 1925 10-unit apartment building, with a seismic retrofit permitted in 2016.
+- [240–250](240/) — A 1917 store building, with plumbing work permitted in 2007.
 - [245](245/) — The one commercial building put up anywhere in the Mission Dolores survey area during the 1930s.
 - [251–253](251/) — A 1905 3-unit building with a ground-floor store, with a rear addition permitted in 1986.
 - [252–258](252/) — A 1908 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.

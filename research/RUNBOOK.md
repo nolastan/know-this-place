@@ -165,6 +165,16 @@ the assessor and EAS give the parcel decides, every method says which rule
 chose the directory, and a directory the site does not use yet is flagged in
 the method for the publisher to confirm.
 
+`report` also prints, under the per-finding lines, **the record's own parcel
+against the one it resolved to** — the only check in the tool that tests a
+finished resolution instead of producing one. It needs
+`assessor_block_as_recorded` and `assessor_lot_as_recorded` on the findings, and
+it separates a *re-lotting* since the record was written (same block, ordinary)
+from *another block* (usually a digit a scan lost, sometimes the record's own
+error). **On any source read from a scan, put the printed block and lot on every
+finding and read every "another block" line** — that is what stops an OCR digit
+becoming a page.
+
 It declines rather than guesses: no EAS record, a range now split across
 parcels the record does not choose between, a condominium's worth of parcels on one point, or two recorded
 addresses that are both real all come back `unresolved`. **`report` before
