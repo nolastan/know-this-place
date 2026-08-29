@@ -1,0 +1,128 @@
+{
+  "address": "312–316 29th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/29th-street/312/",
+  "apn": "6619002",
+  "block": "6619",
+  "lot": "002",
+  "eas_baseid": "427709",
+  "coordinates": {
+    "lat": 37.743877,
+    "lng": -122.427453
+  },
+  "address_range": "312–316",
+  "street_numbers_on_parcel": [
+    "312",
+    "314",
+    "316"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "stories": 3,
+    "rooms": 43,
+    "bathrooms": 6,
+    "lot_area_sqft": 4743,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "C",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0316 29TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 82216,
+    "assessed_improvement_value": 31850
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1916",
+    "survey_name": "ST. PAUL'S CONVENT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508150284",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-15",
+      "status_date": "2005-09-07",
+      "estimated_cost": 46500,
+      "revised_cost": 46500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520918",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-12-13",
+      "status_date": "1997-04-15",
+      "estimated_cost": 225000,
+      "description": "seismic retrofit of umb building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121191",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-07",
+      "status_date": "1992-01-22",
+      "estimated_cost": 9100,
+      "revised_cost": 18000,
+      "description": "sizemac bracing at parapet walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=ST&address_number=312",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6619002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6619&lot=002",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6619002",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "umb-survey-1990",
+      "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Unreinforced Masonry Building Survey, 1990",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "building": {
+    "architect": "Shea and Lofquist",
+    "former_name": "St. Paul's Convent",
+    "completed": 1914,
+    "completed_conflict": "The 1990 unreinforced-masonry survey dates the building to 1914; the assessor's roll gives 1916."
+  },
+  "historic_survey": {
+    "survey": "Unreinforced Masonry Building Survey (1990)",
+    "frame": "Unreinforced masonry",
+    "apn_as_surveyed": "Block 6619, Lot 2",
+    "source": "umb-survey-1990"
+  }
+}

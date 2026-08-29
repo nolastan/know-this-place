@@ -14,6 +14,7 @@ The parcels on Pine Street documented here so far, from the city's address, asse
 - [2066](2066/) — A 1900 single-family house, with foundation work permitted in 2018.
 - [2231](2231/) — A 1900 single-family house, with garage work permitted in 1984.
 - [2325](2325/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 1997.
+- [2445–2475](2445/) — A 1904 school building, with reroofing permitted in 1993.
 - [2813](2813/) — A 1900 single-family house, with reroofing permitted in 2010.
 - [2815](2815/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2005.
 

@@ -16,6 +16,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Pacific Avenue](pacific-avenue/) — 3 buildings, built 1950–1969.
 - [Powell Street](powell-street/) — 11 buildings, built 1907–1980; 1 in the Washington Square Historic District.
 - [Stockton Street](stockton-street/) — 1 building, built 1911; 1 in the Chinatown Historic District.
+- [Trenton Street](trenton-street/) — 4 buildings, built 1907–1913.
 - [Union Street](union-street/) — 9 buildings, built 1907–1924; 2 in the Washington Square Historic District.
 - [Vallejo Street](vallejo-street/) — 4 buildings, built 1906–1932.
 - [Winter Place](winter-place/) — 1 building, built 1912.

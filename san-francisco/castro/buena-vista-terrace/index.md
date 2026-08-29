@@ -5,6 +5,7 @@ Every residential parcel on Buena Vista Terrace that the city's address, assesso
 ## Documented so far
 
 - [5](5/) — A 1927 single-family house.
+- [15](15/) — A 1917 single-family house, with plumbing work permitted in 2002.
 - [17](17/) — A 1907 single-family house, with a seismic retrofit permitted in 2017.
 - [18](18/) — A 1906 single-family house, with a vertical addition permitted in 1998.
 - [24](24/) — A 1908 single-family house, with a kitchen and bathroom remodel permitted in 2004.

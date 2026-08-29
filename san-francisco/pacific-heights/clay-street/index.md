@@ -4,6 +4,10 @@ The parcels on Clay Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1830](1830/) — A 1927 20-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [1835](1835/) — A 1927 16-unit apartment building, with reroofing permitted in 1998.
+- [1840](1840/) — A 1927 20-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [1850](1850/) — A 1927 20-unit apartment building, with garage work permitted in 2001.
 - [3187](3187/) — A 1900 single-family house, with a vertical addition permitted in 1989.
 
 Pages are generated from the DataSF datasets listed in each page's

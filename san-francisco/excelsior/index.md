@@ -5,3 +5,4 @@ A working-class residential district in the city's south-east, laid out in the e
 ## Streets documented so far
 
 - [Amazon Avenue](amazon-avenue/) — A 1930 house recorded as Jerry Garcia's first home.
+- [Russia Avenue](russia-avenue/) — 1 building, built 1915.
