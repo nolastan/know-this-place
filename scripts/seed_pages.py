@@ -773,18 +773,35 @@ REDACTIONS = _load_redactions()
 # "units 149, 151 and 153"). AGENTS.md bars apartment-level detail that points
 # at who lives where, and the hand-authored pages genericize it, so the seeder
 # does too: the number of units survives, the identifiers don't.
-# One unit designator: "4", "12a", "502a", "1/2", "457 1/2".
+# One numbered designator: "4", "12a", "502a", "1/2", "457 1/2".
 _UNIT_NUM = r"\d+(?:\s*/\s*\d+)?[a-z]?(?:\s+\d+\s*/\s*\d+)?\b"
+# DBI letters units as often as it numbers them ("unit a:", "apt #c"), and a
+# bare letter is a far more dangerous thing to match than a digit — one-letter
+# English words and DBI's slashed abbreviations wear the same shape. So the
+# letter form is deliberately narrow, and every narrowing is something the
+# corpus actually contains:
+#   * only "a" through "h", the range these letters run in. Past it lie
+#     "units w/ garage" (with), "unit. n/a", "unit. u factor", "unit #s: 143",
+#     "unit r-3" (occupancy class) — all abbreviation, none a designator.
+#   * never glued to the keyword, so "unite" and "unita" aren't read as
+#     "unit e" and "unit a" (the lookbehind is what enforces the gap, since
+#     the "#" and whitespace between keyword and designator are optional).
+#   * never before "/", where the letter is half of an abbreviation pair:
+#     "hvac units. f/s sep permit", "a/c".
+_UNIT_LETTER = r"(?<![a-z])[a-h]\b(?!/)"
+_UNIT_DESIG = r"(?:" + _UNIT_NUM + r"|" + _UNIT_LETTER + r")"
 # A run of them after the keyword. The trailing \b matters: without it,
 # "unit 2nd flr" matches as unit "2n" and the sentence gets mangled — with it,
 # ordinals ("1st", "2nd") and street numbers ("4145 20th st") stay put.
 # DBI also writes lists with the separators missing ("units 2, 3 5 & 6",
 # "unit 2308 232"), so a bare space continues the run — except before "." or
 # "/", which mark a numbered list item ("unit 502a 1. rehabilitate") or a floor
-# ("unit #2 3/f only") rather than another unit.
+# ("unit #2 3/f only") rather than another unit. That separator-less run stays
+# numbers-only: no page carries a lettered one ("unit a b"), while "unit a" is
+# followed by an ordinary word on every page that does carry it.
 UNIT_REF = re.compile(
-    r"\b(?:apt|apartment|unit)s?\.?\s*#?\s*" + _UNIT_NUM +
-    r"(?:\s*(?:,|&|and)\s*#?\s*" + _UNIT_NUM + r"|\s+#?" + _UNIT_NUM + r"(?![./]))*",
+    r"\b(?:apt|apartment|unit)s?\.?\s*#?\s*" + _UNIT_DESIG +
+    r"(?:\s*(?:,|&|and)\s*#?\s*" + _UNIT_DESIG + r"|\s+#?" + _UNIT_NUM + r"(?![./]))*",
     re.I)
 COUNT_WORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
               6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
@@ -793,7 +810,7 @@ COUNT_WORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
 def _generic_unit(m) -> str:
     # Count designators, not digits — "unit 457 1/2" is one unit, not three.
     rest = re.sub(r"^(?:apt|apartment|unit)s?\.?\s*", "", m.group(0), flags=re.I)
-    n = len(re.findall(_UNIT_NUM, rest, re.I))
+    n = len(re.findall(_UNIT_DESIG, rest, re.I))
     return "one unit" if n <= 1 else f"{COUNT_WORD.get(n, n)} units"
 
 
