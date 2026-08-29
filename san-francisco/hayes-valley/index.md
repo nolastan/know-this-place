@@ -24,3 +24,4 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Steiner Street](steiner-street/) — One of the Alamo Square Painted Ladies of Postcard Row; Alice Walker's home until 1996.
 - [Van Ness Avenue](van-ness-avenue/) — 2 buildings, built 1900–1911; 1 in the Civic Center Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1931; 1 in the Hayes Valley Residential Historic District.
+- [Webster Street](webster-street/) — 1 building; 1 in the Hayes Valley Residential Historic District.

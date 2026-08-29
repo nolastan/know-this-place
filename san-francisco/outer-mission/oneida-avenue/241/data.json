@@ -1,0 +1,80 @@
+{
+  "address": "241 Oneida Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/oneida-avenue/241/",
+  "apn": "6961021",
+  "block": "6961",
+  "lot": "021",
+  "eas_baseid": "487980",
+  "coordinates": {
+    "lat": 37.721741,
+    "lng": -122.442905
+  },
+  "parcel": {
+    "lot_area_sqft": 3136,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0241 ONEIDA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ONEIDA&street_type=AVE&address_number=241",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6961021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6961&lot=021",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6961021",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "new-deal-context-statement",
+      "name": "Christopher VerPlanck and Donna Graves, San Francisco New Deal Historic Context Statement: Rebuilding the City, 1933 to 1943, San Francisco Planning Department and San Francisco Heritage, adopted March 1, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "San Francisco New Deal Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "construction",
+      "description": "The $900,000 James Denman Junior High School campus — an academic building, a shops building and a gymnasium — was built here with Public Works Administration funding to designs by Albert F. Roller and William P. Day in the PWA Moderne style, and completed in 1940. Begun as Outer Mission Junior High, it was renamed while under construction in 1939. The auditorium came in 1961.",
+      "source": "new-deal-context-statement"
+    }
+  ],
+  "unknowns": [
+    "The city's New Deal survey addresses James Denman Junior High School at 241 Oneida Street, and describes it as standing at the southeast corner of Oneida and Delano avenues; the city's address registry has only Oneida Avenue."
+  ]
+}

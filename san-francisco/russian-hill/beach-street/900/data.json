@@ -1,0 +1,105 @@
+{
+  "address": "900 Beach Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/beach-street/900/",
+  "apn": "0405007",
+  "block": "0405",
+  "lot": "007",
+  "eas_baseid": "282057",
+  "coordinates": {
+    "lat": 37.8064,
+    "lng": -122.423925
+  },
+  "parcel": {
+    "lot_area_sqft": 1389569,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 0900 BEACH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "survey_name": "BANQUET ROOM 3RD FLOOR; EXHIBIT DISPLAYS",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Aquatic Park Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1936–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEACH&street_type=ST&address_number=900",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0405007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0405&lot=007",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0405007",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42392464044408%2037.80639975511237)%27)",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "new-deal-context-statement",
+      "name": "Christopher VerPlanck and Donna Graves, San Francisco New Deal Historic Context Statement: Rebuilding the City, 1933 to 1943, San Francisco Planning Department and San Francisco Heritage, adopted March 1, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "San Francisco New Deal Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1935–1941",
+      "kind": "public works",
+      "description": "Works Progress Administration crews deposited 20,000 cubic yards of fill here and built the stone seawall, the bathhouse, the beach, two boathouses and retaining walls, paving 101,000 square feet of concrete promenade.",
+      "source": "new-deal-context-statement"
+    },
+    {
+      "date": "1939",
+      "kind": "artwork",
+      "description": "The Aquatic Park Bathhouse holds one of the city's densest concentrations of Federal Art Project work: Hilaire Hiler's Prismatarium and his Lost Continents of Atlantis and Mu, Sargent Johnson's incised slate marquee, ceramic lintel and tile sea forms, Richard Ayer's Nautical Abstractions and Tugboats, Charles Nunemaker's Sepia Seascape and Beniamino Bufano's granite Frog and Seal of 1942.",
+      "source": "new-deal-context-statement"
+    },
+    {
+      "date": "2023",
+      "kind": "designation",
+      "description": "Recommended for city landmark designation in 2023, on historical, aesthetic and artistic grounds.",
+      "source": "new-deal-context-statement"
+    }
+  ]
+}

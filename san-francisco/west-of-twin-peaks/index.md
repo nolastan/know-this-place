@@ -9,6 +9,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [19th Avenue](19th-avenue/) — 1 building, built 1913.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
+- [Laguna Honda Boulevard](laguna-honda-boulevard/) — 1 building, built 1937; 1 in the Laguna Honda Historic District.
 - [Lenox Way](lenox-way/) — 1 building, built 1926.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.

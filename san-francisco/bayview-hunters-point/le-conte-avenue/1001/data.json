@@ -1,0 +1,87 @@
+{
+  "address": "1001 Le Conte Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/le-conte-avenue/1001/",
+  "apn": "5016001",
+  "block": "5016",
+  "lot": "001",
+  "eas_baseid": "373957",
+  "coordinates": {
+    "lat": 37.718157,
+    "lng": -122.396852
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1410,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1001 LE CONTE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 175614,
+    "assessed_improvement_value": 82196,
+    "last_sale_date": "1997-10-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LE%20CONTE&street_type=AVE&address_number=1001",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5016001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5016&lot=001",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5016001",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "new-deal-context-statement",
+      "name": "Christopher VerPlanck and Donna Graves, San Francisco New Deal Historic Context Statement: Rebuilding the City, 1933 to 1943, San Francisco Planning Department and San Francisco Heritage, adopted March 1, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "San Francisco New Deal Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1935–1941",
+      "kind": "public works",
+      "description": "The Works Progress Administration improved this 30-acre hilltop: 6,500 linear feet of oiled macadam road, 6,500 feet of rock gutter, 1,250 cubic yards of rubble retaining wall, a water supply, a convenience station and a rustic shelter.",
+      "source": "new-deal-context-statement"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ The parcels on 32nd Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [600–682](600/) — An assessor class: vacant lot, with permit records from 1990 to 2014.
 - [695](695/) — A 1940 single-family house, with reroofing permitted in 2015.
 
 Pages are generated from the DataSF datasets listed in each page's

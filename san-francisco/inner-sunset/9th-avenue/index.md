@@ -64,6 +64,7 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [1826](1826/) — A 1904 building.
 - [1845](1845/) — A ca. 1907-1909.
 - [1858](1858/) — A 1910-1911 building, built by James R. Proctor.
+- [1960](1960/) — An assessor class: vacant lot in the Midcentury Recreation Historic District (Discontiguous), with window replacement permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

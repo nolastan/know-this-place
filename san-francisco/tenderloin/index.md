@@ -22,4 +22,5 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Post Street](post-street/) — 6 buildings, built 1917–1920; 2 in the Lower Nob Hill Apartment Hotel Historic District.
 - [Taylor Street](taylor-street/) — 1 building, built 1910; 1 in the Uptown Tenderloin Historic District.
 - [Turk Street](turk-street/) — 2 buildings, built 1924–2022.
+- [United Nations Plaza](united-nations-plaza/) — 1 building, built 1982; 1 in the Civic Center Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 1 building.

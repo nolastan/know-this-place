@@ -8,6 +8,7 @@ The parcels on 43rd Avenue documented here so far, from the city's address, asse
 - [1406](1406/) — A 1950 single-family house, with a kitchen and bathroom remodel permitted in 2012.
 - [1410](1410/) — A 1950 single-family house, with window replacement permitted in 2004.
 - [1414](1414/) — A 1950 single-family house, with reroofing permitted in 2024.
+- [1530](1530/) — A 1900 school building.
 - [1738](1738/) — A 1941 single-family house, with reroofing permitted in 2005.
 - [2223](2223/) — A 1941 single-family house, with an addition permitted in 2001.
 

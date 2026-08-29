@@ -19,6 +19,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Chenery Street](chenery-street/) — 16 buildings, built 1900–1951; 5 in the Glen Park Center Historic District.
 - [Congo Street](congo-street/) — 1 building, built 1917.
 - [Diamond Street](diamond-street/) — 5 buildings, built 1916–1951; 2 in the Glen Park Center Historic District.
+- [Elk Street](elk-street/) — 1 building.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
 - [Lippard Avenue](lippard-avenue/) — 1 building.

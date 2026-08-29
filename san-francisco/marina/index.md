@@ -22,6 +22,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Jefferson Street](jefferson-street/) — 3 buildings, built 1930–1937.
 - [Laguna Street](laguna-street/) — 1 building, built 1924.
 - [Lombard Street](lombard-street/) — 1 building, built 1960.
+- [Lyon Street](lyon-street/) — 1 building, built 1900; 1 in the Presidio of San Francisco Historic District.
 - [Mallorca Way](mallorca-way/) — 1 building, built 1950; 1 in the Marina Corporation Residential Historic District.
 - [Marina Boulevard](marina-boulevard/) — 1 building, built 1938.
 - [North Point Street](north-point-street/) — 3 buildings, built 1926–1928.
