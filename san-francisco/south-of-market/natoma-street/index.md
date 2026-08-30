@@ -15,6 +15,7 @@ The residential parcels on Natoma Street documented here so far, from the city's
 - [474](474/) — Sixty affordable flats on a lot left empty by the 1989 earthquake, behind Catherine Wagner's metal panels.
 - [479](479/) — A 1997 30-unit apartment building, with reroofing permitted in 1997.
 - [496–498](496/) — A 1926 industrial building in the Sixth Street Lodging House Historic District, with reroofing permitted in 1990.
+- [532](532/) — A 1925 single-family house, with garage work permitted in 2015.
 - [916–920](916/) — A 1919 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
 - [926](926/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with one permit record from 1981.
 - [935](935/) — A 1947 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1999.

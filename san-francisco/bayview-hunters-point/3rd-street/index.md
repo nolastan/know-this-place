@@ -6,8 +6,10 @@ The parcels on Third Street documented here so far, from the city's address, ass
 
 - [4004–4006](4004/) — A 1900 2-unit building with a ground-floor store, with a rear addition permitted in 1989.
 - [4301](4301/) — A 1927 school building, with facade work permitted in 2011.
+- [4401–4415](4401/) — A 1924 three-flat, with reroofing permitted in 2020.
 - [4404](4404/) — A 1946 store building, with window replacement permitted in 2017.
 - [4408–4442](4408/) — A 1913 15-unit building with a ground-floor store, with fire repair permitted in 2005.
+- [4435–4445](4435/) — A 2003 apartment building, with stair work permitted in 2010.
 - [4500–4502](4500/) — A 1900 2-unit building with a ground-floor store, with window replacement permitted in 2017.
 - [4512](4512/) — An 1872 store building, with electrical work permitted in 1993.
 - [4517](4517/) — A 1958 store building, with a bathroom remodel permitted in 2008.
@@ -39,6 +41,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 - [5019–5023](5019/) — A 1916 3-unit building with a ground-floor store, with reroofing permitted in 2002.
 - [5024–5030](5024/) — A 1923 7-unit apartment building with a ground-floor store, with electrical work permitted in 2025.
 - [5025–5033](5025/) — A 1921 2-unit building, with garage work permitted in 2007.
+- [5048](5048/) — A 1954 building, with reroofing permitted in 2003.
 - [5075](5075/) — The site of the Bayview branch library by John Bolles & Associates, rebuilt in 2013.
 - [5100–5102](5100/) — A 1900 store building, with a kitchen remodel permitted in 1993.
 - [5110](5110/) — A 1905 3-unit building with a ground-floor store, with reroofing permitted in 1993.
@@ -56,11 +59,18 @@ The parcels on Third Street documented here so far, from the city's address, ass
 - [5250](5250/) — A 1909 assessor class: vacant lot, with permit records from 2013 to 2025.
 - [5256–5260](5256/) — A 1917 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2019.
 - [5263–5265](5263/) — A 1931 2-unit building with a ground-floor store, with reroofing permitted in 2019.
+- [5267–5269](5267/) — A 1931 2-unit building with a ground-floor store, with fire repair permitted in 2007.
 - [5272](5272/) — A 1940 store building.
 - [5288–5290](5288/) — A 1934 two-flat, with stair work permitted in 2021.
+- [5545](5545/) — A 1999 54-unit apartment building, with permit records from 1985 to 2021.
+- [5815](5815/) — A 1925 industrial building, with stair work permitted in 2022.
 - [6000](6000/) — The Vermont Marble Co. marble works of 1931, in the old Western Development Co. tract.
 - [6025](6025/) — A 1950 industrial building, with reroofing permitted in 2011.
 - [6190](6190/) — Home of the second Hunters Point Food Cooperative, founded in the 1960s.
+- [6200–6202](6200/) — A 1962 store building, with electrical work permitted in 2021.
+- [6220–6222](6220/) — A 1916 2-unit building with a ground-floor store, with reroofing permitted in 2006.
+- [6221](6221/) — A 1939 store building, with permit records from 2000 to 2026.
+- [6245](6245/) — A 1947 store building, with a kitchen and bathroom remodel permitted in 2012.
 - [6301](6301/) — A 1959 office building, with plumbing work permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's

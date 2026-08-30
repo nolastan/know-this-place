@@ -38,3 +38,4 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Clement Street](clement-street/) — 2 buildings, built 1921–2017.
 - [Fulton Street](fulton-street/) — 1 building; 1 in the Golden Gate Park Historic District.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.
+- [La Playa](la-playa/) — 1 building, built 1984.

@@ -810,8 +810,11 @@ _NUM_RUN = (_UNIT_NUM + r"(?:" + _SEP + r"#?\s*" + _UNIT_NUM +
 # st" is two units on Green Street, not three units.
 _LETTER_RUN = (_UNIT_LETTER + r"(?:" + _SEP + r"#?\s*" + _UNIT_LETTER_MORE +
                r"|" + _SEP + r"#\s*" + _UNIT_NUM + r")*")
+# DBI also punctuates the "#" itself ("unit #:233", "apt#: 3"), and the colon
+# is allowed only there — never straight after the keyword, where "one unit: 1.
+# rehabilitate ..." would read its list marker as a designator.
 UNIT_REF = re.compile(
-    r"\b(?:apt|apartment|unit)s?\.?\s*#?\s*(?:" + _NUM_RUN + r"|" + _LETTER_RUN + r")",
+    r"\b(?:apt|apartment|unit)s?\.?\s*(?:#\s*:?\s*)?(?:" + _NUM_RUN + r"|" + _LETTER_RUN + r")",
     re.I)
 COUNT_WORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
               6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
@@ -849,7 +852,7 @@ def redact(text: str | None) -> str | None:
         out = out.replace("(", " ").replace(")", " ")
     out = re.sub(r"\s{2,}", " ", out)
     # A connective whose object was the name now points at nothing.
-    out = re.sub(r"\b(?:by|per|from|of|for|with|at|and|in)\b\s*(?=[.,;:]|$)", "", out,
+    out = re.sub(r"\b(?:by|per|from|of|for|with|at|and|in|as)\b\s*(?=[.,;:]|$)", "", out,
                  flags=re.I)
     out = re.sub(r"\s+([,;.:])", r"\1", out)
     out = re.sub(r"([.,;:])\s*[.,;:]+", r"\1", out)        # doubled punctuation
@@ -1639,7 +1642,10 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     if rec.get("block") and rec.get("lot"):
         rows.append(("ic-pin", "Parcel", f"Block {rec['block']}, Lot {rec['lot']}"))
     if rec.get("street_numbers_on_parcel"):
-        rows.append(("ic-home", "Street numbers", ", ".join(rec["street_numbers_on_parcel"])))
+        # Hand-authored pages sometimes hold these as numbers rather than
+        # strings, and a bare join dies on the first int.
+        rows.append(("ic-home", "Street numbers",
+                     ", ".join(str(n) for n in rec["street_numbers_on_parcel"])))
     if rec.get("also_addressed"):
         rows.append(("ic-pin", "Also addressed",
                      ", ".join(alias_display(x) for x in rec["also_addressed"])))
@@ -2889,6 +2895,10 @@ NAME_HINT = re.compile(
     r"\b(one-?stop|onestop)\b\s*[:.]?\s*[a-z]"
     r"|\b(owner|owners|attn|attention|applicant|contact|c/o|architect|architects|"
     r"engineer|engineering|contractor|contracting|tenant|landlord|purchaser|"
+    # "per inspector adwin lau" and two dozen like it sat on published
+    # pages because the DBI inspector is the one role this list did not
+    # know, and no other pattern fires on a bare first-and-last name.
+    r"inspector|inspectors|"
     r"mr|mrs|ms|dr)\b[.:]?\s+\S"
     r"|\b(inc|llc|l\.l\.c|corp|corporation|company|associates|assoc|builders|"
     r"construction|develop(ment|ers)|partners|group|realty|properties)\b"

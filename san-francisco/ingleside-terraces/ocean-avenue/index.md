@@ -4,6 +4,7 @@ The parcels on Ocean Avenue documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [1508–1516](1508/) — A 1923 store building in the Ocean Avenue Neighborhood Commercial District, with facade work permitted in 2024.
 - [1524](1524/) — One of the Westwood Park commercial buildings, Craftsman style with Colonial and Tudor elements, occupied by 1917.
 - [1532](1532/) — One of the Westwood Park commercial buildings, Craftsman style with Colonial and Tudor elements, occupied by 1917.
 - [1700–1720](1700/) — One of the Westwood Park commercial buildings, Craftsman style with Colonial and Tudor elements, occupied by 1917.

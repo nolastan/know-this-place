@@ -16,6 +16,8 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Haight Street](haight-street/) — Flats over a store of 1900, inside the Counterculture Historic District.
 - [Lyon Street](lyon-street/) — Two buildings facing the Panhandle, both named for Janis Joplin by the same guide.
 - [Oak Street](oak-street/) — 1 building, built 1900.
+- [Page Street](page-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
+- [Scott Street](scott-street/) — 1 building, built 1900.
 - [Stanyan Street](stanyan-street/) — 1 building, built 1911; 1 in the Panhandle Historic District.
 - [Steiner Street](steiner-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1904.

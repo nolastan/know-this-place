@@ -11,6 +11,7 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Bush Street](bush-street/) — 2 buildings, built 1900–1916.
 - [California Street](california-street/) — 2 buildings, built 1900.
 - [Clay Street](clay-street/) — 1 building, built 1900.
+- [Divisadero Street](divisadero-street/) — 1 building, built 1905.
 - [Fillmore Street](fillmore-street/) — 2 buildings, built 1900–1913; 1 in the Upper Fillmore Neighborhood Commercial Historic District.
 - [Franklin Street](franklin-street/) — A five-storey 1900 house with an internal theatre floor and a 2025 fire-damage repair.
 - [Gough Street](gough-street/) — 1 building, built 1917.
@@ -30,3 +31,4 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Vallejo Street](vallejo-street/) — 4 buildings, built 1905–1950; 2 in the Pacific Heights Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 6 buildings, built 1917–1988.
 - [Washington Street](washington-street/) — The Spreckels Mansion, an Article 10 individual landmark.
+- [Webster Street](webster-street/) — 1 building, built 1905.

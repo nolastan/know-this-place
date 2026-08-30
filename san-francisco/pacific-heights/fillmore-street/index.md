@@ -7,6 +7,7 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 - [1833](1833/) — A 1916 store building, with stair work permitted in 1987.
 - [1843–1849](1843/) — A 1900 13-unit apartment building, with stair work permitted in 2002.
 - [1900–1906](1900/) — An 1895 store building, with electrical work permitted in 2007.
+- [1908–1914](1908/) — An 1898 11-unit apartment building with a ground-floor store, with foundation work permitted in 2008.
 - [1915–1917](1915/) — A 1906 5-unit apartment building, with a rear addition permitted in 1988.
 - [1919–1921](1919/) — A 1900 2-unit building with a ground-floor store, with an addition permitted in 2025.
 - [1940–1946](1940/) — A 1900 office building, with window replacement permitted in 2010.

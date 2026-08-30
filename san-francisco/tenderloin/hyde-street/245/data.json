@@ -1,0 +1,123 @@
+{
+  "address": "245–257 Hyde Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/hyde-street/245/",
+  "apn": "0336020",
+  "block": "0336",
+  "lot": "020",
+  "eas_baseid": "485994",
+  "coordinates": {
+    "lat": 37.783177,
+    "lng": -122.415998
+  },
+  "address_range": "245–257",
+  "street_numbers_on_parcel": [
+    "245",
+    "253",
+    "257"
+  ],
+  "also_addressed": [
+    "535 EDDY ST"
+  ],
+  "parcel": {
+    "lot_area_sqft": 18906.25,
+    "lot_depth_ft": 37.5,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "NA",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0259 0245 HYDE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3605737,
+    "assessed_improvement_value": 515098,
+    "last_sale_date": "2009-05-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Resource Evaluation Response",
+    "survey_name": "RKO DISTRIBUTING CORP",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M1172107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-03",
+      "status_date": "2019-12-03",
+      "revised_cost": 439,
+      "description": "per city record, add address 255 hyde street & 535 eddy street to block 0336, lot 020.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2007–2019",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HYDE&street_type=ST&address_number=245",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0336020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0336&lot=020",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0336020",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41599798071856%2037.78317686999908)%27)",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973",
+      "kind": "site history",
+      "description": "Wally Heider Studios, now Hyde Street Studios, where Herbie Hancock recorded Head Hunters and Sextant in 1973, the Pointer Sisters Steppin' in 1975, Ramsey Lewis Salongo in 1976 and Curtis Mayfield Do It All Night in 1978. Identified in 2024 as eligible for local landmark, California Register or National Register designation.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}

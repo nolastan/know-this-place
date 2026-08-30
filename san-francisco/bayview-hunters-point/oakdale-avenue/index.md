@@ -4,6 +4,8 @@ The parcels on Oakdale Avenue documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [1013–1187](1013/) — A 1954 213-unit apartment building, with reroofing permitted in 2015.
+- [1360](1360/) — A school building.
 - [1505–1509](1505/) — A 1910 single-family house, with stair work permitted in 1989.
 - [1513](1513/) — An 1874 hall that became St. Paul of the Shipwreck, the Maltese parish church, and is now Bayview Baptist Church.
 - [1547](1547/) — The Hittell House of about 1865, a Folk Victorian dwelling from the district's first American decade.
@@ -31,6 +33,7 @@ The parcels on Oakdale Avenue documented here so far, from the city's address, a
 - [1789](1789/) — Headquarters of the Maltese Club of San Francisco from 1930, now a church.
 - [1790](1790/) — A 1910 single-family house.
 - [1796–1798](1796/) — A 1917 4-unit apartment building.
+- [1800](1800/) — A 1910 school building, with reroofing permitted in 2014.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
