@@ -1,0 +1,123 @@
+{
+ "address": "1200 Florida Street, San Francisco, CA 94110",
+ "path": "/san-francisco/mission/florida-street/1200/",
+ "apn": "4269025",
+ "block": "4269",
+ "lot": "025",
+ "eas_baseid": "370794",
+ "coordinates": {
+  "lat": 37.752414,
+  "lng": -122.410221
+ },
+ "parcel": {
+  "year_built": 1900,
+  "units": 4,
+  "stories": 3,
+  "rooms": 37,
+  "bathrooms": 11,
+  "lot_area_sqft": 8319,
+  "building_area_sqft": 12420,
+  "use": "Commercial Misc",
+  "property_class": "Churches,Convents,Rectories",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 9,
+  "assessor_neighborhood": "Inner Mission",
+  "analysis_neighborhood": "Mission",
+  "property_location_raw": "1240 1200 FLORIDA             ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 111097,
+  "assessed_improvement_value": 52414
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "Historic Survey Result and 45 years or older",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202111092038",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2021-11-09",
+   "status_date": "2021-11-09",
+   "estimated_cost": 5500,
+   "revised_cost": 5500,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9711643",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1997-06-25",
+   "status_date": "1997-08-18",
+   "estimated_cost": 6500,
+   "description": "selective non structural demolition",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9516303",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1995-10-03",
+   "status_date": "1996-04-19",
+   "estimated_cost": 12000,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 4,
+  "range": "1995–2021",
+  "shown_on_page": 3,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLORIDA&street_type=ST&address_number=1200",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4269025&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4269&lot=025",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4269025",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1973",
+   "kind": "event",
+   "description": "St. Peter's Church, where the gay Catholic group Dignity began meeting in 1973 and held Mass every Sunday until 1984.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

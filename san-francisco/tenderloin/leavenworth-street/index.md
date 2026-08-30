@@ -7,6 +7,7 @@ The parcels on Leavenworth Street documented here so far, from the city's addres
 - [60](60/) — A 1923 28-unit apartment building in the Uptown Tenderloin Historic District, with fire repair permitted in 2025.
 - [151–161](151/) — A 1907 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1999.
 - [201–225](201/) — A 1914 hotel in the Uptown Tenderloin Historic District, with fire repair permitted in 1991.
+- [236–238](236/) — A 1914 16-unit apartment building in the Uptown Tenderloin Historic District, with fire repair permitted in 2002.
 - [245](245/) — A 1910 49-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2002.
 
 Pages are generated from the DataSF datasets listed in each page's

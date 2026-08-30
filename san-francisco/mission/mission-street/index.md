@@ -103,6 +103,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2465](2465/) — A 1911 theater, with facade work permitted in 2017.
 - [2471](2471/) — An 1885 4-unit building with a ground-floor store, with electrical work permitted in 2007.
 - [2475](2475/) — A 1900 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2001.
+- [2480–2482](2480/) — A 1973 office building, with plumbing work permitted in 2008.
 - [2484](2484/) — A 1926 office building, with reroofing permitted in 1996.
 - [2485–2499](2485/) — A 1925 office building, with a kitchen remodel permitted in 2001.
 - [2525–2529](2525/) — A 1925 assessor class: vacant lot, with permit records from 1982 to 2012.
@@ -153,6 +154,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3333](3333/) — A 1988 store building, with electrical work permitted in 2001.
 - [3350–3378](3350/) — A 1967 store building, with a seismic retrofit permitted in 2019.
 - [3394–3398](3394/) — A 1917 store building, with plumbing work permitted in 1984.
+- [3468–3470](3468/) — A 1904 5-unit building with a ground-floor store, with a seismic retrofit permitted in 2021.
 - [3743](3743/) — A 1926 industrial building, with permit records from 1992 to 2023.
 - [3771](3771/) — A 1912 store building, with a rear addition permitted in 1991.
 - [4352](4352/) — A 1916 store building, with reroofing permitted in 2008.

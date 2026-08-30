@@ -11,6 +11,7 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 - [Clay Street](clay-street/) — 2 buildings, built 1900–1904; 2 in the Presidio Heights Historic District.
 - [Iris Avenue](iris-avenue/) — 1 building, built 1948.
 - [Jackson Street](jackson-street/) — 4 buildings, built 1904–1929; 3 in the Presidio Heights Historic District.
+- [Lake Street](lake-street/) — 1 building, built 1926.
 - [Laurel Street](laurel-street/) — 1 building, built 1920; 1 in the Presidio Heights Historic District.
 - [Lyon Street](lyon-street/) — 1 building, built 1885.
 - [Palm Avenue](palm-avenue/) — 2 buildings, built 1920–1921; 2 in the Jordan Park Historic District.

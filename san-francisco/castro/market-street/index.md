@@ -6,8 +6,10 @@ Every residential parcel on Market Street that the city's address, assessor and 
 
 - [2000–2020](2000/) — The Safeway of 1953, on the block that held a Japanese nursery and, in 1943, the nation's first municipal farmers' market.
 - [2041](2041/) — A 1922 three-flat, with a rear addition permitted in 1997.
+- [2051](2051/) — A 1913 office building, with reroofing permitted in 1998.
 - [2073–2083](2073/) — A 1914 apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2016.
 - [2100–2112](2100/) — A 1955 building in the Upper Market Street Commercial Historic District, with a kitchen remodel permitted in 1997.
+- [2120–2122](2120/) — A 1911 office building in the Upper Market Street Commercial Historic District, with foundation work permitted in 2017.
 - [2121–2123](2121/) — A 1905 store building in the Upper Market Street Commercial Historic District, with stair work permitted in 2021.
 - [2124–2126](2124/) — A 1908 5-unit apartment building in the Upper Market Street Commercial Historic District, with facade work permitted in 2009.
 - [2128–2130](2128/) — A 1938 13-unit apartment building in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2023.
@@ -26,6 +28,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2261–2265](2261/) — A 1900 6-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with foundation work permitted in 2007.
 - [2264–2268](2264/) — A 1905 9-unit apartment building in the Upper Market Street Commercial Historic District, with fire repair permitted in 1991.
 - [2270–2272](2270/) — A 1900 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2013.
+- [2275](2275/) — A 1981 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2006.
 - [2276–2288](2276/) — A 1987 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2013.
 - [2279](2279/) — A 1900 two-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1995.
 - [2283–2297](2283/) — A 1907 office building in the Upper Market Street Commercial Historic District, with a kitchen remodel permitted in 2012.

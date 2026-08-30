@@ -5,6 +5,7 @@ The parcels on Lombard Street documented here so far, from the city's address, a
 ## Documented so far
 
 - [790](790/) — A 1916 hotel, with a seismic retrofit permitted in 1995.
+- [941–953](941/) — A 1925 three-flat, with an addition permitted in 2001.
 - [948–950](948/) — A 2018 single-family house, with an addition permitted in 2002.
 - [1083](1083/) — A 1909 6-unit apartment building in the Lombard Street Historic District, with reroofing permitted in 2013.
 - [1208](1208/) — A 1927 building, with reroofing permitted in 2020.

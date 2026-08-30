@@ -4,6 +4,7 @@ The parcels on Leland Avenue documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [16](16/) — A 1900 assessor class: parking lot.
 - [325](325/) — A building, with one permit record from 2002.
 
 Pages are generated from the DataSF datasets listed in each page's

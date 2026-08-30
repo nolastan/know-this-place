@@ -4,6 +4,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [3801](3801/) — A 1989 store building, with window replacement permitted in 2016.
 - [4004–4006](4004/) — A 1900 2-unit building with a ground-floor store, with a rear addition permitted in 1989.
 - [4301](4301/) — A 1927 school building, with facade work permitted in 2011.
 - [4401–4415](4401/) — A 1924 three-flat, with reroofing permitted in 2020.

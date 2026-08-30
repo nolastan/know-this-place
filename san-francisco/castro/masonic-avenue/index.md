@@ -4,6 +4,8 @@ Every residential parcel on Masonic Avenue that the city's address, assessor and
 
 ## Documented so far
 
+- [250](250/) — A 1955 office building, with permit records from 1982 to 2001.
+- [270](270/) — An assessor class: parking lot, with a seismic retrofit permitted in 2024.
 - [1157](1157/) — A 1919 store building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2017.
 - [1214](1214/) — A 1900 1-unit flats building, with window replacement permitted in 2024.
 - [1226](1226/) — A 1900 two-flat, with fire repair permitted in 1991.

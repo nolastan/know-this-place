@@ -75,6 +75,7 @@ Every residential parcel on Capp Street that the city's address, assessor and pe
 - [521](521/) — A 1900 single-family house, with an addition permitted in 2019.
 - [540](540/) — A 1964 42-unit apartment building, with a seismic retrofit permitted in 2017.
 - [552–554](552/) — A 1900 single-family house, with plumbing work permitted in 2019.
+- [558](558/) — A 1900 office building, with facade work permitted in 2024.
 - [563](563/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [569–571](569/) — An 1890 two-flat, with deck work permitted in 2008.
 - [573](573/) — A 1900 two-flat, with foundation work permitted in 1990.

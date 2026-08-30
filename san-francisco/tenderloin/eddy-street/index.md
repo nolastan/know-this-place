@@ -25,6 +25,7 @@ The parcels on Eddy Street documented here so far, from the city's address, asse
 - [601–605](601/) — A 1956 hotel, with foundation work permitted in 2020.
 - [640–642](640/) — A 1907 32-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1999.
 - [670–678](670/) — A 1907 hotel in the Uptown Tenderloin Historic District, with an addition permitted in 2025.
+- [711](711/) — A 1979 202-unit apartment building, with deck work permitted in 2018.
 - [755](755/) — A 2003 12-unit apartment building, with electrical work permitted in 1990.
 
 Pages are generated from the DataSF datasets listed in each page's

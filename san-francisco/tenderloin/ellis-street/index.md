@@ -25,6 +25,7 @@ The parcels on Ellis Street documented here so far, from the city's address, ass
 - [468–488](468/) — A 1908 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2008.
 - [471](471/) — A 1913 12-unit apartment building in the Uptown Tenderloin Historic District, with permit records from 1983 to 2024.
 - [500–516](500/) — A 1910 38-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1997.
+- [518–530](518/) — A 1915 36-unit apartment building in the Uptown Tenderloin Historic District, with permit records from 1982 to 1989.
 - [606](606/) — A 1907 single-family house in the Uptown Tenderloin Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [615–629](615/) — A 1909 12-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1998.
 - [628–630](628/) — A 1907 3-unit building with a ground-floor store in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2004.
@@ -32,6 +33,7 @@ The parcels on Ellis Street documented here so far, from the city's address, ass
 - [646](646/) — A 1908 10-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2000.
 - [669](669/) — A 1909 14-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2002.
 - [677](677/) — A 1908 14-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen and bathroom remodel permitted in 2017.
+- [681–687](681/) — A 1927 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 2000.
 - [684](684/) — A 1913 84-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2007.
 - [706–710](706/) — A 1908 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
 - [730](730/) — A 1920 garage, with permit records from 1989 to 1999.

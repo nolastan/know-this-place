@@ -4,6 +4,7 @@ The parcels on Geary Boulevard documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [1109–1121](1109/) — A 1900 office building, with foundation work permitted in 2002.
 - [1400](1400/) — A 1969 300-unit apartment building, with window replacement permitted in 2026.
 
 Pages are generated from the DataSF datasets listed in each page's

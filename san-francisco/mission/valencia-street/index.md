@@ -17,6 +17,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [286–298](286/) — A 2000 36-unit apartment building, with plumbing work permitted in 2008.
 - [300–320](300/) — A 1908 30-unit apartment building, with window replacement permitted in 2017.
 - [301–319](301/) — A 1926 26-unit apartment building, with a seismic retrofit permitted in 2019.
+- [321–335](321/) — A 1919 office building, with foundation work permitted in 2018.
 - [400](400/) — A 1910 1-unit building with a ground-floor store, with a seismic retrofit permitted in 2003.
 - [412](412/) — A 1906 industrial building, with a rear addition permitted in 1989.
 - [418–422](418/) — A 1908 hotel, with a vertical addition permitted in 1997.
@@ -40,11 +41,13 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [590–598](590/) — A 1907 24-unit apartment building, with a seismic retrofit permitted in 2015.
 - [601](601/) — A 2003 store building, with reroofing permitted in 1990.
 - [623](623/) — A 1915 store building, with a seismic retrofit permitted in 2002.
+- [645–647](645/) — A 1915 3-unit apartment building with a ground-floor store, with an addition permitted in 2016.
 - [656–660](656/) — A 1906 four-flat, with foundation work permitted in 1996.
 - [662](662/) — An apartment building, with one permit record from 1995.
 - [666–668](666/) — An apartment building, with permit records from 1985 to 1995.
 - [670](670/) — An apartment building, with permit records from 1995 to 1998.
 - [692–694](692/) — A 2-unit building with a ground-floor store, with a rear addition permitted in 1999.
+- [696](696/) — A 1923 8-unit apartment building with a ground-floor store, with a seismic retrofit permitted in 2019.
 - [714–716](714/) — A 1923 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [715](715/) — A 1907 2-unit building with a ground-floor store.
 - [720](720/) — A 1909 2-unit building with a ground-floor store, with stair work permitted in 2002.
@@ -53,6 +56,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [740–748](740/) — A 1906 store building, with a seismic retrofit permitted in 2011.
 - [756–758](756/) — A 1909 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2016.
 - [760–762](760/) — A 1908 2-unit building with a ground-floor store, with window replacement permitted in 2012.
+- [766](766/) — A 1914 store building, with fire repair permitted in 2020.
 - [780](780/) — A 1924 store building, with stair work permitted in 2008.
 - [785–789](785/) — A 1911 3-unit building with a ground-floor store, with window replacement permitted in 2020.
 - [800–820](800/) — A 1978 20-unit apartment building, with a bathroom remodel permitted in 2017.

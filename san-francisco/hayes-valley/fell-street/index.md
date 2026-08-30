@@ -13,6 +13,7 @@ The parcels on Fell Street documented here so far, from the city's address, asse
 - [165](165/) — A 1927 industrial building, with reroofing permitted in 2001.
 - [171](171/) — A 1907 hotel, with a seismic retrofit permitted in 1995.
 - [241](241/) — A 1910 church, with a bathroom remodel permitted in 2015.
+- [261–265](261/) — A 1927 48-unit apartment building, with reroofing permitted in 1995.
 - [340](340/) — A 1923 garage in the Hayes Valley Residential Historic District, with electrical work permitted in 2022.
 - [1213–1215](1213/) — A 1909 garage, with a seismic retrofit permitted in 2002.
 - [1530](1530/) — A 2000 1-unit apartment building in the NOPA Historic District, with reroofing permitted in 2014.

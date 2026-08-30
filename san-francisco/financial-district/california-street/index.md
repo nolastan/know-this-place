@@ -20,6 +20,7 @@ The parcels on California Street documented here so far, from the city's address
 - [636–650](636/) — A 1963 office building, with stair work permitted in 2017.
 - [717–719](717/) — An office building in the Chinatown Historic District, with reroofing permitted in 2025.
 - [718](718/) — A 1907 store building in the Chinatown Historic District, with a kitchen remodel permitted in 2018.
+- [999](999/) — A 1926 hotel, with reroofing permitted in 2001.
 - [1021](1021/) — A 1911 single-family house, with reroofing permitted in 1998.
 
 Pages are generated from the DataSF datasets listed in each page's

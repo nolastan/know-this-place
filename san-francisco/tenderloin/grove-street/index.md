@@ -5,6 +5,7 @@ The parcels on Grove Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [99](99/) — The Bill Graham Civic Auditorium's block, where the Mechanics' Institute's exhibition building stood from 1882 until it burned in 1906.
+- [101](101/) — A 1900 office building in the Civic Center Historic District, with a rear addition permitted in 1987.
 - [165](165/) — An assessor class: vacant lot in the Civic Center Historic District, with permit records from 1982 to 2025.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -1,0 +1,180 @@
+{
+ "address": "15–17 Macondray Lane, San Francisco, CA 94133",
+ "path": "/san-francisco/russian-hill/macondray-lane/15/",
+ "apn": "0120029",
+ "block": "0120",
+ "lot": "029",
+ "eas_baseid": "447996",
+ "coordinates": {
+  "lat": 37.799204,
+  "lng": -122.414353
+ },
+ "address_range": "15–17",
+ "street_numbers_on_parcel": [
+  "15",
+  "17"
+ ],
+ "parcel": {
+  "year_built": 1900,
+  "units": 2,
+  "stories": 2,
+  "rooms": 10,
+  "bathrooms": 2,
+  "bedrooms": 4,
+  "lot_area_sqft": 1435,
+  "building_area_sqft": 1376,
+  "lot_depth_ft": 51.25,
+  "use": "Multi-Family Residential",
+  "property_class": "Flats & Duplex",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Russian Hill",
+  "analysis_neighborhood": "Russian Hill",
+  "property_location_raw": "0017 0015 MACONDRAY           LN0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 211312,
+  "assessed_improvement_value": 517748
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Russian Hill-Macondray Lane Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1878–1930",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "202607175174",
+   "type": "otc alterations permit",
+   "status": "filed",
+   "filed": "2026-07-17",
+   "status_date": "2026-07-17",
+   "estimated_cost": 31877,
+   "revised_cost": 0,
+   "description": "voluntary foundation repir, sectional foundation remove and replacement, voluntary crawl space drainage.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "202103247203",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2021-03-24",
+   "status_date": "2021-04-07",
+   "estimated_cost": 9000,
+   "revised_cost": 9000,
+   "description": "924 sq ft reroof. ga/polyglass.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200601202645",
+   "type": "additions alterations or repairs",
+   "status": "cancelled",
+   "filed": "2006-01-20",
+   "status_date": "2007-03-14",
+   "estimated_cost": 8000,
+   "description": "addition of 44 sq. ft. 1/2 bath on roof top adjacent to (e) 3rd story bedroom.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8503868",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1985-04-16",
+   "status_date": "1985-07-29",
+   "estimated_cost": 500,
+   "description": "replace existing railing on deck",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8404964",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1984-05-09",
+   "status_date": "1985-08-08",
+   "estimated_cost": 5000,
+   "description": "remove dry rot damaged and replace with 6x10 bean",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8404494",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1984-04-27",
+   "status_date": "1984-08-03",
+   "estimated_cost": 2000,
+   "description": "remove exist bath fixtures, install new fixtures",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8402921",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1984-03-19",
+   "status_date": "1987-02-04",
+   "estimated_cost": 40000,
+   "description": "horizontal extension - addition of addition",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MACONDRAY&street_type=LN&address_number=15",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0120029&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120&lot=029",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0120029",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41435274957054%2037.79920368520315)%27)",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1907",
+   "kind": "occupancy",
+   "description": "Home of poet Ina Coolbrith from 1907 to 1909.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

@@ -44,5 +44,6 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Thomas Avenue](thomas-avenue/) — 2 buildings, built 1900–1907.
 - [Thornton Avenue](thornton-avenue/) — 1 building, built 1910.
 - [Underwood Avenue](underwood-avenue/) — 5 buildings, built 1900–1939.
+- [Venus Street](venus-street/) — 1 building, built 1941.
 - [Whitney Young Circle](whitney-young-circle/) — 1 building.
 - [Yosemite Avenue](yosemite-avenue/) — 1 building, built 1915.

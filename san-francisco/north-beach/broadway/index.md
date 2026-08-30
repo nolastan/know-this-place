@@ -5,6 +5,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 ## Documented so far
 
 - [60](60/) — A 1902 office building in the Northeast Waterfront Historic District, with stair work permitted in 2015.
+- [100–120](100/) — A 1927 office building in the Northeast Waterfront Historic District, with plumbing work permitted in 2015.
 - [333](333/) — A 1921 office building in the Jackson Square Historic District Extension, with reroofing permitted in 1992.
 - [350](350/) — A 1914 school building, with one permit record from 2004.
 - [369](369/) — A 1912 hotel in the Jackson Square Historic District Extension, with reroofing permitted in 2008.
@@ -19,6 +20,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [501–513](501/) — A 1909 hotel, with a kitchen remodel permitted in 2013.
 - [515–523](515/) — A 1909 hotel, with a seismic retrofit permitted in 2003.
 - [527–529](527/) — A 1911 hotel, with a seismic retrofit permitted in 2000.
+- [530](530/) — An assessor class: parking lot, with permit records from 2001 to 2009.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
