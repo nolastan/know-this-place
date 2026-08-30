@@ -6,6 +6,7 @@ The parcels on Palou Avenue documented here so far, from the city's address, ass
 
 - [1397](1397/) — A 1900 church, with foundation work permitted in 2016.
 - [1510–1512](1510/) — An early Folk Victorian farmhouse from the era of the Bayview truck farms.
+- [1538–1540](1538/) — A 1900 two-flat, with plumbing work permitted in 1992.
 - [1548](1548/) — A Folk Victorian farmhouse from the era of the Bayview truck farms.
 - [1552](1552/) — An Eastlake dwelling and carriage house of 1895, recorded in the 1968 Here Today survey.
 - [1612](1612/) — A 1912 store building, with reroofing permitted in 2006.

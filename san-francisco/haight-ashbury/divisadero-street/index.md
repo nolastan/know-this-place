@@ -5,6 +5,7 @@ The parcels on Divisadero Street documented here so far, from the city's address
 ## Documented so far
 
 - [280](280/) — An 1885 single-family house, with a kitchen and bathroom remodel permitted in 2016.
+- [351–353](351/) — A 1900 16-unit apartment building in the Buena Vista North Historic District, with a bathroom remodel permitted in 2006.
 - [400](400/) — A 1958 building, with permit records from 2008 to 2022.
 - [444](444/) — A 1988 office building, with reroofing permitted in 2004.
 - [503](503/) — A 1900 two-flat in the NOPA Historic District, with chimney work permitted in 2010.

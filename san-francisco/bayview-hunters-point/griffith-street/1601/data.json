@@ -1,0 +1,101 @@
+{
+  "address": "1601 Griffith Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/griffith-street/1601/",
+  "apn": "4794011",
+  "block": "4794",
+  "lot": "011",
+  "eas_baseid": "490490",
+  "coordinates": {
+    "lat": 37.724928,
+    "lng": -122.381611
+  },
+  "parcel": {
+    "lot_area_sqft": 43600,
+    "lot_depth_ft": 45,
+    "use": "Industrial",
+    "property_class": "Industrial Gov",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1601 GRIFFITH            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012171268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-17",
+      "status_date": "2021-03-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "asbuilts to show cellular dialer removed and updated sequence of operations. generator has been removed from scope and sequence of operations. permit reference #2018-0604-0873.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806040873",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-06-04",
+      "status_date": "2021-03-25",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "provide new fire alarm system in accordance with sfpuc ww-651 project improvement documents. maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRIFFITH&street_type=ST&address_number=1601",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4794011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4794&lot=011",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4794011",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2024",
+      "kind": "art",
+      "description": "Ndebele, a sculpture, stands here.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}

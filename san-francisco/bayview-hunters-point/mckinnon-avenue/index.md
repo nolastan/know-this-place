@@ -5,6 +5,7 @@ The parcels on Mckinnon Avenue documented here so far, from the city's address, 
 ## Documented so far
 
 - [1562](1562/) — The Quinn House of 1875, one of the district's oldest dwellings.
+- [1601](1601/) — A 1959 church, with reroofing permitted in 2022.
 - [1696](1696/) — A 1923 single-family house.
 - [1701–1703](1701/) — A 1900 two dwellings on one parcel, with foundation work permitted in 2021.
 - [1711](1711/) — A 1900 single-family house, with stair work permitted in 2018.

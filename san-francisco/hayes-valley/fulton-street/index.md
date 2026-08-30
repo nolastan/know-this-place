@@ -4,6 +4,9 @@ The parcels on Fulton Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [495–497](495/) — A 1909 office building in the Hayes Valley Residential Historic District, with stair work permitted in 2019.
+- [725–785](725/) — A 1969 108-unit apartment building, with deck work permitted in 2017.
+- [762](762/) — A 1935 building, with electrical work permitted in 1984.
 - [835](835/) — A 1924 9-unit apartment building in the Alamo Square Historic District, with a seismic retrofit permitted in 2015.
 
 Pages are generated from the DataSF datasets listed in each page's

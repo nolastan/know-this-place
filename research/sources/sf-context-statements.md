@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 33 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 34 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 33 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 20: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected). All twenty loops closed. |
-| **Remaining** | ~17 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 34 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 21: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved). All twenty-one loops closed. |
+| **Remaining** | ~16 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -3579,6 +3579,56 @@ and they sit in three places, in ascending order of quality.
   Eleven paths were corrected by hand, each with the reason in
   `resolution.method`; the run took the analysis neighborhood only where the
   site already has that directory.
+- Al Williams, Christopher VerPlanck, Tim Kelley and San Francisco Planning
+  Department staff, *African American Citywide Historic Context Statement*, San
+  Francisco Planning Department, adopted February 21, 2024 (321 pp.), source id
+  `african-american-hcs`. Served from the same M-Files vault; the `SharedLinks`
+  URL in issue #62 is the citable form and the REST content path built from its
+  `accesskey` is the one that returns the PDF. Born-digital from Word, so
+  `pdftotext -layout` gives clean text and there is no OCR risk anywhere in it.
+  What the document is like:
+  - **No inventory table, no APNs, and its only two tables list people and
+    organisations without addresses.** Everything address-level is in the
+    narrative, in the per-chapter *Remaining Properties* and *Commemorative
+    Sites* lists, and in two lists at the back — the properties recommended for
+    landmark or register designation (pp. 277–278) and the candidates for a
+    historic plaque (pp. 280–281). Those four seams carry most of the yield and
+    they repeat the narrative's addresses, so read the narrative first and treat
+    the lists as the index.
+  - **Half of what it names is gone, and the document says so.** It marks each
+    address *remaining*, *existing* or *non-extant*, and the marking is
+    reliable: the 1906 fire took the nineteenth-century enclave beside
+    Chinatown and the Redevelopment Agency took most of what the Fillmore built
+    after it. 50 of this batch's 64 unresolved findings are addresses EAS no
+    longer holds, nearly all of them in the Western Addition. **A non-extant
+    address is still worth extracting** — where today's parcel still carries the
+    number, the fact publishes as site history.
+  - **It disagrees with itself constantly, and always between the narrative and
+    a list.** 1269 vs 1299 Hyde Street, 1501 vs 1601 O'Farrell, 1931 vs 1933
+    Sutter, 4004 vs 404 Third, 905 vs 1200 Stockton, 236 vs 228–248 Townsend,
+    1321 vs 1324 Oak, Cedro Avenue vs Cedro Way, landmark 213 vs 214, 1440
+    Newhall Avenue vs Street, 1751 vs 751 Carroll. Fifteen findings in this
+    batch carry a `conflict` for it. **Resolve on whichever form EAS holds and
+    state the other**; every one of these resolved cleanly that way.
+  - **It is dense with people, and most of them are the point.** Physicians,
+    attorneys, ministers, publishers, elected officials, athletes and musicians,
+    with their offices, practices, churches and homes. The line this run drew,
+    and the one to keep: take a residence only where the document itself puts it
+    on one of its public lists — *Remaining Properties*, *Commemorative Sites*,
+    or the designation recommendations — because that is the city publishing the
+    association, and the person is then a documented public figure. **Leave the
+    ones whose only role is victim**: 1145 Hollister Avenue (the home of the
+    teenager a police officer killed in 1966), 599 Bright Street (a cross burned
+    on the lawn) and 428 Sanchez Street (an apartment refused over race) are all
+    on the document's own lists and all three are withheld here.
+  - **Two of its addresses cannot be placed at all, for opposite reasons.** The
+    whole Presidio is one assessor parcel, so the Presidio Social Club at 563
+    Ruger Street and the Officers Club at 50 Moraga Avenue a mile away resolve
+    to the same parcel and cannot be told apart. And EAS puts 20 Annie Street on
+    the Monadnock Building's parcel while the document puts the Dawn Club in a
+    basement by the Palace Hotel's service entrance across the street; nothing
+    in the text decides between them.
+
 - **Verified:** 2026-08-29 (New Deal statement: read all 244 pages — the
   Depression and First New Deal chapters, the WPA and PWA chapters with their
   thirteen project tables, the USHA public housing chapter, the WPA fine arts
@@ -3602,3 +3652,30 @@ and they sit in three places, in ascending order of quality.
   document is read in full and nothing in it is outstanding. Its subject overlaps
   the Modern Architecture and Landscape Design statement (issue #81) and the
   Modernistic Styles statement (issue #85), neither of which has been read.)
+- **Verified:** 2026-08-29 (African American citywide statement: read all 321
+  pages — the introduction and its list of the eleven designated landmarks, all
+  eight historic-overview chapters from the Mexican era to the 2018 epilogue
+  with their per-chapter *Remaining Properties* and *Commemorative Sites* lists,
+  the evaluation guidelines, the goals and recommendations with the designation
+  and plaque-candidate lists, the bibliography, and both appendices, which list
+  people and organisations and hold no addresses. Two scans were run over every
+  page, one for named streets and one for the ordinal-numbered streets the first
+  cannot see. **248 findings, 180 published on 174 pages**, 117 of them created
+  by this run, across 28 neighborhood directories with `bayview-hunters-point`
+  (48 facts on 47 pages), `western-addition` (23 on 23) and `pacific-heights`
+  (19 on 17) at the head. **15 conflicts are stated on pages and 1 construction
+  date disagrees with the assessor** — 111 Raymond Avenue, 1926 in the document
+  against the roll's 1922. Five resolved findings were declined: three withheld
+  on privacy grounds (1145 Hollister Avenue, 599 Bright Street, 428 Sanchez
+  Street, each naming a private individual as a victim), St. Francis Square,
+  whose parcel has no row on the secured roll, and 2159 Golden Gate Avenue,
+  where the page already carries the fact from the Board of Supervisors'
+  landmark-initiation resolution and the renderer cannot reproduce that page.
+  Sixty-four never reached a parcel: 50 addresses EAS no longer holds, 8
+  condominiums, 2 in the Presidio's single parcel, 1 on a street the city no
+  longer registers (Farren Street), 1 retired parcel (700 Brotherhood Way), 1
+  EAS holds without a parcel, and 20 Annie Street. Coverage note: this document
+  is read in full and nothing in it is outstanding. Its subject overlaps the
+  LGBTQ+ statements (issues #63, #64, #65) on Tenderloin and Fillmore addresses,
+  and the New Deal statement, already read, on Aquatic Park and Westside
+  Courts.)

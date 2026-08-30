@@ -7,6 +7,7 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [26–50](26/) — A building, with a seismic retrofit permitted in 1993.
 - [214](214/) — A building, with reroofing permitted in 2020.
 - [540–590](540/) — A 1999 office building, with reroofing permitted in 2012.
+- [601](601/) — A 1983 garage, with window replacement permitted in 2022.
 - [636](636/) — A building, with permit records from 1990 to 1993.
 - [690](690/) — A 1910 store building, with fire repair permitted in 2011.
 - [700–714](700/) — A garage, with window replacement permitted in 1985.

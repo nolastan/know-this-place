@@ -4,6 +4,7 @@ The parcels on La Salle Avenue documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [1641](1641/) — A 1960 office building, with plumbing work permitted in 2016.
 - [1649–1651](1649/) — A 1900 two-flat, with fire repair permitted in 2021.
 - [1702](1702/) — A 1900 single-family house, with one permit record from 1983.
 - [1704](1704/) — A 1900 single-family house.

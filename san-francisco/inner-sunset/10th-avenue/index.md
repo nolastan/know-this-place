@@ -26,6 +26,7 @@ The parcels on 10th Avenue documented here so far, from the city's address, asse
 - [1551](1551/) — A 1899 Queen Anne/Classical Revival blend.
 - [1554–1556](1554/) — A 1907-1908 building, built by William Gilmour.
 - [1575](1575/) — A 1901 building.
+- [1608](1608/) — A 1914 single-family house, with deck work permitted in 2005.
 - [1620](1620/) — A 1900 building, built by Thomas O'Connor.
 - [1623](1623/) — A 1902 Shingle, built by George Schrank.
 - [1627](1627/) — A 1897-1898 Queen Anne.

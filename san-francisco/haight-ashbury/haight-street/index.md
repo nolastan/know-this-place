@@ -8,6 +8,7 @@ The parcels on Haight Street documented here so far, from the city's address, as
 - [1250](1250/) — A 1914 40-unit apartment building in the Buena Vista North Historic District, with reroofing permitted in 2020.
 - [1500–1512](1500/) — A 1910 store building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2019.
 - [1524–1528 Haight Street](1524/) — Flats over a store of 1900 in the Counterculture Historic District, tied — disputedly — to Jimi Hendrix.
+- [1721–1737](1721/) — A 1910 theater, with a kitchen remodel permitted in 2012.
 - [1801](1801/) — A 1914 store building, with a rear addition permitted in 1992.
 
 Pages are generated from the DataSF datasets listed in each page's

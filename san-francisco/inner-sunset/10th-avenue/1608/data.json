@@ -1,0 +1,179 @@
+{
+  "address": "1608 10th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/10th-avenue/1608/",
+  "apn": "1934041A",
+  "block": "1934",
+  "lot": "041A",
+  "eas_baseid": "324394",
+  "coordinates": {
+    "lat": 37.758202,
+    "lng": -122.466735
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1772,
+    "building_area_sqft": 1660,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1608 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1011394,
+    "assessed_improvement_value": 433448,
+    "last_sale_date": "2007-12-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410102741",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-10",
+      "status_date": "2024-12-30",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801172740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-17",
+      "status_date": "2008-04-02",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace tile and fixtures in bathroom, including sink and toilet. no change to walls or doors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705040457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-04",
+      "status_date": "2007-11-08",
+      "estimated_cost": 5890,
+      "revised_cost": 5890,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601111902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-11",
+      "status_date": "2006-03-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "minor revision /same footprint 200501072703/change location of bath room at 1st floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501072703",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-07",
+      "status_date": "2006-03-06",
+      "estimated_cost": 31000,
+      "revised_cost": 31000,
+      "description": "200 sq ft kchn/bth remodel/rebuild 24 sq ft deck & stairs onto new 77 sq ft deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113895",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-05",
+      "status_date": "1991-10-04",
+      "estimated_cost": 2000,
+      "description": "revision to 9113472-replace front stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113496",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-31",
+      "status_date": "1991-09-13",
+      "estimated_cost": 980,
+      "description": "re-tile existing bathroom at first floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-30",
+      "status_date": "1991-10-04",
+      "estimated_cost": 2500,
+      "description": "repair front brick veneer & stairway. remove rotten members",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1991–2024",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=1608",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1934041A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1934&lot=041A",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1934041A",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1950",
+      "kind": "site history",
+      "description": "Home of Terry Francois, the civil rights attorney who won Banks v. the Housing Authority of San Francisco and later became the city's first African American supervisor. Identified in 2024 as eligible for local landmark, California Register or National Register designation.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}

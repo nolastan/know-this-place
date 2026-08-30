@@ -5,6 +5,7 @@ The parcels on Larkin Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [2028–2030](2028/) — A 1907 three-flat, with a kitchen remodel permitted in 2011.
+- [2041](2041/) — A 1907 church, with a seismic retrofit permitted in 2003.
 - [2101](2101/) — A 1907 store building, with permit records from 1991 to 2020.
 - [2121–2125](2121/) — A 1907 three-flat, with foundation work permitted in 2006.
 - [2505–2507](2505/) — A 1926 three-flat, with reroofing permitted in 2007.

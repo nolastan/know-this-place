@@ -1,0 +1,130 @@
+{
+  "address": "6221 3rd Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/6221/",
+  "apn": "4941023",
+  "block": "4941",
+  "lot": "023",
+  "eas_baseid": "373339",
+  "coordinates": {
+    "lat": 37.722029,
+    "lng": -122.395594
+  },
+  "parcel": {
+    "year_built": 1939,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 2369,
+    "building_area_sqft": 2138,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 6221 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 130008,
+    "assessed_improvement_value": 130008
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605201637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-05-20",
+      "status_date": "2026-07-24",
+      "estimated_cost": 1,
+      "revised_cost": 500,
+      "description": "to comply with nov 202654690: remove showers installed without a permit and restore to last permitted condition on 1st and 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208274974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-27",
+      "status_date": "2002-09-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2001/10/17/1086 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110171086",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-17",
+      "status_date": "2002-04-11",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "renew 2000/05/26/1114.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005261114",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-05-26",
+      "status_date": "2002-04-11",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "minor repair to extg lease space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=6221",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4941023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4941&lot=023",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4941023",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2024",
+      "kind": "occupancy",
+      "description": "Greater Abundant Life Church of God in Christ, one of the concentration of churches on and around the Third Street corridor in the Bayview.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}
