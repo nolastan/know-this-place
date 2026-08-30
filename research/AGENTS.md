@@ -670,3 +670,35 @@ The mechanics:
   "Intact small-scale industrial building with finely executed brick cornice"
   as an occupant and put it on a page. The leading word is the tell: an
   adjective at the head of a note means the surveyor is describing, not naming.
+- **A privacy filter built from role words misses the role it doesn't know.**
+  `NAME_HINT` knew owner, applicant, architect, engineer, contractor, tenant,
+  landlord and four honorifics, and did not know **inspector** — the one label
+  DBI uses that no other pattern fires on, since "per inspector adwin lau" has
+  no firm suffix, no "one-stop" prefix and no bare preposition. Two dozen named
+  building inspectors were sitting on published pages when this run happened to
+  grep for them. *A role-word list is a list of the roles somebody thought of;
+  grep the corpus for the shape, not for the words you already have.*
+- **And it misses the punctuation, not just the designator.**
+  `generalize_units` handles "unit #4" and now "unit a", but died on
+  **"unit #:233"** — a colon between the "#" and the number. Widening it is
+  safe only there: a bare "unit:" would read the list marker in "one unit: 1.
+  rehabilitate ..." as a designator. Third lesson in this family, same moral as
+  the two above.
+- **A renderer that stops crashing has not started reproducing.** Fixing the
+  `TypeError` that killed the "Street numbers" row on a hand-authored page did
+  not make the renderer produce that page — it made it produce a *worse* one,
+  quietly, dropping the hand-written description and printing an
+  `address_range` dict raw into the breadcrumb. `scripts/render-backlog.txt` is
+  what stands between that page and a bulk sweep. *After fixing a render crash,
+  read the diff before you trust the page: a loud failure is safer than a silent
+  rewrite, and the page may need `"rendered": false` rather than a fix.*
+- **A document's own recommendation is a fact about the building, not about the
+  document.** "The statement recommends the property for landmark designation"
+  names the source in the page body, which the publishing rules forbid, and 47
+  descriptions in one batch were written that way before anyone noticed —
+  because when the source's judgement *is* the finding, attributing it feels
+  like accuracy. It isn't: state it impersonally ("Identified in 2024 as
+  eligible for local landmark, California Register or National Register
+  designation") and let the Sources footer say who. The one place a source may
+  be named is `.unknowns`, where a disagreement cannot be stated without saying
+  who disagrees — and there it needs its full name, not "the statement".
