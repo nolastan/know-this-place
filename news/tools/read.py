@@ -22,6 +22,7 @@ building, and the module's evidence bar is met by a person reading the story.
 from __future__ import annotations
 
 import argparse
+import html as html_mod
 import json
 import re
 import sys
@@ -30,8 +31,9 @@ import urllib.parse
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from poll import (NUMBERED_ADDRESS, bare_addresses, fetch, looks_like_transit,  # noqa: E402
-                  page_index, parse_rss, plausible_street, street_vocabulary)
+from poll import (NUMBERED_ADDRESS, bare_addresses, clean_url, fetch,  # noqa: E402
+                  fetch_landed, looks_like_transit, page_index, parse_rss,
+                  plausible_street, street_vocabulary)
 
 ROOT = Path(__file__).resolve().parent.parent
 REPO = ROOT.parent
@@ -42,6 +44,18 @@ STRIP = re.compile(r"<(script|style|nav|aside|footer|header|form)\b.*?</\1>",
                    re.S | re.I)
 TAG = re.compile(r"<[^>]+>")
 SPACE = re.compile(r"[ \t\r\f\v]+")
+
+# What the article calls itself. A feed's own title is not always the headline:
+# the sf-chronicle feed is a Bluesky account, so its title is the social post's
+# teaser sentence and its link is a bit.ly shortlink. The headline is the only
+# text of an outlet's that reaches a page and the URL is the citation, so both
+# have to come from the article rather than from the post about it. og:title is
+# the display headline on every outlet measured here, agreeing with the page's
+# own h1; the JSON-LD "headline" is often a different, search-tuned string, so
+# it is not consulted.
+META = re.compile(r"<meta\b[^>]*>", re.I)
+ATTR = re.compile(r"""(\w[\w:.-]*)\s*=\s*["']([^"']*)["']""")
+CANONICAL = re.compile(r"""<link\b[^>]*rel=["']canonical["'][^>]*>""", re.I)
 
 
 def to_text(body: bytes) -> str:
@@ -54,6 +68,33 @@ def to_text(body: bytes) -> str:
                          ("&ldquo;", '"'), ("&rdquo;", '"'), ("&#8216;", "'")):
             text = text.replace(entity, char)
     return "\n".join(SPACE.sub(" ", line).strip() for line in text.split("\n"))
+
+
+def unescape(raw: str) -> str:
+    return html_mod.unescape(raw).strip()
+
+
+def self_description(body: bytes) -> tuple[str, str]:
+    """(the article's own headline, its own URL) — either may be "".
+
+    Read from the document's metadata rather than its body: a page's <title> is
+    written for search results and its <h1> may be any of a dozen newsletter
+    promos, but og:title is the headline the outlet displays.
+    """
+    page = body.decode("utf-8", "replace")[:400_000]
+    headline = url = ""
+    for tag in META.finditer(page):
+        attrs = {k.lower(): v for k, v in ATTR.findall(tag.group(0))}
+        key = (attrs.get("property") or attrs.get("name") or "").lower()
+        if not headline and key in ("og:title", "twitter:title"):
+            headline = unescape(attrs.get("content", ""))
+        if not url and key == "og:url":
+            url = unescape(attrs.get("content", ""))
+    if not url:
+        link = CANONICAL.search(page)
+        if link:
+            url = unescape(dict(ATTR.findall(link.group(0))).get("href", ""))
+    return headline, url
 
 
 def sentence_around(text: str, start: int, end: int, span: int = 220) -> str:
@@ -171,24 +212,41 @@ def syndicated(feed_id: str) -> dict[str, str]:
     return out
 
 
-def article_text(url: str, feed: str) -> tuple[str, str]:
-    """(text, how it was got). The page first; the feed's own copy if it refuses."""
+def article_text(url: str, feed: str) -> tuple[str, str, str, str]:
+    """(text, how it was got, the article's own headline, its own URL).
+
+    The page first; the feed's own copy if it refuses. The last two are empty
+    when the page could not be read at all — an outlet that answers 403 tells us
+    nothing about itself, and the feed's title is all there is.
+    """
     try:
-        text = to_text(fetch(url, tries=2))
+        body, landed = fetch_landed(url, tries=2)
+        headline, canonical = self_description(body)
+        canonical = canonical or clean_url(landed)
+        text = to_text(body)
         if len(text) > 400:
-            return text, "page"
+            return text, "page", headline, canonical
     except Exception as exc:  # noqa: BLE001 — a refusal is a result, not a crash
         fallback = syndicated(feed).get(url)
         if fallback:
-            return fallback, "feed"
-        return "", f"FAILED: {exc}"
-    return syndicated(feed).get(url, text), "feed" if syndicated(feed).get(url) else "page"
+            return fallback, "feed", "", ""
+        return "", f"FAILED: {exc}", "", ""
+    return (syndicated(feed).get(url, text),
+            "feed" if syndicated(feed).get(url) else "page", headline, canonical)
+
+
+def same_text(a: str, b: str) -> bool:
+    """Two strings that differ only in typography are the same headline."""
+    squash = str.maketrans({"\u2018": "'", "\u2019": "'", "\u201c": '"',
+                            "\u201d": '"', "\u2013": "-", "\u2014": "-"})
+    return (" ".join(a.translate(squash).lower().split())
+            == " ".join(b.translate(squash).lower().split()))
 
 
 def report(url: str, title: str, feed: str, streets: set[str], pages: dict,
            only_pages: bool) -> tuple[int, int]:
     """(addresses found, of which already have a page)."""
-    text, how = article_text(url, feed)
+    text, how, headline, canonical = article_text(url, feed)
     if not text:
         print(f"\n[{feed}] {title}\n  {url}\n  {how}")
         return 0, 0
@@ -198,6 +256,15 @@ def report(url: str, title: str, feed: str, streets: set[str], pages: dict,
         return 0, 0
     print(f"\n[{feed}] {title}")
     print(f"  {url}")
+    # Printed only when the feed got it wrong, so a run over well-behaved feeds
+    # looks exactly as it did before. When it does print, these two lines are
+    # what the citation must be built from — see ../AGENTS.md, "Reading an
+    # article": the headline is published verbatim and the link is the
+    # attribution, so neither may come from a social post about the story.
+    if headline and not (title and same_text(headline, title)):
+        print(f"  headline: {headline}")
+    if canonical and canonical != url:
+        print(f"  article:  {canonical}")
     if not hits:
         print("  no street address in the article text")
         return 0, 0

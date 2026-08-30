@@ -72,6 +72,12 @@ python3 scripts/validate.py
 work order: an address with no page is a page to create, and `--only-pages`
 exists to narrow a long backlog by hand, not to decide which stories matter.
 
+It also prints a `headline:` and an `article:` line when the feed's own title
+and link disagree with the article's — which is what a social feed always does,
+since it carries a post about the story rather than the story. Cite those two
+lines when they appear: the headline goes on the page verbatim, and the link is
+the attribution.
+
 Agents working in Claude Code have a `/news` skill
 ([../.claude/skills/news/SKILL.md](../.claude/skills/news/SKILL.md)): `/news` on
 its own does a whole run — finding the branch a previous run left, clearing

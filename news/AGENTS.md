@@ -190,6 +190,20 @@ copy.**
   syndicates the whole story.** `read.py` falls back to the feed's own copy.
   That text stays in memory: source text is never committed, per
   research/AGENTS.md → "Corpora on disk".
+- **A feed's title is not always the headline, and its link is not always the
+  article.** A social feed carries a post *about* a story: the sf-chronicle feed
+  is a Bluesky account, so its title is a teaser sentence and its link a bit.ly
+  shortlink. Neither can be published — the headline is the only text of theirs
+  a page carries, and a shortlink is not a citation anyone can check. So
+  `read.py` reads the article's own `og:title` and canonical URL and prints them
+  as `headline:` and `article:` **whenever they differ from what the feed said**;
+  build the citation from those two lines when they appear, and from the feed
+  when they do not. A run over well-behaved feeds prints neither.
+
+  This cost the module three findings once. The run of 2026-08-28 extracted
+  them, resolved them, and then could not publish any of them, because it had a
+  teaser where the headline goes; they sat pending for two days until a run read
+  the headlines by hand. Nothing is expected to need that again.
 - **Never let a story's own words about a person into the repo.** See below.
 
 ## Privacy — the hardest rule here

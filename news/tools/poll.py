@@ -60,18 +60,25 @@ SEEN_KEPT = 300
 # Fetching
 # --------------------------------------------------------------------------- #
 
-def fetch(url: str, timeout: int = 30, budget: int = 90, tries: int = 3) -> bytes:
-    """One GET, retried, against a total time budget.
+def fetch_landed(url: str, timeout: int = 30, budget: int = 90,
+                 tries: int = 3) -> tuple[bytes, str]:
+    """(body, the URL it actually landed on). One GET, retried, against a budget.
 
     urllib's timeout is per-read, so a response that trickles never fires it and
     the run hangs. Read in chunks against a wall clock instead — the same
     caution research/tools/resolve_eas.py takes with DataSF.
+
+    The landing URL is not a detail: the sf-chronicle feed is a Bluesky account
+    and every link in it is a bit.ly shortlink, which is not a citation anyone
+    can check. urllib followed the redirect all along; this returns where it
+    went, so the reader can cite the article's own address.
     """
     for attempt in range(tries):
         try:
             deadline = time.time() + budget
             req = urllib.request.Request(url, headers=UA)
             with urllib.request.urlopen(req, timeout=timeout) as r:
+                landed = r.geturl()
                 buf = bytearray()
                 while True:
                     if time.time() > deadline:
@@ -80,7 +87,7 @@ def fetch(url: str, timeout: int = 30, budget: int = 90, tries: int = 3) -> byte
                     if not chunk:
                         break
                     buf.extend(chunk)
-            return bytes(buf)
+            return bytes(buf), landed
         except urllib.error.HTTPError as exc:
             # A 404 is an answer, not a transport failure. Retrying one costs
             # 25s of sleeps to be told the same thing three times, and the page
@@ -94,7 +101,12 @@ def fetch(url: str, timeout: int = 30, budget: int = 90, tries: int = 3) -> byte
             print(f"    retry {attempt + 1}/{tries - 1} in {wait}s: {exc}",
                   file=sys.stderr, flush=True)
             time.sleep(wait)
-    return b""
+    return b"", url
+
+
+def fetch(url: str, timeout: int = 30, budget: int = 90, tries: int = 3) -> bytes:
+    """Just the body, for the callers that do not care where it came from."""
+    return fetch_landed(url, timeout, budget, tries)[0]
 
 
 # --------------------------------------------------------------------------- #
