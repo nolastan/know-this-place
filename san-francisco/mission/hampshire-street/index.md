@@ -6,6 +6,8 @@ Every residential parcel on Hampshire Street that the city's address, assessor a
 
 - [185–191](185/) — A 1907 4-unit apartment building, with foundation work permitted in 2000.
 - [445](445/) — A 1924 industrial building, with permit records from 1991 to 1993.
+- [500–530](500/) — A 1940 11-unit apartment building with a ground-floor store, with a vertical addition permitted in 1989.
+- [540](540/) — A 1930 industrial building, with electrical work permitted in 1996.
 - [620](620/) — A 1900 single-family house, with a rear addition permitted in 2007.
 - [622–624](622/) — A 1900 single-family house, with garage work permitted in 2016.
 - [626](626/) — A 1900 two-flat, with reroofing permitted in 2010.
@@ -199,6 +201,7 @@ Every residential parcel on Hampshire Street that the city's address, assessor a
 - [1392](1392/) — A 1927 two-flat.
 - [1394](1394/) — A 1930 single-family house, with reroofing permitted in 1990.
 - [1450](1450/) — A 1923 single-family house, with facade work permitted in 1994.
+- [1451](1451/) — A 1900 assessor class: vacant lot, with one permit record from 2006.
 - [1456](1456/) — A 1923 single-family house, with an addition permitted in 2014.
 - [1462](1462/) — A 1923 single-family house, with one permit record from 1991.
 - [1468](1468/) — A 1923 single-family house, with reroofing permitted in 1993.

@@ -78,6 +78,7 @@ which local histories treat as its own neighborhood.
 - [Loma Vista Terrace](loma-vista-terrace/) — 5 buildings, built 1916–1951.
 - [Lower Terrace](lower-terrace/) — 25 buildings, built 1900–1999.
 - [Market Street](market-street/) — 117 buildings, built 1875–2008; 16 in the Upper Market Street Commercial Historic District.
+- [Marview Way](marview-way/) — 1 building; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Masonic Avenue](masonic-avenue/) — 1 building, built 2007.
 - [Mono Street](mono-street/) — 1 building, built 1908.
 - [Noe Street](noe-street/) — 144 buildings, built 1880–2014; 25 in the Duboce Triangle Historic District.

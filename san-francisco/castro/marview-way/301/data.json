@@ -1,0 +1,128 @@
+{
+  "address": "301–315 Marview Way, San Francisco, CA 94131",
+  "path": "/san-francisco/castro/marview-way/301/",
+  "apn": "2719C011",
+  "block": "2719C",
+  "lot": "011",
+  "eas_baseid": "488101",
+  "coordinates": {
+    "lat": 37.756529,
+    "lng": -122.450331
+  },
+  "address_range": "301–315",
+  "street_numbers_on_parcel": [
+    "301",
+    "315"
+  ],
+  "parcel": {
+    "lot_area_sqft": 877995,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Midtown Terrace",
+    "analysis_neighborhood": "Twin Peaks",
+    "property_location_raw": "0000 0241 PALO ALTO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Auxiliary Water Supply System (Discontiguous)",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1908–1964",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M26426",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-17",
+      "status_date": "2004-02-17",
+      "revised_cost": 0,
+      "description": "house number-temporary trailer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M26427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-17",
+      "status_date": "2004-02-17",
+      "revised_cost": 0,
+      "description": "house number- temporary trailer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404620",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-05-02",
+      "status_date": "1985-10-22",
+      "estimated_cost": 267000,
+      "description": "construct",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARVIEW&street_type=WAY&address_number=301",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719C011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719C&lot=011",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2719C011",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4503314151761%2037.756528749623136)%27)",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "new-deal-context-statement",
+      "name": "Christopher VerPlanck and Donna Graves, San Francisco New Deal Historic Context Statement: Rebuilding the City, 1933 to 1943, San Francisco Planning Department and San Francisco Heritage, adopted March 1, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "San Francisco New Deal Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1935–1941",
+      "kind": "public works",
+      "description": "The Works Progress Administration repaired leaks and waterproofed the reservoir here, cut new expansion joints and painted and cleaned it.",
+      "source": "new-deal-context-statement"
+    }
+  ]
+}

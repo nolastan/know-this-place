@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 32 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 33 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 32 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 19: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved). All nineteen loops closed. |
-| **Remaining** | ~18 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 33 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 20: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected). All twenty loops closed. |
+| **Remaining** | ~17 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -456,6 +456,17 @@ document you are about to mine.
     `pdftotext -layout` reads it cleanly. It is the companion volume to the Large
     Apartment Buildings statement and the two cross-reference each other. See "The
     Flats and Small Apartment Buildings statement" below.
+  - Christopher VerPlanck and Donna Graves, *San Francisco New Deal Historic
+    Context Statement: Rebuilding the City, 1933 to 1943*, San Francisco Planning
+    Department and San Francisco Heritage, adopted 1 March 2023 (244 pp.), source
+    id `new-deal-context-statement`. SF Planning lists it as "San Francisco New
+    Deal – Rebuilding the City: 1933 to 1943 (Adopted 2023)". Same M-Files vault,
+    and the REST content hash is again the `accesskey` from the
+    `SharedLinks.aspx` URL —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7/content`
+    — while the `SharedLinks.aspx` form is what a page cites. Born-digital
+    (Acrobat PDFMaker from Word); `pdftotext -layout` reads its thirteen project
+    tables cleanly with no OCR damage. See "The New Deal statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -3493,3 +3504,101 @@ architectural period, so its buildings are scattered from Seacliff to Bayview.
   next batch, and it is the larger half of the document by rows and the smaller
   half by information: its year column is the assessor's, so what it adds beyond
   the forms is UMB status and the 1990 rating stack.)
+
+**The New Deal statement is a citywide thematic statement with no appendix
+inventory, and almost everything it pins to a street number is civic.** 244 pages
+on what the CWA, SERA, WPA, PWA, USHA and the federal art programmes built in San
+Francisco between 1933 and 1943 — schools, playgrounds, libraries, firehouses,
+parks, public housing and murals. **126 distinct numbered addresses in 244 pages**,
+and they sit in three places, in ascending order of quality.
+- **The thirteen project tables are the bulk of it** and the only place most
+  projects appear: WPA street, bridge-approach, Parks Commission, Recreation
+  Commission, building and infrastructure projects; PWA school, federal and city
+  buildings; PWAP, SERA, FAP and Treasury Section art projects. Each row is a
+  facility name, an address and a scope of work. `pdftotext -layout` reads them
+  cleanly, but the *reflowed* (non-layout) text is what a regular-expression scan
+  should run over, because the layout form breaks a wrapped address across two
+  lines ("Bay View Park, 1001 / Leconte Avenue") and the reflow joins it. Read
+  both.
+- **A project table has no dates in it, and that is the trap this document
+  sets.** Its rows carry a WPA project number, not a year, so a table row is a
+  *dated fact only to the span of the agency*. Fifty-nine findings in this batch
+  were first written with a year that the document does not state anywhere, and
+  every one had to be corrected to `1935–1941` before publication. See the
+  cross-cutting note in [../AGENTS.md](../AGENTS.md#what-weve-learned-the-hard-way).
+- **The per-building narratives are the good material.** Every PWA school, the
+  three federal buildings and the five housing projects get one to three pages
+  with the architects named, the phases dated and the cost given: Marina Junior
+  High School by George W. Kelham, John Bakewell Jr. and William P. Day
+  (academic building 1935, shops and heating plant 1937, auditorium 1939);
+  Abraham Lincoln High School by Timothy Pflueger with three assisting
+  architects, dedicated 22 September 1940; the U.S. Mint by the Office of the
+  Supervising Architect under Gilbert Stanley Underwood, built by Clinton
+  Construction Co. from August 1935 to March 1937.
+- **The registration and recommendation lists at the back are per-address and
+  dated by adoption.** PDF pages 223 and 225 list the National Register and city
+  landmark properties with their addresses and landmark numbers; pages 230–231
+  list the properties the authors recommend for landmark designation. Sixteen of
+  those recommendations are published here as a dated 2023 fact.
+- **A large share of what it names is one parcel.** Golden Gate Park is APN
+  1700001, so Kezar Stadium, the Strybing Arboretum, the Beach Chalet and the
+  Police Training Academy at 6101 Fulton Street all resolve to the same page —
+  and the Bernal Heights branch library and the Bernal Recreation Center share
+  APN 5707027, as the Sunshine School's two addresses share 4273008. **Key the
+  write on the APN, not the path**; four findings had to be moved after the
+  publication pass. The parcel-level facts read perfectly well together once
+  they are there, because each description names its own building.
+- **Its parks and playgrounds resolve worse than anything read here so far.**
+  Twenty-six of the thirty-seven unresolved findings are addresses EAS no longer
+  holds, and most of those are the city's own: McLaren Park at 100 John F.
+  Shelley Drive, Lombard Park at 2299 Hyde Street, the Chinese Playground at 830
+  Sacramento Street, the Dupont tennis courts at 336 31st Avenue. A civic
+  address the city itself printed in 1990s-era documents is not necessarily an
+  address the city's registry still carries.
+- **It contradicts itself on five addresses**, three of them published as
+  disagreements: the Sunshine School is 2728 Bryant Street in the narrative and
+  1325 Florida Street in the landmark list; Glen Park Elementary is 151 Lippard
+  Street in the project table and 151 Lippard Avenue in the recommendations;
+  James Denman is 241 Oneida Street and also "the southeast corner of Oneida and
+  Delano avenues". The other two are unresolved on both readings — the Public
+  Welfare Building at 355 and 335 Fell Street, and Woods Hall Annex at 55 Laguna
+  Street and 215 Haight Street.
+- **Its artists are a category the other statements do not have.** Twenty-six
+  Coit Tower murals, the Aquatic Park bathhouse programme, the George Washington
+  High School cycle, the Beach Chalet, the Mothers Building, Toland Hall. These
+  are creators of works, the same class as an architect, and they are named on
+  pages with their works and dates. The people the document names who are *not*
+  publishable are the relief workers, applicants and tenants, and it names many.
+- **`--area-from-nhood` is right for a third of this batch and wrong for the
+  rest**, which is what a citywide civic corpus does. It correctly moves
+  Potrero Hill's playgrounds and schools out of `mission-bay`, the Portola's out
+  of `bayview-hunters-point`, Westside Courts into `japantown`, the zoo and
+  Harding Park into `lakeshore`, and the Palace of Fine Arts into `marina` — but
+  it also files 200 Powell Street under `financial-district-south-beach` and
+  Golden Gate Park under a `golden-gate-park` directory this repo does not have.
+  Eleven paths were corrected by hand, each with the reason in
+  `resolution.method`; the run took the analysis neighborhood only where the
+  site already has that directory.
+- **Verified:** 2026-08-29 (New Deal statement: read all 244 pages — the
+  Depression and First New Deal chapters, the WPA and PWA chapters with their
+  thirteen project tables, the USHA public housing chapter, the WPA fine arts
+  chapter and its four art tables, the Golden Gate International Exposition and
+  preparations-for-war chapters, the evaluation of New Deal design, the
+  registration requirements, the preservation recommendations with their
+  registered and recommended lists, and the appendix, which is an agency glossary
+  and holds no addresses. **138 findings, 99 published on 76 pages**, 54 of them
+  created by this run, across 30 neighborhood directories with `mission` (8
+  facts), `outer-richmond` (11 on 5 pages) and `tenderloin` (5) at the head.
+  **4 conflicts are stated on pages and 1 construction date disagrees with the
+  assessor** — Glen Park Elementary, 1935 in the document against the roll's
+  1934. Two resolved findings were declined: the Sunshine School's second
+  address, which is the same parcel as the first, and the firehouse contracted
+  for at 52 Waller Street, which the document says was never built and which
+  does not warrant a page. Thirty-seven never reached a parcel: 26 addresses EAS
+  no longer holds, 5 condominiums, 3 ranges now split across parcels, 2 that EAS
+  holds without a parcel, and South Airport Boulevard, which is in San Mateo
+  County. Three more were rejected outright as outside the city — the Cow Palace
+  in Daly City, Mills Field, and Sharp Park in Pacifica. Coverage note: this
+  document is read in full and nothing in it is outstanding. Its subject overlaps
+  the Modern Architecture and Landscape Design statement (issue #81) and the
+  Modernistic Styles statement (issue #85), neither of which has been read.)

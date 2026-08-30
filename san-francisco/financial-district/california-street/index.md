@@ -16,6 +16,7 @@ The parcels on California Street documented here so far, from the city's address
 - [345](345/) — A 1987 office building, with plumbing work permitted in 2023.
 - [555](555/) — The 1969 Bank of America tower; its plaza sculpture is the one called the Banker's Heart.
 - [600–628](600/) — Where a set of Lee Lawrie's 1930s bronze lift doors, from Harrisburg, ended up on Sacramento Street.
+- [633](633/) — A 1953 assessor class: vacant lot, with garage work permitted in 2017.
 - [636–650](636/) — A 1963 office building, with stair work permitted in 2017.
 - [717–719](717/) — An office building in the Chinatown Historic District, with reroofing permitted in 2025.
 - [718](718/) — A 1907 store building in the Chinatown Historic District, with a kitchen remodel permitted in 2018.

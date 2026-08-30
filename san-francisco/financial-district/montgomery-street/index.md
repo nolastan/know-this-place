@@ -5,6 +5,7 @@ The parcels on Montgomery Street documented here so far, from the city's address
 ## Documented so far
 
 - [1](1/) — The Crocker Bank Building of 1908, an Article 10 landmark, at the address where Japanese merchants took a store in 1871.
+- [130](130/) — A 1930 office building, with reroofing permitted in 1988.
 - [400](400/) — The Kohl Building of 1901, an Article 10 landmark on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.
 - [420](420/) — A 1959 office tower on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.
 - [451–465](451/) — A 1907 office building, with a seismic retrofit permitted in 1993.

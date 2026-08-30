@@ -6,6 +6,7 @@ The parcels on Sansome Street documented here so far, from the city's address, a
 
 - [615](615/) — A 1907 store building in the Jackson Square Historic District, with a seismic retrofit permitted in 1997.
 - [617–619](617/) — A 1907 office building in the Jackson Square Historic District, with plumbing work permitted in 2018.
+- [630](630/) — A 1941 office building, with permit records from 2000 to 2002.
 - [701](701/) — A 1900 office building in the Jackson Square Historic District, with a seismic retrofit permitted in 2025.
 - [704](704/) — A 1907 office building, with plumbing work permitted in 2021.
 - [705–729](705/) — A 1906 store building in the Jackson Square Historic District, with reroofing permitted in 2012.

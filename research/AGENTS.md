@@ -393,6 +393,24 @@ rather than just accumulate.
   the site honest about parcels also holds back the most-documented buildings,
   so say which ones in the dossier rather than letting them vanish into a
   count.*
+- **A project table without a date column is not a dated record.** The New Deal
+  statement lists hundreds of WPA projects by facility, address and scope of
+  work, with a project *number* where a year would go. Fifty-nine findings in
+  that batch were first written with a year the document never states — 1935,
+  because that is when the agency started — and every one had to be corrected to
+  the agency's own span before publication. The evidence bar wants *a date, a
+  street number and a citation*; a table that gives two of the three gives two of
+  the three. **Before writing a year into a finding, find the sentence that says
+  it.** Where only a span is defensible, record the span and say in `extra` why.
+- **A privacy filter tuned to full names misses the initialled ones.**
+  `NAME_HINT` learned DBI's `one-stop:` intake prefix after two names walked onto
+  Japantown pages, but the redaction list only held the names in the form those
+  permits printed them. This run's seeding surfaced `one-stop:p.burns` on the
+  zoo's page, and a repo-wide sweep of the same prefix found `m.tjoe`, `mtjoe`,
+  `m tjoe`, `susan leong`, `eric. omokaro` and `neil f.` already published across
+  sixteen pages. *A name on the redaction list is one spelling of that name;
+  after every bulk seed, grep the whole repo for the intake prefixes, not just
+  the pages you wrote.*
 - **A note that only exists in `data.json` is not on the page.** Findings runs
   have been writing conflicts into an `unknowns` key since Market & Octavia, and
   `seed_pages.py`'s renderer never read it — the disagreements reached the repo

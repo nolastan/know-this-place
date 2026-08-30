@@ -4,6 +4,14 @@ Every residential parcel on Bryant Street that the city's address, assessor and 
 
 ## Documented so far
 
+- [1300](1300/) — A 1962 industrial building, with reroofing permitted in 2007.
+- [1320–1350](1320/) — A 2003 industrial building, with permit records from 2000 to 2005.
+- [1398](1398/) — A 1900 industrial building, with reroofing permitted in 2015.
+- [1401](1401/) — An assessor class: vacant lot, with a seismic retrofit permitted in 2003.
+- [1504](1504/) — A 1900 industrial building, with an addition permitted in 2022.
+- [1525](1525/) — A 1929 industrial building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with reroofing permitted in 2014.
+- [1550](1550/) — A 1915 office building, with stair work permitted in 2021.
+- [1590](1590/) — A 1907 industrial building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with garage work permitted in 2001.
 - [1600](1600/) — A 1929 office building, with permit records from 1984 to 1996.
 - [1634](1634/) — A 1957 industrial building, with reroofing permitted in 2022.
 - [1686](1686/) — A 1907 store building, with electrical work permitted in 1994.
@@ -15,6 +23,14 @@ Every residential parcel on Bryant Street that the city's address, assessor and 
 - [1736–1738](1736/) — A 1904 two-flat, with a bathroom remodel permitted in 2016.
 - [1740–1742](1740/) — A 1905 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2008.
 - [1744–1746](1744/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2015.
+- [1798](1798/) — A 1967 store building, with reroofing permitted in 2018.
+- [1850](1850/) — An assessor class: vacant lot, with garage work permitted in 2022.
+- [1890](1890/) — A 1949 industrial building, with an addition permitted in 2000.
+- [1900](1900/) — A 1923 building, with plumbing work permitted in 2013.
+- [1975–1999](1975/) — A 1951 industrial building, with window replacement permitted in 2017.
+- [2001](2001/) — A 1943 industrial building, with an addition permitted in 2015.
+- [2055](2055/) — An office building, with foundation work permitted in 2021.
+- [2070](2070/) — A building, with reroofing permitted in 2004.
 - [2080](2080/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2008.
 - [2088](2088/) — A 1900 two-flat, with reroofing permitted in 2006.
 - [2095–2099](2095/) — A 2023 63-unit apartment building, with an addition permitted in 2017.
@@ -163,6 +179,7 @@ Every residential parcel on Bryant Street that the city's address, assessor and 
 - [2715–2717](2715/) — A 1907 two-flat, with window replacement permitted in 1998.
 - [2719](2719/) — A 1900 single-family house, with an addition permitted in 1997.
 - [2723](2723/) — A 1900 single-family house, with reroofing permitted in 2011.
+- [2728–2730](2728/) — A 1900 school building, with reroofing permitted in 2002.
 - [2729–2731](2729/) — A 1918 three-flat, with a kitchen remodel permitted in 2015.
 - [2733](2733/) — A 1900 single-family house, with reroofing permitted in 1996.
 - [2735–2737](2735/) — A 1980 two-flat, with reroofing permitted in 2008.

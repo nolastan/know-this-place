@@ -41,6 +41,7 @@ The parcels on Ellis Street documented here so far, from the city's address, ass
 - [819](819/) — A 1906 garage, with a seismic retrofit permitted in 2001.
 - [824](824/) — A 1920 garage, with stair work permitted in 1993.
 - [840–850](840/) — A 1920 garage, with reroofing permitted in 1998.
+- [841](841/) — A 1900 office building.
 - [854](854/) — A 1920 garage, with reroofing permitted in 2001.
 - [857](857/) — A 1907 11-unit apartment building, with a seismic retrofit permitted in 1999.
 - [864](864/) — A 1911 25-unit apartment building, with a seismic retrofit permitted in 1999.

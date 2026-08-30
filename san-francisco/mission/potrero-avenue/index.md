@@ -4,11 +4,32 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 
 ## Documented so far
 
+- [44](44/) — A 1985 office building.
+- [55](55/) — A 1960 industrial building, with reroofing permitted in 1992.
+- [66](66/) — A 1948 industrial building, with a rear addition permitted in 1991.
+- [100](100/) — A 1910 office building, with window replacement permitted in 2016.
+- [130](130/) — A 1931 industrial building, with reroofing permitted in 1993.
+- [140](140/) — A 1932 industrial building, with reroofing permitted in 1993.
+- [150](150/) — A 1930 industrial building, with reroofing permitted in 2001.
+- [151–199](151/) — A 1928 industrial building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with reroofing permitted in 2020.
+- [180–186](180/) — A 1936 industrial building, with window replacement permitted in 1987.
+- [198](198/) — A 1906 industrial building, with stair work permitted in 2017.
 - [200](200/) — A 1928 industrial building, with reroofing permitted in 2006.
+- [225](225/) — A 1922 store building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with a kitchen remodel permitted in 2023.
+- [226](226/) — A 1940 industrial building.
+- [255–269](255/) — A 1924 industrial building in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District, with a bathroom remodel permitted in 2015.
+- [301](301/) — A 1900 industrial building, with reroofing permitted in 2013.
 - [309–315](309/) — A 1906 5-unit building with a ground-floor store, with deck work permitted in 2013.
+- [321–327](321/) — A 1923 10-unit apartment building, with foundation work permitted in 1999.
 - [333–335](333/) — A 1905 two-flat, with a vertical addition permitted in 2017.
+- [359](359/) — A 1924 industrial building, with permit records from 1993 to 2004.
+- [375–381](375/) — A 1921 industrial building, with garage work permitted in 2014.
+- [388](388/) — A 1971 building, with a rear addition permitted in 1994.
 - [425](425/) — A 1911 3-unit apartment building, with window replacement permitted in 1984.
+- [435](435/) — A 1950 industrial building, with a seismic retrofit permitted in 2000.
+- [444](444/) — A 1938 industrial building, with reroofing permitted in 1992.
 - [447](447/) — A 1900 single-family house.
+- [450](450/) — A 1919 industrial building, with reroofing permitted in 2009.
 - [453–457](453/) — A 4-unit apartment building, with foundation work permitted in 2010.
 - [459–461](459/) — A 1906 two-flat, with a kitchen and bathroom remodel permitted in 2005.
 - [467](467/) — A 1900 two-flat, with a vertical addition permitted in 1995.
@@ -26,6 +47,9 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 - [585–587](585/) — A 1927 2-unit building with a ground-floor store, with reroofing permitted in 1999.
 - [593–595](593/) — A 1911 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
 - [601](601/) — A 1959 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [636](636/) — A 1930 industrial building, with reroofing permitted in 2004.
+- [650](650/) — A 1936 industrial building, with a seismic retrofit permitted in 2017.
+- [690](690/) — A 1932 industrial building, with an addition permitted in 1989.
 - [708](708/) — A 1923 single-family house, with one permit record from 2002.
 - [714](714/) — A 1923 single-family house, with reroofing permitted in 1998.
 - [720](720/) — A 1923 two-flat, with permit records from 2000 to 2002.
@@ -70,6 +94,7 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 - [980–982](980/) — A 1969 8-unit apartment building, with a seismic retrofit permitted in 2015.
 - [988](988/) — A 1906 two-flat, with reroofing permitted in 1998.
 - [998](998/) — A 1909 single-family house, with an addition permitted in 1985.
+- [1001](1001/) — A 1915 building in the SF General Hospital Historic District, with a rear addition permitted in 1989.
 - [1010](1010/) — A 1933 two-flat, with a kitchen and bathroom remodel permitted in 1986.
 - [1016](1016/) — A 1948 6-unit apartment building, with a bathroom remodel permitted in 2022.
 - [1020](1020/) — A 1949 10-unit apartment building, with dry-rot repair permitted in 1998.

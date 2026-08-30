@@ -22,6 +22,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Eighth Avenue](8th-avenue/) — 22 buildings, built 1900–1937.
 - [Fifth Avenue](5th-avenue/) — 17 buildings, built 1900–1954.
 - [Fourth Avenue](4th-avenue/) — 5 buildings, built 1904–1910.
+- [Frederick Street](frederick-street/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 2 buildings, built 1900–1958.
 - [Hugo Street](hugo-street/) — 8 buildings, built 1905–1914.
 - [Irving Street](irving-street/) — 25 buildings, built 1900–1989; 2 in the Irving Street and 15th Avenue Neighborhood Commerical Historic District.

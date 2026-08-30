@@ -15,6 +15,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [24th Avenue](24th-avenue/) — 1 building, built 1923.
 - [25th Avenue](25th-avenue/) — 1 building, built 1950.
 - [26th Avenue](26th-avenue/) — 1 building, built 1949.
+- [27th Avenue](27th-avenue/) — 1 building, built 1900.
 - [28th Avenue](28th-avenue/) — 1 building, built 1951.
 - [29th Avenue](29th-avenue/) — 1 building, built 1948.
 - [30th Avenue](30th-avenue/) — 2 buildings, built 1929–1950.
@@ -24,6 +25,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [34th Avenue](34th-avenue/) — 1 building, built 1900.
 - [35th Avenue](35th-avenue/) — 2 buildings, built 1911–1987.
 - [37th Avenue](37th-avenue/) — 4 buildings, built 1914–1925.
+- [38th Avenue](38th-avenue/) — 1 building.
 - [40th Avenue](40th-avenue/) — 1 building, built 1924.
 - [44th Avenue](44th-avenue/) — 1 building, built 1950.
 - [45th Avenue](45th-avenue/) — 2 buildings, built 1950.
@@ -34,4 +36,5 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Cabrillo Street](cabrillo-street/) — 5 buildings, built 1922–1950.
 - [California Street](california-street/) — 1 building, built 1967.
 - [Clement Street](clement-street/) — 2 buildings, built 1921–2017.
+- [Fulton Street](fulton-street/) — 1 building; 1 in the Golden Gate Park Historic District.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.

@@ -105,6 +105,7 @@ Every residential parcel on 23rd Street that the city's address, assessor and pe
 - [3339–3349](3339/) — A 1900 3-unit building with a ground-floor store in the 23rd Street Shops and Rowhouses Historic District, with a kitchen and bathroom remodel permitted in 2021.
 - [3340–3342](3340/) — An 1878 3-unit apartment building in the 23rd Street Shops and Rowhouses Historic District, with facade work permitted in 1991.
 - [3350–3352](3350/) — A 1900 two-flat in the 23rd Street Shops and Rowhouses Historic District, with garage work permitted in 2009.
+- [3351](3351/) — An assessor class: vacant lot.
 - [3356](3356/) — A 1900 two-flat in the 23rd Street Shops and Rowhouses Historic District, with reroofing permitted in 1996.
 - [3360–3362](3360/) — A 1900 two-flat in the 23rd Street Shops and Rowhouses Historic District, with reroofing permitted in 2005.
 - [3370](3370/) — A 1900 single-family house in the 23rd Street Shops and Rowhouses Historic District, with reroofing permitted in 2022.

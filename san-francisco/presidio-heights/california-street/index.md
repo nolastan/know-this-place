@@ -4,6 +4,7 @@ The parcels on California Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [3200–3220](3200/) — A building, with plumbing work permitted in 2021.
 - [3401–3411](3401/) — A 1950 store building, with reroofing permitted in 2020.
 - [3601](3601/) — A 1972 store building in the California Street Neighborhood Commercial Shopping Center Historic District, with reroofing permitted in 2003.
 

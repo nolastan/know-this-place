@@ -4,5 +4,7 @@ A hillside residential district in the city's south-east, between McLaren Park a
 
 ## Streets documented so far
 
+- [Felton Street](felton-street/) — 1 building.
+- [Girard Street](girard-street/) — 1 building.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.
 - [University Street](university-street/) — 1 building, built 1932.

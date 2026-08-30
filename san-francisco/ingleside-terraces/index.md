@@ -7,6 +7,7 @@ Court.
 
 ## Streets documented so far
 
+- [Aptos Avenue](aptos-avenue/) — 1 building; 1 in the Balboa Terrace Historic District.
 - [Borica Street](borica-street/) — 1 building, built 1923; 1 in the Ingleside Terrace Historic District.
 - [Broadmoor Drive](broadmoor-drive/) — 2 buildings, built 1941–1942.
 - [Cedro Avenue](cedro-avenue/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
