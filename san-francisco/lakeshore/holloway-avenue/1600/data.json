@@ -1,116 +1,129 @@
 {
-  "address": "1600 Holloway Avenue, San Francisco, CA 94132",
-  "path": "/san-francisco/lakeshore/holloway-avenue/1600/",
-  "apn": "7299006",
-  "block": "7299",
-  "lot": "006",
-  "eas_baseid": "491955",
-  "coordinates": {
-    "lat": 37.721021,
-    "lng": -122.476794
+ "address": "1600 Holloway Avenue, San Francisco, CA 94132",
+ "path": "/san-francisco/lakeshore/holloway-avenue/1600/",
+ "apn": "7299006",
+ "block": "7299",
+ "lot": "006",
+ "eas_baseid": "491955",
+ "coordinates": {
+  "lat": 37.721021,
+  "lng": -122.476794
+ },
+ "parcel": {
+  "lot_area_sqft": 4071663,
+  "use": "Commercial Retail",
+  "property_class": "Schools",
+  "construction_type_code": "NA",
+  "supervisor_district": 7,
+  "assessor_neighborhood": "Stonestown",
+  "analysis_neighborhood": "Lakeshore",
+  "property_location_raw": "0000 1600 HOLLOWAY            AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025
+ },
+ "historic_status": {
+  "ceqa_status_code": "C",
+  "ceqa_status_code_article_10_11": "C",
+  "ceqa_status_label": "Not a historical resource",
+  "reason": "Not 45 years or older",
+  "yearbuilt": "2021",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201202214525",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2012-02-21",
+   "status_date": "2012-02-21",
+   "estimated_cost": 15000,
+   "revised_cost": 15000,
+   "description": "relocate (e) oversized curb cut.",
+   "source": "sf-building-permits"
   },
-  "parcel": {
-    "lot_area_sqft": 4071663,
-    "use": "Commercial Retail",
-    "property_class": "Schools",
-    "construction_type_code": "NA",
-    "supervisor_district": 7,
-    "assessor_neighborhood": "Stonestown",
-    "analysis_neighborhood": "Lakeshore",
-    "property_location_raw": "0000 1600 HOLLOWAY            AV0000"
+  {
+   "number": "200702073560",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2007-02-07",
+   "status_date": "2011-02-03",
+   "estimated_cost": 6220,
+   "revised_cost": 6220,
+   "description": "reroofing",
+   "source": "sf-building-permits"
   },
-  "assessment": {
-    "roll_year": 2025
+  {
+   "number": "M18136",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2001-12-11",
+   "status_date": "2002-04-11",
+   "revised_cost": 5000,
+   "description": "street space permit",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 14,
+  "range": "2000–2015",
+  "shown_on_page": 3,
+  "note": "11 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOLLOWAY&street_type=AVE&address_number=1600",
+   "retrieved": "2026-08-29"
   },
-  "historic_status": {
-    "ceqa_status_code": "C",
-    "ceqa_status_code_article_10_11": "C",
-    "ceqa_status_label": "Not a historical resource",
-    "reason": "Not 45 years or older",
-    "yearbuilt": "2021",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7299006&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
   },
-  "permits": [
-    {
-      "number": "201202214525",
-      "type": "otc alterations permit",
-      "status": "issued",
-      "filed": "2012-02-21",
-      "status_date": "2012-02-21",
-      "estimated_cost": 15000,
-      "revised_cost": 15000,
-      "description": "relocate (e) oversized curb cut.",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "200702073560",
-      "type": "otc alterations permit",
-      "status": "expired",
-      "filed": "2007-02-07",
-      "status_date": "2011-02-03",
-      "estimated_cost": 6220,
-      "revised_cost": 6220,
-      "description": "reroofing",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "M18136",
-      "type": "otc alterations permit",
-      "status": "expired",
-      "filed": "2001-12-11",
-      "status_date": "2002-04-11",
-      "revised_cost": 5000,
-      "description": "street space permit",
-      "source": "sf-building-permits"
-    }
-  ],
-  "permit_summary": {
-    "count_on_file": 14,
-    "range": "2000–2015",
-    "shown_on_page": 3,
-    "note": "11 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7299&lot=006",
+   "retrieved": "2026-08-29"
   },
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOLLOWAY&street_type=AVE&address_number=1600",
-      "retrieved": "2026-08-29"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7299006&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-29"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7299&lot=006",
-      "retrieved": "2026-08-29"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7299006",
-      "retrieved": "2026-08-29"
-    },
-    {
-      "id": "african-american-context-statement",
-      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
-      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
-      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
-      "label": "African American Citywide Historic Context Statement, adopted 2024",
-      "retrieved": "2026-08-29"
-    }
-  ],
-  "historical_record": [
-    {
-      "date": "1968",
-      "kind": "designation",
-      "description": "San Francisco State University, where the 1968-69 student strike produced the country's first College of Ethnic Studies and its Black Studies programme. Identified in 2024 as eligible for designation, with the caveat the College no longer occupies its original building, which it says should be identified and examined.",
-      "source": "african-american-context-statement"
-    }
-  ]
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7299006",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "african-american-context-statement",
+   "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "African American Citywide Historic Context Statement, adopted 2024",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1968",
+   "kind": "designation",
+   "description": "San Francisco State University, where the 1968-69 student strike produced the country's first College of Ethnic Studies and its Black Studies programme. Identified in 2024 as eligible for designation, with the caveat the College no longer occupies its original building, which it says should be identified and examined.",
+   "source": "african-american-context-statement"
+  },
+  {
+   "date": "1976",
+   "kind": "event",
+   "description": "San Francisco State University's Student Union hosted the first annual gay and lesbian Alcoholics Anonymous conference, Living Sober, in 1976.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
 }

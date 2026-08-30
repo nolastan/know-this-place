@@ -15,6 +15,7 @@ The parcels on Sansome Street documented here so far, from the city's address, a
 - [825](825/) — A 1922 garage in the Jackson Square Historic District Extension, with reroofing permitted in 1995.
 - [832](832/) — A 1912 office building, with reroofing permitted in 1989.
 - [838](838/) — A 1910 hotel, with a seismic retrofit permitted in 1998.
+- [840](840/) — A 1909 hotel, with permit records from 2000 to 2008.
 - [847](847/) — A 1983 office building in the Jackson Square Historic District Extension, with plumbing work permitted in 2026.
 - [855](855/) — A 1900 office building in the Jackson Square Historic District Extension, with a seismic retrofit permitted in 1996.
 - [1000](1000/) — A 1904 office building in the Northeast Waterfront Historic District, with a seismic retrofit permitted in 2014.

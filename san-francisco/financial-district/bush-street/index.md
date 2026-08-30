@@ -5,6 +5,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1](1/) — Crown Zellerbach's headquarters — the city's first International Style curtain wall, landmarked in 1987.
+- [225](225/) — A 1948 office building, with deck work permitted in 2008.
 - [333](333/) — A 1987 office building, with a seismic retrofit permitted in 2011.
 - [348–350](348/) — A 2018 office building, with stair work permitted in 2018.
 - [364](364/) — A 1907 store building in the Kearny-Belden Conservation District, with a kitchen remodel permitted in 2017.
@@ -26,6 +27,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [663–665](663/) — A 2000 hotel in the Lower Nob Hill Apartment Hotel Historic District, with an addition permitted in 2006.
 - [698](698/) — A 1907 45-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2001.
 - [722–730](722/) — A 1915 19-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2004.
+- [729](729/) — A 1911 store building in the Lower Nob Hill Apartment Hotel Historic District, with an addition permitted in 2022.
 - [734](734/) — A 1911 47-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen and bathroom remodel permitted in 2006.
 - [753](753/) — A 1911 hotel in the Lower Nob Hill Apartment Hotel Historic District, with window replacement permitted in 2010.
 - [755](755/) — A 1916 28-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1996.

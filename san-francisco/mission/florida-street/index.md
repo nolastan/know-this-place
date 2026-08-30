@@ -121,6 +121,7 @@ Every residential parcel on Florida Street that the city's address, assessor and
 - [1179](1179/) — A 1900 single-family house, with a bathroom remodel permitted in 2023.
 - [1180](1180/) — A 1900 single-family house, with permit records from 2001 to 2005.
 - [1184–1186](1184/) — A 1904 two-flat, with reroofing permitted in 2001.
+- [1200](1200/) — A 1900 church, with reroofing permitted in 1995.
 - [1221](1221/) — A 1900 two-flat.
 - [1225](1225/) — A 1900 two-flat.
 - [1227–1229](1227/) — A 1920 two-flat, with a kitchen and bathroom remodel permitted in 2014.

@@ -16,6 +16,7 @@ The parcels on Geary Street documented here so far, from the city's address, ass
 - [235–239](235/) — A department store in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2018.
 - [285–295](285/) — A 1907 office building with ground-floor retail in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2003.
 - [333–337](333/) — A 1916 store building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2010.
+- [501–507](501/) — A 1907 hotel in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2014.
 - [516–528](516/) — A 1923 88-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2019.
 - [549–561](549/) — A 1918 store building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2002.
 

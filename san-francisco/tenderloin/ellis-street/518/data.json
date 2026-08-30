@@ -1,0 +1,143 @@
+{
+ "address": "518–530 Ellis Street, San Francisco, CA 94109",
+ "path": "/san-francisco/tenderloin/ellis-street/518/",
+ "apn": "0322004",
+ "block": "0322",
+ "lot": "004",
+ "eas_baseid": "473273",
+ "coordinates": {
+  "lat": 37.784876,
+  "lng": -122.414972
+ },
+ "address_range": "518–530",
+ "street_numbers_on_parcel": [
+  "518",
+  "526",
+  "530"
+ ],
+ "parcel": {
+  "year_built": 1915,
+  "units": 36,
+  "stories": 5,
+  "rooms": 90,
+  "bathrooms": 36,
+  "lot_area_sqft": 8245,
+  "building_area_sqft": 23880,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 15 Units or more",
+  "construction_type_code": "C",
+  "zoning": "RC-4",
+  "supervisor_district": 5,
+  "assessor_neighborhood": "Tenderloin",
+  "analysis_neighborhood": "Tenderloin",
+  "property_location_raw": "0000 0526 ELLIS               ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 3690660,
+  "assessed_improvement_value": 2460438
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1915",
+  "survey_name": "ARUNDELL APARTMENTS",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Uptown Tenderloin Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1906–1957",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "8905850",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1989-04-11",
+   "status_date": "1989-09-24",
+   "estimated_cost": 9000,
+   "description": "re - roofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8808332",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1988-06-21",
+   "status_date": "1988-09-26",
+   "estimated_cost": 6000,
+   "description": "new medical office on the ground floor",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8207863",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1982-09-24",
+   "status_date": "1986-03-04",
+   "estimated_cost": 2000,
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 4,
+  "range": "1982–2000",
+  "shown_on_page": 3,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELLIS&street_type=ST&address_number=518",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0322004&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0322&lot=004",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0322004",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41497181563383%2037.78487597996972)%27)",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1962",
+   "kind": "occupancy",
+   "description": "The Why Not, the first leather bar in San Francisco, which opened here in 1962 and closed within a few months.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

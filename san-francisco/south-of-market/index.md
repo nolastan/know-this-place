@@ -24,6 +24,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Fourth Street](4th-street/) — 26 buildings, built 1907–2023; 1 in the SoMa LGBTQ Historic District.
 - [Freelon Street](freelon-street/) — 13 buildings, built 1907–1988.
 - [Grace Street](grace-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
+- [Harriet Street](harriet-street/) — 1 building, built 1921; 1 in the SoMa LGBTQ Historic District.
 - [Harrison Street](harrison-street/) — 36 buildings, built 1909–2018; 2 in the SoMa LGBTQ Historic District.
 - [Heron Street](heron-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Howard Street](howard-street/) — 30 buildings, built 1900–2008; 1 in the SoMa LGBTQ Historic District.

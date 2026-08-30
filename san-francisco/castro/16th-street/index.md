@@ -35,6 +35,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3518](3518/) — A 1900 6-unit apartment building, with reroofing permitted in 2005.
 - [3521–3523](3521/) — A 1938 two-flat, with facade work permitted in 2008.
 - [3571](3571/) — A 1963 12-unit apartment building, with a seismic retrofit permitted in 2012.
+- [3583](3583/) — A 1906 industrial building, with a kitchen remodel permitted in 1990.
 - [3618–3620](3618/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with window replacement permitted in 2011.
 - [3622–3626](3622/) — A 1900 5-unit apartment building in the Duboce Triangle Historic District Extension, with fire repair permitted in 2011.
 - [3628](3628/) — A 1900 two-flat in the Duboce Triangle Historic District Extension, with a kitchen and bathroom remodel permitted in 2003.

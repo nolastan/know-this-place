@@ -68,6 +68,7 @@ The parcels on Bryant Street documented here so far, from the city's address, as
 - [945](945/) — A 1964 office building, with electrical work permitted in 2013.
 - [955–975](955/) — A 1928 2-unit building, with window replacement permitted in 2008.
 - [979](979/) — A 1939 garage, with reroofing permitted in 1986.
+- [1010](1010/) — A 1915 2-unit building with a ground-floor store in the SoMa LGBTQ Historic District, with a kitchen remodel permitted in 2009.
 - [1011](1011/) — A 2010 store building, with deck work permitted in 2021.
 - [1030](1030/) — A 1919 industrial building, with reroofing permitted in 1991.
 - [1040](1040/) — A 1925 industrial building, with a seismic retrofit permitted in 1996.

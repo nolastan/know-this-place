@@ -1,0 +1,180 @@
+{
+ "address": "133–145 Turk Street, San Francisco, CA 94102",
+ "path": "/san-francisco/tenderloin/turk-street/133/",
+ "apn": "0343018",
+ "block": "0343",
+ "lot": "018",
+ "eas_baseid": "430420",
+ "coordinates": {
+  "lat": 37.782849,
+  "lng": -122.411384
+ },
+ "address_range": "133–145",
+ "street_numbers_on_parcel": [
+  "133",
+  "135",
+  "137",
+  "139",
+  "141",
+  "143",
+  "145"
+ ],
+ "parcel": {
+  "year_built": 1922,
+  "units": 5,
+  "stories": 2,
+  "rooms": 7,
+  "bathrooms": 6,
+  "lot_area_sqft": 6875,
+  "building_area_sqft": 15500,
+  "lot_depth_ft": 37.5,
+  "use": "Commercial Retail",
+  "property_class": "Commercial Stores",
+  "construction_type_code": "C",
+  "zoning": "RC-4",
+  "supervisor_district": 5,
+  "assessor_neighborhood": "Tenderloin",
+  "analysis_neighborhood": "Tenderloin",
+  "property_location_raw": "0145 0133 TURK                ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 432560,
+  "assessed_improvement_value": 232915,
+  "last_sale_date": "1996-12-04"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1922",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Uptown Tenderloin Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1906–1957",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "200206280315",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2002-06-28",
+   "status_date": "2002-10-16",
+   "estimated_cost": 7500,
+   "revised_cost": 7500,
+   "description": "remove extg 6 glasws lights on the sidewalk replaces in new conc. topping over new metal decking",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9409553",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1994-06-24",
+   "status_date": "1994-11-18",
+   "estimated_cost": 1800,
+   "description": "comply with bdlg insp reports of insp held on 7-2-91",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9402047",
+   "type": "additions alterations or repairs",
+   "status": "withdrawn",
+   "filed": "1994-02-14",
+   "status_date": "1994-03-21",
+   "estimated_cost": 9000,
+   "description": "wet stand pipe fire system",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9401720",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1994-02-09",
+   "status_date": "1995-02-07",
+   "estimated_cost": 4000,
+   "description": "design & install wet stanpipe system",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9108492",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1991-05-16",
+   "status_date": "1992-09-11",
+   "estimated_cost": 44520,
+   "description": "tenant improvement at (e) 1st floor vacant store",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9020191",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1990-10-04",
+   "status_date": "1991-04-03",
+   "estimated_cost": 2000,
+   "description": "groudn level (2 storefronts) repair",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 8,
+  "range": "1990–2014",
+  "shown_on_page": 6,
+  "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURK&street_type=ST&address_number=133",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0343018&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0343&lot=018",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0343018",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41138409859373%2037.78284870184516)%27)",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1940s",
+   "kind": "occupancy",
+   "description": "Queen Mary's Pub, later Aunt Charlie's Lounge, one of the longest-running LGBTQ gathering places in the Tenderloin.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "address": "1041–1045 Market Street, San Francisco, CA 94103",
+ "path": "/san-francisco/south-of-market/market-street/1041/",
+ "apn": "3703068",
+ "block": "3703",
+ "lot": "068",
+ "eas_baseid": "364711",
+ "coordinates": {
+  "lat": 37.781178,
+  "lng": -122.410942
+ },
+ "address_range": "1041–1045",
+ "street_numbers_on_parcel": [
+  "1041",
+  "1043",
+  "1045"
+ ],
+ "parcel": {
+  "year_built": 1907,
+  "stories": 5,
+  "rooms": 6,
+  "bathrooms": 6,
+  "lot_area_sqft": 4125,
+  "building_area_sqft": 25475,
+  "lot_depth_ft": 65,
+  "use": "Commercial Office",
+  "property_class": "Office",
+  "construction_type_code": "C",
+  "zoning": "C3G",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "South of Market",
+  "analysis_neighborhood": "South of Market",
+  "property_location_raw": "1045 1043 MARKET              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 2305477,
+  "assessed_improvement_value": 672421,
+  "last_sale_date": "2000-06-06"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District",
+  "yearbuilt": "1907",
+  "survey_name": "SEE 3703/70",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Market Street Theatre and Loft Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1889–1930",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "200801313685",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2008-01-31",
+   "status_date": "2009-12-09",
+   "estimated_cost": 1,
+   "revised_cost": 1,
+   "description": "revision to p/a #2007.07.28.6439. deletion of restroom fixtures @ basement and floor #2,3,4,5,7. installation of smoke guard smoke doors at elevators on all floors. revision of restroom layout at 6th & 7th floor.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9619109",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1996-10-07",
+   "status_date": "1998-05-27",
+   "estimated_cost": 35000,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8707348",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1987-05-29",
+   "status_date": "1987-12-21",
+   "estimated_cost": 3000,
+   "description": "parapet",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=1041",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3703068&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3703&lot=068",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3703068",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41094160126269%2037.781177675606266)%27)",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1920s",
+   "kind": "occupancy",
+   "description": "The Morse Hotel, a six-storey residential hotel with a circling staircase around an open well rising to a skylighted roof, operated here in the late 1920s and 1930s.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

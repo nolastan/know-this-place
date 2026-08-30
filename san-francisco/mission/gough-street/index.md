@@ -11,6 +11,7 @@ Every residential parcel on Gough Street that the city's address, assessor and p
 - [32–34](32/) — A 1906 two-flat, with foundation work permitted in 2026.
 - [33](33/) — A 1949 school building, with plumbing work permitted in 2021.
 - [36–38](36/) — A 1907 two-flat, with facade work permitted in 1987.
+- [42–44](42/) — A 1906 office building, with window replacement permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

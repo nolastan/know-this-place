@@ -4,6 +4,7 @@ The parcels on Broad Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [32](32/) — A 1900 church, with reroofing permitted in 1999.
 - [96](96/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2007.
 - [101–103](101/) — A 1926 store building, with reroofing permitted in 1995.
 - [117](117/) — Engine Co. #33 firehouse, built 1896, Charles R. Wilson architect.

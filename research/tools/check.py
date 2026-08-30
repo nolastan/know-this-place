@@ -4,6 +4,7 @@
     python3 research/tools/check.py            # check everything
     python3 research/tools/check.py --stats    # ...and print the yield so far
     python3 research/tools/check.py --report <findings-file>   # the PR body's table
+    python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
 
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
@@ -24,6 +25,17 @@ with no publish decision — work already paid for and not yet on a page.
 a run's PR body carries (RUNBOOK.md, "Close the books"). Only findings that
 reached a parcel appear in it, because the parcel is what carries a
 neighborhood; the unresolved and rejected ones are counted underneath it.
+
+--overlap answers the question step 4 has to ask before it writes anything:
+does the page already say this? Two statements routinely cover the same
+buildings, so a citywide batch lands on parcels a neighbouring survey has
+already documented. The LGBTQ citywide run found 16 of 307 resolved findings
+restating what the page already carried, word for word in places — caught by
+hand at audit time, after they had been written and rendered. Run it between
+`resolve_eas.py apply` and publishing: it reports each resolved finding whose
+wording substantially repeats an existing historical_record entry, hook or
+narrative on its target page, so the decision to decline or trim is made before
+the fact reaches the page rather than after.
 
 The schema file is the single source of truth for shape — this script reads it
 rather than restating it, so the two can't drift. It implements the subset of
@@ -355,11 +367,93 @@ def report(path: Path) -> None:
               f"and cannot be grouped by neighborhood.")
 
 
+
+STOPWORDS = set("""about after also been before being between both came could described
+during each first from have here into more most much only other over said same
+some such than that their them then there these they this those through under
+until were what when where which while with would""".split())
+
+
+def _words(text: str) -> set[str]:
+    """Content words of a passage, for comparing what two sentences say."""
+    return {w for w in re.findall(r"[a-z']{4,}", text.lower())} - STOPWORDS
+
+
+def overlap(path: Path) -> None:
+    """Report resolved findings whose wording the target page already carries.
+
+    Compares each finding against the page's other historical_record entries
+    (its own source excluded) plus any hook and narrative prose. The threshold
+    is deliberately low: this prints candidates for a human decision, and a
+    false positive costs one glance while a miss costs a duplicated fact.
+    """
+    repo = ROOT.parent
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        err(str(path), f"--overlap could not read the file: {exc}")
+        return
+
+    source_id = data.get("source_id", "")
+    hits, checked, missing = [], 0, 0
+    for finding in data.get("findings", []):
+        res = finding.get("resolution") or {}
+        if res.get("status") != "resolved" or not res.get("path"):
+            continue
+        # A finding already declined has had this decision made about it.
+        if (finding.get("publish") or {}).get("status") == "declined":
+            continue
+        page = repo / res["path"].strip("/") / "data.json"
+        if not page.exists():
+            missing += 1
+            continue
+        try:
+            doc = json.loads(page.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            missing += 1
+            continue
+        checked += 1
+        mine = _words(finding.get("description", ""))
+        if not mine:
+            continue
+        theirs: set[str] = set()
+        for entry in doc.get("historical_record", []):
+            # An entry this batch wrote is not evidence the page already had it.
+            if entry.get("source") in (source_id, data.get("batch")):
+                continue
+            if entry.get("description") == finding.get("description"):
+                continue
+            theirs |= _words(entry.get("description", ""))
+        for key in ("hook", "narrative"):
+            if isinstance(doc.get(key), str):
+                theirs |= _words(doc[key])
+        if not theirs:
+            continue
+        share = len(mine & theirs) / len(mine)
+        if share >= 0.34:
+            hits.append((share, finding.get("id", "?"), res["path"],
+                         finding.get("description", "")[:70]))
+
+    hits.sort(reverse=True)
+    print(f"overlap: {checked} resolved finding(s) checked against their pages"
+          + (f", {missing} page(s) not on disk yet" if missing else ""))
+    if not hits:
+        print("  none — no finding repeats what its page already says.")
+        return
+    print(f"  {len(hits)} finding(s) may repeat what the page already carries:")
+    for share, fid, page_path, text in hits:
+        print(f"    {share:.0%}  {fid}  {page_path}")
+        print(f"          {text}...")
+    print("  Read each one: decline it, or trim it to the part that is new.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--stats", action="store_true", help="print the yield so far")
     ap.add_argument("--report", type=Path, metavar="FINDINGS",
                     help="print one batch by neighborhood, as the PR body's table")
+    ap.add_argument("--overlap", type=Path, metavar="FINDINGS",
+                    help="report findings whose target page already says the same thing")
     args = ap.parse_args()
 
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
@@ -384,6 +478,10 @@ def main() -> int:
 
     if args.report:
         report(args.report)
+        print()
+
+    if args.overlap:
+        overlap(args.overlap)
         print()
 
     if errors:

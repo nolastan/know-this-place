@@ -236,6 +236,20 @@ Here you are a **site agent**: the root [AGENTS.md](../AGENTS.md) and
 [shared/AGENTS.md](../shared/AGENTS.md) govern exactly. This section only says
 how research feeds them.
 
+**Before either route, ask what the pages already say.**
+
+```bash
+python3 research/tools/check.py --overlap research/findings/<id>/<batch>.json
+```
+
+It prints every resolved finding whose wording substantially repeats the
+historical record, hook or narrative already on its target page. Two statements
+cover the same buildings often enough that a citywide batch will land on parcels
+a neighbouring survey has already documented. Read each line and decide *before*
+writing: decline the duplicate, or trim it to the part that is new. Doing this
+after publication costs a re-render and an entry that may contradict a better
+one already on the page.
+
 **Route A — the page exists, or should and it's a handful.** Add each fact to
 `data.json` by hand, normally as a `historical_record` entry (`date`, `kind`,
 `description`, `source`), and add the source to the page's `sources` array with

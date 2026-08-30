@@ -8,6 +8,7 @@ Every residential parcel on Brady Street that the city's address, assessor and p
 - [20](20/) — A 1931 industrial building, with one permit record from 1986.
 - [40](40/) — A 1924 industrial building, with one permit record from 1986.
 - [50](50/) — A 1924 industrial building, with reroofing permitted in 2011.
+- [55–63](55/) — A 1939 office building, with reroofing permitted in 2001.
 - [60](60/) — A 1925 industrial building, with reroofing permitted in 1990.
 - [65–75](65/) — A 1906 9-unit apartment building, with a kitchen remodel permitted in 2015.
 - [77–79](77/) — A 1907 two-flat, with reroofing permitted in 2004.

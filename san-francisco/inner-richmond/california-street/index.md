@@ -4,6 +4,7 @@ The parcels on California Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [4220](4220/) — A 1902 office building, with a kitchen and bathroom remodel permitted in 2026.
 - [4651](4651/) — A 1911 single-family house, with an addition permitted in 2018.
 - [4739](4739/) — A 1950 4-unit apartment building, with window replacement permitted in 2019.
 

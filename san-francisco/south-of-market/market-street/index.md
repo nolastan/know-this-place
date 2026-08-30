@@ -17,20 +17,26 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [825–833](825/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 1994.
 - [845](845/) — The 2006 shopping centre built behind the Emporium's 1896 facade and glass dome.
 - [865–885](865/) — A 1908 shopping center in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2015.
+- [870–898](870/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 1993.
 - [901](901/) — A 1912 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2013.
 - [923](923/) — A 1907 store building, with reroofing permitted in 2007.
 - [925](925/) — A 1910 store building, with electrical work permitted in 2006.
 - [929](929/) — A 1907 store building, with a seismic retrofit permitted in 2006.
 - [931](931/) — A 1907 store building, with permit records from 1998 to 2013.
 - [934–936](934/) — A 1974 store building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2025.
+- [944–948](944/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 1984.
 - [969](969/) — A 1909 store building, with a kitchen remodel permitted in 2019.
 - [973](973/) — A 1904 69-unit apartment building, with an addition permitted in 2005.
 - [976](976/) — A 1910 theater, with permit records from 1982 to 2014.
 - [979–989](979/) — A 1907 office building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1990.
 - [993](993/) — A 1908 store building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1996.
+- [1001–1005](1001/) — A 1908 hotel in the Market Street Theatre and Loft Historic District, with plumbing work permitted in 2010.
 - [1007](1007/) — A 1911 store building in the Market Street Theatre and Loft Historic District, with plumbing work permitted in 2026.
 - [1011](1011/) — A 1909 store building in the Market Street Theatre and Loft Historic District, with electrical work permitted in 2019.
 - [1017–1019](1017/) — A 1909 office building in the Market Street Theatre and Loft Historic District, with stair work permitted in 2013.
+- [1025–1029](1025/) — A store building in the Market Street Theatre and Loft Historic District, with an addition permitted in 2001.
+- [1041–1045](1041/) — A 1907 office building in the Market Street Theatre and Loft Historic District, with reroofing permitted in 1996.
+- [1049–1051](1049/) — A 1907 store building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1995.
 - [1059–1061](1059/) — A 1910 office building in the Market Street Theatre and Loft Historic District, with facade work permitted in 2017.
 - [1083–1087](1083/) — A 1912 hotel in the Market Street Theatre and Loft Historic District, with reroofing permitted in 1993.
 - [1095](1095/) — A 1905 hotel in the Market Street Theatre and Loft Historic District, with deck work permitted in 2014.

@@ -199,6 +199,32 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **In a born-digital PDF, a footnote marker manufactures street addresses.**
+  `pdftotext` renders a superscript reference number inline, so a marker that
+  falls at the end of a sentence runs straight into the next one and reads as a
+  street number: "…popular spot for gay sex.537 Fifth Street was popular for
+  cruising" yields *537 Fifth Street*, which does not exist. The LGBTQ citywide
+  statement produced **eleven** such phantoms in 710 mentions — 545 Turk Street,
+  908 and 909 Polk Street, 1054 Eighteenth Street among them — and several would
+  have resolved cleanly in EAS and become confidently wrong pages, because the
+  street is real and the number is plausible. **On any source with numbered
+  footnotes, check the character before the number**: a lower-case letter, a
+  full stop or a closing quote means the "number" is a reference marker and the
+  words after it are a new sentence. The same collision invents institutions —
+  "Eighteenth Street Services" became *1054 Eighteenth Street*.
+- **Ask what the page already says before you write, not after.**
+  `python3 research/tools/check.py --overlap <findings-file>` compares every
+  resolved finding against the historical record, hook and narrative already on
+  its target page and prints the ones that repeat it. Two statements routinely
+  cover the same buildings, so a citywide batch lands on parcels a neighbouring
+  survey has already documented: the LGBTQ citywide run wrote 18 findings that
+  restated what the page already carried — the Harvey Milk camera shop, the
+  Twin Peaks Tavern windows, the Full Moon Coffeehouse — and one of them
+  contradicted the page on a date the older entry had right. All of it was
+  caught by hand at audit time, after the pages had been written and rendered.
+  **Run it between `resolve_eas.py apply` and publishing.** It flags candidates
+  for a decision, not errors: decline the duplicate, or trim it to the part that
+  is new.
 - **A scanned fixed-column table is a 2-D object. Read it from the word boxes.**
   `pdftotext -layout` reconstructs a table by guessing at whitespace, and on a
   scan it guesses differently on every page — the 1990 UMB survey's appendix

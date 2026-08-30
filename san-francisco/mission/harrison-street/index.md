@@ -4,11 +4,21 @@ Every residential parcel on Harrison Street that the city's address, assessor an
 
 ## Documented so far
 
+- [1351–1355](1351/) — A 1907 3-unit building with a ground-floor store in the SoMa LGBTQ Historic District, with a kitchen and bathroom remodel permitted in 2007.
 - [1617–1651](1617/) — A 1950 industrial building, with plumbing work permitted in 2004.
+- [1717](1717/) — An assessor class: parking lot, with electrical work permitted in 2026.
+- [1750](1750/) — A 1996 store building, with electrical work permitted in 2022.
 - [1810–1812](1810/) — A 1924 industrial building, with reroofing permitted in 2017.
 - [1818–1820](1818/) — A 1924 industrial building, with a seismic retrofit permitted in 1998.
+- [1830](1830/) — A 1906 industrial building, with a bathroom remodel permitted in 2019.
+- [1849](1849/) — An assessor class: vacant lot, with a seismic retrofit permitted in 2022.
+- [1940](1940/) — A 1941 industrial building, with a rear addition permitted in 1988.
+- [2001](2001/) — A 2002 store building, with deck work permitted in 2017.
 - [2030](2030/) — A 1907 office building, with a seismic retrofit permitted in 1997.
+- [2130](2130/) — A 2001 store building, with garage work permitted in 2026.
+- [2175](2175/) — A 1924 industrial building, with a seismic retrofit permitted in 2004.
 - [2185](2185/) — A 1900 two-flat, with window replacement permitted in 1992.
+- [2345](2345/) — A 1924 industrial building, with reroofing permitted in 2019.
 - [2400](2400/) — A 1906 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2024.
 - [2402](2402/) — A 1906 two-flat, with stair work permitted in 2003.
 - [2404](2404/) — A 1906 two-flat, with a seismic retrofit permitted in 2015.

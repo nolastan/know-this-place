@@ -83,6 +83,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [4058–4060](4058/) — A 1901 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2013.
 - [4061–4063](4061/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2025.
 - [4064–4068](4064/) — A 1901 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2006.
+- [4067](4067/) — A 1922 store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with an addition permitted in 2012.
 - [4071](4071/) — A 2005 store building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1998.
 - [4072](4072/) — A 1901 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2012.
 - [4076–4080](4076/) — A 1901 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2012.
