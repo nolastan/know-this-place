@@ -3812,6 +3812,14 @@ above. Printed page = PDF page − 1.
   Russia" in the Richmond (38 commercial, 11 social/educational, 6 religious).
   Tables 1, 3, 4 and 5 in the narrative add nineteenth-century churches,
   1933–34 places of worship, newspaper offices and consular offices.
+- **Check every locator against the PDF before you close the books.** Printed
+  page = PDF page − 1 here, but `pdftotext` emits the running header *before*
+  the body of the page it belongs to, so an index built by taking the first
+  page marker at or after a line is off by one — the marker at or *before* the
+  line is the right one. Forty-five of this run's 365 locators were wrong on
+  that account and were corrected by re-extracting each cited page and looking
+  for the finding's own quoted span. A cheap loop, and broken citations are the
+  most common real defect this module produces.
 - **Read the appendix key lists from `pdftotext`'s raw reading order, not
   `-layout`.** The keys are three columns of numbered entries. `-layout`
   interleaves them line by line, so a wrapped entry in column 1 runs into
