@@ -1,0 +1,48 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-08-30",
+  "read_on": "2026-08-30",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 3,
+    "remaining": "Nothing from this batch.",
+    "note": "Four items named no San Francisco building: two AI-funding stories, an Atherton house sale on the Peninsula that is also a private individual's home, and an eviction story that names neither an address nor a building and whose subject is a person."
+  },
+  "findings": [
+    {
+      "id": "2026-08-30-0001",
+      "date": "2026-08-30",
+      "date_precision": "day",
+      "kind": "fire",
+      "address_as_written": "the 1800 block of Mission Street",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A one-alarm fire broke out in a fourth-floor apartment somewhere on this block early on 30 August 2026; the fire department declared a mass-casualty incident and five people were taken to hospital. The article states that the building involved has not been identified publicly. Nobody involved is recorded here.",
+      "extra": {
+        "alarm": "1-alarm",
+        "transported_reported": 5,
+        "floor_reported": 4
+      },
+      "citation": {
+        "label": "Hoodline, “Mission Street Fire Sends 4 to Hospital as Crews Assess Other Residents,” 30 August 2026",
+        "url": "https://hoodline.com/2026/08/mission-street-fire-sends-4-to-hospital-as-crews-assess-other-residents/",
+        "locator": "body"
+      },
+      "raw": {
+        "text": "The cause of the fire and the exact building involved have not been detailed publicly."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-08-30",
+        "method": "The story gives a block, not an address, and says so itself. Every numbered address in it belongs to a different building: 1800 Mission Street is the National Guard Armory, named as the landmark the block sits near; 2300 Folsom Street is Fire Station 7, named as the firehouse that would answer the call; 2001 Potrero Avenue is the hospital such patients are usually taken to. None of the three is the building that burned.",
+        "note": "A fire is exactly the kind of event this module exists for, and this one still cannot be placed. If a later story names the building, it will be publishable then."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "No building to put it on. Recorded rather than dropped so the next reader knows that 1800 Mission Street — which the site has a page for — is the Armory next door and not the building that burned; that is the mistake this finding exists to prevent."
+      }
+    }
+  ]
+}

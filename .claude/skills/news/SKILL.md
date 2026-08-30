@@ -114,19 +114,33 @@ not.
 committed, if you did not. That deletion is how the module records the work is
 done.
 
-### Budget
+### Finish the run
 
-**Publish at most three pages in a run.** Reading is cheap and drains the
-backlog, so read the whole queue and never cap it; seeding, editing, rendering
-and validating is the expensive half, and that is what the cap is on. Three
-pages published and pushed beats five started and lost.
+**There is no page cap here.** Publish every finding that earns a page, and
+leave the run with nothing deferred.
 
-A finding past the cap is **not discarded**: write it into the items file with
-`publish.status: "pending"` and a reason. The next run clears it first, so
-nothing is lost.
+The three-page cap you may have seen belongs to
+[the workflow](../../../.github/workflows/news.yml), and it is a fact about
+that job rather than about this work: it runs on `--max-turns 90` and a
+45-minute timeout, and either one kills the agent where it stands — the first
+run to get that far spent $5.36, hit the turn cap mid-flight and pushed nothing
+at all. Capping the expensive half is how that job leaves something behind.
+A `/news` run has neither limit, so importing the number just strands work that
+was ready to publish, and the stories it strands are the ones a later run has
+to re-establish from scratch.
 
-Under the cap with nothing left worth publishing is a **finished run, not a
-failed one**. A thin day is a good day if the timeline stays honest.
+So **`publish.status: "pending"` means blocked, not deferred**: the resolver
+could not join the address, the seeder may not make a page for that parcel, the
+story needs something only a human can settle. A finding that is merely *next*
+is not pending — it is unfinished work, and the run is not over. Say in the PR
+what is pending and what is blocking each one.
+
+**Commit and push each page as you finish it** all the same. That is not about
+spend; it is that a session can run out of room, and work that is pushed
+survives it while work that is staged does not.
+
+**Nothing left worth publishing is a finished run, not a failed one.** A thin
+day is a good day if the timeline stays honest.
 
 ## What goes wrong
 

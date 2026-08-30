@@ -190,6 +190,31 @@ copy.**
   syndicates the whole story.** `read.py` falls back to the feed's own copy.
   That text stays in memory: source text is never committed, per
   research/AGENTS.md → "Corpora on disk".
+- **A feed's title is not always the headline, and its link is not always the
+  article.** A social feed carries a post *about* a story: the sf-chronicle feed
+  is a Bluesky account, so its title is a teaser sentence and its link a bit.ly
+  shortlink. Neither can be published — the headline is the only text of theirs
+  a page carries, and a shortlink is not a citation anyone can check. So
+  `read.py` reads the headline off the article itself and follows the link to
+  where it lands, printing them as `headline:` and `article:` **whenever they
+  differ from what the feed said**; build the citation from those lines when
+  they appear, and from the feed when they do not. A run over well-behaved feeds
+  prints neither.
+
+  This cost the module three findings once. The run of 2026-08-28 extracted
+  them, resolved them, and then could not publish any of them, because it had a
+  teaser where the headline goes; they sat pending for two days until a run read
+  the headlines by hand.
+- **One story has several headlines, and they are not interchangeable.** The
+  Examiner serves three different strings for one article: an `<h1>` on the
+  page, a shorter `og:title` for shares, and a third `<title>` for search. **The
+  one that goes on a page is the `<h1>`** — what a reader sees at the top of the
+  article is what "the headline, verbatim" means. `read.py` reports that one,
+  and prints `(og:title: …)` underneath when the outlet's share copy says
+  something else, so the choice is visible rather than made silently. Take the
+  `og:title` only when there is no `<h1>` to be had, and say so in the finding's
+  note. The JSON-LD `headline` is search copy on every outlet measured here and
+  is not offered at all.
 - **Never let a story's own words about a person into the repo.** See below.
 
 ## Privacy — the hardest rule here
