@@ -7,6 +7,7 @@ The parcels on Larkin Street documented here so far, from the city's address, as
 - [100](100/) — A 1900 building in the Civic Center Historic District, with reroofing permitted in 2025.
 - [200](200/) — A 1944 building in the Civic Center Historic District, with an addition permitted in 2017.
 - [452–460](452/) — A 1911 14-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2026.
+- [500–514](500/) — A 1912 54-unit apartment building in the Uptown Tenderloin Historic District, with a bathroom remodel permitted in 2021.
 - [601–603](601/) — A 1907 2-unit building with a ground-floor store in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2000.
 - [607–611](607/) — A 1911 store building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
 - [664–672](664/) — A 1906 hotel in the Uptown Tenderloin Historic District, with a kitchen and bathroom remodel permitted in 2013.

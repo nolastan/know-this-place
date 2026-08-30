@@ -17,6 +17,7 @@ The parcels on Fell Street documented here so far, from the city's address, asse
 - [340](340/) — A 1923 garage in the Hayes Valley Residential Historic District, with electrical work permitted in 2022.
 - [1213–1215](1213/) — A 1909 garage, with a seismic retrofit permitted in 2002.
 - [1530](1530/) — A 2000 1-unit apartment building in the NOPA Historic District, with reroofing permitted in 2014.
+- [1550](1550/) — An 1880 single-family house in the NOPA Historic District, with reroofing permitted in 2009.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

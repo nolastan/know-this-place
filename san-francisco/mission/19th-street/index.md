@@ -20,9 +20,16 @@ Every residential parcel on 19th Street that the city's address, assessor and pe
 - [2622–2626](2622/) — A 1910 two-flat, with a kitchen remodel permitted in 2004.
 - [2625](2625/) — A 1900 two-flat in the Gottlieb Knopf Block Historic District, with fire repair permitted in 1985.
 - [2629–2631](2629/) — A 1900 two-flat in the Gottlieb Knopf Block Historic District, with foundation work permitted in 1992.
+- [2700](2700/) — A 1908 office building, with foundation work permitted in 2021.
+- [2745–2747](2745/) — A warehouse, with an addition permitted in 2024.
 - [2813–2815](2813/) — A 1906 two-flat, with foundation work permitted in 2014.
 - [2814](2814/) — A 2000 store building, with window replacement permitted in 1993.
 - [2817](2817/) — An 1880 single-family house, with foundation work permitted in 1986.
+- [2929](2929/) — A 1923 industrial building, with window replacement permitted in 1995.
+- [3001](3001/) — A 1905 industrial building, with an addition permitted in 2012.
+- [3101–3149](3101/) — A 1913 office building, with deck work permitted in 2023.
+- [3254](3254/) — A 1985 industrial building, with an addition permitted in 2002.
+- [3260](3260/) — A 1986 warehouse, with facade work permitted in 2018.
 - [3263](3263/) — A 1906 single-family house, with one permit record from 2012.
 - [3267](3267/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [3277](3277/) — A 1928 single-family house, with one permit record from 1985.
@@ -34,6 +41,7 @@ Every residential parcel on 19th Street that the city's address, assessor and pe
 - [3332–3334](3332/) — A two dwellings on one parcel, with foundation work permitted in 2017.
 - [3338–3344](3338/) — An 1890 5-unit apartment building, with fire repair permitted in 2005.
 - [3364–3366](3364/) — A 1910 2-unit building with a ground-floor store, with one permit record from 2020.
+- [3365](3365/) — A 1914 church, with reroofing permitted in 1993.
 - [3373](3373/) — A 1915 two-flat, with permit records from 1981 to 2007.
 - [3418–3420](3418/) — A 1906 6-unit building, with a seismic retrofit permitted in 2019.
 - [3422–3426](3422/) — A 1907 6-unit tic building, with a kitchen and bathroom remodel permitted in 2014.

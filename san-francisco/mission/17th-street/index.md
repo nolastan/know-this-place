@@ -16,6 +16,7 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [2025](2025/) — A 1906 industrial building, with stair work permitted in 1984.
 - [2201](2201/) — A 1914 single-family house, with reroofing permitted in 2017.
 - [2222](2222/) — A 1961 industrial building, with reroofing permitted in 2003.
+- [2233–2235](2233/) — A 1962 church, with reroofing permitted in 2002.
 - [2330–2346](2330/) — A 1922 8-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2401–2425](2401/) — A 1909 industrial building, with reroofing permitted in 2022.
 - [2450](2450/) — A 1911 church, with electrical work permitted in 1989.

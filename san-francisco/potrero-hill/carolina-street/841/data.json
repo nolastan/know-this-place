@@ -1,0 +1,107 @@
+{
+  "address": "841 Carolina Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/carolina-street/841/",
+  "apn": "4097034",
+  "block": "4097",
+  "lot": "034",
+  "eas_baseid": "368722",
+  "coordinates": {
+    "lat": 37.757965,
+    "lng": -122.399664
+  },
+  "parcel": {
+    "year_built": 1929,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0841 CAROLINA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73431,
+    "assessed_improvement_value": 226859
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9516925",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-11",
+      "status_date": "1996-04-17",
+      "estimated_cost": 14269,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024544",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-12-03",
+      "status_date": "1991-08-20",
+      "estimated_cost": 1475,
+      "description": "installation of automatic fire suppression system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAROLINA&street_type=ST&address_number=841",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4097034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4097&lot=034",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4097034",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929",
+      "kind": "construction",
+      "description": "Built in 1929 by the Molokan community as the First Russian Molokan Church, the first purpose-built place of worship on Potrero Hill and still in use as a church and community centre.",
+      "source": "russian-american-context-statement"
+    }
+  ],
+  "unknowns": [
+    "The 2025 Russian American Historic Context Statement dates the church's construction to 1929 in two places and gives its founding as 1930 in the 1933-34 table of places of worship."
+  ]
+}

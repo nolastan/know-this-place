@@ -10,6 +10,7 @@ The residential parcels on Mason Street documented here so far, from the city's 
 - [125](125/) — Affordable family housing whose Mason Street facade carries Mildred Howard's text piece.
 - [147–149](147/) — Supportive housing wrapped in a ceramic ribbon of open hands, from door to roof.
 - [300–330](300/) — A 1908 hotel in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2025.
+- [301–325](301/) — A 1955 garage in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen remodel permitted in 2016.
 - [333](333/) — A 1909 theater in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1993.
 - [414–430](414/) — A 1911 2-unit building in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen remodel permitted in 1998.
 

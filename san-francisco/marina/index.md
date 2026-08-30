@@ -18,6 +18,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Filbert Street](filbert-street/) — 2 buildings, built 1908–1913.
 - [Fillmore Street](fillmore-street/) — 2 buildings, built 1900–1936; 1 in the Marina Historic District.
 - [Francisco Street](francisco-street/) — 5 buildings, built 1923–1926; 1 in the Marina Corporation Residential Historic District Extension.
+- [Gough Street](gough-street/) — 1 building, built 1900.
 - [Green Street](green-street/) — 1 building, built 1916; 1 in the Pacific Heights Historic District.
 - [Jefferson Street](jefferson-street/) — 3 buildings, built 1930–1937.
 - [Laguna Street](laguna-street/) — 1 building, built 1924.

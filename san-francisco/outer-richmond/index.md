@@ -11,6 +11,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [19th Avenue](19th-avenue/) — 2 buildings, built 1900–1964.
 - [20th Avenue](20th-avenue/) — 2 buildings, built 1921.
 - [21st Avenue](21st-avenue/) — 1 building, built 1950.
+- [22nd Avenue](22nd-avenue/) — 1 building, built 1915.
 - [23rd Avenue](23rd-avenue/) — 2 buildings, built 1922–1972.
 - [24th Avenue](24th-avenue/) — 1 building, built 1923.
 - [25th Avenue](25th-avenue/) — 1 building, built 1950.

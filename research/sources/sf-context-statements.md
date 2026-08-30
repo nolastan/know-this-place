@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 35 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 36 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 35 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 22: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved). All twenty-two loops closed. |
-| **Remaining** | ~15 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 36 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 23: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). All twenty-three loops closed. |
+| **Remaining** | ~14 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -467,6 +467,18 @@ document you are about to mine.
     — while the `SharedLinks.aspx` form is what a page cites. Born-digital
     (Acrobat PDFMaker from Word); `pdftotext -layout` reads its thirteen project
     tables cleanly with no OCR damage. See "The New Deal statement" below.
+  - Nina Bogdan, *Russian American Historic Context Statement*, San Francisco
+    Planning Department (Melanie M. Bishop, senior preservation planner), adopted
+    by the Historic Preservation Commission 15 October 2025 (169 pp.), source id
+    `russian-american-context-statement`. SF Planning publishes it at
+    `https://sfplanning.org/node/3132`, which is what a page cites; the file
+    itself is in the same M-Files vault as Dogpatch and the rest, and the REST
+    content hash is once again the `accesskey` in that page's own
+    `SharedLinks.aspx` link —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/a4c9e2258c0a9586ebfa07e9c14ac5da382f41f2828dba7ea4c926ec8ef20c12/content`.
+    Born-digital (Acrobat PDFMaker from Word), so its footnote markers are set
+    off by a space and manufacture no phantom addresses. See "The Russian
+    American citywide statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -3780,3 +3792,116 @@ and they sit in three places, in ascending order of quality.
   issue #64 (Sexual Identity Based Subcultures, 2004) and issue #65 (LGBTQ+
   Cultural Heritage Strategy, 2020), both untouched, and it is the document the
   already-read Glen Park statement quotes at length.)
+
+## The Russian American citywide statement
+
+Nina Bogdan, *Russian American Historic Context Statement*, adopted 15 October
+2025, 169 pages. Source id `russian-american-context-statement`. Cite
+`https://sfplanning.org/node/3132`; fetch the vault REST path in the entry
+above. Printed page = PDF page − 1.
+
+- **Shape of the yield — four seams, and the appendices carry two thirds of
+  it.** The narrative (printed pp. 13–113) names about ninety addresses with a
+  date attached, most densely in the Potrero Hill, interwar Fillmore and
+  post-war Richmond sections. Section D (pp. 114–137) evaluates eleven named
+  properties one at a time, with architects, builders, construction years and
+  eligibility findings — this is the richest part per page. Two keyed appendix
+  maps follow: **Appendix A**, the interwar "Russian center" in the Fillmore
+  and Western Addition (131 commercial entries, 28 social/educational, 6
+  religious, 6 non-Russian venues), and **Appendix B**, post-war "Little
+  Russia" in the Richmond (38 commercial, 11 social/educational, 6 religious).
+  Tables 1, 3, 4 and 5 in the narrative add nineteenth-century churches,
+  1933–34 places of worship, newspaper offices and consular offices.
+- **Read the appendix key lists from `pdftotext`'s raw reading order, not
+  `-layout`.** The keys are three columns of numbered entries. `-layout`
+  interleaves them line by line, so a wrapped entry in column 1 runs into
+  column 2's next line; the untagged raw order emits each column as one
+  contiguous block and reads perfectly. The map schematics on the facing pages
+  are the reverse — unreadable either way, and unnecessary, because every
+  numbered pin has a key entry.
+- **The appendix entries are dated by their table, not by themselves.** Sixty
+  of them print a decade or a year; the rest print none, and the date for those
+  is the table's own heading — Appendix A's subtitle says "1920s-1940s",
+  Appendix B's says "ca 1940s-present" with a note that every unmarked entry is
+  post-World War II. Sixty-nine findings in this run were first written with a
+  decade nobody had stated. See AGENTS.md → "What we've learned the hard way".
+- **The statement tells you, twice and in terms, which of its addresses cannot
+  become pages.** "All addresses/buildings listed in the area of O'Farrell and
+  Fillmore or Webster streets are no longer extant due to the extensive
+  redevelopment after World War II" (p. 49), and the recommendations chapter
+  repeats it. That is a resolution instruction: **137 of the 164 findings that
+  never reached a parcel came back "no EAS record", almost all of them in those
+  blocks.** The dangerous ones are the survivors — an address the redevelopment
+  erased whose number the city later reissued on the new building. Comparing
+  the assessor's year built with the latest date the statement gives caught 22
+  of those; the worst was 802 McAllister Street, a 1920s jeweller resolving
+  cleanly onto a 1974 superblock that carries 69 McAllister numbers on one
+  parcel.
+- **Proprietors are named against almost every appendix entry, and they are
+  occupants.** "1. Russkaia Kniga, prop. V.P. Anitchkoff … 3. Russian Center
+  Market, prop. Konstantin Liotweizen …" — a shop's proprietor is its owner and
+  occupant, which the privacy limits bar, so this run recorded the business,
+  the trade and the address and left every proprietor, physician, dentist and
+  studio teacher out at extraction. Architects, builders, structural engineers
+  and muralists are recorded: Julia Morgan (953 De Haro Street), John Wright and
+  Wright & Sanders (864 Fulton Street), Henry Geilfuss (1198 Fulton Street),
+  Emil A. Neumarkel (2450 Sutter Street), Joseph Esherick with Constantin
+  Chekene (490 12th Avenue), Oleg Ivanitsky (6210 Geary Boulevard), Falch and
+  Knoll (3365 19th Street), Victor Arnautoff, Gleb Ilyin, Feodot Zadorojny,
+  Anton Refregier and Carl Huneke.
+- **It disagrees with itself often enough to plan for it**, and eight of those
+  disagreements are now on pages: the Westerfeld House's landmark number (#134
+  in the preface, #135 in the narrative) and its National Register reference
+  (89000197 against 89000179); the Old Holy Virgin Cathedral's style (German
+  Renaissance in the evaluation, German Gothic in the narrative); the Kolobok
+  Theatre's building (altered but extant in the text, "no longer extant" in the
+  figure caption); the Russian Renaissance restaurant's address (5241 Geary
+  Boulevard in the narrative and recommendations, 5421 in Appendix B); the
+  Church of Christ the Savior's second address (2040 Anza Street in the
+  narrative, 2050 in both appendices); the Molokan church's date (built 1929,
+  founded 1930); the Russian Children's Day Home (2174 Post Street in the
+  narrative, 2147 in the recommendations); and the Russian Center's completion
+  year, where the statement itself names and rejects the 1907 some sources give.
+- **It also flags one of its own sources as wrong**, twice worth following: the
+  Moscow-affiliated church "at 163 Howard Street" is corrected in a footnote to
+  1630 Howard between 12th and 13th Streets, and the correction is right.
+- **Filing was a per-finding judgement, not a switch.** `--area-from-nhood` and
+  the nearest-published-page rule disagreed on 66 of 198 resolutions and split
+  about evenly on which was right. The nearest-page rule won wherever the site
+  had settled a block (5200–5600 Geary Boulevard under `inner-richmond`, 1941
+  Irving Street under `inner-sunset`, 514 Larkin Street under `nob-hill`, 3031
+  Steiner Street under `pacific-heights`); the analysis neighborhood won where
+  it had not (Geary Boulevard above 5700, 332 and 436 Balboa Street, 573 22nd
+  Avenue, 1320 Castro Street). Twenty-one paths were set by hand and every one
+  says so in its `resolution.method`.
+  - **10th Avenue's Richmond half is filed under `inner-sunset` in places.**
+    The site carries `inner-sunset/10th-avenue/718`, which is north of Golden
+    Gate Park and cannot be the Inner Sunset; the nearest-page rule inherits
+    that and sent 594 and 738 10th Avenue after it. Both were moved to
+    `inner-richmond`. The same shape put 26 Balboa Street under
+    `lone-mountain`.
+- **The Presidio is not in EAS.** 130 Fisher Loop, the Interfaith Center where
+  Victor Arnautoff's 1935 Presidio mural hangs, has no EAS record at all —
+  federal land. It stays unresolved.
+
+- **Verified:** 2026-08-30 (Russian American citywide statement: read all 169
+  pages — the preface and methodology, all five historical periods of section
+  C, the four property-type frameworks and eleven worked property evaluations
+  of section D, the recommendations, Tables 1 and 3–5, and both keyed appendix
+  lists. 338 distinct number-and-street candidates found by regex and
+  reconciled against a full reading. **365 findings, 179 published on 164
+  pages**, 136 of them created by this run, across 21 neighborhood directories
+  with `inner-richmond` (35 facts), `pacific-heights` (32), `outer-richmond`
+  (23) and `western-addition` (14) at the head. Twenty-two resolved findings
+  were declined, every one because the assessor dates the building on the
+  parcel decades after the latest date the statement gives — the Western
+  Addition redevelopment, mostly, plus 1915/1919 Sutter Street on a 1978
+  Japantown parcel and 101 Hayes Street on a 2018 one. 164 never reached a
+  parcel: 137 addresses EAS no longer holds, 17 condominiums or parcels the
+  roll classes as condominiums, 8 on streets EAS does not carry (South Park's
+  low numbers and Fisher Loop in the Presidio), and 2 recorded ranges now split
+  across parcels the record does not choose between. Eight disagreements are
+  stated on pages. Coverage note: this document is read in full and nothing in
+  it is outstanding. It names the Jewish historic context statement as a
+  related theme and says the German American and Clubs and Social Halls
+  statements are in progress — the third of those is issue #69.)

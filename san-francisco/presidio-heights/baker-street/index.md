@@ -4,6 +4,7 @@ The parcels on Baker Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [1457](1457/) — A 1900 2-unit building with a ground-floor store, with an addition permitted in 2002.
 - [1513](1513/) — A 1906 2-unit apartment building, with a kitchen remodel permitted in 2016.
 - [1517](1517/) — A 1907 two-flat, with permit records from 1997 to 1998.
 - [1521–1523](1521/) — A 1900 two-flat, with deck work permitted in 2011.

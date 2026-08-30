@@ -5,6 +5,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1](1/) — Crown Zellerbach's headquarters — the city's first International Style curtain wall, landmarked in 1987.
+- [200](200/) — A 1912 office building, with plumbing work permitted in 2019.
 - [225](225/) — A 1948 office building, with deck work permitted in 2008.
 - [333](333/) — A 1987 office building, with a seismic retrofit permitted in 2011.
 - [348–350](348/) — A 2018 office building, with stair work permitted in 2018.

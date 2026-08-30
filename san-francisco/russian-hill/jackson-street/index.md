@@ -4,6 +4,7 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [1518–1522](1518/) — A 1909 three-flat, with reroofing permitted in 2011.
 - [1641](1641/) — A 1914 garage, with permit records from 1984 to 1995.
 
 Pages are generated from the DataSF datasets listed in each page's

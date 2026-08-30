@@ -4,6 +4,7 @@ The parcels on Steiner Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [1043](1043/) — A 1900 single-family house in the Alamo Square Historic District, with a vertical addition permitted in 1998.
 - [1057](1057/) — An 1890 10-unit apartment building in the Alamo Square Historic District, with garage work permitted in 1986.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -22,6 +22,7 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [1333–1335](1333/) — A 1911 Classical Revival, designed by Theodore W. Lenzen.
 - [1334–1336](1334/) — A 1908 building.
 - [1349](1349/) — A 1924 building, designed by O. R. Thayer.
+- [1350–1352](1350/) — A 1909 2-unit building with a ground-floor store, with reroofing permitted in 2025.
 - [1366–1368](1366/) — A 1914 Craftsman, designed by Theodore W. Lenzen.
 - [1385–1399](1385/) — A 1927 building, designed by William G. Merchant.
 - [1407–1411](1407/) — A 1914 building, designed by Charles A. Haber.

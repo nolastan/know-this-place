@@ -16,6 +16,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [2725](2725/) — A 1900 church, with a rear addition permitted in 1995.
 - [2826](2826/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2024.
 - [2922](2922/) — A 1900 single-family house, with a rear addition permitted in 2016.
+- [3093–3095](3093/) — An 1898 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1984.
 - [3151](3151/) — A 1910 garage, with a rear addition permitted in 1999.
 
 Pages are generated from the DataSF datasets listed in each page's

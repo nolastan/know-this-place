@@ -190,6 +190,14 @@ def check_rules(rel: Path, data: dict) -> None:
     seen: set[str] = set()
     any_published = False
     unmarked: list[str] = []
+    # One parcel is one page. Two findings that resolve to the same parcel and
+    # are both going to a page, under different paths, mean one of them is
+    # filed on a page the parcel does not have — the corner-lot case, where the city addresses a building on
+    # both its streets and the site keeps a single page at the lowest number of
+    # the street the assessor files it under. Caught here it is a line; caught
+    # after seeding it is a page that never gets created and a fact that never
+    # lands.
+    paths_by_apn: dict[str, dict[str, str]] = {}
     for f in data.get("findings", []):
         if not isinstance(f, dict):
             continue
@@ -219,6 +227,9 @@ def check_rules(rel: Path, data: dict) -> None:
             if len(area) >= 2 and not (ROOT.parent / area[0] / area[1]).is_dir():
                 err(str(rel), f"{fid}: resolution.path names {area[0]}/{area[1]}/, "
                               f"which is not a directory this site has")
+            apn, path = res.get("apn"), res.get("path")
+            if apn and path and pub_status != "declined":
+                paths_by_apn.setdefault(apn, {}).setdefault(path, str(fid))
         elif status in ("unresolved", "rejected") and not res.get("note") and not res.get("method"):
             err(str(rel), f"{fid}: {status} findings must say why (resolution.note or .method)")
 
@@ -228,6 +239,13 @@ def check_rules(rel: Path, data: dict) -> None:
                 err(str(rel), f"{fid}: published but resolution.status is {status!r}")
             if not pub.get("pr"):
                 err(str(rel), f"{fid}: published findings need publish.pr")
+
+    for apn, paths in sorted(paths_by_apn.items()):
+        if len(paths) > 1:
+            where = "; ".join(f"{p} ({f})" for p, f in sorted(paths.items()))
+            err(str(rel), f"parcel {apn} is resolved to {len(paths)} different "
+                          f"paths — one parcel is one page, so pick the one the "
+                          f"parcel actually has: {where}")
 
     # The publish loop. A file with published entries has been through a
     # publishing run, so every resolved entry in it owes a decision — published

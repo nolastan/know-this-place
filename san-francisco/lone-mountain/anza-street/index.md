@@ -4,6 +4,7 @@ The parcels on Anza Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [300](300/) — A 1960 building, with deck work permitted in 1986.
 - [1125](1125/) — A 1906 single-family house, with a bathroom remodel permitted in 2013.
 
 Pages are generated from the DataSF datasets listed in each page's
