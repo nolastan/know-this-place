@@ -13,6 +13,7 @@ opened here in 1905.
 - [17th Street](17th-street/) — 3 buildings, built 1900–1948.
 - [18th Street](18th-street/) — 7 buildings, built 1984–1985.
 - [19th Street](19th-street/) — 1 building, built 1907.
+- [22nd Street](22nd-street/) — 1 building, built 1915.
 - [Arkansas Street](arkansas-street/) — 1 building, built 1950; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Carolina Street](carolina-street/) — 1 building, built 1985.
 - [Connecticut Street](connecticut-street/) — 2 buildings, built 1900–1906.
@@ -22,5 +23,6 @@ opened here in 1905.
 - [Mississippi Street](mississippi-street/) — 1 building, built 1928.
 - [Missouri Street](missouri-street/) — 4 buildings, built 1911–1962.
 - [Pennsylvania Avenue](pennsylvania-avenue/) — 3 buildings, built 1906–1942.
+- [Rhode Island Street](rhode-island-street/) — 1 building, built 1910.
 - [Texas Street](texas-street/) — 2 buildings, built 1900–1909.
 - [Vermont Street](vermont-street/) — 1 building, built 1900.

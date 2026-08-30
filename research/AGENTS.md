@@ -718,6 +718,55 @@ The mechanics:
   what stands between that page and a bulk sweep. *After fixing a render crash,
   read the diff before you trust the page: a loud failure is safer than a silent
   rewrite, and the page may need `"rendered": false` rather than a fix.*
+- **A multi-column key list reads correctly in `pdftotext`'s raw order and
+  wrongly under `-layout`.** The Russian American statement's two appendix maps
+  are keyed to three-column lists of numbered entries. `-layout` reconstructs
+  the page line by line, so a wrapped entry in the first column runs straight
+  into the second column's next line and two businesses merge into one; raw
+  reading order emits each column as a contiguous block and is exact. That is
+  the opposite of the advice for scanned tables above, and the two together are
+  the real rule: *a PDF has three readings — `-layout`, raw order and the
+  content stream — and which one is right is a property of the document, not of
+  the project. Try all three on one page and diff them before reading the rest.*
+- **An undated row in a dated table takes the table's date, not yours.** Sixty
+  of the Russian American statement's appendix entries print a decade; the other
+  sixty-nine print nothing, and the only date the document gives them is its own
+  table heading — "1920s-1940s" for the interwar Fillmore, "ca 1940s-present"
+  for the post-war Richmond. Every one of those sixty-nine was first written
+  with a decade the run had supplied itself, which looks exactly like evidence
+  and is not. This is the New Deal lesson's second half: that one said *find the
+  sentence that says the year*; this one says *when there is no sentence, the
+  table's own heading is the span, and `extra.date_basis` has to say so.*
+- **A source that says an area was demolished has told you how its addresses
+  will resolve.** The Russian American statement says twice that every building
+  in the interwar "Russian center" came down in the Western Addition
+  redevelopment — and 137 of its 164 unresolved findings came back "no EAS
+  record", almost all in those blocks. The blanket statement is not colour, it
+  is a prediction, and the useful consequence is the opposite of the obvious
+  one: *the findings to look at hardest are the ones that resolve anyway*,
+  because the city reissued those numbers on the buildings that replaced them.
+  Comparing the roll's year built with the latest date the source gives caught
+  22, one of them a 1920s shop landing on a 1974 superblock that carries 69
+  numbers of that street on a single parcel.
+- **`seed_pages.py render` does not respect `scripts/render-backlog.txt`.** The
+  backlog grandfathers pages whose HTML the renderer cannot yet reproduce, and
+  a bulk `render` over a batch's page list will quietly sweep any that happen to
+  be in it — 2727 Pierce Street lost its "Casebolt House" tag, its hand-written
+  meta description and a note about omitted permits, and `validate.py` then
+  reported the page as ready to drop from the backlog. The renderer has no
+  `data.json` key for any of the three, so the fix is to keep the hand-written
+  file. *Before rendering a batch, intersect its page list with the backlog, and
+  read `git diff` on every page in both.*
+- **A privacy filter's tidy-up only handles the name at the end of a clause.**
+  `redact()` dropped a dangling connective before punctuation, so "correct acc
+  violation-repair by mr. mcabe instructions" became "…repair by instructions"
+  and "notice by john sims on 12-12-2001" became "notice by on 12-12-2001" —
+  the name gone, the sentence broken, and both shipped to a page. It now also
+  drops a connective left pointing at a second connective. The neighbouring
+  half of the fix is the redaction file's own `_order` rule: list "harold lewis
+  and assc" before "harold lewis", or the firm's remnant is stranded the same
+  way.
+
 - **A document's own recommendation is a fact about the building, not about the
   document.** "The statement recommends the property for landmark designation"
   names the source in the page body, which the publishing rules forbid, and 47

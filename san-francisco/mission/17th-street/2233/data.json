@@ -1,0 +1,111 @@
+{
+  "address": "2233–2235 17th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/17th-street/2233/",
+  "apn": "3975012",
+  "block": "3975",
+  "lot": "012",
+  "eas_baseid": "366883",
+  "coordinates": {
+    "lat": 37.764344,
+    "lng": -122.406011
+  },
+  "address_range": "2233–2235",
+  "street_numbers_on_parcel": [
+    "2233",
+    "2235"
+  ],
+  "parcel": {
+    "year_built": 1962,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 7,
+    "lot_area_sqft": 9997,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2235 17TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 131198,
+    "assessed_improvement_value": 918153
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306029163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-02",
+      "status_date": "2023-12-18",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "replace 19 windows with the same size. front windows will be fiberglass material. windows visible from street. u<0.30. replace in (e) openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207292581",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-29",
+      "status_date": "2003-09-19",
+      "estimated_cost": 31000,
+      "revised_cost": 31000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=ST&address_number=2233",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3975012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3975&lot=012",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3975012",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1961",
+      "kind": "occupancy",
+      "description": "The Russian Gospel Temple has occupied this building since 1961; its congregation voted to rename it the San Francisco Gospel Church in 2022.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

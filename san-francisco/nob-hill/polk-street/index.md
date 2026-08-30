@@ -16,6 +16,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 - [1343–1351](1343/) — A 1914 store building, with a bathroom remodel permitted in 1990.
 - [1400](1400/) — A 1920 store building, with reroofing permitted in 2013.
 - [1410–1412](1410/) — A 1909 4-unit building with a ground-floor store, with stair work permitted in 2011.
+- [1411–1431](1411/) — A 1909 store building, with a bathroom remodel permitted in 2018.
 - [1424–1428](1424/) — A 1908 18-unit apartment building, with a seismic retrofit permitted in 2004.
 - [1436–1446](1436/) — A 1916 store building, with electrical work permitted in 1987.
 

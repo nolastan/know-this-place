@@ -1,0 +1,116 @@
+{
+  "address": "2002 22nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/22nd-street/2002/",
+  "apn": "4095032",
+  "block": "4095",
+  "lot": "032",
+  "eas_baseid": "368610",
+  "coordinates": {
+    "lat": 37.757396,
+    "lng": -122.40116
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2468,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2002 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38475,
+    "assessed_improvement_value": 54329
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708270914",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-27",
+      "status_date": "2007-09-05",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509831",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-27",
+      "status_date": "1995-10-27",
+      "estimated_cost": 5000,
+      "description": "kitchen & bath remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200024",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-01-05",
+      "status_date": "1983-03-04",
+      "estimated_cost": 10000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=2002",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4095032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4095&lot=032",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4095032",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923",
+      "kind": "occupancy",
+      "description": "A Russian Spiritual Christian prayer meeting was held in this building in December 1923 and reported in the local press; the building survives as a residence.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

@@ -14,6 +14,7 @@ The parcels on 12th Avenue documented here so far, from the city's address, asse
 - [1338](1338/) — A 1899 Queen Anne, built by L. G. Bergren.
 - [1339–1343](1339/) — A 1904 Classical Revival, built by McGee and Canfield.
 - [1345–1349](1345/) — A 1904 Shingle, built by Joseph B. Ogborn.
+- [1346](1346/) — A 1904 single-family house.
 - [1355](1355/) — A 1905 Classical Revival, built by McGee and Canfield.
 - [1418](1418/) — A 1908 late Queen Anne, built by Lincoln U. Grant.
 - [1425](1425/) — A 1912 Craftsman, built by Lincoln U. Grant.

@@ -310,6 +310,13 @@ Two things bite when adding those facts in bulk:
   put there by whoever maintains it. A page it counts as *failed* did not get
   the fact either. Neither is silent: `render` prints both, and `validate.py`
   prints the opt-out count on every run.
+- **Intersect your page list with `scripts/render-backlog.txt` first.** That
+  file grandfathers pages whose HTML the renderer cannot yet reproduce, and
+  `render` does not consult it: a bulk render sweeps any backlogged page in the
+  list and can drop hand-written content the renderer has no `data.json` key
+  for. Render those pages last, read `git diff` on each, and where the diff
+  loses something, restore the file, add your fact to its HTML by hand and leave
+  its backlog line in place.
 
 **Check the neighborhood directory the resolver chose before you seed.** It
 files a new page under the area of the nearest published page, which is right
@@ -344,7 +351,10 @@ re-published by the next run**, and telling "not done yet" from "done but
 unrecorded" costs a full verification pass. This has happened; see
 [AGENTS.md → What we've learned the hard way](AGENTS.md#what-weve-learned-the-hard-way).
 `check.py` now fails the run if a file has published entries and resolved ones
-with no decision recorded.
+with no decision recorded. It also fails when two findings headed for a page
+resolve to the same parcel under different paths — the corner-lot case, where
+the city addresses one building on both its streets and only one of the two
+pages will ever exist.
 
 ## 5. Check it
 

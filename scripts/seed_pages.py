@@ -851,9 +851,13 @@ def redact(text: str | None) -> str | None:
     if out.count("(") != out.count(")"):                   # now-unbalanced
         out = out.replace("(", " ").replace(")", " ")
     out = re.sub(r"\s{2,}", " ", out)
-    # A connective whose object was the name now points at nothing.
+    # A connective whose object was the name now points at nothing — either at
+    # the end of the clause, or at a second connective that led the rest of the
+    # sentence ("notice by john sims on 12-12-2001" leaves "notice by on …").
     out = re.sub(r"\b(?:by|per|from|of|for|with|at|and|in|as)\b\s*(?=[.,;:]|$)", "", out,
                  flags=re.I)
+    out = re.sub(r"\b(?:by|per|from|of|for|with|as)\s+(?=(?:by|per|from|of|for|with|at|in|on|as|and|to)\b)",
+                 "", out, flags=re.I)
     out = re.sub(r"\s+([,;.:])", r"\1", out)
     out = re.sub(r"([.,;:])\s*[.,;:]+", r"\1", out)        # doubled punctuation
     out = re.sub(r"(^|\.\s)\s*[,;:.]+\s*", r"\1", out)     # punctuation opening a clause
