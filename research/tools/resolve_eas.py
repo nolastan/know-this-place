@@ -1288,11 +1288,16 @@ def build_manifest(city: City, data: dict) -> list:
         res = f.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("apn"):
             continue
-        if not (res.get("note") or "").startswith("No page at this path yet"):
-            continue                       # the page exists; the seeder skips it anyway
         m = re.match(r"^/([a-z\-]+)/([a-z\-]+)/([a-z0-9\-]+)/([^/]+)/$", res["path"] or "")
         if not m:
             continue
+        # Ask the filesystem whether the page exists, not the note. This used to
+        # test `note.startswith("No page at this path yet")`, which is a string
+        # this tool writes itself — so a resolution corrected by hand, which
+        # carries whatever note the publisher wrote, dropped out of the manifest
+        # without a word and its page was never seeded. Twice in one run.
+        if (REPO / res["path"].strip("/") / "data.json").exists():
+            continue                       # the page exists; the seeder skips it anyway
         city_slug, area, slug, number = m.groups()
         apn = res["apn"]
         if apn in by_parcel:

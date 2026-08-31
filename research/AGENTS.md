@@ -722,6 +722,15 @@ The mechanics:
   below is what settles it: a roll year decades later means the building
   described is not on that parcel. Publishing without that check would have put
   a Maybeck attribution and a landmark number on the wrong building.
+- **A hand-corrected resolution used to fall out of the manifest without a
+  word.** `resolve_eas.py manifest` decided whether a page already existed by
+  testing `resolution.note.startswith("No page at this path yet")` — a string
+  the tool writes itself. Any resolution a publisher corrected by hand carried a
+  different note, so it was skipped, no page was seeded, and the publish step
+  then declined the finding for having no page. It happened twice in one run
+  (the Roos House and 4676-4680 18th Street). **Fixed:** the manifest now asks
+  the filesystem whether `data.json` exists at the path. *A tool that reads its
+  own prose back is testing what it said, not what is true.*
 - **Two findings for one page will silently lose one, if the page carries one
   panel per survey.** A publisher that appends a `historic_survey` entry only
   when no entry from that source id exists — the right rule, since two panels
