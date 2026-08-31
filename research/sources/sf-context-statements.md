@@ -4479,7 +4479,7 @@ and the figure captions add perhaps a tenth as much.
   73 biographies, each with its education, firms, cultural identification,
   narrative, footnotes, "Projects in San Francisco" and "Other notable projects"
   lists, and every figure caption. **505 numbered-address mentions → 412
-  findings → 353 resolved → 317 published on 312 pages**, 175 of them created by
+  findings → 353 resolved → 317 published on 312 pages**, 201 of them created by
   this run, across 38 neighborhood directories with `pacific-heights` at the head.
   59 never reached a parcel: 25 numbers the city no longer has, 18 recorded
   ranges now split across parcels, 14 condominiums, 1 street EAS does not hold
