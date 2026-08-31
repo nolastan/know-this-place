@@ -5,6 +5,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 ## Streets documented so far
 
 - [Ashbury Street](ashbury-street/) — Two buildings — the house guides give the Grateful Dead, and one of three Janis Joplin addresses.
+- [Ashbury Terrace](ashbury-terrace/) — 1 building, built 1912.
 - [Broderick Street](broderick-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
 - [Buena Vista Avenue](buena-vista-avenue/) — 1 building, built 1931.
 - [Buena Vista Avenue West](buena-vista-avenue-west/) — The house the city names the Floyd Spreckels Mansion, tied to Jack London and Danny Glover.

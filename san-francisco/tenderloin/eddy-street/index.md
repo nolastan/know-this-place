@@ -8,6 +8,7 @@ The parcels on Eddy Street documented here so far, from the city's address, asse
 - [141–145](141/) — A 1907 hotel in the Uptown Tenderloin Historic District, with an addition permitted in 2017.
 - [156–166](156/) — A 1908 hotel in the Uptown Tenderloin Historic District, with stair work permitted in 1985.
 - [200–216](200/) — A 1911 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2020.
+- [230–232](230/) — A 1927 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 2001.
 - [233–235](233/) — A 1906 hotel in the Uptown Tenderloin Historic District, with plumbing work permitted in 2006.
 - [234–238](234/) — A 1909 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1998.
 - [340](340/) — A 1911 83-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2004.

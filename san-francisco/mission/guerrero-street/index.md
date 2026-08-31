@@ -258,6 +258,7 @@ Every residential parcel on Guerrero Street that the city's address, assessor an
 - [1326](1326/) — A 1900 single-family house, with foundation work permitted in 2022.
 - [1327](1327/) — A 1900 two-flat, with reroofing permitted in 2003.
 - [1330–1336](1330/) — A 1900 6-unit apartment building, with reroofing permitted in 2019.
+- [1335](1335/) — A 1918 building, with a kitchen and bathroom remodel permitted in 1985.
 - [1343–1345](1343/) — An 1884 two-flat, with a kitchen and bathroom remodel permitted in 2011.
 - [1344–1348](1344/) — A 1908 three-flat, with deck work permitted in 2001.
 - [1349](1349/) — A 1900 two-flat, with reroofing permitted in 1998.

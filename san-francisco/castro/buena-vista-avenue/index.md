@@ -8,6 +8,7 @@ Every residential parcel on Buena Vista Avenue that the city's address, assessor
 - [215](215/) — A 1910 single-family house, with stair work permitted in 2024.
 - [253](253/) — A 1908 single-family house, with a vertical addition permitted in 1990.
 - [267](267/) — A 1956 single-family house, with window replacement permitted in 1997.
+- [355](355/) — A 1986 building, with a kitchen remodel permitted in 2007.
 - [421–435](421/) — A 1942 11-unit tic building, with an addition permitted in 2017.
 - [437](437/) — A 1921 single-family house.
 - [441](441/) — A 1955 6-unit apartment building, with reroofing permitted in 2014.

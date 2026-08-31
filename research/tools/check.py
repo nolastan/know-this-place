@@ -206,6 +206,25 @@ def check_rules(rel: Path, data: dict) -> None:
             err(str(rel), f"duplicate finding id {fid!r}")
         seen.add(fid)
 
+        # A hyphenated street_number is a range the resolver cannot read. It
+        # looks the number up literally, finds nothing, and reports "EAS has no
+        # address near it on this street" — which reads like a dead address and
+        # is really a mis-filled field. The range belongs in
+        # extra.address_range_as_recorded, with street_number holding the low
+        # number alone. One batch lost 40 resolutions to this before anyone
+        # noticed 809-811 Pierce Street coming back unresolved.
+        num = f.get("street_number") or ""
+        extra = f.get("extra") if isinstance(f.get("extra"), dict) else {}
+        _res = f.get("resolution") if isinstance(f.get("resolution"), dict) else {}
+        if ("-" in num and not extra.get("address_range_as_recorded")
+                and _res.get("status") == "unresolved"):
+            err(str(rel), f"{fid}: street_number {num!r} is a range, but "
+                          f"extra.address_range_as_recorded is not set — the "
+                          f"resolver reads the range from that field and looks "
+                          f"street_number up literally, so this will come back "
+                          f"unresolved. Put the range there and the low number "
+                          f"in street_number.")
+
         res = f.get("resolution", {}) if isinstance(f.get("resolution"), dict) else {}
         status = res.get("status")
         pub = f.get("publish", {}) if isinstance(f.get("publish"), dict) else {}

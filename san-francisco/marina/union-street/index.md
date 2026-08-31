@@ -23,6 +23,8 @@ The parcels on Union Street documented here so far, from the city's address, ass
 - [2277–2299](2277/) — A 1900 7-unit building with a ground-floor store, with reroofing permitted in 2015.
 - [2325](2325/) — A 1948 church, with a vertical addition permitted in 1997.
 - [2460](2460/) — The address to which Stephen Tilton's house of 1872, built beside the Presidio & Ferries cable terminal, was moved.
+- [2526](2526/) — A 1902 single-family house in the Cow Hollow First Bay Tradition Historic District, with chimney work permitted in 1995.
+- [2730](2730/) — A 1919 single-family house in the Cow Hollow First Bay Tradition Historic District, with a bathroom remodel permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

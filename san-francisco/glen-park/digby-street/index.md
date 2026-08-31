@@ -4,6 +4,7 @@ The parcels on Digby Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [2](2/) — A single-family house, with facade work permitted in 2009.
 - [80](80/) — An assessor class: vacant lot, with reroofing permitted in 2012.
 
 Pages are generated from the DataSF datasets listed in each page's

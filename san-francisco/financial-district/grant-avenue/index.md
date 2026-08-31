@@ -8,10 +8,12 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 - [45](45/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2003.
 - [51–55](51/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1991.
 - [164–166](164/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1997.
+- [220–288](220/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1990.
 - [231–233](231/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2010.
 - [239](239/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2001.
 - [249–253](249/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2000.
 - [255–257](255/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2000.
+- [321–323](321/) — A 1910 hotel in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2005.
 - [334–352](334/) — A 1912 hotel in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 2017.
 - [400–414](400/) — A 1913 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
 - [417–419](417/) — A 1910 3-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 2000.

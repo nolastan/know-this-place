@@ -11,4 +11,5 @@ A residential district south of the Mission proper, built up in the first decade
 - [Oneida Avenue](oneida-avenue/) — 1 building.
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.
 - [San Jose Avenue](san-jose-avenue/) — The San Francisco and San Mateo Railway's 1901 Geneva car barn, a San Francisco landmark since 1985.
+- [Santa Rosa Avenue](santa-rosa-avenue/) — 1 building, built 1952.
 - [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.

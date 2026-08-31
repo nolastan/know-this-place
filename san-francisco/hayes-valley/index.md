@@ -18,9 +18,11 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Hayes Street](hayes-street/) — 1 building, built 1911; 1 in the Hayes Valley Residential Historic District.
 - [Hermann Street](hermann-street/) — 1 building, built 1900.
 - [Laguna Street](laguna-street/) — 1 building, built 1890; 1 in the Hayes Valley Residential Historic District.
+- [Lily Street](lily-street/) — 1 building, built 1946; 1 in the Hayes Valley Residential Historic District.
 - [Linden Street](linden-street/) — 2 buildings, built 1924–1971; 2 in the Hayes Valley Residential Historic District.
 - [Market Street](market-street/) — 5 buildings, built 1900–1931; 1 in the Hayes Valley Residential Historic District.
 - [Oak Street](oak-street/) — 1 building, built 2008.
+- [Octavia Street](octavia-street/) — 3 buildings, built 1946; 3 in the Hayes Valley Residential Historic District.
 - [Page Street](page-street/) — 3 buildings, built 1900–1924; 3 in the Hayes Valley Residential Historic District.
 - [Steiner Street](steiner-street/) — One of the Alamo Square Painted Ladies of Postcard Row; Alice Walker's home until 1996.
 - [Van Ness Avenue](van-ness-avenue/) — 2 buildings, built 1900–1911; 1 in the Civic Center Historic District.

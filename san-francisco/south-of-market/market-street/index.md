@@ -38,6 +38,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1025–1029](1025/) — A store building in the Market Street Theatre and Loft Historic District, with an addition permitted in 2001.
 - [1041–1045](1041/) — A 1907 office building in the Market Street Theatre and Loft Historic District, with reroofing permitted in 1996.
 - [1049–1051](1049/) — A 1907 store building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1995.
+- [1053–1055](1053/) — A 1908 store building in the Market Street Theatre and Loft Historic District, with permit records from 2001 to 2018.
 - [1059–1061](1059/) — A 1910 office building in the Market Street Theatre and Loft Historic District, with facade work permitted in 2017.
 - [1083–1087](1083/) — A 1912 hotel in the Market Street Theatre and Loft Historic District, with reroofing permitted in 1993.
 - [1095](1095/) — A 1905 hotel in the Market Street Theatre and Loft Historic District, with deck work permitted in 2014.
@@ -56,6 +57,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1272–1276](1272/) — A 1907 hotel in the Civic Center Historic District, with an addition permitted in 2016.
 - [1278–1298](1278/) — A 1907 hotel in the Civic Center Historic District, with window replacement permitted in 2015.
 - [1301–1375](1301/) — A 1937 office building, with plumbing work permitted in 2011.
+- [1455](1455/) — A 1979 office building, with stair work permitted in 2015.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

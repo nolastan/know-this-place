@@ -7,6 +7,7 @@ The parcels on 28th Avenue documented here so far, from the city's address, asse
 - [1434](1434/) — A 1930 single-family house, with a kitchen and bathroom remodel permitted in 2023.
 - [1438](1438/) — A 1930 single-family house, with a kitchen and bathroom remodel permitted in 2015.
 - [1574](1574/) — A 1929 single-family house, with facade work permitted in 1996.
+- [2278](2278/) — A 1939 single-family house, with a kitchen remodel permitted in 2005.
 - [2412–2418](2412/) — A 1947 7-unit building with a ground-floor store, with reroofing permitted in 2022.
 - [2443](2443/) — A 1915 single-family house, with foundation work permitted in 2005.
 - [2462](2462/) — A 1915 single-family house, with deck work permitted in 2013.

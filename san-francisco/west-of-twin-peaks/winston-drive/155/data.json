@@ -1,0 +1,116 @@
+{
+  "address": "155 Winston Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/west-of-twin-peaks/winston-drive/155/",
+  "apn": "7236001",
+  "block": "7236",
+  "lot": "001",
+  "eas_baseid": "476956",
+  "coordinates": {
+    "lat": 37.726706,
+    "lng": -122.474448
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 12967,
+    "use": "Commercial Office",
+    "property_class": "LIBRARY",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Lakeside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0155 WINSTON             DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201005273402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-27",
+      "status_date": "2011-05-16",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revise plywood shear wall at line \"a\". revision to application #200904136157.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003168344",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-16",
+      "status_date": "2011-05-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to current open permit #200904136157 to add simpson strongwall shearwall system in lieu of original plywd. on wd. stud shear wall at line \"c\" between column lines 4.1 & 5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904136157",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-04-13",
+      "status_date": "2013-01-28",
+      "revised_cost": 2700000,
+      "description": "renovate/addition to (e) library include site demolition, selective bldg demolition, new sitework improvements including sidewalks, bldg strl upgrades, windows, doors, roofing, exiting doors & devices, caseworks finishes, mech, elec&plumb wk in accordance w/drawings specs addition 1100 sq ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WINSTON&street_type=DR&address_number=155",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7236001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7236&lot=001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7236001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Appleton & Wolfard",
+    "name": "Merced Branch Library"
+  },
+  "historical_record": [
+    {
+      "date": "1957",
+      "kind": "construction",
+      "description": "Merced Branch Library, designed by Appleton & Wolfard.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

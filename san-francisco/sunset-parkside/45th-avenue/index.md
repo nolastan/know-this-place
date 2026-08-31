@@ -13,6 +13,7 @@ The parcels on 45th Avenue documented here so far, from the city's address, asse
 - [1533](1533/) — A 1950 single-family house, with reroofing permitted in 1996.
 - [2191](2191/) — A 1941 single-family house, with a bathroom remodel permitted in 2004.
 - [2274](2274/) — A 1908 single-family house, with reroofing permitted in 2003.
+- [2700](2700/) — A 1974 building, with a rear addition permitted in 1989.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -7,6 +7,7 @@ The parcels on Greenwich Street documented here so far, from the city's address,
 - [833–837](833/) — A 1912 three-flat, with garage work permitted in 2014.
 - [1140–1146](1140/) — A 1948 4-unit apartment building, with reroofing permitted in 2012.
 - [1150–1156](1150/) — A 1948 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [1160](1160/) — A 1948 building, with a bathroom remodel permitted in 2014.
 - [1201](1201/) — A 1923 20-unit apartment building, with a kitchen and bathroom remodel permitted in 1984.
 - [1310–1314](1310/) — A 1924 6-unit tic building, with window replacement permitted in 2024.
 - [1336](1336/) — A 1900 single-family house, with a rear addition permitted in 1987.

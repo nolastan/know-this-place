@@ -69,6 +69,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [589–591](589/) — A 1907 9-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2016.
 - [595–599](595/) — A 1900 15-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with reroofing permitted in 1995.
 - [601](601/) — The Norwegian Lutheran Church, which moved here from South of Market in the 1930s.
+- [651](651/) — A 1915 building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2013.
 - [675](675/) — A 1912 12-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with reroofing permitted in 2023.
 - [683–685](683/) — A 1908 two-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a kitchen remodel permitted in 1989.
 - [689–691](689/) — A 1925 two-flat in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 1984.

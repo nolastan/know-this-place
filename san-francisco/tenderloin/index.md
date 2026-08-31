@@ -5,6 +5,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 ## Streets documented so far
 
 - [Derby Street](derby-street/) — 1 building, built 1912.
+- [Dr Carlton B Goodlett Place](dr-carlton-b-goodlett-place/) — 1 building, built 1900; 1 in the Civic Center Historic District.
 - [Eddy Street](eddy-street/) — 4 buildings, built 1907–1956; 3 in the Uptown Tenderloin Historic District.
 - [Ellis Street](ellis-street/) — 1 building, built 1908; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Geary Street](geary-street/) — 1 building, built 2017.
@@ -14,6 +15,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Hyde Street](hyde-street/) — 1 building, built 1929; 1 in the Uptown Tenderloin Historic District.
 - [Jones Street](jones-street/) — 1 building, built 1922; 1 in the Uptown Tenderloin Historic District.
 - [Leavenworth Street](leavenworth-street/) — 4 buildings, built 1907–1923; 4 in the Uptown Tenderloin Historic District.
+- [Market Street](market-street/) — 1 building, built 1917.
 - [Mason Street](mason-street/) — 2 buildings, built 2009.
 - [Mcallister Street](mcallister-street/) — 2 buildings, built 1906–1910; 1 in the Uptown Tenderloin Historic District.
 - [Meacham Place](meacham-place/) — 1 building, built 1900; 1 in the Lower Nob Hill Apartment Hotel Historic District.

@@ -175,6 +175,13 @@ error). **On any source read from a scan, put the printed block and lot on every
 finding and read every "another block" line** — that is what stops an OCR digit
 becoming a page.
 
+**A range goes in `extra.address_range_as_recorded`, never in `street_number`.**
+The resolver reads the range from that field and looks `street_number` up
+literally, so `"street_number": "809-811"` comes back "EAS has no address near
+it on this street" for an address EAS holds on one parcel. Put the range in the
+extra field and the low number in `street_number`; `check.py` fails an
+unresolved finding that gets this wrong.
+
 It declines rather than guesses: no EAS record, a range now split across
 parcels the record does not choose between, a condominium's worth of parcels on one point, or two recorded
 addresses that are both real all come back `unresolved`. **`report` before

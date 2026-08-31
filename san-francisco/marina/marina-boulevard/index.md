@@ -8,6 +8,7 @@ The parcels on Marina Boulevard documented here so far, from the city's address,
 - [15](15/) — A 1959 store building, with a seismic retrofit permitted in 1995.
 - [145](145/) — A 1933 single-family house in the Marina Historic District, with a kitchen remodel permitted in 1989.
 - [159](159/) — A 1934 single-family house in the Marina Historic District, with a rear addition permitted in 2011.
+- [311](311/) — A 1940 single-family house in the Marina Corporation Residential Historic District, with reroofing permitted in 2005.
 - [451](451/) — A 1925 single-family house in the Marina Corporation Residential Historic District, with foundation work permitted in 2001.
 - [455](455/) — A 1925 single-family house in the Marina Corporation Residential Historic District, with an addition permitted in 1985.
 - [499](499/) — A 1930 18-unit apartment building in the Marina Corporation Residential Historic District, with reroofing permitted in 2000.

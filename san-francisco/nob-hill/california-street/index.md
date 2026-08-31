@@ -7,6 +7,7 @@ The parcels on California Street documented here so far, from the city's address
 - [790](790/) — A 1911 28-unit apartment building, with a kitchen and bathroom remodel permitted in 2008.
 - [851](851/) — A 1910 hotel, with a seismic retrofit permitted in 2022.
 - [901–905](901/) — A 1971 hotel, with reroofing permitted in 2015.
+- [1045](1045/) — A 1956 garage, with reroofing permitted in 2000.
 - [1100](1100/) — A 1962 church, with a rear addition permitted in 2019.
 - [1233](1233/) — A 1924 36-unit apartment building, with stair work permitted in 2017.
 - [1388–1398](1388/) — A 1907 hotel, with a seismic retrofit permitted in 2015.

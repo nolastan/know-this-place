@@ -76,6 +76,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [901–909](901/) — A 1908 28-unit apartment building in the Liberty Hill Historic District, with a kitchen and bathroom remodel permitted in 2010.
 - [911–913](911/) — A 1907 6-unit apartment building in the Liberty Hill Historic District, with window replacement permitted in 2016.
 - [920–924](920/) — An 1890 6-unit apartment building in the Liberty Hill Historic District, with window replacement permitted in 2017.
+- [923](923/) — An 1899 garage in the Liberty Hill Historic District, with reroofing permitted in 2019.
 - [929](929/) — An 1870 single-family house in the Liberty Hill Historic District, with window replacement permitted in 2004.
 - [933–935](933/) — A 1900 two-flat in the Liberty Hill Historic District, with window replacement permitted in 2018.
 - [937–939](937/) — An 1880 two-flat in the Liberty Hill Historic District, with a bathroom remodel permitted in 2015.

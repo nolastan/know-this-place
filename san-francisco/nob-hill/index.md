@@ -24,10 +24,12 @@ that neighborhood.
 - [Pine Street](pine-street/) — 4 buildings, built 1920–1922.
 - [Pleasant Street](pleasant-street/) — 1 building, built 1984.
 - [Polk Street](polk-street/) — 1 building, built 1909.
+- [Post Street](post-street/) — 1 building, built 1912; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Powell Street](powell-street/) — 1 building.
 - [Reed Street](reed-street/) — 1 building, built 1937.
 - [Sacramento Street](sacramento-street/) — 1 building.
 - [Sutter Street](sutter-street/) — 1 building.
 - [Taylor Street](taylor-street/) — 1 building, built 1929.
+- [Vallejo Street](vallejo-street/) — 1 building, built 1957; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
 - [Washington Street](washington-street/) — 2 buildings, built 1915.

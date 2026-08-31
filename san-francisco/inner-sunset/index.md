@@ -19,6 +19,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [24th Avenue](24th-avenue/) — 4 buildings, built 1911–1950.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
 - [Belgrave Avenue](belgrave-avenue/) — 1 building, built 1972.
+- [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1956.
 - [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
 - [Edgewood Avenue](edgewood-avenue/) — 1 building, built 1986.
 - [Eighth Avenue](8th-avenue/) — 22 buildings, built 1900–1937.

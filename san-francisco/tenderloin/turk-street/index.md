@@ -5,6 +5,7 @@ The parcels on Turk Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [34–48](34/) — A 1909 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 1992.
+- [50–52](50/) — A 1914 42-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2008.
 - [66–74](66/) — A 1907 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2003.
 - [101–105](101/) — A 1906 116-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2015.
 - [124–126](124/) — A 1907 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2000.

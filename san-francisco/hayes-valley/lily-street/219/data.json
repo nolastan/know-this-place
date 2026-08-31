@@ -1,0 +1,141 @@
+{
+  "address": "219 Lily Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/lily-street/219/",
+  "apn": "0839005C",
+  "block": "0839",
+  "lot": "005C",
+  "eas_baseid": "289210",
+  "coordinates": {
+    "lat": 37.774135,
+    "lng": -122.424517
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 2300,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0221 0219 LILY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1342548,
+    "assessed_improvement_value": 895030,
+    "last_sale_date": "2002-04-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202603097171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-09",
+      "status_date": "2026-06-01",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "1-bathroom remodel 35 sqft, replace tub to shower, replace plumbing fixtures 4 new rl update mep to code.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807086135",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-07-08",
+      "status_date": "2009-01-29",
+      "estimated_cost": 23800,
+      "revised_cost": 23800,
+      "description": "replace 22 windows into existing openings. visable from the street. no structural changes. u-factor 0.67 max. from wood to wood clad aluminum.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408302837",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-30",
+      "status_date": "2004-08-30",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LILY&street_type=ST&address_number=219",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0839005C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0839&lot=005C",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0839005C",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42451685682012%2037.77413483121023)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Herman C. Baumann"
+  },
+  "historical_record": [
+    {
+      "date": "1946",
+      "kind": "construction",
+      "description": "Designed by Herman C. Baumann.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}
