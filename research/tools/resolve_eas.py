@@ -621,17 +621,34 @@ def parcel_note(city: City, parcel: str) -> str:
     return "; ".join(bits)
 
 
-def condo_warning(city: City, parcel: str) -> str | None:
-    """A condominium APN is a unit, not a building — the directory contract's trap."""
+def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
+                  matched: list = None) -> str | None:
+    """A condominium APN is a unit, not a building — the directory contract's trap.
+
+    The trap is a *stack*: many unit APNs on one point, so a page per APN would be
+    a page per unit. The roll's class code alone does not prove one, because it
+    also lands on old single-address parcels that were condominium-mapped at some
+    point and never split. Where EAS holds the recorded numbers on exactly this
+    one parcel, there is no stack to defer and the parcel is the building.
+    """
     roll = city.roll.get(parcel) or {}
-    if "condominium" in (roll.get("property_class_code_definition") or "").lower():
-        area = (roll.get("lot_area") or "").strip()
-        return ("the 2025 roll classes this parcel as a Condominium"
-                + (" with zero lot area" if area in ("0", "0.0") else "")
-                + ", which is a unit and not a building — the root AGENTS.md "
-                  "directory contract defers these until the building's own parcels "
-                  "are established")
-    return None
+    if "condominium" not in (roll.get("property_class_code_definition") or "").lower():
+        return None
+    if name and matched:
+        siblings = set()
+        for n in matched:
+            for r in city.rows_for(name, stype, n):
+                apn, key, _ = city.active_parcel(r)
+                if apn:
+                    siblings.add(apn)
+        if siblings and siblings <= {parcel}:
+            return None
+    area = (roll.get("lot_area") or "").strip()
+    return ("the 2025 roll classes this parcel as a Condominium"
+            + (" with zero lot area" if area in ("0", "0.0") else "")
+            + ", which is a unit and not a building — the root AGENTS.md "
+              "directory contract defers these until the building's own parcels "
+              "are established")
 
 
 def resolve_numbers(city: City, name: str, stype: str | None,
@@ -797,7 +814,7 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
                          "so there is no parcel today to hang the fact on. The block has been "
                          "re-parcelized since; a later pass with the assessor's own "
                          "property_location could still place it.")}
-    condo = condo_warning(city, parcel)
+    condo = condo_warning(city, parcel, name, stype, matched)
     if condo:
         return {"status": "unresolved", "checked_on": today, "method": method,
                 "note": f"Not placed: {condo}."}
@@ -1324,6 +1341,15 @@ def build_manifest(city: City, data: dict) -> list:
                  "street_name": eas_name, "street_type": stype,
                  "street_display": street_display(eas_name, stype),
                  "numbers": numbers, "other_street_addresses": others}
+        # The seeder runs its own condominium check on the roll's class code
+        # alone, which is right for a unit stack and wrong for an old parcel
+        # that was condominium-mapped and never split. This resolution only
+        # exists because condo_warning already tested the stronger thing — that
+        # EAS puts these numbers on this parcel and no other — so say so, and
+        # let the seeder honour the check that had the evidence.
+        roll_row = city.roll.get(apn) or {}
+        if "condominium" in (roll_row.get("property_class_code_definition") or "").lower():
+            entry["sole_parcel_for_address"] = True
         if pick:
             if pick.get("latitude"):
                 entry["lat"] = float(pick["latitude"])

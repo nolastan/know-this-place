@@ -2254,8 +2254,16 @@ def classify(row: dict) -> str:
         return "no-roll-record"
     # Condominium parcels are individual units with their own APN, not
     # buildings. AGENTS.md says skip them and flag for a human.
+    #
+    # The class code alone does not prove a unit stack: it also sits on old
+    # single-address parcels that were condominium-mapped and never split, and
+    # those are buildings. A research manifest may therefore carry
+    # `sole_parcel_for_address`, set only where the resolver checked the
+    # stronger thing — that EAS puts the recorded numbers on this parcel and no
+    # other, so there is no stack of units to defer. Nothing else may set it.
     if roll.get("property_class_code_definition") == "Condominium":
-        return "condo-unit"
+        if not row.get("sole_parcel_for_address"):
+            return "condo-unit"
     return "seedable"
 
 

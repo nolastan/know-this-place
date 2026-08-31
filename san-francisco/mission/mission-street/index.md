@@ -65,6 +65,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2135–2137](2135/) — A 1900 hotel in the Mission Miracle Mile at 17th Street Historic District, with a seismic retrofit permitted in 2016.
 - [2155](2155/) — A 1991 48-unit apartment building, with reroofing permitted in 2011.
 - [2160](2160/) — A 1906 store building, with foundation work permitted in 2010.
+- [2205](2205/) — A 1919 building, with a kitchen remodel permitted in 2011.
 - [2211](2211/) — A 1900 building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1998.
 - [2217–2221](2217/) — A 1904 9-unit building with a ground-floor store, with facade work permitted in 1997.
 - [2225](2225/) — A 1920 store building, with a seismic retrofit permitted in 2003.
@@ -164,8 +165,10 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [4531](4531/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 1997.
 - [4600](4600/) — A 1928 store building, with a rear addition permitted in 1997.
 - [4631](4631/) — A 1922 store building, with plumbing work permitted in 2006.
+- [4680–4690](4680/) — A 1949 store building, with deck work permitted in 2017.
 - [4838–4840](4838/) — A 2024 140-unit building, with a seismic retrofit permitted in 2002.
 - [5150](5150/) — A 1950 bank building, with reroofing permitted in 2007.
+- [5401](5401/) — A 1936 1-unit apartment building with a ground-floor store, with foundation work permitted in 1987.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

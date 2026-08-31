@@ -1,0 +1,121 @@
+{
+  "address": "90 Woodland Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/woodland-avenue/90/",
+  "apn": "2630019",
+  "block": "2630",
+  "lot": "019",
+  "eas_baseid": "342826",
+  "coordinates": {
+    "lat": 37.762491,
+    "lng": -122.452908
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3711,
+    "building_area_sqft": 1964,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0090 WOODLAND            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1600767,
+    "assessed_improvement_value": 686041,
+    "last_sale_date": "2018-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210204819",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-20",
+      "status_date": "2023-09-29",
+      "estimated_cost": 89000,
+      "revised_cost": 89000,
+      "description": "remove and replace deteriorating siding on portions of home. match existing siding. remove and replace metal fascia cladding and gutters.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202007230735",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-23",
+      "status_date": "2020-08-05",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "re-roofing - repair for a flat roof. removing existing roofing membrane. new roofing material: liquid applied membrane with reflective light grey top coat.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203070792",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-07",
+      "status_date": "2004-04-16",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WOODLAND&street_type=AVE&address_number=90",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2630019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2630&lot=019",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2630019",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modernistic-styles-context-statement",
+      "name": "Elena Moore, San Francisco Planning Department, Modernistic Styles (1925-1965) Historic Context Statement, Context: Architectural Styles, SF Survey Cultural Resources Survey, adopted February 15, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=290f585014ec4299f515a535a562343079f408e9d548f966f723afb32101fff9&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modernistic Styles Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Modernistic Styles Historic Context Statement (2023)",
+    "source": "modernistic-styles-context-statement",
+    "style": "International Style",
+    "year_built_as_surveyed": "1936",
+    "architect_as_surveyed": "Richard Neutra",
+    "note": "The Darling House, designed in 1936 by Richard Neutra — named among the notable International Style buildings in San Francisco, a style the statement calls extremely rare here in domestic architecture and generally limited to custom-designed single-family houses of 1935-1950."
+  }
+}
