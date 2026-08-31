@@ -12,6 +12,7 @@ that neighborhood.
 - [California Street](california-street/) — 1 building, built 1910.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.
+- [Green Street](green-street/) — 1 building, built 1900; 1 in the Russian Hill-Paris Block Architectural Historic District.
 - [Hyde Street](hyde-street/) — 1 building, built 1911.
 - [Jackson Street](jackson-street/) — 1 building, built 1916.
 - [Jones Street](jones-street/) — 1 building, built 1915.

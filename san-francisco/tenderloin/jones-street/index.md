@@ -4,6 +4,7 @@ The parcels on Jones Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [1](1/) — An 1892 bank building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 2012.
 - [39–41](39/) — A 1907 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2003.
 - [118](118/) — A 1922 store building in the Uptown Tenderloin Historic District, with a rear addition permitted in 2000.
 - [205](205/) — A 1924 52-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 1995.

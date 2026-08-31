@@ -1,0 +1,110 @@
+{
+  "address": "1152 Oak Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/oak-street/1152/",
+  "apn": "1215010",
+  "block": "1215",
+  "lot": "010",
+  "eas_baseid": "297434",
+  "coordinates": {
+    "lat": 37.773301,
+    "lng": -122.438366
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 3436,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "FIRE STATION",
+    "construction_type_code": "NA",
+    "zoning": "NC-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 1152 OAK                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1893",
+    "survey_name": "FIREHOUSE ENGINE CO.#2,TRUCK #6",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Buena Vista North Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200210108728",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2002-10-10",
+      "status_date": "2002-11-12",
+      "revised_cost": 8000,
+      "description": "remove & replace 1 door & 1 window provision of auto door opening device sloping floor slightly for",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2002–2004",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=1152",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1215010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1215&lot=010",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1215010",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43836622571071%2037.77330113775217)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "victorian-era-styles-context-statement",
+      "name": "Anne Greening and Elena Moore, San Francisco Planning Department, Victorian Era Styles (1870-1910) Historic Context Statement, SF Survey Cultural Resources Survey, adopted 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=a4419d21510fea07d658880f76f2fd18d7316a7921cf41c4baca421190542a30&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Victorian Era Styles Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Victorian Era Styles Historic Context Statement (2022)",
+    "source": "victorian-era-styles-context-statement",
+    "style": "Stick/Eastlake",
+    "note": "Illustrated as an example of the Stick/Eastlake style. The document's caption year of 1900 is the assessor's roll figure, not a researched date."
+  }
+}

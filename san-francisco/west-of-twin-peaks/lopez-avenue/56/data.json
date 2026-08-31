@@ -1,0 +1,182 @@
+{
+  "address": "56 Lopez Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/lopez-avenue/56/",
+  "apn": "2859007",
+  "block": "2859",
+  "lot": "007",
+  "eas_baseid": "347998",
+  "coordinates": {
+    "lat": 37.747658,
+    "lng": -122.463769
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 5401,
+    "building_area_sqft": 2000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Forest Hill",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0056 LOPEZ               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1894256,
+    "assessed_improvement_value": 811824,
+    "last_sale_date": "2021-01-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Forest Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202002184701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-18",
+      "status_date": "2020-09-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace in-kind 16 double hung windows, including nine street facing windows. new windows to be marvin inserts, wood inside and out with ogee lugs (not attachments).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908057933",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-05",
+      "status_date": "2020-03-11",
+      "estimated_cost": 1,
+      "revised_cost": 2000,
+      "description": "revision to pa 201904026846. master bath suite - move 3 walls, reconfigure plumbing, 1 wall become \"stem\" wall, electrical moved to shower back wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905160894",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2019-05-16",
+      "status_date": "2019-05-16",
+      "revised_cost": 0,
+      "description": "replace nine front windows in-kind w/double-hung wood windows w/true divided lites and integrated ogees w/in (e) openings. replace seven non-visible windows elsewhere. interior master bath and bedroom remodel. no other work under this permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904026846",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-02",
+      "status_date": "2020-03-11",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel bathroom & bedroom. layout remains unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005273346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-27",
+      "status_date": "2010-10-28",
+      "estimated_cost": 38000,
+      "revised_cost": 38448,
+      "description": "demo kitchen @ 1st. flr. & (e) powder rm. remodeled kitchen & powder rm. @ 1st. flr. add bathroom to 2nd. flr. no change to bldg. footprint. kitchen area:12'x17', (n) bath area: 5'-6\" x 8', power room area: 3'x7'.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9205973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-04-15",
+      "status_date": "1992-04-27",
+      "estimated_cost": 6825,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-14",
+      "status_date": "1985-01-10",
+      "estimated_cost": 6400,
+      "description": "alterations to existing master bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOPEZ&street_type=AVE&address_number=56",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2859007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2859&lot=007",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2859007",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46376890329708%2037.74765762735569)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "progressive-era-styles-context-statement",
+      "name": "Elena Moore, San Francisco Planning Department, Progressive Era & Early Revival Styles (1890-1930) Historic Context Statement, SF Survey Cultural Resources Survey, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5c9487ef3fe2e54195baf95878f34c32e7a6e474ca0ff21bcf17fe715c68260a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Progressive Era & Early Revival Styles Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Progressive Era & Early Revival Styles Historic Context Statement (2023)",
+    "source": "progressive-era-styles-context-statement",
+    "style": "Colonial Revival",
+    "finding": "District contributor",
+    "eligible_district": "California Register eligible Forest Hill Historic District",
+    "year_built_as_surveyed": "1928",
+    "note": "A Colonial Revival residence of 1928 with a side-gabled roof, a raised and accentuated entry, sash windows and overall facade symmetry, standing within the California Register eligible Forest Hill Historic District. Its detailing is intact but standard, which suits it better as a district contributor than as an individually significant resource."
+  },
+  "building": {
+    "completed": "1928"
+  }
+}

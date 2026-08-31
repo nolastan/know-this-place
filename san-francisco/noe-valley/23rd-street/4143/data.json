@@ -1,0 +1,118 @@
+{
+  "address": "4143 23rd Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/23rd-street/4143/",
+  "apn": "2804040",
+  "block": "2804",
+  "lot": "040",
+  "eas_baseid": "346771",
+  "coordinates": {
+    "lat": 37.752591,
+    "lng": -122.435189
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3001,
+    "building_area_sqft": 1320,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4143 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335929,
+    "assessed_improvement_value": 256139,
+    "last_sale_date": "1994-11-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, California Register Historic District",
+    "yearbuilt": "1910",
+    "survey_name": "LEWIS HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond & Elizabeth Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201007076129",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-07-07",
+      "status_date": "2010-07-07",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=4143",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2804040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2804&lot=040",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2804040",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4351891094143%2037.75259147473583)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "victorian-era-styles-context-statement",
+      "name": "Anne Greening and Elena Moore, San Francisco Planning Department, Victorian Era Styles (1870-1910) Historic Context Statement, SF Survey Cultural Resources Survey, adopted 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=a4419d21510fea07d658880f76f2fd18d7316a7921cf41c4baca421190542a30&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Victorian Era Styles Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Victorian Era Styles Historic Context Statement (2022)",
+    "source": "victorian-era-styles-context-statement",
+    "style": "Queen Anne",
+    "year_built_as_surveyed": "1892",
+    "note": "Illustrated as an example of the Queen Anne style."
+  },
+  "building": {
+    "completed": "1892",
+    "completed_conflict": "The assessor's roll gives 1910; the city's statement on Victorian era styles gives 1892."
+  }
+}

@@ -6,6 +6,7 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 
 - [Buchanan Street](buchanan-street/) — 1 building, built 1878; 1 in the Hayes Valley Residential Historic District.
 - [Church Street](church-street/) — 1 building, built 1905.
+- [Divisadero Street](divisadero-street/) — 1 building, built 1900.
 - [Fell Street](fell-street/) — 2 buildings, built 1910–1929.
 - [Fillmore Street](fillmore-street/) — 1 building, built 1900; 1 in the Hayes Valley Residential Historic District.
 - [Franklin Street](franklin-street/) — 3 buildings, built 1909–1912; 1 in the Market Street Masonry Historic District.

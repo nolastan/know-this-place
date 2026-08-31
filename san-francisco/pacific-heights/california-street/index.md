@@ -4,6 +4,8 @@ The parcels on California Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [1820](1820/) — An assessor class: vacant lot, with a rear addition permitted in 1986.
+- [1834](1834/) — A 1900 single-family house, with a rear addition permitted in 1998.
 - [1990](1990/) — A 1900 9-unit apartment building, with garage work permitted in 1990.
 - [2000](2000/) — A 1924 14-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
 - [2001](2001/) — A 1930 43-unit apartment building, with reroofing permitted in 2013.

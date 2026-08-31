@@ -25,6 +25,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [891–897](891/) — An apartment building, with dry-rot repair permitted in 2003.
 - [956](956/) — A 1923 24-unit apartment building, with permit records from 1982 to 2024.
 - [1100](1100/) — A 1925 35-unit tic building, with a kitchen and bathroom remodel permitted in 2013.
+- [1298](1298/) — A 1922 11-unit apartment building, with plumbing work permitted in 2022.
 - [1685](1685/) — A 1907 hotel, with a bathroom remodel permitted in 2006.
 - [1725](1725/) — A 1923 garage, with reroofing permitted in 2002.
 - [1840](1840/) — A 1927 16-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.

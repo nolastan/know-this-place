@@ -13,6 +13,7 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [1745–1765](1745/) — A 1928 50-unit apartment building, with an addition permitted in 2022.
 - [1801](1801/) — A 1920 store building, with electrical work permitted in 2001.
 - [2001](2001/) — A 1920 store building, with facade work permitted in 2022.
+- [2151](2151/) — A 1900 church, with a seismic retrofit permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

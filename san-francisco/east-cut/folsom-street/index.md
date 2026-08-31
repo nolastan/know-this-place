@@ -4,6 +4,7 @@ The parcels on Folsom Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [443](443/) — A 1913 industrial building, with reroofing permitted in 2017.
 - [501](501/) — A 1916 industrial building, with a seismic retrofit permitted in 1996.
 - [568](568/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [572–576](572/) — A 1912 office building, with reroofing permitted in 2020.

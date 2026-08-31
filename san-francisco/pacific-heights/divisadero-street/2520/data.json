@@ -1,0 +1,164 @@
+{
+  "address": "2520 Divisadero Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/divisadero-street/2520/",
+  "apn": "0961013A",
+  "block": "0961",
+  "lot": "013A",
+  "eas_baseid": "291535",
+  "coordinates": {
+    "lat": 37.792833,
+    "lng": -122.44108
+  },
+  "parcel": {
+    "year_built": 1934,
+    "units": 1,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 5,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 6312,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2520 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 188498,
+    "assessed_improvement_value": 438262
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1934",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Pacific Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1895–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202608267206",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2026-08-26",
+      "status_date": "2026-08-28",
+      "estimated_cost": 412300,
+      "revised_cost": 0,
+      "description": "remodel of basement level,including excavation to increase floor to ceiling height. remodel of level 1-3 including full kitchen remodel,renovations of bedrooms and baths, relocating stair run to basement and removal of (e)stair run, replacement of windows and exterior doors in kind(where shown)and",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202607275610",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-27",
+      "status_date": "2026-07-27",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "removal and replavcement in kind of wall and ceiling areas idenified by key on sheet a210 at basement, 1st, 2nd, and 3rd floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202607024478",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-02",
+      "status_date": "2026-07-28",
+      "estimated_cost": 350700,
+      "revised_cost": 350700,
+      "description": "kitchen and bath remodels of 1st fl. through 3rd fl. removal and infill of service stairs from fls. 1-3 (stair run to basement to remain) removal of dormer at rear facade. replace windows inkind and add (3) (n) windows at side and rear elevations. new electric and plumbing per (n) layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510147279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-14",
+      "status_date": "2026-01-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "scaffolding front facade and attched atrium (west) for exterior repainting in kind. dry rot repairs (misc) as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303966",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-05-09",
+      "status_date": "1983-10-06",
+      "estimated_cost": 1825,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1983–2026",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=2520",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0961013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0961&lot=013A",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0961013A",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44107955409548%2037.79283319044116)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "progressive-era-styles-context-statement",
+      "name": "Elena Moore, San Francisco Planning Department, Progressive Era & Early Revival Styles (1890-1930) Historic Context Statement, SF Survey Cultural Resources Survey, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5c9487ef3fe2e54195baf95878f34c32e7a6e474ca0ff21bcf17fe715c68260a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Progressive Era & Early Revival Styles Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Progressive Era & Early Revival Styles Historic Context Statement (2023)",
+    "source": "progressive-era-styles-context-statement",
+    "style": "Tudor Revival",
+    "finding": "Individually significant and district contributor",
+    "year_built_as_surveyed": "1934",
+    "note": "A Tudor Revival residence of 1934 with front-facing gables; tall, narrow, multiple-pane windows; masonry accents; large chimneys; entries with Tudor arches; decorative half-timbering and stucco cladding. Its integrity and its full expression of the style would qualify it both individually and as a district contributor."
+  },
+  "building": {
+    "completed": "1934"
+  }
+}
