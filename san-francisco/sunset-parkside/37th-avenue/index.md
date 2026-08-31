@@ -4,6 +4,7 @@ The parcels on 37th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1265](1265/) — A 1912 single-family house in the Lincoln U. Grant 37th Avenue Rowhouse Historic District, with a kitchen and bathroom remodel permitted in 2006.
 - [1341](1341/) — A 1916 single-family house, with chimney work permitted in 2001.
 - [1347](1347/) — A 1937 single-family house, with facade work permitted in 2023.
 - [1349](1349/) — A 1916 single-family house, with a kitchen remodel permitted in 2009.

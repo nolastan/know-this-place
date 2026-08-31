@@ -4,6 +4,7 @@ The parcels on 12th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [114](114/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 2011.
 - [490](490/) — A 1923 church, with a kitchen and bathroom remodel permitted in 2010.
 
 Pages are generated from the DataSF datasets listed in each page's

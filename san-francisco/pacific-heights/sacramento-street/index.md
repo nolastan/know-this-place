@@ -9,6 +9,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [2195](2195/) — A 1917 16-unit apartment building, with a seismic retrofit permitted in 1999.
 - [2224](2224/) — A 1900 single-family house, with garage work permitted in 2014.
 - [2323](2323/) — A 1965 building, with a kitchen remodel permitted in 2024.
+- [2395](2395/) — A 1912 office building, with reroofing permitted in 2012.
 - [2409](2409/) — A 1900 3-unit apartment building, with reroofing permitted in 2025.
 - [2451](2451/) — A 1900 apartment building, with an addition permitted in 2015.
 - [2509](2509/) — A 1900 single-family house, with garage work permitted in 1987.

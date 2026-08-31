@@ -710,6 +710,26 @@ The mechanics:
   safe only there: a bare "unit:" would read the list marker in "one unit: 1.
   rehabilitate ..." as a designator. Third lesson in this family, same moral as
   the two above.
+- **When a source prints two street numbers for one building, ask EAS before
+  calling it a contradiction — and never let the resolver pick.** The
+  Progressive Era statement does it three times. For the Palace of Fine Arts,
+  3301 Lyon in the text and 3601 Lyon in the caption, EAS carries *both* numbers
+  on the one parcel: there is nothing to state and nothing to adjudicate. For
+  the Roos House, 3500 Jackson in the text and 2500 Jackson in the caption, EAS
+  carries both as separate parcels, and `resolve_eas.py` silently took the one
+  the finding happened to carry — the caption's — whose roll year is **1937**,
+  decades after the 1909 building described. The unreinforced-masonry lesson
+  below is what settles it: a roll year decades later means the building
+  described is not on that parcel. Publishing without that check would have put
+  a Maybeck attribution and a landmark number on the wrong building.
+- **Two findings for one page will silently lose one, if the page carries one
+  panel per survey.** A publisher that appends a `historic_survey` entry only
+  when no entry from that source id exists — the right rule, since two panels
+  from one survey misattribute — drops the second finding's content while still
+  marking it published. It happened here at 215 and 245 Market Street, two named
+  buildings on one assessor parcel. *Before marking a batch published, compare
+  the finding count with the page count; where they differ, open the page and
+  check the collision reached it.*
 - **An illustrated style guide dates its landmarks and copies the roll for
   everything else — and says so nowhere.** The Victorian Era Styles statement
   gives a specific, researched year for every building that is a designated

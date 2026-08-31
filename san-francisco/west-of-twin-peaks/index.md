@@ -11,9 +11,11 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Laguna Honda Boulevard](laguna-honda-boulevard/) — 1 building, built 1937; 1 in the Laguna Honda Historic District.
 - [Lenox Way](lenox-way/) — 1 building, built 1926.
+- [Lopez Avenue](lopez-avenue/) — 1 building, built 1928; 1 in the Forest Hill Historic District.
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.
+- [Merced Avenue](merced-avenue/) — 1 building, built 1922; 1 in the Forest Hill Historic District.
 - [Miraloma Drive](miraloma-drive/) — 1 building, built 1957.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [Santa Clara Avenue](santa-clara-avenue/) — 1 building, built 1938; 1 in the St. Francis Wood Historic District.

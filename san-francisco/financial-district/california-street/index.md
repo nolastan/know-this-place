@@ -14,6 +14,7 @@ The parcels on California Street documented here so far, from the city's address
 - [212–214](212/) — A 1910 bank building in the Front-California Conservation District, with an addition permitted in 2013.
 - [220–230](220/) — A 1913 office building in the Front-California Conservation District, with window replacement permitted in 2006.
 - [345](345/) — A 1987 office building, with plumbing work permitted in 2023.
+- [400–410](400/) — A 1907 bank building, with reroofing permitted in 2012.
 - [555](555/) — The 1969 Bank of America tower; its plaza sculpture is the one called the Banker's Heart.
 - [600–628](600/) — Where a set of Lee Lawrie's 1930s bronze lift doors, from Harrisburg, ended up on Sacramento Street.
 - [633](633/) — A 1953 assessor class: vacant lot, with garage work permitted in 2017.

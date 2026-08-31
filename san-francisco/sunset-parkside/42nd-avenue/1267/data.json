@@ -1,0 +1,129 @@
+{
+  "address": "1267 42nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/42nd-avenue/1267/",
+  "apn": "1708015",
+  "block": "1708",
+  "lot": "015",
+  "eas_baseid": "314441",
+  "coordinates": {
+    "lat": 37.76289,
+    "lng": -122.50213
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 1602,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1267 42ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167955,
+    "assessed_improvement_value": 220028,
+    "last_sale_date": "1995-01-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1913",
+    "survey_name": "1267 42ND AVE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alphonso Harrington 42nd Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1913",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9406012",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-18",
+      "status_date": "1996-01-16",
+      "estimated_cost": 1000,
+      "description": "install 7 replace window in rear porch & sun room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9201702",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-02-03",
+      "status_date": "1992-05-08",
+      "estimated_cost": 4974,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=42ND&street_type=AVE&address_number=1267",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1708015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1708&lot=015",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1708015",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.50213018075911%2037.76288978979737)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "progressive-era-styles-context-statement",
+      "name": "Elena Moore, San Francisco Planning Department, Progressive Era & Early Revival Styles (1890-1930) Historic Context Statement, SF Survey Cultural Resources Survey, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5c9487ef3fe2e54195baf95878f34c32e7a6e474ca0ff21bcf17fe715c68260a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Progressive Era & Early Revival Styles Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Progressive Era & Early Revival Styles Historic Context Statement (2023)",
+    "source": "progressive-era-styles-context-statement",
+    "style": "Dutch Colonial Revival",
+    "finding": "District contributor",
+    "eligible_district": "eligible Alphonso Harrington 42nd Avenue Historic District",
+    "builder": "Alphonso Harrington",
+    "year_built_as_surveyed": "1913",
+    "note": "Developed and built in 1913 by Alphonso Harrington: a Dutch Colonial Revival house with a gambrel roof, brick and sash windows, contributing to the eligible Alphonso Harrington 42nd Avenue Historic District. Its massing and detail are standard for the style, which suits it better as a contributor than as an individually significant building."
+  },
+  "building": {
+    "completed": "1913"
+  }
+}

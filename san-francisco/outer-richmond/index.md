@@ -40,3 +40,4 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Fulton Street](fulton-street/) — 1 building; 1 in the Golden Gate Park Historic District.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.
 - [La Playa](la-playa/) — 1 building, built 1984.
+- [Lake Street](lake-street/) — 1 building, built 1922.
