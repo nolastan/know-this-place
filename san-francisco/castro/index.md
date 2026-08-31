@@ -106,6 +106,7 @@ which local histories treat as its own neighborhood.
 - [Waller Street](waller-street/) — 2 buildings, built 1900; 1 in the Duboce Park Historic District.
 - [Walter Street](walter-street/) — 24 buildings, built 1885–1925; 24 in the Duboce Triangle Historic District.
 - [Willard Street](willard-street/) — 1 building, built 1904.
+- [Woodland Avenue](woodland-avenue/) — 1 building, built 1937.
 - [Yukon Street](yukon-street/) — 13 buildings, built 1890–1949.
 
 Every parcel the assessor's roll calls residential now has a page, built from

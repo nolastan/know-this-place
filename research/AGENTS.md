@@ -334,6 +334,37 @@ rather than just accumulate.
   up leaves the two files disagreeing, which the root AGENTS.md forbids
   outright. *Render first, write both files or neither, and list what has to be
   edited by hand.*
+- **A condominium class code is not proof of a condominium.** `resolve_eas.py`
+  and `seed_pages.py` both declined any parcel the roll class-codes
+  `Condominium`, which is right for a unit stack and wrong for an old parcel
+  that was condominium-mapped and never split. 11 Blackstone Court is one
+  parcel, one EAS address, no sibling units and a roll build year of 1850 that
+  corroborates the statement's circa 1851 — and it was refused a page twice, by
+  two tools running the same weak test. Both now check the thing the rule is
+  actually about: whether EAS puts the recorded numbers on more than one parcel.
+  The Malloch Building's thirteen unit parcels and 2944 Jackson Street's two
+  still decline. *Test the condition the rule exists to catch, not the field
+  that usually accompanies it — and when two tools enforce the same rule, make
+  the one holding the evidence decide and let the other honour it.*
+- **A caption-versus-narrative date split has no fixed direction.** The
+  Progressive Era styles pass established that where these statements print two
+  years for one building, the caption is usually the assessor's roll leaking in.
+  The Early Settlement Era statement reverses it: the Nightengale House is 1882
+  in the landmark list and the caption, 1878 in the narrative, and the roll says
+  **1878** — the narrative is the one agreeing with the roll. *Check the roll
+  each time rather than carrying the previous document's direction forward; a
+  pattern that held for one statement in a series is a hypothesis about the next
+  one, not a rule.*
+- **A series covers the same landmarks repeatedly, so a bad address has a
+  second opinion.** The Early Settlement Era statement prints the Feusier
+  Octagon House at 1607 Green Street; EAS has no such address. The department's
+  own Victorian Era Styles statement prints 1067 Green Street for the same
+  landmark number, and that page already carried the city's survey record for
+  the house. Resolved on the landmark number and the building name. *Before
+  calling a statement's address unresolvable, check the sibling statements this
+  repo has already read — a transposed digit in one document is often correct in
+  another, and matching on a landmark number is an identification where matching
+  on a street number would be a guess.*
 - **An abbreviated range is not a range.** Surveys print "1843-47" and
   "1761-65" for 1843–1847 and 1761–1765, dropping the digits that don't change.
   `resolve_eas.py` read the pair literally, expanded 47→1843, and reported the

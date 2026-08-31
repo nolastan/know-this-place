@@ -4,6 +4,7 @@ The parcels on Pierce Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1020–1022](1020/) — A 1900 4-unit apartment building, with foundation work permitted in 2012.
 - [1736](1736/) — A 1900 single-family house, with garage work permitted in 1989.
 - [2002–2004](2002/) — An 1882 7-unit apartment building, with an accessory dwelling unit permitted in 2018.
 - [2120–2122](2120/) — A 1906 two-flat, with reroofing permitted in 2006.

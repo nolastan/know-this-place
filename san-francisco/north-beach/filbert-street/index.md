@@ -4,6 +4,7 @@ The parcels on Filbert Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [228](228/) — An 1895 2-unit apartment building in the Telegraph Hill Historic District, with permit records from 1987 to 2005.
 - [420](420/) — An assessor class: vacant lot.
 - [443–445](443/) — A 1907 two-flat in the Upper Grant Avenue Historic District, with foundation work permitted in 2010.
 - [449–455](449/) — A 1906 6-unit apartment building in the Upper Grant Avenue Historic District, with a seismic retrofit permitted in 2018.

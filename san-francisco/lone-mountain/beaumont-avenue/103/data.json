@@ -1,0 +1,110 @@
+{
+  "address": "103 Beaumont Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/beaumont-avenue/103/",
+  "apn": "1135001A",
+  "block": "1135",
+  "lot": "001A",
+  "eas_baseid": "295357",
+  "coordinates": {
+    "lat": 37.77987,
+    "lng": -122.454972
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 1860,
+    "building_area_sqft": 3140,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0105 0103 BEAUMONT            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 440113,
+    "assessed_improvement_value": 509809,
+    "last_sale_date": "1994-05-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707182092",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-18",
+      "status_date": "2017-07-18",
+      "estimated_cost": 2528,
+      "revised_cost": 2528,
+      "description": "replace garage door into (e) opening. no structural changes, sectional roolup and opener.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314856",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-08-30",
+      "status_date": "1993-09-02",
+      "estimated_cost": 8185,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEAUMONT&street_type=AVE&address_number=103",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1135001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1135&lot=001A",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1135001A",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modernistic-styles-context-statement",
+      "name": "Elena Moore, San Francisco Planning Department, Modernistic Styles (1925-1965) Historic Context Statement, Context: Architectural Styles, SF Survey Cultural Resources Survey, adopted February 15, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=290f585014ec4299f515a535a562343079f408e9d548f966f723afb32101fff9&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modernistic Styles Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Modernistic Styles Historic Context Statement (2023)",
+    "source": "modernistic-styles-context-statement",
+    "style": "Art Moderne (Streamline Moderne)",
+    "year_built_as_surveyed": "1941",
+    "architect_as_surveyed": "H.C. Baumann, Architect of Merit",
+    "note": "An Art Moderne duplex of 1941 by H.C. Baumann, whom the statement names a prolific Architect of Merit, one of the pair he designed in Lone Mountain and Pacific Heights."
+  }
+}
