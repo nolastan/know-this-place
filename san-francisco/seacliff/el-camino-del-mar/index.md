@@ -9,6 +9,7 @@ The parcels on El Camino Del Mar documented here so far, from the city's address
 - [540](540/) — An eighteen-room 1926 house above the Golden Gate, mid-way through a $2.3m remodel; a part-time Robin Williams residence.
 - [549](549/) — A 1924 single-family house in the Sea Cliff Historic District, with window replacement permitted in 2017.
 - [711](711/) — A 1970 single-family house in the Sea Cliff Historic District, with reroofing permitted in 1996.
+- [890](890/) — A 1963 single-family house, with window replacement permitted in 2000.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

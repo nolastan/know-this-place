@@ -1,0 +1,158 @@
+{
+  "address": "455 Seacliff Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/seacliff-avenue/455/",
+  "apn": "1309004",
+  "block": "1309",
+  "lot": "004",
+  "eas_baseid": "300288",
+  "coordinates": {
+    "lat": 37.787079,
+    "lng": -122.490469
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 5,
+    "lot_area_sqft": 10150,
+    "building_area_sqft": 5196,
+    "use": "Commercial Retail",
+    "property_class": "Consulate",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0455 SEACLIFF            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202110130410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-13",
+      "status_date": "2022-08-30",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "demo approx 100 sf of drywall (interior) for electrical work in foyer, living room and dining room. sep elect permit will be obtained for electrical work. patch and smooth wall drywall pathes. maintain the resistive assembly.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602250496",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-25",
+      "status_date": "2016-05-25",
+      "estimated_cost": 70000,
+      "revised_cost": 212000,
+      "description": "voluntary structural strenthening. adding voluntary plywoood to partitions and anchorages/holdowns. no changes to existing floor plan/partitions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502118045",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2015-02-11",
+      "status_date": "2015-05-07",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "(n) retaining wall in front of (e) retaining wall located along rear property line of 632 el camino del mar abutting this property. shoring & buttressing of (e) wall to be provided as needed during construction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906231117",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-23",
+      "status_date": "2009-06-23",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "voluntary upgrade, bolting foundation where accessible 5/8 @ 48\" on center, min. 9\" embed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406307653",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-06-30",
+      "status_date": "2005-12-06",
+      "estimated_cost": 87680,
+      "revised_cost": 87680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SEACLIFF&street_type=AVE&address_number=455",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1309004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1309&lot=004",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1309004",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4904693105618%2037.78707944539176)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume D–F), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5e61d57895f7a63a45f9a33bd3ee216f5a86bb2a19ca6b0ce2cc9f62584760da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Albert L. Farr"
+  },
+  "historical_record": [
+    {
+      "date": "1938",
+      "kind": "construction",
+      "description": "Designed by Albert L. Farr, one of the first architects licensed in California, known for heavily ornamented Colonial Revival, Chateauesque, Mediterranean Revival and Tudor houses in Pacific Heights and Sea Cliff.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

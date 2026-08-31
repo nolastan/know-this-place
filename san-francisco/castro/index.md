@@ -66,6 +66,7 @@ which local histories treat as its own neighborhood.
 - [Fairbanks Street](fairbanks-street/) — 1 building, built 1941.
 - [Flint Street](flint-street/) — 5 buildings, built 1957–1958.
 - [Ford Street](ford-street/) — 24 buildings, built 1880–1936.
+- [Glenbrook Avenue](glenbrook-avenue/) — 1 building, built 1949.
 - [Glendale Street](glendale-street/) — 1 building, built 1962.
 - [Grand View Avenue](grand-view-avenue/) — 3 buildings, built 1936–1953.
 - [Grattan Street](grattan-street/) — 1 building, built 1900; 1 in the Cole Valley Historic District.

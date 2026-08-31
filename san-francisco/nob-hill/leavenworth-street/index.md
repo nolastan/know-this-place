@@ -22,6 +22,7 @@ The parcels on Leavenworth Street documented here so far, from the city's addres
 - [821](821/) — A 1916 19-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 1995.
 - [925](925/) — A 1922 16-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 2025.
 - [930](930/) — A 1911 12-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1999.
+- [1201–1219](1201/) — A 1908 16-unit apartment building, with a seismic retrofit permitted in 2016.
 - [1300](1300/) — A 1914 10-unit apartment building, with a kitchen and bathroom remodel permitted in 2009.
 - [1418](1418/) — A 1907 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.
 

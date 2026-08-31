@@ -14,6 +14,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [601–609](601/) — A 1927 building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 2007.
 - [620–630](620/) — A 1918 hotel in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 1989.
 - [635](635/) — A 1911 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2007.
+- [640–650](640/) — A 1916 building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2006.
 - [700–716](700/) — A 1918 55-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1998.
 - [707–709](707/) — A 1920 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2006.
 - [726–750](726/) — A building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2007.

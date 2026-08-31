@@ -212,6 +212,32 @@ rather than just accumulate.
   full stop or a closing quote means the "number" is a reference marker and the
   words after it are a new sentence. The same collision invents institutions —
   "Eighteenth Street Services" became *1054 Eighteenth Street*.
+- **The overlap tool compares wording; duplicates hide behind different wording.**
+  `--overlap` scores text similarity, so it catches a paraphrase and misses a
+  restatement in another register. Volume D–F of the professionals biographies
+  had **20** findings flagged that way and **35 more** that were flagged only by a
+  second scan: match the practitioner's **surname plus a date within two years**
+  against every historical-record entry already on the page from another source.
+  Almost all 35 were a prolific builder's work — Henry Doelger's Sunset model
+  homes, the North Beach flat builders — already documented, house by house, by
+  the neighbourhood survey devoted to that builder. **A citywide source about a
+  person overlaps a neighbourhood survey about the same person almost
+  completely**, and the neighbourhood survey usually says more. Run both scans
+  before publishing anything organised by practitioner.
+- **A hedge in the extractor's voice is a page naming its source.** Every
+  research document hedges — *gives no year*, *records it as demolished*, *dates
+  it 1929 in the list and 1923 in a caption* — and carrying that hedge into a
+  `description` produces "The volume records…", which the runbook forbids in a
+  page body. It reached **50 descriptions** in one run before a grep caught it.
+  State the fact instead ("Since demolished", "Dated 1929, though 1923 is also
+  given"), or drop the hedge and let `date_precision` carry it. **Grep every
+  published description for the source's own noun — volume, statement, survey,
+  report, archive — before you commit.**
+- **An undated credit is not automatically a decline.** `building.architect`,
+  `building.builder` and `building.developer` are components that hold a credit
+  with no year, and a page can say who built it without claiming when. Decline
+  only where no spec row fits either. Runs before this one declined undated
+  credits as a class and threw away facts the page could have carried.
 - **Ask what the page already says before you write, not after.**
   `python3 research/tools/check.py --overlap <findings-file>` compares every
   resolved finding against the historical record, hook and narrative already on

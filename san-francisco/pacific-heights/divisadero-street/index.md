@@ -14,6 +14,8 @@ The parcels on Divisadero Street documented here so far, from the city's address
 - [2100](2100/) — A 1900 3-unit apartment building, with garage work permitted in 2017.
 - [2500](2500/) — A 1936 single-family house in the Pacific Heights Historic District, with a kitchen and bathroom remodel permitted in 2015.
 - [2520](2520/) — A 1934 single-family house in the Pacific Heights Historic District, with a kitchen and bathroom remodel permitted in 2026.
+- [2660](2660/) — A 1941 single-family house in the Pacific Heights Historic District, with a kitchen remodel permitted in 2007.
+- [2714](2714/) — A 1906 single-family house in the Pacific Heights Historic District, with reroofing permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

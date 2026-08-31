@@ -19,12 +19,14 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Jackson Street](jackson-street/) — 2 buildings, built 1906–1925.
 - [Laguna Street](laguna-street/) — 1 building, built 1900; 1 in the Japantown Community & Cultural Historic District.
 - [Lyon Street](lyon-street/) — 1 building, built 1902.
+- [Normandie Terrace](normandie-terrace/) — 1 building, built 1940; 1 in the Normandie Terrace Historic District.
 - [Octavia Street](octavia-street/) — 2 buildings, built 1900; 2 in the Japantown Community & Cultural Historic District.
 - [Pacific Avenue](pacific-avenue/) — 2 buildings, built 1912–1929; 2 in the Pacific Heights Historic District.
 - [Pierce Street](pierce-street/) — The Casebolt House, an Article 10 individual landmark built for the blacksmith and street car manufacturer Henry Casebolt.
 - [Pine Street](pine-street/) — 4 buildings, built 1900–1937; 1 in the Japantown Community & Cultural Historic District.
 - [Pixley Street](pixley-street/) — 2 buildings, built 1900–2003.
 - [Polk Street](polk-street/) — 1 building, built 1908.
+- [Raycliff Terrace](raycliff-terrace/) — 2 buildings, built 1950–1951; 2 in the Raycliff Terrace Historic District.
 - [Sacramento Street](sacramento-street/) — 4 buildings, built 1873–1900.
 - [Scott Street](scott-street/) — 1 building, built 1900.
 - [Steiner Street](steiner-street/) — The house known as the exterior of the film Mrs. Doubtfire.

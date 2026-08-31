@@ -1,0 +1,118 @@
+{
+  "address": "315 Amber Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/amber-drive/315/",
+  "apn": "7513007",
+  "block": "7513",
+  "lot": "007",
+  "eas_baseid": "420320",
+  "coordinates": {
+    "lat": 37.744629,
+    "lng": -122.442178
+  },
+  "parcel": {
+    "year_built": 1963,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3432,
+    "building_area_sqft": 1552,
+    "lot_depth_ft": 4,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Diamond Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0315 AMBER               DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 121491,
+    "assessed_improvement_value": 274715
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1962–1965",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201204188607",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-04-18",
+      "status_date": "2012-04-18",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=AMBER&street_type=DR&address_number=315",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7513007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7513&lot=007",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7513007",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44217785566073%2037.74462888747006)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume D–F), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5e61d57895f7a63a45f9a33bd3ee216f5a86bb2a19ca6b0ce2cc9f62584760da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Harold C. Dow"
+  },
+  "historical_record": [
+    {
+      "date": "1963",
+      "kind": "construction",
+      "description": "Designed by Harold C. Dow, who worked with BRB Homes and designed modern houses in San Francisco, mainly in the 1960s.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

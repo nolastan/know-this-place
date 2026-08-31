@@ -17,14 +17,17 @@ The parcels on Union Street documented here so far, from the city's address, ass
 - [1969–1979](1969/) — A 1900 store building, with a kitchen remodel permitted in 2016.
 - [1976–1982](1976/) — A 1900 store building, with a kitchen and bathroom remodel permitted in 2009.
 - [2001](2001/) — A 1970 store building, with plumbing work permitted in 2004.
+- [2055](2055/) — A 1924 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 2012.
 - [2124–2126](2124/) — A 1926 store building, with facade work permitted in 2021.
 - [2152–2154](2152/) — A 1912 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2005.
 - [2172–2176](2172/) — A 1925 5-unit apartment building, with plumbing work permitted in 2020.
 - [2277–2299](2277/) — A 1900 7-unit building with a ground-floor store, with reroofing permitted in 2015.
 - [2325](2325/) — A 1948 church, with a vertical addition permitted in 1997.
 - [2460](2460/) — The address to which Stephen Tilton's house of 1872, built beside the Presidio & Ferries cable terminal, was moved.
+- [2516](2516/) — An 1895 single-family house in the Cow Hollow First Bay Tradition Historic District, with deck work permitted in 2016.
 - [2526](2526/) — A 1902 single-family house in the Cow Hollow First Bay Tradition Historic District, with chimney work permitted in 1995.
 - [2730](2730/) — A 1919 single-family house in the Cow Hollow First Bay Tradition Historic District, with a bathroom remodel permitted in 2011.
+- [2827](2827/) — A 1914 single-family house in the Cow Hollow First Bay Tradition Historic District, with a rear addition permitted in 1988.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

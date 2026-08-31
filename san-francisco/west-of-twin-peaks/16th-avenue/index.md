@@ -4,6 +4,7 @@ The parcels on 16th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [2376](2376/) — A 1945 single-family house, with one permit record from 2010.
 - [2547](2547/) — A 1947 single-family house, with facade work permitted in 1991.
 
 Pages are generated from the DataSF datasets listed in each page's

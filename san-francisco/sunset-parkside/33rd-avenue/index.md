@@ -13,6 +13,7 @@ The parcels on 33rd Avenue documented here so far, from the city's address, asse
 - [1687](1687/) — A 1940 single-family house, with reroofing permitted in 2000.
 - [1739](1739/) — A 1940 single-family house, with reroofing permitted in 1996.
 - [1767](1767/) — A 1940 single-family house, with reroofing permitted in 1990.
+- [1851](1851/) — A 1919 single-family house, with one permit record from 1988.
 - [1967](1967/) — A 1942 single-family house, with facade work permitted in 2002.
 - [2270](2270/) — A 1940 single-family house, with reroofing permitted in 2013.
 - [2363](2363/) — A 1913 single-family house, with a kitchen remodel permitted in 2023.

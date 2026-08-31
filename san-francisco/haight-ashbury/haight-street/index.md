@@ -11,6 +11,7 @@ The parcels on Haight Street documented here so far, from the city's address, as
 - [1500–1512](1500/) — A 1910 store building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2019.
 - [1524–1528 Haight Street](1524/) — Flats over a store of 1900 in the Counterculture Historic District, tied — disputedly — to Jimi Hendrix.
 - [1601–1621](1601/) — A 1904 store building in the Haight Ashbury Counterculture Historic District, with window replacement permitted in 2010.
+- [1677–1681](1677/) — A 1906 three-flat in the Haight Ashbury Counterculture Historic District, with a seismic retrofit permitted in 2017.
 - [1721–1737](1721/) — A 1910 theater, with a kitchen remodel permitted in 2012.
 - [1801](1801/) — A 1914 store building, with a rear addition permitted in 1992.
 - [1835–1855](1835/) — A 1950 store building, with a seismic retrofit permitted in 2026.
