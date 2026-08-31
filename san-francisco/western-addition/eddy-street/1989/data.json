@@ -1,0 +1,112 @@
+{
+  "address": "1989 Eddy Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/eddy-street/1989/",
+  "apn": "1129035",
+  "block": "1129",
+  "lot": "035",
+  "eas_baseid": "295239",
+  "coordinates": {
+    "lat": 37.780207,
+    "lng": -122.440265
+  },
+  "parcel": {
+    "year_built": 1980,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "building_area_sqft": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Anza Vista",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1989 EDDY                ST0002"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 155022,
+    "assessed_improvement_value": 363669,
+    "last_sale_date": "1988-06-20"
+  },
+  "permits": [
+    {
+      "number": "202407035753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-03",
+      "status_date": "2024-09-13",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace 2 exterior windows (street facing facade) with black enduraclad windows (pella) u = .30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309267392",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-26",
+      "status_date": "2024-09-13",
+      "estimated_cost": 21600,
+      "revised_cost": 21600,
+      "description": "revision to bpa# 202309015783: remove and replace shingle siding at facade w/ (n) hardie shingles- smooth finish north elevation only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309015783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-01",
+      "status_date": "2024-09-13",
+      "estimated_cost": 21600,
+      "revised_cost": 21600,
+      "description": "replace shingle siding @ facade inkind. north elevation only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EDDY&street_type=ST&address_number=1989",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1129035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1129&lot=035",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Third Bay Tradition",
+      "year_built_as_surveyed": "1980",
+      "architect_as_surveyed": "Zoe Works",
+      "note": "The Sunhouse Complex, a Third Bay Tradition condominium complex in the Western Addition designed by Zoe Works in 1979 on passive solar principles and completed in 1980. An underground rock bed gave it thermal mass, absorbing heat by day and radiating it back through the building at night."
+    }
+  ],
+  "building": {
+    "name": "Sunhouse Complex",
+    "architect": "Zoe Works"
+  }
+}

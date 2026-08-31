@@ -4,6 +4,7 @@ The parcels on Francisco Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [208–210](208/) — A 1986 two-flat, with deck work permitted in 2010.
 - [220–222](220/) — A 1940 three-flat, with a kitchen and bathroom remodel permitted in 2025.
 - [418–420](418/) — A 1908 11-unit apartment building, with a rear addition permitted in 2004.
 - [505–507](505/) — A 1907 4-unit apartment building, with deck work permitted in 2005.

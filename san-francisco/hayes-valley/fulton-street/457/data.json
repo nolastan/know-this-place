@@ -1,0 +1,127 @@
+{
+  "address": "457 Fulton Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/fulton-street/457/",
+  "apn": "0793060",
+  "block": "0793",
+  "lot": "060",
+  "eas_baseid": "288430",
+  "coordinates": {
+    "lat": 37.778545,
+    "lng": -122.424081
+  },
+  "parcel": {
+    "year_built": 1992,
+    "units": 1,
+    "stories": 3,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "building_area_sqft": 1506,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0457 FULTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 847800,
+    "assessed_improvement_value": 565200,
+    "last_sale_date": "2021-10-28"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202407186775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-18",
+      "status_date": "2025-04-02",
+      "estimated_cost": 41000,
+      "revised_cost": 41000,
+      "description": "bathroom remodel, interior work only at 3rd fl. no structural element impacted",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307212753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-21",
+      "status_date": "2024-02-14",
+      "estimated_cost": 44000,
+      "revised_cost": 45000,
+      "description": "g/f: bathroom remodel with structural alteration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206307489",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-30",
+      "status_date": "2022-10-21",
+      "estimated_cost": 12000,
+      "revised_cost": 13000,
+      "description": "one kitchen remodel. new cabinets and counters. non structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408030506",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-03",
+      "status_date": "2004-08-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408030525",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-08-03",
+      "status_date": "2004-08-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "re-side existing shingles with class a. blue label shingles to match existing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FULTON&street_type=ST&address_number=457",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0793060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0793&lot=060",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42408120819636%2037.77854521892359)%27)",
+      "retrieved": "2026-08-31"
+    }
+  ]
+}

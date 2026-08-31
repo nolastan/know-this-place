@@ -4,6 +4,7 @@ The parcels on Phelps Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [750](750/) — An industrial building in the Southeast Treatment Plant Streamline Moderne Industrial Historic District, with stair work permitted in 2024.
 - [1450](1450/) — A single-family house, with foundation work permitted in 1990.
 
 Pages are generated from the DataSF datasets listed in each page's

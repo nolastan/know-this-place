@@ -4,6 +4,7 @@ The parcels on Marina Boulevard documented here so far, from the city's address,
 
 ## Documented so far
 
+- [2](2/) — A 1900 industrial building in the San Francisco Port of Embarkation U.S. Army Historic District, with reroofing permitted in 2026.
 - [15](15/) — A 1959 store building, with a seismic retrofit permitted in 1995.
 - [145](145/) — A 1933 single-family house in the Marina Historic District, with a kitchen remodel permitted in 1989.
 - [159](159/) — A 1934 single-family house in the Marina Historic District, with a rear addition permitted in 2011.

@@ -4,6 +4,7 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [505](505/) — A 1938 office building in the Civic Center Historic District, with one permit record from 2018.
 - [799](799/) — A 1917 garage, with facade work permitted in 2026.
 - [901](901/) — A 1926 garage, with reroofing permitted in 2011.
 - [945–999](945/) — A 1937 garage, with reroofing permitted in 2009.

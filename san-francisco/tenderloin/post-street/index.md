@@ -5,6 +5,7 @@ The parcels on Post Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [491](491/) — A 1913 school building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2011.
+- [501](501/) — A hotel in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2017.
 - [545](545/) — A 1913 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen remodel permitted in 2015.
 - [573–599](573/) — A 1900 hotel, with an addition permitted in 2016.
 - [600–612](600/) — A 1914 hotel in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 1993.

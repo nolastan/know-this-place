@@ -4,6 +4,7 @@ The parcels on 23rd Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [250](250/) — An assessor class: vacant lot.
 - [454](454/) — A 1972 4-unit apartment building, with fire repair permitted in 1993.
 - [796](796/) — A 1922 7-unit apartment building, with reroofing permitted in 2022.
 

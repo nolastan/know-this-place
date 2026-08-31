@@ -19,6 +19,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Chenery Street](chenery-street/) — 16 buildings, built 1900–1951; 5 in the Glen Park Center Historic District.
 - [Congo Street](congo-street/) — 1 building, built 1917.
 - [Diamond Street](diamond-street/) — 5 buildings, built 1916–1951; 2 in the Glen Park Center Historic District.
+- [Digby Street](digby-street/) — 1 building.
 - [Elk Street](elk-street/) — 1 building.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
@@ -26,4 +27,5 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Malta Drive](malta-drive/) — 1 building, built 1974.
 - [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
+- [Portola Drive](portola-drive/) — 1 building.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.

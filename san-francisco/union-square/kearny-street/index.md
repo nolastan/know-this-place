@@ -7,6 +7,7 @@ The parcels on Kearny Street documented here so far, from the city's address, as
 - [1](1/) — An office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2006.
 - [25–35](25/) — A 1909 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2020.
 - [101](101/) — A 1909 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2009.
+- [120–130](120/) — A 1980 office building, with plumbing work permitted in 2022.
 - [200–220](200/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 1986.
 - [201](201/) — A 1910 office building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2016.
 - [209–211](209/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2000.

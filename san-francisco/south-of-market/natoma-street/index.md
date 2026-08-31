@@ -20,6 +20,7 @@ The residential parcels on Natoma Street documented here so far, from the city's
 - [926](926/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with one permit record from 1981.
 - [935](935/) — A 1947 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1999.
 - [955](955/) — A 1947 single-family house in the Western SOMA Light Industrial and Residential Historic District, with a vertical addition permitted in 2013.
+- [956–960](956/) — A 1913 two-flat in the Western SOMA Light Industrial and Residential Historic District, with garage work permitted in 1992.
 - [959](959/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1999.
 - [964](964/) — A 1937 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
 - [969](969/) — A 1906 industrial building in the Western SOMA Light Industrial and Residential Historic District, with foundation work permitted in 1992.

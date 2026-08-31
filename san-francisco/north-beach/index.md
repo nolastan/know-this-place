@@ -6,11 +6,13 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 ## Streets documented so far
 
 - [Bannan Place](bannan-place/) — 4 buildings, built 1906–1909; 4 in the Upper Grant Avenue Historic District.
+- [Bellair Place](bellair-place/) — 1 building, built 1906.
 - [Bob Kaufman Alley](bob-kaufman-alley/) — 2 buildings, built 1907–1915; 2 in the Upper Grant Avenue Historic District.
 - [Broadway](broadway/) — 14 buildings, built 1900–1921; 6 in the Jackson Square Historic District Extension.
 - [Calhoun Terrace](calhoun-terrace/) — 1 building, built 1939; 1 in the Telegraph Hill Historic District.
 - [Chestnut Street](chestnut-street/) — 10 buildings, built 1904–1940.
 - [Columbus Avenue](columbus-avenue/) — 13 buildings, built 1906–1961; 1 in the Washington Square Historic District.
+- [Darrell Place](darrell-place/) — 1 building, built 1986; 1 in the Telegraph Hill Historic District.
 - [Edith Street](edith-street/) — 2 buildings, built 1907–1915.
 - [Filbert Street](filbert-street/) — 18 buildings, built 1906–1961; 8 in the Upper Grant Avenue Historic District.
 - [Francisco Street](francisco-street/) — 5 buildings, built 1907–1940.
@@ -19,6 +21,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Green Street](green-street/) — 16 buildings, built 1907–2001; 8 in the Upper Grant Avenue Historic District.
 - [Greenwich Street](greenwich-street/) — 6 buildings, built 1907–1933.
 - [Jasper Place](jasper-place/) — 18 buildings, built 1900–1913; 18 in the Upper Grant Avenue Historic District.
+- [Jefferson Street](jefferson-street/) — 1 building, built 1966.
 - [Kearny Street](kearny-street/) — 5 buildings, built 1906–1909; 2 in the Jackson Square Historic District Extension.
 - [Lombard Street](lombard-street/) — 1 building, built 1926.
 - [Mason Street](mason-street/) — 5 buildings, built 1906–1911.

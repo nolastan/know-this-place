@@ -4,6 +4,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [2055](2055/) — A 1975 86-unit apartment building, with reroofing permitted in 2014.
 - [2101](2101/) — A 1925 24-unit apartment building, with reroofing permitted in 1996.
 - [2135](2135/) — A 1900 36-unit apartment building, with a seismic retrofit permitted in 1998.
 - [2195](2195/) — A 1917 16-unit apartment building, with a seismic retrofit permitted in 1999.
@@ -19,6 +20,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [2922](2922/) — A 1900 single-family house, with a rear addition permitted in 2016.
 - [3093–3095](3093/) — An 1898 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1984.
 - [3151](3151/) — A 1910 garage, with a rear addition permitted in 1999.
+- [3190](3190/) — A 1979 building, with a kitchen and bathroom remodel permitted in 2004.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

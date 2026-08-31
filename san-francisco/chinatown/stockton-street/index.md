@@ -6,7 +6,9 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 
 - [2–30](2/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with a vertical addition permitted in 2023.
 - [46–48](46/) — A 1909 department store in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2021.
+- [150](150/) — A department store in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2008.
 - [218–222](218/) — A 1908 3-unit building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1985.
+- [345](345/) — A 1972 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2013.
 - [417](417/) — A 1907 hotel in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2018.
 - [423–439](423/) — A 1911 78-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1991.
 - [441–447](441/) — A 1923 office building in the Kearny-Market-Mason-Sutter Conservation District, with a vertical addition permitted in 2000.
@@ -21,6 +23,7 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [901–907](901/) — A 1907 8-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2002.
 - [913–917](913/) — A 1908 store building in the Chinatown Historic District, with reroofing permitted in 2009.
 - [933–949](933/) — A 1906 assessor class: vacant lot in the Chinatown Historic District, with an addition permitted in 2016.
+- [946](946/) — A 1970 building in the Chinatown Historic District, with electrical work permitted in 2022.
 - [1000–1032](1000/) — A 1907 store building in the Chinatown Historic District, with reroofing permitted in 2001.
 - [1013–1017](1013/) — A 1910 hotel in the Chinatown Historic District, with facade work permitted in 2001.
 - [1019–1027](1019/) — A 1913 34-unit apartment building in the Chinatown Historic District, with reroofing permitted in 2021.

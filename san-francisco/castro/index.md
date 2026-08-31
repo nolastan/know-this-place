@@ -46,6 +46,7 @@ which local histories treat as its own neighborhood.
 - [Castro Street](castro-street/) — 151 buildings, built 1885–1985; 53 in the Duboce Triangle Historic District Extension.
 - [Chula Lane](chula-lane/) — 8 buildings, built 1880–1912; 6 in the Chula-Abbey Early Residential District.
 - [Church Street](church-street/) — 74 buildings, built 1893–1987; 1 in the Upper Market Street Commercial Historic District.
+- [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1974.
 - [Clifford Terrace](clifford-terrace/) — 17 buildings, built 1906–1959.
 - [Clipper Street](clipper-street/) — 1 building, built 1916.
 - [Clover Street](clover-street/) — 5 buildings, built 1905–2002.

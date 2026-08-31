@@ -21,6 +21,7 @@ The parcels on California Street documented here so far, from the city's address
 - [2725](2725/) — A 1900 school building, with reroofing permitted in 2002.
 - [2826–2830](2826/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2010.
 - [2840–2844](2840/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2004.
+- [2910](2910/) — A 1988 5-unit apartment building, with dry-rot repair permitted in 2005.
 - [2913](2913/) — A 1900 single-family house, with a seismic retrofit permitted in 2019.
 
 Pages are generated from the DataSF datasets listed in each page's

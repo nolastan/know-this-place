@@ -16,6 +16,7 @@ The parcels on Union Street documented here so far, from the city's address, ass
 - [1929–1931](1929/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 2001.
 - [1969–1979](1969/) — A 1900 store building, with a kitchen remodel permitted in 2016.
 - [1976–1982](1976/) — A 1900 store building, with a kitchen and bathroom remodel permitted in 2009.
+- [2001](2001/) — A 1970 store building, with plumbing work permitted in 2004.
 - [2124–2126](2124/) — A 1926 store building, with facade work permitted in 2021.
 - [2152–2154](2152/) — A 1912 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2005.
 - [2172–2176](2172/) — A 1925 5-unit apartment building, with plumbing work permitted in 2020.

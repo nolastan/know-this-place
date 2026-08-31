@@ -10,6 +10,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Earl Street](earl-street/) — 1 building, built 1947.
+- [Evans Avenue](evans-avenue/) — 1 building, built 1978.
 - [Gilman Avenue](gilman-avenue/) — 1 building, built 1925.
 - [Griffith Street](griffith-street/) — 1 building, built 1930; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Hawes Street](hawes-street/) — 2 buildings, built 1942–1972.
