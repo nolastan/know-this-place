@@ -20,6 +20,7 @@ opened here in 1905.
 - [De Haro Street](de-haro-street/) — 5 buildings, built 1895–1960.
 - [Kansas Street](kansas-street/) — 1 building, built 1964.
 - [Mariposa Street](mariposa-street/) — 7 buildings, built 1904–1995.
+- [Minnesota Street](minnesota-street/) — 2 buildings, built 1895–1900; 2 in the Dogpatch Historic District.
 - [Mississippi Street](mississippi-street/) — 1 building, built 1928.
 - [Missouri Street](missouri-street/) — 4 buildings, built 1911–1962.
 - [Pennsylvania Avenue](pennsylvania-avenue/) — 3 buildings, built 1906–1942.

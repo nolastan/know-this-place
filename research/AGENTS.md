@@ -710,6 +710,19 @@ The mechanics:
   safe only there: a bare "unit:" would read the list marker in "one unit: 1.
   rehabilitate ..." as a designator. Third lesson in this family, same moral as
   the two above.
+- **An illustrated style guide dates its landmarks and copies the roll for
+  everything else — and says so nowhere.** The Victorian Era Styles statement
+  gives a specific, researched year for every building that is a designated
+  landmark (1876, 1883, 1886, 1889, 1892, 1895, 1897, 1902, 1904, 1907) and the
+  bare year **1900** for nine of the eleven that are not — including a row of
+  *flat-front Italianate* dwellings, a style the same document says ended
+  around 1885. No key, no footnote, no column heading admits it: unlike the UMB
+  survey's YEAR column, nothing in the document tells you. The tell is the
+  repetition — one year, exactly 1900, on every undesignated example — and the
+  confirmation is one lookup: 725 Castro Street's roll `year_built` is 1900 too.
+  *In a document with no inventory table, check the source's years against the
+  roll before publishing any of them; where they are the roll's, publish the
+  style and drop the date rather than restating the assessor to himself.*
 - **A renderer that stops crashing has not started reproducing.** Fixing the
   `TypeError` that killed the "Street numbers" row on a hand-authored page did
   not make the renderer produce that page — it made it produce a *worse* one,

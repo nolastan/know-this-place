@@ -1,0 +1,112 @@
+{
+  "address": "1820 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/california-street/1820/",
+  "apn": "0641006",
+  "block": "0641",
+  "lot": "006",
+  "eas_baseid": "286813",
+  "coordinates": {
+    "lat": 37.79032,
+    "lng": -122.425158
+  },
+  "parcel": {
+    "lot_area_sqft": 5153,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1820 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 310768
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9815585",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-10",
+      "status_date": "1999-02-24",
+      "estimated_cost": 1000,
+      "description": "repair existing fence to match materials & design 10 ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9814314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-27",
+      "status_date": "1998-10-28",
+      "estimated_cost": 10000,
+      "description": "1st flr,convert (e)restroom to a shower &restrm to pantry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611594",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-19",
+      "status_date": "1987-12-28",
+      "estimated_cost": 40000,
+      "description": "horizontal extension, construct new detached garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=1820",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0641006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0641&lot=006",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0641006",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "victorian-era-styles-context-statement",
+      "name": "Anne Greening and Elena Moore, San Francisco Planning Department, Victorian Era Styles (1870-1910) Historic Context Statement, SF Survey Cultural Resources Survey, adopted 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=a4419d21510fea07d658880f76f2fd18d7316a7921cf41c4baca421190542a30&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Victorian Era Styles Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Victorian Era Styles Historic Context Statement (2022)",
+    "source": "victorian-era-styles-context-statement",
+    "style": "Bay Window Italianate",
+    "year_built_as_surveyed": "1876",
+    "finding": "Individually architecturally significant",
+    "note": "Judged individually significant as bay-window Italianate architecture for its elaborately bracketed cornice, pedimented window hoods and faux quoining."
+  },
+  "building": {
+    "completed": "1876"
+  }
+}

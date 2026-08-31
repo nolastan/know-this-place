@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 36 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 37 statements read; the rest are one open GitHub issue each.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 36 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 23: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). All twenty-three loops closed. |
-| **Remaining** | ~14 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 37 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 24: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved). All twenty-four loops closed. |
+| **Remaining** | ~13 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -91,6 +91,15 @@ document you are about to mine.
   *Daily Pacific Builder* and permit notices, and those *are* evidence. **Read
   the key before treating a column as the source's own claim.**
 
+- **A style guide with no inventory table is dense and cheap, and its dates
+  are half borrowed.** The Victorian Era Styles statement runs 45 pages, has no
+  appendix, no APN and no survey results, and still yields 45 numbered-address
+  mentions — because it is illustrated, and every figure caption gives an
+  address, a style, a landmark number and a year. But only the landmarks'
+  years are researched; the rest are the assessor's roll figure, printed
+  without a word to say so. See "What we've learned the hard way" in
+  [../AGENTS.md](../AGENTS.md).
+
 - **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
   REST content URL is built from the page's own `accesskey`. Worked examples
   throughout the per-document notes below.
@@ -104,6 +113,16 @@ document you are about to mine.
   adopted statements is
   `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
 - **Read into the repo so far:**
+  - Anne Greening and Elena Moore, San Francisco Planning Department,
+    *Victorian Era Styles (1870-1910) Historic Context Statement*, part of the
+    SF Survey Cultural Resources Survey, adopted 2022 (45 pp.), source id
+    `victorian-era-styles-context-statement`. Listed on the SF Planning page as
+    "Victorian Era Styles (1870-1910) (Adopted 2022)". Served from the same
+    M-Files vault, REST content path built from the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/a4419d21510fea07d658880f76f2fd18d7316a7921cf41c4baca421190542a30/content`.
+    The vault's PDF was last modified 29 August 2023, a year after adoption; it
+    is the file the listing points at. See "The Victorian Era Styles statement"
+    below.
   - San Francisco Landmarks Preservation Advisory Board (Vincent Marsh, project
     manager), *A Context Statement and Architectural/Historical Survey of
     Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from
@@ -3913,3 +3932,88 @@ above. Printed page = PDF page − 1.
   it is outstanding. It names the Jewish historic context statement as a
   related theme and says the German American and Clubs and Social Halls
   statements are in progress — the third of those is issue #69.)
+
+## The Victorian Era Styles statement
+
+Anne Greening and Elena Moore, *Victorian Era Styles (1870-1910) Historic
+Context Statement*, adopted 2022, 45 pages. Source id
+`victorian-era-styles-context-statement`. Cite the SharedLinks URL in the entry
+above; fetch the REST content path. Printed page = PDF page.
+
+- **Shape of the yield — it is the figure captions, and nothing else.** No
+  appendix, no inventory table, no APN, no survey results anywhere in the
+  document. The five style themes (Italianate/Flat-Front Italianate,
+  Stick/Eastlake, Queen Anne, Second Empire, Richardsonian Romanesque) each run
+  narrative → evaluative framework → eligibility standards → character-defining
+  features → integrity considerations → figures, and every one of the 43
+  figures with an address gives style, address, year and usually a landmark
+  number. The narrative adds a handful more, always the same buildings the
+  figures illustrate, plus the "Geographic Boundaries" and "Property Type
+  Description" rows of the framework tables, which name the known example of a
+  style for a property type. **45 mentions in 45 pages**, which is the densest
+  per-page rate this source has produced.
+- **The caption years for the undesignated examples are the assessor's.** Nine
+  of the eleven non-landmark examples are dated exactly 1900 — including a row
+  of flat-front Italianate dwellings, in a document whose own period of
+  significance for that style ends in 1885. 725 Castro Street's roll
+  `year_built` is 1900, which settles it. The landmarks' years are researched
+  and are evidence. This run published the style attributions and dropped the
+  1900s; the general lesson is in [../AGENTS.md](../AGENTS.md).
+- **Four of its printed ranges are rows of separate houses**, not one
+  building's two-number address: 1104-1118 Tennessee, 725-733 Castro, 905-911
+  Minnesota and 710-718 Steiner (the Painted Ladies, six houses). Only the two
+  numbers the document prints were recorded, one finding each. Three others —
+  200-202 Fair Oaks, 351-353 Divisadero, 500-502 Divisadero, 289-93 Divisadero,
+  1-21 Mission — are single buildings and resolve as ranges.
+- **The one building it names with no number** is the east side of Harrison
+  Street between 21st and 22nd, "Olsen's Queen Anne Cottages", an eligible
+  district. Unresolved, and it cannot become anything else.
+- **Three of the 45 mentions are inside citations to other documents** — a
+  footnote naming the ordinance that designated 22 Beaver Street, a figure
+  source credit for the 90-92 Second Street designation report, and a
+  bibliography entry for the National Register nomination of the house at 584
+  Page Street. They were recorded at low confidence and all three declined: the
+  pages already carried what they assert. *Extracting them anyway was still
+  right — the decline is a record that they were looked at.*
+- **It contradicts itself once,** about the Feusier Octagon House at 1067 Green
+  Street: the narrative says 1856, the caption to Fig. 35 says 1858. Stated on
+  the page's `.unknowns`, unadjudicated.
+- **The Bayview Opera House is here under its old address.** The statement
+  gives 1601 Newcomb Avenue, which EAS no longer holds; the city addresses the
+  building 4701-4705 Third Street, and this repo's page already carried 1601
+  Newcomb as an alias from the `bvhp-area-b-context-statement` pass, with the
+  same landmark number. That made it an identification rather than an
+  inference. *Where a statement gives an address EAS has retired, check the
+  repo's own aliases before declaring it unresolvable.*
+- **Two of its buildings are not on buildable parcels.** St. Charles School at
+  3250 18th Street sits on parcel 3574127, which has no row on the 2025 secured
+  roll, so `seed_pages.py` skips it — resolved with nowhere to publish. The
+  Sharon Building at 300 Bowling Green Drive resolves to parcel 1700001, all
+  4.2 million square feet of Golden Gate Park; its fact went on the park's own
+  page as a timeline entry, following the `new-deal-context-statement` pass,
+  which already put Kezar Pavilion and the Beach Chalet there.
+- **People.** The landmark names are the city's own designations — Haas-
+  Lilienthal House, Westerfeld House, Whittier Mansion — and every one of them
+  is already on its page through `historic_status.survey_name`, so this run
+  wrote no names at all. The document names no residents.
+
+- **Verified:** 2026-08-30 (Victorian Era Styles: read all 45 pages of the
+  adopted PDF — the preface, the Gilded Age historic context, all five style
+  themes with their narratives, evaluative frameworks, eligibility standards,
+  character-defining features, integrity considerations and 43 figures, and the
+  bibliography. **45 findings, 37 published on 37 pages**, 20 of them created
+  by this run, across 14 neighborhood directories with `pacific-heights` (7
+  facts), `haight-ashbury` (6) and `hayes-valley` (6) at the head. Six resolved
+  findings were declined: three were citation-only mentions the pages already
+  answered, two were 725 and 733 Castro Street where the Eureka Valley
+  statement's panel already gives the style, and one — 3250 18th Street — is on
+  a parcel that has no roll row and so cannot have a page. Two never reached a
+  parcel: 200-202 Fair Oaks, a condominium, and the Harrison Street block face
+  with no street number. Four dating disagreements with the assessor are stated
+  on pages and one internal contradiction on `.unknowns`. Coverage note: this
+  document is read in full and nothing in it is outstanding. It names four
+  sibling documents as related SF Survey themes — The 1906 Earthquake &
+  Reconstruction, Early Residential Development (1848-1880), Streetcar
+  Suburbanization (1880-1920) and the Architects', Builders', Developers' &
+  Landscape Architects' Biographies — of which the last is issue #86 and the
+  second is close to issue #79.)

@@ -5,6 +5,7 @@ The parcels on Fulton Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [864](864/) — A 1900 church, with reroofing permitted in 2003.
+- [1000](1000/) — A 1912 hotel in the Alamo Square Historic District, with an accessory dwelling unit permitted in 2022.
 - [1040](1040/) — A 1912 18-unit apartment building in the Alamo Square Historic District, with a seismic retrofit permitted in 2015.
 - [1196–1198](1196/) — An 1890 three-flat in the Alamo Square Historic District, with foundation work permitted in 2000.
 - [1200](1200/) — A 1927 59-unit apartment building in the Alamo Square Historic District, with reroofing permitted in 2005.
