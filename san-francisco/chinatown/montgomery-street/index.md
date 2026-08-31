@@ -4,6 +4,9 @@ The parcels on Montgomery Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [505–527](505/) — An office building, with a bathroom remodel permitted in 2016.
+- [555](555/) — A 1985 office building, with electrical work permitted in 2018.
+- [600](600/) — A 1971 office building, with stair work permitted in 2025.
 - [708–710](708/) — A 1906 store building in the Jackson Square Historic District, with a kitchen remodel permitted in 2017.
 - [712–714](712/) — A 1900 2-unit building in the Jackson Square Historic District, with a seismic retrofit permitted in 1995.
 - [730](730/) — A 1900 office building in the Jackson Square Historic District, with facade work permitted in 2025.

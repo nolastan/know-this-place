@@ -4,6 +4,7 @@ The parcels on Mission Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [701–783](701/) — A building, with electrical work permitted in 2025.
 - [748–756](748/) — A 1900 church, with a seismic retrofit permitted in 1997.
 - [766](766/) — A 1939 church.
 - [808–814](808/) — A 1925 office building, with a seismic retrofit permitted in 1985.

@@ -64,6 +64,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 - [5272](5272/) — A 1940 store building.
 - [5288–5290](5288/) — A 1934 two-flat, with stair work permitted in 2021.
 - [5545](5545/) — A 1999 54-unit apartment building, with permit records from 1985 to 2021.
+- [5701](5701/) — A 1900 assessor class: vacant lot, with reroofing permitted in 2010.
 - [5815](5815/) — A 1925 industrial building, with stair work permitted in 2022.
 - [6000](6000/) — The Vermont Marble Co. marble works of 1931, in the old Western Development Co. tract.
 - [6025](6025/) — A 1950 industrial building, with reroofing permitted in 2011.

@@ -22,5 +22,6 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [Fourth Avenue](4th-avenue/) — 5 buildings, built 1902–2008.
 - [Funston Avenue](funston-avenue/) — 2 buildings, built 1900–1912.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1921.
+- [Lake Street](lake-street/) — 1 building, built 1981.
 - [Second Avenue](2nd-avenue/) — 3 buildings, built 1900.
 - [Third Avenue](3rd-avenue/) — 1 building, built 1907.

@@ -129,6 +129,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [1260–1264](1260/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 1986.
 - [1304–1306](1304/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 2022.
 - [1312](1312/) — A 1900 single-family house, with reroofing permitted in 2023.
+- [1325](1325/) — A 1955 church, with a rear addition permitted in 1986.
 - [1326–1328](1326/) — A 1908 5-unit building with a ground-floor store, with an addition permitted in 2022.
 - [1330](1330/) — A 1906 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
 - [1341](1341/) — A 1904 32-unit apartment building, with a seismic retrofit permitted in 2018.

@@ -9,6 +9,7 @@ The parcels on Taylor Street documented here so far, from the city's address, as
 - [108–120](108/) — A 1907 hotel in the Uptown Tenderloin Historic District, with stair work permitted in 2015.
 - [136–142](136/) — A 1908 office building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
 - [225](225/) — A 1910 24-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2023.
+- [400–420](400/) — A 1942 office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2019.
 - [405–415](405/) — A 1912 garage in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2009.
 - [501](501/) — A 1920 81-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2013.
 - [551–555](551/) — A 1922 35-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a bathroom remodel permitted in 2026.

@@ -1,0 +1,177 @@
+{
+  "address": "2 Marina Boulevard, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/marina-boulevard/2/",
+  "apn": "0409002",
+  "block": "0409",
+  "lot": "002",
+  "eas_baseid": "483880",
+  "coordinates": {
+    "lat": 37.805506,
+    "lng": -122.431939
+  },
+  "also_addressed": [
+    "2 FRANKLIN ST",
+    "230 FRANKLIN ST",
+    "231 FRANKLIN ST",
+    "232 FRANKLIN ST",
+    "234 FRANKLIN ST",
+    "235 FRANKLIN ST",
+    "238 FRANKLIN ST",
+    "239 FRANKLIN ST",
+    "3 FRANKLIN ST",
+    "3455 VAN NESS AVE",
+    "4 FRANKLIN ST",
+    "7 FRANKLIN ST"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 2918500,
+    "use": "Industrial",
+    "property_class": "Industrial Gov Mixed/Other Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0002 MARINA              BLER 1"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Individual, National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "survey_name": "OLD BROOK HOUSE/QUARTERS # 2",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "San Francisco Port of Embarkation U.S. Army Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1945",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Fort Mason Historic District (Boundary Increase)",
+      "california_register_status": "Listed",
+      "national_register_status": "Listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1797, 1850–1859",
+      "source": "sf-historic-districts"
+    },
+    {
+      "name": "Auxiliary Water Supply System (Discontiguous)",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Eligible (not listed)",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1908–1964",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202605151334",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-15",
+      "status_date": "2026-05-15",
+      "estimated_cost": 19220,
+      "revised_cost": 19220,
+      "description": "pier 1 storage at fort mason: reroofing no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807194927",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-19",
+      "status_date": "2018-07-19",
+      "estimated_cost": 5000,
+      "revised_cost": 4500,
+      "description": "ansul system update. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M373567",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-02-25",
+      "status_date": "2013-02-26",
+      "revised_cost": 1124,
+      "description": "address at 2 marina blvd. building a, b, c, d, e. at block 0409, lot 002.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M373587",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-02-25",
+      "status_date": "2013-02-26",
+      "revised_cost": 696,
+      "description": "address at 2 marina blvd. pier 1, 2 & 3. at block 0409, lot 002.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARINA&street_type=BLVD&address_number=2",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0409002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0409&lot=002",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0409002",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43193903203269%2037.80550591634496)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "year_built_as_surveyed": "1979",
+      "architect_as_surveyed": "Sim Van der Ryn (interiors); Paul Discoe of Joinery Structures (construction); J.B. Blunk (sculpture)",
+      "note": "Greens, the vegetarian restaurant opened in Building A at Fort Mason Center in 1979 by the San Francisco Zen Center, with interiors by Sim Van der Ryn, construction by Paul Discoe of Joinery Structures and the Zen Center carpenters, and a burlwood redwood sculpture by J.B. Blunk. It brought sustainable design and sustainable food together, sourcing produce from the Zen Center's farm in Muir Beach."
+    }
+  ],
+  "building": {
+    "name": "Greens Restaurant",
+    "architect": "Sim Van der Ryn (interiors); Paul Discoe of Joinery Structures (construction); J.B. Blunk (sculpture)"
+  }
+}

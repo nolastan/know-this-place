@@ -4,6 +4,19 @@ Every residential parcel on Alabama Street that the city's address, assessor and
 
 ## Documented so far
 
+- [268–278](268/) — A 2001 building, with permit records from 1983 to 2020.
+- [375](375/) — A 1926 industrial building, with a bathroom remodel permitted in 2004.
+- [400–440](400/) — A 1946 building, with an addition permitted in 2000.
+- [401–499](401/) — A 1925 industrial building, with reroofing permitted in 2025.
+- [450](450/) — A 1942 industrial building, with reroofing permitted in 2020.
+- [470](470/) — A 1942 industrial building, with reroofing permitted in 1989.
+- [498](498/) — A 1910 industrial building, with a kitchen and bathroom remodel permitted in 2018.
+- [501–535](501/) — A 1936 industrial building, with reroofing permitted in 2019.
+- [540–544](540/) — A 1922 industrial building, with stair work permitted in 2006.
+- [560](560/) — A 1950 industrial building, with window replacement permitted in 2014.
+- [570](570/) — A 1952 industrial building, with reroofing permitted in 2009.
+- [600](600/) — A 1911 industrial building, with stair work permitted in 2017.
+- [612–660](612/) — A 1914 industrial building, with plumbing work permitted in 2017.
 - [655](655/) — A 2009 24-unit apartment building, with one permit record from 2007.
 - [814](814/) — A 1900 single-family house, with reroofing permitted in 2018.
 - [816](816/) — A 1900 single-family house, with reroofing permitted in 2002.

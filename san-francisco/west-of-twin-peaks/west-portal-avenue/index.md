@@ -6,6 +6,7 @@ The parcels on West Portal Avenue documented here so far, from the city's addres
 
 - [2](2/) — A 1935 store building, with electrical work permitted in 2020.
 - [59–61](59/) — A 1923 store building, with reroofing permitted in 2006.
+- [98](98/) — A 1975 bank building, with electrical work permitted in 2011.
 - [160–170](160/) — A 1935 store building in the West Portal Park Historic District, with a kitchen remodel permitted in 2014.
 - [220–226](220/) — A 1938 store building in the West Portal Park Historic District, with reroofing permitted in 2017.
 - [254–262](254/) — A 1925 10-unit apartment building in the West Portal Park Historic District, with a seismic retrofit permitted in 2017.

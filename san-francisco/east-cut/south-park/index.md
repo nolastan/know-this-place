@@ -14,6 +14,7 @@ The parcels on South Park documented here so far, from the city's address, asses
 - [70](70/) — A flats building in the South Park Historic District, with reroofing permitted in 2009.
 - [76–82](76/) — A 1906 three-flat in the South Park Historic District, with foundation work permitted in 2004.
 - [84](84/) — A 1907 single-family house in the South Park Historic District, with a vertical addition permitted in 1992.
+- [86](86/) — A 1996 building in the South Park Historic District, with plumbing work permitted in 2015.
 - [100](100/) — An assessor class: vacant lot in the South Park Historic District, with permit records from 2015 to 2016.
 - [101](101/) — A 1947 store building in the South Park Historic District, with a kitchen remodel permitted in 1991.
 - [102](102/) — A 1912 hotel in the South Park Historic District, with facade work permitted in 2022.

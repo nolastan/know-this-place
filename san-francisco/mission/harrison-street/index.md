@@ -46,6 +46,7 @@ Every residential parcel on Harrison Street that the city's address, assessor an
 - [2527](2527/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with stair work permitted in 1987.
 - [2529](2529/) — A 1900 single-family house in the Olsen's Queen Anne Cottages Historic District, with one permit record from 2007.
 - [2573](2573/) — A 1934 single-family house, with reroofing permitted in 1995.
+- [2576](2576/) — A 1913 school building, with one permit record from 1994.
 - [2600](2600/) — A 1924 apartment building, with reroofing permitted in 1990.
 - [2617–2619](2617/) — A 1912 4-unit apartment building, with a kitchen remodel permitted in 1988.
 - [2621](2621/) — A 2019 three-flat, with garage work permitted in 2014.

@@ -1499,10 +1499,15 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
             ("ic-pin", "Eligible district", s.get("eligible_district")),
             ("ic-pin", "Within district", s.get("existing_district")),
             ("ic-ruler", "Style", s.get("style")),
-            # A survey that attributes the building to a builder is stating a
-            # finding, not repeating `building.builder` — 32 pages carried this
-            # key with nowhere to render it before the row existed.
-            ("ic-ruler", "Builder as surveyed", s.get("builder")),
+            # A survey that attributes the building to an architect or a builder
+            # is stating a finding, not repeating `building.architect` — 32 pages
+            # carried the builder key with nowhere to render it before the row
+            # existed, and 15 more were written with the `_as_surveyed` spellings
+            # that no row read at all.
+            ("ic-ruler", "Architect as surveyed",
+             s.get("architect_as_surveyed") or s.get("architect")),
+            ("ic-ruler", "Builder as surveyed",
+             s.get("builder") or s.get("builder_as_surveyed")),
             ("ic-plan", "Construction", s.get("frame")),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),

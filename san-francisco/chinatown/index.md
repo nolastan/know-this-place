@@ -10,6 +10,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Filbert Street](filbert-street/) — 2 buildings, built 1907–1982.
 - [Front Street](front-street/) — 1 building, built 1910.
 - [Gold Street](gold-street/) — 1 building, built 1900; 1 in the Jackson Square Historic District.
+- [Grant Avenue](grant-avenue/) — 1 building, built 1966; 1 in the Chinatown Historic District.
 - [Green Street](green-street/) — 4 buildings, built 1907–1920.
 - [Jackson Street](jackson-street/) — The Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District.
 - [Joice Street](joice-street/) — 2 buildings, built 1908–1910.

@@ -1,0 +1,179 @@
+{
+  "address": "300 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/lake-street/300/",
+  "apn": "1354001",
+  "block": "1354",
+  "lot": "001",
+  "eas_baseid": "300920",
+  "coordinates": {
+    "lat": 37.787559,
+    "lng": -122.462525
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 1,
+    "stories": 3,
+    "rooms": 230,
+    "bathrooms": 178,
+    "bedrooms": 137,
+    "lot_area_sqft": 267228,
+    "building_area_sqft": 121967,
+    "use": "Commercial Misc",
+    "property_class": "Convalescent/Nursing Homes",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0300 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 484240,
+    "assessed_improvement_value": 28789978,
+    "assessed_fixtures_value": 2836678
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309287591",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-09-28",
+      "status_date": "2026-03-19",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "elevator modernization-upgrade of the existing sprinkler system. elevators #1 & #2. remove sprinkers from existing elevators per sffd approval letter",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210194738",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-10-19",
+      "status_date": "2023-09-01",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replacement of (e) fueling system with (n) 2000 gallon wall underground storage tank (diesel). double wall underground fuel oil supply/return piping, piping transition sump, 50 gallon double wall day tank, (2) gpm remote pumping skid & new veeder-root fuel mgmt control system (rewire old to new...",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404042532",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-04",
+      "status_date": "2014-04-18",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "2nd floor - voluntary replacement of existing smokes w/new smoke & heat detector to avoid nuisance alarms. compliance with ordinance #155-13 not required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804220322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-22",
+      "status_date": "2008-05-02",
+      "estimated_cost": 63949,
+      "revised_cost": 63949,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804179970",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-17",
+      "status_date": "2008-04-17",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "ansul r 102 upgrade, fire supression system at kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307280538",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-07-28",
+      "status_date": "2004-11-16",
+      "estimated_cost": 84212,
+      "revised_cost": 84212,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302046592",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-02-04",
+      "status_date": "2003-02-04",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "fire detection system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2003–2023",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=300",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1354001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1354&lot=001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1354001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Late Modernism",
+      "year_built_as_surveyed": "1982",
+      "architect_as_surveyed": "Anshen & Allen",
+      "note": "The Little Sisters of the Poor complex by Anshen & Allen, almost bunker-like - evidence of the shift to heavier form and material in Late Modernism, and a long way from the light, glassy Modernism the same firm was known for."
+    }
+  ],
+  "building": {
+    "name": "Little Sisters of the Poor",
+    "architect": "Anshen & Allen",
+    "completed_conflict": "The city's Modern & Postmodern styles context statement dates this building 1982; the assessor's roll records it as built 1981."
+  }
+}

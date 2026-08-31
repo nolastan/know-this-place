@@ -1,0 +1,115 @@
+{
+  "address": "1401 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/shotwell-street/1401/",
+  "apn": "5522047",
+  "block": "5522",
+  "lot": "047",
+  "eas_baseid": "455391",
+  "coordinates": {
+    "lat": 37.746613,
+    "lng": -122.414863
+  },
+  "parcel": {
+    "lot_area_sqft": 2164,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 1401 SHOTWELL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 114795
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9901072",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-01-19",
+      "status_date": "2000-01-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as builts for final",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805638",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-01",
+      "status_date": "1999-06-02",
+      "estimated_cost": 1,
+      "description": "renew expired pa#9408936s for final inspection value $1.00",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408936S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1994-06-06",
+      "status_date": "1999-06-02",
+      "estimated_cost": 280000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHOTWELL&street_type=ST&address_number=1401",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5522047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5522&lot=047",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5522047",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "New Modernism",
+      "year_built_as_surveyed": "1999-2001",
+      "architect_as_surveyed": "Stanley Saitowitz",
+      "note": "A residence by Stanley Saitowitz, New Modernist with subtle regional influences: wood siding and a curved bay window, steel I-beams exposed outside to articulate the floor plates, and exposed metal roof trusses set against wood ceilings inside."
+    }
+  ],
+  "building": {
+    "architect": "Stanley Saitowitz"
+  }
+}

@@ -7,6 +7,7 @@ The parcels on Fourth Street documented here so far, from the city's address, as
 - [54–68](54/) — A 1914 hotel, with window replacement permitted in 2001.
 - [70](70/) — A 1910 store building, with reroofing permitted in 2007.
 - [88](88/) — A school building, with window replacement permitted in 2026.
+- [135–155](135/) — A building, with a kitchen remodel permitted in 2017.
 - [150](150/) — A 1983 office building, with a kitchen remodel permitted in 1987.
 - [230](230/) — A 1970 182-unit apartment building, with window replacement permitted in 2010.
 - [240](240/) — A 1997 30-unit apartment building, with a rear addition permitted in 1992.

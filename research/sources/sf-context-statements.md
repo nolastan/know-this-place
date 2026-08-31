@@ -19,9 +19,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 40 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 27: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved). All twenty-seven loops closed. |
-| **Remaining** | ~10 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 41 statements — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 28: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved). All twenty-eight loops closed. |
+| **Remaining** | ~9 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -100,6 +100,33 @@ document you are about to mine.
   without a word to say so. See "What we've learned the hard way" in
   [../AGENTS.md](../AGENTS.md).
 
+- **A styles statement's date is the date of the work it describes, not the
+  parcel's construction year.** 74 of the 182 facts published from the Modern &
+  Postmodern statement disagree with the assessor's roll year, and 40 of those
+  by more than three years — because the statement is dating an addition, a
+  conversion or a later building on a parcel the roll still dates by its oldest
+  structure (Levi's Plaza 1981 against a roll year of 1907; the SFAI addition
+  1966-70 against 1926; One Montgomery's 1982 roof terrace against the 1908
+  bank). Only the small gaps are a disagreement about one building and one
+  event. **Write `completed_conflict` on the small gaps and leave the large ones
+  alone**, or the page will state a contradiction that isn't there.
+
+- **The site does not use every analysis neighborhood.** `--area-from-nhood`
+  files a parcel under the analysis neighborhood the assessor gives it, and two
+  of those are not directories: the site splits "Financial District/South Beach"
+  into `financial-district`, `south-beach`, `south-of-market`, `east-cut`,
+  `union-square` and `chinatown` by street, and files "Twin Peaks" parcels under
+  `castro`. `check.py` catches it — the fix is to take the directory the site
+  already uses for that street, read off its existing pages, and say so in
+  `resolution.method`.
+
+- **A citywide statement lands on superblocks, and a superblock takes more than
+  one building.** Yerba Buena Gardens is one parcel of 454,537 square feet
+  carrying both the Moscone Convention Center and the Children's Creativity
+  Museum; the survey panel there can hold neither a single year nor a single
+  architect without misattributing one of them. Same shape at 1 Kearny Street,
+  which is also 700 Market Street today.
+
 - **The vault serves an HTML shell.** `SharedLinks.aspx` is not the PDF; the
   REST content URL is built from the page's own `accesskey`. Worked examples
   throughout the per-document notes below.
@@ -113,6 +140,16 @@ document you are about to mine.
   adopted statements is
   `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
 - **Read into the repo so far:**
+  - Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning
+    Department, *San Francisco Modern & Postmodern Architectural Styles
+    (1960-2000) Historic Context Statement*, Context: Architectural Methods &
+    Styles, part of the SF Survey Cultural Resources Survey, adopted 21 August
+    2024 (189 pp.), source id `modern-postmodern-styles-context-statement`. Same
+    M-Files vault, REST content path built from the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f/content`.
+    The fifth and largest of the styles series, and an addendum to the *Modern
+    Architecture and Landscape Design, 1935-1970* statement, which is issue #81.
+    See "The Modern & Postmodern Architectural Styles statement" below.
   - Branden Gunn and Alex Westhoff, San Francisco Planning Department, *Early
     Settlement Era Styles (1848-1906) Historic Context Statement*, Context:
     Architectural Methods & Styles, part of the SF Survey Cultural Resources
@@ -4043,6 +4080,88 @@ entry above; fetch the REST content path. Printed page = PDF page.
   biographies as adopted — issues #79 and #86 respectively — plus Downtown Core,
   Religious & Spiritual Institutions and Cultural Institutions as planned or in
   progress and not yet issues.)
+
+## The Modern & Postmodern Architectural Styles statement
+
+Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning
+Department, *San Francisco Modern & Postmodern Architectural Styles (1960-2000)
+Historic Context Statement*, adopted 21 August 2024, 189 pages. Source id
+`modern-postmodern-styles-context-statement`. Cite the SharedLinks URL in the
+entry above; fetch the REST content path. Printed page = PDF page.
+
+- **The largest and densest of the styles series, and the reason is that it has
+  no inventory.** 189 pages, no appendix table, no APN anywhere, and 224
+  numbered-address mentions — more than the four earlier styles statements put
+  together. Its subject is the late twentieth century, so nearly every address
+  it prints carries an architect, a firm or a year, and the narrative names
+  buildings continuously rather than saving them for a table.
+- **Appendix B is the single densest page, and it contradicts the body.**
+  "Shortlist of Representative Sites (1970-2000)" is 65 entries, nearly all with
+  an address, a year and an architect — read it before deciding a themed
+  statement is thin. It disagrees with the body on five: 162 versus 124 24th
+  Avenue, 457 Fulton Street 1991-2 versus 443 Fulton Street 1982, the Hermitage
+  1980-2 by Joseph Esherick versus 1982 by George Homsey, the Gleeson residence
+  1988 versus 1991, and a Francisco Street house 1985 versus 1982. *Neither half
+  of a document like this outranks the other; state the disagreement and, where
+  it is the street number itself that differs, leave the finding unresolved.*
+- **Three of its streets are not streets in the city's address register**, and
+  they cost the batch its three most famous buildings: Embarcadero Center, One
+  Maritime Plaza (the Alcoa Building) and 24 Willie Mays Plaza (the Giants
+  ballpark) have no EAS record under those names. Nothing in the resolver can
+  reach them; they are `unresolved`, and a person who knows the corresponding
+  street address is what would move them.
+- **Condominium conversion takes 18 of its 35 losses** — Ghirardelli Square,
+  Fontana Towers, Levi's Plaza's second address, the Oriental Warehouse Lofts,
+  the Natoma Street lofts, Castro Commons, the Haight Street Lofts and the
+  Hermitage among them. A statement about late twentieth century housing loses
+  its best housing to the condominium map; expect it.
+- **Its dates disagree with the assessor constantly, and mostly for a reason.**
+  See the trap above: 74 disagreements, of which only 34 were written to pages
+  as `completed_conflict` because the rest are the statement dating an addition
+  or a conversion rather than the parcel.
+- **People.** The document names architects, engineers, landscape architects,
+  graphic designers, critics and firms throughout, and those are all nameable.
+  It also uses client surnames as building names — the Koret, Gleeson, Brown,
+  Barnes, Glickman, Willenborg and Corson-Heinser residences and the
+  Iann/Stolz house among them. **Those are owners, not practitioners**, and the
+  names were dropped at extraction: the pages carry "a residence by Frank
+  Israel", not the family's name. Architects' own houses are the exception that
+  needs no exception — the R. Mittelstadt Duplex is named for the man who
+  designed it. Two addresses were seen and not recorded at all, because the only
+  fact attached to each is who lived there: 1218 Montgomery Street and 500 Capp
+  Street.
+- **It states a great many eligibility findings in prose rather than in codes**
+  — "appears eligible under California Register Criterion 3", "does not appear
+  to be individually eligible" — and those judgements are the point of a context
+  statement. They go in the panel's note, not in a status-code row, because the
+  document assigns no status codes at all.
+
+- **Verified:** 2026-08-31 (Modern & Postmodern Architectural Styles: read all
+  189 pages of the adopted PDF — the preface, contributors and introduction; the
+  historic context chapters on Late, Post & New Modernism, professional practice
+  and education, criticism and exhibitions, San Francisco in the late twentieth
+  century, redevelopment and anti-Manhattanization, the public realm and POPOS,
+  historic preservation and adaptive reuse, the environmental movement, the
+  live/work ordinance and late twentieth century landscape architecture; the
+  three themes and four sub-themes with their evaluation criteria, eligibility
+  standards, character-defining features and integrity considerations; all 190
+  figures; the bibliography; and Appendices A, B and C. **224 findings, 182
+  published on 177 pages**, 108 of them created by this run, across 31
+  neighborhood directories with `financial-district` (29 facts),
+  `south-of-market` (16), `east-cut` (14) and `chinatown` (11) at the head.
+  Seven were declined: two duplicates of facts the pages already carried from
+  other surveys, two parcels with no row on the 2025 secured roll so no page
+  could be seeded, one same-parcel duplicate at 700 Market Street, one
+  contradictory second address for Fulton Mews, and 1111 8th Street's 1951
+  garage, already documented. 35 never reached a parcel: 18 condominiums, 13
+  with no EAS record, 3 on streets EAS does not hold, and 1 range now split
+  across parcels. 25 disagreements the statement has with itself are stated on
+  pages, and 34 date disagreements with the assessor. Coverage note: this
+  document is read in full and nothing in it is outstanding. It names the
+  *Modern Architecture and Landscape Design, 1935-1970* statement as the
+  document it extends — issue #81 — and the *Architecture, Planning & Preservation
+  Professionals* biographies as its companion for architects of merit, issue #86,
+  whose Appendix A lists 40 more practitioners for that collection.)
 
 ## The Modernistic Styles statement
 

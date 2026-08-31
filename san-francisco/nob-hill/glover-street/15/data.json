@@ -1,0 +1,121 @@
+{
+  "address": "15 Glover Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/glover-street/15/",
+  "apn": "0151075",
+  "block": "0151",
+  "lot": "075",
+  "eas_baseid": "278720",
+  "coordinates": {
+    "lat": 37.797108,
+    "lng": -122.415652
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "building_area_sqft": 1134,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 0015 GLOVER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 673035,
+    "assessed_improvement_value": 673035,
+    "last_sale_date": "2006-05-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200404262216",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-26",
+      "status_date": "2004-04-26",
+      "estimated_cost": 9898,
+      "revised_cost": 9898,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108065330",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-08-06",
+      "status_date": "2001-10-04",
+      "estimated_cost": 5000,
+      "description": "fix & repair damaged siding to match existing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2001–2008",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GLOVER&street_type=ST&address_number=15",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0151075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0151&lot=075",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0151075",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Postmodernism",
+      "year_built_as_surveyed": "1981",
+      "architect_as_surveyed": "Daniel Solomon",
+      "note": "A duplex by Daniel Solomon, one of four of his San Francisco projects published in Global Architecture's GA Houses 11."
+    }
+  ],
+  "building": {
+    "name": "Glover Duplex",
+    "architect": "Daniel Solomon"
+  }
+}

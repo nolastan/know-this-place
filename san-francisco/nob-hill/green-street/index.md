@@ -4,6 +4,7 @@ The parcels on Green Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [999](999/) — A 1964 building, with a kitchen and bathroom remodel permitted in 2018.
 - [1067](1067/) — A 1900 single-family house in the Russian Hill-Paris Block Architectural Historic District, with foundation work permitted in 2023.
 
 Pages are generated from the DataSF datasets listed in each page's
