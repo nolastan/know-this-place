@@ -5,7 +5,8 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 40 statements read; the rest are one open GitHub issue each.
+> - **Coverage:** 42 documents read; the rest are one open GitHub issue each, and the
+>   biographies collection is seven more volumes.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -19,9 +20,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 41 statements — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 28: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved). All twenty-eight loops closed. |
-| **Remaining** | ~9 adopted statements, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 42 documents — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 29: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved) and [`biographies-a-c`](../findings/sf-context-statements/biographies-a-c.json) (412 findings, 317 published on 312 pages, 36 declined, 59 unresolved). All twenty-nine loops closed. |
+| **Remaining** | ~8 adopted statements plus volumes D–F through V–Z of the biographies collection, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -4392,3 +4393,100 @@ entry above; fetch the REST content path. Printed page = PDF page.
   outstanding. It names the Architecture, Planning, & Preservation Professionals
   biographies collection as its companion for architects of merit — issue #86 —
   and the residence-park and streetcar-suburbanization themes as related.)
+
+## The Architecture, Planning & Preservation Professionals biographies
+
+Source id on pages: `architecture-preservation-professionals-biographies`.
+Issue [#86](https://github.com/nolastan/know-this-place/issues/86).
+
+**This is not one document — it is eight.** The landing page,
+<https://sfplanning.org/project/architecture-planning-and-preservation-professionals-collection-biographies>,
+serves eight separate PDFs from the M-Files vault — A–C, D–F, G–I, J–L, M–O,
+P–R, S–U, V–Z — plus a Case Report and an Evaluation Framework. Each has its own
+`accesskey`, and the REST content path is built the usual way. Volume A–C is
+`903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3`; the other
+seven accesskeys are in the landing page's own markup, one `<a>` per letter
+range. **One volume is one batch is one run.** Batch ids: `biographies-a-c`,
+`biographies-d-f`, and so on.
+
+**The densest document this source has produced, per page.** 505 numbered-address
+mentions in 118 pages — roughly one every four lines — against 224 in the
+189-page Modern & Postmodern statement. It has no inventory table and no APN
+anywhere; the density is in the **"Projects in San Francisco" lists**, which 66
+of the volume's 73 biographies carry. Each line is `[building name, ]<address>,
+<year>[, remark]`, and the practitioner is the heading above it, so every line
+arrives already carrying a credit and a date. Read the lists first; the narrative
+and the figure captions add perhaps a tenth as much.
+
+### What this volume taught
+
+- **The addresses are today's addresses, and that is checkable.** These are
+  modern research documents identifying buildings that still stand, so the 1909
+  renumbering does **not** apply the way it does to a period source — but don't
+  take that on faith, measure it. Of 89 published pre-1910 findings with an
+  assessor roll year, 30 match the source's year exactly, 53 fall within three
+  years and 78 within ten. That distribution is the proof; a renumbered corpus
+  would scatter. The volume also flags its own exceptions rather than hiding
+  them: "8 Sea Cliff Avenue, 1914 (formally 2 Sea Cliff Avenue)" and "3054-3056
+  Market Street (originally 48-50 Merritt Street)".
+- **Run the same check in reverse and it finds the real error.** Sixteen
+  published findings have a roll year *more than fifteen years after* the
+  source's date — the fact is about a building that no longer stands on the
+  parcel. Three the volume already calls demolished. The other thirteen were
+  published with the disagreement stated in `.unknowns`, never adjudicated,
+  because "Designed by X" on a page whose building went up forty years later is
+  a claim the source does not make. **This check is cheap and it is the one that
+  catches a wrong page.**
+- **Every project list is printed two or three times.** Once under each partner
+  and once under the firm; sometimes with different dates and street types for
+  the same building ("2 Clarendon Road" in two biographies, "2 Clarendon Avenue"
+  in a third; the Geary Theatre 1908 in the list and 1910 in the narrative;
+  401 Van Ness as the American Legion War Memorial Building, 1931, and as the
+  Veteran's Building, 1932). Record each project **once**, credited to the firm
+  where the volume has a firm entry, and keep the variant in `extra` — 505
+  mentions collapse to 412 findings that way.
+- **The people rule bites hard here and it bites at extraction.** A project list
+  names private houses by their clients: the Duncan, Walberg, Fatjo, Doyle,
+  Olander, Queen, Murdock, Gillespie, Osborn, Ferguson, Sonntag, Spooner, Porter
+  and Waybur houses, the Payne and Meigs and Petri residences. The address, the
+  architect and the year are the fact; the surname is not. Three names got past
+  extraction and were caught at publication — the Charles Crocker house, the
+  Clunie House, the Clunie Estate — so check the building names again before you
+  write them to a page. Biographies also give home addresses in passing ("his
+  home at 855 Chestnut Street", "he worked from his home at 1422 27th Avenue"):
+  those are residences and never findings, though the same address may be a
+  perfectly good *design* finding from another entry.
+- **Office addresses are fair game and mostly unusable.** A named firm at a
+  numbered address is a permitted fact, but the volume almost never dates them
+  ("Bugbee held offices at 26 Montgomery Street and at 5 Third Street"). An
+  undated occupancy has no component on a page to sit in; six were declined for
+  exactly that. Only take them where the narrative gives a year.
+- **Ranges: put the range in `extra.address_range_as_recorded`, not in
+  `street_number`.** The resolver reads the range from that field and looks
+  `street_number` up literally. A hyphenated `street_number` cost this run 40
+  resolutions on the first pass — 809-811 Pierce Street came back "EAS has no
+  address near it" while EAS holds both numbers on one parcel. Fixing the field
+  took resolution from 313 to 353.
+- **The volume is Department staff work, with no named consultant** — unlike
+  most statements in this source, there is no Page & Turnbull or Kelley &
+  VerPlanck to credit. Cite the Planning Department. The A–C cover says "Adopted
+  November 17, 2021, Updated December 30, 2025", while the case report's hearing
+  date is October 18, 2023; the cover is what a reader sees, so cite the cover
+  and mention the update.
+
+- **Verified:** 2026-08-31 (Architecture, Planning & Preservation Professionals,
+  volume A–C: read all 118 pages of the vault PDF — the letter indexes and all
+  73 biographies, each with its education, firms, cultural identification,
+  narrative, footnotes, "Projects in San Francisco" and "Other notable projects"
+  lists, and every figure caption. **505 numbered-address mentions → 412
+  findings → 353 resolved → 317 published on 312 pages**, 201 of them created by
+  this run, across 38 neighborhood directories with `pacific-heights` at the head.
+  59 never reached a parcel: 25 numbers the city no longer has, 18 recorded
+  ranges now split across parcels, 14 condominiums, 1 street EAS does not hold
+  and 1 given only as One Maritime Plaza. 36 resolved findings were declined: 23
+  already carried by a neighbouring survey, 7 on parcels with no 2025
+  secured-roll row, 6 undated credits with nothing to carry them. 56 pages state
+  a construction-date disagreement with the assessor and 13 state, unadjudicated,
+  that the building described may not be the one standing. Coverage note: volume
+  A–C is read in full; volumes D–F, G–I, J–L, M–O, P–R, S–U and V–Z are
+  outstanding, one issue and one run each.)

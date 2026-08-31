@@ -6,6 +6,7 @@ The parcels on 7th Street documented here so far, from the city's address, asses
 
 - [30–34](30/) — A 1907 store building, with a rear addition permitted in 1997.
 - [90](90/) — An office building, with permit records from 1994 to 1997.
+- [95](95/) — A 1900 office building.
 - [112–114](112/) — A 1911 hotel in the Western SOMA Light Industrial and Residential Historic District, with garage work permitted in 2013.
 - [230–234](230/) — A 2021 store building in the Western SOMA Light Industrial and Residential Historic District, with a vertical addition permitted in 2018.
 - [262](262/) — A 1945 industrial building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2006.

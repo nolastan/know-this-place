@@ -5,6 +5,7 @@ The parcels on Cayuga Avenue documented here so far, from the city's address, as
 ## Documented so far
 
 - [917](917/) — An 1880 single-family house, with garage work permitted in 2021.
+- [1000](1000/) — An assessor class: vacant lot, with one permit record from 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

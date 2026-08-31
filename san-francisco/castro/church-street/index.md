@@ -42,6 +42,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [375](375/) — A 1903 two-flat, with deck work permitted in 2022.
 - [385–389](385/) — A 1951 industrial building, with reroofing permitted in 2001.
 - [401](401/) — The elementary school attached to the Mission Dolores Basilica, built in 1932.
+- [441–445](441/) — A 1955 church, with reroofing permitted in 2025.
 - [455](455/) — A 1956 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2009.
 - [465](465/) — A 1952 5-unit apartment building, with a seismic retrofit permitted in 2015.
 - [469–471](469/) — A 1900 two-flat, with a rear addition permitted in 1992.

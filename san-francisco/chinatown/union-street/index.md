@@ -12,6 +12,7 @@ The parcels on Union Street documented here so far, from the city's address, ass
 - [751–753](751/) — A 1909 two-flat, with reroofing permitted in 2010.
 - [755–763](755/) — A 1907 5-unit apartment building, with foundation work permitted in 1999.
 - [756](756/) — A 1907 church, with a rear addition permitted in 1989.
+- [771–775](771/) — A 1913 three-flat, with a kitchen and bathroom remodel permitted in 2015.
 - [776–778](776/) — A 1912 two-flat, with a bathroom remodel permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's

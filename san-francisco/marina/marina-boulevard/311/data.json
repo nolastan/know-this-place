@@ -1,0 +1,147 @@
+{
+  "address": "311 Marina Boulevard, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/marina-boulevard/311/",
+  "apn": "0419A002",
+  "block": "0419A",
+  "lot": "002",
+  "eas_baseid": "282128",
+  "coordinates": {
+    "lat": 37.806088,
+    "lng": -122.437814
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 5,
+    "bedrooms": 4,
+    "lot_area_sqft": 2783,
+    "building_area_sqft": 3618,
+    "basement_area_sqft": 1052,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0311 MARINA              BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2022245,
+    "assessed_improvement_value": 1048918,
+    "last_sale_date": "2011-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201207124698",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-12",
+      "status_date": "2013-02-01",
+      "estimated_cost": 15000,
+      "revised_cost": 35000,
+      "description": "add two bathrooms, one bedroom,mudroom,computer room and storage on the first floor per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506034073",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-03",
+      "status_date": "2005-06-07",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408242369",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-08-24",
+      "status_date": "2006-01-23",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "on grnd flr (in existing basement only)- add one bedrm w/living spc, one bath & one wic (490 sq ft),",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2019",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARINA&street_type=BLVD&address_number=311",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0419A002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0419A&lot=002",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0419A002",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43781381956202%2037.80608766737409)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Charles O. Clausen"
+  },
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "construction",
+      "description": "Designed by Charles O. Clausen.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

@@ -10,5 +10,6 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 - [Gough Street](gough-street/) — 1 building, built 1966.
 - [Laguna Street](laguna-street/) — 1 building, built 1960.
 - [Post Street](post-street/) — 5 buildings, built 1967–2009.
+- [Scott Street](scott-street/) — 1 building, built 1900.
 - [Steiner Street](steiner-street/) — 1 building, built 1964.
 - [Sutter Street](sutter-street/) — 1 building, built 1975.

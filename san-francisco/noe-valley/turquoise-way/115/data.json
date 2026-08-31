@@ -1,0 +1,179 @@
+{
+  "address": "115 Turquoise Way, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/turquoise-way/115/",
+  "apn": "7509010",
+  "block": "7509",
+  "lot": "010",
+  "eas_baseid": "420193",
+  "coordinates": {
+    "lat": 37.743488,
+    "lng": -122.443975
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 4286,
+    "building_area_sqft": 1756,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Diamond Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0115 TURQUOISE           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41417,
+    "assessed_improvement_value": 105396
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1962–1965",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201909252645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-25",
+      "status_date": "2020-01-13",
+      "estimated_cost": 8000,
+      "revised_cost": 8418,
+      "description": "3/f bathroom (8'x10'), replace cabinets, fixtures, finishes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512034082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-03",
+      "status_date": "2015-12-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove & replace (2) - 6\" x 14\" x 12' wood beam in kind @ front carport.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309066223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-06",
+      "status_date": "2013-10-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair dry rot on exterior trim - visible to street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008289082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-28",
+      "status_date": "2000-11-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "explore for dryrot remove & repair in front balcony",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615442",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-20",
+      "status_date": "1996-10-02",
+      "estimated_cost": 3150,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920793",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-01",
+      "status_date": "1990-08-30",
+      "estimated_cost": 25000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916768",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-09-11",
+      "status_date": "1990-03-08",
+      "estimated_cost": 2500,
+      "description": "remove & replace front dryrot decking, & wood shingles.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURQUOISE&street_type=WAY&address_number=115",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7509010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7509&lot=010",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7509010",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44397452917529%2037.743487924543466)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Campbell & Wong"
+  },
+  "historical_record": [
+    {
+      "date": "1962",
+      "kind": "construction",
+      "description": "Designed by Campbell & Wong.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

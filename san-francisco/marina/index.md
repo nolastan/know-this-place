@@ -35,5 +35,6 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Toledo Way](toledo-way/) — 3 buildings, built 1925–1936; 3 in the Marina Corporation Residential Historic District.
 - [Union Street](union-street/) — The address to which Stephen Tilton's house of 1872, built beside the Presidio & Ferries cable terminal, was moved.
 - [Vallejo Street](vallejo-street/) — 1 building, built 1920.
+- [Van Ness Avenue](van-ness-avenue/) — 1 building, built 1929.
 - [Webster Street](webster-street/) — 1 building, built 1900.
 - [Yacht Road](yacht-road/) — 1 building, built 1929.

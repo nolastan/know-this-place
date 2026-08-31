@@ -18,6 +18,7 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Green Street](green-street/) — 1 building, built 1924.
 - [Jackson Street](jackson-street/) — 2 buildings, built 1906–1925.
 - [Laguna Street](laguna-street/) — 1 building, built 1900; 1 in the Japantown Community & Cultural Historic District.
+- [Lyon Street](lyon-street/) — 1 building, built 1902.
 - [Octavia Street](octavia-street/) — 2 buildings, built 1900; 2 in the Japantown Community & Cultural Historic District.
 - [Pacific Avenue](pacific-avenue/) — 2 buildings, built 1912–1929; 2 in the Pacific Heights Historic District.
 - [Pierce Street](pierce-street/) — The Casebolt House, an Article 10 individual landmark built for the blacksmith and street car manufacturer Henry Casebolt.

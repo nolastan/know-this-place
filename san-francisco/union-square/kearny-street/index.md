@@ -6,6 +6,7 @@ The parcels on Kearny Street documented here so far, from the city's address, as
 
 - [1](1/) — An office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2006.
 - [25–35](25/) — A 1909 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2020.
+- [45–47](45/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2014.
 - [101](101/) — A 1909 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2009.
 - [120–130](120/) — A 1980 office building, with plumbing work permitted in 2022.
 - [200–220](200/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 1986.
@@ -16,6 +17,7 @@ The parcels on Kearny Street documented here so far, from the city's address, as
 - [227–231](227/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2001.
 - [243–245](243/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1995.
 - [246–250](246/) — A 1908 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen and bathroom remodel permitted in 2011.
+- [251–259](251/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2011.
 - [301–311](301/) — A 1910 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2001.
 - [315–319](315/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2001.
 - [318–322](318/) — A 1907 store building in the Kearny-Belden Conservation District, with a seismic retrofit permitted in 1995.

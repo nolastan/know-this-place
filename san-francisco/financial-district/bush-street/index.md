@@ -5,6 +5,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1](1/) — Crown Zellerbach's headquarters — the city's first International Style curtain wall, landmarked in 1987.
+- [130](130/) — A 1910 office building, with plumbing work permitted in 2007.
 - [200](200/) — A 1912 office building, with plumbing work permitted in 2019.
 - [225](225/) — A 1948 office building, with deck work permitted in 2008.
 - [333](333/) — A 1987 office building, with a seismic retrofit permitted in 2011.
@@ -12,6 +13,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [364](364/) — A 1907 store building in the Kearny-Belden Conservation District, with a kitchen remodel permitted in 2017.
 - [381–383](381/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2020.
 - [429–431](429/) — A 1908 30-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2000.
+- [430–444](430/) — An office building in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 2015.
 - [453–455](453/) — A 1906 store building in the Kearny-Market-Mason-Sutter Conservation District, with permit records from 1993 to 2023.
 - [460](460/) — A 1915 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1999.
 - [461–463](461/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with a bathroom remodel permitted in 2013.

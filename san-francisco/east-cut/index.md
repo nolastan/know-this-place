@@ -15,6 +15,7 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Howard Street](howard-street/) — 6 buildings, built 1987–2019.
 - [Jack London Alley](jack-london-alley/) — 2 buildings, built 1923–1929; 1 in the South End Historic District.
 - [Jessie Street](jessie-street/) — 1 building, built 1982.
+- [Lansing Street](lansing-street/) — 1 building, built 2016.
 - [Market Street](market-street/) — 5 buildings, built 1964–1981.
 - [Minna Street](minna-street/) — 2 buildings, built 1910–1999; 1 in the New Montgomery-Mission-Second Street Conservation District.
 - [Mission Street](mission-street/) — 6 buildings, built 1981–2015.

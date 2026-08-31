@@ -1,0 +1,181 @@
+{
+  "address": "1000 Vallejo Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/vallejo-street/1000/",
+  "apn": "0127021",
+  "block": "0127",
+  "lot": "021",
+  "eas_baseid": "278200",
+  "coordinates": {
+    "lat": 37.798109,
+    "lng": -122.414011
+  },
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 4413.25,
+    "building_area_sqft": 3055,
+    "lot_depth_ft": 69.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1000 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2824737,
+    "assessed_improvement_value": 1476748
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Vallejo Street Crest Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1941",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202201115798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-11",
+      "status_date": "2022-06-27",
+      "estimated_cost": 39500,
+      "revised_cost": 39000,
+      "description": "two bathrooms remodel, like for like, replace in kind. no change to floor plan. retile showers, replace vinyl flooring, replace one vanity. no electric work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806103996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-10",
+      "status_date": "2008-10-01",
+      "estimated_cost": 44873,
+      "revised_cost": 44873,
+      "description": "remove existing roof covering. install a (4)4-ply fiberglass roof system with gravel surface and new flashing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310298818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-29",
+      "status_date": "2003-11-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2003/03/12/9526 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303129526",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-12",
+      "status_date": "2005-12-21",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace existing fire excape dorpladder w/(n)alum ladder. ladder & balcony are not visible from stre",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-04-20",
+      "status_date": "1988-09-06",
+      "estimated_cost": 3800,
+      "description": "dry rot at second floor, shower area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502801",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-03-20",
+      "status_date": "1985-09-26",
+      "estimated_cost": 22000,
+      "description": "install a private residence elevator",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501435",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-11",
+      "status_date": "1985-09-26",
+      "estimated_cost": 26677,
+      "description": "furnish & install private residence elevator",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=1000",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&lot=021",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0127021",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41401126552958%2037.79810877722862)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Anshen + Allen"
+  },
+  "historical_record": [
+    {
+      "date": "1957",
+      "kind": "construction",
+      "description": "Designed by Anshen + Allen.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 - [25th Avenue](25th-avenue/) — 1 building, built 1924; 1 in the Sea Cliff Historic District.
 - [26th Avenue](26th-avenue/) — 3 buildings, built 1922–1974; 1 in the Sea Cliff Historic District.
 - [27th Avenue](27th-avenue/) — 2 buildings, built 1912–1950; 2 in the Sea Cliff Historic District.
+- [28th Avenue](28th-avenue/) — 1 building, built 1922; 1 in the Sea Cliff Historic District.
 - [29th Avenue](29th-avenue/) — 1 building, built 1919.
 - [30th Avenue](30th-avenue/) — 1 building, built 1910.
 - [31st Avenue](31st-avenue/) — 1 building, built 1992.

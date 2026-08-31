@@ -6,6 +6,7 @@ The parcels on Beaumont Avenue documented here so far, from the city's address, 
 
 - [103](103/) — A 1941 two-flat, with reroofing permitted in 1993.
 - [131–133](131/) — A 1936 two-flat, with a kitchen and bathroom remodel permitted in 2002.
+- [146](146/) — A 1948 building, with reroofing permitted in 2023.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

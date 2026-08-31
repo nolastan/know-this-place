@@ -17,6 +17,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Hollister Avenue](hollister-avenue/) — 1 building, built 1905.
 - [Hudson Avenue](hudson-avenue/) — 3 buildings, built 1930–1943; 3 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Hunters Point Boulevard](hunters-point-boulevard/) — 1 building, built 1961.
+- [Industrial Street](industrial-street/) — 1 building, built 1956.
 - [Ingalls Street](ingalls-street/) — 4 buildings, built 1920–1932.
 - [Innes Avenue](innes-avenue/) — 3 buildings, built 1890–1920; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Keith Street](keith-street/) — 1 building, built 2004.

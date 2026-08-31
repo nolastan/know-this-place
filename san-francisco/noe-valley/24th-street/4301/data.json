@@ -1,0 +1,152 @@
+{
+  "address": "4301 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/24th-street/4301/",
+  "apn": "6504001",
+  "block": "6504",
+  "lot": "001",
+  "eas_baseid": "400415",
+  "coordinates": {
+    "lat": 37.750815,
+    "lng": -122.438603
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 3300,
+    "lot_depth_ft": 85,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4301 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 390442,
+    "assessed_improvement_value": 400204,
+    "last_sale_date": "1987-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond & Elizabeth Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202304065233",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-06",
+      "status_date": "2023-12-19",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply w/ accessible business entrance program, abe# 201901033792, submit catergory checklist compliance form, add hi-vis strip & change door closer.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502949",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-03-25",
+      "status_date": "1985-11-08",
+      "estimated_cost": 8443,
+      "description": "install kitchen exhoust system hood & dust.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201051",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-02-10",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1900,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8110201",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-12-02",
+      "status_date": "1982-02-01",
+      "estimated_cost": 2700,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1981–2023",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=4301",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6504001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6504&lot=001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6504001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43860291145884%2037.75081520444875)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Absalom Joseph Barnett"
+  },
+  "historical_record": [
+    {
+      "date": "1895",
+      "kind": "construction",
+      "description": "Designed by Absalom Joseph Barnett.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

@@ -29,6 +29,7 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [Irwin Street](irwin-street/) — 2 buildings, built 1979–2024.
 - [Kansas Street](kansas-street/) — 5 buildings, built 1912–2025.
 - [King Street](king-street/) — 2 buildings, built 2007.
+- [Mission Bay Boulevard](mission-bay-boulevard/) — 1 building, built 2017.
 - [Mississippi Street](mississippi-street/) — 2 buildings, built 1948–1949.
 - [Missouri Street](missouri-street/) — 1 building, built 1931.
 - [Rhode Island Street](rhode-island-street/) — 4 buildings, built 1924–1951.

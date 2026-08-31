@@ -5,6 +5,7 @@ The parcels on California Street documented here so far, from the city's address
 ## Documented so far
 
 - [1](1/) — A 1969 office building, with plumbing work permitted in 2018.
+- [2–8](2/) — A 1908 office building, with a seismic retrofit permitted in 1990.
 - [20–26](20/) — A 1908 office building, with a seismic retrofit permitted in 1988.
 - [50–52](50/) — A 1971 office building, with electrical work permitted in 2015.
 - [100–116](100/) — Built 1958–59 for Bethlehem Steel, with its columns outside the walls.
@@ -14,6 +15,7 @@ The parcels on California Street documented here so far, from the city's address
 - [212–214](212/) — A 1910 bank building in the Front-California Conservation District, with an addition permitted in 2013.
 - [220–230](220/) — A 1913 office building in the Front-California Conservation District, with window replacement permitted in 2006.
 - [235–259](235/) — A 1958 office building, with plumbing work permitted in 2013.
+- [240–242](240/) — A 1909 store building in the Front-California Conservation District, with fire repair permitted in 2009.
 - [345](345/) — A 1987 office building, with plumbing work permitted in 2023.
 - [350–370](350/) — A 1976 office building, with stair work permitted in 2016.
 - [400–410](400/) — A 1907 bank building, with reroofing permitted in 2012.

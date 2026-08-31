@@ -5,6 +5,7 @@ The parcels on Seventh Avenue documented here so far, from the city's address, a
 ## Documented so far
 
 - [7](7/) — A 1900 single-family house, with a rear addition permitted in 2005.
+- [144–146](144/) — A 1910 building, with a kitchen remodel permitted in 2022.
 - [263](263/) — A 1906 single-family house, with one permit record from 1997.
 - [290](290/) — A 1923 store building, with a seismic retrofit permitted in 1993.
 - [516](516/) — A 1910 single-family house, with foundation work permitted in 1999.

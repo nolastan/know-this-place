@@ -4,6 +4,7 @@ The parcels on Lombard Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [150](150/) — A 1975 building, with reroofing permitted in 2025.
 - [290](290/) — A 1940 10-unit apartment building, with reroofing permitted in 2024.
 - [325–329](325/) — A 1937 3-unit apartment building in the Gardner Dailey/Telegraph Hill Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [340](340/) — A 1996 three-flat, with window replacement permitted in 2010.

@@ -568,6 +568,45 @@ rather than just accumulate.
   evenly on which is right, and the source's own attributions broke every tie
   correctly in the run that measured it.
 
+- **A hyphenated `street_number` is a range the resolver cannot read.** It looks
+  the number up literally, finds nothing, and reports "EAS has no address near it
+  on this street" — which reads like a dead address and is really a mis-filled
+  field. The range goes in `extra.address_range_as_recorded`; `street_number`
+  holds the low number alone. The biographies A–C batch lost **40 resolutions**
+  to this before anyone read a decline closely enough to notice that 809-811
+  Pierce Street is an address EAS holds on one parcel. `check.py` now fails an
+  unresolved finding with a hyphen in `street_number` and no recorded range.
+
+- **The assessor's roll year is the cheapest test of whether a source's
+  addresses are today's addresses.** Take every published finding older than
+  1910, compare the source's year to `year_property_built`, and look at the
+  distribution. A source printing modern addresses of surviving buildings
+  clusters: the biographies A–C volume put 30 of 89 exactly on the roll year, 53
+  within three years, 78 within ten. A source printing pre-1909 numbers would
+  scatter instead. **Run it before trusting a secondary source's addresses, and
+  run it in reverse afterwards** — findings whose roll year falls *long after*
+  the source's date are the ones on a parcel that has since been rebuilt, where
+  "Designed by X" is a claim about a building that is no longer there. State
+  that disagreement in `.unknowns`; never adjudicate it, and never let it become
+  a silent assertion about the standing building.
+
+- **A publishing script is not idempotent unless you make it so.** A second run
+  reads back its own first run's prose, decides the page already carries the
+  fact, and declines findings it published an hour earlier — leaving pages with
+  facts and a findings file that says they were declined, which is the exact
+  "done but unrecorded" state this module pays most to avoid. Two rules make it
+  safe: compute "does the page already say this?" from entries whose `source` is
+  **not** this run's, and decide `published` from whether the page *carries* the
+  fact after the edit, not from whether this invocation wrote it. If in doubt,
+  strip every entry carrying your source id from the pages and re-apply from
+  scratch — that is cheap and it is the only way to get a clean count.
+
+- **A source cited in a page's footer with nothing on the page from it is a
+  bug.** Declining a finding after the sources entry is written leaves the
+  citation stranded. Sweep for it before committing: every page carrying your
+  source id must have a published finding, and every published finding's page
+  must carry the source id.
+
 ## Filing work
 
 An issue is how a run hands off what it couldn't finish, and how it asks a human

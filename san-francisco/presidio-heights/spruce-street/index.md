@@ -4,6 +4,7 @@ The parcels on Spruce Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [16](16/) — A 1946 single-family house, with an addition permitted in 2013.
 - [615](615/) — A 1900 single-family house, with a vertical addition permitted in 2001.
 - [676–678](676/) — A 1931 two-flat, with reroofing permitted in 2011.
 

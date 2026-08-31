@@ -10,10 +10,13 @@ that study area, as an example of the Second Bay Tradition.
 
 - [21st Street](21st-street/) — 1 building, built 1958.
 - [23rd Street](23rd-street/) — 1 building, built 1910; 1 in the Diamond & Elizabeth Streets Historic District.
+- [24th Street](24th-street/) — 1 building, built 1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [28th Street](28th-street/) — 2 buildings, built 1900–1910.
 - [29th Street](29th-street/) — 1 building, built 1916.
 - [Castro Street](castro-street/) — 1 building, built 1973.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
 - [Church Street](church-street/) — 1 building, built 1914.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
+- [Hill Street](hill-street/) — 1 building, built 1965.
+- [Turquoise Way](turquoise-way/) — 1 building, built 1962; 1 in the Diamond Heights Historic District.
 - [Valley Street](valley-street/) — 1 building, built 1900.
