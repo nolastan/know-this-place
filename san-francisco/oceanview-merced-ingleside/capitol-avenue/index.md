@@ -4,6 +4,7 @@ The parcels on Capitol Avenue documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [14](14/) — A 1906 two-flat, with reroofing permitted in 2002.
 - [546–650](546/) — An assessor class: vacant lot, with permit records from 2003 to 2026.
 
 Pages are generated from the DataSF datasets listed in each page's

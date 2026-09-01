@@ -112,6 +112,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [1021–1023](1021/) — A 1932 two-flat, with foundation work permitted in 2016.
 - [1033–1035](1033/) — A 1907 two-flat, with a seismic retrofit permitted in 2026.
 - [1055](1055/) — A 1975 6-unit apartment building, with stair work permitted in 2015.
+- [1061](1061/) — A 1900 building, with a rear addition permitted in 2019.
 - [1065–1075](1065/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2016.
 - [1077–1081](1077/) — A 1909 4-unit apartment building, with reroofing permitted in 2020.
 - [1083](1083/) — An 1895 single-family house, with an addition permitted in 2017.

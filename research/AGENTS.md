@@ -773,6 +773,16 @@ The mechanics:
   the analysis neighborhood is Sunset/Parkside, so it would have separated the
   page from 1234 next door. *Run `report` both ways on a scattered batch, and
   where the site has already settled a block, follow the block.*
+- **One existing page is not a settled block — and it may itself be misfiled.**
+  Proximity files a new page under the area of the *nearest published page*, so
+  where a street has exactly one, that page decides the whole corridor. Both
+  singletons a citywide theme study landed next to were wrong: 202 Clipper
+  Street sits under `castro` where the assessor says Noe Valley, and 279 Ney
+  Street under `bernal-heights` where the assessor says Excelsior, and
+  proximity would have copied each error onto three new pages. *Before letting
+  proximity win, check the neighbour's own `analysis_neighborhood`.* The
+  90-page corridor on 21st Street beat the assessor's slug on the same run;
+  the single page did not.
 - **A method sentence written for one corpus lies about every other one.**
   `resolve_eas.py`'s no-street-number branch said "No street number in the
   catalogue title or the archivist's address note" — true of `digitalsf`, false
