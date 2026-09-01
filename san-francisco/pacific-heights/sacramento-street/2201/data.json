@@ -11,13 +11,8 @@
   },
   "parcel": {
     "year_built": 1928,
-    "units": 1,
-    "stories": 1,
-    "rooms": 4,
-    "bathrooms": 2,
-    "bedrooms": 2,
-    "building_area_sqft": 1265,
-    "use": "Single Family Residential",
+    "units": 24,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RM-2",
@@ -331,6 +326,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 2201 Sacramento Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0638&$where=property_location%20like%20%27%252201%20SACRAMENTO%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&lot=017",
@@ -361,5 +362,9 @@
       "description": "Designed by Herman C. Baumann.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A 1928 condominium building whose 24 apartments are held as 24 separate parcels, four to a floor.",
+  "narrative": {
+    "lead": "2201 Sacramento Street is a condominium building of 1928 whose 24 apartments are held as 24 separate parcels — lots 017 through 040 on block 0638 — numbered 101 through 604, four to a floor across six floors.\nThis page's parcel is lot 017, unit 101, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

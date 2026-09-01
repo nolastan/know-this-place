@@ -5,7 +5,7 @@ The parcels on Cervantes Boulevard documented here so far, from the city's addre
 ## Documented so far
 
 - [98](98/) — A 1925 12-unit apartment building in the Marina Corporation Residential Historic District, with window replacement permitted in 2006.
-- [190](190/) — A 1992 building in the Marina Corporation Residential Historic District, with facade work permitted in 2002.
+- [190](190/) — A three-story building divided into twelve condominium units, four to a floor.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

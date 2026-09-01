@@ -11,13 +11,9 @@
   },
   "parcel": {
     "year_built": 1992,
-    "units": 1,
+    "units": 12,
     "stories": 3,
-    "rooms": 3,
-    "bathrooms": 1,
-    "bedrooms": 1,
-    "building_area_sqft": 775,
-    "use": "Single Family Residential",
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RM-3",
@@ -243,6 +239,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 190 Cervantes Boulevard",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0439A&$where=property_location%20like%20%27%250190%20CERVANTES%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0439A&lot=087",
@@ -274,5 +276,9 @@
       "description": "Designed by John Baumann.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A three-story building divided into twelve condominium units, four to a floor.",
+  "narrative": {
+    "lead": "190 Cervantes Boulevard is a three-story building divided into twelve condominium units, each its own parcel — lots 077 through 088 on block 0439A — numbered 101 through 304, four to a floor, and each of them 775 square feet.\nThis page's parcel is lot 087, unit 303, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

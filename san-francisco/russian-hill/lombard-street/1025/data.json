@@ -11,12 +11,8 @@
   },
   "parcel": {
     "year_built": 1951,
-    "units": 1,
-    "stories": 1,
-    "rooms": 3,
-    "bathrooms": 1,
-    "building_area_sqft": 950,
-    "use": "Single Family Residential",
+    "units": 6,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RH-3",
@@ -317,6 +313,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 1025 Lombard Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0071&$where=property_location%20like%20%27%251025%20LOMBARD%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0071&lot=036",
@@ -348,5 +350,9 @@
       "description": "Designed by John Savage Bolles. An apartment complex.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A building divided into six condominium units, each its own parcel on block 0071.",
+  "narrative": {
+    "lead": "1025 Lombard Street is a building divided into six condominium units, each its own parcel — lots 033 through 038 on block 0071 — numbered 1 through 6, and running between 950 and 1,150 square feet apiece.\nThe assessor records one story against every one of the six, a unit-level figure rather than the building's, and the unit numbers carry no floor; no story count for the building is stated here.\nThis page's parcel is lot 036, unit 4, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

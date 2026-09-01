@@ -11,13 +11,9 @@
   },
   "parcel": {
     "year_built": 1923,
-    "units": 1,
+    "units": 12,
     "stories": 3,
-    "rooms": 4,
-    "bathrooms": 1,
-    "bedrooms": 1,
-    "building_area_sqft": 1220,
-    "use": "Single Family Residential",
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RM-2",
@@ -312,6 +308,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 2760 Sacramento Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0632&$where=property_location%20like%20%27%252760%20SACRAMENTO%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0632&lot=022",
@@ -342,5 +344,9 @@
       "description": "Designed by Charles O. Clausen.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A three-story building of 1923 divided into twelve condominium units.",
+  "narrative": {
+    "lead": "2760 Sacramento Street is a three-story building of 1923 divided into twelve condominium units, each its own parcel — lots 022 through 033 on block 0632 — numbered 1 through 12. The assessor records the same three stories against every one of the twelve, so that figure is the building's.\nThis page's parcel is lot 022, unit 1, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

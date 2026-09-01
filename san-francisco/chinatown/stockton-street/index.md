@@ -24,7 +24,7 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [901–907](901/) — A 1907 8-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2002.
 - [913–917](913/) — A 1908 store building in the Chinatown Historic District, with reroofing permitted in 2009.
 - [933–949](933/) — A 1906 assessor class: vacant lot in the Chinatown Historic District, with an addition permitted in 2016.
-- [946](946/) — A 1970 building in the Chinatown Historic District, with electrical work permitted in 2022.
+- [946](946/) — A condominium building whose 72 apartments are held as 72 separate parcels on block 0210A.
 - [1000–1032](1000/) — A 1907 store building in the Chinatown Historic District, with reroofing permitted in 2001.
 - [1013–1017](1013/) — A 1910 hotel in the Chinatown Historic District, with facade work permitted in 2001.
 - [1019–1027](1019/) — A 1913 34-unit apartment building in the Chinatown Historic District, with reroofing permitted in 2021.

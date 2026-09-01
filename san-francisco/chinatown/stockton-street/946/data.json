@@ -11,13 +11,8 @@
   },
   "parcel": {
     "year_built": 1970,
-    "units": 1,
-    "stories": 1,
-    "rooms": 4,
-    "bathrooms": 1,
-    "bedrooms": 1,
-    "building_area_sqft": 775,
-    "use": "Single Family Residential",
+    "units": 72,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "A",
     "zoning": "CRNC",
@@ -325,6 +320,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels on block 0210A (944, 946 and 950 Stockton Street)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0210A&$where=property_location%20like%20%27%25STOCKTON%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0210A&lot=025",
@@ -359,5 +360,9 @@
     "name": "Mandarin Tower",
     "architect": "Thomas Hsieh",
     "completed_conflict": "The city's Modern & Postmodern styles context statement dates this building 1972; the assessor's roll records it as built 1970."
+  },
+  "hook": "A condominium building whose 72 apartments are held as 72 separate parcels on block 0210A.",
+  "narrative": {
+    "lead": "946 Stockton Street is a condominium building whose 72 apartments are held as 72 separate parcels — lots 025 through 096 on block 0210A — lettered A through F on each of twelve residential floors, numbered 6 through 18 with no thirteenth.\nThe same block carries twenty-five commercial store and office condominium parcels, addressed 944 and 950 Stockton Street; the residential units here begin at the sixth floor.\nThis page's parcel is lot 025, unit 6A, so the assessed value and last sale shown below are that unit's and not the building's."
   }
 }

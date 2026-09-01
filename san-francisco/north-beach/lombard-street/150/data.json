@@ -11,12 +11,8 @@
   },
   "parcel": {
     "year_built": 1975,
-    "units": 1,
-    "stories": 1,
-    "rooms": 3,
-    "bathrooms": 1,
-    "building_area_sqft": 709,
-    "use": "Single Family Residential",
+    "units": 73,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "B",
     "zoning": "RC-4",
@@ -326,6 +322,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 150–156 Lombard Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0059&$where=property_location%20like%20%27%25LOMBARD%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0059&lot=041",
@@ -351,5 +353,9 @@
       "description": "Telegraph Landing North, designed by Henrik Bull.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A 73-unit condominium building, one of four addresses in a 190-parcel complex on block 0059.",
+  "narrative": {
+    "lead": "150 Lombard Street is a condominium building whose 73 apartments are held as 73 separate parcels — lots 005 through 077 on block 0059 — numbered 101 through 907 across nine floors.\nBlock 0059 carries a further 117 condominium parcels at 152, 154 and 156 Lombard Street — 190 in all, and the roll dates every one of them to 1975.\nThis page's parcel is lot 041, unit 505, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

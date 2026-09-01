@@ -11,13 +11,9 @@
   },
   "parcel": {
     "year_built": 1986,
-    "units": 1,
+    "units": 101,
     "stories": 6,
-    "rooms": 4,
-    "bathrooms": 2,
-    "bedrooms": 2,
-    "building_area_sqft": 1103,
-    "use": "Single Family Residential",
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RH-3",
@@ -316,6 +312,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 351 and 355 Buena Vista Avenue",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=2607&$where=property_location%20like%20%27%25BUENA%20VISTA%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&lot=117",
@@ -351,5 +353,9 @@
       "description": "Saint Joseph's Hospital, designed by Alfred I. Coffey.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "The 101-unit west building of a condominium pair, sharing block 2607 with a 35-unit east building at 351 Buena Vista Avenue.",
+  "narrative": {
+    "lead": "355 Buena Vista Avenue is the west building of a condominium pair, its 101 apartments held as 101 separate parcels — lots 117 through 217 on block 2607 — numbered 101W through 711W. The east building at 351 Buena Vista Avenue carries a further 35 parcels, suffixed E, which the roll dates a year later.\nThe assessor records this building as six stories; its unit numbers run in seven tiers.\nThis page's parcel is lot 117, unit 101W, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }
