@@ -11,13 +11,9 @@
   },
   "parcel": {
     "year_built": 1931,
-    "units": 1,
+    "units": 29,
     "stories": 5,
-    "rooms": 4,
-    "bathrooms": 1,
-    "bedrooms": 1,
-    "building_area_sqft": 1167,
-    "use": "Single Family Residential",
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RM-3",
@@ -322,6 +318,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 1895 Pacific Avenue",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0593&$where=property_location%20like%20%27%251895%20PACIFIC%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0593&lot=094",
@@ -352,5 +354,9 @@
       "description": "Designed by Herman C. Baumann.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A five-story building of 1931 whose 29 apartments are held as 29 separate condominium parcels.",
+  "narrative": {
+    "lead": "1895 Pacific Avenue is a five-story building of 1931 whose 29 apartments are held as 29 separate condominium parcels — lots 094 through 122 on block 0593 — numbered 101 through 506, five or six to a floor across its five floors.\nThis page's parcel is lot 094, unit 101, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

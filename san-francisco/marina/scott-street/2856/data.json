@@ -11,13 +11,9 @@
   },
   "parcel": {
     "year_built": 1926,
-    "units": 1,
+    "units": 6,
     "stories": 3,
-    "rooms": 4,
-    "bathrooms": 1,
-    "bedrooms": 2,
-    "building_area_sqft": 1479,
-    "use": "Single Family Residential",
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RM-1",
@@ -327,6 +323,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 2856 Scott Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0537&$where=property_location%20like%20%27%252856%20SCOTT%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0537&lot=034",
@@ -357,5 +359,9 @@
       "description": "Designed by Herman C. Baumann.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A three-story building of 1926 divided into six condominium units.",
+  "narrative": {
+    "lead": "2856 Scott Street is a three-story building of 1926 divided into six condominium units, each its own parcel — lots 034 through 039 on block 0537 — numbered 1 through 6. The assessor records the same three stories and the same 1,479 square feet against every one of the six.\nThis page's parcel is lot 034, unit 1, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

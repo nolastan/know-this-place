@@ -11,13 +11,9 @@
   },
   "parcel": {
     "year_built": 1929,
-    "units": 1,
+    "units": 64,
     "stories": 7,
-    "rooms": 4,
-    "bathrooms": 1,
-    "bedrooms": 1,
-    "building_area_sqft": 981,
-    "use": "Single Family Residential",
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RC-3",
@@ -332,6 +328,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 2701 Van Ness Avenue",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0503&$where=property_location%20like%20%27%252701%20VAN%20NESS%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0503&lot=031",
@@ -362,5 +364,9 @@
       "description": "Designed by Herman C. Baumann.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A seven-story building of 1929 whose 64 apartments are held as 64 separate condominium parcels.",
+  "narrative": {
+    "lead": "2701 Van Ness Avenue is a seven-story building of 1929 whose 64 apartments are held as 64 separate condominium parcels — lots 031 through 094 on block 0503 — numbered 201 through 711, ten or eleven to a floor from the second floor up; the roll records no residential unit on the ground floor.\nThis page's parcel is lot 031, unit 210, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

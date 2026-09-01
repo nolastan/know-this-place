@@ -11,13 +11,8 @@
   },
   "parcel": {
     "year_built": 1948,
-    "units": 1,
-    "stories": 1,
-    "rooms": 3,
-    "bathrooms": 1,
-    "bedrooms": 1,
-    "building_area_sqft": 1017,
-    "use": "Single Family Residential",
+    "units": 4,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "D",
     "zoning": "RH-3",
@@ -237,6 +232,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 1160 Greenwich Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0071&$where=property_location%20like%20%27%251160%20GREENWICH%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0071&lot=089",
@@ -267,5 +268,9 @@
       "description": "Designed by John Baumann.",
       "source": "architecture-preservation-professionals-biographies"
     }
-  ]
+  ],
+  "hook": "A 1948 building divided into four condominium units across three floors.",
+  "narrative": {
+    "lead": "1160 Greenwich Street is a 1948 building divided into four condominium units, each its own parcel — lots 089 through 092 on block 0071 — numbered 100, 201, 300 and 301 across three floors.\nThe assessor records one, one, two and zero stories against the four units respectively, so that figure describes each unit rather than the building; no story count for the building is stated here.\nThis page's parcel is lot 089, unit 100, so the assessed value and last sale shown below are that unit's and not the building's."
+  }
 }

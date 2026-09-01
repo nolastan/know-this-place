@@ -11,12 +11,8 @@
   },
   "parcel": {
     "year_built": 1964,
-    "units": 1,
-    "stories": 1,
-    "rooms": 3,
-    "bathrooms": 1,
-    "building_area_sqft": 874,
-    "use": "Single Family Residential",
+    "units": 112,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "A",
     "zoning": "RM-2",
@@ -321,6 +317,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 999 Green Street",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0127&$where=property_location%20like%20%27%250999%20GREEN%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&lot=076",
@@ -348,5 +350,9 @@
     "name": "Summit Tower",
     "builder": "Eichler Homes, Inc.",
     "completed_conflict": "The city's Modern & Postmodern styles context statement dates this building 1963; the assessor's roll records it as built 1964."
+  },
+  "hook": "A condominium tower whose 112 apartments are held as 112 separate parcels, on floors 9 through 32.",
+  "narrative": {
+    "lead": "999 Green Street is a condominium tower whose 112 apartments are held as 112 separate parcels — lots 029 through 140 on block 0127 — numbered 901 through 3202: five to a floor from the ninth through the thirty-first, with no thirteenth, and two more on the thirty-second. The roll lists no unit at this address below the ninth floor.\nThis page's parcel is lot 076, unit 1903, so the assessed value and last sale shown below are that unit's and not the building's."
   }
 }
