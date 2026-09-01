@@ -206,6 +206,14 @@ SOURCE_VOICE = re.compile(
     r"describes?|identifies|credits?|calls?|marks?|reports?|mentions?|shows?|holds?|"
     r"attributes?|according)\b", re.I)
 
+# The same slip with the noun elided. "Illustrated as a good example of Greek
+# Revival" names no source and still reads on the page as the document talking
+# about its own figures — there is no illustration on the page. It slipped past
+# the pattern above four times in one run because it needs no noun at all.
+SOURCE_VOICE_PASSIVE = re.compile(
+    r"\b(?:illustrated|pictured|depicted|reproduced)\s+(?:above|below|here|opposite)?\s*as\b"
+    r"|\bgiven\s+as\s+an\s+example\b|\bcaptioned\b", re.I)
+
 
 def check_rules(rel: Path, data: dict) -> None:
     """Cross-field rules the schema can't state."""
@@ -282,9 +290,10 @@ def check_rules(rel: Path, data: dict) -> None:
         # before a grep caught them. State the fact, or drop the hedge and let
         # date_precision carry it.
         desc = f.get("description") or ""
-        if SOURCE_VOICE.search(desc):
+        hit = SOURCE_VOICE.search(desc) or SOURCE_VOICE_PASSIVE.search(desc)
+        if hit:
             warn(str(rel), f"{fid}: description names its own source "
-                          f"({SOURCE_VOICE.search(desc).group(0)!r}) — a page body "
+                          f"({hit.group(0)!r}) — a page body "
                           f"never says where the fact came from; the Sources "
                           f"footer is the attribution. State the fact instead.")
 

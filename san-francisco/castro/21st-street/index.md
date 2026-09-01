@@ -62,6 +62,7 @@ Every residential parcel on 21st Street that the city's address, assessor and pe
 - [3832](3832/) — A 1905 two-flat in the Castro & Liberty Streets Historic District, with deck work permitted in 2015.
 - [3836](3836/) — A 1900 single-family house in the Castro & Liberty Streets Historic District, with one permit record from 1995.
 - [3844](3844/) — A 1905 single-family house in the Castro & Liberty Streets Historic District, with deck work permitted in 2019.
+- [3845](3845/) — A 1906 single-family house, with a rear addition permitted in 2000.
 - [3847](3847/) — A 1900 single-family house, with an addition permitted in 2025.
 - [3848](3848/) — A 1905 single-family house in the Castro & Liberty Streets Historic District, with a rear addition permitted in 2006.
 - [3851](3851/) — A 1900 single-family house, with reroofing permitted in 1993.

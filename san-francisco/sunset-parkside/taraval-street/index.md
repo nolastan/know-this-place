@@ -26,6 +26,7 @@ The parcels on Taraval Street documented here so far, from the city's address, a
 - [2201](2201/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2018.
 - [2331–2333](2331/) — A 1938 2-unit building with a ground-floor store, with reroofing permitted in 1991.
 - [2417–2419](2417/) — A 1921 1-unit building with a ground-floor store, with a rear addition permitted in 1993.
+- [2540](2540/) — A 1943 church, with reroofing permitted in 1996.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

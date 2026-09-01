@@ -1,0 +1,132 @@
+{
+ "address": "25 Russ Street, San Francisco, CA 94103",
+ "path": "/san-francisco/south-of-market/russ-street/25/",
+ "apn": "3726067",
+ "block": "3726",
+ "lot": "067",
+ "eas_baseid": "365073",
+ "coordinates": {
+  "lat": 37.779464,
+  "lng": -122.408868
+ },
+ "parcel": {
+  "year_built": 1927,
+  "units": 6,
+  "stories": 2,
+  "rooms": 18,
+  "bathrooms": 6,
+  "lot_area_sqft": 2550,
+  "building_area_sqft": 4420,
+  "lot_depth_ft": 75,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 5 to 14 Units",
+  "construction_type_code": "D",
+  "zoning": "RED",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "South of Market",
+  "analysis_neighborhood": "South of Market",
+  "property_location_raw": "0000 0025 RUSS                ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 175698,
+  "assessed_improvement_value": 240125
+ },
+ "historic_status": {
+  "ceqa_status_code": "C",
+  "ceqa_status_code_article_10_11": "C",
+  "ceqa_status_label": "Not a historical resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1927",
+  "survey_name": "APARTMENT BUILDING",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202308114260",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2023-08-11",
+   "status_date": "2023-09-29",
+   "estimated_cost": 10000,
+   "revised_cost": 31960,
+   "description": "upgrad fire alarm system replacing (e) devices and install new wireless low frequency horns inside of each sleeping area to comply with sffd 1103.7.6.1 per csfm code interpretton 12-001 and information bulletin dated and 9/4/2008",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200205287612",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2002-05-28",
+   "status_date": "2002-09-25",
+   "estimated_cost": 50,
+   "revised_cost": 50,
+   "description": "replace 1 fire damaged smoke detector in 2nd floor corridor",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200205096170",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2002-05-09",
+   "status_date": "2002-09-25",
+   "estimated_cost": 80000,
+   "revised_cost": 80000,
+   "description": "fire damage-remove (e)plaster wall/ceiling at 2 units, insulation drywallbord, remove kitchen cabine",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9502506",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1995-02-22",
+   "status_date": "1995-05-03",
+   "estimated_cost": 4500,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RUSS&street_type=ST&address_number=25",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3726067&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3726&lot=067",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3726067",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "soma-filipino-heritage-addendum",
+   "name": "Page & Turnbull for the San Francisco Planning Department, San Francisco Filipino Heritage: Addendum to the South of Market Historic Context Statement, final report, 13 March 2013",
+   "query": "https://default.sfplanning.org/Preservation/central_soma_hrs/SOMA_Filipino_Heritage_HCS_Final_Report-031313.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "San Francisco Filipino Heritage: Addendum to the South of Market Historic Context Statement, 2013",
+   "retrieved": "2026-08-31"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1927",
+   "kind": "occupancy",
+   "description": "A residential building recorded in the neighbourhood's own Filipino heritage survey as the DeVera Apartment.",
+   "source": "soma-filipino-heritage-addendum"
+  }
+ ]
+}

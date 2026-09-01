@@ -16,6 +16,9 @@ The residential parcels on Natoma Street documented here so far, from the city's
 - [479](479/) — A 1997 30-unit apartment building, with reroofing permitted in 1997.
 - [496–498](496/) — A 1926 industrial building in the Sixth Street Lodging House Historic District, with reroofing permitted in 1990.
 - [532](532/) — A 1925 single-family house, with garage work permitted in 2015.
+- [543–545](543/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [585–587](585/) — A 1977 29-unit apartment building, with a bathroom remodel permitted in 2009.
+- [705](705/) — A 1994 hotel in the Western SOMA Light Industrial and Residential Historic District, with a kitchen and bathroom remodel permitted in 2015.
 - [916–920](916/) — A 1919 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
 - [926](926/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with one permit record from 1981.
 - [935](935/) — A 1947 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1999.

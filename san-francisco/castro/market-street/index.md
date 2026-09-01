@@ -19,6 +19,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2148–2150](2148/) — A 1907 three-flat in the Upper Market Street Commercial Historic District, with electrical work permitted in 2008.
 - [2156–2158](2156/) — A 1907 7-unit apartment building in the Upper Market Street Commercial Historic District, with a seismic retrofit permitted in 2017.
 - [2168–2174](2168/) — Swedish American Hall, City Landmark No. 267 — built by Swedish contractors in 1907 and still the Swedish Society's.
+- [2201](2201/) — A 1994 building in the Upper Market Street Commercial Historic District, with stair work permitted in 2012.
 - [2213–2241](2213/) — A 1909 32-unit apartment building in the Upper Market Street Commercial Historic District, with plumbing work permitted in 2016.
 - [2243–2247](2243/) — A 1905 two-flat in the Upper Market Street Commercial Historic District, with a rear addition permitted in 1991.
 - [2251](2251/) — An 1894 3-unit building with a ground-floor store in the Upper Market Street Commercial Historic District, with stair work permitted in 1997.

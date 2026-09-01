@@ -18,6 +18,7 @@ The parcels on Sixth Street documented here so far, from the city's address, ass
 - [87–99](87/) — A 1906 hotel in the Sixth Street Lodging House Historic District, with a seismic retrofit permitted in 2026.
 - [101–111](101/) — A 1915 store building in the SoMa LGBTQ Historic District, with facade work permitted in 2005.
 - [117–131](117/) — A 1911 hotel in the Sixth Street Lodging House Historic District, with fire repair permitted in 1993.
+- [118](118/) — A 1928 store building in the Sixth Street Lodging House Historic District, with permit records from 1983 to 2019.
 - [133–135](133/) — A 1913 hotel in the Sixth Street Lodging House Historic District, with a bathroom remodel permitted in 2007.
 - [139–149](139/) — A 1909 hotel in the Sixth Street Lodging House Historic District, with fire repair permitted in 2005.
 - [151–155](151/) — A 1925 store building in the Sixth Street Lodging House Historic District, with foundation work permitted in 2011.
@@ -31,6 +32,7 @@ The parcels on Sixth Street documented here so far, from the city's address, ass
 - [241–243](241/) — A 1995 140-unit apartment building in the SoMa LGBTQ Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [251](251/) — A 1946 industrial building, with reroofing permitted in 2009.
 - [261](261/) — A 1988 industrial building, with permit records from 1986 to 2024.
+- [270](270/) — A 1913 building, with permit records from 1987 to 2026.
 - [275](275/) — A 1941 industrial building, with reroofing permitted in 1989.
 - [277](277/) — An assessor class: parking lot.
 - [279](279/) — An assessor class: vacant lot, with one permit record from 1986.
@@ -42,6 +44,7 @@ The parcels on Sixth Street documented here so far, from the city's address, ass
 - [451](451/) — A 1963 industrial building, with reroofing permitted in 2021.
 - [465](465/) — A 1957 industrial building, with one permit record from 1990.
 - [475](475/) — A 1927 industrial building, with a kitchen remodel permitted in 2018.
+- [480–484](480/) — A 1916 14-unit apartment building, with a seismic retrofit permitted in 2018.
 - [489](489/) — A store building, with a seismic retrofit permitted in 1996.
 - [509](509/) — A 1911 industrial building, with reroofing permitted in 1990.
 - [517](517/) — A 1920 industrial building, with a seismic retrofit permitted in 1996.

@@ -47,6 +47,7 @@ The parcels on Folsom Street documented here so far, from the city's address, as
 - [1091](1091/) — A 1944 warehouse in the Western SOMA Light Industrial and Residential Historic District, with permit records from 2000 to 2005.
 - [1099](1099/) — A 1909 office building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1995.
 - [1161–1165](1161/) — A 1921 industrial building, with a seismic retrofit permitted in 1993.
+- [1175](1175/) — A 1928 industrial building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 1994.
 - [1188–1190](1188/) — A 1914 hotel in the SoMa LGBTQ Historic District, with a bathroom remodel permitted in 2013.
 
 Pages are generated from the DataSF datasets listed in each page's
