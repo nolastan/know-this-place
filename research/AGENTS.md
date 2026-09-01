@@ -526,6 +526,19 @@ rather than just accumulate.
   just wrote, and test against the raw permit text rather than the tool's own
   flags.*
 
+- **A month-precision date printed raw on 68 pages, unnoticed.** The timeline
+  formatted a full ISO date into "August 24, 1896" and left everything else
+  alone, so a source that knows the month but not the day — a directory issue,
+  a water-service record — wrote `1896-10` into `historical_record` and the
+  page printed that string, next to a formatted date from the line above it.
+  It had been doing so on 68 pages across nine neighbourhoods since the first
+  run that used the form. Nothing failed: `validate.py` only asks that the HTML
+  match the renderer, and it did. *A date precision the extractor can express is
+  one the renderer has to be taught; write one of each precision and read the
+  rendered rail before you publish a batch.* Twelve of the 68 are on
+  `scripts/render-backlog.txt` and still print it raw until that sweep reaches
+  them.
+
 - **Putting a lost address on a street hub freezes that hub's list.**
   `seed_pages.py hubs` refuses to rebuild any street hub carrying a section
   beyond its generated lead-and-list template, so the "The lost corner"
