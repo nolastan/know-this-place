@@ -13,7 +13,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [1945](1945/) — A 1929 28-unit apartment building, with a kitchen and bathroom remodel permitted in 2013.
 - [1955](1955/) — A 1929 28-unit apartment building, with reroofing permitted in 2003.
 - [1973](1973/) — A 1900 single-family house, with a vertical addition permitted in 2015.
-- [1998](1998/) — A 1964 building, with garage work permitted in 2023.
+- [1998](1998/) — An 82-unit condominium tower of 1964, its units held as 82 separate parcels on block 0567.
 - [2000](2000/) — A 1974 222-unit apartment building, with window replacement permitted in 2012.
 - [2020](2020/) — A 1920 single-family house, with a kitchen remodel permitted in 2006.
 - [2090](2090/) — A 1936 39-unit apartment building, with a kitchen and bathroom remodel permitted in 1985.
