@@ -21,6 +21,7 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [830–848](830/) — A 1915 18-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 1992.
 - [843](843/) — A 1908 school building in the Chinatown Historic District, with a seismic retrofit permitted in 1995.
 - [850–898](850/) — A 1910 hotel in the Chinatown Historic District, with a kitchen remodel permitted in 2019.
+- [865](865/) — A 1977 store building in the Chinatown Historic District, with one permit record from 2004.
 - [900–930](900/) — A 1909 school building in the Chinatown Historic District, with a seismic retrofit permitted in 1999.
 - [901–907](901/) — A 1907 8-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2002.
 - [913–917](913/) — A 1908 store building in the Chinatown Historic District, with reroofing permitted in 2009.

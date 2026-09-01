@@ -4682,11 +4682,110 @@ and the figure captions add perhaps a tenth as much.
   outcome.** Sixteen interview summaries, all of them about where people lived,
   worked and went to school. The privacy limits bar it, and every building they
   name is named in the report body too.
-- **Verified:** 2026-08-31 (SoMa Filipino heritage: read all 98 pages of the
+- **The appendix table's YEAR BUILT column is the assessor's build year, and
+  the asset beside it is a 2011 use. They are not one dated event.** This is the
+  thing that cost a correction. Of the fifteen pre-1960 rows in this batch whose
+  parcel carries a 2025 roll year, **twelve match the roll exactly** — 88 Fifth
+  1900, 375 Seventh 1906, 106 South Park 1907, 865 Market 1908, 953–957 Mission
+  1916, 1201 Howard 1917, 25 Russ 1927, 118 Sixth 1928, 551 Minna 1946, 366
+  Clementina 1949. The column carries no information the page does not already
+  print, and the use printed beside it — a child care centre, a bookshop, a
+  senior club — is where the survey found it in 2011, with no date of its own.
+  Publishing the pair as one event puts a 2011 tenant at the building's
+  construction date: PR #199 did it five times, and this run withdrew all five
+  (366 Clementina, 543 Natoma, 25 Russ, 865 Market, 88 Fifth). **Every pre-1960
+  row of this table is a decline.** The post-1960 rows are usable, but check the
+  roll first — 50 Rizal's 1979, 705 Natoma's 1994 and 539 Minna's 2000 are build
+  years too, and only a year the roll does *not* carry reads as the year a use
+  began.
+- **The table writes 8th where it means 6th.** `88 8th St` on block 3703 is the
+  Delta Hotel at 88 Sixth, and `83 8th St` on block 3704 is the Filipino senior
+  club the report's own body puts at 83 Sixth. Both blocks carry Fifth and Sixth
+  Street parcels and no Eighth Street at all, so the printed block catches it
+  every time. Neither was converted on the pattern — a systematic error is a
+  reason to distrust a row, not a licence to rewrite it.
+- **Verified:** 2026-09-01 (SoMa Filipino heritage: read all 98 pages of the
   final PDF, which is the whole document, including Appendix A's oral history
   summaries and Appendix B's reprinted 2011 task force draft with its three
-  appendices. 120 numbered-address mentions on 115 distinct addresses, 87
-  resolved to a parcel, 71 published on 62 pages, 16 declined, 33 unresolved —
-  26 of those addresses EAS no longer has. Nothing of the report outstanding;
-  31 rows of Appendix B's Appendix 3 table were deliberately not extracted, for
-  the reason above.)
+  appendices, whose Appendix 3 survey table is now read in full. 153
+  numbered-address mentions on 145 distinct addresses, 111 resolved to a parcel,
+  73 published on 63 pages, 38 declined, 42 unresolved — 26 of those addresses
+  EAS no longer has. Nothing outstanding. The second pass over the appendix
+  table added 33 findings and published 2 of them — the Manila Meat Market's
+  1982 date at 987 Mission and the Mercury Lounge's 1985 date at 1582 Folsom —
+  and withdrew five entries the first pass had dated by the YEAR BUILT column.
+  Eleven rows of the table carry no street number at all: the five 1980 street
+  renamings, two murals, a community garden on Lapu Lapu Street and four street
+  festivals.)
+
+## The Clubs and Social Halls statement
+
+- **What:** *Citywide Historic Context Statement: Clubs and Social Halls
+  (1848–1989)*, by Page & Turnbull for SF Planning, final 3 June 2026. 53 pages.
+  Issue #69. A theme of the Creative and Cultural Life context's Social Spaces
+  sub-context: social halls and cultural centres, benevolent and mutual aid
+  societies, recreational and athletic clubs, private social clubs, and masonic
+  and fraternal orders.
+- **Access:** the M-Files vault, via the `external/link.ashx` download URL the
+  issue carries; a plain `curl` gets the PDF and `pdftotext -layout` is clean.
+  Born-digital, no OCR.
+- **It is the densest citywide theme this project has read, per page.** 51
+  numbered-address mentions in 53 pages, and half the document is evaluation
+  framework carrying almost none of them. The reason is the house style: a
+  building, its year, its architect and the organisation it was built for
+  arrive in one parenthesis — *"the San Francisco Italian Athletic Club (1620
+  Stockton Street, built in 1935, designed by John A. Porporato)"* — and the
+  figure captions repeat the same four facts for the illustrated examples.
+  **A theme study about an institution is denser than a theme study about a
+  building type**, because the institution has to be placed somewhere.
+- **Grep will miss a fifth of it, and the misses are systematic.** Every address
+  sits inside a parenthesis in running prose or in a figure caption, and the ones
+  a capitalised-street-name pattern loses are the numbered streets and avenues:
+  2700 45th Avenue, 3543 18th Street, 2850 19th Avenue. Read the document.
+- **The footnote-marker trap does not bite here, but it had to be checked.** The
+  statement is born-digital with numbered footnotes, which is exactly the
+  configuration that manufactured eleven phantom addresses in the LGBTQ
+  statement. All 51 numbers were checked against the character before them and
+  none turned out to be a reference marker — the difference is that this
+  document's footnote numbers land after punctuation, not inside a sentence
+  that continues.
+- **Its overlap is with the architect biographies, not with a neighbourhood
+  survey.** Twelve of 29 findings on pages that already existed were flagged, and
+  the duplicates were nearly all `architecture-preservation-professionals-biographies`
+  — the same building, the same year, the same architect. What this statement
+  adds where they collide is the *client*: the page had "Marines Memorial Club,
+  designed by Bliss & Faville, 1927" and not that the building went up in 1926
+  as the Western Women's Club. **On a theme study organised by institution,
+  the fact worth keeping after an overlap is who the building was built for.**
+- **Golden Gate Park and the waterfront are where the addresses die.** EAS
+  carries twelve numbered addresses on the whole of John F Kennedy Drive, and
+  neither the Model Yacht Club's 1217 nor the Angling & Casting Club's 1232 is
+  among them; Jack London Alley has 2 and 98 and nothing between. Five of the
+  eight unresolved findings are this — a real building at an address the city's
+  registry does not carry — and one, 430 Pine Street, is a demolition the
+  statement records itself.
+- **The two filing rules disagreed on nine of 45 findings, and the tie-breaker
+  was the site's own street directories.** `--area-from-nhood` and proximity
+  split on 3249 Mission, 596 Athens, 2850 Alemany, 500 Jefferson, 1000
+  California, 855 Sacramento and 400 Post. Four went to the analysis
+  neighbourhood because the street had one page or none; three stayed with
+  proximity because the site had already settled the block — 855 Sacramento
+  sits among 816, 875, 883, 891 and 956 Sacramento, all filed under `nob-hill`,
+  though the assessor calls the parcel Chinatown and the page's own description
+  says "in the Chinatown Historic District". *Where the site has settled a run
+  of numbers, follow it and record the disagreement; the alternative is one
+  block of one street split across two directories.* Spofford Street already is
+  — five pages under `north-beach`, seven under `chinatown` — which is issue
+  #201's subject, and 36 Spofford was published to the page that exists.
+- **The privacy pass found one name and it came in through `per`.** The seeder
+  pulled `superseded appl. #8406166 per don lim` onto 44 Page Street. The
+  filter's `per`-plus-two-lowercase-words rule flagged it in the raw permit
+  text of the pages this run wrote, which is where the check has to happen —
+  `seed_pages.py names` reports nothing once the pages exist.
+- **Verified:** 2026-09-01 (Clubs and Social Halls: read all 53 pages of the
+  final PDF, which is the whole document — preface, contributors, introduction,
+  methodology, the historic context, the five themes, architectural
+  characteristics and styles, the evaluation criteria for each theme and the
+  bibliography. 51 numbered-address mentions on 50 distinct addresses, recorded
+  as 53 findings; 45 resolved to a parcel, 38 published on 41 pages, 7 declined,
+  8 unresolved. 14 pages seeded. Nothing outstanding.)

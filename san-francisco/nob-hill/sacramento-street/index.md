@@ -20,6 +20,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [771–773](771/) — A 1907 3-unit apartment building in the Chinatown Historic District, with window replacement permitted in 2025.
 - [775–777](775/) — A 1907 6-unit apartment building in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [816](816/) — A 1908 10-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
+- [855](855/) — A 1925 building in the Chinatown Historic District, with a kitchen remodel permitted in 2010.
 - [875](875/) — A 1926 18-unit apartment building in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2009.
 - [883](883/) — A 1907 3-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2000.
 - [891–897](891/) — An apartment building, with dry-rot repair permitted in 2003.
