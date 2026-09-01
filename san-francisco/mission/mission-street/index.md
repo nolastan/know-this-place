@@ -149,6 +149,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3120](3120/) — A 1956 building, with an addition permitted in 2024.
 - [3136–3140](3136/) — A 1929 store building, with a seismic retrofit permitted in 1996.
 - [3232–3234](3232/) — A 1900 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2016.
+- [3247–3249](3247/) — A 1922 store building, with reroofing permitted in 2022.
 - [3250](3250/) — A 1961 bank building, with reroofing permitted in 2012.
 - [3264–3274](3264/) — A 1906 9-unit apartment building, with a seismic retrofit permitted in 2014.
 - [3293–3295](3293/) — A 1900 office building, with reroofing permitted in 1994.

@@ -5,6 +5,7 @@ The parcels on Page Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [32](32/) — A 1907 store building, with an addition permitted in 2018.
+- [44](44/) — A 1912 office building, with window replacement permitted in 1985.
 - [49–53](49/) — A 2008 store building, with plumbing work permitted in 2015.
 - [66](66/) — A 1924 industrial building in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2008.
 - [240](240/) — A 1909 church in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2019.

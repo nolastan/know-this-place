@@ -594,6 +594,39 @@ rather than just accumulate.
   evenly on which is right, and the source's own attributions broke every tie
   correctly in the run that measured it.
 
+- **A table that prints a build year in one column and a use in the next is
+  not a dated record, and the giveaway is the assessor's roll.** The SoMa
+  Filipino addendum's appendix survey prints YEAR BUILT beside an ASSET that is
+  whatever the surveyor found there in 2011. On the rows before about 1960 that
+  year is the assessor's own build year — it matched the 2025 roll on **twelve
+  of the fifteen** rows where the roll carries one — so publishing the pair as
+  one event put a child care centre at 1949, a Filipino cultural centre at 1908
+  and a monument at 1900, five entries that had to be withdrawn a PR later. The
+  test is cheap and it is now a tool: **compare every finding's date with the
+  parcel's `year_built` before publishing**, and where they are equal and the
+  fact is not the building going up, the date probably belongs to the building
+  rather than to the fact. `check.py --overlap` prints these under *by the roll
+  year*. A use that genuinely began the year the building opened is real — say
+  so in the publish note rather than deleting the check.
+- **On a theme study organised by an institution, what survives an overlap is
+  the client.** The Clubs and Social Halls statement collided with the
+  architect biographies on nearly every building the site already had: same
+  address, same year, same architect, different sentence. What it alone
+  carried was who the building was *for* — 609 Sutter Street was on the page as
+  "Marines Memorial Club, designed by Bliss & Faville" and nowhere did it say
+  the building went up in 1926 as the Western Women's Club. **Trim such a
+  finding to the client and the original name rather than declining it**, and
+  check `building` before you write: an architect the page already credits is a
+  duplicate, an original client is not.
+- **An address inside a parenthesis is invisible to a street-name grep when the
+  street is a number.** The Clubs statement gives every building as
+  *"(1620 Stockton Street, built in 1935, designed by John A. Porporato)"*, and
+  a pattern keyed on a capitalised street name silently drops 2700 45th Avenue,
+  3543 18th Street and 2850 19th Avenue. This is the same failure as the Early
+  Residential study's ALL-CAPS captions, from the opposite direction. *Grep is
+  for finding the seam, not for the extraction; a fifty-page statement gets
+  read.*
+
 - **A hyphenated `street_number` is a range the resolver cannot read.** It looks
   the number up literally, finds nothing, and reports "EAS has no address near it
   on this street" — which reads like a dead address and is really a mis-filled

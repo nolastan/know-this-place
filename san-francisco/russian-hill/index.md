@@ -16,6 +16,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Greenwich Street](greenwich-street/) — 1 building, built 1912.
 - [Hyde Street](hyde-street/) — 1 building, built 1908.
 - [Jackson Street](jackson-street/) — 1 building, built 1914.
+- [Jefferson Street](jefferson-street/) — 1 building.
 - [Jones Street](jones-street/) — 1 building, built 1908; 1 in the Russian Hill-Macondray Lane Historic District.
 - [Larkin Street](larkin-street/) — 2 buildings, built 1907–1914.
 - [Leavenworth Street](leavenworth-street/) — 1 building, built 1907.

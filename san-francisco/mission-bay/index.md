@@ -33,6 +33,7 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [Mississippi Street](mississippi-street/) — 2 buildings, built 1948–1949.
 - [Missouri Street](missouri-street/) — 1 building, built 1931.
 - [Rhode Island Street](rhode-island-street/) — 4 buildings, built 1924–1951.
+- [Terry A Francois Boulevard](terry-a-francois-boulevard/) — 1 building, built 1900.
 - [Townsend Street](townsend-street/) — 2 buildings, built 2002–2008.
 - [Vermont Street](vermont-street/) — 5 buildings, built 1970–1998.
 - [Wisconsin Street](wisconsin-street/) — 2 buildings, built 1916–1971.

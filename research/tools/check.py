@@ -489,6 +489,17 @@ def overlap(path: Path) -> None:
       architect or builder overlaps a neighbourhood survey of the same person
       almost completely; volume D-F of the professionals biographies had 20
       duplicates flagged by wording and 35 more flagged only by this scan.
+    * **the roll year** — a finding dated exactly the parcel's
+      ``year_built`` whose fact is not the building going up. Every page
+      already prints the assessor's year in its "Built NNNN" tag, so such a
+      date adds nothing; worse, it is what a source looks like when it prints
+      a build year in one column and a present-day use in the next, and the
+      extractor reads the pair as one event. The SoMa Filipino addendum's
+      appendix table did exactly that and put a child care centre, a bookshop
+      and a Filipino cultural centre on their buildings' construction dates —
+      five entries, all withdrawn. This scan flags the shape, not the error:
+      an occupancy that genuinely began the year the building opened is real,
+      and says so in its publish note.
     """
     repo = ROOT.parent
     try:
@@ -502,7 +513,7 @@ def overlap(path: Path) -> None:
     # only reliable way to tell "the page already had this" from "this batch just
     # wrote it" is the text of the batch's own findings.
     ours = {f.get("description", "") for f in data.get("findings", [])}
-    hits, name_hits, checked, missing = [], [], 0, 0
+    hits, name_hits, roll_hits, checked, missing = [], [], [], 0, 0
     for finding in data.get("findings", []):
         res = finding.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("path"):
@@ -521,10 +532,20 @@ def overlap(path: Path) -> None:
             continue
         checked += 1
 
+        # scan three: a date that is only the assessor's build year restated.
+        # The page prints that year already, and a fact which is not about the
+        # building going up has no business carrying it — see the docstring.
+        built = _year((doc.get("parcel") or {}).get("year_built"))
+        mine_year = _year(finding.get("date"))
+        if (built and mine_year == built
+                and finding.get("kind") not in ("construction", "building contract")):
+            roll_hits.append((finding.get("id", "?"), res["path"], built,
+                              finding.get("kind", "?"),
+                              finding.get("description", "")[:70]))
+
         # scan two: the same person, credited at the same date, from another source
         who = (finding.get("extra") or {}).get("architect_as_recorded")
         names = _people(who)
-        mine_year = _year(finding.get("date"))
         if names and mine_year:
             for entry in doc.get("historical_record", []):
                 if entry.get("source") in (source_id, data.get("batch")):
@@ -563,7 +584,7 @@ def overlap(path: Path) -> None:
     hits.sort(reverse=True)
     print(f"overlap: {checked} resolved finding(s) checked against their pages"
           + (f", {missing} page(s) not on disk yet" if missing else ""))
-    if not hits and not name_hits:
+    if not hits and not name_hits and not roll_hits:
         print("  none — no finding repeats what its page already says.")
         return
     if hits:
@@ -579,6 +600,12 @@ def overlap(path: Path) -> None:
         for fid, page_path, who, other in only_names:
             print(f"    {fid}  {page_path}")
             print(f"          {who} — already on the page from {other}")
+    if roll_hits:
+        print(f"  by the roll year — {len(roll_hits)} finding(s) are dated the year "
+              f"the assessor says the building went up, but are not about it going up:")
+        for fid, page_path, built, kind, text in roll_hits:
+            print(f"    {fid}  {page_path}  ({kind}, roll built {built})")
+            print(f"          {text}...")
     print("  Read each one: decline it, or trim it to the part that is new.")
 
 
