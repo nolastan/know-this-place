@@ -25,7 +25,7 @@ Every residential parcel on Douglass Street that the city's address, assessor an
 - [75–77](75/) — A 1900 two-flat, with reroofing permitted in 1998.
 - [78](78/) — A 1919 building.
 - [80](80/) — A 1910 two-flat, with reroofing permitted in 2001.
-- [109](109/) — An 1895 4-unit apartment building, with reroofing permitted in 2018.
+- [109](109/) — Built beside the California Brewing Company for one of its partners, and left facing Market Street once the brewery came down.
 - [114](114/) — A 1900 single-family house, with stair work permitted in 1998.
 - [118–120](118/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2014.
 - [124](124/) — A 1910 two-flat, with garage work permitted in 1985.

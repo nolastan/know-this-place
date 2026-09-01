@@ -70,6 +70,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [700](700/) — A 1949 30-unit apartment building, with a kitchen remodel permitted in 2019.
 - [724–726](724/) — A 1942 two-flat, with window replacement permitted in 1996.
 - [730](730/) — A 1968 three-flat, with reroofing permitted in 2006.
+- [740](740/) — A Spanish Colonial house by Fabre & Hildebrand, on the ground of a boys' orphanage that burned in 1927.
 - [748–750](748/) — A 1911 two-flat, with deck work permitted in 2015.
 - [754–758](754/) — A 1916 4-unit apartment building, with a kitchen remodel permitted in 2012.
 - [760–762](760/) — A 1924 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.

@@ -5,7 +5,7 @@
 >
 > - **Kind:** newsletter archive · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** Page 1 of 5 combed; pages 2–5 (38 issues) untouched.
+> - **Coverage:** Page 1 of 5 combed through September 2026; pages 2–5 (38 issues) untouched.
 > - **Local corpus:** `research/corpora/corbett-heights-neighbors/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -46,8 +46,41 @@
     people out, per the privacy rules in the root AGENTS.md. Deceased
     figures already published with dates (first owners, builders) may be
     named with citations.
-- **Coverage so far:** the archive holds 48 issues across 5 pages. All ten
-  issues on **page 1** (Dec 2025 – Jul 2026) have been combed; pages 2–5
-  (38 issues) are untouched. Page 1 still holds unwritten material on Hattie
-  Street, Ord Street and upper Clayton — see issue #3.
-- **Verified:** 2026-07-22 (page 1 of the archive, Dec 2025 – Jul 2026)
+  - **The issues follow a family, not a building.** A single article walks
+    an owner from address to address — the September 2026 brewery piece
+    names eight addresses across four neighbourhoods, most of them somebody's
+    house rather than a subject in its own right. The dated construction and
+    site facts are the harvest; a bare "he later moved to" is an undated
+    occupancy with no component to carry it, and is declined.
+  - **The star address is often the one that no longer exists.** The
+    brewery the September issue is about, at 111–121 Douglass Street, was
+    demolished in 1915 for the Market Street extension and has no EAS record;
+    its site is now the eleven condominium parcels of 2750 Market Street,
+    which cannot carry a page either. Eight dated facts about it are
+    `unresolved` for that reason. What reached a page is the site history of
+    **109 Douglass Street**, the partner's house that survived next door.
+  - **Filing a lost address on the street hub costs the hub's automation.**
+    `seed_pages.py hubs` refuses to rebuild any street hub that has grown a
+    section beyond the generated template, which is why the Danvers Street hub
+    carries "The lost corner". Danvers has four pages; Douglass Street has a
+    hundred and gains more with each seeding run, so freezing its list was the
+    worse trade and the brewery went onto the surviving building's page
+    instead. **Weigh the hub route by how big the hub is.**
+  - **A worked 1909 renumbering pair:** 77 Clara Avenue is today's **81 Ord
+    Street** (August 2026 issue), alongside the 110 Clara → 110 Ord and
+    1200 Ashbury → 1200 Clayton pairs already in
+    `san-francisco/corbett-heights/AGENTS.md`.
+  - **An issue can disagree with itself in passing.** The August 2026 piece
+    dates 99 Ord Street to 1932 twice, with a day-precise completion, and
+    writes "1937" once in a sentence about the lot's dimensions. Take the
+    date the article argues for and record the slip in the finding rather
+    than on the page.
+- **Coverage so far:** the archive holds 50 issues across 5 pages. All twelve
+  issues on **page 1** (Dec 2025 – Sep 2026) have now been combed; pages 2–5
+  (38 issues) are untouched. The August and September 2026 issues were read
+  into `findings/corbett-heights-neighbors/vol-viii-no-8.json` and
+  `vol-viii-no-9.json` — 34 findings, 20 resolved, 16 published across 7 pages.
+  Page 1 still holds unwritten material on Hattie Street and upper Clayton —
+  see issue #3.
+- **Verified:** 2026-09-01 (page 1 of the archive, Dec 2025 – Sep 2026; the
+  August and September 2026 issues read in full and published)

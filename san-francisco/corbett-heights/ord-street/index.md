@@ -9,7 +9,7 @@ The parcels on Ord Street documented here so far, from the city's address, asses
 - [72–74](72/) — An 1880 two-flat, with an addition permitted in 2022.
 - [80](80/) — A 1900 single-family house, with a bathroom remodel permitted in 2005.
 - [91–93](91/) — A 1932 two-flat, with a kitchen and bathroom remodel permitted in 2014.
-- [99](99/) — A 1932 single-family house, with deck work permitted in 1985.
+- [99](99/) — A Zigzag Art Moderne house of 1932, permitted the November before at an estimated $7,000.
 - [104–108](104/) — A 1900 6-unit apartment building, with reroofing permitted in 2013.
 - [126–128](126/) — A 1900 three-flat, with deck work permitted in 2026.
 - [138–140](138/) — A 1908 two dwellings on one parcel, with foundation work permitted in 2014.

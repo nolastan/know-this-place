@@ -526,6 +526,18 @@ rather than just accumulate.
   just wrote, and test against the raw permit text rather than the tool's own
   flags.*
 
+- **Putting a lost address on a street hub freezes that hub's list.**
+  `seed_pages.py hubs` refuses to rebuild any street hub carrying a section
+  beyond its generated lead-and-list template, so the "The lost corner"
+  write-up on the Danvers Street hub is why that hub's four entries are now
+  hand-maintained. The runbook offers the surviving building's page **or** the
+  street hub for an address EAS no longer holds, and it reads as a free
+  choice; it is not. Douglass Street has a hundred pages and gains more with
+  every seeding run, and freezing that list to carry a demolished brewery
+  would have cost far more than the story was worth — so the brewery went onto
+  109 Douglass Street, the partner's house next door that survived it.
+  *Count the pages under the hub before choosing the hub.*
+
 - **A row of buildings is not a range, and the resolver cannot tell them
   apart.** `resolve_eas.py` expands a recorded range on the assumption it is
   one building with a two-number address, which is right for "1940–1946
