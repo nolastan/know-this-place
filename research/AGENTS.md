@@ -702,6 +702,22 @@ rather than just accumulate.
   source id must have a published finding, and every published finding's page
   must carry the source id.
 
+- **An undated fact has two homes on a page, not one.** A credit goes in a spec
+  row (`building.architect`, `.builder`, `.developer`, `.name`); a survey's own
+  observation — style, physical integrity, a listing, a character-defining
+  feature — goes in the `historic_survey` block, which carries no year by
+  design. Neither is the timeline, which orders by date and renders a dateless
+  entry as a row reading *unknown*. Say in `publish.note` which of the two took
+  it; `check.py` looks for the words *spec row* or *survey block*.
+
+- **Before writing "nothing on the page could carry it", read the whole
+  `data.json`.** Five findings were marked published with a note saying the page
+  had nowhere to put them, when `building.architect` and `building.name` were
+  holding them the whole time. The audit that wrote those notes looked at
+  `historical_record` and `building` and never at `historic_survey`, where 25 of
+  the same sweep's 40 findings turned out to live. A page component you forget
+  to look at reads exactly like a page component that doesn't exist.
+
 ## Filing work
 
 An issue is how a run hands off what it couldn't finish, and how it asks a human

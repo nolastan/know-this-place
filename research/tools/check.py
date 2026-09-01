@@ -73,7 +73,8 @@ WARN_KINDS = {
                      "open issue. Fix any in the file you are working on."),
     "undated-timeline": ("published findings with no date at all. A page's timeline is "
                          "ordered by date and renders a dateless entry as a row reading "
-                         "\"unknown\"; an undated credit belongs in a spec row instead. "
+                         "\"unknown\"; an undated fact belongs in a spec row or the "
+                         "survey block instead, and publish.note must say which took it. "
                          "These predate the rule and are a sweep, not a blocker."),
 }
 
@@ -320,20 +321,23 @@ def check_rules(rel: Path, data: dict) -> None:
                 err(str(rel), f"{fid}: published findings need publish.pr")
             # A page's timeline is ordered by date, and an entry with no date
             # renders a row that literally reads "unknown" above the 1930s. An
-            # undated credit still has somewhere to go — building.architect,
-            # .builder, .developer and .name all carry one without a year — so
-            # a published undated finding must say which spec row took it. The
-            # Modern Architecture statement wrote 92 of these into timelines
-            # before a render caught them.
+            # undated fact still has two homes that carry no year by design:
+            # a spec row (building.architect, .builder, .developer, .name) for
+            # a credit, and the historic_survey block for a survey's own
+            # observation of style, integrity or listing. So a published
+            # undated finding must say which of the two took it. The Modern
+            # Architecture statement wrote 92 of these into timelines before a
+            # render caught them.
             if str(f.get("date") or "").strip().lower() in (
                     "", "unknown", "undated", "undated in the source",
                     "n.d.", "n. d.", "no date", "none"):
                 note = (pub.get("note") or "").lower()
-                if "spec row" not in note:
+                if not any(w in note for w in ("spec row", "survey block")):
                     warn(str(rel), f"{fid}: published with no date at all "
-                                   f"({f.get('date')!r}) — an undated credit belongs in a "
-                                   f"spec row: say which one took it in publish.note, or "
-                                   f"decline the finding.", "undated-timeline")
+                                   f"({f.get('date')!r}) — an undated fact belongs in a "
+                                   f"spec row or the survey block: say which one took "
+                                   f"it in publish.note, or decline the finding.",
+                         "undated-timeline")
 
     for apn, paths in sorted(paths_by_apn.items()):
         if len(paths) > 1:
