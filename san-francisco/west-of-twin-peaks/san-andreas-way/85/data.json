@@ -1,0 +1,131 @@
+{
+  "address": "85 San Andreas Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-andreas-way/85/",
+  "apn": "3077017",
+  "block": "3077",
+  "lot": "017",
+  "eas_baseid": "353417",
+  "coordinates": {
+    "lat": 37.732751,
+    "lng": -122.464196
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 7609,
+    "building_area_sqft": 2910,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0085 SAN ANDREAS         WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2549517,
+    "assessed_improvement_value": 1092648,
+    "last_sale_date": "2019-06-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201810042301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-04",
+      "status_date": "2019-01-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200506064303. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506064303",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-06-06",
+      "status_date": "2010-07-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel three existing bathrooms. no structural work. flourescenting lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607615",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-02",
+      "status_date": "1996-05-14",
+      "estimated_cost": 2551,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816860",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-28",
+      "status_date": "1989-01-12",
+      "estimated_cost": 765,
+      "description": "remove stucco on exterior, patch window sills & re-stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20ANDREAS&street_type=WAY&address_number=85",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3077017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3077&lot=017",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3077017",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46419569903308%2037.7327512209736)%27)",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {}
+}

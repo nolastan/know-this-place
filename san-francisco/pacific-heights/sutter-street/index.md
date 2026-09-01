@@ -10,10 +10,12 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [1500](1500/) — A 1905 hotel, with window replacement permitted in 2026.
 - [1550](1550/) — A 1998 169-unit building, with window replacement permitted in 2007.
 - [1600–1610](1600/) — A 1918 22-unit apartment building, with reroofing permitted in 2001.
+- [1688](1688/) — A 1962 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [1700](1700/) — A 1975 church, with a kitchen remodel permitted in 2017.
 - [1830](1830/) — A 1932 office building, with an addition permitted in 2014.
 - [1840–1844](1840/) — An assessor class: vacant lot, with plumbing work permitted in 2024.
 - [1852](1852/) — A 1987 flats building, with an addition permitted in 1989.
+- [2356](2356/) — A 1949 office building, with permit records from 1980 to 1994.
 - [2400](2400/) — A 1996 office building, with permit records from 1983 to 1996.
 - [2450–2460](2450/) — A 1911 building, with foundation work permitted in 2007.
 - [2584–2586](2584/) — A 1900 three-flat, with dry-rot repair permitted in 2011.

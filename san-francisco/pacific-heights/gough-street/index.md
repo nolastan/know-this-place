@@ -9,6 +9,7 @@ The parcels on Gough Street documented here so far, from the city's address, ass
 - [1850](1850/) — A 1931 40-unit apartment building, with window replacement permitted in 2001.
 - [1950](1950/) — A condominium building whose 35 apartments are held as 35 separate parcels, seven to a floor.
 - [2412](2412/) — A 1900 single-family house, with reroofing permitted in 1998.
+- [2414](2414/) — A 1900 single-family house, with a kitchen remodel permitted in 1997.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

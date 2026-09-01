@@ -5,6 +5,7 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 ## Streets documented so far
 
 - [Buchanan Street](buchanan-street/) — 1 building, built 1959.
+- [Divisadero Street](divisadero-street/) — 1 building, built 1948.
 - [Fillmore Street](fillmore-street/) — 1 building, built 1880.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1969.
 - [Gough Street](gough-street/) — 1 building, built 1966.

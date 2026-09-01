@@ -33,6 +33,7 @@ The parcels on Irving Street documented here so far, from the city's address, as
 - [1300](1300/) — A 1963 building, built by Samuel Schneider.
 - [1340–1360](1340/) — A 1926 building, designed by Samuel Heiman.
 - [1352–1356](1352/) — A 1926 building, designed by Samuel Heiman.
+- [1426–1430](1426/) — A 1946 3-unit apartment building, with reroofing permitted in 2023.
 - [1635](1635/) — A 1904 building, designed by Theodore W. Lenzen.
 - [1725](1725/) — A 1917 building, designed by G. Albert Lansburgh.
 - [1800–1816](1800/) — A 1926 store building, with a kitchen remodel permitted in 2008.

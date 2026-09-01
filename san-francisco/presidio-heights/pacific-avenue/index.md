@@ -5,7 +5,13 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 ## Documented so far
 
 - [3153](3153/) — A 1912 single-family house, with a rear addition permitted in 2007.
+- [3236](3236/) — A 1900 building in the Presidio Heights Historic District, with a kitchen and bathroom remodel permitted in 1999.
+- [3245](3245/) — A 1907 single-family house in the Presidio Heights Historic District, with an addition permitted in 2006.
 - [3323](3323/) — A 1962 single-family house, with deck work permitted in 2025.
+- [3377](3377/) — A 1903 single-family house, with a kitchen remodel permitted in 1996.
+- [3415](3415/) — A 1924 single-family house, with a kitchen and bathroom remodel permitted in 2018.
+- [3449](3449/) — A 1929 single-family house, with a kitchen and bathroom remodel permitted in 2018.
+- [3515](3515/) — A 1911 single-family house, with reroofing permitted in 2026.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

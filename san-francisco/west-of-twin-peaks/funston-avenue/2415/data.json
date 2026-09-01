@@ -1,0 +1,111 @@
+{
+  "address": "2415 Funston Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/funston-avenue/2415/",
+  "apn": "2412039",
+  "block": "2412",
+  "lot": "039",
+  "eas_baseid": "338044",
+  "coordinates": {
+    "lat": 37.743014,
+    "lng": -122.469441
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 2,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 7,
+    "lot_area_sqft": 13647,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "West Portal",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2415 FUNSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 104168,
+    "assessed_improvement_value": 1255249
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201511233350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-23",
+      "status_date": "2016-01-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove two hanging vanity from men & women bathrooms ground floor, change two light fixture.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603217177",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-03-21",
+      "status_date": "2007-04-24",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "installation of (n) t-mobile wireless telecommunications network includ 1 antenna within tower and equipment inside tower.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FUNSTON&street_type=AVE&address_number=2415",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2412039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2412&lot=039",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2412039",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Donald Powers Smith"
+  },
+  "historical_record": [
+    {
+      "date": "1953",
+      "kind": "alteration",
+      "description": "Portalhurst Presbyterian Church, remodelled 1953-54 by Donald Powers Smith with the starkly angular lines of his Midcentury Modern churches.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

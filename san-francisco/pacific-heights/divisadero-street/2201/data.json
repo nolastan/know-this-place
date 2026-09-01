@@ -1,0 +1,153 @@
+{
+  "address": "2201–2203 Divisadero Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/divisadero-street/2201/",
+  "apn": "1001007",
+  "block": "1001",
+  "lot": "007",
+  "eas_baseid": "457400",
+  "coordinates": {
+    "lat": 37.790065,
+    "lng": -122.441016
+  },
+  "address_range": "2201–2203",
+  "street_numbers_on_parcel": [
+    "2201",
+    "2203"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 3024,
+    "building_area_sqft": 3280,
+    "basement_area_sqft": 800,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "2203 2201 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 509895,
+    "assessed_improvement_value": 702578,
+    "last_sale_date": "1993-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201607192720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-19",
+      "status_date": "2016-08-24",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remove existing composition shingles and replace with new \"in-kind\" composition shingles on roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410076275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-07",
+      "status_date": "2004-11-18",
+      "estimated_cost": 4987,
+      "revised_cost": 4987,
+      "description": "repair dry rot per report# 44245. item # 5a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-10-08",
+      "status_date": "1999-01-21",
+      "estimated_cost": 25000,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720105S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-10-08",
+      "status_date": "1999-10-15",
+      "estimated_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9406200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-04-20",
+      "status_date": "1994-05-10",
+      "estimated_cost": 4950,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9404633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-22",
+      "status_date": "1994-05-24",
+      "estimated_cost": 1500,
+      "description": "repair existing rotted deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9322441",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-12-24",
+      "status_date": "1994-12-20",
+      "estimated_cost": 10000,
+      "description": "new construction of garage at area of exist. parking pad",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=2201",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1001007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1001&lot=007",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1001007",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {}
+}

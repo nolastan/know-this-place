@@ -1,0 +1,119 @@
+{
+  "address": "2356 Sutter Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sutter-street/2356/",
+  "apn": "1051013",
+  "block": "1051",
+  "lot": "013",
+  "eas_baseid": "293859",
+  "coordinates": {
+    "lat": 37.785794,
+    "lng": -122.439336
+  },
+  "parcel": {
+    "year_built": 1949,
+    "stories": 9,
+    "rooms": 120,
+    "bathrooms": 83,
+    "lot_area_sqft": 27455,
+    "building_area_sqft": 55300,
+    "use": "Commercial Office",
+    "property_class": "Medical- dental Office Building",
+    "construction_type_code": "A",
+    "zoning": "NC-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2356 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1949",
+    "survey_name": "FRONT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9404241",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-15",
+      "status_date": "1995-02-07",
+      "estimated_cost": 16000,
+      "description": "to install a new 6\" underground supply line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8105970",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1981-07-06",
+      "status_date": "1983-03-24",
+      "estimated_cost": 5000,
+      "description": "created during job card conversion on: 03/04/83",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8005054",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1980-06-09",
+      "status_date": "1983-03-24",
+      "estimated_cost": 50000,
+      "description": "created during job card conversion on: 03/04/83",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=2356",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1051013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1051&lot=013",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1051013",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Erich Mendelsohn",
+    "completed": 1950
+  },
+  "historical_record": [
+    {
+      "date": "1950",
+      "kind": "construction",
+      "description": "The Maimonides Health Center of 1950, the only San Francisco building by Erich Mendelsohn other than a house: an \"ultra modern\" hospital for long-term patients, with glass walls and balconies over a garden of modern design, the first of its kind in the west. The glass walls were later re-clad in stucco and new window openings cut.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

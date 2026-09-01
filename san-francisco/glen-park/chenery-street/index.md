@@ -23,6 +23,7 @@ The parcels on Chenery Street documented here so far, from the city's address, a
 - [781](781/) — A 1922 single-family house, with foundation work permitted in 2009.
 - [787](787/) — A 1922 single-family house, with an addition permitted in 2002.
 - [791–793](791/) — A 1922 two-flat, with deck work permitted in 2007.
+- [925](925/) — A school building, with reroofing permitted in 1998.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

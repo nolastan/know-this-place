@@ -83,7 +83,9 @@ which local histories treat as its own neighborhood.
 - [Marview Way](marview-way/) — 1 building; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Masonic Avenue](masonic-avenue/) — 1 building, built 2007.
 - [Mono Street](mono-street/) — 1 building, built 1908.
+- [Mountain Spring Avenue](mountain-spring-avenue/) — 4 buildings, built 1958–1960.
 - [Noe Street](noe-street/) — 144 buildings, built 1880–2014; 25 in the Duboce Triangle Historic District.
+- [Palo Alto Avenue](palo-alto-avenue/) — 4 buildings, built 1951–1961; 4 in the Palo Alto Avenue Historic District.
 - [Park Hill Avenue](park-hill-avenue/) — 11 buildings, built 1900–1953.
 - [Pemberton Place](pemberton-place/) — 2 buildings, built 1926–1933.
 - [Pond Street](pond-street/) — 13 buildings, built 1900–1923.
@@ -91,6 +93,7 @@ which local histories treat as its own neighborhood.
 - [Raccoon Drive](raccoon-drive/) — 2 buildings, built 1959–1991.
 - [Rayburn Street](rayburn-street/) — 2 buildings, built 1900–1941.
 - [Roosevelt Way](roosevelt-way/) — 89 buildings, built 1895–2018.
+- [Saint Germain Avenue](saint-germain-avenue/) — 1 building, built 1958.
 - [Sanchez Street](sanchez-street/) — 131 buildings, built 1885–2008; 27 in the Duboce Triangle Historic District.
 - [Saturn Street](saturn-street/) — 51 buildings, built 1890–1974.
 - [Seward Street](seward-street/) — 1 building, built 1922.

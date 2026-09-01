@@ -12,6 +12,7 @@ The parcels on 34th Avenue documented here so far, from the city's address, asse
 - [1577](1577/) — A 1933 single-family house in the Picturesque Period Revival Tracts Historic District, with window replacement permitted in 2007.
 - [1646](1646/) — A 1940 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [1750](1750/) — A 1940 single-family house, with reroofing permitted in 1991.
+- [2051](2051/) — An assessor class: vacant lot.
 - [2235](2235/) — A 1938 single-family house, with reroofing permitted in 1992.
 - [2282](2282/) — A 1949 single-family house, with foundation work permitted in 1991.
 - [2283](2283/) — A 1947 single-family house, with a kitchen remodel permitted in 2023.
