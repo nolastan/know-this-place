@@ -11,13 +11,8 @@
   },
   "parcel": {
     "year_built": 1964,
-    "units": 1,
-    "stories": 1,
-    "rooms": 5,
-    "bathrooms": 2,
-    "bedrooms": 1,
-    "building_area_sqft": 1035,
-    "use": "Single Family Residential",
+    "units": 82,
+    "use": "Multi-Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "B",
     "zoning": "RM-2",
@@ -322,6 +317,12 @@
       "retrieved": "2026-08-31"
     },
     {
+      "id": "sf-assessor-roll-building",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll) — all condominium parcels at 1998 Broadway",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?closed_roll_year=2025&block=0567&$where=property_location%20like%20%27%251998%20BROADWAY%25%27&$limit=500",
+      "retrieved": "2026-08-31"
+    },
+    {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&lot=038",
@@ -354,5 +355,9 @@
   ],
   "building": {
     "architect": "John Sardis & Associates"
+  },
+  "hook": "An 82-unit condominium tower of 1964, its units held as 82 separate parcels on block 0567.",
+  "narrative": {
+    "lead": "1998 Broadway is an 82-unit condominium tower built in 1964, its units held as 82 separate parcels — lots 038 through 119 on block 0567 — and numbered 402 through 1607 across twelve residential floors, with no thirteenth, above three levels of garage.\nThis page's parcel is lot 038, unit 402, so the assessed value and last sale shown below are that unit's and not the building's; a 2025 alteration permit describes the building as fifteen stories."
   }
 }
