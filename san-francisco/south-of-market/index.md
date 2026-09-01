@@ -47,6 +47,8 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Perry Street](perry-street/) — 1 building.
 - [Ritch Street](ritch-street/) — 8 buildings, built 1902–1955; 5 in the Clyde and Crooks Historic District.
 - [Rizal Street](rizal-street/) — 3 buildings, built 1979–1982.
+- [Russ Street](russ-street/) — 1 building, built 1927.
+- [Sherman Street](sherman-street/) — 1 building, built 1900.
 - [Shipley Street](shipley-street/) — 20 buildings, built 1906–1991; 1 in the SoMa LGBTQ Historic District.
 - [Sixth Street](6th-street/) — 39 buildings, built 1900–1995; 14 in the Sixth Street Lodging House Historic District.
 - [Stevenson Street](stevenson-street/) — 4 buildings, built 1913–1940; 2 in the Mint-Mission Conservation District.

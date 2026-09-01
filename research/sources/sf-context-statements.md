@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 43 documents read; the rest are one open GitHub issue each, and the
+> - **Coverage:** 44 documents read; the rest are one open GitHub issue each, and the
 >   biographies collection is six more volumes.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
@@ -20,9 +20,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 43 documents — listed under "Read into the repo so far" below, each with its own notes section |
-| **Findings files** | 31: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved) and [`biographies-a-c`](../findings/sf-context-statements/biographies-a-c.json) (412 findings, 317 published on 312 pages, 36 declined, 59 unresolved) and [`biographies-d-f`](../findings/sf-context-statements/biographies-d-f.json) (208 findings, 138 published on 138 pages, 53 declined, 17 unresolved). and [`early-residential-development`](../findings/sf-context-statements/early-residential-development.json) (26 findings, 18 published on 18 pages, 8 declined, 0 unresolved). All thirty-one loops closed. |
-| **Remaining** | ~7 adopted statements plus volumes G–I through V–Z of the biographies collection, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
+| **Read in full** | 44 documents — listed under "Read into the repo so far" below, each with its own notes section |
+| **Findings files** | 32: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 546 published on 349 pages, 1 declined, 83 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,452 published on 1,435 pages, 55 declined, 395 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 179 published on 164 pages, 22 declined, 164 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved) and [`biographies-a-c`](../findings/sf-context-statements/biographies-a-c.json) (412 findings, 317 published on 312 pages, 36 declined, 59 unresolved) and [`biographies-d-f`](../findings/sf-context-statements/biographies-d-f.json) (208 findings, 138 published on 138 pages, 53 declined, 17 unresolved). and [`early-residential-development`](../findings/sf-context-statements/early-residential-development.json) (26 findings, 18 published on 18 pages, 8 declined, 0 unresolved). and [`soma-filipino-heritage`](../findings/sf-context-statements/soma-filipino-heritage.json) (120 findings, 71 published on 62 pages, 16 declined, 33 unresolved). All thirty-two loops closed. |
+| **Remaining** | ~6 adopted statements plus volumes G–I through V–Z of the biographies collection, **one open GitHub issue each** — that is the queue. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -141,6 +141,14 @@ document you are about to mine.
   adopted statements is
   `https://sfplanning.org/project/sf-histories-historic-context-statements#completed`.
 - **Read into the repo so far:**
+  - Page & Turnbull for the San Francisco Planning Department, *San Francisco
+    Filipino Heritage: Addendum to the South of Market Historic Context
+    Statement*, final report, 13 March 2013 (98 pp.), source id
+    `soma-filipino-heritage-addendum`. Issue #67. Not in the M-Files vault: a
+    plain PDF at
+    `https://default.sfplanning.org/Preservation/central_soma_hrs/SOMA_Filipino_Heritage_HCS_Final_Report-031313.pdf`,
+    which is both the fetch URL and the citation. See "The SoMa Filipino
+    heritage addendum" below.
   - ICF for the San Francisco Planning Department, *Theme Study: Early
     Residential Development in San Francisco, 1848–1899*, Context: Residential
     (1848-1989), Subcontext: Single-Family, submitted 10 June 2021, adopted
@@ -4620,3 +4628,65 @@ and the figure captions add perhaps a tenth as much.
   characteristics and styles, evaluation criteria and bibliography. 26
   numbered-address mentions, one per distinct address, all 26 resolved to a
   parcel, 18 published on 18 pages, 8 declined. Nothing outstanding.)
+
+## The SoMa Filipino heritage addendum
+
+- **What:** *San Francisco Filipino Heritage: Addendum to the South of Market
+  Historic Context Statement*, by Page & Turnbull for SF Planning, final report
+  13 March 2013. 98 pages. Issue #67. A cultural rather than architectural
+  statement: how a Filipino community formed in Manilatown and Japantown before
+  the war and south of Market after 1965, and what of it survives.
+- **Access:** the only one of these documents not in the M-Files vault. A plain
+  PDF on `default.sfplanning.org`, which is both the fetch URL and the form a
+  page cites. `pdftotext -layout` is clean.
+- **The densest thing in it is the city directories.** The narrative reads
+  directories year by year, so it puts a named organisation or business at a
+  numbered address on a dated line over and over — sixteen Manilatown
+  storefronts on Kearny and Jackson in one paragraph, a dozen pre-war
+  associations in another. This is the shape to look for in a cultural
+  statement: not an inventory table but a directory transcription inside the
+  prose.
+- **It also has a real inventory table**, pp. 38–39, with a name, an address, an
+  assessor's block and lot and a date of origin for each of 22 addressed rows.
+  The printed block and lot are worth recording: the resolver's own parcel
+  cross-check came back 25 exact, 6 re-lotted since and **0 on another block**,
+  which is the evidence that the addresses are today's.
+- **Half the community it documents was demolished.** 26 of the 33 unresolved
+  findings are addresses EAS no longer has — most of Manilatown's Kearny Street
+  row, the pre-war association addresses on Market and Sutter, the Japantown
+  church. That is the subject of the document showing up in the resolution
+  rate, not a failure of it. Where a Kearny Street number does survive, several
+  historic storefronts land on one modern parcel; publish them as one combined
+  entry rather than three near-identical lines.
+- **The Central SoMa statement got here first, and says some of it in the same
+  words.** Ten findings were caught by the wording scan and thirteen declined
+  in the end, nearly all on pages already carrying
+  `central-soma-context-statement` — the Gran Oriente's South Park properties,
+  the Eimoto Hotel, the Filipino Education Center at 111 Clara Street, the Mint
+  Mall's ground floor. The Central SoMa survey area covers most of this
+  document's subject. **Read the target page before writing anything into
+  SoMa.**
+- **Appendix B is a different document reprinted whole** — the Western SoMa
+  Citizens Planning Task Force's 2011 draft — and its own Appendix 3 is a
+  46-row survey table with a block and lot on most rows. It is tempting and it
+  is unreliable: the column headed YEAR BUILT carries the year a *use* began
+  for every row after about 1960 (1980 against the street renamings, 1985
+  against a bookshop), and the addresses are error-strewn in a way the report
+  body is not — `11133 Howard St` for 1137-1139 Howard, `1065 Folsom St` for a
+  park the report's own table puts at 55 Sherman, `88 8th St` for the Delta
+  Hotel the report puts at 88 6th. **It contradicts the report's own table and
+  loses**: its row putting the old Saint Joseph's Church at 1301 Howard Street
+  was published and then withdrawn — 1401 Howard is the parcel carrying the
+  Article 10 landmark, and 1301 is an industrial building of 1915.
+- **Appendix A, the oral histories, yields nothing and that is the correct
+  outcome.** Sixteen interview summaries, all of them about where people lived,
+  worked and went to school. The privacy limits bar it, and every building they
+  name is named in the report body too.
+- **Verified:** 2026-08-31 (SoMa Filipino heritage: read all 98 pages of the
+  final PDF, which is the whole document, including Appendix A's oral history
+  summaries and Appendix B's reprinted 2011 task force draft with its three
+  appendices. 120 numbered-address mentions on 115 distinct addresses, 87
+  resolved to a parcel, 71 published on 62 pages, 16 declined, 33 unresolved —
+  26 of those addresses EAS no longer has. Nothing of the report outstanding;
+  31 rows of Appendix B's Appendix 3 table were deliberately not extracted, for
+  the reason above.)

@@ -8,11 +8,15 @@ The parcels on 7th Street documented here so far, from the city's address, asses
 - [90](90/) — An office building, with permit records from 1994 to 1997.
 - [95](95/) — A 1900 office building.
 - [112–114](112/) — A 1911 hotel in the Western SOMA Light Industrial and Residential Historic District, with garage work permitted in 2013.
+- [150–154](150/) — A 1920 store building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2022.
+- [173–175](173/) — A 1997 29-unit apartment building, with reroofing permitted in 1988.
+- [227–229](227/) — A 2010 store building in the Western SOMA Light Industrial and Residential Historic District, with an addition permitted in 2010.
 - [230–234](230/) — A 2021 store building in the Western SOMA Light Industrial and Residential Historic District, with a vertical addition permitted in 2018.
 - [262](262/) — A 1945 industrial building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2006.
 - [273–285](273/) — A 1928 industrial building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2001.
 - [308](308/) — An assessor class: parking lot, with a seismic retrofit permitted in 1994.
 - [310](310/) — A 1922 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1995.
+- [375](375/) — A 1906 school building, with reroofing permitted in 1985.
 - [384](384/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 1990.
 - [500–502](500/) — A 2020 16-unit apartment building, with deck work permitted in 2026.
 - [510](510/) — A 1925 industrial building, with reroofing permitted in 2011.
